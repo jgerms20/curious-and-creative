@@ -1,0 +1,647 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Universal Campaign Profile",
+  "description": "Schema for capturing ANY campaign's information for award matching and case study generation. Client-agnostic design.",
+  "version": "2.0",
+  "type": "object",
+  "required": ["id", "name", "client", "brand"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (e.g., 'brand-campaign-name-year')"
+    },
+    "name": {
+      "type": "string",
+      "description": "Campaign name"
+    },
+    "client": {
+      "type": "string",
+      "description": "Client/holding company name"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand name"
+    },
+    "product": {
+      "type": "string",
+      "description": "Specific product/service if applicable"
+    },
+    "agency": {
+      "type": "object",
+      "description": "Agency information",
+      "properties": {
+        "lead_agency": {"type": "string"},
+        "media_agency": {"type": "string"},
+        "pr_agency": {"type": "string"},
+        "production_company": {"type": "string"},
+        "other_partners": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "role": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "industry": {
+      "type": "string",
+      "description": "Industry/category",
+      "enum": [
+        "sports_beverages",
+        "beverages_non_alcohol",
+        "beverages_alcohol",
+        "food_snacks",
+        "consumer_packaged_goods",
+        "automotive",
+        "technology",
+        "financial_services",
+        "healthcare_pharma",
+        "retail",
+        "travel_hospitality",
+        "entertainment_media",
+        "fashion_apparel",
+        "beauty_personal_care",
+        "b2b_services",
+        "telecommunications",
+        "nonprofit",
+        "government",
+        "other"
+      ]
+    },
+    "dates": {
+      "type": "object",
+      "properties": {
+        "brief_received": {"type": "string", "format": "date"},
+        "campaign_start": {"type": "string", "format": "date"},
+        "campaign_end": {"type": "string", "format": "date"},
+        "results_available": {"type": "string", "format": "date"}
+      }
+    },
+    "markets": {
+      "type": "object",
+      "description": "Where the campaign ran",
+      "properties": {
+        "primary_market": {"type": "string"},
+        "all_markets": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "global": {"type": "boolean"}
+      }
+    },
+    "brief": {
+      "type": "object",
+      "description": "The strategic foundation",
+      "properties": {
+        "challenge": {
+          "type": "string",
+          "description": "What business/brand problem were we solving?"
+        },
+        "context": {
+          "type": "string",
+          "description": "Market context, competitive landscape, category dynamics"
+        },
+        "objectives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "objective": {"type": "string"},
+              "metric": {"type": "string"},
+              "target": {"type": "string"}
+            }
+          },
+          "description": "Specific, measurable objectives with KPIs"
+        },
+        "target_audience": {
+          "type": "object",
+          "properties": {
+            "primary": {"type": "string"},
+            "secondary": {"type": "string"},
+            "psychographic": {"type": "string"},
+            "behavioral": {"type": "string"}
+          }
+        },
+        "key_insight": {
+          "type": "string",
+          "description": "The human/cultural truth that unlocked the creative"
+        },
+        "insight_source": {
+          "type": "string",
+          "description": "How was the insight discovered? (research, data, observation)"
+        },
+        "budget_tier": {
+          "type": "string",
+          "enum": ["micro", "small", "medium", "large", "mega"],
+          "description": "Relative budget size for category"
+        },
+        "budget_note": {
+          "type": "string",
+          "description": "Any relevant context (e.g., 'outspent 3:1 by competitors')"
+        }
+      }
+    },
+    "strategy": {
+      "type": "object",
+      "description": "The strategic approach",
+      "properties": {
+        "strategic_approach": {
+          "type": "string",
+          "description": "One-paragraph summary of the strategic approach"
+        },
+        "why_this_strategy": {
+          "type": "string",
+          "description": "Why was this the RIGHT strategy (not just A strategy)?"
+        },
+        "channel_strategy": {
+          "type": "string",
+          "description": "Media/channel choices and rationale"
+        },
+        "competitive_differentiation": {
+          "type": "string",
+          "description": "How did we stand out from competitors?"
+        }
+      }
+    },
+    "creative": {
+      "type": "object",
+      "description": "The creative work",
+      "properties": {
+        "big_idea": {
+          "type": "string",
+          "description": "The core creative concept in one sentence"
+        },
+        "idea_explanation": {
+          "type": "string",
+          "description": "Longer explanation of what makes the idea work"
+        },
+        "tagline": {
+          "type": "string",
+          "description": "Campaign tagline if applicable"
+        },
+        "what_made_it_special": {
+          "type": "string",
+          "description": "What's genuinely award-worthy about this work?"
+        },
+        "craft_elements": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Notable craft elements (direction, cinematography, VFX, music, etc.)"
+        },
+        "innovation_elements": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Any genuinely innovative approaches (new tech, new format, first-ever)"
+        },
+        "production_notes": {
+          "type": "string",
+          "description": "Notable production details that matter for craft awards"
+        }
+      }
+    },
+    "execution_types": {
+      "type": "array",
+      "description": "Types of executions created",
+      "items": {
+        "type": "string",
+        "enum": [
+          "tv_spot_15",
+          "tv_spot_30",
+          "tv_spot_60",
+          "tv_spot_long_form",
+          "online_video",
+          "social_video_short",
+          "social_video_long",
+          "print_single",
+          "print_campaign",
+          "outdoor_static",
+          "outdoor_digital",
+          "outdoor_spectacular",
+          "outdoor_ambient",
+          "radio_audio",
+          "podcast_ad",
+          "podcast_series",
+          "digital_display",
+          "digital_rich_media",
+          "social_static",
+          "tiktok",
+          "instagram_reels",
+          "instagram_stories",
+          "youtube_pre_roll",
+          "youtube_content",
+          "influencer_partnership",
+          "experiential_event",
+          "experiential_activation",
+          "experiential_installation",
+          "sampling",
+          "website",
+          "microsite",
+          "app",
+          "game_integration",
+          "ar_experience",
+          "vr_experience",
+          "branded_content_short",
+          "branded_content_documentary",
+          "branded_content_series",
+          "pr_stunt",
+          "pr_earned_media",
+          "packaging",
+          "product_design",
+          "data_visualization",
+          "real_time_marketing",
+          "user_generated_content"
+        ]
+      }
+    },
+    "talent": {
+      "type": "object",
+      "description": "Talent involvement",
+      "properties": {
+        "talent_strategy": {
+          "type": "string",
+          "description": "Why this talent was chosen and how they contributed"
+        },
+        "athletes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "sport": {"type": "string"},
+              "role": {"type": "string"}
+            }
+          }
+        },
+        "celebrities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "role": {"type": "string"}
+            }
+          }
+        },
+        "influencers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "platform": {"type": "string"},
+              "follower_count": {"type": "string"},
+              "role": {"type": "string"}
+            }
+          }
+        },
+        "director": {"type": "string"},
+        "production_company": {"type": "string"},
+        "music_artist": {"type": "string"},
+        "photographer": {"type": "string"}
+      }
+    },
+    "partnerships": {
+      "type": "array",
+      "description": "Brand/media/platform partnerships",
+      "items": {
+        "type": "object",
+        "properties": {
+          "partner_name": {"type": "string"},
+          "partner_type": {
+            "type": "string",
+            "enum": ["league", "team", "event", "platform", "media_publisher", "brand", "nonprofit", "government", "retailer", "other"]
+          },
+          "partnership_description": {"type": "string"},
+          "what_made_it_special": {"type": "string"}
+        }
+      }
+    },
+    "results": {
+      "type": "object",
+      "description": "Campaign results - THE most important section for effectiveness awards",
+      "properties": {
+        "results_summary": {
+          "type": "string",
+          "description": "One-line summary of the most impressive result"
+        },
+        "business_results": {
+          "type": "object",
+          "properties": {
+            "sales": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "result": {"type": "string"},
+                "vs_objective": {"type": "string"},
+                "vs_benchmark": {"type": "string"}
+              }
+            },
+            "market_share": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "result": {"type": "string"},
+                "vs_objective": {"type": "string"}
+              }
+            },
+            "revenue": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "result": {"type": "string"},
+                "vs_objective": {"type": "string"}
+              }
+            },
+            "roi_roas": {
+              "type": "string",
+              "description": "Return on investment/ad spend"
+            },
+            "other_business": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        },
+        "brand_metrics": {
+          "type": "object",
+          "properties": {
+            "awareness": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "lift": {"type": "string"},
+                "vs_benchmark": {"type": "string"}
+              }
+            },
+            "consideration": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "lift": {"type": "string"},
+                "vs_benchmark": {"type": "string"}
+              }
+            },
+            "favorability": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "lift": {"type": "string"},
+                "vs_benchmark": {"type": "string"}
+              }
+            },
+            "purchase_intent": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "lift": {"type": "string"},
+                "vs_benchmark": {"type": "string"}
+              }
+            },
+            "brand_salience": {
+              "type": "object",
+              "properties": {
+                "metric": {"type": "string"},
+                "lift": {"type": "string"}
+              }
+            }
+          }
+        },
+        "engagement_metrics": {
+          "type": "object",
+          "properties": {
+            "impressions": {"type": "string"},
+            "video_views": {"type": "string"},
+            "video_completion_rate": {"type": "string"},
+            "social_engagement": {"type": "string"},
+            "social_shares": {"type": "string"},
+            "social_sentiment": {"type": "string"},
+            "website_traffic": {"type": "string"},
+            "time_spent": {"type": "string"},
+            "participation_rate": {"type": "string"}
+          }
+        },
+        "earned_media": {
+          "type": "object",
+          "properties": {
+            "earned_impressions": {"type": "string"},
+            "earned_media_value": {"type": "string"},
+            "press_mentions": {"type": "string"},
+            "notable_coverage": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "List notable press coverage"
+            }
+          }
+        },
+        "cultural_impact": {
+          "type": "object",
+          "properties": {
+            "cultural_moments": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Notable cultural moments/reactions"
+            },
+            "celebrity_mentions": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "memes_parodies": {"type": "string"},
+            "entered_lexicon": {"type": "string", "description": "Did any phrases enter popular culture?"}
+          }
+        },
+        "unexpected_results": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Positive outcomes we didn't anticipate"
+        },
+        "results_attribution": {
+          "type": "string",
+          "description": "How can we prove these results were caused by the campaign?"
+        },
+        "results_verified": {
+          "type": "boolean",
+          "description": "Are these results client-approved for external sharing?"
+        },
+        "results_source": {
+          "type": "string",
+          "description": "Source of results data (Nielsen, internal data, third-party, etc.)"
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "description": "Available assets for submissions",
+      "properties": {
+        "case_study_video": {
+          "type": "object",
+          "properties": {
+            "exists": {"type": "boolean"},
+            "duration_seconds": {"type": "integer"},
+            "versions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "length": {"type": "string"},
+                  "purpose": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "hero_films": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "duration": {"type": "string"},
+              "formats": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "images": {
+          "type": "object",
+          "properties": {
+            "high_res_available": {"type": "boolean"},
+            "count": {"type": "integer"},
+            "types": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "supporting_documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string"},
+              "description": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "award_potential": {
+      "type": "object",
+      "description": "Assessment of award-worthiness",
+      "properties": {
+        "strongest_angles": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "What's most award-worthy about this work?"
+        },
+        "craft_strength": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "1-10 rating of production/craft quality"
+        },
+        "idea_strength": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "1-10 rating of creative idea uniqueness"
+        },
+        "results_strength": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "1-10 rating of results impressiveness"
+        },
+        "innovation_strength": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "1-10 rating of genuine innovation"
+        },
+        "cultural_impact_strength": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "1-10 rating of cultural conversation"
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Honest assessment of weak points"
+        }
+      }
+    },
+    "suggested_categories": {
+      "type": "array",
+      "description": "Initial category suggestions based on work type",
+      "items": {
+        "type": "string",
+        "enum": [
+          "film_long_form",
+          "film_short_form",
+          "film_craft",
+          "effectiveness",
+          "digital_mobile",
+          "social_influencer",
+          "integrated",
+          "experiential_activation",
+          "audio",
+          "print",
+          "outdoor",
+          "innovation",
+          "data_creative",
+          "pr_comms",
+          "direct_response",
+          "branded_entertainment",
+          "sports_marketing",
+          "gaming_esports",
+          "b2b",
+          "sustainability_purpose",
+          "social_good",
+          "health_wellness"
+        ]
+      }
+    },
+    "award_history": {
+      "type": "array",
+      "description": "Previous submissions and wins",
+      "items": {
+        "type": "object",
+        "properties": {
+          "award_show": {"type": "string"},
+          "category": {"type": "string"},
+          "year": {"type": "integer"},
+          "result": {
+            "type": "string",
+            "enum": ["submitted", "shortlisted", "bronze", "silver", "gold", "grand_prix", "black_pencil", "yellow_pencil", "wood_pencil"]
+          }
+        }
+      }
+    },
+    "team": {
+      "type": "array",
+      "description": "Key team members for credits",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "title": {"type": "string"},
+          "company": {"type": "string"}
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional context or notes"
+    },
+    "confidential_info": {
+      "type": "object",
+      "description": "Information that should NOT appear in public-facing materials",
+      "properties": {
+        "confidential_results": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "internal_only_context": {"type": "string"}
+      }
+    }
+  }
+}

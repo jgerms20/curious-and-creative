@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U&AI Project Tracker</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --surface-hover: #1a1a1a;
+            --border: #2a2a2a;
+            --text: #fafafa;
+            --text-muted: #888;
+            --accent: #3b82f6;
+            --accent-dim: #1e3a5f;
+            --success: #22c55e;
+            --success-dim: #14532d;
+            --warning: #f59e0b;
+            --warning-dim: #78350f;
+            --pending: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .client-tag {
+            display: inline-block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            background: var(--accent-dim);
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .week-nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 15px;
+        }
+
+        .week-tab {
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .week-tab:hover {
+            background: var(--surface);
+            color: var(--text);
+        }
+
+        .week-tab.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+
+        .week-content {
+            display: none;
+        }
+
+        .week-content.active {
+            display: block;
+        }
+
+        .week-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .week-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .week-dates {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .progress-bar {
+            background: var(--surface);
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--success));
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat {
+            background: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .stat:hover {
+            border-color: var(--accent);
+        }
+
+        .stat.active {
+            border-color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .filter-info {
+            font-size: 12px;
+            color: var(--accent);
+            cursor: pointer;
+        }
+
+        .filter-info:hover {
+            text-decoration: underline;
+        }
+
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .task {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .task:hover {
+            background: var(--surface-hover);
+            border-color: var(--accent);
+        }
+
+        .task.hidden {
+            display: none;
+        }
+
+        .task-status {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .task-status.done {
+            background: var(--success);
+            box-shadow: 0 0 10px var(--success);
+        }
+
+        .task-status.in-progress {
+            background: var(--warning);
+            box-shadow: 0 0 10px var(--warning);
+        }
+
+        .task-status.pending {
+            background: var(--pending);
+        }
+
+        .task-content {
+            flex: 1;
+        }
+
+        .task-title {
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .task-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .task-tag {
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: var(--accent-dim);
+            color: var(--accent);
+        }
+
+        .task-tag.research { background: #1e3a5f; color: #3b82f6; }
+        .task-tag.content { background: #14532d; color: #22c55e; }
+        .task-tag.access { background: #78350f; color: #f59e0b; }
+        .task-tag.strategy { background: #4c1d95; color: #a78bfa; }
+        .task-tag.system { background: #1f2937; color: #9ca3af; }
+
+        .task-link {
+            font-size: 12px;
+            color: var(--accent);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .task:hover .task-link {
+            opacity: 1;
+        }
+
+        .deliverables {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .deliverable {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .deliverable:hover {
+            background: var(--surface-hover);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .deliverable-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent-dim);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .deliverable-info {
+            flex: 1;
+        }
+
+        .deliverable-name {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .deliverable-type {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .notes {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .notes p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .notes p:last-child {
+            margin-bottom: 0;
+        }
+
+        .notes strong {
+            color: var(--text);
+        }
+
+        .notes ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .notes li {
+            margin-bottom: 5px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        .category-header {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .category-header.hidden {
+            display: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Modal styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--text);
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .modal-body p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        .modal-body strong {
+            color: var(--text);
+        }
+
+        .modal-body ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .modal-body li {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .modal-actions {
+            padding: 15px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+
+        .btn-secondary {
+            background: var(--surface-hover);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .status-badge.done {
+            background: var(--success-dim);
+            color: var(--success);
+        }
+
+        .status-badge.pending {
+            background: #374151;
+            color: var(--pending);
+        }
+
+        /* Tag Filter Styles */
+        .tag-filters {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tag-filter {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            transition: all 0.2s;
+        }
+
+        .tag-filter:hover {
+            border-color: var(--accent);
+        }
+
+        .tag-filter.active {
+            border-color: transparent;
+        }
+
+        .tag-filter[data-tag="research"] { color: #3b82f6; }
+        .tag-filter[data-tag="research"].active { background: #1e3a5f; border-color: #3b82f6; }
+        .tag-filter[data-tag="content"] { color: #22c55e; }
+        .tag-filter[data-tag="content"].active { background: #14532d; border-color: #22c55e; }
+        .tag-filter[data-tag="access"] { color: #f59e0b; }
+        .tag-filter[data-tag="access"].active { background: #78350f; border-color: #f59e0b; }
+        .tag-filter[data-tag="strategy"] { color: #a78bfa; }
+        .tag-filter[data-tag="strategy"].active { background: #4c1d95; border-color: #a78bfa; }
+        .tag-filter[data-tag="system"] { color: #9ca3af; }
+        .tag-filter[data-tag="system"].active { background: #1f2937; border-color: #9ca3af; }
+
+        /* Meeting Notes Styles */
+        .meeting-notes {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .meeting-notes-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .meeting-notes-header:hover {
+            background: var(--surface-hover);
+        }
+
+        .meeting-notes-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .meeting-notes-meta {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .meeting-notes-content {
+            display: none;
+        }
+
+        .meeting-notes-content.expanded {
+            display: block;
+        }
+
+        .meeting-entry {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .meeting-entry:last-child {
+            border-bottom: none;
+        }
+
+        .meeting-entry-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .meeting-entry-title {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .meeting-entry-date {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .meeting-entry-attendees {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .meeting-entry-summary {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .meeting-entry-actions {
+            background: var(--bg);
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .meeting-entry-actions h5 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .meeting-entry-actions ul {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .meeting-entry-actions li {
+            margin-bottom: 4px;
+        }
+
+        .expand-icon {
+            transition: transform 0.2s;
+        }
+
+        .meeting-notes.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Timestamp styles */
+        .section-timestamp {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+
+        .header-timestamp {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* Manual checkbox toggle */
+        .task-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .task-checkbox:hover {
+            border-color: var(--accent);
+        }
+
+        .task-checkbox.checked {
+            background: var(--success);
+            border-color: var(--success);
+        }
+
+        .task-checkbox.checked::after {
+            content: '✓';
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .manual-mode .task-checkbox {
+            display: flex;
+        }
+
+        .manual-mode .task-status {
+            display: none;
+        }
+
+        /* Toggle switch for manual mode */
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 40px;
+            height: 22px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background: var(--text-muted);
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+
+        .toggle-switch.active {
+            background: var(--accent-dim);
+            border-color: var(--accent);
+        }
+
+        .toggle-switch.active::after {
+            left: 20px;
+            background: var(--accent);
+        }
+
+        /* Added timestamp for tasks */
+        .task-added {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-left: auto;
+            padding-right: 10px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="client-tag">Client Project</span>
+            <h1>U&AI Progress Tracker</h1>
+            <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 3, 2026 @ 7:45 PM</span></p>
+        </header>
+
+        <nav class="week-nav">
+            <button class="week-tab active" onclick="showWeek('week-1')">Week of Feb 1</button>
+            <button class="week-tab" onclick="showWeek('week-2')">Week of Feb 8</button>
+            <button class="week-tab" onclick="showWeek('week-3')">Week of Feb 15</button>
+        </nav>
+
+        <!-- Week 1: Feb 1 -->
+        <div id="week-1" class="week-content active">
+            <div class="week-header">
+                <div>
+                    <h2 class="week-title">Week 1: Discovery & Foundation</h2>
+                    <p class="week-dates">February 1 - 7, 2026</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 47%"></div>
+            </div>
+
+            <div class="stats">
+                <div class="stat" onclick="filterTasks('done')" data-filter="done">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">In Progress</div>
+                </div>
+                <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">Tasks <span class="section-timestamp">• Updated 7:45 PM</span></h3>
+                    <div class="mode-toggle">
+                        <span>Manual check</span>
+                        <div class="toggle-switch" id="manual-toggle" onclick="toggleManualMode()"></div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span class="filter-info" id="filter-info" onclick="clearAllFilters()" style="display: none;">Clear filter</span>
+                </div>
+
+                <div class="tag-filters">
+                    <span class="tag-filter" data-tag="research" onclick="filterByTag('research')">Research</span>
+                    <span class="tag-filter" data-tag="content" onclick="filterByTag('content')">Content</span>
+                    <span class="tag-filter" data-tag="access" onclick="filterByTag('access')">Access</span>
+                    <span class="tag-filter" data-tag="strategy" onclick="filterByTag('strategy')">Strategy</span>
+                    <span class="tag-filter" data-tag="system" onclick="filterByTag('system')">System</span>
+                </div>
+
+                <p class="category-header" data-category="research">Research & Analysis</p>
+                <div class="task-list">
+                    <div class="task" data-status="done" data-id="brand-audit" onclick="handleTaskClick(event, 'brand-audit')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Strategic Brand Audit</div>
+                            <div class="task-meta">Completed Jan 26 • Positioning, messaging, gaps identified</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                        <span class="task-added">Added Jan 26</span>
+                        <span class="task-link">View →</span>
+                    </div>
+                    <div class="task" data-status="done" data-id="competitive" onclick="handleTaskClick(event, 'competitive')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Competitive Landscape Analysis</div>
+                            <div class="task-meta">Completed Feb 1 • 6 competitors profiled, positioning gap identified</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">View →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="video-analytics" onclick="handleTaskClick(event, 'video-analytics')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Video Analytics Review</div>
+                            <div class="task-meta">Need access • Performance data on existing videos</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="distribution" onclick="handleTaskClick(event, 'distribution')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Distribution Mapping</div>
+                            <div class="task-meta">Pending • Where is content currently being served?</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header" data-category="content">Content & Systems</p>
+                <div class="task-list">
+                    <div class="task" data-status="done" data-id="newsletter-workflow" onclick="handleTaskClick(event, 'newsletter-workflow')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Newsletter Workflow Setup</div>
+                            <div class="task-meta">Completed Feb 1 • Sources, templates, brand voice</div>
+                        </div>
+                        <span class="task-tag system">System</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">View →</span>
+                    </div>
+                    <div class="task" data-status="done" data-id="first-newsletter" onclick="handleTaskClick(event, 'first-newsletter')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">First Newsletter Draft</div>
+                            <div class="task-meta">Completed Feb 1 • Week of Feb 1 digest</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Open →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="video-assets" onclick="handleTaskClick(event, 'video-assets')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Get Yarden/Eden Video Assets</div>
+                            <div class="task-meta">Pending • Existing videos to repurpose</div>
+                        </div>
+                        <span class="task-tag access">Access</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="content-calendar" onclick="handleTaskClick(event, 'content-calendar')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Content Calendar from Existing Assets</div>
+                            <div class="task-meta">Blocked • Waiting on video assets</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header" data-category="strategy">Strategy & Planning</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending" data-id="channel-positioning" onclick="handleTaskClick(event, 'channel-positioning')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Channel Positioning Strategy</div>
+                            <div class="task-meta">Pending • What each platform is for</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="newsletter-strategy" onclick="handleTaskClick(event, 'newsletter-strategy')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Newsletter Strategy (350 subscribers)</div>
+                            <div class="task-meta">Pending • Engagement plan for existing list</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header" data-category="access">Access & Tools</p>
+                <div class="task-list">
+                    <div class="task" data-status="done" data-id="platform-logins" onclick="handleTaskClick(event, 'platform-logins')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Get Platform Logins</div>
+                            <div class="task-meta">Completed Feb 3 • Got Google Ads, Analytics access</div>
+                        </div>
+                        <span class="task-tag access">Access</span>
+                        <span class="task-added">Added Feb 1</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="done" data-id="tool-stack" onclick="handleTaskClick(event, 'tool-stack')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Multi-Platform Publishing Tool Stack</div>
+                            <div class="task-meta">Completed Feb 3 • Buffer + Notion + CapCut + Canva recommended</div>
+                        </div>
+                        <span class="task-tag system">System</span>
+                        <span class="task-added">Added Feb 2</span>
+                        <span class="task-link">View →</span>
+                    </div>
+                </div>
+
+                <p class="category-header" data-category="paid">Paid Media</p>
+                <div class="task-list">
+                    <div class="task" data-status="in-progress" data-id="google-ads-audit" onclick="handleTaskClick(event, 'google-ads-audit')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status in-progress"></div>
+                        <div class="task-content">
+                            <div class="task-title">Google Ads Audit & Restructure</div>
+                            <div class="task-meta">In progress • Only search running, need video campaigns</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="meta-ads-access" onclick="handleTaskClick(event, 'meta-ads-access')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Get Meta Ads Access</div>
+                            <div class="task-meta">Pending • Need to check if account exists</div>
+                        </div>
+                        <span class="task-tag access">Access</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="youtube-campaign" onclick="handleTaskClick(event, 'youtube-campaign')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Set Up YouTube/Shorts Video Campaign</div>
+                            <div class="task-meta">Pending • Diversify from search-only</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="ad-restructure" onclick="handleTaskClick(event, 'ad-restructure')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Restructure Ad Groups</div>
+                            <div class="task-meta">Pending • Currently only 1 ad group, need multiple</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">Deliverables</h3>
+                </div>
+                <div class="deliverables">
+                    <div class="deliverable" onclick="openDeliverable('../Reports/U&AI-Strategic-Audit.html')">
+                        <div class="deliverable-icon">📊</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Strategic Audit Report</div>
+                            <div class="deliverable-type">HTML Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/competitive-landscape.html')">
+                        <div class="deliverable-icon">🏁</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Competitive Landscape</div>
+                            <div class="deliverable-type">HTML Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/growth-opportunities.html')">
+                        <div class="deliverable-icon">🚀</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Growth Opportunities</div>
+                            <div class="deliverable-type">HTML Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/brand-voice.html')">
+                        <div class="deliverable-icon">🎯</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Brand Voice Guide</div>
+                            <div class="deliverable-type">HTML Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/tool-stack-recommendations.html')">
+                        <div class="deliverable-icon">🛠️</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Tool Stack</div>
+                            <div class="deliverable-type">Recommendations • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Newsletters/2026/02/2026-02-01-weekly-digest.html')">
+                        <div class="deliverable-icon">📰</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Feb 1 Newsletter</div>
+                            <div class="deliverable-type">Weekly Digest • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/brand-voice.html')">
+                        <div class="deliverable-icon">🎯</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Brand Voice Guide</div>
+                            <div class="deliverable-type">HTML Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/growth-opportunities.html')">
+                        <div class="deliverable-icon">🚀</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Growth Opportunities</div>
+                            <div class="deliverable-type">HTML Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/newsletter-workflow.html')">
+                        <div class="deliverable-icon">⚙️</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Newsletter Workflow</div>
+                            <div class="deliverable-type">System Doc • Complete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meeting-notes" id="meeting-notes">
+                <div class="meeting-notes-header" onclick="toggleMeetingNotes()">
+                    <span class="meeting-notes-title">Meeting Notes</span>
+                    <span class="meeting-notes-meta">Last updated: Feb 2, 2026 <span class="expand-icon">▼</span></span>
+                </div>
+                <div class="meeting-notes-content" id="meeting-notes-content">
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">Weekly Sync - First Meeting</span>
+                            <span class="meeting-entry-date">February 2, 2026</span>
+                        </div>
+                        <div class="meeting-entry-attendees">Attendees: Joshua (CMO), Ethan (CTO) | Absent: Yarden (sick)</div>
+                        <div class="meeting-entry-summary">
+                            <p><strong>Business updates:</strong> 17 clients total, 2 new this week ($1,500/mo + $50/mo). Conference lead signing today. Orthodontist referral signed.</p>
+                            <p><strong>Tech projects:</strong> Graph generator 1 day away. Prototyping: HARO-style journalist queries, AI interview chat, auto domain purchase + site deployment.</p>
+                            <p><strong>Key insights:</strong> Lead quality from ads is poor (80%+ unqualified). Client just closed deal from ChatGPT referral. Want to showcase real-time wins (text notification style content).</p>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>Action Items</h5>
+                            <ul>
+                                <li>Get all platform logins (social, analytics, email)</li>
+                                <li>Get video assets from Yarden/Eden</li>
+                                <li>Set up competitor monitoring</li>
+                                <li>Build content calendar</li>
+                                <li>Develop strategy for 350 subscribers</li>
+                                <li>Look into showcasing real-time client wins</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" style="margin-top: 30px;">
+                <div class="section-header">
+                    <h3 class="section-title">Context & Key Insights</h3>
+                </div>
+                <div class="notes">
+                    <p><strong>Positioning:</strong> U&AI is the "voice of reason" for AI to their clients (often boomers/Gen X who don't keep up with AI news).</p>
+                    <p><strong>Newsletter:</strong> ~350 subscribers. Workflow built to source from The Artificial Intelligence Show (weekly) + AI Daily Brief (daily).</p>
+                    <p><strong>Key gap:</strong> Selling AI visibility while having minimal social presence themselves. BRIKMAN creative heritage is under-leveraged.</p>
+                    <p><strong>Competitive finding:</strong> No one combines creative storytelling + AI visibility. That's U&AI's white space.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 2: Feb 8 -->
+        <div id="week-2" class="week-content">
+            <div class="week-header">
+                <div>
+                    <h2 class="week-title">Week 2: Content Rollout</h2>
+                    <p class="week-dates">February 8 - 14, 2026</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+
+            <div class="empty-state">
+                <p>Tasks for this week will be populated after Week 1 foundations are in place.</p>
+                <p style="margin-top: 10px; font-size: 13px;">Expected: Content calendar execution, first social posts, newsletter #2</p>
+            </div>
+        </div>
+
+        <!-- Week 3: Feb 15 -->
+        <div id="week-3" class="week-content">
+            <div class="week-header">
+                <div>
+                    <h2 class="week-title">Week 3: TBD</h2>
+                    <p class="week-dates">February 15 - 21, 2026</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+
+            <div class="empty-state">
+                <p>Planning in progress.</p>
+            </div>
+        </div>
+
+        <footer>
+            <span>Claude Agency • U&AI Project</span>
+            <span>Last updated: February 3, 2026 @ 10:30 AM</span>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Task Details</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content -->
+            </div>
+            <div class="modal-actions" id="modal-actions">
+                <!-- Dynamic actions -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Task data
+        const taskDetails = {
+            'brand-audit': {
+                title: 'Strategic Brand Audit',
+                status: 'done',
+                content: `
+                    <span class="status-badge done">Completed</span>
+                    <p><strong>Completed:</strong> January 26, 2026</p>
+                    <p><strong>Summary:</strong> Comprehensive analysis of U&AI's brand positioning, messaging, and market presence.</p>
+                    <p><strong>Key Findings:</strong></p>
+                    <ul>
+                        <li>Positioning clarity: 7/10</li>
+                        <li>Social proof: 4/10 (major gap)</li>
+                        <li>Content presence: 3/10</li>
+                        <li>Founder credibility: 8/10 (under-leveraged)</li>
+                    </ul>
+                    <p><strong>Main Insight:</strong> U&AI sells AI visibility but has minimal social presence themselves. Creative agency heritage (BRIKMAN) is hidden.</p>
+                `,
+                deliverable: '../Reports/U&AI-Strategic-Audit.html'
+            },
+            'competitive': {
+                title: 'Competitive Landscape Analysis',
+                status: 'done',
+                content: `
+                    <span class="status-badge done">Completed</span>
+                    <p><strong>Completed:</strong> February 1, 2026</p>
+                    <p><strong>Summary:</strong> Analysis of 7 competitors in the AI visibility/GEO space plus adjacent threats.</p>
+                    <p><strong>Key Players Profiled:</strong></p>
+                    <ul>
+                        <li>Profound (software, G2 leader)</li>
+                        <li>Bluefish AI (enterprise platform)</li>
+                        <li>WebFX ($3K/mo, full-service)</li>
+                        <li>First Page Sage ($8-12K/mo, pioneer)</li>
+                        <li>Rock The Rankings (B2B SaaS focus)</li>
+                        <li>Goodie AI (broadest coverage)</li>
+                        <li>Otterly.AI (freemium monitoring)</li>
+                    </ul>
+                    <p><strong>Gap Identified:</strong> No one combines creative storytelling + AI visibility execution. That's U&AI's opportunity.</p>
+                `,
+                deliverable: '../Reports/competitive-landscape.html'
+            },
+            'newsletter-workflow': {
+                title: 'Newsletter Workflow Setup',
+                status: 'done',
+                content: `
+                    <span class="status-badge done">Completed</span>
+                    <p><strong>Completed:</strong> February 1, 2026</p>
+                    <p><strong>What was built:</strong></p>
+                    <ul>
+                        <li>Source registry (AI Daily Brief, Artificial Intelligence Show)</li>
+                        <li>Content log for tracking what's been pulled</li>
+                        <li>Newsletter templates (Markdown + HTML)</li>
+                        <li>Brand voice guidelines for U&AI</li>
+                    </ul>
+                    <p><strong>Location:</strong> /Workflows/Newsletter/</p>
+                    <p><strong>Output:</strong> Weekly newsletter saved to client's Newsletters folder with full source citations.</p>
+                `,
+                deliverable: '../Reports/newsletter-workflow.html'
+            },
+            'video-analytics': {
+                title: 'Video Analytics Review',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Blocked by:</strong> Need platform access</p>
+                    <p><strong>What we need:</strong></p>
+                    <ul>
+                        <li>YouTube analytics (if they have a channel)</li>
+                        <li>Social media video performance data</li>
+                        <li>View counts, engagement rates, retention</li>
+                        <li>Top performing content themes</li>
+                    </ul>
+                    <p><strong>Action:</strong> Ask Yarden/Eden for analytics access in meeting.</p>
+                `,
+                deliverable: null
+            },
+            'distribution': {
+                title: 'Distribution Mapping',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Goal:</strong> Understand where U&AI content currently lives and performs.</p>
+                    <p><strong>Questions to answer:</strong></p>
+                    <ul>
+                        <li>What platforms are they active on?</li>
+                        <li>Where does their audience engage most?</li>
+                        <li>What's their posting cadence?</li>
+                        <li>Are they cross-posting or creating native content?</li>
+                    </ul>
+                    <p><strong>Depends on:</strong> Platform access and video assets.</p>
+                `,
+                deliverable: null
+            },
+            'video-assets': {
+                title: 'Get Yarden/Eden Video Assets',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>What we need:</strong></p>
+                    <ul>
+                        <li>All existing video content from Yarden and Eden</li>
+                        <li>Raw footage if available</li>
+                        <li>Any edited clips or highlights</li>
+                        <li>Google Drive or Dropbox link preferred</li>
+                    </ul>
+                    <p><strong>Purpose:</strong> Repurpose existing content into social media calendar. Stitch clips together for new content.</p>
+                    <p><strong>Action:</strong> Request in today's meeting.</p>
+                `,
+                deliverable: null
+            },
+            'content-calendar': {
+                title: 'Content Calendar from Existing Assets',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Blocked by:</strong> Waiting on video assets from Yarden/Eden</p>
+                    <p><strong>Plan:</strong></p>
+                    <ul>
+                        <li>Review all existing video content</li>
+                        <li>Identify clips that can be repurposed</li>
+                        <li>Create 4-week content calendar</li>
+                        <li>Map content to appropriate platforms</li>
+                    </ul>
+                    <p><strong>Goal:</strong> Quick wins from existing content before creating new.</p>
+                `,
+                deliverable: null
+            },
+            'channel-positioning': {
+                title: 'Channel Positioning Strategy',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Goal:</strong> Define what each platform is for and what content goes where.</p>
+                    <p><strong>Platforms to cover:</strong></p>
+                    <ul>
+                        <li>LinkedIn — B2B credibility, thought leadership</li>
+                        <li>Instagram — Brand building, visual storytelling</li>
+                        <li>TikTok — Discovery, reach younger audience</li>
+                        <li>Newsletter — Nurture existing 350 subscribers</li>
+                        <li>Podcast (guest appearances) — Authority building</li>
+                    </ul>
+                    <p><strong>Output:</strong> Clear guidelines for content type by platform.</p>
+                `,
+                deliverable: null
+            },
+            'newsletter-strategy': {
+                title: 'Newsletter Strategy (350 subscribers)',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Current state:</strong> ~350 subscribers, existing list</p>
+                    <p><strong>Strategy to develop:</strong></p>
+                    <ul>
+                        <li>Re-engagement campaign for dormant subscribers</li>
+                        <li>Content format and cadence</li>
+                        <li>Growth tactics to expand list</li>
+                        <li>Integration with weekly AI digest workflow</li>
+                    </ul>
+                    <p><strong>Note:</strong> Newsletter workflow already built. Now need engagement strategy.</p>
+                `,
+                deliverable: null
+            },
+            'platform-logins': {
+                title: 'Get Platform Logins',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Access needed:</strong></p>
+                    <ul>
+                        <li>Social media accounts (LinkedIn, Instagram, TikTok)</li>
+                        <li>Analytics platforms (Google Analytics, social insights)</li>
+                        <li>Email marketing platform (for newsletter)</li>
+                        <li>Any existing content management tools</li>
+                    </ul>
+                    <p><strong>Action:</strong> Request in today's meeting. Prefer viewer/editor access, not owner.</p>
+                `,
+                deliverable: null
+            },
+            'tool-stack': {
+                title: 'Multi-Platform Publishing Tool Stack',
+                status: 'done',
+                content: `
+                    <span class="status-badge done">Completed</span>
+                    <p><strong>Completed:</strong> February 3, 2026</p>
+                    <p><strong>Recommended Stack:</strong></p>
+                    <ul>
+                        <li>Buffer ($6/mo) — scheduling</li>
+                        <li>Notion (free) — content calendar</li>
+                        <li>CapCut (free) — video editing</li>
+                        <li>Canva ($15/mo) — graphics</li>
+                    </ul>
+                    <p><strong>Total:</strong> ~$21-36/month</p>
+                `,
+                deliverable: '../Reports/tool-stack-recommendations.html'
+            },
+            'platform-logins': {
+                title: 'Get Platform Logins',
+                status: 'done',
+                content: `
+                    <span class="status-badge done">Completed</span>
+                    <p><strong>Completed:</strong> February 3, 2026</p>
+                    <p><strong>Access obtained:</strong></p>
+                    <ul>
+                        <li>Google Ads ✓</li>
+                        <li>Google Analytics ✓</li>
+                    </ul>
+                    <p><strong>Still needed:</strong></p>
+                    <ul>
+                        <li>Meta Ads / Business Manager</li>
+                        <li>Social media accounts (direct access)</li>
+                        <li>Email marketing platform</li>
+                    </ul>
+                `,
+                deliverable: null
+            },
+            'google-ads-audit': {
+                title: 'Google Ads Audit & Restructure',
+                status: 'in-progress',
+                content: `
+                    <span class="status-badge" style="background: var(--warning-dim); color: var(--warning);">In Progress</span>
+                    <p><strong>Started:</strong> February 3, 2026</p>
+                    <p><strong>Current State:</strong></p>
+                    <ul>
+                        <li>~$5K spent since October on search only</li>
+                        <li>Only 1 campaign with 1 ad group</li>
+                        <li>No video campaigns despite having assets</li>
+                        <li>Impressions trending up (positive)</li>
+                        <li>Lead quality concerns (80%+ unqualified)</li>
+                    </ul>
+                    <p><strong>Questions to Answer:</strong></p>
+                    <ul>
+                        <li>Why only search? Strategic or just what they started with?</li>
+                        <li>What's the lead quality breakdown by source?</li>
+                        <li>Is there pixel tracking for retargeting?</li>
+                    </ul>
+                `,
+                deliverable: null
+            },
+            'meta-ads-access': {
+                title: 'Get Meta Ads Access',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Goal:</strong> Determine if Meta Ads account exists and get access.</p>
+                    <p><strong>Need to check:</strong></p>
+                    <ul>
+                        <li>Does Meta Business Manager exist?</li>
+                        <li>Are they running any Meta/Instagram ads?</li>
+                        <li>Is there a pixel installed on the website?</li>
+                    </ul>
+                    <p><strong>Action:</strong> Ask Ethan/Yarden about Meta setup.</p>
+                `,
+                deliverable: null
+            },
+            'youtube-campaign': {
+                title: 'Set Up YouTube/Shorts Video Campaign',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Goal:</strong> Diversify ad spend from search-only to include video.</p>
+                    <p><strong>Opportunity:</strong></p>
+                    <ul>
+                        <li>They have video content from BRIKMAN heritage</li>
+                        <li>YouTube/Shorts can reach new audiences</li>
+                        <li>Video ads typically have higher engagement</li>
+                    </ul>
+                    <p><strong>Depends on:</strong> Reviewing existing video assets, Google Ads audit completion.</p>
+                `,
+                deliverable: null
+            },
+            'ad-restructure': {
+                title: 'Restructure Ad Groups',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Current problem:</strong> Only 1 ad group = limited optimization.</p>
+                    <p><strong>Proposed structure:</strong></p>
+                    <ul>
+                        <li>Ad Group 1: Brand terms</li>
+                        <li>Ad Group 2: Service terms (AI visibility, GEO, etc.)</li>
+                        <li>Ad Group 3: Problem-aware terms</li>
+                        <li>Ad Group 4: Video campaigns</li>
+                    </ul>
+                    <p><strong>Benefit:</strong> Better targeting, clearer performance data, easier optimization.</p>
+                `,
+                deliverable: null
+            },
+            'first-newsletter': {
+                title: 'First Newsletter Draft',
+                status: 'done',
+                content: `
+                    <span class="status-badge done">Completed</span>
+                    <p><strong>Completed:</strong> February 1, 2026</p>
+                    <p><strong>Week of:</strong> February 1, 2026</p>
+                    <p><strong>Topics covered:</strong></p>
+                    <ul>
+                        <li>Claude Cowork announcement</li>
+                        <li>ChatGPT ads testing</li>
+                        <li>AI chatbot market share shifts</li>
+                        <li>3x ROI from deep AI integration</li>
+                    </ul>
+                `,
+                deliverable: '../Newsletters/2026/02/2026-02-01-weekly-digest.html'
+            }
+        };
+
+        let currentStatusFilter = 'all';
+        let currentTagFilter = 'all';
+
+        function showWeek(weekId) {
+            document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
+            document.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(weekId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function filterTasks(status) {
+            const stats = document.querySelectorAll('.stat');
+            const filterInfo = document.getElementById('filter-info');
+
+            // Toggle off if clicking same filter
+            if (currentStatusFilter === status && status !== 'all') {
+                status = 'all';
+            }
+            currentStatusFilter = status;
+
+            // Update stat active state
+            stats.forEach(s => {
+                if (s.dataset.filter === status) {
+                    s.classList.add('active');
+                } else {
+                    s.classList.remove('active');
+                }
+            });
+
+            // Update filter info
+            updateFilterInfo();
+
+            // Apply filters
+            applyFilters();
+        }
+
+        function filterByTag(tag) {
+            const tagFilters = document.querySelectorAll('.tag-filter');
+
+            // Toggle off if clicking same tag
+            if (currentTagFilter === tag) {
+                currentTagFilter = 'all';
+            } else {
+                currentTagFilter = tag;
+            }
+
+            // Update tag filter active state
+            tagFilters.forEach(t => {
+                if (t.dataset.tag === currentTagFilter) {
+                    t.classList.add('active');
+                } else {
+                    t.classList.remove('active');
+                }
+            });
+
+            // Update filter info
+            updateFilterInfo();
+
+            // Apply filters
+            applyFilters();
+        }
+
+        function clearAllFilters() {
+            currentStatusFilter = 'all';
+            currentTagFilter = 'all';
+
+            document.querySelectorAll('.stat').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.tag-filter').forEach(t => t.classList.remove('active'));
+
+            updateFilterInfo();
+            applyFilters();
+        }
+
+        function updateFilterInfo() {
+            const filterInfo = document.getElementById('filter-info');
+            const filters = [];
+
+            if (currentStatusFilter !== 'all') filters.push(currentStatusFilter);
+            if (currentTagFilter !== 'all') filters.push(currentTagFilter);
+
+            if (filters.length === 0) {
+                filterInfo.style.display = 'none';
+            } else {
+                filterInfo.style.display = 'block';
+                filterInfo.textContent = `Showing: ${filters.join(' + ')} • Click to clear`;
+            }
+        }
+
+        function applyFilters() {
+            const tasks = document.querySelectorAll('.task');
+            const categories = document.querySelectorAll('.category-header');
+
+            tasks.forEach(task => {
+                const statusMatch = currentStatusFilter === 'all' || task.dataset.status === currentStatusFilter;
+                const taskTag = task.querySelector('.task-tag');
+                const tagMatch = currentTagFilter === 'all' || (taskTag && taskTag.classList.contains(currentTagFilter));
+
+                if (statusMatch && tagMatch) {
+                    task.classList.remove('hidden');
+                } else {
+                    task.classList.add('hidden');
+                }
+            });
+
+            // Hide empty categories
+            categories.forEach(cat => {
+                const nextList = cat.nextElementSibling;
+                if (nextList) {
+                    const visibleTasks = nextList.querySelectorAll('.task:not(.hidden)');
+                    cat.classList.toggle('hidden', visibleTasks.length === 0);
+                }
+            });
+        }
+
+        function toggleMeetingNotes() {
+            const meetingNotes = document.getElementById('meeting-notes');
+            const content = document.getElementById('meeting-notes-content');
+            meetingNotes.classList.toggle('expanded');
+            content.classList.toggle('expanded');
+        }
+
+        function openTaskModal(taskId) {
+            const task = taskDetails[taskId];
+            if (!task) return;
+
+            document.getElementById('modal-title').textContent = task.title;
+            document.getElementById('modal-body').innerHTML = task.content;
+
+            let actions = '';
+            if (task.deliverable) {
+                actions = `<button class="btn btn-primary" onclick="openDeliverable('${task.deliverable}')">Open Deliverable</button>`;
+            }
+            actions += `<button class="btn btn-secondary" onclick="closeModal()">Close</button>`;
+            document.getElementById('modal-actions').innerHTML = actions;
+
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        function openDeliverable(path) {
+            window.open(path, '_blank');
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== document.getElementById('modal-overlay')) return;
+            document.getElementById('modal-overlay').classList.remove('active');
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Manual mode toggle
+        let manualMode = false;
+
+        function toggleManualMode() {
+            manualMode = !manualMode;
+            const toggle = document.getElementById('manual-toggle');
+            const container = document.querySelector('.container');
+
+            toggle.classList.toggle('active', manualMode);
+            container.classList.toggle('manual-mode', manualMode);
+        }
+
+        function toggleTaskCheck(event, checkbox) {
+            if (!manualMode) return;
+            event.stopPropagation();
+
+            checkbox.classList.toggle('checked');
+            const task = checkbox.closest('.task');
+            const status = task.querySelector('.task-status');
+
+            if (checkbox.classList.contains('checked')) {
+                task.dataset.status = 'done';
+                status.className = 'task-status done';
+            } else {
+                task.dataset.status = 'pending';
+                status.className = 'task-status pending';
+            }
+
+            updateStats();
+        }
+
+        function handleTaskClick(event, taskId) {
+            if (manualMode && event.target.classList.contains('task-checkbox')) {
+                return; // Let checkbox handler deal with it
+            }
+
+            // Check if task has a direct deliverable link
+            const task = taskDetails[taskId];
+            if (task) {
+                openTaskModal(taskId);
+            }
+        }
+
+        function updateStats() {
+            const tasks = document.querySelectorAll('#week-1 .task');
+            let done = 0, inProgress = 0, pending = 0;
+
+            tasks.forEach(task => {
+                switch(task.dataset.status) {
+                    case 'done': done++; break;
+                    case 'in-progress': inProgress++; break;
+                    case 'pending': pending++; break;
+                }
+            });
+
+            const total = done + inProgress + pending;
+            const progress = total > 0 ? Math.round((done / total) * 100) : 0;
+
+            document.querySelector('#week-1 .stat[data-filter="done"] .stat-value').textContent = done;
+            document.querySelector('#week-1 .stat[data-filter="in-progress"] .stat-value').textContent = inProgress;
+            document.querySelector('#week-1 .stat[data-filter="pending"] .stat-value').textContent = pending;
+            document.querySelector('#week-1 .progress-fill').style.width = progress + '%';
+        }
+    </script>
+</body>
+</html>

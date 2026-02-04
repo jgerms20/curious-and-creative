@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-01-29",
+    "description": "Examples of award-winning work to learn from. What they did right, why they won."
+  },
+  "grand_prix_winners_2024": [
+    {
+      "campaign": "WoMen's Football",
+      "brand": "Orange",
+      "agency": "Marcel Paris",
+      "awards_won": [
+        "Cannes Lions Grand Prix - Film",
+        "Cannes Lions Grand Prix - Social & Influencer",
+        "D&AD Black Pencil - Digital & Social",
+        "Clio Grand - Film",
+        "Clio Grand - Partnerships"
+      ],
+      "the_idea": "Showed footage of what appeared to be men's football team performing impressive moves, then revealed through VFX it was actually the French women's national team - exposing gender bias in how we perceive athletic excellence.",
+      "why_it_won": {
+        "insight_strength": "Tapped into unconscious bias that exists even in supportive audiences",
+        "craft_excellence": "VFX seamlessly replaced players' faces without audience noticing",
+        "cultural_impact": "Started global conversation about gender bias in sports",
+        "simple_idea": "One clear concept that anyone could understand immediately",
+        "proof_of_work": "Went beyond advertising to become educational tool"
+      },
+      "what_to_learn": [
+        "Great ideas often expose what people don't realize about themselves",
+        "The reveal/twist structure is powerful when executed well",
+        "Work that changes behavior/perception > work that just entertains",
+        "Production craft must serve the idea, not overshadow it"
+      ],
+      "category_fit": ["Film", "Social", "Partnerships", "Glass/Gender"]
+    },
+    {
+      "campaign": "All The Ads",
+      "brand": "DoorDash",
+      "agency": "Wieden+Kennedy",
+      "awards_won": [
+        "Cannes Lions Titanium Grand Prix",
+        "Cannes Lions Grand Prix - Direct"
+      ],
+      "the_idea": "During the Super Bowl, DoorDash ran a promotion where one person could win every single product advertised during the entire game by entering a code made up of all the other advertisers' promo codes.",
+      "why_it_won": {
+        "audacity": "Hijacked competitors' Super Bowl moments",
+        "simplicity": "Easy to explain, easy to participate",
+        "brand_utility": "Actually gave away $3M+ in products",
+        "cultural_ownership": "Owned the Super Bowl conversation without biggest spend",
+        "earned_media": "Massive press coverage about the mechanic itself"
+      },
+      "what_to_learn": [
+        "Titanium rewards work that's genuinely provocative/new",
+        "The idea itself became the story (meta-advertising)",
+        "Brand utility > brand messaging",
+        "Sometimes the best Super Bowl ad isn't an ad"
+      ],
+      "category_fit": ["Titanium", "Direct", "Media", "PR"]
+    },
+    {
+      "campaign": "The First Edible Mascot",
+      "brand": "Pop-Tarts",
+      "agency": "Weber Shandwick",
+      "awards_won": [
+        "Cannes Lions Grand Prix - Brand Experience & Activation"
+      ],
+      "the_idea": "Created a giant edible Pop-Tart mascot that was lowered into a giant toaster at halftime of the Pop-Tarts Bowl and eaten by players/fans after the game.",
+      "why_it_won": {
+        "unexpected": "No one had ever made an edible mascot before",
+        "participatory": "People actually ate the mascot",
+        "shareable": "Perfect for social - visually absurd and memorable",
+        "brand_fit": "Perfectly matched Pop-Tarts' playful personality",
+        "cultural_moment": "Created a moment at a major sports event"
+      },
+      "what_to_learn": [
+        "Experiential judges want genuine participation, not just installations",
+        "First-ever claims are powerful if legitimate",
+        "Match the activation to the brand personality",
+        "Create moments that people naturally want to share"
+      ],
+      "category_fit": ["Brand Experience", "Experiential", "PR", "Social"]
+    },
+    {
+      "campaign": "WhereToSettle",
+      "brand": "Mastercard",
+      "agency": "McCann Poland",
+      "awards_won": [
+        "D&AD Black Pencil - Experiential",
+        "Cannes Lions Grand Prix - Creative Data",
+        "Clio Grand - Real-Time",
+        "Clio Grand - Creative Use of Data"
+      ],
+      "the_idea": "Created a data platform that analyzed 17 different factors to help Ukrainian refugees find the best place to settle in Poland based on their skills, needs, and available opportunities.",
+      "why_it_won": {
+        "genuine_utility": "Solved a real, urgent human problem",
+        "smart_data_use": "Data used for good, not just targeting",
+        "scalable_impact": "Helped 500K+ people make life decisions",
+        "brand_purpose": "Mastercard's 'priceless' positioning made tangible",
+        "proof_of_work": "Real outcomes, real people helped"
+      },
+      "what_to_learn": [
+        "Data awards want to see data used creatively, not just analytically",
+        "Purpose work wins when impact is real and measurable",
+        "Brand utility > brand advertising",
+        "Solve actual problems, not manufactured ones"
+      ],
+      "category_fit": ["Creative Data", "Innovation", "Real-Time", "Social Good"]
+    },
+    {
+      "campaign": "Voice 2 Diabetes",
+      "brand": "Klick Health",
+      "agency": "Klick Health",
+      "awards_won": [
+        "Cannes Lions Grand Prix - Innovation"
+      ],
+      "the_idea": "Developed AI technology that can detect Type 2 diabetes through voice analysis with 89% accuracy, making screening accessible via smartphone.",
+      "why_it_won": {
+        "genuine_breakthrough": "Actually invented something new and useful",
+        "accessibility": "Made health screening available to anyone with a phone",
+        "proof_of_concept": "89% accuracy is clinically significant",
+        "scalable_potential": "Could change how diabetes is detected globally",
+        "health_impact": "Real potential to save lives through early detection"
+      },
+      "what_to_learn": [
+        "Innovation judges want genuine breakthroughs, not feature tweaks",
+        "Health/pharma work wins when it actually helps patients",
+        "Prove it works with real data",
+        "Show scalable potential, not just proof of concept"
+      ],
+      "category_fit": ["Innovation", "Health", "Technology"]
+    },
+    {
+      "campaign": "The Misheard Version",
+      "brand": "Specsavers",
+      "agency": "Golin",
+      "awards_won": [
+        "Cannes Lions Grand Prix - Radio & Audio",
+        "Cannes Lions Grand Prix - PR"
+      ],
+      "the_idea": "To highlight hearing loss, Specsavers had Rick Astley re-record 'Never Gonna Give You Up' as people with hearing loss mishear it, turning viral 'rickrolling' into an awareness campaign.",
+      "why_it_won": {
+        "cultural_hijack": "Took existing cultural phenomenon and repurposed it",
+        "authentic_insight": "Based on real misheard lyrics from people with hearing loss",
+        "earned_media": "Rick Astley participation generated massive coverage",
+        "audio_excellence": "The re-recorded song itself was the creative work",
+        "dual_purpose": "Entertainment and genuine awareness"
+      },
+      "what_to_learn": [
+        "Audio awards rarely given - this was genuinely innovative in the space",
+        "Cultural hijacks work when they add meaning, not just attention",
+        "Celebrity participation amplifies when authentic to concept",
+        "Humor + purpose can coexist"
+      ],
+      "category_fit": ["Audio", "PR", "Entertainment", "Social Good"]
+    },
+    {
+      "campaign": "Handshake Hunt",
+      "brand": "Mercado Libre",
+      "agency": "Gut Buenos Aires",
+      "awards_won": [
+        "Cannes Lions Grand Prix - Media"
+      ],
+      "the_idea": "Turned handshakes in other brands' TV commercials into QR codes that, when scanned, delivered Mercado Libre discounts - essentially hijacking competitors' media spend.",
+      "why_it_won": {
+        "media_innovation": "Used other people's ads as their media channel",
+        "interactivity": "Made passive TV viewing interactive",
+        "clever_mechanics": "Handshakes are everywhere in ads",
+        "category_disruption": "Changed how TV advertising could work",
+        "brand_fit": "Mercado Libre's logo IS a handshake"
+      },
+      "what_to_learn": [
+        "Media awards want to see channels used in genuinely new ways",
+        "Hijacking existing behavior/content can be brilliant",
+        "Connect the mechanic to something true about your brand",
+        "Interactive TV is an underexplored space"
+      ],
+      "category_fit": ["Media", "Innovation", "Digital", "Mobile"]
+    },
+    {
+      "campaign": "It Has to be Heinz",
+      "brand": "Heinz",
+      "agency": "Rethink",
+      "awards_won": [
+        "Cannes Lions Grand Prix - Creative Effectiveness",
+        "One Show Penta Pencil (5+ year partnership)"
+      ],
+      "the_idea": "A multi-year platform proving that when it comes to ketchup, consumers irrationally insist on Heinz - shown through various creative expressions including AI-generated images, restaurant swaps, and cultural moments.",
+      "why_it_won": {
+        "strategic_platform": "Not just a campaign but an ongoing brand truth",
+        "consistency": "5+ years of the same strategic direction",
+        "business_results": "Proven sales and share growth",
+        "creative_flexibility": "Platform flexed across many executions",
+        "cultural_proof": "Multiple cultural moments reinforcing the insight"
+      },
+      "what_to_learn": [
+        "Creative Effectiveness needs BOTH great creative AND proven results",
+        "Long-term platforms beat one-off campaigns",
+        "The Penta Pencil rewards client/agency partnership longevity",
+        "Strategic consistency across years is highly valued"
+      ],
+      "category_fit": ["Creative Effectiveness", "Integrated", "Film"]
+    }
+  ],
+  "patterns_across_winners": {
+    "idea_simplicity": "Every winner can be explained in one sentence",
+    "cultural_relevance": "Most winners tapped into or created cultural moments",
+    "proof_of_work": "Winners showed real impact, not just impressions",
+    "brand_fit": "Ideas matched brand personality/positioning",
+    "genuine_innovation": "Something new - not just well-executed familiar",
+    "human_insight": "Based on real human truths or behaviors",
+    "multi-category_potential": "Great work often wins across multiple categories"
+  },
+  "what_lost": {
+    "overly_complicated": "Work that needed heavy explanation",
+    "results_without_creativity": "Great numbers, boring work",
+    "creativity_without_results": "Beautiful work that didn't move business",
+    "manufactured_purpose": "Causes that felt bolted-on vs. genuine",
+    "safe_executions": "Well-made but predictable work",
+    "category_mismatch": "Good work entered in wrong categories"
+  }
+}

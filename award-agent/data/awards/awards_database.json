@@ -1,0 +1,1583 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "last_updated": "2026-01-29",
+    "total_awards": 62,
+    "notes": "Comprehensive awards database with real judging criteria, winning patterns, and category intelligence from 2024-2025 research"
+  },
+  "winning_patterns": {
+    "2024_themes": [
+      "Purpose-driven work with genuine social impact (but must have real results)",
+      "Smart use of AI and data (WhereToSettle, Voice 2 Diabetes)",
+      "Challenging bias and norms (WoMen's Football)",
+      "Humor making a comeback across categories",
+      "Brand utility over brand advertising",
+      "Real-time/reactive work showing cultural agility",
+      "Unexpected media placements (Handshake Hunt turning TV into ads)",
+      "Experiential that creates genuine participation (Pop-Tarts Edible Mascot)"
+    ],
+    "case_study_best_practices": {
+      "length": "60-90 seconds ideal, 2 minutes max",
+      "structure": ["problem", "insight", "solution", "execution", "results"],
+      "dos": [
+        "Hook judges in first 10 seconds",
+        "Keep it dirt simple - anyone should understand",
+        "Show the actual work prominently",
+        "Use specific numbers, not superlatives",
+        "Tailor story to specific category",
+        "Get outside perspective - if you worked on it, you're too close"
+      ],
+      "donts": [
+        "Use words like incredible, amazing, unprecedented",
+        "Overload with data (pick 3 top stats)",
+        "Let production overshadow the idea",
+        "Forget to update results for later shows",
+        "Treat it as an afterthought"
+      ]
+    }
+  },
+  "awards": [
+    {
+      "id": "cannes-lions",
+      "name": "Cannes Lions",
+      "organization": "Lions",
+      "website": "https://www.canneslions.com",
+      "prestige_tier": 1,
+      "prestige_notes": "The Oscars of advertising. A Grand Prix is a career-defining achievement.",
+      "description": "The most prestigious advertising awards globally. Celebrates creativity that drives business transformation.",
+      "categories": [
+        {
+          "name": "Film Lions",
+          "what_wins": "Exceptional storytelling, craft, and emotional resonance. Work that makes you feel something.",
+          "2024_winners": ["Orange WoMen's Football (Marcel)", "Sydney Opera House Play It Safe (The Monkeys)"]
+        },
+        {
+          "name": "Film Craft Lions",
+          "what_wins": "Technical excellence in direction, cinematography, editing, VFX, music, sound design.",
+          "2024_winners": ["Orange WoMen's Football - exceptional VFX revealing the twist"]
+        },
+        {
+          "name": "Outdoor Lions",
+          "what_wins": "Smart use of space and context. Work that couldn't exist anywhere else.",
+          "2024_winners": ["Pedigree Adoptable (AI-generated dogs for local shelters)", "Magnum Find Your Summer"]
+        },
+        {
+          "name": "Print & Publishing Lions",
+          "what_wins": "Visual impact, simplicity, craft. The single image that says everything.",
+          "2024_winners": ["Coca-Cola Recycle Me (crushed logo encouraging recycling)"]
+        },
+        {
+          "name": "Radio & Audio Lions",
+          "what_wins": "Sonic excellence, memorable audio craft, innovative use of sound.",
+          "2024_winners": ["Specsavers The Misheard Version"]
+        },
+        {
+          "name": "Media Lions",
+          "what_wins": "Innovative media thinking. Using channels in unexpected ways.",
+          "2024_winners": ["Mercado Libre Handshake Hunt (turned TV handshakes into QR discount codes)"]
+        },
+        {
+          "name": "PR Lions",
+          "what_wins": "Work that generates earned media through genuine newsworthiness.",
+          "2024_winners": ["Specsavers The Misheard Version (hearing loss awareness)"]
+        },
+        {
+          "name": "Digital Craft Lions",
+          "what_wins": "Technical excellence in digital design, UX, code, and interaction design."
+        },
+        {
+          "name": "Design Lions",
+          "what_wins": "Visual excellence. Design that defines or redefines brands."
+        },
+        {
+          "name": "Brand Experience & Activation Lions",
+          "what_wins": "Immersive experiences that create genuine participation and memories.",
+          "2024_winners": ["Pop-Tarts The First Edible Mascot"]
+        },
+        {
+          "name": "Creative Effectiveness Lions",
+          "what_wins": "Creativity proven to drive business results. Requires prior Cannes shortlist/win.",
+          "2024_winners": ["Heinz It Has to be Heinz (Rethink)"],
+          "special_requirements": "Must have been shortlisted or won at Cannes in previous 3 years"
+        },
+        {
+          "name": "Creative Strategy Lions",
+          "what_wins": "The idea behind the idea. Strategic thinking that redefines brands or categories."
+        },
+        {
+          "name": "Creative Data Lions",
+          "what_wins": "Data used creatively, not just analytically. Data as creative fuel.",
+          "2024_winners": ["Mastercard WhereToSettle (McCann Poland)"]
+        },
+        {
+          "name": "Creative Commerce Lions",
+          "what_wins": "Innovation at any point in the customer journey driving commercial success."
+        },
+        {
+          "name": "Creative B2B Lions",
+          "what_wins": "Creativity in business-to-business marketing that drives results."
+        },
+        {
+          "name": "Entertainment Lions",
+          "what_wins": "Branded content that people choose to watch.",
+          "2024_winners": ["WhatsApp We Are Ayenda (Afghan women's football documentary)"]
+        },
+        {
+          "name": "Entertainment Lions for Sport",
+          "what_wins": "Sports-related branded entertainment and storytelling."
+        },
+        {
+          "name": "Entertainment Lions for Gaming",
+          "what_wins": "Gaming-related creative work.",
+          "2024_winners": ["Xbox The Everyday Tactician (Football Manager player becomes real tactical advisor)"]
+        },
+        {
+          "name": "Social & Influencer Lions",
+          "what_wins": "Native social creativity. Work made for and with the platforms."
+        },
+        {
+          "name": "Direct Lions",
+          "what_wins": "Response-driven creativity that drives measurable action."
+        },
+        {
+          "name": "Innovation Lions",
+          "what_wins": "Genuine breakthrough innovation that changes what's possible.",
+          "2024_winners": ["Voice 2 Diabetes (detect diabetes through voice)"]
+        },
+        {
+          "name": "Pharma Lions",
+          "what_wins": "Creative excellence in healthcare that helps patients.",
+          "2024_winners": ["Siemens Healthineers Magnetic Stories (MRI sounds as children's audiobooks)"]
+        },
+        {
+          "name": "Health & Wellness Lions",
+          "what_wins": "Work promoting health and wellness with creativity and impact."
+        },
+        {
+          "name": "Sustainable Development Goals Lions",
+          "what_wins": "Work driving progress on UN SDGs with measurable impact."
+        },
+        {
+          "name": "Glass: The Lion for Change",
+          "what_wins": "Work challenging gender bias and inequality.",
+          "2024_winners": ["Unilever Transition Body Lotion"]
+        },
+        {
+          "name": "Titanium Lions",
+          "what_wins": "Provocative, boundary-busting work that points to a new direction for the industry.",
+          "2024_winners": ["DoorDash All The Ads (gave away everything advertised during Super Bowl)"]
+        },
+        {
+          "name": "Luxury & Lifestyle Lions",
+          "what_wins": "Creative excellence in the luxury sector rooted in craftsmanship.",
+          "notes": "New in 2024"
+        },
+        {
+          "name": "Creative Brand Lion",
+          "what_wins": "Brands using creativity strategically across their organization for sustained success.",
+          "notes": "New in 2025/2026"
+        }
+      ],
+      "eligibility": {
+        "date_range": "Work must have run between March 1 of prior year and April 15 of entry year",
+        "regions": "Global",
+        "first_time_eligible": true
+      },
+      "deadlines_2026": {
+        "entry_opens": "January 2026",
+        "early_deadline": "March 15, 2026",
+        "final_deadline": "April 9, 2026",
+        "festival_dates": "June 2026"
+      },
+      "submission_requirements": {
+        "case_study_video": {
+          "max_length": "120 seconds",
+          "ideal_length": "60-90 seconds",
+          "format": "MP4, H.264",
+          "required_for": "Most categories"
+        },
+        "written_entry": {
+          "varies_by_category": true,
+          "typical_sections": ["Background", "Describe the creative idea", "Describe the strategy", "Describe the execution", "Results"]
+        },
+        "supporting_materials": "Images, additional video, results data, URL if applicable"
+      },
+      "cost_per_entry": "$800-1500 depending on category and deadline",
+      "judging_intel": {
+        "jury_composition": "Senior creatives, CMOs, strategists from top agencies and brands globally",
+        "what_they_value": "Bravery, craft, cultural impact, fresh thinking",
+        "red_flags": "Work that feels safe, derivative, or overly complicated to explain"
+      },
+      "strategic_notes": "Most competitive but highest prestige. Enter your absolute best work. Shortlist is valuable. Consider Entertainment Lions for Sport for sports work - less competitive than main Film."
+    },
+    {
+      "id": "clio-awards",
+      "name": "Clio Awards",
+      "organization": "Clios",
+      "website": "https://clios.com",
+      "prestige_tier": 1,
+      "prestige_notes": "One of the oldest and most respected advertising awards (founded 1959). Grand Clio is a major honor.",
+      "description": "Celebrates creative excellence across advertising and marketing globally.",
+      "categories": [
+        {
+          "name": "Film",
+          "subcategories": ["61 Seconds to 5 Minutes", "30 Seconds & Under", "Over 5 Minutes"],
+          "what_wins": "Exceptional storytelling and craft"
+        },
+        {
+          "name": "Film Technique",
+          "subcategories": ["Direction", "Cinematography", "Editing", "VFX", "Music/Sound"],
+          "what_wins": "Technical excellence in specific craft areas"
+        },
+        {
+          "name": "Audio/Radio",
+          "what_wins": "Memorable audio work"
+        },
+        {
+          "name": "Out of Home",
+          "subcategories": ["Single", "Campaign", "Takeover", "Ambient"],
+          "what_wins": "Smart use of outdoor spaces"
+        },
+        {
+          "name": "Print",
+          "what_wins": "Visual impact and craft"
+        },
+        {
+          "name": "Digital/Mobile",
+          "what_wins": "Digital innovation and craft"
+        },
+        {
+          "name": "Social Media",
+          "what_wins": "Native social creativity"
+        },
+        {
+          "name": "Direct",
+          "what_wins": "Response-driven work"
+        },
+        {
+          "name": "PR",
+          "what_wins": "Earned media excellence"
+        },
+        {
+          "name": "Design",
+          "what_wins": "Visual excellence"
+        },
+        {
+          "name": "Branded Entertainment",
+          "what_wins": "Content people choose to engage with"
+        },
+        {
+          "name": "Integrated Campaign",
+          "what_wins": "Multi-channel work greater than sum of parts"
+        },
+        {
+          "name": "Innovation",
+          "what_wins": "Genuine breakthrough"
+        },
+        {
+          "name": "Partnerships & Collaborations",
+          "what_wins": "Strategic brand partnerships"
+        },
+        {
+          "name": "Creative Use of Data",
+          "what_wins": "Data-driven creativity"
+        },
+        {
+          "name": "Real-Time",
+          "what_wins": "Quick-turn cultural response"
+        }
+      ],
+      "2024_grand_clio_winners": [
+        "Orange WoMen's Football (Marcel) - Film, Partnerships",
+        "Barbie (Mattel) - Integrated, Partnerships",
+        "Working With Cancer Pledge (Publicis) - Operations",
+        "Mastercard WhereToSettle (McCann Poland) - Real-Time, Data",
+        "Renault Plug Inn (Publicis Conseil) - Creative Business Transformation"
+      ],
+      "eligibility": {
+        "date_range": "Work from previous 18 months",
+        "regions": "Global",
+        "first_time_eligible": true
+      },
+      "deadlines": {
+        "entry_opens": "October",
+        "early_deadline": "December",
+        "regular_deadline": "January",
+        "final_deadline": "February"
+      },
+      "submission_requirements": {
+        "case_study_video": "Optional but strongly recommended, 2-3 minutes max",
+        "written_entry": "500 words max per section",
+        "supporting_materials": "Required creative assets"
+      },
+      "cost_per_entry": "$350-600",
+      "judging_intel": {
+        "jury_composition": "Senior creatives and industry leaders",
+        "what_they_value": "Exceptional craft, memorable creative, cultural relevance",
+        "red_flags": "Work that needs heavy explanation to be understood"
+      },
+      "strategic_notes": "More accessible than Cannes, strong industry respect. Good stepping stone. Consider multiple categories for multi-faceted work."
+    },
+    {
+      "id": "clio-sports",
+      "name": "Clio Sports",
+      "organization": "Clios",
+      "website": "https://clios.com/sports",
+      "prestige_tier": 1,
+      "prestige_notes": "THE award for sports marketing. If you do sports work, this is essential.",
+      "description": "Celebrates creative excellence in sports marketing and advertising globally. The definitive award for sports-related creative work.",
+      "categories": [
+        {
+          "name": "Film",
+          "what_wins": "Exceptional sports storytelling"
+        },
+        {
+          "name": "Audio",
+          "what_wins": "Sports audio content and advertising"
+        },
+        {
+          "name": "Print",
+          "what_wins": "Sports print advertising"
+        },
+        {
+          "name": "Out of Home",
+          "what_wins": "Stadium, arena, and outdoor sports advertising"
+        },
+        {
+          "name": "Digital/Mobile",
+          "what_wins": "Digital sports experiences"
+        },
+        {
+          "name": "Social Media",
+          "what_wins": "Social-first sports content"
+        },
+        {
+          "name": "Branded Entertainment & Content",
+          "what_wins": "Long-form sports content people want to watch",
+          "2024_winners": ["Snickers AI (T&Pm for Mars)"]
+        },
+        {
+          "name": "Design",
+          "what_wins": "Sports design excellence"
+        },
+        {
+          "name": "Experiential/Activation",
+          "what_wins": "Live sports activations"
+        },
+        {
+          "name": "Fan Engagement",
+          "what_wins": "Work that connects fans to teams/sports",
+          "2024_winners": ["Lap of Legends (FCB New York for Michelob Ultra)"]
+        },
+        {
+          "name": "Integrated Campaign",
+          "what_wins": "Multi-channel sports campaigns"
+        },
+        {
+          "name": "Innovation",
+          "what_wins": "Breakthrough sports marketing innovation"
+        },
+        {
+          "name": "Partnership & Sponsorship",
+          "what_wins": "Effective sponsor activations"
+        },
+        {
+          "name": "Social Good",
+          "what_wins": "Sports used for positive social impact"
+        },
+        {
+          "name": "Athlete/Talent",
+          "what_wins": "Exceptional use of athlete partnerships"
+        },
+        {
+          "name": "Sports Gaming",
+          "what_wins": "Gaming/esports crossover work"
+        },
+        {
+          "name": "Creative Use of Data",
+          "what_wins": "Data-driven sports creativity",
+          "2024_winners": ["The Marathumb Challenge (Doner for Saucony)"]
+        },
+        {
+          "name": "Gameday/In-Game Experience",
+          "what_wins": "Stadium and game-day activations",
+          "2024_winners": ["Vegas Golden Knights Overall Game Day"]
+        }
+      ],
+      "2024_grand_winners": [
+        "Snickers AI - T&Pm for Mars (Branded Entertainment)",
+        "The Marathumb Challenge - Doner for Saucony (Data, Digital/Mobile)",
+        "Lap of Legends - FCB New York for Michelob Ultra (Fan Engagement)",
+        "Vegas Golden Knights Game Day Experience"
+      ],
+      "2024_agency_of_year": "FCB New York (4th consecutive year)",
+      "eligibility": {
+        "date_range": "Work from previous 18 months",
+        "regions": "Global",
+        "first_time_eligible": true,
+        "sports_connection_required": true
+      },
+      "deadlines": {
+        "entry_opens": "October",
+        "early_deadline": "December",
+        "regular_deadline": "January",
+        "final_deadline": "February",
+        "ceremony": "Typically July in NYC"
+      },
+      "submission_requirements": {
+        "case_study_video": "Strongly recommended",
+        "written_entry": "500 words max per section",
+        "supporting_materials": "Creative assets, results data"
+      },
+      "cost_per_entry": "$350-450",
+      "judging_intel": {
+        "jury_composition": "Sports marketing leaders, brand CMOs, agency creatives",
+        "what_they_value": "Authentic sports connection, fan passion, cultural impact in sports",
+        "red_flags": "Work that uses sports superficially without understanding the culture"
+      },
+      "strategic_notes": "ESSENTIAL for any sports brand. Less competition than main Clios but very high prestige in sports marketing industry. FCB New York has dominated - study their winning patterns."
+    },
+    {
+      "id": "one-show",
+      "name": "The One Show",
+      "organization": "The One Club for Creativity",
+      "website": "https://www.oneclub.org/theoneshow",
+      "prestige_tier": 1,
+      "prestige_notes": "A Gold Pencil is one of the most coveted awards in advertising. Pure creative excellence.",
+      "description": "Celebrates the best in advertising and design creativity globally. Known for strict creative standards.",
+      "categories": [
+        {
+          "name": "Film",
+          "what_wins": "Exceptional craft and storytelling"
+        },
+        {
+          "name": "Print",
+          "what_wins": "Visual impact and simplicity"
+        },
+        {
+          "name": "Outdoor",
+          "what_wins": "Smart contextual use of space"
+        },
+        {
+          "name": "Radio",
+          "what_wins": "Audio craft excellence"
+        },
+        {
+          "name": "Interactive",
+          "what_wins": "Digital innovation"
+        },
+        {
+          "name": "Mobile",
+          "what_wins": "Mobile-first creative"
+        },
+        {
+          "name": "Social Media",
+          "what_wins": "Native social creativity"
+        },
+        {
+          "name": "Direct Marketing",
+          "what_wins": "Response-driving creativity"
+        },
+        {
+          "name": "Integrated",
+          "what_wins": "Campaigns greater than sum of parts"
+        },
+        {
+          "name": "Design",
+          "what_wins": "Visual excellence"
+        },
+        {
+          "name": "Branded Entertainment",
+          "what_wins": "Content audiences seek out"
+        },
+        {
+          "name": "Experiential & Immersive",
+          "what_wins": "Physical and digital experiences"
+        },
+        {
+          "name": "Innovation",
+          "what_wins": "Genuine breakthrough ideas"
+        },
+        {
+          "name": "Creative Effectiveness",
+          "what_wins": "Creativity proven to drive results"
+        },
+        {
+          "name": "Creative Use of Data",
+          "what_wins": "Data as creative fuel"
+        }
+      ],
+      "special_pencils": {
+        "Penta Pencil": "Given to agency and brand who have created outstanding work together for 5+ years. 2024: Rethink and Kraft Heinz",
+        "Fusion Pencil": "Cross-category excellence. 2024: Black Women for Wellness, Banned Book Club",
+        "Green Pencil": "Environmental consciousness. 2024: The Plastic Forecast (M&C Saatchi Sydney)"
+      },
+      "2024_agency_of_year": "FCB New York",
+      "eligibility": {
+        "date_range": "January 1 - December 31 of prior year",
+        "regions": "Global",
+        "first_time_eligible": true
+      },
+      "deadlines": {
+        "entry_opens": "November",
+        "early_deadline": "January",
+        "regular_deadline": "February",
+        "final_deadline": "March",
+        "ceremony": "Creative Week in May"
+      },
+      "submission_requirements": {
+        "case_study_video": "2 minutes max for most categories",
+        "written_entry": "Varies by category",
+        "supporting_materials": "Required"
+      },
+      "cost_per_entry": "$400-600",
+      "judging_intel": {
+        "jury_composition": "Top creatives globally",
+        "what_they_value": "Pure creativity, craft excellence, fresh ideas",
+        "red_flags": "Derivative work, poor craft, over-reliance on results without strong idea"
+      },
+      "strategic_notes": "Creative directors particularly value One Show pencils. Strong for portfolio-building and agency reputation."
+    },
+    {
+      "id": "dandad",
+      "name": "D&AD Awards",
+      "organization": "D&AD",
+      "website": "https://www.dandad.org/awards",
+      "prestige_tier": 1,
+      "prestige_notes": "Black Pencil is the rarest award in advertising. Yellow Pencil is career-defining. Known for brutal judging.",
+      "description": "UK-based but globally respected. Famous for giving 'no award' when work isn't strong enough. A Yellow Pencil means something.",
+      "award_levels": {
+        "Black Pencil": "Rarest honor - only 3-4 given annually. Reserved for groundbreaking work.",
+        "Yellow Pencil": "The standard of excellence. Extremely difficult to win.",
+        "Graphite Pencil": "Very strong work.",
+        "Wood Pencil": "Shortlist equivalent. Still an honor."
+      },
+      "2024_black_pencil_winners": [
+        {
+          "work": "My Japan Railway",
+          "agency": "Dentsu Tokyo",
+          "category": "Art Direction",
+          "why_it_won": "Restored human connection with railways through design excellence"
+        },
+        {
+          "work": "WoMen's Football",
+          "agency": "Marcel Paris",
+          "category": "Digital & Social",
+          "why_it_won": "VFX-led campaign highlighting gender bias that went viral and became educational"
+        },
+        {
+          "work": "VisionOS",
+          "agency": "Apple",
+          "category": "Design",
+          "why_it_won": "Groundbreaking mixed reality operating system design"
+        },
+        {
+          "work": "WhereToSettle",
+          "agency": "McCann Poland",
+          "category": "Experiential",
+          "why_it_won": "Smart-data platform helping Ukrainian refugees find shelter and work"
+        }
+      ],
+      "categories": [
+        {
+          "name": "TV/Cinema Advertising",
+          "what_wins": "Exceptional film craft"
+        },
+        {
+          "name": "Online Advertising",
+          "what_wins": "Digital-native creativity"
+        },
+        {
+          "name": "Print Advertising",
+          "what_wins": "Visual perfection"
+        },
+        {
+          "name": "Outdoor Advertising",
+          "what_wins": "Smart use of context"
+        },
+        {
+          "name": "Radio & Audio Advertising",
+          "what_wins": "Audio excellence"
+        },
+        {
+          "name": "Direct",
+          "what_wins": "Response-driving creativity"
+        },
+        {
+          "name": "Media",
+          "what_wins": "Innovative media use"
+        },
+        {
+          "name": "PR",
+          "what_wins": "Genuine newsworthiness"
+        },
+        {
+          "name": "Design",
+          "subcategories": ["Branding", "Packaging", "Typography", "Spatial", "Digital"],
+          "what_wins": "Design excellence without compromise"
+        },
+        {
+          "name": "Craft",
+          "subcategories": ["Direction", "Cinematography", "Editing", "Animation", "Illustration", "Photography"],
+          "what_wins": "Technical mastery"
+        },
+        {
+          "name": "Digital Design",
+          "what_wins": "Digital craft excellence"
+        },
+        {
+          "name": "Writing for Advertising",
+          "what_wins": "Copy craft"
+        },
+        {
+          "name": "Integrated",
+          "what_wins": "Campaign thinking"
+        },
+        {
+          "name": "Entertainment",
+          "what_wins": "Branded content excellence"
+        },
+        {
+          "name": "Impact",
+          "what_wins": "Purpose-driven work with real impact"
+        },
+        {
+          "name": "Side Hustle",
+          "what_wins": "Personal passion projects from creatives"
+        }
+      ],
+      "eligibility": {
+        "date_range": "Previous calendar year",
+        "regions": "Global",
+        "first_time_eligible": true
+      },
+      "deadlines": {
+        "entry_opens": "November",
+        "early_deadline": "January",
+        "final_deadline": "February",
+        "ceremony": "May"
+      },
+      "submission_requirements": {
+        "case_study_video": "Required for most categories",
+        "written_entry": "Brief entries - let the work speak",
+        "supporting_materials": "High-res assets required"
+      },
+      "cost_per_entry": "$500-700",
+      "judging_intel": {
+        "jury_composition": "Top creatives globally, notoriously tough",
+        "what_they_value": "Groundbreaking craft, bravery, work that advances the industry",
+        "red_flags": "Safe work, derivative ideas, poor execution",
+        "unique_aspect": "Judges can and do give 'no award' if work isn't good enough"
+      },
+      "strategic_notes": "Winning D&AD is a career milestone. Only enter your absolute best. A Wood Pencil is still valuable. 2024 showed purpose-driven work CAN win Black Pencils if impact is real."
+    },
+    {
+      "id": "effies",
+      "name": "Effie Awards",
+      "organization": "Effie Worldwide",
+      "website": "https://www.effie.org",
+      "prestige_tier": 1,
+      "prestige_notes": "THE effectiveness awards. The only major award that CMOs and CFOs fully understand. Proves marketing works.",
+      "description": "Championing marketing effectiveness for 50+ years. Results are everything here.",
+      "scoring_weights": {
+        "Challenge_Context_Objectives": {
+          "weight": "23.3%",
+          "what_judges_want": "Clear business problem, difficult competitive context, quantified challenge, SMART objectives"
+        },
+        "Insights_Strategy": {
+          "weight": "23.3%",
+          "what_judges_want": "Powerful consumer/cultural insight backed by data, clear strategic approach, why THIS strategy"
+        },
+        "Bringing_Strategy_Idea_to_Life": {
+          "weight": "23.3%",
+          "what_judges_want": "Creative idea in one sentence, how strategy became execution, why creative choices were right"
+        },
+        "Results": {
+          "weight": "30%",
+          "what_judges_want": "Business results FIRST (sales, share, revenue, ROI), brand metrics, comparison to objectives and benchmarks, attribution proof"
+        }
+      },
+      "2024_notable_winners": [
+        {
+          "campaign": "A Piece of Me (KPN)",
+          "agency": "Dentsu Creative Amsterdam",
+          "result": "Grand Effie Europe",
+          "why": "Transformed attitudes to online shaming, made it a crime, made KPN Netherlands' most valuable brand"
+        },
+        {
+          "campaign": "H&M SEO Transformation",
+          "result": "Global Multi-Region Effie",
+          "why": "Delivered £552M incremental revenue at 29:1 ROI four years running"
+        },
+        {
+          "campaign": "Accenture Let There Be Change",
+          "result": "Global Multi-Region Effie",
+          "why": "Brand salience +23pts, favourability +20pts, sales opportunities +52%"
+        }
+      ],
+      "categories": [
+        {
+          "name": "Beverages - Non-Alcohol",
+          "what_wins": "Clear sales/share results for beverage brands"
+        },
+        {
+          "name": "Beverages - Alcohol",
+          "what_wins": "Responsible marketing with strong results"
+        },
+        {
+          "name": "Consumer Products",
+          "what_wins": "CPG marketing effectiveness"
+        },
+        {
+          "name": "Retail",
+          "what_wins": "Retail marketing driving store/online performance"
+        },
+        {
+          "name": "Financial Services",
+          "what_wins": "Financial marketing results"
+        },
+        {
+          "name": "Automotive",
+          "what_wins": "Auto marketing effectiveness"
+        },
+        {
+          "name": "Travel & Tourism",
+          "what_wins": "Destination/travel marketing"
+        },
+        {
+          "name": "Healthcare",
+          "what_wins": "Healthcare marketing with measurable outcomes"
+        },
+        {
+          "name": "Media & Entertainment",
+          "what_wins": "Entertainment marketing results"
+        },
+        {
+          "name": "Technology",
+          "what_wins": "Tech marketing effectiveness"
+        },
+        {
+          "name": "Positive Change",
+          "what_wins": "Purpose-driven work with real impact metrics"
+        },
+        {
+          "name": "Brand Experience",
+          "what_wins": "Experiential marketing with measurable results"
+        },
+        {
+          "name": "Commerce & Shopper",
+          "what_wins": "Work driving purchase behavior"
+        },
+        {
+          "name": "Data-Driven",
+          "what_wins": "Data-powered marketing effectiveness"
+        },
+        {
+          "name": "Sustained Success",
+          "what_wins": "Long-term marketing effectiveness over multiple years"
+        },
+        {
+          "name": "Small Budget",
+          "what_wins": "Outsized results on limited budget"
+        }
+      ],
+      "regional_programs": ["US Effies", "Europe Effies", "MENA Effies", "APAC Effies", "LatAm Effies", "Global Multi-Region"],
+      "eligibility": {
+        "date_range": "Campaigns must have run AND have measurable results",
+        "regions": "Multiple regional programs",
+        "results_required": true,
+        "client_endorsement_required": true
+      },
+      "deadlines_us": {
+        "entry_opens": "January",
+        "early_deadline": "February",
+        "final_deadline": "March"
+      },
+      "submission_requirements": {
+        "case_study_video": "Optional - written entry is primary",
+        "written_entry": {
+          "format": "Comprehensive case study",
+          "sections": ["Challenge/Context/Objectives", "Insights/Strategy", "Bringing Strategy to Life", "Results"],
+          "word_limits": "Vary by section",
+          "charts_encouraged": true,
+          "source_verification": "Required for all data"
+        },
+        "client_endorsement_letter": "REQUIRED - on company letterhead signed by client and agency"
+      },
+      "cost_per_entry": "$600-900",
+      "judging_intel": {
+        "jury_composition": "CMOs, marketing directors, strategists - more client-side than other awards",
+        "what_they_value": "RESULTS RESULTS RESULTS. Business impact is everything. Clear objectives and measurement. Attribution.",
+        "red_flags": "Vague results, unverified claims, weak business connection, objectives added after the fact"
+      },
+      "strategic_notes": "CMOs and CFOs understand Effies. Essential for proving marketing ROI. Great for client relationships. If you have strong results, this should be a priority. Results can be confidential in winning cases."
+    },
+    {
+      "id": "webby-awards",
+      "name": "Webby Awards",
+      "organization": "IADAS (International Academy of Digital Arts and Sciences)",
+      "website": "https://www.webbyawards.com",
+      "prestige_tier": 2,
+      "description": "The internet's highest honor. Two chances to win: Webby Award (jury) and People's Voice (public vote).",
+      "categories": [
+        "Websites & Mobile Sites",
+        "Video",
+        "Advertising, Media & PR",
+        "Apps & Software",
+        "Social",
+        "Podcasts",
+        "Games",
+        "AI, Metaverse & Virtual"
+      ],
+      "unique_feature": "Winners give 5-word acceptance speeches",
+      "eligibility": {
+        "date_range": "Previous 12-18 months",
+        "regions": "Global",
+        "first_time_eligible": true
+      },
+      "deadlines": {
+        "entry_opens": "October",
+        "early_deadline": "December",
+        "regular_deadline": "January",
+        "final_deadline": "February"
+      },
+      "cost_per_entry": "$350-500",
+      "strategic_notes": "Great for digital-first campaigns. People's Voice category drives engagement through public voting."
+    },
+    {
+      "id": "aicp",
+      "name": "AICP Awards",
+      "organization": "AICP",
+      "website": "https://www.aicp.com/awards",
+      "prestige_tier": 1,
+      "prestige_notes": "Winning work enters the permanent MoMA collection. Production craft excellence.",
+      "description": "Celebrates production craft excellence. The definitive award for production companies, directors, and craftspeople.",
+      "categories": [
+        "Production Company of the Year",
+        "Visual Effects",
+        "Animation",
+        "Direction",
+        "Cinematography",
+        "Editing",
+        "Color Grading",
+        "Sound Design",
+        "Music",
+        "Performance",
+        "Integrated Production"
+      ],
+      "eligibility": {
+        "date_range": "Previous calendar year",
+        "regions": "US primarily"
+      },
+      "deadlines": {
+        "entry_opens": "February",
+        "final_deadline": "April"
+      },
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Essential if you have exceptional production craft. Work enters MoMA archive. Great for recognizing production partners."
+    },
+    {
+      "id": "lia-awards",
+      "name": "LIA (London International Awards)",
+      "organization": "LIA",
+      "website": "https://www.liaawards.com",
+      "prestige_tier": 2,
+      "description": "Global awards judged exclusively by senior creatives. Strong industry respect.",
+      "categories": [
+        "TV/Cinema/Online Film",
+        "Print",
+        "Poster",
+        "Radio & Audio",
+        "The NEW (Innovation)",
+        "Non-Traditional",
+        "Design",
+        "Package Design",
+        "Health & Wellness",
+        "Music & Sound",
+        "Integration"
+      ],
+      "eligibility": {
+        "date_range": "October 1 - September 30 (different cycle than most)",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "entry_opens": "June",
+        "early_deadline": "August",
+        "final_deadline": "September"
+      },
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Good timing if you miss Cannes deadline. Judged only by senior creatives (no clients). Respected for pure creative judgment."
+    },
+    {
+      "id": "shorty-awards",
+      "name": "Shorty Awards",
+      "organization": "Shorty Awards",
+      "website": "https://shortyawards.com",
+      "prestige_tier": 2,
+      "description": "Leading social media awards. Essential for social-first campaigns.",
+      "categories": [
+        "Best Brand Presence",
+        "Best Influencer Campaign",
+        "Best TikTok Campaign",
+        "Best Instagram Campaign",
+        "Best Twitter Campaign",
+        "Best YouTube Campaign",
+        "Best Social Good Campaign",
+        "Best Real-Time Response"
+      ],
+      "eligibility": {
+        "date_range": "Previous year",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "entry_opens": "November",
+        "regular_deadline": "January",
+        "final_deadline": "February"
+      },
+      "cost_per_entry": "$200-350",
+      "strategic_notes": "Great for TikTok/social campaigns. Growing in prestige. More affordable than major shows."
+    },
+    {
+      "id": "andy-awards",
+      "name": "Andy Awards",
+      "organization": "The Advertising Club of New York",
+      "website": "https://www.andyawards.com",
+      "prestige_tier": 2,
+      "description": "Creativity-focused awards with strong industry reputation.",
+      "categories": [
+        "Film",
+        "Print",
+        "Outdoor",
+        "Radio",
+        "Interactive",
+        "Experiential",
+        "Social",
+        "Integrated",
+        "Branded Entertainment"
+      ],
+      "eligibility": {
+        "date_range": "Previous 18 months",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "entry_opens": "November",
+        "early_deadline": "January",
+        "final_deadline": "February"
+      },
+      "cost_per_entry": "$300-450",
+      "strategic_notes": "Good mid-tier option. Less expensive than Cannes/One Show. Strong NY advertising community ties."
+    },
+    {
+      "id": "sports-emmys",
+      "name": "Sports Emmy Awards",
+      "organization": "NATAS (National Academy of Television Arts & Sciences)",
+      "website": "https://emmyonline.org/sports",
+      "prestige_tier": 1,
+      "prestige_notes": "THE television award for sports content. Extremely prestigious.",
+      "description": "Honors outstanding achievement in sports television programming and promotion.",
+      "categories": [
+        "Outstanding Live Sports Series",
+        "Outstanding Sports Documentary",
+        "Outstanding Short Sports Documentary",
+        "Outstanding Studio Show",
+        "Outstanding Sports Promotion"
+      ],
+      "eligibility": {
+        "date_range": "June 1 - May 31",
+        "regions": "US broadcast/cable/streaming",
+        "broadcast_required": "Must have aired on broadcast, cable, or streaming"
+      },
+      "deadlines": {
+        "entry_opens": "March",
+        "final_deadline": "May"
+      },
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Only if you produced broadcast-quality content that actually aired. Very prestigious. Outstanding Sports Promotion is most relevant for brand advertising."
+    },
+    {
+      "id": "sports-business-awards",
+      "name": "Sports Business Awards",
+      "organization": "Sports Business Journal",
+      "website": "https://www.sportsbusinessjournal.com/awards",
+      "prestige_tier": 2,
+      "description": "B2B recognition in sports industry. Great for industry credibility.",
+      "categories": [
+        "Best in Sports Marketing",
+        "Best Brand Activation",
+        "Best Sponsorship",
+        "Best Social Media",
+        "Best Innovation",
+        "Best CSR Program"
+      ],
+      "eligibility": {
+        "date_range": "Previous year",
+        "regions": "US focus"
+      },
+      "deadlines": {
+        "entry_opens": "January",
+        "final_deadline": "March"
+      },
+      "cost_per_entry": "$300-500",
+      "strategic_notes": "B2B credibility in sports industry. Great for partnership/sponsorship recognition."
+    },
+    {
+      "id": "fwa",
+      "name": "FWA (Favourite Website Awards)",
+      "organization": "FWA",
+      "website": "https://thefwa.com",
+      "prestige_tier": 2,
+      "description": "Premier digital design and innovation awards. Daily site of the day recognition.",
+      "categories": [
+        "Site of the Day",
+        "Site of the Month",
+        "Site of the Year",
+        "FWA of the Day (Mobile)",
+        "People's Choice"
+      ],
+      "eligibility": {
+        "date_range": "Rolling submissions",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "note": "Rolling submissions - no set deadlines"
+      },
+      "cost_per_entry": "$80-120",
+      "strategic_notes": "Very affordable. Rolling deadline is flexible. Only for digital experiences."
+    },
+    {
+      "id": "awwwards",
+      "name": "Awwwards",
+      "organization": "Awwwards",
+      "website": "https://www.awwwards.com",
+      "prestige_tier": 2,
+      "description": "Web design excellence awards. Strong in design community.",
+      "categories": [
+        "Site of the Day",
+        "Developer Award",
+        "Honorable Mention",
+        "Site of the Month",
+        "Site of the Year"
+      ],
+      "eligibility": {
+        "date_range": "Rolling",
+        "regions": "Global"
+      },
+      "cost_per_entry": "$75-200",
+      "strategic_notes": "Affordable, rolling deadline. Good for digital experiences. Strong among developers/designers."
+    },
+    {
+      "id": "communication-arts",
+      "name": "Communication Arts Awards",
+      "organization": "Communication Arts",
+      "website": "https://www.commarts.com",
+      "prestige_tier": 2,
+      "description": "Long-running design and advertising awards. Winners published in prestigious CA Annual.",
+      "categories": [
+        "Advertising Annual",
+        "Design Annual",
+        "Interactive Annual",
+        "Photography Annual",
+        "Illustration Annual",
+        "Typography Annual"
+      ],
+      "eligibility": {
+        "date_range": "Previous 12 months",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "advertising": "March",
+        "interactive": "May"
+      },
+      "cost_per_entry": "$75-150",
+      "strategic_notes": "Affordable. Published winners gain significant industry exposure."
+    },
+    {
+      "id": "addys",
+      "name": "ADDY Awards / American Advertising Awards",
+      "organization": "AAF (American Advertising Federation)",
+      "website": "https://www.aaf.org",
+      "prestige_tier": 3,
+      "description": "Largest advertising competition. Local to District to National ladder system.",
+      "categories": [
+        "Film/Video/Sound",
+        "Print",
+        "Out of Home",
+        "Cross-Platform",
+        "Interactive",
+        "Branded Content",
+        "Public Service",
+        "Integrated Campaign"
+      ],
+      "eligibility": {
+        "date_range": "Previous calendar year",
+        "regions": "US - starts at local level"
+      },
+      "deadlines": {
+        "local": "December-January",
+        "district": "February-March",
+        "national": "April-May"
+      },
+      "cost_per_entry": "$100-300",
+      "strategic_notes": "Volume play - enter lots of work at local level. Must win local to advance. Good for building award count."
+    },
+    {
+      "id": "telly-awards",
+      "name": "Telly Awards",
+      "organization": "Telly Awards",
+      "website": "https://www.tellyawards.com",
+      "prestige_tier": 3,
+      "description": "Honors video and television excellence. Large competition with multiple winner tiers.",
+      "categories": [
+        "Television",
+        "Video",
+        "Branded Content",
+        "Immersive & Mixed Reality",
+        "Social Video",
+        "Series/Shows"
+      ],
+      "eligibility": {
+        "date_range": "Previous 18 months",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "entry_opens": "October",
+        "early_deadline": "January",
+        "final_deadline": "March"
+      },
+      "cost_per_entry": "$200-400",
+      "strategic_notes": "Higher win rate than elite awards. Good for building momentum and internal morale."
+    },
+    {
+      "id": "content-marketing-awards",
+      "name": "Content Marketing Awards",
+      "organization": "Content Marketing Institute",
+      "website": "https://www.contentmarketingawards.com",
+      "prestige_tier": 2,
+      "description": "Premier content marketing recognition. Strong for brand storytelling.",
+      "categories": [
+        "Best Overall Content Marketing",
+        "Best Content Marketing Strategy",
+        "Best Branded Content Campaign",
+        "Best Video Content Program",
+        "Best Social Media Content Program",
+        "Best Podcast"
+      ],
+      "eligibility": {
+        "date_range": "Previous year",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "entry_opens": "January",
+        "early_deadline": "March",
+        "final_deadline": "May"
+      },
+      "cost_per_entry": "$350-500",
+      "strategic_notes": "Good for ongoing content efforts. Focus on strategic programs, not single ads."
+    },
+    {
+      "id": "digiday-awards",
+      "name": "Digiday Awards",
+      "organization": "Digiday",
+      "website": "https://digiday.com/awards",
+      "prestige_tier": 2,
+      "description": "Multiple programs for media, marketing, content, and technology excellence.",
+      "categories": [
+        "Marketing Awards",
+        "Content Awards",
+        "Technology Awards",
+        "Media Awards",
+        "Video Awards",
+        "Podcast Awards"
+      ],
+      "strategic_notes": "Multiple opportunities throughout year. Industry credibility in digital/media space."
+    },
+    {
+      "id": "mma-smarties",
+      "name": "MMA Smarties",
+      "organization": "Mobile Marketing Association",
+      "website": "https://www.mmaglobal.com/smarties",
+      "prestige_tier": 2,
+      "description": "Mobile and digital marketing excellence awards.",
+      "categories": [
+        "Best Mobile Campaign",
+        "Best App",
+        "Best Use of Location",
+        "Best Gaming Campaign",
+        "Best AR/VR Experience",
+        "Best Social Campaign"
+      ],
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Good for mobile app campaigns or innovative mobile experiences."
+    },
+    {
+      "id": "iab-mixx",
+      "name": "IAB MIXX Awards",
+      "organization": "IAB",
+      "website": "https://www.iab.com/events/mixx-awards",
+      "prestige_tier": 2,
+      "description": "Digital advertising excellence from the Interactive Advertising Bureau.",
+      "categories": [
+        "Brand Awareness",
+        "Lead Generation",
+        "Consumer Engagement",
+        "Social Good",
+        "Small Budget",
+        "Best Use of Data",
+        "Best Video Campaign"
+      ],
+      "deadlines": {
+        "entry_opens": "May",
+        "final_deadline": "July"
+      },
+      "cost_per_entry": "$300-450",
+      "strategic_notes": "IAB credibility. Good for digital-focused work."
+    },
+    {
+      "id": "anthem-awards",
+      "name": "Anthem Awards",
+      "organization": "The Webby Awards",
+      "website": "https://www.anthemawards.com",
+      "prestige_tier": 2,
+      "description": "Purpose-driven work and social impact campaigns.",
+      "categories": [
+        "Diversity, Equity & Inclusion",
+        "Education",
+        "Environment",
+        "Health",
+        "Human & Civil Rights",
+        "Humanitarian Action",
+        "Responsible Technology"
+      ],
+      "eligibility": {
+        "date_range": "Previous 18 months",
+        "regions": "Global"
+      },
+      "deadlines": {
+        "entry_opens": "September",
+        "final_deadline": "December"
+      },
+      "cost_per_entry": "$200-400",
+      "strategic_notes": "Only relevant if you have genuine social impact initiatives."
+    },
+    {
+      "id": "prweek-awards",
+      "name": "PRWeek Awards",
+      "organization": "PRWeek",
+      "website": "https://www.prweek.com/us/awards",
+      "prestige_tier": 2,
+      "description": "Top PR industry awards. Strong for earned media campaigns.",
+      "categories": [
+        "Campaign of the Year",
+        "Best Product Launch",
+        "Best Brand PR",
+        "Best Influencer Strategy",
+        "Best Crisis Management",
+        "Best Integrated Campaign"
+      ],
+      "cost_per_entry": "$350-500",
+      "strategic_notes": "Good for campaigns with significant PR/earned media component."
+    },
+    {
+      "id": "sabre-awards",
+      "name": "SABRE Awards",
+      "organization": "PRovoke Media",
+      "website": "https://www.provokemedia.com/sabre-awards",
+      "prestige_tier": 2,
+      "description": "Superior Achievement in Branding, Reputation & Engagement.",
+      "categories": [
+        "Consumer Marketing",
+        "Corporate Communications",
+        "Digital Communications",
+        "Issues & Crisis Management",
+        "Sport & Entertainment",
+        "Influencer Marketing"
+      ],
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Has a dedicated Sport & Entertainment category. Global and regional programs available."
+    },
+    {
+      "id": "pro-awards",
+      "name": "PRO Awards (Brand Activation)",
+      "organization": "Chief Marketer",
+      "website": "https://www.chiefmarketer.com/pro-awards",
+      "prestige_tier": 2,
+      "description": "Recognizes excellence in brand activation and promotion.",
+      "categories": [
+        "Best Sports Activation",
+        "Best Retail Activation",
+        "Best Experiential",
+        "Best Sampling Program",
+        "Best Sponsorship Activation",
+        "Best Digital Activation"
+      ],
+      "cost_per_entry": "$300-450",
+      "strategic_notes": "Perfect for event/stadium activations. Has dedicated sports activation category."
+    },
+    {
+      "id": "event-marketer-ex-awards",
+      "name": "Event Marketer Ex Awards",
+      "organization": "Event Marketer",
+      "website": "https://www.eventmarketer.com/ex-awards",
+      "prestige_tier": 2,
+      "description": "Top experiential marketing awards.",
+      "categories": [
+        "Best Sports Experience",
+        "Best Sampling",
+        "Best B2B Event",
+        "Best Consumer Event",
+        "Best Festival Activation",
+        "Best Pop-Up"
+      ],
+      "cost_per_entry": "$350-500",
+      "strategic_notes": "Essential for experiential activations. Has dedicated Best Sports Experience category."
+    },
+    {
+      "id": "reggie-awards",
+      "name": "Reggie Awards",
+      "organization": "ANA (Association of National Advertisers)",
+      "website": "https://www.ana.net/content/show/id/reggies",
+      "prestige_tier": 2,
+      "description": "Brand activation excellence from the Association of National Advertisers.",
+      "categories": [
+        "Engagement",
+        "Commerce",
+        "Experiential",
+        "Innovative Use of Media",
+        "Partnership",
+        "Promotion"
+      ],
+      "deadlines": {
+        "entry_opens": "September",
+        "final_deadline": "November"
+      },
+      "cost_per_entry": "$600-800",
+      "strategic_notes": "ANA membership carries weight. Client-side recognition."
+    },
+    {
+      "id": "tiktok-ad-awards",
+      "name": "TikTok Ad Awards",
+      "organization": "TikTok",
+      "website": "https://www.tiktok.com/business/ad-awards",
+      "prestige_tier": 2,
+      "description": "Platform-specific recognition for TikTok advertising excellence.",
+      "categories": [
+        "Best Brand Community",
+        "Best Creative Excellence",
+        "Best Brand Partnership",
+        "Best Performance Campaign"
+      ],
+      "cost_per_entry": "Often free or low cost",
+      "strategic_notes": "Less competition than major awards. Platform credibility. Great for TikTok-native work."
+    },
+    {
+      "id": "youtube-works-awards",
+      "name": "YouTube Works Awards",
+      "organization": "YouTube/Google",
+      "website": "https://www.youtube.com/ads/youtube-works",
+      "prestige_tier": 2,
+      "description": "Recognizes the best YouTube advertising.",
+      "categories": [
+        "Best Long-Form",
+        "Best Action Driver",
+        "Best Brand Builder",
+        "Best Breakout Advertiser",
+        "Grand Prix"
+      ],
+      "cost_per_entry": "Often free",
+      "strategic_notes": "Free to enter, platform recognition. Great for YouTube-first creative."
+    },
+    {
+      "id": "esports-awards",
+      "name": "Esports Awards",
+      "organization": "Esports Awards",
+      "website": "https://www.esportsawards.com",
+      "prestige_tier": 2,
+      "description": "The Oscars of esports and gaming.",
+      "categories": [
+        "Best Gaming Partnership",
+        "Brand of the Year",
+        "Campaign of the Year",
+        "Content Series of the Year"
+      ],
+      "deadlines": {
+        "entry_opens": "March",
+        "final_deadline": "July"
+      },
+      "cost_per_entry": "$300-500",
+      "strategic_notes": "Essential if brand has gaming/esports partnerships."
+    },
+    {
+      "id": "radio-mercury",
+      "name": "Radio Mercury Awards",
+      "organization": "Radio Advertising Bureau",
+      "website": "https://www.radiomercuryawards.com",
+      "prestige_tier": 2,
+      "description": "Premier audio advertising awards.",
+      "categories": [
+        "Consumer Products",
+        "Retail",
+        "Financial Services",
+        "Automotive",
+        "Food & Beverage",
+        "Health & Pharma",
+        "Best Use of Humor",
+        "Best Use of Music",
+        "Best Podcast Advertising"
+      ],
+      "cost_per_entry": "$250-350",
+      "strategic_notes": "Less competitive category. If you have great audio work, enter it."
+    },
+    {
+      "id": "signal-awards",
+      "name": "Signal Awards",
+      "organization": "Signal Awards",
+      "website": "https://www.signalaward.com",
+      "prestige_tier": 2,
+      "description": "Podcast excellence awards. Growing in prestige.",
+      "categories": [
+        "Best Branded Podcast",
+        "Best Sponsorship",
+        "Best Sound Design",
+        "Best Interview Show",
+        "Best Sports Podcast"
+      ],
+      "cost_per_entry": "$150-250",
+      "strategic_notes": "Only relevant for podcast content."
+    },
+    {
+      "id": "ad-age-awards",
+      "name": "Ad Age A-List & Creativity Awards",
+      "organization": "Ad Age",
+      "website": "https://adage.com/awards",
+      "prestige_tier": 2,
+      "description": "Industry recognition from leading trade publication.",
+      "categories": [
+        "Agency of the Year",
+        "Campaign of the Year",
+        "Creative of the Year",
+        "Creativity Awards"
+      ],
+      "strategic_notes": "Trade press recognition carries weight with clients."
+    },
+    {
+      "id": "creative-circle-awards",
+      "name": "Creative Circle Awards",
+      "organization": "Creative Circle",
+      "website": "https://creativecircle.co.uk",
+      "prestige_tier": 2,
+      "description": "UK's largest creative awards judged by the creative community.",
+      "categories": [
+        "Film Advertising",
+        "Print Advertising",
+        "Outdoor",
+        "Digital",
+        "Direct",
+        "Design",
+        "Innovation",
+        "Integrated"
+      ],
+      "cost_per_entry": "$300-450",
+      "strategic_notes": "Strong UK exposure. Judged by creatives, for creatives."
+    },
+    {
+      "id": "spikes-asia",
+      "name": "Spikes Asia",
+      "organization": "Lions",
+      "website": "https://www.spikes.asia",
+      "prestige_tier": 2,
+      "description": "Asia-Pacific's premier advertising awards. Run by Cannes Lions organization.",
+      "categories": [
+        "Film",
+        "Print & Publishing",
+        "Outdoor",
+        "Radio & Audio",
+        "Digital",
+        "Media",
+        "PR",
+        "Direct",
+        "Design",
+        "Integrated"
+      ],
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Only relevant for Asia-Pacific campaigns."
+    },
+    {
+      "id": "eurobest",
+      "name": "Eurobest",
+      "organization": "Lions",
+      "website": "https://www.eurobest.com",
+      "prestige_tier": 2,
+      "description": "Europe's top creative awards. Run by Cannes Lions organization.",
+      "categories": [
+        "Film",
+        "Print & Publishing",
+        "Outdoor",
+        "Radio & Audio",
+        "Digital",
+        "Media",
+        "PR",
+        "Direct",
+        "Design",
+        "Integrated"
+      ],
+      "deadlines": {
+        "entry_opens": "August",
+        "final_deadline": "October"
+      },
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "Only relevant for European campaigns."
+    },
+    {
+      "id": "drum-awards",
+      "name": "The Drum Awards",
+      "organization": "The Drum",
+      "website": "https://www.thedrum.com/awards",
+      "prestige_tier": 2,
+      "description": "UK-based but global reach. Multiple award programs throughout year.",
+      "categories": [
+        "Marketing",
+        "Digital Advertising",
+        "Content",
+        "Social Media",
+        "B2B",
+        "Agency Business",
+        "Out of Home"
+      ],
+      "strategic_notes": "Good international exposure. Multiple chances to win throughout year."
+    },
+    {
+      "id": "b2b-marketing-awards",
+      "name": "B2B Marketing Awards",
+      "organization": "B2B Marketing",
+      "website": "https://www.b2bmarketing.net/awards",
+      "prestige_tier": 2,
+      "description": "THE awards for business-to-business marketing.",
+      "categories": [
+        "Best Campaign",
+        "Best Brand Campaign",
+        "Best Use of Content",
+        "Best Event/Experiential",
+        "Best Account-Based Marketing",
+        "Best Digital Campaign"
+      ],
+      "cost_per_entry": "$400-600",
+      "strategic_notes": "REACH OPPORTUNITY: League/team B2B partnerships could qualify here."
+    },
+    {
+      "id": "globe-awards",
+      "name": "GLOBE Awards",
+      "organization": "GLOBE Awards",
+      "website": "https://globeawards.com",
+      "prestige_tier": 2,
+      "description": "Sustainability and corporate responsibility in marketing.",
+      "categories": [
+        "Sustainable Marketing Campaign",
+        "Purpose-Driven Campaign",
+        "Environmental Initiative",
+        "Social Impact Campaign"
+      ],
+      "cost_per_entry": "$300-500",
+      "strategic_notes": "Only relevant if you have genuine sustainability initiatives."
+    }
+  ]
+}

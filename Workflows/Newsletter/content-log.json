@@ -1,0 +1,73 @@
+{
+  "log": [
+    {
+      "date": "2026-02-01",
+      "sourceId": "ai-show",
+      "sourceName": "The Artificial Intelligence Show",
+      "contentTitle": "Episode 191: Claude Cowork, ChatGPT Ads, Apple + Gemini",
+      "contentDate": "2026-01-24",
+      "summary": "Analysis of Claude Cowork autonomous agent, OpenAI testing ads in ChatGPT, Elon Musk vs OpenAI lawsuit, Apple choosing Google Gemini for next-gen Siri",
+      "url": "https://podcast.smarterx.ai",
+      "usedInNewsletter": "2026-02-01",
+      "tags": ["claude-cowork", "chatgpt-ads", "gemini", "agents"]
+    },
+    {
+      "date": "2026-02-01",
+      "sourceId": "ai-daily-brief",
+      "sourceName": "AI Daily Brief",
+      "contentTitle": "The 3x Payoff of Deep AI Integration",
+      "contentDate": "2026-01-22",
+      "summary": "PwC, Workday, Section surveys show companies with deep AI integration are 3x more likely to see financial gains. Not about capability—about leadership and execution.",
+      "url": "https://aidailybrief.ai/",
+      "usedInNewsletter": "2026-02-01",
+      "tags": ["ai-integration", "roi", "enterprise"]
+    },
+    {
+      "date": "2026-02-01",
+      "sourceId": "ai-daily-brief",
+      "sourceName": "AI Daily Brief",
+      "contentTitle": "Claude Cowork Analysis",
+      "contentDate": "2026-01-20",
+      "summary": "Anthropic's Claude Cowork reframes AI assistance for non-technical users, turning CLI into task-oriented agentic coworker",
+      "url": "https://aidailybrief.ai/",
+      "usedInNewsletter": "2026-02-01",
+      "tags": ["claude", "agents", "productivity"]
+    },
+    {
+      "date": "2026-02-01",
+      "sourceId": "web-search",
+      "sourceName": "Axios",
+      "contentTitle": "ChatGPT ads, Claude Code, Gemini: How the AI race entered a new phase",
+      "contentDate": "2026-01-17",
+      "summary": "OpenAI testing ads in ChatGPT, Claude Code going viral, Gemini market share growth",
+      "url": "https://www.axios.com/2026/01/17/chatgpt-ads-claude-gemini-ai-race",
+      "usedInNewsletter": "2026-02-01",
+      "tags": ["chatgpt", "claude", "gemini", "market-share"]
+    },
+    {
+      "date": "2026-02-01",
+      "sourceId": "web-search",
+      "sourceName": "TipRanks",
+      "contentTitle": "AI Chatbot Race 2026 Analysis",
+      "contentDate": "2026-01-25",
+      "summary": "ChatGPT market share dropped from 86.7% to 64.5%, Gemini grew from 5.7% to 21.5%. Usage stats: ChatGPT 800M weekly, Gemini 600M monthly, Claude 30M monthly",
+      "url": "https://www.tipranks.com/news/chatgpt-vs-gemini-vs-claude-vs-qwen-which-ai-chatbot-is-best-positioned-for-2026",
+      "usedInNewsletter": "2026-02-01",
+      "tags": ["market-share", "chatgpt", "gemini", "claude"]
+    }
+  ],
+  "schema": {
+    "entry": {
+      "date": "YYYY-MM-DD",
+      "sourceId": "string",
+      "sourceName": "string",
+      "contentTitle": "string",
+      "contentDate": "YYYY-MM-DD",
+      "summary": "string",
+      "url": "string",
+      "usedInNewsletter": "YYYY-MM-DD or null",
+      "tags": ["array", "of", "topics"]
+    }
+  },
+  "lastPull": "2026-02-01"
+}

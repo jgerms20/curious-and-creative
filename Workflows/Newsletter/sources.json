@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "ai-show",
+      "name": "The Artificial Intelligence Show",
+      "type": "podcast",
+      "frequency": "weekly",
+      "url": "https://theartificialintelligenceshow.com/",
+      "searchQuery": "The Artificial Intelligence Show podcast latest episode",
+      "priority": 1,
+      "notes": "Primary source - weekly episodes. Hosted by experts discussing latest AI developments.",
+      "active": true
+    },
+    {
+      "id": "ai-daily-brief",
+      "name": "AI Daily Brief",
+      "type": "podcast",
+      "frequency": "daily",
+      "url": "https://aidailybrief.com/",
+      "searchQuery": "AI Daily Brief podcast",
+      "priority": 1,
+      "notes": "Daily updates - consolidate weekly for newsletter.",
+      "active": true
+    }
+  ],
+  "supplementarySearches": [
+    "AI news this week 2026",
+    "ChatGPT updates this week",
+    "Claude AI news",
+    "Google Gemini updates",
+    "AI industry announcements"
+  ],
+  "lastUpdated": "2026-02-01"
+}

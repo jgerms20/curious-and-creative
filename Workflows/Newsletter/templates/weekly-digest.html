@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{CLIENT_NAME}} AI Weekly Digest - {{WEEK_DATE}}</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        .header {
+            border-bottom: 3px solid #1a1a1a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-meta {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #2563eb;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: #444;
+            font-style: italic;
+        }
+
+        .headline-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .implication {
+            background: #f0f9ff;
+            border-left: 3px solid #2563eb;
+            padding: 12px 15px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .implication strong {
+            color: #2563eb;
+        }
+
+        .quick-hits {
+            background: #f8fafc;
+            padding: 20px 25px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .quick-hits ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .quick-hits li {
+            margin-bottom: 10px;
+        }
+
+        .deep-dive {
+            background: #fff;
+            border: 2px solid #1a1a1a;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .deep-dive h2 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+
+        .outlook {
+            background: #fef3c7;
+            border-left: 3px solid #f59e0b;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .sources {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .sources ul {
+            padding-left: 20px;
+        }
+
+        .sources a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .sources a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-meta">{{CLIENT_NAME}} | AI Weekly Digest</div>
+        <h1>Week of {{WEEK_DATE}}</h1>
+    </header>
+
+    <section>
+        <h2>This Week in AI</h2>
+        <p class="intro">{{INTRO_PARAGRAPH}}</p>
+    </section>
+
+    <section>
+        <h2>The Headlines</h2>
+
+        <!-- Repeat for each headline -->
+        <div class="headline-item">
+            <h3>{{HEADLINE_TITLE}}</h3>
+            <p>{{HEADLINE_SUMMARY}}</p>
+            <div class="implication">
+                <strong>What this means for you:</strong> {{HEADLINE_IMPLICATION}}
+            </div>
+        </div>
+        <!-- End repeat -->
+
+    </section>
+
+    <section class="deep-dive">
+        <h2>Deep Dive: {{DEEP_DIVE_TOPIC}}</h2>
+        <p>{{DEEP_DIVE_CONTENT}}</p>
+    </section>
+
+    <section>
+        <h2>Quick Hits</h2>
+        <div class="quick-hits">
+            <ul>
+                <!-- Repeat for each quick hit -->
+                <li><strong>{{QUICK_HIT_TITLE}}:</strong> {{QUICK_HIT_SUMMARY}}</li>
+                <!-- End repeat -->
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>What to Watch</h2>
+        <div class="outlook">
+            <p>{{OUTLOOK_PARAGRAPH}}</p>
+        </div>
+    </section>
+
+    <section class="sources">
+        <h2>Sources</h2>
+        <ul>
+            <!-- Repeat for each source -->
+            <li><a href="{{SOURCE_URL}}">{{SOURCE_NAME}}</a></li>
+            <!-- End repeat -->
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>Curated by {{CURATOR}} for {{CLIENT_NAME}} clients.</p>
+        <p>Questions? Reply to this email or reach out to your account manager.</p>
+    </footer>
+</body>
+</html>

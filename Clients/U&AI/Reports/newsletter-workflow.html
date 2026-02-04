@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Workflow | U&AI</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --accent: #2563eb;
+            --accent-light: #dbeafe;
+            --success: #10b981;
+            --success-light: #d1fae5;
+            --border: #e5e7eb;
+            --card: #fff;
+            --purple: #7c3aed;
+            --purple-light: #ede9fe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .report {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: var(--card);
+            min-height: 100vh;
+        }
+
+        .report-header {
+            border-bottom: 3px solid var(--text);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .report-meta {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .report-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .summary-box {
+            background: var(--accent-light);
+            padding: 30px;
+            border-left: 4px solid var(--accent);
+            margin: 30px 0;
+        }
+
+        .summary-box p {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .workflow-step {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            margin: 15px 0;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .source-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .source-info h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .source-info p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .source-badge {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .badge-weekly {
+            background: var(--purple-light);
+            color: var(--purple);
+        }
+
+        .badge-daily {
+            background: var(--success-light);
+            color: #047857;
+        }
+
+        .file-tree {
+            background: #1a1a1a;
+            color: #e5e7eb;
+            padding: 25px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 13px;
+            margin: 25px 0;
+            overflow-x: auto;
+        }
+
+        .file-tree .folder {
+            color: #60a5fa;
+        }
+
+        .file-tree .file {
+            color: #a5b4fc;
+        }
+
+        .file-tree .comment {
+            color: #6b7280;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .info-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 20px;
+        }
+
+        .info-card h4 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .content-log {
+            background: var(--card);
+            border: 1px solid var(--border);
+            margin: 25px 0;
+        }
+
+        .content-log-header {
+            background: #f8fafc;
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .content-log-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-log-item:last-child {
+            border-bottom: none;
+        }
+
+        .content-log-item h5 {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .content-log-item p {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .content-log-item .date {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .brand-voice {
+            background: var(--purple-light);
+            border: 1px solid var(--purple);
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .brand-voice h4 {
+            color: var(--purple);
+            margin-bottom: 15px;
+        }
+
+        .voice-traits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .voice-trait {
+            text-align: center;
+            padding: 15px 10px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .voice-trait strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .voice-trait span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .output-preview {
+            background: var(--card);
+            border: 2px solid var(--success);
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .output-preview h4 {
+            color: var(--success);
+            margin-bottom: 15px;
+        }
+
+        .newsletter-link {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .newsletter-link:hover {
+            background: #1d4ed8;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="report">
+        <header class="report-header">
+            <div class="report-meta">Claude Agency | Workflow Documentation</div>
+            <h1>Newsletter Workflow</h1>
+            <p class="report-subtitle">Weekly AI Digest System for U&AI | February 2026</p>
+        </header>
+
+        <section>
+            <h2>Overview</h2>
+
+            <div class="summary-box">
+                <p>A <strong>repeatable workflow</strong> for creating weekly AI news digests. Sources from trusted podcasts, applies U&AI's brand voice, and outputs formatted newsletters ready for distribution to their ~350 subscribers.</p>
+            </div>
+
+            <div class="two-col">
+                <div class="info-card">
+                    <h4>Frequency</h4>
+                    <p><strong>Weekly</strong> — Every Friday/Saturday for Monday distribution</p>
+                </div>
+                <div class="info-card">
+                    <h4>Audience</h4>
+                    <p><strong>~350 subscribers</strong> — Business owners who want AI news simplified</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Registered Sources</h2>
+            <p>Content is pulled from these trusted sources, prioritized by relevance:</p>
+
+            <div class="source-card">
+                <div class="source-info">
+                    <h4>The Artificial Intelligence Show</h4>
+                    <p>Primary podcast source • Weekly episodes analyzing major AI developments</p>
+                </div>
+                <span class="source-badge badge-weekly">Weekly</span>
+            </div>
+
+            <div class="source-card">
+                <div class="source-info">
+                    <h4>AI Daily Brief</h4>
+                    <p>Daily AI news • Consolidated weekly for the digest</p>
+                </div>
+                <span class="source-badge badge-daily">Daily</span>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 14px; margin-top: 20px;">Additional web searches supplement these core sources with breaking news and relevant developments.</p>
+        </section>
+
+        <section>
+            <h2>Workflow Steps</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Content Gathering</h4>
+                    <p>Pull latest episodes/articles from registered sources. Web search for breaking AI news. Log everything with dates and sources to content-log.json.</p>
+                </div>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Content Consolidation</h4>
+                    <p>Summarize key points from each source. Identify overlapping themes. Prioritize by relevance to U&AI's audience (business owners, non-technical).</p>
+                </div>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Brand Voice Application</h4>
+                    <p>Load U&AI's brand voice guidelines. Rewrite in their voice: confident, professional, accessible. Add "what this means for your business" context.</p>
+                </div>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Newsletter Assembly</h4>
+                    <p>Format into template with sections: Headlines, Deep Dive, Quick Hits, Looking Ahead. Add source citations. Generate both .md and .html versions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Brand Voice</h2>
+
+            <div class="brand-voice">
+                <h4>U&AI Newsletter Voice</h4>
+                <p>The newsletter is the "voice of reason" for business owners who don't have time to keep up with AI news but need to understand what matters.</p>
+
+                <div class="voice-traits">
+                    <div class="voice-trait">
+                        <strong>Confident</strong>
+                        <span>Clear POV, no hedging</span>
+                    </div>
+                    <div class="voice-trait">
+                        <strong>Professional</strong>
+                        <span>Business-appropriate</span>
+                    </div>
+                    <div class="voice-trait">
+                        <strong>Accessible</strong>
+                        <span>No jargon, clear explanations</span>
+                    </div>
+                    <div class="voice-trait">
+                        <strong>Solutions-Focused</strong>
+                        <span>"Here's what to do"</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>File Structure</h2>
+
+            <div class="file-tree">
+<span class="folder">/Claude Agency/Workflows/Newsletter/</span>
+├── <span class="file">sources.json</span>          <span class="comment"># Registered sources with metadata</span>
+├── <span class="file">content-log.json</span>      <span class="comment"># What's been pulled, when, from where</span>
+└── <span class="folder">templates/</span>
+    ├── <span class="file">weekly-digest.md</span>  <span class="comment"># Markdown template</span>
+    └── <span class="file">weekly-digest.html</span> <span class="comment"># HTML template</span>
+
+<span class="folder">/Claude Agency/Outputs/Clients/U&AI/</span>
+├── <span class="folder">Brand/</span>
+│   └── <span class="file">brand-voice.md</span>    <span class="comment"># U&AI voice guidelines</span>
+└── <span class="folder">Newsletters/2026/02/</span>
+    ├── <span class="file">2026-02-01-weekly-digest.md</span>
+    └── <span class="file">2026-02-01-weekly-digest.html</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Content Log (Recent)</h2>
+            <p>What's been pulled and used:</p>
+
+            <div class="content-log">
+                <div class="content-log-header">Last 5 Content Pulls</div>
+
+                <div class="content-log-item">
+                    <div>
+                        <h5>Episode 191: Claude Cowork, ChatGPT Ads, Apple + Gemini</h5>
+                        <p>The Artificial Intelligence Show • Used in Feb 1 newsletter</p>
+                    </div>
+                    <span class="date">Jan 24</span>
+                </div>
+
+                <div class="content-log-item">
+                    <div>
+                        <h5>The 3x Payoff of Deep AI Integration</h5>
+                        <p>AI Daily Brief • Used in Feb 1 newsletter</p>
+                    </div>
+                    <span class="date">Jan 22</span>
+                </div>
+
+                <div class="content-log-item">
+                    <div>
+                        <h5>Claude Cowork Analysis</h5>
+                        <p>AI Daily Brief • Used in Feb 1 newsletter</p>
+                    </div>
+                    <span class="date">Jan 20</span>
+                </div>
+
+                <div class="content-log-item">
+                    <div>
+                        <h5>ChatGPT ads, Claude Code, Gemini: AI race enters new phase</h5>
+                        <p>Axios (web search) • Used in Feb 1 newsletter</p>
+                    </div>
+                    <span class="date">Jan 17</span>
+                </div>
+
+                <div class="content-log-item">
+                    <div>
+                        <h5>AI Chatbot Race 2026 Analysis</h5>
+                        <p>TipRanks (web search) • Used in Feb 1 newsletter</p>
+                    </div>
+                    <span class="date">Jan 25</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Output</h2>
+
+            <div class="output-preview">
+                <h4>Latest Newsletter</h4>
+                <p><strong>Week of February 1, 2026</strong></p>
+                <p>Topics covered: Claude Cowork autonomous agents, ChatGPT testing ads, AI market share shifts, 3x ROI for deep AI integration.</p>
+                <a href="../Newsletters/2026/02/2026-02-01-weekly-digest.html" class="newsletter-link">Open Feb 1 Newsletter →</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>How to Run</h2>
+
+            <p>The workflow can be triggered with:</p>
+
+            <div class="file-tree" style="background: #f8fafc; color: var(--text);">
+@orchestrate skill:newsletter-digest-workflow
+- Client: U&AI
+- Week: [Target week date]
+- Focus: General AI updates (or specific topic)
+            </div>
+
+            <h3>Newsletter Sections</h3>
+            <ol>
+                <li><strong>The Headlines</strong> — 3-4 biggest stories of the week</li>
+                <li><strong>Deep Dive</strong> — One story explored in depth with business implications</li>
+                <li><strong>Quick Hits</strong> — 4-6 brief updates</li>
+                <li><strong>Looking Ahead</strong> — What to watch next week</li>
+            </ol>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Claude Agency</strong> | Newsletter Workflow System</p>
+            <p>Created February 1, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

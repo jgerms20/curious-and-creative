@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Stack Recommendations | U&AI</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --accent: #2563eb;
+            --accent-light: #dbeafe;
+            --success: #10b981;
+            --success-light: #d1fae5;
+            --warning: #f59e0b;
+            --warning-light: #fef3c7;
+            --border: #e5e7eb;
+            --card: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .report {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: var(--card);
+            min-height: 100vh;
+        }
+
+        .report-header {
+            border-bottom: 3px solid var(--text);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .report-meta {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .report-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .recommendation-box {
+            background: var(--success-light);
+            padding: 30px;
+            border-left: 4px solid var(--success);
+            margin: 30px 0;
+        }
+
+        .recommendation-box h4 {
+            color: #047857;
+            margin-bottom: 15px;
+        }
+
+        .recommendation-box p {
+            margin: 0;
+        }
+
+        .tool-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 25px;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .tool-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .tool-info .category {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .tool-info p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .tool-price {
+            text-align: right;
+        }
+
+        .tool-price .amount {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .tool-price .period {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .tool-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+
+        .tag-recommended {
+            background: var(--success-light);
+            color: #047857;
+        }
+
+        .tag-alternative {
+            background: var(--warning-light);
+            color: #b45309;
+        }
+
+        .total-cost {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .total-cost .label {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        .total-cost .amount {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .total-cost .note {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+        }
+
+        .comparison-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background: #f1f5f9;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .comparison-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:hover {
+            background: #f8fafc;
+        }
+
+        .check { color: var(--success); }
+        .cross { color: #dc2626; }
+
+        .alternative-section {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .alternative-section h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="report">
+        <header class="report-header">
+            <div class="report-meta">Claude Agency | Tool Recommendations</div>
+            <h1>Publishing Tool Stack</h1>
+            <p class="report-subtitle">Multi-Platform Content Publishing for U&AI | February 2026</p>
+        </header>
+
+        <section>
+            <h2>Recommendation Summary</h2>
+
+            <div class="recommendation-box">
+                <h4>Recommended Stack</h4>
+                <p><strong>Buffer + Notion + CapCut + Canva</strong><br>
+                Low cost (~$21/month), covers all needs, easy to use, scales well.</p>
+            </div>
+
+            <div class="total-cost">
+                <div class="label">Estimated Monthly Cost</div>
+                <div class="amount">$21-36</div>
+                <div class="note">Buffer Essentials + Canva Pro (Notion free tier works)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Recommended Tools</h2>
+
+            <div class="tool-card">
+                <div class="tool-info">
+                    <div class="category">Scheduling & Publishing</div>
+                    <h4>Buffer</h4>
+                    <p>Simple, reliable multi-platform scheduling. Supports LinkedIn, Instagram, TikTok, Facebook, Twitter. Clean interface, good analytics. Best value for small teams.</p>
+                    <span class="tool-tag tag-recommended">Recommended</span>
+                </div>
+                <div class="tool-price">
+                    <div class="amount">$6</div>
+                    <div class="period">/month (Essentials)</div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-info">
+                    <div class="category">Content Calendar & Planning</div>
+                    <h4>Notion</h4>
+                    <p>Flexible content calendar, asset management, team collaboration. Already integrated with Claude Agency workflow. Databases, templates, and views.</p>
+                    <span class="tool-tag tag-recommended">Recommended</span>
+                </div>
+                <div class="tool-price">
+                    <div class="amount">$0-10</div>
+                    <div class="period">/month</div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-info">
+                    <div class="category">Video Editing</div>
+                    <h4>CapCut</h4>
+                    <p>Powerful free video editor. Perfect for short-form content (Reels, TikTok). Auto-captions, templates, effects. Mobile and desktop versions.</p>
+                    <span class="tool-tag tag-recommended">Recommended</span>
+                </div>
+                <div class="tool-price">
+                    <div class="amount">Free</div>
+                    <div class="period">(Pro: $10/mo)</div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-info">
+                    <div class="category">Graphics & Design</div>
+                    <h4>Canva</h4>
+                    <p>Fast graphic creation with brand kit feature. Templates for every platform. Team collaboration. Resize for different formats.</p>
+                    <span class="tool-tag tag-recommended">Recommended</span>
+                </div>
+                <div class="tool-price">
+                    <div class="amount">$15</div>
+                    <div class="period">/month (Pro)</div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-info">
+                    <div class="category">Newsletter Platform</div>
+                    <h4>Beehiiv or ConvertKit</h4>
+                    <p>Better growth features than MailChimp. Recommendations, referral programs, better deliverability. Beehiiv free up to 2,500 subs.</p>
+                    <span class="tool-tag tag-recommended">Recommended</span>
+                </div>
+                <div class="tool-price">
+                    <div class="amount">$0-29</div>
+                    <div class="period">/month</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Alternatives Considered</h2>
+
+            <div class="alternative-section">
+                <h4>All-in-One Options</h4>
+
+                <p><strong>Later ($25/mo)</strong> — Good for visual planning, Instagram-first. Includes link-in-bio. Good if you want everything in one place.</p>
+
+                <p><strong>Sprout Social ($249/mo)</strong> — Enterprise-grade. Overkill for current scale. Consider when team grows or managing multiple clients.</p>
+
+                <p><strong>Hootsuite ($99/mo)</strong> — Established but pricey. More features than needed right now.</p>
+            </div>
+
+            <h3>Comparison Table</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Buffer</th>
+                    <th>Later</th>
+                    <th>Hootsuite</th>
+                </tr>
+                <tr>
+                    <td>Multi-platform</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>TikTok support</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Analytics</td>
+                    <td>Basic</td>
+                    <td>Good</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Team collaboration</td>
+                    <td>Limited</td>
+                    <td class="check">✓</td>
+                    <td class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Price (starter)</td>
+                    <td><strong>$6/mo</strong></td>
+                    <td>$25/mo</td>
+                    <td>$99/mo</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Implementation Notes</h2>
+
+            <h3>Getting Started</h3>
+            <ol>
+                <li><strong>Buffer</strong> — Connect all social accounts. Set up posting schedule (3-5x/week per platform).</li>
+                <li><strong>Notion</strong> — Create content calendar template. Set up asset library database.</li>
+                <li><strong>CapCut</strong> — Download on phone + desktop. Set up brand colors/fonts.</li>
+                <li><strong>Canva</strong> — Set up brand kit (colors, fonts, logos). Create templates for each platform.</li>
+                <li><strong>Newsletter</strong> — Migrate list to Beehiiv. Set up welcome sequence.</li>
+            </ol>
+
+            <h3>Workflow Integration</h3>
+            <p>Content creation workflow:</p>
+            <ol>
+                <li><strong>Plan</strong> in Notion (content calendar, ideas, briefs)</li>
+                <li><strong>Create</strong> graphics in Canva, video in CapCut</li>
+                <li><strong>Schedule</strong> in Buffer (queue posts across platforms)</li>
+                <li><strong>Analyze</strong> in Buffer + platform native analytics</li>
+                <li><strong>Iterate</strong> — Update Notion with learnings</li>
+            </ol>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Claude Agency</strong> | Tool Stack Recommendations</p>
+            <p>Created February 3, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
