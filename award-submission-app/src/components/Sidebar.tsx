@@ -8,20 +8,29 @@ import {
   Award,
   BarChart3,
   Sparkles,
-  ChevronRight
+  ChevronRight,
+  ClipboardList
 } from 'lucide-react'
 import { Step } from '../App'
-import { Campaign } from '../types'
+import { Campaign, Submission } from '../types'
 
 interface SidebarProps {
   isOpen: boolean
   currentStep: Step
   setCurrentStep: (step: Step) => void
   campaign: Campaign | null
+  submissions?: Submission[]
 }
 
-export function Sidebar({ isOpen, currentStep, setCurrentStep, campaign }: SidebarProps) {
+export function Sidebar({ isOpen, currentStep, setCurrentStep, campaign, submissions = [] }: SidebarProps) {
   if (!isOpen) return null
+
+  // Calculate submission stats for badges
+  const urgentCount = submissions.filter(s => {
+    const days = Math.ceil((new Date(s.deadline).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
+    return days <= 7 && s.status !== 'submitted'
+  }).length
+  const totalSubmissions = submissions.length
 
   return (
     <aside className="sidebar">
@@ -75,6 +84,18 @@ export function Sidebar({ isOpen, currentStep, setCurrentStep, campaign }: Sideb
         </div>
 
         <div className="nav-section">
+          <span className="nav-section-title">Tracking</span>
+          <NavItem
+            icon={<ClipboardList size={20} />}
+            label="My Submissions"
+            active={currentStep === 'submissions'}
+            onClick={() => setCurrentStep('submissions')}
+            badge={urgentCount > 0 ? urgentCount : totalSubmissions > 0 ? totalSubmissions : undefined}
+            badgeType={urgentCount > 0 ? 'urgent' : 'info'}
+          />
+        </div>
+
+        <div className="nav-section">
           <span className="nav-section-title">Resources</span>
           <NavItem
             icon={<Calendar size={20} />}
@@ -121,13 +142,17 @@ function NavItem({
   label,
   active,
   onClick,
-  disabled
+  disabled,
+  badge,
+  badgeType = 'info'
 }: {
   icon: React.ReactNode
   label: string
   active: boolean
   onClick: () => void
   disabled?: boolean
+  badge?: number
+  badgeType?: 'info' | 'urgent'
 }) {
   return (
     <button
@@ -137,6 +162,9 @@ function NavItem({
     >
       <span className="nav-item-icon">{icon}</span>
       <span className="nav-item-label">{label}</span>
+      {badge !== undefined && (
+        <span className={`nav-item-badge ${badgeType}`}>{badge}</span>
+      )}
       {active && <ChevronRight size={16} className="nav-item-arrow" />}
     </button>
   )

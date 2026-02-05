@@ -797,13 +797,14 @@
             <span class="client-tag">Client Project</span>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
-            <p class="header-timestamp">Last updated: <span id="last-updated">February 3, 2026 @ 7:45 PM</span></p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 3, 2026 @ 9:15 PM</span></p>
         </header>
 
         <nav class="week-nav">
-            <button class="week-tab active" onclick="showWeek('week-1')">Week of Feb 1</button>
-            <button class="week-tab" onclick="showWeek('week-2')">Week of Feb 8</button>
-            <button class="week-tab" onclick="showWeek('week-3')">Week of Feb 15</button>
+            <button class="week-tab active" onclick="showWeek('week-1')">Feb 1-7</button>
+            <button class="week-tab" onclick="showWeek('week-2')">Feb 8-14</button>
+            <button class="week-tab" onclick="showWeek('week-3')">Feb 15-21</button>
+            <button class="week-tab" onclick="showWeek('week-4')">Feb 22-28</button>
         </nav>
 
         <!-- Week 1: Feb 1 -->
@@ -816,7 +817,7 @@
             </div>
 
             <div class="progress-bar">
-                <div class="progress-fill" style="width: 47%"></div>
+                <div class="progress-fill" style="width: 35%"></div>
             </div>
 
             <div class="stats">
@@ -825,11 +826,11 @@
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
-                    <div class="stat-value">1</div>
+                    <div class="stat-value">2</div>
                     <div class="stat-label">In Progress</div>
                 </div>
                 <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
-                    <div class="stat-value">7</div>
+                    <div class="stat-value">11</div>
                     <div class="stat-label">Pending</div>
                 </div>
             </div>
@@ -983,7 +984,7 @@
                         <div class="task-status done"></div>
                         <div class="task-content">
                             <div class="task-title">Get Platform Logins</div>
-                            <div class="task-meta">Completed Feb 3 • Got Google Ads, Analytics access</div>
+                            <div class="task-meta">Completed Feb 3 • Got Google Ads, Analytics, Attio access</div>
                         </div>
                         <span class="task-tag access">Access</span>
                         <span class="task-added">Added Feb 1</span>
@@ -1000,6 +1001,65 @@
                         <span class="task-added">Added Feb 2</span>
                         <span class="task-link">View →</span>
                     </div>
+                    <div class="task" data-status="pending" data-id="add-passwords" onclick="handleTaskClick(event, 'add-passwords')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Add All Passwords to 1Password</div>
+                            <div class="task-meta">Pending • Instagram, TikTok, social accounts needed</div>
+                        </div>
+                        <span class="task-tag access">Access</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header" data-category="priority" style="color: var(--warning);">THIS WEEK PRIORITIES</p>
+                <div class="task-list">
+                    <div class="task" data-status="in-progress" data-id="attio-sequence" onclick="handleTaskClick(event, 'attio-sequence')" style="border-color: var(--warning);">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status in-progress"></div>
+                        <div class="task-content">
+                            <div class="task-title">P1: Rework Attio Email Sequence</div>
+                            <div class="task-meta">In progress • 213 leads, 80%+ not converting. Subject lines, copy, timing all need work</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="meta-ads-review" onclick="handleTaskClick(event, 'meta-ads-review')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">P2: Review Meta Ads Account</div>
+                            <div class="task-meta">Pending • Understand full campaign structure across platforms</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="channel-strategy" onclick="handleTaskClick(event, 'channel-strategy')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">P3: Build Video Campaign Channel Strategy</div>
+                            <div class="task-meta">Pending • Where to run 5 video spots (YouTube, Shorts, etc.)</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="budget-split" onclick="handleTaskClick(event, 'budget-split')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">P4: Create Ad Budget Split Recommendation</div>
+                            <div class="task-meta">Pending • $4K/mo between Google, Meta, video, search</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-link">Details →</span>
+                    </div>
                 </div>
 
                 <p class="category-header" data-category="paid">Paid Media</p>
@@ -1010,28 +1070,6 @@
                         <div class="task-content">
                             <div class="task-title">Google Ads Audit & Restructure</div>
                             <div class="task-meta">In progress • Only search running, need video campaigns</div>
-                        </div>
-                        <span class="task-tag strategy">Strategy</span>
-                        <span class="task-added">Added Feb 3</span>
-                        <span class="task-link">Details →</span>
-                    </div>
-                    <div class="task" data-status="pending" data-id="meta-ads-access" onclick="handleTaskClick(event, 'meta-ads-access')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">Get Meta Ads Access</div>
-                            <div class="task-meta">Pending • Need to check if account exists</div>
-                        </div>
-                        <span class="task-tag access">Access</span>
-                        <span class="task-added">Added Feb 3</span>
-                        <span class="task-link">Details →</span>
-                    </div>
-                    <div class="task" data-status="pending" data-id="youtube-campaign" onclick="handleTaskClick(event, 'youtube-campaign')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">Set Up YouTube/Shorts Video Campaign</div>
-                            <div class="task-meta">Pending • Diversify from search-only</div>
                         </div>
                         <span class="task-tag strategy">Strategy</span>
                         <span class="task-added">Added Feb 3</span>
@@ -1125,9 +1163,41 @@
             <div class="meeting-notes" id="meeting-notes">
                 <div class="meeting-notes-header" onclick="toggleMeetingNotes()">
                     <span class="meeting-notes-title">Meeting Notes</span>
-                    <span class="meeting-notes-meta">Last updated: Feb 2, 2026 <span class="expand-icon">▼</span></span>
+                    <span class="meeting-notes-meta">Last updated: Feb 3, 2026 <span class="expand-icon">▼</span></span>
                 </div>
                 <div class="meeting-notes-content" id="meeting-notes-content">
+                    <!-- Most recent meeting first -->
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">Marketing Deep Dive with Eden</span>
+                            <span class="meeting-entry-date">February 3, 2026</span>
+                        </div>
+                        <div class="meeting-entry-attendees">Attendees: Joshua, Eden</div>
+                        <div class="meeting-entry-summary">
+                            <p><strong>Paid Media Review:</strong> Google Ads running search only (~$5K since Oct). Only 1 campaign with 1 ad group. Meta Ads not yet reviewed. Budget: ~$4K/mo split between Google & Meta.</p>
+                            <p><strong>Lead Quality Issue:</strong> 213 leads in Attio sequence, 80%+ are bots/irrelevant (yahoo emails, fake entries). Very few convert to meetings. Email sequence needs rework.</p>
+                            <p><strong>Video Assets:</strong> 5 commercial spots exist (car, shopper performed best). Conference footage available. Currently only running search ads despite having video assets.</p>
+                            <p><strong>Key Insight:</strong> Main differentiator is white-glove, done-for-you service. Hit on FOMO (AI is overwhelming) AND optimism (we handle it for you).</p>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>Priority Actions (This Week)</h5>
+                            <ul>
+                                <li><strong>P1:</strong> Review Attio email sequence - this is where money is lost</li>
+                                <li><strong>P2:</strong> Review Meta Ads account and overall campaign structure</li>
+                                <li><strong>P3:</strong> Build channel strategy for video campaigns (YouTube, Shorts)</li>
+                                <li><strong>P4:</strong> Create ad budget split recommendation</li>
+                            </ul>
+                            <h5>Later Priorities</h5>
+                            <ul>
+                                <li>Set up TikTok account with consistent branding</li>
+                                <li>Fix Instagram posts (re-upload in higher quality)</li>
+                                <li>Organic presence before influencer outreach</li>
+                                <li>Explore creator networks (Igor/Sentient, others)</li>
+                                <li>Founder personality content (podcast, camera talks)</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="meeting-entry">
                         <div class="meeting-entry-header">
                             <span class="meeting-entry-title">Weekly Sync - First Meeting</span>
@@ -1171,7 +1241,7 @@
         <div id="week-2" class="week-content">
             <div class="week-header">
                 <div>
-                    <h2 class="week-title">Week 2: Content Rollout</h2>
+                    <h2 class="week-title">Week 2: Organic Foundation</h2>
                     <p class="week-dates">February 8 - 14, 2026</p>
                 </div>
             </div>
@@ -1180,9 +1250,81 @@
                 <div class="progress-fill" style="width: 0%"></div>
             </div>
 
-            <div class="empty-state">
-                <p>Tasks for this week will be populated after Week 1 foundations are in place.</p>
-                <p style="margin-top: 10px; font-size: 13px;">Expected: Content calendar execution, first social posts, newsletter #2</p>
+            <div class="stats">
+                <div class="stat" data-filter="done">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat" data-filter="in-progress">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">In Progress</div>
+                </div>
+                <div class="stat" data-filter="pending">
+                    <div class="stat-value">6</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">Scheduled Tasks</h3>
+                </div>
+
+                <p class="category-header">Organic Presence</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Set Up TikTok Account</div>
+                            <div class="task-meta">Consistent branding with Instagram • Same username/password system</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                    </div>
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Fix Instagram Posts (Re-upload High Quality)</div>
+                            <div class="task-meta">Current posts low quality • Enable high quality upload setting</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                    </div>
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">LinkedIn Company Page Setup</div>
+                            <div class="task-meta">B2B presence • Thought leadership content</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                    </div>
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Newsletter #2 - Weekly AI Digest</div>
+                            <div class="task-meta">Send Monday • Headlines + Deep Dive format</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                    </div>
+                </div>
+
+                <p class="category-header">Paid Media Execution</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Implement Budget Split</div>
+                            <div class="task-meta">Execute approved allocation across platforms</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                    </div>
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Launch Video Test Campaign</div>
+                            <div class="task-meta">Run all 5 videos • See which performs best</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1190,7 +1332,7 @@
         <div id="week-3" class="week-content">
             <div class="week-header">
                 <div>
-                    <h2 class="week-title">Week 3: TBD</h2>
+                    <h2 class="week-title">Week 3: Partnerships & Personality</h2>
                     <p class="week-dates">February 15 - 21, 2026</p>
                 </div>
             </div>
@@ -1199,8 +1341,96 @@
                 <div class="progress-fill" style="width: 0%"></div>
             </div>
 
+            <div class="stats">
+                <div class="stat" data-filter="done">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat" data-filter="in-progress">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">In Progress</div>
+                </div>
+                <div class="stat" data-filter="pending">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">Scheduled Tasks</h3>
+                </div>
+
+                <p class="category-header">Creator Partnerships</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Research Creator Networks</div>
+                            <div class="task-meta">Igor/Sentient network + alternatives • Get multiple RFPs</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                    </div>
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Identify Target Influencer Pages</div>
+                            <div class="task-meta">Business owner audiences • AI/tech focus</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                    </div>
+                </div>
+
+                <p class="category-header">Founder Content</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Plan Founder Personality Content</div>
+                            <div class="task-meta">Yarden/Eden on camera • Startup journey, AI takes</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                    </div>
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Identify Podcast Guest Opportunities</div>
+                            <div class="task-meta">AI, startup, marketing podcasts • Build authority</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                    </div>
+                </div>
+
+                <p class="category-header">Review & Optimize</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">March Budget Reallocation</div>
+                            <div class="task-meta">Review Feb performance • Adjust splits</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 4: Feb 22 -->
+        <div id="week-4" class="week-content">
+            <div class="week-header">
+                <div>
+                    <h2 class="week-title">Week 4: Scale & Iterate</h2>
+                    <p class="week-dates">February 22 - 28, 2026</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+
             <div class="empty-state">
-                <p>Planning in progress.</p>
+                <p>Planning based on Week 2-3 learnings.</p>
+                <p style="margin-top: 10px; font-size: 13px;">Expected: Double down on what works, cut what doesn't</p>
             </div>
         </div>
 
@@ -1530,6 +1760,113 @@
                     </ul>
                 `,
                 deliverable: '../Newsletters/2026/02/2026-02-01-weekly-digest.html'
+            },
+            'attio-sequence': {
+                title: 'Rework Attio Email Sequence',
+                status: 'in-progress',
+                content: `
+                    <span class="status-badge" style="background: var(--warning-dim); color: var(--warning);">P1 - TOP PRIORITY</span>
+                    <p><strong>Current State:</strong></p>
+                    <ul>
+                        <li>213 leads in sequence</li>
+                        <li>80%+ are bots or irrelevant (yahoo emails, nonsense entries)</li>
+                        <li>Almost zero conversions to meetings</li>
+                        <li>15 emails in sequence, 2-4 days apart</li>
+                    </ul>
+                    <p><strong>Issues Identified:</strong></p>
+                    <ul>
+                        <li>Subject lines too vague ("I like where your head's at")</li>
+                        <li>Email #2 is a wall of text - people skip</li>
+                        <li>Not hitting on FOMO or competitor pressure</li>
+                        <li>Missing personalization (company name, industry)</li>
+                    </ul>
+                    <p><strong>Ideas from Meeting:</strong></p>
+                    <ul>
+                        <li>Lead with value: "How many people asked ChatGPT about you?"</li>
+                        <li>Add competitor angle: "Your competitor is scaling up"</li>
+                        <li>Hit FOMO: AI is overwhelming + we handle it for you</li>
+                        <li>Shorter emails, more direct CTAs</li>
+                    </ul>
+                `,
+                deliverable: null
+            },
+            'meta-ads-review': {
+                title: 'Review Meta Ads Account',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">P2 Priority</span>
+                    <p><strong>Goal:</strong> Understand full campaign structure across Meta platforms.</p>
+                    <p><strong>Questions to answer:</strong></p>
+                    <ul>
+                        <li>What campaigns are running?</li>
+                        <li>Are video assets being used?</li>
+                        <li>What's the budget allocation?</li>
+                        <li>Is there pixel tracking for retargeting?</li>
+                    </ul>
+                `,
+                deliverable: null
+            },
+            'channel-strategy': {
+                title: 'Build Video Campaign Channel Strategy',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">P3 Priority</span>
+                    <p><strong>Assets Available:</strong></p>
+                    <ul>
+                        <li>5 commercial spots (car and shopper perform best)</li>
+                        <li>Conference footage</li>
+                        <li>Speaking engagement videos</li>
+                    </ul>
+                    <p><strong>Channels to Consider:</strong></p>
+                    <ul>
+                        <li>YouTube pre-roll</li>
+                        <li>YouTube Shorts</li>
+                        <li>Instagram Reels (via Meta)</li>
+                        <li>TikTok ads</li>
+                    </ul>
+                    <p><strong>Output:</strong> Recommendation for which videos run where.</p>
+                `,
+                deliverable: null
+            },
+            'budget-split': {
+                title: 'Create Ad Budget Split Recommendation',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">P4 Priority</span>
+                    <p><strong>Current Budget:</strong> ~$4,000/month</p>
+                    <p><strong>Current Split:</strong> Equal between Google and Meta (not optimized)</p>
+                    <p><strong>Need to Propose:</strong></p>
+                    <ul>
+                        <li>% for Google Search</li>
+                        <li>% for Google Video (YouTube)</li>
+                        <li>% for Meta (Instagram/Facebook)</li>
+                        <li>% for testing new channels</li>
+                    </ul>
+                    <p><strong>Timeline:</strong> Propose by end of week, implement Week 2, review end of Feb.</p>
+                `,
+                deliverable: null
+            },
+            'add-passwords': {
+                title: 'Add All Passwords to 1Password',
+                status: 'pending',
+                content: `
+                    <span class="status-badge pending">Pending</span>
+                    <p><strong>Currently in 1Password:</strong></p>
+                    <ul>
+                        <li>Framer</li>
+                        <li>Zappy/Profounder</li>
+                    </ul>
+                    <p><strong>Need to Add:</strong></p>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>TikTok (once created)</li>
+                        <li>LinkedIn</li>
+                        <li>Attio</li>
+                        <li>Google Ads</li>
+                        <li>Meta Ads</li>
+                    </ul>
+                `,
+                deliverable: null
             }
         };
 

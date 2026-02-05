@@ -152,3 +152,34 @@ export interface WinningExample {
   whatToLearn: string[]
   categoryFit: string[]
 }
+
+// Submission Status Tracking
+export type SubmissionStatus =
+  | 'not_started'
+  | 'draft'
+  | 'in_review'
+  | 'elt_approved'
+  | 'client_approved'
+  | 'submitted'
+
+export interface Submission {
+  id: string
+  campaignId: string
+  campaignName: string
+  awardId: string
+  awardName: string
+  category: string
+  status: SubmissionStatus
+  deadline: string // ISO date string
+  submittedBy: 'tbwa' | 'netflix' | 'client'
+  entryCost?: number
+  notes?: string
+  lastUpdated: string // ISO date string
+  createdAt: string // ISO date string
+}
+
+export interface SubmissionFilters {
+  status?: SubmissionStatus | 'all'
+  award?: string | 'all'
+  urgency?: 'critical' | 'soon' | 'comfortable' | 'all'
+}
