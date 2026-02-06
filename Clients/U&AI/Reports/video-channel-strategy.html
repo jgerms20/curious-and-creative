@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Channel Strategy | U&AI</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --accent: #2563eb;
+            --accent-light: #dbeafe;
+            --success: #10b981;
+            --success-light: #d1fae5;
+            --warning: #f59e0b;
+            --warning-light: #fef3c7;
+            --border: #e5e7eb;
+            --card: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .report {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: var(--card);
+            min-height: 100vh;
+        }
+
+        .report-header {
+            border-bottom: 3px solid var(--text);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .report-meta {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .report-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .recommendation-box {
+            background: var(--success-light);
+            padding: 30px;
+            border-left: 4px solid var(--success);
+            margin: 30px 0;
+        }
+
+        .recommendation-box h4 {
+            color: #047857;
+            margin-bottom: 15px;
+        }
+
+        .recommendation-box p {
+            margin: 0;
+        }
+
+        .warning-box {
+            background: var(--warning-light);
+            padding: 25px;
+            border-left: 4px solid var(--warning);
+            margin: 25px 0;
+        }
+
+        .warning-box h4 {
+            color: #b45309;
+            margin-bottom: 10px;
+        }
+
+        .video-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .video-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .video-card .video-type {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .video-card .performance {
+            font-size: 12px;
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .video-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .channel-rec {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .channel-tag {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .tag-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .tag-secondary {
+            background: var(--border);
+            color: var(--text);
+        }
+
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .channel-box {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .channel-box h4 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        .channel-box ul {
+            font-size: 14px;
+            margin-left: 18px;
+        }
+
+        .channel-box li {
+            margin-bottom: 8px;
+        }
+
+        .strategy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+        }
+
+        .strategy-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background: #f1f5f9;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .strategy-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        .strategy-table tr:hover {
+            background: #f8fafc;
+        }
+
+        .priority-high {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .priority-med {
+            color: var(--warning);
+            font-weight: 600;
+        }
+
+        .budget-split {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .budget-split .label {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        .budget-split .amount {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .budget-split .note {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent);
+            padding-left: 25px;
+            margin: 25px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .timeline-item h4 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="report">
+        <header class="report-header">
+            <div class="report-meta">Claude Agency | Strategy Report</div>
+            <h1>Video Channel Strategy</h1>
+            <p class="report-subtitle">Where to Deploy 5 Video Assets for Maximum Impact | February 2026</p>
+        </header>
+
+        <section>
+            <h2>Executive Summary</h2>
+
+            <div class="recommendation-box">
+                <h4>Primary Recommendation</h4>
+                <p><strong>YouTube Pre-Roll + Meta Reels</strong> — Run "Car" and "Shopper" spots on YouTube for intent-based discovery, repurpose all 5 videos as Reels/Shorts for social reach. Allocate 60% of video budget to YouTube, 40% to Meta.</p>
+            </div>
+
+            <p>U&AI has 5 commercial video assets that are currently underutilized. Only search ads are running despite having strong creative. This strategy outlines where each video should run, in what format, and why.</p>
+
+            <div class="warning-box">
+                <h4>Key Insight from Eden Call</h4>
+                <p>"Car" and "Shopper" videos have historically performed best. These should be primary spend, with other videos used for testing and retargeting.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Video Asset Inventory</h2>
+
+            <div class="video-card">
+                <h4>
+                    <span class="video-type">Commercial</span>
+                    "Car" Video
+                    <span class="performance">★ Top Performer</span>
+                </h4>
+                <p>Business owner in car scenario. Relatable, shows pain point of being overwhelmed. Strong emotional hook.</p>
+                <div class="channel-rec">
+                    <span class="channel-tag tag-primary">YouTube Pre-Roll</span>
+                    <span class="channel-tag tag-primary">Meta Feed</span>
+                    <span class="channel-tag tag-secondary">LinkedIn Sponsored</span>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <h4>
+                    <span class="video-type">Commercial</span>
+                    "Shopper" Video
+                    <span class="performance">★ Top Performer</span>
+                </h4>
+                <p>Shopper/retail angle. Demonstrates AI helping with customer-facing business. Clear value proposition.</p>
+                <div class="channel-rec">
+                    <span class="channel-tag tag-primary">YouTube Pre-Roll</span>
+                    <span class="channel-tag tag-primary">Instagram Reels</span>
+                    <span class="channel-tag tag-secondary">TikTok</span>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <h4>
+                    <span class="video-type">Commercial</span>
+                    Video #3
+                </h4>
+                <p>Additional commercial spot. Use for A/B testing against top performers.</p>
+                <div class="channel-rec">
+                    <span class="channel-tag tag-secondary">YouTube Shorts</span>
+                    <span class="channel-tag tag-secondary">TikTok</span>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <h4>
+                    <span class="video-type">Commercial</span>
+                    Video #4
+                </h4>
+                <p>Additional commercial spot. Reserve for retargeting campaigns.</p>
+                <div class="channel-rec">
+                    <span class="channel-tag tag-secondary">Meta Retargeting</span>
+                    <span class="channel-tag tag-secondary">YouTube Retargeting</span>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <h4>
+                    <span class="video-type">Commercial</span>
+                    Video #5
+                </h4>
+                <p>Additional commercial spot. Use for fresh creative rotation after 30 days.</p>
+                <div class="channel-rec">
+                    <span class="channel-tag tag-secondary">Rotation Reserve</span>
+                </div>
+            </div>
+
+            <p><strong>Also Available:</strong> Conference footage and speaking engagement videos. These work well for LinkedIn organic content and founder credibility posts.</p>
+        </section>
+
+        <section>
+            <h2>Channel-by-Channel Strategy</h2>
+
+            <div class="channel-grid">
+                <div class="channel-box">
+                    <h4>YouTube Pre-Roll</h4>
+                    <ul>
+                        <li><strong>Videos:</strong> Car, Shopper</li>
+                        <li><strong>Format:</strong> 15-30 second skippable</li>
+                        <li><strong>Targeting:</strong> Business owners, entrepreneurs, "AI for business" searchers</li>
+                        <li><strong>Goal:</strong> Awareness + website traffic</li>
+                    </ul>
+                </div>
+
+                <div class="channel-box">
+                    <h4>YouTube Shorts</h4>
+                    <ul>
+                        <li><strong>Videos:</strong> All 5 (cropped to vertical)</li>
+                        <li><strong>Format:</strong> Under 60 seconds, vertical</li>
+                        <li><strong>Targeting:</strong> Broad discovery</li>
+                        <li><strong>Goal:</strong> Reach + brand awareness</li>
+                    </ul>
+                </div>
+
+                <div class="channel-box">
+                    <h4>Meta (Facebook/Instagram)</h4>
+                    <ul>
+                        <li><strong>Videos:</strong> Car (feed), Shopper (Reels)</li>
+                        <li><strong>Format:</strong> Square for feed, vertical for Reels</li>
+                        <li><strong>Targeting:</strong> SMB owners, decision makers</li>
+                        <li><strong>Goal:</strong> Leads + retargeting pool</li>
+                    </ul>
+                </div>
+
+                <div class="channel-box">
+                    <h4>LinkedIn (Organic First)</h4>
+                    <ul>
+                        <li><strong>Videos:</strong> Conference footage, founder clips</li>
+                        <li><strong>Format:</strong> Native upload, captions</li>
+                        <li><strong>Targeting:</strong> B2B decision makers</li>
+                        <li><strong>Goal:</strong> Credibility + thought leadership</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>TikTok Consideration</h3>
+            <p>TikTok is lower priority for B2B services, but can work for brand awareness and attracting younger business owners. Post all 5 videos organically first to test engagement before paid spend.</p>
+        </section>
+
+        <section>
+            <h2>Recommended Channel Mix</h2>
+
+            <table class="strategy-table">
+                <tr>
+                    <th>Channel</th>
+                    <th>Video(s)</th>
+                    <th>Budget %</th>
+                    <th>Priority</th>
+                </tr>
+                <tr>
+                    <td>YouTube Pre-Roll</td>
+                    <td>Car, Shopper</td>
+                    <td>35%</td>
+                    <td class="priority-high">High</td>
+                </tr>
+                <tr>
+                    <td>YouTube Shorts</td>
+                    <td>All 5</td>
+                    <td>15%</td>
+                    <td class="priority-high">High</td>
+                </tr>
+                <tr>
+                    <td>Meta Feed + Reels</td>
+                    <td>Car, Shopper</td>
+                    <td>30%</td>
+                    <td class="priority-high">High</td>
+                </tr>
+                <tr>
+                    <td>Meta Retargeting</td>
+                    <td>Video #4</td>
+                    <td>10%</td>
+                    <td class="priority-med">Medium</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn (Paid)</td>
+                    <td>Conference clips</td>
+                    <td>10%</td>
+                    <td class="priority-med">Medium</td>
+                </tr>
+                <tr>
+                    <td>TikTok</td>
+                    <td>Organic only</td>
+                    <td>0%</td>
+                    <td class="priority-med">Test First</td>
+                </tr>
+            </table>
+
+            <div class="budget-split">
+                <div class="label">Recommended Video Ad Budget</div>
+                <div class="amount">$1,500-2,000/mo</div>
+                <div class="note">Out of $5K total media budget (30-40%)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Implementation Phases</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Phase 1: Foundation (Week 1)</h4>
+                    <ul>
+                        <li>Upload all 5 videos to Google Ads (YouTube)</li>
+                        <li>Create 15-second and 30-second cuts</li>
+                        <li>Set up YouTube pre-roll campaign with Car + Shopper</li>
+                        <li>Upload vertical versions to Shorts</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 2: Meta Launch (Week 2)</h4>
+                    <ul>
+                        <li>Upload to Meta Business Manager</li>
+                        <li>Create feed and Reels versions</li>
+                        <li>Set up lookalike audiences from existing leads</li>
+                        <li>Launch Car video in feed, Shopper in Reels</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 3: Optimization (Weeks 3-4)</h4>
+                    <ul>
+                        <li>Review performance data</li>
+                        <li>Pause underperformers, scale winners</li>
+                        <li>Introduce Video #4 for retargeting</li>
+                        <li>Test LinkedIn paid with conference clips</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 4: Scale (Month 2+)</h4>
+                    <ul>
+                        <li>Rotate in Video #5 for fresh creative</li>
+                        <li>Expand targeting based on learnings</li>
+                        <li>Consider TikTok paid if organic shows promise</li>
+                        <li>Create new video content based on top performer style</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Creative Recommendations</h2>
+
+            <h3>Video Edits Needed</h3>
+            <ol>
+                <li><strong>Vertical crops</strong> — All 5 videos need 9:16 versions for Shorts/Reels/TikTok</li>
+                <li><strong>15-second cuts</strong> — For YouTube bumper ads and Instagram Stories</li>
+                <li><strong>Caption overlays</strong> — 85% of video is watched on mute</li>
+                <li><strong>Strong hook</strong> — First 3 seconds must grab attention (recut if needed)</li>
+            </ol>
+
+            <h3>A/B Testing Plan</h3>
+            <ul>
+                <li><strong>Test 1:</strong> Car vs. Shopper on YouTube (which drives more clicks?)</li>
+                <li><strong>Test 2:</strong> 15-second vs. 30-second on Meta (completion rates)</li>
+                <li><strong>Test 3:</strong> With captions vs. without on Instagram Reels</li>
+                <li><strong>Test 4:</strong> Feed placement vs. Reels placement on Meta</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Success Metrics</h2>
+
+            <table class="strategy-table">
+                <tr>
+                    <th>Channel</th>
+                    <th>Primary KPI</th>
+                    <th>Target</th>
+                </tr>
+                <tr>
+                    <td>YouTube Pre-Roll</td>
+                    <td>View Rate (watched 30+ sec)</td>
+                    <td>&gt;25%</td>
+                </tr>
+                <tr>
+                    <td>YouTube Shorts</td>
+                    <td>Engagement Rate</td>
+                    <td>&gt;5%</td>
+                </tr>
+                <tr>
+                    <td>Meta Feed</td>
+                    <td>Cost Per Lead</td>
+                    <td>&lt;$50</td>
+                </tr>
+                <tr>
+                    <td>Meta Reels</td>
+                    <td>ThruPlays</td>
+                    <td>&gt;15% completion</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td>Engagement Rate</td>
+                    <td>&gt;3%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+
+            <ol>
+                <li><strong>Get video files</strong> — Request HD versions from Yarden/Eden</li>
+                <li><strong>Review current state</strong> — Check if videos are already in Google Ads</li>
+                <li><strong>Create vertical cuts</strong> — Use CapCut for quick edits</li>
+                <li><strong>Set up campaigns</strong> — Start with YouTube, then Meta</li>
+                <li><strong>Establish baselines</strong> — Run 2 weeks before optimizing</li>
+            </ol>
+
+            <div class="warning-box">
+                <h4>Blockers to Resolve</h4>
+                <p><strong>Need access to:</strong> Meta Business Manager, video asset files, Google Ads (already have). Without Meta access, can only execute YouTube portion of this strategy.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Claude Agency</strong> | Video Channel Strategy</p>
+            <p>Created February 3, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
