@@ -230,6 +230,17 @@
             display: none;
         }
 
+        /* Grayed out completed tasks */
+        .task.completed-gray {
+            opacity: 0.5;
+            background: var(--bg);
+        }
+
+        .task.completed-gray .task-title {
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
         .task-status {
             width: 10px;
             height: 10px;
@@ -308,11 +319,12 @@
 
         /* This Week's Priorities - Always visible at top */
         .priorities-section {
-            background: linear-gradient(135deg, #1e3a5f 0%, #14532d 100%);
-            border: 2px solid var(--accent);
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            border: 3px solid #d4af37;
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
         }
 
         .priorities-header {
@@ -325,9 +337,14 @@
         .priorities-title {
             font-size: 16px;
             font-weight: 600;
-            color: var(--accent);
+            color: #d4af37;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+
+        .priority-number {
+            background: #d4af37;
+            color: #000;
         }
 
         .priority-item {
@@ -448,6 +465,122 @@
         .note-input:focus {
             outline: none;
             border-color: var(--accent);
+        }
+
+        /* Collapsible Sections */
+        .collapsible-section {
+            margin-bottom: 20px;
+        }
+
+        .collapsible-header {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .collapsible-header:hover {
+            opacity: 0.8;
+        }
+
+        .collapse-icon {
+            font-size: 10px;
+            margin-left: 8px;
+            transition: transform 0.2s;
+        }
+
+        .collapsible-content.collapsed {
+            display: none;
+        }
+
+        .collapsed .collapse-icon {
+            transform: rotate(-90deg);
+        }
+
+        /* Newsletter List */
+        .newsletter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .newsletter-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .newsletter-item:hover {
+            border-color: var(--accent);
+            background: var(--surface-hover);
+        }
+
+        .newsletter-date {
+            font-size: 12px;
+            color: var(--text-muted);
+            min-width: 80px;
+        }
+
+        .newsletter-title {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .newsletter-status {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .newsletter-status.sent {
+            background: var(--success-dim);
+            color: var(--success);
+        }
+
+        .newsletter-status.draft {
+            background: var(--warning-dim);
+            color: var(--warning);
+        }
+
+        /* Add Button */
+        .add-btn {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .add-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Category headers collapsible */
+        .category-header {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-header::before {
+            content: '▼';
+            font-size: 8px;
+            transition: transform 0.2s;
+        }
+
+        .category-header.collapsed::before {
+            transform: rotate(-90deg);
         }
 
         .deliverables {
@@ -963,46 +1096,30 @@
         <!-- This Week's Priorities - Always at top -->
         <div class="priorities-section">
             <div class="priorities-header">
-                <span class="priorities-title">This Week's Priorities</span>
-                <span style="font-size: 12px; color: var(--text-muted);">Feb 3-7</span>
+                <span class="priorities-title">This Week's Top 3</span>
+                <span style="font-size: 12px; color: #d4af37;">Feb 5-7</span>
             </div>
             <div class="priority-item">
                 <span class="priority-number">1</span>
                 <div class="priority-content">
-                    <div class="priority-title">Newsletter #2 - Super Bowl + AI Ads Theme</div>
-                    <div class="priority-meta">Lead with Super Bowl ads conversation, tie to organic vs paid visibility</div>
-                </div>
-                <span class="priority-status ready">Ready</span>
-            </div>
-            <div class="priority-item">
-                <span class="priority-number">2</span>
-                <div class="priority-content">
-                    <div class="priority-title">Attio Email Sequence Rework</div>
-                    <div class="priority-meta">213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
-                </div>
-                <span class="priority-status blocked">Need Login</span>
-            </div>
-            <div class="priority-item">
-                <span class="priority-number">3</span>
-                <div class="priority-content">
-                    <div class="priority-title">Meta Ads Setup</div>
-                    <div class="priority-meta">They're not running any Meta ads. Need to start Facebook/IG campaigns</div>
-                </div>
-                <span class="priority-status blocked">Need Access</span>
-            </div>
-            <div class="priority-item">
-                <span class="priority-number">4</span>
-                <div class="priority-content">
-                    <div class="priority-title">Google Ads - Add Video Campaign</div>
-                    <div class="priority-meta">Create separate campaign for video ads alongside search. Nerf search, add video</div>
+                    <div class="priority-title">Newsletter #2 - Super Bowl + AI Ads</div>
+                    <div class="priority-meta">Anthropic vs OpenAI ads debate, Claude Opus 4.6 release, what it means for brands</div>
                 </div>
                 <span class="priority-status in-progress">In Progress</span>
             </div>
             <div class="priority-item">
-                <span class="priority-number">5</span>
+                <span class="priority-number">2</span>
                 <div class="priority-content">
-                    <div class="priority-title">Remove Bad IG Posts</div>
-                    <div class="priority-meta">Current organic posts aren't good. Clean up before pushing new content</div>
+                    <div class="priority-title">Google Ads - Add Video Campaign</div>
+                    <div class="priority-meta">Create Campaign 2 for video, nerf search budget, structure by asset type</div>
+                </div>
+                <span class="priority-status in-progress">In Progress</span>
+            </div>
+            <div class="priority-item">
+                <span class="priority-number">3</span>
+                <div class="priority-content">
+                    <div class="priority-title">Attio Email Sequence Rework</div>
+                    <div class="priority-meta">213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
                 </div>
                 <span class="priority-status blocked">Need Login</span>
             </div>
@@ -1043,13 +1160,32 @@
                 </div>
             </div>
 
+            <!-- Newsletters Section -->
+            <div class="section collapsible-section">
+                <div class="section-header collapsible-header" onclick="toggleSection('newsletters-section')">
+                    <h3 class="section-title">Newsletters <span class="collapse-icon">▼</span></h3>
+                    <button class="add-btn" onclick="event.stopPropagation(); addNewsletter()">+ Add</button>
+                </div>
+                <div id="newsletters-section" class="collapsible-content">
+                    <div class="newsletter-list">
+                        <div class="newsletter-item" onclick="openNewsletter('2026-02-01')">
+                            <span class="newsletter-date">Feb 1, 2026</span>
+                            <span class="newsletter-title">Weekly AI Digest #1</span>
+                            <span class="newsletter-status sent">Sent</span>
+                        </div>
+                        <div class="newsletter-item" onclick="openNewsletter('2026-02-08')">
+                            <span class="newsletter-date">Feb 8, 2026</span>
+                            <span class="newsletter-title">Super Bowl + AI Ads Special</span>
+                            <span class="newsletter-status draft">Draft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="section">
                 <div class="section-header">
-                    <h3 class="section-title">Tasks <span class="section-timestamp">• Updated 7:45 PM</span></h3>
-                    <div class="mode-toggle">
-                        <span>Manual check</span>
-                        <div class="toggle-switch" id="manual-toggle" onclick="toggleManualMode()"></div>
-                    </div>
+                    <h3 class="section-title">Tasks <span class="section-timestamp">• Updated 2:30 PM</span></h3>
+                    <button class="add-btn" onclick="showAddTaskModal()">+ Add Task</button>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                     <span class="filter-info" id="filter-info" onclick="clearAllFilters()" style="display: none;">Clear filter</span>
@@ -1470,11 +1606,12 @@
 
                 <p class="category-header">Organic Presence</p>
                 <div class="task-list">
-                    <div class="task" data-status="pending" data-id="tiktok-setup" onclick="openTaskModal('tiktok-setup')">
-                        <div class="task-status pending"></div>
+                    <div class="task completed-gray" data-status="done" data-id="tiktok-setup" onclick="openTaskModal('tiktok-setup')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
                         <div class="task-content">
                             <div class="task-title">Set Up TikTok Account</div>
-                            <div class="task-meta">Consistent branding with Instagram • Same username/password system</div>
+                            <div class="task-meta">Completed Feb 5 • Account created with consistent branding</div>
                         </div>
                         <span class="task-tag content">Content</span>
                         <span class="task-link">Details →</span>
@@ -2457,19 +2594,7 @@
         });
 
         // Manual mode toggle
-        let manualMode = false;
-
-        function toggleManualMode() {
-            manualMode = !manualMode;
-            const toggle = document.getElementById('manual-toggle');
-            const container = document.querySelector('.container');
-
-            toggle.classList.toggle('active', manualMode);
-            container.classList.toggle('manual-mode', manualMode);
-        }
-
         function toggleTaskCheck(event, checkbox) {
-            if (!manualMode) return;
             event.stopPropagation();
 
             checkbox.classList.toggle('checked');
@@ -2479,16 +2604,156 @@
             if (checkbox.classList.contains('checked')) {
                 task.dataset.status = 'done';
                 status.className = 'task-status done';
+                task.classList.add('completed-gray');
             } else {
                 task.dataset.status = 'pending';
                 status.className = 'task-status pending';
+                task.classList.remove('completed-gray');
             }
 
             updateStats();
+            saveTaskStates();
         }
 
+        function saveTaskStates() {
+            const tasks = document.querySelectorAll('.task');
+            const states = {};
+            tasks.forEach(task => {
+                if (task.dataset.id) {
+                    states[task.dataset.id] = {
+                        status: task.dataset.status,
+                        checked: task.querySelector('.task-checkbox')?.classList.contains('checked')
+                    };
+                }
+            });
+            localStorage.setItem('taskStates', JSON.stringify(states));
+        }
+
+        function loadTaskStates() {
+            const states = JSON.parse(localStorage.getItem('taskStates') || '{}');
+            Object.keys(states).forEach(id => {
+                const task = document.querySelector(`.task[data-id="${id}"]`);
+                if (task && states[id].checked) {
+                    const checkbox = task.querySelector('.task-checkbox');
+                    const status = task.querySelector('.task-status');
+                    if (checkbox) {
+                        checkbox.classList.add('checked');
+                        task.classList.add('completed-gray');
+                        task.dataset.status = 'done';
+                        if (status) status.className = 'task-status done';
+                    }
+                }
+            });
+        }
+
+        // Collapsible sections
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('collapsed');
+        }
+
+        function toggleCategory(header) {
+            header.classList.toggle('collapsed');
+            let next = header.nextElementSibling;
+            if (next && next.classList.contains('task-list')) {
+                next.style.display = next.style.display === 'none' ? 'flex' : 'none';
+            }
+        }
+
+        // Newsletter functions
+        function openNewsletter(date) {
+            window.open(`../Newsletters/2026/02/${date}-weekly-digest.html`, '_blank');
+        }
+
+        function addNewsletter() {
+            alert('Newsletter creation coming soon!');
+        }
+
+        // Add task modal
+        function showAddTaskModal() {
+            const modalHtml = `
+                <div id="add-task-overlay" class="modal-overlay active" onclick="closeAddTaskModal()">
+                    <div class="modal" onclick="event.stopPropagation()">
+                        <h2 class="modal-title">Add New Task</h2>
+                        <div class="modal-body">
+                            <input type="text" id="new-task-title" class="note-input" placeholder="Task title..." style="margin-bottom: 10px;">
+                            <textarea id="new-task-meta" class="note-input" placeholder="Description..."></textarea>
+                            <select id="new-task-category" class="note-input" style="margin-top: 10px;">
+                                <option value="research">Research</option>
+                                <option value="content">Content</option>
+                                <option value="access">Access</option>
+                                <option value="strategy">Strategy</option>
+                                <option value="system">System</option>
+                            </select>
+                            <select id="new-task-week" class="note-input" style="margin-top: 10px;">
+                                <option value="week-1">Week 1 (Feb 1-7)</option>
+                                <option value="week-2">Week 2 (Feb 8-14)</option>
+                                <option value="week-3">Week 3 (Feb 15-21)</option>
+                                <option value="week-4">Week 4 (Feb 22-28)</option>
+                            </select>
+                        </div>
+                        <div class="modal-actions">
+                            <button class="btn btn-primary" onclick="addNewTask()">Add Task</button>
+                            <button class="btn btn-secondary" onclick="closeAddTaskModal()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('beforeend', modalHtml);
+        }
+
+        function closeAddTaskModal() {
+            const overlay = document.getElementById('add-task-overlay');
+            if (overlay) overlay.remove();
+        }
+
+        function addNewTask() {
+            const title = document.getElementById('new-task-title').value;
+            const meta = document.getElementById('new-task-meta').value;
+            const category = document.getElementById('new-task-category').value;
+            const week = document.getElementById('new-task-week').value;
+
+            if (!title) { alert('Please enter a task title'); return; }
+
+            const taskId = 'custom-' + Date.now();
+            const taskHtml = `
+                <div class="task" data-status="pending" data-id="${taskId}" onclick="handleTaskClick(event, '${taskId}')">
+                    <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                    <div class="task-status pending"></div>
+                    <div class="task-content">
+                        <div class="task-title">${title}</div>
+                        <div class="task-meta">${meta || 'Pending'}</div>
+                    </div>
+                    <span class="task-tag ${category}">${category.charAt(0).toUpperCase() + category.slice(1)}</span>
+                    <span class="task-added">Added ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    <span class="task-link">Details →</span>
+                </div>
+            `;
+
+            taskDetails[taskId] = {
+                title: title,
+                status: 'pending',
+                content: `<span class="status-badge pending">Pending</span><p>${meta || 'No description yet.'}</p>`,
+                deliverable: null
+            };
+
+            const weekContent = document.getElementById(week);
+            const taskLists = weekContent.querySelectorAll('.task-list');
+            if (taskLists.length > 0) {
+                taskLists[taskLists.length - 1].insertAdjacentHTML('beforeend', taskHtml);
+            }
+            closeAddTaskModal();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadTaskStates();
+            document.querySelectorAll('.category-header').forEach(header => {
+                header.addEventListener('click', function() { toggleCategory(this); });
+            });
+        });
+
         function handleTaskClick(event, taskId) {
-            if (manualMode && event.target.classList.contains('task-checkbox')) {
+            if (event.target.classList.contains('task-checkbox')) {
                 return; // Let checkbox handler deal with it
             }
 
