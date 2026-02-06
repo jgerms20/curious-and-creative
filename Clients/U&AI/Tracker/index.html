@@ -290,6 +290,22 @@
             opacity: 1;
         }
 
+        .task-external-link {
+            font-size: 11px;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 3px 8px;
+            background: var(--accent-dim);
+            border-radius: 4px;
+            margin-left: 8px;
+            transition: all 0.2s;
+        }
+
+        .task-external-link:hover {
+            background: var(--accent);
+            color: white;
+        }
+
         .deliverables {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -1024,6 +1040,7 @@
                             <div class="task-meta">In progress • 213 leads, 80%+ not converting. Subject lines, copy, timing all need work</div>
                         </div>
                         <span class="task-tag strategy">Strategy</span>
+                        <a href="https://app.attio.com" target="_blank" class="task-external-link" onclick="event.stopPropagation()">Open Attio ↗</a>
                         <span class="task-added">Added Feb 3</span>
                         <span class="task-link">Details →</span>
                     </div>
@@ -1094,6 +1111,20 @@
                     <h3 class="section-title">Deliverables</h3>
                 </div>
                 <div class="deliverables">
+                    <div class="deliverable" onclick="openDeliverable('../Reports/video-channel-strategy.html')">
+                        <div class="deliverable-icon">🎬</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Video Channel Strategy</div>
+                            <div class="deliverable-type">HTML Report • New</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/budget-split-recommendation.html')">
+                        <div class="deliverable-icon">💰</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Budget Split ($5K)</div>
+                            <div class="deliverable-type">HTML Report • New</div>
+                        </div>
+                    </div>
                     <div class="deliverable" onclick="openDeliverable('../Reports/U&AI-Strategic-Audit.html')">
                         <div class="deliverable-icon">📊</div>
                         <div class="deliverable-info">
@@ -1134,20 +1165,6 @@
                         <div class="deliverable-info">
                             <div class="deliverable-name">Feb 1 Newsletter</div>
                             <div class="deliverable-type">Weekly Digest • Complete</div>
-                        </div>
-                    </div>
-                    <div class="deliverable" onclick="openDeliverable('../Reports/brand-voice.html')">
-                        <div class="deliverable-icon">🎯</div>
-                        <div class="deliverable-info">
-                            <div class="deliverable-name">Brand Voice Guide</div>
-                            <div class="deliverable-type">HTML Report • Complete</div>
-                        </div>
-                    </div>
-                    <div class="deliverable" onclick="openDeliverable('../Reports/growth-opportunities.html')">
-                        <div class="deliverable-icon">🚀</div>
-                        <div class="deliverable-info">
-                            <div class="deliverable-name">Growth Opportunities</div>
-                            <div class="deliverable-type">HTML Report • Complete</div>
                         </div>
                     </div>
                     <div class="deliverable" onclick="openDeliverable('../Reports/newsletter-workflow.html')">

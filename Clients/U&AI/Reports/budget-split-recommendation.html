@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Split Recommendation | U&AI</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --accent: #2563eb;
+            --accent-light: #dbeafe;
+            --success: #10b981;
+            --success-light: #d1fae5;
+            --warning: #f59e0b;
+            --warning-light: #fef3c7;
+            --danger: #ef4444;
+            --danger-light: #fee2e2;
+            --border: #e5e7eb;
+            --card: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .report {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: var(--card);
+            min-height: 100vh;
+        }
+
+        .report-header {
+            border-bottom: 3px solid var(--text);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .report-meta {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .report-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .recommendation-box {
+            background: var(--success-light);
+            padding: 30px;
+            border-left: 4px solid var(--success);
+            margin: 30px 0;
+        }
+
+        .recommendation-box h4 {
+            color: #047857;
+            margin-bottom: 15px;
+        }
+
+        .current-box {
+            background: var(--danger-light);
+            padding: 25px;
+            border-left: 4px solid var(--danger);
+            margin: 25px 0;
+        }
+
+        .current-box h4 {
+            color: #b91c1c;
+            margin-bottom: 10px;
+        }
+
+        .warning-box {
+            background: var(--warning-light);
+            padding: 25px;
+            border-left: 4px solid var(--warning);
+            margin: 25px 0;
+        }
+
+        .warning-box h4 {
+            color: #b45309;
+            margin-bottom: 10px;
+        }
+
+        .budget-hero {
+            background: linear-gradient(135deg, var(--accent) 0%, #1e40af 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .budget-hero .label {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .budget-hero .amount {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .budget-hero .period {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .split-card {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .split-card:hover {
+            border-color: var(--accent);
+        }
+
+        .split-card.primary {
+            border-color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        .split-card .channel {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .split-card .amount {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .split-card .percent {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .split-card .purpose {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+        }
+
+        .comparison-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background: #f1f5f9;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .comparison-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:hover {
+            background: #f8fafc;
+        }
+
+        .tag-new {
+            background: var(--success-light);
+            color: #047857;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .tag-reduce {
+            background: var(--warning-light);
+            color: #b45309;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .tag-cut {
+            background: var(--danger-light);
+            color: #b91c1c;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent);
+            padding-left: 25px;
+            margin: 25px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .timeline-item h4 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .kpi-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .kpi-card .value {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .kpi-card .label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .visual-split {
+            display: flex;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .visual-split .segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .segment-google { background: #4285f4; }
+        .segment-meta { background: #1877f2; }
+        .segment-video { background: #ff0000; }
+        .segment-linkedin { background: #0a66c2; }
+        .segment-reserve { background: #6b7280; }
+    </style>
+</head>
+<body>
+    <div class="report">
+        <header class="report-header">
+            <div class="report-meta">Claude Agency | Budget Recommendation</div>
+            <h1>Media Budget Split</h1>
+            <p class="report-subtitle">$5,000/month Paid Media Allocation for U&AI | February 2026</p>
+        </header>
+
+        <section>
+            <h2>Executive Summary</h2>
+
+            <div class="budget-hero">
+                <div class="label">Total Monthly Budget</div>
+                <div class="amount">$5,000</div>
+                <div class="period">per month</div>
+            </div>
+
+            <div class="recommendation-box">
+                <h4>Recommended Split</h4>
+                <p><strong>Google: $2,250 (45%) | Meta: $1,750 (35%) | LinkedIn: $500 (10%) | Testing: $500 (10%)</strong></p>
+                <p style="margin-top: 10px; margin-bottom: 0;">Shift from search-only to a balanced mix of search, video, and social. Prioritize lead quality over volume.</p>
+            </div>
+
+            <div class="current-box">
+                <h4>Current Problem</h4>
+                <p style="margin: 0;"><strong>213 leads in Attio, 80%+ are bots or unqualified.</strong> Budget is being spent, but lead quality is poor. Need to restructure targeting, not just redistribute spend.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Current vs. Recommended</h2>
+
+            <h3>Visual Budget Split</h3>
+
+            <p><strong>Current (Estimated):</strong></p>
+            <div class="visual-split">
+                <div class="segment segment-google" style="width: 70%;">Google 70%</div>
+                <div class="segment segment-meta" style="width: 30%;">Meta 30%</div>
+            </div>
+
+            <p><strong>Recommended:</strong></p>
+            <div class="visual-split">
+                <div class="segment segment-google" style="width: 45%;">Google 45%</div>
+                <div class="segment segment-meta" style="width: 35%;">Meta 35%</div>
+                <div class="segment segment-linkedin" style="width: 10%;">LI 10%</div>
+                <div class="segment segment-reserve" style="width: 10%;">Test 10%</div>
+            </div>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Channel</th>
+                    <th>Current</th>
+                    <th>Recommended</th>
+                    <th>Change</th>
+                </tr>
+                <tr>
+                    <td>Google Search</td>
+                    <td>~$2,500 (50%)</td>
+                    <td>$1,500 (30%)</td>
+                    <td><span class="tag-reduce">-$1,000</span></td>
+                </tr>
+                <tr>
+                    <td>Google Video (YouTube)</td>
+                    <td>$0</td>
+                    <td>$750 (15%)</td>
+                    <td><span class="tag-new">+$750</span></td>
+                </tr>
+                <tr>
+                    <td>Meta (Facebook/Instagram)</td>
+                    <td>~$1,500 (30%)</td>
+                    <td>$1,750 (35%)</td>
+                    <td><span class="tag-new">+$250</span></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn Ads</td>
+                    <td>$0</td>
+                    <td>$500 (10%)</td>
+                    <td><span class="tag-new">+$500</span></td>
+                </tr>
+                <tr>
+                    <td>Testing Reserve</td>
+                    <td>$0</td>
+                    <td>$500 (10%)</td>
+                    <td><span class="tag-new">+$500</span></td>
+                </tr>
+                <tr>
+                    <td>Wasted/Untracked</td>
+                    <td>~$1,000 (20%)</td>
+                    <td>$0</td>
+                    <td><span class="tag-cut">Eliminated</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Recommended Allocation</h2>
+
+            <div class="split-grid">
+                <div class="split-card primary">
+                    <div class="channel">Google Ads</div>
+                    <div class="amount">$2,250</div>
+                    <div class="percent">45% of budget</div>
+                    <div class="purpose">Search ($1,500) + YouTube Video ($750)</div>
+                </div>
+
+                <div class="split-card primary">
+                    <div class="channel">Meta Ads</div>
+                    <div class="amount">$1,750</div>
+                    <div class="percent">35% of budget</div>
+                    <div class="purpose">Feed + Reels + Retargeting</div>
+                </div>
+
+                <div class="split-card">
+                    <div class="channel">LinkedIn Ads</div>
+                    <div class="amount">$500</div>
+                    <div class="percent">10% of budget</div>
+                    <div class="purpose">B2B decision makers</div>
+                </div>
+
+                <div class="split-card">
+                    <div class="channel">Testing Reserve</div>
+                    <div class="amount">$500</div>
+                    <div class="percent">10% of budget</div>
+                    <div class="purpose">TikTok, new channels, experiments</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Channel-by-Channel Breakdown</h2>
+
+            <h3>Google Ads — $2,250/month</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Campaign Type</th>
+                    <th>Budget</th>
+                    <th>Goal</th>
+                </tr>
+                <tr>
+                    <td>Brand Search</td>
+                    <td>$300</td>
+                    <td>Protect brand terms, capture high-intent</td>
+                </tr>
+                <tr>
+                    <td>Non-Brand Search</td>
+                    <td>$700</td>
+                    <td>"AI consulting", "AI for business", competitor terms</td>
+                </tr>
+                <tr>
+                    <td>Performance Max</td>
+                    <td>$500</td>
+                    <td>Automated placement across Google properties</td>
+                </tr>
+                <tr>
+                    <td>YouTube Pre-Roll</td>
+                    <td>$500</td>
+                    <td>Video ads (Car + Shopper spots)</td>
+                </tr>
+                <tr>
+                    <td>YouTube Shorts</td>
+                    <td>$250</td>
+                    <td>Short-form video discovery</td>
+                </tr>
+            </table>
+
+            <div class="warning-box">
+                <h4>Google Ads Audit Needed</h4>
+                <p style="margin: 0;">Before implementing this split, audit current campaigns for wasted spend. Look for: broad match keywords, poor performing ad groups, high CPC terms with no conversions.</p>
+            </div>
+
+            <h3>Meta Ads — $1,750/month</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Campaign Type</th>
+                    <th>Budget</th>
+                    <th>Goal</th>
+                </tr>
+                <tr>
+                    <td>Prospecting (Cold)</td>
+                    <td>$800</td>
+                    <td>Lookalike audiences, interest targeting</td>
+                </tr>
+                <tr>
+                    <td>Video Views</td>
+                    <td>$400</td>
+                    <td>Build retargeting audiences from video watchers</td>
+                </tr>
+                <tr>
+                    <td>Retargeting</td>
+                    <td>$350</td>
+                    <td>Website visitors, video viewers, email list</td>
+                </tr>
+                <tr>
+                    <td>Lead Gen Forms</td>
+                    <td>$200</td>
+                    <td>In-platform lead capture (test quality)</td>
+                </tr>
+            </table>
+
+            <h3>LinkedIn Ads — $500/month</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Campaign Type</th>
+                    <th>Budget</th>
+                    <th>Goal</th>
+                </tr>
+                <tr>
+                    <td>Sponsored Content</td>
+                    <td>$350</td>
+                    <td>Thought leadership, case studies</td>
+                </tr>
+                <tr>
+                    <td>Retargeting</td>
+                    <td>$150</td>
+                    <td>Website visitors on LinkedIn</td>
+                </tr>
+            </table>
+
+            <p><strong>LinkedIn Targeting:</strong> Focus on job titles (Owner, CEO, Founder, Director of Operations) at companies with 10-200 employees. Exclude enterprise.</p>
+
+            <h3>Testing Reserve — $500/month</h3>
+            <ul>
+                <li><strong>TikTok Ads:</strong> $200/month test if organic performs</li>
+                <li><strong>Reddit Ads:</strong> $150/month for tech-savvy audience</li>
+                <li><strong>New Creative Tests:</strong> $150/month for A/B testing</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Lead Quality Improvements</h2>
+
+            <p>Budget allocation alone won't fix lead quality. These changes are essential:</p>
+
+            <h3>Targeting Fixes</h3>
+            <ol>
+                <li><strong>Exclude low-intent audiences</strong> — Remove broad interests, tighten demographics</li>
+                <li><strong>Add negative keywords</strong> — "free", "cheap", "DIY", "course", "tutorial"</li>
+                <li><strong>Qualify in the ad</strong> — Mention pricing tier in copy ("starting at $X")</li>
+                <li><strong>Use lead forms with qualifiers</strong> — Company size, budget range questions</li>
+                <li><strong>Retargeting priority</strong> — Spend more on warm audiences, less on cold</li>
+            </ol>
+
+            <h3>Conversion Tracking</h3>
+            <ul>
+                <li>Set up proper pixel tracking on all platforms</li>
+                <li>Track form submissions AND qualified leads separately</li>
+                <li>Connect Attio to ad platforms for offline conversion tracking</li>
+                <li>Build lookalike audiences from closed deals, not just leads</li>
+            </ul>
+
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="value">&lt;$100</div>
+                    <div class="label">Target CPL</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="value">&gt;20%</div>
+                    <div class="label">Qualified Rate</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="value">&lt;$500</div>
+                    <div class="label">Cost per Qualified</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Implementation Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Week 1: Audit & Setup</h4>
+                    <ul>
+                        <li>Audit existing Google Ads campaigns</li>
+                        <li>Review Meta Ads structure</li>
+                        <li>Set up conversion tracking properly</li>
+                        <li>Pause underperforming campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Week 2: Restructure</h4>
+                    <ul>
+                        <li>Rebuild Google campaigns with new structure</li>
+                        <li>Launch YouTube video campaigns</li>
+                        <li>Set up Meta retargeting</li>
+                        <li>Create LinkedIn campaign</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Week 3-4: Optimize</h4>
+                    <ul>
+                        <li>Monitor performance daily</li>
+                        <li>Shift budget to winning campaigns</li>
+                        <li>Add negative keywords as needed</li>
+                        <li>Test new creative variations</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Month 2+: Scale</h4>
+                    <ul>
+                        <li>Double down on best performers</li>
+                        <li>Use testing reserve for experiments</li>
+                        <li>Build lookalikes from qualified leads</li>
+                        <li>Consider budget increase if ROAS is positive</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Success Metrics</h2>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Current</th>
+                    <th>30-Day Target</th>
+                    <th>90-Day Target</th>
+                </tr>
+                <tr>
+                    <td>Cost Per Lead</td>
+                    <td>Unknown</td>
+                    <td>&lt;$100</td>
+                    <td>&lt;$75</td>
+                </tr>
+                <tr>
+                    <td>Qualified Lead %</td>
+                    <td>~20%</td>
+                    <td>&gt;35%</td>
+                    <td>&gt;50%</td>
+                </tr>
+                <tr>
+                    <td>Cost Per Qualified Lead</td>
+                    <td>Unknown</td>
+                    <td>&lt;$500</td>
+                    <td>&lt;$300</td>
+                </tr>
+                <tr>
+                    <td>Deals Closed from Ads</td>
+                    <td>Unknown</td>
+                    <td>2+</td>
+                    <td>5+</td>
+                </tr>
+                <tr>
+                    <td>ROAS</td>
+                    <td>Unknown</td>
+                    <td>Break even</td>
+                    <td>2x+</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+
+            <ol>
+                <li><strong>Get Meta Business Manager access</strong> — Can't audit or change without it</li>
+                <li><strong>Review Google Ads account</strong> — Already have access, ready to audit</li>
+                <li><strong>Set up proper tracking</strong> — Pixels, conversions, Attio integration</li>
+                <li><strong>Upload video assets</strong> — Need files from Yarden/Eden</li>
+                <li><strong>Implement new structure</strong> — Follow timeline above</li>
+            </ol>
+
+            <div class="warning-box">
+                <h4>Dependencies</h4>
+                <p style="margin: 0;"><strong>Blocked on:</strong> Meta Business Manager access, video asset files, Attio email sequence review. Can proceed with Google Ads audit immediately.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Claude Agency</strong> | Budget Split Recommendation</p>
+            <p>Created February 3, 2026 | Based on $5,000/month media budget</p>
+        </footer>
+    </div>
+</body>
+</html>
