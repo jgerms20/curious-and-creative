@@ -306,6 +306,150 @@
             color: white;
         }
 
+        /* This Week's Priorities - Always visible at top */
+        .priorities-section {
+            background: linear-gradient(135deg, #1e3a5f 0%, #14532d 100%);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .priorities-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .priorities-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .priority-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .priority-item:last-child {
+            border-bottom: none;
+        }
+
+        .priority-number {
+            background: var(--accent);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .priority-content {
+            flex: 1;
+        }
+
+        .priority-title {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .priority-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .priority-status {
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .priority-status.blocked { background: #7f1d1d; color: #fca5a5; }
+        .priority-status.ready { background: #14532d; color: #86efac; }
+        .priority-status.in-progress { background: #78350f; color: #fcd34d; }
+
+        /* Task Notes Feature */
+        .task-notes {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+        }
+
+        .task-notes-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .task-notes-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .add-note-btn {
+            font-size: 11px;
+            color: var(--accent);
+            cursor: pointer;
+            padding: 3px 8px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            background: transparent;
+        }
+
+        .add-note-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        .note-item {
+            background: var(--surface);
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .note-meta {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .note-input {
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px;
+            color: var(--text);
+            font-size: 13px;
+            resize: vertical;
+            min-height: 60px;
+            margin-top: 10px;
+        }
+
+        .note-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
         .deliverables {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -813,8 +957,56 @@
             <span class="client-tag">Client Project</span>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
-            <p class="header-timestamp">Last updated: <span id="last-updated">February 3, 2026 @ 9:15 PM</span></p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 5, 2026 @ 2:30 PM</span></p>
         </header>
+
+        <!-- This Week's Priorities - Always at top -->
+        <div class="priorities-section">
+            <div class="priorities-header">
+                <span class="priorities-title">This Week's Priorities</span>
+                <span style="font-size: 12px; color: var(--text-muted);">Feb 3-7</span>
+            </div>
+            <div class="priority-item">
+                <span class="priority-number">1</span>
+                <div class="priority-content">
+                    <div class="priority-title">Newsletter #2 - Super Bowl + AI Ads Theme</div>
+                    <div class="priority-meta">Lead with Super Bowl ads conversation, tie to organic vs paid visibility</div>
+                </div>
+                <span class="priority-status ready">Ready</span>
+            </div>
+            <div class="priority-item">
+                <span class="priority-number">2</span>
+                <div class="priority-content">
+                    <div class="priority-title">Attio Email Sequence Rework</div>
+                    <div class="priority-meta">213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
+                </div>
+                <span class="priority-status blocked">Need Login</span>
+            </div>
+            <div class="priority-item">
+                <span class="priority-number">3</span>
+                <div class="priority-content">
+                    <div class="priority-title">Meta Ads Setup</div>
+                    <div class="priority-meta">They're not running any Meta ads. Need to start Facebook/IG campaigns</div>
+                </div>
+                <span class="priority-status blocked">Need Access</span>
+            </div>
+            <div class="priority-item">
+                <span class="priority-number">4</span>
+                <div class="priority-content">
+                    <div class="priority-title">Google Ads - Add Video Campaign</div>
+                    <div class="priority-meta">Create separate campaign for video ads alongside search. Nerf search, add video</div>
+                </div>
+                <span class="priority-status in-progress">In Progress</span>
+            </div>
+            <div class="priority-item">
+                <span class="priority-number">5</span>
+                <div class="priority-content">
+                    <div class="priority-title">Remove Bad IG Posts</div>
+                    <div class="priority-meta">Current organic posts aren't good. Clean up before pushing new content</div>
+                </div>
+                <span class="priority-status blocked">Need Login</span>
+            </div>
+        </div>
 
         <nav class="week-nav">
             <button class="week-tab active" onclick="showWeek('week-1')">Feb 1-7</button>
@@ -906,17 +1098,6 @@
                         <span class="task-added">Added Feb 1</span>
                         <span class="task-link">Details →</span>
                     </div>
-                    <div class="task" data-status="pending" data-id="distribution" onclick="handleTaskClick(event, 'distribution')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">Distribution Mapping</div>
-                            <div class="task-meta">Pending • Where is content currently being served?</div>
-                        </div>
-                        <span class="task-tag research">Research</span>
-                        <span class="task-added">Added Feb 1</span>
-                        <span class="task-link">Details →</span>
-                    </div>
                 </div>
 
                 <p class="category-header" data-category="content">Content & Systems</p>
@@ -958,8 +1139,8 @@
                         <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
                         <div class="task-status pending"></div>
                         <div class="task-content">
-                            <div class="task-title">Content Calendar from Existing Assets</div>
-                            <div class="task-meta">Blocked • Waiting on video assets</div>
+                            <div class="task-title">Content Calendar + Distribution Map</div>
+                            <div class="task-meta">Blocked • Map existing content + plan where it goes</div>
                         </div>
                         <span class="task-tag content">Content</span>
                         <span class="task-added">Added Feb 1</span>
@@ -2206,12 +2387,50 @@
             content.classList.toggle('expanded');
         }
 
+        // Notes storage
+        const taskNotes = JSON.parse(localStorage.getItem('taskNotes') || '{}');
+
+        function saveNote(taskId) {
+            const input = document.getElementById('note-input-' + taskId);
+            if (!input || !input.value.trim()) return;
+
+            if (!taskNotes[taskId]) taskNotes[taskId] = [];
+            taskNotes[taskId].unshift({
+                text: input.value.trim(),
+                date: new Date().toLocaleString()
+            });
+            localStorage.setItem('taskNotes', JSON.stringify(taskNotes));
+            input.value = '';
+            openTaskModal(taskId); // Refresh modal
+        }
+
         function openTaskModal(taskId) {
             const task = taskDetails[taskId];
             if (!task) return;
 
             document.getElementById('modal-title').textContent = task.title;
-            document.getElementById('modal-body').innerHTML = task.content;
+
+            // Build notes section
+            let notesHtml = `
+                <div class="task-notes">
+                    <div class="task-notes-header">
+                        <span class="task-notes-title">Notes</span>
+                    </div>
+                    <textarea id="note-input-${taskId}" class="note-input" placeholder="Add a note..."></textarea>
+                    <button class="add-note-btn" onclick="saveNote('${taskId}')" style="margin-top: 8px;">Save Note</button>
+            `;
+
+            const notes = taskNotes[taskId] || [];
+            if (notes.length > 0) {
+                notesHtml += '<div style="margin-top: 15px;">';
+                notes.forEach(note => {
+                    notesHtml += `<div class="note-item">${note.text}<div class="note-meta">${note.date}</div></div>`;
+                });
+                notesHtml += '</div>';
+            }
+            notesHtml += '</div>';
+
+            document.getElementById('modal-body').innerHTML = task.content + notesHtml;
 
             let actions = '';
             if (task.deliverable) {
