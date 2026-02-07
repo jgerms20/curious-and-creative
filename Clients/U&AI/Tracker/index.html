@@ -253,39 +253,51 @@
             display: none;
         }
 
-        .task-status-btn {
+        .task-status-select {
             font-size: 10px;
-            padding: 4px 10px;
+            padding: 4px 8px;
             border-radius: 4px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             cursor: pointer;
-            border: none;
+            border: 1px solid transparent;
             font-weight: 600;
             flex-shrink: 0;
             transition: all 0.2s;
-            min-width: 80px;
-            text-align: center;
+            min-width: 90px;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath fill='%23888' d='M0 0l4 5 4-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 6px center;
+            padding-right: 20px;
+            outline: none;
         }
 
-        .task-status-btn:hover {
-            opacity: 0.8;
-            transform: scale(1.05);
+        .task-status-select:hover {
+            border-color: var(--accent);
         }
 
-        .task-status-btn.pending {
-            background: #374151;
+        .task-status-select.pending {
+            background-color: #374151;
             color: #9ca3af;
         }
 
-        .task-status-btn.in-progress {
-            background: #78350f;
+        .task-status-select.in-progress {
+            background-color: #78350f;
             color: #fcd34d;
         }
 
-        .task-status-btn.done {
-            background: var(--success-dim);
+        .task-status-select.done {
+            background-color: var(--success-dim);
             color: var(--success);
+        }
+
+        .task-status-select option {
+            background: var(--surface);
+            color: var(--text);
+            font-size: 12px;
+            padding: 6px;
         }
 
         .task-content {
@@ -2960,31 +2972,35 @@
         function initTaskRows() {
             document.querySelectorAll('.task').forEach(task => {
                 const status = task.dataset.status || 'pending';
-                const statusLabels = { 'pending': 'To Do', 'in-progress': 'In Progress', 'done': 'Done' };
 
                 // Remove old task-link elements
                 const taskLink = task.querySelector('.task-link');
                 if (taskLink) taskLink.remove();
 
-                // Remove old task-added elements (clutter)
+                // Remove old task-added elements
                 const taskAdded = task.querySelector('.task-added');
                 if (taskAdded) taskAdded.remove();
 
-                // Add status button if not already present
-                if (!task.querySelector('.task-status-btn')) {
-                    const statusBtn = document.createElement('button');
-                    statusBtn.className = `task-status-btn ${status}`;
-                    statusBtn.textContent = statusLabels[status] || 'To Do';
-                    statusBtn.onclick = function(e) {
+                // Add status dropdown if not already present
+                if (!task.querySelector('.task-status-select')) {
+                    const select = document.createElement('select');
+                    select.className = `task-status-select ${status}`;
+                    select.innerHTML = `
+                        <option value="pending">TO DO</option>
+                        <option value="in-progress">IN PROGRESS</option>
+                        <option value="done">DONE</option>
+                    `;
+                    select.value = status;
+                    select.onclick = function(e) { e.stopPropagation(); };
+                    select.onchange = function(e) {
                         e.stopPropagation();
-                        cycleTaskStatus(task, statusBtn);
+                        setTaskStatus(task, select);
                     };
-                    // Insert after task-tag or at end
                     const taskTag = task.querySelector('.task-tag');
                     if (taskTag) {
-                        taskTag.after(statusBtn);
+                        taskTag.after(select);
                     } else {
-                        task.appendChild(statusBtn);
+                        task.appendChild(select);
                     }
                 }
 
@@ -3002,22 +3018,12 @@
             });
         }
 
-        function cycleTaskStatus(taskEl, btnEl) {
-            const states = ['pending', 'in-progress', 'done'];
-            const labels = { 'pending': 'To Do', 'in-progress': 'In Progress', 'done': 'Done' };
-            const current = taskEl.dataset.status || 'pending';
-            const next = states[(states.indexOf(current) + 1) % states.length];
+        function setTaskStatus(taskEl, selectEl) {
+            const status = selectEl.value;
+            taskEl.dataset.status = status;
+            selectEl.className = `task-status-select ${status}`;
 
-            taskEl.dataset.status = next;
-            btnEl.className = `task-status-btn ${next}`;
-            btnEl.textContent = labels[next];
-
-            // Update old status dot too
-            const dot = taskEl.querySelector('.task-status');
-            if (dot) dot.className = `task-status ${next}`;
-
-            // Gray out completed tasks
-            if (next === 'done') {
+            if (status === 'done') {
                 taskEl.classList.add('completed-gray');
             } else {
                 taskEl.classList.remove('completed-gray');
@@ -3109,9 +3115,9 @@
         });
 
         function handleTaskClick(event, taskId) {
-            // Don't open modal if clicking buttons
+            // Don't open modal if clicking interactive elements
             if (event.target.classList.contains('task-checkbox') ||
-                event.target.classList.contains('task-status-btn') ||
+                event.target.classList.contains('task-status-select') ||
                 event.target.classList.contains('task-move-btn') ||
                 event.target.classList.contains('move-dropdown-item') ||
                 event.target.classList.contains('task-external-link')) {
