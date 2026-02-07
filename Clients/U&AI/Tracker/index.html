@@ -194,13 +194,20 @@
         }
 
         .filter-info {
-            font-size: 12px;
-            color: var(--accent);
+            font-size: 13px;
+            color: white;
             cursor: pointer;
+            background: var(--accent);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: 1px solid var(--accent);
         }
 
         .filter-info:hover {
-            text-decoration: underline;
+            background: #2563eb;
+            border-color: #2563eb;
         }
 
         .task-list {
@@ -219,6 +226,7 @@
             gap: 15px;
             transition: all 0.2s;
             cursor: pointer;
+            position: relative;
         }
 
         .task:hover {
@@ -242,24 +250,42 @@
         }
 
         .task-status {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
+            display: none;
+        }
+
+        .task-status-btn {
+            font-size: 10px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
             flex-shrink: 0;
+            transition: all 0.2s;
+            min-width: 80px;
+            text-align: center;
         }
 
-        .task-status.done {
-            background: var(--success);
-            box-shadow: 0 0 10px var(--success);
+        .task-status-btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
         }
 
-        .task-status.in-progress {
-            background: var(--warning);
-            box-shadow: 0 0 10px var(--warning);
+        .task-status-btn.pending {
+            background: #374151;
+            color: #9ca3af;
         }
 
-        .task-status.pending {
-            background: var(--pending);
+        .task-status-btn.in-progress {
+            background: #78350f;
+            color: #fcd34d;
+        }
+
+        .task-status-btn.done {
+            background: var(--success-dim);
+            color: var(--success);
         }
 
         .task-content {
@@ -291,14 +317,63 @@
         .task-tag.system { background: #1f2937; color: #9ca3af; }
 
         .task-link {
-            font-size: 12px;
-            color: var(--accent);
-            opacity: 0;
-            transition: opacity 0.2s;
+            display: none;
         }
 
-        .task:hover .task-link {
+        /* Move to week button */
+        .task-move-btn {
+            font-size: 10px;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 3px 6px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: transparent;
+            transition: all 0.2s;
+            opacity: 0;
+            flex-shrink: 0;
+        }
+
+        .task:hover .task-move-btn {
             opacity: 1;
+        }
+
+        .task-move-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Move dropdown */
+        .move-dropdown {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 4px;
+            z-index: 50;
+            min-width: 140px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .move-dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 6px 10px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 12px;
+            cursor: pointer;
+            text-align: left;
+            border-radius: 4px;
+            transition: all 0.15s;
+        }
+
+        .move-dropdown-item:hover {
+            background: var(--surface-hover);
+            color: var(--text);
         }
 
         .task-external-link {
@@ -393,11 +468,18 @@
             border-radius: 4px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .priority-status:hover {
+            opacity: 0.8;
         }
 
         .priority-status.blocked { background: #7f1d1d; color: #fca5a5; }
-        .priority-status.ready { background: #14532d; color: #86efac; }
+        .priority-status.not-started { background: #374151; color: #9ca3af; }
         .priority-status.in-progress { background: #78350f; color: #fcd34d; }
+        .priority-status.done { background: #14532d; color: #22c55e; }
 
         /* Task Notes Feature */
         .task-notes {
@@ -536,6 +618,12 @@
             border-radius: 4px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .newsletter-status:hover {
+            opacity: 0.8;
         }
 
         .newsletter-status.sent {
@@ -546,6 +634,11 @@
         .newsletter-status.draft {
             background: var(--warning-dim);
             color: var(--warning);
+        }
+
+        .newsletter-status.ready {
+            background: #1e3a5f;
+            color: #3b82f6;
         }
 
         /* Add Button */
@@ -994,41 +1087,8 @@
             margin-top: 8px;
         }
 
-        /* Manual checkbox toggle */
+        /* Legacy checkbox - hidden, replaced by status button */
         .task-checkbox {
-            width: 18px;
-            height: 18px;
-            border: 2px solid var(--border);
-            border-radius: 4px;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            transition: all 0.2s;
-        }
-
-        .task-checkbox:hover {
-            border-color: var(--accent);
-        }
-
-        .task-checkbox.checked {
-            background: var(--success);
-            border-color: var(--success);
-        }
-
-        .task-checkbox.checked::after {
-            content: '✓';
-            color: white;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .manual-mode .task-checkbox {
-            display: flex;
-        }
-
-        .manual-mode .task-status {
             display: none;
         }
 
@@ -1082,6 +1142,81 @@
             padding-right: 10px;
             opacity: 0.7;
         }
+
+        /* Editable modal content */
+        .modal-content-editable {
+            min-height: 100px;
+            outline: none;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            transition: border-color 0.2s;
+        }
+
+        .modal-content-editable:focus {
+            border-color: var(--accent);
+            background: var(--bg);
+        }
+
+        .modal-content-editable p,
+        .modal-content-editable ul,
+        .modal-content-editable li {
+            color: var(--text-muted);
+        }
+
+        .modal-content-editable strong {
+            color: var(--text);
+        }
+
+        .edit-indicator {
+            font-size: 10px;
+            color: var(--accent);
+            margin-bottom: 10px;
+            opacity: 0.7;
+        }
+
+        .btn-save {
+            background: var(--success);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .btn-save:hover {
+            background: #16a34a;
+        }
+
+        /* Editable insights */
+        .notes-editable {
+            outline: none;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            transition: border-color 0.2s;
+        }
+
+        .notes-editable:focus {
+            border-color: var(--accent);
+        }
+
+        .edit-btn {
+            font-size: 11px;
+            color: var(--accent);
+            cursor: pointer;
+            padding: 3px 8px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            background: transparent;
+            transition: all 0.2s;
+        }
+
+        .edit-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -1090,7 +1225,7 @@
             <span class="client-tag">Client Project</span>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
-            <p class="header-timestamp">Last updated: <span id="last-updated">February 5, 2026 @ 2:30 PM</span></p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 6, 2026 @ 10:00 AM</span></p>
         </header>
 
         <!-- This Week's Priorities - Always at top -->
@@ -1105,7 +1240,7 @@
                     <div class="priority-title">Newsletter #2 - Super Bowl + AI Ads</div>
                     <div class="priority-meta">Anthropic vs OpenAI ads debate, Claude Opus 4.6 release, what it means for brands</div>
                 </div>
-                <span class="priority-status in-progress">In Progress</span>
+                <span class="priority-status in-progress" onclick="cyclePriorityStatus(this)">In Progress</span>
             </div>
             <div class="priority-item">
                 <span class="priority-number">2</span>
@@ -1113,7 +1248,7 @@
                     <div class="priority-title">Google Ads - Add Video Campaign</div>
                     <div class="priority-meta">Create Campaign 2 for video, nerf search budget, structure by asset type</div>
                 </div>
-                <span class="priority-status in-progress">In Progress</span>
+                <span class="priority-status in-progress" onclick="cyclePriorityStatus(this)">In Progress</span>
             </div>
             <div class="priority-item">
                 <span class="priority-number">3</span>
@@ -1121,7 +1256,7 @@
                     <div class="priority-title">Attio Email Sequence Rework</div>
                     <div class="priority-meta">213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
                 </div>
-                <span class="priority-status blocked">Need Login</span>
+                <span class="priority-status in-progress" onclick="cyclePriorityStatus(this)">In Progress</span>
             </div>
         </div>
 
@@ -1164,19 +1299,18 @@
             <div class="section collapsible-section">
                 <div class="section-header collapsible-header" onclick="toggleSection('newsletters-section')">
                     <h3 class="section-title">Newsletters <span class="collapse-icon">▼</span></h3>
-                    <button class="add-btn" onclick="event.stopPropagation(); addNewsletter()">+ Add</button>
                 </div>
                 <div id="newsletters-section" class="collapsible-content">
                     <div class="newsletter-list">
                         <div class="newsletter-item" onclick="openNewsletter('2026-02-01')">
                             <span class="newsletter-date">Feb 1, 2026</span>
-                            <span class="newsletter-title">Weekly AI Digest #1</span>
-                            <span class="newsletter-status sent">Sent</span>
+                            <span class="newsletter-title">Test</span>
+                            <span class="newsletter-status draft" onclick="cycleNewsletterStatus(event, this)">Draft</span>
                         </div>
                         <div class="newsletter-item" onclick="openNewsletter('2026-02-08')">
                             <span class="newsletter-date">Feb 8, 2026</span>
                             <span class="newsletter-title">Super Bowl + AI Ads Special</span>
-                            <span class="newsletter-status draft">Draft</span>
+                            <span class="newsletter-status draft" onclick="cycleNewsletterStatus(event, this)">Draft</span>
                         </div>
                     </div>
                 </div>
@@ -1184,7 +1318,7 @@
 
             <div class="section">
                 <div class="section-header">
-                    <h3 class="section-title">Tasks <span class="section-timestamp">• Updated 2:30 PM</span></h3>
+                    <h3 class="section-title">Tasks <span class="section-timestamp">• Updated 10:00 AM</span></h3>
                     <button class="add-btn" onclick="showAddTaskModal()">+ Add Task</button>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
@@ -1354,7 +1488,7 @@
                         <div class="task-status in-progress"></div>
                         <div class="task-content">
                             <div class="task-title">P1: Rework Attio Email Sequence</div>
-                            <div class="task-meta">In progress • 213 leads, 80%+ not converting. Subject lines, copy, timing all need work</div>
+                            <div class="task-meta">In progress • 213 leads, 80%+ not converting. Reworking subject lines, copy, timing</div>
                         </div>
                         <span class="task-tag strategy">Strategy</span>
                         <a href="https://app.attio.com" target="_blank" class="task-external-link" onclick="event.stopPropagation()">Open Attio ↗</a>
@@ -1423,10 +1557,11 @@
                 </div>
             </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <h3 class="section-title">Deliverables</h3>
+            <div class="section collapsible-section">
+                <div class="section-header collapsible-header" onclick="toggleSection('deliverables-section')">
+                    <h3 class="section-title">Deliverables <span class="collapse-icon">▼</span></h3>
                 </div>
+                <div id="deliverables-section" class="collapsible-content">
                 <div class="deliverables">
                     <div class="deliverable" onclick="openDeliverable('../Reports/video-channel-strategy.html')">
                         <div class="deliverable-icon">🎬</div>
@@ -1491,6 +1626,7 @@
                             <div class="deliverable-type">System Doc • Complete</div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -1561,8 +1697,9 @@
             <div class="section" style="margin-top: 30px;">
                 <div class="section-header">
                     <h3 class="section-title">Context & Key Insights</h3>
+                    <button class="edit-btn" id="insights-edit-btn" onclick="toggleInsightsEdit()">Edit</button>
                 </div>
-                <div class="notes">
+                <div class="notes" id="insights-content">
                     <p><strong>Positioning:</strong> U&AI is the "voice of reason" for AI to their clients (often boomers/Gen X who don't keep up with AI news).</p>
                     <p><strong>Newsletter:</strong> ~350 subscribers. Workflow built to source from The Artificial Intelligence Show (weekly) + AI Daily Brief (daily).</p>
                     <p><strong>Key gap:</strong> Selling AI visibility while having minimal social presence themselves. BRIKMAN creative heritage is under-leveraged.</p>
@@ -1782,7 +1919,7 @@
 
         <footer>
             <span>Claude Agency • U&AI Project</span>
-            <span>Last updated: February 3, 2026 @ 10:30 AM</span>
+            <span>Last updated: February 6, 2026 @ 10:00 AM</span>
         </footer>
     </div>
 
@@ -2541,11 +2678,23 @@
             openTaskModal(taskId); // Refresh modal
         }
 
+        // Track edits in memory
+        const taskEdits = JSON.parse(localStorage.getItem('taskEdits') || '{}');
+
         function openTaskModal(taskId) {
             const task = taskDetails[taskId];
             if (!task) return;
 
             document.getElementById('modal-title').textContent = task.title;
+
+            // Use saved edits if they exist, otherwise use original content
+            const editedContent = taskEdits[taskId] || task.content;
+
+            // Build editable content section
+            let contentHtml = `
+                <div class="edit-indicator">Click content below to edit</div>
+                <div class="modal-content-editable" contenteditable="true" id="modal-content-${taskId}">${editedContent}</div>
+            `;
 
             // Build notes section
             let notesHtml = `
@@ -2567,16 +2716,59 @@
             }
             notesHtml += '</div>';
 
-            document.getElementById('modal-body').innerHTML = task.content + notesHtml;
+            document.getElementById('modal-body').innerHTML = contentHtml + notesHtml;
 
             let actions = '';
+            actions += `<button class="btn-save" onclick="saveTaskEdit('${taskId}')">Save Changes</button>`;
             if (task.deliverable) {
-                actions = `<button class="btn btn-primary" onclick="openDeliverable('${task.deliverable}')">Open Deliverable</button>`;
+                actions += `<button class="btn btn-primary" onclick="openDeliverable('${task.deliverable}')">Open Deliverable</button>`;
             }
             actions += `<button class="btn btn-secondary" onclick="closeModal()">Close</button>`;
             document.getElementById('modal-actions').innerHTML = actions;
 
             document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        // Insights edit toggle
+        function toggleInsightsEdit() {
+            const content = document.getElementById('insights-content');
+            const btn = document.getElementById('insights-edit-btn');
+            const isEditing = content.contentEditable === 'true';
+            if (isEditing) {
+                content.contentEditable = 'false';
+                content.classList.remove('notes-editable');
+                content.style.borderColor = 'transparent';
+                btn.textContent = 'Edit';
+                // Save to localStorage for session persistence
+                localStorage.setItem('insightsContent', content.innerHTML);
+            } else {
+                content.contentEditable = 'true';
+                content.classList.add('notes-editable');
+                content.style.borderColor = 'var(--accent)';
+                content.focus();
+                btn.textContent = 'Done';
+            }
+        }
+
+        // Load saved insights on page load
+        function loadInsights() {
+            const saved = localStorage.getItem('insightsContent');
+            if (saved) {
+                document.getElementById('insights-content').innerHTML = saved;
+            }
+        }
+
+        function saveTaskEdit(taskId) {
+            const contentEl = document.getElementById('modal-content-' + taskId);
+            if (!contentEl) return;
+            const newContent = contentEl.innerHTML;
+            taskDetails[taskId].content = newContent;
+            taskEdits[taskId] = newContent;
+            localStorage.setItem('taskEdits', JSON.stringify(taskEdits));
+            // Visual feedback
+            const btn = event.target;
+            btn.textContent = 'Saved!';
+            setTimeout(() => { btn.textContent = 'Save Changes'; }, 1500);
         }
 
         function openDeliverable(path) {
@@ -2621,8 +2813,7 @@
             tasks.forEach(task => {
                 if (task.dataset.id) {
                     states[task.dataset.id] = {
-                        status: task.dataset.status,
-                        checked: task.querySelector('.task-checkbox')?.classList.contains('checked')
+                        status: task.dataset.status
                     };
                 }
             });
@@ -2630,18 +2821,19 @@
         }
 
         function loadTaskStates() {
+            const statusLabels = { 'pending': 'To Do', 'in-progress': 'In Progress', 'done': 'Done' };
             const states = JSON.parse(localStorage.getItem('taskStates') || '{}');
             Object.keys(states).forEach(id => {
                 const task = document.querySelector(`.task[data-id="${id}"]`);
-                if (task && states[id].checked) {
-                    const checkbox = task.querySelector('.task-checkbox');
-                    const status = task.querySelector('.task-status');
-                    if (checkbox) {
-                        checkbox.classList.add('checked');
+                if (task && states[id].status) {
+                    const status = states[id].status;
+                    task.dataset.status = status;
+                    if (status === 'done') {
                         task.classList.add('completed-gray');
-                        task.dataset.status = 'done';
-                        if (status) status.className = 'task-status done';
+                    } else {
+                        task.classList.remove('completed-gray');
                     }
+                    // Status button gets updated in initTaskRows which runs after
                 }
             });
         }
@@ -2665,8 +2857,27 @@
             window.open(`../Newsletters/2026/02/${date}-weekly-digest.html`, '_blank');
         }
 
-        function addNewsletter() {
-            alert('Newsletter creation coming soon!');
+        // Priority status cycling
+        function cyclePriorityStatus(el) {
+            const states = ['not-started', 'in-progress', 'blocked', 'done'];
+            const labels = { 'not-started': 'Not Started', 'in-progress': 'In Progress', 'blocked': 'Blocked', 'done': 'Done' };
+            const current = states.find(s => el.classList.contains(s)) || 'not-started';
+            const next = states[(states.indexOf(current) + 1) % states.length];
+            el.classList.remove(...states);
+            el.classList.add(next);
+            el.textContent = labels[next];
+        }
+
+        // Newsletter status cycling
+        function cycleNewsletterStatus(event, el) {
+            event.stopPropagation();
+            const states = ['draft', 'ready', 'sent'];
+            const labels = { draft: 'Draft', ready: 'Ready', sent: 'Sent' };
+            const current = states.find(s => el.classList.contains(s)) || 'draft';
+            const next = states[(states.indexOf(current) + 1) % states.length];
+            el.classList.remove(...states);
+            el.classList.add(next);
+            el.textContent = labels[next];
         }
 
         // Add task modal
@@ -2745,19 +2956,168 @@
             closeAddTaskModal();
         }
 
+        // Initialize all task rows with status buttons and move buttons
+        function initTaskRows() {
+            document.querySelectorAll('.task').forEach(task => {
+                const status = task.dataset.status || 'pending';
+                const statusLabels = { 'pending': 'To Do', 'in-progress': 'In Progress', 'done': 'Done' };
+
+                // Remove old task-link elements
+                const taskLink = task.querySelector('.task-link');
+                if (taskLink) taskLink.remove();
+
+                // Remove old task-added elements (clutter)
+                const taskAdded = task.querySelector('.task-added');
+                if (taskAdded) taskAdded.remove();
+
+                // Add status button if not already present
+                if (!task.querySelector('.task-status-btn')) {
+                    const statusBtn = document.createElement('button');
+                    statusBtn.className = `task-status-btn ${status}`;
+                    statusBtn.textContent = statusLabels[status] || 'To Do';
+                    statusBtn.onclick = function(e) {
+                        e.stopPropagation();
+                        cycleTaskStatus(task, statusBtn);
+                    };
+                    // Insert after task-tag or at end
+                    const taskTag = task.querySelector('.task-tag');
+                    if (taskTag) {
+                        taskTag.after(statusBtn);
+                    } else {
+                        task.appendChild(statusBtn);
+                    }
+                }
+
+                // Add move button if not already present
+                if (!task.querySelector('.task-move-btn')) {
+                    const moveBtn = document.createElement('button');
+                    moveBtn.className = 'task-move-btn';
+                    moveBtn.textContent = 'Move ↗';
+                    moveBtn.onclick = function(e) {
+                        e.stopPropagation();
+                        showMoveDropdown(task, moveBtn);
+                    };
+                    task.appendChild(moveBtn);
+                }
+            });
+        }
+
+        function cycleTaskStatus(taskEl, btnEl) {
+            const states = ['pending', 'in-progress', 'done'];
+            const labels = { 'pending': 'To Do', 'in-progress': 'In Progress', 'done': 'Done' };
+            const current = taskEl.dataset.status || 'pending';
+            const next = states[(states.indexOf(current) + 1) % states.length];
+
+            taskEl.dataset.status = next;
+            btnEl.className = `task-status-btn ${next}`;
+            btnEl.textContent = labels[next];
+
+            // Update old status dot too
+            const dot = taskEl.querySelector('.task-status');
+            if (dot) dot.className = `task-status ${next}`;
+
+            // Gray out completed tasks
+            if (next === 'done') {
+                taskEl.classList.add('completed-gray');
+            } else {
+                taskEl.classList.remove('completed-gray');
+            }
+
+            updateStats();
+            saveTaskStates();
+        }
+
+        function showMoveDropdown(taskEl, btnEl) {
+            // Close any existing dropdowns
+            document.querySelectorAll('.move-dropdown').forEach(d => d.remove());
+
+            const weeks = [
+                { id: 'week-1', label: 'Week 1 (Feb 1-7)' },
+                { id: 'week-2', label: 'Week 2 (Feb 8-14)' },
+                { id: 'week-3', label: 'Week 3 (Feb 15-21)' },
+                { id: 'week-4', label: 'Week 4 (Feb 22-28)' }
+            ];
+
+            // Find which week the task is currently in
+            const currentWeek = taskEl.closest('.week-content');
+            const currentWeekId = currentWeek ? currentWeek.id : null;
+
+            const dropdown = document.createElement('div');
+            dropdown.className = 'move-dropdown';
+
+            weeks.forEach(week => {
+                if (week.id === currentWeekId) return; // Skip current week
+                const item = document.createElement('button');
+                item.className = 'move-dropdown-item';
+                item.textContent = week.label;
+                item.onclick = function(e) {
+                    e.stopPropagation();
+                    moveTaskToWeek(taskEl, week.id);
+                    dropdown.remove();
+                };
+                dropdown.appendChild(item);
+            });
+
+            taskEl.appendChild(dropdown);
+
+            // Close dropdown when clicking outside
+            setTimeout(() => {
+                document.addEventListener('click', function closeDropdown() {
+                    dropdown.remove();
+                    document.removeEventListener('click', closeDropdown);
+                });
+            }, 10);
+        }
+
+        function moveTaskToWeek(taskEl, weekId) {
+            const weekContent = document.getElementById(weekId);
+            if (!weekContent) return;
+
+            // Find the last task-list in the target week, or create one
+            let targetList = weekContent.querySelector('.task-list:last-of-type');
+            if (!targetList) {
+                // Create a section with a task list
+                const section = weekContent.querySelector('.section') || weekContent;
+                targetList = document.createElement('div');
+                targetList.className = 'task-list';
+                section.appendChild(targetList);
+            }
+
+            // Move the task
+            taskEl.remove();
+            targetList.appendChild(taskEl);
+
+            // Update stats for both weeks
+            updateStats();
+
+            // Visual feedback
+            taskEl.style.borderColor = 'var(--accent)';
+            taskEl.style.boxShadow = '0 0 10px rgba(59, 130, 246, 0.3)';
+            setTimeout(() => {
+                taskEl.style.borderColor = '';
+                taskEl.style.boxShadow = '';
+            }, 1500);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             loadTaskStates();
+            loadInsights();
+            initTaskRows();
             document.querySelectorAll('.category-header').forEach(header => {
                 header.addEventListener('click', function() { toggleCategory(this); });
             });
         });
 
         function handleTaskClick(event, taskId) {
-            if (event.target.classList.contains('task-checkbox')) {
-                return; // Let checkbox handler deal with it
+            // Don't open modal if clicking buttons
+            if (event.target.classList.contains('task-checkbox') ||
+                event.target.classList.contains('task-status-btn') ||
+                event.target.classList.contains('task-move-btn') ||
+                event.target.classList.contains('move-dropdown-item') ||
+                event.target.classList.contains('task-external-link')) {
+                return;
             }
 
-            // Check if task has a direct deliverable link
             const task = taskDetails[taskId];
             if (task) {
                 openTaskModal(taskId);
@@ -2765,24 +3125,35 @@
         }
 
         function updateStats() {
-            const tasks = document.querySelectorAll('#week-1 .task');
-            let done = 0, inProgress = 0, pending = 0;
+            // Update stats for each week that has stat elements
+            ['week-1', 'week-2', 'week-3', 'week-4'].forEach(weekId => {
+                const weekEl = document.getElementById(weekId);
+                if (!weekEl) return;
 
-            tasks.forEach(task => {
-                switch(task.dataset.status) {
-                    case 'done': done++; break;
-                    case 'in-progress': inProgress++; break;
-                    case 'pending': pending++; break;
-                }
+                const tasks = weekEl.querySelectorAll('.task');
+                let done = 0, inProgress = 0, pending = 0;
+
+                tasks.forEach(task => {
+                    switch(task.dataset.status) {
+                        case 'done': done++; break;
+                        case 'in-progress': inProgress++; break;
+                        case 'pending': pending++; break;
+                    }
+                });
+
+                const total = done + inProgress + pending;
+                const progress = total > 0 ? Math.round((done / total) * 100) : 0;
+
+                const doneEl = weekEl.querySelector('.stat[data-filter="done"] .stat-value');
+                const ipEl = weekEl.querySelector('.stat[data-filter="in-progress"] .stat-value');
+                const pendEl = weekEl.querySelector('.stat[data-filter="pending"] .stat-value');
+                const progEl = weekEl.querySelector('.progress-fill');
+
+                if (doneEl) doneEl.textContent = done;
+                if (ipEl) ipEl.textContent = inProgress;
+                if (pendEl) pendEl.textContent = pending;
+                if (progEl) progEl.style.width = progress + '%';
             });
-
-            const total = done + inProgress + pending;
-            const progress = total > 0 ? Math.round((done / total) * 100) : 0;
-
-            document.querySelector('#week-1 .stat[data-filter="done"] .stat-value').textContent = done;
-            document.querySelector('#week-1 .stat[data-filter="in-progress"] .stat-value').textContent = inProgress;
-            document.querySelector('#week-1 .stat[data-filter="pending"] .stat-value').textContent = pending;
-            document.querySelector('#week-1 .progress-fill').style.width = progress + '%';
         }
     </script>
 </body>
