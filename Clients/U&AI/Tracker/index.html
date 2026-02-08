@@ -1971,8 +1971,8 @@
         </div>
 
         <footer>
-            <span>Claude Agency • U&AI Project</span>
-            <span>Last updated: February 6, 2026 @ 10:00 AM</span>
+            <span>Curious & Creative Agency • U&AI Project</span>
+            <span id="footer-timestamp">Last updated: February 8, 2026 @ 4:21 AM PST</span>
         </footer>
     </div>
 
@@ -3173,6 +3173,10 @@
             // Update header timestamp
             const headerTs = document.getElementById('last-updated');
             if (headerTs) headerTs.textContent = formatted;
+
+            // Update footer timestamp
+            const footerTs = document.getElementById('footer-timestamp');
+            if (footerTs) footerTs.textContent = 'Last updated: ' + formatted;
 
             // Update section timestamps
             document.querySelectorAll('.section-timestamp').forEach(el => {
