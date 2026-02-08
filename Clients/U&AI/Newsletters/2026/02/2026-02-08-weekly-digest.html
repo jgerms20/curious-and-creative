@@ -30,7 +30,7 @@
         }
 
         .newsletter {
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 25px;
         }
@@ -172,9 +172,10 @@
             margin-bottom: 0;
         }
 
+        /* Hot Topics - Horizontal on desktop, vertical on mobile */
         .hot-topics {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             margin: 20px 0;
         }
@@ -190,6 +191,24 @@
             font-size: 1rem;
             margin-bottom: 8px;
             font-weight: 500;
+        }
+
+        .topic-item h4 a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .topic-item h4 a:hover {
+            color: var(--accent);
+        }
+
+        .topic-item .source {
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            display: block;
         }
 
         .topic-item p {
@@ -234,6 +253,13 @@
 
         .quick-link a:hover {
             text-decoration: underline;
+        }
+
+        .quick-link .source-tag {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-left: 8px;
         }
 
         .cta-section {
@@ -295,16 +321,20 @@
             font-size: 14px;
         }
 
-        /* Mobile-friendly: prevent orphaned words */
-        @media (max-width: 600px) {
+        /* Mobile: stack vertically */
+        @media (max-width: 700px) {
             .newsletter {
                 padding: 30px 20px;
+                max-width: 100%;
             }
             h1 {
                 font-size: 1.5rem;
             }
             .headline-section {
                 padding: 25px 20px;
+            }
+            .hot-topics {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -315,21 +345,21 @@
             <div class="logo">U&AI</div>
             <div class="tagline">AI news that matters for your brand</div>
             <div class="date">February 8, 2026 • Issue #2</div>
-            <a href="https://www.uandai.co" class="cta-button">Check Your AI Visibility →</a>
+            <a href="https://www.uandai.co/lets-talk" class="cta-button">Check Your AI Visibility →</a>
         </header>
 
         <!-- SPOTLIGHT SECTION -->
         <section class="headline-section">
             <div class="spotlight-tag">— Spotlight</div>
             <h1>The AI Ad Wars Just Got Personal</h1>
-            <p class="headline-intro">Anthropic ran Super Bowl ads mocking ChatGPT's new ad plans. OpenAI's CEO fired back. Here's what it means for brands like yours.</p>
+            <p class="headline-intro">Anthropic and OpenAI are airing dueling Super Bowl ads this weekend. One promises no ads in AI. The other's CEO fired back calling them "dishonest." Here's what it means for brands like yours.</p>
 
             <h3>What Happened</h3>
             <p>OpenAI announced they're bringing ads to ChatGPT. Ads will appear "at the bottom of answers when there's a relevant sponsored product based on your current conversation."</p>
 
-            <p>Anthropic (maker of Claude) saw an opening. Their Super Bowl campaign tagline: <strong>"Ads are coming to AI. But not to Claude."</strong></p>
+            <p>Anthropic saw an opening. They're spending millions on Super Bowl ads with the tagline: <strong>"Ads are coming to AI. But not to Claude."</strong></p>
 
-            <p>One ad shows a man asking ChatGPT for advice on talking to his mom—only to get pitched a dating site. Another shows someone asking for fitness tips and getting sold height-boosting insoles. <a href="https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/" target="_blank">Funny stuff</a>.</p>
+            <p>One ad shows a man asking ChatGPT for advice on talking to his mom—only to get pitched a dating site. Another shows someone asking for fitness tips and getting sold height-boosting insoles. <a href="https://edition.cnn.com/2026/02/06/tech/anthropic-openai-super-bowl-ads" target="_blank">CNN has the full breakdown</a>.</p>
 
             <h3>Sam Altman's Response</h3>
             <p>OpenAI's CEO admitted he laughed at the ads. Then he went off on X:</p>
@@ -338,7 +368,7 @@
                 "I guess it's on brand for Anthropic doublespeak to use a deceptive ad to critique theoretical deceptive ads that aren't real. We would obviously never run ads that way."
             </blockquote>
 
-            <p>He called Anthropic "dishonest" and "authoritarian." <a href="https://www.cnbc.com/2026/02/05/super-bowl-ai-ad-altman-anthropic-open-ai.html" target="_blank">Full story here</a>.</p>
+            <p>He called Anthropic "dishonest" and "authoritarian," and defended OpenAI's ad plans as a way to keep ChatGPT free for everyone. <a href="https://www.cnbc.com/2026/02/05/super-bowl-ai-ad-altman-anthropic-open-ai.html" target="_blank">Full story on CNBC</a>.</p>
 
             <div class="callout">
                 <div class="callout-header">What This Means for Your Brand</div>
@@ -350,44 +380,64 @@
 
         <div class="divider">• • •</div>
 
-        <!-- HOT TOPICS SECTION - SIMPLIFIED TO 3 -->
+        <!-- HOT TOPICS SECTION -->
         <h2>What Else Happened This Week</h2>
 
         <div class="hot-topics">
             <div class="topic-item">
-                <h4>Anthropic Releases Claude Opus 4.6</h4>
-                <p>Anthropic's newest AI model can now handle much longer documents and has a new "Agent Teams" feature where multiple AI agents work together on complex tasks. It also <a href="https://www.axios.com/2026/02/05/anthropic-claude-opus-46-software-hunting" target="_blank">found 500+ security flaws</a> in open-source code within days of launch.</p>
+                <a href="https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/" target="_blank" class="source">TechCrunch</a>
+                <h4><a href="https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/" target="_blank">Anthropic Releases Claude Opus 4.6</a></h4>
+                <p>Anthropic's newest AI model can now handle much longer documents and has a new "Agent Teams" feature where multiple AI agents work together on complex tasks.</p>
             </div>
 
             <div class="topic-item">
-                <h4>OpenAI Launches GPT-5.3-Codex</h4>
-                <p>OpenAI released a new coding-focused model that's so capable they say it "helped create itself." Older models like GPT-4o <a href="https://llm-stats.com/llm-updates" target="_blank">retire February 13</a>—if you're building on those, time to upgrade.</p>
+                <a href="https://fortune.com/2026/02/05/openai-gpt-5-3-codex-warns-unprecedented-cybersecurity-risks/" target="_blank" class="source">Fortune</a>
+                <h4><a href="https://fortune.com/2026/02/05/openai-gpt-5-3-codex-warns-unprecedented-cybersecurity-risks/" target="_blank">OpenAI Launches GPT-5.3-Codex</a></h4>
+                <p>OpenAI released a new coding-focused model that's so capable they say it "helped create itself." It's also their first model classified as "High" cybersecurity risk.</p>
             </div>
 
             <div class="topic-item">
-                <h4>Google's Gemini Growing Fast</h4>
-                <p>Gemini is up 19% month-over-month vs ChatGPT's 4%. It now has <a href="https://sherwood.news/tech/googles-gemini-is-gaining-but-openais-chatgpt-is-still-the-ai-chatbot-leader/" target="_blank">22% of global AI traffic</a>. More platforms = more places your brand needs to show up.</p>
+                <a href="https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html" target="_blank" class="source">CNBC</a>
+                <h4><a href="https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html" target="_blank">Apple Picks Google for AI-Powered Siri</a></h4>
+                <p>Apple is partnering with Google to power a major Siri upgrade using Gemini. The deal is reportedly worth $1 billion per year.</p>
             </div>
         </div>
 
         <div class="divider">• • •</div>
 
-        <!-- QUICK LINKS SECTION -->
+        <!-- QUICK LINKS SECTION - NOW 5 ITEMS -->
         <h2>Quick Links</h2>
 
         <div class="quick-links">
-            <div class="quick-link">Apple Intelligence gets Gemini integration as part of <a href="#">multi-year Google partnership</a></div>
-            <div class="quick-link">Super Bowl ad rates hit $8.5M for 30 seconds—AI companies among <a href="#">top spenders</a></div>
-            <div class="quick-link">EU regulators open inquiry into ChatGPT ad plans under <a href="#">AI Act transparency rules</a></div>
+            <div class="quick-link">
+                <a href="https://abcnews.go.com/Technology/wireStory/anthropic-openai-rivalry-spills-new-super-bowl-ads-129881744" target="_blank">Anthropic, OpenAI rivalry spills into Super Bowl ads as both fight to win over AI users</a>
+                <span class="source-tag">ABC News</span>
+            </div>
+            <div class="quick-link">
+                <a href="https://adage.com/super-bowl/aa-2026-ai-brands-anthropic-genspark-meta-openai-wix/" target="_blank">Super Bowl LX is AI's biggest test yet—OpenAI, Anthropic, and Meta try to win over viewers</a>
+                <span class="source-tag">Ad Age</span>
+            </div>
+            <div class="quick-link">
+                <a href="https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/" target="_blank">Google's Gemini to power Apple's AI features including Siri</a>
+                <span class="source-tag">TechCrunch</span>
+            </div>
+            <div class="quick-link">
+                <a href="https://fortune.com/2026/01/13/apple-ai-deal-with-google-gemini-means-for-google-apple-openai/" target="_blank">Why Google wins big in Apple AI deal while OpenAI loses</a>
+                <span class="source-tag">Fortune</span>
+            </div>
+            <div class="quick-link">
+                <a href="https://variety.com/2026/digital/news/sam-altman-slams-anthropic-super-bowl-ads-openai-1236653604/" target="_blank">Sam Altman slams Anthropic Super Bowl ads jabbing OpenAI's ad plans</a>
+                <span class="source-tag">Variety</span>
+            </div>
         </div>
 
         <div class="divider">• • •</div>
 
-        <!-- CTA SECTION - REVISED -->
+        <!-- CTA SECTION -->
         <section class="cta-section">
             <h3>Questions About AI + Your Brand?</h3>
             <p>Just reply to this email. We read everything and we're happy to think through it with you.</p>
-            <a href="https://www.uandai.co" class="cta-button">Check Your AI Visibility →</a>
+            <a href="https://www.uandai.co/lets-talk" class="cta-button">Check Your AI Visibility →</a>
         </section>
 
         <footer class="footer">
