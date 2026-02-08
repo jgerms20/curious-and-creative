@@ -1304,15 +1304,15 @@
 
             <div class="stats">
                 <div class="stat" onclick="filterTasks('done')" data-filter="done">
-                    <div class="stat-value">7</div>
+                    <div class="stat-value" id="stat-completed">0</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
-                    <div class="stat-value">2</div>
+                    <div class="stat-value" id="stat-in-progress">0</div>
                     <div class="stat-label">In Progress</div>
                 </div>
                 <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
-                    <div class="stat-value">11</div>
+                    <div class="stat-value" id="stat-pending">0</div>
                     <div class="stat-label">To Do</div>
                 </div>
             </div>
@@ -3150,6 +3150,7 @@
             loadTaskStates();
             loadInsights();
             initTaskRows();
+            updateStats();
             document.querySelectorAll('.category-header').forEach(header => {
                 header.addEventListener('click', function() { toggleCategory(this); });
             });
