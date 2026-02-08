@@ -249,6 +249,16 @@
             color: var(--text-muted);
         }
 
+        /* Priority-highlighted tasks (in Top 3) */
+        .task.priority-highlight {
+            border-left: 3px solid #d4af37;
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0.05) 0%, var(--surface) 50%);
+        }
+
+        .task.priority-highlight:hover {
+            border-left-color: #d4af37;
+        }
+
         .task-status {
             display: none;
         }
@@ -1237,40 +1247,8 @@
             <span class="client-tag">Client Project</span>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
-            <p class="header-timestamp">Last updated: <span id="last-updated">February 6, 2026 @ 10:00 AM</span></p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 8, 2026 @ 3:25 AM PST</span></p>
         </header>
-
-        <!-- This Week's Priorities - Always at top -->
-        <div class="priorities-section">
-            <div class="priorities-header">
-                <span class="priorities-title">This Week's Top 3</span>
-                <span style="font-size: 12px; color: #d4af37;">Feb 5-7</span>
-            </div>
-            <div class="priority-item">
-                <span class="priority-number">1</span>
-                <div class="priority-content">
-                    <div class="priority-title">Newsletter #2 - Super Bowl + AI Ads</div>
-                    <div class="priority-meta">Anthropic vs OpenAI ads debate, Claude Opus 4.6 release, what it means for brands</div>
-                </div>
-                <span class="priority-status in-progress" onclick="cyclePriorityStatus(this)">In Progress</span>
-            </div>
-            <div class="priority-item">
-                <span class="priority-number">2</span>
-                <div class="priority-content">
-                    <div class="priority-title">Google Ads - Add Video Campaign</div>
-                    <div class="priority-meta">Create Campaign 2 for video, nerf search budget, structure by asset type</div>
-                </div>
-                <span class="priority-status in-progress" onclick="cyclePriorityStatus(this)">In Progress</span>
-            </div>
-            <div class="priority-item">
-                <span class="priority-number">3</span>
-                <div class="priority-content">
-                    <div class="priority-title">Attio Email Sequence Rework</div>
-                    <div class="priority-meta">213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
-                </div>
-                <span class="priority-status in-progress" onclick="cyclePriorityStatus(this)">In Progress</span>
-            </div>
-        </div>
 
         <nav class="week-nav">
             <button class="week-tab active" onclick="showWeek('week-1')">Feb 1-7</button>
@@ -1285,6 +1263,38 @@
                 <div>
                     <h2 class="week-title">Week 1: Discovery & Foundation</h2>
                     <p class="week-dates">February 1 - 7, 2026</p>
+                </div>
+            </div>
+
+            <!-- This Week's Priorities - Only in Week 1 -->
+            <div class="priorities-section">
+                <div class="priorities-header">
+                    <span class="priorities-title">This Week's Top 3</span>
+                    <span style="font-size: 12px; color: #d4af37;">Feb 5-7</span>
+                </div>
+                <div class="priority-item" data-task-id="newsletter-2">
+                    <span class="priority-number">1</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Newsletter #2 - Super Bowl + AI Ads</div>
+                        <div class="priority-meta">Anthropic vs OpenAI ads debate, what it means for brands</div>
+                    </div>
+                    <span class="priority-status in-progress">In Progress</span>
+                </div>
+                <div class="priority-item" data-task-id="paid-media-update">
+                    <span class="priority-number">2</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Update Paid Media</div>
+                        <div class="priority-meta">Google Ads video campaign + Meta Ads review + budget split</div>
+                    </div>
+                    <span class="priority-status in-progress">In Progress</span>
+                </div>
+                <div class="priority-item" data-task-id="attio-rework">
+                    <span class="priority-number">3</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Attio Email Sequence Rework</div>
+                        <div class="priority-meta">213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
+                    </div>
+                    <span class="priority-status blocked">Blocked</span>
                 </div>
             </div>
 
@@ -1493,63 +1503,63 @@
                     </div>
                 </div>
 
-                <p class="category-header" data-category="priority" style="color: var(--warning);">THIS WEEK PRIORITIES</p>
+                <p class="category-header" data-category="email">Email & Sequences</p>
                 <div class="task-list">
-                    <div class="task" data-status="in-progress" data-id="attio-sequence" onclick="handleTaskClick(event, 'attio-sequence')" style="border-color: var(--warning);">
+                    <div class="task priority-highlight" data-status="blocked" data-id="attio-sequence" onclick="handleTaskClick(event, 'attio-sequence')">
                         <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status in-progress"></div>
+                        <div class="task-status blocked"></div>
                         <div class="task-content">
-                            <div class="task-title">P1: Rework Attio Email Sequence</div>
-                            <div class="task-meta">In progress • 213 leads, 80%+ not converting. Reworking subject lines, copy, timing</div>
+                            <div class="task-title">Rework Attio Email Sequence</div>
+                            <div class="task-meta">Blocked - need login • 213 leads, 80%+ bots. Fix subject lines, copy, timing</div>
                         </div>
                         <span class="task-tag strategy">Strategy</span>
                         <a href="https://app.attio.com" target="_blank" class="task-external-link" onclick="event.stopPropagation()">Open Attio ↗</a>
-                        <span class="task-added">Added Feb 3</span>
-                        <span class="task-link">Details →</span>
-                    </div>
-                    <div class="task" data-status="pending" data-id="meta-ads-review" onclick="handleTaskClick(event, 'meta-ads-review')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">P2: Review Meta Ads Account</div>
-                            <div class="task-meta">Pending • Understand full campaign structure across platforms</div>
-                        </div>
-                        <span class="task-tag strategy">Strategy</span>
-                        <span class="task-added">Added Feb 3</span>
-                        <span class="task-link">Details →</span>
-                    </div>
-                    <div class="task" data-status="pending" data-id="channel-strategy" onclick="handleTaskClick(event, 'channel-strategy')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">P3: Build Video Campaign Channel Strategy</div>
-                            <div class="task-meta">Pending • Where to run 5 video spots (YouTube, Shorts, etc.)</div>
-                        </div>
-                        <span class="task-tag strategy">Strategy</span>
-                        <span class="task-added">Added Feb 3</span>
-                        <span class="task-link">Details →</span>
-                    </div>
-                    <div class="task" data-status="pending" data-id="budget-split" onclick="handleTaskClick(event, 'budget-split')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">P4: Create Ad Budget Split Recommendation</div>
-                            <div class="task-meta">Pending • $5K/mo between Google, Meta, video, search</div>
-                        </div>
-                        <span class="task-tag strategy">Strategy</span>
-                        <span class="task-added">Added Feb 3</span>
+                        <span class="task-added">Priority #3</span>
                         <span class="task-link">Details →</span>
                     </div>
                 </div>
 
                 <p class="category-header" data-category="paid">Paid Media</p>
                 <div class="task-list">
-                    <div class="task" data-status="in-progress" data-id="google-ads-audit" onclick="handleTaskClick(event, 'google-ads-audit')">
+                    <div class="task priority-highlight" data-status="in-progress" data-id="google-ads-audit" onclick="handleTaskClick(event, 'google-ads-audit')">
                         <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
                         <div class="task-status in-progress"></div>
                         <div class="task-content">
-                            <div class="task-title">Google Ads Audit & Restructure</div>
-                            <div class="task-meta">In progress • Only search running, need video campaigns</div>
+                            <div class="task-title">Google Ads - Add Video Campaign</div>
+                            <div class="task-meta">In progress • Create Campaign 2 for video, nerf search budget</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Priority #2</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task priority-highlight" data-status="pending" data-id="meta-ads-review" onclick="handleTaskClick(event, 'meta-ads-review')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Review Meta Ads Account</div>
+                            <div class="task-meta">Pending • Check if account exists, understand campaign structure</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Priority #2</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task priority-highlight" data-status="pending" data-id="budget-split" onclick="handleTaskClick(event, 'budget-split')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Create Ad Budget Split Recommendation</div>
+                            <div class="task-meta">Pending • $5K/mo between Google, Meta, video, search</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-added">Priority #2</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="channel-strategy" onclick="handleTaskClick(event, 'channel-strategy')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Build Video Channel Strategy</div>
+                            <div class="task-meta">Pending • Where to run 5 video spots (YouTube, Shorts, etc.)</div>
                         </div>
                         <span class="task-tag strategy">Strategy</span>
                         <span class="task-added">Added Feb 3</span>
@@ -1645,10 +1655,41 @@
             <div class="meeting-notes" id="meeting-notes">
                 <div class="meeting-notes-header" onclick="toggleMeetingNotes()">
                     <span class="meeting-notes-title">Meeting Notes</span>
-                    <span class="meeting-notes-meta">Last updated: Feb 3, 2026 <span class="expand-icon">▼</span></span>
+                    <span class="meeting-notes-meta">Last updated: Feb 8, 2026 <span class="expand-icon">▼</span></span>
                 </div>
                 <div class="meeting-notes-content" id="meeting-notes-content">
                     <!-- Most recent meeting first -->
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">Newsletter #2 Feedback - Eden & Yarden</span>
+                            <span class="meeting-entry-date">February 8, 2026</span>
+                        </div>
+                        <div class="meeting-entry-attendees">Via iMessage: Joshua, Eden, Yarden</div>
+                        <div class="meeting-entry-summary">
+                            <p><strong>Eden's Feedback:</strong> Good overall idea and relevant content. Line breaks on mobile aren't ideal—needs smoother flow. Concerned about contradicting U&AI's message (saying "users question AI" while U&AI builds AI trust).</p>
+                            <p><strong>Yarden's Feedback:</strong></p>
+                            <ol style="margin-left: 20px; color: var(--text-muted);">
+                                <li>Simplify—clients may not read all of it. Some haven't heard of Claude.</li>
+                                <li>Hot Topics should be just 3 items, not 7.</li>
+                                <li>Images/videos are missing (will add in Mailchimp).</li>
+                                <li>Add logo with CTA button: "Check how visible you are on AI platforms."</li>
+                                <li>Remove "we don't want to sell you anything"—if not selling, don't mention it.</li>
+                                <li>Copy/paste into Mailchimp, not HTML upload.</li>
+                            </ol>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>Changes Made</h5>
+                            <ul>
+                                <li>Reduced Hot Topics from 7 → 3 items</li>
+                                <li>Simplified language throughout, removed jargon</li>
+                                <li>Added "Check Your AI Visibility" button at top and bottom</li>
+                                <li>Removed "not here to sell" language from CTA</li>
+                                <li>Changed "Consumer trust is fragile" → positive framing about organic presence</li>
+                                <li>Added source links throughout newsletter</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="meeting-entry">
                         <div class="meeting-entry-header">
                             <span class="meeting-entry-title">Marketing Deep Dive with Eden</span>

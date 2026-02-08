@@ -30,31 +30,30 @@
         }
 
         .newsletter {
-            max-width: 680px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 40px 30px;
+            padding: 40px 25px;
         }
 
         .header {
             text-align: center;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .logo {
             font-family: 'Helvetica Neue', sans-serif;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: 2px;
             color: var(--gold);
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .tagline {
-            font-size: 13px;
+            font-size: 14px;
             color: var(--text-muted);
-            font-style: italic;
         }
 
         .date {
@@ -63,16 +62,34 @@
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-top: 12px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
             margin-top: 15px;
+            transition: opacity 0.2s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+            text-decoration: none;
         }
 
         .headline-section {
             background: linear-gradient(135deg, var(--surface) 0%, #1a1a2e 100%);
             border: 2px solid var(--gold);
             border-radius: 12px;
-            padding: 35px;
-            margin-bottom: 40px;
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.1);
+            padding: 30px;
+            margin-bottom: 35px;
         }
 
         .spotlight-tag {
@@ -81,71 +98,60 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: var(--gold);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .spotlight-tag::before {
-            content: '';
-            display: inline-block;
-            width: 20px;
-            height: 2px;
-            background: var(--gold);
+            margin-bottom: 12px;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 400;
             line-height: 1.3;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .headline-intro {
-            font-size: 18px;
+            font-size: 16px;
             color: var(--text-muted);
-            margin-bottom: 25px;
-            font-style: italic;
+            margin-bottom: 20px;
         }
 
         h2 {
             font-family: 'Helvetica Neue', sans-serif;
-            font-size: 13px;
+            font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: var(--accent);
-            margin-top: 45px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
             border-bottom: 1px solid var(--border);
         }
 
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 500;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin-top: 25px;
+            margin-bottom: 12px;
         }
 
         p {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         blockquote {
             border-left: 3px solid var(--gold);
-            padding-left: 20px;
-            margin: 25px 0;
+            padding-left: 18px;
+            margin: 20px 0;
             font-style: italic;
             color: var(--text-muted);
+            font-size: 15px;
         }
 
         .callout {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 25px;
-            margin: 25px 0;
+            padding: 20px;
+            margin: 20px 0;
         }
 
         .callout-header {
@@ -157,56 +163,68 @@
             margin-bottom: 10px;
         }
 
+        .callout p {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
         .hot-topics {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            margin: 25px 0;
+            gap: 15px;
+            margin: 20px 0;
         }
 
         .topic-item {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 20px;
-            display: flex;
-            gap: 15px;
+            padding: 18px;
         }
 
-        .topic-number {
-            font-family: 'Helvetica Neue', sans-serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--accent);
-            min-width: 40px;
-        }
-
-        .topic-content h4 {
-            font-size: 1.1rem;
+        .topic-item h4 {
+            font-size: 1rem;
             margin-bottom: 8px;
+            font-weight: 500;
         }
 
-        .topic-content p {
+        .topic-item p {
             font-size: 14px;
             color: var(--text-muted);
             margin: 0;
+            line-height: 1.6;
+        }
+
+        .topic-item a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .topic-item a:hover {
+            text-decoration: underline;
         }
 
         .quick-links {
             background: var(--surface);
             border-radius: 8px;
-            padding: 25px;
-            margin: 25px 0;
+            padding: 20px;
+            margin: 20px 0;
         }
 
         .quick-link {
-            padding: 12px 0;
+            padding: 10px 0;
             border-bottom: 1px solid var(--border);
-            font-size: 15px;
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         .quick-link:last-child {
             border-bottom: none;
+            padding-bottom: 0;
         }
 
         .quick-link a {
@@ -221,32 +239,38 @@
         .cta-section {
             background: linear-gradient(135deg, #14532d 0%, #1e3a5f 100%);
             border-radius: 12px;
-            padding: 35px;
-            margin: 40px 0;
+            padding: 30px;
+            margin: 35px 0;
             text-align: center;
         }
 
         .cta-section h3 {
             color: var(--gold);
             margin-top: 0;
+            font-size: 1.3rem;
         }
 
         .cta-section p {
             color: var(--text-muted);
-            margin-bottom: 0;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .cta-section .cta-button {
+            margin-top: 5px;
         }
 
         .footer {
             text-align: center;
-            padding-top: 40px;
-            margin-top: 40px;
+            padding-top: 30px;
+            margin-top: 30px;
             border-top: 1px solid var(--border);
             font-size: 13px;
             color: var(--text-muted);
         }
 
         .social-links {
-            margin: 20px 0;
+            margin: 15px 0;
         }
 
         .social-links a {
@@ -267,7 +291,21 @@
         .divider {
             text-align: center;
             color: var(--text-muted);
-            margin: 30px 0;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        /* Mobile-friendly: prevent orphaned words */
+        @media (max-width: 600px) {
+            .newsletter {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .headline-section {
+                padding: 25px 20px;
+            }
         }
     </style>
 </head>
@@ -275,142 +313,93 @@
     <div class="newsletter">
         <header class="header">
             <div class="logo">U&AI</div>
-            <div class="tagline">Your weekly brief on AI that matters for business</div>
-            <div class="date">February 8, 2026 | Issue #2</div>
+            <div class="tagline">AI news that matters for your brand</div>
+            <div class="date">February 8, 2026 • Issue #2</div>
+            <a href="https://www.uandai.co" class="cta-button">Check Your AI Visibility →</a>
         </header>
 
         <!-- SPOTLIGHT SECTION -->
         <section class="headline-section">
-            <div class="spotlight-tag">Spotlight</div>
+            <div class="spotlight-tag">— Spotlight</div>
             <h1>The AI Ad Wars Just Got Personal</h1>
-            <p class="headline-intro">Anthropic's Super Bowl ads mocked ChatGPT's ad plans. Sam Altman's response? A full-blown rant calling them "dishonest" and "authoritarian." Here's what it means for your brand.</p>
+            <p class="headline-intro">Anthropic ran Super Bowl ads mocking ChatGPT's new ad plans. OpenAI's CEO fired back. Here's what it means for brands like yours.</p>
 
             <h3>What Happened</h3>
-            <p>OpenAI announced last month they're bringing ads to ChatGPT's free tier. "We plan to test ads at the bottom of answers when there's a relevant sponsored product or service based on your current conversation," they said.</p>
+            <p>OpenAI announced they're bringing ads to ChatGPT. Ads will appear "at the bottom of answers when there's a relevant sponsored product based on your current conversation."</p>
 
-            <p>Anthropic saw an opening. Their Super Bowl campaign features four ads with the tagline: <strong>"Ads are coming to AI. But not to Claude."</strong></p>
+            <p>Anthropic (maker of Claude) saw an opening. Their Super Bowl campaign tagline: <strong>"Ads are coming to AI. But not to Claude."</strong></p>
 
-            <p>One spot shows a man asking ChatGPT for advice on talking to his mom, only to have the bot twist the conversation into an ad for a fictitious cougar-dating site. Another shows a guy asking for fitness advice, only to get pitched height-boosting insoles.</p>
+            <p>One ad shows a man asking ChatGPT for advice on talking to his mom—only to get pitched a dating site. Another shows someone asking for fitness tips and getting sold height-boosting insoles. <a href="https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/" target="_blank">Funny stuff</a>.</p>
 
             <h3>Sam Altman's Response</h3>
-            <p>Altman admitted he laughed at the ads. Then he wrote what can only be described as a novella-sized rant on X:</p>
+            <p>OpenAI's CEO admitted he laughed at the ads. Then he went off on X:</p>
 
             <blockquote>
-                "I guess it's on brand for Anthropic doublespeak to use a deceptive ad to critique theoretical deceptive ads that aren't real. We would obviously never run ads in the way Anthropic depicts them. We are not stupid and we know our users would reject that."
+                "I guess it's on brand for Anthropic doublespeak to use a deceptive ad to critique theoretical deceptive ads that aren't real. We would obviously never run ads that way."
             </blockquote>
 
-            <p>He didn't stop there. He accused Anthropic of wanting to "control what people do with AI," calling them "authoritarian," and claimed they block Claude Code access from "companies they don't like" (including OpenAI).</p>
-
-            <h3>The Deeper Issue</h3>
-            <p>This isn't just corporate drama. It's a fundamental question about the future of AI: <strong>Will AI assistants become ad delivery systems?</strong></p>
-
-            <p>OpenAI promises ads will be "separate, labeled, and will never influence a chat." But they also said ads will be "conversation-specific." That's a fine line. When your AI knows what you're thinking about and serves you ads based on that? Trust erodes fast.</p>
+            <p>He called Anthropic "dishonest" and "authoritarian." <a href="https://www.cnbc.com/2026/02/05/super-bowl-ai-ad-altman-anthropic-open-ai.html" target="_blank">Full story here</a>.</p>
 
             <div class="callout">
-                <div class="callout-header">What This Means for You</div>
-                <p>If you're running a business, this debate matters. Here's why:</p>
-                <p><strong>Organic AI presence becomes more valuable.</strong> If paid ads flood AI responses, brands that show up organically will stand out. Being the answer (not the ad) is the new moat.</p>
-                <p><strong>Consumer trust is fragile.</strong> Users already question AI recommendations. Add visible monetization? Skepticism compounds. Your brand doesn't want to be the one that got injected into someone's conversation.</p>
-                <p><strong>The "no ads" promise is a differentiator.</strong> Anthropic is betting that "ad-free" is a selling point. For B2B? They might be right. Your clients don't want their sensitive business questions followed by product placements.</p>
+                <div class="callout-header">What This Means for Your Brand</div>
+                <p><strong>Organic presence just got more valuable.</strong> If paid ads flood AI responses, brands that show up naturally will stand out. Being the answer—not the ad—is the new moat.</p>
+                <p><strong>Showing up organically = trust signal.</strong> When your brand appears naturally in AI responses (not as a sponsored placement), that tells customers you're the real answer to their question.</p>
+                <p><strong>This is still early.</strong> AI platforms are figuring out monetization in real time. The brands that establish authentic presence now will have an advantage as the rules get written.</p>
             </div>
         </section>
 
-        <div class="divider">* * *</div>
+        <div class="divider">• • •</div>
 
-        <!-- HOT TOPICS SECTION -->
-        <h2>Hot Topics in AI This Week</h2>
+        <!-- HOT TOPICS SECTION - SIMPLIFIED TO 3 -->
+        <h2>What Else Happened This Week</h2>
 
         <div class="hot-topics">
             <div class="topic-item">
-                <div class="topic-number">01</div>
-                <div class="topic-content">
-                    <h4>Claude Opus 4.6 Drops with "Agent Teams"</h4>
-                    <p>Anthropic released Opus 4.6 with 1 million token context, a new "Agent Teams" feature where AI agents work together like software engineers, and it already found 500+ zero-day security flaws in open-source code. Pricing unchanged at $5/million input tokens.</p>
-                </div>
+                <h4>Anthropic Releases Claude Opus 4.6</h4>
+                <p>Anthropic's newest AI model can now handle much longer documents and has a new "Agent Teams" feature where multiple AI agents work together on complex tasks. It also <a href="https://www.axios.com/2026/02/05/anthropic-claude-opus-46-software-hunting" target="_blank">found 500+ security flaws</a> in open-source code within days of launch.</p>
             </div>
 
             <div class="topic-item">
-                <div class="topic-number">02</div>
-                <div class="topic-content">
-                    <h4>OpenAI Launches GPT-5.3-Codex</h4>
-                    <p>The first model that was "instrumental in creating itself." It can build complex websites and games, and scored new highs on coding benchmarks. GPT-4o, GPT-4.1, and older models retire February 13.</p>
-                </div>
+                <h4>OpenAI Launches GPT-5.3-Codex</h4>
+                <p>OpenAI released a new coding-focused model that's so capable they say it "helped create itself." Older models like GPT-4o <a href="https://llm-stats.com/llm-updates" target="_blank">retire February 13</a>—if you're building on those, time to upgrade.</p>
             </div>
 
             <div class="topic-item">
-                <div class="topic-number">03</div>
-                <div class="topic-content">
-                    <h4>Gemini Growing Faster Than ChatGPT</h4>
-                    <p>Google's Gemini is up 19% month-over-month vs ChatGPT's 4%. Meta's former Chief AI Scientist Yann LeCun publicly endorsed Gemini, saying "I use Gemini" on LinkedIn. Gemini now has 22% of global AI traffic.</p>
-                </div>
-            </div>
-
-            <div class="topic-item">
-                <div class="topic-number">04</div>
-                <div class="topic-content">
-                    <h4>OpenAI Eyeing $1 Trillion IPO</h4>
-                    <p>OpenAI is preparing for a Q4 2026 IPO that could be one of history's biggest. They're also launching Prism, a LaTeX-native workspace for scientists, signaling a push into productivity tools beyond chat.</p>
-                </div>
-            </div>
-
-            <div class="topic-item">
-                <div class="topic-number">05</div>
-                <div class="topic-content">
-                    <h4>MCP Becomes the "USB-C for AI"</h4>
-                    <p>Anthropic's Model Context Protocol is becoming the standard for AI agent connectivity. OpenAI and Microsoft have embraced it, and Anthropic donated it to the Linux Foundation's new Agentic AI Foundation.</p>
-                </div>
-            </div>
-
-            <div class="topic-item">
-                <div class="topic-number">06</div>
-                <div class="topic-content">
-                    <h4>Meta's Secret "Avocado" Model</h4>
-                    <p>Meta's TBD AI unit is testing a frontier model code-named "Avocado" to succeed Llama. They're planning $115-135 billion in AI capex for 2026. Meanwhile, Yann LeCun left to start his own "world model" lab.</p>
-                </div>
-            </div>
-
-            <div class="topic-item">
-                <div class="topic-number">07</div>
-                <div class="topic-content">
-                    <h4>Chinese AI Competition Heating Up</h4>
-                    <p>ByteDance, Alibaba, and DeepSeek are all reportedly preparing February model launches. The AI race is truly global now.</p>
-                </div>
+                <h4>Google's Gemini Growing Fast</h4>
+                <p>Gemini is up 19% month-over-month vs ChatGPT's 4%. It now has <a href="https://sherwood.news/tech/googles-gemini-is-gaining-but-openais-chatgpt-is-still-the-ai-chatbot-leader/" target="_blank">22% of global AI traffic</a>. More platforms = more places your brand needs to show up.</p>
             </div>
         </div>
 
-        <div class="divider">* * *</div>
+        <div class="divider">• • •</div>
 
         <!-- QUICK LINKS SECTION -->
         <h2>Quick Links</h2>
 
         <div class="quick-links">
-            <div class="quick-link">Apple Intelligence gets Gemini integration as part of multi-year Google partnership</div>
-            <div class="quick-link">OpenAI's Prism tool aims to make scientific paper writing 10x faster</div>
-            <div class="quick-link">Anthropic's Claude can now integrate directly into PowerPoint as a side panel</div>
-            <div class="quick-link">Super Bowl LX ad rates hit $8.5 million for 30 seconds - AI companies among top spenders</div>
-            <div class="quick-link">EU regulators open inquiry into ChatGPT ad plans under AI Act transparency rules</div>
+            <div class="quick-link">Apple Intelligence gets Gemini integration as part of <a href="#">multi-year Google partnership</a></div>
+            <div class="quick-link">Super Bowl ad rates hit $8.5M for 30 seconds—AI companies among <a href="#">top spenders</a></div>
+            <div class="quick-link">EU regulators open inquiry into ChatGPT ad plans under <a href="#">AI Act transparency rules</a></div>
         </div>
 
-        <div class="divider">* * *</div>
+        <div class="divider">• • •</div>
 
-        <!-- CTA SECTION -->
+        <!-- CTA SECTION - REVISED -->
         <section class="cta-section">
-            <h3>Let's Talk About Your AI Presence</h3>
-            <p>We're not here to sell you anything. We're building a community of business leaders who want to understand AI deeply and use it strategically.</p>
-            <p style="margin-top: 15px;">Got a question about how AI affects your industry? Curious about what we're seeing across clients? Just reply to this email. We read every response, and we'd love to be thought partners on your AI journey.</p>
-            <p style="margin-top: 15px; color: var(--gold);"><strong>No pitch. Just perspective.</strong></p>
+            <h3>Questions About AI + Your Brand?</h3>
+            <p>Just reply to this email. We read everything and we're happy to think through it with you.</p>
+            <a href="https://www.uandai.co" class="cta-button">Check Your AI Visibility →</a>
         </section>
 
         <footer class="footer">
             <p><strong>U&AI</strong></p>
-            <p>Helping brands show up in AI - organically, authentically, strategically.</p>
+            <p>Helping brands show up in AI—organically.</p>
             <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-                <a href="#">Website</a>
+                <a href="#">LinkedIn</a> •
+                <a href="#">Twitter</a> •
+                <a href="https://www.uandai.co">Website</a>
             </div>
-            <p style="margin-top: 20px; font-size: 11px;">You're receiving this because you signed up for the U&AI newsletter.<br>
-            <a href="#">Unsubscribe</a> | <a href="#">View in browser</a></p>
+            <p style="margin-top: 15px; font-size: 11px;">You're receiving this because you signed up for the U&AI newsletter.<br>
+            <a href="#">Unsubscribe</a> • <a href="#">View in browser</a></p>
         </footer>
     </div>
 </body>
