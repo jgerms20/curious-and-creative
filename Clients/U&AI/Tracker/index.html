@@ -1770,6 +1770,38 @@
                 </div>
             </div>
 
+            <!-- This Week's Priorities - Week 2 -->
+            <div class="priorities-section">
+                <div class="priorities-header">
+                    <span class="priorities-title">This Week's Top 3</span>
+                    <span style="font-size: 12px; color: #d4af37;">Feb 8-14</span>
+                </div>
+                <div class="priority-item" data-task-id="send-newsletter-1">
+                    <span class="priority-number">1</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Send Newsletter #1 via Mailchimp</div>
+                        <div class="priority-meta">Import HTML, test, and send to subscribers</div>
+                    </div>
+                    <span class="priority-status pending">Pending</span>
+                </div>
+                <div class="priority-item" data-task-id="draft-newsletter-2">
+                    <span class="priority-number">2</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Draft Newsletter #2 - Super Bowl + AI Ads</div>
+                        <div class="priority-meta">Anthropic vs OpenAI, what it means for brands</div>
+                    </div>
+                    <span class="priority-status in-progress">In Progress</span>
+                </div>
+                <div class="priority-item" data-task-id="instagram-republish">
+                    <span class="priority-number">3</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Update Instagram - Delete & Republish</div>
+                        <div class="priority-meta">Remove low-quality videos, re-upload properly</div>
+                    </div>
+                    <span class="priority-status pending">Pending</span>
+                </div>
+            </div>
+
             <div class="progress-bar">
                 <div class="progress-fill" style="width: 0%"></div>
             </div>
@@ -1796,6 +1828,26 @@
 
                 <p class="category-header">Organic Presence</p>
                 <div class="task-list">
+                    <div class="task" data-status="in-progress" data-id="update-organic" onclick="openTaskModal('update-organic')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status in-progress"></div>
+                        <div class="task-content">
+                            <div class="task-title">Update Organic Presence Strategy</div>
+                            <div class="task-meta">Review and optimize social channels • Align with brand voice</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="instagram-republish" onclick="openTaskModal('instagram-republish')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Update Instagram - Delete & Republish Videos</div>
+                            <div class="task-meta">Remove low-quality videos • Re-upload with better quality settings</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
                     <div class="task completed-gray" data-status="done" data-id="tiktok-setup" onclick="openTaskModal('tiktok-setup')">
                         <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
                         <div class="task-status done"></div>
@@ -1806,16 +1858,8 @@
                         <span class="task-tag content">Content</span>
                         <span class="task-link">Details →</span>
                     </div>
-                    <div class="task" data-status="pending" data-id="instagram-fix" onclick="openTaskModal('instagram-fix')">
-                        <div class="task-status pending"></div>
-                        <div class="task-content">
-                            <div class="task-title">Fix Instagram Posts (Re-upload High Quality)</div>
-                            <div class="task-meta">Current posts low quality • Enable high quality upload setting</div>
-                        </div>
-                        <span class="task-tag content">Content</span>
-                        <span class="task-link">Details →</span>
-                    </div>
                     <div class="task" data-status="pending" data-id="linkedin-setup" onclick="openTaskModal('linkedin-setup')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
                         <div class="task-status pending"></div>
                         <div class="task-content">
                             <div class="task-title">LinkedIn Company Page Setup</div>
@@ -1824,11 +1868,26 @@
                         <span class="task-tag content">Content</span>
                         <span class="task-link">Details →</span>
                     </div>
-                    <div class="task" data-status="pending" data-id="newsletter-2" onclick="openTaskModal('newsletter-2')">
+                </div>
+
+                <p class="category-header">Newsletter</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending" data-id="send-newsletter-1" onclick="openTaskModal('send-newsletter-1')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
                         <div class="task-status pending"></div>
                         <div class="task-content">
-                            <div class="task-title">Newsletter #2 - Weekly AI Digest</div>
-                            <div class="task-meta">Send Monday • Headlines + Deep Dive format</div>
+                            <div class="task-title">Send Newsletter #1 via Mailchimp</div>
+                            <div class="task-meta">Import HTML • Test send • Schedule or send live</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="in-progress" data-id="draft-newsletter-2" onclick="openTaskModal('draft-newsletter-2')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status in-progress"></div>
+                        <div class="task-content">
+                            <div class="task-title">Draft Newsletter #2 - Super Bowl + AI Ads</div>
+                            <div class="task-meta">Anthropic vs OpenAI • What it means for brands</div>
                         </div>
                         <span class="task-tag content">Content</span>
                         <span class="task-link">Details →</span>
@@ -3152,10 +3211,39 @@
             initTaskRows();
             updateStats();
             updateTimestamp();
+            autoSelectCurrentWeek();
             document.querySelectorAll('.category-header').forEach(header => {
                 header.addEventListener('click', function() { toggleCategory(this); });
             });
         });
+
+        function autoSelectCurrentWeek() {
+            const today = new Date();
+            const day = today.getDate();
+            const month = today.getMonth(); // 0 = January, 1 = February
+
+            // February 2026 weeks
+            // Week 1: Feb 1-7, Week 2: Feb 8-14, Week 3: Feb 15-21, Week 4: Feb 22-28
+            let weekId = 'week-1';
+            if (month === 1) { // February
+                if (day >= 22) weekId = 'week-4';
+                else if (day >= 15) weekId = 'week-3';
+                else if (day >= 8) weekId = 'week-2';
+                else weekId = 'week-1';
+            }
+
+            // Update UI
+            document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
+            document.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
+
+            const weekEl = document.getElementById(weekId);
+            if (weekEl) weekEl.classList.add('active');
+
+            // Find and activate the correct tab
+            const tabs = document.querySelectorAll('.week-tab');
+            const weekNum = parseInt(weekId.replace('week-', '')) - 1;
+            if (tabs[weekNum]) tabs[weekNum].classList.add('active');
+        }
 
         function updateTimestamp() {
             const now = new Date();
