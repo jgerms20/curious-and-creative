@@ -123,12 +123,19 @@
             font-size: 13px;
         }
 
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
         .progress-bar {
             background: var(--surface);
             height: 8px;
             border-radius: 4px;
             overflow: hidden;
-            margin-bottom: 30px;
+            flex: 1;
         }
 
         .progress-fill {
@@ -136,6 +143,14 @@
             background: linear-gradient(90deg, var(--accent), var(--success));
             border-radius: 4px;
             transition: width 0.3s;
+        }
+
+        .progress-percent {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            min-width: 45px;
+            text-align: right;
         }
 
         .stats {
@@ -1298,8 +1313,11 @@
                 </div>
             </div>
 
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 35%"></div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%"></div>
+                </div>
+                <span class="progress-percent">35%</span>
             </div>
 
             <div class="stats">
@@ -1802,8 +1820,11 @@
                 </div>
             </div>
 
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 0%"></div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span class="progress-percent">0%</span>
             </div>
 
             <div class="stats">
@@ -1927,8 +1948,11 @@
                 </div>
             </div>
 
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 0%"></div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span class="progress-percent">0%</span>
             </div>
 
             <div class="stats">
@@ -2019,8 +2043,11 @@
                 </div>
             </div>
 
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 0%"></div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span class="progress-percent">0%</span>
             </div>
 
             <div class="empty-state">
@@ -2776,13 +2803,27 @@
         // Notes storage
         const taskNotes = JSON.parse(localStorage.getItem('taskNotes') || '{}');
 
+        // Store commenter name
+        function getCommenterName() {
+            return localStorage.getItem('commenterName') || '';
+        }
+
+        function setCommenterName(name) {
+            localStorage.setItem('commenterName', name);
+        }
+
         function saveNote(taskId) {
             const input = document.getElementById('note-input-' + taskId);
+            const nameInput = document.getElementById('note-name-' + taskId);
             if (!input || !input.value.trim()) return;
+
+            const name = nameInput ? nameInput.value.trim() : '';
+            if (name) setCommenterName(name); // Remember the name for next time
 
             if (!taskNotes[taskId]) taskNotes[taskId] = [];
             taskNotes[taskId].unshift({
                 text: input.value.trim(),
+                author: name || 'Anonymous',
                 date: new Date().toLocaleString()
             });
             localStorage.setItem('taskNotes', JSON.stringify(taskNotes));
@@ -2809,10 +2850,14 @@
             `;
 
             // Build notes section
+            const savedName = getCommenterName();
             let notesHtml = `
                 <div class="task-notes">
                     <div class="task-notes-header">
                         <span class="task-notes-title">Notes</span>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 8px;">
+                        <input type="text" id="note-name-${taskId}" class="note-input" placeholder="Your name..." value="${savedName}" style="flex: 0 0 150px;">
                     </div>
                     <textarea id="note-input-${taskId}" class="note-input" placeholder="Add a note..."></textarea>
                     <button class="add-note-btn" onclick="saveNote('${taskId}')" style="margin-top: 8px;">Save Note</button>
@@ -2822,7 +2867,8 @@
             if (notes.length > 0) {
                 notesHtml += '<div style="margin-top: 15px;">';
                 notes.forEach(note => {
-                    notesHtml += `<div class="note-item">${note.text}<div class="note-meta">${note.date}</div></div>`;
+                    const authorDisplay = note.author || 'Anonymous';
+                    notesHtml += `<div class="note-item">${note.text}<div class="note-meta"><strong>${authorDisplay}</strong> • ${note.date}</div></div>`;
                 });
                 notesHtml += '</div>';
             }
@@ -2930,6 +2976,37 @@
                 }
             });
             localStorage.setItem('taskStates', JSON.stringify(states));
+        }
+
+        function saveTaskWeek(taskId, weekId) {
+            const weekAssignments = JSON.parse(localStorage.getItem('taskWeekAssignments') || '{}');
+            weekAssignments[taskId] = weekId;
+            localStorage.setItem('taskWeekAssignments', JSON.stringify(weekAssignments));
+        }
+
+        function loadTaskWeekAssignments() {
+            const assignments = JSON.parse(localStorage.getItem('taskWeekAssignments') || '{}');
+            Object.keys(assignments).forEach(taskId => {
+                const task = document.querySelector(`.task[data-id="${taskId}"]`);
+                const targetWeekId = assignments[taskId];
+                if (task && targetWeekId) {
+                    const targetWeek = document.getElementById(targetWeekId);
+                    if (targetWeek) {
+                        let targetList = targetWeek.querySelector('.task-list:last-of-type');
+                        if (!targetList) {
+                            const section = targetWeek.querySelector('.section') || targetWeek;
+                            targetList = document.createElement('div');
+                            targetList.className = 'task-list';
+                            section.appendChild(targetList);
+                        }
+                        // Only move if not already in target week
+                        if (!task.closest('#' + targetWeekId)) {
+                            task.remove();
+                            targetList.appendChild(task);
+                        }
+                    }
+                }
+            });
         }
 
         function loadTaskStates() {
@@ -3193,6 +3270,9 @@
             taskEl.remove();
             targetList.appendChild(taskEl);
 
+            // Save the move to localStorage
+            saveTaskWeek(taskEl.dataset.id, weekId);
+
             // Update stats for both weeks
             updateStats();
 
@@ -3207,6 +3287,7 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             loadTaskStates();
+            loadTaskWeekAssignments();
             loadInsights();
             initTaskRows();
             updateStats();
@@ -3313,8 +3394,10 @@
                 const ipEl = weekEl.querySelector('.stat[data-filter="in-progress"] .stat-value');
                 const pendEl = weekEl.querySelector('.stat[data-filter="pending"] .stat-value');
                 const progEl = weekEl.querySelector('.progress-fill');
+                const percentEl = weekEl.querySelector('.progress-percent');
 
                 if (doneEl) doneEl.textContent = done;
+                if (percentEl) percentEl.textContent = progress + '%';
                 if (ipEl) ipEl.textContent = inProgress;
                 if (pendEl) pendEl.textContent = pending;
                 if (progEl) progEl.style.width = progress + '%';
