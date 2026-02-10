@@ -1254,22 +1254,251 @@
             background: var(--accent);
             color: white;
         }
+
+        /* Hamburger Menu & Sidebar */
+        .header-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .hamburger-btn {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 12px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transition: all 0.2s;
+        }
+
+        .hamburger-btn:hover {
+            border-color: var(--accent);
+            background: var(--surface-hover);
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 1px;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -320px;
+            width: 300px;
+            height: 100vh;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            z-index: 101;
+            padding: 25px;
+            overflow-y: auto;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .sidebar-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px;
+            line-height: 1;
+        }
+
+        .sidebar-close:hover {
+            color: var(--text);
+        }
+
+        .sidebar-section {
+            margin-bottom: 25px;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .month-selector {
+            width: 100%;
+            padding: 10px 12px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text);
+            font-size: 14px;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23888' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+        }
+
+        .month-selector:hover {
+            border-color: var(--accent);
+        }
+
+        .sidebar-week-link {
+            display: block;
+            padding: 10px 12px;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin-bottom: 4px;
+        }
+
+        .sidebar-week-link:hover {
+            background: var(--surface-hover);
+            color: var(--text);
+        }
+
+        .sidebar-week-link.active {
+            background: var(--accent-dim);
+            color: var(--accent);
+        }
+
+        .sidebar-deliverable {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sidebar-deliverable:hover {
+            border-color: var(--accent);
+        }
+
+        .sidebar-deliverable-icon {
+            font-size: 16px;
+        }
+
+        .sidebar-deliverable-info {
+            flex: 1;
+        }
+
+        .sidebar-deliverable-name {
+            font-size: 13px;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .sidebar-deliverable-week {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
     </style>
 </head>
 <body>
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Navigation</span>
+            <button class="sidebar-close" onclick="toggleSidebar()">&times;</button>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Month</div>
+            <select class="month-selector" id="month-selector">
+                <option value="2026-02" selected>February 2026</option>
+                <option value="2026-03">March 2026</option>
+                <option value="2026-04">April 2026</option>
+            </select>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Weeks</div>
+            <div class="sidebar-week-link" onclick="showWeekFromSidebar('week-1')">Week 1: Feb 1-7</div>
+            <div class="sidebar-week-link active" onclick="showWeekFromSidebar('week-2')">Week 2: Feb 8-14</div>
+            <div class="sidebar-week-link" onclick="showWeekFromSidebar('week-3')">Week 3: Feb 15-21</div>
+            <div class="sidebar-week-link" onclick="showWeekFromSidebar('week-4')">Week 4: Feb 22-28</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">All Deliverables</div>
+            <div id="all-deliverables">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <header>
-            <span class="client-tag">Client Project</span>
+            <div class="header-row">
+                <button class="hamburger-btn" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <span class="client-tag">Client Project</span>
+            </div>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
-            <p class="header-timestamp">Last updated: <span id="last-updated">February 8, 2026 @ 3:25 AM PST</span></p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 9, 2026 @ 11:30 AM PST</span></p>
         </header>
 
         <nav class="week-nav">
-            <button class="week-tab active" onclick="showWeek('week-1')">Feb 1-7</button>
-            <button class="week-tab" onclick="showWeek('week-2')">Feb 8-14</button>
-            <button class="week-tab" onclick="showWeek('week-3')">Feb 15-21</button>
-            <button class="week-tab" onclick="showWeek('week-4')">Feb 22-28</button>
+            <button class="week-tab active" onclick="showWeek('week-1')">Week 1: Feb 1-7</button>
+            <button class="week-tab" onclick="showWeek('week-2')">Week 2: Feb 8-14</button>
+            <button class="week-tab" onclick="showWeek('week-3')">Week 3: Feb 15-21</button>
+            <button class="week-tab" onclick="showWeek('week-4')">Week 4: Feb 22-28</button>
         </nav>
 
         <!-- Week 1: Feb 1 -->
@@ -1673,10 +1902,42 @@
             <div class="meeting-notes" id="meeting-notes">
                 <div class="meeting-notes-header" onclick="toggleMeetingNotes()">
                     <span class="meeting-notes-title">Meeting Notes</span>
-                    <span class="meeting-notes-meta">Last updated: Feb 8, 2026 <span class="expand-icon">▼</span></span>
+                    <span class="meeting-notes-meta">Last updated: Feb 9, 2026 <span class="expand-icon">▼</span></span>
                 </div>
                 <div class="meeting-notes-content" id="meeting-notes-content">
                     <!-- Most recent meeting first -->
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">Heads of Department Meeting</span>
+                            <span class="meeting-entry-date">February 9, 2026</span>
+                        </div>
+                        <div class="meeting-entry-attendees">Attendees: Joshua, Eden, Yarden, Ethan</div>
+                        <div class="meeting-entry-summary">
+                            <p><strong>New Client:</strong> OZLO (sleep AirPods) joined - $12M revenue, $10M raised. Now at 18 clients total. Need 3 more by Feb 15.</p>
+                            <p><strong>Marketing Updates (Joshua):</strong></p>
+                            <ol style="margin-left: 20px; color: var(--text-muted);">
+                                <li>Newsletter #1 ready to send tomorrow (Feb 10 @ 10am)</li>
+                                <li>Paid campaigns tweaked - already seeing a meeting booked from changes</li>
+                                <li>Email sequences adjusted (3-5 business day intervals)</li>
+                                <li>This week: focus on organic presence and channel strategy</li>
+                                <li>LinkedIn in-mail ads proposal - from founders not company page</li>
+                                <li>TikTok account created, start posting this week</li>
+                            </ol>
+                            <p><strong>Tech Updates (Ethan):</strong> Graph generator review, HARO/Feature.com integration this week, WordPress plugin next week.</p>
+                            <p><strong>Upcoming:</strong> Gemini conference application (deadline ~Feb 28), investor deck needs updating.</p>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>Joshua's Action Items</h5>
+                            <ul>
+                                <li>Send Newsletter #1 tomorrow @ 10am</li>
+                                <li>Draft Newsletter #2 (topic TBD)</li>
+                                <li>Finalize channel strategy & budget allocation by end of week</li>
+                                <li>Update organic presence (Instagram, TikTok, LinkedIn)</li>
+                                <li>Consider LinkedIn in-mail ads from founders</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="meeting-entry">
                         <div class="meeting-entry-header">
                             <span class="meeting-entry-title">Newsletter #2 Feedback - Eden & Yarden</span>
@@ -1798,23 +2059,23 @@
                     <span class="priority-number">1</span>
                     <div class="priority-content">
                         <div class="priority-title">Send Newsletter #1 via Mailchimp</div>
-                        <div class="priority-meta">Import HTML, test, and send to subscribers</div>
+                        <div class="priority-meta">Tomorrow Feb 10 @ 10am • Super Bowl + AI Ads theme</div>
                     </div>
                     <span class="priority-status pending">Pending</span>
                 </div>
                 <div class="priority-item" data-task-id="draft-newsletter-2">
                     <span class="priority-number">2</span>
                     <div class="priority-content">
-                        <div class="priority-title">Draft Newsletter #2 - Super Bowl + AI Ads</div>
-                        <div class="priority-meta">Anthropic vs OpenAI, what it means for brands</div>
+                        <div class="priority-title">Draft Newsletter #2 (Topic TBD)</div>
+                        <div class="priority-meta">Research trending AI topics for next week's send</div>
                     </div>
-                    <span class="priority-status in-progress">In Progress</span>
+                    <span class="priority-status pending">Pending</span>
                 </div>
-                <div class="priority-item" data-task-id="instagram-republish">
+                <div class="priority-item" data-task-id="channel-strategy">
                     <span class="priority-number">3</span>
                     <div class="priority-content">
-                        <div class="priority-title">Update Instagram - Delete & Republish</div>
-                        <div class="priority-meta">Remove low-quality videos, re-upload properly</div>
+                        <div class="priority-title">Finalize Channel Strategy & Budget</div>
+                        <div class="priority-meta">Allocate $5K budget across platforms • Due end of week</div>
                     </div>
                     <span class="priority-status pending">Pending</span>
                 </div>
@@ -1935,6 +2196,38 @@
                         <span class="task-tag strategy">Strategy</span>
                         <span class="task-link">Details →</span>
                     </div>
+                </div>
+            </div>
+
+            <!-- Deliverables - Week 2 -->
+            <div class="section">
+                <div class="section-header collapsible-header" onclick="toggleSection('deliverables-section-week2')">
+                    <h3 class="section-title">Deliverables <span class="collapse-icon">▼</span></h3>
+                </div>
+                <div id="deliverables-section-week2" class="collapsible-content">
+                <div class="deliverables">
+                    <div class="deliverable" onclick="openDeliverable('../Newsletters/2026/02/2026-02-08-weekly-digest.html')">
+                        <div class="deliverable-icon">📰</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Newsletter #1 - Super Bowl + AI Ads</div>
+                            <div class="deliverable-type">Weekly Digest • Ready to Send</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" style="opacity: 0.5; cursor: default;">
+                        <div class="deliverable-icon">📋</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Channel Strategy & Budget</div>
+                            <div class="deliverable-type">Strategy Doc • In Progress</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" style="opacity: 0.5; cursor: default;">
+                        <div class="deliverable-icon">📰</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Newsletter #2 (Topic TBD)</div>
+                            <div class="deliverable-type">Weekly Digest • Not Started</div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -2058,7 +2351,7 @@
 
         <footer>
             <span>Curious & Creative Agency • U&AI Project</span>
-            <span id="footer-timestamp">Last updated: February 8, 2026 @ 4:21 AM PST</span>
+            <span id="footer-timestamp">Last updated: February 9, 2026 @ 11:30 AM PST</span>
         </footer>
     </div>
 
@@ -2686,8 +2979,82 @@
             document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
             document.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
             document.getElementById(weekId).classList.add('active');
-            event.target.classList.add('active');
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+            // Update sidebar week links
+            document.querySelectorAll('.sidebar-week-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.textContent.includes(weekId.replace('week-', 'Week '))) {
+                    link.classList.add('active');
+                }
+            });
+            // Also activate the correct tab
+            document.querySelectorAll('.week-tab').forEach(tab => {
+                if (tab.onclick.toString().includes(weekId)) {
+                    tab.classList.add('active');
+                }
+            });
         }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function showWeekFromSidebar(weekId) {
+            document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
+            document.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(weekId).classList.add('active');
+
+            // Update tabs
+            const weekNum = weekId.replace('week-', '');
+            document.querySelectorAll('.week-tab').forEach(tab => {
+                if (tab.textContent.includes('Week ' + weekNum)) {
+                    tab.classList.add('active');
+                }
+            });
+
+            // Update sidebar links
+            document.querySelectorAll('.sidebar-week-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.textContent.includes('Week ' + weekNum)) {
+                    link.classList.add('active');
+                }
+            });
+
+            toggleSidebar();
+        }
+
+        function populateAllDeliverables() {
+            const allDeliverables = [
+                { icon: '🎬', name: 'Video Channel Strategy', week: 'Week 1', path: '../Reports/video-channel-strategy.html' },
+                { icon: '💰', name: 'Budget Split ($5K)', week: 'Week 1', path: '../Reports/budget-split-recommendation.html' },
+                { icon: '📊', name: 'Strategic Audit Report', week: 'Week 1', path: '../Reports/U&AI-Strategic-Audit.html' },
+                { icon: '🏁', name: 'Competitive Landscape', week: 'Week 1', path: '../Reports/competitive-landscape.html' },
+                { icon: '🚀', name: 'Growth Opportunities', week: 'Week 1', path: '../Reports/growth-opportunities.html' },
+                { icon: '🎯', name: 'Brand Voice Guide', week: 'Week 1', path: '../Reports/brand-voice.html' },
+                { icon: '🛠️', name: 'Tool Stack', week: 'Week 1', path: '../Reports/tool-stack-recommendations.html' },
+                { icon: '📰', name: 'Newsletter #1 (Super Bowl)', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-08-weekly-digest.html' },
+                { icon: '⚙️', name: 'Newsletter Workflow', week: 'Week 1', path: '../Reports/newsletter-workflow.html' }
+            ];
+
+            const container = document.getElementById('all-deliverables');
+            container.innerHTML = allDeliverables.map(d => `
+                <div class="sidebar-deliverable" onclick="openDeliverable('${d.path}'); toggleSidebar();">
+                    <span class="sidebar-deliverable-icon">${d.icon}</span>
+                    <div class="sidebar-deliverable-info">
+                        <div class="sidebar-deliverable-name">${d.name}</div>
+                        <div class="sidebar-deliverable-week">${d.week}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize sidebar deliverables on page load
+        document.addEventListener('DOMContentLoaded', populateAllDeliverables);
 
         function filterTasks(status) {
             const stats = document.querySelectorAll('.stat');
