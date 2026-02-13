@@ -2215,6 +2215,16 @@
                         <span class="task-tag content">Content</span>
                         <span class="task-link">Details →</span>
                     </div>
+                    <div class="task" data-status="pending" data-id="standardize-logos" onclick="openTaskModal('standardize-logos')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Standardize Logos & Bios Across Platforms</div>
+                            <div class="task-meta">Ensure consistent branding on all 5+ channels</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
                 </div>
 
                 <p class="category-header">Newsletter</p>
@@ -2261,6 +2271,40 @@
                         <span class="task-tag strategy">Strategy</span>
                         <span class="task-link">Details →</span>
                     </div>
+                    <div class="task" data-status="pending" data-id="static-video-rebalance" onclick="openTaskModal('static-video-rebalance')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Rebalance Static vs Video Ads</div>
+                            <div class="task-meta">Turn off static taking all budget • Establish separate campaigns</div>
+                        </div>
+                        <span class="task-tag paid">Paid</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="google-ads-review" onclick="openTaskModal('google-ads-review')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Review Google Ads Performance</div>
+                            <div class="task-meta">Currently search only • Plan YouTube/Shorts expansion</div>
+                        </div>
+                        <span class="task-tag paid">Paid</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header">Strategy</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending" data-id="investor-deck" onclick="openTaskModal('investor-deck')">
+                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Prepare Investor Deck</div>
+                            <div class="task-meta">Due Monday • Support fundraising efforts</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-link">Details →</span>
+                    </div>
                 </div>
             </div>
 
@@ -2303,6 +2347,34 @@
                     <span class="meeting-notes-meta">Last updated: Feb 9, 2026 <span class="expand-icon">▼</span></span>
                 </div>
                 <div class="meeting-notes-content" id="meeting-notes-content-week2">
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">End of Week HOD Meeting</span>
+                            <span class="meeting-entry-date">February 12, 2026</span>
+                        </div>
+                        <div class="meeting-entry-attendees">Attendees: Joshua, Eden, Yarden, Ethan</div>
+                        <div class="meeting-entry-summary">
+                            <ul>
+                                <li><strong>Newsletter:</strong> HTML rendering issue on dark mode devices - needs cross-device fix</li>
+                                <li><strong>PDF Reports:</strong> Template due Feb 25th (Ethan lead)</li>
+                                <li><strong>Paid Ads:</strong> Static outperforming video on Meta - consider pausing video temporarily</li>
+                                <li><strong>Leads:</strong> Quality concerns - refine targeting or change CTA to "talk to team"</li>
+                                <li><strong>Clients:</strong> 18 signed, need 3 more by Feb 15</li>
+                                <li><strong>Investor deck:</strong> Due Monday</li>
+                                <li><strong>Google meeting:</strong> Schedule for Wednesday after product meeting</li>
+                            </ul>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>Action Items</h5>
+                            <ul>
+                                <li><strong>Joshua:</strong> Fix newsletter HTML for dark mode</li>
+                                <li><strong>Joshua:</strong> Review static vs video performance, consider pausing video</li>
+                                <li><strong>Joshua:</strong> Refine targeting or change CTA</li>
+                                <li><strong>Joshua:</strong> Expand Google Ads to YouTube/Shorts</li>
+                                <li><strong>Team:</strong> Prepare investor deck by Monday</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="meeting-entry">
                         <div class="meeting-entry-header">
                             <span class="meeting-entry-title">Heads of Department Meeting</span>
@@ -3477,6 +3549,7 @@
             }
 
             updateStats();
+            syncPriorityStatus();
             saveTaskStates();
         }
 
@@ -3806,6 +3879,7 @@
             loadInsights();
             initTaskRows();
             updateStats();
+            syncPriorityStatus();
             updateTimestamp();
             autoSelectCurrentWeek();
             document.querySelectorAll('.category-header').forEach(header => {
@@ -3916,6 +3990,43 @@
                 if (ipEl) ipEl.textContent = inProgress;
                 if (pendEl) pendEl.textContent = pending;
                 if (progEl) progEl.style.width = progress + '%';
+            });
+        }
+
+        function syncPriorityStatus() {
+            // Loop through each priority item
+            document.querySelectorAll('.priority-item').forEach(priorityItem => {
+                const taskId = priorityItem.dataset.taskId;
+                if (!taskId) return;
+
+                // Find the matching task with that ID
+                const task = document.querySelector(`.task[data-id="${taskId}"]`);
+                if (!task) return;
+
+                // Get the task's status
+                const taskStatus = task.dataset.status;
+
+                // Find the priority status span
+                const statusSpan = priorityItem.querySelector('.priority-status');
+                if (!statusSpan) return;
+
+                // Update the status span's class and text
+                statusSpan.className = 'priority-status';
+
+                switch(taskStatus) {
+                    case 'done':
+                        statusSpan.classList.add('done');
+                        statusSpan.textContent = 'Done';
+                        break;
+                    case 'in-progress':
+                        statusSpan.classList.add('in-progress');
+                        statusSpan.textContent = 'In Progress';
+                        break;
+                    case 'pending':
+                        statusSpan.classList.add('pending');
+                        statusSpan.textContent = 'Pending';
+                        break;
+                }
             });
         }
     </script>
