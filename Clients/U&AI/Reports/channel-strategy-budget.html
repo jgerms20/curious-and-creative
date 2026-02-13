@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U&AI Channel & Budget Strategy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #0f1419;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #2a2a3e;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #00d9ff;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+        }
+
+        .date {
+            color: #888;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #00d9ff;
+            margin: 40px 0 25px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a2a3e;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #4dd0e1;
+            margin: 25px 0 15px 0;
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2a2a3e 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 4px solid #00d9ff;
+        }
+
+        .executive-summary p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #b8b8b8;
+        }
+
+        /* Budget Allocation Chart */
+        .budget-chart {
+            background: #1a1a2e;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .chart-bar {
+            margin: 20px 0;
+        }
+
+        .chart-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .chart-label-text {
+            font-weight: 600;
+            color: #e4e4e4;
+        }
+
+        .chart-label-amount {
+            color: #4dd0e1;
+            font-weight: 700;
+        }
+
+        .bar-container {
+            background: #0f1419;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 40px;
+            position: relative;
+        }
+
+        .bar-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+            font-weight: 700;
+            color: #fff;
+            transition: width 1s ease-out;
+            position: relative;
+        }
+
+        .bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1));
+        }
+
+        .bar-meta { background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); width: 30%; }
+        .bar-tiktok { background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%); width: 25%; }
+        .bar-youtube { background: linear-gradient(90deg, #fa709a 0%, #fee140 100%); width: 20%; }
+        .bar-other { background: linear-gradient(90deg, #30cfd0 0%, #330867 100%); width: 15%; }
+        .bar-guerilla { background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%); width: 10%; }
+
+        .budget-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .budget-card {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2a2a3e 100%);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #2a2a3e;
+        }
+
+        .budget-card-amount {
+            font-size: 2em;
+            color: #00d9ff;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .budget-card-label {
+            color: #888;
+            font-size: 0.95em;
+        }
+
+        /* Channel Strategy Grid */
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .channel-card {
+            background: linear-gradient(135deg, #1e3a5f 0%, #1a1a2e 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #00d9ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .channel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .channel-name {
+            font-size: 1.5em;
+            color: #00d9ff;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .channel-description {
+            color: #b8b8b8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .channel-tactics {
+            background: #0f1419;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .channel-tactics ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .channel-tactics li {
+            padding: 5px 0;
+            color: #4dd0e1;
+        }
+
+        .channel-tactics li::before {
+            content: "→ ";
+            color: #00d9ff;
+            font-weight: 700;
+        }
+
+        /* Reasoning Section */
+        .reasoning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .reasoning-card {
+            background: #1a1a2e;
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 3px solid #00d9ff;
+        }
+
+        .reasoning-card h4 {
+            color: #4dd0e1;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .reasoning-card p {
+            color: #b8b8b8;
+            line-height: 1.7;
+        }
+
+        /* Weekly Spend Table */
+        .spend-table {
+            width: 100%;
+            background: #1a1a2e;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+
+        .spend-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .spend-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 18px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+
+        .spend-table td {
+            padding: 15px 18px;
+            border-bottom: 1px solid #2a2a3e;
+            color: #b8b8b8;
+        }
+
+        .spend-table tr:hover {
+            background: #0f1419;
+        }
+
+        .spend-table .amount {
+            color: #00d9ff;
+            font-weight: 700;
+        }
+
+        /* Do's and Don'ts */
+        .guidelines-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .guidelines-column h3 {
+            margin-bottom: 20px;
+        }
+
+        .guideline-item {
+            background: #1a1a2e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .do-item {
+            border-left: 4px solid #4caf50;
+        }
+
+        .dont-item {
+            border-left: 4px solid #f44336;
+        }
+
+        .guideline-item h4 {
+            color: #00d9ff;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .guideline-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .guideline-item li {
+            padding: 5px 0;
+            color: #b8b8b8;
+        }
+
+        .do-item li::before {
+            content: "✓ ";
+            color: #4caf50;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+
+        .dont-item li::before {
+            content: "✗ ";
+            color: #f44336;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .guidelines-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .channel-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>U&AI Channel & Budget Strategy</h1>
+            <p class="date">February 2026</p>
+        </header>
+
+        <section class="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>
+                U&AI's marketing strategy allocates $5,000 monthly across 10 channels with a focus on founder personality,
+                tactical business content, and strategic visibility. The budget prioritizes proven converters (Meta 30%),
+                personality-driven platforms (TikTok 25%), and long-form credibility (YouTube 20%), while maintaining
+                flexibility for guerilla marketing experiments (10%) and diversified presence across LinkedIn, X, newsletters,
+                and podcasts. This approach balances immediate conversion with brand-building, leveraging founder authenticity
+                to reach business owners seeking AI solutions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Budget Allocation</h2>
+            <div class="budget-chart">
+                <div class="chart-bar">
+                    <div class="chart-label">
+                        <span class="chart-label-text">Meta (Facebook & Instagram)</span>
+                        <span class="chart-label-amount">$1,500 / month (30%)</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill bar-meta">30%</div>
+                    </div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="chart-label">
+                        <span class="chart-label-text">TikTok</span>
+                        <span class="chart-label-amount">$1,250 / month (25%)</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill bar-tiktok">25%</div>
+                    </div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="chart-label">
+                        <span class="chart-label-text">YouTube</span>
+                        <span class="chart-label-amount">$1,000 / month (20%)</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill bar-youtube">20%</div>
+                    </div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="chart-label">
+                        <span class="chart-label-text">Other (LinkedIn, X, Newsletter, Podcasts)</span>
+                        <span class="chart-label-amount">$750 / month (15%)</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill bar-other">15%</div>
+                    </div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="chart-label">
+                        <span class="chart-label-text">Guerilla Marketing</span>
+                        <span class="chart-label-amount">$500 / month (10%)</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill bar-guerilla">10%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="budget-summary">
+                <div class="budget-card">
+                    <div class="budget-card-amount">$5,000</div>
+                    <div class="budget-card-label">Total Monthly Budget</div>
+                </div>
+                <div class="budget-card">
+                    <div class="budget-card-amount">$1,250</div>
+                    <div class="budget-card-label">Weekly Spend</div>
+                </div>
+                <div class="budget-card">
+                    <div class="budget-card-amount">10</div>
+                    <div class="budget-card-label">Active Channels</div>
+                </div>
+                <div class="budget-card">
+                    <div class="budget-card-amount">75%</div>
+                    <div class="budget-card-label">Paid Media Focus</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Channel Strategy Grid</h2>
+            <div class="channel-grid">
+                <div class="channel-card">
+                    <div class="channel-name">TikTok</div>
+                    <div class="channel-description">
+                        Primary platform for founder personality at scale. Raw, authentic behind-the-scenes content
+                        showcasing the human side of AI consulting.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Founder personality videos (daily)</li>
+                            <li>Behind-the-scenes agency work</li>
+                            <li>Conference clips and quick takes</li>
+                            <li>AI tips in 60 seconds or less</li>
+                            <li>Client transformation stories</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">Instagram</div>
+                    <div class="channel-description">
+                        Balanced mix of personality and professional content. Reels for reach, Stories for engagement,
+                        Grid for credibility.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Reels repurposed from TikTok</li>
+                            <li>Carousel posts with tactical tips</li>
+                            <li>Stories showing daily work life</li>
+                            <li>Professional headshots and branding</li>
+                            <li>Client testimonials and case studies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">Facebook</div>
+                    <div class="channel-description">
+                        Converter platform targeting millennials and boomers with FOMO-driven messaging.
+                        Direct response focus with retargeting.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Lead generation ads</li>
+                            <li>Event promotions (conferences, webinars)</li>
+                            <li>Retargeting campaigns</li>
+                            <li>Longer-form value content</li>
+                            <li>Community building in groups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">X (Twitter)</div>
+                    <div class="channel-description">
+                        Response platform for real-time engagement. Text-heavy, conversation-driven,
+                        positioning founders as thought leaders.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Daily hot takes on AI industry</li>
+                            <li>Engage with trending topics</li>
+                            <li>Thread breakdowns of complex topics</li>
+                            <li>Reply to industry conversations</li>
+                            <li>Share quick wins and insights</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">LinkedIn</div>
+                    <div class="channel-description">
+                        B2B presence for enterprise credibility. Direct InMails from founders to decision-makers,
+                        professional thought leadership.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Founder-led InMail outreach</li>
+                            <li>Long-form articles on AI strategy</li>
+                            <li>Company page updates</li>
+                            <li>Employee advocacy program</li>
+                            <li>Conference and speaking posts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">Newsletter</div>
+                    <div class="channel-description">
+                        Tactical, high-value content for business owners. Shows founder personalities while
+                        delivering actionable AI strategies.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Weekly tactical AI tips</li>
+                            <li>Case study deep dives</li>
+                            <li>Founder commentary and opinions</li>
+                            <li>Industry trend analysis</li>
+                            <li>Exclusive resources and templates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">YouTube</div>
+                    <div class="channel-description">
+                        Long-form credibility builder. Conference talks, webinars, and in-depth tutorials
+                        that establish authority.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Conference talk recordings</li>
+                            <li>15-30 minute tutorials</li>
+                            <li>Client interview series</li>
+                            <li>Webinar replays</li>
+                            <li>Behind-the-scenes agency work</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">YouTube Shorts</div>
+                    <div class="channel-description">
+                        Efficient repurposing of TikTok content. Extends reach with minimal additional effort,
+                        captures YouTube's short-form audience.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Repurpose top TikTok videos</li>
+                            <li>Quick AI tips and hacks</li>
+                            <li>Teasers for long-form content</li>
+                            <li>Trending audio participation</li>
+                            <li>Conference highlight clips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">Podcasts</div>
+                    <div class="channel-description">
+                        Guest appearance strategy on visibility and AI-focused shows. Leverage other audiences
+                        to build credibility and reach.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Target 2-3 podcast appearances/month</li>
+                            <li>Focus on business and AI shows</li>
+                            <li>Prepare founder origin stories</li>
+                            <li>Share tactical frameworks</li>
+                            <li>Repurpose audio for social clips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-name">Guerilla Marketing</div>
+                    <div class="channel-description">
+                        Surprise and delight tactics. WeWork flyers, billboards in tech hubs, random acts
+                        of visibility that create buzz.
+                    </div>
+                    <div class="channel-tactics">
+                        <ul>
+                            <li>Flyers at coworking spaces</li>
+                            <li>Strategic billboard placements</li>
+                            <li>Conference guerilla stunts</li>
+                            <li>Street team activations</li>
+                            <li>Unexpected brand moments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Strategic Reasoning</h2>
+            <div class="reasoning-grid">
+                <div class="reasoning-card">
+                    <h4>Meta: Proven Conversion Engine</h4>
+                    <p>
+                        Facebook and Instagram have demonstrated the highest ROI for lead generation and conversion.
+                        The 30% allocation reflects their effectiveness at reaching millennials and boomers with
+                        FOMO-driven messaging and retargeting capabilities. This is where business owners make decisions.
+                    </p>
+                </div>
+
+                <div class="reasoning-card">
+                    <h4>TikTok: Personality at Scale</h4>
+                    <p>
+                        TikTok's algorithm rewards authentic founder content and can rapidly scale reach. The 25% budget
+                        investment recognizes the platform's unique ability to showcase personality while building a
+                        following that translates to other channels. Raw beats polished here.
+                    </p>
+                </div>
+
+                <div class="reasoning-card">
+                    <h4>YouTube: Long-Form Credibility</h4>
+                    <p>
+                        YouTube builds lasting credibility through conference talks and tutorials. The 20% allocation
+                        supports both long-form content creation and short-form distribution via Shorts. This platform
+                        converts skeptics into believers through depth and expertise.
+                    </p>
+                </div>
+
+                <div class="reasoning-card">
+                    <h4>Guerilla: Surprise & Delight</h4>
+                    <p>
+                        The 10% guerilla budget creates unexpected brand moments that generate organic conversation.
+                        Whether it's WeWork flyers or strategic billboards, these tactics cut through digital noise
+                        with physical presence and memorable experiences that people talk about.
+                    </p>
+                </div>
+
+                <div class="reasoning-card">
+                    <h4>Multi-Channel Presence</h4>
+                    <p>
+                        The remaining 15% distributed across LinkedIn, X, newsletters, and podcasts ensures U&AI
+                        maintains presence where business owners consume content. Each channel serves a specific
+                        purpose in the buyer journey from awareness to conversion.
+                    </p>
+                </div>
+
+                <div class="reasoning-card">
+                    <h4>Founder-Led Approach</h4>
+                    <p>
+                        Every channel strategy centers on founder authenticity. Business owners buy from people,
+                        not faceless agencies. The budget allocation prioritizes platforms where personality shines
+                        and founders can connect directly with their audience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Weekly Spend Breakdown</h2>
+            <div class="spend-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Channel</th>
+                            <th>Weekly Spend</th>
+                            <th>Monthly Total</th>
+                            <th>Primary Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Meta (Facebook & Instagram)</td>
+                            <td class="amount">$375</td>
+                            <td class="amount">$1,500</td>
+                            <td>Paid ads, lead generation, retargeting</td>
+                        </tr>
+                        <tr>
+                            <td>TikTok</td>
+                            <td class="amount">$312.50</td>
+                            <td class="amount">$1,250</td>
+                            <td>Paid promotion of founder content</td>
+                        </tr>
+                        <tr>
+                            <td>YouTube</td>
+                            <td class="amount">$250</td>
+                            <td class="amount">$1,000</td>
+                            <td>Pre-roll ads, Shorts promotion</td>
+                        </tr>
+                        <tr>
+                            <td>LinkedIn</td>
+                            <td class="amount">$100</td>
+                            <td class="amount">$400</td>
+                            <td>InMail credits, sponsored content</td>
+                        </tr>
+                        <tr>
+                            <td>X (Twitter)</td>
+                            <td class="amount">$50</td>
+                            <td class="amount">$200</td>
+                            <td>Promoted tweets, engagement</td>
+                        </tr>
+                        <tr>
+                            <td>Newsletter</td>
+                            <td class="amount">$37.50</td>
+                            <td class="amount">$150</td>
+                            <td>Email platform, list growth</td>
+                        </tr>
+                        <tr>
+                            <td>Guerilla Marketing</td>
+                            <td class="amount">$125</td>
+                            <td class="amount">$500</td>
+                            <td>Print materials, signage, stunts</td>
+                        </tr>
+                        <tr>
+                            <td>Podcasts</td>
+                            <td class="amount">$0</td>
+                            <td class="amount">$0</td>
+                            <td>Time investment only (guest spots)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TOTAL</strong></td>
+                            <td class="amount"><strong>$1,250</strong></td>
+                            <td class="amount"><strong>$5,000</strong></td>
+                            <td><strong>10 active channels</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Channel Guidelines: Do's and Don'ts</h2>
+            <div class="guidelines-grid">
+                <div class="guidelines-column">
+                    <h3>Do's</h3>
+
+                    <div class="guideline-item do-item">
+                        <h4>TikTok & Instagram</h4>
+                        <ul>
+                            <li>Post raw, unedited founder moments</li>
+                            <li>Show faces, personalities, emotions</li>
+                            <li>Jump on trending audio quickly</li>
+                            <li>Use captions for accessibility</li>
+                            <li>Engage with comments within 1 hour</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item do-item">
+                        <h4>Facebook</h4>
+                        <ul>
+                            <li>Use clear calls-to-action</li>
+                            <li>Test multiple ad variations</li>
+                            <li>Retarget website visitors</li>
+                            <li>Create FOMO with limited offers</li>
+                            <li>Build community in groups</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item do-item">
+                        <h4>X (Twitter)</h4>
+                        <ul>
+                            <li>Respond within minutes when possible</li>
+                            <li>Share hot takes on industry news</li>
+                            <li>Use threads for complex ideas</li>
+                            <li>Engage with bigger accounts</li>
+                            <li>Be conversational and human</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item do-item">
+                        <h4>LinkedIn</h4>
+                        <ul>
+                            <li>Write long-form thought leadership</li>
+                            <li>Personalize InMail outreach</li>
+                            <li>Share conference appearances</li>
+                            <li>Highlight client wins (with permission)</li>
+                            <li>Maintain professional tone</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item do-item">
+                        <h4>YouTube</h4>
+                        <ul>
+                            <li>Optimize titles and thumbnails</li>
+                            <li>Provide value in first 30 seconds</li>
+                            <li>Include timestamps for long videos</li>
+                            <li>Cross-promote on other channels</li>
+                            <li>Create playlists by topic</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="guidelines-column">
+                    <h3>Don'ts</h3>
+
+                    <div class="guideline-item dont-item">
+                        <h4>TikTok & Instagram</h4>
+                        <ul>
+                            <li>Over-polish content (looks fake)</li>
+                            <li>Ignore negative comments</li>
+                            <li>Post without captions</li>
+                            <li>Use outdated trends</li>
+                            <li>Focus only on selling</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item dont-item">
+                        <h4>Facebook</h4>
+                        <ul>
+                            <li>Send cold traffic to sales pages</li>
+                            <li>Use clickbait headlines</li>
+                            <li>Ignore ad fatigue metrics</li>
+                            <li>Post without testing</li>
+                            <li>Spam groups with promotions</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item dont-item">
+                        <h4>X (Twitter)</h4>
+                        <ul>
+                            <li>Auto-DM new followers</li>
+                            <li>Tweet only links (no context)</li>
+                            <li>Argue with trolls publicly</li>
+                            <li>Use too many hashtags</li>
+                            <li>Post and ghost</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item dont-item">
+                        <h4>LinkedIn</h4>
+                        <ul>
+                            <li>Send generic connection requests</li>
+                            <li>Pitch immediately after connecting</li>
+                            <li>Over-share personal content</li>
+                            <li>Use LinkedIn like Facebook</li>
+                            <li>Ignore InMail responses</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-item dont-item">
+                        <h4>YouTube</h4>
+                        <ul>
+                            <li>Upload without keyword research</li>
+                            <li>Neglect video descriptions</li>
+                            <li>Forget end screens and cards</li>
+                            <li>Ignore audience retention data</li>
+                            <li>Post inconsistently</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guideline-item do-item" style="margin-top: 30px;">
+                <h4>Universal Do's (All Channels)</h4>
+                <ul>
+                    <li>Lead with founder personality and authenticity</li>
+                    <li>Provide tactical, actionable value</li>
+                    <li>Respond to engagement quickly</li>
+                    <li>Test and iterate based on data</li>
+                    <li>Repurpose content across platforms</li>
+                    <li>Track conversions, not just vanity metrics</li>
+                    <li>Maintain consistent brand voice</li>
+                </ul>
+            </div>
+
+            <div class="guideline-item dont-item" style="margin-top: 20px;">
+                <h4>Universal Don'ts (All Channels)</h4>
+                <ul>
+                    <li>Post without purpose or strategy</li>
+                    <li>Copy competitors without adding unique value</li>
+                    <li>Ignore analytics and performance data</li>
+                    <li>Be overly promotional or salesy</li>
+                    <li>Neglect community engagement</li>
+                    <li>Post inconsistently or sporadically</li>
+                    <li>Forget to track ROI by channel</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer style="margin-top: 60px; padding-top: 30px; border-top: 2px solid #2a2a3e; text-align: center; color: #888;">
+            <p>U&AI Channel & Budget Strategy Report | Generated February 2026</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">This strategy allocates resources across 10 channels to maximize founder visibility, credibility, and conversion.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1455,6 +1455,39 @@
             border-bottom: 1px solid var(--border);
         }
 
+        .sidebar-group-title.collapsible {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.2s ease;
+        }
+
+        .sidebar-group-title.collapsible:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-expand-icon {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+            color: var(--text-muted);
+        }
+
+        .sidebar-group-title.collapsible:hover .sidebar-expand-icon {
+            color: var(--accent);
+        }
+
+        .sidebar-group-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .sidebar-group-content.expanded {
+            max-height: 1000px;
+        }
+
         /* Main page month/week selectors */
         .nav-selectors {
             display: flex;
@@ -1520,18 +1553,41 @@
         <div class="sidebar-section">
             <div class="sidebar-section-title">All Deliverables</div>
             <div id="all-deliverables">
-                <!-- Grouped by category -->
+                <!-- Grouped by category with collapsible dropdowns -->
                 <div class="sidebar-deliverable-group">
-                    <div class="sidebar-group-title">📊 Strategy & Reports</div>
-                    <div id="deliverables-strategy"></div>
+                    <div class="sidebar-group-title collapsible" onclick="toggleSidebarGroup('strategy')">
+                        <span>📊 Strategy & Reports</span>
+                        <span class="sidebar-expand-icon">▼</span>
+                    </div>
+                    <div id="deliverables-strategy" class="sidebar-group-content expanded"></div>
                 </div>
                 <div class="sidebar-deliverable-group">
-                    <div class="sidebar-group-title">📰 Newsletters</div>
-                    <div id="deliverables-newsletters"></div>
+                    <div class="sidebar-group-title collapsible" onclick="toggleSidebarGroup('newsletters')">
+                        <span>📰 Newsletters</span>
+                        <span class="sidebar-expand-icon">▼</span>
+                    </div>
+                    <div id="deliverables-newsletters" class="sidebar-group-content expanded"></div>
                 </div>
                 <div class="sidebar-deliverable-group">
-                    <div class="sidebar-group-title">🛠️ Tools & Workflows</div>
-                    <div id="deliverables-tools"></div>
+                    <div class="sidebar-group-title collapsible" onclick="toggleSidebarGroup('tools')">
+                        <span>🛠️ Tools & Workflows</span>
+                        <span class="sidebar-expand-icon">▼</span>
+                    </div>
+                    <div id="deliverables-tools" class="sidebar-group-content expanded"></div>
+                </div>
+                <div class="sidebar-deliverable-group">
+                    <div class="sidebar-group-title collapsible" onclick="toggleSidebarGroup('meetings')">
+                        <span>📝 Meeting Notes</span>
+                        <span class="sidebar-expand-icon">▼</span>
+                    </div>
+                    <div id="deliverables-meetings" class="sidebar-group-content expanded"></div>
+                </div>
+                <div class="sidebar-deliverable-group">
+                    <div class="sidebar-group-title collapsible" onclick="toggleSidebarGroup('braindumps')">
+                        <span>💡 Brain Dumps</span>
+                        <span class="sidebar-expand-icon">▼</span>
+                    </div>
+                    <div id="deliverables-braindumps" class="sidebar-group-content expanded"></div>
                 </div>
             </div>
         </div>
@@ -3272,23 +3328,29 @@
         function populateAllDeliverables() {
             const deliverables = {
                 strategy: [
-                    { icon: '📊', name: 'Strategic Audit Report', week: 'Week 1', path: '../Reports/U&AI-Strategic-Audit.html' },
-                    { icon: '🎬', name: 'Video Channel Strategy', week: 'Week 1', path: '../Reports/video-channel-strategy.html' },
-                    { icon: '💰', name: 'Budget Split ($5K)', week: 'Week 1', path: '../Reports/budget-split-recommendation.html' },
+                    { icon: '📊', name: 'Strategic Audit', week: 'Week 1', path: '../Reports/U&AI-Strategic-Audit.html' },
                     { icon: '🏁', name: 'Competitive Landscape', week: 'Week 1', path: '../Reports/competitive-landscape.html' },
-                    { icon: '🚀', name: 'Growth Opportunities', week: 'Week 1', path: '../Reports/growth-opportunities.html' },
-                    { icon: '🎯', name: 'Brand Voice Guide', week: 'Week 1', path: '../Reports/brand-voice.html' }
+                    { icon: '📺', name: 'Channel & Budget Strategy', week: 'Week 2', path: '#', status: 'new' },
+                    { icon: '🎯', name: 'Brand Voice', week: 'Week 1', path: '../Reports/brand-voice.html' }
                 ],
                 newsletters: [
-                    { icon: '📰', name: 'Newsletter #1 (Super Bowl)', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-08-weekly-digest.html' }
+                    { icon: '✅', name: 'Newsletter #1 - Super Bowl', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-08-weekly-digest.html', status: 'done' },
+                    { icon: '🔄', name: 'Newsletter #2 - ChatGPT Ads', week: 'Week 2', path: '#', status: 'in-progress' }
                 ],
                 tools: [
-                    { icon: '🛠️', name: 'Tool Stack', week: 'Week 1', path: '../Reports/tool-stack-recommendations.html' },
-                    { icon: '⚙️', name: 'Newsletter Workflow', week: 'Week 1', path: '../Reports/newsletter-workflow.html' }
+                    { icon: '⚙️', name: 'Newsletter Workflow', week: 'Week 1', path: '../Reports/newsletter-workflow.html' },
+                    { icon: '🛠️', name: 'Tool Stack Recommendations', week: 'Week 1', path: '../Reports/tool-stack-recommendations.html' }
+                ],
+                meetings: [
+                    { icon: '📝', name: 'Week 2: End of Week HOD', week: 'Week 2', section: 'week-2', id: 'meeting-notes-week2' },
+                    { icon: '📝', name: 'Week 1: HOD Meeting', week: 'Week 1', section: 'week-1', id: 'meeting-notes' }
+                ],
+                braindumps: [
+                    { icon: '💡', name: 'Week 2: Channel Strategy & Budget', week: 'Week 2', section: 'week-2', id: 'brain-dumps-week2' }
                 ]
             };
 
-            const renderGroup = (items) => items.map(d => `
+            const renderDeliverable = (items) => items.map(d => `
                 <div class="sidebar-deliverable" onclick="openDeliverable('${d.path}'); toggleSidebar();">
                     <span class="sidebar-deliverable-icon">${d.icon}</span>
                     <div class="sidebar-deliverable-info">
@@ -3298,9 +3360,60 @@
                 </div>
             `).join('');
 
-            document.getElementById('deliverables-strategy').innerHTML = renderGroup(deliverables.strategy);
-            document.getElementById('deliverables-newsletters').innerHTML = renderGroup(deliverables.newsletters);
-            document.getElementById('deliverables-tools').innerHTML = renderGroup(deliverables.tools);
+            const renderMeetingOrBrainDump = (items) => items.map(d => `
+                <div class="sidebar-deliverable" onclick="scrollToSection('${d.section}', '${d.id}'); toggleSidebar();">
+                    <span class="sidebar-deliverable-icon">${d.icon}</span>
+                    <div class="sidebar-deliverable-info">
+                        <div class="sidebar-deliverable-name">${d.name}</div>
+                        <div class="sidebar-deliverable-week">${d.week}</div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('deliverables-strategy').innerHTML = renderDeliverable(deliverables.strategy);
+            document.getElementById('deliverables-newsletters').innerHTML = renderDeliverable(deliverables.newsletters);
+            document.getElementById('deliverables-tools').innerHTML = renderDeliverable(deliverables.tools);
+            document.getElementById('deliverables-meetings').innerHTML = renderMeetingOrBrainDump(deliverables.meetings);
+            document.getElementById('deliverables-braindumps').innerHTML = renderMeetingOrBrainDump(deliverables.braindumps);
+        }
+
+        function scrollToSection(weekId, elementId) {
+            // First, switch to the correct week
+            document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
+            document.getElementById(weekId).classList.add('active');
+
+            // Sync week selectors
+            document.getElementById('week-selector-main').value = weekId;
+            document.getElementById('week-selector-sidebar').value = weekId;
+
+            // Then scroll to the specific element
+            setTimeout(() => {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Expand the section if it's collapsed
+                    if (!element.classList.contains('expanded')) {
+                        element.classList.add('expanded');
+                        const content = element.querySelector('.meeting-notes-content');
+                        if (content) content.classList.add('expanded');
+                    }
+                }
+            }, 100);
+        }
+
+        function toggleSidebarGroup(groupName) {
+            const content = document.getElementById(`deliverables-${groupName}`);
+            const title = content.previousElementSibling;
+            const icon = title.querySelector('.sidebar-expand-icon');
+
+            content.classList.toggle('expanded');
+
+            // Rotate the icon
+            if (content.classList.contains('expanded')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(-90deg)';
+            }
         }
 
         function showWeekFromDropdown(weekId) {
