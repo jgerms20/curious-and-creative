@@ -2126,7 +2126,7 @@
                         <div class="priority-title">Send Newsletter #1 via Mailchimp</div>
                         <div class="priority-meta">Tomorrow Feb 10 @ 10am • Super Bowl + AI Ads theme</div>
                     </div>
-                    <span class="priority-status pending">Pending</span>
+                    <span class="priority-status pending">To Do</span>
                 </div>
                 <div class="priority-item" data-task-id="draft-newsletter-2">
                     <span class="priority-number">2</span>
@@ -2134,7 +2134,7 @@
                         <div class="priority-title">Draft Newsletter #2 (Topic TBD)</div>
                         <div class="priority-meta">Research trending AI topics for next week's send</div>
                     </div>
-                    <span class="priority-status pending">Pending</span>
+                    <span class="priority-status pending">To Do</span>
                 </div>
                 <div class="priority-item" data-task-id="channel-strategy">
                     <span class="priority-number">3</span>
@@ -2142,7 +2142,7 @@
                         <div class="priority-title">Finalize Channel Strategy & Budget</div>
                         <div class="priority-meta">Allocate $5K budget across platforms • Due end of week</div>
                     </div>
-                    <span class="priority-status pending">Pending</span>
+                    <span class="priority-status pending">To Do</span>
                 </div>
             </div>
 
@@ -2154,15 +2154,15 @@
             </div>
 
             <div class="stats">
-                <div class="stat" data-filter="done">
+                <div class="stat" onclick="filterTasks('done')" data-filter="done">
                     <div class="stat-value">0</div>
                     <div class="stat-label">Completed</div>
                 </div>
-                <div class="stat" data-filter="in-progress">
+                <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
                     <div class="stat-value">0</div>
                     <div class="stat-label">In Progress</div>
                 </div>
-                <div class="stat" data-filter="pending">
+                <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
                     <div class="stat-value">6</div>
                     <div class="stat-label">To Do</div>
                 </div>
@@ -2322,18 +2322,25 @@
                             <div class="deliverable-type">Weekly Digest • Ready to Send</div>
                         </div>
                     </div>
-                    <div class="deliverable" style="opacity: 0.5; cursor: default;">
-                        <div class="deliverable-icon">📋</div>
+                    <div class="deliverable" onclick="openDeliverable('../Newsletters/2026/02/2026-02-15-weekly-digest.html')">
+                        <div class="deliverable-icon">📧</div>
                         <div class="deliverable-info">
-                            <div class="deliverable-name">Channel Strategy & Budget</div>
-                            <div class="deliverable-type">Strategy Doc • In Progress</div>
+                            <div class="deliverable-name">Newsletter #2 Draft</div>
+                            <div class="deliverable-type">Content • In Progress</div>
                         </div>
                     </div>
-                    <div class="deliverable" style="opacity: 0.5; cursor: default;">
-                        <div class="deliverable-icon">📰</div>
+                    <div class="deliverable" onclick="openDeliverable('../Strategy/channel-strategy.md')">
+                        <div class="deliverable-icon">📊</div>
                         <div class="deliverable-info">
-                            <div class="deliverable-name">Newsletter #2 (Topic TBD)</div>
-                            <div class="deliverable-type">Weekly Digest • Not Started</div>
+                            <div class="deliverable-name">Channel Strategy</div>
+                            <div class="deliverable-type">Strategy • Done</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Strategy/budget-allocation.md')">
+                        <div class="deliverable-icon">💰</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Budget Allocation</div>
+                            <div class="deliverable-type">Strategy • Done</div>
                         </div>
                     </div>
                 </div>
@@ -2344,7 +2351,7 @@
             <div class="meeting-notes" id="meeting-notes-week2">
                 <div class="meeting-notes-header" onclick="toggleMeetingNotesWeek2()">
                     <span class="meeting-notes-title">Meeting Notes</span>
-                    <span class="meeting-notes-meta">Last updated: Feb 9, 2026 <span class="expand-icon">▼</span></span>
+                    <span class="meeting-notes-meta">Last updated: Feb 12, 2026 <span class="expand-icon">▼</span></span>
                 </div>
                 <div class="meeting-notes-content" id="meeting-notes-content-week2">
                     <div class="meeting-entry">
@@ -2409,6 +2416,60 @@
                 </div>
             </div>
 
+            <!-- Brain Dumps - Week 2 -->
+            <div class="meeting-notes" id="brain-dumps-week2">
+                <div class="meeting-notes-header" onclick="toggleBrainDumpsWeek2()">
+                    <span class="meeting-notes-title">Brain Dumps</span>
+                    <span class="meeting-notes-meta">Last updated: Feb 12, 2026 <span class="expand-icon">▼</span></span>
+                </div>
+                <div class="meeting-notes-content" id="brain-dumps-content-week2">
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">Channel Strategy & Budget Planning</span>
+                            <span class="meeting-entry-date">February 12, 2026</span>
+                        </div>
+                        <div class="meeting-entry-summary">
+                            <p><strong>10-Channel Strategy:</strong></p>
+                            <ul>
+                                <li><strong>TikTok:</strong> Founder personality content</li>
+                                <li><strong>Instagram:</strong> Founder personality content</li>
+                                <li><strong>Facebook:</strong> Converter for millennials/boomers</li>
+                                <li><strong>X (Twitter):</strong> Response platform, text-heavy</li>
+                                <li><strong>LinkedIn:</strong> Professional B2B presence</li>
+                                <li><strong>Newsletter:</strong> Tactical content, show personalities</li>
+                                <li><strong>YouTube:</strong> Long-form content</li>
+                                <li><strong>YouTube Shorts:</strong> Short-form content</li>
+                                <li><strong>Podcasts:</strong> Audio content</li>
+                                <li><strong>Guerilla:</strong> Creative, unconventional tactics</li>
+                            </ul>
+                            <p><strong>Budget Allocation ($5K/month):</strong></p>
+                            <ul>
+                                <li>30% Meta (Facebook/Instagram)</li>
+                                <li>25% TikTok</li>
+                                <li>20% YouTube</li>
+                                <li>15% Other platforms</li>
+                                <li>10% Guerilla marketing</li>
+                            </ul>
+                            <p><strong>Key Observations:</strong></p>
+                            <ul>
+                                <li>Static ads currently outperforming video - need to rebalance spend</li>
+                                <li>Client with low engagement identified - potential collaboration opportunity</li>
+                            </ul>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>Action Items</h5>
+                            <ul>
+                                <li>Standardize logos/bios across all platforms</li>
+                                <li>Turn off static ads that are consuming entire budget</li>
+                                <li>Review Google Ads performance</li>
+                                <li>Expand Google Ads to YouTube</li>
+                                <li>Draft Newsletter #2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Context & Key Insights - Week 2 -->
             <div class="section" style="margin-top: 30px;">
                 <div class="section-header">
@@ -2442,15 +2503,15 @@
             </div>
 
             <div class="stats">
-                <div class="stat" data-filter="done">
+                <div class="stat" onclick="filterTasks('done')" data-filter="done">
                     <div class="stat-value">0</div>
                     <div class="stat-label">Completed</div>
                 </div>
-                <div class="stat" data-filter="in-progress">
+                <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
                     <div class="stat-value">0</div>
                     <div class="stat-label">In Progress</div>
                 </div>
-                <div class="stat" data-filter="pending">
+                <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
                     <div class="stat-value">5</div>
                     <div class="stat-label">To Do</div>
                 </div>
@@ -3369,6 +3430,13 @@
             const meetingNotes = document.getElementById('meeting-notes-week2');
             const content = document.getElementById('meeting-notes-content-week2');
             meetingNotes.classList.toggle('expanded');
+            content.classList.toggle('expanded');
+        }
+
+        function toggleBrainDumpsWeek2() {
+            const brainDumps = document.getElementById('brain-dumps-week2');
+            const content = document.getElementById('brain-dumps-content-week2');
+            brainDumps.classList.toggle('expanded');
             content.classList.toggle('expanded');
         }
 
