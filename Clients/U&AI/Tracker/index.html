@@ -515,6 +515,8 @@
 
         .priority-status.blocked { background: #7f1d1d; color: #fca5a5; }
         .priority-status.not-started { background: #374151; color: #9ca3af; }
+        .priority-status.todo { background: #374151; color: #9ca3af; }
+        .priority-status.pending { background: #374151; color: #9ca3af; }
         .priority-status.in-progress { background: #78350f; color: #fcd34d; }
         .priority-status.done { background: #14532d; color: #22c55e; }
 
@@ -2182,7 +2184,7 @@
                         <div class="priority-title">Send Newsletter #1 via Mailchimp</div>
                         <div class="priority-meta">Tomorrow Feb 10 @ 10am • Super Bowl + AI Ads theme</div>
                     </div>
-                    <span class="priority-status pending">To Do</span>
+                    <span class="priority-status todo">To Do</span>
                 </div>
                 <div class="priority-item" data-task-id="draft-newsletter-2">
                     <span class="priority-number">2</span>
@@ -2190,7 +2192,7 @@
                         <div class="priority-title">Draft Newsletter #2 (Topic TBD)</div>
                         <div class="priority-meta">Research trending AI topics for next week's send</div>
                     </div>
-                    <span class="priority-status pending">To Do</span>
+                    <span class="priority-status todo">To Do</span>
                 </div>
                 <div class="priority-item" data-task-id="channel-strategy">
                     <span class="priority-number">3</span>
@@ -2198,7 +2200,7 @@
                         <div class="priority-title">Finalize Channel Strategy & Budget</div>
                         <div class="priority-meta">Allocate $5K budget across platforms • Due end of week</div>
                     </div>
-                    <span class="priority-status pending">To Do</span>
+                    <span class="priority-status done">Done</span>
                 </div>
             </div>
 
@@ -3330,12 +3332,12 @@
                 strategy: [
                     { icon: '📊', name: 'Strategic Audit', week: 'Week 1', path: '../Reports/U&AI-Strategic-Audit.html' },
                     { icon: '🏁', name: 'Competitive Landscape', week: 'Week 1', path: '../Reports/competitive-landscape.html' },
-                    { icon: '📺', name: 'Channel & Budget Strategy', week: 'Week 2', path: '#', status: 'new' },
+                    { icon: '📺', name: 'Channel & Budget Strategy', week: 'Week 2', path: '../Reports/channel-strategy-budget.html', status: 'done' },
                     { icon: '🎯', name: 'Brand Voice', week: 'Week 1', path: '../Reports/brand-voice.html' }
                 ],
                 newsletters: [
-                    { icon: '✅', name: 'Newsletter #1 - Super Bowl', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-08-weekly-digest.html', status: 'done' },
-                    { icon: '🔄', name: 'Newsletter #2 - ChatGPT Ads', week: 'Week 2', path: '#', status: 'in-progress' }
+                    { icon: '✅', name: 'Newsletter #1 - Super Bowl', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-08-mailchimp.html', status: 'done' },
+                    { icon: '🔄', name: 'Newsletter #2 - ChatGPT Ads', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-15-mailchimp.html', status: 'in-progress' }
                 ],
                 tools: [
                     { icon: '⚙️', name: 'Newsletter Workflow', week: 'Week 1', path: '../Reports/newsletter-workflow.html' },
