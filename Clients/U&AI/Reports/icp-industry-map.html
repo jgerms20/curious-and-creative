@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U&AI ICP Industry Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f1419;
+            color: #e4e6eb;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00d9ff, #22c55e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .column {
+            background: #1c2128;
+            border-radius: 16px;
+            padding: 30px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .column.b2b {
+            border-color: #00d9ff33;
+        }
+
+        .column.b2c {
+            border-color: #22c55e33;
+        }
+
+        .column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .column.b2b:hover {
+            border-color: #00d9ff;
+            box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+        }
+
+        .column.b2c:hover {
+            border-color: #22c55e;
+            box-shadow: 0 20px 60px rgba(34, 197, 94, 0.2);
+        }
+
+        .column-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #30363d;
+        }
+
+        .column-icon {
+            font-size: 2.5rem;
+        }
+
+        .column-title {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .column.b2b .column-title {
+            color: #00d9ff;
+        }
+
+        .column.b2c .column-title {
+            color: #22c55e;
+        }
+
+        .industry-card {
+            background: #242c38;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #30363d;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .industry-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .column.b2b .industry-card::before {
+            background: #00d9ff;
+        }
+
+        .column.b2c .industry-card::before {
+            background: #22c55e;
+        }
+
+        .industry-card:hover {
+            transform: translateX(10px);
+            border-color: currentColor;
+        }
+
+        .column.b2b .industry-card:hover {
+            border-color: #00d9ff;
+            background: #2a3440;
+        }
+
+        .column.b2c .industry-card:hover {
+            border-color: #22c55e;
+            background: #2a3440;
+        }
+
+        .industry-card.priority-high {
+            transform: scale(1.05);
+            margin: 25px 0;
+        }
+
+        .industry-card.priority-high .industry-name {
+            font-size: 1.3rem;
+        }
+
+        .industry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .industry-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .priority-badge {
+            font-size: 0.7rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .priority-high {
+            background: #ff4444;
+            color: white;
+        }
+
+        .priority-medium {
+            background: #ffaa00;
+            color: #0f1419;
+        }
+
+        .expand-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .industry-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .sub-industries {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .industry-card.expanded .sub-industries {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 15px;
+        }
+
+        .sub-industry {
+            background: #1c2128;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .column.b2b .sub-industry:hover {
+            background: #242c38;
+            border-left-color: #00d9ff;
+            transform: translateX(5px);
+        }
+
+        .column.b2c .sub-industry:hover {
+            background: #242c38;
+            border-left-color: #22c55e;
+            transform: translateX(5px);
+        }
+
+        .sub-industry-icon {
+            font-size: 1.2rem;
+        }
+
+        .requirements-section {
+            margin-top: 60px;
+            background: #1c2128;
+            border-radius: 16px;
+            padding: 40px;
+            border: 2px solid #30363d;
+        }
+
+        .requirements-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #00d9ff, #22c55e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .requirement-card {
+            background: #242c38;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .requirement-card:hover {
+            transform: translateY(-5px);
+            border-color: #00d9ff;
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .requirement-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .requirement-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .requirement-desc {
+            font-size: 0.9rem;
+            color: #8b949e;
+            line-height: 1.5;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+            max-width: 300px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .industry-card:hover .tooltip {
+            opacity: 1;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .industry-card {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .industry-card:nth-child(1) { animation-delay: 0.1s; }
+        .industry-card:nth-child(2) { animation-delay: 0.2s; }
+        .industry-card:nth-child(3) { animation-delay: 0.3s; }
+        .industry-card:nth-child(4) { animation-delay: 0.4s; }
+        .industry-card:nth-child(5) { animation-delay: 0.5s; }
+
+        @media (max-width: 1024px) {
+            .map-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .requirements-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        .legend {
+            margin-top: 40px;
+            padding: 20px;
+            background: #1c2128;
+            border-radius: 12px;
+            border: 2px solid #30363d;
+        }
+
+        .legend-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .legend-items {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .industry-qualifiers {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .qualifier-badge {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: #30363d;
+            color: #8b949e;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .qualifier-icon {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>U&AI ICP Industry Map</h1>
+            <p class="subtitle">Target Industries & Key Qualification Criteria</p>
+        </header>
+
+        <div class="map-grid">
+            <!-- B2B COLUMN -->
+            <div class="column b2b">
+                <div class="column-header">
+                    <span class="column-icon">🏢</span>
+                    <h2 class="column-title">B2B Industries</h2>
+                </div>
+
+                <div class="industry-card priority-high" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>💡</span>
+                            SaaS Startups
+                            <span class="priority-badge priority-high">High Priority</span>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔄</span> Recurring Revenue</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">⚡</span> Competitive</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🚀</span>
+                            <span>Recently Funded (Series A-B)</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🤖</span>
+                            <span>AI/ML Integration Focus</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">📈</span>
+                            <span>Growth-Stage (10-100 employees)</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🎯</span>
+                            <span>Marketing Automation Platforms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card priority-medium" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>🎓</span>
+                            Education
+                            <span class="priority-badge priority-medium">Medium Priority</span>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">👥</span> Referral-Based</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🏛️</span>
+                            <span>Universities & Colleges</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">💻</span>
+                            <span>Online Learning Platforms</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">📚</span>
+                            <span>Professional Training Programs</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🎯</span>
+                            <span>Bootcamps & Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>⚙️</span>
+                            Enterprise Software
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔄</span> Recurring Revenue</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">📊</span>
+                            <span>Business Intelligence Tools</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🔐</span>
+                            <span>Cybersecurity Solutions</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🏗️</span>
+                            <span>Project Management Platforms</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">💼</span>
+                            <span>ERP & CRM Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B2C COLUMN -->
+            <div class="column b2c">
+                <div class="column-header">
+                    <span class="column-icon">🛍️</span>
+                    <h2 class="column-title">B2C Industries</h2>
+                    <span style="font-size: 0.9rem; color: #8b949e;">(High-Ticket Services)</span>
+                </div>
+
+                <div class="industry-card priority-high" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>⚕️</span>
+                            Healthcare
+                            <span class="priority-badge priority-high">High Priority</span>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">👥</span> Referral-Based</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">⚡</span> Competitive</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🦷</span>
+                            <span>Dental Practices</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">💆</span>
+                            <span>Chiropractic Clinics</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">✨</span>
+                            <span>Cosmetic Surgery</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">💉</span>
+                            <span>Medical Spas & Aesthetics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card priority-high" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>⚖️</span>
+                            Legal Services
+                            <span class="priority-badge priority-high">High Priority</span>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">⚡</span> Competitive</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🚑</span>
+                            <span>Personal Injury Law</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">👨‍👩‍👧</span>
+                            <span>Family Law</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🏛️</span>
+                            <span>Criminal Defense</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">📋</span>
+                            <span>Estate Planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card priority-medium" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>🚗</span>
+                            Automotive
+                            <span class="priority-badge priority-medium">Medium Priority</span>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">⚡</span> Competitive</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🏪</span>
+                            <span>Car Dealerships</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🛡️</span>
+                            <span>Auto Insurance (Local Franchises)</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🔧</span>
+                            <span>Luxury Auto Repair</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🚙</span>
+                            <span>RV & Boat Dealers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card priority-high" onclick="toggleExpand(this)">
+                    <div class="industry-header">
+                        <div class="industry-name">
+                            <span>🏠</span>
+                            Home Services
+                            <span class="priority-badge priority-high">High Priority</span>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="industry-qualifiers">
+                        <span class="qualifier-badge"><span class="qualifier-icon">🔍</span> Google Dependent</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">💰</span> High-Ticket</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">👥</span> Referral-Based</span>
+                        <span class="qualifier-badge"><span class="qualifier-icon">⚡</span> Competitive</span>
+                    </div>
+                    <div class="sub-industries">
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">❄️</span>
+                            <span>HVAC Installation & Repair</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🔌</span>
+                            <span>Plumbing Services</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">⚡</span>
+                            <span>Electrical Contractors</span>
+                        </div>
+                        <div class="sub-industry">
+                            <span class="sub-industry-icon">🏗️</span>
+                            <span>Roofing & Restoration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="requirements-section">
+            <h3 class="requirements-title">Key Qualification Requirements</h3>
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <span class="requirement-icon">🔍</span>
+                    <div class="requirement-name">Google Dependent</div>
+                    <div class="requirement-desc">Primary customer acquisition through Google Search and Maps</div>
+                </div>
+                <div class="requirement-card">
+                    <span class="requirement-icon">💰</span>
+                    <div class="requirement-name">High-Ticket</div>
+                    <div class="requirement-desc">Average deal size of $3,000+ with high customer lifetime value</div>
+                </div>
+                <div class="requirement-card">
+                    <span class="requirement-icon">👥</span>
+                    <div class="requirement-name">Referral-Based</div>
+                    <div class="requirement-desc">Business growth driven by word-of-mouth and reputation</div>
+                </div>
+                <div class="requirement-card">
+                    <span class="requirement-icon">⚡</span>
+                    <div class="requirement-name">Competitive Market</div>
+                    <div class="requirement-desc">High competition requiring strong digital presence</div>
+                </div>
+                <div class="requirement-card">
+                    <span class="requirement-icon">🔄</span>
+                    <div class="requirement-name">Recurring Revenue</div>
+                    <div class="requirement-desc">Subscription or repeat purchase business model</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-title">Priority Legend</div>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff4444;"></div>
+                    <span>High Priority - Primary Target</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ffaa00;"></div>
+                    <span>Medium Priority - Secondary Target</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #00d9ff;"></div>
+                    <span>B2B Industries</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #22c55e;"></div>
+                    <span>B2C Industries</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleExpand(card) {
+            const wasExpanded = card.classList.contains('expanded');
+
+            // Collapse all cards
+            document.querySelectorAll('.industry-card').forEach(c => {
+                c.classList.remove('expanded');
+            });
+
+            // If the clicked card wasn't expanded, expand it
+            if (!wasExpanded) {
+                card.classList.add('expanded');
+            }
+        }
+
+        // Add smooth scroll behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Optional: Auto-expand high priority items on load
+            // document.querySelectorAll('.priority-high').forEach(card => {
+            //     card.classList.add('expanded');
+            // });
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.industry-card').forEach(c => {
+                    c.classList.remove('expanded');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

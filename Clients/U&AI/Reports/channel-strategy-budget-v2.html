@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U&AI Channel Strategy & Budget Allocation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0f1419;
+            color: #e8eaed;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #00d9ff;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #00d9ff;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #9aa0a6;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #00d9ff;
+            margin: 50px 0 30px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #1e2732;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #00d9ff;
+            margin: 30px 0 15px 0;
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #00d9ff;
+            margin-bottom: 50px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .summary-card {
+            background: #1e2732;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #00d9ff;
+        }
+
+        .summary-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+        }
+
+        .summary-card .value {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #00d9ff;
+            margin: 10px 0;
+        }
+
+        .summary-card .label {
+            color: #9aa0a6;
+            font-size: 0.9em;
+        }
+
+        /* Pie Chart */
+        .chart-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+            background: #1a2332;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .pie-chart {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #ff6b6b 0% 30%,
+                #4ecdc4 30% 55%,
+                #45b7d1 55% 75%,
+                #96ceb4 75% 90%,
+                #ffeaa7 90% 100%
+            );
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+        }
+
+        .pie-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: #0f1419;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pie-center .total {
+            font-size: 2em;
+            font-weight: 700;
+            color: #00d9ff;
+        }
+
+        .pie-center .label {
+            font-size: 0.9em;
+            color: #9aa0a6;
+        }
+
+        .legend {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .legend-color {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .legend-info {
+            flex: 1;
+        }
+
+        .legend-name {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #e8eaed;
+        }
+
+        .legend-stats {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .legend-percent {
+            color: #00d9ff;
+            font-weight: 600;
+        }
+
+        .legend-amount {
+            color: #9aa0a6;
+        }
+
+        /* Channel Cards */
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .channel-card {
+            background: linear-gradient(135deg, #1e2732 0%, #1a2332 100%);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #2a3441;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .channel-card:hover {
+            border-color: #00d9ff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .channel-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #00d9ff, #00a8cc);
+        }
+
+        .channel-name {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+
+        .channel-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .meta-tag {
+            background: #0f1419;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            color: #9aa0a6;
+            border: 1px solid #2a3441;
+        }
+
+        .meta-tag strong {
+            color: #00d9ff;
+        }
+
+        .channel-detail {
+            margin: 15px 0;
+        }
+
+        .channel-detail h4 {
+            color: #00d9ff;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .channel-detail p, .channel-detail ul {
+            color: #9aa0a6;
+            font-size: 0.95em;
+        }
+
+        .channel-detail ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .channel-detail li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .channel-detail li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #00d9ff;
+        }
+
+        /* Scenario Analysis */
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .scenario-card {
+            background: #1a2332;
+            padding: 35px;
+            border-radius: 12px;
+            border: 2px solid #2a3441;
+        }
+
+        .scenario-card h3 {
+            margin-top: 0;
+            color: #ffeaa7;
+        }
+
+        .scenario-allocation {
+            margin: 25px 0;
+        }
+
+        .allocation-bar {
+            display: flex;
+            height: 50px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .bar-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0f1419;
+            font-weight: 700;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+        }
+
+        .bar-segment:hover {
+            filter: brightness(1.2);
+            cursor: pointer;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .pros, .cons {
+            background: #0f1419;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .pros h4 {
+            color: #4ecdc4;
+            margin-bottom: 12px;
+        }
+
+        .cons h4 {
+            color: #ff6b6b;
+            margin-bottom: 12px;
+        }
+
+        .pros ul, .cons ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pros li, .cons li {
+            padding: 6px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #9aa0a6;
+            font-size: 0.9em;
+        }
+
+        .pros li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4ecdc4;
+            font-weight: 700;
+        }
+
+        .cons li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+            font-weight: 700;
+        }
+
+        /* Week-by-Week Table */
+        .week-table {
+            background: #1a2332;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #00d9ff;
+            color: #0f1419;
+        }
+
+        th {
+            padding: 20px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #2a3441;
+        }
+
+        tbody tr:hover {
+            background: #1e2732;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .week-cell {
+            font-weight: 700;
+            color: #00d9ff;
+        }
+
+        .amount-cell {
+            font-weight: 600;
+            color: #4ecdc4;
+        }
+
+        /* ROI Projections */
+        .roi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .roi-card {
+            background: linear-gradient(135deg, #1e2732, #1a2332);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2a3441;
+        }
+
+        .roi-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .roi-channel {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #00d9ff;
+        }
+
+        .roi-badge {
+            background: #4ecdc4;
+            color: #0f1419;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 700;
+        }
+
+        .roi-metrics {
+            display: grid;
+            gap: 15px;
+        }
+
+        .roi-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background: #0f1419;
+            border-radius: 6px;
+        }
+
+        .metric-label {
+            color: #9aa0a6;
+            font-size: 0.9em;
+        }
+
+        .metric-value {
+            color: #4ecdc4;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .roi-bar {
+            width: 100%;
+            height: 8px;
+            background: #0f1419;
+            border-radius: 4px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .roi-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00d9ff, #4ecdc4);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        /* Do's and Don'ts */
+        .dos-donts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .dos, .donts {
+            background: #1a2332;
+            padding: 35px;
+            border-radius: 12px;
+        }
+
+        .dos {
+            border: 2px solid #4ecdc4;
+        }
+
+        .donts {
+            border: 2px solid #ff6b6b;
+        }
+
+        .dos h3 {
+            color: #4ecdc4;
+        }
+
+        .donts h3 {
+            color: #ff6b6b;
+        }
+
+        .dos ul, .donts ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .dos li, .donts li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: #e8eaed;
+            border-bottom: 1px solid #2a3441;
+        }
+
+        .dos li:last-child, .donts li:last-child {
+            border-bottom: none;
+        }
+
+        .dos li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4ecdc4;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+
+        .donts li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid #2a3441;
+            color: #9aa0a6;
+        }
+
+        @media (max-width: 768px) {
+            .chart-section {
+                grid-template-columns: 1fr;
+            }
+
+            .scenario-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .channel-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>U&AI Channel Strategy & Budget Allocation</h1>
+            <p class="subtitle">10-Channel Content Strategy | $5,000/Month Marketing Budget</p>
+            <p class="subtitle">Focus: Founder Personality, Tactical Business Content, Platform-Specific Engagement</p>
+        </header>
+
+        <!-- Executive Summary -->
+        <section class="executive-summary">
+            <h2 style="margin-top: 0; border: none;">Executive Summary</h2>
+            <p style="color: #9aa0a6; font-size: 1.1em; line-height: 1.8;">
+                U&AI's multi-channel strategy leverages founder authenticity across 10 distinct platforms to reach business owners who need AI translated into action. The $5,000 monthly budget prioritizes video-first platforms (Meta, TikTok, YouTube) at 75% of total spend, with strategic allocations to professional networks, guerilla marketing, and emerging channels. The approach emphasizes Eden and Yarden's personalities as the core differentiator, making AI accessible through relatable, actionable content rather than corporate messaging.
+            </p>
+
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <h3>Total Channels</h3>
+                    <div class="value">10</div>
+                    <p class="label">Active platforms with unique strategies</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Monthly Budget</h3>
+                    <div class="value">$5K</div>
+                    <p class="label">Distributed across paid and organic</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Content Frequency</h3>
+                    <div class="value">30+</div>
+                    <p class="label">Posts per week across all channels</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Primary Focus</h3>
+                    <div class="value">75%</div>
+                    <p class="label">Video-first platforms (Meta, TikTok, YouTube)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Budget Allocation Pie Chart -->
+        <h2>Budget Allocation Breakdown</h2>
+        <div class="chart-section">
+            <div>
+                <div class="pie-chart">
+                    <div class="pie-center">
+                        <div class="total">$5K</div>
+                        <div class="label">Monthly</div>
+                    </div>
+                </div>
+            </div>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff6b6b;"></div>
+                    <div class="legend-info">
+                        <div class="legend-name">Meta (Facebook & Instagram)</div>
+                        <div class="legend-stats">
+                            <span class="legend-percent">30%</span>
+                            <span class="legend-amount">$1,500/month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4ecdc4;"></div>
+                    <div class="legend-info">
+                        <div class="legend-name">TikTok</div>
+                        <div class="legend-stats">
+                            <span class="legend-percent">25%</span>
+                            <span class="legend-amount">$1,250/month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #45b7d1;"></div>
+                    <div class="legend-info">
+                        <div class="legend-name">YouTube (Long-form & Shorts)</div>
+                        <div class="legend-stats">
+                            <span class="legend-percent">20%</span>
+                            <span class="legend-amount">$1,000/month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #96ceb4;"></div>
+                    <div class="legend-info">
+                        <div class="legend-name">Other (LinkedIn, Google, Testing)</div>
+                        <div class="legend-stats">
+                            <span class="legend-percent">15%</span>
+                            <span class="legend-amount">$750/month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ffeaa7;"></div>
+                    <div class="legend-info">
+                        <div class="legend-name">Guerilla Marketing</div>
+                        <div class="legend-stats">
+                            <span class="legend-percent">10%</span>
+                            <span class="legend-amount">$500/month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Channel Strategy Cards -->
+        <h2>10-Channel Strategy Breakdown</h2>
+        <div class="channel-grid">
+
+            <!-- TikTok -->
+            <div class="channel-card">
+                <div class="channel-name">TikTok</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> $1,250/mo</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 3-5x/week</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Founder personality, behind-the-scenes, conference clips</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Authentic, relatable, subtitled videos</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>Eden & Yarden building the business</li>
+                        <li>Talking about AI and visibility</li>
+                        <li>Conference clips with subtitles</li>
+                        <li>Well-edited with personality</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="channel-card">
+                <div class="channel-name">Instagram</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> Part of Meta 30%</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 4-5x/week</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Mix of personality and professional</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Visual, aspirational, founder-focused</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>Reels (repurposed TikTok)</li>
+                        <li>Stories showing day-to-day</li>
+                        <li>Helpful tips and insights</li>
+                        <li>Founder personality moments</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Facebook -->
+            <div class="channel-card">
+                <div class="channel-name">Facebook</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> Part of Meta 30%</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 3x/week</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Converter channel for millennials/boomers</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>FOMO-driven, professional, results-focused</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>Curated posts showing results</li>
+                        <li>Business impact stories</li>
+                        <li>Get them on the train messaging</li>
+                        <li>Make AI relevant to them</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- X (Twitter) -->
+            <div class="channel-card">
+                <div class="channel-name">X (Twitter)</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> Organic only</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> Daily</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Response platform, thought leadership</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Text-heavy, conversational, responsive</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>Engage in AI conversations</li>
+                        <li>Reply to relevant threads</li>
+                        <li>Share insights and takes</li>
+                        <li>Be present in the space</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="channel-card">
+                <div class="channel-name">LinkedIn</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> ~$200/mo</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 2-3x/week</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>B2B presence, thought leadership</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Professional, solutions-focused</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>In-mail from founders (Eden/Yarden)</li>
+                        <li>Not company page posts</li>
+                        <li>Direct outreach strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="channel-card">
+                <div class="channel-name">Newsletter</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Platform:</strong> Mailchimp</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> Weekly (Mondays)</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Direct engagement with audience</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Personal, tactical, actionable</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>What AI news means for your business</li>
+                        <li>Show founder personalities</li>
+                        <li>Tactical advice, not just news</li>
+                        <li>Fun facts about Eden/Yarden</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- YouTube -->
+            <div class="channel-card">
+                <div class="channel-name">YouTube</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> $1,000/mo</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 1-2x/month</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Long-form credibility content</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Professional, authoritative</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>Full conference talks</li>
+                        <li>We did this at X event</li>
+                        <li>Deep dives on visibility</li>
+                        <li>Credibility building</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- YouTube Shorts -->
+            <div class="channel-card">
+                <div class="channel-name">YouTube Shorts</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> Part of YouTube 20%</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 3-5x/week</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Repurpose TikTok content</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Same as TikTok</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Content Focus</h4>
+                    <ul>
+                        <li>Direct reposts from TikTok</li>
+                        <li>Clips from long-form YouTube</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Podcasts -->
+            <div class="channel-card">
+                <div class="channel-name">Podcasts</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> Pitch time only</span>
+                    <span class="meta-tag"><strong>Frequency:</strong> 1-2x/month</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Guest appearances for visibility</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Expert, thought leader</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Strategy</h4>
+                    <ul>
+                        <li>Pitch Eden/Yarden as guests</li>
+                        <li>Topics: AI visibility, future of search, brand presence</li>
+                        <li>Target: Business/marketing podcasts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Guerilla Marketing -->
+            <div class="channel-card">
+                <div class="channel-name">Guerilla Marketing</div>
+                <div class="channel-meta">
+                    <span class="meta-tag"><strong>Budget:</strong> $500/mo</span>
+                    <span class="meta-tag"><strong>Type:</strong> Experimental</span>
+                </div>
+                <div class="channel-detail">
+                    <h4>Purpose</h4>
+                    <p>Random acts of marketing</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Tone</h4>
+                    <p>Creative, surprising, memorable</p>
+                </div>
+                <div class="channel-detail">
+                    <h4>Ideas</h4>
+                    <ul>
+                        <li>Flyers at WeWork locations</li>
+                        <li>Billboards in key areas</li>
+                        <li>Unexpected touchpoints</li>
+                        <li>Conference presence</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scenario Analysis -->
+        <h2>Scenario Analysis: Budget Thought Partner</h2>
+        <p style="color: #9aa0a6; margin-bottom: 30px;">Explore alternative budget allocations and their strategic implications. Use these scenarios to adapt to performance data and market conditions.</p>
+
+        <div class="scenario-grid">
+
+            <!-- Scenario 1 -->
+            <div class="scenario-card">
+                <h3>Scenario 1: TikTok Surge</h3>
+                <p style="color: #9aa0a6; margin-bottom: 20px;">What if TikTok is performing exceptionally? Increase by 10% from Meta.</p>
+
+                <div class="scenario-allocation">
+                    <div class="allocation-bar">
+                        <div class="bar-segment" style="width: 20%; background: #ff6b6b;">Meta 20%</div>
+                        <div class="bar-segment" style="width: 35%; background: #4ecdc4;">TikTok 35%</div>
+                        <div class="bar-segment" style="width: 20%; background: #45b7d1;">YouTube 20%</div>
+                        <div class="bar-segment" style="width: 15%; background: #96ceb4;">Other 15%</div>
+                        <div class="bar-segment" style="width: 10%; background: #ffeaa7;">Guerilla 10%</div>
+                    </div>
+                    <p style="color: #9aa0a6; font-size: 0.9em;">Meta: $1,000 | TikTok: $1,750 | YouTube: $1,000 | Other: $750 | Guerilla: $500</p>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Double down on winning channel</li>
+                            <li>Reach younger demographics</li>
+                            <li>Founder personality-first</li>
+                            <li>Higher engagement rates</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Lose Facebook converter power</li>
+                            <li>Miss millennial/boomer audience</li>
+                            <li>Platform risk concentration</li>
+                            <li>Static ad performance drops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scenario 2 -->
+            <div class="scenario-card">
+                <h3>Scenario 2: Cut Guerilla, Boost Meta</h3>
+                <p style="color: #9aa0a6; margin-bottom: 20px;">What if guerilla tactics aren't converting? Redirect to proven converters.</p>
+
+                <div class="scenario-allocation">
+                    <div class="allocation-bar">
+                        <div class="bar-segment" style="width: 40%; background: #ff6b6b;">Meta 40%</div>
+                        <div class="bar-segment" style="width: 25%; background: #4ecdc4;">TikTok 25%</div>
+                        <div class="bar-segment" style="width: 20%; background: #45b7d1;">YouTube 20%</div>
+                        <div class="bar-segment" style="width: 15%; background: #96ceb4;">Other 15%</div>
+                    </div>
+                    <p style="color: #9aa0a6; font-size: 0.9em;">Meta: $2,000 | TikTok: $1,250 | YouTube: $1,000 | Other: $750 | Guerilla: $0</p>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Focus on measurable ROI</li>
+                            <li>Stronger converter channels</li>
+                            <li>Better lead tracking</li>
+                            <li>Scale what works</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Lose creative experimentation</li>
+                            <li>No local brand building</li>
+                            <li>Miss surprise touchpoints</li>
+                            <li>Less memorable moments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scenario 3 -->
+            <div class="scenario-card">
+                <h3>Scenario 3: YouTube Authority Play</h3>
+                <p style="color: #9aa0a6; margin-bottom: 20px;">What if we prioritize long-form credibility content? Shift from TikTok.</p>
+
+                <div class="scenario-allocation">
+                    <div class="allocation-bar">
+                        <div class="bar-segment" style="width: 30%; background: #ff6b6b;">Meta 30%</div>
+                        <div class="bar-segment" style="width: 15%; background: #4ecdc4;">TikTok 15%</div>
+                        <div class="bar-segment" style="width: 30%; background: #45b7d1;">YouTube 30%</div>
+                        <div class="bar-segment" style="width: 15%; background: #96ceb4;">Other 15%</div>
+                        <div class="bar-segment" style="width: 10%; background: #ffeaa7;">Guerilla 10%</div>
+                    </div>
+                    <p style="color: #9aa0a6; font-size: 0.9em;">Meta: $1,500 | TikTok: $750 | YouTube: $1,500 | Other: $750 | Guerilla: $500</p>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Build thought leadership</li>
+                            <li>Evergreen content library</li>
+                            <li>Conference content leverage</li>
+                            <li>Pre-roll ad opportunities</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Slower momentum building</li>
+                            <li>Less frequent touchpoints</li>
+                            <li>Higher production demands</li>
+                            <li>Longer conversion cycles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scenario 4 -->
+            <div class="scenario-card">
+                <h3>Scenario 4: Testing & Expansion Mode</h3>
+                <p style="color: #9aa0a6; margin-bottom: 20px;">What if we want to test Reddit, Pinterest, and emerging platforms?</p>
+
+                <div class="scenario-allocation">
+                    <div class="allocation-bar">
+                        <div class="bar-segment" style="width: 25%; background: #ff6b6b;">Meta 25%</div>
+                        <div class="bar-segment" style="width: 20%; background: #4ecdc4;">TikTok 20%</div>
+                        <div class="bar-segment" style="width: 15%; background: #45b7d1;">YouTube 15%</div>
+                        <div class="bar-segment" style="width: 30%; background: #96ceb4;">Testing 30%</div>
+                        <div class="bar-segment" style="width: 10%; background: #ffeaa7;">Guerilla 10%</div>
+                    </div>
+                    <p style="color: #9aa0a6; font-size: 0.9em;">Meta: $1,250 | TikTok: $1,000 | YouTube: $750 | Testing: $1,500 | Guerilla: $500</p>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Discover new channels early</li>
+                            <li>Platform diversification</li>
+                            <li>Reddit/Pinterest potential</li>
+                            <li>Data-driven decisions</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Dilute proven channels</li>
+                            <li>Testing takes time to validate</li>
+                            <li>Risk of no winners</li>
+                            <li>Complexity in management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Week-by-Week Pacing -->
+        <h2>Week-by-Week Pacing Guide</h2>
+        <p style="color: #9aa0a6; margin-bottom: 30px;">Strategic spend distribution across 4 weeks to maintain consistent presence and avoid budget front-loading.</p>
+
+        <div class="week-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Meta (30%)</th>
+                        <th>TikTok (25%)</th>
+                        <th>YouTube (20%)</th>
+                        <th>Other (15%)</th>
+                        <th>Guerilla (10%)</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="week-cell">Week 1</td>
+                        <td class="amount-cell">$375</td>
+                        <td class="amount-cell">$312</td>
+                        <td class="amount-cell">$250</td>
+                        <td class="amount-cell">$188</td>
+                        <td class="amount-cell">$125</td>
+                        <td class="amount-cell">$1,250</td>
+                    </tr>
+                    <tr>
+                        <td class="week-cell">Week 2</td>
+                        <td class="amount-cell">$375</td>
+                        <td class="amount-cell">$312</td>
+                        <td class="amount-cell">$250</td>
+                        <td class="amount-cell">$188</td>
+                        <td class="amount-cell">$125</td>
+                        <td class="amount-cell">$1,250</td>
+                    </tr>
+                    <tr>
+                        <td class="week-cell">Week 3</td>
+                        <td class="amount-cell">$375</td>
+                        <td class="amount-cell">$312</td>
+                        <td class="amount-cell">$250</td>
+                        <td class="amount-cell">$188</td>
+                        <td class="amount-cell">$125</td>
+                        <td class="amount-cell">$1,250</td>
+                    </tr>
+                    <tr>
+                        <td class="week-cell">Week 4</td>
+                        <td class="amount-cell">$375</td>
+                        <td class="amount-cell">$314</td>
+                        <td class="amount-cell">$250</td>
+                        <td class="amount-cell">$186</td>
+                        <td class="amount-cell">$125</td>
+                        <td class="amount-cell">$1,250</td>
+                    </tr>
+                    <tr style="background: #00d9ff; color: #0f1419; font-weight: 700;">
+                        <td>Monthly Total</td>
+                        <td>$1,500</td>
+                        <td>$1,250</td>
+                        <td>$1,000</td>
+                        <td>$750</td>
+                        <td>$500</td>
+                        <td>$5,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ROI Projections -->
+        <h2>ROI Projections & Channel Performance</h2>
+        <p style="color: #9aa0a6; margin-bottom: 30px;">Expected returns based on industry benchmarks and platform-specific metrics. Actual performance will vary based on creative quality, targeting, and market conditions.</p>
+
+        <div class="roi-grid">
+
+            <!-- Meta ROI -->
+            <div class="roi-card">
+                <div class="roi-header">
+                    <div class="roi-channel">Meta (FB/IG)</div>
+                    <div class="roi-badge">High Converter</div>
+                </div>
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <span class="metric-label">Monthly Spend</span>
+                        <span class="metric-value">$1,500</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Expected Leads</span>
+                        <span class="metric-value">75-100</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Cost per Lead</span>
+                        <span class="metric-value">$15-20</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Conversion Rate</span>
+                        <span class="metric-value">3-5%</span>
+                    </div>
+                </div>
+                <div class="roi-bar">
+                    <div class="roi-bar-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <!-- TikTok ROI -->
+            <div class="roi-card">
+                <div class="roi-header">
+                    <div class="roi-channel">TikTok</div>
+                    <div class="roi-badge" style="background: #ffeaa7;">Testing Phase</div>
+                </div>
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <span class="metric-label">Monthly Spend</span>
+                        <span class="metric-value">$1,250</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Expected Leads</span>
+                        <span class="metric-value">40-60</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Cost per Lead</span>
+                        <span class="metric-value">$20-30</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Engagement Rate</span>
+                        <span class="metric-value">6-8%</span>
+                    </div>
+                </div>
+                <div class="roi-bar">
+                    <div class="roi-bar-fill" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <!-- YouTube ROI -->
+            <div class="roi-card">
+                <div class="roi-header">
+                    <div class="roi-channel">YouTube</div>
+                    <div class="roi-badge" style="background: #96ceb4;">Credibility Builder</div>
+                </div>
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <span class="metric-label">Monthly Spend</span>
+                        <span class="metric-value">$1,000</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Expected Views</span>
+                        <span class="metric-value">10K-15K</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Cost per View</span>
+                        <span class="metric-value">$0.06-0.10</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Watch Time</span>
+                        <span class="metric-value">30-45%</span>
+                    </div>
+                </div>
+                <div class="roi-bar">
+                    <div class="roi-bar-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <!-- LinkedIn ROI -->
+            <div class="roi-card">
+                <div class="roi-header">
+                    <div class="roi-channel">LinkedIn</div>
+                    <div class="roi-badge" style="background: #45b7d1;">B2B Direct</div>
+                </div>
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <span class="metric-label">Monthly Spend</span>
+                        <span class="metric-value">$200</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Expected Replies</span>
+                        <span class="metric-value">15-25</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Cost per Engagement</span>
+                        <span class="metric-value">$8-13</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Response Rate</span>
+                        <span class="metric-value">10-15%</span>
+                    </div>
+                </div>
+                <div class="roi-bar">
+                    <div class="roi-bar-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <!-- Google Search ROI -->
+            <div class="roi-card">
+                <div class="roi-header">
+                    <div class="roi-channel">Google Search</div>
+                    <div class="roi-badge">Intent-Driven</div>
+                </div>
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <span class="metric-label">Monthly Spend</span>
+                        <span class="metric-value">$400</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Expected Leads</span>
+                        <span class="metric-value">20-30</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Cost per Lead</span>
+                        <span class="metric-value">$13-20</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Conversion Rate</span>
+                        <span class="metric-value">5-8%</span>
+                    </div>
+                </div>
+                <div class="roi-bar">
+                    <div class="roi-bar-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <!-- Guerilla ROI -->
+            <div class="roi-card">
+                <div class="roi-header">
+                    <div class="roi-channel">Guerilla</div>
+                    <div class="roi-badge" style="background: #ff6b6b;">Experimental</div>
+                </div>
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <span class="metric-label">Monthly Spend</span>
+                        <span class="metric-value">$500</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Expected Impressions</span>
+                        <span class="metric-value">5K-10K</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Brand Awareness</span>
+                        <span class="metric-value">Hard to Track</span>
+                    </div>
+                    <div class="roi-metric">
+                        <span class="metric-label">Memorability</span>
+                        <span class="metric-value">High</span>
+                    </div>
+                </div>
+                <div class="roi-bar">
+                    <div class="roi-bar-fill" style="width: 45%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Do's and Don'ts -->
+        <h2>Strategy Guidelines: What We Do / Don't Do</h2>
+        <div class="dos-donts">
+            <div class="dos">
+                <h3>DO</h3>
+                <ul>
+                    <li>Lead with founder personality</li>
+                    <li>Make AI accessible and actionable</li>
+                    <li>Show results and case studies</li>
+                    <li>Engage authentically in conversations</li>
+                    <li>Respond to trends quickly</li>
+                </ul>
+            </div>
+            <div class="donts">
+                <h3>DON'T</h3>
+                <ul>
+                    <li>Be overly corporate</li>
+                    <li>Use too much jargon</li>
+                    <li>Post without subtitles on video</li>
+                    <li>Ignore comments and engagement</li>
+                    <li>Be salesy in organic content</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Key Issues & Actions -->
+        <h2>Current Issues & Action Items</h2>
+        <div class="summary-grid">
+            <div class="summary-card" style="border-left-color: #ff6b6b;">
+                <h3>Static vs Video Imbalance</h3>
+                <p class="label" style="margin-top: 10px;">Static ads taking most of the budget, video ads not getting fair spend</p>
+                <p style="color: #4ecdc4; margin-top: 15px; font-weight: 600;">Action: Separate into two campaigns</p>
+            </div>
+            <div class="summary-card" style="border-left-color: #ffeaa7;">
+                <h3>Lead Quality Issues</h3>
+                <p class="label" style="margin-top: 10px;">Leads coming in but not serious enough for conversion</p>
+                <p style="color: #4ecdc4; margin-top: 15px; font-weight: 600;">Action: Change CTA from "check visibility" to "talk to team"</p>
+            </div>
+            <div class="summary-card" style="border-left-color: #45b7d1;">
+                <h3>Google Ads Expansion</h3>
+                <p class="label" style="margin-top: 10px;">Currently search only, missing video opportunities</p>
+                <p style="color: #4ecdc4; margin-top: 15px; font-weight: 600;">Action: Expand to YouTube/Shorts next week</p>
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <section style="background: #1a2332; padding: 40px; border-radius: 12px; margin-top: 60px; border: 2px solid #00d9ff;">
+            <h2 style="margin-top: 0;">Next Month Adjustments</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                <div>
+                    <h4 style="color: #00d9ff; margin-bottom: 10px;">Review</h4>
+                    <p style="color: #9aa0a6;">TikTok ad performance and engagement metrics</p>
+                </div>
+                <div>
+                    <h4 style="color: #00d9ff; margin-bottom: 10px;">Consider</h4>
+                    <p style="color: #9aa0a6;">Pinterest ads for visual content opportunities</p>
+                </div>
+                <div>
+                    <h4 style="color: #00d9ff; margin-bottom: 10px;">Evaluate</h4>
+                    <p style="color: #9aa0a6;">Reddit ads performance in first testing week</p>
+                </div>
+                <div>
+                    <h4 style="color: #00d9ff; margin-bottom: 10px;">Adjust</h4>
+                    <p style="color: #9aa0a6;">Budget based on lead quality data</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>U&AI Channel Strategy & Budget Allocation Report | Generated 2026</p>
+            <p style="margin-top: 10px;">Target Audience: Business owners who need AI translated into action</p>
+        </footer>
+    </div>
+</body>
+</html>

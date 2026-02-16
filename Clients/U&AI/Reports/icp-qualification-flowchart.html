@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICP Qualification Flowchart - U&AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0f1419;
+            color: #e8eaed;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00d9ff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #9aa0a6;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .legend-color.qualify { background: #00cc66; }
+        .legend-color.disqualify { background: #ff4444; }
+        .legend-color.evaluate { background: #ffaa00; }
+        .legend-color.question { background: #00d9ff; }
+
+        #flowchart {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 40px;
+            overflow-x: auto;
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .node {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .node:hover .node-rect {
+            filter: brightness(1.2);
+            stroke-width: 3;
+        }
+
+        .node:hover .node-text {
+            font-weight: 600;
+        }
+
+        .node-rect {
+            transition: all 0.3s ease;
+        }
+
+        .start-node .node-rect {
+            fill: #00d9ff;
+            stroke: #00d9ff;
+        }
+
+        .question-node .node-rect {
+            fill: rgba(0, 217, 255, 0.2);
+            stroke: #00d9ff;
+            stroke-width: 2;
+        }
+
+        .qualify-node .node-rect {
+            fill: rgba(0, 204, 102, 0.3);
+            stroke: #00cc66;
+            stroke-width: 2;
+        }
+
+        .disqualify-node .node-rect {
+            fill: rgba(255, 68, 68, 0.3);
+            stroke: #ff4444;
+            stroke-width: 2;
+        }
+
+        .evaluate-node .node-rect {
+            fill: rgba(255, 170, 0, 0.3);
+            stroke: #ffaa00;
+            stroke-width: 2;
+        }
+
+        .node-text {
+            fill: #e8eaed;
+            font-size: 14px;
+            font-weight: 500;
+            pointer-events: none;
+        }
+
+        .start-node .node-text {
+            fill: #0f1419;
+            font-weight: 700;
+        }
+
+        .path-line {
+            fill: none;
+            stroke: rgba(154, 160, 166, 0.4);
+            stroke-width: 2;
+            transition: all 0.3s ease;
+        }
+
+        .path-line:hover {
+            stroke: rgba(154, 160, 166, 0.8);
+            stroke-width: 3;
+        }
+
+        .path-label {
+            fill: #9aa0a6;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .path-label.yes { fill: #00cc66; }
+        .path-label.no { fill: #ff4444; }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: #e8eaed;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            max-width: 300px;
+            border: 1px solid #00d9ff;
+            z-index: 1000;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            #flowchart {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ICP Qualification Flowchart</h1>
+            <p class="subtitle">Interactive Decision Tree for Lead Qualification</p>
+        </header>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color qualify"></div>
+                <span>Qualified Lead</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color disqualify"></div>
+                <span>Disqualified</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color evaluate"></div>
+                <span>Further Evaluation</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color question"></div>
+                <span>Qualification Question</span>
+            </div>
+        </div>
+
+        <div id="flowchart">
+            <svg id="flowchart-svg" width="1200" height="1800" viewBox="0 0 1200 1800">
+                <!-- Define arrow markers -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="rgba(154, 160, 166, 0.6)" />
+                    </marker>
+                </defs>
+
+                <!-- Connections -->
+                <!-- Start to Revenue -->
+                <path class="path-line" d="M 600 80 L 600 140" marker-end="url(#arrowhead)"/>
+
+                <!-- Revenue paths -->
+                <path class="path-line" d="M 600 210 L 600 270" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="610" y="245">YES</text>
+
+                <path class="path-line" d="M 520 175 L 200 330" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="350" y="250">NO</text>
+
+                <!-- Ad Spend paths -->
+                <path class="path-line" d="M 600 340 L 600 400" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="610" y="375">YES</text>
+
+                <path class="path-line" d="M 520 305 L 200 460" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="350" y="380">NO</text>
+
+                <!-- Google Dependency paths -->
+                <path class="path-line" d="M 600 470 L 600 530" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="610" y="505">YES</text>
+
+                <path class="path-line" d="M 520 435 L 350 580" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="420" y="510">NO</text>
+
+                <!-- Sales Cycle paths -->
+                <path class="path-line" d="M 600 600 L 600 660" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="610" y="635">YES</text>
+
+                <path class="path-line" d="M 520 565 L 200 720" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="350" y="640">NO</text>
+
+                <!-- Business Type paths -->
+                <path class="path-line" d="M 520 695 L 300 850" marker-end="url(#arrowhead)"/>
+                <text class="path-label" x="400" y="775">B2B</text>
+
+                <path class="path-line" d="M 680 695 L 900 850" marker-end="url(#arrowhead)"/>
+                <text class="path-label" x="800" y="775">B2C</text>
+
+                <!-- B2B Segment paths -->
+                <path class="path-line" d="M 300 920 L 300 980" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="310" y="955">YES</text>
+
+                <path class="path-line" d="M 220 885 L 120 1040" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="160" y="965">NO</text>
+
+                <!-- B2C Segment paths -->
+                <path class="path-line" d="M 900 920 L 900 980" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="910" y="955">YES</text>
+
+                <path class="path-line" d="M 820 885 L 720 1040" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="760" y="965">NO</text>
+
+                <!-- Deal Size paths (B2B) -->
+                <path class="path-line" d="M 300 1050 L 300 1110" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="310" y="1085">YES</text>
+
+                <path class="path-line" d="M 220 1015 L 120 1170" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="160" y="1095">NO</text>
+
+                <!-- Deal Size paths (B2C) -->
+                <path class="path-line" d="M 900 1050 L 900 1110" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="910" y="1085">YES</text>
+
+                <path class="path-line" d="M 820 1015 L 720 1170" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="760" y="1095">NO</text>
+
+                <!-- Revenue Model paths (B2B) -->
+                <path class="path-line" d="M 300 1180 L 300 1240" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="310" y="1215">YES</text>
+
+                <path class="path-line" d="M 220 1145 L 120 1300" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="160" y="1225">NO</text>
+
+                <!-- Revenue Model paths (B2C) -->
+                <path class="path-line" d="M 900 1180 L 900 1240" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="910" y="1215">YES</text>
+
+                <path class="path-line" d="M 820 1145 L 720 1300" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="760" y="1225">NO</text>
+
+                <!-- Regulation Check paths (B2B) -->
+                <path class="path-line" d="M 300 1310 L 300 1370" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="310" y="1345">NO</text>
+
+                <path class="path-line" d="M 380 1275 L 500 1430" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="440" y="1355">YES</text>
+
+                <!-- Regulation Check paths (B2C) -->
+                <path class="path-line" d="M 900 1310 L 900 1370" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="910" y="1345">NO</text>
+
+                <path class="path-line" d="M 820 1275 L 700 1430" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="750" y="1355">YES</text>
+
+                <!-- Final Qualification (B2B) -->
+                <path class="path-line" d="M 300 1440 L 300 1500" marker-end="url(#arrowhead)"/>
+
+                <!-- Final Qualification (B2C) -->
+                <path class="path-line" d="M 900 1440 L 900 1500" marker-end="url(#arrowhead)"/>
+
+                <!-- Approval Process to Evaluate (B2B) -->
+                <path class="path-line" d="M 500 1500 L 500 1560" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="510" y="1535">YES</text>
+
+                <path class="path-line" d="M 420 1465 L 200 1620" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="300" y="1545">NO</text>
+
+                <!-- Approval Process to Evaluate (B2C) -->
+                <path class="path-line" d="M 700 1500 L 700 1560" marker-end="url(#arrowhead)"/>
+                <text class="path-label yes" x="710" y="1535">YES</text>
+
+                <path class="path-line" d="M 620 1465 L 500 1620" marker-end="url(#arrowhead)"/>
+                <text class="path-label no" x="550" y="1545">NO</text>
+
+                <!-- Nodes -->
+                <!-- Start Node -->
+                <g class="node start-node" data-tooltip="Beginning of qualification process">
+                    <rect class="node-rect" x="520" y="30" width="160" height="50" rx="25"/>
+                    <text class="node-text" x="600" y="60" text-anchor="middle">NEW LEAD</text>
+                </g>
+
+                <!-- Revenue Question -->
+                <g class="node question-node" data-tooltip="Annual revenue must be $1M+ to qualify">
+                    <rect class="node-rect" x="480" y="140" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="600" y="165" text-anchor="middle">Revenue $1M+</text>
+                    <text class="node-text" x="600" y="190" text-anchor="middle">Annual?</text>
+                </g>
+
+                <!-- Ad Spend Question -->
+                <g class="node question-node" data-tooltip="Current ad spend $10K+/month or willing to invest">
+                    <rect class="node-rect" x="480" y="270" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="600" y="295" text-anchor="middle">Ad Spend $10K+/mo</text>
+                    <text class="node-text" x="600" y="320" text-anchor="middle">or Willing?</text>
+                </g>
+
+                <!-- Google Dependency Question -->
+                <g class="node question-node" data-tooltip="High dependency on Google for lead generation">
+                    <rect class="node-rect" x="480" y="400" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="600" y="425" text-anchor="middle">High Google</text>
+                    <text class="node-text" x="600" y="450" text-anchor="middle">Dependency?</text>
+                </g>
+
+                <!-- Sales Cycle Question -->
+                <g class="node question-node" data-tooltip="Sales cycle must be less than 6 months">
+                    <rect class="node-rect" x="480" y="530" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="600" y="555" text-anchor="middle">Sales Cycle</text>
+                    <text class="node-text" x="600" y="580" text-anchor="middle">&lt; 6 Months?</text>
+                </g>
+
+                <!-- Business Type -->
+                <g class="node question-node" data-tooltip="Determine if B2B or B2C business model">
+                    <rect class="node-rect" x="480" y="660" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="600" y="685" text-anchor="middle">Business Type:</text>
+                    <text class="node-text" x="600" y="710" text-anchor="middle">B2B or B2C?</text>
+                </g>
+
+                <!-- B2B Segment Check -->
+                <g class="node question-node" data-tooltip="SaaS startups, Education, or Enterprise software">
+                    <rect class="node-rect" x="180" y="850" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="300" y="875" text-anchor="middle">Target B2B Segment:</text>
+                    <text class="node-text" x="300" y="900" text-anchor="middle">SaaS/Edu/Enterprise?</text>
+                </g>
+
+                <!-- B2C Segment Check -->
+                <g class="node question-node" data-tooltip="Healthcare, Legal, Insurance, Auto, or Home Services">
+                    <rect class="node-rect" x="780" y="850" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="900" y="875" text-anchor="middle">Target B2C Segment:</text>
+                    <text class="node-text" x="900" y="900" text-anchor="middle">Healthcare/Legal/etc?</text>
+                </g>
+
+                <!-- Deal Size Check (B2B) -->
+                <g class="node question-node" data-tooltip="Average deal size must be $3K+ minimum">
+                    <rect class="node-rect" x="180" y="980" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="300" y="1005" text-anchor="middle">Deal Size</text>
+                    <text class="node-text" x="300" y="1030" text-anchor="middle">$3K+ Average?</text>
+                </g>
+
+                <!-- Deal Size Check (B2C) -->
+                <g class="node question-node" data-tooltip="Average deal size must be $3K+ minimum">
+                    <rect class="node-rect" x="780" y="980" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="900" y="1005" text-anchor="middle">Deal Size</text>
+                    <text class="node-text" x="900" y="1030" text-anchor="middle">$3K+ Average?</text>
+                </g>
+
+                <!-- Revenue Model (B2B) -->
+                <g class="node question-node" data-tooltip="Must have recurring revenue or high customer frequency">
+                    <rect class="node-rect" x="180" y="1110" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="300" y="1135" text-anchor="middle">Recurring Revenue</text>
+                    <text class="node-text" x="300" y="1160" text-anchor="middle">or High Frequency?</text>
+                </g>
+
+                <!-- Revenue Model (B2C) -->
+                <g class="node question-node" data-tooltip="Must have recurring revenue or high customer frequency">
+                    <rect class="node-rect" x="780" y="1110" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="900" y="1135" text-anchor="middle">Recurring Revenue</text>
+                    <text class="node-text" x="900" y="1160" text-anchor="middle">or High Frequency?</text>
+                </g>
+
+                <!-- Heavy Regulation Check (B2B) -->
+                <g class="node question-node" data-tooltip="Check if heavily regulated industry">
+                    <rect class="node-rect" x="180" y="1240" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="300" y="1265" text-anchor="middle">Heavily Regulated</text>
+                    <text class="node-text" x="300" y="1290" text-anchor="middle">Industry?</text>
+                </g>
+
+                <!-- Heavy Regulation Check (B2C) -->
+                <g class="node question-node" data-tooltip="Check if heavily regulated industry">
+                    <rect class="node-rect" x="780" y="1240" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="900" y="1265" text-anchor="middle">Heavily Regulated</text>
+                    <text class="node-text" x="900" y="1290" text-anchor="middle">Industry?</text>
+                </g>
+
+                <!-- Final Qualification Check (B2B) -->
+                <g class="node qualify-node" data-tooltip="All criteria met - proceed with qualification">
+                    <rect class="node-rect" x="180" y="1370" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="300" y="1395" text-anchor="middle">✓ QUALIFIED</text>
+                    <text class="node-text" x="300" y="1420" text-anchor="middle">Strong B2B Fit</text>
+                </g>
+
+                <!-- Final Qualification Check (B2C) -->
+                <g class="node qualify-node" data-tooltip="All criteria met - proceed with qualification">
+                    <rect class="node-rect" x="780" y="1370" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="900" y="1395" text-anchor="middle">✓ QUALIFIED</text>
+                    <text class="node-text" x="900" y="1420" text-anchor="middle">Strong B2C Fit</text>
+                </g>
+
+                <!-- Approval Process Check (B2B) -->
+                <g class="node question-node" data-tooltip="Regulated industry must have clear approval process">
+                    <rect class="node-rect" x="380" y="1430" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="500" y="1455" text-anchor="middle">Clear Approval</text>
+                    <text class="node-text" x="500" y="1480" text-anchor="middle">Process?</text>
+                </g>
+
+                <!-- Approval Process Check (B2C) -->
+                <g class="node question-node" data-tooltip="Regulated industry must have clear approval process">
+                    <rect class="node-rect" x="580" y="1430" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="700" y="1455" text-anchor="middle">Clear Approval</text>
+                    <text class="node-text" x="700" y="1480" text-anchor="middle">Process?</text>
+                </g>
+
+                <!-- Evaluate with Caution (B2B) -->
+                <g class="node evaluate-node" data-tooltip="Requires further evaluation - proceed with caution">
+                    <rect class="node-rect" x="380" y="1560" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="500" y="1585" text-anchor="middle">⚠ EVALUATE</text>
+                    <text class="node-text" x="500" y="1610" text-anchor="middle">Regulated Industry</text>
+                </g>
+
+                <!-- Evaluate with Caution (B2C) -->
+                <g class="node evaluate-node" data-tooltip="Requires further evaluation - proceed with caution">
+                    <rect class="node-rect" x="580" y="1560" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="700" y="1585" text-anchor="middle">⚠ EVALUATE</text>
+                    <text class="node-text" x="700" y="1610" text-anchor="middle">Regulated Industry</text>
+                </g>
+
+                <!-- Disqualify Nodes -->
+                <!-- Low Revenue -->
+                <g class="node disqualify-node" data-tooltip="Revenue below $1M annual threshold">
+                    <rect class="node-rect" x="80" y="330" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="200" y="355" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="200" y="380" text-anchor="middle">Revenue Too Low</text>
+                </g>
+
+                <!-- Low Ad Spend -->
+                <g class="node disqualify-node" data-tooltip="Insufficient ad spend commitment">
+                    <rect class="node-rect" x="80" y="460" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="200" y="485" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="200" y="510" text-anchor="middle">Low Ad Budget</text>
+                </g>
+
+                <!-- Low Google Dependency -->
+                <g class="node evaluate-node" data-tooltip="May not benefit as much from Google-focused services">
+                    <rect class="node-rect" x="230" y="580" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="350" y="605" text-anchor="middle">⚠ EVALUATE</text>
+                    <text class="node-text" x="350" y="630" text-anchor="middle">Low Google Dependency</text>
+                </g>
+
+                <!-- Long Sales Cycle -->
+                <g class="node disqualify-node" data-tooltip="Sales cycle too long (9+ months)">
+                    <rect class="node-rect" x="80" y="720" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="200" y="745" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="200" y="770" text-anchor="middle">Sales Cycle Too Long</text>
+                </g>
+
+                <!-- Wrong B2B Segment -->
+                <g class="node evaluate-node" data-tooltip="Not target B2B segment - evaluate individually">
+                    <rect class="node-rect" x="0" y="1040" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="120" y="1065" text-anchor="middle">⚠ EVALUATE</text>
+                    <text class="node-text" x="120" y="1090" text-anchor="middle">Non-Target B2B</text>
+                </g>
+
+                <!-- Wrong B2C Segment -->
+                <g class="node evaluate-node" data-tooltip="Not target B2C segment - evaluate individually">
+                    <rect class="node-rect" x="600" y="1040" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="720" y="1065" text-anchor="middle">⚠ EVALUATE</text>
+                    <text class="node-text" x="720" y="1090" text-anchor="middle">Non-Target B2C</text>
+                </g>
+
+                <!-- Low Deal Size (B2B) -->
+                <g class="node disqualify-node" data-tooltip="Deal size below $3K threshold">
+                    <rect class="node-rect" x="0" y="1170" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="120" y="1195" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="120" y="1220" text-anchor="middle">Deal Size Too Low</text>
+                </g>
+
+                <!-- Low Deal Size (B2C) -->
+                <g class="node disqualify-node" data-tooltip="Deal size below $3K threshold">
+                    <rect class="node-rect" x="600" y="1170" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="720" y="1195" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="720" y="1220" text-anchor="middle">Deal Size Too Low</text>
+                </g>
+
+                <!-- Poor Revenue Model (B2B) -->
+                <g class="node disqualify-node" data-tooltip="No recurring revenue and low frequency">
+                    <rect class="node-rect" x="0" y="1300" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="120" y="1325" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="120" y="1350" text-anchor="middle">Poor Revenue Model</text>
+                </g>
+
+                <!-- Poor Revenue Model (B2C) -->
+                <g class="node disqualify-node" data-tooltip="No recurring revenue and low frequency">
+                    <rect class="node-rect" x="600" y="1300" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="720" y="1325" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="720" y="1350" text-anchor="middle">Poor Revenue Model</text>
+                </g>
+
+                <!-- No Approval Process (B2B) -->
+                <g class="node disqualify-node" data-tooltip="Regulated industry without approval process">
+                    <rect class="node-rect" x="80" y="1620" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="200" y="1645" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="200" y="1670" text-anchor="middle">No Approval Process</text>
+                </g>
+
+                <!-- No Approval Process (B2C) -->
+                <g class="node disqualify-node" data-tooltip="Regulated industry without approval process">
+                    <rect class="node-rect" x="380" y="1620" width="240" height="70" rx="8"/>
+                    <text class="node-text" x="500" y="1645" text-anchor="middle">✗ DISQUALIFIED</text>
+                    <text class="node-text" x="500" y="1670" text-anchor="middle">No Approval Process</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        // Tooltip functionality
+        const tooltip = document.getElementById('tooltip');
+        const nodes = document.querySelectorAll('.node');
+
+        nodes.forEach(node => {
+            node.addEventListener('mouseenter', (e) => {
+                const tooltipText = node.getAttribute('data-tooltip');
+                if (tooltipText) {
+                    tooltip.textContent = tooltipText;
+                    tooltip.classList.add('show');
+                }
+            });
+
+            node.addEventListener('mousemove', (e) => {
+                tooltip.style.left = (e.pageX + 15) + 'px';
+                tooltip.style.top = (e.pageY + 15) + 'px';
+            });
+
+            node.addEventListener('mouseleave', () => {
+                tooltip.classList.remove('show');
+            });
+
+            // Click to highlight path
+            node.addEventListener('click', () => {
+                // Add subtle animation
+                const rect = node.querySelector('.node-rect');
+                rect.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    rect.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+
+        // Make SVG responsive
+        function resizeSVG() {
+            const svg = document.getElementById('flowchart-svg');
+            const container = document.getElementById('flowchart');
+            const containerWidth = container.clientWidth - 80;
+
+            if (window.innerWidth < 768) {
+                svg.setAttribute('width', '100%');
+                svg.setAttribute('height', 'auto');
+            } else {
+                svg.setAttribute('width', Math.min(1200, containerWidth));
+            }
+        }
+
+        window.addEventListener('resize', resizeSVG);
+        window.addEventListener('load', resizeSVG);
+    </script>
+</body>
+</html>

@@ -1520,6 +1520,301 @@
             outline: none;
             border-color: var(--accent);
         }
+
+        /* Calendar Button */
+        .calendar-btn {
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            margin-left: auto;
+        }
+
+        .calendar-btn:hover {
+            color: var(--accent);
+        }
+
+        /* Calendar Overlay and Panel */
+        .calendar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 998;
+            backdrop-filter: blur(2px);
+        }
+
+        .calendar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .calendar-panel {
+            position: fixed;
+            top: 0;
+            right: -350px;
+            width: 350px;
+            height: 100%;
+            background: var(--bg);
+            border-left: 1px solid var(--border);
+            transition: right 0.3s ease;
+            z-index: 999;
+            overflow-y: auto;
+        }
+
+        .calendar-panel.active {
+            right: 0;
+        }
+
+        .calendar-header {
+            padding: 25px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .calendar-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .calendar-close {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .calendar-close:hover {
+            color: var(--text);
+        }
+
+        .calendar-content {
+            padding: 25px;
+        }
+
+        .calendar-month-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-month-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .calendar-nav-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .calendar-nav-btn:hover {
+            background: var(--surface);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        .calendar-day-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-align: center;
+            padding: 8px 0;
+            font-weight: 600;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            background: var(--surface);
+            border: 1px solid var(--border);
+        }
+
+        .calendar-day:hover {
+            background: var(--surface-hover);
+            border-color: var(--accent);
+        }
+
+        .calendar-day.empty {
+            background: transparent;
+            border: none;
+            cursor: default;
+        }
+
+        .calendar-day.today {
+            border-color: var(--accent);
+            font-weight: 600;
+        }
+
+        .calendar-day.has-event::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .calendar-day.newsletter::after {
+            background: var(--success);
+        }
+
+        .calendar-day.meeting::after {
+            background: var(--accent);
+        }
+
+        .calendar-day.deadline::after {
+            background: var(--warning);
+        }
+
+        .calendar-day.milestone::after {
+            background: #a78bfa;
+        }
+
+        .calendar-events {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .calendar-events-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .calendar-event {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .calendar-event.newsletter {
+            border-left-color: var(--success);
+        }
+
+        .calendar-event.meeting {
+            border-left-color: var(--accent);
+        }
+
+        .calendar-event.deadline {
+            border-left-color: var(--warning);
+        }
+
+        .calendar-event.milestone {
+            border-left-color: #a78bfa;
+        }
+
+        .calendar-event-title {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .calendar-event-date {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .calendar-legend {
+            margin-top: 20px;
+            padding: 15px;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .calendar-legend-title {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+        }
+
+        .calendar-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            font-size: 12px;
+        }
+
+        .calendar-legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .calendar-legend-dot.newsletter {
+            background: var(--success);
+        }
+
+        .calendar-legend-dot.meeting {
+            background: var(--accent);
+        }
+
+        .calendar-legend-dot.deadline {
+            background: var(--warning);
+        }
+
+        .calendar-legend-dot.milestone {
+            background: #a78bfa;
+        }
     </style>
 </head>
 <body>
@@ -1595,6 +1890,52 @@
         </div>
     </div>
 
+    <!-- Calendar Overlay -->
+    <div class="calendar-overlay" id="calendar-overlay" onclick="toggleCalendar()"></div>
+
+    <!-- Calendar Panel -->
+    <div class="calendar-panel" id="calendar-panel">
+        <div class="calendar-header">
+            <span class="calendar-title">Calendar</span>
+            <button class="calendar-close" onclick="toggleCalendar()">&times;</button>
+        </div>
+        <div class="calendar-content">
+            <div class="calendar-month-header">
+                <button class="calendar-nav-btn" onclick="changeMonth(-1)">‹</button>
+                <span class="calendar-month-title" id="calendar-month-title">February 2026</span>
+                <button class="calendar-nav-btn" onclick="changeMonth(1)">›</button>
+            </div>
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- Calendar will be rendered here -->
+            </div>
+            <div class="calendar-legend">
+                <div class="calendar-legend-title">Event Types</div>
+                <div class="calendar-legend-item">
+                    <span class="calendar-legend-dot newsletter"></span>
+                    <span>Newsletter</span>
+                </div>
+                <div class="calendar-legend-item">
+                    <span class="calendar-legend-dot meeting"></span>
+                    <span>Meeting</span>
+                </div>
+                <div class="calendar-legend-item">
+                    <span class="calendar-legend-dot deadline"></span>
+                    <span>Deadline</span>
+                </div>
+                <div class="calendar-legend-item">
+                    <span class="calendar-legend-dot milestone"></span>
+                    <span>Milestone</span>
+                </div>
+            </div>
+            <div class="calendar-events" id="calendar-events" style="display: none;">
+                <div class="calendar-events-title" id="calendar-events-date"></div>
+                <div id="calendar-events-list">
+                    <!-- Events will be rendered here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <header>
             <div class="header-row">
@@ -1604,6 +1945,7 @@
                     <span></span>
                 </button>
                 <span class="client-tag">Client Project</span>
+                <button class="calendar-btn" onclick="toggleCalendar()">📅</button>
             </div>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
@@ -2548,25 +2890,57 @@
         <div id="week-3" class="week-content">
             <div class="week-header">
                 <div>
-                    <h2 class="week-title">Week 3: Partnerships & Personality</h2>
+                    <h2 class="week-title">Week 3: ICP & Newsletter Focus</h2>
                     <p class="week-dates">February 15 - 21, 2026</p>
+                </div>
+            </div>
+
+            <!-- This Week's Priorities - Week 3 -->
+            <div class="priorities-section">
+                <div class="priorities-header">
+                    <span class="priorities-title">This Week's Top 3</span>
+                    <span style="font-size: 12px; color: #d4af37;">Feb 15-21</span>
+                </div>
+                <div class="priority-item" data-task-id="send-newsletter-2">
+                    <span class="priority-number">1</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Send Newsletter #2 - AI Coworkers</div>
+                        <div class="priority-meta">Claude Agent Teams spotlight • Send Tuesday Feb 17</div>
+                    </div>
+                    <span class="priority-status todo">To Do</span>
+                </div>
+                <div class="priority-item" data-task-id="icp-strategy">
+                    <span class="priority-number">2</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Finalize ICP Strategy</div>
+                        <div class="priority-meta">Qualification flowchart + Industry map complete</div>
+                    </div>
+                    <span class="priority-status done">Done</span>
+                </div>
+                <div class="priority-item" data-task-id="channel-budget-finalize">
+                    <span class="priority-number">3</span>
+                    <div class="priority-content">
+                        <div class="priority-title">Channel & Budget Strategy Final</div>
+                        <div class="priority-meta">Visual HTML report with scenarios • Ready for execution</div>
+                    </div>
+                    <span class="priority-status done">Done</span>
                 </div>
             </div>
 
             <div class="progress-container">
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0%"></div>
+                    <div class="progress-fill" style="width: 40%"></div>
                 </div>
-                <span class="progress-percent">0%</span>
+                <span class="progress-percent">40%</span>
             </div>
 
             <div class="stats">
                 <div class="stat" onclick="filterTasks('done')" data-filter="done">
-                    <div class="stat-value">0</div>
+                    <div class="stat-value">2</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
-                    <div class="stat-value">0</div>
+                    <div class="stat-value">1</div>
                     <div class="stat-label">In Progress</div>
                 </div>
                 <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
@@ -2578,6 +2952,43 @@
             <div class="section">
                 <div class="section-header">
                     <h3 class="section-title">Scheduled Tasks</h3>
+                </div>
+
+                <p class="category-header">Newsletter</p>
+                <div class="task-list">
+                    <div class="task" data-status="in-progress" data-id="newsletter-2-send" onclick="openTaskModal('newsletter-2-send')">
+                        <div class="task-status in-progress"></div>
+                        <div class="task-content">
+                            <div class="task-title">Send Newsletter #2 - AI Coworkers Are Here</div>
+                            <div class="task-meta">Claude Agent Teams spotlight • Send Tuesday Feb 17 @ 10am</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header">Strategy</p>
+                <div class="task-list">
+                    <div class="task completed-gray" data-status="done" data-id="icp-flowchart" onclick="openTaskModal('icp-flowchart')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Create ICP Qualification Flowchart</div>
+                            <div class="task-meta">Decision tree for lead qualification • Interactive HTML</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <a href="../Reports/icp-qualification-flowchart.html" target="_blank" class="task-external-link" onclick="event.stopPropagation()">View →</a>
+                    </div>
+                    <div class="task completed-gray" data-status="done" data-id="icp-industry-map" onclick="openTaskModal('icp-industry-map')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
+                        <div class="task-content">
+                            <div class="task-title">Create ICP Industry Map</div>
+                            <div class="task-meta">B2B vs B2C breakdown • Visual diagram</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <a href="../Reports/icp-industry-map.html" target="_blank" class="task-external-link" onclick="event.stopPropagation()">View →</a>
+                    </div>
                 </div>
 
                 <p class="category-header">Creator Partnerships</p>
@@ -2634,6 +3045,77 @@
                         </div>
                         <span class="task-tag strategy">Strategy</span>
                         <span class="task-link">Details →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meeting Notes - Week 3 -->
+            <div class="section collapsible-section" id="meeting-notes-week3">
+                <div class="section-header collapsible-header" onclick="toggleSection('meeting-notes-content-week3')">
+                    <h3 class="section-title">Meeting Notes <span class="collapse-icon">▼</span></h3>
+                </div>
+                <div id="meeting-notes-content-week3" class="collapsible-content">
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">ICP Strategy Meeting</span>
+                            <span class="meeting-entry-date">February 15, 2026</span>
+                        </div>
+                        <div class="meeting-entry-attendees">Attendees: Joshua, Eden, Yarden, Ariel</div>
+                        <div class="meeting-entry-content">
+                            <h5>Key Decisions</h5>
+                            <ul>
+                                <li><strong>B2B Targets:</strong> SaaS startups (funded), Education (universities), Enterprise software</li>
+                                <li><strong>B2C Targets:</strong> Healthcare (dental, chiro, cosmetic), Legal (PI, family), Automotive, Home services</li>
+                                <li><strong>Qualification:</strong> $1M+ revenue, $10K+/month ad spend willing, Google dependent, &lt;6 month sales cycle</li>
+                                <li><strong>Disqualifiers:</strong> Restaurants, &lt;$3K deals, no recurring revenue, 9+ month cycles</li>
+                            </ul>
+                            <h5>Action Items</h5>
+                            <ul>
+                                <li>✅ Create ICP qualification flowchart (decision tree)</li>
+                                <li>✅ Create ICP industry map (B2B/B2C breakdown)</li>
+                                <li>Ariel to focus on identified verticals for targeting</li>
+                                <li>Joshua/Eden to finalize marketing strategy per vertical</li>
+                            </ul>
+                            <h5>Goal Reminder</h5>
+                            <p>25 clients by April 1 • Currently at 18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deliverables - Week 3 -->
+            <div class="section collapsible-section">
+                <div class="section-header collapsible-header" onclick="toggleSection('deliverables-week3')">
+                    <h3 class="section-title">Deliverables <span class="collapse-icon">▼</span></h3>
+                </div>
+                <div id="deliverables-week3" class="collapsible-content">
+                    <div class="deliverable" onclick="openDeliverable('../Newsletters/2026/02/2026-02-17-mailchimp.html')">
+                        <div class="deliverable-icon">📧</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Newsletter #2 - AI Coworkers</div>
+                            <div class="deliverable-type">Mailchimp HTML • Ready to Send</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/channel-strategy-budget-v2.html')">
+                        <div class="deliverable-icon">📊</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">Channel & Budget Strategy</div>
+                            <div class="deliverable-type">Visual Report • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/icp-qualification-flowchart.html')">
+                        <div class="deliverable-icon">🎯</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">ICP Qualification Flowchart</div>
+                            <div class="deliverable-type">Interactive Decision Tree • Complete</div>
+                        </div>
+                    </div>
+                    <div class="deliverable" onclick="openDeliverable('../Reports/icp-industry-map.html')">
+                        <div class="deliverable-icon">🗺️</div>
+                        <div class="deliverable-info">
+                            <div class="deliverable-name">ICP Industry Map</div>
+                            <div class="deliverable-type">Visual Diagram • Complete</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3316,6 +3798,117 @@
             overlay.classList.toggle('active');
         }
 
+        // Calendar functionality
+        let currentCalendarMonth = 1; // February (0-indexed)
+        let currentCalendarYear = 2026;
+
+        const calendarEvents = {
+            '2026-02-10': [{ type: 'newsletter', title: 'Newsletter #1 Sent' }],
+            '2026-02-12': [{ type: 'meeting', title: 'HOD Meeting' }],
+            '2026-02-15': [{ type: 'meeting', title: 'ICP Strategy Meeting' }],
+            '2026-02-17': [{ type: 'newsletter', title: 'Newsletter #2 Send' }],
+            '2026-04-01': [{ type: 'milestone', title: '25 Clients Goal' }]
+        };
+
+        function toggleCalendar() {
+            const panel = document.getElementById('calendar-panel');
+            const overlay = document.getElementById('calendar-overlay');
+            panel.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function changeMonth(direction) {
+            currentCalendarMonth += direction;
+            if (currentCalendarMonth > 11) {
+                currentCalendarMonth = 0;
+                currentCalendarYear++;
+            } else if (currentCalendarMonth < 0) {
+                currentCalendarMonth = 11;
+                currentCalendarYear--;
+            }
+            renderCalendar();
+        }
+
+        function renderCalendar() {
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                              'July', 'August', 'September', 'October', 'November', 'December'];
+            const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+            document.getElementById('calendar-month-title').textContent =
+                `${monthNames[currentCalendarMonth]} ${currentCalendarYear}`;
+
+            const firstDay = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
+            const daysInMonth = new Date(currentCalendarYear, currentCalendarMonth + 1, 0).getDate();
+            const today = new Date();
+
+            let calendarHTML = '';
+
+            // Add day labels
+            dayNames.forEach(day => {
+                calendarHTML += `<div class="calendar-day-label">${day}</div>`;
+            });
+
+            // Add empty cells for days before month starts
+            for (let i = 0; i < firstDay; i++) {
+                calendarHTML += '<div class="calendar-day empty"></div>';
+            }
+
+            // Add days of the month
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${currentCalendarYear}-${String(currentCalendarMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const events = calendarEvents[dateStr] || [];
+                const isToday = today.getFullYear() === currentCalendarYear &&
+                              today.getMonth() === currentCalendarMonth &&
+                              today.getDate() === day;
+
+                let eventClass = '';
+                if (events.length > 0) {
+                    eventClass = `has-event ${events[0].type}`;
+                }
+
+                const todayClass = isToday ? 'today' : '';
+
+                calendarHTML += `<div class="calendar-day ${todayClass} ${eventClass}" onclick="showDateEvents('${dateStr}')">${day}</div>`;
+            }
+
+            document.getElementById('calendar-grid').innerHTML = calendarHTML;
+        }
+
+        function showDateEvents(dateStr) {
+            const events = calendarEvents[dateStr] || [];
+            const eventsContainer = document.getElementById('calendar-events');
+            const eventsList = document.getElementById('calendar-events-list');
+            const eventsDate = document.getElementById('calendar-events-date');
+
+            if (events.length === 0) {
+                eventsContainer.style.display = 'none';
+                return;
+            }
+
+            const date = new Date(dateStr);
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                              'July', 'August', 'September', 'October', 'November', 'December'];
+            eventsDate.textContent = `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+
+            let eventsHTML = '';
+            events.forEach(event => {
+                eventsHTML += `
+                    <div class="calendar-event ${event.type}">
+                        <div class="calendar-event-title">${event.title}</div>
+                        <div class="calendar-event-date">${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</div>
+                    </div>
+                `;
+            });
+
+            eventsList.innerHTML = eventsHTML;
+            eventsContainer.style.display = 'block';
+        }
+
+        // Initialize calendar on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCalendar();
+        });
+
         function showWeekFromSidebar(weekId) {
             document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
             document.getElementById(weekId).classList.add('active');
@@ -3332,22 +3925,26 @@
                 strategy: [
                     { icon: '📊', name: 'Strategic Audit', week: 'Week 1', path: '../Reports/U&AI-Strategic-Audit.html' },
                     { icon: '🏁', name: 'Competitive Landscape', week: 'Week 1', path: '../Reports/competitive-landscape.html' },
-                    { icon: '📺', name: 'Channel & Budget Strategy', week: 'Week 2', path: '../Reports/channel-strategy-budget.html', status: 'done' },
-                    { icon: '🎯', name: 'Brand Voice', week: 'Week 1', path: '../Reports/brand-voice.html' }
+                    { icon: '📺', name: 'Channel & Budget Strategy', week: 'Week 3', path: '../Reports/channel-strategy-budget-v2.html', status: 'done' },
+                    { icon: '🎯', name: 'Brand Voice', week: 'Week 1', path: '../Reports/brand-voice.html' },
+                    { icon: '🎯', name: 'ICP Qualification Flowchart', week: 'Week 3', path: '../Reports/icp-qualification-flowchart.html', status: 'new' },
+                    { icon: '🗺️', name: 'ICP Industry Map', week: 'Week 3', path: '../Reports/icp-industry-map.html', status: 'new' }
                 ],
                 newsletters: [
                     { icon: '✅', name: 'Newsletter #1 - Super Bowl', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-08-mailchimp.html', status: 'done' },
-                    { icon: '🔄', name: 'Newsletter #2 - ChatGPT Ads', week: 'Week 2', path: '../Newsletters/2026/02/2026-02-15-mailchimp.html', status: 'in-progress' }
+                    { icon: '🔄', name: 'Newsletter #2 - AI Coworkers', week: 'Week 3', path: '../Newsletters/2026/02/2026-02-17-mailchimp.html', status: 'ready' }
                 ],
                 tools: [
                     { icon: '⚙️', name: 'Newsletter Workflow', week: 'Week 1', path: '../Reports/newsletter-workflow.html' },
                     { icon: '🛠️', name: 'Tool Stack Recommendations', week: 'Week 1', path: '../Reports/tool-stack-recommendations.html' }
                 ],
                 meetings: [
+                    { icon: '📝', name: 'Week 3: ICP Strategy Meeting', week: 'Week 3', section: 'week-3', id: 'meeting-notes-week3' },
                     { icon: '📝', name: 'Week 2: End of Week HOD', week: 'Week 2', section: 'week-2', id: 'meeting-notes-week2' },
                     { icon: '📝', name: 'Week 1: HOD Meeting', week: 'Week 1', section: 'week-1', id: 'meeting-notes' }
                 ],
                 braindumps: [
+                    { icon: '💡', name: 'Week 3: ICP Qualification Criteria', week: 'Week 3', section: 'week-3', id: 'meeting-notes-week3' },
                     { icon: '💡', name: 'Week 2: Channel Strategy & Budget', week: 'Week 2', section: 'week-2', id: 'brain-dumps-week2' }
                 ]
             };
