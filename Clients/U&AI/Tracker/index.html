@@ -520,6 +520,54 @@
         .priority-status.in-progress { background: #78350f; color: #fcd34d; }
         .priority-status.done { background: #14532d; color: #22c55e; }
 
+        /* Priority Status Dropdown (Top 3) */
+        .priority-status-select {
+            font-size: 10px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            font-weight: 600;
+            flex-shrink: 0;
+            transition: all 0.2s;
+            min-width: 90px;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath fill='%23888' d='M0 0l4 5 4-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 6px center;
+            padding-right: 20px;
+            outline: none;
+        }
+
+        .priority-status-select:hover {
+            border-color: #d4af37;
+        }
+
+        .priority-status-select.pending {
+            background-color: #374151;
+            color: #9ca3af;
+        }
+
+        .priority-status-select.in-progress {
+            background-color: #78350f;
+            color: #fcd34d;
+        }
+
+        .priority-status-select.done {
+            background-color: #14532d;
+            color: #22c55e;
+        }
+
+        .priority-status-select option {
+            background: var(--surface);
+            color: var(--text);
+            font-size: 12px;
+            padding: 6px;
+        }
+
         /* Task Notes Feature */
         .task-notes {
             margin-top: 15px;
@@ -1841,7 +1889,7 @@
             <div class="sidebar-section-title">Week</div>
             <select class="month-selector" id="week-selector-sidebar" onchange="showWeekFromSidebar(this.value)">
                 <option value="week-1">Week 1: Feb 1-7</option>
-                <option value="week-2" selected>Week 2: Feb 8-14</option>
+                <option value="week-2">Week 2: Feb 8-14</option>
                 <option value="week-3">Week 3: Feb 15-21</option>
                 <option value="week-4">Week 4: Feb 22-28</option>
             </select>
@@ -1960,7 +2008,7 @@
             </select>
             <select class="nav-selector" id="week-selector-main" onchange="showWeekFromDropdown(this.value)">
                 <option value="week-1">Week 1: Feb 1-7</option>
-                <option value="week-2" selected>Week 2: Feb 8-14</option>
+                <option value="week-2">Week 2: Feb 8-14</option>
                 <option value="week-3">Week 3: Feb 15-21</option>
                 <option value="week-4">Week 4: Feb 22-28</option>
             </select>
@@ -2524,42 +2572,54 @@
                     <span class="priority-number">1</span>
                     <div class="priority-content">
                         <div class="priority-title">Send Newsletter #1 via Mailchimp</div>
-                        <div class="priority-meta">Tomorrow Feb 10 @ 10am • Super Bowl + AI Ads theme</div>
+                        <div class="priority-meta">Completed Feb 10 @ 10am • Super Bowl + AI Ads theme</div>
                     </div>
-                    <span class="priority-status todo">To Do</span>
+                    <select class="priority-status-select done" onchange="updatePriorityStatus(this)">
+                        <option value="pending">To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done" selected>Done</option>
+                    </select>
                 </div>
                 <div class="priority-item" data-task-id="draft-newsletter-2">
                     <span class="priority-number">2</span>
                     <div class="priority-content">
                         <div class="priority-title">Draft Newsletter #2 (Topic TBD)</div>
-                        <div class="priority-meta">Research trending AI topics for next week's send</div>
+                        <div class="priority-meta">Moved to Week 3 • AI Coworkers theme</div>
                     </div>
-                    <span class="priority-status todo">To Do</span>
+                    <select class="priority-status-select done" onchange="updatePriorityStatus(this)">
+                        <option value="pending">To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done" selected>Done</option>
+                    </select>
                 </div>
                 <div class="priority-item" data-task-id="channel-strategy">
                     <span class="priority-number">3</span>
                     <div class="priority-content">
                         <div class="priority-title">Finalize Channel Strategy & Budget</div>
-                        <div class="priority-meta">Allocate $5K budget across platforms • Due end of week</div>
+                        <div class="priority-meta">Completed Feb 14 • Visual HTML report ready</div>
                     </div>
-                    <span class="priority-status done">Done</span>
+                    <select class="priority-status-select done" onchange="updatePriorityStatus(this)">
+                        <option value="pending">To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done" selected>Done</option>
+                    </select>
                 </div>
             </div>
 
             <div class="progress-container">
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0%"></div>
+                    <div class="progress-fill" style="width: 40%"></div>
                 </div>
-                <span class="progress-percent">0%</span>
+                <span class="progress-percent">40%</span>
             </div>
 
             <div class="stats">
                 <div class="stat" onclick="filterTasks('done')" data-filter="done">
-                    <div class="stat-value">0</div>
+                    <div class="stat-value">3</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat" onclick="filterTasks('in-progress')" data-filter="in-progress">
-                    <div class="stat-value">0</div>
+                    <div class="stat-value">1</div>
                     <div class="stat-label">In Progress</div>
                 </div>
                 <div class="stat" onclick="filterTasks('pending')" data-filter="pending">
@@ -2629,25 +2689,25 @@
 
                 <p class="category-header">Newsletter</p>
                 <div class="task-list">
-                    <div class="task" data-status="pending" data-id="send-newsletter-1" onclick="openTaskModal('send-newsletter-1')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
+                    <div class="task completed-gray" data-status="done" data-id="send-newsletter-1" onclick="openTaskModal('send-newsletter-1')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
                         <div class="task-content">
                             <div class="task-title">Send Newsletter #1 via Mailchimp</div>
-                            <div class="task-meta">Import HTML • Test send • Schedule or send live</div>
+                            <div class="task-meta">Completed Feb 10 • Super Bowl AI Ads theme • Sent @ 10am</div>
                         </div>
                         <span class="task-tag content">Content</span>
                         <span class="task-link">Details →</span>
                     </div>
-                    <div class="task" data-status="pending" data-id="draft-newsletter-2" onclick="openTaskModal('draft-newsletter-2')">
-                        <div class="task-checkbox" onclick="toggleTaskCheck(event, this)"></div>
-                        <div class="task-status pending"></div>
+                    <div class="task completed-gray" data-status="done" data-id="channel-strategy-doc" onclick="openTaskModal('channel-strategy-doc')">
+                        <div class="task-checkbox checked" onclick="toggleTaskCheck(event, this)"></div>
+                        <div class="task-status done"></div>
                         <div class="task-content">
-                            <div class="task-title">Draft Newsletter #2 (Topic TBD)</div>
-                            <div class="task-meta">Research trending AI topics • Due next week</div>
+                            <div class="task-title">Finalize Channel Strategy & Budget</div>
+                            <div class="task-meta">Completed Feb 14 • 10 channels, $5K/month allocation</div>
                         </div>
-                        <span class="task-tag content">Content</span>
-                        <span class="task-link">Details →</span>
+                        <span class="task-tag strategy">Strategy</span>
+                        <a href="../Reports/channel-strategy-budget-v2.html" target="_blank" class="task-external-link" onclick="event.stopPropagation()">View →</a>
                     </div>
                 </div>
 
@@ -2907,7 +2967,11 @@
                         <div class="priority-title">Send Newsletter #2 - AI Coworkers</div>
                         <div class="priority-meta">Claude Agent Teams spotlight • Send Tuesday Feb 17</div>
                     </div>
-                    <span class="priority-status todo">To Do</span>
+                    <select class="priority-status-select pending" onchange="updatePriorityStatus(this)">
+                        <option value="pending" selected>To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
                 </div>
                 <div class="priority-item" data-task-id="icp-strategy">
                     <span class="priority-number">2</span>
@@ -2915,7 +2979,11 @@
                         <div class="priority-title">Finalize ICP Strategy</div>
                         <div class="priority-meta">Qualification flowchart + Industry map complete</div>
                     </div>
-                    <span class="priority-status done">Done</span>
+                    <select class="priority-status-select done" onchange="updatePriorityStatus(this)">
+                        <option value="pending">To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done" selected>Done</option>
+                    </select>
                 </div>
                 <div class="priority-item" data-task-id="channel-budget-finalize">
                     <span class="priority-number">3</span>
@@ -2923,7 +2991,11 @@
                         <div class="priority-title">Channel & Budget Strategy Final</div>
                         <div class="priority-meta">Visual HTML report with scenarios • Ready for execution</div>
                     </div>
-                    <span class="priority-status done">Done</span>
+                    <select class="priority-status-select done" onchange="updatePriorityStatus(this)">
+                        <option value="pending">To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done" selected>Done</option>
+                    </select>
                 </div>
             </div>
 
@@ -3035,6 +3107,68 @@
                     </div>
                 </div>
 
+                <p class="category-header">Organic Content</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending" data-id="organic-content-ideas" onclick="openTaskModal('organic-content-ideas')">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Brainstorm Organic Content Ideas</div>
+                            <div class="task-meta">Ideas for Yarden/Eden to film • Founder personality content</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="creator-outreach" onclick="openTaskModal('creator-outreach')">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Reach Out to Content Creators</div>
+                            <div class="task-meta">Contact Taraji (@TARAHGEE) • Explore collab opportunities</div>
+                        </div>
+                        <span class="task-tag strategy">Strategy</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="client-coposts" onclick="openTaskModal('client-coposts')">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Plan Co-Posts with Clients</div>
+                            <div class="task-meta">Organic content featuring existing clients • Mutual promotion</div>
+                        </div>
+                        <span class="task-tag content">Content</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
+                <p class="category-header">Paid Media</p>
+                <div class="task-list">
+                    <div class="task" data-status="pending" data-id="google-ads-campaign" onclick="openTaskModal('google-ads-campaign')">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Add Google Ads Campaign</div>
+                            <div class="task-meta">Set up new campaign • Target relevant keywords</div>
+                        </div>
+                        <span class="task-tag paid">Paid</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="meta-migration" onclick="openTaskModal('meta-migration')">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">Migrate Meta Leads to New Campaign</div>
+                            <div class="task-meta">Move old leads campaign to new business campaign structure</div>
+                        </div>
+                        <span class="task-tag paid">Paid</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                    <div class="task" data-status="pending" data-id="ab-test-report" onclick="openTaskModal('ab-test-report')">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <div class="task-title">A/B Test Results Analysis</div>
+                            <div class="task-meta">Investigate what actually happened • Document learnings</div>
+                        </div>
+                        <span class="task-tag research">Research</span>
+                        <span class="task-link">Details →</span>
+                    </div>
+                </div>
+
                 <p class="category-header">Review & Optimize</p>
                 <div class="task-list">
                     <div class="task" data-status="pending" data-id="march-budget" onclick="openTaskModal('march-budget')">
@@ -3058,10 +3192,11 @@
                     <div class="meeting-entry">
                         <div class="meeting-entry-header">
                             <span class="meeting-entry-title">ICP Strategy Meeting</span>
-                            <span class="meeting-entry-date">February 15, 2026</span>
+                            <span class="meeting-entry-date">February 16, 2026</span>
                         </div>
                         <div class="meeting-entry-attendees">Attendees: Joshua, Eden, Yarden, Ariel</div>
-                        <div class="meeting-entry-content">
+                        <div class="meeting-entry-summary">Defined ideal customer profile for both B2B and B2C verticals. Created qualification criteria and disqualifiers.</div>
+                        <div class="meeting-entry-actions">
                             <h5>Key Decisions</h5>
                             <ul>
                                 <li><strong>B2B Targets:</strong> SaaS startups (funded), Education (universities), Enterprise software</li>
@@ -3077,7 +3212,44 @@
                                 <li>Joshua/Eden to finalize marketing strategy per vertical</li>
                             </ul>
                             <h5>Goal Reminder</h5>
-                            <p>25 clients by April 1 • Currently at 18</p>
+                            <ul>
+                                <li>25 clients by April 1 • Currently at 18</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brain Dumps - Week 3 -->
+            <div class="section collapsible-section" id="brain-dumps-week3">
+                <div class="section-header collapsible-header" onclick="toggleSection('brain-dumps-content-week3')">
+                    <h3 class="section-title">Brain Dumps <span class="collapse-icon">▼</span></h3>
+                </div>
+                <div id="brain-dumps-content-week3" class="collapsible-content">
+                    <div class="meeting-entry">
+                        <div class="meeting-entry-header">
+                            <span class="meeting-entry-title">Week 3 Priorities & Tasks</span>
+                            <span class="meeting-entry-date">February 16, 2026</span>
+                        </div>
+                        <div class="meeting-entry-actions">
+                            <h5>This Week's Focus</h5>
+                            <ul>
+                                <li>Send Newsletter #2 (AI Coworkers theme) - Tuesday Feb 17</li>
+                                <li>Come up with organic content ideas for Yarden/Eden filming</li>
+                                <li>Reach out to content creators (Taraji - @TARAHGEE)</li>
+                                <li>Plan co-posts with existing clients</li>
+                            </ul>
+                            <h5>Paid Media Tasks</h5>
+                            <ul>
+                                <li>Add Google Ads campaign</li>
+                                <li>Migrate old leads campaign on Meta to new business campaign</li>
+                                <li>Investigate A/B test results - what actually happened?</li>
+                            </ul>
+                            <h5>Creator Partnerships</h5>
+                            <ul>
+                                <li>Research creator networks (Igor/Sentient + alternatives)</li>
+                                <li>Identify target influencer pages (business audiences, 10K-500K followers)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -3805,7 +3977,7 @@
         const calendarEvents = {
             '2026-02-10': [{ type: 'newsletter', title: 'Newsletter #1 Sent' }],
             '2026-02-12': [{ type: 'meeting', title: 'HOD Meeting' }],
-            '2026-02-15': [{ type: 'meeting', title: 'ICP Strategy Meeting' }],
+            '2026-02-16': [{ type: 'meeting', title: 'ICP Strategy Meeting' }],
             '2026-02-17': [{ type: 'newsletter', title: 'Newsletter #2 Send' }],
             '2026-04-01': [{ type: 'milestone', title: '25 Clients Goal' }]
         };
@@ -4024,8 +4196,41 @@
             document.getElementById('week-selector-sidebar').value = weekId;
         }
 
+        // Update priority status dropdown styling
+        function updatePriorityStatus(select) {
+            const value = select.value;
+            select.className = 'priority-status-select ' + value;
+        }
+
+        // Auto-select current week based on date
+        function autoSelectCurrentWeek() {
+            const today = new Date();
+            const month = today.getMonth(); // 0-indexed
+            const day = today.getDate();
+
+            // For Feb 2026: Week 1 = 1-7, Week 2 = 8-14, Week 3 = 15-21, Week 4 = 22-28
+            let weekId = 'week-1';
+            if (month === 1) { // February
+                if (day >= 22) weekId = 'week-4';
+                else if (day >= 15) weekId = 'week-3';
+                else if (day >= 8) weekId = 'week-2';
+                else weekId = 'week-1';
+            }
+
+            // Show the current week
+            document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
+            document.getElementById(weekId).classList.add('active');
+
+            // Sync dropdowns
+            document.getElementById('week-selector-main').value = weekId;
+            document.getElementById('week-selector-sidebar').value = weekId;
+        }
+
         // Initialize sidebar deliverables on page load
-        document.addEventListener('DOMContentLoaded', populateAllDeliverables);
+        document.addEventListener('DOMContentLoaded', function() {
+            populateAllDeliverables();
+            autoSelectCurrentWeek();
+        });
 
         function filterTasks(status) {
             const stats = document.querySelectorAll('.stat');
