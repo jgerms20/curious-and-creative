@@ -1878,7 +1878,7 @@
 
         <div class="sidebar-section">
             <div class="sidebar-section-title">Month</div>
-            <select class="month-selector" id="month-selector">
+            <select class="month-selector" id="month-selector" onchange="changeMonth(this.value)">
                 <option value="2026-02" selected>February 2026</option>
                 <option value="2026-03">March 2026</option>
                 <option value="2026-04">April 2026</option>
@@ -1997,11 +1997,11 @@
             </div>
             <h1>U&AI Progress Tracker</h1>
             <p class="subtitle">Weekly progress on AI visibility strategy and deliverables</p>
-            <p class="header-timestamp">Last updated: <span id="last-updated">February 9, 2026 @ 11:30 AM PST</span></p>
+            <p class="header-timestamp">Last updated: <span id="last-updated">February 16, 2026 @ 2:30 PM PST</span></p>
         </header>
 
         <div class="nav-selectors">
-            <select class="nav-selector" id="month-selector-main">
+            <select class="nav-selector" id="month-selector-main" onchange="changeMonth(this.value)">
                 <option value="2026-02" selected>February 2026</option>
                 <option value="2026-03">March 2026</option>
                 <option value="2026-04">April 2026</option>
@@ -4194,6 +4194,87 @@
             // Sync both dropdowns
             document.getElementById('week-selector-main').value = weekId;
             document.getElementById('week-selector-sidebar').value = weekId;
+        }
+
+        // Month selector functionality
+        function changeMonth(monthValue) {
+            // Sync both month selectors
+            document.getElementById('month-selector').value = monthValue;
+            document.getElementById('month-selector-main').value = monthValue;
+
+            // Update week selector options based on month
+            const weekSelectors = [
+                document.getElementById('week-selector-main'),
+                document.getElementById('week-selector-sidebar')
+            ];
+
+            const monthWeeks = {
+                '2026-02': [
+                    { value: 'week-1', label: 'Week 1: Feb 1-7' },
+                    { value: 'week-2', label: 'Week 2: Feb 8-14' },
+                    { value: 'week-3', label: 'Week 3: Feb 15-21' },
+                    { value: 'week-4', label: 'Week 4: Feb 22-28' }
+                ],
+                '2026-03': [
+                    { value: 'week-1-mar', label: 'Week 1: Mar 1-7' },
+                    { value: 'week-2-mar', label: 'Week 2: Mar 8-14' },
+                    { value: 'week-3-mar', label: 'Week 3: Mar 15-21' },
+                    { value: 'week-4-mar', label: 'Week 4: Mar 22-31' }
+                ],
+                '2026-04': [
+                    { value: 'week-1-apr', label: 'Week 1: Apr 1-7' },
+                    { value: 'week-2-apr', label: 'Week 2: Apr 8-14' },
+                    { value: 'week-3-apr', label: 'Week 3: Apr 15-21' },
+                    { value: 'week-4-apr', label: 'Week 4: Apr 22-30' }
+                ]
+            };
+
+            const weeks = monthWeeks[monthValue] || monthWeeks['2026-02'];
+
+            weekSelectors.forEach(selector => {
+                selector.innerHTML = weeks.map(w =>
+                    `<option value="${w.value}">${w.label}</option>`
+                ).join('');
+            });
+
+            // Show first week of selected month (or show "Coming Soon" message)
+            if (monthValue === '2026-02') {
+                // February has content - show week 1
+                showWeekFromDropdown('week-1');
+            } else {
+                // March/April don't have content yet - show a coming soon message
+                document.querySelectorAll('.week-content').forEach(w => w.classList.remove('active'));
+
+                // Check if coming-soon element exists, if not create it
+                let comingSoon = document.getElementById('coming-soon');
+                if (!comingSoon) {
+                    comingSoon = document.createElement('div');
+                    comingSoon.id = 'coming-soon';
+                    comingSoon.className = 'week-content';
+                    comingSoon.innerHTML = `
+                        <div class="week-header">
+                            <div>
+                                <h2 class="week-title">Coming Soon</h2>
+                                <p class="week-dates">${monthValue === '2026-03' ? 'March' : 'April'} 2026</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 40px; text-align: center;">
+                                <p style="font-size: 48px; margin-bottom: 15px;">📅</p>
+                                <h3 style="margin-bottom: 10px; color: var(--text);">No Data Yet</h3>
+                                <p style="color: var(--text-muted);">Tasks and priorities for ${monthValue === '2026-03' ? 'March' : 'April'} 2026 will appear here as they're created.</p>
+                                <button onclick="changeMonth('2026-02')" style="margin-top: 20px; padding: 10px 20px; background: var(--accent); border: none; border-radius: 6px; color: white; cursor: pointer; font-weight: 500;">← Back to February</button>
+                            </div>
+                        </div>
+                    `;
+                    document.querySelector('.container').insertBefore(comingSoon, document.querySelector('footer'));
+                } else {
+                    // Update the coming soon message for the selected month
+                    comingSoon.querySelector('.week-dates').textContent = `${monthValue === '2026-03' ? 'March' : 'April'} 2026`;
+                    comingSoon.querySelector('p:not(.week-dates)').textContent = `Tasks and priorities for ${monthValue === '2026-03' ? 'March' : 'April'} 2026 will appear here as they're created.`;
+                }
+                comingSoon.classList.add('active');
+            }
         }
 
         // Update priority status dropdown styling

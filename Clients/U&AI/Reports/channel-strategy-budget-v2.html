@@ -81,8 +81,8 @@
                 #3b82f6 0% 30%,
                 #6366f1 30% 55%,
                 #8b5cf6 55% 75%,
-                #a855f7 75% 90%,
-                #c084fc 90% 100%
+                #a855f7 75% 95%,
+                #c084fc 95% 100%
             );
             margin: 0 auto;
             cursor: pointer;
@@ -215,10 +215,12 @@
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            transition: opacity 0.2s;
         }
 
         .badge.paid { background: #3b82f6; color: #fff; }
         .badge.organic { background: #22c55e; color: #fff; }
+        .badge.dimmed { opacity: 0.3; }
 
         .channel-budget {
             font-size: 1.5em;
@@ -237,6 +239,19 @@
             margin-top: 15px;
         }
 
+        .tactic-section {
+            margin-bottom: 15px;
+            transition: all 0.2s;
+        }
+
+        .tactic-section.hidden {
+            display: none;
+        }
+
+        .tactic-section.dimmed {
+            opacity: 0.3;
+        }
+
         .tactic-label { color: #666; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
 
         .tactic-list { list-style: none; }
@@ -252,6 +267,57 @@
             position: absolute;
             left: 0;
             color: #3b82f6;
+        }
+
+        /* Recommendations Section */
+        .recommendations-section {
+            margin-top: 50px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid #3b82f6;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .recommendations-section h2 {
+            margin-top: 0;
+            color: #3b82f6;
+        }
+
+        .recommendation-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .recommendation-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+
+        .recommendation-icon {
+            width: 32px;
+            height: 32px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .recommendation-content h4 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .recommendation-content p {
+            color: #888;
+            font-size: 0.9em;
         }
 
         /* Scenario Section */
@@ -320,13 +386,13 @@
             </div>
             <div class="summary-card">
                 <div class="label">Paid Allocation</div>
-                <div class="value">$4,000</div>
-                <div class="note">80% of budget</div>
+                <div class="value">$4,250</div>
+                <div class="note">85% of budget</div>
             </div>
             <div class="summary-card">
                 <div class="label">Organic Investment</div>
-                <div class="value">$1,000</div>
-                <div class="note">20% (tools + content)</div>
+                <div class="value">$750</div>
+                <div class="note">15% (tools + content)</div>
             </div>
             <div class="summary-card">
                 <div class="label">Active Channels</div>
@@ -366,20 +432,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="legend-item" onclick="highlightChannel('youtube')">
+                <div class="legend-item" onclick="highlightChannel('google')">
                     <div class="legend-color" style="background: #8b5cf6;"></div>
                     <div class="legend-info">
-                        <div class="legend-name">YouTube + Shorts</div>
+                        <div class="legend-name">Google Ads</div>
                         <div class="legend-details">
                             <span class="legend-percent">20%</span>
                             <span class="legend-amount">$1,000/month</span>
                         </div>
                     </div>
                 </div>
-                <div class="legend-item" onclick="highlightChannel('google')">
+                <div class="legend-item" onclick="highlightChannel('youtube')">
                     <div class="legend-color" style="background: #a855f7;"></div>
                     <div class="legend-info">
-                        <div class="legend-name">Google Ads</div>
+                        <div class="legend-name">YouTube + Shorts</div>
                         <div class="legend-details">
                             <span class="legend-percent">15%</span>
                             <span class="legend-amount">$750/month</span>
@@ -420,19 +486,23 @@
                 <div class="channel-budget">$1,500<span class="percent">30%</span></div>
                 <div class="channel-strategy">Primary paid acquisition channel. Advantage+ for automated optimization. Organic for brand presence.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Advantage+ campaigns (2x performance vs manual)</li>
-                        <li>Video ads: founder content, client testimonials</li>
-                        <li>Retargeting website visitors</li>
-                        <li>Lookalike audiences from client list</li>
-                    </ul>
-                    <div class="tactic-label" style="margin-top: 15px;">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Daily stories: behind-the-scenes, wins</li>
-                        <li>Reels: repurpose TikTok content</li>
-                        <li>Carousel posts: educational AI content</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Advantage+ campaigns (2x performance vs manual)</li>
+                            <li>Video ads: founder content, client testimonials</li>
+                            <li>Retargeting website visitors</li>
+                            <li>Lookalike audiences from client list</li>
+                        </ul>
+                    </div>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Daily stories: behind-the-scenes, wins</li>
+                            <li>Reels: repurpose TikTok content</li>
+                            <li>Carousel posts: educational AI content</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -448,18 +518,46 @@
                 <div class="channel-budget">$1,250<span class="percent">25%</span></div>
                 <div class="channel-strategy">High-growth channel for founder personality content. Paid for reach, organic for authenticity.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Spark Ads: boost top organic posts</li>
-                        <li>In-feed ads targeting business owners</li>
-                        <li>Creator partnerships ($250-500/creator)</li>
-                    </ul>
-                    <div class="tactic-label" style="margin-top: 15px;">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Yarden/Eden on camera: hot takes, reactions</li>
-                        <li>Conference clips, event content</li>
-                        <li>AI news commentary (1-2x daily)</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Spark Ads: boost top organic posts</li>
+                            <li>In-feed ads targeting business owners</li>
+                            <li>Creator partnerships ($250-500/creator)</li>
+                        </ul>
+                    </div>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Yarden/Eden on camera: hot takes, reactions</li>
+                            <li>Conference clips, event content</li>
+                            <li>AI news commentary (1-2x daily)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Ads -->
+            <div class="channel-card" data-type="paid" data-channel="google">
+                <div class="channel-header">
+                    <span class="channel-name">Google Ads</span>
+                    <div class="channel-badges">
+                        <span class="badge paid">Paid</span>
+                    </div>
+                </div>
+                <div class="channel-budget">$1,000<span class="percent">20%</span></div>
+                <div class="channel-strategy">Search and Performance Max for high-intent leads. Bottom of funnel capture. Critical for capturing AI-search-anxious business owners.</div>
+                <div class="channel-tactics">
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Search: "AI marketing agency", "AI visibility", "ChatGPT marketing"</li>
+                            <li>Performance Max campaigns</li>
+                            <li>Remarketing lists for search ads (RLSA)</li>
+                            <li>Display retargeting for site visitors</li>
+                            <li>Brand campaigns to protect positioning</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -472,42 +570,25 @@
                         <span class="badge organic">Organic</span>
                     </div>
                 </div>
-                <div class="channel-budget">$1,000<span class="percent">20%</span></div>
+                <div class="channel-budget">$750<span class="percent">15%</span></div>
                 <div class="channel-strategy">Long-form for credibility, Shorts for discovery. Paid pre-roll for B2B targeting.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Pre-roll ads on business/marketing content</li>
-                        <li>Discovery ads for educational videos</li>
-                        <li>Retargeting across Google ecosystem</li>
-                    </ul>
-                    <div class="tactic-label" style="margin-top: 15px;">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Long-form: talks, deep dives, case studies</li>
-                        <li>Shorts: repurpose TikTok (3-5x/week)</li>
-                        <li>SEO-optimized titles and descriptions</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Google Ads -->
-            <div class="channel-card" data-type="paid" data-channel="google">
-                <div class="channel-header">
-                    <span class="channel-name">Google Ads</span>
-                    <div class="channel-badges">
-                        <span class="badge paid">Paid</span>
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Pre-roll ads on business/marketing content</li>
+                            <li>Discovery ads for educational videos</li>
+                            <li>Retargeting across Google ecosystem</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="channel-budget">$750<span class="percent">15%</span></div>
-                <div class="channel-strategy">Search and Performance Max for high-intent leads. Bottom of funnel capture.</div>
-                <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Search: "AI marketing agency", "AI visibility"</li>
-                        <li>Performance Max campaigns</li>
-                        <li>Remarketing lists for search ads (RLSA)</li>
-                        <li>Display retargeting for site visitors</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Long-form: talks, deep dives, case studies</li>
+                            <li>Shorts: repurpose TikTok (3-5x/week)</li>
+                            <li>SEO-optimized titles and descriptions</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -523,17 +604,21 @@
                 <div class="channel-budget">$250<span class="percent">5%</span></div>
                 <div class="channel-strategy">B2B presence. InMail from founders personally, not company page.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Sponsored InMail from Eden/Yarden</li>
-                        <li>Retargeting website visitors</li>
-                    </ul>
-                    <div class="tactic-label" style="margin-top: 15px;">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Thought leadership posts (2-3x/week)</li>
-                        <li>Engage in AI/marketing conversations</li>
-                        <li>Company page for credibility</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Sponsored InMail from Eden/Yarden</li>
+                            <li>Retargeting website visitors</li>
+                        </ul>
+                    </div>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Thought leadership posts (2-3x/week)</li>
+                            <li>Engage in AI/marketing conversations</li>
+                            <li>Company page for credibility</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -548,13 +633,15 @@
                 <div class="channel-budget">$0<span class="percent">Organic</span></div>
                 <div class="channel-strategy">Weekly digest for ~350 subscribers. Nurture leads, establish expertise.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Weekly send (Monday 10am)</li>
-                        <li>AI news curated for business owners</li>
-                        <li>Spotlight story + supporting news</li>
-                        <li>CTA: "Check Your AI Visibility"</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Weekly send (Monday 10am)</li>
+                            <li>AI news curated for business owners</li>
+                            <li>Spotlight story + supporting news</li>
+                            <li>CTA: "Check Your AI Visibility"</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -569,13 +656,15 @@
                 <div class="channel-budget">$0<span class="percent">Organic</span></div>
                 <div class="channel-strategy">Response platform, text-heavy. Engage in real-time AI conversations.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Reply to AI news, hot takes</li>
-                        <li>Thread breakdowns of AI developments</li>
-                        <li>Quote tweets with commentary</li>
-                        <li>Build founder personal brands</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Reply to AI news, hot takes</li>
+                            <li>Thread breakdowns of AI developments</li>
+                            <li>Quote tweets with commentary</li>
+                            <li>Build founder personal brands</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -590,12 +679,14 @@
                 <div class="channel-budget">$0<span class="percent">Organic</span></div>
                 <div class="channel-strategy">Guest appearances for visibility and authority building.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Pitch Yarden/Eden as guests</li>
-                        <li>Target: AI, startup, marketing podcasts</li>
-                        <li>Repurpose clips for social</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Pitch Yarden/Eden as guests</li>
+                            <li>Target: AI, startup, marketing podcasts</li>
+                            <li>Repurpose clips for social</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -611,16 +702,20 @@
                 <div class="channel-budget">$150<span class="percent">3%</span></div>
                 <div class="channel-strategy">Test channel for niche targeting. Subreddits: smallbusiness, entrepreneur, marketing.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Promoted posts in business subreddits</li>
-                        <li>Test $150/month, scale if working</li>
-                    </ul>
-                    <div class="tactic-label" style="margin-top: 15px;">Organic Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Genuinely helpful answers</li>
-                        <li>Share expertise, not sales pitches</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Promoted posts in business subreddits</li>
+                            <li>Test $150/month, scale if working</li>
+                        </ul>
+                    </div>
+                    <div class="tactic-section" data-tactic="organic">
+                        <div class="tactic-label">Organic Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Genuinely helpful answers</li>
+                            <li>Share expertise, not sales pitches</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -635,12 +730,49 @@
                 <div class="channel-budget">$100<span class="percent">2%</span></div>
                 <div class="channel-strategy">Unconventional tactics for local awareness. High creativity, low cost.</div>
                 <div class="channel-tactics">
-                    <div class="tactic-label">Paid Strategy</div>
-                    <ul class="tactic-list">
-                        <li>Flyers at WeWork, coworking spaces</li>
-                        <li>Local business meetup sponsorships</li>
-                        <li>Creative stunts (document for content)</li>
-                    </ul>
+                    <div class="tactic-section" data-tactic="paid">
+                        <div class="tactic-label">Paid Strategy</div>
+                        <ul class="tactic-list">
+                            <li>Flyers at WeWork, coworking spaces</li>
+                            <li>Local business meetup sponsorships</li>
+                            <li>Creative stunts (document for content)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations-section">
+            <h2>💡 Recommendations</h2>
+            <div class="recommendation-list">
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">1</div>
+                    <div class="recommendation-content">
+                        <h4>Prioritize Google Ads for High-Intent Leads</h4>
+                        <p>With $1,000/month, focus on bottom-of-funnel keywords like "AI marketing agency" and "AI visibility consultant". These searchers are actively looking for solutions—capture them before competitors.</p>
+                    </div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">2</div>
+                    <div class="recommendation-content">
+                        <h4>Use TikTok Spark Ads to Amplify Winners</h4>
+                        <p>Don't create separate ad content. Identify organic posts that perform well (5K+ views), then boost them with Spark Ads. This maintains authenticity while scaling reach.</p>
+                    </div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">3</div>
+                    <div class="recommendation-content">
+                        <h4>Test Meta Advantage+ Before Manual Campaigns</h4>
+                        <p>Meta's AI-driven Advantage+ campaigns consistently outperform manual targeting by 2x. Start here, then layer in manual campaigns for specific audiences.</p>
+                    </div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">4</div>
+                    <div class="recommendation-content">
+                        <h4>Week 3: Evaluate & Reallocate</h4>
+                        <p>After 2 weeks of data, identify your best-performing channel. Consider shifting 20% budget from lowest performer to highest. Track cost-per-lead, not just impressions.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -650,43 +782,44 @@
             <h2>Budget Scenarios</h2>
             <div class="scenario-grid">
                 <div class="scenario-card">
-                    <div class="scenario-title">Current Split (Balanced)</div>
-                    <div class="scenario-desc">80% paid, 20% organic tools. Good for growth + brand building.</div>
+                    <div class="scenario-title">✓ Current Split (Balanced)</div>
+                    <div class="scenario-desc">85% paid, 15% organic tools. Optimized for growth + brand building.</div>
                     <div class="scenario-split">
                         <div class="split-item"><span class="name">Meta</span><span class="amount">$1,500</span></div>
                         <div class="split-item"><span class="name">TikTok</span><span class="amount">$1,250</span></div>
-                        <div class="split-item"><span class="name">YouTube</span><span class="amount">$1,000</span></div>
-                        <div class="split-item"><span class="name">Google</span><span class="amount">$750</span></div>
+                        <div class="split-item"><span class="name">Google</span><span class="amount">$1,000</span></div>
+                        <div class="split-item"><span class="name">YouTube</span><span class="amount">$750</span></div>
                         <div class="split-item"><span class="name">Other</span><span class="amount">$500</span></div>
                     </div>
                 </div>
                 <div class="scenario-card">
-                    <div class="scenario-title">Aggressive Growth</div>
-                    <div class="scenario-desc">90% paid. Maximize lead gen, reduce organic investment.</div>
+                    <div class="scenario-title">Google-Heavy (High Intent)</div>
+                    <div class="scenario-desc">Double down on search if CPL proves strong. Best for bottom-funnel capture.</div>
                     <div class="scenario-split">
-                        <div class="split-item"><span class="name">Meta</span><span class="amount">$2,000</span></div>
-                        <div class="split-item"><span class="name">TikTok</span><span class="amount">$1,500</span></div>
-                        <div class="split-item"><span class="name">YouTube</span><span class="amount">$1,000</span></div>
-                        <div class="split-item"><span class="name">Google</span><span class="amount">$500</span></div>
-                    </div>
-                </div>
-                <div class="scenario-card">
-                    <div class="scenario-title">TikTok Focused</div>
-                    <div class="scenario-desc">Double down on TikTok if early tests show strong ROAS.</div>
-                    <div class="scenario-split">
-                        <div class="split-item"><span class="name">TikTok</span><span class="amount">$2,500</span></div>
+                        <div class="split-item"><span class="name">Google</span><span class="amount">$1,500</span></div>
                         <div class="split-item"><span class="name">Meta</span><span class="amount">$1,500</span></div>
-                        <div class="split-item"><span class="name">Google</span><span class="amount">$750</span></div>
+                        <div class="split-item"><span class="name">TikTok</span><span class="amount">$1,000</span></div>
+                        <div class="split-item"><span class="name">YouTube</span><span class="amount">$750</span></div>
                         <div class="split-item"><span class="name">Other</span><span class="amount">$250</span></div>
                     </div>
                 </div>
                 <div class="scenario-card">
+                    <div class="scenario-title">TikTok Focused</div>
+                    <div class="scenario-desc">Double down on TikTok if Spark Ads show strong ROAS. Best for awareness.</div>
+                    <div class="scenario-split">
+                        <div class="split-item"><span class="name">TikTok</span><span class="amount">$2,000</span></div>
+                        <div class="split-item"><span class="name">Meta</span><span class="amount">$1,500</span></div>
+                        <div class="split-item"><span class="name">Google</span><span class="amount">$1,000</span></div>
+                        <div class="split-item"><span class="name">Other</span><span class="amount">$500</span></div>
+                    </div>
+                </div>
+                <div class="scenario-card">
                     <div class="scenario-title">Brand Building</div>
-                    <div class="scenario-desc">60% paid, 40% content creation. Long-term play.</div>
+                    <div class="scenario-desc">60% paid, 40% content creation. Long-term play for authority.</div>
                     <div class="scenario-split">
                         <div class="split-item"><span class="name">Meta</span><span class="amount">$1,000</span></div>
                         <div class="split-item"><span class="name">TikTok</span><span class="amount">$1,000</span></div>
-                        <div class="split-item"><span class="name">YouTube</span><span class="amount">$1,000</span></div>
+                        <div class="split-item"><span class="name">Google</span><span class="amount">$1,000</span></div>
                         <div class="split-item"><span class="name">Content</span><span class="amount">$1,500</span></div>
                         <div class="split-item"><span class="name">Other</span><span class="amount">$500</span></div>
                     </div>
@@ -700,20 +833,58 @@
     </div>
 
     <script>
+        let currentFilter = 'all';
+
         function filterChannels(type) {
+            currentFilter = type;
+
             // Update toggle buttons
             document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
 
-            // Filter cards
+            // Process each card
             document.querySelectorAll('.channel-card').forEach(card => {
                 const cardType = card.dataset.type;
+                const hasPaid = cardType.includes('paid');
+                const hasOrganic = cardType.includes('organic');
+
+                // Get all badges and tactic sections in this card
+                const paidBadge = card.querySelector('.badge.paid');
+                const organicBadge = card.querySelector('.badge.organic');
+                const paidSections = card.querySelectorAll('.tactic-section[data-tactic="paid"]');
+                const organicSections = card.querySelectorAll('.tactic-section[data-tactic="organic"]');
+
                 if (type === 'all') {
+                    // Show everything
                     card.classList.remove('hidden');
-                } else if (cardType.includes(type)) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
+                    if (paidBadge) paidBadge.classList.remove('dimmed');
+                    if (organicBadge) organicBadge.classList.remove('dimmed');
+                    paidSections.forEach(s => { s.classList.remove('hidden'); s.classList.remove('dimmed'); });
+                    organicSections.forEach(s => { s.classList.remove('hidden'); s.classList.remove('dimmed'); });
+                } else if (type === 'paid') {
+                    if (hasPaid) {
+                        // Show card, highlight paid, dim organic
+                        card.classList.remove('hidden');
+                        if (paidBadge) paidBadge.classList.remove('dimmed');
+                        if (organicBadge) organicBadge.classList.add('dimmed');
+                        paidSections.forEach(s => { s.classList.remove('hidden'); s.classList.remove('dimmed'); });
+                        organicSections.forEach(s => s.classList.add('hidden'));
+                    } else {
+                        // Hide card entirely (organic only)
+                        card.classList.add('hidden');
+                    }
+                } else if (type === 'organic') {
+                    if (hasOrganic) {
+                        // Show card, highlight organic, dim paid
+                        card.classList.remove('hidden');
+                        if (paidBadge) paidBadge.classList.add('dimmed');
+                        if (organicBadge) organicBadge.classList.remove('dimmed');
+                        paidSections.forEach(s => s.classList.add('hidden'));
+                        organicSections.forEach(s => { s.classList.remove('hidden'); s.classList.remove('dimmed'); });
+                    } else {
+                        // Hide card entirely (paid only)
+                        card.classList.add('hidden');
+                    }
                 }
             });
         }
@@ -734,7 +905,7 @@
         }
 
         function showBudgetDetails() {
-            alert('Monthly Budget Breakdown:\n\nMeta (FB+IG): $1,500 (30%)\nTikTok: $1,250 (25%)\nYouTube: $1,000 (20%)\nGoogle Ads: $750 (15%)\nOther: $500 (10%)\n\nTotal: $5,000/month');
+            alert('Monthly Budget Breakdown:\n\nMeta (FB+IG): $1,500 (30%)\nTikTok: $1,250 (25%)\nGoogle Ads: $1,000 (20%)\nYouTube: $750 (15%)\nOther: $500 (10%)\n\nTotal: $5,000/month');
         }
     </script>
 </body>
