@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Tracking Setup Guide - U&AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 50px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #9ca3af;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #ffffff;
+            margin: 40px 0 20px 0;
+            border-left: 4px solid #2563eb;
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #60a5fa;
+            margin: 25px 0 15px 0;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .quick-wins {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            border: none;
+            padding: 30px;
+        }
+
+        .quick-wins h2 {
+            border-left-color: #60a5fa;
+            color: #ffffff;
+        }
+
+        .quick-wins ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .quick-wins li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        .quick-wins li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .field-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .field-item {
+            background-color: #0f0f0f;
+            border: 1px solid #2a2a2a;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .field-label {
+            font-weight: 600;
+            color: #60a5fa;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .field-type {
+            color: #9ca3af;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .field-example {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #1a1a1a;
+            border-left: 3px solid #2563eb;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #a0a0a0;
+        }
+
+        .dropdown-options {
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+        .dropdown-options li {
+            color: #d1d5db;
+            padding: 3px 0;
+        }
+
+        .utm-example {
+            background-color: #0f0f0f;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .utm-platform {
+            font-weight: 600;
+            color: #60a5fa;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .utm-code {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #86efac;
+            word-wrap: break-word;
+            margin: 10px 0;
+            border-left: 3px solid #2563eb;
+        }
+
+        .utm-breakdown {
+            margin-top: 15px;
+            padding-left: 20px;
+            color: #9ca3af;
+            font-size: 0.95em;
+        }
+
+        .utm-breakdown li {
+            padding: 4px 0;
+        }
+
+        .utm-breakdown code {
+            background-color: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #60a5fa;
+            font-family: 'Courier New', monospace;
+        }
+
+        .workflow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+            padding: 30px;
+            background-color: #0f0f0f;
+            border-radius: 8px;
+        }
+
+        .stage {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .stage-name {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .stage-action {
+            font-size: 0.85em;
+            color: #d1d5db;
+            margin-top: 8px;
+        }
+
+        .arrow {
+            color: #60a5fa;
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+
+        .info-box {
+            background-color: #1e293b;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box h4 {
+            color: #60a5fa;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .info-box p {
+            color: #d1d5db;
+            line-height: 1.8;
+        }
+
+        .template-preview {
+            background-color: #0f0f0f;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .template-preview h4 {
+            color: #60a5fa;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: #1a1a1a;
+            color: #60a5fa;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #2563eb;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #2a2a2a;
+            color: #d1d5db;
+        }
+
+        tr:hover {
+            background-color: #1a1a1a;
+        }
+
+        .highlight {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .workflow {
+                flex-direction: column;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lead Tracking Setup Guide</h1>
+            <p class="subtitle">U&AI - Comprehensive template for tracking leads across all channels</p>
+        </header>
+
+        <!-- Quick Wins Section -->
+        <div class="card quick-wins">
+            <h2>Quick Wins - Start Today</h2>
+            <ul>
+                <li>Create a Google Sheet with the fields below</li>
+                <li>Add UTM parameters to ALL ad links immediately</li>
+                <li>Manual entry for Week 3, plan automation for Week 4+</li>
+                <li>Review leads daily and update status pipeline</li>
+                <li>Track source performance weekly to optimize ad spend</li>
+            </ul>
+        </div>
+
+        <!-- Lead Entry Fields Section -->
+        <section>
+            <h2>1. Lead Entry Fields</h2>
+            <p style="color: #9ca3af; margin-bottom: 20px;">Capture these data points for every lead that comes in:</p>
+
+            <div class="field-list">
+                <div class="field-item">
+                    <div class="field-label">Name</div>
+                    <div class="field-type">Text field</div>
+                    <div class="field-example">John Smith</div>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Company</div>
+                    <div class="field-type">Text field</div>
+                    <div class="field-example">Smith Marketing LLC</div>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Email</div>
+                    <div class="field-type">Email field</div>
+                    <div class="field-example">john@smithmarketing.com</div>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Phone</div>
+                    <div class="field-type">Phone field</div>
+                    <div class="field-example">(555) 123-4567</div>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Source</div>
+                    <div class="field-type">Dropdown menu</div>
+                    <ul class="dropdown-options">
+                        <li>Meta Ads</li>
+                        <li>Google Ads</li>
+                        <li>TikTok Ads</li>
+                        <li>LinkedIn Ads</li>
+                        <li>Newsletter</li>
+                        <li>Referral</li>
+                        <li>Organic</li>
+                        <li>Cold Outreach</li>
+                    </ul>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Campaign</div>
+                    <div class="field-type">Text field (for paid sources)</div>
+                    <div class="field-example">cold_biz_owners_jan</div>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Date</div>
+                    <div class="field-type">Date field</div>
+                    <div class="field-example">2026-02-16</div>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Status</div>
+                    <div class="field-type">Dropdown menu (pipeline stage)</div>
+                    <ul class="dropdown-options">
+                        <li>New</li>
+                        <li>Contacted</li>
+                        <li>Qualified</li>
+                        <li>Meeting Booked</li>
+                        <li>Closed Won</li>
+                        <li>Closed Lost</li>
+                    </ul>
+                </div>
+
+                <div class="field-item">
+                    <div class="field-label">Notes</div>
+                    <div class="field-type">Text area</div>
+                    <div class="field-example">Interested in AI marketing automation. Mentioned budget of $2-3k/mo. Follow up Friday.</div>
+                </div>
+            </div>
+
+            <!-- Google Sheet Template Preview -->
+            <div class="template-preview">
+                <h4>Example Google Sheet Structure:</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Source</th>
+                            <th>Campaign</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-02-16</td>
+                            <td>John Smith</td>
+                            <td>Smith Marketing</td>
+                            <td>john@smithmktg.com</td>
+                            <td>(555) 123-4567</td>
+                            <td class="highlight">Meta Ads</td>
+                            <td>cold_biz_owners</td>
+                            <td class="highlight">Contacted</td>
+                            <td>Sent intro email, awaiting response</td>
+                        </tr>
+                        <tr>
+                            <td>2026-02-15</td>
+                            <td>Sarah Johnson</td>
+                            <td>TechCo</td>
+                            <td>sarah@techco.io</td>
+                            <td>(555) 987-6543</td>
+                            <td class="highlight">Google Ads</td>
+                            <td>ai_marketing</td>
+                            <td class="highlight">Meeting Booked</td>
+                            <td>Call scheduled for 2/20 at 2pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- UTM Parameters Section -->
+        <section>
+            <h2>2. UTM Parameter Guide</h2>
+
+            <div class="info-box">
+                <h4>What are UTM Parameters?</h4>
+                <p>UTM parameters are tags you add to the end of URLs to track where traffic comes from. When someone clicks a link with UTMs, analytics tools (like Google Analytics) can tell you exactly which ad, campaign, or channel drove that visitor.</p>
+                <p style="margin-top: 10px;"><strong>Why they matter:</strong> Without UTMs, all your paid traffic might show up as "direct" or "referral" in analytics. UTMs let you see which specific campaigns are generating leads and sales.</p>
+            </div>
+
+            <h3>UTM Structure Breakdown:</h3>
+            <div class="card">
+                <ul class="utm-breakdown">
+                    <li><code>utm_source</code> = Where the traffic comes from (meta, google, tiktok, newsletter)</li>
+                    <li><code>utm_medium</code> = Type of traffic (paid, organic, email, social)</li>
+                    <li><code>utm_campaign</code> = Specific campaign name (cold_biz_owners, ai_marketing)</li>
+                    <li><code>utm_content</code> = Variation or ad creative (static_image, video_ad, carousel)</li>
+                    <li><code>utm_term</code> = Keyword for search ads (optional, mainly for Google Ads)</li>
+                </ul>
+            </div>
+
+            <h3>Platform-Specific UTM Examples:</h3>
+
+            <!-- Meta Ads -->
+            <div class="utm-example">
+                <div class="utm-platform">Meta Ads (Facebook/Instagram)</div>
+                <div class="utm-code">https://uandai.com/consultation?utm_source=meta&utm_medium=paid&utm_campaign=cold_biz_owners&utm_content=static_image</div>
+                <ul class="utm-breakdown">
+                    <li><code>utm_source=meta</code> - Traffic from Meta/Facebook</li>
+                    <li><code>utm_medium=paid</code> - Paid advertising</li>
+                    <li><code>utm_campaign=cold_biz_owners</code> - Campaign targeting cold business owners</li>
+                    <li><code>utm_content=static_image</code> - Specific ad creative type</li>
+                </ul>
+                <p style="margin-top: 15px; color: #9ca3af; font-size: 0.9em;"><strong>Where to use:</strong> In your Meta Ads Manager, paste this full URL in the "Website URL" field for each ad.</p>
+            </div>
+
+            <!-- Google Ads -->
+            <div class="utm-example">
+                <div class="utm-platform">Google Ads</div>
+                <div class="utm-code">https://uandai.com/consultation?utm_source=google&utm_medium=cpc&utm_campaign=ai_marketing&utm_term=ai_marketing_agency</div>
+                <ul class="utm-breakdown">
+                    <li><code>utm_source=google</code> - Traffic from Google</li>
+                    <li><code>utm_medium=cpc</code> - Cost-per-click advertising</li>
+                    <li><code>utm_campaign=ai_marketing</code> - AI marketing campaign</li>
+                    <li><code>utm_term=ai_marketing_agency</code> - Keyword that triggered the ad</li>
+                </ul>
+                <p style="margin-top: 15px; color: #9ca3af; font-size: 0.9em;"><strong>Where to use:</strong> In Google Ads, add this to the "Final URL" field or use auto-tagging (enable in account settings).</p>
+            </div>
+
+            <!-- TikTok Ads -->
+            <div class="utm-example">
+                <div class="utm-platform">TikTok Ads</div>
+                <div class="utm-code">https://uandai.com/consultation?utm_source=tiktok&utm_medium=paid&utm_campaign=business_owners&utm_content=video_hook1</div>
+                <ul class="utm-breakdown">
+                    <li><code>utm_source=tiktok</code> - Traffic from TikTok</li>
+                    <li><code>utm_medium=paid</code> - Paid advertising</li>
+                    <li><code>utm_campaign=business_owners</code> - Campaign targeting business owners</li>
+                    <li><code>utm_content=video_hook1</code> - First video hook variation</li>
+                </ul>
+                <p style="margin-top: 15px; color: #9ca3af; font-size: 0.9em;"><strong>Where to use:</strong> In TikTok Ads Manager, paste in the "Destination URL" field.</p>
+            </div>
+
+            <!-- LinkedIn Ads -->
+            <div class="utm-example">
+                <div class="utm-platform">LinkedIn Ads</div>
+                <div class="utm-code">https://uandai.com/consultation?utm_source=linkedin&utm_medium=paid&utm_campaign=b2b_decision_makers&utm_content=carousel</div>
+                <ul class="utm-breakdown">
+                    <li><code>utm_source=linkedin</code> - Traffic from LinkedIn</li>
+                    <li><code>utm_medium=paid</code> - Paid advertising</li>
+                    <li><code>utm_campaign=b2b_decision_makers</code> - Campaign targeting B2B decision makers</li>
+                    <li><code>utm_content=carousel</code> - Carousel ad format</li>
+                </ul>
+                <p style="margin-top: 15px; color: #9ca3af; font-size: 0.9em;"><strong>Where to use:</strong> In LinkedIn Campaign Manager, add to the "Destination URL" field.</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="utm-example">
+                <div class="utm-platform">Newsletter / Email</div>
+                <div class="utm-code">https://uandai.com/consultation?utm_source=newsletter&utm_medium=email&utm_campaign=weekly_feb16</div>
+                <ul class="utm-breakdown">
+                    <li><code>utm_source=newsletter</code> - Traffic from newsletter</li>
+                    <li><code>utm_medium=email</code> - Email channel</li>
+                    <li><code>utm_campaign=weekly_feb16</code> - Specific newsletter edition</li>
+                </ul>
+                <p style="margin-top: 15px; color: #9ca3af; font-size: 0.9em;"><strong>Where to use:</strong> Add to any links in your email newsletters or campaigns.</p>
+            </div>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <h4>Pro Tip: UTM Builder</h4>
+                <p>Use Google's free Campaign URL Builder to generate UTM links easily: <span style="color: #60a5fa;">ga-dev-tools.google/campaign-url-builder/</span></p>
+                <p style="margin-top: 10px;">Or create a simple spreadsheet with formulas to auto-generate UTM URLs for all your campaigns.</p>
+            </div>
+        </section>
+
+        <!-- Status Workflow Section -->
+        <section>
+            <h2>3. Status Workflow Visual</h2>
+            <p style="color: #9ca3af; margin-bottom: 20px;">Move leads through these stages as you nurture them:</p>
+
+            <div class="workflow">
+                <div class="stage">
+                    <div class="stage-name">New</div>
+                    <div class="stage-action">Lead just came in</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <div class="stage-name">Contacted</div>
+                    <div class="stage-action">First outreach sent</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <div class="stage-name">Qualified</div>
+                    <div class="stage-action">Good fit confirmed</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <div class="stage-name">Meeting Booked</div>
+                    <div class="stage-action">Call scheduled</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="stage">
+                    <div class="stage-name">Closed Won/Lost</div>
+                    <div class="stage-action">Final outcome</div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 30px;">
+                <h3>Expected Actions at Each Stage:</h3>
+                <div style="margin-top: 20px;">
+                    <div style="margin-bottom: 20px;">
+                        <strong style="color: #60a5fa;">New:</strong>
+                        <ul style="margin-left: 20px; margin-top: 8px; color: #d1d5db;">
+                            <li>Log lead in Google Sheet with all details</li>
+                            <li>Review source/campaign to understand context</li>
+                            <li>Research company/person if B2B</li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <strong style="color: #60a5fa;">Contacted:</strong>
+                        <ul style="margin-left: 20px; margin-top: 8px; color: #d1d5db;">
+                            <li>Send personalized intro email within 24 hours</li>
+                            <li>Follow up via phone if number provided</li>
+                            <li>Note contact method and response in Notes field</li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <strong style="color: #60a5fa;">Qualified:</strong>
+                        <ul style="margin-left: 20px; margin-top: 8px; color: #d1d5db;">
+                            <li>Confirm budget, timeline, and decision-making authority</li>
+                            <li>Assess if services align with their needs</li>
+                            <li>Propose next steps (discovery call, proposal)</li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <strong style="color: #60a5fa;">Meeting Booked:</strong>
+                        <ul style="margin-left: 20px; margin-top: 8px; color: #d1d5db;">
+                            <li>Send calendar invite with Zoom/meeting link</li>
+                            <li>Prepare custom agenda based on their needs</li>
+                            <li>Send reminder 24 hours before call</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong style="color: #60a5fa;">Closed Won/Lost:</strong>
+                        <ul style="margin-left: 20px; margin-top: 8px; color: #d1d5db;">
+                            <li><strong>Won:</strong> Send contract, onboard client, celebrate!</li>
+                            <li><strong>Lost:</strong> Note reason in Notes, add to nurture list for future</li>
+                            <li>Both: Update source performance data for optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Section -->
+        <section style="margin-top: 50px;">
+            <h2>Implementation Checklist</h2>
+            <div class="card">
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="sheet" style="margin-right: 10px;">
+                    <label for="sheet" style="color: #d1d5db; font-size: 1.05em;">Create Google Sheet with all fields above</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="utms" style="margin-right: 10px;">
+                    <label for="utms" style="color: #d1d5db; font-size: 1.05em;">Add UTM parameters to all active ad campaigns</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="test" style="margin-right: 10px;">
+                    <label for="test" style="color: #d1d5db; font-size: 1.05em;">Test UTM links to confirm they track correctly</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="process" style="margin-right: 10px;">
+                    <label for="process" style="color: #d1d5db; font-size: 1.05em;">Set up daily process to check for new leads</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="response" style="margin-right: 10px;">
+                    <label for="response" style="color: #d1d5db; font-size: 1.05em;">Create response templates for each lead source</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="review" style="margin-right: 10px;">
+                    <label for="review" style="color: #d1d5db; font-size: 1.05em;">Schedule weekly review of lead sources and conversion rates</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="automate" style="margin-right: 10px;">
+                    <label for="automate" style="color: #d1d5db; font-size: 1.05em;">Plan automation for Week 4+ (Zapier, Make, or custom solution)</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps -->
+        <section style="margin-top: 50px; margin-bottom: 50px;">
+            <h2>Next Steps for Automation</h2>
+            <div class="info-box">
+                <h4>Week 3: Manual Tracking</h4>
+                <p>Focus on building the habit and understanding the data. Manual entry helps you learn what information matters most.</p>
+            </div>
+            <div class="info-box">
+                <h4>Week 4+: Automation Options</h4>
+                <p><strong>Option 1:</strong> Zapier/Make to connect form submissions directly to Google Sheets</p>
+                <p style="margin-top: 8px;"><strong>Option 2:</strong> CRM integration (HubSpot, Pipedrive, etc.) with automated lead capture</p>
+                <p style="margin-top: 8px;"><strong>Option 3:</strong> Custom webhook solution for advanced tracking</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
