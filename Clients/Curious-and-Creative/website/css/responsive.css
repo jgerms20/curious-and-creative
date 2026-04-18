@@ -1,0 +1,578 @@
+/* Responsive enhancements and mobile-first adjustments */
+
+@media (max-width: 1024px) {
+    :root {
+        --spacing-2xl: 5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --spacing-2xl: 3rem;
+        --spacing-xl: 2rem;
+        --spacing-lg: 1.5rem;
+    }
+
+    /* Navigation Mobile */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(10, 14, 39, 0.98);
+        backdrop-filter: blur(10px);
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        min-height: 80vh;
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    /* Grid Layouts */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid,
+    .model-grid,
+    .inspiration-list,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About Section */
+    .about-brief {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 4rem var(--spacing-md) var(--spacing-lg);
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    /* Mission Section */
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-statement {
+        font-size: 1.1rem;
+        padding-left: var(--spacing-md);
+        margin: var(--spacing-lg) 0;
+    }
+
+    .mission-visual {
+        min-height: 300px;
+    }
+
+    .accent-4, .accent-5 {
+        display: none;
+    }
+
+    /* Timeline Mobile */
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+
+    .timeline-marker {
+        left: -15px;
+    }
+
+    .timeline-content {
+        padding: var(--spacing-md);
+    }
+
+    /* Network Section */
+    .network-content {
+        grid-template-columns: 1fr;
+    }
+
+    .network-map {
+        height: 300px;
+        margin-top: var(--spacing-lg);
+    }
+
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form,
+    .contact-info-wrapper {
+        padding: 0;
+    }
+
+    /* Filter Buttons */
+    .filter-container {
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        flex: 1;
+        min-width: 80px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    /* Sections */
+    .featured-projects,
+    .about-brief,
+    .vision-section,
+    .story-section,
+    .model-section,
+    .team-section,
+    .network-section,
+    .projects-portfolio,
+    .contact-section,
+    .faq-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .cta-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+        margin: var(--spacing-lg) auto;
+    }
+
+    .section-header h2,
+    .section-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    /* Cards */
+    .project-card,
+    .team-card,
+    .portfolio-item,
+    .value-card,
+    .model-card,
+    .inspiration-item,
+    .contact-card {
+        padding: var(--spacing-md);
+    }
+
+    .project-image,
+    .portfolio-image,
+    .team-photo {
+        height: 200px;
+    }
+
+    .team-bio,
+    .project-description,
+    .portfolio-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --spacing-2xl: 2rem;
+        --spacing-xl: 1.5rem;
+        --spacing-lg: 1rem;
+        --spacing-md: 1rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Navigation */
+    .nav-container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .logo {
+        gap: var(--spacing-xs);
+    }
+
+    .logo-text {
+        font-size: 1rem;
+        display: block;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 60vh;
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .hero-title {
+        font-size: 1.3rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-cta {
+        gap: var(--spacing-sm);
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    /* Project Cards */
+    .project-card,
+    .team-card,
+    .portfolio-item {
+        border-radius: var(--radius-md);
+    }
+
+    .project-image,
+    .portfolio-image,
+    .team-photo {
+        height: 150px;
+    }
+
+    .project-info,
+    .team-info,
+    .portfolio-info {
+        padding: var(--spacing-sm);
+    }
+
+    /* Forms */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.6rem var(--spacing-sm);
+        font-size: 0.95rem;
+    }
+
+    .filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    /* About Stats */
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat {
+        padding: var(--spacing-md);
+    }
+
+    .stat h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Footer */
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 0.95rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: var(--spacing-sm);
+    }
+
+    .social-links a {
+        font-size: 1.1rem;
+    }
+
+    /* Sections */
+    .page-header {
+        padding: 2.5rem var(--spacing-sm) var(--spacing-lg);
+    }
+
+    .section-header,
+    .featured-projects,
+    .about-brief,
+    .vision-section,
+    .story-section,
+    .model-section,
+    .team-section,
+    .network-section,
+    .projects-portfolio,
+    .contact-section,
+    .faq-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .cta-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+        margin: var(--spacing-lg) auto;
+    }
+
+    /* Text */
+    .mission-statement {
+        font-size: 1rem;
+        padding-left: var(--spacing-sm);
+        border-left: 2px solid var(--accent-teal);
+    }
+
+    .network-highlight {
+        padding: var(--spacing-md);
+    }
+
+    .contact-card,
+    .faq-item,
+    .value-card,
+    .model-card {
+        padding: var(--spacing-md);
+    }
+
+    /* Timeline */
+    .timeline-item {
+        margin-left: 25px;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .timeline-marker {
+        left: -12px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .timeline-content {
+        padding: var(--spacing-md);
+    }
+
+    .timeline-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.85rem;
+    }
+
+    /* Network Map */
+    .network-map {
+        height: 200px;
+    }
+
+    /* Meta Tags */
+    .meta-tag {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.65rem;
+    }
+
+    /* Inspiration */
+    .inspiration-note {
+        font-size: 0.85rem;
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper h2,
+    .contact-info-wrapper h2 {
+        font-size: 1.2rem;
+    }
+
+    .form-success {
+        padding: var(--spacing-md);
+    }
+
+    .form-success h3 {
+        font-size: 1.1rem;
+    }
+
+    .social-icon {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .contact-highlight h3 {
+        font-size: 1rem;
+    }
+
+    .contact-highlight li {
+        font-size: 0.8rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    /* FAQ */
+    .faq-item h3 {
+        font-size: 0.95rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .faq-item p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: none; }
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+    }
+}
+
+/* Dark mode (already primary) and light mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--primary-dark);
+        color: var(--text-primary);
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hamburger,
+    .cta-section,
+    .footer,
+    .hero-visual {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    a {
+        color: blue;
+    }
+}
