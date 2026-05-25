@@ -1,4 +1,4 @@
-# Quick Start Guide - Claude Agency Marketing Team
+# Quick Start Guide - Curious & Creative Marketing Team
 
 ## 30-Second Overview
 

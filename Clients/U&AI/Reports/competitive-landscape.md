@@ -387,4 +387,4 @@ No competitor is currently combining:
 
 ---
 
-*Report prepared for U&AI by Claude Agency | Updated February 2, 2026*
+*Report prepared for U&AI by Curious & Creative | Updated February 2, 2026*
