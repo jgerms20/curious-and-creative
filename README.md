@@ -1,4 +1,4 @@
-# Marketing Team - Claude Agency
+# Marketing Team - Curious & Creative
 
 A comprehensive marketing team structure with specialized AI agents organized by department. This system enables sophisticated multi-agent orchestration for complex marketing workflows.
 
@@ -87,7 +87,7 @@ Specific skills for each agent including:
 ## 📁 Directory Structure
 
 ```
-Claude Agency/
+Curious & Creative/
 ├── README.md (this file)
 ├── ROUTING-RULES.md (agent delegation guide)
 ├── AGENT-SKILLS.md (reusable capabilities)

@@ -70,5 +70,5 @@ Meanwhile, keep an eye on the "agent swarm" trend. If multiple AI agents can coo
 
 ---
 
-*This digest was curated by Claude Agency for U&AI clients.*
+*This digest was curated by Curious & Creative for U&AI clients.*
 *Questions? Reply to this email or reach out to your account manager.*

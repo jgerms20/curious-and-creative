@@ -1,4 +1,4 @@
-# Claude Agency - Project Summary
+# Curious & Creative - Project Summary
 
 ## What You Have
 
@@ -9,7 +9,7 @@ A complete **multi-agent marketing team** with routing rules, skills framework, 
 ## 📁 Complete File Structure
 
 ```
-Claude Agency/
+Curious & Creative/
 │
 ├── 📘 Core Documentation
 │   ├── README.md                    # Main overview and navigation hub

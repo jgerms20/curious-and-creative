@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #f7f3ec;
+  --ink: #161513;
+  --terracotta: #c25a3c;
+  --sage: #7e8b7a;
+  --ember: #7a1f1f;
+  --glow: #e2a857;
+}
+
+html, body {
+  background-color: var(--ivory);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+}
+
+.font-serif {
+  font-feature-settings: "ss01";
+}
+
+.hairline {
+  border-top: 1px solid rgba(22, 21, 19, 0.18);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+.kindling-theme {
+  background-color: #1b1110;
+  color: #f4e6d3;
+}
+
+.kindling-theme a {
+  color: #e2a857;
+}
