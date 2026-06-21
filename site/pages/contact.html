@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Curious &amp; Creative</title>
-  <meta name="description" content="Reach out to Joshua German and Janel Moore — guest pitches, project inquiries, venture conversations, or just a hello." />
-  <meta property="og:title" content="Contact — Curious & Creative" />
-  <meta property="og:description" content="Reach out to Joshua German and Janel Moore — guest pitches, project inquiries, venture conversations, or just a hello." />
+  <meta name="description" content="Send us a guest pitch, project inquiry, venture idea, or just a hello — we read every note and answer like humans." />
+  <meta property="og:title" content="Contact — Curious &amp; Creative" />
+  <meta property="og:description" content="Send us a guest pitch, project inquiry, venture idea, or just a hello — we read every note and answer like humans." />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/tokens.css" />
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/components.css" />
@@ -21,8 +21,7 @@
 
   <header class="nav" role="banner">
     <a href="../index.html" class="nav-brand" aria-label="Curious and Creative — Home">
-      <span class="amp" aria-hidden="true">&amp;</span>
-      <span>Curious &amp; Creative</span>
+      <span class="c-green">Curious</span><span class="amp">&amp;</span><span class="c-pink">Creative</span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -31,7 +30,6 @@
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="founders.html">Founders</a></li>
         <li><a href="shows.html">Shows</a></li>
         <li><a href="ventures.html">Ventures</a></li>
         <li><a href="contact.html" class="is-active">Contact</a></li>
@@ -41,35 +39,37 @@
 
   <main id="main">
 
-    <!-- PAGE HEAD -->
+    <!-- PAGE HEADER -->
     <section class="page-head">
       <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h1 style="margin-top:1rem;">Say hello.</h1>
+        <p class="eyebrow">Say hello</p>
+        <h1>Let's make <span class="c-pink">something.</span></h1>
         <p class="lede">Guest pitches, project inquiries, venture conversations, or a thoughtful hello — all welcome. We read every note.</p>
       </div>
     </section>
 
-    <!-- SPLIT: FORM + INFO -->
+    <!-- SPLIT: FORM + CONTACT INFO -->
     <section class="section">
       <div class="container">
         <div class="split">
+
+          <!-- LEFT: CONTACT FORM -->
           <form class="form reveal" data-form="contact" novalidate>
             <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
+              <label for="c-name">Name</label>
+              <input id="c-name" type="text" name="name" required />
             </div>
             <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
+              <label for="c-email">Email</label>
+              <input id="c-email" type="email" name="email" required />
             </div>
             <div class="field">
-              <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" />
+              <label for="c-subject">Subject</label>
+              <input id="c-subject" type="text" name="subject" />
             </div>
             <div class="field">
-              <label for="type">Inquiry type</label>
-              <select id="type" name="type">
+              <label for="c-type">What's this about?</label>
+              <select id="c-type" name="type">
                 <option>General</option>
                 <option>Project / Brand work</option>
                 <option>Guest pitch</option>
@@ -79,65 +79,65 @@
               </select>
             </div>
             <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" required></textarea>
             </div>
-            <button class="btn btn-primary" type="submit">Send <span class="arrow" aria-hidden="true">→</span></button>
-            <div class="form-success">Thanks. We'll be in touch shortly.</div>
+            <button class="btn btn-primary" type="submit">Send it <span class="arrow" aria-hidden="true">→</span></button>
+            <div class="form-success" role="status">Thanks! We'll be in touch soon.</div>
           </form>
 
-          <div class="reveal delay-1" style="display:flex; flex-direction:column; gap: var(--space-5);">
+          <!-- RIGHT: OTHER WAYS TO REACH US -->
+          <div class="reveal delay-1" style="display:flex; flex-direction:column; gap:1.5rem;">
             <p class="eyebrow">Other ways to reach us</p>
 
             <div>
               <h3>By inbox</h3>
-              <p><a class="link-arrow" href="mailto:hello@curiousandcreative.studio">hello@curiousandcreative.studio <span class="arrow">↗</span></a></p>
+              <p style="color:var(--ink-soft); font-weight:600;">hello@curiousandcreative.studio</p>
             </div>
 
             <div>
               <h3>On LinkedIn</h3>
-              <div style="display:flex; flex-direction:column; gap: var(--space-3); margin-top: var(--space-3);">
-                <a class="link-arrow" target="_blank" rel="noopener" href="https://www.linkedin.com/in/joshua-german-729634265/">Joshua German <span class="arrow">↗</span></a>
-                <a class="link-arrow" target="_blank" rel="noopener" href="https://www.linkedin.com/in/janel-moore/">Janel Moore <span class="arrow">↗</span></a>
+              <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.5rem;">
+                <a class="link-arrow" href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">Joshua German <span class="arrow">↗</span></a>
+                <a class="link-arrow" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">Janel Moore <span class="arrow">↗</span></a>
               </div>
             </div>
 
             <div>
               <h3>Across the web</h3>
-              <div style="display:flex; flex-direction:column; gap: var(--space-3); margin-top: var(--space-3);">
-                <a class="link-arrow" target="_blank" rel="noopener" href="https://joshuamgerman.com">joshuamgerman.com <span class="arrow">↗</span></a>
-                <a class="link-arrow" target="_blank" rel="noopener" href="https://www.youtube.com/@EclecticPolymath54">Eclectic Polymath <span class="arrow">↗</span></a>
-                <a class="link-arrow" target="_blank" rel="noopener" href="https://www.youtube.com/@Approachable.A.I">Approachable AI <span class="arrow">↗</span></a>
-                <a class="link-arrow" target="_blank" rel="noopener" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw">Aspiring Abolitionist <span class="arrow">↗</span></a>
+              <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.5rem;">
+                <a class="link-arrow" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com <span class="arrow">↗</span></a>
+                <a class="link-arrow" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Eclectic Polymath <span class="arrow">↗</span></a>
+                <a class="link-arrow" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Approachable AI <span class="arrow">↗</span></a>
+                <a class="link-arrow" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Aspiring Abolitionist <span class="arrow">↗</span></a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- CLOSING STRIP -->
-    <section class="section hairline">
+    <!-- CLOSING MANIFESTO -->
+    <section class="section section-mint">
       <div class="container">
-        <p class="manifesto reveal">
-          We answer like <span class="em">humans</span>, because we are.
-        </p>
+        <p class="manifesto reveal">We answer like <span class="em-pink">humans</span>, because we <span class="em-green">are.</span></p>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <p class="eyebrow">Curious &amp; Creative</p>
-          <p style="margin-top:1rem; max-width:32ch; color:var(--mist);">A creative studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
+          <p class="footer-brand-text">Curious <span class="amp">&amp;</span> Creative</p>
+          <p style="max-width:32ch; color:rgba(255,255,255,0.85); font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
         </div>
         <div>
           <h4>Explore</h4>
           <ul>
             <li><a href="about.html">About</a></li>
-            <li><a href="founders.html">Founders</a></li>
             <li><a href="shows.html">Shows</a></li>
             <li><a href="ventures.html">Ventures</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -148,8 +148,8 @@
           <ul>
             <li><a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a></li>
             <li><a href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://www.youtube.com/@EclecticPolymath54" target="_blank" rel="noopener">Eclectic Polymath</a></li>
-            <li><a href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Approachable AI</a></li>
+            <li><a href="shows.html">Eclectic Polymath</a></li>
+            <li><a href="shows.html">Approachable AI</a></li>
           </ul>
         </div>
         <div>
@@ -160,10 +160,10 @@
           </ul>
         </div>
       </div>
-      <div class="footer-mark" aria-hidden="true">&amp;</div>
+      <div class="footer-mark" aria-hidden="true">Curious &amp; Creative</div>
       <div class="footer-bottom">
-        <span>© 2025 Curious &amp; Creative</span>
-        <span>Built curiously.</span>
+        <span>&copy; 2025 Curious &amp; Creative</span>
+        <span>Made with curiosity ✦</span>
       </div>
     </div>
   </footer>
