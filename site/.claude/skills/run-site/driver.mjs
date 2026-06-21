@@ -24,11 +24,13 @@ const shotDir = resolve(here, 'screenshots');
 await mkdir(shotDir, { recursive: true });
 
 const PAGES = {
-  home:     '/',
-  about:    '/pages/about.html',
-  shows:    '/pages/shows.html',
-  ventures: '/pages/ventures.html',
-  contact:  '/pages/contact.html',
+  home:       '/',
+  about:      '/pages/about.html',
+  studio:     '/pages/studio.html',
+  shows:      '/pages/shows.html',
+  inventions: '/pages/inventions.html',
+  art:        '/pages/art.html',
+  contact:    '/pages/contact.html',
 };
 
 const pick = process.argv[2];
@@ -38,6 +40,9 @@ if (pick && !PAGES[pick]) {
   process.exit(2);
 }
 
+const THEME = process.env.THEME === 'dark' ? 'dark' : 'light';
+const shotSuffix = THEME === 'dark' ? '.dark.png' : '.png';
+
 const browser = await chromium.launch({ args: ['--no-sandbox'] });
 const ctx = await browser.newContext({
   viewport: { width: 1280, height: 900 },
@@ -45,7 +50,13 @@ const ctx = await browser.newContext({
   // A full-page screenshot doesn't scroll, so they'd stay invisible.
   // Reduced-motion mode disables the gate (see css/base.css @media block).
   reducedMotion: 'reduce',
+  colorScheme: THEME,
 });
+// Seed localStorage so the inline theme-init script in each page's <head>
+// picks up the requested theme before any CSS paints.
+await ctx.addInitScript((t) => {
+  try { localStorage.setItem('cc-theme', t); } catch (e) {}
+}, THEME);
 let fail = 0;
 
 // Expected, non-fatal noise in this sandbox:
@@ -89,7 +100,7 @@ for (const [name, path] of Object.entries(todo)) {
   await page.waitForLoadState('networkidle', { timeout: 8000 }).catch(() => {});
 
   const title = await page.title();
-  const shot = resolve(shotDir, `${name}.png`);
+  const shot = resolve(shotDir, `${name}${shotSuffix}`);
   await page.screenshot({ path: shot, fullPage: true });
 
   const status = real.length ? '✗' : (noise.length ? '✓ (noise)' : '✓');

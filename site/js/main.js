@@ -1,6 +1,20 @@
 (() => {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // --- THEME TOGGLE ----------------------------------------------
+  const themeToggle = document.querySelector('.theme-toggle');
+  const applyTheme = (t) => {
+    document.documentElement.setAttribute('data-theme', t);
+    themeToggle?.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    themeToggle?.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+  };
+  applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+  themeToggle?.addEventListener('click', () => {
+    const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    try { localStorage.setItem('cc-theme', next); } catch (e) {}
+  });
+
   // --- NAV --------------------------------------------------------
   const nav = document.querySelector('.nav');
   const navToggle = document.querySelector('.nav-toggle');

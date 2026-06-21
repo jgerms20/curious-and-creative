@@ -1,10 +1,10 @@
 :root {
   /* ============ PALETTE — playful, Cosmo & Wanda ============ */
-  --cream: #FFFCF5;        /* page background */
-  --cream-2: #FFF6EA;      /* warm section */
-  --mint: #E9F8E6;         /* green-tint section */
-  --blush: #FFEAF4;        /* pink-tint section */
-  --sky: #E7F6FB;          /* blue-tint section */
+  --cream: #FFFCF5;
+  --cream-2: #FFF6EA;
+  --mint: #E9F8E6;
+  --blush: #FFEAF4;
+  --sky: #E7F6FB;
 
   --green: #57B84A;
   --green-deep: #2F9039;
@@ -13,16 +13,26 @@
   --pink-deep: #D11F77;
   --gold: #FFC93C;
   --gold-deep: #F4A92B;
-  --grape: #8E6FE0;        /* sparkle accent */
+  --grape: #8E6FE0;
   --sky-blue: #46C7E8;
 
-  --ink: #3A2B3F;          /* warm near-black text */
-  --ink-soft: #7A6A77;     /* muted text */
-  --white: #FFFFFF;
-  --outline: #2A2030;      /* sticker outline */
+  --ink: #3A2B3F;
+  --ink-soft: #7A6A77;
+  --white: #FFFFFF;     /* "always white" — used for text on colored buttons/footer */
+  --surface: #FFFFFF;   /* card / input bg — flips in dark mode */
+  --outline: #2A2030;
 
   --hairline: rgba(58, 43, 63, 0.12);
   --hairline-strong: rgba(58, 43, 63, 0.22);
+
+  --nav-bg: rgba(255, 252, 245, 0.82);
+  --noise-glow: 0.10;
+
+  /* sticker = hard offset like a die-cut sticker */
+  --sticker: 4px 4px 0 var(--outline);
+  --sticker-lg: 6px 6px 0 var(--outline);
+  --shadow-soft: 0 14px 34px -14px rgba(58, 43, 63, 0.28);
+  --shadow-lift: 0 22px 48px -16px rgba(58, 43, 63, 0.32);
 
   /* ============ TYPE ============ */
   --font-display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
@@ -48,22 +58,12 @@
   --space-9: 6rem;
   --space-10: 8rem;
 
-  /* ============ RADII — big and round ============ */
+  /* ============ RADII ============ */
   --r-sm: 12px;
   --r-md: 18px;
   --r-lg: 28px;
   --r-xl: 40px;
   --r-pill: 999px;
-
-  /* ============ SHADOWS — soft + sticker ============ */
-  --shadow-soft: 0 14px 34px -14px rgba(58, 43, 63, 0.28);
-  --shadow-lift: 0 22px 48px -16px rgba(58, 43, 63, 0.32);
-  --shadow-pink: 0 16px 40px -14px rgba(236, 63, 142, 0.45);
-  --shadow-green: 0 16px 40px -14px rgba(87, 184, 74, 0.45);
-  --shadow-gold: 0 16px 40px -14px rgba(255, 201, 60, 0.5);
-  /* sticker = hard offset like a die-cut sticker */
-  --sticker: 4px 4px 0 var(--outline);
-  --sticker-lg: 6px 6px 0 var(--outline);
 
   /* ============ MOTION ============ */
   --t-fast: 160ms;
@@ -75,4 +75,34 @@
 
   --content-max: 1240px;
   --content-pad: clamp(1.25rem, 4vw, 2.5rem);
+
+  color-scheme: light;
+}
+
+/* ============ DARK MODE ============ */
+:root[data-theme="dark"] {
+  --cream: #161020;
+  --cream-2: #1E172A;
+  --mint: #1A2A1C;
+  --blush: #2A1726;
+  --sky: #122029;
+
+  --ink: #FFEEDC;
+  --ink-soft: #B5A9B3;
+  --white: #FFFFFF;     /* still white — for text-on-color */
+  --surface: #241B2E;   /* card / input bg flips to dark elevated */
+  --outline: #FFEEDC;
+
+  --hairline: rgba(255, 238, 220, 0.12);
+  --hairline-strong: rgba(255, 238, 220, 0.22);
+
+  --nav-bg: rgba(22, 16, 32, 0.82);
+  --noise-glow: 0.18;
+
+  --sticker: 4px 4px 0 var(--outline);
+  --sticker-lg: 6px 6px 0 var(--outline);
+  --shadow-soft: 0 14px 34px -14px rgba(0, 0, 0, 0.6);
+  --shadow-lift: 0 22px 48px -16px rgba(0, 0, 0, 0.7);
+
+  color-scheme: dark;
 }

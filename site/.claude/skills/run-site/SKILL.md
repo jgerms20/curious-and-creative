@@ -27,12 +27,16 @@ python3 -m http.server 8765 >/tmp/site-server.log 2>&1 &
 echo $! > /tmp/site-server.pid
 timeout 10 bash -c 'until curl -sf http://localhost:8765/ >/dev/null; do sleep 0.2; done'
 
-# Smoke all 5 pages (exit 0 if no real errors)
+# Smoke all 7 pages (exit 0 if no real errors)
 node .claude/skills/run-site/driver.mjs
 
 # Single page only
 node .claude/skills/run-site/driver.mjs about
-# Valid names: home about shows ventures contact
+# Valid names: home about studio shows inventions art contact
+
+# Dark mode — seeds localStorage + emulates prefers-color-scheme: dark.
+# Writes <page>.dark.png alongside the light <page>.png.
+THEME=dark node .claude/skills/run-site/driver.mjs
 
 # Show "noise" (expected cert errors, expected 404s)
 VERBOSE=1 node .claude/skills/run-site/driver.mjs home
@@ -44,7 +48,7 @@ BASE=http://localhost:9999 node .claude/skills/run-site/driver.mjs
 kill $(cat /tmp/site-server.pid) 2>/dev/null
 ```
 
-Screenshots land at `.claude/skills/run-site/screenshots/<page>.png` (full-page, 1280px wide). Read the PNG with the Read tool to actually see it.
+Screenshots land at `.claude/skills/run-site/screenshots/<page>.png` (full-page, 1280px wide). Dark-mode runs write `<page>.dark.png` in the same dir. Read the PNG with the Read tool to actually see it.
 
 Exit code: `0` = all good, `1` = a real JS error or a broken local asset was reported on at least one page. Cross-origin cert errors and the documented founder-photo 404s never fail the run.
 
