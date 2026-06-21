@@ -1,85 +1,56 @@
 # Curious & Creative — Design System
 
-Bespoke. Editorial-cinematic. Built for the hub of Joshua German & Janel Moore.
-
-## Tone of voice
-Confident, warm, culturally fluent. Magazine-grade type, dark canvas, ember accent.
-Reference caliber: Proximity Media · Monkeypaw · HOORAE · Sixthirtysix.
+Playful. Bubbly. Sticker-bright. The hub of Joshua German & Janel Moore.
+Vibe: Cosmo & Wanda / Fairly OddParents energy — magical and fun, but not silly.
+Inspired by the C&C logo (green "Curious", pink "Creative", gold accents, sparkles).
 
 ## Palette
-| Token            | Hex       | Use                                   |
-|------------------|-----------|---------------------------------------|
-| `--ink`          | `#0A0908` | Page background                       |
-| `--ink-2`        | `#13110F` | Surface                               |
-| `--ink-3`        | `#1A1612` | Elevated surface                      |
-| `--eggshell`     | `#F2E8D5` | Primary text                          |
-| `--mist`         | `#8B8378` | Muted text                            |
-| `--ember`        | `#E94F37` | Primary accent (CTAs, signature mark) |
-| `--ember-soft`   | `#FFB099` | Hover / glow tint                     |
-| `--cobalt`       | `#3D5AFE` | Secondary punctuation accent          |
-| `--hairline`     | `rgba(242, 232, 213, 0.08)` | Borders         |
+| Token         | Hex       | Use                                  |
+|---------------|-----------|--------------------------------------|
+| `--cream`     | `#FFFCF5` | Page background                      |
+| `--mint`      | `#E9F8E6` | Green-tint section                   |
+| `--blush`     | `#FFEAF4` | Pink-tint section                    |
+| `--sky`       | `#E7F6FB` | Blue-tint section                    |
+| `--green`     | `#57B84A` | Primary (Curious) — buttons, footer  |
+| `--green-deep`| `#2F9039` | Green text / brand                   |
+| `--pink`      | `#EC3F8E` | Primary accent (Creative) — CTAs     |
+| `--pink-deep` | `#D11F77` | Pink text / links                    |
+| `--gold`      | `#FFC93C` | Ampersand, sparkles, highlights      |
+| `--grape`     | `#8E6FE0` | Sparkle accent                       |
+| `--sky-blue`  | `#46C7E8` | Sparkle accent                       |
+| `--ink`       | `#3A2B3F` | Body text (warm near-black)          |
+| `--outline`   | `#2A2030` | Sticker outlines (2.5–3px)           |
 
 ## Type
-- Display: **Fraunces** (variable, opsz + soft axes) — editorial, characterful
-- Body: **Inter Tight** — modern, slightly condensed
-- Mono: **JetBrains Mono** — metadata, eyebrows
+- Display: **Fredoka** (rounded, chunky, friendly) — headings, nav, buttons, chips
+- Body: **Nunito** (rounded sans, very readable) — paragraphs, weight 500–800
+- Loaded via Google Fonts.
 
-Loaded via Google Fonts.
+## Signature look
+- **Sticker style**: thick `--outline` borders + hard offset shadow (`--sticker: 4px 4px 0`).
+- **Big round radii**: cards 28px, buttons pill.
+- **Sparkles**: 4-point star SVGs floating in the hero (gold/pink/green/grape/sky).
+- **Tilted gold marquee** of disciplines.
+- **Bouncy motion**: spring/bounce easing; reveals scale + rise; buttons press in on click; ampersand wobbles.
+- **Colored wordmark**: green "Curious" + gold "&" + pink "Creative".
+- **Green footer** with gold headings.
 
-### Ramp
-| Role     | Size                            | Family / Weight       |
-|----------|---------------------------------|-----------------------|
-| Hero     | `clamp(4rem, 11vw, 10rem)`      | Fraunces 600, lh 0.92 |
-| H1       | `clamp(2.5rem, 5vw, 4.5rem)`    | Fraunces 600, lh 1.05 |
-| H2       | `clamp(1.75rem, 3vw, 2.75rem)`  | Fraunces 600, lh 1.1  |
-| H3       | `1.375rem`                      | Inter Tight 600       |
-| Body     | `1.0625rem`                     | Inter Tight 400, lh 1.6 |
-| Small    | `0.875rem`                      | Inter Tight 400       |
-| Eyebrow  | `0.75rem`                       | JetBrains Mono 500, ucase, tracking 0.18em |
+## Pages (6)
+1. `index.html` — Home: kinetic hero, marquee, Under-the-Umbrella tiles, shows preview, CTA
+2. `pages/about.html` — story + mission + **the duo (Joshua & Janel, with photo slots)** + SC origin + what we do
+3. `pages/shows.html` — Spotify embed players (Aspiring Abolitionist, Eclectic Polymath, Dominate the Decade) + Approachable AI (YouTube) + C&C podcast logo slot (coming soon)
+4. `pages/ventures.html` — Kindling lead card + pipeline (coming soon)
+5. `pages/contact.html` — playful form + reach-us rail
+6. (Founders merged into About — no separate page)
 
-## Space scale (rem)
-`0.25 · 0.5 · 0.75 · 1 · 1.5 · 2 · 3 · 4 · 6 · 8 · 12 · 16`
+## Reusable classes (see css/components.css)
+nav · hero · sparkle · marquee · section-head(.center) · card · card-cover · chip(.chip-status .live/.dev/.soon) · founder(.founder-portrait/.initials/.photo-hint) · logo-slot · manifesto · cta-block(.pink/.mint/.gold) · footer · form · page-head · reveal(.delay-1..4) · umbrella · split · principles
 
-## Radii
-`xs 4px · sm 8px · md 12px · lg 20px · pill 999px`
+## Founder photos
+Drop `assets/joshua.jpg` and `assets/janel.jpg` (square). Until then, the `<img onerror="this.remove()">` falls back to playful initials (JG / JM).
 
-## Shadows
-- `--shadow-soft`: `0 20px 60px -20px rgba(0, 0, 0, 0.6)`
-- `--shadow-ember`: `0 0 0 1px rgba(233, 79, 55, 0.35), 0 20px 60px -10px rgba(233, 79, 55, 0.25)`
-
-## Motion
-- Fast `180ms`, Base `320ms`, Slow `600ms`, Story `900ms`
-- Standard ease: `cubic-bezier(0.2, 0.7, 0.2, 1)`
-- Spring: `cubic-bezier(0.34, 1.56, 0.64, 1)`
-
-### Reveal vocabulary
-- **Fade-rise**: opacity 0 → 1, translateY 24px → 0, 600ms
-- **Letter cascade**: hero words stagger in (40ms between words)
-- **Marquee**: disciplines strip, 40s linear infinite
-- **Hover-tilt**: cards lift 4px + subtle 1.5deg rotation
-- **Ampersand pulse**: signature `&` mark rotates / pulses on view
-- `prefers-reduced-motion` disables all of the above except instant opacity transitions
-
-## Components
-- **Nav** — fixed top, blur-glass backdrop, ampersand mark on left, 6 links on right, mobile hamburger
-- **Hero** — full-bleed, kinetic display type, eyebrow eyebrow, scroll cue
-- **Section header** — eyebrow + display H2 + lede
-- **Card (show)** — cover slot, eyebrow (Podcast / YouTube), title, host line, platform chips, link arrow
-- **Card (venture)** — title, status chip (Live / In Dev / Coming Soon), one-liner, link arrow
-- **Card (founder)** — portrait slot, name in display, role line, bio paragraph, link rail (LinkedIn / Site / Socials)
-- **Marquee** — full-bleed scrolling disciplines (Direction · Production · Strategy · Story · Sound · Brand · Policy · AI)
-- **Footer** — wordmark + ampersand mark + 3 columns + copyright line
-- **Chips** — pill, mono caps, status variants (live / dev / soon)
-- **Buttons** — primary (ember), ghost (hairline border), arrow link (text + animated arrow)
-- **Form** — labeled inputs, ember focus ring, hairline border
-
-## Page layouts (brief)
-- **Home**: kinetic hero → marquee → Under the Umbrella (3-up: Shows / Ventures / Founders) → manifesto pull-quote → CTA → footer
-- **About**: hero ("Two curious minds. One canvas.") → mission → USC origin → what C&C does → manifesto principles
-- **Founders**: side-by-side bio for Joshua + Janel with portrait slots, real employers, real links
-- **Shows**: grid — Aspiring Abolitionist · Eclectic Polymath · Approachable AI · Dominate the Decade (Janel featured) · C&C Podcast (Coming Soon w/ logo slot)
-- **Ventures**: Kindling (lead, ember accent) + 2 Coming Soon cards
-- **Contact**: split — left form, right "Other ways to reach us" (emails, socials, location)
-
-## Signature mark
-The ampersand `&` set in Fraunces 600 italic is the brand mark. Used as nav-left logo, footer mark, favicon, and section dividers. Pulses on view (scale 1 → 1.06 → 1, 1.8s ease-in-out).
+## Show links (verified with founders)
+- Aspiring Abolitionist — Spotify `7natfWFnBgakjLLZcEDZaw`
+- Eclectic Polymath — Spotify `3dlagzJ0jiWLTB9mF3y069`
+- Approachable AI — YouTube `@Approachable.A.I`
+- Dominate the Decade (Janel guest) — Spotify `3IiC15tFfb1rHoDm9R6Zxp` (TODO: exact episode link)
