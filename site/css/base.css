@@ -11,10 +11,10 @@ body {
   min-height: 100vh;
   background: var(--cream);
   background-image:
-    radial-gradient(circle at 12% 18%, rgba(255, 201, 60, 0.10), transparent 26%),
-    radial-gradient(circle at 88% 12%, rgba(236, 63, 142, 0.08), transparent 24%),
-    radial-gradient(circle at 78% 82%, rgba(87, 184, 74, 0.10), transparent 28%),
-    radial-gradient(circle at 22% 88%, rgba(142, 111, 224, 0.07), transparent 26%);
+    radial-gradient(circle at 12% 18%, rgba(255, 201, 60, var(--noise-glow)), transparent 26%),
+    radial-gradient(circle at 88% 12%, rgba(236, 63, 142, var(--noise-glow)), transparent 24%),
+    radial-gradient(circle at 78% 82%, rgba(87, 184, 74, var(--noise-glow)), transparent 28%),
+    radial-gradient(circle at 22% 88%, rgba(142, 111, 224, var(--noise-glow)), transparent 26%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: var(--font-body);
@@ -24,6 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background var(--t-base) var(--ease-std), color var(--t-base) var(--ease-std);
 }
 
 img, svg { display: block; max-width: 100%; }

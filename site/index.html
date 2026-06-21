@@ -4,11 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Curious &amp; Creative — A playground for curious minds</title>
-  <meta name="description" content="Curious & Creative is the creative studio of Joshua German and Janel Moore — a playful hub for podcasts, ventures, and culture-shaping ideas." />
+  <meta name="description" content="Curious & Creative is the creative studio of Joshua German and Janel Moore — a playful hub for shows, inventions, art, and ideas worth chasing." />
   <meta property="og:title" content="Curious & Creative" />
   <meta property="og:description" content="A playground for curious minds and bold ventures." />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('cc-theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -28,11 +37,18 @@
     </button>
     <nav id="primary-nav" aria-label="Primary">
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
         <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/studio.html">Studio</a></li>
         <li><a href="pages/shows.html">Shows</a></li>
-        <li><a href="pages/ventures.html">Ventures</a></li>
+        <li><a href="pages/inventions.html">Inventions</a></li>
+        <li><a href="pages/art.html">Art</a></li>
         <li><a href="pages/contact.html">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -56,12 +72,25 @@
           <span class="word">for big ideas.</span>
         </h1>
         <p class="hero-lede">
-          We're Joshua German and Janel Moore — and this is our studio. A home for the podcasts we host,
-          the ventures we build, and the curious little experiments in between.
+          We're Joshua German and Janel Moore — and this is our studio. A home for the shows we host,
+          the inventions we build, the art we make, and the curious little experiments in between.
         </p>
         <div class="hero-cues">
           <a class="btn btn-primary" href="pages/shows.html">Hear our shows <span class="arrow" aria-hidden="true">→</span></a>
           <a class="btn btn-white" href="pages/about.html">Meet us <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="social-rail" aria-label="Find us elsewhere">
+          <a class="chip" href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V10.5H5.67v7.84h2.67Zm-1.34-9a1.55 1.55 0 1 0 0-3.09 1.55 1.55 0 0 0 0 3.09Zm11.33 9v-4.3c0-2.32-1.24-3.4-2.9-3.4a2.5 2.5 0 0 0-2.27 1.25V10.5H10.5v7.84h2.67v-4.36c0-1.13.78-1.7 1.57-1.7s1.51.4 1.51 1.74v4.32h2.07Z"/></svg>
+            Joshua
+          </a>
+          <a class="chip" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V10.5H5.67v7.84h2.67Zm-1.34-9a1.55 1.55 0 1 0 0-3.09 1.55 1.55 0 0 0 0 3.09Zm11.33 9v-4.3c0-2.32-1.24-3.4-2.9-3.4a2.5 2.5 0 0 0-2.27 1.25V10.5H10.5v7.84h2.67v-4.36c0-1.13.78-1.7 1.57-1.7s1.51.4 1.51 1.74v4.32h2.07Z"/></svg>
+            Janel
+          </a>
+          <a class="chip" href="https://joshuamgerman.com" target="_blank" rel="noopener">
+            joshuamgerman.com
+          </a>
         </div>
       </div>
     </section>
@@ -69,8 +98,8 @@
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Curiosity <span class="dot">✦</span> Stories <span class="dot">✦</span> Podcasts <span class="dot">✦</span> Ventures <span class="dot">✦</span> Strategy <span class="dot">✦</span> Policy <span class="dot">✦</span> AI <span class="dot">✦</span> Play <span class="dot">✦</span></span>
-        <span>Curiosity <span class="dot">✦</span> Stories <span class="dot">✦</span> Podcasts <span class="dot">✦</span> Ventures <span class="dot">✦</span> Strategy <span class="dot">✦</span> Policy <span class="dot">✦</span> AI <span class="dot">✦</span> Play <span class="dot">✦</span></span>
+        <span>Curiosity <span class="dot">✦</span> Stories <span class="dot">✦</span> Podcasts <span class="dot">✦</span> Art <span class="dot">✦</span> Strategy <span class="dot">✦</span> Policy <span class="dot">✦</span> AI <span class="dot">✦</span> Play <span class="dot">✦</span></span>
+        <span>Curiosity <span class="dot">✦</span> Stories <span class="dot">✦</span> Podcasts <span class="dot">✦</span> Art <span class="dot">✦</span> Strategy <span class="dot">✦</span> Policy <span class="dot">✦</span> AI <span class="dot">✦</span> Play <span class="dot">✦</span></span>
       </div>
     </div>
 
@@ -82,27 +111,33 @@
             <p class="eyebrow">The whole world</p>
             <h2>Everything under one curious umbrella.</h2>
           </div>
-          <p class="lede">Curious &amp; Creative is the home base. Below it: the shows we host, the ventures we're dreaming up, and the two people behind it all.</p>
+          <p class="lede">Curious &amp; Creative is the home base. Below it: the studio services we offer, the shows we host, the inventions we're building, and the art we make.</p>
         </div>
 
-        <div class="umbrella">
-          <a href="pages/shows.html" class="umbrella-tile reveal">
+        <div class="umbrella four-up">
+          <a href="pages/studio.html" class="umbrella-tile reveal">
+            <span class="count">✦ Studio</span>
+            <h3>Strategy, story, and a steady hand.</h3>
+            <p>Creative consulting and production for brands and founders who want a partner — not a vendor.</p>
+            <span class="link-arrow">See what we do <span class="arrow">→</span></span>
+          </a>
+          <a href="pages/shows.html" class="umbrella-tile reveal delay-1">
             <span class="count">✦ Shows</span>
             <h3>Podcasts &amp; videos worth queueing.</h3>
-            <p>Aspiring Abolitionist, Eclectic Polymath, Approachable AI — plus the C&amp;C podcast on the way.</p>
-            <span class="link-arrow">Hear them <span class="arrow">→</span></span>
+            <p>Aspiring Abolitionist, Eclectic Polymath, Approachable AI — and the C&amp;C podcast coming soon.</p>
+            <span class="link-arrow">Press play <span class="arrow">→</span></span>
           </a>
-          <a href="pages/ventures.html" class="umbrella-tile reveal delay-1">
-            <span class="count">✦ Ventures</span>
+          <a href="pages/inventions.html" class="umbrella-tile reveal delay-2">
+            <span class="count">✦ Inventions</span>
             <h3>Kindling is first. More are brewing.</h3>
-            <p>The umbrella is built to hold the businesses we keep dreaming up.</p>
-            <span class="link-arrow">See ventures <span class="arrow">→</span></span>
+            <p>Curious &amp; Creative is built to hold the businesses we keep dreaming up.</p>
+            <span class="link-arrow">See what's cooking <span class="arrow">→</span></span>
           </a>
-          <a href="pages/about.html" class="umbrella-tile reveal delay-2">
-            <span class="count">✦ Us</span>
-            <h3>Joshua <span class="amp-mark">&amp;</span> Janel.</h3>
-            <p>Two Gamecocks — a strategist and a policy storyteller — making things together.</p>
-            <span class="link-arrow">Meet us <span class="arrow">→</span></span>
+          <a href="pages/art.html" class="umbrella-tile reveal delay-3">
+            <span class="count">✦ Art</span>
+            <h3>Pieces we make &amp; sell.</h3>
+            <p>A growing gallery of work — prints, originals, the occasional unhinged side project.</p>
+            <span class="link-arrow">Browse the gallery <span class="arrow">→</span></span>
           </a>
         </div>
       </div>
@@ -129,38 +164,35 @@
         </div>
 
         <div class="card-grid">
-          <article class="card reveal">
+          <a class="card reveal" href="pages/shows.html#aspiring-abolitionist">
             <div class="card-cover blush">
               <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="#2A2030" stroke-width="4"/><circle cx="50" cy="50" r="15" fill="#EC3F8E"/></svg>
             </div>
             <span class="eyebrow">Podcast · Janel</span>
             <h3>Aspiring Abolitionist</h3>
             <p class="meta">Politics, policy, and culture — dissecting the moments shaping our world.</p>
-            <div class="chip-row"><span class="chip chip-green">Spotify</span><span class="chip">Apple</span></div>
-            <a class="link-arrow" href="pages/shows.html">More <span class="arrow">→</span></a>
-          </article>
+            <span class="link-arrow">Listen <span class="arrow">→</span></span>
+          </a>
 
-          <article class="card reveal delay-1">
+          <a class="card reveal delay-1" href="pages/shows.html#eclectic-polymath">
             <div class="card-cover gold">
               <svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,14 86,82 14,82" fill="none" stroke="#2A2030" stroke-width="4"/><polygon points="50,42 66,74 34,74" fill="#FFC93C"/></svg>
             </div>
             <span class="eyebrow">Podcast · Joshua</span>
             <h3>Eclectic Polymath</h3>
             <p class="meta">Where curiosity meets creativity — learning across science, tech, art, and culture.</p>
-            <div class="chip-row"><span class="chip chip-green">Spotify</span></div>
-            <a class="link-arrow" href="pages/shows.html">More <span class="arrow">→</span></a>
-          </article>
+            <span class="link-arrow">Listen <span class="arrow">→</span></span>
+          </a>
 
-          <article class="card reveal delay-2">
+          <a class="card reveal delay-2" href="pages/shows.html#approachable-ai">
             <div class="card-cover sky">
               <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="20" y="20" width="60" height="60" rx="12" fill="none" stroke="#2A2030" stroke-width="4"/><circle cx="50" cy="50" r="16" fill="#46C7E8"/></svg>
             </div>
             <span class="eyebrow">YouTube · Joshua</span>
             <h3>Approachable AI</h3>
             <p class="meta">Complex AI, made friendly. Plain-English explainers for the curious.</p>
-            <div class="chip-row"><span class="chip chip-grape">YouTube</span></div>
-            <a class="link-arrow" href="pages/shows.html">More <span class="arrow">→</span></a>
-          </article>
+            <span class="link-arrow">Watch <span class="arrow">→</span></span>
+          </a>
         </div>
       </div>
     </section>
@@ -183,14 +215,16 @@
       <div class="footer-grid">
         <div>
           <p class="footer-brand-text">Curious <span class="amp">&amp;</span> Creative</p>
-          <p style="max-width:32ch; color:rgba(255,255,255,0.85); font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
+          <p style="max-width:32ch; font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
         </div>
         <div>
           <h4>Explore</h4>
           <ul>
             <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/studio.html">Studio</a></li>
             <li><a href="pages/shows.html">Shows</a></li>
-            <li><a href="pages/ventures.html">Ventures</a></li>
+            <li><a href="pages/inventions.html">Inventions</a></li>
+            <li><a href="pages/art.html">Art</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
           </ul>
         </div>
@@ -199,15 +233,15 @@
           <ul>
             <li><a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a></li>
             <li><a href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="pages/shows.html">Eclectic Polymath</a></li>
-            <li><a href="pages/shows.html">Approachable AI</a></li>
+            <li><a href="pages/shows.html#eclectic-polymath">Eclectic Polymath</a></li>
+            <li><a href="pages/shows.html#approachable-ai">Approachable AI</a></li>
           </ul>
         </div>
         <div>
           <h4>Janel</h4>
           <ul>
             <li><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Aspiring Abolitionist</a></li>
+            <li><a href="pages/shows.html#aspiring-abolitionist">Aspiring Abolitionist</a></li>
           </ul>
         </div>
       </div>

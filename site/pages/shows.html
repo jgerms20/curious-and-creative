@@ -9,6 +9,15 @@
   <meta property="og:description" content="Three running shows from the two of us, a guest spot worth queueing, and the C&amp;C podcast on deck." />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('cc-theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -28,11 +37,18 @@
     </button>
     <nav id="primary-nav" aria-label="Primary">
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="studio.html">Studio</a></li>
         <li><a href="shows.html" class="is-active">Shows</a></li>
-        <li><a href="ventures.html">Ventures</a></li>
+        <li><a href="inventions.html">Inventions</a></li>
+        <li><a href="art.html">Art</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -44,19 +60,83 @@
       <div class="container">
         <p class="eyebrow">Shows &amp; media</p>
         <h1>Mics on. <span class="c-pink">Stories out.</span></h1>
-        <p class="lede">Three running shows from the two of us, a guest spot worth queueing, and the Curious &amp; Creative podcast on deck.</p>
+        <p class="lede">Three running shows from the two of us, a guest spot worth queueing, and the Curious &amp; Creative podcast on the way.</p>
       </div>
     </div>
 
-    <!-- COMING SOON: C&C PODCAST FEATURE -->
+    <!-- NOW PLAYING: SHOW ROSTER -->
     <section class="section">
       <div class="container">
-        <div class="cta-block gold reveal">
-          <p class="eyebrow" style="justify-content:center;">Coming soon · The C&amp;C Podcast</p>
+        <div class="section-head center reveal">
+          <p class="eyebrow">Press play</p>
+          <h2>Our shows.</h2>
+        </div>
+
+        <div class="card-grid two">
+
+          <!-- Card 1: Aspiring Abolitionist -->
+          <article class="card reveal" id="aspiring-abolitionist">
+            <span class="eyebrow">Podcast · Janel</span>
+            <h3>Aspiring Abolitionist</h3>
+            <p class="meta">Politics, policy, and culture from an abolitionist lens — from HUD policy to 2025 Inauguration analysis.</p>
+            <div class="show-embed">
+              <iframe title="Aspiring Abolitionist on Spotify" src="https://open.spotify.com/embed/show/7natfWFnBgakjLLZcEDZaw?utm_source=generator" width="100%" height="232" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <a class="link-arrow" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Open in Spotify <span class="arrow">↗</span></a>
+          </article>
+
+          <!-- Card 2: Eclectic Polymath -->
+          <article class="card reveal delay-1" id="eclectic-polymath">
+            <span class="eyebrow">Podcast · Joshua</span>
+            <h3>Eclectic Polymath</h3>
+            <p class="meta">Where curiosity meets creativity — learning across science, tech, innovation, art, music, and culture.</p>
+            <div class="show-embed">
+              <iframe title="Eclectic Polymath on Spotify" src="https://open.spotify.com/embed/show/3dlagzJ0jiWLTB9mF3y069?utm_source=generator" width="100%" height="232" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <a class="link-arrow" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Open in Spotify <span class="arrow">↗</span></a>
+          </article>
+
+          <!-- Card 3: Approachable AI -->
+          <article class="card reveal delay-2" id="approachable-ai">
+            <div class="card-cover sky">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <rect x="20" y="20" width="60" height="60" rx="12" fill="none" stroke="#2A2030" stroke-width="4"/>
+                <circle cx="50" cy="50" r="16" fill="#46C7E8"/>
+                <circle cx="50" cy="50" r="6" fill="#2A2030"/>
+              </svg>
+            </div>
+            <span class="eyebrow">YouTube · Joshua</span>
+            <h3>Approachable AI</h3>
+            <p class="meta">Complex AI, made friendly. Plain-English explainers for the curious — not just the technical.</p>
+            <div class="chip-row"><span class="chip chip-grape">YouTube</span></div>
+            <a class="link-arrow" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Watch on YouTube <span class="arrow">↗</span></a>
+          </article>
+
+          <!-- Card 4: Dominate the Decade (Janel guests) -->
+          <article class="card reveal delay-3" id="dominate-the-decade">
+            <span class="eyebrow">Podcast · Janel guests</span>
+            <h3>Dominate the Decade</h3>
+            <p class="meta">Janel sat down with the self-improvement podcast for a conversation worth queueing.</p>
+            <div class="show-embed">
+              <iframe title="Dominate the Decade on Spotify" src="https://open.spotify.com/embed/show/3IiC15tFfb1rHoDm9R6Zxp?utm_source=generator" width="100%" height="232" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <a class="link-arrow" href="https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp" target="_blank" rel="noopener">Open in Spotify <span class="arrow">↗</span></a>
+            <!-- TODO: swap to exact episode link featuring Janel when available -->
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMING SOON: C&C PODCAST -->
+    <section class="section section-mint">
+      <div class="container">
+        <div class="cta-block reveal">
+          <p class="eyebrow" style="justify-content:center;">Coming soon</p>
           <div class="logo-slot">
             <div class="label"><strong>Drop podcast logo here</strong>Replace placeholder · square</div>
           </div>
-          <h2>Our new show. Built for the in-between.</h2>
+          <h2>The Curious &amp; Creative Podcast.</h2>
           <p>An ongoing conversation between Joshua and Janel — and the guests they can't stop thinking about. Strategy, story, policy, AI, culture, the questions that don't have one neat home.</p>
           <form class="form" data-form="subscribe" style="max-width:460px; margin:0 auto;">
             <div class="field">
@@ -71,61 +151,6 @@
             <span class="chip">Apple · soon</span>
             <span class="chip">YouTube · soon</span>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LISTEN NOW -->
-    <section class="section section-mint">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">Already on air</p>
-          <h2>Press play.</h2>
-          <p class="lede">The shows we already host — plus a guest spot Janel taped.</p>
-        </div>
-
-        <div class="card-grid two">
-
-          <!-- Card 1: Aspiring Abolitionist -->
-          <article class="card reveal">
-            <span class="eyebrow">Podcast · Janel</span>
-            <h3>Aspiring Abolitionist</h3>
-            <p class="meta">Politics, policy, and culture from an abolitionist lens — from HUD policy to 2025 Inauguration analysis.</p>
-            <iframe title="Aspiring Abolitionist on Spotify" style="border-radius:18px; border:2.5px solid var(--outline);" src="https://open.spotify.com/embed/show/7natfWFnBgakjLLZcEDZaw?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <a class="link-arrow" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Open in Spotify <span class="arrow">↗</span></a>
-          </article>
-
-          <!-- Card 2: Eclectic Polymath -->
-          <article class="card reveal delay-1">
-            <span class="eyebrow">Podcast · Joshua</span>
-            <h3>Eclectic Polymath</h3>
-            <p class="meta">Where curiosity meets creativity — learning across science, tech, innovation, art, music, and culture.</p>
-            <iframe title="Eclectic Polymath on Spotify" style="border-radius:18px; border:2.5px solid var(--outline);" src="https://open.spotify.com/embed/show/3dlagzJ0jiWLTB9mF3y069?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <a class="link-arrow" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Open in Spotify <span class="arrow">↗</span></a>
-          </article>
-
-          <!-- Card 3: Approachable AI -->
-          <article class="card reveal delay-2">
-            <div class="card-cover sky">
-              <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="20" y="20" width="60" height="60" rx="12" fill="none" stroke="#2A2030" stroke-width="4"/><circle cx="50" cy="50" r="16" fill="#46C7E8"/></svg>
-            </div>
-            <span class="eyebrow">YouTube · Joshua</span>
-            <h3>Approachable AI</h3>
-            <p class="meta">Complex AI, made friendly. Plain-English explainers for the curious — not just the technical.</p>
-            <div class="chip-row"><span class="chip chip-grape">YouTube</span></div>
-            <a class="link-arrow" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Watch on YouTube <span class="arrow">↗</span></a>
-          </article>
-
-          <!-- Card 4: Dominate the Decade (Janel guest spot) -->
-          <article class="card reveal delay-3">
-            <span class="eyebrow">Guest spot · Janel</span>
-            <h3>Dominate the Decade</h3>
-            <p class="meta">Janel sat down with Dominate the Decade — the self-improvement show — for a conversation worth queueing.</p>
-            <iframe title="Dominate the Decade on Spotify" style="border-radius:18px; border:2.5px solid var(--outline);" src="https://open.spotify.com/embed/show/3IiC15tFfb1rHoDm9R6Zxp?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <a class="link-arrow" href="https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp" target="_blank" rel="noopener">Open in Spotify <span class="arrow">↗</span></a>
-            <!-- TODO: swap to exact episode link featuring Janel when available -->
-          </article>
-
         </div>
       </div>
     </section>
@@ -149,14 +174,16 @@
       <div class="footer-grid">
         <div>
           <p class="footer-brand-text">Curious <span class="amp">&amp;</span> Creative</p>
-          <p style="max-width:32ch; color:rgba(255,255,255,0.85); font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
+          <p style="max-width:32ch; font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
         </div>
         <div>
           <h4>Explore</h4>
           <ul>
             <li><a href="about.html">About</a></li>
+            <li><a href="studio.html">Studio</a></li>
             <li><a href="shows.html">Shows</a></li>
-            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="inventions.html">Inventions</a></li>
+            <li><a href="art.html">Art</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -165,15 +192,15 @@
           <ul>
             <li><a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a></li>
             <li><a href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="shows.html">Eclectic Polymath</a></li>
-            <li><a href="shows.html">Approachable AI</a></li>
+            <li><a href="shows.html#eclectic-polymath">Eclectic Polymath</a></li>
+            <li><a href="shows.html#approachable-ai">Approachable AI</a></li>
           </ul>
         </div>
         <div>
           <h4>Janel</h4>
           <ul>
             <li><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Aspiring Abolitionist</a></li>
+            <li><a href="shows.html#aspiring-abolitionist">Aspiring Abolitionist</a></li>
           </ul>
         </div>
       </div>
