@@ -267,6 +267,7 @@
 .card-cover.blush { background: var(--blush); }
 .card-cover.sky { background: var(--sky); }
 .card-cover.gold { background: #FFF3D4; }
+.card-cover.mint { background: var(--mint); }
 .card h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; }
 .card .meta { color: var(--ink-soft); font-size: var(--fs-small); margin: 0; font-weight: 600; }
 .card .chip-row { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: auto; }
