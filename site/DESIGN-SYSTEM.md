@@ -59,3 +59,4 @@ Drop `assets/joshua.jpg` and `assets/janel.jpg` (square). Until then, the `<img 
 - Eclectic Polymath — Spotify `3dlagzJ0jiWLTB9mF3y069`
 - Approachable AI — YouTube `@Approachable.A.I`
 - Dominate the Decade (Janel guest) — Spotify `3IiC15tFfb1rHoDm9R6Zxp` (TODO: exact episode link)
+- Too Much to Tweet — Spotify `033G4KctzeuD3Pu4db1AQa`
