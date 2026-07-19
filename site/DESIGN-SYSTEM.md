@@ -36,7 +36,7 @@ Inspired by the C&C logo (green "Curious", pink "Creative", gold accents, sparkl
 - **Green footer** with gold headings.
 
 ## Pages (7)
-1. `index.html` — Home: kinetic hero, marquee, 4-up Umbrella (Studio/Shows/Inventions/Art), shows preview, CTA
+1. `index.html` — Home (media-network model, Ringer-inspired): kinetic hero framed as "the network" → **The Pulse** topic-chip rail → **The Network** (shows as the main engine: featured newest show + roster incl. the flagship C&C Podcast) → marquee → **Also ours** (Studio/Art/Inventions as the services + things-we've-made path) → manifesto → CTA
 2. `pages/about.html` — story + mission + the duo (Joshua & Janel, photo slots) + SC origin + what we do
 3. `pages/studio.html` — services arm (Strategy & Story · Brand Building · Production · Creative Consulting) + engagement shapes + founder cred
 4. `pages/shows.html` — compact Spotify embeds (Aspiring Abolitionist, Eclectic Polymath, Dominate the Decade) + Approachable AI illustrated card + C&C podcast logo slot at bottom
@@ -49,7 +49,7 @@ Light is default. Dark mode toggled via nav button (saved as `localStorage['cc-t
 Dark palette: warm purple backgrounds (#161020 → #241B2E), cream text + outline (#FFEEDC), brand greens/pinks lightened for AA contrast.
 
 ## Reusable classes (see css/components.css)
-nav · hero · sparkle · marquee · section-head(.center) · card · card-cover · chip(.chip-status .live/.dev/.soon) · founder(.founder-portrait/.initials/.photo-hint) · logo-slot · manifesto · cta-block(.pink/.mint/.gold) · footer · form · page-head · reveal(.delay-1..4) · umbrella · split · principles
+nav · hero · sparkle · marquee · pulse(.pulse-chip) · section-title(.green/.pink/.gold, tilted pill) · title-row · network-lead · section-head(.center) · card · card-cover · chip(.chip-status .live/.dev/.soon) · founder(.founder-portrait/.initials/.photo-hint) · logo-slot · manifesto · cta-block(.pink/.mint/.gold) · footer · form · page-head · reveal(.delay-1..4) · umbrella · split · principles
 
 ## Founder photos
 Drop `assets/joshua.jpg` and `assets/janel.jpg` (square). Until then, the `<img onerror="this.remove()">` falls back to playful initials (JG / JM).
