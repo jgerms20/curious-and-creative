@@ -650,3 +650,127 @@ a.chip:hover { transform: translateY(-2px) rotate(-2deg); color: inherit; }
   background: var(--surface);
 }
 .show-embed iframe { display: block; width: 100%; border: 0; }
+
+/* ============ THE PULSE — topic chip rail (media-network signature) ============ */
+.pulse {
+  position: relative;
+  z-index: 2;
+  border-block: 3px solid var(--outline);
+  background: var(--cream-2);
+  padding-block: var(--space-3);
+}
+.pulse-inner {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-inline: var(--content-pad);
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+.pulse-inner::-webkit-scrollbar { display: none; }
+.pulse-label {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  padding-right: var(--space-2);
+}
+.pulse-chip {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 15px;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--outline);
+  border-radius: var(--r-pill);
+  box-shadow: 2px 2px 0 var(--outline);
+  transition: transform var(--t-fast) var(--ease-std), box-shadow var(--t-fast) var(--ease-std), background var(--t-fast) var(--ease-std), color var(--t-fast) var(--ease-std);
+}
+.pulse-chip .spark { color: var(--gold-deep); }
+.pulse-chip:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--outline);
+  background: var(--pink);
+  color: var(--white);
+}
+.pulse-chip:hover .spark { color: var(--white); }
+
+/* ============ TILTED SECTION-TITLE PILL (rotated network header) ============ */
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  color: var(--white);
+  background: var(--outline);
+  border: 3px solid var(--outline);
+  border-radius: var(--r-pill);
+  padding: 0.35em 0.9em;
+  transform: rotate(-2deg);
+  box-shadow: var(--sticker);
+}
+.section-title.green { background: var(--green); }
+.section-title.pink  { background: var(--pink); }
+.section-title.gold  { background: var(--gold); color: var(--ink); }
+:root[data-theme="dark"] .section-title { color: var(--outline); background: var(--gold); }
+:root[data-theme="dark"] .section-title.green { color: #10240F; }
+:root[data-theme="dark"] .section-title.pink  { color: #2A0E1D; }
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+.title-row .lede { color: var(--ink-soft); font-size: 1.0625rem; max-width: 44ch; font-weight: 600; }
+
+/* ============ NETWORK LEAD — featured show banner ============ */
+.network-lead {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.7fr) 1.3fr;
+  gap: 0;
+  border: 3px solid var(--outline);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--sticker-lg);
+  background: var(--surface);
+  margin-bottom: var(--space-6);
+  transition: transform var(--t-base) var(--ease-spring), box-shadow var(--t-base) var(--ease-spring);
+}
+.network-lead:hover { transform: translate(-3px, -4px); box-shadow: 8px 8px 0 var(--outline); color: var(--ink); }
+.network-lead .cover {
+  display: grid;
+  place-items: center;
+  border-right: 3px solid var(--outline);
+  padding: var(--space-6);
+  background: var(--mint);
+}
+.network-lead .cover svg { width: 60%; max-width: 180px; height: auto; }
+.network-lead .body {
+  padding: clamp(var(--space-5), 4vw, var(--space-7));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  justify-content: center;
+}
+.network-lead .body h3 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 700; line-height: 1.02; }
+.network-lead .body p { color: var(--ink-soft); font-weight: 600; max-width: 48ch; }
+.network-lead .body .link-arrow { margin-top: var(--space-2); }
+@media (max-width: 760px) {
+  .network-lead { grid-template-columns: 1fr; }
+  .network-lead .cover { border-right: 0; border-bottom: 3px solid var(--outline); padding: var(--space-5); }
+  .network-lead .cover svg { max-width: 120px; }
+}
