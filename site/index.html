@@ -3,289 +3,771 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curious &amp; Creative — A playground for curious minds</title>
-  <meta name="description" content="Curious & Creative is the creative studio of Joshua German and Janel Moore — a playful hub for shows, inventions, art, and ideas worth chasing." />
-  <meta property="og:title" content="Curious & Creative" />
-  <meta property="og:description" content="A playground for curious minds and bold ventures." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('cc-theme');
-        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
-    })();
-  </script>
+  <title>Curious &amp; Creative — The Network</title>
+  <meta name="description" content="Curious & Creative — a media network and creative studio by Joshua German & Janel Moore. Podcasts, videos, art, inventions, and the studio behind them." />
+  <meta property="og:title" content="Curious & Creative — The Network" />
+  <meta property="og:description" content="Podcasts, videos, art, inventions, and the studio behind them." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
-  <a href="#main" class="sr-only">Skip to content</a>
+<header id="site-header" class="hdr-header">
+  <div class="hdr-bar wrap">
 
-  <header class="nav" role="banner">
-    <a href="index.html" class="nav-brand" aria-label="Curious and Creative — Home">
-      <span class="c-green">Curious</span><span class="amp">&amp;</span><span class="c-pink">Creative</span>
+    <a href="index.html" class="hdr-logo" aria-label="Curious and Creative — Home">
+      <span class="hdr-logo__word hdr-logo__word--green">Curious</span><span class="hdr-logo__amp">&amp;</span><span class="hdr-logo__word hdr-logo__word--pink">Creative</span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
-      <span></span><span></span><span></span>
+
+    <button type="button" class="hdr-search-trigger" id="hdr-search-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="hdr-search-overlay">
+      <svg class="hdr-search-trigger__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/>
+      </svg>
+      <span class="hdr-search-trigger__label">Discover anything</span>
     </button>
-    <nav id="primary-nav" aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/studio.html">Studio</a></li>
-        <li><a href="pages/shows.html">Shows</a></li>
-        <li><a href="pages/inventions.html">Inventions</a></li>
-        <li><a href="pages/art.html">Art</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="main">
+    <div class="hdr-right">
+      <nav class="hdr-links" aria-label="Quick jump">
+        <a href="#videos" class="hdr-link">Videos</a>
+        <a href="#podcasts" class="hdr-link">Podcasts</a>
+      </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-      <svg class="sparkle s1" style="top:18%; left:10%;" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-      <svg class="sparkle s2" style="top:24%; right:12%;" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-      <svg class="sparkle s3" style="bottom:20%; left:16%;" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-      <svg class="sparkle s4" style="bottom:28%; right:18%;" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-      <svg class="sparkle s5" style="top:46%; left:6%;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-      <div class="container hero-inner">
-        <p class="hero-eyebrow eyebrow">The Curious &amp; Creative Network · Est. 2025</p>
-        <h1 class="hero-title">
-          <span class="word c-green">Curious</span>
-          <span class="word amp">&amp;</span>
-          <span class="word c-pink">Creative.</span><br/>
-          <span class="word">Home for</span>
-          <span class="word">everything we make.</span>
-        </h1>
-        <p class="hero-lede">
-          Joshua German and Janel Moore host the podcasts, chase the ideas, and make the art
-          we can't stop thinking about — all under one roof.
-        </p>
-        <div class="hero-cues">
-          <a class="btn btn-primary" href="pages/shows.html">Hear our shows <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="btn btn-white" href="pages/studio.html">Work with us <span class="arrow" aria-hidden="true">→</span></a>
-        </div>
-        <div class="social-rail" aria-label="Find us elsewhere">
-          <a class="chip" href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V10.5H5.67v7.84h2.67Zm-1.34-9a1.55 1.55 0 1 0 0-3.09 1.55 1.55 0 0 0 0 3.09Zm11.33 9v-4.3c0-2.32-1.24-3.4-2.9-3.4a2.5 2.5 0 0 0-2.27 1.25V10.5H10.5v7.84h2.67v-4.36c0-1.13.78-1.7 1.57-1.7s1.51.4 1.51 1.74v4.32h2.07Z"/></svg>
-            Joshua
-          </a>
-          <a class="chip" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V10.5H5.67v7.84h2.67Zm-1.34-9a1.55 1.55 0 1 0 0-3.09 1.55 1.55 0 0 0 0 3.09Zm11.33 9v-4.3c0-2.32-1.24-3.4-2.9-3.4a2.5 2.5 0 0 0-2.27 1.25V10.5H10.5v7.84h2.67v-4.36c0-1.13.78-1.7 1.57-1.7s1.51.4 1.51 1.74v4.32h2.07Z"/></svg>
-            Janel
-          </a>
-          <a class="chip" href="https://joshuamgerman.com" target="_blank" rel="noopener">
-            joshuamgerman.com
-          </a>
-        </div>
+      <button type="button" class="hdr-burger" id="hdr-burger" aria-haspopup="dialog" aria-expanded="false" aria-controls="hdr-drawer" aria-label="Open menu">
+        <span class="hdr-burger__bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ===== Search overlay ===== -->
+  <div class="hdr-search-overlay" id="hdr-search-overlay" role="dialog" aria-modal="true" aria-label="Search Curious and Creative" hidden>
+    <div class="hdr-search-overlay__inner wrap">
+
+      <button type="button" class="hdr-search-close" id="hdr-search-close" aria-label="Close search">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <p class="hdr-search-overlay__eyebrow">Search</p>
+
+      <label class="hdr-search-sr" for="hdr-search-input">Search Curious and Creative</label>
+      <div class="hdr-search-field">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/>
+        </svg>
+        <input type="text" id="hdr-search-input" class="hdr-search-input" placeholder="Try: shows, art, inventions, the studio…" autocomplete="off" autocapitalize="off" spellcheck="false" />
       </div>
-    </section>
+      <p class="hdr-search-hint">Try: shows, art, inventions, the studio…</p>
 
-    <!-- THE PULSE — topic chip rail -->
-    <nav class="pulse" aria-label="What we're into">
-      <div class="pulse-inner">
-        <span class="pulse-label">On our minds</span>
-        <a class="pulse-chip" href="pages/shows.html#aspiring-abolitionist"><span class="spark">✦</span> Politics</a>
-        <a class="pulse-chip" href="pages/shows.html#aspiring-abolitionist">Abolition</a>
-        <a class="pulse-chip" href="pages/shows.html#too-much-to-tweet">Culture</a>
-        <a class="pulse-chip" href="pages/shows.html#approachable-ai"><span class="spark">✦</span> AI</a>
-        <a class="pulse-chip" href="pages/shows.html#eclectic-polymath">Curiosity</a>
-        <a class="pulse-chip" href="pages/studio.html">Strategy</a>
-        <a class="pulse-chip" href="pages/art.html"><span class="spark">✦</span> Art</a>
-        <a class="pulse-chip" href="pages/inventions.html">Building</a>
+      <div class="hdr-search-results" id="hdr-search-results">
+        <div class="hdr-search-group" data-group>
+          <p class="hdr-search-group__title">Around the site</p>
+          <div class="hdr-search-grid">
+            <!-- DROP-IN: swap hrefs for final routes once subpages are live -->
+            <a class="hdr-search-item" href="pages/about.html" data-label="About">About<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/studio.html" data-label="Studio">The Studio<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/shows.html" data-label="Shows">Shows<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/inventions.html" data-label="Inventions Kindling">Inventions<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/art.html" data-label="Art">Art<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/archive.html" data-label="Archive">Archive<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/contact.html" data-label="Contact">Contact<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="hdr-search-group" data-group>
+          <p class="hdr-search-group__title">On the network</p>
+          <div class="hdr-search-grid">
+            <a class="hdr-search-item" href="pages/shows.html" data-label="Too Much to Tweet Janel podcast">Too Much to Tweet<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/shows.html" data-label="The C&amp;C Podcast flagship">The C&amp;C Podcast<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/shows.html" data-label="Aspiring Abolitionist Joshua podcast">Aspiring Abolitionist<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/shows.html" data-label="Eclectic Polymath Joshua podcast">Eclectic Polymath<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/shows.html" data-label="Approachable AI YouTube show">Approachable AI<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+            <a class="hdr-search-item" href="pages/shows.html" data-label="Dominate the Decade Janel guest">Dominate the Decade<span class="hdr-search-item__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <p class="hdr-search-empty" id="hdr-search-empty" hidden>Nothing's turning up. Try a shorter word.</p>
       </div>
+
+    </div>
+  </div>
+
+  <!-- ===== Drawer menu ===== -->
+  <div class="hdr-drawer-backdrop" id="hdr-drawer-backdrop" hidden></div>
+  <div class="hdr-drawer" id="hdr-drawer" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+    <div class="hdr-drawer__head">
+      <span class="hdr-drawer__mark">Menu</span>
+      <button type="button" class="hdr-drawer-close" id="hdr-drawer-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+
+    <nav class="hdr-drawer__nav" aria-label="Primary">
+      <a href="index.html" class="hdr-drawer__link">Home</a>
+      <a href="#videos" class="hdr-drawer__link">Videos</a>
+      <a href="#podcasts" class="hdr-drawer__link">Podcasts</a>
+      <a href="#shorts" class="hdr-drawer__link">Shorts</a>
+      <a href="pages/studio.html" class="hdr-drawer__link">Studio</a>
+      <a href="pages/art.html" class="hdr-drawer__link">Art</a>
+      <a href="pages/inventions.html" class="hdr-drawer__link">Inventions</a>
+      <a href="pages/about.html" class="hdr-drawer__link">About</a>
+      <a href="pages/archive.html" class="hdr-drawer__link">Archive</a>
+      <a href="pages/contact.html" class="hdr-drawer__link">Contact</a>
     </nav>
 
-    <!-- THE NETWORK — shows as the main engine -->
-    <section class="section">
-      <div class="container">
-        <div class="title-row reveal">
-          <span class="section-title pink">The Network</span>
-          <p class="lede">Five shows and counting — the podcasts and videos we make under the Curious &amp; Creative umbrella.</p>
-        </div>
+    <div class="hdr-drawer__shows">
+      <p class="hdr-drawer__label">Our shows</p>
+      <!-- DROP-IN: link each show to its own page once show pages exist -->
+      <a href="pages/shows.html" class="hdr-drawer__show">Too Much to Tweet</a>
+      <a href="pages/shows.html" class="hdr-drawer__show">The C&amp;C Podcast</a>
+      <a href="pages/shows.html" class="hdr-drawer__show">Aspiring Abolitionist</a>
+      <a href="pages/shows.html" class="hdr-drawer__show">Eclectic Polymath</a>
+      <a href="pages/shows.html" class="hdr-drawer__show">Approachable AI</a>
+      <a href="pages/shows.html" class="hdr-drawer__show">Dominate the Decade</a>
+    </div>
 
-        <!-- Featured: newest show -->
-        <a class="network-lead reveal" href="pages/shows.html#too-much-to-tweet">
-          <div class="cover">
-            <svg viewBox="0 0 100 100" aria-hidden="true">
-              <path d="M18 18 Q18 12 25 12 L75 12 Q82 12 82 18 L82 60 Q82 67 75 67 L52 67 L42 80 L42 67 L25 67 Q18 67 18 60 Z" fill="none" stroke="#2A2030" stroke-width="4"/>
-              <circle cx="35" cy="40" r="5" fill="#57B84A"/>
-              <circle cx="50" cy="40" r="5" fill="#57B84A"/>
-              <circle cx="65" cy="40" r="5" fill="#57B84A"/>
-            </svg>
-          </div>
-          <div class="body">
-            <div class="chip-row"><span class="chip chip-status live">Newest</span><span class="chip">Podcast · Janel</span></div>
-            <h3>Too Much to Tweet</h3>
-            <p>The takes too big for a caption — politics, culture, and the conversations the internet keeps trying to flatten into a thread.</p>
-            <span class="link-arrow">Listen now <span class="arrow">→</span></span>
-          </div>
+    <div class="hdr-drawer__social">
+      <!-- DROP-IN: replace # with real social URLs -->
+      <a href="#" class="hdr-drawer__social-link">Instagram</a>
+      <a href="#" class="hdr-drawer__social-link">YouTube</a>
+      <a href="#" class="hdr-drawer__social-link">TikTok</a>
+    </div>
+  </div>
+
+</header>
+<main id="main">
+<section id="hero" class="hero-section" aria-label="Featured">
+
+  <!-- THE PULSE — topic rail -->
+  <nav class="hero-pulse" aria-label="The Pulse — what we're into right now">
+    <div class="hero-pulse__inner wrap">
+      <span class="hero-pulse__label">The Pulse <span aria-hidden="true">⚡</span></span>
+      <div class="hero-pulse__rail">
+        <!-- DROP-IN: point chips at real topic/tag pages -->
+        <a class="hero-pulse__chip" href="#latest">Politics</a>
+        <a class="hero-pulse__chip" href="#latest">Abolition</a>
+        <a class="hero-pulse__chip" href="#latest">Culture</a>
+        <a class="hero-pulse__chip" href="#videos">AI</a>
+        <a class="hero-pulse__chip" href="#latest">Curiosity</a>
+        <a class="hero-pulse__chip" href="pages/studio.html">Strategy</a>
+        <a class="hero-pulse__chip" href="pages/art.html">Art</a>
+        <a class="hero-pulse__chip" href="pages/inventions.html">Building</a>
+        <a class="hero-pulse__chip" href="#podcasts">Podcasts</a>
+        <a class="hero-pulse__chip" href="#latest">Chicago</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO FRAME — featured story -->
+  <div class="wrap">
+    <article class="hero-frame">
+      <div class="hero-frame__media art-slot" data-art="tmtt">
+        <span class="art-slot__fx" aria-hidden="true">TM</span>
+      </div>
+      <div class="hero-frame__shade" aria-hidden="true"></div>
+
+      <div class="hero-frame__content">
+        <span class="tag-chip">Podcasts</span>
+        <h1 class="hero-frame__title">Too Much to Tweet is live —<br />and Janel has thoughts</h1>
+        <p class="hero-frame__dek">Some takes don't fit in a post. This is where they go.</p>
+        <div class="hero-frame__byline">
+          <span class="avatars">
+            <!-- DROP-IN: assets/janel.jpg -->
+            <span class="avatars__fallback">JM</span>
+          </span>
+          <span class="hero-frame__host">Hosted by Janel Moore</span>
+        </div>
+        <a class="btn-pill hero-frame__cta" href="https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa" target="_blank" rel="noopener">Listen now
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-
-        <!-- Roster -->
-        <div class="card-grid two">
-          <a class="card reveal" href="pages/shows.html#aspiring-abolitionist">
-            <div class="card-cover blush">
-              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="#2A2030" stroke-width="4"/><circle cx="50" cy="50" r="15" fill="#EC3F8E"/></svg>
-            </div>
-            <span class="eyebrow">Podcast · Janel</span>
-            <h3>Aspiring Abolitionist</h3>
-            <p class="meta">Politics, policy, and culture — dissecting the moments shaping our world.</p>
-            <span class="link-arrow">Listen <span class="arrow">→</span></span>
-          </a>
-
-          <a class="card reveal delay-1" href="pages/shows.html#eclectic-polymath">
-            <div class="card-cover gold">
-              <svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,14 86,82 14,82" fill="none" stroke="#2A2030" stroke-width="4"/><polygon points="50,42 66,74 34,74" fill="#FFC93C"/></svg>
-            </div>
-            <span class="eyebrow">Podcast · Joshua</span>
-            <h3>Eclectic Polymath</h3>
-            <p class="meta">Where curiosity meets creativity — learning across science, tech, art, and culture.</p>
-            <span class="link-arrow">Listen <span class="arrow">→</span></span>
-          </a>
-
-          <a class="card reveal delay-2" href="pages/shows.html#approachable-ai">
-            <div class="card-cover sky">
-              <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="20" y="20" width="60" height="60" rx="12" fill="none" stroke="#2A2030" stroke-width="4"/><circle cx="50" cy="50" r="16" fill="#46C7E8"/></svg>
-            </div>
-            <span class="eyebrow">YouTube · Joshua</span>
-            <h3>Approachable AI</h3>
-            <p class="meta">Complex AI, made friendly. Plain-English explainers for the curious.</p>
-            <span class="link-arrow">Watch <span class="arrow">→</span></span>
-          </a>
-
-          <a class="card reveal delay-3" href="pages/shows.html">
-            <div class="card-cover mint">
-              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="#2A2030" stroke-width="4" stroke-dasharray="8 7"/><path d="M50 34v32M34 50h32" stroke="#2A2030" stroke-width="4" stroke-linecap="round"/></svg>
-            </div>
-            <span class="eyebrow">Podcast · On deck</span>
-            <h3>The C&amp;C Podcast</h3>
-            <p class="meta">Our flagship — Joshua &amp; Janel and the guests they can't stop thinking about. Coming soon.</p>
-            <span class="link-arrow">Get notified <span class="arrow">→</span></span>
-          </a>
-        </div>
       </div>
-    </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Curiosity <span class="dot">✦</span> Stories <span class="dot">✦</span> Podcasts <span class="dot">✦</span> Art <span class="dot">✦</span> Strategy <span class="dot">✦</span> Policy <span class="dot">✦</span> AI <span class="dot">✦</span> Play <span class="dot">✦</span></span>
-        <span>Curiosity <span class="dot">✦</span> Stories <span class="dot">✦</span> Podcasts <span class="dot">✦</span> Art <span class="dot">✦</span> Strategy <span class="dot">✦</span> Policy <span class="dot">✦</span> AI <span class="dot">✦</span> Play <span class="dot">✦</span></span>
+      <!-- glass mini-cards (desktop) -->
+      <div class="hero-frame__minis" aria-label="More from the network">
+        <!-- DROP-IN: swap teasers as things ship -->
+        <a class="hero-mini" href="#podcasts">
+          <span class="hero-mini__kicker">In the works</span>
+          <span class="hero-mini__title">The C&amp;C Podcast</span>
+        </a>
+        <a class="hero-mini" href="pages/studio.html">
+          <span class="hero-mini__kicker">The Studio</span>
+          <span class="hero-mini__title">Strategy &amp; story, for hire</span>
+        </a>
+        <a class="hero-mini" href="pages/inventions.html">
+          <span class="hero-mini__kicker">Inventions</span>
+          <span class="hero-mini__title">Kindling — first spark</span>
+        </a>
       </div>
+    </article>
+  </div>
+</section>
+<section id="latest" class="shelf-section" aria-labelledby="shelf-heading">
+  <div class="wrap">
+
+    <div class="pill-row">
+      <h2 class="pill-title pill-title--green" id="shelf-heading">The Latest</h2>
     </div>
 
-    <!-- MORE UNDER THE UMBRELLA — services + things we've made -->
-    <section class="section">
-      <div class="container">
-        <div class="title-row reveal">
-          <span class="section-title green">Also ours</span>
-          <p class="lede">Beyond the mic: the work we take on for clients, and the things we make just because.</p>
+    <div class="shelf-grid">
+
+      <!-- 1. Too Much to Tweet -->
+      <!-- DROP-IN: link to the real Too Much to Tweet episode page -->
+      <a class="shelf-card" href="#" data-shelf-item>
+        <div class="art-slot shelf-card__media" data-art="tmtt">
+          <span class="art-slot__fx" aria-hidden="true">TM</span>
+          <span class="shelf-card__scrim" aria-hidden="true"></span>
+          <span class="tag-chip shelf-card__tag">Podcasts</span>
+          <div class="shelf-card__body">
+            <h3 class="shelf-card__title">Too Much to Tweet, Ep. 01 — say it slower</h3>
+            <p class="shelf-card__meta">
+              <!-- DROP-IN: swap fallback initials for Janel's real avatar photo -->
+              <span class="avatars"><span class="avatars__fallback">JM</span></span>
+              <span class="shelf-card__date">This week</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Aspiring Abolitionist -->
+      <!-- DROP-IN: link to the latest Aspiring Abolitionist episode -->
+      <a class="shelf-card" href="#" data-shelf-item>
+        <div class="art-slot shelf-card__media" data-art="abolitionist">
+          <span class="art-slot__fx" aria-hidden="true">AA</span>
+          <span class="shelf-card__scrim" aria-hidden="true"></span>
+          <span class="tag-chip shelf-card__tag">Podcasts</span>
+          <div class="shelf-card__body">
+            <h3 class="shelf-card__title">Aspiring Abolitionist — the system we keep excusing</h3>
+            <p class="shelf-card__meta">
+              <!-- DROP-IN: swap fallback initials for Joshua's real avatar photo -->
+              <span class="avatars"><span class="avatars__fallback">JG</span></span>
+              <span class="shelf-card__date">This week</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Eclectic Polymath -->
+      <!-- DROP-IN: link to the latest Eclectic Polymath episode -->
+      <a class="shelf-card" href="#" data-shelf-item>
+        <div class="art-slot shelf-card__media" data-art="polymath">
+          <span class="art-slot__fx" aria-hidden="true">EP</span>
+          <span class="shelf-card__scrim" aria-hidden="true"></span>
+          <span class="tag-chip shelf-card__tag">Podcasts</span>
+          <div class="shelf-card__body">
+            <h3 class="shelf-card__title">Eclectic Polymath — the case for knowing a little of everything</h3>
+            <p class="shelf-card__meta">
+              <span class="avatars"><span class="avatars__fallback">JG</span></span>
+              <span class="shelf-card__date">This week</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Approachable AI -->
+      <!-- DROP-IN: link to the latest Approachable AI video -->
+      <a class="shelf-card" href="#" data-shelf-item>
+        <div class="art-slot shelf-card__media" data-art="approachable">
+          <span class="art-slot__fx" aria-hidden="true">AI</span>
+          <span class="shelf-card__scrim" aria-hidden="true"></span>
+          <span class="tag-chip shelf-card__tag">Videos</span>
+          <div class="shelf-card__body">
+            <h3 class="shelf-card__title">Approachable AI — prompting without the priesthood</h3>
+            <p class="shelf-card__meta">
+              <!-- DROP-IN: swap for the show's real avatar/thumbnail -->
+              <span class="avatars"><span class="avatars__fallback">CC</span></span>
+              <span class="shelf-card__date">This week</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Art drop teaser (solid tile, no art-slot artwork yet) -->
+      <!-- DROP-IN: link to the real art drop once it's live -->
+      <a class="shelf-card" href="pages/art.html" data-shelf-item>
+        <div class="shelf-card__media shelf-card__solid shelf-card__solid--grape">
+          <span class="shelf-card__glyph" aria-hidden="true">✷</span>
+          <span class="shelf-card__scrim" aria-hidden="true"></span>
+          <span class="tag-chip shelf-card__tag">Art</span>
+          <div class="shelf-card__body">
+            <h3 class="shelf-card__title">New drop, coming into view</h3>
+            <p class="shelf-card__meta">
+              <span class="avatars"><span class="avatars__fallback">CC</span></span>
+              <span class="shelf-card__date">This week</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Studio field notes (solid tile, no art-slot artwork) -->
+      <!-- DROP-IN: link to the real studio field note or case study -->
+      <a class="shelf-card" href="pages/studio.html" data-shelf-item>
+        <div class="shelf-card__media shelf-card__solid shelf-card__solid--ink">
+          <span class="shelf-card__glyph" aria-hidden="true">✎</span>
+          <span class="shelf-card__scrim" aria-hidden="true"></span>
+          <span class="tag-chip shelf-card__tag">Studio</span>
+          <div class="shelf-card__body">
+            <h3 class="shelf-card__title">Field notes: what clients keep asking us</h3>
+            <p class="shelf-card__meta">
+              <span class="avatars"><span class="avatars__fallback">CC</span></span>
+              <span class="shelf-card__date">This week</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Special project card: Kindling -->
+      <a class="shelf-card shelf-card--special" href="pages/inventions.html" data-shelf-item>
+        <span class="shelf-special__eyebrow">
+          <span class="shelf-special__dot" aria-hidden="true"></span>
+          Special project
+        </span>
+        <h3 class="shelf-special__title">Kindling</h3>
+        <p class="shelf-special__line">Our first invention — a tiny fire for big ideas.</p>
+        <span class="shelf-special__arrow" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+
+      <!-- 8. Noteworthy list card -->
+      <div class="shelf-card shelf-card--list" data-shelf-item>
+        <p class="shelf-list__bar">Noteworthy</p>
+        <ul class="shelf-list__items" role="list">
+          <!-- DROP-IN: replace placeholder picks with the real reading/watching list -->
+          <li class="shelf-list__item">
+            <a class="shelf-list__link" href="#">
+              <span class="shelf-list__bullet" aria-hidden="true"></span>
+              The essay that finally explains abolition to your uncle
+            </a>
+          </li>
+          <li class="shelf-list__item">
+            <a class="shelf-list__link" href="#">
+              <span class="shelf-list__bullet" aria-hidden="true"></span>
+              A newsletter about slow thinking on a fast internet
+            </a>
+          </li>
+          <li class="shelf-list__item">
+            <a class="shelf-list__link" href="#">
+              <span class="shelf-list__bullet" aria-hidden="true"></span>
+              Why every founder should start a podcast, and quit one
+            </a>
+          </li>
+          <li class="shelf-list__item">
+            <a class="shelf-list__link" href="#">
+              <span class="shelf-list__bullet" aria-hidden="true"></span>
+              The Chicago mural half our group chat is texting about
+            </a>
+          </li>
+          <li class="shelf-list__item">
+            <a class="shelf-list__link" href="#">
+              <span class="shelf-list__bullet" aria-hidden="true"></span>
+              A tool that makes your prompts sound less embarrassing
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ============================================================
+     SECTION 04 — Videos: black container, fading list + featured player
+     Prefix: vid-   Root: <section id="videos">
+     Fragment only — no <html>/<head>/<body>. Drop into <main>, after
+     "The Latest" shelf. This id is also the target of the header's
+     "Videos" nav + drawer links (both point to #videos).
+
+     Uses the shell's global tokens/utilities (do NOT redefine here):
+     --black, --white, --green, --card-r, --box-r, --pill, --wrap,
+     --font-head, --font-body, --speed, --ease, .wrap, .pill-row,
+     .pill-title, .art-slot, .btn-pill, .tag-chip.
+     ============================================================ -->
+<section id="videos" class="vid-section" aria-labelledby="vid-heading">
+
+  <div class="wrap">
+    <div class="pill-row">
+      <h2 class="pill-title" id="vid-heading">Videos</h2>
+    </div>
+
+    <div class="vid-box">
+      <div class="vid-grid">
+
+        <!-- RIGHT (DOM-first so it reads/stacks before the list on mobile) -->
+        <div class="vid-right">
+          <div class="vid-player" id="vid-player">
+            <!-- DROP-IN: replace .vid-player inner with a YouTube iframe embed -->
+            <button type="button" class="vid-play" id="vid-play" aria-label="Play preview">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+            </button>
+            <span class="tag-chip vid-duration" id="vid-duration">&mdash;:&mdash;</span>
+          </div>
+
+          <h3 class="vid-featured-title" id="vid-featured-title">AI Explained Without the Jargon Tax</h3>
+          <p class="vid-featured-dek" id="vid-featured-dek">The tools, the hype, and the actual usefulness — untangled for anyone who nodded politely through the last AI conversation.</p>
         </div>
 
-        <div class="umbrella">
-          <a href="pages/studio.html" class="umbrella-tile reveal">
-            <span class="count">✦ Studio</span>
-            <h3>Work with us.</h3>
-            <p>Creative strategy, story, and production for brands and founders who want a partner — not a vendor.</p>
-            <span class="link-arrow">See what we do <span class="arrow">→</span></span>
-          </a>
-          <a href="pages/art.html" class="umbrella-tile reveal delay-1">
-            <span class="count">✦ Art</span>
-            <h3>Things we've made.</h3>
-            <p>A growing gallery of prints, originals, and the occasional unhinged side project — up for grabs.</p>
-            <span class="link-arrow">Browse the gallery <span class="arrow">→</span></span>
-          </a>
-          <a href="pages/inventions.html" class="umbrella-tile reveal delay-2">
-            <span class="count">✦ Inventions</span>
-            <h3>What we're building.</h3>
-            <p>Kindling is first out of the workshop, with more ideas brewing under the umbrella.</p>
-            <span class="link-arrow">See what's cooking <span class="arrow">→</span></span>
-          </a>
-        </div>
-      </div>
-    </section>
+        <!-- LEFT: Approachable AI episode list -->
+        <div class="vid-left">
+          <p class="vid-show-label">Approachable AI</p>
 
-    <!-- MANIFESTO -->
-    <section class="section section-blush">
-      <div class="container">
-        <p class="manifesto reveal">
-          Stay <span class="em-green">curious</span>. Make <span class="em-pink">things</span>. Have <span class="em-gold">fun</span> doing it.
-        </p>
-      </div>
-    </section>
+          <div class="vid-list-wrap">
+            <!-- DROP-IN: swap placeholder titles/durations for the real Approachable AI catalog -->
+            <div class="vid-list" role="radiogroup" aria-label="Approachable AI episodes" id="vid-list">
 
-    <!-- CTA -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-block mint reveal">
-          <p class="eyebrow" style="justify-content:center;">Come say hi</p>
-          <h2>Got a story, a guest spot, or a wild idea?</h2>
-          <p>We love collaborators, guests, partners, and the kind of ideas that don't fit anywhere else yet.</p>
-          <a class="btn btn-primary" href="pages/contact.html">Start a conversation <span class="arrow" aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-  </main>
+              <button
+                type="button"
+                class="vid-item is-active"
+                role="radio"
+                aria-checked="true"
+                tabindex="0"
+                data-episode="1"
+                data-duration="&mdash;:&mdash;"
+                data-title="AI Explained Without the Jargon Tax"
+                data-dek="The tools, the hype, and the actual usefulness — untangled for anyone who nodded politely through the last AI conversation."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">AI Explained Without the Jargon Tax</span>
+                  <span class="vid-item-meta">Episode 1 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-brand-text">Curious <span class="amp">&amp;</span> Creative</p>
-          <p style="max-width:32ch; font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
+              <button
+                type="button"
+                class="vid-item"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                data-episode="2"
+                data-duration="&mdash;:&mdash;"
+                data-title="Why Your Prompts Aren't Working (And How to Fix Them)"
+                data-dek="The small wording fixes that turn a mediocre answer into the one you actually wanted."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">Why Your Prompts Aren't Working (And How to Fix Them)</span>
+                  <span class="vid-item-meta">Episode 2 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="vid-item"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                data-episode="3"
+                data-duration="&mdash;:&mdash;"
+                data-title="The Difference Between a Chatbot and Actual Intelligence"
+                data-dek="A plain-English line between something that talks well and something that actually thinks."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">The Difference Between a Chatbot and Actual Intelligence</span>
+                  <span class="vid-item-meta">Episode 3 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="vid-item"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                data-episode="4"
+                data-duration="&mdash;:&mdash;"
+                data-title="What AI Can't Do Yet, No Matter What the Ads Say"
+                data-dek="The honest limits nobody puts in the demo reel — and why that's fine, actually."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">What AI Can't Do Yet, No Matter What the Ads Say</span>
+                  <span class="vid-item-meta">Episode 4 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="vid-item"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                data-episode="5"
+                data-duration="&mdash;:&mdash;"
+                data-title="Teaching a Model to Read the Room"
+                data-dek="Context, tone, and timing — the unglamorous skills every good model still has to learn."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">Teaching a Model to Read the Room</span>
+                  <span class="vid-item-meta">Episode 5 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="vid-item"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                data-episode="6"
+                data-duration="&mdash;:&mdash;"
+                data-title="The Five-Minute Guide to Picking the Right AI Tool"
+                data-dek="A fast, no-nonsense way to choose one instead of doomscrolling ten review threads."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">The Five-Minute Guide to Picking the Right AI Tool</span>
+                  <span class="vid-item-meta">Episode 6 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="vid-item"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                data-episode="7"
+                data-duration="&mdash;:&mdash;"
+                data-title="Is Your Job Actually at Risk? A Grounded Take"
+                data-dek="Less panic, more math — what's actually changing, and what's just noise."
+              >
+                <span class="vid-thumb art-slot" data-art="approachable" aria-hidden="true">
+                  <svg class="vid-thumb-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.7-6.86a1 1 0 0 0 0-1.7L9.53 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+                </span>
+                <span class="vid-item-body">
+                  <span class="vid-item-title">Is Your Job Actually at Risk? A Grounded Take</span>
+                  <span class="vid-item-meta">Episode 7 &middot; &mdash;:&mdash;</span>
+                </span>
+              </button>
+
+            </div>
+
+            <a class="btn-pill vid-list-more" href="pages/archive.html">All videos <span class="vid-arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/studio.html">Studio</a></li>
-            <li><a href="pages/shows.html">Shows</a></li>
-            <li><a href="pages/inventions.html">Inventions</a></li>
-            <li><a href="pages/art.html">Art</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Joshua</h4>
-          <ul>
-            <li><a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a></li>
-            <li><a href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="pages/shows.html#eclectic-polymath">Eclectic Polymath</a></li>
-            <li><a href="pages/shows.html#approachable-ai">Approachable AI</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Janel</h4>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="pages/shows.html#aspiring-abolitionist">Aspiring Abolitionist</a></li>
-            <li><a href="pages/shows.html#too-much-to-tweet">Too Much to Tweet</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-mark" aria-hidden="true">Curious &amp; Creative</div>
-      <div class="footer-bottom">
-        <span>© 2025 Curious &amp; Creative</span>
-        <span>Made with curiosity ✦</span>
+
       </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="js/main.js"></script>
+</section>
+<section id="universe" class="tick-section" aria-label="From the universe, and shorts">
+
+  <!-- TICKER — auto-scrolling tilted cards -->
+  <div class="pill-row">
+    <h2 class="pill-title pill-title--pink">From the Universe</h2>
+  </div>
+
+  <div class="tick-viewport" aria-label="A slowly scrolling wall of things we make">
+    <div class="tick-track" data-tick-track>
+      <a class="tick-card tick-card--show" href="https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa" target="_blank" rel="noopener" style="--tilt:-6deg">
+        <span class="art-slot tick-card__art" data-art="tmtt"><span class="art-slot__fx">TT</span></span>
+        <span class="tick-card__name">Too Much to Tweet</span>
+        <span class="tick-card__go">Listen →</span>
+      </a>
+      <span class="tick-card tick-card--quote" style="--tilt:-3deg">
+        <span class="tick-card__big">"Stay curious long enough and it starts to look like a plan."</span>
+      </span>
+      <a class="tick-card tick-card--show" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener" style="--tilt:2deg">
+        <span class="art-slot tick-card__art" data-art="abolitionist"><span class="art-slot__fx">AA</span></span>
+        <span class="tick-card__name">Aspiring Abolitionist</span>
+        <span class="tick-card__go">Listen →</span>
+      </a>
+      <a class="tick-card tick-card--art" href="pages/art.html" style="--tilt:5deg">
+        <span class="tick-card__big" aria-hidden="true">✷</span>
+        <span class="tick-card__name">The gallery is warming up</span>
+      </a>
+      <a class="tick-card tick-card--kindling" href="pages/inventions.html" style="--tilt:-4deg">
+        <span class="tick-card__kicker">Invention No. 1</span>
+        <span class="tick-card__name">Kindling</span>
+        <span class="tick-card__go">Peek →</span>
+      </a>
+      <a class="tick-card tick-card--stat" href="pages/shows.html" style="--tilt:3deg">
+        <span class="tick-card__big">6</span>
+        <span class="tick-card__name">shows &amp; counting</span>
+      </a>
+      <a class="tick-card tick-card--news" href="#newsletter" style="--tilt:-2deg">
+        <span class="tick-card__name">The newsletter is coming.</span>
+        <span class="tick-card__go">Get on the list ↓</span>
+      </a>
+      <a class="tick-card tick-card--show" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener" style="--tilt:6deg">
+        <span class="art-slot tick-card__art" data-art="polymath"><span class="art-slot__fx">EP</span></span>
+        <span class="tick-card__name">Eclectic Polymath</span>
+        <span class="tick-card__go">Listen →</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- SHORTS -->
+  <div class="pill-row">
+    <h2 class="pill-title">Shorts</h2>
+  </div>
+
+  <div class="shorts-rail wrap" aria-label="Shorts — vertical clips">
+    <!-- DROP-IN: replace each card with a real short (embed or link + poster) -->
+    <a class="shorts-card shorts-card--green" href="#newsletter"><span class="shorts-card__play" aria-hidden="true">▶</span><span class="shorts-card__cap">Clips are coming.</span></a>
+    <a class="shorts-card shorts-card--pink" href="#podcasts"><span class="shorts-card__play" aria-hidden="true">▶</span><span class="shorts-card__cap">The best minute of every episode.</span></a>
+    <a class="shorts-card shorts-card--grape" href="#videos"><span class="shorts-card__play" aria-hidden="true">▶</span><span class="shorts-card__cap">Cut down. Turned up.</span></a>
+    <a class="shorts-card shorts-card--sky" href="#latest"><span class="shorts-card__play" aria-hidden="true">▶</span><span class="shorts-card__cap">First shorts drop soon.</span></a>
+    <a class="shorts-card shorts-card--gold" href="pages/art.html"><span class="shorts-card__play" aria-hidden="true">▶</span><span class="shorts-card__cap">Process, in public.</span></a>
+    <a class="shorts-card shorts-card--orange" href="pages/contact.html"><span class="shorts-card__play" aria-hidden="true">▶</span><span class="shorts-card__cap">Got a clip idea? Tell us.</span></a>
+  </div>
+</section>
+<section id="podcasts" class="pods-section" aria-labelledby="pods-heading">
+  <div class="pill-row">
+    <h2 class="pill-title pill-title--pink" id="pods-heading">Podcasts</h2>
+  </div>
+
+  <div class="wrap">
+    <div class="pods-box">
+      <div class="pods-intro">
+        <h3 class="pods-intro__title">Six shows.<br />One network.</h3>
+        <p class="pods-intro__dek">Politics, abolition, AI, and everything we can't stop talking about — pick a lane or hit shuffle and let the deck decide.</p>
+        <div class="pods-intro__actions">
+          <button class="btn-pill" type="button" id="pods-shuffle">Shuffle <span aria-hidden="true">🔀</span></button>
+          <a class="btn-pill btn-pill--outline pods-intro__explore" href="pages/shows.html">Explore all podcasts</a>
+        </div>
+        <div class="pods-dots" role="tablist" aria-label="Which show is on top">
+          <button class="pods-dot is-on" type="button" data-pods-dot="0" aria-label="Show 1"></button>
+          <button class="pods-dot" type="button" data-pods-dot="1" aria-label="Show 2"></button>
+          <button class="pods-dot" type="button" data-pods-dot="2" aria-label="Show 3"></button>
+          <button class="pods-dot" type="button" data-pods-dot="3" aria-label="Show 4"></button>
+          <button class="pods-dot" type="button" data-pods-dot="4" aria-label="Show 5"></button>
+          <button class="pods-dot" type="button" data-pods-dot="5" aria-label="Show 6"></button>
+        </div>
+      </div>
+
+      <div class="pods-stack" data-pods-stack>
+        <!-- DROP-IN: real artwork lands automatically via data-art; swap taglines any time -->
+        <article class="pods-card pods-card--tmtt">
+          <div class="pods-card__row">
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="art-slot pods-card__art" data-art="tmtt"><span class="art-slot__fx">TT</span></span>
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <h4 class="pods-card__name">Too Much to Tweet</h4>
+          <p class="pods-card__tag">Takes too big for the timeline. Hosted by Janel.</p>
+          <a class="pods-card__go" href="https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa" target="_blank" rel="noopener">Listen →</a>
+        </article>
+        <article class="pods-card pods-card--ccpod">
+          <div class="pods-card__row">
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="art-slot pods-card__art" data-art="ccpod"><span class="art-slot__fx">C&amp;C</span></span>
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <h4 class="pods-card__name">The C&amp;C Podcast</h4>
+          <p class="pods-card__tag">The flagship. Joshua &amp; Janel, mic'd up. In the works.</p>
+          <a class="pods-card__go" href="#newsletter">Coming soon →</a>
+        </article>
+        <article class="pods-card pods-card--abolitionist">
+          <div class="pods-card__row">
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="art-slot pods-card__art" data-art="abolitionist"><span class="art-slot__fx">AA</span></span>
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <h4 class="pods-card__name">Aspiring Abolitionist</h4>
+          <p class="pods-card__tag">Joshua on justice, freedom, and getting there.</p>
+          <a class="pods-card__go" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Listen →</a>
+        </article>
+        <article class="pods-card pods-card--polymath">
+          <div class="pods-card__row">
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="art-slot pods-card__art" data-art="polymath"><span class="art-slot__fx">EP</span></span>
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <h4 class="pods-card__name">Eclectic Polymath</h4>
+          <p class="pods-card__tag">For people who refuse to pick one thing.</p>
+          <a class="pods-card__go" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Listen →</a>
+        </article>
+        <article class="pods-card pods-card--approachable">
+          <div class="pods-card__row">
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="art-slot pods-card__art" data-art="approachable"><span class="art-slot__fx">AI</span></span>
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <h4 class="pods-card__name">Approachable AI</h4>
+          <p class="pods-card__tag">AI, minus the jargon. On YouTube.</p>
+          <a class="pods-card__go" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Watch →</a>
+        </article>
+        <article class="pods-card pods-card--dominate">
+          <div class="pods-card__row">
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="art-slot pods-card__art" data-art="dominate"><span class="art-slot__fx">DD</span></span>
+            <span class="pods-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+          <h4 class="pods-card__name">Dominate the Decade</h4>
+          <p class="pods-card__tag">Janel guests. The decade doesn't stand a chance.</p>
+          <a class="pods-card__go" href="https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp" target="_blank" rel="noopener">Listen →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" class="nl-section" aria-label="Newsletter and archive">
+  <div class="wrap nl-grid">
+    <div class="nl-card nl-card--news">
+      <p class="nl-card__eyebrow">The Newsletter</p>
+      <h3 class="nl-card__title">The Curious &amp; Creative Newsletter</h3>
+      <p class="nl-card__line">Ideas, episodes, and experiments — in your inbox when it matters.</p>
+      <!-- DROP-IN: newsletter provider form action (Mailchimp/Buttondown/etc.) -->
+      <form class="nl-form" data-nl-form>
+        <label class="nl-form__label" for="nl-email">Email address</label>
+        <div class="nl-form__row">
+          <input class="nl-form__input" id="nl-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          <button class="nl-form__go" type="submit" aria-label="Join the newsletter">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </form>
+      <p class="nl-form__done" data-nl-done hidden>You're on the list — almost. The newsletter is warming up. ✷</p>
+    </div>
+
+    <div class="nl-card nl-card--archive">
+      <p class="nl-card__eyebrow">The Archive</p>
+      <h3 class="nl-card__title">Every episode. Every experiment.</h3>
+      <p class="nl-card__line">The whole back catalog, organized — from before it was ever a network.</p>
+      <a class="btn-pill nl-card__cta" href="pages/archive.html">Take me there</a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer id="site-footer" class="foot-section">
+  <div class="wrap">
+    <div class="foot-bar">
+      <a class="foot-mark" href="index.html">
+        <span class="foot-mark__g">Curious</span> <span class="foot-mark__a">&amp;</span> <span class="foot-mark__p">Creative</span>
+      </a>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="pages/about.html">About</a>
+        <a href="pages/studio.html">Studio</a>
+        <a href="pages/shows.html">Shows</a>
+        <a href="pages/art.html">Art</a>
+        <a href="pages/inventions.html">Inventions</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+      <p class="foot-copy">© 2026 Curious &amp; Creative · Chicago</p>
+    </div>
+    <p class="foot-sign">Built curious. Made creative.</p>
+  </div>
+</footer>
+<script src="js/home.js" defer></script>
+<script src="js/artwork.js" defer></script>
 </body>
 </html>
