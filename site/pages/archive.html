@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Archive — Curious &amp; Creative</title>
+  <meta name="description" content="Every episode, every experiment — the Curious & Creative back catalog." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <style>
+    .arch-top { width: var(--wrap); margin: 1.5rem auto 0; display: flex; justify-content: space-between; align-items: center; }
+    .arch-back { font-weight: 700; color: var(--ink-soft); transition: color var(--speed) var(--ease); }
+    .arch-back:hover { color: var(--ink); }
+    .arch-mark { font-weight: 900; font-stretch: 87%; text-transform: uppercase; letter-spacing: -0.01em; }
+    .arch-mark .g { color: var(--green); } .arch-mark .a { color: var(--gold); } .arch-mark .p { color: var(--pink); }
+    .arch-head { width: var(--wrap); margin: clamp(2.5rem, 6vw, 4rem) auto 1rem; }
+    .arch-head p { max-width: 46ch; margin-top: 1.25rem; color: var(--ink-soft); font-size: 1.05rem; }
+    .arch-filters { width: var(--wrap); margin: 1.5rem auto 2.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .arch-chip { border: 1px solid var(--line-strong); border-radius: var(--pill); padding: 0.45em 1.1em; font-weight: 700; font-size: 0.9rem; transition: background var(--speed) var(--ease), color var(--speed) var(--ease); }
+    .arch-chip:hover, .arch-chip.is-on { background: var(--black); color: var(--white); }
+    .arch-grid { width: var(--wrap); margin: 0 auto 4rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    @media (max-width: 1024px) { .arch-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .arch-grid { grid-template-columns: 1fr; } }
+    .arch-item { border: 1px dashed var(--line-strong); border-radius: var(--card-r); padding: 1.5rem; min-height: 150px; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; color: var(--ink-soft); transition: border-color var(--speed) var(--ease), transform var(--speed) var(--ease); }
+    .arch-item:hover { border-color: var(--ink); transform: translateY(-2px); }
+    .arch-item b { color: var(--ink); font-size: 1.05rem; }
+    .arch-item small { font-size: 0.85rem; }
+    .arch-note { width: var(--wrap); margin: 0 auto 4rem; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--box-r); padding: 2rem; color: var(--ink-soft); }
+    .arch-note b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="arch-top">
+    <a class="arch-mark" href="../index.html"><span class="g">Curious</span> <span class="a">&amp;</span> <span class="p">Creative</span></a>
+    <a class="arch-back" href="../index.html">&larr; Back to the network</a>
+  </div>
+
+  <header class="arch-head">
+    <h1 class="pill-title">The Archive</h1>
+    <p>Every episode, every video, every experiment — the whole back catalog in one place. We're loading it in show by show.</p>
+  </header>
+
+  <!-- DROP-IN: filters become live once archive items land -->
+  <nav class="arch-filters" aria-label="Archive filters">
+    <button class="arch-chip is-on" type="button">Everything</button>
+    <button class="arch-chip" type="button">Podcasts</button>
+    <button class="arch-chip" type="button">Videos</button>
+    <button class="arch-chip" type="button">Shorts</button>
+    <button class="arch-chip" type="button">Art</button>
+    <button class="arch-chip" type="button">Inventions</button>
+    <button class="arch-chip" type="button">Studio</button>
+  </nav>
+
+  <!-- DROP-IN: replace placeholder items with real archive entries (title, show, date, link) -->
+  <section class="arch-grid" aria-label="Archive items">
+    <a class="arch-item" href="https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa"><b>Too Much to Tweet</b><small>Full episode list — landing here soon</small></a>
+    <a class="arch-item" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw"><b>Aspiring Abolitionist</b><small>Full episode list — landing here soon</small></a>
+    <a class="arch-item" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069"><b>Eclectic Polymath</b><small>Full episode list — landing here soon</small></a>
+    <a class="arch-item" href="https://www.youtube.com/@Approachable.A.I"><b>Approachable AI</b><small>Every video — landing here soon</small></a>
+    <a class="arch-item" href="art.html"><b>Art</b><small>Pieces + process shots</small></a>
+    <a class="arch-item" href="inventions.html"><b>Inventions</b><small>Kindling and what's next</small></a>
+  </section>
+
+  <aside class="arch-note">
+    <b>Building in public:</b> this page is the shell for the full C&amp;C back catalog. As episodes and drops get indexed, they'll appear here — filterable, searchable, all of it.
+  </aside>
+
+  <script>
+    document.querySelectorAll('.arch-chip').forEach((c) => c.addEventListener('click', () => {
+      document.querySelectorAll('.arch-chip').forEach((x) => x.classList.remove('is-on'));
+      c.classList.add('is-on');
+    }));
+  </script>
+</body>
+</html>

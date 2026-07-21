@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - claude/design-curious-creative-hub-sJkxe
+      - claude/ringer-inspired-sJkxe
   workflow_dispatch:
 
 permissions:
