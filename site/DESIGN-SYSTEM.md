@@ -1,62 +1,25 @@
-# Curious & Creative — Design System
+# Curious & Creative — Design System (Network Edition)
 
-Playful. Bubbly. Sticker-bright. The hub of Joshua German & Janel Moore.
-Vibe: Cosmo & Wanda / Fairly OddParents energy — magical and fun, but not silly.
-Inspired by the C&C logo (green "Curious", pink "Creative", gold accents, sparkles).
+The public hub for everything Joshua German and Janel Moore make. Editorial,
+media-network layout (Ringer-inspired structure), C&C colors, light + dark.
 
-## Palette
-| Token         | Hex       | Use                                  |
-|---------------|-----------|--------------------------------------|
-| `--cream`     | `#FFFCF5` | Page background                      |
-| `--mint`      | `#E9F8E6` | Green-tint section                   |
-| `--blush`     | `#FFEAF4` | Pink-tint section                    |
-| `--sky`       | `#E7F6FB` | Blue-tint section                    |
-| `--green`     | `#57B84A` | Primary (Curious) — buttons, footer  |
-| `--green-deep`| `#2F9039` | Green text / brand                   |
-| `--pink`      | `#EC3F8E` | Primary accent (Creative) — CTAs     |
-| `--pink-deep` | `#D11F77` | Pink text / links                    |
-| `--gold`      | `#FFC93C` | Ampersand, sparkles, highlights      |
-| `--grape`     | `#8E6FE0` | Sparkle accent                       |
-| `--sky-blue`  | `#46C7E8` | Sparkle accent                       |
-| `--ink`       | `#3A2B3F` | Body text (warm near-black)          |
-| `--outline`   | `#2A2030` | Sticker outlines (2.5–3px)           |
+## Files
+- `css/cc.css` — the only stylesheet: tokens (light + `[data-theme="dark"]`), header/drawer/search chrome, every section and page component.
+- `js/cc.js` — shared runtime on every page: injects header/footer/drawer/search, theme toggle (saved as `localStorage['cc-theme']`, defaults to the OS setting), loads `data/*.json`, fuzzy search (typo + sound-alike tolerant: "Erica Badu" finds "Erykah Badu").
+- `js/home.js` — homepage: rotating hero (flagship first), The Latest, Videos, show stack, Shorts (auto-hidden when none), ticker, photo strip.
+- `js/pages.js` — Shows, Archive (search + filters), Photography (sets + lightbox), About show tiles.
+- Page shell: `<body data-page="…" data-root="./|../">` with `<div data-cc="header">` / `<div data-cc="footer">`. Subpages were generated from one template; keep their `<head>` identical.
 
-## Type
-- Display: **Fredoka** (rounded, chunky, friendly) — headings, nav, buttons, chips
-- Body: **Nunito** (rounded sans, very readable) — paragraphs, weight 500–800
-- Loaded via Google Fonts.
+## Content pipeline (no manual updates)
+- `data/shows.json` — hand-edited registry (names, hosts, taglines, Spotify/RSS/YouTube ids, art overrides). Add a show here.
+- `scripts/refresh_content.py` (GitHub Actions: every deploy, every 6 hours on main, and on branch pushes that touch it) pulls episodes from RSS feeds, Spotify, and YouTube; mirrors show art, Joshua's photography sets, and portraits from joshuamgerman.com; writes `data/content.json` and `data/photos.json` and commits them.
+- Shows sort by most recent episode; the flagship (The Curious & Creative Podcast) always leads.
+- Spotify-only shows record each newest episode as it appears; pin the show's RSS feed in `shows.json` to get the full back catalog.
 
-## Signature look
-- **Sticker style**: thick `--outline` borders + hard offset shadow (`--sticker: 4px 4px 0`).
-- **Big round radii**: cards 28px, buttons pill.
-- **Sparkles**: 4-point star SVGs floating in the hero (gold/pink/green/grape/sky).
-- **Tilted gold marquee** of disciplines.
-- **Bouncy motion**: spring/bounce easing; reveals scale + rise; buttons press in on click; ampersand wobbles.
-- **Colored wordmark**: green "Curious" + gold "&" + pink "Creative".
-- **Green footer** with gold headings.
+## Tokens
+Paper `#FFFCF5` / dark `#0F0D11` · Ink `#151217` / `#F7F2EA` · Green `#37B34A` · Pink `#EC3F8E` · Gold `#FFC93C` · Grape `#8E6FE0` · Sky `#46C7E8` · Orange `#FF8D27`.
+Show colors: ccpod green, polymath grape, tmtt pink, abolitionist gold, approachable sky, dominate orange (`[data-show]` sets `--c`).
+Type: Archivo (variable width) — headlines 850–900 weight, 78–85% width, uppercase. Radii: cards 22px, boxes 32px, pills.
 
-## Pages (7)
-1. `index.html` — Home (media-network model, Ringer-inspired): kinetic hero framed as "the network" → **The Pulse** topic-chip rail → **The Network** (shows as the main engine: featured newest show + roster incl. the flagship C&C Podcast) → marquee → **Also ours** (Studio/Art/Inventions as the services + things-we've-made path) → manifesto → CTA
-2. `pages/about.html` — story + mission + the duo (Joshua & Janel, photo slots) + SC origin + what we do
-3. `pages/studio.html` — services arm (Strategy & Story · Brand Building · Production · Creative Consulting) + engagement shapes + founder cred
-4. `pages/shows.html` — compact Spotify embeds (Aspiring Abolitionist, Eclectic Polymath, Dominate the Decade) + Approachable AI illustrated card + C&C podcast logo slot at bottom
-5. `pages/inventions.html` — uniform card grid (Kindling + 3 coming-soon), no lead card
-6. `pages/art.html` — gallery framework (6 placeholder tiles) + first-dibs email capture
-7. `pages/contact.html` — playful form + reach-us rail
-
-## Theme
-Light is default. Dark mode toggled via nav button (saved as `localStorage['cc-theme']`) and respects `prefers-color-scheme` on first visit. Inline `<head>` script sets `data-theme` before paint to avoid FOUC.
-Dark palette: warm purple backgrounds (#161020 → #241B2E), cream text + outline (#FFEEDC), brand greens/pinks lightened for AA contrast.
-
-## Reusable classes (see css/components.css)
-nav · hero · sparkle · marquee · pulse(.pulse-chip) · section-title(.green/.pink/.gold, tilted pill) · title-row · network-lead · section-head(.center) · card · card-cover · chip(.chip-status .live/.dev/.soon) · founder(.founder-portrait/.initials/.photo-hint) · logo-slot · manifesto · cta-block(.pink/.mint/.gold) · footer · form · page-head · reveal(.delay-1..4) · umbrella · split · principles
-
-## Founder photos
-Drop `assets/joshua.jpg` and `assets/janel.jpg` (square). Until then, the `<img onerror="this.remove()">` falls back to playful initials (JG / JM).
-
-## Show links (verified with founders)
-- Aspiring Abolitionist — Spotify `7natfWFnBgakjLLZcEDZaw`
-- Eclectic Polymath — Spotify `3dlagzJ0jiWLTB9mF3y069`
-- Approachable AI — YouTube `@Approachable.A.I`
-- Dominate the Decade (Janel guest) — Spotify `3IiC15tFfb1rHoDm9R6Zxp` (TODO: exact episode link)
-- Too Much to Tweet — Spotify `033G4KctzeuD3Pu4db1AQa`
+## Signature pieces
+Rotated pill section titles · Pulse topic rail (chips open search) · story-style hero with progress bars, blurred art bed, drifting zoom, up-next minis · hover-fade cards · black boxes with fading video list + "All videos" · shuffle card stack with audio waves · tilted auto-scrolling ticker · masonry photography with lightbox.
