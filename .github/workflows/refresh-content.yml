@@ -1,39 +1,31 @@
-name: Deploy site to GitHub Pages
+name: Refresh show content
 
+# Pulls real episodes/videos into site/data/content.json on working
+# branches (main refreshes inside the Pages deploy instead).
 on:
   push:
-    branches:
+    branches-ignore:
       - main
-  schedule:
-    # pull new episodes / videos every 6 hours (runs on main)
-    - cron: "23 */6 * * *"
+    paths:
+      - scripts/**
+      - site/data/shows.json
+      - .github/workflows/refresh-content.yml
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Refresh show content (podcast feeds, YouTube)
-        continue-on-error: true
         run: python3 scripts/refresh_content.py
 
-      - name: Save refreshed content to the repo
-        continue-on-error: true
+      - name: Commit refreshed content
         run: |
           git config user.name "cc-content-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -45,15 +37,3 @@ jobs:
             git pull --rebase origin "${GITHUB_REF_NAME}" || true
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
