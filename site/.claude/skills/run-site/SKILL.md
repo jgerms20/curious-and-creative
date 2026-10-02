@@ -32,7 +32,7 @@ node .claude/skills/run-site/driver.mjs
 
 # Single page only
 node .claude/skills/run-site/driver.mjs about
-# Valid names: home about studio shows inventions art contact
+# Valid names: home about studio shows inventions art contact archive
 
 # Dark mode — seeds localStorage + emulates prefers-color-scheme: dark.
 # Writes <page>.dark.png alongside the light <page>.png.
@@ -70,9 +70,11 @@ There is no test suite. The driver IS the smoke test.
 
 - **Reveal-on-scroll suppresses full-page screenshots.** Sections use `.reveal { opacity: 0 }` with an `IntersectionObserver` that adds `.is-visible` on scroll. A `fullPage` screenshot renders the whole canvas without scrolling, so without intervention most sections show as blank cream/blush bands. The driver works around this by emulating `prefers-reduced-motion: reduce` (`reducedMotion: 'reduce'` on the browser context) — see `css/base.css` and `js/main.js`, both honor reduced-motion by adding `.is-visible` immediately. If you ever change the reveal logic, keep the reduced-motion bypass intact or the driver's screenshots break silently.
 
-- **About page emits two expected 404s.** `/assets/joshua.jpg` and `/assets/janel.jpg` are intentional drop-in slots. The `<img onerror="this.remove()">` handler hides them so the JG/JM initials fallback shows instead. The driver filters them via `EXPECTED_404S` — keep that list in sync if you ever rename the slots. If the founders ever drop their photos in, those filenames are what's expected.
+- **Founder photos live in `assets/people/`** (`duo.jpg`, `joshua.jpg`, `janel.jpg`). The old `EXPECTED_404S` entries are harmless leftovers.
 
-- **Cross-origin cert errors are sandbox noise.** Google Fonts (Fredoka + Nunito) and the Spotify embed iframes both fetch over HTTPS and the container's TLS interception triggers `ERR_CERT_AUTHORITY_INVALID`. The site still renders — fonts fall back to system serif/sans, embeds show a "couldn't load" inline. Not a real bug. The driver classifies these as noise and reports `✓ (noise)` rather than failing.
+- **Content is data-driven.** Pages render from `data/content.json` + `data/photos.json`, written by `scripts/refresh_content.py` in GitHub Actions. Episode art and YouTube thumbnails are remote, so they show as colored tiles in this sandbox but load live.
+
+- **Cross-origin cert errors are sandbox noise.** Google Fonts (Archivo) and the Spotify embed iframes both fetch over HTTPS and the container's TLS interception triggers `ERR_CERT_AUTHORITY_INVALID`. The site still renders — fonts fall back to system serif/sans, embeds show a "couldn't load" inline. Not a real bug. The driver classifies these as noise and reports `✓ (noise)` rather than failing.
 
 - **Spotify embeds don't render content in this sandbox.** The cert error blocks the iframe from loading the show. The page layout still renders correctly (iframe placeholder is sized), but no cover art appears in the screenshot. Live on GitHub Pages, they show real cover art + a play button. If you need to validate the embed iframes themselves, do it on the live deployed URL, not locally.
 

@@ -31,6 +31,7 @@ const PAGES = {
   inventions: '/pages/inventions.html',
   art:        '/pages/art.html',
   contact:    '/pages/contact.html',
+  archive:    '/pages/archive.html',
 };
 
 const pick = process.argv[2];
@@ -75,7 +76,7 @@ for (const [name, path] of Object.entries(todo)) {
   page.on('console', (m) => {
     if (m.type() !== 'error') return;
     const t = m.text();
-    if (/ERR_CERT_AUTHORITY_INVALID/.test(t)) { noise.push(`cert: ${t}`); return; }
+    if (/ERR_CERT_AUTHORITY_INVALID|ERR_TUNNEL_CONNECTION_FAILED|ERR_CONNECTION_RESET/.test(t)) { noise.push(`cert: ${t}`); return; }
     if (/status of 404/.test(t)) { noise.push(`404: ${t}`); return; }
     real.push(`console.error: ${t}`);
   });

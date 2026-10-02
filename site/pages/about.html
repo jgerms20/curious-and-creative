@@ -4,245 +4,91 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Curious &amp; Creative</title>
-  <meta name="description" content="Meet Joshua German and Janel Moore — the two co-founders behind Curious &amp; Creative, a playful studio for podcasts, ventures, and culture-shaping ideas." />
+  <meta name="description" content="Who we are: Joshua German and Janel Moore, the two curious minds behind Curious & Creative." />
   <meta property="og:title" content="About — Curious &amp; Creative" />
-  <meta property="og:description" content="A strategist and a policy storyteller walk into a studio. This is what they built." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('cc-theme');
-        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
-    })();
-  </script>
+  <meta property="og:description" content="Who we are: Joshua German and Janel Moore, the two curious minds behind Curious & Creative." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/tokens.css" />
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/components.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cc.css" />
 </head>
-<body>
-  <a href="#main" class="sr-only">Skip to content</a>
+<body data-page="about" data-root="../">
+<div data-cc="header"></div>
+<main id="main" class="wrap">
+<header class="phead">
+  <span class="pill-title">About us</span>
+  <h1 class="phead__title">Two curious minds, <em>one creative hub.</em></h1>
+  <p class="phead__lede">Curious &amp; Creative is the home Joshua German and Janel Moore built for everything they keep making — the podcasts, the videos, the photography, the inventions, and the work that doesn't fit one job description.</p>
+</header>
 
-  <header class="nav" role="banner">
-    <a href="../index.html" class="nav-brand" aria-label="Curious and Creative — Home">
-      <span class="c-green">Curious</span><span class="amp">&amp;</span><span class="c-pink">Creative</span>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="primary-nav" aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="about.html" class="is-active">About</a></li>
-        <li><a href="studio.html">Studio</a></li>
-        <li><a href="shows.html">Shows</a></li>
-        <li><a href="inventions.html">Inventions</a></li>
-        <li><a href="art.html">Art</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<figure class="duo__photo rv" style="aspect-ratio:3/2;max-height:780px">
+  <img src="../assets/people/duo.jpg" alt="Joshua German and Janel Moore standing in front of a wall of wooden bookshelves" />
+  <figcaption class="duo__names"><span>Joshua German</span><span>Janel Moore</span></figcaption>
+</figure>
 
-  <main id="main">
+<section class="split rv" style="margin-top:clamp(3rem,7vw,5rem)">
+  <div>
+    <span class="pill-title pill-title--green">Why we exist</span>
+    <h2 class="phead__title" style="font-size:clamp(2rem,4.5vw,3.4rem);margin-top:1.25rem">We chase the stories and ideas that make culture more curious.</h2>
+  </div>
+  <div class="prose">
+    <p>Curious &amp; Creative is the umbrella where we launch podcasts, build ventures, and take on creative work without forcing any of it into the wrong container. The hub exists so the work has room to breathe — and to grow into whatever shape it actually wants to take.</p>
+    <p>That flexibility matters when you pair <strong>a strategist with a magpie brain</strong> (Joshua) with <strong>a policy storyteller with a microphone</strong> (Janel). Different lenses, shared instinct: follow the interesting thing until it becomes something real.</p>
+    <p>Both of us are University of South Carolina grads — Joshua in Mass Communications, Janel in Global Studies. Shared roots turned into shared ambition.</p>
+  </div>
+</section>
 
-    <!-- PAGE HEADER -->
-    <section class="page-head">
-      <div class="container">
-        <p class="eyebrow">About us</p>
-        <h1>Two curious minds, <span class="c-pink">one little studio.</span></h1>
-        <p class="lede">Curious &amp; Creative is the studio Joshua German and Janel Moore built to hold everything they keep dreaming up — the podcasts, the ventures, the side quests, the work that doesn't fit one job description.</p>
-      </div>
-    </section>
-
-    <!-- MISSION -->
-    <section class="section section-mint">
-      <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <p class="eyebrow">Why we exist</p>
-            <h2>We chase the stories and ideas that make culture more curious.</h2>
-          </div>
-          <div class="reveal delay-1">
-            <p>Curious &amp; Creative is the umbrella where we launch podcasts, build ventures, and take on creative work without forcing any of it into the wrong container. The studio exists so the work has room to breathe — and grow into whatever shape it actually wants to take.</p>
-            <p>That flexibility matters when you pair a strategist with a magpie brain (Joshua) and a policy storyteller with a microphone (Janel). Different lenses, shared instinct: follow the interesting thing until it becomes something real.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- THE DUO -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">The duo</p>
-          <h2>Meet Joshua &amp; Janel.</h2>
-          <p class="lede">One strategist with a magpie brain. One policy storyteller with a microphone. Together: Curious &amp; Creative.</p>
-        </div>
-
-        <div class="founder-grid">
-
-          <!-- Joshua -->
-          <article class="founder reveal">
-            <div class="founder-portrait green">
-              <span class="initials" aria-hidden="true">JG</span>
-              <span class="photo-hint">Drop in joshua.jpg</span>
-              <img src="../assets/joshua.jpg" alt="Joshua German" onerror="this.remove()" />
-            </div>
-            <p class="founder-role">Co-Founder</p>
-            <h3 class="founder-name green">Joshua German</h3>
-            <div class="founder-bio">
-              <p>Senior Connections Strategist at TBWA\Chiat\Day in LA. Before that: Goodby Silverstein &amp; Partners and Wieden+Kennedy. The work is finding the through-line between a brand, a moment, and the people it actually wants to reach.</p>
-              <p>Outside the day job: the Eclectic Polymath podcast (where curiosity meets creativity, across science, tech, art, music, and culture) and Approachable AI on YouTube (complex AI, made friendly). University of South Carolina '20 — Mass Communications, Information Science minor.</p>
-            </div>
-            <div class="founder-links">
-              <a class="chip" href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="chip" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>
-              <a class="chip" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Eclectic Polymath</a>
-              <a class="chip" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Approachable AI</a>
-            </div>
-          </article>
-
-          <!-- Janel -->
-          <article class="founder reveal delay-1">
-            <div class="founder-portrait pink">
-              <span class="initials" aria-hidden="true">JM</span>
-              <span class="photo-hint">Drop in janel.jpg</span>
-              <img src="../assets/janel.jpg" alt="Janel Moore" onerror="this.remove()" />
-            </div>
-            <p class="founder-role">Co-Founder</p>
-            <h3 class="founder-name pink">Janel Moore</h3>
-            <div class="founder-bio">
-              <p>Associate in Technology Global Corporate Banking, Payments at Truist, with experience spanning JP Morgan — plus a track record shaping fundraising and donor engagement for six political candidates across PA, NJ, SC, and GA, including leading financial ops for a $1M+ campaign.</p>
-              <p>Host of Aspiring Abolitionist, the podcast diving into the political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration. University of South Carolina, BA Global Studies. Featured guest on Dominate the Decade.</p>
-            </div>
-            <div class="founder-links">
-              <a class="chip" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="chip" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Aspiring Abolitionist</a>
-              <a class="chip" href="https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp" target="_blank" rel="noopener">Dominate the Decade</a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SOUTH CAROLINA ORIGIN -->
-    <section class="section section-sky">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">Where it started</p>
-          <h2>Two Gamecocks who couldn't stop building.</h2>
-        </div>
-        <p style="max-width:60ch; margin:0 auto; text-align:center; color:var(--ink-soft); font-weight:600;">Both founders are University of South Carolina grads — Joshua (Mass Comm '20) and Janel (Global Studies). Shared roots turned into shared ambition: a studio where a strategist's pattern-spotting meets a policy storyteller's clarity, aimed at whatever shape the next idea wants to take.</p>
-      </div>
-    </section>
-
-    <!-- WHAT WE DO -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">What we make</p>
-          <h2>A little bit of everything.</h2>
-        </div>
-        <div class="principles">
-          <div class="principle reveal">
-            <span class="n">01</span>
-            <h3>Studio.</h3>
-            <p>Strategy, story, and production for brands and founders.</p>
-          </div>
-          <div class="principle reveal delay-1">
-            <span class="n">02</span>
-            <h3>Shows.</h3>
-            <p>Three running, one more on the way.</p>
-          </div>
-          <div class="principle reveal delay-2">
-            <span class="n">03</span>
-            <h3>Inventions.</h3>
-            <p>Kindling is first. The umbrella is built for more.</p>
-          </div>
-          <div class="principle reveal delay-3">
-            <span class="n">04</span>
-            <h3>Art.</h3>
-            <p>Pieces we make for ourselves, and for sale.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MANIFESTO -->
-    <section class="section section-blush">
-      <div class="container">
-        <p class="manifesto reveal">A studio is just <span class="em-pink">permission</span> to keep asking <span class="em-green">what's next.</span></p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-block mint reveal">
-          <p class="eyebrow" style="justify-content:center;">Work with us</p>
-          <h2>Curious? Same.</h2>
-          <p>If you've got a project, a guest pitch, a venture idea, or just want to swap notes on good work — come say hi.</p>
-          <a class="btn btn-primary" href="contact.html">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-brand-text">Curious <span class="amp">&amp;</span> Creative</p>
-          <p style="max-width:32ch; font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="studio.html">Studio</a></li>
-            <li><a href="shows.html">Shows</a></li>
-            <li><a href="inventions.html">Inventions</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Joshua</h4>
-          <ul>
-            <li><a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a></li>
-            <li><a href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="shows.html#eclectic-polymath">Eclectic Polymath</a></li>
-            <li><a href="shows.html#approachable-ai">Approachable AI</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Janel</h4>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="shows.html#aspiring-abolitionist">Aspiring Abolitionist</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-mark" aria-hidden="true">Curious &amp; Creative</div>
-      <div class="footer-bottom">
-        <span>© 2025 Curious &amp; Creative</span>
-        <span>Made with curiosity ✦</span>
-      </div>
+<div class="pill-row"><h2 class="pill-title pill-title--pink">The duo</h2></div>
+<section class="cols rv" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
+  <article class="tile" style="padding:0;overflow:hidden">
+    <img src="../assets/people/joshua.jpg" alt="Portrait of Joshua German" style="width:100%;aspect-ratio:4/5;max-height:560px;object-fit:cover;object-position:50% 45%" loading="lazy" />
+    <div style="padding:1.5rem;display:flex;flex-direction:column;gap:.6rem">
+      <span class="eyebrow">Co-founder</span>
+      <h3>Joshua McKenzie German</h3>
+      <p>Senior Connections Strategist at TBWA\Chiat\Day on Levi's, Sephora, and DIRECTV — after Goodby Silverstein &amp; Partners and Wieden+Kennedy. Started as a reporter at The Daily Gamecock and still works like one: find the real story, then make people feel it.</p>
+      <p>Photographer (portraits, fashion, live events — on film and digital). Hosts <a class="pill-more" href="shows.html#polymath">The Eclectic Polymath</a> and <a class="pill-more" href="shows.html#approachable">Approachable AI</a>, and co-hosted <a class="pill-more" href="shows.html#dominate">Dominate the Decade</a>.</p>
+      <p class="showblock__links">
+        <a class="btn btn--sm" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>
+        <a class="btn btn--ghost btn--sm" href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
     </div>
-  </footer>
+  </article>
+  <article class="tile" style="padding:0;overflow:hidden">
+    <img src="../assets/people/janel.jpg" alt="Portrait of Janel Moore" style="width:100%;aspect-ratio:4/5;max-height:560px;object-fit:cover;object-position:50% 20%" loading="lazy" />
+    <div style="padding:1.5rem;display:flex;flex-direction:column;gap:.6rem">
+      <span class="eyebrow">Co-founder</span>
+      <h3>Janel Moore</h3>
+      <p>Associate in Technology, Global Corporate Banking &amp; Payments at Truist, with experience spanning JP Morgan — plus a track record shaping fundraising and donor engagement for six political candidates across PA, NJ, SC, and GA, including leading financial operations for a $1M+ campaign.</p>
+      <p>Hosts <a class="pill-more" href="shows.html#tmtt">Too Much to Tweet</a> and <a class="pill-more" href="shows.html#abolitionist">Aspiring Abolitionist</a>, and was a featured guest on Dominate the Decade.</p>
+      <p class="showblock__links">
+        <a class="btn btn--sm" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost btn--sm" href="shows.html#tmtt">Her shows</a>
+      </p>
+    </div>
+  </article>
+</section>
 
-  <script src="../js/main.js"></script>
+<div class="pill-row"><h2 class="pill-title">What we make</h2></div>
+<section class="cols rv">
+  <a class="tile" href="shows.html" style="--c:var(--pink)"><span class="tile__num">01</span><h3>Shows</h3><p>Six podcasts and video series, from history rabbit holes to policy and AI — with the Curious &amp; Creative Podcast as the flagship.</p></a>
+  <a class="tile" href="art.html" style="--c:var(--gold)"><span class="tile__num">02</span><h3>Photography</h3><p>Portraits, fashion, live events, and travel — Los Angeles to Rio de Janeiro.</p></a>
+  <a class="tile" href="studio.html" style="--c:var(--green)"><span class="tile__num">03</span><h3>Studio</h3><p>Strategy, story, and production for brands and founders who treat creative as serious work.</p></a>
+  <a class="tile" href="inventions.html" style="--c:var(--grape)"><span class="tile__num">04</span><h3>Inventions</h3><p>Kindling is first. The umbrella is built for more.</p></a>
+</section>
+
+<div class="pill-row"><h2 class="pill-title pill-title--gold">The shows</h2><a class="pill-more" href="shows.html">Listen →</a></div>
+<section class="cols" id="about-shows"></section>
+
+<section class="cta rv" style="background:var(--pink)">
+  <div><h2>Curious? Same.</h2><p>Got a project, a guest pitch, a venture idea, or want to swap notes on good work? Come say hi.</p></div>
+  <a class="btn btn--light" href="contact.html">Get in touch <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+<div data-cc="footer"></div>
+<script src="../js/cc.js"></script>
+<script src="../js/pages.js"></script>
 </body>
 </html>

@@ -4,188 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Curious &amp; Creative</title>
-  <meta name="description" content="Send us a guest pitch, project inquiry, venture idea, or just a hello — we read every note and answer like humans." />
+  <meta name="description" content="Get in touch with Curious & Creative — guest pitches, projects, photography, partnerships, and press." />
   <meta property="og:title" content="Contact — Curious &amp; Creative" />
-  <meta property="og:description" content="Send us a guest pitch, project inquiry, venture idea, or just a hello — we read every note and answer like humans." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('cc-theme');
-        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
-    })();
-  </script>
+  <meta property="og:description" content="Get in touch with Curious & Creative — guest pitches, projects, photography, partnerships, and press." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/tokens.css" />
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/components.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cc.css" />
 </head>
-<body>
-  <a href="#main" class="sr-only">Skip to content</a>
+<body data-page="contact" data-root="../">
+<div data-cc="header"></div>
+<main id="main" class="wrap">
+<header class="phead">
+  <span class="pill-title pill-title--pink">Say hello</span>
+  <h1 class="phead__title">Let's make <em>something.</em></h1>
+  <p class="phead__lede">Guest pitches, project inquiries, photo shoots, venture conversations, or a thoughtful hello — all welcome. We read every note.</p>
+</header>
+<section class="split">
+  <form class="form" id="contact-form" data-to="jgerms20@gmail.com">
+    <label>Name<input name="name" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label>What's this about?
+      <select name="topic">
+        <option value="general">General hello</option>
+        <option value="guest">Guest pitch</option>
+        <option value="project">Project / brand work</option>
+        <option value="photo">Photography</option>
+        <option value="venture">Venture / partnership</option>
+        <option value="press">Press</option>
+      </select>
+    </label>
+    <label>Message<textarea name="message" required></textarea></label>
+    <button class="btn" type="submit" style="justify-self:start">Send it <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+    <p class="eyebrow" style="text-transform:none;letter-spacing:0">Opens your email app with everything filled in.</p>
+  </form>
+  <div class="cols" style="grid-template-columns:1fr">
+    <article class="tile"><span class="eyebrow">By email</span><h3><a href="mailto:jgerms20@gmail.com">jgerms20@gmail.com</a></h3><p>The fastest way to reach us.</p></article>
+    <article class="tile"><span class="eyebrow">Across the web</span>
+      <p class="showblock__links" style="margin:0">
+        <a class="btn btn--ghost btn--sm" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>
+        <a class="btn btn--ghost btn--sm" href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn--ghost btn--sm" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">Joshua on LinkedIn</a>
+        <a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">Janel on LinkedIn</a>
+      </p>
+    </article>
+  </div>
+</section>
+<script>
+(() => {
+  const f = document.getElementById("contact-form");
+  const topic = new URLSearchParams(location.search).get("topic");
+  if (topic && f.topic.querySelector(`option[value="${topic}"]`)) f.topic.value = topic;
+  f.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const label = f.topic.options[f.topic.selectedIndex].text;
+    const body = `${f.message.value}\n\n— ${f.name.value} (${f.email.value})`;
+    location.href = `mailto:${f.dataset.to}?subject=${encodeURIComponent("Curious & Creative: " + label)}&body=${encodeURIComponent(body)}`;
+  });
+})();
+</script>
+</main>
+<div data-cc="footer"></div>
+<script src="../js/cc.js"></script>
 
-  <header class="nav" role="banner">
-    <a href="../index.html" class="nav-brand" aria-label="Curious and Creative — Home">
-      <span class="c-green">Curious</span><span class="amp">&amp;</span><span class="c-pink">Creative</span>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="primary-nav" aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="../index.html">About</a></li>
-        <li><a href="studio.html">Studio</a></li>
-        <li><a href="shows.html">Shows</a></li>
-        <li><a href="inventions.html">Inventions</a></li>
-        <li><a href="art.html">Art</a></li>
-        <li><a href="contact.html" class="is-active">Contact</a></li>
-        <li>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <!-- PAGE HEADER -->
-    <section class="page-head">
-      <div class="container">
-        <p class="eyebrow">Say hello</p>
-        <h1>Let's make <span class="c-pink">something.</span></h1>
-        <p class="lede">Guest pitches, project inquiries, venture conversations, or a thoughtful hello — all welcome. We read every note.</p>
-      </div>
-    </section>
-
-    <!-- SPLIT: FORM + CONTACT INFO -->
-    <section class="section">
-      <div class="container">
-        <div class="split">
-
-          <!-- LEFT: CONTACT FORM -->
-          <form class="form reveal" data-form="contact" novalidate>
-            <div class="field">
-              <label for="c-name">Name</label>
-              <input id="c-name" type="text" name="name" required />
-            </div>
-            <div class="field">
-              <label for="c-email">Email</label>
-              <input id="c-email" type="email" name="email" required />
-            </div>
-            <div class="field">
-              <label for="c-subject">Subject</label>
-              <input id="c-subject" type="text" name="subject" />
-            </div>
-            <div class="field">
-              <label for="c-type">What's this about?</label>
-              <select id="c-type" name="type">
-                <option>General</option>
-                <option>Project / Brand work</option>
-                <option>Guest pitch</option>
-                <option>Venture / Partnership</option>
-                <option>Press</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="c-message">Message</label>
-              <textarea id="c-message" name="message" required></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Send it <span class="arrow" aria-hidden="true">→</span></button>
-            <div class="form-success" role="status">Thanks! We'll be in touch soon.</div>
-          </form>
-
-          <!-- RIGHT: OTHER WAYS TO REACH US -->
-          <div class="reveal delay-1" style="display:flex; flex-direction:column; gap:1.5rem;">
-            <p class="eyebrow">Other ways to reach us</p>
-
-            <div>
-              <h3>By inbox</h3>
-              <p style="color:var(--ink-soft); font-weight:600;">hello@curiousandcreative.studio</p>
-            </div>
-
-            <div>
-              <h3>On LinkedIn</h3>
-              <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.5rem;">
-                <a class="link-arrow" href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">Joshua German <span class="arrow">↗</span></a>
-                <a class="link-arrow" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">Janel Moore <span class="arrow">↗</span></a>
-              </div>
-            </div>
-
-            <div>
-              <h3>Across the web</h3>
-              <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.5rem;">
-                <a class="link-arrow" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com <span class="arrow">↗</span></a>
-                <a class="link-arrow" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Eclectic Polymath <span class="arrow">↗</span></a>
-                <a class="link-arrow" href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Approachable AI <span class="arrow">↗</span></a>
-                <a class="link-arrow" href="https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw" target="_blank" rel="noopener">Aspiring Abolitionist <span class="arrow">↗</span></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CLOSING MANIFESTO -->
-    <section class="section section-mint">
-      <div class="container">
-        <p class="manifesto reveal">We answer like <span class="em-pink">humans</span>, because we <span class="em-green">are.</span></p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-brand-text">Curious <span class="amp">&amp;</span> Creative</p>
-          <p style="max-width:32ch; font-weight:600;">A playful studio &amp; umbrella for the work of Joshua German and Janel Moore.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="studio.html">Studio</a></li>
-            <li><a href="shows.html">Shows</a></li>
-            <li><a href="inventions.html">Inventions</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Joshua</h4>
-          <ul>
-            <li><a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a></li>
-            <li><a href="https://www.linkedin.com/in/joshua-german-729634265/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="shows.html#eclectic-polymath">Eclectic Polymath</a></li>
-            <li><a href="shows.html#approachable-ai">Approachable AI</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Janel</h4>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="shows.html#aspiring-abolitionist">Aspiring Abolitionist</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-mark" aria-hidden="true">Curious &amp; Creative</div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Curious &amp; Creative</span>
-        <span>Made with curiosity ✦</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../js/main.js"></script>
 </body>
 </html>
