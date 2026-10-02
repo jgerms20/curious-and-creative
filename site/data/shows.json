@@ -1,0 +1,75 @@
+{
+  "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin an 'rss' or 'youtube_channel_id' once known to skip discovery. Order here is only a tiebreak; the site sorts shows by most recent activity, flagship first.",
+  "shows": [
+    {
+      "key": "ccpod",
+      "name": "The Curious & Creative Podcast",
+      "short": "Curious & Creative",
+      "kind": "podcast",
+      "flagship": true,
+      "hosts": ["Joshua German", "Janel Moore"],
+      "tagline": "Joshua and Janel, mic'd up — strategy, story, policy, AI, and culture.",
+      "spotify": null,
+      "itunes_search": ["Curious & Creative", "Curious and Creative podcast", "Curious & Creative Joshua German", "Curious and Creative Janel Moore"],
+      "match_artist": ["german", "moore", "curious"],
+      "rss": null
+    },
+    {
+      "key": "polymath",
+      "name": "Eclectic Polymath",
+      "short": "Eclectic Polymath",
+      "kind": "podcast",
+      "hosts": ["Joshua German"],
+      "tagline": "Where curiosity meets creativity — science, tech, art, music, and culture.",
+      "spotify": "3dlagzJ0jiWLTB9mF3y069",
+      "itunes_search": ["Eclectic Polymath", "The Eclectic Polymath Podcast"],
+      "rss": null
+    },
+    {
+      "key": "tmtt",
+      "name": "Too Much to Tweet",
+      "short": "Too Much to Tweet",
+      "kind": "podcast",
+      "hosts": ["Janel Moore"],
+      "tagline": "The takes too big for a caption.",
+      "spotify": "033G4KctzeuD3Pu4db1AQa",
+      "itunes_search": ["Too Much to Tweet"],
+      "rss": null
+    },
+    {
+      "key": "abolitionist",
+      "name": "Aspiring Abolitionist",
+      "short": "Aspiring Abolitionist",
+      "kind": "podcast",
+      "hosts": ["Janel Moore"],
+      "tagline": "Politics, policy, and culture from an abolitionist lens.",
+      "spotify": "7natfWFnBgakjLLZcEDZaw",
+      "itunes_search": ["Aspiring Abolitionist"],
+      "rss": null
+    },
+    {
+      "key": "approachable",
+      "name": "Approachable AI",
+      "short": "Approachable AI",
+      "kind": "youtube",
+      "hosts": ["Joshua German"],
+      "tagline": "Complex AI, made friendly.",
+      "youtube_handle": "@Approachable.A.I",
+      "youtube_channel_id": null
+    },
+    {
+      "key": "dominate",
+      "name": "Dominate the Decade",
+      "short": "Dominate the Decade",
+      "kind": "podcast",
+      "guest": true,
+      "hosts": ["Janel Moore (guest)"],
+      "tagline": "Janel's guest appearance on the self-improvement podcast.",
+      "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
+      "itunes_search": ["Dominate the Decade"],
+      "only_matching": ["janel"],
+      "rss": null
+    }
+  ],
+  "probe_sites": ["https://joshuamgerman.com"]
+}
