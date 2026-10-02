@@ -9,6 +9,48 @@
    "thumb": "assets/photos/portraits-jmg_1520-sm.jpg"
   },
   {
+   "id": "portraits-jmg_1763",
+   "set": "Portraits",
+   "alt": "Two people stand in red and blue light against a wall covered in newspaper pages.",
+   "src": "assets/photos/portraits-jmg_1763.jpg",
+   "thumb": "assets/photos/portraits-jmg_1763-sm.jpg"
+  },
+  {
+   "id": "portraits-jmg_8929",
+   "set": "Portraits",
+   "alt": "Portrait of a man in dark glasses and a leather jacket against vivid graffiti.",
+   "src": "assets/photos/portraits-jmg_8929.jpg",
+   "thumb": "assets/photos/portraits-jmg_8929-sm.jpg"
+  },
+  {
+   "id": "portraits-jmg_8750",
+   "set": "Portraits",
+   "alt": "Portrait of a woman standing beside railway tracks in warm evening light.",
+   "src": "assets/photos/portraits-jmg_8750.jpg",
+   "thumb": "assets/photos/portraits-jmg_8750-sm.jpg"
+  },
+  {
+   "id": "portraits-jmg_8386",
+   "set": "Portraits",
+   "alt": "Portrait of a woman in warm window light beside a chrome pole.",
+   "src": "assets/photos/portraits-jmg_8386.jpg",
+   "thumb": "assets/photos/portraits-jmg_8386-sm.jpg"
+  },
+  {
+   "id": "portraits-jmg_6968",
+   "set": "Portraits",
+   "alt": "Portrait of an artist seated in a colorful studio surrounded by his work.",
+   "src": "assets/photos/portraits-jmg_6968.jpg",
+   "thumb": "assets/photos/portraits-jmg_6968-sm.jpg"
+  },
+  {
+   "id": "portraits-jmg_9553",
+   "set": "Portraits",
+   "alt": "A woman holds a red rose in a brightly colored portrait setting.",
+   "src": "assets/photos/portraits-jmg_9553.jpg",
+   "thumb": "assets/photos/portraits-jmg_9553-sm.jpg"
+  },
+  {
    "id": "fashion-jmg_8075",
    "set": "Fashion",
    "alt": "Fashion portrait of a man with red-tipped hair, red boots, and a painted black denim look.",
@@ -21,6 +63,27 @@
    "alt": "Fashion portrait of a model in a red coat and knit hat against a pale studio wall.",
    "src": "assets/photos/fashion-jmg_1601.jpg",
    "thumb": "assets/photos/fashion-jmg_1601-sm.jpg"
+  },
+  {
+   "id": "fashion-jmg_3641",
+   "set": "Fashion",
+   "alt": "Fashion portrait of a model seated in a patterned green look and white trousers.",
+   "src": "assets/photos/fashion-jmg_3641.jpg",
+   "thumb": "assets/photos/fashion-jmg_3641-sm.jpg"
+  },
+  {
+   "id": "fashion-jmg_4379",
+   "set": "Fashion",
+   "alt": "Fashion portrait of a woman with copper hair seated against a rough concrete wall.",
+   "src": "assets/photos/fashion-jmg_4379.jpg",
+   "thumb": "assets/photos/fashion-jmg_4379-sm.jpg"
+  },
+  {
+   "id": "fashion-jmg_8986",
+   "set": "Fashion",
+   "alt": "A couple in dark clothing stands close together before a graffiti-covered wall.",
+   "src": "assets/photos/fashion-jmg_8986.jpg",
+   "thumb": "assets/photos/fashion-jmg_8986-sm.jpg"
   },
   {
    "id": "events-jmg_2228",
@@ -37,6 +100,20 @@
    "thumb": "assets/photos/events-jmg_2254-sm.jpg"
   },
   {
+   "id": "events-jmg_7895",
+   "set": "Events & Live",
+   "alt": "A small production crew gathers around a plated dish on a culinary set.",
+   "src": "assets/photos/events-jmg_7895.jpg",
+   "thumb": "assets/photos/events-jmg_7895-sm.jpg"
+  },
+  {
+   "id": "events-dsc00021",
+   "set": "Events & Live",
+   "alt": "A crowd gathers beneath the glowing sign of a night market.",
+   "src": "assets/photos/events-dsc00021.jpg",
+   "thumb": "assets/photos/events-dsc00021-sm.jpg"
+  },
+  {
    "id": "events-jmg_7787",
    "set": "Events & Live",
    "alt": "Hands finish a row of carefully plated dishes at an event.",
@@ -44,11 +121,53 @@
    "thumb": "assets/photos/events-jmg_7787-sm.jpg"
   },
   {
+   "id": "events-jmg_2854",
+   "set": "Events & Live",
+   "alt": "A DJ works behind a booth in a club lit with purple and green light.",
+   "src": "assets/photos/events-jmg_2854.jpg",
+   "thumb": "assets/photos/events-jmg_2854-sm.jpg"
+  },
+  {
+   "id": "events-jmg_2437",
+   "set": "Events & Live",
+   "alt": "A graduate smiles in cap and gown outdoors after commencement.",
+   "src": "assets/photos/events-jmg_2437.jpg",
+   "thumb": "assets/photos/events-jmg_2437-sm.jpg"
+  },
+  {
+   "id": "events-jmg_2560",
+   "set": "Events & Live",
+   "alt": "A graduate celebrates on the steps of an engineering building.",
+   "src": "assets/photos/events-jmg_2560.jpg",
+   "thumb": "assets/photos/events-jmg_2560-sm.jpg"
+  },
+  {
+   "id": "events-dsc00028",
+   "set": "Events & Live",
+   "alt": "Friends pose together during a crowded evening market event.",
+   "src": "assets/photos/events-dsc00028.jpg",
+   "thumb": "assets/photos/events-dsc00028-sm.jpg"
+  },
+  {
    "id": "shop-rio-brahma-corner",
    "set": "Rio de Janeiro",
    "alt": "Two men share a conversation outside a corner bar in Rio de Janeiro, a golden dog resting at their feet, a mural of a painted face on the wall behind them.",
    "src": "assets/photos/shop-rio-brahma-corner.jpg",
    "thumb": "assets/photos/shop-rio-brahma-corner-sm.jpg"
+  },
+  {
+   "id": "shop-rio-fog-islands-moon",
+   "set": "Rio de Janeiro",
+   "alt": "A full moon rises over fog-shrouded islands in Guanabara Bay, Rio de Janeiro.",
+   "src": "assets/photos/shop-rio-fog-islands-moon.jpg",
+   "thumb": "assets/photos/shop-rio-fog-islands-moon-sm.jpg"
+  },
+  {
+   "id": "shop-rio-two-brothers",
+   "set": "Rio de Janeiro",
+   "alt": "The peak of Dois Irmãos rises over a lagoon and the Rio de Janeiro skyline at dusk.",
+   "src": "assets/photos/shop-rio-two-brothers.jpg",
+   "thumb": "assets/photos/shop-rio-two-brothers-sm.jpg"
   },
   {
    "id": "shop-rio-santa-teresa-trams",
@@ -65,11 +184,81 @@
    "thumb": "assets/photos/landscape-jmg_5693-sm.jpg"
   },
   {
+   "id": "landscape-dsc00659",
+   "set": "Landscapes",
+   "alt": "A red sun hangs over a hazy landscape lined with palm trees.",
+   "src": "assets/photos/landscape-dsc00659.jpg",
+   "thumb": "assets/photos/landscape-dsc00659-sm.jpg"
+  },
+  {
+   "id": "landscape-jmg_6799",
+   "set": "Landscapes",
+   "alt": "A lone walker crosses a mountain overlook as sunlight breaks through cloud.",
+   "src": "assets/photos/landscape-jmg_6799.jpg",
+   "thumb": "assets/photos/landscape-jmg_6799-sm.jpg"
+  },
+  {
+   "id": "landscape-jmg_6109",
+   "set": "Landscapes",
+   "alt": "Rock formations sit offshore beneath a pale band of ocean haze.",
+   "src": "assets/photos/landscape-jmg_6109.jpg",
+   "thumb": "assets/photos/landscape-jmg_6109-sm.jpg"
+  },
+  {
+   "id": "landscape-jmg_6986",
+   "set": "Landscapes",
+   "alt": "Sailboats fill a marina with a city skyline rising beyond them.",
+   "src": "assets/photos/landscape-jmg_6986.jpg",
+   "thumb": "assets/photos/landscape-jmg_6986-sm.jpg"
+  },
+  {
+   "id": "landscape-jmg_5742",
+   "set": "Landscapes",
+   "alt": "A tall waterfall drops through a granite valley framed by green trees.",
+   "src": "assets/photos/landscape-jmg_5742.jpg",
+   "thumb": "assets/photos/landscape-jmg_5742-sm.jpg"
+  },
+  {
+   "id": "landscape-dsc00488",
+   "set": "Landscapes",
+   "alt": "A snow-covered mountain rises behind dark trees at blue hour.",
+   "src": "assets/photos/landscape-dsc00488.jpg",
+   "thumb": "assets/photos/landscape-dsc00488-sm.jpg"
+  },
+  {
+   "id": "landscape-jmg_7535",
+   "set": "Landscapes",
+   "alt": "A lifeguard house and palm trees sit on a quiet beach beneath a pink sky.",
+   "src": "assets/photos/landscape-jmg_7535.jpg",
+   "thumb": "assets/photos/landscape-jmg_7535-sm.jpg"
+  },
+  {
+   "id": "landscape-jmg_5559",
+   "set": "Landscapes",
+   "alt": "Two rock formations rise from bright blue water along the coast.",
+   "src": "assets/photos/landscape-jmg_5559.jpg",
+   "thumb": "assets/photos/landscape-jmg_5559-sm.jpg"
+  },
+  {
    "id": "travel-jmg_3086",
    "set": "Travel",
    "alt": "Palm trees and beach umbrellas form silhouettes against a blue-orange dusk sky.",
    "src": "assets/photos/travel-jmg_3086.jpg",
    "thumb": "assets/photos/travel-jmg_3086-sm.jpg"
+  },
+  {
+   "id": "travel-jmg_7419",
+   "set": "Travel",
+   "alt": "Two visitors share a quiet conversation inside an art museum.",
+   "src": "assets/photos/travel-jmg_7419.jpg",
+   "thumb": "assets/photos/travel-jmg_7419-sm.jpg"
+  },
+  {
+   "id": "travel-dsc00870",
+   "set": "Travel",
+   "alt": "Swimmers appear as small figures in a calm sea beneath a pastel sky.",
+   "src": "assets/photos/travel-dsc00870.jpg",
+   "thumb": "assets/photos/travel-dsc00870-sm.jpg"
   }
  ]
 }
