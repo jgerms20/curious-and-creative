@@ -4,6 +4,11 @@
   "pages": [
    {
     "url": "https://joshuamgerman.com",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Joshua McKenzie German | Photographer, Podcaster, AI Builder & Brand Strategist",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -366,6 +371,11 @@
    },
    {
     "url": "https://joshuamgerman.com/shop.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Prints | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -382,6 +392,11 @@
    },
    {
     "url": "https://joshuamgerman.com/photography/",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Photography | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
@@ -694,6 +709,13 @@
    },
    {
     "url": "https://joshuamgerman.com/podcasts/podcast-eclectic-polymath.html",
+    "ids": {
+     "spotify": [
+      "show/3dlagzJ0jiWLTB9mF3y069"
+     ],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "The Eclectic Polymath | A podcast by Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -747,6 +769,11 @@
    },
    {
     "url": "https://joshuamgerman.com/podcasts/podcast-approachable-ai.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Approachable AI | A podcast by Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -800,6 +827,11 @@
    },
    {
     "url": "https://joshuamgerman.com/podcasts/podcast-curious-creative.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Curious & Creative | A podcast by Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -859,6 +891,13 @@
    },
    {
     "url": "https://joshuamgerman.com/podcasts/podcast-dominate.html",
+    "ids": {
+     "spotify": [
+      "show/3IiC15tFfb1rHoDm9R6Zxp"
+     ],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Dominate The Decade | A podcast co-hosted by Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -915,6 +954,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-levis.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Levi's: REIIMAGINE | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -944,6 +988,13 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-gatorade.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": [
+      "cOL4TCUKb04"
+     ]
+    },
     "title": "Gatorade Campaigns | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1069,6 +1120,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-doordash.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "DoorDash: All The Ads | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1099,6 +1155,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-dwb.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Driving While Black | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1146,6 +1207,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-samadams.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Samuel Adams: Brighter Boston | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1187,6 +1253,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-sephora.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Sephora Campaigns | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1220,6 +1291,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-xfinity.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Xfinity: The Greatest Gift | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1242,6 +1318,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-preach.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Preach | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1271,6 +1352,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-directv.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "DIRECTV Campaigns | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1313,6 +1399,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-mlb.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "MLB: Baseball Is Something Else | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1344,6 +1435,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-bmw.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "BMW: Zeus &amp; Hera | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1370,6 +1466,11 @@
    },
    {
     "url": "https://joshuamgerman.com/work/work-califia.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Califia Farms: Calilujah! | Joshua McKenzie German",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1396,6 +1497,11 @@
    },
    {
     "url": "https://joshuamgerman.com/index.html",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Joshua McKenzie German | Photographer, Podcaster, AI Builder & Brand Strategist",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
@@ -1758,6 +1864,11 @@
    },
    {
     "url": "https://joshuamgerman.com/",
+    "ids": {
+     "spotify": [],
+     "anchor": [],
+     "youtube": []
+    },
     "title": "Joshua McKenzie German | Photographer, Podcaster, AI Builder & Brand Strategist",
     "meta": {
      "viewport": "width=device-width, initial-scale=1.0",
