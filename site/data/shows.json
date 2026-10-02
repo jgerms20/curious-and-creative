@@ -1,5 +1,5 @@
 {
-  "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin an 'rss' or 'youtube_channel_id' once known to skip discovery. Order here is only a tiebreak; the site sorts shows by most recent activity, flagship first.",
+  "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin 'rss' / 'spotify' / 'youtube_channel_id' when known to skip discovery. 'itunes_search' only accepts a result whose name matches AND (when 'match_artist' is set) whose host matches. The site sorts shows by most recent activity, flagship first.",
   "shows": [
     {
       "key": "ccpod",
@@ -8,21 +8,25 @@
       "kind": "podcast",
       "flagship": true,
       "hosts": ["Joshua German", "Janel Moore"],
-      "tagline": "Joshua and Janel, mic'd up — strategy, story, policy, AI, and culture.",
+      "tagline": "Where creative strategy meets real conversation.",
+      "about": "A deep dive into the minds of artists, creators, and innovators — the ideas, decisions, and cultural moments that shape how we see (and sell) the world.",
       "spotify": null,
-      "itunes_search": ["Curious & Creative", "Curious and Creative podcast", "Curious & Creative Joshua German", "Curious and Creative Janel Moore"],
-      "match_artist": ["german", "moore", "curious"],
+      "itunes_search": ["Curious & Creative Joshua German", "Curious and Creative Janel Moore"],
+      "match_artist": ["joshua german", "janel moore", "joshua mckenzie german"],
+      "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
       "rss": null
     },
     {
       "key": "polymath",
-      "name": "Eclectic Polymath",
+      "name": "The Eclectic Polymath",
       "short": "Eclectic Polymath",
       "kind": "podcast",
       "hosts": ["Joshua German"],
-      "tagline": "Where curiosity meets creativity — science, tech, art, music, and culture.",
+      "tagline": "Everything is interesting when you dig deep enough.",
+      "about": "Deep, well-researched episodes on whatever's too interesting to ignore: history and power, religion and myth, psychology, science, and Black culture. No lane, no niche.",
       "spotify": "3dlagzJ0jiWLTB9mF3y069",
-      "itunes_search": ["Eclectic Polymath", "The Eclectic Polymath Podcast"],
+      "itunes_search": ["The Eclectic Polymath"],
+      "match_artist": ["german"],
       "rss": null
     },
     {
@@ -32,19 +36,10 @@
       "kind": "podcast",
       "hosts": ["Janel Moore"],
       "tagline": "The takes too big for a caption.",
+      "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
       "spotify": "033G4KctzeuD3Pu4db1AQa",
       "itunes_search": ["Too Much to Tweet"],
-      "rss": null
-    },
-    {
-      "key": "abolitionist",
-      "name": "Aspiring Abolitionist",
-      "short": "Aspiring Abolitionist",
-      "kind": "podcast",
-      "hosts": ["Janel Moore"],
-      "tagline": "Politics, policy, and culture from an abolitionist lens.",
-      "spotify": "7natfWFnBgakjLLZcEDZaw",
-      "itunes_search": ["Aspiring Abolitionist"],
+      "match_artist": ["moore"],
       "rss": null
     },
     {
@@ -53,23 +48,54 @@
       "short": "Approachable AI",
       "kind": "youtube",
       "hosts": ["Joshua German"],
-      "tagline": "Complex AI, made friendly.",
+      "tagline": "Demystifying AI, one episode at a time.",
+      "about": "No jargon, just what's actually happening and why it matters. Real tools, real builds, and the mistakes along the way.",
       "youtube_handle": "@Approachable.A.I",
-      "youtube_channel_id": null
+      "youtube_channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
+      "art_url": "https://joshuamgerman.com/photos/podcasts/approachable-ai-logo.jpg"
+    },
+    {
+      "key": "abolitionist",
+      "name": "Aspiring Abolitionist",
+      "short": "Aspiring Abolitionist",
+      "kind": "podcast",
+      "hosts": ["Janel Moore"],
+      "tagline": "Politics, policy, and culture from an abolitionist lens.",
+      "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
+      "spotify": "7natfWFnBgakjLLZcEDZaw",
+      "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
+      "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915"
     },
     {
       "key": "dominate",
       "name": "Dominate the Decade",
       "short": "Dominate the Decade",
       "kind": "podcast",
-      "guest": true,
-      "hosts": ["Janel Moore (guest)"],
-      "tagline": "Janel's guest appearance on the self-improvement podcast.",
+      "archive": true,
+      "hosts": ["Joshua German", "Adarius Simpkins", "Matthew Anderson"],
+      "tagline": "Growth, culture, and building a meaningful decade.",
+      "about": "Three young Black men navigating their own paths to success — crypto, politics, sports, music, movies, and everything in between. The full 2020–2023 run, including Janel's guest episode.",
       "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
-      "itunes_search": ["Dominate the Decade"],
-      "only_matching": ["janel"],
-      "rss": null
+      "rss": "https://anchor.fm/s/24421480/podcast/rss",
+      "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875"
     }
   ],
-  "probe_sites": ["https://joshuamgerman.com"]
+  "probe_sites": ["https://joshuamgerman.com"],
+  "photos": {
+    "page": "https://joshuamgerman.com/photography/",
+    "sets": {
+      "portraits": "Portraits",
+      "fashion": "Fashion",
+      "events": "Events & Live",
+      "shop": "Rio de Janeiro",
+      "landscape": "Landscapes",
+      "travel": "Travel"
+    }
+  },
+  "people": {
+    "joshua": [
+      "https://joshuamgerman.com/photos/_sized/self-000070270013-960.webp",
+      "https://joshuamgerman.com/photos/self/000070270013.JPEG"
+    ]
+  }
 }

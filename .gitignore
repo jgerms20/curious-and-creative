@@ -1,13 +1,12 @@
-# macOS
-.DS_Store
 
+# .env
 # IDE
-.vscode/
-.idea/
-
 # Logs
-*.log
-
 # Sensitive files (add paths here if needed)
 # credentials.json
-# .env
+# macOS
+*.log
+.DS_Store
+.idea/
+.vscode/
+__pycache__/

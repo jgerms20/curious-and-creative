@@ -22,6 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install image tools
+        continue-on-error: true
+        run: python3 -m pip install --quiet pillow
+
       - name: Refresh show content (podcast feeds, YouTube)
         run: python3 scripts/refresh_content.py
 
@@ -29,7 +33,7 @@ jobs:
         run: |
           git config user.name "cc-content-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data site/assets/art
+          git add site/data site/assets
           if git diff --cached --quiet; then
             echo "No content changes."
           else

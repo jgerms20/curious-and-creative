@@ -131,6 +131,26 @@ def duration_seconds(v):
     return secs
 
 
+def write_image(data, path, max_side):
+    """Save as web-sized JPEG when Pillow is available, raw bytes otherwise."""
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    try:
+        from io import BytesIO
+        from PIL import Image, ImageOps
+        im = ImageOps.exif_transpose(Image.open(BytesIO(data)))
+        if im.mode not in ("RGB", "L"):
+            bg = Image.new("RGB", im.size, (255, 255, 255))
+            bg.paste(im.convert("RGBA"), mask=im.convert("RGBA").split()[-1])
+            im = bg
+        im.thumbnail((max_side, max_side))
+        im.convert("RGB").save(path, "JPEG", quality=84, optimize=True, progressive=True)
+        return im.size
+    except ImportError:
+        with open(path, "wb") as f:
+            f.write(data)
+        return None
+
+
 def save_art(key, url):
     if not url:
         return None
@@ -138,20 +158,98 @@ def save_art(key, url):
         data = fetch(url, binary=True)
         if len(data) < 2000:
             return None
-        os.makedirs(ART, exist_ok=True)
-        path = os.path.join(ART, f"{key}.jpg")
-        with open(path, "wb") as f:
-            f.write(data)
+        write_image(data, os.path.join(ART, f"{key}.jpg"), 900)
         return f"assets/art/{key}.jpg"
     except Exception as e:  # noqa: BLE001
         log(f"  art download failed for {key}: {e}")
         return None
 
 
+def sync_photos(reg, probes):
+    """Mirror the curated photography sets (web-sized) into assets/photos."""
+    cfg = reg.get("photos") or {}
+    sets = cfg.get("sets", {})
+    page = None
+    for p in probes:
+        for pg in p.get("pages", []):
+            if pg.get("url", "").rstrip("/") == cfg.get("page", "").rstrip("/"):
+                page = pg
+    if not page:
+        log("  photography page not in probe; keeping existing photos")
+        return None
+    photos, seen = [], set()
+    for img in page.get("images", []):
+        m = re.search(r"/_sized/([a-z]+)-(.+)-480\.webp$", img["src"])
+        if not m or m.group(1) not in sets:
+            continue
+        cat, name = m.group(1), m.group(2)
+        if (cat, name) in seen:
+            continue
+        seen.add((cat, name))
+        base = img["src"].rsplit("/", 1)[0]
+        slug = f"{cat}-{name}".lower()
+        out = {"id": slug, "set": sets[cat], "alt": img.get("alt", ""),
+               "src": f"assets/photos/{slug}.jpg", "thumb": f"assets/photos/{slug}-sm.jpg"}
+        try:
+            big = os.path.join(SITE, out["src"])
+            small = os.path.join(SITE, out["thumb"])
+            if not os.path.exists(big):
+                write_image(fetch(f"{base}/{cat}-{name}-960.webp", binary=True), big, 1400)
+            if not os.path.exists(small):
+                write_image(fetch(img["src"], binary=True), small, 640)
+            photos.append(out)
+        except Exception as e:  # noqa: BLE001
+            log(f"  photo failed {slug}: {e}")
+    log(f"  photos synced: {len(photos)}")
+    return photos
+
+
+def sync_people(reg):
+    people = {}
+    for who, urls in (reg.get("people") or {}).items():
+        dest = os.path.join(SITE, "assets", "people", f"{who}.jpg")
+        for u in urls:
+            try:
+                write_image(fetch(u, binary=True), dest, 1000)
+                people[who] = f"assets/people/{who}.jpg"
+                break
+            except Exception as e:  # noqa: BLE001
+                log(f"  person photo {who} failed from {u}: {e}")
+        if who not in people and os.path.exists(dest):
+            people[who] = f"assets/people/{who}.jpg"
+    return people
+
+
+def scan_ids(text):
+    return {
+        "spotify": sorted(set(re.findall(r"open\.spotify\.com/(?:embed/)?((?:show|episode)/[A-Za-z0-9]{22})", text))),
+        "anchor": sorted(set(re.findall(r"anchor\.fm/s/[0-9a-f]+/podcast/rss", text))),
+        "youtube": sorted(set(re.findall(r"(?:youtube(?:-nocookie)?\.com/(?:embed/|watch\?v=|shorts/)|youtu\.be/)([\w-]{11})", text))),
+    }
+
+
 # ---------------------------------------------------------------- Spotify
+DEBUG = {}
+
+
+def spotify_oembed(show_id):
+    try:
+        d = json.loads(fetch("https://open.spotify.com/oembed?url=" + urllib.parse.quote(
+            f"https://open.spotify.com/show/{show_id}", safe="")))
+        return {"name": d.get("title"), "cover": d.get("thumbnail_url")}
+    except Exception as e:  # noqa: BLE001
+        log(f"  spotify oembed failed: {e}")
+        return None
+
+
 def spotify_embed(show_id):
     """Episode list (title -> episode url) + show name from the embed page."""
     page = fetch(f"https://open.spotify.com/embed/show/{show_id}")
+    dbg = DEBUG.setdefault("spotify", {}).setdefault(show_id, {})
+    dbg["len"] = len(page)
+    dbg["script_ids"] = re.findall(r'<script[^>]*id="([^"]+)"', page)[:20]
+    dbg["head"] = page[:1200]
+    dbg["episode_ids"] = sorted(set(re.findall(r"spotify:episode:([A-Za-z0-9]{22})", page)))[:60]
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
     if not m:
         return None
@@ -161,7 +259,7 @@ def spotify_embed(show_id):
 
     def walk(o):
         if isinstance(o, dict):
-            if "trackList" in o and "name" in o and "name" not in found:
+            if "trackList" in o and not found:
                 found.update(o)
             for v in o.values():
                 walk(v)
@@ -171,6 +269,14 @@ def spotify_embed(show_id):
 
     walk(data)
     if not found:
+        def keys(o, depth=0, path=""):
+            if depth > 6 or not isinstance(o, dict):
+                return []
+            out = [path]
+            for k, v in o.items():
+                out += keys(v, depth + 1, f"{path}.{k}")
+            return out
+        dbg["paths"] = keys(data)[:200]
         return None
     eps = []
     for t in found.get("trackList") or []:
@@ -195,8 +301,9 @@ def spotify_embed(show_id):
             cover = max(srcs, key=lambda s: s.get("width") or 0).get("url")
     except Exception:  # noqa: BLE001
         pass
-    if eps:
-        log(f"  spotify embed sample keys: {sorted((found.get('trackList') or [{}])[0].keys())}")
+    if found.get("trackList"):
+        dbg["track_sample"] = found["trackList"][0]
+        log(f"  spotify embed sample keys: {sorted(found['trackList'][0].keys())}")
     return {"name": found.get("name") or found.get("title"), "episodes": eps, "cover": cover}
 
 
@@ -227,8 +334,11 @@ def pick_feed(show, spotify_name):
                 score = 100
             elif want and (want in name or name in want):
                 score = 60
-            if artists and any(a in artist or a in name for a in artists):
-                score += 30
+            if artists:
+                if any(a in artist for a in artists):
+                    score += 30
+                else:
+                    score = 0
             if not r.get("feedUrl"):
                 score = 0
             if score > best_score:
@@ -291,9 +401,14 @@ def do_podcast(show, prev_eps):
             log(f"  spotify: {sp and sp['name']} — {len(sp['episodes']) if sp else 0} episodes")
         except Exception as e:  # noqa: BLE001
             log(f"  spotify embed failed: {e}")
+        if not sp or not sp.get("name"):
+            oe = spotify_oembed(show["spotify"])
+            if oe:
+                sp = {**(sp or {"episodes": []}), **{k: v for k, v in oe.items() if v}}
+                log(f"  spotify oembed: {oe.get('name')}")
     feed_url = show.get("rss")
     apple = None
-    if not feed_url:
+    if not feed_url and show.get("itunes_search"):
         apple = pick_feed(show, sp and sp.get("name"))
         if apple:
             feed_url = apple.get("feedUrl")
@@ -338,11 +453,11 @@ def do_podcast(show, prev_eps):
     if only:
         eps = [e for e in eps if any(w in (e["title"] + " " + e["description"]).lower() for w in only)]
 
-    cover = (channel and channel.get("image")) or (sp and sp.get("cover")) or (apple and apple.get("artworkUrl600"))
+    cover = show.get("art_url") or (channel and channel.get("image")) or (sp and sp.get("cover")) or (apple and apple.get("artworkUrl600"))
     art = save_art(key, cover)
     out["show"] = {
         "feed": feed_url,
-        "apple_url": apple and apple.get("collectionViewUrl"),
+        "apple_url": show.get("apple") or (apple and apple.get("collectionViewUrl")),
         "spotify_url": show.get("spotify") and f"https://open.spotify.com/show/{show['spotify']}",
         "feed_title": (channel and channel["title"]) or (sp and sp.get("name")),
         "description": channel and channel["description"],
@@ -414,7 +529,7 @@ def do_youtube(show, prev_eps):
     # keep history: RSS only carries the latest 15
     have = {e["id"] for e in eps}
     eps += [e for e in prev_eps if e.get("show") == key and e["id"] not in have]
-    art = save_art(key, avatar)
+    art = save_art(key, show.get("art_url") or avatar)
     report[key] = {"ok": bool(cid), "channel_id": cid, "episodes": len(eps)}
     return {"show": {"youtube_url": f"https://www.youtube.com/{handle}" if handle else None,
                      "channel_id": cid, "art": art or avatar, "art_remote": avatar,
@@ -473,8 +588,20 @@ def probe_site(base):
         bg = re.findall(r'url\((["\']?)(https?://[^)"\']+\.(?:jpe?g|png|webp))\1\)', page)
         imgs = [{"src": urllib.parse.urljoin(url, i["src"]), "alt": i["alt"]} for i in g.imgs]
         imgs += [{"src": u, "alt": "(css background)"} for _, u in bg]
+        ids = scan_ids(page)
+        for src in re.findall(r'<script[^>]+src="([^"]+)"', page):
+            su = urllib.parse.urljoin(url, src)
+            if urllib.parse.urlparse(su).netloc == host and su not in seen:
+                seen.add(su)
+                try:
+                    more = scan_ids(fetch(su))
+                    for k in ids:
+                        ids[k] = sorted(set(ids[k]) | set(more[k]))
+                except Exception:  # noqa: BLE001
+                    pass
         out["pages"].append({
             "url": url,
+            "ids": ids,
             "title": g.meta.get("og:title") or (re.search(r"<title>(.*?)</title>", page, re.S) or [None, ""])[1],
             "meta": g.meta,
             "text": " ".join(g.text)[:6000],
@@ -550,6 +677,18 @@ def main():
                 log(f"  probe failed: {e}")
         with open(os.path.join(DATA, "_probe.json"), "w") as f:
             json.dump(probes, f, indent=1, ensure_ascii=False)
+        log("\n=== photos")
+        photos = sync_photos(reg, probes)
+        if photos is not None:
+            with open(os.path.join(DATA, "photos.json"), "w") as f:
+                json.dump({"source": reg["photos"]["page"], "photos": photos}, f, indent=1, ensure_ascii=False)
+        people = sync_people(reg)
+        log(f"  people: {people}")
+        content["people"] = people
+        with open(prev_path, "w") as f:
+            json.dump(content, f, indent=1, ensure_ascii=False)
+    with open(os.path.join(DATA, "_debug.json"), "w") as f:
+        json.dump(DEBUG, f, indent=1, ensure_ascii=False)
     return 0
 
 
