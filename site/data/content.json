@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T21:17:14Z",
+ "generated_at": "2026-10-02T22:01:27Z",
  "shows": [
   {
    "key": "ccpod",
@@ -13,13 +13,16 @@
    ],
    "tagline": "Where creative strategy meets real conversation.",
    "about": "A deep dive into the minds of artists, creators, and innovators — the ideas, decisions, and cultural moments that shape how we see (and sell) the world.",
-   "spotify": null,
+   "spotify": "033ze48fmi1cTvj2M7Pb6M",
    "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
    "rss": null,
+   "video_check": true,
+   "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
+   "feed_title": "Curious + Creative",
    "art": "assets/art/ccpod.jpg",
    "art_remote": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
-   "latest": null,
-   "count": 0
+   "latest": "2026-07-22T20:42:00Z",
+   "count": 1
   },
   {
    "key": "polymath",
@@ -41,6 +44,25 @@
    "count": 1
   },
   {
+   "key": "brazil",
+   "name": "God Is Brazilian",
+   "short": "God Is Brazilian",
+   "kind": "podcast",
+   "hosts": [
+    "Joshua German"
+   ],
+   "tagline": "A podcast by Joshua German.",
+   "about": "",
+   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
+   "rss": null,
+   "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
+   "feed_title": "God is Brazilian",
+   "art": "assets/art/brazil.jpg",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-02T18:51:00Z",
+   "count": 1
+  },
+  {
    "key": "tmtt",
    "name": "Too Much to Tweet",
    "short": "Too Much to Tweet",
@@ -55,7 +77,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -98,6 +120,7 @@
    "spotify_url": "https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw",
    "feed_title": "Aspiring Abolitionist",
    "description": "Welcome to Aspiring Abolitionist, the podcast where we dive into the political, social, and cultural moments shaping our world today.",
+   "complete": true,
    "art": "assets/art/abolitionist.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
    "latest": "2025-01-21T14:00:00Z",
@@ -124,6 +147,7 @@
    "spotify_url": "https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp",
    "feed_title": "Dominate the Decade",
    "description": "Three black young men, each navigating their individual paths to success. Follow along and join in as we strive to dominate the decade in all aspects of life.",
+   "complete": true,
    "art": "assets/art/dominate.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/5983104/5983104-1590975610877-89f0b71432133.jpg",
    "latest": "2023-03-20T13:00:00Z",
@@ -131,6 +155,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "brazil:7vrA6kgiv00Oj5BhRuGxYn",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#14 Quilombos: Black Resistance, Sovereignty, and Freedom in Brazil",
+   "date": "2026-10-02T18:51:00Z",
+   "duration": 2612,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
+   "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
+   "spotify_video": false
+  },
   {
    "id": "polymath:3tPHusaPdDpdvDHHmsJd1Y",
    "show": "polymath",
@@ -141,7 +178,8 @@
    "description": "",
    "image": null,
    "url": "https://open.spotify.com/episode/3tPHusaPdDpdvDHHmsJd1Y",
-   "spotify_url": "https://open.spotify.com/episode/3tPHusaPdDpdvDHHmsJd1Y"
+   "spotify_url": "https://open.spotify.com/episode/3tPHusaPdDpdvDHHmsJd1Y",
+   "spotify_video": false
   },
   {
    "id": "tmtt:75VIZfJzZUK5h5P6qkGryF",
@@ -153,7 +191,21 @@
    "description": "",
    "image": null,
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
-   "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF"
+   "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
+   "spotify_video": false
+  },
+  {
+   "id": "ccpod:1c29WyilCTFCyjUvtJkWWl",
+   "show": "ccpod",
+   "kind": "episode",
+   "title": "EP 3 test",
+   "date": "2026-07-22T20:42:00Z",
+   "duration": 3002,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
+   "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
+   "spotify_video": false
   },
   {
    "id": "approachable:WTV1Wh3ltCI",
@@ -722,20 +774,34 @@
  ],
  "report": {
   "ccpod": {
-   "ok": false,
+   "ok": true,
    "feed": null,
-   "episodes": 0,
-   "spotify_matches": 0
+   "spotify_name": "Curious + Creative",
+   "full_catalog": false,
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "polymath": {
    "ok": true,
    "feed": null,
+   "spotify_name": "The Eclectic Polymath Podcast",
+   "full_catalog": false,
+   "episodes": 1,
+   "spotify_matches": 1
+  },
+  "brazil": {
+   "ok": true,
+   "feed": null,
+   "spotify_name": "God is Brazilian",
+   "full_catalog": false,
    "episodes": 1,
    "spotify_matches": 1
   },
   "tmtt": {
    "ok": true,
    "feed": null,
+   "spotify_name": "Too Much to Tweet",
+   "full_catalog": false,
    "episodes": 1,
    "spotify_matches": 1
   },
@@ -747,12 +813,16 @@
   "abolitionist": {
    "ok": true,
    "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
+   "spotify_name": "Aspiring Abolitionist",
+   "full_catalog": true,
    "episodes": 13,
    "spotify_matches": 1
   },
   "dominate": {
    "ok": true,
    "feed": "https://anchor.fm/s/24421480/podcast/rss",
+   "spotify_name": "Dominate the Decade ",
+   "full_catalog": true,
    "episodes": 23,
    "spotify_matches": 1
   }
