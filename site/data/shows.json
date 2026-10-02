@@ -16,7 +16,18 @@
       "spotify": "033ze48fmi1cTvj2M7Pb6M",
       "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
       "rss": null,
-      "video_check": true
+      "video_check": true,
+      "itunes_search": [
+        "Curious + Creative",
+        "Curious and Creative podcast Joshua German"
+      ],
+      "match_artist": [
+        "german",
+        "moore"
+      ],
+      "hide_matching": [
+        "test"
+      ]
     },
     {
       "key": "polymath",
@@ -30,7 +41,8 @@
       "about": "Deep, well-researched episodes on whatever's too interesting to ignore: history and power, religion and myth, psychology, science, and Black culture. No lane, no niche.",
       "spotify": "3dlagzJ0jiWLTB9mF3y069",
       "itunes_search": [
-        "The Eclectic Polymath"
+        "The Eclectic Polymath Podcast",
+        "Eclectic Polymath Joshua German"
       ],
       "match_artist": [
         "german"
@@ -48,7 +60,13 @@
       "tagline": "A podcast by Joshua German.",
       "about": "",
       "spotify": "4tAY78JV37aIgmJ2d1iF3w",
-      "rss": null
+      "rss": null,
+      "itunes_search": [
+        "God is Brazilian"
+      ],
+      "match_artist": [
+        "german"
+      ]
     },
     {
       "key": "tmtt",
@@ -62,6 +80,7 @@
       "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
       "spotify": "033G4KctzeuD3Pu4db1AQa",
       "itunes_search": [
+        "Too Much to Tweet Janel Moore",
         "Too Much to Tweet"
       ],
       "match_artist": [
@@ -127,7 +146,21 @@
       "shop": "Rio de Janeiro",
       "landscape": "Landscapes",
       "travel": "Travel"
-    }
+    },
+    "featured": [
+      "portraits-jmg_1520",
+      "portraits-jmg_9553",
+      "fashion-jmg_1601",
+      "events-jmg_2228",
+      "shop-rio-santa-teresa-trams",
+      "portraits-jmg_8929",
+      "landscape-dsc00659",
+      "fashion-jmg_8075",
+      "events-jmg_2254",
+      "portraits-jmg_6968",
+      "shop-rio-brahma-corner",
+      "landscape-jmg_5742"
+    ]
   },
   "people": {
     "joshua": [

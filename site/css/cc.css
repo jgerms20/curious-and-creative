@@ -168,6 +168,7 @@ svg { flex: 0 0 auto; }
 [data-show="abolitionist"] { --c: var(--gold); }
 [data-show="approachable"] { --c: var(--skyb); }
 [data-show="dominate"] { --c: var(--orange); }
+[data-show="brazil"] { --c: #009C3B; }
 
 /* artwork: square cover on a blurred bed of itself */
 .art {
@@ -188,7 +189,7 @@ svg { flex: 0 0 auto; }
 .wordmark .a { color: var(--gold); }
 .wordmark .p { color: var(--wm-pink); }
 .hdr__search {
-  flex: 1 1 auto; max-width: 420px; margin-inline: auto;
+  flex: 1 1 auto; max-width: 340px; margin-inline: auto;
   display: flex; align-items: center; gap: .6em;
   padding: .7em 1.1em; border-radius: var(--pill);
   background: var(--paper-2); border: 1px solid var(--line);
@@ -197,7 +198,7 @@ svg { flex: 0 0 auto; }
 }
 .hdr__search:hover { border-color: var(--line-strong); color: var(--ink); }
 .hdr__search kbd { margin-left: auto; font: 700 11px/1 var(--font); border: 1px solid var(--line-strong); border-radius: 6px; padding: .3em .5em; color: var(--ink-soft); }
-.hdr__links { display: flex; gap: 1.4rem; font-weight: 800; font-size: .98rem; }
+.hdr__links { display: flex; gap: 1.2rem; font-weight: 800; font-size: .98rem; }
 .hdr__links a { position: relative; padding: .3em 0; }
 .hdr__links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform var(--speed) var(--ease); }
 .hdr__links a:hover::after, .hdr__links a[aria-current="page"]::after { transform: scaleX(1); }
@@ -209,7 +210,7 @@ svg { flex: 0 0 auto; }
 [data-theme="dark"] .theme-btn .moon { display: none; }
 .hdr__search-mobile { display: none; }
 
-@media (max-width: 900px) { .hdr__links { display: none; } }
+@media (max-width: 1120px) { .hdr__links { display: none; } }
 @media (max-width: 640px) {
   .hdr__search { display: none; }
   .hdr__search-mobile { display: grid; margin-left: auto; }
@@ -618,3 +619,25 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .tick__track { animation: none; }
   .rv { opacity: 1; transform: none; }
 }
+
+/* studio band (home) */
+.studio { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--box-r); padding: clamp(1.5rem, 4vw, 3rem); }
+.studio__title { font-size: clamp(2rem, 4.2vw, 3.4rem); font-weight: 900; font-stretch: 80%; text-transform: uppercase; line-height: .94; }
+.studio__title em { font-style: normal; color: var(--green-ink); }
+.studio__lead p { color: var(--ink-soft); margin: 1rem 0 1.25rem; max-width: 52ch; font-size: 1.05rem; }
+.studio__lead .btn--ghost { color: var(--ink); }
+.studio__grid { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+.studio__svc { background: var(--card); border: 1px solid var(--line); border-radius: var(--card-r); padding: 1.2rem; display: flex; flex-direction: column; gap: .35rem; border-top: 5px solid var(--c); transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease); }
+.studio__svc:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.studio__svc span { font-weight: 900; font-stretch: 80%; font-size: 1.6rem; color: var(--c); line-height: 1; }
+.studio__svc b { font-weight: 850; font-size: 1.1rem; }
+.studio__svc small { color: var(--ink-soft); font-weight: 600; }
+@media (max-width: 900px) { .studio { grid-template-columns: 1fr; } }
+@media (max-width: 460px) { .studio__grid { grid-template-columns: 1fr; } }
+.person__face { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; float: right; margin: 0 0 .4rem .6rem; }
+
+/* pulse headlines */
+.pulse__chip--story { max-width: 340px; overflow: hidden; text-overflow: ellipsis; display: inline-flex; align-items: center; gap: .5em; }
+.pulse__chip--story i { width: 8px; height: 8px; border-radius: 3px; background: var(--c); flex: 0 0 auto; }
+.pulse__chip--story span { overflow: hidden; text-overflow: ellipsis; }
+.pulse__chip--story:hover i { background: #fff; }

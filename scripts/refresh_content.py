@@ -246,7 +246,11 @@ def sync_photos(reg, probes):
             photos.append(out)
         except Exception as e:  # noqa: BLE001
             log(f"  photo failed {slug}: {e}")
-    log(f"  photos synced: {len(photos)}")
+    feat = cfg.get("featured") or []
+    for ph in photos:
+        ph["featured"] = ph["id"] in feat
+    photos.sort(key=lambda ph: feat.index(ph["id"]) if ph["id"] in feat else len(feat))
+    log(f"  photos synced: {len(photos)} ({sum(ph['featured'] for ph in photos)} featured)")
     return photos
 
 
@@ -602,6 +606,10 @@ def do_podcast(show, prev_eps):
                 e["spotify_video"] = known.get(e["id"]) or spotify_has_video(e["spotify_url"])
         log(f"  video episodes: {sum(1 for e in eps if e.get('spotify_video'))}")
 
+    hide = [w.lower() for w in show.get("hide_matching", [])]
+    if hide:
+        eps = [e for e in eps if not any(re.search(rf"\b{re.escape(w)}\b", e["title"].lower()) for w in hide)]
+
     only = [w.lower() for w in show.get("only_matching", [])]
     if only:
         eps = [e for e in eps if any(w in (e["title"] + " " + e["description"]).lower() for w in only)]
@@ -618,7 +626,8 @@ def do_podcast(show, prev_eps):
         "art": art or cover,
         "art_remote": cover,
     }
-    out["episodes"] = eps if eps else [e for e in prev_eps if e.get("show") == key]
+    out["episodes"] = eps if eps else [e for e in prev_eps if e.get("show") == key
+                                       and not any(re.search(rf"\b{re.escape(w)}\b", e["title"].lower()) for w in hide)]
     report[key] = {"ok": bool(eps), "feed": feed_url, "spotify_name": sp and sp.get("name"),
                    "full_catalog": out["show"]["complete"], "episodes": len(out["episodes"]),
                    "spotify_matches": sum(1 for e in eps if e.get("spotify_url"))}
@@ -796,7 +805,7 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching")}
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Backstage — Curious &amp; Creative</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="backstage.css" />
+</head>
+<body class="bs" data-root="../">
+  <header class="bs-top">
+    <div class="bs-top__in wrap">
+      <a class="wordmark" href="../index.html"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
+      <span class="bs-top__badge">Backstage</span>
+      <span class="bs-top__spacer"></span>
+      <span class="bs-top__who" id="bs-who"></span>
+      <button class="icon-btn theme-btn" type="button" id="bs-theme" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.3 4.3l1.6 1.6M18.1 18.1l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.3 19.7l1.6-1.6M18.1 5.9l1.6-1.6"/></svg>
+      </button>
+      <button class="btn btn--ghost btn--sm" type="button" id="bs-signout" hidden>Sign out</button>
+    </div>
+  </header>
+
+  <main class="wrap" id="bs-main">
+    <section class="bs-auth" id="bs-auth">
+      <div class="bs-auth__card">
+        <span class="pill-title pill-title--green" style="font-size:1rem">Team only</span>
+        <h1 id="auth-title">Sign in to backstage</h1>
+        <p id="auth-sub">Planning, calendars, and everything behind the shows — for Joshua and Janel.</p>
+        <form class="form" id="auth-form" style="margin-top:1.25rem">
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label id="pw-wrap">Password<input name="password" type="password" minlength="8" autocomplete="current-password"></label>
+          <button class="btn" type="submit" id="auth-go">Sign in</button>
+        </form>
+        <div class="bs-auth__switch">
+          <button type="button" data-mode="signup">First time? Create your login</button>
+          <button type="button" data-mode="reset">Forgot password</button>
+          <button type="button" data-mode="signin" hidden>Back to sign in</button>
+        </div>
+        <div id="auth-msg"></div>
+      </div>
+    </section>
+
+    <section id="bs-app" hidden>
+      <nav class="bs-tabs" role="tablist" aria-label="Backstage sections">
+        <button role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button role="tab" data-tab="calendar">Calendar</button>
+        <button role="tab" data-tab="episodes">Episodes</button>
+        <button role="tab" data-tab="tasks">Tasks</button>
+        <button role="tab" data-tab="ideas">Ideas</button>
+        <button role="tab" data-tab="team">Team</button>
+      </nav>
+      <div id="bs-view"></div>
+    </section>
+  </main>
+
+  <div class="bs-modal" id="bs-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <form class="bs-modal__card form" id="bs-modal-form"></form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="backstage.js"></script>
+</body>
+</html>

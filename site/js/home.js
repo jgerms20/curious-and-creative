@@ -17,6 +17,7 @@
     document.querySelectorAll("[data-new-count]").forEach((el) => { el.textContent = fresh ? ` ${fresh}` : ""; });
     document.querySelectorAll("[data-ep-count]").forEach((el) => { el.textContent = eps.length || "All"; });
 
+    pulse(shows, by, longform);
     hero(shows, by, longform, data);
     latest(by, longform, data);
     videos(by, eps);
@@ -26,6 +27,17 @@
     photoStrip(data.photos);
     CC.reveal();
   });
+
+  /* ------------------------------------------------ the pulse: what just dropped */
+  function pulse(shows, by, eps) {
+    const rail = document.getElementById("pulse-rail");
+    if (!rail) return;
+    const items = shows.map((s) => eps.find((e) => e.show === s.key)).filter(Boolean).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    rail.insertAdjacentHTML("beforeend", items.map((e) => {
+      const h = CC.epHref(e);
+      return `<a class="pulse__chip pulse__chip--story" data-show="${esc(e.show)}" href="${esc(h)}"${ext(h)} title="${esc((by[e.show] || {}).name || "")}: ${esc(e.title)}"><i></i><span>${esc(e.title)}</span></a>`;
+    }).join(""));
+  }
 
   /* ------------------------------------------------ hero carousel */
   function hero(shows, by, eps, data) {
@@ -51,11 +63,12 @@
       });
     }
     slides.push({
-      kicker: [`<span class="chip">Who we are</span>`],
+      duo: true,
+      kicker: [`<span class="chip">Who we are</span>`, `<span class="chip">Joshua German &amp; Janel Moore</span>`],
       title: "Two curious minds, one creative hub",
       href: url("pages/about.html"),
-      dek: "Joshua German and Janel Moore make podcasts, videos, photography, and inventions — and help brands find their story. This is where all of it lives.",
-      meta: "Est. by two University of South Carolina grads",
+      dek: "A strategist-photographer and a technologist-storyteller from the University of South Carolina, making shows, pictures, and brand work together.",
+      meta: "Podcasts · Videos · Photography · The Studio",
       img: url("assets/people/duo.jpg"),
       photo: true,
       actions: [["Our story", url("pages/about.html"), "btn"], ["Work with the studio", url("pages/studio.html"), "btn btn--ghost"]],
@@ -88,6 +101,8 @@
         actions: [["See the photography", url("pages/art.html"), "btn"], ["Book a shoot", "https://joshuamgerman.com/photography/", "btn btn--ghost"]],
       });
     }
+    const duoAt = slides.findIndex((x) => x.duo);
+    if (duoAt > 0) slides.unshift(slides.splice(duoAt, 1)[0]);
     const S = slides.slice(0, 6);
     const DUR = 8000;
 
@@ -219,18 +234,19 @@
   function videos(by, eps) {
     const host = document.getElementById("vid");
     const section = document.getElementById("videos");
-    const vids = eps.filter((e) => e.kind === "video");
+    const vids = eps.filter((e) => e.kind === "video" || e.spotify_video).sort((a, b) => String(b.date).localeCompare(String(a.date)));
     if (!host) return;
     if (!vids.length) { section.hidden = true; return; }
+    const multi = new Set(vids.map((v) => v.show)).size > 1;
     const show = by[vids[0].show] || {};
     host.innerHTML = `
       <div>
-        <p class="vid__label"><span>${esc(show.name || "Videos")}</span><a href="${esc(show.youtube_url || "#")}" target="_blank" rel="noopener">Channel ↗</a></p>
+        <p class="vid__label"><span>${esc(multi ? "Watch" : show.name || "Videos")}</span><a href="${esc((by.approachable || {}).youtube_url || "#")}" target="_blank" rel="noopener">YouTube ↗</a></p>
         <div class="vid__listwrap">
           <div class="vid__list" role="listbox" aria-label="Episodes">
             ${vids.map((v, i) => `<button class="vid__item${i ? "" : " is-active"}" type="button" role="option" aria-selected="${!i}" data-i="${i}">
-              <span class="vid__thumb"><img src="${esc(v.image)}" alt="" loading="lazy"></span>
-              <span><span class="vid__t">${esc(v.title)}</span><span class="vid__m">${esc(ago(v.date))}</span></span>
+              <span class="vid__thumb"><img src="${esc(v.image || CC.art(by[v.show]))}" alt="" loading="lazy"></span>
+              <span><span class="vid__t">${esc(v.title)}</span><span class="vid__m">${esc((by[v.show] || {}).short || "")} · ${esc(ago(v.date))}</span></span>
             </button>`).join("")}
           </div>
           <a class="btn vid__all" href="${url("pages/archive.html?show=approachable")}">All videos ${icon.arrow}</a>
@@ -249,6 +265,12 @@
       host.querySelector("#vid-title").textContent = v.title;
       host.querySelector("#vid-dek").textContent = v.description || "";
       host.querySelector("#vid-links").innerHTML = `<a class="btn btn--light btn--sm" href="${esc(v.url)}" target="_blank" rel="noopener">Watch on YouTube ↗</a><span class="chip">${esc(ago(v.date))}</span>`;
+      const spotifyId = !v.youtube_id && v.spotify_url ? v.spotify_url.split("/episode/")[1]?.split("?")[0] : null;
+      if (spotifyId) {
+        host.querySelector("#vid-links").innerHTML = `<a class="btn btn--light btn--sm" href="${esc(v.spotify_url)}" target="_blank" rel="noopener">Watch on Spotify ↗</a><span class="chip">${esc(ago(v.date))}</span>`;
+        player.innerHTML = `<iframe src="https://open.spotify.com/embed/episode/${encodeURIComponent(spotifyId)}/video?utm_source=generator&theme=0" title="${esc(v.title)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+        return;
+      }
       if (autoplay && v.youtube_id) {
         player.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube_id)}?autoplay=1&rel=0" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
       } else {

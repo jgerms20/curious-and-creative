@@ -41,12 +41,12 @@
   /* ---------------- site map (for nav + search) ---------------- */
   const PAGES = [
     { label: "Home", href: "index.html", words: "home front page latest" },
-    { label: "Shows", href: "pages/shows.html", words: "podcasts shows listen episodes spotify apple youtube" },
-    { label: "Videos", href: "index.html#videos", words: "videos youtube watch approachable ai" },
-    { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
-    { label: "Photography", href: "pages/art.html", words: "photography photos art prints gallery portraits fashion events rio landscapes travel" },
     { label: "About", href: "pages/about.html", words: "about us story who joshua janel founders team duo" },
     { label: "Studio", href: "pages/studio.html", words: "studio services strategy brand building production consulting hire work with us" },
+    { label: "Podcasts", href: "pages/shows.html", words: "podcasts shows listen episodes spotify apple youtube" },
+    { label: "Videos", href: "index.html#videos", words: "videos youtube watch approachable ai" },
+    { label: "Photography", href: "pages/art.html", words: "photography photos art prints gallery portraits fashion events rio landscapes travel" },
+    { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
     { label: "Inventions", href: "pages/inventions.html", words: "inventions kindling build products" },
     { label: "Contact", href: "pages/contact.html", words: "contact email hello pitch guest press" },
   ];
@@ -75,7 +75,7 @@
       <div class="hdr__bar wrap">
         <a class="wordmark" href="${url("index.html")}" aria-label="Curious and Creative — home"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
-        <nav class="hdr__links" aria-label="Primary">${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}${navLink("pages/about.html", "About")}</nav>
+        <nav class="hdr__links" aria-label="Primary">${navLink("pages/about.html", "About")}${navLink("pages/studio.html", "Studio")}${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
         <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${icon.moon}${icon.sun}</button>
         <button class="icon-btn" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon.menu}</button>
@@ -89,7 +89,7 @@
         <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => !["Home", "Videos"].includes(p.label)).map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
         <p class="ftr__copy">© ${new Date().getFullYear()} Curious &amp; Creative · Joshua German &amp; Janel Moore</p>
       </div>
-      <p class="ftr__sign">Built curious. Made creative. Episodes refresh automatically from every show's feed.</p>
+      <p class="ftr__sign">Built curious. Made creative. · <a href="${url("backstage/")}" style="opacity:.7">Team</a></p>
     </footer>`;
 
   const drawer = `
@@ -307,7 +307,8 @@
   const loadJSON = (p) => fetch(url(p), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
   CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json")]).then(([content, photos]) => {
     const data = content || { shows: [], episodes: [] };
-    data.photos = (photos && photos.photos) || [];
+    const allPhotos = (photos && photos.photos) || [];
+    data.photos = allPhotos.some((p) => p.featured) ? allPhotos.filter((p) => p.featured) : allPhotos;
     data.byKey = Object.fromEntries((data.shows || []).map((s) => [s.key, s]));
     data.shows = SHOW_ORDER(data.shows || []);
     CC.data = data;
