@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T21:14:22Z",
+ "generated_at": "2026-10-02T21:17:14Z",
  "shows": [
   {
    "key": "ccpod",
@@ -34,11 +34,11 @@
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
    "rss": null,
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
-   "feed_title": "#186 The Five Percent Nation: From Supreme Mathematics to the Power of Knowledge in Hip-Hop",
+   "feed_title": "The Eclectic Polymath Podcast",
    "art": "assets/art/polymath.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f5568be7e93bf245d13c41a98",
-   "latest": null,
-   "count": 0
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a5568be7e93bf245d13c41a98",
+   "latest": "2026-10-02T04:29:00Z",
+   "count": 1
   },
   {
    "key": "tmtt",
@@ -53,11 +53,11 @@
    "spotify": "033G4KctzeuD3Pu4db1AQa",
    "rss": null,
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
-   "feed_title": "\"Touch Grass\" — Post Villa Ep. 08",
+   "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f788c2667b7b49bf441e8c8b7",
-   "latest": null,
-   "count": 0
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "latest": "2026-07-25T22:26:00Z",
+   "count": 1
   },
   {
    "key": "approachable",
@@ -132,6 +132,30 @@
  ],
  "episodes": [
   {
+   "id": "polymath:3tPHusaPdDpdvDHHmsJd1Y",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#186 The Five Percent Nation: From Supreme Mathematics to the Power of Knowledge in Hip-Hop",
+   "date": "2026-10-02T04:29:00Z",
+   "duration": 3197,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/3tPHusaPdDpdvDHHmsJd1Y",
+   "spotify_url": "https://open.spotify.com/episode/3tPHusaPdDpdvDHHmsJd1Y"
+  },
+  {
+   "id": "tmtt:75VIZfJzZUK5h5P6qkGryF",
+   "show": "tmtt",
+   "kind": "episode",
+   "title": "\"Touch Grass\" — Post Villa Ep. 08",
+   "date": "2026-07-25T22:26:00Z",
+   "duration": 1767,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
+   "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF"
+  },
+  {
    "id": "approachable:WTV1Wh3ltCI",
    "show": "approachable",
    "kind": "video",
@@ -200,8 +224,8 @@
    "duration": 1023,
    "description": "It’s Inauguration Day 2025, and Donald Trump is back in the Oval Office. \n From 42 executive orders—including pardons, policy reversals, and global declarations—to claims about reshaping America’s role on the world stage, we break down the first day of this new presidency. \n Join us as we explore what these moves mean for the U.S. and beyond.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/janel-moore/episodes/Day-One-Trumps-Return--Executive-Orders--and-Global-Shifts-e2tp8g2",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/03foC2x4DgvoR9GyAMmxiG",
+   "spotify_url": "https://open.spotify.com/episode/03foC2x4DgvoR9GyAMmxiG",
    "audio": "https://anchor.fm/s/28e3d53c/podcast/play/97345474/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-0-21%2F393471715-44100-2-be60ce1d77ea5.m4a",
    "number": "1"
   },
@@ -214,8 +238,8 @@
    "duration": 3149,
    "description": "Welcome back to another episode of the Dominate the Decade Podcast! \nIn this week's episode, Josh sits down with a special guest, Ryck Digital, a crypto and overall web3 enthusiast. Together, they discuss the ever-evolving world of cryptocurrency, NFTs, and the Metaverse.\nTopics include:\n The basics of Blockchain technology and its potential impact on various industries. \n The world of NFTs, their significance, and potential as a new medium for artists and creators.\n The Metaverse and it's ability to serve as a new economic platform for social interactions\n The importance of minorities staying up-to-date with developments in the crypto and web3 space \n Ways that people looking to get into…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/5983104/5983104-1590975610877-89f0b71432133.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/dominate-the-decade/episodes/A-New-Dimension-Exploring-Crypto--NFTs-and-the-Metaverse-Feat--Ryck-Digital-e20hl32",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/3gyOSBlUzrGOmho0wbkkHJ",
+   "spotify_url": "https://open.spotify.com/episode/3gyOSBlUzrGOmho0wbkkHJ",
    "audio": "https://anchor.fm/s/24421480/podcast/play/66687522/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-2-16%2F318408030-44100-2-9d1544ff46794.m4a",
    "number": "6"
   },
@@ -704,16 +728,16 @@
    "spotify_matches": 0
   },
   "polymath": {
-   "ok": false,
+   "ok": true,
    "feed": null,
-   "episodes": 0,
-   "spotify_matches": 0
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "tmtt": {
-   "ok": false,
+   "ok": true,
    "feed": null,
-   "episodes": 0,
-   "spotify_matches": 0
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -724,13 +748,13 @@
    "ok": true,
    "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
    "episodes": 13,
-   "spotify_matches": 0
+   "spotify_matches": 1
   },
   "dominate": {
    "ok": true,
    "feed": "https://anchor.fm/s/24421480/podcast/rss",
    "episodes": 23,
-   "spotify_matches": 0
+   "spotify_matches": 1
   }
  },
  "people": {
