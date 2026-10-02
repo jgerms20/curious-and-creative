@@ -7,26 +7,47 @@
       "short": "Curious & Creative",
       "kind": "podcast",
       "flagship": true,
-      "hosts": ["Joshua German", "Janel Moore"],
+      "hosts": [
+        "Joshua German",
+        "Janel Moore"
+      ],
       "tagline": "Where creative strategy meets real conversation.",
       "about": "A deep dive into the minds of artists, creators, and innovators — the ideas, decisions, and cultural moments that shape how we see (and sell) the world.",
-      "spotify": null,
-      "itunes_search": ["Curious & Creative Joshua German", "Curious and Creative Janel Moore"],
-      "match_artist": ["joshua german", "janel moore", "joshua mckenzie german"],
+      "spotify": "033ze48fmi1cTvj2M7Pb6M",
       "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
-      "rss": null
+      "rss": null,
+      "video_check": true
     },
     {
       "key": "polymath",
       "name": "The Eclectic Polymath",
       "short": "Eclectic Polymath",
       "kind": "podcast",
-      "hosts": ["Joshua German"],
+      "hosts": [
+        "Joshua German"
+      ],
       "tagline": "Everything is interesting when you dig deep enough.",
       "about": "Deep, well-researched episodes on whatever's too interesting to ignore: history and power, religion and myth, psychology, science, and Black culture. No lane, no niche.",
       "spotify": "3dlagzJ0jiWLTB9mF3y069",
-      "itunes_search": ["The Eclectic Polymath"],
-      "match_artist": ["german"],
+      "itunes_search": [
+        "The Eclectic Polymath"
+      ],
+      "match_artist": [
+        "german"
+      ],
+      "rss": null
+    },
+    {
+      "key": "brazil",
+      "name": "God Is Brazilian",
+      "short": "God Is Brazilian",
+      "kind": "podcast",
+      "hosts": [
+        "Joshua German"
+      ],
+      "tagline": "A podcast by Joshua German.",
+      "about": "",
+      "spotify": "4tAY78JV37aIgmJ2d1iF3w",
       "rss": null
     },
     {
@@ -34,12 +55,18 @@
       "name": "Too Much to Tweet",
       "short": "Too Much to Tweet",
       "kind": "podcast",
-      "hosts": ["Janel Moore"],
+      "hosts": [
+        "Janel Moore"
+      ],
       "tagline": "The takes too big for a caption.",
       "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
       "spotify": "033G4KctzeuD3Pu4db1AQa",
-      "itunes_search": ["Too Much to Tweet"],
-      "match_artist": ["moore"],
+      "itunes_search": [
+        "Too Much to Tweet"
+      ],
+      "match_artist": [
+        "moore"
+      ],
       "rss": null
     },
     {
@@ -47,7 +74,9 @@
       "name": "Approachable AI",
       "short": "Approachable AI",
       "kind": "youtube",
-      "hosts": ["Joshua German"],
+      "hosts": [
+        "Joshua German"
+      ],
       "tagline": "Demystifying AI, one episode at a time.",
       "about": "No jargon, just what's actually happening and why it matters. Real tools, real builds, and the mistakes along the way.",
       "youtube_handle": "@Approachable.A.I",
@@ -59,7 +88,9 @@
       "name": "Aspiring Abolitionist",
       "short": "Aspiring Abolitionist",
       "kind": "podcast",
-      "hosts": ["Janel Moore"],
+      "hosts": [
+        "Janel Moore"
+      ],
       "tagline": "Politics, policy, and culture from an abolitionist lens.",
       "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
       "spotify": "7natfWFnBgakjLLZcEDZaw",
@@ -72,7 +103,11 @@
       "short": "Dominate the Decade",
       "kind": "podcast",
       "archive": true,
-      "hosts": ["Joshua German", "Adarius Simpkins", "Matthew Anderson"],
+      "hosts": [
+        "Joshua German",
+        "Adarius Simpkins",
+        "Matthew Anderson"
+      ],
       "tagline": "Growth, culture, and building a meaningful decade.",
       "about": "Three young Black men navigating their own paths to success — crypto, politics, sports, music, movies, and everything in between. The full 2020–2023 run, including Janel's guest episode.",
       "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
@@ -80,7 +115,9 @@
       "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875"
     }
   ],
-  "probe_sites": ["https://joshuamgerman.com"],
+  "probe_sites": [
+    "https://joshuamgerman.com"
+  ],
   "photos": {
     "page": "https://joshuamgerman.com/photography/",
     "sets": {
