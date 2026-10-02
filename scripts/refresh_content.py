@@ -301,21 +301,6 @@ def spotify_embed(show_id):
     if not m:
         return None
     data = json.loads(m.group(1))
-    try:
-        dbg["entity"] = json.dumps(data["props"]["pageProps"]["state"]["data"])[:6000]
-    except Exception:  # noqa: BLE001
-        pass
-    try:
-        bot = fetch_as(f"https://open.spotify.com/show/{show_id}",
-                       "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)")
-        dbg["bot_len"] = len(bot)
-        dbg["bot_episode_links"] = len(set(re.findall(r"/episode/([A-Za-z0-9]{22})", bot)))
-        dbg["bot_anchor"] = sorted(set(re.findall(r"anchor\.fm/s/([0-9a-f]+)", bot)))
-        i = bot.find("/episode/")
-        dbg["bot_sample"] = bot[max(0, i - 1500):i + 2500] if i >= 0 else bot[:3000]
-        dbg["bot_script_ids"] = re.findall(r'<script[^>]*id="([^"]+)"', bot)[:20]
-    except Exception as e:  # noqa: BLE001
-        dbg["bot_error"] = str(e)
 
     found = {}
 
@@ -330,6 +315,18 @@ def spotify_embed(show_id):
                 walk(v)
 
     walk(data)
+    ent = (((data.get("props") or {}).get("pageProps") or {}).get("state") or {}).get("data", {}).get("entity") or {}
+    if not found and ent.get("type") == "episode" and ent.get("id"):
+        covers = ent.get("relatedEntityCoverArt") or []
+        cover = max(covers, key=lambda c: c.get("maxWidth") or 0)["url"] if covers else None
+        rd = (ent.get("releaseDate") or {}).get("isoString")
+        return {"name": ent.get("subtitle"), "cover": cover, "episodes": [{
+            "title": ent.get("title") or ent.get("name") or "",
+            "spotify_url": f"https://open.spotify.com/episode/{ent['id']}",
+            "duration": round((ent.get("duration") or 0) / 1000) or None,
+            "date": parse_date(rd) if rd else None,
+            "description": "",
+        }]}
     if not found:
         def keys(o, depth=0, path=""):
             if depth > 6 or not isinstance(o, dict):
@@ -510,6 +507,10 @@ def do_podcast(show, prev_eps):
                 "duration": e["duration"], "description": e["description"], "image": None,
                 "url": e["spotify_url"], "spotify_url": e["spotify_url"],
             })
+
+    if not items and eps:
+        have = {e["id"] for e in eps}
+        eps += [e for e in prev_eps if e.get("show") == key and e["id"] not in have]
 
     only = [w.lower() for w in show.get("only_matching", [])]
     if only:
