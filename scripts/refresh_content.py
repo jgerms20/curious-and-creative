@@ -77,6 +77,12 @@ def fetch(url, binary=False, timeout=25, method="GET", follow=True):
     raise last
 
 
+def fetch_as(url, ua, timeout=25):
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept-Language": "en-US,en;q=0.9"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
 def norm(s):
     s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
     s = s.lower().replace("&", " and ")
@@ -194,7 +200,12 @@ def sync_photos(reg, probes):
             big = os.path.join(SITE, out["src"])
             small = os.path.join(SITE, out["thumb"])
             if not os.path.exists(big):
-                write_image(fetch(f"{base}/{cat}-{name}-960.webp", binary=True), big, 1400)
+                for size in ("1280", "960", "480"):
+                    try:
+                        write_image(fetch(f"{base}/{cat}-{name}-{size}.webp", binary=True), big, 1400)
+                        break
+                    except Exception:  # noqa: BLE001
+                        continue
             if not os.path.exists(small):
                 write_image(fetch(img["src"], binary=True), small, 640)
             photos.append(out)
@@ -250,10 +261,26 @@ def spotify_embed(show_id):
     dbg["script_ids"] = re.findall(r'<script[^>]*id="([^"]+)"', page)[:20]
     dbg["head"] = page[:1200]
     dbg["episode_ids"] = sorted(set(re.findall(r"spotify:episode:([A-Za-z0-9]{22})", page)))[:60]
+    dbg["anchor_ids"] = sorted(set(re.findall(r"anchor\.fm/s/([0-9a-f]+)", page)))
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
     if not m:
         return None
     data = json.loads(m.group(1))
+    try:
+        dbg["entity"] = json.dumps(data["props"]["pageProps"]["state"]["data"])[:6000]
+    except Exception:  # noqa: BLE001
+        pass
+    try:
+        bot = fetch_as(f"https://open.spotify.com/show/{show_id}",
+                       "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)")
+        dbg["bot_len"] = len(bot)
+        dbg["bot_episode_links"] = len(set(re.findall(r"/episode/([A-Za-z0-9]{22})", bot)))
+        dbg["bot_anchor"] = sorted(set(re.findall(r"anchor\.fm/s/([0-9a-f]+)", bot)))
+        i = bot.find("/episode/")
+        dbg["bot_sample"] = bot[max(0, i - 1500):i + 2500] if i >= 0 else bot[:3000]
+        dbg["bot_script_ids"] = re.findall(r'<script[^>]*id="([^"]+)"', bot)[:20]
+    except Exception as e:  # noqa: BLE001
+        dbg["bot_error"] = str(e)
 
     found = {}
 
