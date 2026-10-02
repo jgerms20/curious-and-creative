@@ -27,6 +27,7 @@ jobs:
         run: python3 -m pip install --quiet pillow
 
       - name: Refresh show content (podcast feeds, YouTube)
+        timeout-minutes: 8
         run: python3 scripts/refresh_content.py
 
       - name: Commit refreshed content

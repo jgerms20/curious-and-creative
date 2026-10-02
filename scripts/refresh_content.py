@@ -14,6 +14,7 @@ Sources
   probe    : snapshot of listed personal sites (text + images) for curation
 """
 import html
+import signal
 import json
 import os
 import re
@@ -49,7 +50,26 @@ def log(*a):
     print(*a, flush=True)
 
 
+class Deadline(Exception):
+    pass
+
+
+def _alarm(signum, frame):
+    raise Deadline("request exceeded hard deadline")
+
+
+signal.signal(signal.SIGALRM, _alarm)
+
+
 def fetch(url, binary=False, timeout=25, method="GET", follow=True):
+    signal.alarm(timeout + 10)
+    try:
+        return _fetch(url, binary, timeout, method, follow)
+    finally:
+        signal.alarm(0)
+
+
+def _fetch(url, binary=False, timeout=25, method="GET", follow=True):
     req = urllib.request.Request(url, method=method, headers={
         "User-Agent": UA,
         "Accept-Language": "en-US,en;q=0.9",
@@ -71,6 +91,13 @@ def fetch(url, binary=False, timeout=25, method="GET", follow=True):
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 body = r.read()
                 return body if binary else body.decode("utf-8", "replace")
+        except Deadline:
+            raise
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 404, 410):
+                raise
+            last = e
+            time.sleep(1.5 * (attempt + 1))
         except Exception as e:  # noqa: BLE001
             last = e
             time.sleep(1.5 * (attempt + 1))
@@ -78,6 +105,14 @@ def fetch(url, binary=False, timeout=25, method="GET", follow=True):
 
 
 def fetch_as(url, ua, timeout=25):
+    signal.alarm(timeout + 10)
+    try:
+        return _fetch_as(url, ua, timeout)
+    finally:
+        signal.alarm(0)
+
+
+def _fetch_as(url, ua, timeout=25):
     req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept-Language": "en-US,en;q=0.9"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", "replace")
