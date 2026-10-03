@@ -218,11 +218,11 @@
     const perShow = data.shows.map((s) => [s, eps.find((e) => e.show === s.key)]).filter(([, e]) => e);
     const photo = data.photos && data.photos.find((p) => p.set === "Events & Live") || (data.photos || [])[0];
     let html = card(cards[0], by, true) + cards.slice(1, 5).map((e) => card(e, by)).join("");
-    html += `<a class="special special--gold rv" href="${url("pages/inventions.html")}">
-      <span class="special__label"><span class="dot dot--live"></span> Special project</span>
+    html += `<a class="special special--gold rv" href="${url("kindling/")}">
+      <span class="special__label"><span class="dot dot--live"></span> Special project · Pre-orders open</span>
       <span class="special__title">Kindling</span>
-      <span>Our first invention, now in development under the Curious &amp; Creative umbrella.</span>
-      <span class="special__go">See what we're building ${icon.arrow}</span></a>`;
+      <span>Our first invention: a card game for people who want more of each other. Play it free, or reserve a first-run box.</span>
+      <span class="special__go">Light it up ${icon.arrow}</span></a>`;
     if (photo) html += `<a class="special special--photo rv" href="${url("pages/art.html")}"><img src="${esc(url(photo.thumb))}" alt="${esc(photo.alt)}" loading="lazy"><span class="special__in"><span class="special__label">Photography</span><span class="special__title" style="font-size:1.6rem">${esc(photo.set)}</span><span class="special__go">Open the gallery ${icon.arrow}</span></span></a>`;
     html += `<div class="list-card rv"><div class="list-card__head"><span>Fresh from every show</span><span>${perShow.length}</span></div><ol>
       ${perShow.map(([s, e]) => `<li data-show="${s.key}"><a href="${esc(CC.epHref(e))}"${ext(CC.epHref(e))}><span>${esc(e.title)}<small>${esc(s.short || s.name)} · ${esc(ago(e.date))}</small></span></a></li>`).join("")}
@@ -358,7 +358,7 @@
     items.splice(1, 0, `<a class="tcard tcard--green" href="${url("pages/archive.html")}"><span class="tcard__big">${total}</span><b>episodes &amp; videos across ${shows.length} shows</b></a>`);
     items.splice(3, 0, `<a class="tcard tcard--gold" href="${url("pages/about.html")}"><b style="font-size:1.15rem">“Everything is interesting when you dig deep enough.”</b><small>— The Eclectic Polymath</small></a>`);
     (data.photos || []).filter((_, i) => i % 4 === 0).slice(0, 4).forEach((p, i) => items.splice(4 + i * 3, 0, `<a class="tcard tcard--photo" href="${url(`pages/art.html#${p.id}`)}"><img src="${esc(url(p.thumb))}" alt="${esc(p.alt)}" loading="lazy"></a>`));
-    items.push(`<a class="tcard tcard--dark" href="${url("pages/inventions.html")}"><small>Invention No. 1</small><b style="font-size:1.6rem">Kindling</b><small>In development →</small></a>`);
+    items.push(`<a class="tcard tcard--dark" href="${url("kindling/")}"><small>Invention No. 1</small><b style="font-size:1.6rem">Kindling</b><small>Pre-orders open →</small></a>`);
     items.push(`<a class="tcard tcard--pink" href="#newsletter"><b style="font-size:1.2rem">Get new episodes in your inbox</b><small>Join the newsletter ↓</small></a>`);
     const set = items.map((h, i) => h.replace('class="tcard', `style="--tilt:${tilts[i % tilts.length]}deg" class="tcard`)).join("");
     track.innerHTML = set + set.replace(/<a /g, '<a tabindex="-1" aria-hidden="true" ');

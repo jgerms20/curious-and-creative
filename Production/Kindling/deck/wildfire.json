@@ -1,0 +1,486 @@
+[
+ {
+  "type": "group",
+  "heat": 1,
+  "text": "Rehearse a song in secret as a group, then ambush one player with a full serenade. Harmonies optional, choreography mandatory.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "group",
+  "heat": 1,
+  "text": "Recreate a famous album cover as a group photo shoot. Costumes, props, the exact pose. Frame the winner.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "challenge",
+  "heat": 1,
+  "text": "Learn a dance from a music video, every step, and perform it for each other. Costumes strongly encouraged.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 1,
+  "text": "Spend a whole day letting a coin flip choose every turn, every meal, every stop. Go wherever it sends you.",
+  "time": "one day",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 1,
+  "text": "Take a class neither of you would ever pick: fencing, trapeze, glassblowing. Whoever's worse buys dinner.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 1,
+  "text": "Swap chores for a week. All of them, including the gross one nobody ever talks about.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 2,
+  "text": "Write each other letters, seal them, and hide them somewhere safe. Open them together in five years.",
+  "time": "this week",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "group",
+  "heat": 2,
+  "text": "Host a progressive dinner: one course at each player's place. Every host picks the theme and the dress code.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "group",
+  "heat": 2,
+  "text": "Throw a roast-and-toast night: draw a name, prepare two minutes of roast and two minutes of toast, then deliver both.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "group",
+  "heat": 2,
+  "text": "Secret vote: if everyone says yes, do a sunrise cold-water plunge together, then a huge breakfast to recover.",
+  "time": "this month",
+  "pairing": "any",
+  "players": "3+",
+  "match": true
+ },
+ {
+  "type": "group",
+  "heat": 2,
+  "text": "Everyone writes one thing they've never told this group, anonymously. Shuffle, read them aloud over dessert, then guess.",
+  "time": "one night",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "reversal",
+  "heat": 2,
+  "text": "Swap who drives, who navigates, and who controls the music for a week. Zero backseat commentary allowed.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 2,
+  "text": "Recreate your first date beat for beat: same place, same order, same outfit if it fits. Same awkward goodbye optional.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 2,
+  "text": "Plan a mystery date they know nothing about. All they get is a dress code and a pickup time.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 2,
+  "text": "Leave them a love note every day for a week, each hidden somewhere stranger than the last.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 2,
+  "text": "Swap date-planning for a month. Whoever usually plans sits back; whoever usually follows plans everything.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 2,
+  "text": "Swap morning routines for a week: their alarm, their breakfast, their coffee order, their playlist.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 2,
+  "text": "Swap who says 'I love you' first for a week. The usual first-sayer is only allowed to say it back.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Spend an entire day in bed together. Phones off and in another room. Meals in bed. Leave only when you have to.",
+  "time": "one day",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Secret vote: if everyone says yes, go skinny-dipping somewhere secluded under the stars. Nobody around, nothing on.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Cook a three-course dinner wearing nothing but aprons. Anything that burns, you start over. Maybe.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Take a couples massage class, then give each other the full routine at home, candles and all.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Go dancing somewhere loud and dance only with each other. Leave the second someone whispers 'let's go home.'",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Recreate a famous movie kiss: the rain, the upside-down, the dramatic dip. Commit fully. No laughing until after.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Make out in a photo booth until the last frame, then hang the strip somewhere you'll see it every day.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Handwrite them a real love letter, three pages minimum, and read it aloud to them in the bath.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Rent a cabin with no signal for a weekend. Pack food, a deck of cards, and nothing to wear to bed.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Shower together by the light of a single candle and wash each other slowly, head to toe.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Sit in the back row of a late movie and make out like it's your first date. Leave before the credits.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Spend a whole evening touching only hands, faces, and hair. Nothing else, no matter how tempting it gets.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Kiss at the top of something tall: a rooftop, a mountain, a ferris wheel. Hold it until your knees go weak.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 3,
+  "text": "Wake them at 3 a.m. for a planned surprise: blankets outside, something warm to drink, the stars, and you.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 3,
+  "text": "Swap wardrobes for a day: each picks the other's full outfit, underwear included, and they wear it out.",
+  "time": "one day",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 3,
+  "text": "Swap who initiates for a week. Whoever usually reaches first has to wait. Whoever usually waits makes every move.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Take a pole or striptease class together, then perform your routine for each other within the month.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Play naked Twister. Loser of each round picks where the winner gets kissed next.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Book a hotel in your own city. Arrive separately, meet at the bar as strangers, and let them pick you up.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Secret vote: if everyone says yes, hold a 24-hour yes day. Agree on limits first, then every ask gets a yes.",
+  "time": "one day",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Take boudoir photos of each other: good light, your best everything, and a private album only you two see.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Cook a candlelit dinner at home, dress up properly, and remove one piece of clothing per course.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Declare a no-clothes weekend at home. Robes for the door, then right back to nothing.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Text them every hour for a whole day, each message hotter than the last, until they walk through the door.",
+  "time": "one day",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Reenact the sexiest scene from a film you both love, dialogue included, until you can't keep a straight face.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Blindfold one of you from dinner through dessert to bed. The other narrates, feeds, and guides. Switch next weekend.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Visit a sensual shop together. Each secretly buys one gift for the other. Unwrap them that night.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Write out a detailed fantasy, seal it, and hand it over. They have one month to make it real.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 4,
+  "text": "Go to a fancy dinner with nothing on under your clothes. Only you two know. Act completely normal.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 4,
+  "text": "Swap who's in charge in the bedroom for one night. Agree on limits, then the usual leader follows every instruction.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 4,
+  "text": "Swap who seduces whom: the one usually pursued sets the scene, the music, the outfit, and the opening line.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Have sex somewhere semi-public you can actually get away with. Discreet, private, nobody sees. Plan the escape route.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Tease each other for a full week: kisses, touches, whispered promises. No sex until Sunday night.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Secret vote: if everyone says yes, try the thing that's been on your wish list the longest. Limits first, then go.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Have sex in every room of your home in one weekend. Yes, the laundry room counts.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Write each other a filthy short story starring the two of you. Swap and read them aloud in bed.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Spend a whole night with no hands allowed, only mouths. Whoever uses hands first makes breakfast.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Go out to dinner while one of you wears a remote-controlled toy and the other holds the remote.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Write a menu of ten things you want them to do to you. They order one each night for ten nights.",
+  "time": "this month",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Try a new position every night for a week. Keep a secret scorecard. Crown a winner on day seven.",
+  "time": "one week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "challenge",
+  "heat": 5,
+  "text": "Prop a mirror beside the bed, leave the lights on, and keep your eyes open the whole time.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "reversal",
+  "heat": 5,
+  "text": "Spend one night doing to them exactly what they usually do to you, move for move. They'll get the message.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ }
+]

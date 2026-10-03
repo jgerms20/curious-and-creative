@@ -1,0 +1,81 @@
+{
+  "_readme": "Shop settings for /kindling/shop.html. See Strategy/Kindling/shop-setup.md. checkout.mode: 'preorder' (reservation form, no payment), 'shopify' (cart permalink to your Shopify store), or 'stripe' (Stripe Payment Links, one product per checkout).",
+  "currency": "USD",
+  "freeShippingOver": 75,
+  "flatShipping": 6,
+  "status": "First run ships winter 2026. Pre-orders are reservations; nothing is charged until we ship.",
+  "checkout": {
+    "mode": "preorder",
+    "preorder": {
+      "formEndpoint": "",
+      "email": "jgerms20@gmail.com"
+    },
+    "shopify": {
+      "storeDomain": "",
+      "variants": { "embers": "", "wildfire": "", "slowburn": "", "afterdark": "", "bundle": "" }
+    },
+    "stripe": {
+      "paymentLinks": { "embers": "", "wildfire": "", "slowburn": "", "afterdark": "", "bundle": "" }
+    }
+  },
+  "products": [
+    {
+      "id": "embers",
+      "deck": "embers",
+      "name": "Kindling: Embers",
+      "kind": "The core deck",
+      "price": 39,
+      "cards": "150 cards + 4 rules cards",
+      "blurb": "Everything you need to start. Questions, confessions, touch, play, dares, and the wild cards that bend the rules. Heat 1 to 5, so it works for a first date or a tenth anniversary.",
+      "includes": ["150 game cards across 7 card types", "10 wild cards", "4 rules cards (with Consent & Care)", "Reward pad for The Pot"],
+      "badge": "Start here"
+    },
+    {
+      "id": "wildfire",
+      "deck": "wildfire",
+      "name": "Wildfire",
+      "kind": "Challenges expansion",
+      "price": 24,
+      "cards": "60 cards",
+      "blurb": "The big ones. Take a pole class and perform the routine. Reverse roles for a week. Hotel night as strangers. Naked Twister. Claim them now, live them later.",
+      "includes": ["44 challenges", "10 role-reversal cards", "6 group challenges"],
+      "requires": "embers"
+    },
+    {
+      "id": "slowburn",
+      "deck": "slowburn",
+      "name": "Slow Burn",
+      "kind": "Dates & rituals expansion",
+      "price": 24,
+      "cards": "60 cards",
+      "blurb": "Intimacy, the long way around. Read to them in the bath. Wash their hair. Plan the date with riddles. Undress each other one minute per item.",
+      "includes": ["22 rituals", "24 dates", "14 slow sensual cards"],
+      "requires": "embers"
+    },
+    {
+      "id": "afterdark",
+      "deck": "afterdark",
+      "name": "After Dark",
+      "kind": "18+ exploration expansion",
+      "price": 28,
+      "cards": "60 cards",
+      "blurb": "Kink, power, sensation, and roleplay, without judgment. For couples, throuples, and groups. Negotiation cards come first, and every card has its own aftercare line.",
+      "includes": ["10 negotiation cards", "38 power, sensation & roleplay cards", "10 group cards (3+ players)", "Aftercare on every card"],
+      "requires": "embers",
+      "adult": true
+    },
+    {
+      "id": "bundle",
+      "deck": "bundle",
+      "name": "The Whole Fire",
+      "kind": "Everything, one box",
+      "price": 99,
+      "compareAt": 115,
+      "cards": "334 cards",
+      "blurb": "Embers plus all three expansions, together in a bigger keepsake box with a numbered first-run card. The gift that makes the group chat go quiet.",
+      "includes": ["Embers core deck", "Wildfire, Slow Burn & After Dark", "Keepsake box", "Numbered first-run card"],
+      "badge": "Best value",
+      "adult": true
+    }
+  ]
+}

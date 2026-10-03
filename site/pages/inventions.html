@@ -4,15 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inventions — Curious &amp; Creative</title>
-  <meta name="description" content="Inventions from Curious & Creative — starting with Kindling." />
+  <meta name="description" content="Inventions from Curious & Creative, starting with Kindling, a card game for people who want more of each other." />
   <meta property="og:title" content="Inventions — Curious &amp; Creative" />
-  <meta property="og:description" content="Inventions from Curious & Creative — starting with Kindling." />
+  <meta property="og:description" content="Inventions from Curious & Creative, starting with Kindling, a card game for people who want more of each other." />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="../kindling/kindling.css" />
 </head>
 <body data-page="inventions" data-root="../">
 <div data-cc="header"></div>
@@ -22,14 +23,22 @@
   <h1 class="phead__title">Built to hold <em>what's next.</em></h1>
   <p class="phead__lede">Curious &amp; Creative is the umbrella. These are the things we're building under it — products, tools, and experiments that start as "what if."</p>
 </header>
+<section class="k-hero rv" data-tilt-zone style="margin-bottom:clamp(1rem,2vw,1.5rem)">
+  <div>
+    <div class="k-hero__eyebrow"><span class="chip"><span class="dot dot--live"></span> Invention 01</span><span class="chip">Pre-orders open</span></div>
+    <h2 style="font-size:clamp(3.4rem,8vw,6.5rem);margin:1rem 0 .6rem;font-weight:400;text-transform:none" data-k-word>kindling</h2>
+    <p class="k-hero__lede">A card game for people who want <em>more of each other.</em></p>
+    <p class="k-hero__sub">334 cards across four decks: questions, touch, dares, dates, and an 18+ pack for exploring kink, all dialed from heat 1 to 5, with consent built into every rule. For couples, throuples, and friends.</p>
+    <div class="k-hero__ctas">
+      <a class="btn btn--flame" href="../kindling/">See the game</a>
+      <a class="btn btn--ghost-cream" href="../kindling/shop.html">Shop · from $39</a>
+      <a class="btn btn--ghost-cream" href="../kindling/play.html">Play free</a>
+    </div>
+  </div>
+  <div class="k-hero__stage"><div class="k-hero__fan" data-inv-fan></div><div data-inv-box></div></div>
+</section>
 <section class="grid rv" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
-  <article class="special special--gold" style="min-height:320px">
-    <span class="special__label"><span class="dot dot--live"></span> Invention 01 · In development</span>
-    <span class="special__title" style="font-size:clamp(2.4rem,5vw,3.6rem)">Kindling</span>
-    <span>The first spark under the Curious &amp; Creative umbrella. Details coming as it takes shape — get on the list to hear first.</span>
-    <a class="special__go" href="../index.html#newsletter">Get updates <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-  </article>
-  <a class="tile" href="https://joshuamgerman.com" target="_blank" rel="noopener" style="--c:var(--skyb)"><span class="tile__num">AI</span><h3>Builds from Approachable AI</h3><p>Tools Joshua builds on camera — like the Veritas bias radar and the 2026 resolution tracker. Watch them get made on <a class="pill-more" href="shows.html#approachable">Approachable AI</a>.</p></a>
+  <article class="tile" style="--c:var(--skyb)"><span class="tile__num">AI</span><h3>Builds from Approachable AI</h3><p>Tools Joshua builds on camera — like the Veritas bias radar and the 2026 resolution tracker. Watch them get made on <a class="pill-more" href="shows.html#approachable">Approachable AI</a>, or see more at <a class="pill-more" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>.</p></article>
   <article class="tile" style="--c:var(--pink)"><span class="tile__num">03</span><h3>Coming soon</h3><p>Something at the intersection of policy, AI, and the cultural conversation.</p></article>
 </section>
 <section class="cta rv" style="background:var(--grape)">
@@ -40,5 +49,19 @@
 <div data-cc="footer"></div>
 <script src="../js/cc.js"></script>
 <script src="../js/pages.js"></script>
+<script src="../kindling/kindling.js"></script>
+<script>
+  (function () {
+    var K = window.K;
+    document.querySelector("[data-k-word]").innerHTML = K.word();
+    var slot = document.querySelector("[data-inv-box]");
+    slot.innerHTML = K.boxHTML("embers");
+    K.tilt(slot.querySelector(".kbox"));
+    K.data.then(function () {
+      var picks = ["What makes you feel wanted", "Take a pole or striptease class", "Read aloud to them while they're in the bath"];
+      document.querySelector("[data-inv-fan]").innerHTML = picks.map(function (t) { return K.cards.find(function (c) { return c.text.indexOf(t) === 0; }); }).filter(Boolean).map(function (c) { return K.cardHTML(c); }).join("");
+    });
+  })();
+</script>
 </body>
 </html>

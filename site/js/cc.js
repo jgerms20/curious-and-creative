@@ -47,7 +47,9 @@
     { label: "Videos", href: "index.html#videos", words: "videos youtube watch approachable ai" },
     { label: "Photography", href: "pages/art.html", words: "photography photos art prints gallery portraits fashion events rio landscapes travel" },
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
-    { label: "Inventions", href: "pages/inventions.html", words: "inventions kindling build products" },
+    { label: "Inventions", href: "pages/inventions.html", words: "inventions build products" },
+    { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
+    { label: "Shop", href: "kindling/shop.html", words: "shop store buy order pre-order kindling deck cart" },
     { label: "Contact", href: "pages/contact.html", words: "contact email hello pitch guest press" },
   ];
   CC.PAGES = PAGES;
@@ -75,7 +77,7 @@
       <div class="hdr__bar wrap">
         <a class="wordmark" href="${url("index.html")}" aria-label="Curious and Creative — home"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
-        <nav class="hdr__links" aria-label="Primary">${navLink("pages/about.html", "About")}${navLink("pages/studio.html", "Studio")}${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}</nav>
+        <nav class="hdr__links" aria-label="Primary">${navLink("pages/about.html", "About")}${navLink("pages/studio.html", "Studio")}${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}<a href="${url("kindling/shop.html")}"${page === "kindling" ? ' aria-current="page"' : ""}>Shop</a></nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
         <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${icon.moon}${icon.sun}</button>
         <button class="icon-btn" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon.menu}</button>
