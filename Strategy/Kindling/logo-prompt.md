@@ -4,6 +4,13 @@ Paste the prompt below into Claude Design. Iterate on the **wordmark
 direction** and the **icon direction** separately, then choose your
 favorite combination.
 
+> **Where things stand:** the site, cards, and box currently use a
+> placeholder mark: two leaning flames (orange and gold) with a darker core
+> where they meet, beside a lowercase Fraunces italic "kindling". It's drawn
+> in `site/kindling/kindling.js` (`K.mark`). The brief below asks Claude Design
+> to push past it. To swap in the final logo, replace the SVG paths in
+> `K.mark` (one place), then rerun `node scripts/kindling_print.mjs`.
+
 ---
 
 ## The prompt
@@ -39,15 +46,17 @@ favorite combination.
 >      / two sparks meeting (negative-space ember between them).
 >    - A small ligature using the "K" and a flame as one form.
 > 3. For each combination, show:
->    - The logo on **ivory `#F7F3EC`**.
->    - The logo on **deep ember red `#7A1F1F`**.
+>    - The logo on **cream `#FBF0E2`** (the card face).
+>    - The logo on **night `#170B0A`** (the box color) and on **flame `#FF6A2B`** (the Embers card back).
 >    - The logo at small size (e.g. 24px tall) to confirm legibility.
 >
 > **Palette to stay inside (one warm-ember system):**
-> - Ivory `#F7F3EC`
-> - Ink `#161513`
-> - Ember red `#7A1F1F`
-> - Glow amber `#E2A857`
+> - Night `#170B0A` (box and dark backgrounds)
+> - Cream `#FBF0E2` (card faces)
+> - Flame `#FF6A2B` (primary accent, Embers deck)
+> - Gold `#FFC24B` (secondary accent)
+> - Ember `#C2321F` (deep red)
+> - Expansion colors: Wildfire `#E2363B`, Slow Burn `#E2728A`, After Dark `#B88CFF` on `#1A0F22`
 >
 > **Avoid:**
 > - Hearts, lips, anatomy, flame emojis, anything literal.

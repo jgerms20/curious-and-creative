@@ -1,269 +1,131 @@
-# Kindling — Game Design
+# Kindling — Game Design (First Edition, v1.0)
 
-## Overview
+Kindling is a card game for kindling and rekindling intimacy. It has
+the coffee-table energy of Cards Against Humanity and We're Not Really
+Strangers, but it covers intimacy at large: emotional, playful,
+sensual, sexual, and kinky.
 
-Kindling is a turn-based, optionally-scored card game for 2+ players in a
-pairing or group. The system is modular: a **base deck** carries the
-core experience, and **add-on packs** extend intensity, scope, or
-audience. Players can mix decks freely.
+It's built for couples, and it also works for new lovers, throuples,
+polycules, and friends who want to get closer. These rules match the
+digital game at `site/kindling/play.html` exactly.
+
+- **Every card:** `Production/Kindling/deck/*.json` (edit there, then run `python3 scripts/build_kindling.py`)
+- **Browse the deck:** `site/kindling/deck.html`
+- **Spreadsheet:** `Production/Kindling/kindling-cards.csv`
 
 ---
 
-## Components
+## Design pillars
 
-### Base deck — *Embers* (≈150 cards)
+1. **Consent is the game, not the fine print.** Skipping is always free. The table plays at the lowest heat anyone picks. Anyone can say "cool it" or "ember out."
+2. **Intimacy at large.** Talking, touching, play, dates, rituals, sex, and kink are all on the same heat scale.
+3. **Queer by default.** No card assumes gender, anatomy, or monogamy. Group cards are written for groups, not adapted.
+4. **Reward leaning in, never pushing.** Bolder cards score more, but nothing is ever scored *against* you.
+5. **Everyone wins, someone wins a little more.** The prize is always something the whole table enjoys.
 
-The everyday deck. Conversation, vulnerability, and small intimate
-acts. Safe for almost any pairing.
+---
 
-Categories (color-coded along the card edge):
+## What's in the box
 
-| Category | Color | What it is | Example |
+| Deck | Cards | What it is | Sparks |
 |---|---|---|---|
-| **Ask** | Sage | A question to answer honestly | "What did you believe about love at 19 that you don't now?" |
-| **Tell** | Mustard | A story or confession to share | "Tell them about a time you were embarrassed and they weren't there." |
-| **Notice** | Cream | Pay attention to your partner right now | "Stare into each other's eyes for two minutes. No talking." |
-| **Touch** | Terracotta | A small, named, consensual touch | "Trace the inside of their forearm with one finger for 60 seconds." |
-| **Tend** | Sage | A small caretaking act | "Pour them a glass of water and hand it to them without speaking." |
-| **Play** | Mustard | A light, silly prompt | "Make up a 30-second song about how you met. Sing it." |
+| **Embers** (core) | 150 + 4 rules | Ask, Tell, Notice, Touch, Tend, Play, Dare + 10 wild cards | heat × 1 |
+| **Wildfire** | 60 | 44 challenges, 10 role reversals, 6 group challenges | heat × 2 |
+| **Slow Burn** | 60 | 22 rituals, 24 dates, 14 slow sensual cards | heat × 2 |
+| **After Dark** (18+) | 60 | 10 negotiation, 14 power, 14 sensation, 12 roleplay, 10 group; aftercare on every card | heat × 2 |
 
-### Add-on: *Challenges Pack* (≈60 cards)
+**Heat scale:** 1 Spark (sweet, friend-safe) · 2 Glow · 3 Flame · 4 Blaze · 5 Inferno.
 
-Bigger, one-time experiences. Designed to be drawn occasionally, not
-every session.
+Every Embers card is tagged **friend-safe** (heat 1–2, nothing sexual) or **partners**. Embers has 62 friend-safe cards, so Friends mode is a real game, not a sampler.
 
-Examples:
-- Have sex somewhere semi-public you can plausibly get away with.
-- Take a pole or stripper-style class together and learn one routine.
-  Perform it for your partner that month.
-- Naked Twister. Whoever falls first pours the next drink.
-- Reverse roles for a full day — chores, errands, the way you talk to
-  each other, everything.
-- Spend a whole day in bed with no phones.
-- Write each other a sealed letter to open in five years.
+There are **21 Match cards** across the decks, and **27 group (3+) cards** spread through every deck.
 
-### Add-on: *Activities Pack* (≈60 cards)
-
-Date-like and experience prompts. Slower, more ritual.
-
-Examples:
-- Read aloud to them while they're in the bath. Their pick of book.
-- Bathe them. Wash their hair. No phones in the room.
-- Cook a meal in your underwear (or less). Music required.
-- Take them somewhere you've never been together within a 30-minute
-  drive.
-- Slow dance in your kitchen to a song that was playing the year you
-  met.
-
-### Add-on: *Kink Pack* (≈60 cards, 18+)
-
-Explore kink and role-play, written for couples *and* group play, with
-explicit consent and aftercare structure built into every card.
-
-Every kink pack ships with a one-page **Consent & Care insert**:
-- Pick a safeword before you draw.
-- Any card can be vetoed by anyone. No reason needed.
-- Aftercare prompt printed on the back of every card.
-
-Examples (kept abstract here — full card list lives in the deck file):
-- A blindfolded-tasting prompt (food first, build trust).
-- A "service" prompt where one player gets to be cared for completely.
-- A scripted role-play setup with prompts both players fill in
-  beforehand.
-
-### Future packs
-
-- *Queer & Found* — written by and for queer pairings.
-- *Long Distance* — works over video / async.
-- *Brand New* — first 90 days of a relationship.
-- *Long Haul* — 10+ years together.
-- *Platonic* — friendship intimacy, fully non-sexual.
+### Card anatomy
+Type (top left) · heat flames (top right) · prompt (center, serif) · time (bottom left) · deck mark (bottom center) · Sparks value (bottom right). Match cards carry a "Match" tab, and 3+ cards a "3+ players" tab. After Dark cards are dark, with an Aftercare line above the footer.
 
 ---
 
-## Card anatomy
+## How to play
 
-Every card has:
+### Setup
+1. **Set the heat.** Each player privately picks a max heat, 1–5. The table plays at the **lowest** pick, and nobody has to say whose it was.
+2. **Pick decks.** Embers plus any expansions. The game skips 3+ cards when only two people are playing.
+3. **Pick a length.** Quick (first to 25 Sparks), Long night (50), or Endless.
+4. **Wish lists (optional).** Each player writes up to three things they'd love to receive.
+5. **The Pot (optional).** Everyone puts in the same amount (see below).
 
-1. **Prompt** (front, large)
-2. **Category icon** (top-left)
-3. **Intensity** — 1 to 5 flame icons (top-right)
-4. **Suggested time** — small print, bottom-left
-5. **Sparks value** — small print, bottom-right (= intensity × category
-   multiplier)
-6. **Opt-out clause** — printed on the back of every card:
-   *"You can pass on this card. No penalty. No explanation needed."*
+### A turn
+Draw a card and read it aloud. Then choose one:
 
----
-
-## Setup
-
-1. Pick which decks you're playing with. Shuffle them together or keep
-   them separate — both work.
-2. Read the **Consent & Care card** aloud together. (Yes, even if you've
-   played before.)
-3. Decide on a **stake mode**:
-   - **No Stakes** (default) — just play.
-   - **Stoke Pot** — each player puts the same small amount of money in
-     a shared envelope. Suggested $20–$100. The pot funds a shared
-     reward, not a personal win.
-   - **Trade Mode** — Sparks are spent on favors written by your partner
-     before the game starts (see below).
-4. Each player writes 3 **Reward Cards** — things you'd genuinely love
-   to receive (a date, a meal, a small gift, an experience). Set them
-   aside, sealed if you like.
-5. Decide on a session length: a single round (10 cards each), a long
-   round (20 cards each), or open-ended (until someone calls it).
-
----
-
-## Turns
-
-On your turn:
-1. Draw the top card from any deck you're playing with.
-2. Read it aloud.
-3. Either **accept** (perform the prompt with your partner) or **pass**
-   (set it aside, no penalty).
-4. If accepted and completed, you earn **Sparks** equal to the card's
-   value.
-5. Pass play to the next person.
+- **Do it.** Score the Sparks printed on the card.
+- **Claim it.** The card goes face up in your **Woodpile**. It scores when you complete it, tonight or before next game night. Wildfire and Slow Burn cards are built for this.
+- **Skip it.** Free. No reason, no penalty.
 
 ### Match cards
+Everyone votes in secret (thumbs under the table, or pass the phone). If it's **unanimous**, everyone does it and everyone scores **double**. One no and the card disappears, and nobody learns who said no.
 
-Roughly 1 in 12 cards is a **Match card**, marked with a small linked-
-circle icon. When drawn:
-- Each player privately writes *yes* or *no* on a slip.
-- Reveal at the same time. If both wrote *yes*, both perform the
-  prompt and **both** earn double Sparks. If anyone wrote *no*, the
-  card is set aside, no comment, no penalty.
-
-### Banked cards
-
-Any card can be **banked** for later in the session if the moment isn't
-right (you're in a restaurant; the kid is awake; the dog is being
-weird). Banked cards must be played or formally declined before the
-session ends.
-
----
-
-## Scoring — "The Stoke Pot"
-
-**Sparks** are the point currency.
-
-`Sparks earned = card intensity × category multiplier`
-
-Category multipliers:
-
-| Category | Multiplier |
+### Wild cards (10, in Embers)
+| Card | Effect |
 |---|---|
-| Ask, Tell | ×1 |
-| Notice, Tend | ×1.5 |
-| Touch, Play | ×2 |
-| Challenges / Activities | ×3 |
-| Kink | ×3 (plus an aftercare bonus — see below) |
+| Pass It On | Keep it. Later, hand any card you draw to someone else to play. |
+| Double Down | The next card anyone completes scores double. |
+| Cool It | Heat cap drops by one for three rounds. |
+| Turn It Up | Heat cap rises by one for three rounds, only if everyone agrees out loud. |
+| Steal the Woodpile | Take a claimed card from someone else's Woodpile, Sparks and all. |
+| Reverse | On your next turn, the person to your right reads your card and does it to you. |
+| Free Pass | Keep it. Skip any card later and still score 1 Spark. |
+| Callback | Redo any card played tonight for full Sparks. |
+| Your Rules | Invent a card. Whoever receives it picks its heat, and the heat is the score. |
+| Truce | Everyone +3 Sparks, and everyone gets water. |
 
-**Match cards** double the Sparks earned by anyone who accepted.
-
-**Aftercare bonus (Kink pack):** any player who performs the printed
-aftercare prompt after a kink card earns an extra +5 Sparks. Aftercare
-is part of the game, not optional politeness.
-
-### Ending a session
-
-Three ways a session can end:
-- A pre-agreed number of cards played.
-- A pre-agreed timer expires.
-- Anyone calls "ember out" — the session ends, no penalty.
-
-### What "winning" means
-
-We deliberately avoid a winner-takes-all structure.
-
-- **No Stakes mode:** the player with the most Sparks chooses which of
-  *their partner's* Reward Cards to be given. The partner with fewer
-  Sparks gets to *give* the gift. It's a small ceremony.
-- **Stoke Pot mode:** the player with the most Sparks chooses one of
-  the Reward Cards (theirs or their partner's) for the pot to fund — a
-  shared dinner, a hotel night, a class, whatever. The pot is spent on
-  the *experience*, not the person.
-- **Trade Mode:** during the session, players can cash in Sparks at any
-  time for favors written by their partner on the Reward Cards.
-  Suggested prices are written on each Reward Card.
-
-In all modes, ties are broken by **whose intensity total is higher** —
-the game rewards leaning in, not card-counting.
-
-### Multi-player / group mode
-
-For 3+ players, Sparks are tracked individually but rewards are split
-into "**Pods**" — at session start, the group agrees on 2 or 3 pods (a
-pod can be a sub-pair, the whole group, or just yourself). Sparks are
-scored to the pod whose member played them, and the highest-Sparks pod
-picks the reward.
+### Safety words
+- **"Cool it."** Anyone, any time. The heat cap drops by one for the rest of the game.
+- **"Ember out."** Anyone, any time. The game ends immediately. Water, snacks, hug.
 
 ---
 
-## Sample cards
+## Scoring
 
-A handful of representative cards from each category — full deck lives
-in `Clients/Curious-and-Creative/website/content/kindling/sample-cards.ts`
-once the site is wired up.
+`Sparks = heat × (1 for Embers, 2 for expansions)`. The value is printed on the card, so nobody does math at the table.
 
-### Ask (×1)
-- *Intensity 1.* "What was the last thing you did just because you were
-  curious?"
-- *Intensity 3.* "Tell me one thing I do that makes you feel safe, and
-  one thing I do that makes you feel unsure."
-- *Intensity 5.* "If we had a year left together, what would you want
-  to do differently starting tomorrow?"
+Why expansions pay double: they ask more of you (time, planning, nerve), and doubling them makes claiming a Wildfire card a real strategic move rather than a detour.
 
-### Notice (×1.5)
-- *Intensity 2.* "Stare into each other's eyes for two full minutes.
-  No talking, no laughing."
-- *Intensity 3.* "Without looking away from their face, describe their
-  eyes out loud for 30 seconds."
+The design avoids two things on purpose:
+- **No penalty for skipping.** If skipping cost points, the game would pressure people into cards they don't want.
+- **No stealing points from a partner.** The only "steal" is taking on someone else's promise, which still has to be kept.
 
-### Touch (×2)
-- *Intensity 1.* "Hold hands silently for 60 seconds."
-- *Intensity 3.* "Trace the inside of their forearm with one finger
-  for two minutes."
-- *Intensity 5.* "Kiss them somewhere on their face you've never
-  deliberately kissed before."
-
-### Tend (×1.5)
-- "Pour them a glass of water and hand it to them without speaking."
-- "Buy them a single flower this week. Hand it over with no occasion."
-
-### Play (×2)
-- "Make up a 30-second song about how you met. Sing it."
-- "Take a selfie together where you both look as in love as you've
-  ever felt."
-
-### Challenges (×3)
-- "Have sex somewhere semi-public you can plausibly get away with."
-- "Take a pole / stripper class together this month. Perform what you
-  learned for each other."
-- "Reverse roles for a day. Chores, errands, tone, all of it."
-
-### Activities (×3)
-- "Read aloud to them while they take a bath. Their pick of book."
-- "Bathe them. Wash their hair. No phones in the room."
-- "Cook dinner in your underwear. Music required."
-
-### Match card
-- "Both of you, on the count of three, write down a place you'd like
-  to go together. Reveal at the same time. If you match, book it this
-  week."
+### Winning
+First to the goal **catches fire**. The winner picks one item from **someone else's** wish list, and that person makes it happen. If nobody wrote wish lists, the winner asks for something small and lovely from last place.
 
 ---
 
-## Why this works
+## The Pot and Seasons (the money mechanic)
 
-- **Consent isn't an asterisk** — every card can be declined, the deck
-  itself instructs players to talk about what they're up for.
-- **Cooperative reward** — even the scoring is in service of the
-  pairing, not against the partner.
-- **Modularity** — the same product line scales from coffee-table game
-  to kink-curious without forcing anyone into either.
-- **Designed for play, not for the shelf** — the rules are short
-  enough to read aloud in two minutes.
+This is the "each of us puts in $100" idea, built into the game.
+
+1. **Pay in.** At the start of a **Season** (we suggest one month), everyone puts the same amount into a jar, an envelope, or a shared account. Then you write a **shared wish list** of experiences together: a hotel night, a pole class, a dinner you've been eyeing.
+2. **Play for a month.** Keep a running Sparks total across game nights. Woodpile cards completed between games count.
+3. **Catch fire.** At the end, the Sparks leader picks one experience from the list and **the whole pot pays for it**.
+4. **Last place plans it.** Bookings, reservations, the outfit reveal. Everyone goes.
+
+Why it works: the money is real, so the stakes feel real. But it's spent on a shared experience, so nobody loses money to their partner. The loser's "punishment" is planning a date, which is a gift in itself. Two players at $100 each make a $200 pot, enough for a hotel night.
+
+---
+
+## Modes in the digital game
+- **Partners:** every card up to table heat.
+- **Friends:** friend-safe cards only (heat 1–2, non-sexual). After Dark is disabled.
+- Saved per browser, so a game survives a refresh. Nothing is sent anywhere.
+
+---
+
+## Editorial standards (apply to every new card)
+- Under ~8 seconds to read aloud (6–28 words).
+- Gender-, anatomy-, and structure-neutral. "Them," "your partner," "someone," "everyone."
+- Never coerces, never involves anyone who isn't playing, never "you must."
+- Hard nos: breath play, blood, permanent marks, intoxication as consent, filming or photos that leave the couple's control, anything with outsiders watching.
+- Spicy, not pornographic: describe the invitation, not anatomy.
+- After Dark: every card has a specific, warm aftercare line, and power and roleplay cards name limits or the safeword.
+
+## Future packs
+*Queer & Found* · *Long Distance* (video and async friendly) · *Brand New* (first 90 days) · *Long Haul* (10+ years) · *Platonic* (a full friends deck).
