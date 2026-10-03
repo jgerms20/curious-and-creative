@@ -29,6 +29,9 @@ jobs:
       - name: Refresh show content (podcast feeds, YouTube)
         timeout-minutes: 8
         run: python3 scripts/refresh_content.py
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
 
       - name: Commit refreshed content
         run: |

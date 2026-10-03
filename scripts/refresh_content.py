@@ -246,7 +246,11 @@ def sync_photos(reg, probes):
             photos.append(out)
         except Exception as e:  # noqa: BLE001
             log(f"  photo failed {slug}: {e}")
-    log(f"  photos synced: {len(photos)}")
+    feat = cfg.get("featured") or []
+    for ph in photos:
+        ph["featured"] = ph["id"] in feat
+    photos.sort(key=lambda ph: feat.index(ph["id"]) if ph["id"] in feat else len(feat))
+    log(f"  photos synced: {len(photos)} ({sum(ph['featured'] for ph in photos)} featured)")
     return photos
 
 
@@ -326,6 +330,7 @@ def spotify_embed(show_id):
             "duration": round((ent.get("duration") or 0) / 1000) or None,
             "date": parse_date(rd) if rd else None,
             "description": "",
+            "video": bool(ent.get("hasVideo")),
         }]}
     if not found:
         def keys(o, depth=0, path=""):
@@ -365,6 +370,79 @@ def spotify_embed(show_id):
         log(f"  spotify embed sample keys: {sorted(found['trackList'][0].keys())}")
     return {"name": found.get("name") or found.get("title"), "episodes": eps, "cover": cover}
 
+
+
+# ---------------------------------------------------------------- Spotify Web API
+_SP_TOKEN = {}
+
+
+def spotify_token():
+    cid, sec = os.environ.get("SPOTIFY_CLIENT_ID"), os.environ.get("SPOTIFY_CLIENT_SECRET")
+    if not cid or not sec:
+        return None
+    if _SP_TOKEN.get("exp", 0) > time.time() + 60:
+        return _SP_TOKEN["tok"]
+    import base64
+    req = urllib.request.Request("https://accounts.spotify.com/api/token", data=b"grant_type=client_credentials",
+                                 headers={"Authorization": "Basic " + base64.b64encode(f"{cid}:{sec}".encode()).decode(),
+                                          "Content-Type": "application/x-www-form-urlencoded"})
+    signal.alarm(40)
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            d = json.loads(r.read())
+    finally:
+        signal.alarm(0)
+    _SP_TOKEN.update(tok=d["access_token"], exp=time.time() + d.get("expires_in", 3600))
+    return _SP_TOKEN["tok"]
+
+
+def spotify_api(path):
+    tok = spotify_token()
+    req = urllib.request.Request("https://api.spotify.com/v1/" + path, headers={"Authorization": f"Bearer {tok}"})
+    signal.alarm(40)
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            return json.loads(r.read())
+    finally:
+        signal.alarm(0)
+
+
+def spotify_full(show_id):
+    """Every episode of a Spotify show via the official Web API (needs repo secrets)."""
+    if not spotify_token():
+        return None
+    show = spotify_api(f"shows/{show_id}?market=US")
+    eps, offset = [], 0
+    while True:
+        page = spotify_api(f"shows/{show_id}/episodes?market=US&limit=50&offset={offset}")
+        for e in page.get("items") or []:
+            if not e:
+                continue
+            imgs = e.get("images") or []
+            eps.append({
+                "title": e.get("name") or "",
+                "spotify_url": (e.get("external_urls") or {}).get("spotify") or f"https://open.spotify.com/episode/{e['id']}",
+                "duration": round((e.get("duration_ms") or 0) / 1000) or None,
+                "date": parse_date(e.get("release_date")) if e.get("release_date") else None,
+                "description": strip_html(e.get("html_description") or e.get("description") or "", 700),
+                "image": imgs[0]["url"] if imgs else None,
+            })
+        if not page.get("next"):
+            break
+        offset += 50
+    imgs = show.get("images") or []
+    return {"name": show.get("name"), "cover": imgs[0]["url"] if imgs else None,
+            "description": strip_html(show.get("html_description") or show.get("description") or "", 600),
+            "episodes": eps, "full": True}
+
+
+def spotify_has_video(episode_url):
+    try:
+        eid = episode_url.rstrip("/").rsplit("/", 1)[-1].split("?")[0]
+        page = fetch(f"https://open.spotify.com/embed/episode/{eid}")
+        return '"hasVideo":true' in page.replace(" ", "")
+    except Exception:  # noqa: BLE001
+        return False
 
 # ---------------------------------------------------------------- Apple
 def itunes_search(term):
@@ -456,6 +534,14 @@ def do_podcast(show, prev_eps):
     sp = None
     if show.get("spotify"):
         try:
+            sp = spotify_full(show["spotify"])
+            if sp:
+                log(f"  spotify api: {sp['name']} — {len(sp['episodes'])} episodes")
+        except Exception as e:  # noqa: BLE001
+            log(f"  spotify api failed: {e}")
+            sp = None
+    if show.get("spotify") and not sp:
+        try:
             sp = spotify_embed(show["spotify"])
             log(f"  spotify: {sp and sp['name']} — {len(sp['episodes']) if sp else 0} episodes")
         except Exception as e:  # noqa: BLE001
@@ -504,13 +590,25 @@ def do_podcast(show, prev_eps):
             eps.append({
                 "id": f"{key}:{e['spotify_url'].rsplit('/', 1)[-1]}",
                 "show": key, "kind": "episode", "title": e["title"], "date": e["date"],
-                "duration": e["duration"], "description": e["description"], "image": None,
+                "duration": e["duration"], "description": e["description"], "image": e.get("image"),
                 "url": e["spotify_url"], "spotify_url": e["spotify_url"],
+                "spotify_video": bool(e.get("video")),
             })
 
     if not items and eps:
         have = {e["id"] for e in eps}
         eps += [e for e in prev_eps if e.get("show") == key and e["id"] not in have]
+
+    if show.get("video_check"):
+        known = {e["id"]: e.get("spotify_video") for e in prev_eps if e.get("show") == key}
+        for e in eps[:25]:
+            if e.get("spotify_url") and not e.get("spotify_video"):
+                e["spotify_video"] = known.get(e["id"]) or spotify_has_video(e["spotify_url"])
+        log(f"  video episodes: {sum(1 for e in eps if e.get('spotify_video'))}")
+
+    hide = [w.lower() for w in show.get("hide_matching", [])]
+    if hide:
+        eps = [e for e in eps if not any(re.search(rf"\b{re.escape(w)}\b", e["title"].lower()) for w in hide)]
 
     only = [w.lower() for w in show.get("only_matching", [])]
     if only:
@@ -523,12 +621,15 @@ def do_podcast(show, prev_eps):
         "apple_url": show.get("apple") or (apple and apple.get("collectionViewUrl")),
         "spotify_url": show.get("spotify") and f"https://open.spotify.com/show/{show['spotify']}",
         "feed_title": (channel and channel["title"]) or (sp and sp.get("name")),
-        "description": channel and channel["description"],
+        "description": (channel and channel["description"]) or (sp and sp.get("description")),
+        "complete": bool(items) or bool(sp and sp.get("full")),
         "art": art or cover,
         "art_remote": cover,
     }
-    out["episodes"] = eps if eps else [e for e in prev_eps if e.get("show") == key]
-    report[key] = {"ok": bool(eps), "feed": feed_url, "episodes": len(out["episodes"]),
+    out["episodes"] = eps if eps else [e for e in prev_eps if e.get("show") == key
+                                       and not any(re.search(rf"\b{re.escape(w)}\b", e["title"].lower()) for w in hide)]
+    report[key] = {"ok": bool(eps), "feed": feed_url, "spotify_name": sp and sp.get("name"),
+                   "full_catalog": out["show"]["complete"], "episodes": len(out["episodes"]),
                    "spotify_matches": sum(1 for e in eps if e.get("spotify_url"))}
     return out
 
@@ -704,7 +805,7 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching")}
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]

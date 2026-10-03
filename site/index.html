@@ -18,16 +18,11 @@
 <body data-page="index" data-root="./">
 <div data-cc="header"></div>
 
-<nav class="pulse" aria-label="The Pulse — jump into a topic">
+<nav class="pulse" aria-label="The Pulse — what just dropped">
   <div class="pulse__in wrap">
     <span class="pulse__label">The Pulse <span aria-hidden="true">⚡</span></span>
-    <div class="pulse__rail">
+    <div class="pulse__rail" id="pulse-rail">
       <a class="pulse__chip" href="#latest">New this week<b data-new-count></b></a>
-      <a class="pulse__chip" href="pages/shows.html" data-search-topic="history power">History &amp; Power</a>
-      <a class="pulse__chip" href="pages/shows.html" data-search-topic="politics">Politics</a>
-      <a class="pulse__chip" href="#videos" data-search-topic="AI">AI</a>
-      <a class="pulse__chip" href="pages/shows.html" data-search-topic="hip-hop music culture">Music &amp; Culture</a>
-      <a class="pulse__chip" href="pages/art.html">Photography</a>
     </div>
   </div>
 </nav>
@@ -57,6 +52,57 @@
       <a class="pill-more" href="pages/archive.html">Everything, newest first →</a>
     </div>
     <div class="grid" id="latest-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wrap" id="about" aria-labelledby="about-h">
+    <div class="pill-row"><h2 class="pill-title" id="about-h">Who we are</h2></div>
+    <div class="duo rv">
+      <a class="duo__photo" href="pages/about.html">
+        <img src="assets/people/duo.jpg" alt="Joshua German and Janel Moore in front of a wall of bookshelves" loading="lazy" />
+        <span class="duo__names"><span>Joshua German</span><span>Janel Moore</span></span>
+      </a>
+      <div>
+        <h3 class="duo__title">Joshua &amp; Janel. <em>Curious, then creative.</em></h3>
+        <p class="duo__lede">We met as Gamecocks at the University of South Carolina and never stopped trading ideas. Joshua is a brand strategist, photographer, and podcaster; Janel is a technologist, campaign veteran, and political storyteller. Together we make shows, pictures, and work for brands — following whatever's too interesting to ignore.</p>
+        <div class="duo__people">
+          <div class="person">
+            <img class="person__face" src="assets/people/joshua.jpg" alt="" loading="lazy" />
+            <b>Joshua German</b>
+            <span>Senior Connections Strategist at TBWA\Chiat\Day. Photographer. Hosts The Eclectic Polymath, God Is Brazilian, and Approachable AI.</span>
+            <nav><a href="https://joshuamgerman.com" target="_blank" rel="noopener">Website</a><a href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a></nav>
+          </div>
+          <div class="person">
+            <img class="person__face" src="assets/people/janel.jpg" alt="" loading="lazy" />
+            <b>Janel Moore</b>
+            <span>Technology in global corporate banking; political fundraising veteran. Hosts Too Much to Tweet and Aspiring Abolitionist.</span>
+            <nav><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a><a href="pages/shows.html#tmtt">Her shows</a></nav>
+          </div>
+        </div>
+        <p style="margin-top:1.25rem"><a class="btn btn--dark" href="pages/about.html">Read our story</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIO -->
+  <section class="wrap" id="studio" aria-labelledby="studio-h">
+    <div class="pill-row">
+      <h2 class="pill-title pill-title--green" id="studio-h">The Studio</h2>
+      <a class="pill-more" href="pages/studio.html">How we work →</a>
+    </div>
+    <div class="studio rv">
+      <div class="studio__lead">
+        <h3 class="studio__title">Strategy, story, <em>and a steady hand.</em></h3>
+        <p>We help founders, brands, and teams figure out what to say, how to make it, and why anyone should care — with the same instincts that power our shows. Agency-grade strategy from TBWA\Chiat\Day, Goodby, and Wieden+Kennedy; operational chops from banking and political campaigns.</p>
+        <div class="hero__actions"><a class="btn" href="pages/contact.html?topic=project">Start a project</a><a class="btn btn--ghost" href="pages/studio.html">See services</a></div>
+      </div>
+      <div class="studio__grid">
+        <a class="studio__svc" href="pages/studio.html" style="--c:var(--green)"><span>01</span><b>Strategy &amp; Story</b><small>Brand, narrative, and connections planning.</small></a>
+        <a class="studio__svc" href="pages/studio.html" style="--c:var(--pink)"><span>02</span><b>Brand Building</b><small>Naming, identity, voice, launches.</small></a>
+        <a class="studio__svc" href="pages/studio.html" style="--c:var(--grape)"><span>03</span><b>Production</b><small>Podcasts, video, and photography, end to end.</small></a>
+        <a class="studio__svc" href="pages/studio.html" style="--c:var(--orange)"><span>04</span><b>AI &amp; Consulting</b><small>Workflows that actually help, plus a sharp second brain.</small></a>
+      </div>
+    </div>
   </section>
 
   <!-- VIDEOS -->
@@ -108,33 +154,6 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="wrap" id="about" aria-labelledby="about-h">
-    <div class="pill-row"><h2 class="pill-title" id="about-h">Who we are</h2></div>
-    <div class="duo rv">
-      <a class="duo__photo" href="pages/about.html">
-        <img src="assets/people/duo.jpg" alt="Joshua German and Janel Moore in front of a wall of bookshelves" loading="lazy" />
-        <span class="duo__names"><span>Joshua German</span><span>Janel Moore</span></span>
-      </a>
-      <div>
-        <h3 class="duo__title">Two curious minds. <em>One creative hub.</em></h3>
-        <p class="duo__lede">Curious &amp; Creative is where Joshua German and Janel Moore put everything they make: the podcasts, the videos, the photography, the inventions, and the strategy work that pays for the rest. Two University of South Carolina grads who never stopped asking “what if.”</p>
-        <div class="duo__people">
-          <div class="person">
-            <b>Joshua German</b>
-            <span>Senior Connections Strategist at TBWA\Chiat\Day. Photographer. Hosts The Eclectic Polymath and Approachable AI.</span>
-            <nav><a href="https://joshuamgerman.com" target="_blank" rel="noopener">Website</a><a href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a></nav>
-          </div>
-          <div class="person">
-            <b>Janel Moore</b>
-            <span>Technology in global corporate banking; political fundraising veteran. Hosts Too Much to Tweet and Aspiring Abolitionist.</span>
-            <nav><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a><a href="pages/shows.html#tmtt">Her shows</a></nav>
-          </div>
-        </div>
-        <p style="margin-top:1.25rem"><a class="btn btn--dark" href="pages/about.html">Read our story</a></p>
-      </div>
-    </div>
-  </section>
 
   <!-- PHOTOGRAPHY -->
   <section class="wrap" id="photography" aria-labelledby="photo-h" hidden>
