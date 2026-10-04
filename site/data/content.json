@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T12:30:19Z",
+ "generated_at": "2026-10-04T21:36:14Z",
  "shows": [
   {
    "key": "ccpod",
@@ -39,8 +39,8 @@
    "feed_title": "The Eclectic Polymath Podcast",
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a5568be7e93bf245d13c41a98",
-   "latest": "2026-10-03T21:36:00Z",
-   "count": 2
+   "latest": "2026-10-04T14:01:00Z",
+   "count": 3
   },
   {
    "key": "brazil",
@@ -57,9 +57,9 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-04T08:03:00Z",
-   "count": 4
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-04T20:11:00Z",
+   "count": 5
   },
   {
    "key": "tmtt",
@@ -154,6 +154,32 @@
   }
  ],
  "episodes": [
+  {
+   "id": "brazil:1nOdjBWv0hqJracOoasDSn",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#9 Santa Teresa: Rio's Hilltop Bohemia and the Fight to Preserve It (Português)",
+   "date": "2026-10-04T20:11:00Z",
+   "duration": 1075,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
+   "spotify_url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
+   "spotify_video": false
+  },
+  {
+   "id": "polymath:3MeWFtkY2o4NMxl1plwcOj",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#188 Marvel's Dark Years: How the MCU Lost Its Magic",
+   "date": "2026-10-04T14:01:00Z",
+   "duration": 3345,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/3MeWFtkY2o4NMxl1plwcOj",
+   "spotify_url": "https://open.spotify.com/episode/3MeWFtkY2o4NMxl1plwcOj",
+   "spotify_video": false
+  },
   {
    "id": "brazil:04XTVh2aZs9XWqSx8xcglZ",
    "show": "brazil",
@@ -824,16 +850,16 @@
    "feed": null,
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": false,
-   "episodes": 2,
-   "spotify_matches": 2
+   "episodes": 3,
+   "spotify_matches": 3
   },
   "brazil": {
    "ok": true,
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 4,
-   "spotify_matches": 4
+   "episodes": 5,
+   "spotify_matches": 5
   },
   "tmtt": {
    "ok": true,
