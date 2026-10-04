@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T06:01:13Z",
+ "generated_at": "2026-10-04T12:30:19Z",
  "shows": [
   {
    "key": "ccpod",
@@ -57,9 +57,9 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-04T05:03:00Z",
-   "count": 3
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-04T08:03:00Z",
+   "count": 4
   },
   {
    "key": "tmtt",
@@ -154,6 +154,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "brazil:04XTVh2aZs9XWqSx8xcglZ",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#6 Two Brazils: Worker Rights, Street Hustles, and the Labor Divide (Português)",
+   "date": "2026-10-04T08:03:00Z",
+   "duration": 1581,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
+   "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
+   "spotify_video": false
+  },
   {
    "id": "brazil:4R0PlOOdnRVL8U9NckyGP9",
    "show": "brazil",
@@ -819,8 +832,8 @@
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 3,
-   "spotify_matches": 3
+   "episodes": 4,
+   "spotify_matches": 4
   },
   "tmtt": {
    "ok": true,
