@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T05:51:18Z",
+ "generated_at": "2026-10-05T14:53:52Z",
  "shows": [
   {
    "key": "ccpod",
@@ -57,9 +57,9 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-05T04:59:00Z",
-   "count": 6
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-05T11:04:00Z",
+   "count": 7
   },
   {
    "key": "tmtt",
@@ -76,7 +76,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -154,6 +154,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "brazil:3niTLcEgqoKPRwG9iR1FdK",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#14 Quilombos: Black Resistance, Sovereignty, and Freedom in Brazil (Português)",
+   "date": "2026-10-05T11:04:00Z",
+   "duration": 1569,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
+   "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
+   "spotify_video": false
+  },
   {
    "id": "brazil:1BkshQwArEKxDCGaYyhYcg",
    "show": "brazil",
@@ -884,8 +897,8 @@
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 6,
-   "spotify_matches": 6
+   "episodes": 7,
+   "spotify_matches": 7
   },
   "tmtt": {
    "ok": true,
