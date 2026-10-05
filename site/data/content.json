@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T21:36:14Z",
+ "generated_at": "2026-10-05T05:51:18Z",
  "shows": [
   {
    "key": "ccpod",
@@ -39,8 +39,8 @@
    "feed_title": "The Eclectic Polymath Podcast",
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a5568be7e93bf245d13c41a98",
-   "latest": "2026-10-04T14:01:00Z",
-   "count": 3
+   "latest": "2026-10-04T23:58:00Z",
+   "count": 4
   },
   {
    "key": "brazil",
@@ -57,9 +57,9 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-04T20:11:00Z",
-   "count": 5
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-05T04:59:00Z",
+   "count": 6
   },
   {
    "key": "tmtt",
@@ -76,7 +76,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -154,6 +154,32 @@
   }
  ],
  "episodes": [
+  {
+   "id": "brazil:1BkshQwArEKxDCGaYyhYcg",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#12 The Amazon Rainforest: The Living Engine of Earth (Português)",
+   "date": "2026-10-05T04:59:00Z",
+   "duration": 1183,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
+   "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
+   "spotify_video": false
+  },
+  {
+   "id": "polymath:5lKvorUocpohz0mVJ9vJXS",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#189 DC's Identity Crisis: How the Original Superhero Empire Lost Hollywood to Marvel",
+   "date": "2026-10-04T23:58:00Z",
+   "duration": 2888,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/5lKvorUocpohz0mVJ9vJXS",
+   "spotify_url": "https://open.spotify.com/episode/5lKvorUocpohz0mVJ9vJXS",
+   "spotify_video": false
+  },
   {
    "id": "brazil:1nOdjBWv0hqJracOoasDSn",
    "show": "brazil",
@@ -850,16 +876,16 @@
    "feed": null,
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": false,
-   "episodes": 3,
-   "spotify_matches": 3
+   "episodes": 4,
+   "spotify_matches": 4
   },
   "brazil": {
    "ok": true,
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 5,
-   "spotify_matches": 5
+   "episodes": 6,
+   "spotify_matches": 6
   },
   "tmtt": {
    "ok": true,
