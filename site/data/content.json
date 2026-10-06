@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T21:21:21Z",
+ "generated_at": "2026-10-06T22:45:22Z",
  "shows": [
   {
    "key": "ccpod",
@@ -16,6 +16,7 @@
    "spotify": "033ze48fmi1cTvj2M7Pb6M",
    "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
    "rss": null,
+   "tier": "primary",
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
    "feed_title": "Curious + Creative",
    "art": "assets/art/ccpod.jpg",
@@ -34,55 +35,17 @@
    "tagline": "Everything is interesting when you dig deep enough.",
    "about": "Deep, well-researched episodes on whatever's too interesting to ignore: history and power, religion and myth, psychology, science, and Black culture. No lane, no niche.",
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
-   "rss": null,
+   "rss": "https://anchor.fm/s/111be5840/podcast/rss",
+   "tier": "primary",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
-   "apple_url": "https://podcasts.apple.com/us/podcast/the-eclectic-polymath-podcast/id6790238134?uo=4",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
    "feed_title": "The Eclectic Polymath Podcast",
    "description": "There’s too much interesting stuff in the world to only care about one thing.\nThe Eclectic Polymath Podcast explores a different curiosity every episode: fascinating people, strange moments in history, cultural shifts, political movements, religions, technologies, music, myths, ideas, and questions you may never have thought to ask.\nSome episodes explain how something became the way it is. Others unpack the life of someone worth knowing, trace an idea across centuries, or follow one rabbit hole until it connects to five others.\nYou don’t need to be an expert. You just need to stay curious.",
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-06T05:13:54Z",
-   "count": 192
-  },
-  {
-   "key": "brazil",
-   "name": "God Is Brazilian",
-   "short": "God Is Brazilian",
-   "kind": "podcast",
-   "hosts": [
-    "Joshua German"
-   ],
-   "tagline": "A podcast by Joshua German.",
-   "about": "",
-   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
-   "rss": null,
-   "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
-   "feed_title": "God is Brazilian",
-   "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-05T17:39:00Z",
-   "count": 8
-  },
-  {
-   "key": "tmtt",
-   "name": "Too Much to Tweet",
-   "short": "Too Much to Tweet",
-   "kind": "podcast",
-   "hosts": [
-    "Janel Moore"
-   ],
-   "tagline": "The takes too big for a caption.",
-   "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
-   "spotify": "033G4KctzeuD3Pu4db1AQa",
-   "rss": null,
-   "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
-   "feed_title": "Too Much to Tweet",
-   "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
-   "latest": "2026-07-25T22:26:00Z",
-   "count": 1
+   "latest": "2026-10-06T17:28:02Z",
+   "count": 195
   },
   {
    "key": "approachable",
@@ -97,6 +60,7 @@
    "youtube_handle": "@Approachable.A.I",
    "youtube_channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
    "art_url": "https://joshuamgerman.com/photos/podcasts/approachable-ai-logo.jpg",
+   "tier": "primary",
    "youtube_url": "https://www.youtube.com/@Approachable.A.I",
    "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
    "art": "assets/art/approachable.jpg",
@@ -106,28 +70,24 @@
    "count": 5
   },
   {
-   "key": "abolitionist",
-   "name": "Aspiring Abolitionist",
-   "short": "Aspiring Abolitionist",
+   "key": "tmtt",
+   "name": "Too Much to Tweet",
+   "short": "Too Much to Tweet",
    "kind": "podcast",
    "hosts": [
     "Janel Moore"
    ],
-   "tagline": "Politics, policy, and culture from an abolitionist lens.",
-   "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
-   "spotify": "7natfWFnBgakjLLZcEDZaw",
-   "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
-   "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
-   "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
-   "apple_url": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
-   "spotify_url": "https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw",
-   "feed_title": "Aspiring Abolitionist",
-   "description": "Welcome to Aspiring Abolitionist, the podcast where we dive into the political, social, and cultural moments shaping our world today.",
-   "complete": true,
-   "art": "assets/art/abolitionist.jpg",
-   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "latest": "2025-01-21T14:00:00Z",
-   "count": 13
+   "tagline": "The takes too big for a caption.",
+   "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
+   "spotify": "033G4KctzeuD3Pu4db1AQa",
+   "rss": null,
+   "tier": "primary",
+   "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
+   "feed_title": "Too Much to Tweet",
+   "art": "assets/art/tmtt.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "latest": "2026-07-25T22:26:00Z",
+   "count": 1
   },
   {
    "key": "dominate",
@@ -145,6 +105,8 @@
    "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
    "rss": "https://anchor.fm/s/24421480/podcast/rss",
    "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
+   "tier": "secondary",
+   "feature": true,
    "feed": "https://anchor.fm/s/24421480/podcast/rss",
    "apple_url": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
    "spotify_url": "https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp",
@@ -155,9 +117,82 @@
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/5983104/5983104-1590975610877-89f0b71432133.jpg",
    "latest": "2023-03-20T13:00:00Z",
    "count": 23
+  },
+  {
+   "key": "brazil",
+   "name": "God Is Brazilian",
+   "short": "God Is Brazilian",
+   "kind": "podcast",
+   "hosts": [
+    "Joshua German"
+   ],
+   "tagline": "A podcast by Joshua German.",
+   "about": "",
+   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
+   "rss": null,
+   "tier": "secondary",
+   "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
+   "feed_title": "God is Brazilian",
+   "art": "assets/art/brazil.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-05T17:39:00Z",
+   "count": 8
+  },
+  {
+   "key": "abolitionist",
+   "name": "Aspiring Abolitionist",
+   "short": "Aspiring Abolitionist",
+   "kind": "podcast",
+   "hosts": [
+    "Janel Moore"
+   ],
+   "tagline": "Politics, policy, and culture from an abolitionist lens.",
+   "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
+   "spotify": "7natfWFnBgakjLLZcEDZaw",
+   "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
+   "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
+   "tier": "secondary",
+   "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
+   "apple_url": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
+   "spotify_url": "https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw",
+   "feed_title": "Aspiring Abolitionist",
+   "description": "Welcome to Aspiring Abolitionist, the podcast where we dive into the political, social, and cultural moments shaping our world today.",
+   "complete": true,
+   "art": "assets/art/abolitionist.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
+   "latest": "2025-01-21T14:00:00Z",
+   "count": 13
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:6104d4cb c6eb 40ff 98cc 97e170ef90c3",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#194 Obama's Shadow Wars: Drones, Raids, and the Power Vacuums They Left Behind",
+   "date": "2026-10-06T17:28:02Z",
+   "duration": 2856,
+   "description": "Three days after Barack Obama became president, missiles struck Pakistan. It was the beginning of a new kind of American war — no invasions, no occupations. Instead: drones, a kill list, and small teams of operators. 563 strikes across Pakistan, Yemen, and Somalia, compared to 57 under Bush.\n This episode goes inside the machine: the \"light footprint\" doctrine, the disposition matrix, the \"Terror Tuesday\" targeting meetings, personality strikes versus signature strikes — and the two institutions that ran the overlapping wars, the CIA and JSOC. A bureaucracy for deciding who lives and who dies, built in secret.\n Then the raids: the one that worked — Abbottabad, May 2011, Bin Laden dead in…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791311213536-e2f6051966f66.jpg",
+   "url": "https://open.spotify.com/episode/7K6OVjDitctTwQnQ8odxVB",
+   "spotify_url": "https://open.spotify.com/episode/7K6OVjDitctTwQnQ8odxVB",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126953211/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2Fa9988d5e-6cf0-9d67-9659-c9ff1dc0983e.m4a",
+   "number": "194"
+  },
+  {
+   "id": "polymath:70dd1b91 e2f4 46c5 8f91 a59e2f361a40",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#193 Why Cuba Is Where People Go to Vanish",
+   "date": "2026-10-06T16:00:01Z",
+   "duration": 3116,
+   "description": "\"Fake my death, go to Cuba, that's the only option.\" Kendrick Lamar compressed an entire American fantasy into one line on \"ELEMENT.\" (DAMN., 2017). He didn't do it — but the line works because every American ear already knows what Cuba means: the place you go when you need to disappear.\n Underneath the lyric is real history. Assata Shakur escaped prison in 1979 and received political asylum in Cuba, living there beyond America's reach for over four decades. She wasn't the first — the 1960s and '70s saw \"take me to Cuba\" become the signature demand of airline hijackers, while figures like Robert F. Williams and Huey Newton also fled to the island.\n Here's the twist the research uncovered:…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791317641633-91fb1107bb735.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/193-Why-Cuba-Is-Where-People-Go-to-Vanish-e3q16pt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126966013/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2F4679e6da-5c3b-ca82-68a6-0c22c8b529e1.m4a",
+   "number": "193"
+  },
   {
    "id": "polymath:a6a48a2d 7104 4672 9ad9 f83cd5339155",
    "show": "polymath",
@@ -173,18 +208,18 @@
    "number": "192"
   },
   {
-   "id": "polymath:f79e9fdb c811 402f abcc bedcbbcd4d31",
+   "id": "polymath:7c8b63d9 b541 4646 8693 d19ea56eff1e",
    "show": "polymath",
    "kind": "episode",
-   "title": "#190 Church Hierarchy: From Apostles and Bishops to Pastors and Popes",
-   "date": "2026-10-06T05:13:00Z",
-   "duration": 3870,
-   "description": "Jesus didn't leave behind an org chart. There were no dioceses, seminaries, annual conferences, denominational boards, or Vatican departments. Yet Christianity eventually built one of the most elaborate collections of institutions in human history.\n This episode traces how that happened—from the original meaning of apostle and the rise of bishops, priests, elders, pastors, and deacons to the radically different systems those titles belong to today. We move through Catholic apostolic succession and the Vatican, Orthodox bishops without a universal pope, the organizational explosion of the Protestant Reformation, and the difference between being called, ordained, elected, appointed, or simply…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791263558802-57984655fa031.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/190-Church-Hierarchy-From-Apostles-and-Bishops-to-Pastors-and-Popes-e3pvjfn",
+   "title": "#191 Diamonds: Love, Scarcity, and the Most Engineered Symbol in Romance",
+   "date": "2026-10-05T19:00:00Z",
+   "duration": 4272,
+   "description": "A diamond is carbon arranged in an extraordinary way. So how did a tiny crystal formed deep beneath the Earth become one of the most recognizable and expensive symbols of love in the world?\n This episode follows the diamond from mine to engagement ring: how natural diamonds form, how rough stones are cut and graded, what the 4Cs actually tell you, why cut often matters more than the specifications people obsess over, and how natural, lab-grown, moissanite, and other alternatives really differ. We also get into the modern buying game—magic carat thresholds, grading reports, jewelry markups, insurance, resale, and why a ring's appraisal value can be very different from what anyone would…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791269382833-45319ae521896.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/191-Diamonds-Love--Scarcity--and-the-Most-Engineered-Symbol-in-Romance-e3pvo65",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/126913463/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2F3302b4f5-eca2-f720-48d6-8d63ab323cbe.m4a",
-   "number": "190"
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126918277/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2Fad24fa23-c507-3625-f92f-7414ae390e41.m4a",
+   "number": "191"
   },
   {
    "id": "brazil:564EauYPeUuarR3FNhB10h",
@@ -198,6 +233,20 @@
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
+  },
+  {
+   "id": "polymath:f79e9fdb c811 402f abcc bedcbbcd4d31",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#190 Church Hierarchy: From Apostles and Bishops to Pastors and Popes",
+   "date": "2026-10-05T16:00:00Z",
+   "duration": 3870,
+   "description": "Jesus didn't leave behind an org chart. There were no dioceses, seminaries, annual conferences, denominational boards, or Vatican departments. Yet Christianity eventually built one of the most elaborate collections of institutions in human history.\n This episode traces how that happened—from the original meaning of apostle and the rise of bishops, priests, elders, pastors, and deacons to the radically different systems those titles belong to today. We move through Catholic apostolic succession and the Vatican, Orthodox bishops without a universal pope, the organizational explosion of the Protestant Reformation, and the difference between being called, ordained, elected, appointed, or simply…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791263558802-57984655fa031.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/190-Church-Hierarchy-From-Apostles-and-Bishops-to-Pastors-and-Popes-e3pvjfn",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126913463/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2F3302b4f5-eca2-f720-48d6-8d63ab323cbe.m4a",
+   "number": "190"
   },
   {
    "id": "brazil:3niTLcEgqoKPRwG9iR1FdK",
@@ -3542,16 +3591,13 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 192,
-   "spotify_matches": 0
+   "episodes": 195,
+   "spotify_matches": 1
   },
-  "brazil": {
+  "approachable": {
    "ok": true,
-   "feed": null,
-   "spotify_name": "God is Brazilian",
-   "full_catalog": false,
-   "episodes": 8,
-   "spotify_matches": 8
+   "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
+   "episodes": 5
   },
   "tmtt": {
    "ok": true,
@@ -3561,10 +3607,21 @@
    "episodes": 1,
    "spotify_matches": 1
   },
-  "approachable": {
+  "dominate": {
    "ok": true,
-   "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
-   "episodes": 5
+   "feed": "https://anchor.fm/s/24421480/podcast/rss",
+   "spotify_name": "Dominate the Decade ",
+   "full_catalog": true,
+   "episodes": 23,
+   "spotify_matches": 1
+  },
+  "brazil": {
+   "ok": true,
+   "feed": null,
+   "spotify_name": "God is Brazilian",
+   "full_catalog": false,
+   "episodes": 8,
+   "spotify_matches": 8
   },
   "abolitionist": {
    "ok": true,
@@ -3572,14 +3629,6 @@
    "spotify_name": "Aspiring Abolitionist",
    "full_catalog": true,
    "episodes": 13,
-   "spotify_matches": 1
-  },
-  "dominate": {
-   "ok": true,
-   "feed": "https://anchor.fm/s/24421480/podcast/rss",
-   "spotify_name": "Dominate the Decade ",
-   "full_catalog": true,
-   "episodes": 23,
    "spotify_matches": 1
   }
  },
