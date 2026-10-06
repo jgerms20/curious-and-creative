@@ -14,7 +14,14 @@ media-network layout (Ringer-inspired structure), C&C colors, light + dark.
 - `data/shows.json` — hand-edited registry (names, hosts, taglines, Spotify/RSS/YouTube ids, art overrides). Add a show here.
 - `scripts/refresh_content.py` (GitHub Actions: every deploy, every 6 hours on main, and on branch pushes that touch it) pulls episodes from RSS feeds, Spotify, and YouTube; mirrors show art, Joshua's photography sets, and portraits from joshuamgerman.com; writes `data/content.json` and `data/photos.json` and commits them.
 - Shows sort by most recent episode; the flagship (The Curious & Creative Podcast) always leads.
+- `tier` in `shows.json`: `primary` shows (C&C, Eclectic Polymath, Approachable AI, Too Much to Tweet) drive the hero, Pulse, The Latest, Videos, and ticker; `secondary` shows (Dominate the Decade, God Is Brazilian, Aspiring Abolitionist) live in the Network section/page and lower on Shows. `feature: true` puts a secondary show in the Podcasts stack and spotlights it in the Network list.
+- `episode_links` in `shows.json`: paste Spotify episode URLs to pin episodes the feeds don't expose.
 - Spotify-only shows record each newest episode as it appears; pin the show's RSS feed in `shows.json` to get the full back catalog.
+
+## Network, Shop, Backstage
+- `CC.network(data)` (js/cc.js) draws the show web: hub, Joshua and Janel, primary inner ring, secondary outer ring, open "next show" seats. Used on the homepage and `pages/network.html`.
+- `pages/shop.html` lists `shop_items` from Supabase (public read of anything not `hidden`) plus Kindling products from `data/kindling-shop.json`. Items and photos are managed in Backstage → Shop (images go to the public `shop` storage bucket).
+- `backstage/` is the private team space (Supabase auth; only `team_members` emails can read or write).
 
 ## Tokens
 Paper `#FFFCF5` / dark `#0F0D11` · Ink `#151217` / `#F7F2EA` · Green `#37B34A` · Pink `#EC3F8E` · Gold `#FFC93C` · Grape `#8E6FE0` · Sky `#46C7E8` · Orange `#FF8D27`.

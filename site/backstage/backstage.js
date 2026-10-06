@@ -142,6 +142,7 @@
     if (tab === "episodes") v.innerHTML = await episodes();
     if (tab === "tasks") v.innerHTML = await tasks();
     if (tab === "ideas") v.innerHTML = await ideas();
+    if (tab === "shop") v.innerHTML = await shop();
     if (tab === "team") v.innerHTML = team();
     wire(v);
   }
@@ -248,6 +249,24 @@
       <div class="bs-ideas">${all.map((i) => `<button class="bs-idea${i.pinned ? " is-pinned" : ""}" data-edit="ideas:${i.id}"><span class="bs-tag">${esc(i.area)}</span><b>${esc(i.title)}</b>${i.body ? `<p>${esc(i.body)}</p>` : ""}</button>`).join("") || `<p class="bs-empty">Episode ideas, guests, shoots, inventions, site changes — drop them here.</p>`}</div>`;
   }
 
+  /* ---------------- shop ---------------- */
+  const SHOP_CATS = [["prints", "Photo prints"], ["janel-art", "Art by Janel"], ["joshua-art", "Art by Joshua"], ["merch", "Merch"], ["other", "Other"]];
+  const SHOP_STATUS = [["available", "Available"], ["coming-soon", "Coming soon"], ["sold-out", "Sold out"], ["hidden", "Hidden"]];
+  const imgSrc = (u) => (!u ? "" : /^https?:/.test(u) ? u : "../" + u);
+  async function shop() {
+    const items = await load("shop_items", "sort", true);
+    return `
+      <div class="bs-h"><h2>Shop</h2><div style="display:flex;gap:.5rem;flex-wrap:wrap"><a class="btn btn--ghost btn--sm" href="../pages/shop.html" target="_blank" rel="noopener">View shop ↗</a><button class="btn btn--sm" data-new="shop_items">+ Item</button></div></div>
+      <p class="eyebrow" style="text-transform:none;letter-spacing:0;margin-bottom:1rem">Anything not marked Hidden shows on the public Shop page right away. Kindling products are managed in the Kindling shop.</p>
+      ${SHOP_CATS.map(([k, label]) => {
+        const list = items.filter((i) => i.category === k);
+        if (!list.length) return "";
+        return `<h3 class="eyebrow" style="margin:1.5rem 0 .75rem">${label} · ${list.length}</h3><div class="bs-shop">${list.map((i) => `<button class="bs-item" data-edit="shop_items:${i.id}">
+          <span class="bs-item__img">${i.image_url ? `<img src="${esc(imgSrc(i.image_url))}" alt="">` : "No photo"}</span>
+          <b>${esc(i.title)}</b><small>${esc(SHOP_STATUS.find(([v]) => v === i.status)?.[1] || i.status)}${i.price_cents != null ? " · $" + (i.price_cents / 100).toFixed(2) : ""}</small></button>`).join("")}</div>`;
+      }).join("") || `<p class="bs-empty">No items yet.</p>`}`;
+  }
+
   /* ---------------- team ---------------- */
   function team() {
     return `
@@ -267,6 +286,18 @@
 
   /* ---------------- editors ---------------- */
   const FORMS = {
+    shop_items: (r) => `<h3>${r.id ? "Edit" : "New"} shop item</h3><div class="bs-modal__grid">
+      <label class="wide">Title<input name="title" required value="${esc(r.title)}"></label>
+      <label>Section<select name="category">${SHOP_CATS.map(([k, l]) => `<option value="${k}"${k === (r.category || "prints") ? " selected" : ""}>${l}</option>`).join("")}</select></label>
+      <label>Status<select name="status">${SHOP_STATUS.map(([k, l]) => `<option value="${k}"${k === (r.status || "available") ? " selected" : ""}>${l}</option>`).join("")}</select></label>
+      <label>Artist<input name="artist" value="${esc(r.artist)}" placeholder="Janel Moore"></label>
+      <label>Price (USD)<input name="price" type="number" min="0" step="0.01" value="${r.price_cents != null ? (r.price_cents / 100).toFixed(2) : ""}" placeholder="leave blank to hide"></label>
+      <label class="wide">Buy link (Stripe, Shopify, Etsy, or your shop)<input name="buy_url" type="url" value="${esc(r.buy_url)}"></label>
+      <label class="wide">Photo<input name="photo" type="file" accept="image/*"></label>
+      <label class="wide">…or image URL<input name="image_url" value="${esc(r.image_url)}"></label>
+      ${r.image_url ? `<img class="wide" src="${esc(imgSrc(r.image_url))}" alt="" style="max-height:180px;width:auto;border-radius:12px">` : ""}
+      <label>Order (lower shows first)<input name="sort" type="number" value="${esc(r.sort ?? 100)}"></label>
+      <label class="wide">Description<textarea name="description">${esc(r.description)}</textarea></label></div>`,
     episodes: (r) => `<h3>${r.id ? "Edit" : "New"} episode</h3><div class="bs-modal__grid">
       <label class="wide">Title<input name="title" required value="${esc(r.title)}"></label>
       <label>Show<select name="show_key">${showOpts(r.show_key ?? "ccpod")}</select></label>
@@ -321,7 +352,19 @@
   mform.addEventListener("submit", async (e) => {
     e.preventDefault();
     const row = { id: mform.dataset.id || undefined };
-    new FormData(mform).forEach((v, k) => { row[k] = v; });
+    new FormData(mform).forEach((v, k) => { if (!(v instanceof File)) row[k] = v; });
+    if (mform.dataset.table === "shop_items") {
+      row.price_cents = row.price === "" || row.price == null ? null : Math.round(Number(row.price) * 100);
+      delete row.price;
+      row.sort = Number(row.sort) || 100;
+      const file = mform.photo && mform.photo.files[0];
+      if (file) {
+        const path = `${Date.now()}-${file.name.toLowerCase().replace(/[^a-z0-9.]+/g, "-")}`;
+        const up = await sb.storage.from("shop").upload(path, file, { cacheControl: "31536000", upsert: false });
+        if (up.error) return alert("Photo upload failed: " + up.error.message);
+        row.image_url = sb.storage.from("shop").getPublicUrl(path).data.publicUrl;
+      }
+    }
     mform.querySelectorAll('input[type="checkbox"]').forEach((c) => { row[c.name] = c.checked; });
     if (await save(mform.dataset.table, row)) { closeEditor(); render(); }
   });

@@ -6,6 +6,8 @@
   const root = document.body.dataset.root || "./";
   const page = document.body.dataset.page || "";
   const CC = (window.CC = { root, page });
+  // public (publishable) key: access is enforced by database rules, not by hiding this
+  CC.SUPABASE = { url: "https://zsgacmfbqqmbcexomyoo.supabase.co", key: "sb_publishable_2GNNUjTGciy6Wi_wxDuStg_tY1sP28y" };
 
   /* ---------------- helpers ---------------- */
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -49,7 +51,8 @@
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
     { label: "Inventions", href: "pages/inventions.html", words: "inventions build products" },
     { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
-    { label: "Shop", href: "kindling/shop.html", words: "shop store buy order pre-order kindling deck cart" },
+    { label: "Shop", href: "pages/shop.html", words: "shop store buy order prints art artwork janel joshua kindling deck" },
+    { label: "Network", href: "pages/network.html", words: "network shows web map secondary god is brazilian dominate the decade aspiring abolitionist" },
     { label: "Contact", href: "pages/contact.html", words: "contact email hello pitch guest press" },
   ];
   CC.PAGES = PAGES;
@@ -77,7 +80,7 @@
       <div class="hdr__bar wrap">
         <a class="wordmark" href="${url("index.html")}" aria-label="Curious and Creative — home"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
-        <nav class="hdr__links" aria-label="Primary">${navLink("pages/about.html", "About")}${navLink("pages/studio.html", "Studio")}${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}<a href="${url("kindling/shop.html")}"${page === "kindling" ? ' aria-current="page"' : ""}>Shop</a></nav>
+        <nav class="hdr__links" aria-label="Primary">${navLink("pages/about.html", "About")}${navLink("pages/studio.html", "Studio")}${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}${navLink("pages/shop.html", "Shop")}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
         <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${icon.moon}${icon.sun}</button>
         <button class="icon-btn" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon.menu}</button>
@@ -307,12 +310,21 @@
   };
 
   const loadJSON = (p) => fetch(url(p), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json")]).then(([content, photos]) => {
+  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json")]).then(([content, photos, registry]) => {
     const data = content || { shows: [], episodes: [] };
+    // registry edits (tier, feature, copy) apply immediately, before the next refresh
+    const reg = Object.fromEntries(((registry && registry.shows) || []).map((s) => [s.key, s]));
+    data.shows = (data.shows || []).map((s) => {
+      const r = reg[s.key] || {};
+      return { ...s, tier: r.tier || s.tier || "primary", feature: r.feature ?? s.feature, name: r.name || s.name, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts };
+    });
     const allPhotos = (photos && photos.photos) || [];
     data.photos = allPhotos.some((p) => p.featured) ? allPhotos.filter((p) => p.featured) : allPhotos;
-    data.byKey = Object.fromEntries((data.shows || []).map((s) => [s.key, s]));
+    data.byKey = Object.fromEntries((data.shows || []).map((x) => [x.key, x]));
     data.shows = SHOW_ORDER(data.shows || []);
+    data.primary = data.shows.filter((x) => x.tier !== "secondary");
+    data.secondary = data.shows.filter((x) => x.tier === "secondary");
+    CC.isPrimary = (k) => (data.byKey[k] || {}).tier !== "secondary";
     CC.data = data;
 
     INDEX = [];
@@ -331,6 +343,66 @@
     if (qp && page !== "archive") CC.openSearch(qp);
     return data;
   });
+
+
+  /* ---------------- the network web (shows ↔ hosts) ---------------- */
+  CC.network = (data, opts = {}) => {
+    const W = 1000, H = 690, cx = 500, cy = 330;
+    const pt = (deg, rx, ry) => [cx + rx * Math.cos((deg * Math.PI) / 180), cy + ry * Math.sin((deg * Math.PI) / 180)];
+    const who = (s) => {
+      const h = (s.hosts || []).join(" ").toLowerCase();
+      return [h.includes("joshua") && "joshua", h.includes("janel") && "janel"].filter(Boolean);
+    };
+    const slots = {
+      top: [[-90, 300, 215]],
+      left: { primary: [[214, 300, 215], [146, 300, 215], [180, 330, 215]], secondary: [[244, 420, 290], [180, 360, 285], [120, 420, 290]] },
+      right: { primary: [[-34, 300, 215], [34, 300, 215], [0, 330, 215]], secondary: [[16, 420, 260], [-64, 420, 290], [60, 420, 290]] },
+      future: [[72, 430, 290], [90, 440, 300], [108, 430, 290]],
+    };
+    const used = { left: { primary: 0, secondary: 0 }, right: { primary: 0, secondary: 0 } };
+    const nodes = data.shows.map((s) => {
+      const hosts = who(s);
+      const tier = s.tier === "secondary" ? "secondary" : "primary";
+      let pos;
+      if (s.flagship) pos = slots.top[0];
+      else {
+        const side = hosts.includes("janel") && !hosts.includes("joshua") ? "right" : "left";
+        pos = slots[side][tier][used[side][tier]++] || slots[side][tier][0];
+      }
+      const [x, y] = pt(...pos);
+      return { s, hosts, tier, x, y, r: s.flagship ? 58 : tier === "primary" ? 46 : 32 };
+    });
+    const people = { joshua: [cx - 150, cy + 25, "Joshua", "assets/people/joshua.jpg"], janel: [cx + 150, cy + 25, "Janel", "assets/people/janel.jpg"] };
+    const line = (a, b, cls, key) => `<line class="web__edge ${cls}" data-edge="${key}" x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}"/>`;
+    let edges = Object.keys(people).map((k) => line([cx, cy - 40], people[k], "web__edge--core", k)).join("");
+    nodes.forEach((n) => n.hosts.forEach((h) => { edges += line(people[h], [n.x, n.y], `web__edge--${n.tier}`, `${h} ${n.s.key}`); }));
+    const futures = slots.future.map((f, i) => { const [x, y] = pt(...f); return { x, y, i }; });
+    futures.forEach((f) => { edges += line([cx, cy - 40], [f.x, f.y], "web__edge--future", "future"); });
+    const img = (id, x, y, r, src, label) => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--c)"/>`}<text class="web__label" x="${x}" y="${y + r + 22}">${esc(label)}</text>`;
+    const showNodes = nodes.map((n, i) => `<a class="web__node web__node--${n.tier}" href="${url(`pages/shows.html#${n.s.key}`)}" data-show="${n.s.key}" data-node="${n.s.key}" data-links="${n.hosts.join(" ")}" aria-label="${esc(n.s.name)}">${img("wc" + i, n.x, n.y, n.r, n.s.art, n.s.short || n.s.name)}${n.s.archive ? `<text class="web__tag" x="${n.x}" y="${n.y + n.r + 40}">archive</text>` : ""}</a>`).join("");
+    const peopleNodes = Object.entries(people).map(([k, [x, y, label, src]]) => `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${label}">${img("wp" + k, x, y, 40, src, label)}</a>`).join("");
+    const futureNodes = futures.map((f) => `<g class="web__node web__node--future" aria-hidden="true"><circle cx="${f.x}" cy="${f.y}" r="26"/><text class="web__plus" x="${f.x}" y="${f.y + 7}">+</text><text class="web__label" x="${f.x}" y="${f.y + 50}">Next show</text></g>`).join("");
+    const hub = `<g class="web__hub"><circle cx="${cx}" cy="${cy - 40}" r="62"/><text x="${cx}" y="${cy - 46}">Curious</text><text x="${cx}" y="${cy - 26}">&amp; Creative</text></g>`;
+    return `<svg class="web" viewBox="0 0 ${W} ${H}" role="img" aria-label="The Curious & Creative network: Joshua and Janel connected to every show they host">${edges}${futureNodes}${hub}${peopleNodes}${showNodes}</svg>`;
+  };
+  CC.wireNetwork = (root) => {
+    const svg = root.querySelector(".web");
+    if (!svg) return;
+    const focus = (key) => {
+      svg.classList.toggle("is-focus", !!key);
+      svg.querySelectorAll(".web__edge").forEach((e) => e.classList.toggle("is-on", !!key && e.dataset.edge.split(" ").includes(key)));
+      svg.querySelectorAll(".web__node").forEach((n) => {
+        const linked = n.dataset.node === key || (n.dataset.links || "").split(" ").includes(key) || (key && svg.querySelector(`[data-node="${key}"]`)?.dataset.links?.split(" ").includes(n.dataset.node));
+        n.classList.toggle("is-on", !!key && !!linked);
+      });
+    };
+    svg.querySelectorAll("[data-node]").forEach((n) => {
+      n.addEventListener("mouseenter", () => focus(n.dataset.node));
+      n.addEventListener("focus", () => focus(n.dataset.node));
+      n.addEventListener("mouseleave", () => focus(null));
+      n.addEventListener("blur", () => focus(null));
+    });
+  };
 
   /* ---------------- reveal on scroll ---------------- */
   CC.reveal = (scope = document) => {

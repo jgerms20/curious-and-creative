@@ -436,6 +436,58 @@ def spotify_full(show_id):
             "episodes": eps, "full": True}
 
 
+def spotify_episode(eid):
+    """One episode's details from its public embed page."""
+    page = fetch(f"https://open.spotify.com/embed/episode/{eid}")
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+    if not m:
+        return None
+    ent = (((json.loads(m.group(1)).get("props") or {}).get("pageProps") or {}).get("state") or {}).get("data", {}).get("entity") or {}
+    if not ent.get("id"):
+        return None
+    covers = ent.get("coverArt", {}).get("sources") if isinstance(ent.get("coverArt"), dict) else None
+    covers = covers or ent.get("relatedEntityCoverArt") or []
+    cover = max(covers, key=lambda c: c.get("maxWidth") or c.get("width") or 0)["url"] if covers else None
+    rd = (ent.get("releaseDate") or {}).get("isoString")
+    return {"title": ent.get("title") or ent.get("name") or "", "spotify_url": f"https://open.spotify.com/episode/{ent['id']}",
+            "duration": round((ent.get("duration") or 0) / 1000) or None, "date": parse_date(rd) if rd else None,
+            "description": "", "image": cover, "video": bool(ent.get("hasVideo"))}
+
+
+def discover_feed(show, spotify_name):
+    """Find a Spotify-hosted show's public RSS feed without API keys."""
+    names = [n for n in dict.fromkeys([spotify_name, show["name"], show.get("short")]) if n]
+    want = [norm(n) for n in names]
+    # 1) Podcast Index (open directory) via its public web search
+    for n in names:
+        try:
+            res = json.loads(fetch("https://podcastindex.org/api/search/byterm?q=" + urllib.parse.quote(n)))
+            for f in (res.get("feeds") or [])[:15]:
+                title, author, url = norm(f.get("title")), norm(f.get("author")), f.get("url") or f.get("originalUrl")
+                hosts = [norm(h).split()[-1] for h in show.get("hosts", [])]
+                if url and title in want and (not hosts or any(h in author for h in hosts)):
+                    log(f"  podcastindex feed: {f.get('title')} | {f.get('author')} -> {url}")
+                    return url
+        except Exception as e:  # noqa: BLE001
+            log(f"  podcastindex search failed ({n}): {e}")
+    # 2) Spotify for Creators public show page, which links the RSS feed
+    slugs = show.get("creator_slugs") or []
+    for n in names:
+        base = re.sub(r"[^a-z0-9]+", "", (n or "").lower())
+        slugs += [base, base.replace("the", "", 1)]
+    for slug in dict.fromkeys(x for x in slugs if x):
+        for host in ("creators.spotify.com/pod/show", "podcasters.spotify.com/pod/show", "anchor.fm"):
+            try:
+                page = fetch(f"https://{host}/{slug}", timeout=12)
+            except Exception:  # noqa: BLE001
+                continue
+            m = re.search(r"https://anchor\.fm/s/[0-9a-f]+/podcast/rss", page)
+            if m and any(w and w in norm(page[:20000]) for w in want):
+                log(f"  creators page {host}/{slug} -> {m.group(0)}")
+                return m.group(0)
+    return None
+
+
 def spotify_has_video(episode_url):
     try:
         eid = episode_url.rstrip("/").rsplit("/", 1)[-1].split("?")[0]
@@ -558,6 +610,8 @@ def do_podcast(show, prev_eps):
         if apple:
             feed_url = apple.get("feedUrl")
             log(f"  chose feed: {apple.get('collectionName')} -> {feed_url}")
+    if not feed_url and show.get("spotify") and not (sp and sp.get("full")):
+        feed_url = discover_feed(show, sp and sp.get("name"))
     channel, items = None, []
     if feed_url:
         try:
@@ -594,6 +648,21 @@ def do_podcast(show, prev_eps):
                 "url": e["spotify_url"], "spotify_url": e["spotify_url"],
                 "spotify_video": bool(e.get("video")),
             })
+
+    for link in show.get("episode_links") or []:
+        eid = link.rstrip("/").split("/episode/")[-1].split("?")[0]
+        if any(e.get("spotify_url", "").endswith(eid) for e in eps):
+            continue
+        try:
+            got = spotify_episode(eid)
+        except Exception as e:  # noqa: BLE001
+            log(f"  episode link failed {link}: {e}")
+            got = None
+        if got:
+            eps.append({"id": f"{key}:{eid}", "show": key, "kind": "episode", "title": got["title"], "date": got["date"],
+                        "duration": got["duration"], "description": got["description"], "image": got["image"],
+                        "url": got["spotify_url"], "spotify_url": got["spotify_url"], "spotify_video": got["video"]})
+            log(f"  pinned episode: {got['title']}")
 
     if not items and eps:
         have = {e["id"] for e in eps}
@@ -805,7 +874,7 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check")}
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]
