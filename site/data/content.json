@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T00:08:21Z",
+ "generated_at": "2026-10-06T06:30:03Z",
  "shows": [
   {
    "key": "ccpod",
@@ -61,7 +61,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-05T17:39:00Z",
    "count": 8
   },
@@ -80,7 +80,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -206,8 +206,8 @@
    "duration": 2888,
    "description": "Superman invented the superhero. Batman became one of the most adaptable fictional characters ever created. Wonder Woman became a global icon. So how did DC — the company that built the foundation of superhero culture — lose Hollywood's center of gravity to Marvel?\n This episode traces DC's extraordinary history, from the birth of Superman and the rise of Batman through Superman: The Movie, Batman, the DC Animated Universe, Christopher Nolan's Dark Knight trilogy, the DCEU experiment, and the current James Gunn era. Along the way, we explore why DC repeatedly produced incredible individual stories while struggling to create the kind of interconnected cinematic system that transformed Marvel…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791158169428-bf805ed53dbab.jpg",
-   "url": "https://open.spotify.com/episode/5lKvorUocpohz0mVJ9vJXS",
-   "spotify_url": "https://open.spotify.com/episode/5lKvorUocpohz0mVJ9vJXS",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/189-DCs-Identity-Crisis-How-the-Original-Superhero-Empire-Lost-Hollywood-to-Marvel-e3pt4n6",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/126832806/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-5%2F14ce4f2d-0451-17bb-68d4-302237e4c3f6.m4a",
    "number": "189"
   },
@@ -3515,7 +3515,7 @@
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
    "episodes": 190,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "brazil": {
    "ok": true,
