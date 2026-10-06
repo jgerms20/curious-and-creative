@@ -23,3 +23,10 @@ Type: Archivo (variable width) — headlines 850–900 weight, 78–85% width, u
 
 ## Signature pieces
 Rotated pill section titles · Pulse topic rail (chips open search) · story-style hero with progress bars, blurred art bed, drifting zoom, up-next minis · hover-fade cards · black boxes with fading video list + "All videos" · shuffle card stack with audio waves · tilted auto-scrolling ticker · masonry photography with lightbox.
+
+## Kindling (`/kindling/`)
+A product microsite inside the hub chrome. It uses `css/cc.css` + `js/cc.js`, then `kindling/kindling.css` + `kindling/kindling.js`.
+- Pages: `index.html` (product), `play.html` (digital game), `shop.html` (cart + checkout), `deck.html` (gallery; `?layout=letter|press` is print mode for the PDF script).
+- Data: `data/kindling-cards.json` is compiled from `Production/Kindling/deck/*.json` by `scripts/build_kindling.py`. Never hand-edit it. `data/kindling-shop.json` holds products, prices, and the checkout mode (see `Strategy/Kindling/shop-setup.md`).
+- Tokens: night `#170B0A`, cream `#FBF0E2`, flame `#FF6A2B`, gold `#FFC24B`, ember `#C2321F`. Deck colors come from `[data-deck]`, which sets `--d`. Card prompts use Fraunces and labels use Archivo, both self-hosted in `assets/fonts/` so the print PDFs embed them.
+- Cards (`.kcard`) size from `--w` and scale their internals with container units. Never put `cqw` on `.kcard` itself, only on its children.

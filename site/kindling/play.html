@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Play Kindling free — Curious &amp; Creative</title>
+  <meta name="description" content="Play the full Kindling card game free in your browser. Set your heat, pick your decks, and pass the phone." />
+  <meta property="og:title" content="Play Kindling free" />
+  <meta property="og:description" content="The whole game in your browser. Set your heat, pick your decks, pass the phone." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="kindling.css" />
+</head>
+<body data-page="kindling" data-kpage="play" data-root="../">
+<div data-cc="header"></div>
+<main id="main" class="wrap">
+  <nav data-k-nav></nav>
+  <div class="kp" id="game" aria-live="polite">
+    <p class="hint" style="padding:3rem 0;text-align:center">Shuffling the deck…</p>
+  </div>
+  <p class="hint" style="margin-top:1.25rem;color:var(--ink-soft);font-size:.88rem;text-align:center">Your game is saved in this browser only, so you can close the tab and come back. Nothing you type here leaves your device.</p>
+</main>
+<div data-cc="footer"></div>
+<script src="../js/cc.js"></script>
+<script src="kindling.js"></script>
+<script src="play.js"></script>
+</body>
+</html>

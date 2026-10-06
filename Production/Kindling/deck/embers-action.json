@@ -1,0 +1,582 @@
+[
+ {
+  "type": "touch",
+  "heat": 1,
+  "text": "Hold hands in silence for 60 seconds. No talking, no phones, eye contact if you can stand it.",
+  "time": "60 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 1,
+  "text": "Invent a secret handshake with your partner. Four moves minimum, plus one dramatic finish.",
+  "time": "2 min",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 1,
+  "text": "Everyone stacks hands in the middle like a team huddle. On three, shout one word that sums up tonight.",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "touch",
+  "heat": 2,
+  "text": "Rest your forehead against theirs and breathe together for ten slow breaths.",
+  "time": "60 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 2,
+  "text": "Rub your partner's shoulders for one full minute. They narrate what's working, like a demanding food critic.",
+  "time": "60 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 2,
+  "text": "Trace a secret word on their back with one finger. They get three guesses.",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 2,
+  "text": "Cup their face in both hands and look at them for ten seconds before you say a single word.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Trace their spine through their shirt, top to bottom, as slowly as you can bear.",
+  "time": "60 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Kiss them somewhere you've never deliberately kissed before. Announce the location first.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Kiss the inside of their wrist, then stop. They decide where your next kiss lands.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Sit behind them and wrap them up. One kiss on the back of the neck, then just hold on.",
+  "time": "60 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Kiss for 30 seconds with both of you keeping your hands behind your backs. Harder than it sounds.",
+  "time": "30 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Run your fingers slowly across their scalp and the back of their neck until they make a noise.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 3,
+  "text": "Everyone kisses the person on their left anywhere above the collar. The person being kissed picks the spot.",
+  "pairing": "partners",
+  "players": "3+"
+ },
+ {
+  "type": "touch",
+  "heat": 4,
+  "text": "Undress them one item at a time. Kiss each new patch of skin before you move on.",
+  "time": "10 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 4,
+  "text": "Cover their eyes. Touch them in three places with three different things. They guess what you used.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 4,
+  "text": "Slide one hand under their shirt and rest it on their bare back. It stays there until the next card is done.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 4,
+  "text": "Kiss your way from their ear to their collarbone. Take at least a full minute to get there.",
+  "time": "60 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 4,
+  "text": "Ask where they want your hands. Put them there. Stay until they say move.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 4,
+  "text": "Match: everyone ditches one item of clothing. Thumbs under the table first.",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "touch",
+  "heat": 5,
+  "text": "Undress each other without speaking. Then lie skin to skin for two minutes before anything else happens.",
+  "time": "10 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "touch",
+  "heat": 5,
+  "text": "Touch them wherever they ask, however they ask, for three minutes. They give directions; you follow them exactly.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 1,
+  "text": "Pour them a glass of water and set it down in front of them without a word. Watch them notice.",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 1,
+  "text": "Text them a genuine compliment right now, even though they're sitting right there.",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 2,
+  "text": "Massage their hands, one finger at a time, like each finger has had a very long week.",
+  "time": "2 min",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 2,
+  "text": "Leave a note somewhere they'll find it tomorrow. Give zero hints about where.",
+  "time": "one day",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 2,
+  "text": "Buy them one flower this week for no reason at all. Don't explain it. Ever.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 2,
+  "text": "Make them their drink of choice exactly how they like it, without asking a single question. Then get graded.",
+  "time": "2 min",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 3,
+  "text": "Hand-feed them the last bite of something. Hold eye contact while they chew. Try not to laugh.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 3,
+  "text": "Ask which part of their body is tired today. Tend to that spot with your hands for three minutes.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 3,
+  "text": "Write down the thing you're proudest of them for. Hand it over. They read it aloud.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 3,
+  "text": "Put them to bed tonight: water on the nightstand, covers tucked, one kiss on the forehead.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 4,
+  "text": "Give them a full oil massage tonight. No agenda, unless they bring one.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 4,
+  "text": "Run them a bath or shower this week, then ask if they'd like company. Bring a towel either way.",
+  "time": "this week",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "tend",
+  "heat": 4,
+  "text": "Pick out what they'll wear to bed tonight, or decide that it's nothing at all. Their veto stands.",
+  "time": "tonight",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 1,
+  "text": "Make up a 30-second song about how you met. A key change is mandatory.",
+  "time": "30 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 1,
+  "text": "Give a dramatic sports-commentator recap of the first time you two hung out. Slow-motion replays encouraged.",
+  "time": "60 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 1,
+  "text": "Everyone stands. On three, strike your most heroic album-cover pose and hold it for ten seconds.",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "play",
+  "heat": 1,
+  "text": "Describe your partner like a rare creature in a nature documentary. Hushed narrator voice required.",
+  "time": "60 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 2,
+  "text": "Do your best impression of them flirting. They get a rebuttal impression of you.",
+  "time": "60 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 2,
+  "text": "Slow dance with no music. One of you hums. Badly.",
+  "time": "60 sec",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 2,
+  "text": "Pitch your partner as a dating profile in three sentences. Include one red flag and one green flag.",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 2,
+  "text": "Everyone tries a pickup line on the person to their right. The table votes the worst; that person earns a Spark.",
+  "pairing": "any",
+  "players": "3+"
+ },
+ {
+  "type": "play",
+  "heat": 3,
+  "text": "Reenact your first kiss, playing both parts yourself. Then let them show you what really happened.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 3,
+  "text": "Hot or Cold: hide an imaginary kiss somewhere on your body. They hunt for it with their lips while you call hotter or colder.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 3,
+  "text": "Perform a slow, sultry striptease of exactly one sock. Full drama, full eye contact, zero irony.",
+  "time": "60 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 3,
+  "text": "Role-play strangers meeting at a bar for two minutes. Fake names only. Try to get their number.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 4,
+  "text": "Match: everyone does their sexiest dance for 30 seconds, all at once, eyes on whoever you like. Thumbs under the table first.",
+  "time": "30 sec",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "play",
+  "heat": 4,
+  "text": "Play Simon Says with your partner for one minute. Simon is feeling bold tonight.",
+  "time": "60 sec",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 4,
+  "text": "Act out what you'd like to do to them later using only charades. If they guess it, they can claim it.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 5,
+  "text": "Give them a real striptease to a song they choose. Stop wherever you like; they can't touch until it ends.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 5,
+  "text": "You're in charge for five minutes. Give them three commands; they answer each with 'yes' or 'try again.'",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "play",
+  "heat": 5,
+  "text": "Make up a steamy scene starring you and them and tell it aloud. Keep going until they stop you with a kiss.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 1,
+  "text": "Give everyone else at the table the most enthusiastic high five of their lives. Running starts allowed.",
+  "pairing": "any",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 2,
+  "text": "Match: everyone swaps one item of clothing with the person to their left for the rest of the game. Thumbs under the table first.",
+  "pairing": "any",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "dare",
+  "heat": 3,
+  "text": "Sit on their lap for the next round. Keep playing like nothing is happening.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 3,
+  "text": "Kiss them like it's the last scene of a movie. Swelling music optional; a dip is strongly encouraged.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 4,
+  "text": "Take off one item of clothing of your partner's choosing.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 4,
+  "text": "Whisper exactly what you want to do to them later. Every detail. Nobody else gets to hear.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 4,
+  "text": "Match: everyone makes out with the person to their left for 30 seconds. Thumbs under the table first.",
+  "time": "30 sec",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "dare",
+  "heat": 5,
+  "text": "Match: everyone finishes the game in underwear, or less. Thumbs under the table first.",
+  "pairing": "partners",
+  "players": "2+",
+  "match": true
+ },
+ {
+  "type": "dare",
+  "heat": 5,
+  "text": "Leave the table with your partner for five minutes. When you come back, report one word only.",
+  "time": "10 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 5,
+  "text": "Guide their hand to exactly where and how you like to be touched. Narrate. They're taking notes.",
+  "time": "2 min",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 5,
+  "text": "Point to a spot below your waistband. They kiss it for a slow count of ten, over clothes or under. Your call.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "dare",
+  "heat": 5,
+  "text": "Strip down to what you'd be brave enough to answer the door in. Stay that way for three turns.",
+  "pairing": "partners",
+  "players": "2+"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Pass It On: keep this. When you draw a card you'd rather give away, hand it to anyone you like. They play it as if they drew it.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "pass"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Double Down: the next card anyone plays is worth double Sparks. Make it count.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "double"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Cool It: everyone's heat cap drops by one for the next 3 turns. Breathe. Hydrate. Smolder.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "coolit"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Turn It Up: if everyone agrees, the heat cap rises by one for the next 3 turns. One no keeps it where it is.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "turnup"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Steal the Woodpile: take any claimed card from someone else's Woodpile and do it yourself. The Sparks are yours now.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "steal"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Reverse: the person to your right reads your next card and does it to you. Sit back and receive.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "reverse"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Free Pass: keep this. Play it any time to skip a card and still score 1 Spark. No explanation needed.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "freepass"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Callback: pick any card played tonight and do it again. Full Sparks, encore energy.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "callback"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Your Rules: invent a card on the spot and play it. The person receiving it chooses the heat.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "yourrules"
+ },
+ {
+  "type": "wild",
+  "heat": 1,
+  "text": "Truce: everyone gains 3 Sparks and takes a water break. Snacks count too.",
+  "pairing": "any",
+  "players": "2+",
+  "effect": "truce"
+ }
+]

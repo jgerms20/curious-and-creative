@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inside the box — Kindling</title>
+  <meta name="description" content="Every card in the first edition of Kindling. Browse the Embers core deck and the Wildfire, Slow Burn and After Dark expansions by heat and type." />
+  <meta property="og:title" content="Inside the box — Kindling" />
+  <meta property="og:description" content="334 cards across four decks. Browse them all." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <script>if(/[?&]layout=/.test(location.search))document.documentElement.classList.add("k-printmode");try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=/[?&]layout=/.test(location.search)?"light":t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="kindling.css" />
+</head>
+<body data-page="kindling" data-kpage="deck" data-root="../">
+<div data-cc="header"></div>
+<main id="main" class="wrap">
+  <nav data-k-nav></nav>
+  <div data-print></div>
+  <div data-screen>
+    <header class="phead" style="padding-bottom:1.5rem">
+      <span class="pill-title" style="background:var(--k-ember);color:#fff">Inside the box</span>
+      <h1 class="phead__title">Every card. <em style="color:var(--k-accent)">Every heat.</em></h1>
+      <p class="phead__lede">This is the first edition: four decks, 334 cards, and four rules cards. Poker size (63 × 88 mm) on linen-finish, black-core stock, so nobody can read the card through the back.</p>
+    </header>
+
+    <section class="kd-lineup rv" data-lineup data-tilt-zone></section>
+    <div class="kd-backs rv" data-backs></div>
+
+    <section class="k-sec" id="cards">
+      <div class="k-sec__head">
+        <h2 class="k-sec__title">Browse the <span class="k-em">deck.</span></h2>
+        <p class="k-sec__lede">Filter by deck, heat, or card type, or search for a word. After Dark cards are 18+ and stay hidden until you confirm your age.</p>
+      </div>
+      <div class="kd-filters">
+        <div class="kd-filters__row" data-f-decks></div>
+        <div class="kd-filters__row" data-f-heat></div>
+        <div class="kd-filters__row"><input type="search" placeholder="Search the cards: bath, kiss, safeword…" data-f-q aria-label="Search cards" /><span class="kd-count" data-f-count></span></div>
+      </div>
+      <div class="kd-grid" data-grid></div>
+      <div class="kd-more"><button class="btn btn--dark" type="button" data-more hidden>Show more cards</button></div>
+    </section>
+
+    <section class="k-sec rv" id="press">
+      <div class="k-sec__head"><h2 class="k-sec__title">Press &amp; <span class="k-em">partners.</span></h2></div>
+      <div class="kd-press">
+        <div class="kp-panel">
+          <span class="eyebrow">In one line</span>
+          <blockquote style="margin-top:.75rem">Kindling is a card game for kindling and rekindling intimacy, with questions, touch, dares, dates, and an 18+ pack for exploring kink, all dialed from heat 1 to 5 with consent built into every rule.</blockquote>
+          <p style="margin-top:1.25rem;color:var(--ink-soft)">Made by Joshua German and Janel Moore of Curious &amp; Creative. We built it because the intimacy decks we owned were either all talk or all gimmick, and none of them were written for every kind of relationship. Kindling is queer by default, playable by couples, throuples, and friends, and scored so the winner's prize is always something the whole table enjoys.</p>
+        </div>
+        <div class="kp-panel">
+          <dl>
+            <dt>Decks</dt><dd>Embers (150, core) · Wildfire (60) · Slow Burn (60) · After Dark (60, 18+)</dd>
+            <dt>Players</dt><dd>2+, with 3+ group cards in every deck</dd>
+            <dt>Heat</dt><dd>1 Spark · 2 Glow · 3 Flame · 4 Blaze · 5 Inferno</dd>
+            <dt>Price</dt><dd>$39 core · $24–28 expansions · $99 bundle</dd>
+            <dt>Status</dt><dd>Pre-orders open; first run ships winter 2026</dd>
+            <dt>Contact</dt><dd><a class="pill-more" href="mailto:jgerms20@gmail.com?subject=Kindling%20press">jgerms20@gmail.com</a></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<div data-cc="footer"></div>
+<script src="../js/cc.js"></script>
+<script src="kindling.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>

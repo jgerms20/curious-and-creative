@@ -72,8 +72,8 @@
 
 - **Repeat purchase engine:** add-on packs are the repeat purchase. Email
   cadence: 2 weeks after a base-deck purchase, hit them with a "ready
-  for more heat?" mailer for Challenges + Activities. 3 months later,
-  hit them with the Kink Pack.
+  for more heat?" mailer for Wildfire + Slow Burn. 3 months later,
+  hit them with After Dark (18+).
 - **Therapist program:** offer therapists wholesale at 50% + a referral
   link.
 - **Affiliate program** for creators: 15% of revenue on referrals.

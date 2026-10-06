@@ -30,7 +30,7 @@ reward system instead of a competitive one.
    or more.
 3. **Queer by default.** No card assumes gender, anatomy, or relationship
    structure.
-4. **Intimacy ≠ sex.** Half the base deck is non-physical. A bathtub and a
+4. **Intimacy ≠ sex.** Most of the core deck is non-physical. A bathtub and a
    book is a card.
 5. **Cooperative reward, not competition.** The "winner" picks a *shared*
    reward both players already wanted.
@@ -48,7 +48,9 @@ reward system instead of a competitive one.
 
 ## Format
 
-Base deck + modular add-on packs. See `game-design.md`.
+Embers core deck (150 cards + 4 rules) plus three expansions: Wildfire
+(challenges), Slow Burn (dates & rituals), and After Dark (18+). See
+`game-design.md`. Prices: $39 core, $24 / $24 / $28 expansions, $99 bundle.
 
 ## Success looks like
 

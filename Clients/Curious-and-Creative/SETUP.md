@@ -13,7 +13,7 @@
 
 ```bash
 # From the website folder root:
-cd /home/user/curious-and-creative-agency/Clients/Curious-and-Creative/website
+cd site  # the live site is static; see site/DESIGN-SYSTEM.md
 
 # Initialize git (if not already done)
 git init

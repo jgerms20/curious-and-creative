@@ -2,6 +2,35 @@
 
 A step-by-step from "we have a deck design" to "boxes are shipping."
 
+> **Trademark risk to check first.** "Kindling" is a common English word, and
+> Amazon holds many KINDLE registrations. Before spending on packaging, have a
+> trademark attorney run a clearance search for KINDLING in Class 28 (games).
+> Check for existing games with the name and for likelihood-of-confusion risk
+> with KINDLE. Have a backup name ready. A stylized wordmark plus the flame mark
+> is more defensible than the plain word.
+
+---
+
+## Fast track: first boxes in about 30 days
+
+The deck is written, edited, and laid out. Print-ready files are in
+`Production/Kindling/print/` (see `Production/Kindling/README.md`). The fastest
+path to real boxes in real hands:
+
+| Week | Do this | Cost |
+|---|---|---|
+| 1 | **Print a home prototype tonight.** Print the `kindling-prototype-*-letter.pdf` files duplex on 110 lb cardstock (flip on the long edge), cut on the crop marks, and play it with 3–4 friend groups. Note every card that stalls. | ~$20 |
+| 1 | **Order a real proof.** Upload the press PDFs to MakePlayingCards (or The Game Crafter, which also sells and ships for you) as a poker-size deck with a tuck box. | $25–60 per deck |
+| 1 | **Start the trademark clearance** (see the note above) and file once it's clear. | $350–1,500 |
+| 2 | **Turn on pre-orders.** The shop at `/kindling/shop.html` already takes reservations. Paste a Formspree endpoint into `site/data/kindling-shop.json` so they land in your inbox (`Strategy/Kindling/shop-setup.md`). | $0 |
+| 2–3 | **Get 3 manufacturer quotes** for 1,000 core decks + 500 of each expansion (Step 3 below). Send them `kindling-cards.csv` and the press PDFs. | $0 |
+| 3 | **Seed 20 proof decks** to therapists, creators, and podcasts (`marketing-plan.md`). | ~$800 |
+| 4 | **Pay the deposit** on the first run, or, if pre-orders are thin, sell print-on-demand through The Game Crafter while you build demand. | 30–50% of run |
+
+Edits are cheap: change a card in `Production/Kindling/deck/*.json`, then run
+`python3 scripts/build_kindling.py && node scripts/kindling_print.mjs`. The
+website, the free game, and every PDF update together.
+
 ---
 
 ## Step 0 — Trademark & legal (parallel track)
@@ -9,14 +38,14 @@ A step-by-step from "we have a deck design" to "boxes are shipping."
 - File a USPTO trademark for **KINDLING** in Class 28 (games & playthings)
   and Class 41 (entertainment). Use a flat-fee filing service
   (LegalZoom / Trademark Engine / a TM-focused attorney — ~$350–$1,500).
-- Search USPTO TESS first — "Kindling" is a common word; we will likely
+- Search the USPTO's Trademark Search system first (it replaced TESS in 2023) — "Kindling" is a common word; we will likely
   need a stylized mark + tagline ("Kindling: a game for pairings") for a
   defensible filing.
 - Register **Curious & Creative LLC** as the owning entity on the
   application. Confirm the LLC is in good standing.
 - File a copyright on the **card text + rules booklet** as a collective
   work. ($65 online, single application.)
-- Add an "intended for adults" notice to the **Kink Pack** packaging and
+- Add an "intended for adults" notice to the **After Dark** (18+) packaging and
   to its product page. Confirm compliance with Stripe/Shopify adult-product
   rules if you accept payments directly.
 
@@ -24,14 +53,14 @@ A step-by-step from "we have a deck design" to "boxes are shipping."
 
 ## Step 1 — Finalize the deck
 
-- Lock the card count per pack (Base: 150, Challenges: 60, Activities: 60,
-  Kink: 60).
+- ✅ Card counts locked: Embers 150 + 4 rules, Wildfire 60, Slow Burn 60,
+  After Dark 60. Full text in `Production/Kindling/kindling-cards.csv`.
 - Run an internal playtest with 4–6 friend-pairings across orientations.
   Pay them in pizza. Capture which cards stalled.
 - Edit pass on every card for: gender neutrality, clarity in 2 seconds,
   no inside-jokes that don't land.
 - Sensitivity / inclusivity read: hire a queer sex educator for a 1-hour
-  paid read of the kink + base decks. (~$200–$500.)
+  paid read of After Dark and Embers. (~$200–$500.)
 
 ---
 
@@ -88,7 +117,7 @@ deck, landed cost target is ≤ $9.75.
 
 ## Step 5 — Production run
 
-- Recommended first run: **1,000 units of the Base Deck**, **500 of each
+- Recommended first run: **1,000 units of Embers (the core deck)**, **500 of each
   add-on**. Enough to test demand, small enough to absorb if a card
   needs an edit.
 - Pay 30–50% deposit, balance on delivery.
@@ -119,7 +148,7 @@ Pick one of three models, in order of preference:
 - Set up Shopify on its **own subdomain** (`shop.curiousandcreative.com`)
   so the marketing microsite at `/kindling` on the main site can link
   out cleanly.
-- Add age-gate on the Kink Pack product page.
+- Add age-gate on the After Dark product page (the site already confirms 18+ before adding it to the cart).
 - Enable **pre-orders** during the manufacturing window so demand is
   visible before inventory lands.
 
