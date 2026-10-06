@@ -27,7 +27,9 @@
       ],
       "hide_matching": [
         "test"
-      ]
+      ],
+      "tier": "primary",
+      "episode_links": []
     },
     {
       "key": "polymath",
@@ -47,26 +49,23 @@
       "match_artist": [
         "german"
       ],
-      "rss": null
+      "rss": "https://anchor.fm/s/111be5840/podcast/rss",
+      "tier": "primary"
     },
     {
-      "key": "brazil",
-      "name": "God Is Brazilian",
-      "short": "God Is Brazilian",
-      "kind": "podcast",
+      "key": "approachable",
+      "name": "Approachable AI",
+      "short": "Approachable AI",
+      "kind": "youtube",
       "hosts": [
         "Joshua German"
       ],
-      "tagline": "A podcast by Joshua German.",
-      "about": "",
-      "spotify": "4tAY78JV37aIgmJ2d1iF3w",
-      "rss": null,
-      "itunes_search": [
-        "God is Brazilian"
-      ],
-      "match_artist": [
-        "german"
-      ]
+      "tagline": "Demystifying AI, one episode at a time.",
+      "about": "No jargon, just what's actually happening and why it matters. Real tools, real builds, and the mistakes along the way.",
+      "youtube_handle": "@Approachable.A.I",
+      "youtube_channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
+      "art_url": "https://joshuamgerman.com/photos/podcasts/approachable-ai-logo.jpg",
+      "tier": "primary"
     },
     {
       "key": "tmtt",
@@ -86,35 +85,8 @@
       "match_artist": [
         "moore"
       ],
-      "rss": null
-    },
-    {
-      "key": "approachable",
-      "name": "Approachable AI",
-      "short": "Approachable AI",
-      "kind": "youtube",
-      "hosts": [
-        "Joshua German"
-      ],
-      "tagline": "Demystifying AI, one episode at a time.",
-      "about": "No jargon, just what's actually happening and why it matters. Real tools, real builds, and the mistakes along the way.",
-      "youtube_handle": "@Approachable.A.I",
-      "youtube_channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
-      "art_url": "https://joshuamgerman.com/photos/podcasts/approachable-ai-logo.jpg"
-    },
-    {
-      "key": "abolitionist",
-      "name": "Aspiring Abolitionist",
-      "short": "Aspiring Abolitionist",
-      "kind": "podcast",
-      "hosts": [
-        "Janel Moore"
-      ],
-      "tagline": "Politics, policy, and culture from an abolitionist lens.",
-      "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
-      "spotify": "7natfWFnBgakjLLZcEDZaw",
-      "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
-      "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915"
+      "rss": null,
+      "tier": "primary"
     },
     {
       "key": "dominate",
@@ -131,7 +103,44 @@
       "about": "Three young Black men navigating their own paths to success — crypto, politics, sports, music, movies, and everything in between. The full 2020–2023 run, including Janel's guest episode.",
       "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
       "rss": "https://anchor.fm/s/24421480/podcast/rss",
-      "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875"
+      "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
+      "tier": "secondary",
+      "feature": true
+    },
+    {
+      "key": "brazil",
+      "name": "God Is Brazilian",
+      "short": "God Is Brazilian",
+      "kind": "podcast",
+      "hosts": [
+        "Joshua German"
+      ],
+      "tagline": "A podcast by Joshua German.",
+      "about": "",
+      "spotify": "4tAY78JV37aIgmJ2d1iF3w",
+      "rss": null,
+      "itunes_search": [
+        "God is Brazilian"
+      ],
+      "match_artist": [
+        "german"
+      ],
+      "tier": "secondary"
+    },
+    {
+      "key": "abolitionist",
+      "name": "Aspiring Abolitionist",
+      "short": "Aspiring Abolitionist",
+      "kind": "podcast",
+      "hosts": [
+        "Janel Moore"
+      ],
+      "tagline": "Politics, policy, and culture from an abolitionist lens.",
+      "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
+      "spotify": "7natfWFnBgakjLLZcEDZaw",
+      "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
+      "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
+      "tier": "secondary"
     }
   ],
   "probe_sites": [

@@ -21,6 +21,8 @@
     if (CC.page === "archive") archive(data);
     if (CC.page === "art") gallery(data);
     if (CC.page === "about") about(data);
+    if (CC.page === "network") networkPage(data);
+    if (CC.page === "shop") shop(data);
     CC.reveal();
   });
 
@@ -28,7 +30,7 @@
   function shows(data) {
     const host = document.getElementById("shows-list");
     if (!host) return;
-    host.innerHTML = data.shows.map((s) => {
+    const block = (s) => {
       const eps = (data.episodes || []).filter((e) => e.show === s.key && e.kind !== "short");
       const links = CC.showLinks(s);
       const status = s.archive ? "Archive · 2020–2023" : s.latest ? (CC.isNew(s.latest) ? "New episode " + ago(s.latest) : "Latest " + ago(s.latest)) : s.flagship ? "The flagship" : "On Spotify";
@@ -51,7 +53,10 @@
           : `<p class="eyebrow" style="margin-top:1.4rem">New episodes appear here automatically as they're published.</p>`}
         </div>
       </section>`;
-    }).join("");
+    };
+    const head = (t, d) => `<div class="pill-row"><h2 class="pill-title${t.includes("More") ? " pill-title--gold" : ""}">${t}</h2>${d ? `<a class="pill-more" href="${url("pages/network.html")}">${d}</a>` : ""}</div>`;
+    host.innerHTML = head("The main lineup") + data.primary.map(block).join("") +
+      (data.secondary.length ? head("More from the network", "See the network map →") + data.secondary.map(block).join("") : "");
     if (location.hash) { const el = document.querySelector(location.hash); if (el) setTimeout(() => el.scrollIntoView(), 50); }
   }
 
@@ -150,11 +155,67 @@
     if (at >= 0) { show(at); CC.openLayer(lb, "[data-lb-close]"); }
   }
 
+  /* ---------------- network ---------------- */
+  function networkPage(data) {
+    const map = document.getElementById("net-map");
+    if (map) { map.innerHTML = CC.network(data); CC.wireNetwork(map); }
+    const tier = (list, el) => {
+      const host = document.getElementById(el);
+      if (!host) return;
+      host.innerHTML = list.map((s) => {
+        const e = (data.episodes || []).find((x) => x.show === s.key);
+        return `<a class="net__show${s.feature ? " net__show--feature" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+          ${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : '<span class="ph"></span>'}
+          <span><small>${esc((s.hosts || []).join(" & "))}${s.count ? ` · ${s.count} ${s.kind === "youtube" ? "videos" : "episodes"}` : ""}</small><b>${esc(s.name)}</b><em>${esc(s.tagline || (e ? "Latest: " + e.title : ""))}</em></span></a>`;
+      }).join("");
+    };
+    tier(data.primary, "net-primary");
+    tier(data.secondary, "net-secondary");
+  }
+
+  /* ---------------- shop ---------------- */
+  function shop() {
+    const host = document.getElementById("shop-items");
+    if (!host) return;
+    const money = (c) => (c == null ? "" : `$${(c / 100).toFixed(c % 100 ? 2 : 0)}`);
+    const GROUPS = [["prints", "Photo prints", "Joshua's photographs, printed to hang."], ["janel-art", "Art by Janel", "Original work from Janel Moore."], ["joshua-art", "Art by Joshua", "Paintings and mixed media from Joshua German."], ["merch", "Merch", "Wear the network."], ["other", "More", ""]];
+    const itemHTML = (it) => {
+      const href = it.buy_url || (it.status === "coming-soon" ? `mailto:jgerms20@gmail.com?subject=${encodeURIComponent("Notify me: " + it.title)}` : "");
+      const label = it.status === "sold-out" ? "Sold out" : it.status === "coming-soon" ? "Notify me" : it.price_cents != null ? `Buy · ${money(it.price_cents)}` : "See details";
+      return `<article class="item${it.status === "coming-soon" ? " item--soon" : ""}">
+        <div class="item__media">${it.image_url ? `<img src="${esc(url(it.image_url))}" alt="${esc(it.title)}" loading="lazy">` : `<span class="item__ph">${esc(it.status === "coming-soon" ? "Coming soon" : it.title)}</span>`}${it.status !== "available" ? `<span class="chip item__flag">${esc(it.status.replace("-", " "))}</span>` : ""}</div>
+        <h3>${esc(it.title)}</h3>
+        <p>${esc([it.artist, it.description].filter(Boolean).join(" · "))}</p>
+        ${href ? `<a class="btn btn--sm${it.status === "available" ? "" : " btn--ghost"}" href="${esc(href)}"${/^https?:/.test(href) ? ' target="_blank" rel="noopener"' : ""}>${label}</a>` : `<span class="eyebrow">${label}</span>`}
+      </article>`;
+    };
+    const render = (items) => {
+      host.innerHTML = GROUPS.map(([k, t, d]) => {
+        const list = items.filter((i) => i.category === k);
+        if (!list.length) return "";
+        return `<section class="shop-group rv"><div class="pill-row"><h2 class="pill-title${k === "prints" ? " pill-title--gold" : k === "janel-art" ? " pill-title--pink" : ""}">${t}</h2>${d ? `<span class="eyebrow">${esc(d)}</span>` : ""}</div><div class="items">${list.map(itemHTML).join("")}</div></section>`;
+      }).join("");
+      CC.reveal(host);
+    };
+    const { url: SB, key } = CC.SUPABASE;
+    fetch(`${SB}/rest/v1/shop_items?select=*&status=neq.hidden&order=sort.asc,created_at.desc`, { headers: { apikey: key, Authorization: `Bearer ${key}` } })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then(render)
+      .catch(() => { host.innerHTML = `<p class="search__empty">The shop is restocking. Check back soon, or <a class="pill-more" href="${url("pages/contact.html")}">ask us about a piece</a>.</p>`; });
+    // Kindling products straight from the game's own shop config
+    fetch(url("data/kindling-shop.json")).then((r) => (r.ok ? r.json() : null)).then((k) => {
+      const el = document.getElementById("shop-kindling");
+      if (!k || !el) return;
+      el.innerHTML = k.products.map((p) => `<a class="kprod" href="${url(`kindling/shop.html#${p.id}`)}" data-deck="${esc(p.deck || p.id)}">
+        <small>${esc(p.kind || "")}</small><b>${esc(p.name)}</b><span>${esc(p.cards || "")}</span><em>$${esc(p.price)}</em></a>`).join("");
+    }).catch(() => {});
+  }
+
   /* ---------------- about: live counts ---------------- */
   function about(data) {
     const el = document.getElementById("about-shows");
     if (!el) return;
-    el.innerHTML = data.shows.map((s) => `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+    el.innerHTML = data.primary.map((s) => `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
       <span class="show-tag" data-show="${s.key}"><i></i>${esc((s.hosts || []).join(" & "))}</span>
       <h3>${esc(s.name)}</h3><p>${esc(s.tagline || "")}</p></a>`).join("");
   }

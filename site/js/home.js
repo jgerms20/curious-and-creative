@@ -17,13 +17,18 @@
     document.querySelectorAll("[data-new-count]").forEach((el) => { el.textContent = fresh ? ` ${fresh}` : ""; });
     document.querySelectorAll("[data-ep-count]").forEach((el) => { el.textContent = eps.length || "All"; });
 
-    pulse(shows, by, longform);
-    hero(shows, by, longform, data);
-    latest(by, longform, data);
-    videos(by, eps);
-    podcasts(shows, by, eps);
-    shortsRail(by, eps);
-    ticker(shows, by, eps, data);
+    // the main feeds only carry the primary shows; secondary shows live in the Network
+    const main = longform.filter((e) => CC.isPrimary(e.show));
+    const mainEps = eps.filter((e) => CC.isPrimary(e.show));
+    const stackShows = shows.filter((s) => s.tier !== "secondary" || s.feature);
+    pulse(data.primary, by, main);
+    hero(data.primary, by, main, data);
+    latest(by, main, data);
+    videos(by, mainEps);
+    podcasts(stackShows, by, eps);
+    shortsRail(by, mainEps);
+    ticker(data.primary, by, mainEps, data);
+    network(data);
     photoStrip(data.photos);
     CC.reveal();
   });
@@ -67,7 +72,7 @@
       kicker: [`<span class="chip">Who we are</span>`, `<span class="chip">Joshua German &amp; Janel Moore</span>`],
       title: "Two curious minds, one creative hub",
       href: url("pages/about.html"),
-      dek: "A strategist-photographer and a technologist-storyteller from the University of South Carolina, making shows, pictures, and brand work together.",
+      dek: "Joshua German and Janel Moore. Same curiosity, different directions: shows, photography, art, games, and work for brands.",
       meta: "Podcasts · Videos · Photography · The Studio",
       img: url("assets/people/duo.jpg"),
       photo: true,
@@ -215,19 +220,85 @@
     eps.forEach((e) => { if (picks.length < 8 && !picks.includes(e)) picks.push(e); });
     picks.sort((a, b) => String(b.date).localeCompare(String(a.date)));
     const cards = picks.slice(0, 7);
-    const perShow = data.shows.map((s) => [s, eps.find((e) => e.show === s.key)]).filter(([, e]) => e);
+    const perShow = data.primary.map((s) => [s, eps.find((e) => e.show === s.key)]).filter(([, e]) => e);
     const photo = data.photos && data.photos.find((p) => p.set === "Events & Live") || (data.photos || [])[0];
     let html = card(cards[0], by, true) + cards.slice(1, 5).map((e) => card(e, by)).join("");
-    html += `<a class="special special--gold rv" href="${url("kindling/")}">
-      <span class="special__label"><span class="dot dot--live"></span> Special project · Pre-orders open</span>
-      <span class="special__title">Kindling</span>
-      <span>Our first invention: a card game for people who want more of each other. Play it free, or reserve a first-run box.</span>
-      <span class="special__go">Light it up ${icon.arrow}</span></a>`;
+    html += kindlingCard();
     if (photo) html += `<a class="special special--photo rv" href="${url("pages/art.html")}"><img src="${esc(url(photo.thumb))}" alt="${esc(photo.alt)}" loading="lazy"><span class="special__in"><span class="special__label">Photography</span><span class="special__title" style="font-size:1.6rem">${esc(photo.set)}</span><span class="special__go">Open the gallery ${icon.arrow}</span></span></a>`;
     html += `<div class="list-card rv"><div class="list-card__head"><span>Fresh from every show</span><span>${perShow.length}</span></div><ol>
       ${perShow.map(([s, e]) => `<li data-show="${s.key}"><a href="${esc(CC.epHref(e))}"${ext(CC.epHref(e))}><span>${esc(e.title)}<small>${esc(s.short || s.name)} · ${esc(ago(e.date))}</small></span></a></li>`).join("")}
     </ol></div>`;
     grid.innerHTML = html;
+    dealKindling(grid);
+  }
+
+  /* ------------------------------------------------ the network */
+  function network(data) {
+    const host = document.getElementById("net");
+    if (!host) return;
+    const latestOf = (k) => (data.episodes || []).find((e) => e.show === k);
+    const sec = data.secondary.slice().sort((a, b) => (b.feature ? 1 : 0) - (a.feature ? 1 : 0));
+    host.innerHTML = `<div class="net__map">${CC.network(data)}</div>
+      <div class="net__side">
+        <h3 class="net__title">More from the network</h3>
+        <p class="net__dek">Shows we host and guest on beyond the main lineup, with more audience-focused pods on the way.</p>
+        ${sec.map((s) => {
+          const e = latestOf(s.key);
+          return `<a class="net__show${s.feature ? " net__show--feature" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+            ${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : '<span class="ph"></span>'}
+            <span><small>${s.feature ? "From the vault · Joshua co-hosts" : esc((s.hosts || []).join(" & "))}</small><b>${esc(s.name)}</b>${s.feature && s.about ? `<em>${esc(s.about)}</em>` : e ? `<em>Latest: ${esc(e.title)}</em>` : ""}</span>
+          </a>`;
+        }).join("")}
+        <a class="pill-more" href="${url("pages/network.html")}">Explore the network →</a>
+      </div>`;
+    CC.wireNetwork(host);
+  }
+
+  /* ------------------------------------------------ Kindling showcase */
+  function kindlingCard() {
+    return `<section class="kshow rv" aria-label="Kindling, our card game">
+      <div class="kshow__copy">
+        <span class="special__label"><span class="dot dot--live"></span> Invention No. 1 · The game</span>
+        <h3 class="kshow__title">Kindling</h3>
+        <p>A card game for people who want more of each other. Questions, dares, dates, and rituals across four decks, with consent built into the rules.</p>
+        <div class="kshow__actions">
+          <a class="btn" href="${url("kindling/play.html")}">Play free</a>
+          <a class="btn btn--ghost" href="${url("kindling/shop.html")}">Pre-order the box</a>
+        </div>
+        <a class="kshow__more" href="${url("kindling/deck.html")}">Browse all 334 cards →</a>
+      </div>
+      <div class="kshow__table">
+        <div class="kshow__fan" data-kfan></div>
+        <button class="kshow__draw" type="button" data-kdraw>Draw a card</button>
+      </div>
+    </section>`;
+  }
+  const KCOLORS = { embers: "#FF6A2B", wildfire: "#E2363B", slowburn: "#E2728A" };
+  const kcard = (c, i) => `<article class="kc" style="--k:${KCOLORS[c.deck] || "#FF6A2B"};--i:${i}">
+      <header><span>${esc(c.label)}</span><span class="kc__heat" aria-label="Heat ${c.heat} of 5">${"●".repeat(c.heat)}<i>${"●".repeat(5 - c.heat)}</i></span></header>
+      <p>${esc(c.text)}</p>
+      <footer><span>${esc(c.deck === "embers" ? "Embers" : c.deck === "wildfire" ? "Wildfire" : "Slow Burn")}</span><b>${c.sparks} ✦</b></footer>
+    </article>`;
+  function dealKindling(scope) {
+    const fan = scope.querySelector("[data-kfan]");
+    const btn = scope.querySelector("[data-kdraw]");
+    if (!fan) return;
+    fetch(url("data/kindling-cards.json")).then((r) => (r.ok ? r.json() : null)).then((d) => {
+      // homepage stays friend-safe: low heat, any pairing, no After Dark
+      const pool = ((d && d.cards) || []).filter((c) => c.deck !== "afterdark" && c.heat <= 2 && c.pairing === "any" && c.text.length < 120);
+      if (!pool.length) return;
+      const pick = () => pool[Math.floor(Math.random() * pool.length)];
+      let hand = [pick(), pick(), pick()];
+      const paint = () => { fan.innerHTML = hand.map(kcard).join(""); };
+      paint();
+      btn.addEventListener("click", () => {
+        hand = [hand[1], hand[2], pick()];
+        fan.classList.remove("is-dealing");
+        void fan.offsetWidth;
+        fan.classList.add("is-dealing");
+        paint();
+      });
+    }).catch(() => {});
   }
 
   /* ------------------------------------------------ videos */
