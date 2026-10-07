@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T21:21:21Z",
+ "generated_at": "2026-10-07T06:09:11Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-06T05:13:54Z",
-   "count": 192
+   "latest": "2026-10-07T06:03:11Z",
+   "count": 197
   },
   {
    "key": "brazil",
@@ -61,7 +61,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-05T17:39:00Z",
    "count": 8
   },
@@ -159,6 +159,62 @@
  ],
  "episodes": [
   {
+   "id": "polymath:910dc1b3 9733 44b1 a4dc d019a2c6f403",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#196 Charlie Sheen: The Truth Behind \"Winning\"",
+   "date": "2026-10-07T06:03:11Z",
+   "duration": 2601,
+   "description": "In 2011, Charlie Sheen — the highest-paid actor on television — went on live TV and declared he had \"tiger blood\" and \"Adonis DNA,\" that he was \"winning.\" America laughed, then watched it curdle in real time. But what was actually going on? This is the full story: the Malibu kid who became a movie star in Platoon and Wall Street, the $1.8 million-an-episode king of Two and a Half Men, and the unraveling — the rehabs, the Plaza Hotel, the firing, the $100 million lawsuit, the disastrous Detroit tour, and the media machine that turned a man's breakdown into content. We separate the documented facts from the lore, trace the money from peak to collapse, and follow Sheen through the 2015 HIV…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791352976254-a0ed2c745313.jpg",
+   "url": "https://open.spotify.com/episode/5SfGhsMesv7CNmH9mU25RI",
+   "spotify_url": "https://open.spotify.com/episode/5SfGhsMesv7CNmH9mU25RI",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127002655/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-7%2F84c2a3c5-afbf-6bcd-fe60-1f504d9982f3.m4a",
+   "number": "196"
+  },
+  {
+   "id": "polymath:c63d2cfe 6f92 4cba a1b5 18f0446d3158",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#195 Ari Emanuel: The Agent Who Ate Hollywood",
+   "date": "2026-10-07T03:46:14Z",
+   "duration": 3200,
+   "description": "He started as a kid from Chicago with dyslexia, ADHD, and a phone he wouldn't put down. Then Ari Emanuel got fired from his own job — and built Endeavor out of a walkout, turned a talent agency into a private-equity empire, and bought the UFC and the WWE along the way. This is the full story: the ICM walkout, the Silver Lake deal, the $2.4 billion IMG bet, the $4 billion UFC gamble, the $21.4 billion TKO combination, and the negotiation playbook — information, persistence, leverage — that made him the most feared man in Hollywood. We trace the three-act history of power from Wasserman to Ovitz to Emanuel, dissect the WGA war over packaging, separate the verified stories from the Hollywood…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791343119109-d32a5bdcbf974.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/195-Ari-Emanuel-The-Agent-Who-Ate-Hollywood-e3q1vqk",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126991636/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-7%2Fb434737f-a793-50a5-63ec-159461f32982.m4a",
+   "number": "195"
+  },
+  {
+   "id": "polymath:6104d4cb c6eb 40ff 98cc 97e170ef90c3",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#194 Obama's Shadow Wars: Drones, Raids, and the Power Vacuums They Left Behind",
+   "date": "2026-10-06T17:28:02Z",
+   "duration": 2856,
+   "description": "Three days after Barack Obama became president, missiles struck Pakistan. It was the beginning of a new kind of American war — no invasions, no occupations. Instead: drones, a kill list, and small teams of operators. 563 strikes across Pakistan, Yemen, and Somalia, compared to 57 under Bush.\n This episode goes inside the machine: the \"light footprint\" doctrine, the disposition matrix, the \"Terror Tuesday\" targeting meetings, personality strikes versus signature strikes — and the two institutions that ran the overlapping wars, the CIA and JSOC. A bureaucracy for deciding who lives and who dies, built in secret.\n Then the raids: the one that worked — Abbottabad, May 2011, Bin Laden dead in…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791311213536-e2f6051966f66.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/194-Obamas-Shadow-Wars-Drones--Raids--and-the-Power-Vacuums-They-Left-Behind-e3q0q9r",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126953211/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2Fa9988d5e-6cf0-9d67-9659-c9ff1dc0983e.m4a",
+   "number": "194"
+  },
+  {
+   "id": "polymath:70dd1b91 e2f4 46c5 8f91 a59e2f361a40",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#193 Why Cuba Is Where People Go to Vanish",
+   "date": "2026-10-06T16:00:01Z",
+   "duration": 3116,
+   "description": "\"Fake my death, go to Cuba, that's the only option.\" Kendrick Lamar compressed an entire American fantasy into one line on \"ELEMENT.\" (DAMN., 2017). He didn't do it — but the line works because every American ear already knows what Cuba means: the place you go when you need to disappear.\n Underneath the lyric is real history. Assata Shakur escaped prison in 1979 and received political asylum in Cuba, living there beyond America's reach for over four decades. She wasn't the first — the 1960s and '70s saw \"take me to Cuba\" become the signature demand of airline hijackers, while figures like Robert F. Williams and Huey Newton also fled to the island.\n Here's the twist the research uncovered:…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791317641633-91fb1107bb735.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/193-Why-Cuba-Is-Where-People-Go-to-Vanish-e3q16pt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126966013/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2F4679e6da-5c3b-ca82-68a6-0c22c8b529e1.m4a",
+   "number": "193"
+  },
+  {
    "id": "polymath:a6a48a2d 7104 4672 9ad9 f83cd5339155",
    "show": "polymath",
    "kind": "episode",
@@ -173,18 +229,18 @@
    "number": "192"
   },
   {
-   "id": "polymath:f79e9fdb c811 402f abcc bedcbbcd4d31",
+   "id": "polymath:7c8b63d9 b541 4646 8693 d19ea56eff1e",
    "show": "polymath",
    "kind": "episode",
-   "title": "#190 Church Hierarchy: From Apostles and Bishops to Pastors and Popes",
-   "date": "2026-10-06T05:13:00Z",
-   "duration": 3870,
-   "description": "Jesus didn't leave behind an org chart. There were no dioceses, seminaries, annual conferences, denominational boards, or Vatican departments. Yet Christianity eventually built one of the most elaborate collections of institutions in human history.\n This episode traces how that happened—from the original meaning of apostle and the rise of bishops, priests, elders, pastors, and deacons to the radically different systems those titles belong to today. We move through Catholic apostolic succession and the Vatican, Orthodox bishops without a universal pope, the organizational explosion of the Protestant Reformation, and the difference between being called, ordained, elected, appointed, or simply…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791263558802-57984655fa031.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/190-Church-Hierarchy-From-Apostles-and-Bishops-to-Pastors-and-Popes-e3pvjfn",
+   "title": "#191 Diamonds: Love, Scarcity, and the Most Engineered Symbol in Romance",
+   "date": "2026-10-05T19:00:00Z",
+   "duration": 4272,
+   "description": "A diamond is carbon arranged in an extraordinary way. So how did a tiny crystal formed deep beneath the Earth become one of the most recognizable and expensive symbols of love in the world?\n This episode follows the diamond from mine to engagement ring: how natural diamonds form, how rough stones are cut and graded, what the 4Cs actually tell you, why cut often matters more than the specifications people obsess over, and how natural, lab-grown, moissanite, and other alternatives really differ. We also get into the modern buying game—magic carat thresholds, grading reports, jewelry markups, insurance, resale, and why a ring's appraisal value can be very different from what anyone would…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791269382833-45319ae521896.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/191-Diamonds-Love--Scarcity--and-the-Most-Engineered-Symbol-in-Romance-e3pvo65",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/126913463/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2F3302b4f5-eca2-f720-48d6-8d63ab323cbe.m4a",
-   "number": "190"
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126918277/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2Fad24fa23-c507-3625-f92f-7414ae390e41.m4a",
+   "number": "191"
   },
   {
    "id": "brazil:564EauYPeUuarR3FNhB10h",
@@ -198,6 +254,20 @@
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
+  },
+  {
+   "id": "polymath:f79e9fdb c811 402f abcc bedcbbcd4d31",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#190 Church Hierarchy: From Apostles and Bishops to Pastors and Popes",
+   "date": "2026-10-05T16:00:00Z",
+   "duration": 3870,
+   "description": "Jesus didn't leave behind an org chart. There were no dioceses, seminaries, annual conferences, denominational boards, or Vatican departments. Yet Christianity eventually built one of the most elaborate collections of institutions in human history.\n This episode traces how that happened—from the original meaning of apostle and the rise of bishops, priests, elders, pastors, and deacons to the radically different systems those titles belong to today. We move through Catholic apostolic succession and the Vatican, Orthodox bishops without a universal pope, the organizational explosion of the Protestant Reformation, and the difference between being called, ordained, elected, appointed, or simply…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791263558802-57984655fa031.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/190-Church-Hierarchy-From-Apostles-and-Bishops-to-Pastors-and-Popes-e3pvjfn",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/126913463/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-6%2F3302b4f5-eca2-f720-48d6-8d63ab323cbe.m4a",
+   "number": "190"
   },
   {
    "id": "brazil:3niTLcEgqoKPRwG9iR1FdK",
@@ -3542,8 +3612,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 192,
-   "spotify_matches": 0
+   "episodes": 197,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
