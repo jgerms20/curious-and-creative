@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T23:10:41Z",
+ "generated_at": "2026-10-08T06:15:37Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-07T06:03:11Z",
-   "count": 197
+   "latest": "2026-10-08T04:32:11Z",
+   "count": 199
   },
   {
    "key": "brazil",
@@ -159,6 +159,34 @@
  ],
  "episodes": [
   {
+   "id": "polymath:76eca97d 70b2 42b3 8c8e de4f6493fbd7",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#198 Seinfeld: Who Was Really the Brains?",
+   "date": "2026-10-08T04:32:11Z",
+   "duration": 2162,
+   "description": "Everyone says Larry David was the real brains behind Seinfeld — but what actually went down? This is the full rundown: two stand-up comics, one fateful 1988 meeting with NBC's Rick Ludwin, and a pilot that tested so badly the network research memo got hung on the writers' room wall. We reconstruct the creative ledger — Larry wrote 62 of the first 126 episodes and gave the show its misanthropic voice, Jerry supplied the premise, the performance, and the quality control — then follow the money: $3.1 billion in syndication, Jerry's billion-dollar net worth, Larry's hundreds of millions, the famous $100M+ season-10 offer Jerry walked away from, and the $500M Netflix deal. We cover Larry's…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791433907733-152212abec044.jpg",
+   "url": "https://open.spotify.com/episode/7nqpk3A4NPVZPb3fK0fb57",
+   "spotify_url": "https://open.spotify.com/episode/7nqpk3A4NPVZPb3fK0fb57",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127077364/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-8%2Fd3aa1d10-1442-3536-5b5b-3d6582e5057e.m4a",
+   "number": "198"
+  },
+  {
+   "id": "polymath:80bcc5ec e137 467c 8fdc 5b074a9011c5",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#197 Spirit Halloween: The Business of the Pop-Up",
+   "date": "2026-10-08T00:12:54Z",
+   "duration": 2896,
+   "description": "Every fall, Spirit Halloween appears out of nowhere — 1,500 stores in dead malls and empty big boxes across America — and then vanishes by mid-November. How does a store that exists for 60 days make money? This is the full anatomy of the machine: the ~$1 billion seasonal business, the real-estate arbitrage of vacant retail space (one real lease: $30,000 flat for three and a half months), the buildout crews that convert an empty box into a Halloween superstore in days, the 52,000 seasonal workers, the teardown on November 1st where unsold inventory gets stored instead of liquidated, and the unit economics — roughly $100–150K profit per store in two months. We trace Spirit from Joe Marver's…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791418345231-556db3e20d415.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/197-Spirit-Halloween-The-Business-of-the-Pop-Up-e3q450h",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127062481/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-8%2F14accc52-52b7-c931-a118-493afa9a3bdf.m4a",
+   "number": "197"
+  },
+  {
    "id": "polymath:910dc1b3 9733 44b1 a4dc d019a2c6f403",
    "show": "polymath",
    "kind": "episode",
@@ -167,8 +195,8 @@
    "duration": 2601,
    "description": "In 2011, Charlie Sheen — the highest-paid actor on television — went on live TV and declared he had \"tiger blood\" and \"Adonis DNA,\" that he was \"winning.\" America laughed, then watched it curdle in real time. But what was actually going on? This is the full story: the Malibu kid who became a movie star in Platoon and Wall Street, the $1.8 million-an-episode king of Two and a Half Men, and the unraveling — the rehabs, the Plaza Hotel, the firing, the $100 million lawsuit, the disastrous Detroit tour, and the media machine that turned a man's breakdown into content. We separate the documented facts from the lore, trace the money from peak to collapse, and follow Sheen through the 2015 HIV…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791412870756-63ce9deacd3bf.jpg",
-   "url": "https://open.spotify.com/episode/5SfGhsMesv7CNmH9mU25RI",
-   "spotify_url": "https://open.spotify.com/episode/5SfGhsMesv7CNmH9mU25RI",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/196-Charlie-Sheen-The-Truth-Behind-Winning-e3q2aiv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127002655/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-7%2F84c2a3c5-afbf-6bcd-fe60-1f504d9982f3.m4a",
    "number": "196"
   },
@@ -3612,7 +3640,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 197,
+   "episodes": 199,
    "spotify_matches": 1
   },
   "brazil": {
