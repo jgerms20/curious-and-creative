@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T13:26:02Z",
+ "generated_at": "2026-10-09T22:44:02Z",
  "shows": [
   {
    "key": "ccpod",
@@ -61,7 +61,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-05T17:39:00Z",
    "count": 8
   },
@@ -102,8 +102,8 @@
    "art": "assets/art/approachable.jpg",
    "art_remote": "https://yt3.googleusercontent.com/-P8idUJBD9irEwIyaZUXol4P_40QvlnJEeEYDJhQ8HcW3P6kIytF7gjmUDrumNABB8ULeCijSQ=s900-c-k-c0x00ffffff-no-rj",
    "description": "Welcome to Approachable AI: Your shortcut to understanding artificial intelligence in plain English. We explore what’s happening, why it matters, and how you can use it so that AI feels less like the future and more like a part of your everyday routine.",
-   "latest": "2026-07-21T23:12:31Z",
-   "count": 5
+   "latest": "2026-10-09T18:37:06Z",
+   "count": 6
   },
   {
    "key": "abolitionist",
@@ -158,6 +158,18 @@
   }
  ],
  "episodes": [
+  {
+   "id": "approachable:MZHfbT_1v1c",
+   "show": "approachable",
+   "kind": "video",
+   "title": "#006 Trying to Run My Life With Meta's Muse AI Agent",
+   "date": "2026-10-09T18:37:06Z",
+   "duration": null,
+   "description": "AI agents have been talked about as the future for a while now. But what happens when you actually give one access to your apps, your calendar, and the projects you're working on?\nIn Episode 6 of Approachable AI, Joshua returns to explore Meta's new personal AI agent, Muse, and puts it to work on everything from turning hundreds of saved Instagram posts into a personalized Google Map to helping automate his other podcast, The Eclectic Polymath. He also experiments with using AI to track personal goals, manage his schedule, discover new places, and take some of the busywork out of everyday life.\nAlong the way, there are plenty of unexpected discoveries, technical hiccups, and ideas that…",
+   "image": "https://i.ytimg.com/vi/MZHfbT_1v1c/hqdefault.jpg",
+   "url": "https://www.youtube.com/watch?v=MZHfbT_1v1c",
+   "youtube_id": "MZHfbT_1v1c"
+  },
   {
    "id": "polymath:6e33c787 e650 4f8d 9822 069335457a02",
    "show": "polymath",
@@ -3676,7 +3688,7 @@
   "approachable": {
    "ok": true,
    "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
-   "episodes": 5
+   "episodes": 6
   },
   "abolitionist": {
    "ok": true,
