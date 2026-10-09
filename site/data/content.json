@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T23:26:13Z",
+ "generated_at": "2026-10-09T06:18:10Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-08T04:32:11Z",
-   "count": 199
+   "latest": "2026-10-08T15:00:45Z",
+   "count": 200
   },
   {
    "key": "brazil",
@@ -158,6 +158,20 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:6e33c787 e650 4f8d 9822 069335457a02",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#199 The Chakras: Blocked and Unblocked",
+   "date": "2026-10-08T15:00:45Z",
+   "duration": 2810,
+   "description": "What does it actually look like — in a real person's body, mind, and daily life — when an energy center is blocked, and what does it look like when it opens? This is the full chakra map: all seven centers, from root to crown, with the traditional Sanskrit wisdom, the specific bodily and mental indicators of blockage, concrete modern case studies of each one blocked and unblocked, and the practices that open them — both the ancient (specific asanas, pranayama, bija mantras) and the modern (somatic therapy, breathwork, HRV biofeedback). We trace where the system really comes from — medieval Tantra's Sat-Cakra-Nirupana, not the Vedas — and how the rainbow chart got its colors from 20th-century…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791471617960-5cae4e49cd83e.jpg",
+   "url": "https://open.spotify.com/episode/0FuMtCMV6oGev1PZw7xiZN",
+   "spotify_url": "https://open.spotify.com/episode/0FuMtCMV6oGev1PZw7xiZN",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127116366/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-8%2Ffbd5eb42-68c9-b711-8949-d0e6cb86dd24.m4a",
+   "number": "199"
+  },
   {
    "id": "polymath:76eca97d 70b2 42b3 8c8e de4f6493fbd7",
    "show": "polymath",
@@ -3640,8 +3654,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 199,
-   "spotify_matches": 0
+   "episodes": 200,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
