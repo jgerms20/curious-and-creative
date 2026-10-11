@@ -1,0 +1,26 @@
+# National / global feeds for the Breaking Desk, Case Tracker and Cold Case Files.
+# Read by earlobe.config.load_sources("national"). URLs are from memory and NOT checked (verified: false).
+# The Beat agent confirms each on its first run (HTTP 200, parses as RSS/Atom, items are recent),
+# flips verified to true, and drops dead feeds.
+# tier: 1 official record, 2 established newsroom/wire, 3 specialist. AP and Reuters have no stable
+# public RSS: reach them through the gnews and gdelt sensors. SCOTUS and dockets come from CourtListener.
+market: national
+feeds:
+  - {outlet: "NPR", url: "https://feeds.npr.org/1001/rss.xml", kind: article, tier: 2, beats: [federal_government, world, disaster, business_mega, space, sports_mega], verified: false}
+  - {outlet: "BBC News", url: "https://feeds.bbci.co.uk/news/world/rss.xml", kind: article, tier: 2, beats: [world, disaster, attack_or_attempt, major_death], verified: false}
+  - {outlet: "The New York Times", url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", kind: article, tier: 2, beats: [federal_government, world, disaster, scotus, business_mega, major_death], verified: false}
+  - {outlet: "The Guardian", url: "https://www.theguardian.com/world/rss", kind: article, tier: 2, beats: [world, disaster, attack_or_attempt], verified: false}
+  - {outlet: "CBS News", url: "https://www.cbsnews.com/latest/rss/main", kind: article, tier: 2, beats: [federal_government, disaster, attack_or_attempt, major_death, scotus], verified: false}
+  - {outlet: "ABC News", url: "https://abcnews.go.com/abcnews/topstories", kind: article, tier: 2, beats: [federal_government, disaster, attack_or_attempt, major_death, scotus], verified: false}
+  - {outlet: "NBC News", url: "https://feeds.nbcnews.com/nbcnews/public/news", kind: article, tier: 2, beats: [federal_government, disaster, attack_or_attempt, major_death, scotus], verified: false}
+  - {outlet: "PBS NewsHour", url: "https://www.pbs.org/newshour/feeds/rss/headlines", kind: article, tier: 2, beats: [federal_government, world, scotus], verified: false}
+  - {outlet: "Al Jazeera", url: "https://www.aljazeera.com/xml/rss/all.xml", kind: article, tier: 2, beats: [world, attack_or_attempt, disaster], verified: false}
+  - {outlet: "National Hurricane Center", url: "https://www.nhc.noaa.gov/index-at.xml", kind: official_data, tier: 1, beats: [disaster], verified: false}
+  - {outlet: "USGS Earthquakes", url: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.atom", kind: official_data, tier: 1, beats: [disaster], verified: false}
+  - {outlet: "National Weather Service", url: "https://api.weather.gov/alerts/active.atom?severity=Extreme", kind: official_data, tier: 1, beats: [disaster], verified: false}  # query params from memory
+  - {outlet: "The White House", url: "https://www.whitehouse.gov/feed/", kind: press_release, tier: 1, beats: [federal_government], verified: false}
+  - {outlet: "U.S. Department of Justice", url: "https://www.justice.gov/news/rss?type=press_release&m=1", kind: press_release, tier: 1, beats: [federal_government, attack_or_attempt, tracked_cases], verified: false}  # query params from memory
+  - {outlet: "U.S. Supreme Court", url: "https://www.supremecourt.gov/rss/slipopinion.xml", kind: court_record, tier: 1, beats: [scotus], verified: false}  # path from memory; low confidence
+  - {outlet: "NASA", url: "https://www.nasa.gov/feed/", kind: press_release, tier: 1, beats: [space], verified: false}
+  - {outlet: "SEC", url: "https://www.sec.gov/news/pressreleases.rss", kind: press_release, tier: 1, beats: [business_mega, federal_government], verified: false}
+  - {outlet: "CDC", url: "https://tools.cdc.gov/api/v2/resources/media/132608.rss", kind: press_release, tier: 1, beats: [federal_government, disaster], verified: false}
