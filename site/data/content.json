@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T21:50:48Z",
+ "generated_at": "2026-10-11T05:57:58Z",
  "shows": [
   {
    "key": "ccpod",
@@ -20,8 +20,8 @@
    "feed_title": "Curious + Creative",
    "art": "assets/art/ccpod.jpg",
    "art_remote": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
-   "latest": null,
-   "count": 0
+   "latest": "2026-07-22T20:42:00Z",
+   "count": 1
   },
   {
    "key": "polymath",
@@ -61,7 +61,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-05T17:39:00Z",
    "count": 8
   },
@@ -1685,6 +1685,19 @@
    "image": null,
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
+   "spotify_video": false
+  },
+  {
+   "id": "ccpod:1c29WyilCTFCyjUvtJkWWl",
+   "show": "ccpod",
+   "kind": "episode",
+   "title": "#002 Obsession, Backrooms & Hollywood's New Era",
+   "date": "2026-07-22T20:42:00Z",
+   "duration": 3002,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
+   "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
   },
   {
@@ -3654,12 +3667,12 @@
  ],
  "report": {
   "ccpod": {
-   "ok": false,
+   "ok": true,
    "feed": null,
    "spotify_name": "Curious + Creative",
    "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "polymath": {
    "ok": true,
