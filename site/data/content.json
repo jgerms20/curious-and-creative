@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T05:57:58Z",
+ "generated_at": "2026-10-11T13:03:02Z",
  "shows": [
   {
    "key": "ccpod",
@@ -80,7 +80,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -179,8 +179,8 @@
    "duration": 2810,
    "description": "What does it actually look like — in a real person's body, mind, and daily life — when an energy center is blocked, and what does it look like when it opens? This is the full chakra map: all seven centers, from root to crown, with the traditional Sanskrit wisdom, the specific bodily and mental indicators of blockage, concrete modern case studies of each one blocked and unblocked, and the practices that open them — both the ancient (specific asanas, pranayama, bija mantras) and the modern (somatic therapy, breathwork, HRV biofeedback). We trace where the system really comes from — medieval Tantra's Sat-Cakra-Nirupana, not the Vedas — and how the rainbow chart got its colors from 20th-century…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791471617960-5cae4e49cd83e.jpg",
-   "url": "https://open.spotify.com/episode/0FuMtCMV6oGev1PZw7xiZN",
-   "spotify_url": "https://open.spotify.com/episode/0FuMtCMV6oGev1PZw7xiZN",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/199-The-Chakras-Blocked-and-Unblocked-e3q5pke",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127116366/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-8%2Ffbd5eb42-68c9-b711-8949-d0e6cb86dd24.m4a",
    "number": "199"
   },
@@ -3680,7 +3680,7 @@
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
    "episodes": 200,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "brazil": {
    "ok": true,
