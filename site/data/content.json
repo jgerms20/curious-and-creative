@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T13:03:02Z",
+ "generated_at": "2026-10-11T22:05:42Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-08T15:00:45Z",
-   "count": 200
+   "latest": "2026-10-11T10:55:01Z",
+   "count": 204
   },
   {
    "key": "brazil",
@@ -80,7 +80,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -158,6 +158,62 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:a6d13532 d0d1 4452 bb4d 909cee14ad04",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#204 Symbiopsychotaxiplasm: The Film That Watched Itself",
+   "date": "2026-10-11T10:55:01Z",
+   "duration": 2701,
+   "description": "In 1968, filmmaker William Greaves took a cast and crew into Central Park to shoot a screen test — and quietly designed the production so his crew would rebel against him on camera. The result, Symbiopsychotaxiplasm: Take One, is a film inside a film inside a film: actors performing a melodrama, a director performing incompetence, and a mostly-white crew secretly filming their own mutiny while a Black director watched it all unfold exactly as he'd predicted in his notebooks.\n This episode unpacks the word behind it — symbiotaxiplasm, life arranging itself into shared reality, and the \"psycho\" Greaves added for the paranoia and ego that surface the moment people know they're being watched —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791715609055-e657199a56807.jpg",
+   "url": "https://open.spotify.com/episode/4nA94cJH4rcO2NqHHBJKYD",
+   "spotify_url": "https://open.spotify.com/episode/4nA94cJH4rcO2NqHHBJKYD",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127285812/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2Fa28c2c40-006b-42af-57f1-a36f1fdf3727.m4a",
+   "number": "204"
+  },
+  {
+   "id": "polymath:d497cc9e e8cc 43ce 812d cc244fc58283",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#203 Local Natives and the Last Indie Band of the 2000s",
+   "date": "2026-10-11T10:50:01Z",
+   "duration": 3356,
+   "description": "Local Natives were five kids from Orange County who moved into a Silver Lake house together, named their debut album after it — Gorilla Manor — and became one of the defining bands of the 2000s indie era. This episode tells their story as the door into that whole world: the blogs that could make a band overnight, Pitchfork as kingmaker, Spaceland and the Echo, and a sound built on stacked harmonies and restless percussion.\n Then the era turns: Hummingbird, made with Aaron Dessner in the shadow of grief; streaming playlists replacing the blogs; Silver Lake pricing out its own scene; and the band's long arc through lineup changes to where they stand today — and what the indie era permanently…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791716143226-f473f66d25a3e.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/203-Local-Natives-and-the-Last-Indie-Band-of-the-2000s-e3qavbt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127286077/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2Fc01ba0fc-9968-c32c-0763-f39da98ce86a.m4a",
+   "number": "203"
+  },
+  {
+   "id": "polymath:750ba218 3c24 4e83 a9bc 5e6e6e9123de",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#202 The Polygraph: The Machine That Never Detected a Lie",
+   "date": "2026-10-11T10:45:00Z",
+   "duration": 3468,
+   "description": "For a hundred years, the polygraph has decided who gets hired, who gets believed, and who goes to prison — without ever actually detecting a lie. This episode traces the machine from John Larson's 1921 Berkeley prototype and the inventor who lived to regret it, through Marston (who also created Wonder Woman's Lasso of Truth), the CIA and NSA screening empires, and the math problem that breaks the whole idea: screen ten thousand people to find ten spies, and you flag a thousand innocents.\n Plus the human cost in both directions — Jeffrey Deskovic, who failed a polygraph, falsely confessed, and lost sixteen years; Aldrich Ames, who passed twice while selling secrets — and the twist at the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791715827357-80cd9f986e23a.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/202-The-Polygraph-The-Machine-That-Never-Detected-a-Lie-e3qav74",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127285924/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2F2b3e386c-3a01-9da1-46f0-604e8196650d.m4a",
+   "number": "202"
+  },
+  {
+   "id": "polymath:5ccb967f b8fd 46f3 9215 5ffe9b1831a0",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#201 Smoke Shops & Dispensaries: How Cannabis Got Its Storefront",
+   "date": "2026-10-11T10:40:01Z",
+   "duration": 3615,
+   "description": "For fifty years, the American smoke shop sold millions of dollars of cannabis gear under one rule: nobody could say what any of it was for. This episode traces the head shop from its 1966 counterculture birth — the Psychedelic Shop on Haight Street — through the \"for tobacco use only\" era, Operation Pipe Dreams, and Tommy Chong's prison sentence.\n Then the turn: how the AIDS crisis, Dennis Peron, and Proposition 215 transformed the gray-zone storefront into the legal dispensary — and how MedMen's billion-dollar \"Apple Store of Weed,\" a punishing federal tax rule, and LA's broken licensing system explain why the original head shop is still standing.\n Follow along for the next deep dive.\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791717857710-2374608fd9765.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/201-Smoke-Shops--Dispensaries-How-Cannabis-Got-Its-Storefront-e3qavfk",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127286196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2F2a9efa6e-ed86-da7a-805a-ae52f4311292.m4a",
+   "number": "201"
+  },
   {
    "id": "approachable:MZHfbT_1v1c",
    "show": "approachable",
@@ -3679,8 +3735,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 200,
-   "spotify_matches": 0
+   "episodes": 204,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
