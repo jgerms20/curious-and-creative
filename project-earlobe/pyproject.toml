@@ -1,0 +1,22 @@
+[project]
+name = "earlobe"
+version = "0.1.0"
+description = "Project Earlobe: the Curious & Creative Network engine (automated, verified AI audio network)"
+requires-python = ">=3.10"
+dependencies = [
+  "anthropic>=0.70",
+  "pyyaml>=6.0",
+  "jsonschema>=4.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+earlobe = "earlobe.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["earlobe*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

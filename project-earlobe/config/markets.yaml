@@ -1,0 +1,12 @@
+# Markets. Each market gets a Beat agent (agents/sensors/beat-agent.md) instantiated with this config.
+markets:
+  columbia-sc: {name: "Columbia, SC", tz: America/New_York, wave: 0, sources: config/sources/columbia-sc.yaml,
+                courts: {state: "SC Judicial Branch / Richland County Public Index", federal: dsc}}
+  los-angeles: {name: "Los Angeles", tz: America/Los_Angeles, wave: 0, sources: config/sources/los-angeles.yaml,
+                courts: {state: "LA Superior Court portal", federal: cacd}}
+  new-york:    {name: "New York City", tz: America/New_York, wave: 1, sources: config/sources/new-york.yaml,
+                courts: {state: "NY eCourts / WebCrims", federal: [nysd, nyed]}}
+  chicago:     {name: "Chicago", tz: America/Chicago, wave: 1, sources: config/sources/chicago.yaml,
+                courts: {state: "Cook County Clerk of the Circuit Court", federal: ilnd}}
+  national:    {name: "National / Global", tz: America/New_York, wave: 0, sources: config/sources/national.yaml,
+                courts: {federal: [scotus]}}
