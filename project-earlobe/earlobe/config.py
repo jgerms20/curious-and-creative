@@ -120,6 +120,19 @@ def load_sources(market: str) -> list[dict]:
         return list((yaml.safe_load(f) or {}).get("feeds") or [])
 
 
+def load_evergreen(show_id: str) -> dict:
+    """config/evergreen/<show>.yaml: the topic queue and research brief of an archive or cold-case show.
+
+    Returns {agent, tier, max_searches, brief, topics: [{id, title, angle}]}. Raises FileNotFoundError
+    (with the path) when the show has no queue.
+    """
+    path = CONFIG_DIR / "evergreen" / f"{Path(show_id).name}.yaml"
+    if not path.is_file():
+        raise FileNotFoundError(f"no evergreen topic queue for {show_id!r}: expected {path}")
+    with path.open(encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
+
+
 def load_budgets() -> dict:
     """budgets.yaml: network_daily_usd, default_daily_usd, warn_fraction, shows{id: usd}."""
     return load_yaml("budgets")

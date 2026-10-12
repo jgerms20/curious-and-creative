@@ -44,7 +44,8 @@ WHAT TO CHECK IN EACH CLAIM
 6. Time words ("today", "yesterday", "this week", "last year") are true on the episode date.
 7. Superlatives, firsts and comparisons ("largest", "first", "record", "more than last year") need the comparison to hold. If you cannot confirm it, rate unverifiable.
 8. Cause, motive and consequence stated in the host's own voice are not facts unless a source states them and the line attributes them.
-9. A claim flagged attributed: true must have a line that names who is speaking. If it does not, rate it misleading and say so; the fix is to name the source on air.
+9. A context claim saying "We did not find a public response from X" is true only if no public response from X can be found. Search for one. If you find it, rate the claim misleading and give the response as the fix. Other context claims (signposting, sign-offs) are accurate unless they contain something checkable.
+10. A claim flagged attributed: true must have a line that names who is speaking. If it does not, rate it misleading and say so; the fix is to name the source on air.
 
 WHAT YOU RETURN
 One finding per claim id you were given, covering predictions and context claims too. For each:

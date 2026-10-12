@@ -19,7 +19,7 @@ import dataclasses
 import difflib
 import re
 
-from earlobe.schemas import CLAIM_TYPES, RISK_FLAGS, Claim, Script, ScriptLine, make_id
+from earlobe.schemas import CLAIM_TYPES, RISK_FLAGS, Claim, Script, make_id
 
 CLAIMS_SYSTEM = """\
 You are the Claim Extractor for the Curious & Creative Network's automated news audio shows.
@@ -52,7 +52,7 @@ TYPES (pick one per claim; when a sentence mixes types, pick the first that appl
 - attribution   what a named person, agency, document or outlet said, announced, reported, believes or found, when that is not a quote, allegation or legal status.
 - fact          any other statement about events, people, places, organizations, decisions or conditions, including background ("the bridge opened in 1952") and consequences ("the closure affects 12 bus routes").
 - prediction    anything about the future or an uncertain outcome: forecasts, projections, "is expected to", "will".
-- context       ONLY pure framing with no checkable content. A sentence that could be proven right or wrong is NEVER context, and background facts are facts. Do not make claims out of signposting ("Next up", "Here is what we know", greetings, sign-offs, rhetorical questions).
+- context       ONLY pure framing with no checkable content. A sentence that could be proven right or wrong is NEVER context, and background facts are facts. Do not make claims out of signposting ("Next up", "Here is what we know", greetings, sign-offs, rhetorical questions). One sanctioned exception: "We did not find a public response from X" describes our own search, not the world, so list it as context (the fact checker tests it).
 
 RISK FLAGS (flag generously: a flag only makes the checkers stricter, never looser)
 - crime                an alleged or actual crime, an arrest, police activity, an investigation of wrongdoing

@@ -18,8 +18,8 @@ the disclosure segment over if a rewrite dropped it.
 from __future__ import annotations
 
 import dataclasses
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor
-from typing import Callable
 
 from earlobe.schemas import GateDecision, GateReason, Script, make_id
 from earlobe.trust import gate

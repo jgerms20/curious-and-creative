@@ -258,9 +258,41 @@ def _copy(ctx: dict) -> dict:
             "keywords": ["sample", "dry run", show.get("market", "news")]}
 
 
+# ---------------------------------------------------------------- archive pack (evergreen research)
+_ARCHIVE_SOURCES = [
+    ("[SAMPLE] National Archives Catalog", 1, "archive", "Sample record group, finding aid and dated documents."),
+    ("[SAMPLE] Library of Congress Digital Collections", 1, "archive", "Sample digitized newspaper page and caption."),
+    ("[SAMPLE] State Historical Society", 2, "archive", "Sample oral-history summary and a dated timeline."),
+    ("[SAMPLE] University Special Collections", 3, "archive", "Sample finding aid for a donated collection."),
+]
+_CASE_SOURCES = [
+    ("[SAMPLE] County Sheriff's Office", 1, "press_release", "Sample public appeal for tips with the agency tip line."),
+    ("[SAMPLE] State Bureau of Investigation", 1, "official_data", "Sample listing in a state cold-case unit page."),
+    ("[SAMPLE] Regional Daily Newspaper", 2, "article", "Sample anniversary report summarizing the public record."),
+    ("[SAMPLE] Public Radio Archive", 2, "broadcast", "Sample broadcast summary of the agency's renewed appeal."),
+]
+
+
+def _archive_pack(ctx: dict) -> dict:
+    show = ctx.get("show_cfg") or config.load_shows().get(ctx.get("show_id") or "", {})
+    topic = _dict(ctx.get("topic") or {})
+    cold = show.get("lane") == "strict"
+    title = topic.get("title") or ("Sample cold case" if cold else "Sample history topic")
+    sources = _CASE_SOURCES if cold else _ARCHIVE_SOURCES
+    key = _slug(f"{show.get('id') or ctx.get('show_id') or 'show'}-{topic.get('id') or title}")
+    return {"subject": f"[SAMPLE] {_clip(title, 120)}",
+            "summary": _sentence(f"[SAMPLE] Placeholder summary of the record on: {_clip(title, 160)} "
+                                 "This is dry-run content, not research"),
+            "risk_flags": ["crime"] if cold else [],
+            "sources": [{"url": f"https://sample.invalid/archive/{key}/{_slug(outlet)}", "outlet": outlet,
+                         "title": f"[SAMPLE] {_clip(title, 80)}", "published_at": "", "tier": tier,
+                         "kind": kind, "excerpt": excerpt} for outlet, tier, kind, excerpt in sources],
+            "uncertain": ["Dry-run sample: nothing here was researched."]}
+
+
 _BUILDERS = {"Script": _script, "VerifierReport": _verifier_report, "FactCheckReport": _factcheck_report,
              "BiasReport": _bias_report, "LegalReport": _legal_report, "StoryTriage": _triage,
-             "Copy": _copy}
+             "Copy": _copy, "ArchivePack": _archive_pack}
 
 
 def fake(kind: str, **ctx) -> dict:

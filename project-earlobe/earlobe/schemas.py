@@ -400,6 +400,15 @@ JSON_SCHEMAS: dict[str, dict] = {
         "title": _STR, "description": _STR, "show_notes_md": _STR, "social_posts": _STRS,
         "keywords": _STRS,
     }),
+    # Archive Miner / Cold-Case Archivist → the sources and neutral summary behind an evergreen episode
+    "ArchivePack": _obj({
+        "subject": _STR, "summary": _STR,
+        "risk_flags": {"type": "array", "items": _enum(RISK_FLAGS)},
+        "sources": {"type": "array", "items": _obj({
+            "url": _STR, "outlet": _STR, "title": _STR, "published_at": _STR, "tier": _INT,
+            "kind": _enum(SOURCE_KINDS), "excerpt": _STR})},
+        "uncertain": _STRS,
+    }),
 }
 
 

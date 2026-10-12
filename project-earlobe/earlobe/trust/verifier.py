@@ -1,6 +1,6 @@
 """Source Verifier: blind re-sourcing of every claim that needs corroboration.
 
-Blindness is the point. The model is shown ONLY each claim's id, type and text, plus
+Blindness is the point. The model is shown ONLY each claim's id and text, plus
 the show's market and the episode date. It never sees the writer's sources, notes or
 reasoning, so it cannot rubber-stamp them; it has to find sources itself with web
 search and trace wire copy and echoes back to the original.
@@ -23,7 +23,13 @@ from urllib.parse import urlsplit
 
 from earlobe import config
 from earlobe.desk.independence import independent_count, owner_group
-from earlobe.schemas import Claim, EvidenceSource, Script, VerifierFinding, VerifierReport
+from earlobe.schemas import (
+    Claim,
+    EvidenceSource,
+    Script,
+    VerifierFinding,
+    VerifierReport,
+)
 from earlobe.trust.gate import NEEDS_CORROBORATION
 
 VERIFIER_SYSTEM = """\
@@ -86,7 +92,7 @@ def _market_line(script: Script) -> str:
 
 
 def _prompt(script: Script, claims: list[Claim], max_searches: int) -> str:
-    rows = "\n".join(f"- id: {c.id}\n  type: {c.type}\n  claim: {c.text}" for c in claims)
+    rows = "\n".join(f"- id: {c.id}\n  claim: {c.text}" for c in claims)   # nothing else of the writer's
     return (f"{_market_line(script)}\nEpisode date: {script.episode_date} (judge every claim as of this "
             f"date; words like \"today\" refer to it)\n\nVerify these {len(claims)} claims. You have up to "
             f"{max_searches} web searches for them.\n\n{rows}")
