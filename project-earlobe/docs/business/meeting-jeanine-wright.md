@@ -28,11 +28,11 @@
 | Role | Co-Founder and CEO, Liquid Studios; Josh Taylor is co-founder and Chief Production Officer | high |
 | Career | Media Temple first GC (sold to GoDaddy 2013), Simplecast (sold to SiriusXM 2020), AdsWizz CFO, Wondery Global COO and GM about 2022 to 2024. She ran operations under Amazon; she did not do the sale | high (roles), approximate dates |
 | Old model | 5,000+ shows by Sep 2025, about 3,000 episodes a week, about $1 an episode, about 20-listen break-even (company claims, F-IPA-01, -02, -04) | claims |
-| Pivot | Lead Balloon Ep. 73: the company was "running two businesses" and chose B2B. Synthetic content is "no longer a revenue source" (F-IPA-08) | high |
+| Pivot | Lead Balloon Ep. 73: the company had effectively run two businesses and chose B2B. Fully synthetic content stopped being a revenue source (F-IPA-08) | high |
 | New offer | Managed conversion of a publisher's existing catalog into video, clips, audio, text and about 40 languages. No named customers found (F-IPA-09) | medium |
 | Platforms | Castro hid the shows; Podcast Index flagged them; Apple wants AI disclosure; Spotify added Verified badges (F-IPA-10, F-HOST-15, -16) | medium to high |
 | Stance | Self-described AI maximalist. Discloses AI in every episode and says listeners barely notice (F-AUD-05). Defended volume loudly in 2025 | high |
-| Open conflict | Podnews quotes her site as "Liquify AI, formerly Inception Point AI"; she told Lead Balloon the company name is unchanged | medium |
+| Open conflict | Podnews reports her site calls Liquid Studios a product of Liquify AI, formerly Inception Point AI; she told Lead Balloon the company name is unchanged | medium |
 
 ## 3. What we want
 
@@ -40,7 +40,7 @@
 |---|---|---|
 | **Advice** | Candid view on local economics, platform standing, disclosure, legal guardrails | The real goal of meeting one |
 | **Partnership** | She refers or bundles our Trust Stack as the verification layer for publisher clients; we run it on a sample of her output | Needs rapport first *(inference)* |
-| **Liquid Studios as vendor** | Video, clips and translations for flagship episodes only. List price $10 per finished video minute, about $1 per audio episode (F-IPA-09; as of Oct 2026 — verify before buying; live page not read). A 18 to 25 minute Cold Case episode is about $180 to $250 as video; a 7-minute daily is about $70 against roughly $1 of ad revenue (F-ADS-12) | Not for dailies *(inference)* |
+| **Liquid Studios as vendor** | Video, clips and translations for flagship episodes only. List price $10 per finished video minute, about $1 per audio episode (F-IPA-09; as of Oct 2026 — verify before buying; live page not read). An 18 to 25 minute Cold Case episode is about $180 to $250 as video; a 7-minute daily is about $70 against roughly $1 of ad revenue (F-ADS-12) *(inference, our arithmetic)* | Not for dailies *(inference)* |
 | **Liquid Studios as partner** | Cold Case Files and History of Hollywood as a joint archive showcase; local newsroom partners we sign could be referred to her | She has no named customers, so a reference may matter to her. Do not assume *(inference)* |
 | **Intros** | A publisher or local newsroom, a podcast-press contact, a media lawyer | Ask last, ask specific |
 
@@ -65,7 +65,7 @@
 | 5 | Disclosure last | Spoken at the end of every episode and in the metadata (F-HOST-15, -16) |
 | 6 | Honest economics | Ads alone do not pay for a local brief: about $2.00 of checking plus $0.56 to $1.16 of voice against about $1.03 of ad revenue at 120 downloads (F-LLM-07, F-TTS-17, F-ADS-12; as of Oct 2026 — verify). Share the shape, not the model *(inference)* |
 | 7 | Cost by design | Her episodes cost about $1 (F-IPA-04); our checking chain costs roughly 5x to 20x more (F-LLM-08) because trust is the product |
-| 8 | Not one vendor | Several data and language sources; ElevenLabs primary with a tested fallback. It echoes her "one model is risky" remark |
+| 8 | Not one vendor | Several data and language sources; ElevenLabs primary with a tested fallback. It echoes her point that relying on one model is risky |
 | 9 | Courts need care | Never higher than the record, no minors named, fast public corrections. We would value her legal view |
 | 10 | Next step | A second chat, maybe the sample audit, an intro only if it feels natural |
 
@@ -79,7 +79,7 @@
 | 4 | How did you handle Castro and Podcast Index actions? Did labels or disclosure help? | Our platform-standing plan |
 | 5 | Did disclosure change listening, by show type, especially news? | Only a company claim so far (F-AUD-05) |
 | 6 | What do publishers ask about trust, such as audit trails and corrections? | Tests Trust Stack demand |
-| 7 | When you said relying on one model was risky, did you mean AI models or business models? | The wording is ambiguous in coverage |
+| 7 | When you said relying on one model was extremely risky, did you mean AI models or business models? | The wording is ambiguous in coverage |
 | 8 | What did you learn comparing Hume and other voices on consistency and cost? | Low-stakes vendor talk (F-IPA-06) |
 | 9 | What guardrails would you set for synthetic voices on crime and courts? | Her IP and defamation expertise |
 | 10 | From AdsWizz: what proof would a brand or agency need to buy AI local news? | Sell-side evidence *(inference)* |
@@ -123,7 +123,7 @@
 >
 > I [listened to] your Lead Balloon conversation on the move to Liquid Studios. Your city-level shows are some of the best public evidence on how automated local audio performs, and we're making the opposite bet on volume: a handful of shows, verification first.
 >
-> Could we borrow 30 minutes, by video or in person if you're in LA? We'd bring specific questions on local economics and platform standing, and we're glad to share what we're learning in return.
+> Could we borrow 30 minutes, by video or in person if you're in LA? We'd bring specific questions on local economics and platform standing, and we're glad to share what we're learning in return. No pitch, just a conversation, on whatever schedule suits you.
 >
 > Thank you for considering it.
 >
@@ -153,7 +153,7 @@
 | Praise specifics (city shows, the honest pivot talk) | Flatter in general terms |
 | Say "disclosed, verified, local" in plain words | Say a show is live unless it is airing today |
 | Share the shape of our economics and rules | Share prompts, cost model, source lists or agent files |
-| Treat the pivot as smart business | Quote "lazy luddites" or call her old shows slop |
+| Treat the pivot as smart business | Quote her 2025 "lazy luddites" remark (THR) or call her old shows slop |
 | Cite only what you heard or read yourself | Use "half the people on the planet will be AI" (unconfirmed, secondhand) |
 | Keep to public, professional topics | Raise the unconfirmed May freeze, "Agent Monday", her Wondery exit or investor details |
 | Keep names straight | Mix up Josh Taylor (her co-founder) with Joshua, Liquid Studios with Liquid AI, or GroundTruth the ad-tech board with the GroundTruth Project nonprofit |
