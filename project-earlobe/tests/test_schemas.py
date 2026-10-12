@@ -372,7 +372,7 @@ def _node(kind, *path):
 
 def test_json_schemas_cover_the_agent_outputs():
     assert set(JSON_SCHEMAS) == {"Script", "VerifierReport", "FactCheckReport", "BiasReport", "LegalReport",
-                                 "StoryTriage", "Copy"}
+                                 "StoryTriage", "Copy", "ArchivePack"}
 
 
 @pytest.mark.parametrize("kind", sorted(JSON_SCHEMAS))
@@ -462,6 +462,9 @@ GOOD = {
                                 "fix": ""}]},
     "StoryTriage": {"stories": []},
     "Copy": {"title": "t", "description": "d", "show_notes_md": "m", "social_posts": ["p"], "keywords": ["k"]},
+    "ArchivePack": {"subject": "s", "summary": "m", "risk_flags": [], "uncertain": [],
+                    "sources": [{"url": "u", "outlet": "o", "title": "t", "published_at": "1927-05-18",
+                                 "tier": 1, "kind": "archive", "excerpt": ""}]},
 }
 
 
