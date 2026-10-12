@@ -29,7 +29,9 @@ CASES = ["Conservative", "Base", "Optimistic"]
 GLOBAL = [
     # key, label, value, unit, note
     ("chars_per_min", "Spoken characters per audio minute", 1000, "chars/min", "ElevenLabs guidance ~1,000 chars ≈ 1 min (F-TTS)"),
-    ("credits_per_char", "ElevenLabs credits per character", 1.0, "credits", "1.0 for highest-quality voices; some faster models bill ~0.5 (F-TTS) — verify per model"),
+    ("credits_per_char", "ElevenLabs credits per character", 1.0, "credits", "1.0 full-quality voices; Flash/Turbo ~0.5 (F-TTS-09) — verify per model"),
+    ("rerender", "Re-render / QA overhead on voice", 1.25, "x", "(inference) F-TTS-16: retakes, pronunciation fixes, QA listens"),
+    ("secondary_rate", "Secondary voice engine, $ per audio minute", 0.03, "$", "Google Chirp 3 HD-class, $30 per 1M chars (F-TTS-23)"),
     ("weekdays", "Weekdays per month", 21.7, "days", "365×5/7/12"),
     ("days", "Days per month", 30.4, "days", ""),
     ("cache_savings", "Prompt-caching savings on LLM input", 0.15, "%", "(inference) system prompts + rubrics cached; cache reads bill at 0.1× input"),
@@ -57,12 +59,12 @@ STEPS = [
 
 SHOW_TYPES = [
     # key, label, minutes/ep, eps/month/show, LLM scale vs baseline, batch(0/1), ads/ep, downloads/ep base (inference)
-    ("local", "Local daily brief", 7, 21.7, 1.0, 0, 2, 150),
-    ("breaking", "Breaking Desk feed", 3, 30, 0.8, 0, 1, 600),
-    ("courts", "Courts roundup", 10, 21.7, 1.3, 0, 2, 120),
-    ("tracker", "Case Tracker (weekly + flashes)", 20, 8.3, 1.8, 0, 3, 400),
-    ("coldcase", "Cold Case Files", 22, 8.7, 2.2, 1, 3, 700),
-    ("archive", "Archive series (History of Hollywood, hometown)", 18, 13, 1.8, 1, 3, 500),
+    ("local", "Local daily brief", 7, 21.7, 1.0, 0, 2, 120),          # F-AUD-03 base
+    ("breaking", "Breaking Desk feed", 3, 30, 0.8, 0, 1, 500),         # F-AUD-04 base
+    ("courts", "Courts roundup", 10, 21.7, 1.3, 0, 2, 120),            # (inference)
+    ("tracker", "Case Tracker (weekly + flashes)", 20, 8.3, 1.8, 0, 3, 300),   # (inference)
+    ("coldcase", "Cold Case Files", 22, 8.7, 2.2, 1, 3, 400),          # F-AUD-04 base
+    ("archive", "Archive series (History of Hollywood, hometown)", 18, 13, 1.8, 1, 3, 400),  # (inference)
     ("niche", "Hyper-specific always-on feed", 5, 12, 0.6, 0, 1, 60),
 ]
 
@@ -76,7 +78,7 @@ SHOW_COUNTS = {
     "archive": [1, 4, 15, 50],
     "niche": [0, 10, 100, 500],
 }
-DOWNLOAD_MULT = [1.0, 1.5, 2.5, 3.5]   # audience maturity by scenario (inference)
+DOWNLOAD_MULT = [1.0, 1.5, 2.25, 3.0]   # audience maturity (inference); keeps local <= 400/ep (F-AUD-03 optimistic)
 
 ELEVEN_PLANS = [
     # name, $/month, credits/month (F-TTS, as of Oct 2026)
@@ -86,15 +88,19 @@ ELEVEN_PLANS = [
     ("Business", 990, 6000000),
     ("Enterprise (negotiated)", 3000, 30000000),
 ]
-PLAN_BY_SCEN = ["Pro", "Business", "Enterprise (negotiated)", "Enterprise (negotiated)"]
-OVERAGE_PER_1K = [0.15, 0.12, 0.08, 0.06]  # $ per 1k extra credits by scenario (inference; Enterprise negotiated)
+PLAN_BY_SCEN = ["Scale", "Business", "Enterprise (negotiated)", "Enterprise (negotiated)"]   # F-TTS-35/36
+OVERAGE_PER_1K = [0.24, 0.24, 0.12, 0.10]  # $ per 1k extra credits (F-TTS-11 Pro ~$0.24; later stages negotiated, inference)
+SECONDARY_SHARE = [0, 0, 0, 0]   # share of minutes on the secondary engine; all-ElevenLabs by founder choice (hybrid: F-TTS-36..38)
+GRANT_CREDITS = [0, 0, 0, 0]     # ElevenLabs Startup Grant credits/month if awarded (~2,750,000 for 12 months, F-TTS-22)
 
 # Revenue assumptions by case (Conservative, Base, Optimistic) — all (inference) until benchmarked (F-ADS)
 REV = [
-    ("cpm", "Programmatic CPM (gross, per 1,000 ad impressions)", [8, 15, 22], "$"),
-    ("fill", "Ad fill rate", [0.40, 0.60, 0.80], "%"),
+    ("cpm", "Programmatic CPM (gross, per 1,000 ad impressions)", [8, 13, 20], "$"),       # F-ADS-07
+    ("fill", "Ad fill rate", [0.30, 0.55, 0.75], "%"),                                       # F-ADS-08
     ("share", "Our share after host/marketplace", [0.50, 0.60, 0.70], "%"),
-    ("sponsor_rate", "Local sponsor, $ per show per month", [300, 750, 1500], "$"),
+    ("sponsor_cpm", "Local direct sponsor, effective CPM per slot", [20, 35, 60], "$"),      # F-ADS-10
+    ("sponsor_sold", "Local sponsor slots sold (sell-through)", [0.25, 0.50, 0.75], "%"),     # F-ADS-10
+    ("pkg_rate", "Flat community package, $ per month", [50, 100, 150], "$"),                # F-ADS-10
     ("b2b_rate", "B2B white-label brief, $ per client per month", [1000, 2000, 3500], "$"),
     ("api_rate", "Trust Stack API, $ per client per month", [500, 1500, 3000], "$"),
     ("services_rate", "Studio Services project, $ each", [1500, 3000, 5000], "$"),
@@ -102,7 +108,7 @@ REV = [
 ]
 # Volume drivers by scenario (Test, Wave 1, Scale, Dominate) — (inference)
 REV_VOLUME = [
-    ("sponsors_per_local", "Local sponsors per local/courts show", [0.25, 0.5, 1.0, 1.5], "sponsors"),
+    ("pkgs_per_local", "Community packages sold per local/courts show", [1, 2, 3, 4], "packages"),
     ("b2b_clients", "B2B white-label clients", [0, 1, 5, 20], "clients"),
     ("api_clients", "Trust Stack API clients", [0, 0, 3, 15], "clients"),
     ("services_projects", "Studio Services projects per month", [1, 2, 3, 4], "projects"),
@@ -112,22 +118,25 @@ PREMIUM_NET = 0.70  # share kept after platform fees (inference; Apple/Patreon v
 
 FIXED = [
     # category, item, vendor/plan, $/month, qty by scenario, note
-    ("Hosting", "Podcast hosting + dynamic ad insertion", "Multi-show host (see cost-analysis.md)", 49, [1, 2, 4, 10], "Plan tiers scale with downloads/shows (F-HOST) — verify"),
-    ("Insurance", "Media liability / E&O", "Online insurer quote", 78, [1, 1, 2, 3], "Insureon avg ~$78/mo; larger limits at scale (F-LEGAL)"),
+    ("Hosting", "Podcast hosting + dynamic ad insertion", "Multi-show host (see cost-out-and-roi.md)", 49, [1, 2, 5, 20], "F-HOST-10 — verify current plans"),
+    ("Insurance", "Media liability / E&O", "Specialist media insurer", 500, [1, 1, 2, 3], "F-LEGAL-01 placeholder; automated courts/crime may be declined — get quotes"),
     ("Infrastructure", "GitHub (Actions minutes, private repos)", "GitHub Free → Team", 0, [1, 1, 1, 1], "Public repo Actions are free; Team $4/user if needed"),
-    ("Infrastructure", "Database (Supabase)", "Free → Pro", 0, [1, 1, 1, 1], "Free tier at test; set to 25 for Pro"),
+    ("Infrastructure", "Database (Supabase)", "Free → Pro", 25, [0, 1, 1, 1], "Free tier pauses when idle; Pro from Wave 1 (F-INFRA-03)"),
     ("Infrastructure", "Compute for always-on agents / runners", "VPS or managed runners", 0, [0, 20, 150, 800], "(inference) GitHub Actions covers early stages"),
-    ("Data", "News/search data APIs beyond RSS", "e.g. news API, court data", 0, [0, 100, 500, 2000], "(inference) RSS, GDELT, CourtListener free tiers first (F-DATA)"),
-    ("Voice", "Google AI Pro (NotebookLM, optional)", "Google AI Pro", 19.99, [1, 1, 0, 0], "Optional; prototyping only (F-TTS)"),
+    ("Data", "Court + news data (PACER, paid APIs)", "PACER, CourtListener, news API", 1, [150, 250, 500, 2000], "F-DATA-02 PACER ~$150-300/mo; CourtListener/GDELT free first"),
+    ("Voice", "Google AI Pro (NotebookLM, optional prototyping)", "Google AI Pro", 19.99, [1, 0, 0, 0], "Not a production engine (F-TTS-32)"),
+    ("Legal", "California LLC annual tax (if CA-registered)", "Franchise Tax Board", 66.67, [1, 1, 1, 1], "$800/yr (F-LEGAL-05)"),
+    ("Music", "Music / sonic library license", "Library subscription", 30, [1, 1, 1, 2], "F-LEGAL-06"),
     ("Admin", "Domain + email", "Registrar + mailbox", 8, [1, 1, 1, 1], "(inference)"),
     ("Admin", "Bookkeeping software", "e.g. QuickBooks/Wave", 30, [1, 1, 1, 1], "(inference)"),
     ("Admin", "Design tools (cover art, clips)", "Canva Pro or similar", 15, [1, 1, 1, 2], "(inference)"),
     ("People", "Contract help (sales, legal on retainer)", "Freelance", 0, [0, 0, 2000, 8000], "(inference) first hires come from revenue"),
 ]
 ONE_TIME = [
-    ("Legal", "Media-lawyer consult on standards + courts/crime lanes", 1500, "(inference) 3–5 hrs"),
-    ("Legal", "Trademark: 'Curious & Creative Network' (2 classes)", 700, "USPTO $350/class (F-LEGAL)"),
-    ("Legal", "DBA / assumed-name filing", 50, "Varies by state/county (F-LEGAL)"),
+    ("Legal", "Media-lawyer setup review (standards, courts/crime lanes)", 5000, "F-LEGAL-02 mid ($2,500-$7,500)"),
+    ("Legal", "Trademark filing: 2 classes (41, then 9)", 700, "USPTO $350/class (F-LEGAL-03)"),
+    ("Legal", "Trademark clearance search (attorney)", 1000, "F-LEGAL-02 ($500-$2,000 per mark)"),
+    ("Legal", "DBA / assumed-name filing", 120, "F-LEGAL-04 (~$56-$176)"),
     ("Brand", "Network + show cover art and sonic logo", 500, "(inference)"),
     ("Admin", "Domain registration (year 1)", 20, "(inference)"),
     ("Voice", "Voice design / pronunciation dictionaries setup", 0, "Included in ElevenLabs plan"),
@@ -344,6 +353,16 @@ def build():
     for j, v in enumerate(OVERAGE_PER_1K):
         inp(ws, f"{get_column_letter(2 + j)}{r}", v, USD2)
     A["overage_row"] = r
+    r += 1
+    ws.cell(row=r, column=1, value="Share of minutes on secondary engine (hybrid)")
+    for j, v in enumerate(SECONDARY_SHARE):
+        inp(ws, f"{get_column_letter(2 + j)}{r}", v, PCT)
+    A["secondary_row"] = r
+    r += 1
+    ws.cell(row=r, column=1, value="ElevenLabs Startup Grant credits / month (0 unless awarded)")
+    for j, v in enumerate(GRANT_CREDITS):
+        inp(ws, f"{get_column_letter(2 + j)}{r}", v, NUM)
+    A["grant_row"] = r
 
     r += 2
     ws.cell(row=r, column=1, value="Revenue rates by case").font = F_BOLD
@@ -410,8 +429,8 @@ def build():
         llm = (f"={A['llm_base']}*{AS}!D{t}*(1-{A['cache_savings']})*(1-{AS}!E{t}*{A['batch_discount']})"
                f"*(1+{A['rewrite_rate']}*{A['rewrite_share']})")
         calc(ue, f"C{r}", llm, USD2)
-        eff = f"INDEX({SC}!$C$30:$F$30,{A['ue_scen']})"   # effective $ per credit row on Scenarios
-        calc(ue, f"D{r}", f"=B{r}*{A['chars_per_min']}*{A['credits_per_char']}*{eff}", USD2)
+        eff = f"INDEX({SC}!$C$30:$F$30,{A['ue_scen']})"   # effective voice $ per audio minute (Scenarios row 30)
+        calc(ue, f"D{r}", f"=B{r}*{eff}", USD2)
         calc(ue, f"E{r}", f"=C{r}+D{r}", USD2, bold=True)
         rev_dl = f"={AS}!F{t}*{A['rev']['cpm']}/1000*{A['rev']['fill']}*{A['rev']['share']}"
         calc(ue, f"F{r}", rev_dl, '$#,##0.0000')
@@ -463,8 +482,10 @@ def build():
     put_row(row, "Audio minutes / month", lambda j, col: "=" + mins.format(col=col), NUM)
     minutes_row = row
     row += 1
-    put_row(row, "Voice credits needed / month",
-            lambda j, col: f"={col}{minutes_row}*{A['chars_per_min']}*{A['credits_per_char']}", NUM)
+    put_row(row, "ElevenLabs credits needed / month (after hybrid share, overhead, grant)",
+            lambda j, col: f"=MAX(0,{col}{minutes_row}*(1-{AS}!{get_column_letter(2 + j)}${A['secondary_row']})"
+                           f"*{A['chars_per_min']}*{A['credits_per_char']}*{A['rerender']}"
+                           f"-{AS}!{get_column_letter(2 + j)}${A['grant_row']})", NUM)
     credits_row = row
     # row 26..30 voice cost block — keep effective-rate row at 30 (Unit Economics references it)
     row = 26
@@ -480,11 +501,12 @@ def build():
     over_row = row
     row = 29
     put_row(row, "Voice (ElevenLabs) cost / month", lambda j, col:
-            f"={col}{price_row}+{col}{over_row}/1000*{AS}!{get_column_letter(2 + j)}${A['overage_row']}", USD, bold=True)
+            f"={col}{price_row}+{col}{over_row}/1000*{AS}!{get_column_letter(2 + j)}${A['overage_row']}"
+            f"+{col}{minutes_row}*{AS}!{get_column_letter(2 + j)}${A['secondary_row']}*{A['secondary_rate']}", USD, bold=True)
     voice_row = row
     row = 30
-    put_row(row, "Effective $ per voice credit", lambda j, col:
-            f"=IF({col}{credits_row}=0,0,{col}{voice_row}/{col}{credits_row})", '$#,##0.000000')
+    put_row(row, "Effective voice $ per audio minute", lambda j, col:
+            f"=IF({col}{minutes_row}=0,0,{col}{voice_row}/{col}{minutes_row})", '$#,##0.0000')
     row = 31
     llm = "+".join(f"{{col}}{eps_rows[k]}*'Unit Economics'!$C${ue_rows[k]}" for k in eps_rows)
     put_row(row, "Claude API (agents + web search) / month", lambda j, col: "=" + llm.format(col=col), USD, bold=True)
@@ -512,9 +534,13 @@ def build():
             f"/1000*{A['rev']['cpm']}*{A['rev']['fill']}*{A['rev']['share']}", USD)
     ads_row = row
     row = 39
-    put_row(row, "Local sponsors (local + courts shows)", lambda j, col:
-            f"=({col}{shows_rows['local']}+{col}{shows_rows['courts']})*{AS}!{get_column_letter(2 + j)}${A['vol']['sponsors_per_local']}"
-            f"*{A['rev']['sponsor_rate']}", USD)
+    local_dl = (f"({{col}}{eps_rows['local']}*{AS}!$G${A['types']['local']}*{AS}!$F${A['types']['local']}"
+                f"+{{col}}{eps_rows['courts']}*{AS}!$G${A['types']['courts']}*{AS}!$F${A['types']['courts']})")
+    put_row(row, "Local sponsors (impressions sold + community packages)", lambda j, col:
+            f"={local_dl.format(col=col)}*{AS}!{get_column_letter(2 + j)}${A['dl_mult_row']}"
+            f"/1000*{A['rev']['sponsor_cpm']}*{A['rev']['sponsor_sold']}"
+            f"+({col}{shows_rows['local']}+{col}{shows_rows['courts']})"
+            f"*{AS}!{get_column_letter(2 + j)}${A['vol']['pkgs_per_local']}*{A['rev']['pkg_rate']}", USD)
     row = 40
     put_row(row, "B2B white-label briefs", lambda j, col:
             f"={AS}!{get_column_letter(2 + j)}${A['vol']['b2b_clients']}*{A['rev']['b2b_rate']}", USD)
