@@ -162,8 +162,8 @@ def cmd_recheck(args) -> int:
             print(f"opened  {cor.id}  episode {cor.episode_id}: {cor.description}")
         print(f"recheck done: {len(opened)} correction(s) opened for episodes of the last {args.days} day(s)")
         if args.apply:
-            applied = corrections.apply_open(store)
-            for ep in applied:
+            applied = {ep.id: ep for ep in corrections.apply_open(store)}
+            for ep in applied.values():
                 print(f"applied  {ep.id} is now {ep.status}")
             print(f"{len(applied)} episode(s) corrected; notes, feeds and trust logs updated")
         elif opened:

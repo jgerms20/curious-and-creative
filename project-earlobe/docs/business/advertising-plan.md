@@ -95,6 +95,8 @@ Columns are downloads per daily episode (F-AUD-03); 21.7 episodes a month.
 
 ## 5. Network-wide and category sponsors
 
+*Rates are hypotheses, as of Oct 2026 — verify before quoting.*
+
 | Offer | What it is | Price rule | When |
 |---|---|---|---|
 | Network Category Sponsor | One exclusive sponsor per category (bank, health system, real estate, auto, telecom, education) across every brand-safe show, 90-day minimum | Brand-safe monthly downloads x $35 / 1,000 x 1.25 *(inference)* | Sell when trailing 30-day brand-safe downloads pass about 25,000 *(inference)* |
@@ -187,7 +189,7 @@ Failure handling: if a read is not approved in time, the slot runs a house promo
 
 ## 11. 90-day sales plan: Columbia and Los Angeles
 
-Day 0 = first daily episode live. Owners are founders until the agents are built; assign one founder per market.
+Day 0 = first daily episode live. Owners are founders until the agents are built; assign one founder per market. *Rates as of Oct 2026 — verify before quoting.*
 
 | Phase | Columbia (Columbia Daily) | Los Angeles (LA Daily, History of Hollywood) | Both |
 |---|---|---|---|
