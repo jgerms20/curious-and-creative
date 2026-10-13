@@ -37,6 +37,7 @@ from earlobe.pipeline import COVERAGE, GATE, RUN_EVENT, TRUST, PipelineError
 from earlobe.publish import public_dir, trustlog
 from earlobe.schemas import RISK_FLAGS, AgentRun, Episode, Signal, make_id, validate
 from earlobe.store import AGENT_RUN, Store
+from earlobe.studio import mix, tts
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 WORKFLOWS = ROOT.parent / ".github" / "workflows"
@@ -53,12 +54,21 @@ LIVE_ENV = ["EARLOBE_MODEL_OPUS", "EARLOBE_MODEL_SONNET", "EARLOBE_MODEL_HAIKU",
 
 # ================================================================== helpers
 @pytest.fixture
-def data(tmp_path, monkeypatch):
+def real_data(tmp_path, monkeypatch):
     """A temp data dir, and an environment with no kill switch, no keys and no public base URL."""
     monkeypatch.setattr(config, "DATA_DIR", tmp_path / "data")
     for name in [*LIVE_ENV, killswitch.ENV_VAR]:
         monkeypatch.delenv(name, raising=False)
     return tmp_path / "data"
+
+
+@pytest.fixture
+def data(real_data, monkeypatch):
+    """real_data, with audio mixing on the no-ffmpeg path: a real mix (two loudness passes over minutes of
+    audio) takes about 20 seconds per episode here, so only test_dry_run_audio_is_a_real_mp3 pays for it."""
+    monkeypatch.setattr(mix, "have_ffmpeg", lambda: False)
+    monkeypatch.setattr(tts, "have_ffmpeg", lambda: False)
+    return real_data
 
 
 @pytest.fixture
@@ -173,7 +183,7 @@ def test_dry_run_publishes_a_full_episode(data, show_id):
 
 
 @needs_ffmpeg
-def test_dry_run_audio_is_a_real_mp3_of_the_reported_length(data):
+def test_dry_run_audio_is_a_real_mp3_of_the_reported_length(real_data):
     ep = pipeline.run_show("columbia-daily", dry_run=True)
     probe = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_name",
                             "-of", "json", ep.audio_path], capture_output=True, text=True, check=True)
@@ -655,6 +665,7 @@ def test_cli_recheck_dry_run_and_apply(data, capsys, monkeypatch):
 def test_python_dash_m_earlobe_runs(tmp_path):
     env = {k: v for k, v in os.environ.items() if k not in [*LIVE_ENV, killswitch.ENV_VAR]}
     env["EARLOBE_DATA_DIR"] = str(tmp_path / "d")
+    env["PATH"] = str(tmp_path / "no-tools")          # no ffmpeg: the mix takes the fast placeholder path
     listed = subprocess.run([sys.executable, "-m", "earlobe", "list-shows"], cwd=ROOT, env=env,
                             capture_output=True, text=True, timeout=60, check=False)
     assert listed.returncode == 0 and "columbia-daily" in listed.stdout
