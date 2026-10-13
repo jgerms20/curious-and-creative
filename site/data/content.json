@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T00:48:24Z",
+ "generated_at": "2026-10-13T14:21:26Z",
  "shows": [
   {
    "key": "ccpod",
@@ -62,8 +62,8 @@
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
    "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-05T17:39:00Z",
-   "count": 8
+   "latest": "2026-10-13T01:12:00Z",
+   "count": 9
   },
   {
    "key": "tmtt",
@@ -158,6 +158,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "brazil:3QvNoGZqpr58FDBARvnvXN",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#17 Por Que São Paulo Parece Mais Branca? Raça, Imigração e a Geografia do Brasil (Português)",
+   "date": "2026-10-13T01:12:00Z",
+   "duration": 1170,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
+   "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
+   "spotify_video": false
+  },
   {
    "id": "polymath:a6d13532 d0d1 4452 bb4d 909cee14ad04",
    "show": "polymath",
@@ -3743,8 +3756,8 @@
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 8,
-   "spotify_matches": 8
+   "episodes": 9,
+   "spotify_matches": 9
   },
   "tmtt": {
    "ok": true,
