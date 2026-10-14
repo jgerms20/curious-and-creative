@@ -1,0 +1,3838 @@
+{
+ "_readme": "Machine-readable agent roster (source: docs/blueprint/agent-catalog.md). scripts/build_agent_files.py renders agents/<desk>/<id>.md from this.",
+ "agents": [
+  {
+   "id": "network-director",
+   "name": "Network Director",
+   "desk": "command",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "always-on (dispatched per show cadence and per event)",
+   "mission": "Run every show end to end (sense, desk, write, verify, voice, publish) with no human in the loop, and stop cleanly when anything is unsafe.",
+   "description": "The orchestrator. For each show it checks the Kill Switch and the Budget Controller, pulls Signals for the show's market and beats, has the Story Desk cluster and score them, the Assignment Editor build the rundown, the Producer write and the trust loop decide. Only a PUBLISH decision moves on to Studio Voice, the mixer, the Publisher and the Feed Manager; HOLD schedules a re-check and KILL logs and stops. Every agent call is wrapped in an AgentRun envelope, so cost and provenance are recorded for every episode. It makes no editorial judgments of its own: it wires agents together through the contracts in schemas.py and enforces their order.",
+   "inputs": [
+    "config/shows.yaml",
+    "Scheduler dispatch (show_id, slot time)",
+    "event:desk.breaking",
+    "Kill Switch and Budget Controller state"
+   ],
+   "outputs": [
+    "Episode",
+    "AgentRun (one per agent call)",
+    "run summary in the store"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "single orchestrator; one run per show per cadence slot, shows run in parallel",
+   "code": "earlobe/pipeline.py (run_show, run_breaking, run_evergreen) + earlobe/cli.py",
+   "kpis": [
+    "on-time publish rate per show (target >= 98% of scheduled slots)",
+    "runs that end in a logged decision (target 100%: no silent failures)",
+    "median minutes from dispatch to published daily brief (target < 30)",
+    "cost per published episode vs the show's budget"
+   ]
+  },
+  {
+   "id": "programming-director",
+   "name": "Programming Director",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "weekly (Monday) + event:trend.brief",
+   "mission": "Decide what the network makes: which shows launch, grow, change or end, and the order markets roll out.",
+   "description": "Reads the week's InsightReport, TopicBriefs from the Trend Scout, cost per episode from the Finance Reporter and kill/correction rates from the trust log, then writes a one-page programming memo. It greenlights new shows from templates (a ShowSpec handed to the Show Launcher), pauses feeds that have run out of news or audience, and moves shows between waves in shows.yaml. Greenlights inside the approved monthly budget envelope go through automatically; anything that raises the envelope or opens a new market goes to Joshua and Janel as a one-line yes/no in the Chief of Staff brief. Decisions follow written rules (audience trend, cost per listener, source availability), so every call can be explained afterwards.",
+   "inputs": [
+    "InsightReport (proposed)",
+    "TopicBrief (proposed)",
+    "finance ledger",
+    "public trust log",
+    "config/shows.yaml"
+   ],
+   "outputs": [
+    "weekly programming memo",
+    "ShowSpec (proposed)",
+    "shows.yaml change requests (through the Release Guard)"
+   ],
+   "tools": [
+    "sql",
+    "web_search"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "launched shows still running after 90 days",
+    "network weekly listeners, week over week",
+    "cost per engaged listener by show",
+    "days from accepted TopicBrief to first episode"
+   ]
+  },
+  {
+   "id": "scheduler",
+   "name": "Scheduler",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "none",
+   "runs": "always-on (cron table + event bus)",
+   "mission": "Fire every show, sensor and back-office job at the right local time, and fire event-driven shows the moment their trigger lands.",
+   "description": "Turns each show's cadence in shows.yaml into concrete run times, computing UTC from local_time and tz instead of trusting fixed UTC crons. That matters right now: the current crons are fixed UTC, so when US daylight saving time ends on Nov 1, 2026 the 06:00 daily briefs would start landing at 05:00 local. It also dispatches event cadences (desk.breaking with its 30-minute minimum gap, case.development flashes), staggers jobs so API rate limits are not all hit in the same minute, and logs every dispatch so the Run Auditor can spot missed slots. v1 hosting is GitHub Actions schedules calling the CLI; the same dispatch table can move to a long-running worker later.",
+   "inputs": [
+    "config/shows.yaml cadences",
+    "agent cadences in this catalog",
+    "event bus"
+   ],
+   "outputs": [
+    "dispatch log",
+    "run requests to network-director"
+   ],
+   "tools": [
+    "ci",
+    "sql"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "missed or late dispatches (target 0 per week)",
+    "local-time accuracy across DST changes (target 100%)",
+    "event-to-dispatch latency for desk.breaking (target < 60 s)"
+   ]
+  },
+  {
+   "id": "budget-controller",
+   "name": "Budget / Cost Controller",
+   "desk": "command",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode (checked before every run and every rewrite loop)",
+   "mission": "Keep every show inside its daily dollar cap so a runaway loop can never burn the month's budget.",
+   "description": "within_budget(store, show_id, day) sums the day's AgentRun usd_estimate for the show and compares it with the cap in config/budgets.yaml. Over budget means the run is skipped and logged, not degraded: the network would rather miss an episode than ship a cheaper, less-checked one. Rewrite loops and breaking-lane HOLD re-checks count against the same cap, which bounds the worst case per show. Next increment: a network-wide monthly envelope and per-desk caps for the growth, revenue and business-ops agents.",
+   "inputs": [
+    "AgentRun records",
+    "config/budgets.yaml"
+   ],
+   "outputs": [
+    "allow / deny per run",
+    "event:budget.exceeded"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "network-director",
+   "instances": "one check per show per run; one cap per show",
+   "code": "earlobe/monitor/budget.py",
+   "kpis": [
+    "days any show exceeded its cap (target 0)",
+    "monthly forecast vs actual spend (within 10%)",
+    "runs skipped for budget (tracked; should trend to 0)"
+   ]
+  },
+  {
+   "id": "quota-sentinel",
+   "name": "Quota Sentinel",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "none",
+   "runs": "cron \"*/30 * * * *\" (every 30 min)",
+   "mission": "See vendor quota walls coming before they stop production.",
+   "description": "Budgets are dollars; quotas are hard walls. This agent tracks remaining ElevenLabs character credits, web-search counts, CourtListener rate limits, host storage and email-send limits, and projects when each runs out at the current burn rate. When a wall is less than 72 hours away it throttles in a fixed order: niche feeds first, then evergreen, then dailies, with The Breaking Desk throttled last. It raises event:quota.low for the Incident Commander and puts a line in the Chief of Staff brief.",
+   "inputs": [
+    "vendor usage endpoints",
+    "AgentRun records"
+   ],
+   "outputs": [
+    "quota forecast",
+    "throttle list",
+    "event:quota.low"
+   ],
+   "tools": [
+    "elevenlabs",
+    "host_api",
+    "sql"
+   ],
+   "reports_to": "budget-controller",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "episodes lost to an exhausted quota (target 0)",
+    "hours of warning before any wall (target >= 72)",
+    "forecast error on days-to-exhaustion"
+   ]
+  },
+  {
+   "id": "kill-switch",
+   "name": "Kill Switch",
+   "desk": "command",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode (checked at every stage boundary)",
+   "mission": "Stop one show or the whole network instantly, with one setting.",
+   "description": "killed(show_id) returns true when env EARLOBE_KILL is 'all' or lists the show, or when config/killswitch.yaml says so. The Network Director checks it before sensing, before voicing and before publishing, so a kill takes effect even mid-run. It is the founders' emergency brake and the one control that overrides everything else. Next increment: automatic trips by the Incident Commander under written conditions (for example two corrections on one show inside seven days, or a legal-threat notice), always logged with the reason.",
+   "inputs": [
+    "EARLOBE_KILL env",
+    "config/killswitch.yaml",
+    "Incident Commander trips (next)"
+   ],
+   "outputs": [
+    "killed true/false",
+    "kill log entry"
+   ],
+   "tools": [
+    "none"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "single; scope is 'all' or per show",
+   "code": "earlobe/monitor/killswitch.py",
+   "kpis": [
+    "episodes published while killed (target 0)",
+    "stages that ran after a kill was set (target 0)",
+    "automatic trips with a recorded reason (100%)"
+   ]
+  },
+  {
+   "id": "run-auditor",
+   "name": "Run Auditor / Observability",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on + cron \"0 11 * * *\" (daily digest)",
+   "mission": "Watch every run and say plainly when something drifts: cost, errors, latency or trust outcomes.",
+   "description": "Reads AgentRun logs, gate decisions and the trust log and keeps the network's health metrics: error rate per agent, tokens and dollars per episode, gate decision mix per show, rewrite loops used, HOLD counts, render failures. It flags anomalies against a rolling baseline, such as a show suddenly killing half its episodes, the verifier using twice its usual searches, or a sensor returning zero Signals. Detection is code; a Haiku-tier pass writes the plain-language daily ops digest. Its metrics are the evidence base for the Incident Commander, the Eval Steward and the public transparency report.",
+   "inputs": [
+    "AgentRun",
+    "GateDecision",
+    "trust log JSONL",
+    "dispatch log"
+   ],
+   "outputs": [
+    "daily ops digest",
+    "event:run.anomaly",
+    "metrics tables"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "anomalies caught before a listener or partner notices",
+    "false-alarm share of alerts (target < 20%)",
+    "digest delivered by 08:00 ET daily"
+   ]
+  },
+  {
+   "id": "incident-commander",
+   "name": "Incident Commander",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:run.failed, event:run.anomaly, event:quota.low, event:security.alert",
+   "mission": "When something breaks, recover automatically, fail safe, and write down what happened.",
+   "description": "Owns the failure playbook for a network with no human on call. It retries transient errors with backoff, routes around a dead source feed, re-renders after a TTS failure, and if an episode cannot be produced safely it skips the slot rather than publishing something degraded. It can trip the Kill Switch for a show under written conditions and posts a status line in the Chief of Staff brief. After every incident it writes a short postmortem (what failed, impact, fix, prevention) to the knowledge base.",
+   "inputs": [
+    "failure and anomaly events",
+    "AgentRun",
+    "runbooks"
+   ],
+   "outputs": [
+    "recovery actions",
+    "rule-based kill-switch trips",
+    "postmortem notes"
+   ],
+   "tools": [
+    "sql",
+    "ci",
+    "email"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "mean time to recovery",
+    "repeat incidents with the same cause (target 0)",
+    "postmortems written within 24 h (100%)"
+   ]
+  },
+  {
+   "id": "eval-steward",
+   "name": "Eval & Prompt Steward",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per change (any prompt, tier mapping or schema change) + weekly",
+   "mission": "Prove the agents still do their jobs before any prompt or model change reaches production.",
+   "description": "Keeps golden test sets for every LLM agent, weighted toward the trust stack: claims known true and known false, wire copies posing as independent sources, sealed-case and minor-naming traps, loaded-language samples. It runs them on any change to a system prompt, the tier mapping (EARLOBE_MODEL_* env) or a schema, and blocks the rollout through the Release Guard if a catch rate drops. It keeps the agents/*.md system prompts as versioned files, so every published episode can be traced to the exact prompt versions that made it. Scoring is deterministic; the Sonnet tier assembles new cases and summarizes regressions.",
+   "inputs": [
+    "agent system prompts",
+    "golden sets",
+    "Hoax Red Team cases"
+   ],
+   "outputs": [
+    "eval report per change",
+    "pass/block to release-guard"
+   ],
+   "tools": [
+    "ci",
+    "sql"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "verifier catch rate on known-false claims (target >= 99%)",
+    "regressions that reached production (target 0)",
+    "gate rules covered by at least one golden case (100%)"
+   ]
+  },
+  {
+   "id": "release-guard",
+   "name": "Build & Release Guard",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "none",
+   "runs": "per change (CI) + nightly",
+   "mission": "Nothing reaches production unless tests pass, configs are valid and a full dry run succeeds.",
+   "description": "Runs pytest, validates every config file (each show's market, hosts and lane exist; every persona has a voice env name; every market has a sources file) and checks schemas.py against json-contracts.md. It then runs `python -m earlobe run --show <id> --dry-run` for every enabled show. Config changes proposed by other agents (Programming Director, Source Ledger Keeper, Show Launcher) merge only when it passes. Nightly it repeats the suite so drift in external feeds shows up before the morning runs.",
+   "inputs": [
+    "code and config changes",
+    "Eval Steward result"
+   ],
+   "outputs": [
+    "pass/fail with reasons",
+    "nightly health report"
+   ],
+   "tools": [
+    "ci",
+    "ffmpeg"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "broken changes reaching a scheduled run (target 0)",
+    "config errors caught before merge",
+    "CI runtime (keep under 10 min)"
+   ]
+  },
+  {
+   "id": "security-sentinel",
+   "name": "Security Sentinel",
+   "desk": "command",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on (inline screen on ingest) + weekly audit",
+   "mission": "Keep secrets safe, and keep hostile text in the news from steering the agents.",
+   "description": "Every Signal and fetched page is untrusted text, and a press release or web page can hide instructions aimed at AI agents. This agent screens ingested content for prompt-injection patterns, quarantines suspicious items, makes sure source text is fenced as data in every prompt, and alerts when an agent's output shifts after reading a source. It also scans the repo for secrets, audits dependencies, reviews which API keys exist and who can use them, and flags unusual API usage that could mean a leaked key. Detection is code plus a Haiku-tier classifier.",
+   "inputs": [
+    "Signal",
+    "fetched pages",
+    "repo",
+    "API usage logs"
+   ],
+   "outputs": [
+    "quarantine list",
+    "security findings",
+    "event:security.alert"
+   ],
+   "tools": [
+    "ci",
+    "sql"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "red-team injections that reach a writer or checker unflagged (target 0)",
+    "secrets committed (target 0)",
+    "hours to rotate a suspected leaked key (target < 2)"
+   ]
+  },
+  {
+   "id": "beat-agent",
+   "name": "Beat Agent",
+   "desk": "sensors",
+   "status": "built",
+   "model_tier": "sonnet",
+   "runs": "always-on (poll every 15 min; beat memo twice daily)",
+   "mission": "Obsess over one market: know every outlet, agency and storyline, and surface every signal that matters before the morning brief.",
+   "description": "One instance per market, configured from config/markets.yaml and config/sources/<market>.yaml; it leads that market's other sensors (press releases, meetings, records, courts). v1 (built) is run_sensors(): it polls the market's news feeds and official feeds, runs one Google News RSS search per beat, adds GDELT for the national market and federal dockets where the beats call for them, and returns deduped Signals with outlet, tier and beat. The next increment adds the Sonnet-tier beat memo: what is moving, what is scheduled today (meetings, hearings, openings), which storylines are open and which sources went quiet. It also proposes new sources for its market file, so coverage widens over time instead of staying fixed at launch.",
+   "inputs": [
+    "config/sources/<market>.yaml",
+    "Google News RSS",
+    "GDELT (national)",
+    "Signals from the market's other sensors"
+   ],
+   "outputs": [
+    "Signal",
+    "beat memo (proposed)",
+    "source suggestions"
+   ],
+   "tools": [
+    "rss",
+    "gdelt",
+    "courtlistener",
+    "web_search"
+   ],
+   "reports_to": "assignment-editor",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); plus one national instance (national/global); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "earlobe/sensors/__init__.py (run_sensors) + rss.py, press.py, gnews.py, gdelt.py, base.py",
+   "kpis": [
+    "stories later covered by 2+ local outlets that it surfaced first or in the same hour",
+    "signal yield: Signals per day that become assigned stories",
+    "minutes from source publication to Signal (target < 20)",
+    "active sources per market (growing)"
+   ]
+  },
+  {
+   "id": "court-watch",
+   "name": "Court Watch",
+   "desk": "sensors",
+   "status": "built",
+   "model_tier": "haiku",
+   "runs": "always-on (every 30 min on court days)",
+   "mission": "Never miss a filing, ruling or sentencing that matters in the courts we cover.",
+   "description": "Federal coverage is built: recent_dockets() reads CourtListener v4 for each market's federal courts (dsc, cacd, nysd, nyed, ilnd, plus scotus) with COURTLISTENER_TOKEN. City instances read state and county public calendars and indexes (Richland County Public Index, LA Superior Court portal, NY eCourts/WebCrims, Cook County Clerk) where their terms allow, as cleared by Compliance & Platform Policy Watch. A Haiku-tier pass classifies each entry (new case, ruling, plea, sentencing, hearing set, dismissal) and flags notable parties. Court records are tier-1 sources, but sealed matters, juvenile cases and victim identities are dropped at intake, before any writer sees them.",
+   "inputs": [
+    "CourtListener v4 API",
+    "state and county court portals",
+    "config/markets.yaml courts"
+   ],
+   "outputs": [
+    "Signal (kind=court_record, tier 1)"
+   ],
+   "tools": [
+    "courtlistener",
+    "web_fetch"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per city court system: Richland County SC, LA Superior Court (wave 0); NY state courts, Cook County Circuit Court (wave 1); plus one federal instance on CourtListener covering every market's district courts and scotus; one more per new market",
+   "code": "earlobe/sensors/courtlistener.py",
+   "kpis": [
+    "notable rulings caught the same day (target >= 95% on weekly audit)",
+    "misclassified docket entries",
+    "juvenile or sealed items reaching a writer (target 0)"
+   ]
+  },
+  {
+   "id": "case-development-watcher",
+   "name": "Case Development Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on (every 30 min)",
+   "mission": "Follow each tracked case across every court and agency, and fire a flash the moment it moves.",
+   "description": "Holds the list of cases the Case Tracker follows (config/cases.yaml, proposed): docket numbers, jurisdictions, agencies and party names. It watches those dockets, prosecutors' and police press pages and news searches, and classifies each hit as a development (charge, plea, ruling, verdict, sentencing, new filing) or noise. Real developments emit event:case.development, which the Scheduler turns into a Case Tracker flash; smaller ones feed the weekly best-of-last-7-days episode. Every development carries the primary record, so the strict lane's official-source rule can be met.",
+   "inputs": [
+    "config/cases.yaml (proposed)",
+    "CourtListener dockets",
+    "agency press pages",
+    "news search"
+   ],
+   "outputs": [
+    "Signal",
+    "event:case.development"
+   ],
+   "tools": [
+    "courtlistener",
+    "rss",
+    "web_fetch"
+   ],
+   "reports_to": "case-file-keeper",
+   "instances": "single agent; one watch per tracked case",
+   "code": "—",
+   "kpis": [
+    "developments flashed within 60 min of the record posting",
+    "false flashes (target 0)",
+    "developments backed by a primary record (target 100%)"
+   ]
+  },
+  {
+   "id": "press-release-watcher",
+   "name": "Press-Release Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on (poll every 15 min)",
+   "mission": "Catch every official announcement in each market minutes after it posts.",
+   "description": "Watches official newsrooms: city and county governments, police and sheriff, fire, school districts, universities, hospitals, utilities and the largest employers, plus geo-filtered press-release wires. A v1 official-feed poller already exists (earlobe/sensors/press.py, poll_press; not yet in the module map); this agent adds pages without feeds, agency email lists, the Haiku-tier classification of beat, newsworthiness and embargo times, and newsroom discovery. Government releases enter as tier-1 Signals; company releases count only as 'the company said'. It also notices when an agency that usually posts goes quiet, which the Beat agent treats as a signal in itself.",
+   "inputs": [
+    "newsroom list in config/sources/<market>.yaml",
+    "agency RSS, email lists and pages",
+    "press-release wires"
+   ],
+   "outputs": [
+    "Signal (kind=press_release)"
+   ],
+   "tools": [
+    "rss",
+    "web_fetch",
+    "email"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "median minutes from post to Signal (target < 15)",
+    "official releases captured (weekly audit sample, target >= 95%)",
+    "precision: Signals marked newsworthy that were used"
+   ]
+  },
+  {
+   "id": "public-meetings-watcher",
+   "name": "Public Meetings Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "always-on (agendas daily; minutes and video after each meeting)",
+   "mission": "Read every agenda and set of minutes, so the network knows what government is about to do and what it just did.",
+   "description": "Watches agenda platforms (Legistar, Granicus, CivicPlus, BoardDocs, PrimeGov and similar) for each governing body in a market. When an agenda posts it pulls out the items that matter (votes, contracts, rezonings, budgets, appointments, public hearings) into a meeting preview; after the meeting it reads the minutes and, where captions exist, the meeting video transcript to record outcomes and roll-call votes. Agenda items carry dates, so the Follow-Up Editor can schedule coverage. This is the raw material for the City Council Watch and School Board Watch feeds.",
+   "inputs": [
+    "agenda and minutes feeds and PDFs",
+    "meeting video captions where published"
+   ],
+   "outputs": [
+    "Signal (kind=official_data)",
+    "MeetingDigest (proposed)"
+   ],
+   "tools": [
+    "rss",
+    "web_fetch"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per governing body per market, e.g. Columbia City Council, Richland County Council, Lexington County Council, Richland One and Richland Two school boards; LA City Council, LA County Board of Supervisors, LAUSD board, LA Metro board; then each new market's bodies",
+   "code": "—",
+   "kpis": [
+    "agendas captured within 2 h of posting (target >= 95%)",
+    "vote outcomes recorded correctly (audit sample, target 100%)",
+    "meeting-sourced stories per week per market"
+   ]
+  },
+  {
+   "id": "records-filings-watcher",
+   "name": "Records & Filings Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "cron \"0 */4 * * *\" (every 4 h)",
+   "mission": "Turn public paperwork into early stories: permits, business filings, licenses, layoffs and big property deals.",
+   "description": "Polls records that move before the news does: building and demolition permits, rezoning applications, new business registrations with the Secretary of State, liquor-license applications, food-safety inspection results, WARN layoff notices, large property transfers and SEC filings by companies based in the market. A Haiku-tier pass scores each record against per-market thresholds (project value, employer size, notable names). Results feed the daily briefs and the hyper-local niche feeds (Open & Shut, Permit Pulse, Main Street Ledger). New-business filings also go to the Sponsor Prospector as leads.",
+   "inputs": [
+    "city and county permit portals and open data",
+    "Secretary of State filings",
+    "state WARN notice pages",
+    "SEC EDGAR"
+   ],
+   "outputs": [
+    "Signal (kind=official_data, tier 1)",
+    "sponsor leads"
+   ],
+   "tools": [
+    "web_fetch",
+    "rss",
+    "open_data_api"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "records-sourced stories per week",
+    "big local openings and closings we reported before other outlets",
+    "leads passed to the Sponsor Prospector that convert"
+   ]
+  },
+  {
+   "id": "legislature-watcher",
+   "name": "Legislature Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on in session (every 30 min); weekly out of session",
+   "mission": "Track the bills, votes and hearings in statehouses and Congress that affect our markets.",
+   "description": "Columbia is South Carolina's capital, so the statehouse is a local beat there, not a national one. The agent reads state legislature data (official legislature sites, or bill-tracking APIs where licensed), Congress.gov and the Federal Register, and classifies bills and rules by beat and by the markets they affect. It produces status-change Signals (filed, out of committee, passed, signed, vetoed) and a weekly 'what moved' list. Vote tallies come from official roll calls only.",
+   "inputs": [
+    "state legislature sites and APIs",
+    "Congress.gov API",
+    "Federal Register API"
+   ],
+   "outputs": [
+    "Signal (kind=official_data)",
+    "weekly bill tracker"
+   ],
+   "tools": [
+    "web_fetch",
+    "rss"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per state legislature: South Carolina, California (wave 0); New York, Illinois (wave 1); one federal instance; one per new state",
+   "code": "—",
+   "kpis": [
+    "status changes captured the same day",
+    "tracked bills that later made news (relevance)",
+    "wrong vote tallies (target 0)"
+   ]
+  },
+  {
+   "id": "civic-data-watcher",
+   "name": "Civic Data Watcher",
+   "desk": "sensors",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "cron \"0 9 * * *\" (daily) + weekly deltas",
+   "mission": "Find stories in the numbers: 311 calls, crime data, transit performance, inspections and budgets.",
+   "description": "Reads open data portals (Socrata and ArcGIS sites such as LA's, NYC's and Chicago's) and transit feeds (GTFS-realtime alerts and on-time data for LA Metro, CTA and MTA). Change detection is code: week-over-week shifts, records broken, outliers by neighborhood. A Sonnet-tier pass writes a short data note with the method and the caveats (preliminary crime data, changes in reporting) so writers don't overclaim. It powers the Transit Minute and Cost of Living Watch feeds and data segments in the dailies.",
+   "inputs": [
+    "open data portals",
+    "GTFS-realtime feeds"
+   ],
+   "outputs": [
+    "Signal (kind=official_data)",
+    "data note with method"
+   ],
+   "tools": [
+    "open_data_api",
+    "sql"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per market with a usable open data portal (los-angeles, new-york, chicago first)",
+   "code": "—",
+   "kpis": [
+    "data notes that became stories",
+    "method errors caught by the checkers (trending to 0)",
+    "watched datasets refreshed on schedule"
+   ]
+  },
+  {
+   "id": "weather-hazard-watcher",
+   "name": "Weather & Hazard Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "none",
+   "runs": "always-on (alerts every 5 min; forecasts 4x daily)",
+   "mission": "Bring official weather, air, fire and earthquake information into the network the moment it is issued.",
+   "description": "Uses official sources only: National Weather Service alerts and forecasts, National Hurricane Center advisories, USGS earthquake feeds, AirNow air quality, wildfire incident feeds, and a licensed pollen source (vendor to be chosen; verify licensing). NWS feeds listed in a market's sources file are already polled as official_data by sensors/press.py; this agent adds thresholds, the other feeds and the structured output. Warnings above set thresholds become tier-1 Signals with official confirmation, which the Breaking Detector can use directly. It also writes the structured weather block every daily brief reads, so hosts never improvise a forecast.",
+   "inputs": [
+    "NWS API",
+    "NHC advisories",
+    "USGS feeds",
+    "AirNow",
+    "wildfire incident feeds",
+    "pollen source (TBD)"
+   ],
+   "outputs": [
+    "Signal (tier 1, official_confirmation)",
+    "weather block per market"
+   ],
+   "tools": [
+    "rss",
+    "web_fetch"
+   ],
+   "reports_to": "breaking-detector",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); plus one national instance (national/global); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "minutes from NWS warning to Signal (target < 5)",
+    "weather blocks ready before every daily run (100%)",
+    "hazard warnings missed (target 0)"
+   ]
+  },
+  {
+   "id": "social-signal-watcher",
+   "name": "Social Signal Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on",
+   "mission": "Hear what is happening on social platforms early, without ever treating a post as proof.",
+   "description": "Monitors official agency accounts (police, fire, emergency management, city halls, school districts), open social feeds and local community forums where the platform's terms allow (cleared by Compliance & Platform Policy Watch). Posts enter as tier-4 Signals that cannot corroborate anything on their own; a post from an account on the Source Ledger's registry of verified official accounts counts as an on-record official statement. A Haiku-tier classifier tags beat, urgency and known hoax patterns. Its value is speed: it tells the Beat agent and the Breaking Detector where to look.",
+   "inputs": [
+    "official agency accounts",
+    "open social feeds",
+    "community forums (where terms allow)"
+   ],
+   "outputs": [
+    "Signal (tier 4 unless from a verified official account)"
+   ],
+   "tools": [
+    "social_api",
+    "rss"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); plus one national instance (national/global); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "lead time vs the first professional outlet report",
+    "social leads later confirmed by tier 1-3 sources",
+    "hoaxes that reached a script (target 0)"
+   ]
+  },
+  {
+   "id": "breaking-detector",
+   "name": "Breaking Detector",
+   "desk": "sensors",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "always-on (every 5 min via run_breaking / breaking-scan)",
+   "mission": "Decide, with fixed rules, when a national or global event is big enough for The Breaking Desk.",
+   "description": "detect(stories, window_minutes=60) flags a story when two things hold. Speed: at least 3 independent tier 1-2 outlets inside the window, or official confirmation plus 2. Class: the headline reads as one of The Breaking Desk's event classes (major death of a prominent figure, attack or attempt, disaster, Supreme Court, federal government, space, mega sports, mega business, world). Independence uses owner groups, so one wire story republished everywhere does not trigger it; the rules favor precision, because a missed story is caught on the next scan while a false one costs a gated episode. A hit fires event:desk.breaking for The Breaking Desk only; local dailies pick a story up only when the Localizer finds a real local angle.",
+   "inputs": [
+    "Story",
+    "Signal (tier-aware count)",
+    "config/owners.yaml",
+    "GDELT velocity",
+    "official Signals"
+   ],
+   "outputs": [
+    "Story (breaking=true, beat=event class)",
+    "event:desk.breaking"
+   ],
+   "tools": [
+    "gdelt",
+    "rss"
+   ],
+   "reports_to": "showrunner-breaking",
+   "instances": "single national instance; per-spin-off thresholds (sports, courts, space) as those feeds launch",
+   "code": "earlobe/desk/breaking.py (+ earlobe/sensors/gdelt.py velocity)",
+   "kpis": [
+    "major events detected (recall on weekly audit)",
+    "false triggers that ended in KILL",
+    "minutes from the first tier 1-2 report to trigger"
+   ]
+  },
+  {
+   "id": "archive-miner",
+   "name": "Archive Miner",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly per series + on-demand from showrunner-evergreen",
+   "mission": "Dig public archives for true, sourced, rights-clear stories for the evergreen series.",
+   "description": "Searches digitized primary sources: Library of Congress collections (including Chronicling America newspapers), the National Archives catalog, Internet Archive and HathiTrust public-domain texts, Calisphere, the Media History Digital Library for old Hollywood trade papers, and city, university and state digital collections for hometown history. For each episode idea it returns an archive pack: the primary documents, dates, people and places, conflicting accounts, and the rights status of each item. Encyclopedias and blogs are tier-4 leads used only to find primary records, never as sources. Rights flags on every item keep anything copyrighted from being read on air.",
+   "inputs": [
+    "series outline from showrunner-evergreen",
+    "archive APIs and catalogs"
+   ],
+   "outputs": [
+    "archive pack (Source list, kind=archive)",
+    "episode idea list"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch"
+   ],
+   "reports_to": "showrunner-evergreen",
+   "instances": "one per evergreen series: history-of-hollywood (wave 0); hometown history per market and music history series (next)",
+   "code": "—",
+   "kpis": [
+    "episode claims backed by a primary document",
+    "archive packs that pass the archive lane without a rewrite",
+    "rights problems found after publish (target 0)"
+   ]
+  },
+  {
+   "id": "cold-case-archivist",
+   "name": "Cold-Case Archivist",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "weekly + on-demand",
+   "mission": "Build careful, fully sourced case files for unsolved cases where telling the story can help.",
+   "description": "Mines NamUs public case data, state and local police cold-case pages, state attorney-general cold-case units, FBI public appeals, the Charley Project and the Doe Network (leads only), and newspaper archives. It favors cases where investigators are publicly asking for tips, so every Cold Case Files episode can end with the official tip line. Each dossier has a timeline with a source for every entry, what investigators have said on record, and a list of rumors that must stay out. Hard rules: never name an uncharged person as a suspect, no graphic detail beyond the official record, and a sensitivity note for the Harm & Sensitivity Reviewer.",
+   "inputs": [
+    "cold-case databases and agency pages",
+    "newspaper archives"
+   ],
+   "outputs": [
+    "case dossier (CaseFile, proposed)",
+    "Source list"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch"
+   ],
+   "reports_to": "showrunner-evergreen",
+   "instances": "single national instance; regional spin-offs (Carolinas, Southern California) draw on it",
+   "code": "—",
+   "kpis": [
+    "episodes that carry an active official tip line",
+    "dossier claims backed by on-record sources (target 100%)",
+    "legal or harm issues raised at the gate (trending to 0)"
+   ]
+  },
+  {
+   "id": "trend-scout",
+   "name": "Trend & Search-Demand Scout",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly + always-on demand alerts",
+   "mission": "Find topics people are searching for that nobody serves well, and prove it with data.",
+   "description": "Measures demand from public signals: search trend data, Wikipedia pageview trends, podcast chart categories, YouTube search suggestions and conversation volume in GDELT. It checks supply too: how many podcasts already cover the topic, how recently and how well rated. Then it checks feasibility: are there enough public, verifiable sources to keep a feed going for months? The output is a TopicBrief with a recommended template, cadence and market, which the Programming Director accepts or rejects.",
+   "inputs": [
+    "search trend data",
+    "Wikipedia pageviews API",
+    "podcast charts",
+    "GDELT"
+   ],
+   "outputs": [
+    "TopicBrief (proposed)"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "gdelt"
+   ],
+   "reports_to": "programming-director",
+   "instances": "single, with a per-market pass for local niche ideas",
+   "code": "—",
+   "kpis": [
+    "TopicBriefs greenlit",
+    "shows launched from its briefs that hit their 90-day audience target",
+    "briefs rejected for lack of sources (should fall over time)"
+   ]
+  },
+  {
+   "id": "sports-watcher",
+   "name": "Sports Watcher",
+   "desk": "sensors",
+   "status": "future",
+   "model_tier": "haiku",
+   "runs": "always-on in season",
+   "mission": "Capture scores, schedules and big sports news for the sports spin-offs and high school feeds.",
+   "description": "Reads official league, conference, school and state athletic association sources for schedules, final scores and announcements, plus team and league releases for trades, sales and coaching changes. High school results come only from official association and school sources, and students are named only as those sources publish them, under the Legal Screener's rules on minors. Real-time score data is often licensed, so sources are cleared by Compliance first (inference). It feeds The Breaking Desk: Sports, the Friday Night Scoreboard feeds and the dailies' sports beat.",
+   "inputs": [
+    "official league, school and association sites",
+    "team press releases"
+   ],
+   "outputs": [
+    "Signal",
+    "scoreboard table"
+   ],
+   "tools": [
+    "rss",
+    "web_fetch"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per market for local and high school sports; one national instance for the sports breaking spin-off",
+   "code": "—",
+   "kpis": [
+    "final scores published accurately (target 100%)",
+    "minutes from final whistle to Signal",
+    "licensing issues (target 0)"
+   ]
+  },
+  {
+   "id": "elections-watcher",
+   "name": "Elections Watcher",
+   "desk": "sensors",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on on election nights; daily otherwise",
+   "mission": "Report official election information only: who is running, who funds them, and what the official count says.",
+   "description": "Reads election authority sites (county and state election commissions, for example the South Carolina Election Commission and the LA County Registrar-Recorder/County Clerk), candidate filings and campaign finance data (FEC API, state ethics commissions). On election nights it reports official tallies with a timestamp and the share of precincts reporting, and never projects a winner; a race is called on air only when an official source, or a named and licensed call source, has called it. The general election is Nov 3, 2026: if this agent is not live and eval-tested by then, The Breaking Desk does not cover race results that night. Election stories run in the strict lane by default.",
+   "inputs": [
+    "election authority results pages",
+    "FEC API",
+    "state campaign finance data",
+    "candidate filings"
+   ],
+   "outputs": [
+    "Signal (kind=official_data)",
+    "results table"
+   ],
+   "tools": [
+    "web_fetch",
+    "rss"
+   ],
+   "reports_to": "beat-agent",
+   "instances": "one per market's election authorities plus one national federal-filings instance",
+   "code": "—",
+   "kpis": [
+    "results matching the official source (target 100%)",
+    "projection language on air (target 0)",
+    "results refreshed within 10 min of an official update"
+   ]
+  },
+  {
+   "id": "story-desk",
+   "name": "Story Desk",
+   "desk": "editorial",
+   "status": "built",
+   "model_tier": "haiku",
+   "runs": "per-episode + always-on for the national/breaking scan",
+   "mission": "Turn a flood of raw Signals into a short list of distinct, scored stories.",
+   "description": "cluster(signals, owners) groups Signals about the same event using title shingles and a time window, and computes independent_outlets with owner groups from config/owners.yaml, so five syndicated copies of one wire story count once. score(story, show_cfg) gives a heuristic newsworthiness score from beat fit and recency; an optional Haiku-tier triage (StoryTriage contract) refines the headline, summary, beat, risk flags and entities. Risk flags set here (crime, minor, victim, election and the rest) later decide which trust lane a story goes through.",
+   "inputs": [
+    "Signal",
+    "config/owners.yaml",
+    "show config"
+   ],
+   "outputs": [
+    "Story",
+    "StoryTriage"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "assignment-editor",
+   "instances": "one pass per show run; the national pass runs continuously for breaking",
+   "code": "earlobe/desk/cluster.py, independence.py, score.py",
+   "kpis": [
+    "duplicate stories in one rundown (target 0)",
+    "cluster precision on weekly audit sample",
+    "risk flags missed that a checker later caught"
+   ]
+  },
+  {
+   "id": "assignment-editor",
+   "name": "Assignment Editor",
+   "desk": "editorial",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode",
+   "mission": "Give every show the right stories: right market, right beat, right number, right lane.",
+   "description": "assign(stories, shows) matches stories to shows by market and beat, enforces each show's max_stories, and picks the lane: crime, court and named-private-person stories move to the strict lane, breaking stories to the breaking lane. National events go to The Breaking Desk and never get pushed into every daily; a daily carries one only when the Localizer has found a local angle. It is deterministic, so the same inputs always produce the same rundown.",
+   "inputs": [
+    "Story",
+    "config/shows.yaml"
+   ],
+   "outputs": [
+    "assignments: show_id -> [Story] with lane"
+   ],
+   "tools": [
+    "none"
+   ],
+   "reports_to": "network-director",
+   "instances": "single; runs per show slot",
+   "code": "earlobe/desk/assign.py",
+   "kpis": [
+    "stories assigned to the wrong market or beat (audit, target 0)",
+    "rundowns under-filled while usable stories went unused",
+    "lane misroutes caught later at the gate"
+   ]
+  },
+  {
+   "id": "researcher",
+   "name": "Researcher",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "per-episode (deeper packs on-demand)",
+   "mission": "Hand the Producer the context and primary records behind every story.",
+   "description": "v1 builds a basic pack from each story's own sources (producer/research_pack.py). The Researcher upgrades that with an Opus-tier research call: background, prior coverage, the primary documents (filings, agendas, data), numbers with their source, who the named people are and their roles, and the open questions. Every item becomes a Source with tier, owner group and syndication origin, so the writer's sourcing is clean before the blind verifier ever runs. It summarizes in its own words and never copies article text.",
+   "inputs": [
+    "Story",
+    "Signal sources",
+    "archive packs and case files"
+   ],
+   "outputs": [
+    "ResearchPack (proposed contract; v1 is a dict)",
+    "Source"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "courtlistener"
+   ],
+   "reports_to": "producer",
+   "instances": "one per story per run (parallel)",
+   "code": "—",
+   "kpis": [
+    "script claims supported by the pack at first draft",
+    "REWRITE loops caused by missing sourcing",
+    "primary (tier-1) sources per story"
+   ]
+  },
+  {
+   "id": "producer",
+   "name": "Producer / Scriptwriter",
+   "desk": "editorial",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "per-episode (and per REWRITE loop)",
+   "mission": "Write the episode script: clear, conversational, and every factual line mapped to its claims.",
+   "description": "write_script(...) turns the rundown and research pack into a Script in the show's format, with the show's personas, segments (cold open, intro, body, kicker, outro) and target length. Every body line carries claim_ids, which is what makes the whole trust stack possible. On REWRITE it receives the gate's rewrite_instructions and revises only what was flagged. It writes for the ear: short sentences, attribution up front ('police said'), and a plain line on why each story matters.",
+   "inputs": [
+    "Story",
+    "ResearchPack",
+    "show config and bible",
+    "rundown",
+    "GateDecision.rewrite_instructions on revisions"
+   ],
+   "outputs": [
+    "Script (with Claim map)"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "showrunner of the episode's format (assignment-editor until showrunners ship)",
+   "instances": "one per episode run",
+   "code": "earlobe/producer/writer.py",
+   "kpis": [
+    "first-draft PUBLISH rate",
+    "average rewrite loops per episode",
+    "episodes inside target_minutes (target >= 95%)",
+    "listener completion rate"
+   ]
+  },
+  {
+   "id": "copy-editor",
+   "name": "Copy Editor (audio)",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode (after the Producer, before the Claim Extractor)",
+   "mission": "Make every script sound right out loud without changing what it claims.",
+   "description": "Line-edits for the ear: numbers written the way they are spoken, full names and titles on first reference and short names after, no tongue-twisters, no sentence a listener has to hear twice. It flags unfamiliar names for the Pronunciation Keeper and trims to the target length. It cannot add facts; if an edit changes the meaning of a claim, it keeps the claim_id and marks the claim for re-check so the trust loop sees the new wording. It maintains the network's audio style guide.",
+   "inputs": [
+    "Script",
+    "audio style guide",
+    "pronunciation lexicon"
+   ],
+   "outputs": [
+    "Script (edited)",
+    "pronunciation requests"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "producer",
+   "instances": "one per episode run",
+   "code": "—",
+   "kpis": [
+    "QA re-renders caused by script wording",
+    "duration accuracy vs target",
+    "claims altered without a re-check flag (target 0)"
+   ]
+  },
+  {
+   "id": "copywriter",
+   "name": "Copywriter",
+   "desk": "editorial",
+   "status": "built",
+   "model_tier": "sonnet",
+   "runs": "per-episode (after PUBLISH)",
+   "mission": "Write the words that get an episode chosen: title, description, hooks, show notes and social posts.",
+   "description": "write_copy(script, show_cfg, llm) returns the Copy contract: title, description, show_notes_md, social_posts and keywords. It works from a copywriting playbook: clear beats clever, the most specific fact goes in the title, the hook is the first line of the description, no clickbait, and no claim that is not in the gated script. The Headline Tester's results feed back into the playbook every week. Copy is written only after the gate passes, so it can never promise something the trust stack cut.",
+   "inputs": [
+    "Script (gated)",
+    "GateDecision",
+    "copy playbook",
+    "headline test results"
+   ],
+   "outputs": [
+    "Copy"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "showrunner of the episode's format (assignment-editor until showrunners ship)",
+   "instances": "one per episode",
+   "code": "earlobe/producer/copywriter.py",
+   "kpis": [
+    "click-through from directory listings and social",
+    "tested-title win rate vs control",
+    "copy claims not found in the script (target 0)"
+   ]
+  },
+  {
+   "id": "headline-tester",
+   "name": "Headline / Title Tester",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode + weekly learning report",
+   "mission": "Find out, with data, which titles and hooks actually earn listens.",
+   "description": "For each episode it writes several title and hook variants inside the copy rules and scores them against the network's history. Where a platform supports live tests it runs them: newsletter subject-line splits, social post variants, and YouTube title and thumbnail tests where available (verify feature availability, as of Oct 2026). Winning patterns become concrete playbook rules for the Copywriter, such as 'lead local titles with the place name'. It also catches variants drifting toward clickbait, which the Brand Guardian would reject.",
+   "inputs": [
+    "Copy",
+    "analytics history"
+   ],
+   "outputs": [
+    "title variants",
+    "test results",
+    "playbook updates"
+   ],
+   "tools": [
+    "analytics_api",
+    "youtube_api",
+    "email"
+   ],
+   "reports_to": "copywriter",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "CTR lift of tested titles vs the untested baseline",
+    "tests completed per week",
+    "playbook rules adopted"
+   ]
+  },
+  {
+   "id": "localizer",
+   "name": "Localizer",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:desk.breaking + per-episode for national stories",
+   "mission": "Find the real local angle on big national stories, or keep them out of the local dailies.",
+   "description": "When a national or breaking story lands, it checks each market for a genuine local connection: a local official's on-record response, local data, a person from the area, a local employer, base, case or law affected. If it finds one, it creates a local Story that must clear the normal sourcing rules on its own. If not, the daily stays local and listeners are pointed to The Breaking Desk. This keeps the dailies about the city, as the show design intends.",
+   "inputs": [
+    "Story (national or breaking)",
+    "market source files",
+    "beat memo"
+   ],
+   "outputs": [
+    "Story (local angle) or a no-angle decision"
+   ],
+   "tools": [
+    "web_search",
+    "rss"
+   ],
+   "reports_to": "assignment-editor",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "local-angle stories that pass the gate",
+    "national stories in a daily without a local angle (target 0)",
+    "completion rate on localized segments"
+   ]
+  },
+  {
+   "id": "spanish-editions-editor",
+   "name": "Spanish-Language Editions Editor",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "per-episode (after PUBLISH of the English edition)",
+   "mission": "Produce Spanish-language editions that are adapted for listeners, not just translated, and verified to the same standard.",
+   "description": "Adapts gated scripts into natural Spanish, starting with LA Daily, then a Spanish Breaking Desk, then Houston, Miami and Phoenix as those markets launch, keeping every claim_id mapped to its Spanish line. A back-translation pass by the Fact Checker in 'translation mode' confirms each Spanish claim says exactly what the gated English claim says; any drift is fixed before voicing. It uses two new original Spanish-speaking personas designed by the Voice Director, and keeps local names and institutions in their official form. The AI disclosure outro has an approved Spanish version.",
+   "inputs": [
+    "Script (gated, English)",
+    "GateDecision",
+    "Spanish style guide"
+   ],
+   "outputs": [
+    "Script (es)",
+    "translation fidelity report"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "showrunner-daily",
+   "instances": "one per Spanish edition: la-daily-es first; then breaking-desk-es; then houston, miami and phoenix editions as those markets launch",
+   "code": "—",
+   "kpis": [
+    "translation drift caught before publish (and 0 after)",
+    "Spanish edition audience growth",
+    "native-speaker quality score on a monthly sample"
+   ]
+  },
+  {
+   "id": "follow-up-editor",
+   "name": "Follow-Up Editor",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per-episode (date extraction) + cron \"0 9 * * *\" (daily tickler)",
+   "mission": "Never drop a story: remember every date that matters and bring the story back when it arrives.",
+   "description": "Extracts future dates from every published story and meeting digest (hearings, votes, deadlines, openings, sentencings, report releases) into a tickler calendar. On the day, it creates a follow-up Story stub with links to our earlier coverage for the Assignment Editor. It also closes loops: when a follow-up shows an earlier story changed, it alerts the Re-check Monitor. Listeners hear continuity: 'Last week we told you the council would vote. It did.'",
+   "inputs": [
+    "Episode",
+    "Story",
+    "MeetingDigest (proposed)"
+   ],
+   "outputs": [
+    "tickler entries",
+    "follow-up Story stubs"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "assignment-editor",
+   "instances": "single; one calendar per market",
+   "code": "—",
+   "kpis": [
+    "scheduled events followed up on the day (target >= 90%)",
+    "follow-ups that became segments",
+    "changed facts caught through follow-ups"
+   ]
+  },
+  {
+   "id": "case-file-keeper",
+   "name": "Case File Keeper",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "event:case.development + weekly",
+   "mission": "Keep one accurate, sourced, presumption-of-innocence file for every case the Case Tracker follows.",
+   "description": "For each tracked case it maintains a CaseFile: parties with their exact legal status (arrested, charged, convicted, acquitted, dismissed), a dated timeline with a primary source for each entry, next hearing dates, and a clear split between what is alleged and what is established. It proposes which cases to track using written criteria (public interest, official records available, no exploitation of victims) and retires cases when they resolve. Every Case Tracker script starts from this file, which keeps the weekly and the flashes consistent with each other.",
+   "inputs": [
+    "Signal from case-development-watcher",
+    "court records",
+    "cold-case dossiers"
+   ],
+   "outputs": [
+    "CaseFile (proposed)",
+    "config/cases.yaml updates"
+   ],
+   "tools": [
+    "courtlistener",
+    "web_search"
+   ],
+   "reports_to": "showrunner-case-tracker",
+   "instances": "single agent; one CaseFile per tracked case",
+   "code": "—",
+   "kpis": [
+    "legal-status errors (target 0)",
+    "timeline entries with a primary source (target 100%)",
+    "contradictions between flashes and the weekly (target 0)"
+   ]
+  },
+  {
+   "id": "showrunner-daily",
+   "name": "Showrunner: Daily Briefs",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode (rundown) + weekly review",
+   "mission": "Own the morning daily briefs, market by market: format, rundown, tone and length.",
+   "description": "Keeps each daily's show bible (docs/shows/bibles/<show>.md): segment order, host roles (Mara and Theo in Columbia, Lena and Marcus in LA), the weather and 'today' blocks, the kicker style and the 6-8 minute target. Each morning it orders the assigned stories into a rundown and sets a time budget per story before the Producer writes. Weekly it reviews completion by segment, listener mail and gate outcomes, and adjusts beats or max_stories through the Release Guard. It owns the rule that a daily carries breaking news only with a local angle.",
+   "inputs": [
+    "assignments",
+    "InsightReport (proposed)",
+    "listener mail summary",
+    "show bible"
+   ],
+   "outputs": [
+    "rundown",
+    "show bible updates",
+    "shows.yaml change requests"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "one per daily brief: columbia-daily, la-daily (wave 0); nyc-daily, chicago-daily (wave 1); one per new market",
+   "code": "—",
+   "kpis": [
+    "completion rate per daily",
+    "episodes inside target length",
+    "follower growth per market"
+   ]
+  },
+  {
+   "id": "showrunner-breaking",
+   "name": "Showrunner: The Breaking Desk",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:desk.breaking + weekly review",
+   "mission": "Run The Breaking Desk: fast, calm, and only what is confirmed.",
+   "description": "Owns the breaking_flash format: what we know, what we don't know yet, what happens next; Ava anchors and flashes run 2-4 minutes. It decides whether an event gets one flash, a run of updates or a longer explainer once facts settle, and keeps the 30-minute minimum gap so the feed does not churn. While the gate HOLDs a story (breaking lane: up to six 15-minute holds) it publishes nothing on that story rather than rumor. It plans the spin-off feeds (Sports, Courts, Space, Markets) and their trigger thresholds with the Breaking Detector.",
+   "inputs": [
+    "Story (breaking)",
+    "GateDecision (HOLD/PUBLISH)",
+    "Localizer results"
+   ],
+   "outputs": [
+    "flash rundown",
+    "update or explainer plan",
+    "spin-off proposals"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "one for breaking-desk; one per breaking spin-off as launched",
+   "code": "—",
+   "kpis": [
+    "median minutes from trigger to published flash",
+    "flashes later corrected (target 0)",
+    "HOLDs that ended in PUBLISH vs KILL"
+   ]
+  },
+  {
+   "id": "showrunner-courts",
+   "name": "Showrunner: Courts Roundups",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode + weekly review",
+   "mission": "Run the courts roundups: what was filed, ruled and scheduled, in careful, fair language.",
+   "description": "Owns the court_roundup format for LA Courts Roundup and each future city: new filings, rulings, pleas and sentencings, then the week ahead from court calendars, with June as host. Every courts show runs in the strict lane, so allegations need official records and the presumption of innocence is said out loud ('has pleaded not guilty', 'is accused of'). It balances high-profile cases with the civil, housing and government cases that affect more listeners. It also manages the hand-off when a courts story becomes a Case Tracker case.",
+   "inputs": [
+    "Court Watch Signals",
+    "assignments",
+    "court calendars"
+   ],
+   "outputs": [
+    "rundown",
+    "show bible updates"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "one per courts roundup: la-courts (wave 0); columbia-courts, nyc-courts, chicago-courts as launched; federal-docket weekly",
+   "code": "—",
+   "kpis": [
+    "legal-screen issues per episode (trending to 0)",
+    "corrections (target 0)",
+    "share of civic (non-celebrity) cases in each episode"
+   ]
+  },
+  {
+   "id": "showrunner-case-tracker",
+   "name": "Showrunner: Case Tracker",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly (Friday) + event:case.development",
+   "mission": "Run the live true-crime Case Tracker: the weekly best of the last 7 days and the development flashes.",
+   "description": "Owns the case_weekly format (15-25 minutes, June and Theo) and the short flashes that fire on event:case.development. It picks which developments make the weekly, keeps the tone factual rather than lurid, and makes sure every case segment restates the current legal status. It works from the Case File Keeper's files, so the weekly and the flashes never contradict each other. It enforces the network's true-crime ethics: victims are people, not plot, and families are not speculated about.",
+   "inputs": [
+    "CaseFile (proposed)",
+    "case.development events"
+   ],
+   "outputs": [
+    "weekly rundown",
+    "flash briefs"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "single for case-tracker; one per regional tracker if launched",
+   "code": "—",
+   "kpis": [
+    "weekly completion rate",
+    "flash latency from development to publish",
+    "harm and legal gate issues (trending to 0)"
+   ]
+  },
+  {
+   "id": "showrunner-evergreen",
+   "name": "Showrunner: Evergreen & Archives",
+   "desk": "editorial",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly + per-episode",
+   "mission": "Plan and run the evergreen series as seasons with arcs, from History of Hollywood to Cold Case Files.",
+   "description": "Owns the evergreen_story format for History of Hollywood (Lena), Cold Case Files (June) and the hometown and music history series. It plans seasons of 8-12 episodes with an arc, asks the Archive Miner and Cold-Case Archivist for packs, and sets each episode's structure: scene, stakes, turn, why it still matters. Archive content runs in the archive lane; Cold Case Files stays in the strict lane. It orders releases so each episode stands alone but rewards bingeing.",
+   "inputs": [
+    "archive packs",
+    "case dossiers",
+    "TopicBrief (proposed)",
+    "InsightReport (proposed)"
+   ],
+   "outputs": [
+    "season plans",
+    "episode outlines",
+    "show bible updates"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "one per evergreen series: history-of-hollywood, cold-case-files (wave 0); hometown history per market and music history (next)",
+   "code": "—",
+   "kpis": [
+    "completion rate",
+    "back-catalog listens per month (long-tail value)",
+    "first-draft PUBLISH rate in the archive lane"
+   ]
+  },
+  {
+   "id": "showrunner-niche",
+   "name": "Showrunner: Niche Feeds",
+   "desk": "editorial",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "per-episode + weekly tuning",
+   "mission": "Run dozens of small, hyper-specific always-on feeds from templates, and pause any that run dry.",
+   "description": "Manages the proposed niche_minute, meeting_watch, data_minute and scoreboard templates used by feeds like City Council Watch, Open & Shut, Permit Pulse, Pollen & Air and Transit Minute. Every feed has a minimum-news rule: no qualifying stories means no episode, never filler. It tunes each feed's thresholds from completion data, merges overlapping feeds, and recommends pausing feeds below their audience target to the Programming Director. One agent can cover many feeds because the templates do the heavy lifting.",
+   "inputs": [
+    "assignments",
+    "InsightReport (proposed)",
+    "template library"
+   ],
+   "outputs": [
+    "rundowns",
+    "feed tuning changes",
+    "pause and merge recommendations"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "single agent managing every niche feed (one config per feed)",
+   "code": "—",
+   "kpis": [
+    "filler episodes (target 0)",
+    "niche feeds above their audience target",
+    "cost per niche episode"
+   ]
+  },
+  {
+   "id": "claim-extractor",
+   "name": "Claim Extractor",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "per-episode (every revision)",
+   "mission": "List every checkable assertion in the script, including the ones the writer forgot to map.",
+   "description": "extract_claims(script, llm) reads the script cold, in its own isolated call, and lists each assertion as a Claim with a type (fact, number, quote, attribution, allegation, legal status, prediction, context), risk flags, and whether it is attributed on air. It adds any claim the Producer did not map, so nothing slips past verification by being unlabeled. It does not judge truth; it only makes sure the checkers have the complete list.",
+   "inputs": [
+    "Script"
+   ],
+   "outputs": [
+    "Script (complete Claim map)"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "earlobe/trust/claims.py",
+   "kpis": [
+    "unmapped assertions found later by checkers or recheck (target 0)",
+    "claims added per script (trend)",
+    "claim-type accuracy on the golden set"
+   ]
+  },
+  {
+   "id": "source-verifier",
+   "name": "Source Verifier (blind)",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "per-episode",
+   "mission": "Re-source every claim blind, from scratch, and count only truly independent support.",
+   "description": "verify(script, llm, owners, max_searches=20) never sees the writer's sources. For each claim it searches independently, traces wire copy back to its origin, and collapses outlets owned by the same group using config/owners.yaml, so one AP story republished by ten stations counts once. independent_count is recomputed in code, never taken from the model. It records whether a tier-1 primary source (court record, official release, original data) supports the claim, which the strict and breaking lanes require for sensitive claims.",
+   "inputs": [
+    "Script (claims only, sources withheld)",
+    "config/owners.yaml"
+   ],
+   "outputs": [
+    "VerifierReport"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "courtlistener"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "earlobe/trust/verifier.py",
+   "kpis": [
+    "catch rate on known-false golden claims (target >= 99%)",
+    "wire-duplication counting errors (target 0)",
+    "searches per claim (cost)"
+   ]
+  },
+  {
+   "id": "fact-checker",
+   "name": "Fact Checker",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "per-episode",
+   "mission": "Check that each claim, as worded, says exactly what the evidence says.",
+   "description": "fact_check(script, verifier_report, llm) compares wording with evidence: numbers and units, dates and tense, quotes word for word, who said what, and legal status ('charged' is not 'convicted'). It rates each claim accurate, minor_issue, misleading, inaccurate or unverifiable, with a suggested fix. Misleading or inaccurate blocks the episode (gate rule F1); unverifiable wording must be softened or cut (F2). In 'translation mode' it also checks Spanish editions against the gated English claims.",
+   "inputs": [
+    "Script",
+    "VerifierReport"
+   ],
+   "outputs": [
+    "FactCheckReport"
+   ],
+   "tools": [
+    "web_fetch"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "earlobe/trust/factcheck.py",
+   "kpis": [
+    "post-publish corrections traced to wording (target 0)",
+    "accuracy_rate per show",
+    "needless rewrites from false positives"
+   ]
+  },
+  {
+   "id": "bias-checker",
+   "name": "Bias Checker",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "per-episode",
+   "mission": "Catch loaded language, one-sided framing and missing perspectives before they air.",
+   "description": "bias_check(script, llm) reviews every line for loaded language, one-sidedness, missing perspectives, framing, speculation, sensationalism, stereotypes and false balance, and returns a 0-100 balance_score. Any high-severity issue blocks (B2), and a score under the lane minimum blocks (B1) with the missing perspectives the rewrite must add. It checks fairness, not conclusions: when the record is clear, it does not demand false balance.",
+   "inputs": [
+    "Script"
+   ],
+   "outputs": [
+    "BiasReport"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "earlobe/trust/bias.py",
+   "kpis": [
+    "average balance_score by show",
+    "upheld listener bias complaints (target 0)",
+    "agreement with the Eval Steward's labeled bias set"
+   ]
+  },
+  {
+   "id": "legal-screener",
+   "name": "Legal / Defamation Screener",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "per-episode",
+   "mission": "Screen every script for defamation, privacy and legal risk before it can publish.",
+   "description": "legal_screen(script, llm) checks names, minors, victims, allegations, presumption of innocence, privacy, copyright and medical claims, and returns issues with severity and a fix. Naming a minor or a victim is a hard stop: if it survives the rewrite budget, the gate KILLs the episode (rule L2). Other issues block at the lane's threshold (high in standard, medium in strict and breaking). In 'ad mode' it also screens sponsor reads for unsubstantiated claims and missing ad disclosure. It is a screen, not a lawyer: real legal threats go to the Contracts & IP Clerk and the founders.",
+   "inputs": [
+    "Script"
+   ],
+   "outputs": [
+    "LegalReport"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "earlobe/trust/legal.py",
+   "kpis": [
+    "legal complaints or takedown demands after publish (target 0)",
+    "hard-stop issues still present at the final revision (target 0)",
+    "issues per 1,000 words (trend)"
+   ]
+  },
+  {
+   "id": "harm-sensitivity-reviewer",
+   "name": "Harm & Sensitivity Reviewer",
+   "desk": "trust",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "per-episode (strict and breaking lanes; sampled on the others)",
+   "mission": "Make sure coverage of crime, death and tragedy does not cause avoidable harm.",
+   "description": "Separate from legal risk, it reviews scripts against safe-reporting practice for suicide, mass violence (no notoriety for attackers), sexual violence, harm to children and mental illness, plus graphic detail, copycat risk and how victims and families are portrayed. It returns a HarmReport (proposed contract) with issues, severity and fixes, read by the gate through a new rule family (H1/H2, proposed for gate.py). It matters most for Case Tracker, Cold Case Files and breaking coverage of deaths and attacks, which are core formats for this network.",
+   "inputs": [
+    "Script"
+   ],
+   "outputs": [
+    "HarmReport (proposed)"
+   ],
+   "tools": [
+    "none (LLM only)"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "—",
+   "kpis": [
+    "high-severity harm issues reaching publish (target 0)",
+    "harm-related listener complaints",
+    "agreement with the Eval Steward's golden harm set"
+   ]
+  },
+  {
+   "id": "originality-checker",
+   "name": "Originality Checker",
+   "desk": "trust",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per-episode",
+   "mission": "Make sure every script is in our own words, with only short, attributed quotes.",
+   "description": "Compares the script with the text of its sources and the verifier's evidence using n-gram overlap in code, then a Haiku-tier pass decides whether each long overlap is fair quotation (short, attributed, in quote marks) or copying. Any unquoted run over a set length (default 12 words) becomes a blocking LegalIssue with risk 'copyright' for the gate. This enforces conventions rule 7 mechanically: report facts in our own words and link sources.",
+   "inputs": [
+    "Script",
+    "Source excerpts and fetched text"
+   ],
+   "outputs": [
+    "LegalIssue (risk=copyright)"
+   ],
+   "tools": [
+    "web_fetch"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one isolated call per script revision",
+   "code": "—",
+   "kpis": [
+    "copied passages found after publish (target 0)",
+    "false flags on properly attributed quotes",
+    "check time per script (target < 30 s)"
+   ]
+  },
+  {
+   "id": "standards-editor",
+   "name": "Standards Editor (rules engine)",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode (after the checkers, every revision)",
+   "mission": "Make the publish decision with fixed, auditable rules: PUBLISH, REWRITE, HOLD or KILL.",
+   "description": "decide(...) reads the checkers' JSON reports and applies the lane policy (standard, strict, breaking, archive). It blocks on uncovered, contradicted or unsupported claims (V0-V2), too few independent sources (V3), sensitive claims without an official record (V4), unattributed predictions (V5), fact-check failures (F0-F2), bias (B1-B2), legal issues (L1-L2) and a missing AI disclosure (S1). REWRITE sends instructions back to the Producer up to the lane's limit; HOLD is breaking-only, for stories that look real but are not confirmed enough yet; KILL ends the episode. No model makes this decision, so the same reports always give the same answer, which is what makes the Trust Stack auditable and sellable.",
+   "inputs": [
+    "Script",
+    "VerifierReport",
+    "FactCheckReport",
+    "BiasReport",
+    "LegalReport",
+    "HarmReport (next)"
+   ],
+   "outputs": [
+    "GateDecision",
+    "trust log entry"
+   ],
+   "tools": [
+    "none"
+   ],
+   "reports_to": "network-director",
+   "instances": "single rules engine; one policy per lane",
+   "code": "earlobe/trust/gate.py (decide, POLICIES) + earlobe/trust/loop.py (run_trust_loop)",
+   "kpis": [
+    "decisions reproducible from stored reports (100%)",
+    "post-publish corrections per 100 episodes",
+    "KILL rate by show (watched for trend)"
+   ]
+  },
+  {
+   "id": "corrections-agent",
+   "name": "Corrections Agent",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "sonnet",
+   "runs": "event:correction.opened",
+   "mission": "Fix mistakes fast and in public: show notes, feeds and on-air corrections.",
+   "description": "open_correction(...) records a Correction from the Re-check Monitor, a listener (through the Community Manager) or an outlet. apply_correction(store, correction) reissues the episode's show notes and feed item with a dated correction note, and for significant errors schedules an on-air correction at the top of that show's next episode. A retraction pulls the episode from the feed and replaces it with a notice. Every correction is written to the public trust log.",
+   "inputs": [
+    "Correction",
+    "Episode"
+   ],
+   "outputs": [
+    "Correction (applied)",
+    "reissued notes and feed item",
+    "on-air correction line"
+   ],
+   "tools": [
+    "host_api",
+    "sql"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "single",
+   "code": "earlobe/monitor/corrections.py",
+   "kpis": [
+    "median hours from correction opened to applied (target < 4)",
+    "significant corrections aired in the next episode (100%)",
+    "repeat errors of the same type"
+   ]
+  },
+  {
+   "id": "recheck-monitor",
+   "name": "Re-check Monitor",
+   "desk": "trust",
+   "status": "built",
+   "model_tier": "opus",
+   "runs": "cron \"0 8 * * *\" (daily: recheck --days 7); breaking and strict claims more often in the first 48 h",
+   "mission": "Keep checking published claims after they air, because stories change.",
+   "description": "recheck(store, llm, days=7) re-verifies the claims in the last week's episodes: charges dropped, casualty counts revised, a quote retracted, a vote reversed. When the record has moved, it opens a Correction or an update with the new evidence. It turns verification from a one-time gate into an ongoing promise.",
+   "inputs": [
+    "published Episodes and their Scripts",
+    "VerifierReport history"
+   ],
+   "outputs": [
+    "Correction"
+   ],
+   "tools": [
+    "web_search",
+    "courtlistener"
+   ],
+   "reports_to": "corrections-agent",
+   "instances": "single",
+   "code": "earlobe/monitor/recheck.py",
+   "kpis": [
+    "changed facts caught before a listener reports them",
+    "strict and breaking claims rechecked (100%)",
+    "cost per recheck run"
+   ]
+  },
+  {
+   "id": "source-ledger-keeper",
+   "name": "Source Ledger Keeper",
+   "desk": "trust",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "weekly + event:ownership.change",
+   "mission": "Keep the source map honest: who owns which outlet, which accounts are official, and which sources keep getting it wrong.",
+   "description": "Maintains config/owners.yaml (outlet to owner group, plus the wires list) from ownership changes reported by Industry Intel, so independence counts stay right after mergers and sales. Keeps a registry of verified official accounts and domains (police, courts, agencies) and catches lookalike domains used in hoaxes. Tracks each outlet's record of claims later contradicted or corrected, which can lower its tier. Its changes go through the Release Guard like any other config change.",
+   "inputs": [
+    "Industry Intel ownership news",
+    "VerifierReport history",
+    "Correction"
+   ],
+   "outputs": [
+    "owners.yaml change requests",
+    "official account registry",
+    "outlet track record"
+   ],
+   "tools": [
+    "web_search",
+    "sql"
+   ],
+   "reports_to": "source-verifier",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "ownership changes reflected within 7 days",
+    "lookalike-domain hoaxes caught",
+    "unknown outlets appearing in evidence per week (should fall)"
+   ]
+  },
+  {
+   "id": "media-authenticity-checker",
+   "name": "Media Authenticity Checker",
+   "desk": "trust",
+   "status": "future",
+   "model_tier": "opus",
+   "runs": "per-episode when photos, video or audio are cited as evidence (mostly breaking)",
+   "mission": "Check whether photos, video and audio cited as evidence are real, original and unaltered.",
+   "description": "Breaking news brings recycled photos, edited clips and AI-generated media. This agent checks provenance (content credentials such as C2PA where present), the earliest appearance online, reverse-image search results and signs of manipulation, using vision-capable model calls. Media it cannot authenticate cannot support a claim on air. It also screens our own clips and art for anything that could be mistaken for real footage.",
+   "inputs": [
+    "media URLs in evidence"
+   ],
+   "outputs": [
+    "authenticity findings (proposed)"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch"
+   ],
+   "reports_to": "source-verifier",
+   "instances": "one per flagged media item",
+   "code": "—",
+   "kpis": [
+    "manipulated media caught in red-team tests",
+    "claims resting on unauthenticated media (target 0)",
+    "minutes added to breaking flashes"
+   ]
+  },
+  {
+   "id": "hoax-red-team",
+   "name": "Hoax Red Team",
+   "desk": "trust",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "weekly + before major releases",
+   "mission": "Attack our own trust stack with realistic hoaxes, so we find the holes before bad actors do.",
+   "description": "Writes adversarial test cases and runs them in dry-run only, never published: fake press releases on lookalike domains, hoax celebrity deaths, satire presented as news, recycled disaster photos, one wire story republished widely to fake independence, and prompt injections hidden in source pages. It records where each case was stopped (sensor, desk, verifier, gate) or whether it got through, and files the fix. Every case joins the Eval Steward's golden sets, so it is tested forever after.",
+   "inputs": [
+    "the pipeline in dry-run",
+    "real hoax patterns from Industry Intel"
+   ],
+   "outputs": [
+    "red-team report",
+    "new golden cases"
+   ],
+   "tools": [
+    "web_search"
+   ],
+   "reports_to": "eval-steward",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "hoaxes stopped before a PUBLISH decision (target 100%)",
+    "new attack classes added per month",
+    "days from discovered hole to fix"
+   ]
+  },
+  {
+   "id": "transparency-reporter",
+   "name": "Transparency Reporter",
+   "desk": "trust",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "cron \"0 14 1 * *\" (monthly, on the 1st)",
+   "mission": "Publish how the trust stack performed, every month, in plain language.",
+   "description": "Builds a public report from the trust log and the store: claims checked, share corroborated, rewrites, holds, kills, corrections and median time to correct, by show and lane, plus notable catches. It is published on the network website and linked from show notes. It is both an accountability tool and the best sales evidence for the Trust Stack product. Every number is computed from logs; the model only writes the words around them.",
+   "inputs": [
+    "trust log",
+    "GateDecision",
+    "Correction"
+   ],
+   "outputs": [
+    "monthly transparency report (web page + PDF)"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "report published on the 1st each month",
+    "numbers that reconcile to logs (100%)",
+    "Trust Stack leads that cite the report"
+   ]
+  },
+  {
+   "id": "voice-director",
+   "name": "Voice Director",
+   "desk": "studio",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "on-demand + weekly review",
+   "mission": "Cast, design and direct the network's original synthetic voices so each persona is consistent and clearly original.",
+   "description": "Owns config/voices.yaml and the persona bibles for Mara, Theo, Lena, Marcus, Ava and June, plus new personas (Spanish editions, niche feeds, a non-news voice for sponsor reads). It designs new voices with ElevenLabs voice design tools (as of Oct 2026, verify) and confirms none is modeled on, named after or imitating a real person. It sets delivery direction per format (calm and precise for Ava, measured for June) and checks consistency across episodes using QA Listener reports. It casts personas for new shows and keeps any one voice from being overexposed across feeds.",
+   "inputs": [
+    "config/voices.yaml",
+    "QAReport (proposed)",
+    "show bibles"
+   ],
+   "outputs": [
+    "persona specs",
+    "voices.yaml change requests",
+    "casting per show"
+   ],
+   "tools": [
+    "elevenlabs"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "voice consistency flags per week",
+    "listener sentiment about voice quality",
+    "personas with a written bible (100%)"
+   ]
+  },
+  {
+   "id": "pronunciation-keeper",
+   "name": "Pronunciation Keeper",
+   "desk": "studio",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per-episode + event:qa.mispronunciation",
+   "mission": "Say every local name right, every time.",
+   "description": "Keeps a pronunciation lexicon per market for place names, streets, officials and local terms that trip up synthetic voices (for example Huger Street, Congaree, Los Feliz, Cahuenga, Goethe Street). Before rendering it marks those words in the script and applies the lexicon through the TTS engine's pronunciation dictionary or alias features (verify against ElevenLabs docs). New names flagged by the Copy Editor are checked against local pronunciation sources, and QA Listener flags are fed back in. A mispronounced street tells local listeners we are not from there; this agent prevents that.",
+   "inputs": [
+    "Script",
+    "QA Listener flags",
+    "Copy Editor requests"
+   ],
+   "outputs": [
+    "lexicon entries",
+    "script with pronunciation markup"
+   ],
+   "tools": [
+    "elevenlabs",
+    "web_search"
+   ],
+   "reports_to": "voice-director",
+   "instances": "single agent; one lexicon per market",
+   "code": "—",
+   "kpis": [
+    "mispronunciations caught in QA per episode (trending to 0)",
+    "listener pronunciation complaints",
+    "lexicon entries per market (growing)"
+   ]
+  },
+  {
+   "id": "studio-voice",
+   "name": "Studio Voice (ElevenLabs)",
+   "desk": "studio",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode (only after PUBLISH)",
+   "mission": "Turn each approved script line into audio in the right persona's voice.",
+   "description": "ElevenLabsTTS(api_key, model_id).synthesize(text, voice_id) renders each line with the persona's voice_id from env (VOICE_MARA and so on) and the TTS model named in ELEVENLABS_TTS_MODEL; DryRunTTS stands in for tests. Only gated scripts reach it. Character usage is logged to AgentRun for the Budget Controller and the Quota Sentinel. Next increment: caching unchanged lines such as the disclosure outro, and line-level re-renders requested by the QA Listener.",
+   "inputs": [
+    "Script (gated)",
+    "config/voices.yaml"
+   ],
+   "outputs": [
+    "audio per line"
+   ],
+   "tools": [
+    "elevenlabs"
+   ],
+   "reports_to": "voice-director",
+   "instances": "one per episode render",
+   "code": "earlobe/studio/tts.py",
+   "kpis": [
+    "render failures per 100 episodes",
+    "characters per finished minute (cost)",
+    "re-renders requested by QA"
+   ]
+  },
+  {
+   "id": "studio-operator",
+   "name": "Studio Operator (computer use)",
+   "desk": "studio",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "on-demand",
+   "mission": "Drive UI-only audio engines such as NotebookLM and Meta Muse through computer use, as an optional second studio.",
+   "description": "The interface stub exists in earlobe/studio/operator.py. Some engines only have a web UI, so this agent would operate them with computer use: upload a gated research pack, generate audio, download the result. The catch: those engines write their own words, which breaks the claim map, so their output must be transcribed and sent through the full trust stack (claims, verifier, fact, bias, legal, gate) before it can publish. Platform terms must allow automated use (cleared by Compliance & Platform Policy Watch). Best fit: evergreen deep dives and bonus episodes, not news.",
+   "inputs": [
+    "ResearchPack (gated)",
+    "engine credentials from env"
+   ],
+   "outputs": [
+    "raw audio",
+    "transcript for re-verification"
+   ],
+   "tools": [
+    "computer_use",
+    "stt"
+   ],
+   "reports_to": "voice-director",
+   "instances": "one session per job",
+   "code": "—",
+   "kpis": [
+    "operator jobs completed without manual help",
+    "operator episodes that pass the gate after transcription",
+    "terms-of-service issues (target 0)"
+   ]
+  },
+  {
+   "id": "sound-designer",
+   "name": "Sound Designer / Mixer",
+   "desk": "studio",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode",
+   "mission": "Assemble each episode: voices, music, transitions and consistent loudness.",
+   "description": "render(script, voices, tts, out_path, music_bed=None) concatenates the rendered lines with ffmpeg, adds the music bed and stings, and normalizes loudness to the network target of -16 LUFS. It returns the file path and duration for the Episode record. Next increment: segment timestamps for chapters and ad markers, so Ad Ops can insert pre-, mid- and post-rolls at clean breaks.",
+   "inputs": [
+    "line audio",
+    "music assets"
+   ],
+   "outputs": [
+    "episode MP3",
+    "duration_sec",
+    "segment timestamps (next)"
+   ],
+   "tools": [
+    "ffmpeg"
+   ],
+   "reports_to": "voice-director",
+   "instances": "one per episode",
+   "code": "earlobe/studio/mix.py",
+   "kpis": [
+    "integrated loudness within 1 LU of target",
+    "audio artifacts flagged by QA",
+    "render time per episode"
+   ]
+  },
+  {
+   "id": "sonic-brand-librarian",
+   "name": "Sonic Brand Librarian",
+   "desk": "studio",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "on-demand + monthly rotation",
+   "mission": "Give the network and every show a recognizable, properly licensed sound.",
+   "description": "Owns the network sonic logo, show themes, beds, stings and transitions, including a distinct Breaking Desk sting that signals seriousness without alarm. It keeps a license record for every asset (source, terms, commercial use, attribution) and sources music from royalty-free libraries or AI music tools whose terms allow commercial podcast use (verify terms, as of Oct 2026). It rotates beds to avoid fatigue and supplies sound packages to the Show Launcher. No asset ships without a license record.",
+   "inputs": [
+    "show bibles",
+    "brand book"
+   ],
+   "outputs": [
+    "audio asset library",
+    "license register"
+   ],
+   "tools": [
+    "web_search"
+   ],
+   "reports_to": "voice-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "assets without a license record (target 0)",
+    "copyright claims or takedowns (target 0)",
+    "days to deliver a new show's sound package"
+   ]
+  },
+  {
+   "id": "disclosure-agent",
+   "name": "Disclosure Agent",
+   "desk": "studio",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode (before the gate)",
+   "mission": "Make sure every episode ends with the AI disclosure and carries it in its metadata.",
+   "description": "disclosure_lines(show_cfg, voices) and ensure_disclosure(script, show_cfg, voices) append the standard AI disclosure outro at the end of every episode, voiced by the disclosure voice (Ava). The Feed Manager also writes the disclosure into episode metadata. The gate blocks any script without a disclosure segment (rule S1), so an undisclosed episode cannot publish. The text is versioned; changes come from Compliance & Platform Policy Watch.",
+   "inputs": [
+    "Script",
+    "show config",
+    "config/voices.yaml"
+   ],
+   "outputs": [
+    "Script with disclosure segment",
+    "Episode.disclosure_text"
+   ],
+   "tools": [
+    "none"
+   ],
+   "reports_to": "standards-editor",
+   "instances": "one per episode",
+   "code": "earlobe/producer/disclosure.py",
+   "kpis": [
+    "episodes without disclosure (target 0)",
+    "disclosure audible at the end in QA (100%)",
+    "policy-required wording updates applied within 7 days"
+   ]
+  },
+  {
+   "id": "qa-listener",
+   "name": "QA Listener",
+   "desk": "studio",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per-episode (after the mix, before publish)",
+   "mission": "Listen back to every episode and catch what the script can't show: mispronunciations, glitches, silence and bad levels.",
+   "description": "Transcribes the rendered audio with speech-to-text (ElevenLabs STT; verify against docs) and compares it with the script: word error rate per line, skipped or repeated words, and mispronunciation candidates for the Pronunciation Keeper. ffmpeg measures integrated loudness and true peak, clipping, silences over 2 seconds and duration vs target, and confirms the disclosure is audible at the end. It returns a QAReport (proposed contract): PASS, RERENDER (named lines, up to two tries) or FAIL, and FAIL blocks the Publisher. The model only reads the transcript diff; every audio measurement is code.",
+   "inputs": [
+    "episode audio",
+    "Script"
+   ],
+   "outputs": [
+    "QAReport (proposed)",
+    "re-render requests"
+   ],
+   "tools": [
+    "stt",
+    "ffmpeg"
+   ],
+   "reports_to": "voice-director",
+   "instances": "one per episode",
+   "code": "—",
+   "kpis": [
+    "audio defects that reach listeners (target 0)",
+    "re-render success rate",
+    "QA minutes per episode"
+   ]
+  },
+  {
+   "id": "art-director",
+   "name": "Art Director",
+   "desk": "studio",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:show.greenlit + per-episode (episode art) ",
+   "mission": "Make every show look like part of one network: cover art, episode art, thumbnails and social cards.",
+   "description": "Builds show cover art from network templates (one family look, show name legible at thumbnail size, platform size specs verified as of Oct 2026), plus episode art for YouTube and social and templated cards for clips. It works through Canva brand templates or an image model with a commercial license. It never uses a real person's likeness, never makes images that look like news photos of real events, and labels AI imagery where platforms require it. The Brand Guardian checks every asset before it ships.",
+   "inputs": [
+    "ShowSpec (proposed)",
+    "brand book",
+    "Copy"
+   ],
+   "outputs": [
+    "cover art",
+    "episode art",
+    "thumbnails",
+    "social cards"
+   ],
+   "tools": [
+    "canva",
+    "image_gen"
+   ],
+   "reports_to": "brand-guardian",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "assets rejected by the Brand Guardian",
+    "YouTube thumbnail CTR",
+    "days to produce a new show's art"
+   ]
+  },
+  {
+   "id": "publisher",
+   "name": "Publisher",
+   "desk": "distribution",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode (after PUBLISH and, once live, QA PASS)",
+   "mission": "Put the finished episode on the host with complete notes, sources and a verification summary.",
+   "description": "Uploads audio through a HostAdapter (LocalHost for testing; TransistorHost, marked 'verify vs docs'), writes show notes with show_notes(script, decision, copy) including the sources and a plain-language verification summary, and appends the gate decision to the public trust log with trustlog.append(...). It marks the Episode published with its audio URL, GUID and duration. It acts only on episodes with a PUBLISH decision and, once the QA Listener is live, a QA PASS.",
+   "inputs": [
+    "Episode",
+    "GateDecision",
+    "Copy",
+    "episode audio"
+   ],
+   "outputs": [
+    "Episode (published)",
+    "trust log line",
+    "event:episode.published"
+   ],
+   "tools": [
+    "host_api"
+   ],
+   "reports_to": "network-director",
+   "instances": "one per episode",
+   "code": "earlobe/publish/hosts.py, notes.py, trustlog.py",
+   "kpis": [
+    "publish failures per 100 episodes",
+    "minutes from QA pass to live",
+    "episodes with complete sources in their notes (100%)"
+   ]
+  },
+  {
+   "id": "feed-manager",
+   "name": "Feed Manager",
+   "desk": "distribution",
+   "status": "built",
+   "model_tier": "none",
+   "runs": "per-episode + on every correction or retraction",
+   "mission": "Keep every show's RSS feed valid, complete and honest.",
+   "description": "build_feed(...) and write_feed(...) produce RSS with iTunes and podcast-namespace tags, stable GUIDs, and the AI disclosure in each item's metadata. Feeds rebuild on every publish and every correction or retraction, so directories pick up fixes. `python -m earlobe feeds` rebuilds every feed from the store. It also carries show-level metadata such as category, language and location for local shows.",
+   "inputs": [
+    "Episode records",
+    "show config"
+   ],
+   "outputs": [
+    "RSS feed per show"
+   ],
+   "tools": [
+    "host_api"
+   ],
+   "reports_to": "publisher",
+   "instances": "one feed per show",
+   "code": "earlobe/publish/feed.py",
+   "kpis": [
+    "feed validation errors (target 0)",
+    "corrections reflected in the feed within 1 h",
+    "GUID changes on existing items (target 0)"
+   ]
+  },
+  {
+   "id": "show-launcher",
+   "name": "Show Launcher",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:show.greenlit",
+   "mission": "Spin up a complete new show from a template in a day or two: config, sources, bible, art, trailer and platform listings.",
+   "description": "Takes a ShowSpec from the Programming Director and builds the whole package: a shows.yaml entry, a seeded sources file (with that market's Beat agent), a show bible draft (with the showrunner), cover art (Art Director), a sound package (Sonic Brand Librarian), a trailer episode that runs the full trust stack, and the host feed. It has the Contracts & IP Clerk clear the show name first. It then submits the feed to Apple Podcasts, Spotify, YouTube and Amazon Music; any step that needs a one-time account action goes to the Studio Operator or to a founder (verify current submission flows, as of Oct 2026). The Release Guard dry-runs the new show before it is enabled.",
+   "inputs": [
+    "ShowSpec (proposed)",
+    "show templates"
+   ],
+   "outputs": [
+    "shows.yaml entry",
+    "sources file",
+    "show bible",
+    "trailer Episode",
+    "directory submissions"
+   ],
+   "tools": [
+    "host_api",
+    "computer_use",
+    "canva"
+   ],
+   "reports_to": "programming-director",
+   "instances": "one job per greenlit show",
+   "code": "—",
+   "kpis": [
+    "days from greenlight to first episode (target <= 2)",
+    "launch checklist completeness (100%)",
+    "directory approvals on the first try"
+   ]
+  },
+  {
+   "id": "directory-sync-checker",
+   "name": "Directory Sync Checker",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "none",
+   "runs": "cron \"15 * * * *\" (hourly)",
+   "mission": "Confirm every episode actually shows up on every platform, and say so fast when it doesn't.",
+   "description": "After each publish it checks that the episode appears on Apple Podcasts, Spotify, YouTube, Amazon Music and Podcast Index within the expected window, using public lookup endpoints and feed checks. It also validates feeds, artwork and enclosure URLs, and watches for shows that were delisted or flagged. Misses raise event:run.failed for the Incident Commander.",
+   "inputs": [
+    "Episode",
+    "RSS feeds"
+   ],
+   "outputs": [
+    "sync status per episode",
+    "event:run.failed"
+   ],
+   "tools": [
+    "host_api",
+    "web_fetch"
+   ],
+   "reports_to": "feed-manager",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "episodes missing from a platform after 6 h (target 0)",
+    "hours to detect a delisting",
+    "false alarms per week"
+   ]
+  },
+  {
+   "id": "seo-metadata",
+   "name": "SEO / Metadata",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode + monthly audit",
+   "mission": "Make every show and episode easy to find in podcast apps, search engines and YouTube.",
+   "description": "Sets show titles, descriptions, categories and keywords using the Trend Scout's search data, adds podcast-namespace tags such as location (local shows), transcript and chapters, and writes schema.org PodcastSeries and PodcastEpisode data for the website. It checks that episode titles carry the terms people search (the place and the subject) without keyword stuffing or misleading wording. Monthly it audits rankings for key searches per market, such as 'Columbia news podcast' or 'LA court news'.",
+   "inputs": [
+    "Copy",
+    "TopicBrief (proposed)",
+    "search data"
+   ],
+   "outputs": [
+    "metadata updates",
+    "structured data",
+    "monthly SEO audit"
+   ],
+   "tools": [
+    "web_search",
+    "analytics_api"
+   ],
+   "reports_to": "publisher",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "ranking for target searches per market",
+    "organic search visits to episode pages",
+    "metadata completeness (100%)"
+   ]
+  },
+  {
+   "id": "transcript-accessibility",
+   "name": "Transcript & Accessibility",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per-episode",
+   "mission": "Publish an accurate transcript, chapters and captions for every episode.",
+   "description": "Builds the transcript from the final script, aligned to audio timestamps from the QA Listener's speech-to-text, with speakers labeled by persona name and marked as AI voices. It publishes VTT/SRT files and the podcast:transcript tag, generates chapters from the script segments, and supplies captions for video. It keeps the website's episode pages accessible: headings, alt text, keyboard-friendly players. Transcripts serve deaf and hard-of-hearing listeners, search, and the trust story: every word we said is on the record.",
+   "inputs": [
+    "Script",
+    "STT timestamps",
+    "segment timestamps"
+   ],
+   "outputs": [
+    "transcript files",
+    "chapters JSON",
+    "captions"
+   ],
+   "tools": [
+    "stt"
+   ],
+   "reports_to": "publisher",
+   "instances": "one per episode",
+   "code": "—",
+   "kpis": [
+    "episodes with a transcript at publish (100%)",
+    "transcript vs audio mismatch rate",
+    "accessibility audit issues open"
+   ]
+  },
+  {
+   "id": "clip-maker",
+   "name": "Clip Maker",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode",
+   "mission": "Cut the best 30-60 seconds of each episode into audiograms and vertical videos.",
+   "description": "Picks moments that stand alone and contain only gated content with the attribution intact, then renders audiograms (waveform, captions, show art) and vertical captioned videos with ffmpeg. Every clip carries an 'AI-voiced' caption and a link to the full episode and its sources. Crime and tragedy are never clipped for shock value. Output goes to the Social Media Manager and the YouTube Packager.",
+   "inputs": [
+    "episode audio",
+    "transcript",
+    "Copy"
+   ],
+   "outputs": [
+    "ClipSpec (proposed) + audiogram and vertical video files"
+   ],
+   "tools": [
+    "ffmpeg"
+   ],
+   "reports_to": "social-media-manager",
+   "instances": "one job per episode",
+   "code": "—",
+   "kpis": [
+    "clip view-through rate",
+    "episode listens from clip links",
+    "clips flagged by the Brand Guardian"
+   ]
+  },
+  {
+   "id": "youtube-packager",
+   "name": "YouTube / Video Packager",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode",
+   "mission": "Turn every episode into a proper YouTube podcast episode: video, chapters, captions and playlists.",
+   "description": "Renders full-episode videos (show art, waveform, captions) with ffmpeg, uploads through the YouTube Data API or YouTube's RSS podcast ingestion (verify current options, as of Oct 2026), and sets titles, descriptions, chapters, playlists and thumbnails. It applies YouTube's altered-or-synthetic-content disclosure as policy requires. It builds per-market playlists so local listeners can catch up on the week.",
+   "inputs": [
+    "episode audio",
+    "art",
+    "Copy",
+    "chapters"
+   ],
+   "outputs": [
+    "YouTube videos",
+    "playlists"
+   ],
+   "tools": [
+    "youtube_api",
+    "ffmpeg"
+   ],
+   "reports_to": "publisher",
+   "instances": "one channel per network brand; one playlist per show",
+   "code": "—",
+   "kpis": [
+    "watch time per show",
+    "subscriber growth",
+    "policy strikes (target 0)"
+   ]
+  },
+  {
+   "id": "website-publisher",
+   "name": "Website Publisher",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "none",
+   "runs": "event:episode.published + nightly rebuild",
+   "mission": "Run the network website: a page for every show, episode, source list, correction and trust report.",
+   "description": "Generates a static site from the store: network home, market pages, show pages, and episode pages with player, transcript, sources, verification summary and correction history. It hosts the public trust log, the monthly transparency report and the newsletter signup. Static generation keeps it cheap, fast and hard to break, and owned pages make the network searchable and give sponsors a place to send people.",
+   "inputs": [
+    "Episode",
+    "transcripts",
+    "trust log",
+    "transparency reports"
+   ],
+   "outputs": [
+    "static website"
+   ],
+   "tools": [
+    "ci"
+   ],
+   "reports_to": "publisher",
+   "instances": "single site; one section per market",
+   "code": "—",
+   "kpis": [
+    "episode pages live within 15 min of publish",
+    "uptime",
+    "newsletter signups from the site"
+   ]
+  },
+  {
+   "id": "syndication-packager",
+   "name": "Syndication Packager",
+   "desk": "distribution",
+   "status": "future",
+   "model_tier": "haiku",
+   "runs": "per-episode for partner feeds",
+   "mission": "Package our briefs for other outlets: radio-ready cuts, smart-speaker briefings and news-site embeds.",
+   "description": "Produces radio-ready cuts of local briefs (:60, :90, 2:00) with clean in and out cues and a log, smart-speaker briefing feeds where platforms still support them (verify, as of Oct 2026), and embeddable players for partner news sites. Each package keeps the AI disclosure and credits the Curious & Creative Network. It delivers to each partner on their schedule and format.",
+   "inputs": [
+    "published episodes",
+    "partner specs"
+   ],
+   "outputs": [
+    "syndication packages"
+   ],
+   "tools": [
+    "ffmpeg",
+    "host_api"
+   ],
+   "reports_to": "content-licensing-agent",
+   "instances": "one delivery job per partner",
+   "code": "—",
+   "kpis": [
+    "partner deliveries on time (100%)",
+    "partner stations and sites carrying our content",
+    "syndication revenue"
+   ]
+  },
+  {
+   "id": "catalog-steward",
+   "name": "Catalog & Platform Standing Steward",
+   "desk": "distribution",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per show greenlight + weekly catalog audit + event:platform.flag",
+   "mission": "Keep the catalog clean so podcast apps treat us as a real network, not a spam farm.",
+   "description": "This agent exists because of Quiet Please (Inception Point AI, now Liquid Studios). Castro hid every one of its shows from search and charts for 'keying on popular searches in order to flood search results', and the Podcast Index added a /recent/problematic list for low-effort AI shows (docs/research/notes/inception-point-business-model.md). Before any greenlight it checks portfolio rules: no near-duplicate shows, no launching several title variants of one show, titles that describe the show instead of stuffing search terms, and AI disclosure in the show description and every item. Weekly it audits every live feed against its minimum-news rule and audience floor, then has the Programming Director pause or retire dormant feeds instead of leaving them to rot. It checks our feeds against the Podcast Index problematic list and each directory's standing (with the Directory Sync Checker), and can block a Show Launcher job that would break a rule.",
+   "inputs": [
+    "ShowSpec (proposed)",
+    "RSS feeds",
+    "InsightReport (proposed)",
+    "Podcast Index API",
+    "directory listings"
+   ],
+   "outputs": [
+    "catalog rule check (pass/block with reasons)",
+    "weekly catalog audit",
+    "pause and retire list",
+    "event:platform.flag"
+   ],
+   "tools": [
+    "web_fetch",
+    "host_api",
+    "sql"
+   ],
+   "reports_to": "programming-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "shows hidden, flagged or delisted by any directory (target 0)",
+    "near-duplicate or title-variant feeds live (target 0)",
+    "feeds below their floor for 30+ days still publishing (target 0)",
+    "feeds with disclosure in show and item metadata (100%)"
+   ]
+  },
+  {
+   "id": "audience-growth-strategist",
+   "name": "Audience Growth Strategist",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly (Monday)",
+   "mission": "Set the growth plan for every show and market, and decide where the effort goes each week.",
+   "description": "Reads the InsightReport and sets weekly targets per show (followers, listens, completion) and the channel mix: social, newsletter, partnerships, cross-promo, SEO and, later, paid. It keeps an experiment backlog where every test has a hypothesis and a success metric, and stops tests that don't move the numbers. It coordinates the growth desk so launches, clips and newsletters all serve the same plan.",
+   "inputs": [
+    "InsightReport (proposed)",
+    "programming memo",
+    "growth budget"
+   ],
+   "outputs": [
+    "weekly growth plan",
+    "experiment backlog"
+   ],
+   "tools": [
+    "analytics_api",
+    "sql"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "network weekly listeners, week over week",
+    "experiments completed per month",
+    "cost per new follower"
+   ]
+  },
+  {
+   "id": "market-launch-marketer",
+   "name": "Market Launch Marketer",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:market.launch (30-day program)",
+   "mission": "Launch each new city loudly and locally, so the first month builds a real audience.",
+   "description": "Runs a 30-day launch program per market: a launch press release, local partner outreach (with the Partnerships Scout), social accounts and first clips, a newsletter seeded from signups, trailer swaps with existing shows, and a launch week of extra local segments. It localizes the pitch around what the city lacks in daily audio news, phrased in the city's own terms (inference until audience data confirms it). It reports results against targets at day 30 and day 90.",
+   "inputs": [
+    "market config",
+    "ShowSpec (proposed)",
+    "competitor tracker"
+   ],
+   "outputs": [
+    "launch plan",
+    "launch assets",
+    "30- and 90-day launch reports"
+   ],
+   "tools": [
+    "email",
+    "social_api"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "one 30-day program per new market or flagship show",
+   "code": "—",
+   "kpis": [
+    "followers at day 30 and day 90 per market",
+    "local partners signed at launch",
+    "launch press mentions"
+   ]
+  },
+  {
+   "id": "social-media-manager",
+   "name": "Social Media Manager",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "always-on (daily schedule)",
+   "mission": "Run the network's social accounts so local people find our shows where they already scroll.",
+   "description": "Schedules clips, quote cards and episode posts per platform (Instagram, TikTok, YouTube Shorts, Facebook for local audiences, Threads, Bluesky, X), using the Copywriter's social_posts and the Clip Maker's output. Account bios disclose that the voices are AI. It posts only gated content, never argues in replies (the Community Manager handles those) and avoids engagement bait. Breaking posts go out only after the episode is published.",
+   "inputs": [
+    "Copy",
+    "clips",
+    "growth plan"
+   ],
+   "outputs": [
+    "scheduled posts",
+    "social metrics"
+   ],
+   "tools": [
+    "social_api"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "network accounts plus one account set per market as it launches",
+   "code": "—",
+   "kpis": [
+    "followers per market account",
+    "clip-to-listen conversion (tracked links)",
+    "posts removed for policy (target 0)"
+   ]
+  },
+  {
+   "id": "newsletter-editor",
+   "name": "Newsletter Editor",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-episode (daily per market) + weekly network digest",
+   "mission": "Send a daily local newsletter that pairs with each brief and builds an audience we own.",
+   "description": "Turns each daily brief into a short morning email: the stories in text, links to sources and the episode, the weather block and what's happening today. A weekly network digest promotes evergreen and Case Tracker episodes. Subject lines are tested with the Headline Tester, and list hygiene and the legal basics (unsubscribe, sender address, consent) are kept with the Privacy Steward. Email is owned reach that no platform algorithm can take away.",
+   "inputs": [
+    "Script (gated)",
+    "Copy",
+    "weather block"
+   ],
+   "outputs": [
+    "newsletter issues",
+    "list metrics"
+   ],
+   "tools": [
+    "email"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "one daily edition per market + one weekly network digest",
+   "code": "—",
+   "kpis": [
+    "open and click rates",
+    "subscriber growth per market",
+    "newsletter-to-podcast follow conversion"
+   ]
+  },
+  {
+   "id": "cross-promo-planner",
+   "name": "Cross-Promo Planner",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Use our own shows to grow each other without annoying anyone.",
+   "description": "Plans house promotion across the network: unsold ad slots carry promos for related shows, trailers are dropped into similar feeds, and episodes end with 'if you liked this' pointers. It matches promos by audience overlap, so a Columbia listener hears about Cold Case Files: Carolinas, not an LA transit feed. It caps promo frequency per feed and gives each promo its own tracking link to measure lift.",
+   "inputs": [
+    "InsightReport (proposed)",
+    "unsold inventory from Ad Ops"
+   ],
+   "outputs": [
+    "promo schedule",
+    "promo scripts"
+   ],
+   "tools": [
+    "ad_server_api",
+    "sql"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "follows attributed to cross-promo",
+    "promo-fatigue complaints",
+    "unsold inventory used for promos"
+   ]
+  },
+  {
+   "id": "community-manager",
+   "name": "Community & Listener Mail",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "always-on",
+   "mission": "Answer listeners, route their corrections and tips, and keep the community healthy.",
+   "description": "Sorts email, comments and reviews into corrections (sent to the Corrections Agent as a Correction with reported_by 'listener'), news tips (sent to the Story Desk as tier-4 Signals that must be verified), questions, praise, complaints and abuse. It replies within a set time from approved templates and is plainly honest about being an AI network. Legal threats go straight to the Contracts & IP Clerk and the founders. Monthly it suggests mailbag segments, and a listener's message is read on air only with their consent.",
+   "inputs": [
+    "inbox",
+    "comments",
+    "reviews"
+   ],
+   "outputs": [
+    "replies",
+    "Correction",
+    "Signal (listener tips)",
+    "mailbag ideas"
+   ],
+   "tools": [
+    "email",
+    "social_api"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "median reply time (target < 24 h)",
+    "listener corrections logged within 1 h",
+    "tips that became stories"
+   ]
+  },
+  {
+   "id": "brand-guardian",
+   "name": "Brand Guardian",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-asset (before release) + monthly audit",
+   "mission": "Keep everything the public sees on-brand, honest about AI, and never impersonating anyone.",
+   "description": "Owns the brand book: the Curious & Creative Network name and labels, logos, colors, persona usage rules and disclosure language. It checks outward assets automatically before release (art, social copy, ads, newsletters, press releases) and returns fixes, not just rejections. It blocks anything that imitates a real person or outlet, hides that voices are synthetic, or uses clickbait. Monthly it audits a sample of live assets for drift.",
+   "inputs": [
+    "art",
+    "copy",
+    "ads",
+    "brand book"
+   ],
+   "outputs": [
+    "approve/fix decisions",
+    "monthly brand audit"
+   ],
+   "tools": [
+    "canva"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "off-brand assets live (target 0)",
+    "average time to fix",
+    "impersonation or disclosure issues (target 0)"
+   ]
+  },
+  {
+   "id": "analytics-insights",
+   "name": "Analytics & Insights",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "cron \"0 10 * * *\" (daily ingest) + weekly InsightReport",
+   "mission": "Turn listening data into decisions: what to make more of, what to fix, what to stop.",
+   "description": "Pulls host download analytics, Apple Podcasts and Spotify consumption and follower data, YouTube watch time, and newsletter and social metrics into one store. It analyzes completion by segment (using chapters), which story types and lengths hold listeners, time-of-day patterns per market and where growth comes from. The weekly InsightReport (proposed contract) has three to five findings, each with the data behind it and a recommended action for a named agent. Every number carries its source and as-of date.",
+   "inputs": [
+    "platform analytics",
+    "newsletter and social metrics",
+    "Episode metadata"
+   ],
+   "outputs": [
+    "InsightReport (proposed)",
+    "dashboards"
+   ],
+   "tools": [
+    "analytics_api",
+    "sql"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "recommendations adopted, and their measured effect",
+    "data freshness (< 24 h)",
+    "discrepancies vs platform dashboards"
+   ]
+  },
+  {
+   "id": "charts-reviews-monitor",
+   "name": "Charts & Reviews Monitor",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "cron \"0 13 * * *\" (daily)",
+   "mission": "Know where our shows rank and what listeners say about them, every day.",
+   "description": "Tracks Apple Podcasts and Spotify chart positions by category and country, YouTube podcast charts where available, and ratings and reviews across platforms. A Haiku-tier classifier tags review sentiment and topic (voice, accuracy, length, AI concerns) and flags review-bombing. Actionable reviews go to the Community Manager, accuracy complaints to Corrections, and chart wins to the Press & PR agent and the media kits.",
+   "inputs": [
+    "chart pages and endpoints",
+    "platform reviews"
+   ],
+   "outputs": [
+    "chart log",
+    "review digest"
+   ],
+   "tools": [
+    "web_fetch"
+   ],
+   "reports_to": "analytics-insights",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "shows covered in chart tracking (100%)",
+    "review response time",
+    "rating trend per show"
+   ]
+  },
+  {
+   "id": "partnerships-scout",
+   "name": "Partnerships Scout (local orgs & radio)",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Find local partners who make us more trusted and more heard: libraries, universities, radio, newsrooms and civic groups.",
+   "description": "Builds a partner list per market: public libraries, journalism schools and student media, public and community radio stations that could air our briefs, local newsrooms that want audio versions in exchange for attribution, chambers of commerce and civic groups. It researches each one, proposes a specific deal (content swap, syndication, events, co-branded feed) and drafts the outreach. Anything that commits money or signs a contract goes to Joshua or Janel. It tracks the partner pipeline in the CRM.",
+   "inputs": [
+    "market config",
+    "competitor tracker"
+   ],
+   "outputs": [
+    "partner pipeline",
+    "outreach drafts",
+    "partnership proposals"
+   ],
+   "tools": [
+    "web_search",
+    "email",
+    "crm"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "active partners per market",
+    "listeners attributed to partners",
+    "proposal-to-signed ratio"
+   ]
+  },
+  {
+   "id": "press-pr-agent",
+   "name": "Press & PR Agent",
+   "desk": "growth",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:market.launch, event:show.greenlit + weekly",
+   "mission": "Tell the network's story to the press: launches, milestones and the trust record.",
+   "description": "Writes press releases for launches, new markets and transparency milestones, pitches podcast trade press and local media, and keeps a press kit (fact sheet, founder bios, how the trust stack works, logos). It answers media inquiries with approved facts and routes interview requests to the founders. Statements in the company's name are approved by Joshua or Janel before release, because they are company speech, not episodes.",
+   "inputs": [
+    "milestones",
+    "transparency reports",
+    "chart wins"
+   ],
+   "outputs": [
+    "press releases",
+    "pitches",
+    "press kit"
+   ],
+   "tools": [
+    "email",
+    "web_search"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "earned media mentions per month",
+    "pitch response rate",
+    "media inquiries answered within 24 h"
+   ]
+  },
+  {
+   "id": "paid-growth-manager",
+   "name": "Paid Growth Manager",
+   "desk": "growth",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "always-on while campaigns run (daily review)",
+   "mission": "Buy listeners only where it pays back, with hard daily caps.",
+   "description": "Runs paid acquisition once organic channels are measured: podcast-app ads, app-store and search ads, and social ads targeted by market. Every campaign has a daily cap enforced by the Budget Controller and a stop-loss rule: if cost per retained follower goes above target, the campaign stops. It reports cost per acquired and retained listener by channel. Platform ad policies on AI content are checked first (verify, as of Oct 2026).",
+   "inputs": [
+    "growth plan",
+    "paid budget"
+   ],
+   "outputs": [
+    "campaigns",
+    "acquisition cost report"
+   ],
+   "tools": [
+    "ad_platform_api",
+    "analytics_api"
+   ],
+   "reports_to": "audience-growth-strategist",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "cost per retained listener vs target",
+    "payback period",
+    "campaigns stopped by stop-loss (working as designed)"
+   ]
+  },
+  {
+   "id": "revenue-director",
+   "name": "Revenue Director",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Own the revenue plan across ads, sponsors, grants, services and, later, the tools.",
+   "description": "Sets monthly revenue targets by line, reviews the sponsor pipeline, sell-through and fill, services bookings and grant timelines, and writes a weekly revenue memo for the founders. It decides where the revenue agents spend their effort (for example, direct local sponsors before programmatic in small markets). When revenue and standards conflict, it flags the conflict and standards win: the Standards Editor is never overruled by a sale. Price changes and contracts go to the founders.",
+   "inputs": [
+    "finance ledger",
+    "sponsor pipeline",
+    "InsightReport (proposed)",
+    "rate card"
+   ],
+   "outputs": [
+    "weekly revenue memo",
+    "monthly targets"
+   ],
+   "tools": [
+    "sql",
+    "crm"
+   ],
+   "reports_to": "network-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "revenue vs plan by line",
+    "revenue per episode",
+    "pipeline coverage of next quarter's target"
+   ]
+  },
+  {
+   "id": "ad-ops",
+   "name": "Ad Ops (DAI, fill, brand safety)",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "always-on",
+   "mission": "Run ad insertion cleanly and safely: the right ads, in the right places, never next to tragedy.",
+   "description": "Sets up dynamic ad insertion on the host (pre-, mid- and post-roll at the Sound Designer's segment markers), traffics direct campaigns, connects programmatic marketplaces and monitors fill and delivery. A Haiku-tier classifier tags every episode with brand-safety categories (crime, death, disaster, politics), so advertiser exclusions apply automatically. Network policy: Breaking Desk coverage of deaths and attacks runs ad-free by default. It enforces ad-load limits per format.",
+   "inputs": [
+    "episodes with ad markers",
+    "insertion orders",
+    "brand-safety rules"
+   ],
+   "outputs": [
+    "ad schedule",
+    "delivery and fill reports",
+    "brand-safety tags per episode"
+   ],
+   "tools": [
+    "ad_server_api",
+    "host_api"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "fill rate per show",
+    "delivered vs booked impressions",
+    "brand-safety violations (target 0)"
+   ]
+  },
+  {
+   "id": "yield-optimizer",
+   "name": "Programmatic Yield Optimizer",
+   "desk": "revenue",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Earn the most from every unsold slot without hurting listening.",
+   "description": "Once inventory is large enough, it tunes the mix of direct, programmatic and house promos, sets price floors per show and market, and tests ad load against completion so revenue never costs us the audience. CPM benchmarks come from the facts sheet, cited by ID. It reports revenue per thousand downloads by show and slot.",
+   "inputs": [
+    "delivery data",
+    "completion data",
+    "docs/research/facts-and-figures.md"
+   ],
+   "outputs": [
+    "floor and mix changes",
+    "yield report"
+   ],
+   "tools": [
+    "ad_server_api",
+    "analytics_api"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "revenue per thousand downloads",
+    "completion change after ad-load tests",
+    "unsold inventory share"
+   ]
+  },
+  {
+   "id": "sponsor-prospector",
+   "name": "Sponsor Prospector (local businesses)",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly per market + event:lead.inbound",
+   "mission": "Find and book local businesses that want to reach local listeners.",
+   "description": "Builds sponsor leads per market from new business filings and openings (Records & Filings Watcher), businesses already advertising locally, chamber member lists, and categories that fit each show (restaurants for Open & Shut, home services for Permit Pulse). It scores fit and conflict risk: no sponsor the show is actively covering as a news subject in that market. It drafts personalized outreach that follows anti-spam law, books calls on the founders' calendar, and logs every touch in the CRM.",
+   "inputs": [
+    "sponsor leads from records",
+    "market data",
+    "rate card"
+   ],
+   "outputs": [
+    "qualified leads",
+    "outreach sequences",
+    "booked calls"
+   ],
+   "tools": [
+    "web_search",
+    "email",
+    "crm",
+    "calendar"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "qualified leads per week per market",
+    "lead-to-sponsor conversion",
+    "sponsor conflicts missed (target 0)"
+   ]
+  },
+  {
+   "id": "media-kit-builder",
+   "name": "Sales Deck & Media Kit Builder",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "cron \"0 15 2 * *\" (monthly refresh) + on-demand",
+   "mission": "Give every sales conversation a current, honest media kit and deck.",
+   "description": "Builds a media kit per show and per market and a network sales deck: audience size and growth (from our analytics, with as-of dates), formats and placements, sample sponsor reads, the trust story with transparency numbers, and pricing from the rate card. It refreshes monthly and makes custom versions for big prospects. Every number comes from our own logs or the facts sheet; estimates are never presented as data.",
+   "inputs": [
+    "InsightReport (proposed)",
+    "rate card",
+    "transparency report"
+   ],
+   "outputs": [
+    "media kits",
+    "sales deck"
+   ],
+   "tools": [
+    "canva"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single; one kit per show and per market",
+   "code": "—",
+   "kpis": [
+    "kits refreshed monthly (100%)",
+    "deck-to-meeting conversion",
+    "out-of-date numbers in circulated kits (target 0)"
+   ]
+  },
+  {
+   "id": "rate-card-manager",
+   "name": "Rate Card Manager",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "monthly + on-demand",
+   "mission": "Price inventory and sponsorships so we sell out at a fair price.",
+   "description": "Maintains rates per show, market and placement (host-read vs produced, pre/mid/post, show sponsorships, newsletter and bundle packages) from Ad Ops' inventory forecast and the market CPM benchmarks in the facts sheet (cite IDs; as of Oct 2026, verify). It sets discount and make-good rules and adjusts monthly based on sell-through. Price changes above a set threshold go to the founders.",
+   "inputs": [
+    "inventory forecast",
+    "facts sheet",
+    "sell-through data"
+   ],
+   "outputs": [
+    "rate card",
+    "package definitions"
+   ],
+   "tools": [
+    "sql"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "sell-through rate",
+    "average effective rate vs card",
+    "how often discounts are used"
+   ]
+  },
+  {
+   "id": "sponsor-read-writer",
+   "name": "Sponsor Read Writer",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per-campaign",
+   "mission": "Write sponsor reads that work for the sponsor, sound natural, and are clearly ads.",
+   "description": "Writes host-read and produced ads from the sponsor's brief, always labeled as sponsored and placed in clearly separate breaks. News voices stay out of ads: Ava (breaking) and June (courts and crime) never read them, and a dedicated non-news persona voices most reads. Every claim in an ad is screened by the Legal Screener in ad mode for substantiation and disclosure. The sponsor approves the final copy.",
+   "inputs": [
+    "sponsor brief",
+    "insertion order"
+   ],
+   "outputs": [
+    "ad scripts",
+    "approved reads for Studio Voice"
+   ],
+   "tools": [
+    "email"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "one per campaign",
+   "code": "—",
+   "kpis": [
+    "sponsor approval on the first draft",
+    "sponsor renewal rate",
+    "ad-claim issues (target 0)"
+   ]
+  },
+  {
+   "id": "campaign-reporter",
+   "name": "Campaign Reporter",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "weekly during each campaign + at campaign end",
+   "mission": "Show every sponsor exactly what they got.",
+   "description": "Builds a delivery report per campaign: impressions or downloads delivered, placements, listener actions (promo-code redemptions, tracked link visits) and any shortfall with the make-good owed. Numbers come straight from ad-server and host data. Reports go out on schedule, and campaigns ready to renew are flagged to the Sponsor Prospector.",
+   "inputs": [
+    "delivery data",
+    "promo codes",
+    "insertion order terms"
+   ],
+   "outputs": [
+    "campaign reports",
+    "make-good calculations"
+   ],
+   "tools": [
+    "ad_server_api",
+    "email"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "one per campaign",
+   "code": "—",
+   "kpis": [
+    "reports on time (100%)",
+    "billing disputes caused by reporting errors (target 0)",
+    "renewals after a report"
+   ]
+  },
+  {
+   "id": "billing-collections",
+   "name": "Billing & Collections",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "per insertion order or SOW + weekly AR run",
+   "mission": "Invoice correctly, collect on time, and reconcile every payment.",
+   "description": "Creates invoices from signed insertion orders and services SOWs, sends payment links through the payment processor, sends polite reminders on a fixed schedule, and reconciles payments with the Finance Reporter. Disputes and anything past a set age go to the founders. It never changes prices or terms on its own.",
+   "inputs": [
+    "insertion orders",
+    "SOWs",
+    "campaign reports"
+   ],
+   "outputs": [
+    "invoices",
+    "reminders",
+    "accounts-receivable aging"
+   ],
+   "tools": [
+    "payments_api",
+    "email"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "days sales outstanding",
+    "invoice errors (target 0)",
+    "bad debt"
+   ]
+  },
+  {
+   "id": "grants-scout",
+   "name": "Grants Scout",
+   "desk": "revenue",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Find and win grants and funding for local news and media innovation.",
+   "description": "Tracks local-news funds, journalism foundations, state and city programs and media-innovation grants, and checks eligibility honestly: some funders may exclude AI-produced news (inference, to confirm per funder). It drafts applications built on the trust record and public-service angles (meeting coverage, missing-person appeals, local courts), tracks deadlines and reporting duties, and the founders review and submit. Award conditions go into the Contracts & IP Clerk's register.",
+   "inputs": [
+    "funder lists",
+    "transparency reports",
+    "impact metrics"
+   ],
+   "outputs": [
+    "grant pipeline",
+    "draft applications"
+   ],
+   "tools": [
+    "web_search",
+    "email"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "applications submitted per quarter",
+    "award rate",
+    "grant revenue"
+   ]
+  },
+  {
+   "id": "premium-membership-manager",
+   "name": "Premium & Membership Manager",
+   "desk": "revenue",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Offer paid tiers superfans want: ad-free, early access and bonus deep dives.",
+   "description": "Designs and runs paid offerings through platform subscription features and private-feed tools (verify terms and fees, as of Oct 2026): ad-free versions, early access to evergreen seasons, members-only deep dives and Case Tracker extras. It runs pricing tests, tracks churn and asks departing members why. Paid content goes through the same trust stack as free content.",
+   "inputs": [
+    "InsightReport (proposed)",
+    "platform terms"
+   ],
+   "outputs": [
+    "membership offers",
+    "churn report"
+   ],
+   "tools": [
+    "host_api",
+    "payments_api"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "paying members",
+    "monthly churn",
+    "revenue per member"
+   ]
+  },
+  {
+   "id": "content-licensing-agent",
+   "name": "Content Licensing Agent",
+   "desk": "revenue",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "weekly",
+   "mission": "Earn from the catalog by licensing shows and briefs to radio, platforms and publishers.",
+   "description": "Sells and manages licenses for evergreen series (History of Hollywood, Cold Case Files) and local briefs to radio stations, airlines, in-car and smart-speaker platforms and news sites, using packages from the Syndication Packager. It drafts term sheets from standard templates (territory, term, exclusivity, attribution, AI disclosure kept intact). Contracts are signed by the founders.",
+   "inputs": [
+    "catalog",
+    "partner leads"
+   ],
+   "outputs": [
+    "licensing pipeline",
+    "term sheets"
+   ],
+   "tools": [
+    "email",
+    "crm"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "licensing revenue",
+    "active licensees",
+    "catalog share under license"
+   ]
+  },
+  {
+   "id": "white-label-onboarding",
+   "name": "B2B White-Label Onboarding",
+   "desk": "revenue",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "event:client.signed (B2B engine customers)",
+   "mission": "Onboard B2B customers to the Earlobe Engine so their audio product runs on our workflow under their brand.",
+   "description": "For product 3 (Earlobe Engine): a newspaper, university or company that wants an automated audio product built from its own reporting or content. It configures their workspace (sources, personas, brand, lane policies, cadence), runs a pilot in dry-run, trains their staff and sets service levels. Their content runs through the same trust stack, with their own editors as escalation contacts.",
+   "inputs": [
+    "signed contract",
+    "customer content sources"
+   ],
+   "outputs": [
+    "configured workspace",
+    "pilot episodes",
+    "onboarding report"
+   ],
+   "tools": [
+    "host_api",
+    "email"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "one onboarding per customer",
+   "code": "—",
+   "kpis": [
+    "days from contract to first live episode",
+    "pilot-to-paid conversion",
+    "customer retention at 12 months"
+   ]
+  },
+  {
+   "id": "trust-api-concierge",
+   "name": "Trust-Stack API Concierge",
+   "desk": "revenue",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "always-on (support) + weekly account health",
+   "mission": "Help developers and newsrooms use the Trust Stack API well, and spot misuse.",
+   "description": "For product 2 (Trust Stack): onboards API customers to claim extraction, blind verification and the gate as a service. It issues keys and quotas, answers integration questions from the docs, watches usage for errors and for misuse (for example, using verification output to make false content look checked), and reports account health. Pricing and contracts come from the founders.",
+   "inputs": [
+    "API usage logs",
+    "API docs",
+    "support requests"
+   ],
+   "outputs": [
+    "onboarding",
+    "support answers",
+    "account health reports"
+   ],
+   "tools": [
+    "email",
+    "sql"
+   ],
+   "reports_to": "revenue-director",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "time to first successful API call",
+    "tickets resolved without escalation",
+    "API revenue retention"
+   ]
+  },
+  {
+   "id": "chief-of-staff",
+   "name": "Chief of Staff",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "cron \"0 11 * * *\" (07:00 ET daily brief; follows DST via the Scheduler) + weekly founder memo (Sunday)",
+   "mission": "Give Joshua and Janel one short morning brief: what shipped, what was stopped and why, money, and the few decisions only they can make.",
+   "description": "This is the founders' single window into a network that runs without them. The daily brief has five blocks: published (by show), stopped (KILLs, HOLDs, skipped slots, with the reason in one line), trust (corrections opened and applied), money (spend vs cap, revenue booked, cash) and decisions needed. Each decision is one yes/no line with a default and a deadline (budget increases, new markets, contracts, company statements, legal threats). It reads today's calendar and attaches meeting prep from Partner / Investor Relations, and it tracks the founder to-do list until each item closes. It never decides for the founders; when a decision passes its deadline it applies the documented default and says so.",
+   "inputs": [
+    "Run Auditor digest",
+    "Incident Commander status lines",
+    "programming and revenue memos",
+    "finance ledger",
+    "calendar",
+    "founder to-do list"
+   ],
+   "outputs": [
+    "daily founder brief",
+    "weekly founder memo",
+    "decision log"
+   ],
+   "tools": [
+    "email",
+    "calendar",
+    "sql",
+    "docs"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "brief delivered by 07:00 ET every day (100%)",
+    "decisions answered before their deadline",
+    "founder minutes per day spent on network operations (trend down)",
+    "surprises: issues the founders heard about elsewhere first (target 0)"
+   ]
+  },
+  {
+   "id": "industry-intel",
+   "name": "Industry Intel",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "always-on (daily scan) + weekly synthesis on the Opus tier",
+   "mission": "Know what is changing in AI audio, podcasting and local news before it hits us, starting with Liquid Studios.",
+   "description": "Watches the businesses and platforms that shape the network. AI audio networks come first: Liquid Studios, the former Inception Point AI and Quiet Please led by Jeanine Wright, whose rise and retreat is documented in docs/research/notes/inception-point-business-model.md. It also tracks podcast platform policy and product changes (Apple, Spotify, YouTube, Amazon, Podcast Index, Castro), the podcast ad market, voice and model vendors, local-news closures that open a market, and media ownership changes. The daily scan is a Sonnet-tier digest; each week an Opus-tier synthesis writes 'what changed and what it means for us', with facts and inferences labeled separately (Convention 3). New numbers go into the facts sheet with source and as-of date before anyone cites them, and ownership changes go to the Source Ledger Keeper.",
+   "inputs": [
+    "trade press and newsletters",
+    "platform blogs and changelogs",
+    "company filings and websites",
+    "docs/research/notes/"
+   ],
+   "outputs": [
+    "daily intel digest",
+    "weekly synthesis memo",
+    "facts sheet entries (with F-IDs)",
+    "event:ownership.change"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "rss",
+    "docs"
+   ],
+   "reports_to": "chief-of-staff",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "material industry changes flagged within 48 h",
+    "facts sheet entries with source and as-of date (100%)",
+    "intel items that led to a decision or config change per month",
+    "inferences mislabeled as facts (target 0)"
+   ]
+  },
+  {
+   "id": "competitive-watch",
+   "name": "Competitive Watch",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "monthly per market + weekly chart and launch scan",
+   "mission": "Map every competitor for each market and format, and find the gaps we can own.",
+   "description": "Keeps a competitor tracker per market and per format: local news podcasts, radio and TV station podcasts, newsletters, public-media shows, true-crime and court podcasts, and AI-generated feeds. In Columbia that includes the AI-made 'South Carolina News and Info Tracker' feed noted in our research. For each competitor it records cadence, length, format, hosts (human or AI), ad load, chart position, ratings and last-episode date. Monthly it writes a white-space note for the Programming Director: formats nobody serves, shows that went dormant, and audiences left behind by newsroom cuts. It describes competitors factually and never copies their content or branding.",
+   "inputs": [
+    "podcast directories and charts",
+    "competitor feeds (metadata only)",
+    "Charts & Reviews Monitor data",
+    "Industry Intel digest"
+   ],
+   "outputs": [
+    "competitor tracker",
+    "monthly white-space note"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "rss"
+   ],
+   "reports_to": "industry-intel",
+   "instances": "one per market: columbia-sc, los-angeles (wave 0, live); new-york, chicago (wave 1, configured, enabled: false); next 20: charleston-sc, greenville-sc, charlotte, atlanta, houston, washington-dc, philadelphia, phoenix, dallas-fort-worth, miami, bay-area, seattle, denver, austin, boston, detroit, new-orleans, nashville, las-vegas, twin-cities",
+   "code": "—",
+   "kpis": [
+    "markets with a tracker updated in the last 30 days (100%)",
+    "white-space notes that became greenlit shows",
+    "competitor launches spotted within 7 days"
+   ]
+  },
+  {
+   "id": "vendor-pricing-watch",
+   "name": "Vendor & Pricing Watch",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "weekly + event:vendor.change",
+   "mission": "Catch every price, quota or terms change from our vendors before it hits the budget or breaks a workflow.",
+   "description": "Watches pricing pages, changelogs and terms for every vendor in the stack: the Anthropic API (by tier), ElevenLabs text-to-speech and speech-to-text, the podcast host, CourtListener, search and data APIs, the email and newsletter platform, social APIs, design tools and the payment processor. When something changes it updates the facts sheet entry (new value, source, as-of date), tells the Budget Controller and Quota Sentinel, and re-estimates cost per episode with the Finance Reporter. It keeps a tested backup for each critical vendor (a second TTS engine, a second host) so the Incident Commander has a failover plan. Every statement it writes carries 'as of <date>, verify before buying' (Convention 2).",
+   "inputs": [
+    "vendor pricing pages and changelogs",
+    "vendor terms of service",
+    "AgentRun cost data"
+   ],
+   "outputs": [
+    "vendor change alerts",
+    "facts sheet updates",
+    "backup-vendor register",
+    "event:vendor.change"
+   ],
+   "tools": [
+    "web_fetch",
+    "web_search",
+    "sql"
+   ],
+   "reports_to": "finance-reporter",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "vendor changes detected within 7 days",
+    "facts sheet price entries older than 90 days (target 0)",
+    "critical vendors with a tested backup (100%)"
+   ]
+  },
+  {
+   "id": "finance-reporter",
+   "name": "Finance / Bookkeeping Reporter",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "cron \"0 12 * * *\" (daily cost rollup) + monthly close (by business day 5)",
+   "mission": "Know what every show, market and product costs and earns, every day, in numbers an accountant can trust.",
+   "description": "Rolls up AgentRun usd_estimate by show, desk and agent each day and reconciles the estimates against vendor invoices at month end, so the cost model in finance/ stays honest. It records revenue from invoices and payments (Billing & Collections), ad delivery and services, and keeps the finance ledger that the revenue, programming and founder memos read. Monthly it produces the close pack: P&L by product line (Network, Trust Stack, Earlobe Engine, Studio Services), unit economics per show (cost per episode, cost per listener, revenue per episode) and cash runway. It prepares, but does not file, tax and compliance items for the LLC's accountant, and flags anything that needs a professional.",
+   "inputs": [
+    "AgentRun",
+    "vendor invoices",
+    "payments and invoices",
+    "ad delivery reports",
+    "config/budgets.yaml"
+   ],
+   "outputs": [
+    "finance ledger",
+    "daily cost rollup",
+    "monthly close pack",
+    "unit economics per show"
+   ],
+   "tools": [
+    "sql",
+    "accounting_api",
+    "payments_api"
+   ],
+   "reports_to": "chief-of-staff",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "estimated vs invoiced cost variance (target within 10%)",
+    "monthly close by business day 5",
+    "shows with a current unit-economics line (100%)",
+    "reconciliation breaks left open past 30 days (target 0)"
+   ]
+  },
+  {
+   "id": "compliance-policy-watch",
+   "name": "Compliance & Platform Policy Watch",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly + event:policy.change + on-demand clearances",
+   "mission": "Keep every show, source and tool inside platform rules and the law, and clear new ones before we use them.",
+   "description": "Tracks the rules that apply to a fully automated AI network: platform policies on AI content and disclosure (Apple, Spotify, YouTube, Amazon), the FTC's endorsement and advertising rules, state laws on AI disclosure and synthetic media (with extra care in election season), and vendor terms (ElevenLabs, NotebookLM, Meta Muse). It runs a clearance register: a court portal, social platform, data source, music library or UI engine is used only after it records that the terms allow our use. When a policy changes, it writes an impact note, updates the disclosure wording through the Disclosure Agent, and proposes standards or gate changes to the Standards Editor. It is not a lawyer; anything with legal exposure goes to the Contracts & IP Clerk and the founders.",
+   "inputs": [
+    "platform policy pages",
+    "regulator announcements",
+    "vendor terms",
+    "clearance requests from other agents"
+   ],
+   "outputs": [
+    "clearance register",
+    "policy impact notes",
+    "disclosure wording updates",
+    "event:policy.change"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "docs"
+   ],
+   "reports_to": "chief-of-staff",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "sources and tools in use without a clearance record (target 0)",
+    "policy changes turned into an impact note within 7 days",
+    "platform strikes, removals or demonetizations (target 0)"
+   ]
+  },
+  {
+   "id": "privacy-steward",
+   "name": "Privacy Steward",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "haiku",
+   "runs": "weekly + event:privacy.request",
+   "mission": "Collect as little personal data as we can, protect what we keep, and honor every privacy request on time.",
+   "description": "Covers listener data (newsletter lists, emails, tips, analytics) and the personal data that flows through the newsroom (names in court records, tipster identities). It keeps the privacy policy and data map current, sets retention periods (raw Signals and fetched pages expire; tipster contact details are separated and minimized), and makes sure email has consent and a working unsubscribe. It handles access and deletion requests within legal deadlines; the LA market brings California privacy law into scope (verify thresholds, as of Oct 2026). Requests to remove people from published journalism are not privacy requests; those go to the Contracts & IP Clerk and the Standards Editor.",
+   "inputs": [
+    "data map",
+    "privacy requests",
+    "newsletter and CRM systems",
+    "store retention settings"
+   ],
+   "outputs": [
+    "privacy policy updates",
+    "retention jobs",
+    "request log"
+   ],
+   "tools": [
+    "sql",
+    "email",
+    "docs"
+   ],
+   "reports_to": "compliance-policy-watch",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "privacy requests closed within the legal deadline (100%)",
+    "data held past its retention period (target 0)",
+    "tipster identities exposed (target 0)"
+   ]
+  },
+  {
+   "id": "contracts-ip-clerk",
+   "name": "Contracts & IP Clerk",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "on-demand + event:legal.threat + monthly register review",
+   "mission": "Keep the company's names, contracts, insurance and legal notices in order, and get real legal threats to a human within the hour.",
+   "description": "Runs trademark clearance on every show and persona name before launch (USPTO search plus a common-law web search), with a risk note for counsel on anything close. It keeps contract templates (insertion order, services SOW, partnership MOU, licensing term sheet) and a register of every signed contract with renewal dates and obligations, including grant conditions. It tracks media liability and errors-and-omissions insurance, an essential cover for a network that publishes without a human gate. Legal threats, subpoenas and takedown demands are logged, the evidence is preserved, and the matter goes to the founders and outside counsel within one hour. The clerk never answers them on the merits.",
+   "inputs": [
+    "show and persona names",
+    "contract requests",
+    "legal notices and demands",
+    "Community Manager escalations"
+   ],
+   "outputs": [
+    "name clearance notes",
+    "contract drafts from templates",
+    "contract and insurance register",
+    "event:legal.threat"
+   ],
+   "tools": [
+    "web_search",
+    "email",
+    "docs"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "shows launched without name clearance (target 0)",
+    "legal threats escalated within 1 h (100%)",
+    "contracts with renewal dates tracked (100%)",
+    "insurance lapses (target 0)"
+   ]
+  },
+  {
+   "id": "partner-investor-relations",
+   "name": "Partner / Investor Relations",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "opus",
+   "runs": "72 h before each partner or investor meeting (calendar-triggered) + monthly investor update",
+   "mission": "Walk the founders into every important meeting fully prepared, and keep partners and investors informed.",
+   "description": "For each meeting on the founders' calendar it builds a prep dossier: who they are, what they have said publicly, what they want, our asks, likely questions and landmines, with facts and inferences labeled. The model case is the Jeanine Wright / Liquid Studios meeting prep, which draws on Industry Intel's research and is careful to separate what is reported from what we infer. After meetings it drafts follow-ups and logs commitments, and it writes a monthly investor and partner update from the finance ledger and transparency report. It keeps the data room current. Every number in it comes from the facts sheet or our own logs.",
+   "inputs": [
+    "calendar",
+    "Industry Intel research",
+    "finance ledger",
+    "transparency report",
+    "CRM notes"
+   ],
+   "outputs": [
+    "meeting prep dossiers",
+    "follow-up drafts",
+    "monthly investor/partner update",
+    "data room"
+   ],
+   "tools": [
+    "calendar",
+    "web_search",
+    "email",
+    "docs"
+   ],
+   "reports_to": "chief-of-staff",
+   "instances": "single; one dossier per meeting",
+   "code": "—",
+   "kpis": [
+    "dossiers delivered at least 48 h before the meeting (100%)",
+    "follow-ups sent within 24 h",
+    "monthly update on time",
+    "errors found in dossiers after the meeting (target 0)"
+   ]
+  },
+  {
+   "id": "knowledge-base-keeper",
+   "name": "Knowledge Base Keeper",
+   "desk": "business-ops",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "weekly + per change (docs lint in CI)",
+   "mission": "Keep the docs, the agent files and the code telling the same story.",
+   "description": "Checks that this catalog, the agent files in agents/<desk>/<id>.md, the module map in earlobe/README.md and the code agree on ids, statuses and module paths. For example, it would catch that earlobe/sensors/press.py exists but is missing from the module map. It checks that schemas.py and json-contracts.md change together (Convention 8), and it lints the docs for numbers without facts-sheet IDs, missing as-of lines and model version strings (Conventions 1, 2 and 4). It files postmortems and decisions where people will find them, and opens fixes through the Release Guard.",
+   "inputs": [
+    "docs/",
+    "agents/",
+    "earlobe/README.md",
+    "earlobe/schemas.py",
+    "postmortems and decision logs"
+   ],
+   "outputs": [
+    "docs drift report",
+    "lint results",
+    "fix change requests"
+   ],
+   "tools": [
+    "ci",
+    "docs"
+   ],
+   "reports_to": "chief-of-staff",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "catalog vs agent files vs code mismatches (target 0)",
+    "convention lint violations on main (target 0)",
+    "drift items closed within 7 days"
+   ]
+  },
+  {
+   "id": "product-strategist",
+   "name": "Tools Productization Strategist",
+   "desk": "business-ops",
+   "status": "future",
+   "model_tier": "opus",
+   "runs": "monthly",
+   "mission": "Decide when and how the Trust Stack and the Earlobe Engine become products other people pay for.",
+   "description": "The plan is to dominate as a network first and sell the tools later; this agent says when 'later' has arrived. It scores each internal capability for product readiness: a stable interface, a proven track record from the transparency reports, cost per call, and support load. It drafts packaging and pricing hypotheses (cited from the facts sheet), a pilot customer list, and the positioning against B2B players such as Liquid Studios, which turned to 'content transformation infrastructure' for publishers. It hands signed pilots to B2B White-Label Onboarding and the Trust-Stack API Concierge.",
+   "inputs": [
+    "transparency reports",
+    "finance ledger",
+    "Industry Intel synthesis",
+    "inbound B2B interest"
+   ],
+   "outputs": [
+    "product readiness scorecard",
+    "packaging and pricing hypotheses",
+    "pilot plan"
+   ],
+   "tools": [
+    "web_search",
+    "sql",
+    "docs"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "single",
+   "code": "—",
+   "kpis": [
+    "pilots launched",
+    "pilot-to-paid conversion",
+    "product revenue share of total"
+   ]
+  },
+  {
+   "id": "services-intake",
+   "name": "Studio Services Intake",
+   "desk": "services",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:lead.services + daily pipeline review",
+   "mission": "Turn every inquiry about C&C Studio Services into a qualified lead, a clear proposal and a booked call.",
+   "description": "The front door and account owner for product 4, where Curious & Creative sets up podcasts and distribution for businesses and people, in person and remotely. It qualifies each inquiry (goal, audience, budget, timeline, location, whether the client wants to host or wants AI voices), proposes a package (Setup, Launch, Monthly Production, Coaching), and drafts the proposal and SOW from the Contracts & IP Clerk's templates. It books the discovery call on the founders' calendar and logs every touch in the CRM. It runs a conflict check: a client who is a current news subject in our markets is flagged, and buying services never buys coverage.",
+   "inputs": [
+    "inquiry forms and email",
+    "CRM",
+    "package and pricing sheet",
+    "founders' calendar"
+   ],
+   "outputs": [
+    "qualified lead",
+    "proposal",
+    "SOW draft",
+    "booked discovery call",
+    "event:client.signed"
+   ],
+   "tools": [
+    "email",
+    "crm",
+    "calendar",
+    "docs"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "single; Columbia and LA first (where the founders can be on site), then remote everywhere",
+   "code": "—",
+   "kpis": [
+    "inquiry to booked call within 48 h",
+    "proposal acceptance rate",
+    "conflicts missed (target 0)",
+    "services revenue booked per month"
+   ]
+  },
+  {
+   "id": "client-show-setup",
+   "name": "Client Show Setup",
+   "desk": "services",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "event:client.signed",
+   "mission": "Take a signed client from idea to a launch-ready show kit, so the founders' on-site day goes smoothly.",
+   "description": "Builds the client's show package from our Show Launcher templates, under the client's brand and ownership: concept and format doc, episode template, name clearance (Contracts & IP Clerk), cover art (Art Director templates, client brand), and a sound package with licensed music (Sonic Brand Librarian). For in-person work it prepares the gear list, room-treatment notes and a recording-day checklist for Joshua or Janel, sized to the client's budget. It writes the client's workflow guide: record, upload, publish, and who does what. Every account and asset is created in the client's name; we never hold their show hostage.",
+   "inputs": [
+    "signed SOW",
+    "intake notes",
+    "show templates",
+    "client brand assets"
+   ],
+   "outputs": [
+    "client show kit (concept, format, art, sound, templates)",
+    "gear list and recording-day checklist",
+    "workflow guide"
+   ],
+   "tools": [
+    "canva",
+    "docs",
+    "email"
+   ],
+   "reports_to": "services-intake",
+   "instances": "one job per client",
+   "code": "—",
+   "kpis": [
+    "days from signed SOW to launch-ready kit (target <= 10)",
+    "client revisions per kit",
+    "client satisfaction at launch"
+   ]
+  },
+  {
+   "id": "distribution-setup",
+   "name": "Distribution Setup",
+   "desk": "services",
+   "status": "next",
+   "model_tier": "sonnet",
+   "runs": "per client launch",
+   "mission": "Get each client's show live on Apple Podcasts, Spotify, YouTube and the other major apps, correctly the first time.",
+   "description": "Sets up hosting in the client's own account, validates the RSS feed and artwork, and submits the show to Apple Podcasts, Spotify, YouTube, Amazon Music, iHeart and the Podcast Index (verify current submission flows, as of Oct 2026). Where a platform needs a one-time owner action, it walks the client through it, or uses the Studio Operator with the client's delegated access. It confirms each listing is live (reusing the Directory Sync Checker), connects analytics access, applies AI-content disclosure where the client uses synthetic voices, and hands over a credentials and settings document. Credentials live in the client's password manager or a vault, never in email, chat or the repo.",
+   "inputs": [
+    "client show kit",
+    "client account access (delegated)",
+    "platform submission requirements"
+   ],
+   "outputs": [
+    "live listings per platform",
+    "analytics access",
+    "handover document"
+   ],
+   "tools": [
+    "host_api",
+    "computer_use",
+    "web_fetch",
+    "email"
+   ],
+   "reports_to": "client-show-setup",
+   "instances": "one job per client",
+   "code": "—",
+   "kpis": [
+    "platforms live within 7 days of launch (100%)",
+    "submissions accepted on the first try (target >= 95%)",
+    "credential-handling incidents (target 0)"
+   ]
+  },
+  {
+   "id": "client-post-production",
+   "name": "Client Post-Production",
+   "desk": "services",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "per client episode (on upload)",
+   "mission": "Turn a client's raw recording into a finished, published episode with notes, transcript and clips.",
+   "description": "For clients on the Monthly Production package: it cleans the audio (noise, levels, loudness to the -16 LUFS target with the same ffmpeg chain as our studio), proposes edits such as long pauses, false starts and filler for the client to approve, and drafts show notes, a transcript and clips by reusing our Copywriter, Transcript & Accessibility and Clip Maker playbooks. Unlike our network, the client is the approver: nothing publishes until they say yes. Factual claims in client shows are the client's responsibility, but it flags obvious legal risks such as an unsubstantiated health claim or a named private person accused of a crime.",
+   "inputs": [
+    "client raw audio",
+    "client show kit",
+    "client approval"
+   ],
+   "outputs": [
+    "finished episode audio",
+    "show notes",
+    "transcript",
+    "clips",
+    "risk flags for the client"
+   ],
+   "tools": [
+    "ffmpeg",
+    "stt",
+    "host_api",
+    "email"
+   ],
+   "reports_to": "client-show-setup",
+   "instances": "one job per client episode",
+   "code": "—",
+   "kpis": [
+    "turnaround from upload to approval-ready (target < 48 h)",
+    "client revision rounds per episode",
+    "episodes published on the client's schedule"
+   ]
+  },
+  {
+   "id": "client-coaching",
+   "name": "Client Coaching / Training",
+   "desk": "services",
+   "status": "future",
+   "model_tier": "sonnet",
+   "runs": "per session + per client episode (feedback)",
+   "mission": "Make clients better podcasters: delivery, structure, interviewing and consistency.",
+   "description": "Builds a training plan for each client from intake goals and their first recordings. After each episode it gives specific, kind feedback from the transcript and audio: speaking pace, filler words, structure, how quickly the hook lands, interview follow-ups, and levels. It keeps a lesson library (mic technique, interview prep, storytelling, show notes that convert) and schedules live sessions with Joshua or Janel, who draws on journalism-school craft for interviewing and storytelling. It tracks progress against the client's own baseline, not against other clients.",
+   "inputs": [
+    "client recordings and transcripts",
+    "intake goals",
+    "lesson library"
+   ],
+   "outputs": [
+    "training plan",
+    "per-episode feedback notes",
+    "session agendas"
+   ],
+   "tools": [
+    "stt",
+    "ffmpeg",
+    "calendar",
+    "docs"
+   ],
+   "reports_to": "founders (Joshua German, Janel Moore)",
+   "instances": "one plan per coaching client",
+   "code": "—",
+   "kpis": [
+    "client delivery scores vs their baseline after 4 episodes",
+    "coaching sessions completed as scheduled",
+    "coaching renewals"
+   ]
+  },
+  {
+   "id": "client-reporting",
+   "name": "Client Reporting",
+   "desk": "services",
+   "status": "future",
+   "model_tier": "haiku",
+   "runs": "cron \"0 14 3 * *\" (monthly, on the 3rd)",
+   "mission": "Show each client every month how their show is doing and what to do next.",
+   "description": "Pulls each client's host and platform analytics (with their delegated access) into a one-page monthly report: downloads and listeners, platform mix, follower growth, top episodes, completion where available, and three recommendations. It compares results with the goals set at intake and flags clients at renewal risk, or ready for an upsell, to Studio Services Intake. Every number shows its source and date range.",
+   "inputs": [
+    "client analytics (delegated access)",
+    "intake goals",
+    "SOW terms"
+   ],
+   "outputs": [
+    "monthly client report",
+    "renewal and upsell flags"
+   ],
+   "tools": [
+    "analytics_api",
+    "email",
+    "docs"
+   ],
+   "reports_to": "services-intake",
+   "instances": "one report per client per month",
+   "code": "—",
+   "kpis": [
+    "reports delivered on the 3rd (100%)",
+    "client renewal rate",
+    "upsells from report recommendations"
+   ]
+  },
+  {
+   "id": "field-ops-coordinator",
+   "name": "Field Ops Coordinator",
+   "desk": "services",
+   "status": "future",
+   "model_tier": "haiku",
+   "runs": "per on-site booking + weekly gear check",
+   "mission": "Make every in-person studio day run on time with the right gear, in the right place.",
+   "description": "Handles the logistics of the in-person side of Studio Services: confirms on-site dates and addresses, plans travel time between Columbia and LA bookings, and builds the day's run sheet. It keeps the equipment inventory (microphones, interfaces, stands, cables, acoustic treatment), checks out gear per booking, orders client purchases from the gear list, and tracks returns and repairs. It sends the client a pre-visit checklist (room choice, noise sources, power, Wi-Fi).",
+   "inputs": [
+    "booked on-site sessions",
+    "gear lists",
+    "equipment inventory"
+   ],
+   "outputs": [
+    "run sheet per visit",
+    "gear checkout log",
+    "client pre-visit checklist",
+    "purchase list"
+   ],
+   "tools": [
+    "calendar",
+    "email",
+    "docs"
+   ],
+   "reports_to": "services-intake",
+   "instances": "single; Columbia and LA first (where the founders can be on site), then remote everywhere",
+   "code": "—",
+   "kpis": [
+    "on-site sessions that started on time with complete gear (target 100%)",
+    "lost or damaged gear per quarter",
+    "client pre-visit checklists completed"
+   ]
+  }
+ ]
+}

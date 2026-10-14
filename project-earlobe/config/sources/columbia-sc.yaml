@@ -1,0 +1,15 @@
+# Columbia, SC feeds. Read by earlobe.config.load_sources("columbia-sc") -> sensors/rss.py.
+# URLs are from memory and NOT checked (verified: false). The Beat agent confirms each on its first run
+# (HTTP 200, parses as RSS/Atom, items are recent), flips verified to true, and drops dead feeds.
+# tier: 1 official record, 2 established newsroom, 3 local/specialist (see schemas.SOURCE_TIERS).
+# Comments mark the least certain URL patterns. AP and Reuters have no stable public RSS; use the gnews sensor.
+market: columbia-sc
+feeds:
+  - {outlet: "The State", url: "https://www.thestate.com/news/local/?widgetName=rssfeed&widgetContentId=712015&getXmlFeed=true", kind: article, tier: 2, beats: &all [government, public_safety, education, business, development, weather, sports, culture], verified: false}  # McClatchy widget pattern; id is a guess
+  - {outlet: "WIS", url: "https://www.wistv.com/arc/outboundfeeds/rss/?outputType=xml", kind: article, tier: 2, beats: *all, verified: false}
+  - {outlet: "WLTX", url: "https://www.wltx.com/feeds/syndication/rss/news", kind: article, tier: 2, beats: *all, verified: false}
+  - {outlet: "The Post and Courier", url: "https://www.postandcourier.com/search/?f=rss&t=article&c=columbia&l=50&s=start_time&sd=desc", kind: article, tier: 2, beats: *all, verified: false}  # search-RSS pattern; section slug is a guess
+  - {outlet: "SC Daily Gazette", url: "https://scdailygazette.com/feed/", kind: article, tier: 3, beats: [government, education, development, business], verified: false}
+  - {outlet: "City of Columbia", url: "https://www.columbiasc.gov/RSSFeed.aspx?ModID=1&CID=All-newsflash.xml", kind: press_release, tier: 1, beats: [government, public_safety, development], verified: false}  # CivicPlus newsflash pattern; guess
+  - {outlet: "Richland County", url: "https://www.richlandcountysc.gov/RSSFeed.aspx?ModID=1&CID=All-newsflash.xml", kind: press_release, tier: 1, beats: [government, public_safety, development], verified: false}  # CivicPlus pattern; guess
+  - {outlet: "National Weather Service", url: "https://api.weather.gov/alerts/active.atom?area=SC", kind: official_data, tier: 1, beats: [weather, public_safety], verified: false}

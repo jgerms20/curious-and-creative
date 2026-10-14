@@ -1,0 +1,17 @@
+# Chicago feeds (wave 1; chicago-daily is disabled for now). Read by earlobe.config.load_sources("chicago").
+# URLs are from memory and NOT checked (verified: false). The Beat agent confirms each on its first run
+# (HTTP 200, parses as RSS/Atom, items are recent), flips verified to true, and drops dead feeds.
+# tier: 1 official record, 2 established newsroom, 3 local/specialist. AP and Reuters: use the gnews sensor.
+# Note: config/owners.yaml knows Chicago Public Media only; the Tribune, WGN etc. count as their own groups until added.
+market: chicago
+feeds:
+  - {outlet: "Chicago Sun-Times", url: "https://chicago.suntimes.com/rss/index.xml", kind: article, tier: 2, beats: &all [government, public_safety, housing, transit, business, weather, sports, culture], verified: false}
+  - {outlet: "Chicago Tribune", url: "https://www.chicagotribune.com/arcio/rss/category/news/", kind: article, tier: 2, beats: *all, verified: false}  # Arc pattern; guess
+  - {outlet: "WBEZ", url: "https://www.wbez.org/rss/index.xml", kind: article, tier: 2, beats: *all, verified: false}  # pattern from memory; low confidence
+  - {outlet: "Block Club Chicago", url: "https://blockclubchicago.org/feed/", kind: article, tier: 3, beats: *all, verified: false}
+  - {outlet: "WGN", url: "https://wgntv.com/feed/", kind: article, tier: 2, beats: *all, verified: false}
+  - {outlet: "NBC Chicago", url: "https://www.nbcchicago.com/news/local/?rss=y", kind: article, tier: 2, beats: *all, verified: false}
+  - {outlet: "ABC7 Chicago", url: "https://abc7chicago.com/feed/", kind: article, tier: 2, beats: *all, verified: false}
+  - {outlet: "CBS Chicago", url: "https://www.cbsnews.com/chicago/latest/rss/main", kind: article, tier: 2, beats: *all, verified: false}
+  - {outlet: "U.S. Attorney, Northern District of Illinois", url: "https://www.justice.gov/usao-ndil/pr/rss.xml", kind: press_release, tier: 1, beats: [public_safety, government], verified: false}  # justice.gov pattern; guess
+  - {outlet: "National Weather Service", url: "https://api.weather.gov/alerts/active.atom?point=41.88,-87.63", kind: official_data, tier: 1, beats: [weather, public_safety], verified: false}

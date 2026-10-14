@@ -1,0 +1,122 @@
+name: Earlobe breaking desk
+
+# Scans for breaking news every 15 minutes and, when the desk's rules fire (several independent
+# outlets, official confirmation, an event class), produces a flash through the breaking lane's
+# stricter gate. A scan only escalates to the full pipeline when those rules fire.
+#
+# Actions minutes: that is 96 runs a day, each billed at least one minute even when the repo is
+# not configured yet and the run is skipped. Free on a public repo; on a private repo check the
+# plan's included minutes before merging this to the default branch.
+#
+# IMPORTANT: GitHub runs `schedule` triggers ONLY from the workflow file on the repository's
+# DEFAULT branch. Until this file is merged there, nothing fires by itself; test a branch with
+# "Run workflow" (workflow_dispatch) instead. Scheduled runs are best effort: GitHub may delay
+# or drop some when it is busy, and pauses them after 60 days with no repo activity. Treat this
+# as a stopgap and move the scan to a real scheduler before relying on it for speed.
+#
+# Nothing here fails red when Earlobe is not set up yet: the preflight job checks the secrets and
+# model variables first and, if any is missing, prints "not configured — skipping" and the run job
+# is skipped. See earlobe-daily-briefs.yml for the full list of what to configure.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One scan at a time. A newer queued scan replaces an older queued one, which is what we want.
+concurrency:
+  group: earlobe-breaking
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    name: Check configuration
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      ready: ${{ steps.check.outputs.ready }}
+    steps:
+      - name: Check secrets and model variables
+        id: check
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          EARLOBE_MODEL_OPUS: ${{ vars.EARLOBE_MODEL_OPUS }}
+          EARLOBE_MODEL_SONNET: ${{ vars.EARLOBE_MODEL_SONNET }}
+          EARLOBE_MODEL_HAIKU: ${{ vars.EARLOBE_MODEL_HAIKU }}
+        run: |
+          missing=""
+          for name in ANTHROPIC_API_KEY ELEVENLABS_API_KEY EARLOBE_MODEL_OPUS EARLOBE_MODEL_SONNET EARLOBE_MODEL_HAIKU; do
+            if [ -z "${!name}" ]; then missing="$missing $name"; fi
+          done
+          if [ -n "$missing" ]; then
+            echo "not configured — skipping (missing:$missing)"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured: all required secrets and variables are set"
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  scan:
+    name: Scan and publish flashes
+    needs: preflight
+    if: needs.preflight.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: project-earlobe
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: project-earlobe/pyproject.toml
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ffmpeg
+
+      - name: Install Earlobe
+        run: python -m pip install -e .
+
+      # Stopgap until the Supabase-backed store lands: carry the SQLite file (budget spend,
+      # which flashes already aired) from one run to the next. Runners start empty.
+      - name: Restore the run store
+        uses: actions/cache@v4
+        with:
+          path: project-earlobe/data/earlobe.db
+          key: earlobe-store-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: earlobe-store-
+
+      - name: Scan for breaking news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+          TRANSISTOR_API_KEY: ${{ secrets.TRANSISTOR_API_KEY }}
+          EARLOBE_MODEL_OPUS: ${{ vars.EARLOBE_MODEL_OPUS }}
+          EARLOBE_MODEL_SONNET: ${{ vars.EARLOBE_MODEL_SONNET }}
+          EARLOBE_MODEL_HAIKU: ${{ vars.EARLOBE_MODEL_HAIKU }}
+          ELEVENLABS_TTS_MODEL: ${{ vars.ELEVENLABS_TTS_MODEL }}
+          VOICE_AVA: ${{ vars.VOICE_AVA }}
+          EARLOBE_PUBLIC_BASE_URL: ${{ vars.EARLOBE_PUBLIC_BASE_URL }}
+          EARLOBE_KILL: ${{ vars.EARLOBE_KILL }}
+        run: python -m earlobe breaking-scan
+
+      # Publishing to a podcast host comes later; for now the public output is kept as an artifact.
+      - name: Upload public output
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: earlobe-public-breaking-${{ github.run_id }}-${{ github.run_attempt }}
+          path: project-earlobe/data/public
+          if-no-files-found: ignore
+          retention-days: 7

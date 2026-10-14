@@ -1,0 +1,87 @@
+# Cold Case Files: topic queue and research brief for the evergreen pipeline.
+# Read by earlobe.config.load_evergreen("cold-case-files") and used by pipeline.run_evergreen().
+#
+# This queue is strict-lane. Each topic below is a GENERIC description of a kind of case. It names no
+# person, place or case on purpose: the research step (the Cold-Case Archivist) finds ONE real,
+# publicly documented case that fits the description and that an agency is publicly asking for
+# information about, then returns a pack of official and press sources. If it cannot find a case that
+# meets every rule in the brief, it returns an empty source list and says why in "uncertain"; the run
+# then stops without writing anything.
+#
+# One topic is produced per run, in the order listed. A topic that has been published is skipped on
+# later runs; a topic that the trust gate killed is skipped for a week, then tried again. Do not add a
+# victim's name, a suspect's name or a case name to this file.
+#
+# Fields: see config/evergreen/history-of-hollywood.yaml.
+agent: cold-case-archivist
+tier: opus
+max_searches: 20
+risk_flags: [crime]
+brief: |
+  You are researching one episode of Cold Case Files, a respectful, strictly sourced series about
+  unsolved cases where telling the story can help investigators. The topic you are given is a generic
+  description. Find ONE real, publicly documented case that fits it. Never invent or composite a case.
+
+  A case qualifies only if ALL of these hold:
+  - A law-enforcement agency, medical examiner or attorney general's office has a current public page,
+    press release or appeal about it, and that page publishes a working tip line, email or web form.
+  - The victim was an adult when the case began. Skip any case involving a child or teenager.
+  - It is not a sexual-assault, abuse or trafficking case.
+  - No living person has been publicly named by the agency as a suspect, person of interest or accused.
+    A case with a pending charge, an arrest or a trial in progress is NOT cold: skip it.
+  - The facts are established by official or press records you can list. Skip any case that rests on
+    rumor, a documentary's claims, a podcast's theory or a forum.
+
+  Sources: use official pages (agency, state cold-case unit, medical examiner, NamUs public case
+  listings) as tier 1, established newsrooms as tier 2, local or specialist outlets as tier 3.
+  The Charley Project, the Doe Network, true-crime sites, forums and social posts are leads only; use
+  them to find the official record, then cite the record. List at least two sources from different owners,
+  at least one of them an official page.
+
+  Summary: write in your own words a neutral timeline in which every entry rests on a listed source: what
+  was reported, on what date, by whom. Say who is speaking ("the sheriff's office said"). Include what
+  investigators have said on the record, and what the record leaves unresolved. Put the agency's tip line
+  or web form in the summary exactly as that page publishes it, attributed to the agency. Add the rumors
+  that circulate but that no agency has confirmed to "uncertain" so the writer keeps them out; describe them
+  generally and do not repeat a name or an allegation.
+
+  Hard limits: name no uncharged person; no graphic detail beyond what the agency itself published; no
+  theories of your own; no names of minors or of victims of sexual assault or abuse; no living
+  family member by name unless an agency statement or on-record family statement quotes them and
+  the point cannot be made without it.
+  If no case fits every rule, return an empty "sources" list and explain why in "uncertain".
+editor_notes:
+  - "The victim is a person, not a plot device. Use their name only as the agency's own pages do, and speak of them with dignity."
+  - "Close the episode with the investigating agency's tip line exactly as the sources publish it, attributed to the agency."
+  - "Presume innocence of anyone mentioned. Name no suspect. Say what the record leaves unresolved."
+topics:
+  - id: cc-01
+    title: "An unsolved homicide of an adult from the 1980s, where the investigating agency has renewed a public appeal for tips"
+    angle: "Follow the public record from the discovery to the agency's current appeal."
+  - id: cc-02
+    title: "An adult who disappeared in the 1990s after leaving work, with the agency still publicly seeking information"
+    angle: "Reconstruct the last confirmed sightings from official statements and contemporary reports."
+  - id: cc-03
+    title: "An unidentified-remains case from the 1970s where investigators are asking the public for help with identification"
+    angle: "Describe only what the agency has published about the discovery, the examination and the identification effort."
+  - id: cc-04
+    title: "An unsolved shooting of an adult during the robbery of a small business"
+    angle: "Set out the agency's account of the incident and the reward or appeal that remains open."
+  - id: cc-05
+    title: "A fatal fire from the 1990s that investigators later ruled to be arson and have never closed"
+    angle: "Follow the fire marshal's and investigators' published findings and the open request for information."
+  - id: cc-06
+    title: "A hiker or traveler who vanished on a well-known trail or highway route, with a search that ended without answers"
+    angle: "Cover the search and the agency's published timeline, and what remains unknown."
+  - id: cc-07
+    title: "An unsolved killing of a taxi, delivery or rideshare driver while on the job"
+    angle: "Explain the agency's published account and the appeal for anyone who remembers the night."
+  - id: cc-08
+    title: "A decades-old case where a vehicle was found abandoned and the driver was never located"
+    angle: "Trace the official timeline from the vehicle's discovery to the agency's current status."
+  - id: cc-09
+    title: "A death originally treated as accidental that investigators later reclassified as a homicide"
+    angle: "Explain what changed in the official finding, as the medical examiner or agency published it."
+  - id: cc-10
+    title: "A cold case where the agency has announced new forensic testing and asked the public for tips"
+    angle: "Describe the testing in general terms as the agency explained it, and what the agency says it still needs."

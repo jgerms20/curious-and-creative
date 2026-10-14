@@ -1,0 +1,17 @@
+# Daily spend caps in USD. monitor/budget.py allows a run only while the show's estimated
+# spend for the UTC day (sum of AgentRun.usd_estimate, see earlobe/config.py PRICES) is under its cap.
+# Caps are starting guesses, sized for a few rewrite loops plus web-search verification. list prices
+# as of Oct 2026; verify, then tune from the first week of real runs.
+network_daily_usd: 60.0    # all shows combined; when reached, only breaking-desk may still run
+default_daily_usd: 5.0     # any show not listed below
+warn_fraction: 0.8         # log a warning at this share of a cap
+shows:
+  columbia-daily: 5.0
+  la-daily: 6.0
+  breaking-desk: 10.0      # event-driven; several flashes a day can stack up
+  la-courts: 6.0
+  case-tracker: 8.0        # weekly long form, plus flashes
+  cold-case-files: 8.0
+  history-of-hollywood: 6.0
+  nyc-daily: 5.0
+  chicago-daily: 5.0
