@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T22:53:05Z",
+ "generated_at": "2026-10-14T05:01:47Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-11T10:55:01Z",
-   "count": 204
+   "latest": "2026-10-13T22:53:34Z",
+   "count": 205
   },
   {
    "key": "brazil",
@@ -80,7 +80,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -159,6 +159,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:b652b44f 1c7e 4530 bd64 e8c0c2a4d295",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#206 The Ten Percent: CAA, WME, and the Invention of the Agent",
+   "date": "2026-10-13T22:53:34Z",
+   "duration": 3159,
+   "description": "Behind almost every famous name in entertainment stands someone you've never heard of — and they take ten percent of everything. The agent might be the most powerful job in Hollywood that nobody outside it understands, and it wasn't designed. It was improvised, piece by piece, by people solving very specific problems.\n This episode traces that invention: vaudeville-era exploitation and how the 10% commission became the norm, William Morris and MCA setting the template, Lew Wasserman's Winchester '73 deal that rewired star pay, and the night in 1975 when five young agents quit William Morris and founded CAA. We get into the deals and the structure — packaging, the fees studios paid agencies…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791931920773-e05a2092b9dca.jpg",
+   "url": "https://open.spotify.com/episode/0btNq1hJ3DFts0e3Y9jzN7",
+   "spotify_url": "https://open.spotify.com/episode/0btNq1hJ3DFts0e3Y9jzN7",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127432432/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-13%2F8b8b53d0-5a59-7b53-224e-6441139d264d.m4a",
+   "number": "206"
+  },
+  {
    "id": "brazil:3QvNoGZqpr58FDBARvnvXN",
    "show": "brazil",
    "kind": "episode",
@@ -180,8 +194,8 @@
    "duration": 2701,
    "description": "In 1968, filmmaker William Greaves took a cast and crew into Central Park to shoot a screen test — and quietly designed the production so his crew would rebel against him on camera. The result, Symbiopsychotaxiplasm: Take One, is a film inside a film inside a film: actors performing a melodrama, a director performing incompetence, and a mostly-white crew secretly filming their own mutiny while a Black director watched it all unfold exactly as he'd predicted in his notebooks.\n This episode unpacks the word behind it — symbiotaxiplasm, life arranging itself into shared reality, and the \"psycho\" Greaves added for the paranoia and ego that surface the moment people know they're being watched —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791715609055-e657199a56807.jpg",
-   "url": "https://open.spotify.com/episode/4nA94cJH4rcO2NqHHBJKYD",
-   "spotify_url": "https://open.spotify.com/episode/4nA94cJH4rcO2NqHHBJKYD",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/204-Symbiopsychotaxiplasm-The-Film-That-Watched-Itself-e3qav3k",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127285812/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2Fa28c2c40-006b-42af-57f1-a36f1fdf3727.m4a",
    "number": "204"
   },
@@ -3748,7 +3762,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 204,
+   "episodes": 205,
    "spotify_matches": 1
   },
   "brazil": {
