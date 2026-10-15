@@ -50,7 +50,8 @@
         "german"
       ],
       "rss": "https://anchor.fm/s/111be5840/podcast/rss",
-      "tier": "primary"
+      "tier": "primary",
+      "ai": "assisted"
     },
     {
       "key": "approachable",
@@ -95,18 +96,16 @@
       "kind": "podcast",
       "tier": "primary",
       "hosts": [
-        "Joshua German"
+        "AI-generated"
       ],
-      "tagline": "Jazz, every day.",
+      "tagline": "A daily dose of jazz, made with AI.",
       "about": "",
       "spotify": "79MaSzrv6uJkaHiFoZQrWk",
       "itunes_search": [
         "The Daily Riff"
       ],
-      "match_artist": [
-        "german"
-      ],
-      "rss": null
+      "rss": null,
+      "ai": "full"
     },
     {
       "key": "dominate",
@@ -145,7 +144,8 @@
       "match_artist": [
         "german"
       ],
-      "tier": "secondary"
+      "tier": "secondary",
+      "ai": "full"
     },
     {
       "key": "abolitionist",
@@ -212,6 +212,20 @@
       "search": [
         "Janel Moore"
       ]
+    }
+  ],
+  "letterboxd": [
+    {
+      "key": "joshua",
+      "author": "Joshua German",
+      "user": "jgerms"
+    },
+    {
+      "key": "janel",
+      "author": "Janel Moore",
+      "user": null,
+      "find_via": "jgerms",
+      "match": "janel"
     }
   ]
 }

@@ -905,6 +905,65 @@ def parse_feed_posts(xml_text, author, limit=30):
     return {"title": (ch.findtext("title") or "").strip(), "url": (ch.findtext("link") or "").strip(), "posts": posts}
 
 
+LB_NS = "https://letterboxd.com"
+
+
+def letterboxd_feed(user):
+    """Diary + reviews from a Letterboxd profile's public RSS."""
+    url = f"https://letterboxd.com/{user}/rss/"
+    try:
+        root = ET.fromstring(fetch(url).encode())
+        items = []
+        for it in root.find("channel").findall("item"):
+            d = it.findtext("description") or ""
+            img = re.search(r'<img src="([^"]+)"', d)
+            text = strip_html(re.sub(r"<p><img[^>]*/?></p>", "", d), 600)
+            items.append({
+                "film": it.findtext(f"{{{LB_NS}}}filmTitle") or (it.findtext("title") or "").split(",")[0],
+                "year": it.findtext(f"{{{LB_NS}}}filmYear"),
+                "rating": it.findtext(f"{{{LB_NS}}}memberRating"),
+                "watched": it.findtext(f"{{{LB_NS}}}watchedDate"),
+                "title": (it.findtext("title") or "").strip(),
+                "url": (it.findtext("link") or "").strip(),
+                "poster": img.group(1) if img else None,
+                "review": "" if re.match(r"^Watched on ", text) else text,
+                "date": parse_date(it.findtext("pubDate")),
+            })
+        return items
+    except Exception as e:  # noqa: BLE001
+        log(f"  letterboxd rss blocked for {user} ({e}); trying rss2json")
+        j = json.loads(fetch("https://api.rss2json.com/v1/api.json?rss_url=" + urllib.parse.quote(url, safe="")))
+        if j.get("status") != "ok":
+            raise RuntimeError(j.get("message") or "rss2json failed")
+        out = []
+        for it in j.get("items", []):
+            d = it.get("description") or ""
+            img = re.search(r'<img src="([^"]+)"', d)
+            text = strip_html(re.sub(r"<p><img[^>]*/?></p>", "", d), 600)
+            t = it.get("title", "")
+            m = re.match(r"^(.*?), (\d{4})(?: - (.*))?$", t)
+            out.append({"film": m.group(1) if m else t, "year": m.group(2) if m else None, "rating": None, "stars": (m.group(3) if m else None),
+                        "title": t, "url": it.get("link"), "poster": img.group(1) if img else it.get("thumbnail"),
+                        "review": "" if re.match(r"^Watched on ", text) else text,
+                        "date": parse_date(it.get("pubDate", "").replace(" ", "T") + "Z") if it.get("pubDate") else None})
+        return out
+
+
+def find_letterboxd(seed, match):
+    """Look for a member (e.g. Janel) among the people a known profile follows."""
+    found = []
+    for page in ("following", "followers"):
+        try:
+            h = fetch(f"https://letterboxd.com/{seed}/{page}/", timeout=15)
+            for user, name in re.findall(r'<a[^>]+href="/([A-Za-z0-9_]+)/"[^>]*>\s*([^<]{2,60})</a>', h):
+                if match.lower() in name.lower() and user not in found:
+                    found.append(user)
+            DEBUG.setdefault("letterboxd_search", {})[page] = found[:]
+        except Exception as e:  # noqa: BLE001
+            DEBUG.setdefault("letterboxd_search", {})[page] = str(e)
+    return found
+
+
 def do_writing(reg):
     """Substack feeds for each writer in shows.json["writing"]."""
     out = {"sources": [], "posts": []}
@@ -942,6 +1001,22 @@ def do_writing(reg):
                 log(f"  writing feed failed {feed}: {e}")
         out["sources"].append(src)
     out["posts"].sort(key=lambda x: x.get("date") or "", reverse=True)
+    out["letterboxd"] = []
+    for lb in reg.get("letterboxd", []):
+        rec = dict(lb)
+        user = lb.get("user")
+        if not user and lb.get("find_via"):
+            cands = find_letterboxd(lb["find_via"], lb.get("match", ""))
+            rec["candidates"] = cands
+            user = cands[0] if len(cands) == 1 else None
+        if user:
+            rec["user"], rec["url"] = user, f"https://letterboxd.com/{user}/"
+            try:
+                rec["entries"] = letterboxd_feed(user)
+                log(f"  letterboxd {user}: {len(rec['entries'])} entries, {sum(1 for x in rec['entries'] if x.get('review'))} reviews")
+            except Exception as e:  # noqa: BLE001
+                log(f"  letterboxd failed {user}: {e}")
+        out["letterboxd"].append(rec)
     return out
 
 
@@ -1024,7 +1099,14 @@ def main():
     log("\n=== writing")
     try:
         writing = do_writing(reg)
-        if writing["posts"] or not os.path.exists(os.path.join(DATA, "writing.json")):
+        prev_w = json.load(open(os.path.join(DATA, "writing.json"))) if os.path.exists(os.path.join(DATA, "writing.json")) else {}
+        if not writing["posts"]:
+            writing["posts"] = prev_w.get("posts", [])
+        prev_lb = {x.get("key"): x for x in prev_w.get("letterboxd", [])}
+        for x in writing.get("letterboxd", []):
+            if not x.get("entries") and prev_lb.get(x.get("key"), {}).get("entries"):
+                x.update({k: v for k, v in prev_lb[x["key"]].items() if k in ("entries", "user", "url")})
+        if True:
             with open(os.path.join(DATA, "writing.json"), "w") as f:
                 json.dump(writing, f, indent=1, ensure_ascii=False)
     except Exception as e:  # noqa: BLE001
