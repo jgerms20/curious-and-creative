@@ -848,6 +848,7 @@ def probe_site(base):
             "text": " ".join(g.text)[:80000],
             "images": imgs,
             "links": sorted(set(urllib.parse.urljoin(url, h) for h in g.links)),
+            "links_ordered": list(dict.fromkeys(urllib.parse.urljoin(url, h) for h in g.links)),
         })
         for h in g.links:
             u = urllib.parse.urljoin(url, h).split("#")[0]
@@ -921,7 +922,12 @@ def do_writing(reg):
                         DEBUG.setdefault("substack_search", {})[q] = str(e)
         if feed:
             try:
-                f = parse_feed_posts(fetch(feed), w.get("author"))
+                try:
+                    raw = fetch(feed)
+                except Exception as e:  # noqa: BLE001
+                    log(f"  writing feed retry with a feed-reader agent ({e})")
+                    raw = fetch_as(feed, "Feedly/1.0 (+http://www.feedly.com/fetcher.html; like FeedFetcher-Google)")
+                f = parse_feed_posts(raw, w.get("author"))
                 src.update(title=f["title"] or w.get("title"), url=f["url"] or w.get("url"), count=len(f["posts"]))
                 out["posts"] += f["posts"]
                 log(f"  writing {w.get('author')}: {len(f['posts'])} posts")
