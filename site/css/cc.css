@@ -822,3 +822,29 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 @media (max-width: 820px) { .kshow--wide { grid-template-columns: 1fr; } .kshow--wide .kc { width: 160px; height: 224px; margin: -112px 0 0 -80px; } .kshow--wide .kc p { font-size: .9rem; } }
 [data-show="riff"] { --c: #2F5BEA; }
 .projects .proj--feature:only-child { grid-column: 1 / -1; }
+[data-host="ai"] { --h: var(--grape); }
+
+/* network v2: logo hub, AI node, open seats */
+.web__hub-ring { fill: var(--card); stroke: var(--ink); stroke-width: 3; }
+.web .web__hub text.web__hub-label { fill: var(--ink); font-size: 17px; font-weight: 900; text-anchor: middle; text-transform: uppercase; letter-spacing: .03em; }
+.web__edge--ai { stroke: var(--grape); stroke-dasharray: 5 6; }
+.web.is-focus .web__edge--ai.is-on { stroke: var(--grape); }
+.web__node--ai circle { fill: color-mix(in srgb, var(--grape) 16%, var(--card)); stroke: var(--grape); stroke-width: 3; }
+.web__node--ai path { fill: var(--grape); }
+.web__node--ai { cursor: default; }
+.web__label--quiet { fill: var(--ink-soft); font-weight: 700; font-size: 15px; }
+.web__node--future .web__plus { font-size: 24px; font-weight: 800; }
+
+/* letterboxd reviews */
+.reviews { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 1rem; margin-top: 1.25rem; }
+.review { display: grid; grid-template-columns: 96px 1fr; gap: 1rem; padding: 1rem; border: 1px solid var(--line); border-left: 5px solid var(--h); background: var(--card); border-radius: var(--card-r); transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease); }
+.review:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.review img, .review .ph { width: 96px; aspect-ratio: 2 / 3; border-radius: 8px; object-fit: cover; background: var(--paper-2); }
+.review > span { display: flex; flex-direction: column; gap: .3rem; }
+.review b { font-weight: 850; font-size: 1.05rem; }
+.review b small { color: var(--ink-soft); font-weight: 650; }
+.review__stars { color: var(--green-ink); letter-spacing: .08em; font-weight: 800; }
+.review__text { color: var(--ink); font-size: .92rem; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.review small { color: var(--ink-soft); font-size: .78rem; font-weight: 650; margin-top: auto; }
+.hdr__links { gap: .8rem; font-size: .9rem; }
+@media (max-width: 1260px) { .hdr__links { display: none; } .hdr__search-mobile { margin-left: auto; } }

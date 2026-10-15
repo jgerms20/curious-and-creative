@@ -228,8 +228,6 @@
       ${perShow.map(([s, e]) => `<li data-show="${s.key}"><a href="${esc(CC.epHref(e))}"${ext(CC.epHref(e))}><span>${esc(e.title)}<small>${esc(s.short || s.name)} · ${esc(ago(e.date))}</small></span></a></li>`).join("")}
     </ol></div>`;
     grid.innerHTML = html;
-    const kh = document.getElementById("kindling-home");
-    if (kh) { kh.innerHTML = kindlingCard(); dealKindling(kh); }
   }
 
   /* ------------------------------------------------ the network */
