@@ -32,6 +32,10 @@ const PAGES = {
   art:        '/pages/art.html',
   contact:    '/pages/contact.html',
   archive:    '/pages/archive.html',
+  network:    '/pages/network.html',
+  shop:       '/pages/shop.html',
+  videos:     '/pages/videos.html',
+  writing:    '/pages/writing.html',
 };
 
 const pick = process.argv[2];

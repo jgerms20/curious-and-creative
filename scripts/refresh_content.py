@@ -296,6 +296,14 @@ def spotify_embed(show_id):
     """Episode list (title -> episode url) + show name from the embed page."""
     page = fetch(f"https://open.spotify.com/embed/show/{show_id}")
     dbg = DEBUG.setdefault("spotify", {}).setdefault(show_id, {})
+    try:
+        legacy = fetch(f"https://open.spotify.com/embed-podcast/show/{show_id}", timeout=15)
+        dbg["legacy_len"] = len(legacy)
+        dbg["legacy_episode_ids"] = len(set(re.findall(r"spotify:episode:([A-Za-z0-9]{22})", legacy)))
+        if dbg["legacy_episode_ids"] > 1:
+            page = legacy
+    except Exception as e:  # noqa: BLE001
+        dbg["legacy_error"] = str(e)
     dbg["len"] = len(page)
     dbg["script_ids"] = re.findall(r'<script[^>]*id="([^"]+)"', page)[:20]
     dbg["head"] = page[:1200]
@@ -436,6 +444,58 @@ def spotify_full(show_id):
             "episodes": eps, "full": True}
 
 
+def spotify_episode(eid):
+    """One episode's details from its public embed page."""
+    page = fetch(f"https://open.spotify.com/embed/episode/{eid}")
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+    if not m:
+        return None
+    ent = (((json.loads(m.group(1)).get("props") or {}).get("pageProps") or {}).get("state") or {}).get("data", {}).get("entity") or {}
+    if not ent.get("id"):
+        return None
+    covers = ent.get("coverArt", {}).get("sources") if isinstance(ent.get("coverArt"), dict) else None
+    covers = covers or ent.get("relatedEntityCoverArt") or []
+    cover = max(covers, key=lambda c: c.get("maxWidth") or c.get("width") or 0)["url"] if covers else None
+    rd = (ent.get("releaseDate") or {}).get("isoString")
+    return {"title": ent.get("title") or ent.get("name") or "", "spotify_url": f"https://open.spotify.com/episode/{ent['id']}",
+            "duration": round((ent.get("duration") or 0) / 1000) or None, "date": parse_date(rd) if rd else None,
+            "description": "", "image": cover, "video": bool(ent.get("hasVideo"))}
+
+
+def discover_feed(show, spotify_name):
+    """Find a Spotify-hosted show's public RSS feed without API keys."""
+    names = [n for n in dict.fromkeys([spotify_name, show["name"], show.get("short")]) if n]
+    want = [norm(n) for n in names]
+    # 1) Podcast Index (open directory) via its public web search
+    for n in names:
+        try:
+            res = json.loads(fetch("https://podcastindex.org/api/search/byterm?q=" + urllib.parse.quote(n)))
+            for f in (res.get("feeds") or [])[:15]:
+                title, author, url = norm(f.get("title")), norm(f.get("author")), f.get("url") or f.get("originalUrl")
+                hosts = [norm(h).split()[-1] for h in show.get("hosts", [])]
+                if url and title in want and (not hosts or any(h in author for h in hosts)):
+                    log(f"  podcastindex feed: {f.get('title')} | {f.get('author')} -> {url}")
+                    return url
+        except Exception as e:  # noqa: BLE001
+            log(f"  podcastindex search failed ({n}): {e}")
+    # 2) Spotify for Creators public show page, which links the RSS feed
+    slugs = show.get("creator_slugs") or []
+    for n in names:
+        base = re.sub(r"[^a-z0-9]+", "", (n or "").lower())
+        slugs += [base, base.replace("the", "", 1)]
+    for slug in dict.fromkeys(x for x in slugs if x):
+        for host in ("creators.spotify.com/pod/show", "podcasters.spotify.com/pod/show", "anchor.fm"):
+            try:
+                page = fetch(f"https://{host}/{slug}", timeout=12)
+            except Exception:  # noqa: BLE001
+                continue
+            m = re.search(r"https://anchor\.fm/s/[0-9a-f]+/podcast/rss", page)
+            if m and any(w and w in norm(page[:20000]) for w in want):
+                log(f"  creators page {host}/{slug} -> {m.group(0)}")
+                return m.group(0)
+    return None
+
+
 def spotify_has_video(episode_url):
     try:
         eid = episode_url.rstrip("/").rsplit("/", 1)[-1].split("?")[0]
@@ -558,6 +618,8 @@ def do_podcast(show, prev_eps):
         if apple:
             feed_url = apple.get("feedUrl")
             log(f"  chose feed: {apple.get('collectionName')} -> {feed_url}")
+    if not feed_url and show.get("spotify") and not (sp and sp.get("full")):
+        feed_url = discover_feed(show, sp and sp.get("name"))
     channel, items = None, []
     if feed_url:
         try:
@@ -594,6 +656,21 @@ def do_podcast(show, prev_eps):
                 "url": e["spotify_url"], "spotify_url": e["spotify_url"],
                 "spotify_video": bool(e.get("video")),
             })
+
+    for link in show.get("episode_links") or []:
+        eid = link.rstrip("/").split("/episode/")[-1].split("?")[0]
+        if any(e.get("spotify_url", "").endswith(eid) for e in eps):
+            continue
+        try:
+            got = spotify_episode(eid)
+        except Exception as e:  # noqa: BLE001
+            log(f"  episode link failed {link}: {e}")
+            got = None
+        if got:
+            eps.append({"id": f"{key}:{eid}", "show": key, "kind": "episode", "title": got["title"], "date": got["date"],
+                        "duration": got["duration"], "description": got["description"], "image": got["image"],
+                        "url": got["spotify_url"], "spotify_url": got["spotify_url"], "spotify_video": got["video"]})
+            log(f"  pinned episode: {got['title']}")
 
     if not items and eps:
         have = {e["id"] for e in eps}
@@ -768,14 +845,103 @@ def probe_site(base):
             "ids": ids,
             "title": g.meta.get("og:title") or (re.search(r"<title>(.*?)</title>", page, re.S) or [None, ""])[1],
             "meta": g.meta,
-            "text": " ".join(g.text)[:6000],
+            "text": " ".join(g.text)[:80000],
             "images": imgs,
             "links": sorted(set(urllib.parse.urljoin(url, h) for h in g.links)),
+            "links_ordered": list(dict.fromkeys(urllib.parse.urljoin(url, h) for h in g.links)),
         })
         for h in g.links:
             u = urllib.parse.urljoin(url, h).split("#")[0]
             if urllib.parse.urlparse(u).netloc == host and u not in seen and not re.search(r"\.(jpe?g|png|pdf|webp|gif|zip)$", u, re.I):
                 queue.append(u)
+    return out
+
+
+# ---------------------------------------------------------------- projects + writing
+PROJECT_HOSTS = ("jgerms20.github.io", "vercel.app", "ai.studio", "github.com/jgerms20/")
+
+
+def probe_projects(probes):
+    """Title, description and preview image for each project Joshua links."""
+    links = set()
+    for p in probes:
+        for pg in p.get("pages", []):
+            links |= {l for l in pg.get("links", []) if any(h in l for h in PROJECT_HOSTS)}
+    out = []
+    for link in sorted(links):
+        if "curious-and-creative" in link:
+            continue
+        rec = {"url": link}
+        try:
+            page = fetch(link, timeout=15)
+            g = Grab()
+            g.feed(page)
+            m = re.search(r"<title>(.*?)</title>", page, re.S)
+            rec.update({"title": html.unescape((g.meta.get("og:title") or (m.group(1) if m else "")).strip()),
+                        "description": html.unescape(g.meta.get("og:description") or g.meta.get("description") or ""),
+                        "image": urllib.parse.urljoin(link, g.meta.get("og:image") or "") if g.meta.get("og:image") else None,
+                        "text": " ".join(g.text)[:1500]})
+        except Exception as e:  # noqa: BLE001
+            rec["error"] = str(e)
+        out.append(rec)
+        log(f"  project {link}: {rec.get('title') or rec.get('error')}")
+    return out
+
+
+def parse_feed_posts(xml_text, author, limit=30):
+    root = ET.fromstring(xml_text.encode("utf-8") if isinstance(xml_text, str) else xml_text)
+    ch = root.find("channel")
+    posts = []
+    for it in ch.findall("item")[:limit]:
+        enc = it.find("enclosure")
+        posts.append({
+            "title": (it.findtext("title") or "").strip(),
+            "url": (it.findtext("link") or "").strip(),
+            "date": parse_date(it.findtext("pubDate")),
+            "excerpt": strip_html(it.findtext("description") or it.findtext("content:encoded", namespaces=NS) or "", 280),
+            "image": enc.get("url") if enc is not None and "image" in (enc.get("type") or "") else None,
+            "author": author,
+        })
+    return {"title": (ch.findtext("title") or "").strip(), "url": (ch.findtext("link") or "").strip(), "posts": posts}
+
+
+def do_writing(reg):
+    """Substack feeds for each writer in shows.json["writing"]."""
+    out = {"sources": [], "posts": []}
+    for w in reg.get("writing", []):
+        src = dict(w)
+        feed = w.get("feed")
+        if not feed and w.get("search"):
+            for q in w["search"]:
+                for api in (f"https://substack.com/api/v1/publication/search?query={urllib.parse.quote(q)}&page=0&limit=10",
+                            f"https://substack.com/api/v1/profile/search?query={urllib.parse.quote(q)}&page=0"):
+                    try:
+                        res = json.loads(fetch(api, timeout=15))
+                        DEBUG.setdefault("substack_search", {})[f"{q} | {api.split('/v1/')[1].split('?')[0]}"] = res if len(json.dumps(res)) < 20000 else json.dumps(res)[:20000]
+                    except Exception as e:  # noqa: BLE001
+                        DEBUG.setdefault("substack_search", {})[q] = str(e)
+        if feed:
+            try:
+                try:
+                    f = parse_feed_posts(fetch(feed), w.get("author"))
+                except Exception as e:  # noqa: BLE001
+                    # Substack blocks datacenter IPs; read the same feed through rss2json instead
+                    log(f"  writing feed blocked ({e}); trying rss2json")
+                    j = json.loads(fetch("https://api.rss2json.com/v1/api.json?rss_url=" + urllib.parse.quote(feed, safe="")))
+                    if j.get("status") != "ok":
+                        raise RuntimeError(j.get("message") or "rss2json failed")
+                    f = {"title": (j.get("feed") or {}).get("title"), "url": (j.get("feed") or {}).get("link"),
+                         "posts": [{"title": it.get("title", "").strip(), "url": it.get("link"), "date": parse_date(it.get("pubDate", "").replace(" ", "T") + "Z") if it.get("pubDate") else None,
+                                    "excerpt": strip_html(it.get("description") or it.get("content") or "", 280),
+                                    "image": it.get("thumbnail") or ((it.get("enclosure") or {}).get("link") if "image" in ((it.get("enclosure") or {}).get("type") or "") else None),
+                                    "author": w.get("author")} for it in j.get("items", [])]}
+                src.update(title=f["title"] or w.get("title"), url=f["url"] or w.get("url"), count=len(f["posts"]))
+                out["posts"] += f["posts"]
+                log(f"  writing {w.get('author')}: {len(f['posts'])} posts")
+            except Exception as e:  # noqa: BLE001
+                log(f"  writing feed failed {feed}: {e}")
+        out["sources"].append(src)
+    out["posts"].sort(key=lambda x: x.get("date") or "", reverse=True)
     return out
 
 
@@ -805,7 +971,7 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check")}
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]
@@ -846,11 +1012,23 @@ def main():
         if photos is not None:
             with open(os.path.join(DATA, "photos.json"), "w") as f:
                 json.dump({"source": reg["photos"]["page"], "photos": photos}, f, indent=1, ensure_ascii=False)
+        log("\n=== projects")
+        projects = probe_projects(probes)
+        with open(os.path.join(DATA, "_projects.json"), "w") as f:
+            json.dump(projects, f, indent=1, ensure_ascii=False)
         people = sync_people(reg)
         log(f"  people: {people}")
         content["people"] = people
         with open(prev_path, "w") as f:
             json.dump(content, f, indent=1, ensure_ascii=False)
+    log("\n=== writing")
+    try:
+        writing = do_writing(reg)
+        if writing["posts"] or not os.path.exists(os.path.join(DATA, "writing.json")):
+            with open(os.path.join(DATA, "writing.json"), "w") as f:
+                json.dump(writing, f, indent=1, ensure_ascii=False)
+    except Exception as e:  # noqa: BLE001
+        log(f"  writing failed: {e}")
     with open(os.path.join(DATA, "_debug.json"), "w") as f:
         json.dump(DEBUG, f, indent=1, ensure_ascii=False)
     return 0

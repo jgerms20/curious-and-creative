@@ -102,3 +102,12 @@ body.bs { min-height: 100vh; }
 .bs-modal__actions { display: flex; gap: .5rem; justify-content: space-between; margin-top: 1.25rem; flex-wrap: wrap; }
 .btn--danger { background: transparent; color: var(--pink-ink); border-color: currentColor; }
 @media (max-width: 520px) { .bs-modal__grid { grid-template-columns: 1fr; } }
+
+/* shop */
+.bs-shop { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: .9rem; }
+.bs-item { display: flex; flex-direction: column; gap: .3rem; text-align: left; border: 1px solid var(--line); background: var(--card); border-radius: 16px; padding: .6rem; transition: box-shadow var(--speed), transform var(--speed); }
+.bs-item:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+.bs-item__img { aspect-ratio: 4 / 5; border-radius: 10px; overflow: hidden; background: var(--paper-2); display: grid; place-items: center; font-size: .8rem; color: var(--ink-soft); font-weight: 700; }
+.bs-item__img img { width: 100%; height: 100%; object-fit: cover; }
+.bs-item b { font-weight: 800; line-height: 1.25; }
+.bs-item small { color: var(--ink-soft); font-size: .8rem; font-weight: 650; }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T17:08:20Z",
+ "generated_at": "2026-10-15T20:25:17Z",
  "shows": [
   {
    "key": "ccpod",
@@ -16,6 +16,7 @@
    "spotify": "033ze48fmi1cTvj2M7Pb6M",
    "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
    "rss": null,
+   "tier": "primary",
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
    "feed_title": "Curious + Creative",
    "art": "assets/art/ccpod.jpg",
@@ -34,55 +35,17 @@
    "tagline": "Everything is interesting when you dig deep enough.",
    "about": "Deep, well-researched episodes on whatever's too interesting to ignore: history and power, religion and myth, psychology, science, and Black culture. No lane, no niche.",
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
-   "rss": null,
+   "rss": "https://anchor.fm/s/111be5840/podcast/rss",
+   "tier": "primary",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
-   "apple_url": "https://podcasts.apple.com/us/podcast/the-eclectic-polymath-podcast/id6790238134?uo=4",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
    "feed_title": "The Eclectic Polymath Podcast",
    "description": "There’s too much interesting stuff in the world to only care about one thing.\nThe Eclectic Polymath Podcast explores a different curiosity every episode: fascinating people, strange moments in history, cultural shifts, political movements, religions, technologies, music, myths, ideas, and questions you may never have thought to ask.\nSome episodes explain how something became the way it is. Others unpack the life of someone worth knowing, trace an idea across centuries, or follow one rabbit hole until it connects to five others.\nYou don’t need to be an expert. You just need to stay curious.",
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-15T07:02:59Z",
-   "count": 212
-  },
-  {
-   "key": "brazil",
-   "name": "God Is Brazilian",
-   "short": "God Is Brazilian",
-   "kind": "podcast",
-   "hosts": [
-    "Joshua German"
-   ],
-   "tagline": "A podcast by Joshua German.",
-   "about": "",
-   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
-   "rss": null,
-   "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
-   "feed_title": "God is Brazilian",
-   "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-13T01:12:00Z",
-   "count": 9
-  },
-  {
-   "key": "tmtt",
-   "name": "Too Much to Tweet",
-   "short": "Too Much to Tweet",
-   "kind": "podcast",
-   "hosts": [
-    "Janel Moore"
-   ],
-   "tagline": "The takes too big for a caption.",
-   "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
-   "spotify": "033G4KctzeuD3Pu4db1AQa",
-   "rss": null,
-   "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
-   "feed_title": "Too Much to Tweet",
-   "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
-   "latest": "2026-07-25T22:26:00Z",
-   "count": 1
+   "latest": "2026-10-15T19:34:47Z",
+   "count": 213
   },
   {
    "key": "approachable",
@@ -97,6 +60,7 @@
    "youtube_handle": "@Approachable.A.I",
    "youtube_channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
    "art_url": "https://joshuamgerman.com/photos/podcasts/approachable-ai-logo.jpg",
+   "tier": "primary",
    "youtube_url": "https://www.youtube.com/@Approachable.A.I",
    "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
    "art": "assets/art/approachable.jpg",
@@ -106,28 +70,44 @@
    "count": 6
   },
   {
-   "key": "abolitionist",
-   "name": "Aspiring Abolitionist",
-   "short": "Aspiring Abolitionist",
+   "key": "tmtt",
+   "name": "Too Much to Tweet",
+   "short": "Too Much to Tweet",
    "kind": "podcast",
    "hosts": [
     "Janel Moore"
    ],
-   "tagline": "Politics, policy, and culture from an abolitionist lens.",
-   "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
-   "spotify": "7natfWFnBgakjLLZcEDZaw",
-   "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
-   "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
-   "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
-   "apple_url": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
-   "spotify_url": "https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw",
-   "feed_title": "Aspiring Abolitionist",
-   "description": "Welcome to Aspiring Abolitionist, the podcast where we dive into the political, social, and cultural moments shaping our world today.",
-   "complete": true,
-   "art": "assets/art/abolitionist.jpg",
-   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "latest": "2025-01-21T14:00:00Z",
-   "count": 13
+   "tagline": "The takes too big for a caption.",
+   "about": "Politics, culture, and the conversations the internet keeps trying to flatten into a thread.",
+   "spotify": "033G4KctzeuD3Pu4db1AQa",
+   "rss": null,
+   "tier": "primary",
+   "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
+   "feed_title": "Too Much to Tweet",
+   "art": "assets/art/tmtt.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "latest": "2026-07-25T22:26:00Z",
+   "count": 1
+  },
+  {
+   "key": "riff",
+   "name": "The Daily Riff",
+   "short": "The Daily Riff",
+   "kind": "podcast",
+   "tier": "primary",
+   "hosts": [
+    "Joshua German"
+   ],
+   "tagline": "Jazz, every day.",
+   "about": "",
+   "spotify": "79MaSzrv6uJkaHiFoZQrWk",
+   "rss": null,
+   "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
+   "feed_title": "The Daily Riff",
+   "art": "assets/art/riff.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "latest": "2026-10-15T20:19:00Z",
+   "count": 2
   },
   {
    "key": "dominate",
@@ -145,6 +125,8 @@
    "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
    "rss": "https://anchor.fm/s/24421480/podcast/rss",
    "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
+   "tier": "secondary",
+   "feature": true,
    "feed": "https://anchor.fm/s/24421480/podcast/rss",
    "apple_url": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
    "spotify_url": "https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp",
@@ -155,9 +137,94 @@
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/5983104/5983104-1590975610877-89f0b71432133.jpg",
    "latest": "2023-03-20T13:00:00Z",
    "count": 23
+  },
+  {
+   "key": "brazil",
+   "name": "God Is Brazilian",
+   "short": "God Is Brazilian",
+   "kind": "podcast",
+   "hosts": [
+    "Joshua German"
+   ],
+   "tagline": "A podcast by Joshua German.",
+   "about": "",
+   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
+   "rss": null,
+   "tier": "secondary",
+   "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
+   "feed_title": "God is Brazilian",
+   "art": "assets/art/brazil.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-13T01:12:00Z",
+   "count": 9
+  },
+  {
+   "key": "abolitionist",
+   "name": "Aspiring Abolitionist",
+   "short": "Aspiring Abolitionist",
+   "kind": "podcast",
+   "hosts": [
+    "Janel Moore"
+   ],
+   "tagline": "Politics, policy, and culture from an abolitionist lens.",
+   "about": "The political, social, and cultural moments shaping our world — from HUD policy to the 2025 Inauguration.",
+   "spotify": "7natfWFnBgakjLLZcEDZaw",
+   "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
+   "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
+   "tier": "secondary",
+   "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
+   "apple_url": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
+   "spotify_url": "https://open.spotify.com/show/7natfWFnBgakjLLZcEDZaw",
+   "feed_title": "Aspiring Abolitionist",
+   "description": "Welcome to Aspiring Abolitionist, the podcast where we dive into the political, social, and cultural moments shaping our world today.",
+   "complete": true,
+   "art": "assets/art/abolitionist.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
+   "latest": "2025-01-21T14:00:00Z",
+   "count": 13
   }
  ],
  "episodes": [
+  {
+   "id": "riff:67ZFR85yAZ8cEMdXAPEZ04",
+   "show": "riff",
+   "kind": "episode",
+   "title": "#5 Samara Joy: The Voice That Brought the Standards Back",
+   "date": "2026-10-15T20:19:00Z",
+   "duration": 2104,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
+   "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
+   "spotify_video": false
+  },
+  {
+   "id": "polymath:c006ec2b bc50 4635 abae 5efc17bece78",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#215 Nithya Raman: Hollywood's Socialist Is Leading the Mayor's Race",
+   "date": "2026-10-15T19:34:47Z",
+   "duration": 2648,
+   "description": "Nineteen days before the election, the challenger is ahead. Nithya Raman endorsed Mayor Karen Bass for re-election in January, then filed to run against her hours before the February deadline, and the September Berkeley IGS poll has her leading the incumbent 39 to 28.\n You may know her as the \"Hollywood socialist\" from Council District 4, or from the rent cap fight that rewrote the rules for some 650,000 rent-stabilized homes. Before any of that, she was a six-year-old immigrant from Kerala, an urban planner mapping slums in Delhi and Chennai, and the city staffer who found that nearly 90% of LA's homelessness spending went to jailing people.\n This episode traces how that planner became the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792092517902-d5b8291b3d1e6.jpg",
+   "url": "https://open.spotify.com/episode/7xdHSC9RH67dVgLsOlEe64",
+   "spotify_url": "https://open.spotify.com/episode/7xdHSC9RH67dVgLsOlEe64",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127536777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F1e3f5564-0bf6-abbd-d091-c0fad23792d3.m4a",
+   "number": "215"
+  },
+  {
+   "id": "riff:4pyb52nSDEdR8tsNdym7oC",
+   "show": "riff",
+   "kind": "episode",
+   "title": "#4 A Love Supreme: The Prayer Coltrane Recorded in One Day",
+   "date": "2026-10-15T11:12:00Z",
+   "duration": 2222,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
+   "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
+   "spotify_video": false
+  },
   {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
@@ -167,8 +234,8 @@
    "duration": 2491,
    "description": "Fifteen years ago David Ellison was the rich kid whose flying movie flopped. On October 6, 2026, he closed the deal that put Warner Bros. and Paramount in the same hands, and no mogul in history has held a combination like it.\n The education in between was real: financing other people's slates, learning the business title by title, and producing Top Gun: Maverick, the movie that made him credible. Then came the Redstone fight for Paramount, Bari Weiss at CBS News, and a hostile run at Warner Bros. Discovery backed by his father's Oracle fortune, with the data centers and cloud empire humming underneath the studio.\n Larry Ellison was the showman. David is the quiet operator running the same…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792047231637-95a1e6b8ec956.jpg",
-   "url": "https://open.spotify.com/episode/7tHjyr4F2k2rriHbOZF9Eo",
-   "spotify_url": "https://open.spotify.com/episode/7tHjyr4F2k2rriHbOZF9Eo",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/214-David-Ellison-Hollywoods-New-Landlord-e3qhmbc",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127506220/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2Fbb1d9dca-8d30-6310-6561-4faf91db8ccd.m4a",
    "number": null
   },
@@ -3860,7 +3927,36 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 212,
+   "episodes": 213,
+   "spotify_matches": 1
+  },
+  "approachable": {
+   "ok": true,
+   "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
+   "episodes": 6
+  },
+  "tmtt": {
+   "ok": true,
+   "feed": null,
+   "spotify_name": "Too Much to Tweet",
+   "full_catalog": false,
+   "episodes": 1,
+   "spotify_matches": 1
+  },
+  "riff": {
+   "ok": true,
+   "feed": null,
+   "spotify_name": "The Daily Riff",
+   "full_catalog": false,
+   "episodes": 2,
+   "spotify_matches": 2
+  },
+  "dominate": {
+   "ok": true,
+   "feed": "https://anchor.fm/s/24421480/podcast/rss",
+   "spotify_name": "Dominate the Decade ",
+   "full_catalog": true,
+   "episodes": 23,
    "spotify_matches": 1
   },
   "brazil": {
@@ -3871,33 +3967,12 @@
    "episodes": 9,
    "spotify_matches": 9
   },
-  "tmtt": {
-   "ok": true,
-   "feed": null,
-   "spotify_name": "Too Much to Tweet",
-   "full_catalog": false,
-   "episodes": 1,
-   "spotify_matches": 1
-  },
-  "approachable": {
-   "ok": true,
-   "channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
-   "episodes": 6
-  },
   "abolitionist": {
    "ok": true,
    "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
    "spotify_name": "Aspiring Abolitionist",
    "full_catalog": true,
    "episodes": 13,
-   "spotify_matches": 1
-  },
-  "dominate": {
-   "ok": true,
-   "feed": "https://anchor.fm/s/24421480/podcast/rss",
-   "spotify_name": "Dominate the Decade ",
-   "full_catalog": true,
-   "episodes": 23,
    "spotify_matches": 1
   }
  },
