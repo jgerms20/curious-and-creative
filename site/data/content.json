@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T11:40:19Z",
+ "generated_at": "2026-10-15T17:08:20Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-13T22:53:34Z",
-   "count": 205
+   "latest": "2026-10-15T07:02:59Z",
+   "count": 212
   },
   {
    "key": "brazil",
@@ -159,6 +159,90 @@
  ],
  "episodes": [
   {
+   "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#214 David Ellison: Hollywood's New Landlord",
+   "date": "2026-10-15T07:02:59Z",
+   "duration": 2491,
+   "description": "Fifteen years ago David Ellison was the rich kid whose flying movie flopped. On October 6, 2026, he closed the deal that put Warner Bros. and Paramount in the same hands, and no mogul in history has held a combination like it.\n The education in between was real: financing other people's slates, learning the business title by title, and producing Top Gun: Maverick, the movie that made him credible. Then came the Redstone fight for Paramount, Bari Weiss at CBS News, and a hostile run at Warner Bros. Discovery backed by his father's Oracle fortune, with the data centers and cloud empire humming underneath the studio.\n Larry Ellison was the showman. David is the quiet operator running the same…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792047231637-95a1e6b8ec956.jpg",
+   "url": "https://open.spotify.com/episode/7tHjyr4F2k2rriHbOZF9Eo",
+   "spotify_url": "https://open.spotify.com/episode/7tHjyr4F2k2rriHbOZF9Eo",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127506220/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2Fbb1d9dca-8d30-6310-6561-4faf91db8ccd.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:8824c0e3 5052 4f19 99de 9bf64fdc8848",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#213 Larry Ellison: Winning by Buying",
+   "date": "2026-10-15T06:50:16Z",
+   "duration": 3222,
+   "description": "For one day in September 2025, Larry Ellison was the richest man alive. He was 81, and the money did not come from a new invention. It came from forty years of databases, data centers, and a doctrine he never apologized for: if you cannot beat them, buy them.\n Ellison started with a borrowed name and a CIA codename. Oracle was a covert project before it was a company, and the company nearly died in 1990 before the acquisition spree that swallowed PeopleSoft, Sun, and half the enterprise software world. He won the America's Cup from 8-1 down because quitting was not in the operating system. He bought 98 percent of a Hawaiian island. And in his eighties, the AI boom made his infrastructure…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792046419323-e41ff76770ab.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/213-Larry-Ellison-Winning-by-Buying-e3qhlv9",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127505833/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F1be05257-a8af-5894-e011-d3d9be06a9c5.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:e56c9099 8302 4105 b4e3 ca17b894e409",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#210 Mongolia: How to Stay Yourself Between Russia and China",
+   "date": "2026-10-14T23:13:52Z",
+   "duration": 3036,
+   "description": "Mongolia is the emptiest country on Earth — about two people per square kilometer — and a third of it still moves with the seasons. It's also the homeland of the largest land empire in history, now sitting quietly between Russia and China.\n This episode traces how that happens: nomadism as a technology, not a rootlessness; Chinggis Khan and the empire that fragmented into other people's countries; Buddhism, Soviet decades, and a revolution that killed no one; and the modern squeeze of selling nearly everything to one neighbor while buying fuel from the other. How does a small country between two giants stay itself?\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792015628558-1ebb713b4ae72.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/210-Mongolia-How-to-Stay-Yourself-Between-Russia-and-China-e3qh58j",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127488723/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2F6ccd9d36-6556-27cf-4ff9-25006d674d22.m4a",
+   "number": "210"
+  },
+  {
+   "id": "polymath:82aab846 3a11 4dbf bb91 a3643723d2f6",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#209 Pompeii: The City That Didn't Know It Was Ending",
+   "date": "2026-10-14T23:05:01Z",
+   "duration": 2886,
+   "description": "In 79 AD, Pompeii was a working Roman city of bakeries, bars, election posters, and graffiti — and almost nobody there knew the mountain behind it was a volcano. Latin didn't even have a word for one. Then, over about eighteen hours, the city stopped mid-sentence.\n This episode tells it as a story: the ordinary day, the warnings nobody could read, Pliny watching from across the bay, the strange fact that most people actually escaped — and how a city gets forgotten for 1,500 years, then dug up to become the most famous disaster in the world. What we lost, what we learned, and why we can't stop looking.\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792015450315-d04a4f1addaf1.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/209-Pompeii-The-City-That-Didnt-Know-It-Was-Ending-e3qh532",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127488546/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2F5db80d7f-ab32-cd33-0cd1-c51463ff28af.m4a",
+   "number": "209"
+  },
+  {
+   "id": "polymath:f0eae34b 1ebb 46b7 a72e c8757b571d47",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#208 New Hollywood: The Decade the Directors Took Over",
+   "date": "2026-10-14T18:34:43Z",
+   "duration": 4209,
+   "description": "In 1967, American movies changed their mind about everything. The studio system that had run Hollywood for forty years collapsed — and for one strange decade, the keys went to film-school kids, method actors who looked like people you knew, and cinematographers who shot in the dark. The Godfather, Taxi Driver, Chinatown, Jaws: the most celebrated run of films in the country's history came from the industry briefly losing control of itself.\n This episode traces how it happened: the Paramount Decrees and television gutting the old studios, Bonnie and Clyde and Easy Rider proving a young audience existed, the 1968 ratings system replacing the censors, and the auteurs — Coppola, Scorsese,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792002419317-d2864ec3bcbf5.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/208-New-Hollywood-The-Decade-the-Directors-Took-Over-e3qgqu3",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127478147/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2Ff3baec20-c056-76fe-5831-2e3ce57e9c9e.m4a",
+   "number": "208"
+  },
+  {
+   "id": "polymath:224fd373 dfe1 4d37 8fa3 3a5843a82a58",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#207 Iran-Contra: The Scandal That Pardoned Itself",
+   "date": "2026-10-14T18:07:08Z",
+   "duration": 4622,
+   "description": "In October 1986, a cargo plane carrying weapons was shot down over Nicaragua, and the sole survivor started talking. Within two months, the Reagan White House was admitting to one of the strangest schemes in American history: selling missiles to Iran — the enemy — and secretly funneling the profits to a rebel army Congress had explicitly cut off. And that was only the half of it that got hearings.\n This episode walks the whole machine: the Boland Amendments, Oliver North and the Enterprise's Swiss accounts, the televised hearings, the Walsh investigation, and the Christmas Eve pardons that ended accountability. Then the darker thread — what the CIA's own inspector general conceded in 1998…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792000883429-b54311bb3d83b.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/207-Iran-Contra-The-Scandal-That-Pardoned-Itself-e3qgpoj",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127476947/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2Ff968f0ed-439c-4c9e-16cc-18f3c1ef8b6c.m4a",
+   "number": "207"
+  },
+  {
    "id": "polymath:b652b44f 1c7e 4530 bd64 e8c0c2a4d295",
    "show": "polymath",
    "kind": "episode",
@@ -171,6 +255,20 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127432432/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-13%2F8b8b53d0-5a59-7b53-224e-6441139d264d.m4a",
    "number": "206"
+  },
+  {
+   "id": "polymath:d8620585 4099 4fcc a92b 4c16c23e6190",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#205 1920s Harlem: How to Spot a Renaissance",
+   "date": "2026-10-13T22:30:00Z",
+   "duration": 4147,
+   "description": "In the 1920s, a few square miles of Manhattan became the capital of Black culture — and for a moment, the center of American art itself. Hughes, Hurston, Ellington, Aaron Douglas: an entire generation arrived at once, in one neighborhood. But the Harlem Renaissance wasn't an accident. It had ingredients.\n This episode takes Harlem apart: the Great Migration and the real-estate accident that made Harlem Black, the institutions that organized it — The Crisis, Opportunity, the Civic Club dinner, Alain Locke's The New Negro — the Cotton Club paradox of Black genius performing for whites-only audiences, and jazz as the distribution network that carried Harlem everywhere. Then the end: the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791999111070-bb5b12c510722.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/205-1920s-Harlem-How-to-Spot-a-Renaissance-e3qgobb",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127475499/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2Ffb7f54a2-6c39-4933-2636-76c00d27ccee.m4a",
+   "number": "205"
   },
   {
    "id": "brazil:3QvNoGZqpr58FDBARvnvXN",
@@ -3762,8 +3860,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 205,
-   "spotify_matches": 0
+   "episodes": 212,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
