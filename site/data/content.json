@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T20:15:30Z",
+ "generated_at": "2026-10-15T20:25:17Z",
  "shows": [
   {
    "key": "ccpod",
@@ -106,8 +106,8 @@
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
    "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
-   "latest": "2026-10-15T11:12:00Z",
-   "count": 1
+   "latest": "2026-10-15T20:19:00Z",
+   "count": 2
   },
   {
    "key": "dominate",
@@ -185,6 +185,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "riff:67ZFR85yAZ8cEMdXAPEZ04",
+   "show": "riff",
+   "kind": "episode",
+   "title": "#5 Samara Joy: The Voice That Brought the Standards Back",
+   "date": "2026-10-15T20:19:00Z",
+   "duration": 2104,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
+   "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
+   "spotify_video": false
+  },
   {
    "id": "polymath:c006ec2b bc50 4635 abae 5efc17bece78",
    "show": "polymath",
@@ -3935,8 +3948,8 @@
    "feed": null,
    "spotify_name": "The Daily Riff",
    "full_catalog": false,
-   "episodes": 1,
-   "spotify_matches": 1
+   "episodes": 2,
+   "spotify_matches": 2
   },
   "dominate": {
    "ok": true,
