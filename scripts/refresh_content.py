@@ -296,6 +296,14 @@ def spotify_embed(show_id):
     """Episode list (title -> episode url) + show name from the embed page."""
     page = fetch(f"https://open.spotify.com/embed/show/{show_id}")
     dbg = DEBUG.setdefault("spotify", {}).setdefault(show_id, {})
+    try:
+        legacy = fetch(f"https://open.spotify.com/embed-podcast/show/{show_id}", timeout=15)
+        dbg["legacy_len"] = len(legacy)
+        dbg["legacy_episode_ids"] = len(set(re.findall(r"spotify:episode:([A-Za-z0-9]{22})", legacy)))
+        if dbg["legacy_episode_ids"] > 1:
+            page = legacy
+    except Exception as e:  # noqa: BLE001
+        dbg["legacy_error"] = str(e)
     dbg["len"] = len(page)
     dbg["script_ids"] = re.findall(r'<script[^>]*id="([^"]+)"', page)[:20]
     dbg["head"] = page[:1200]
@@ -837,7 +845,7 @@ def probe_site(base):
             "ids": ids,
             "title": g.meta.get("og:title") or (re.search(r"<title>(.*?)</title>", page, re.S) or [None, ""])[1],
             "meta": g.meta,
-            "text": " ".join(g.text)[:6000],
+            "text": " ".join(g.text)[:80000],
             "images": imgs,
             "links": sorted(set(urllib.parse.urljoin(url, h) for h in g.links)),
         })
@@ -845,6 +853,82 @@ def probe_site(base):
             u = urllib.parse.urljoin(url, h).split("#")[0]
             if urllib.parse.urlparse(u).netloc == host and u not in seen and not re.search(r"\.(jpe?g|png|pdf|webp|gif|zip)$", u, re.I):
                 queue.append(u)
+    return out
+
+
+# ---------------------------------------------------------------- projects + writing
+PROJECT_HOSTS = ("jgerms20.github.io", "vercel.app", "ai.studio", "github.com/jgerms20/")
+
+
+def probe_projects(probes):
+    """Title, description and preview image for each project Joshua links."""
+    links = set()
+    for p in probes:
+        for pg in p.get("pages", []):
+            links |= {l for l in pg.get("links", []) if any(h in l for h in PROJECT_HOSTS)}
+    out = []
+    for link in sorted(links):
+        if "curious-and-creative" in link:
+            continue
+        rec = {"url": link}
+        try:
+            page = fetch(link, timeout=15)
+            g = Grab()
+            g.feed(page)
+            m = re.search(r"<title>(.*?)</title>", page, re.S)
+            rec.update({"title": html.unescape((g.meta.get("og:title") or (m.group(1) if m else "")).strip()),
+                        "description": html.unescape(g.meta.get("og:description") or g.meta.get("description") or ""),
+                        "image": urllib.parse.urljoin(link, g.meta.get("og:image") or "") if g.meta.get("og:image") else None,
+                        "text": " ".join(g.text)[:1500]})
+        except Exception as e:  # noqa: BLE001
+            rec["error"] = str(e)
+        out.append(rec)
+        log(f"  project {link}: {rec.get('title') or rec.get('error')}")
+    return out
+
+
+def parse_feed_posts(xml_text, author, limit=30):
+    root = ET.fromstring(xml_text.encode("utf-8") if isinstance(xml_text, str) else xml_text)
+    ch = root.find("channel")
+    posts = []
+    for it in ch.findall("item")[:limit]:
+        enc = it.find("enclosure")
+        posts.append({
+            "title": (it.findtext("title") or "").strip(),
+            "url": (it.findtext("link") or "").strip(),
+            "date": parse_date(it.findtext("pubDate")),
+            "excerpt": strip_html(it.findtext("description") or it.findtext("content:encoded", namespaces=NS) or "", 280),
+            "image": enc.get("url") if enc is not None and "image" in (enc.get("type") or "") else None,
+            "author": author,
+        })
+    return {"title": (ch.findtext("title") or "").strip(), "url": (ch.findtext("link") or "").strip(), "posts": posts}
+
+
+def do_writing(reg):
+    """Substack feeds for each writer in shows.json["writing"]."""
+    out = {"sources": [], "posts": []}
+    for w in reg.get("writing", []):
+        src = dict(w)
+        feed = w.get("feed")
+        if not feed and w.get("search"):
+            for q in w["search"]:
+                for api in (f"https://substack.com/api/v1/publication/search?query={urllib.parse.quote(q)}&page=0&limit=10",
+                            f"https://substack.com/api/v1/profile/search?query={urllib.parse.quote(q)}&page=0"):
+                    try:
+                        res = json.loads(fetch(api, timeout=15))
+                        DEBUG.setdefault("substack_search", {})[f"{q} | {api.split('/v1/')[1].split('?')[0]}"] = res if len(json.dumps(res)) < 20000 else json.dumps(res)[:20000]
+                    except Exception as e:  # noqa: BLE001
+                        DEBUG.setdefault("substack_search", {})[q] = str(e)
+        if feed:
+            try:
+                f = parse_feed_posts(fetch(feed), w.get("author"))
+                src.update(title=f["title"] or w.get("title"), url=f["url"] or w.get("url"), count=len(f["posts"]))
+                out["posts"] += f["posts"]
+                log(f"  writing {w.get('author')}: {len(f['posts'])} posts")
+            except Exception as e:  # noqa: BLE001
+                log(f"  writing feed failed {feed}: {e}")
+        out["sources"].append(src)
+    out["posts"].sort(key=lambda x: x.get("date") or "", reverse=True)
     return out
 
 
@@ -915,11 +999,23 @@ def main():
         if photos is not None:
             with open(os.path.join(DATA, "photos.json"), "w") as f:
                 json.dump({"source": reg["photos"]["page"], "photos": photos}, f, indent=1, ensure_ascii=False)
+        log("\n=== projects")
+        projects = probe_projects(probes)
+        with open(os.path.join(DATA, "_projects.json"), "w") as f:
+            json.dump(projects, f, indent=1, ensure_ascii=False)
         people = sync_people(reg)
         log(f"  people: {people}")
         content["people"] = people
         with open(prev_path, "w") as f:
             json.dump(content, f, indent=1, ensure_ascii=False)
+    log("\n=== writing")
+    try:
+        writing = do_writing(reg)
+        if writing["posts"] or not os.path.exists(os.path.join(DATA, "writing.json")):
+            with open(os.path.join(DATA, "writing.json"), "w") as f:
+                json.dump(writing, f, indent=1, ensure_ascii=False)
+    except Exception as e:  # noqa: BLE001
+        log(f"  writing failed: {e}")
     with open(os.path.join(DATA, "_debug.json"), "w") as f:
         json.dump(DEBUG, f, indent=1, ensure_ascii=False)
     return 0

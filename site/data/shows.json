@@ -89,6 +89,26 @@
       "tier": "primary"
     },
     {
+      "key": "riff",
+      "name": "The Daily Riff",
+      "short": "The Daily Riff",
+      "kind": "podcast",
+      "tier": "primary",
+      "hosts": [
+        "Joshua German"
+      ],
+      "tagline": "Jazz, every day.",
+      "about": "",
+      "spotify": "79MaSzrv6uJkaHiFoZQrWk",
+      "itunes_search": [
+        "The Daily Riff"
+      ],
+      "match_artist": [
+        "german"
+      ],
+      "rss": null
+    },
+    {
       "key": "dominate",
       "name": "Dominate the Decade",
       "short": "Dominate the Decade",
@@ -176,5 +196,22 @@
       "https://joshuamgerman.com/photos/_sized/self-000070270013-960.webp",
       "https://joshuamgerman.com/photos/self/000070270013.JPEG"
     ]
-  }
+  },
+  "writing": [
+    {
+      "key": "joshua",
+      "author": "Joshua German",
+      "feed": "https://jgerms20.substack.com/feed",
+      "url": "https://jgerms20.substack.com"
+    },
+    {
+      "key": "janel",
+      "author": "Janel Moore",
+      "feed": null,
+      "url": null,
+      "search": [
+        "Janel Moore"
+      ]
+    }
+  ]
 }
