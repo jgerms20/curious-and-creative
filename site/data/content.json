@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T20:37:42Z",
+ "generated_at": "2026-10-15T20:50:33Z",
  "shows": [
   {
    "key": "ccpod",
@@ -37,6 +37,7 @@
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
    "rss": "https://anchor.fm/s/111be5840/podcast/rss",
    "tier": "primary",
+   "ai": "assisted",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
    "feed_title": "The Eclectic Polymath Podcast",
@@ -44,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-15T19:34:47Z",
-   "count": 213
+   "latest": "2026-10-15T07:02:59Z",
+   "count": 212
   },
   {
    "key": "approachable",
@@ -96,12 +97,13 @@
    "kind": "podcast",
    "tier": "primary",
    "hosts": [
-    "Joshua German"
+    "AI-generated"
    ],
-   "tagline": "Jazz, every day.",
+   "tagline": "A daily dose of jazz, made with AI.",
    "about": "",
    "spotify": "79MaSzrv6uJkaHiFoZQrWk",
    "rss": null,
+   "ai": "full",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
@@ -151,6 +153,7 @@
    "spotify": "4tAY78JV37aIgmJ2d1iF3w",
    "rss": null,
    "tier": "secondary",
+   "ai": "full",
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
@@ -210,20 +213,6 @@
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
-  },
-  {
-   "id": "polymath:c006ec2b bc50 4635 abae 5efc17bece78",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#215 Nithya Raman: Hollywood's Socialist Is Leading the Mayor's Race",
-   "date": "2026-10-15T19:34:47Z",
-   "duration": 2648,
-   "description": "Nineteen days before the election, the challenger is ahead. Nithya Raman endorsed Mayor Karen Bass for re-election in January, then filed to run against her hours before the February deadline, and the September Berkeley IGS poll has her leading the incumbent 39 to 28.\n You may know her as the \"Hollywood socialist\" from Council District 4, or from the rent cap fight that rewrote the rules for some 650,000 rent-stabilized homes. Before any of that, she was a six-year-old immigrant from Kerala, an urban planner mapping slums in Delhi and Chennai, and the city staffer who found that nearly 90% of LA's homelessness spending went to jailing people.\n This episode traces how that planner became the…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792092517902-d5b8291b3d1e6.jpg",
-   "url": "https://open.spotify.com/episode/7xdHSC9RH67dVgLsOlEe64",
-   "spotify_url": "https://open.spotify.com/episode/7xdHSC9RH67dVgLsOlEe64",
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127536777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F1e3f5564-0bf6-abbd-d091-c0fad23792d3.m4a",
-   "number": "215"
   },
   {
    "id": "riff:4pyb52nSDEdR8tsNdym7oC",
@@ -3940,8 +3929,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 213,
-   "spotify_matches": 1
+   "episodes": 212,
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
