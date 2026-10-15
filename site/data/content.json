@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T21:47:13Z",
+ "generated_at": "2026-10-15T04:50:31Z",
  "shows": [
   {
    "key": "ccpod",
@@ -43,8 +43,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-14T18:34:43Z",
-   "count": 208
+   "latest": "2026-10-14T23:13:52Z",
+   "count": 210
   },
   {
    "key": "brazil",
@@ -159,6 +159,34 @@
  ],
  "episodes": [
   {
+   "id": "polymath:e56c9099 8302 4105 b4e3 ca17b894e409",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#210 Mongolia: How to Stay Yourself Between Russia and China",
+   "date": "2026-10-14T23:13:52Z",
+   "duration": 3036,
+   "description": "Mongolia is the emptiest country on Earth — about two people per square kilometer — and a third of it still moves with the seasons. It's also the homeland of the largest land empire in history, now sitting quietly between Russia and China.\n This episode traces how that happens: nomadism as a technology, not a rootlessness; Chinggis Khan and the empire that fragmented into other people's countries; Buddhism, Soviet decades, and a revolution that killed no one; and the modern squeeze of selling nearly everything to one neighbor while buying fuel from the other. How does a small country between two giants stay itself?\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792015628558-1ebb713b4ae72.jpg",
+   "url": "https://open.spotify.com/episode/79TOhrUS0dAJd9vXLX8Fn1",
+   "spotify_url": "https://open.spotify.com/episode/79TOhrUS0dAJd9vXLX8Fn1",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127488723/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2F6ccd9d36-6556-27cf-4ff9-25006d674d22.m4a",
+   "number": "210"
+  },
+  {
+   "id": "polymath:82aab846 3a11 4dbf bb91 a3643723d2f6",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#209 Pompeii: The City That Didn't Know It Was Ending",
+   "date": "2026-10-14T23:05:01Z",
+   "duration": 2886,
+   "description": "In 79 AD, Pompeii was a working Roman city of bakeries, bars, election posters, and graffiti — and almost nobody there knew the mountain behind it was a volcano. Latin didn't even have a word for one. Then, over about eighteen hours, the city stopped mid-sentence.\n This episode tells it as a story: the ordinary day, the warnings nobody could read, Pliny watching from across the bay, the strange fact that most people actually escaped — and how a city gets forgotten for 1,500 years, then dug up to become the most famous disaster in the world. What we lost, what we learned, and why we can't stop looking.\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792015450315-d04a4f1addaf1.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/209-Pompeii-The-City-That-Didnt-Know-It-Was-Ending-e3qh532",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127488546/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2F5db80d7f-ab32-cd33-0cd1-c51463ff28af.m4a",
+   "number": "209"
+  },
+  {
    "id": "polymath:f0eae34b 1ebb 46b7 a72e c8757b571d47",
    "show": "polymath",
    "kind": "episode",
@@ -167,8 +195,8 @@
    "duration": 4209,
    "description": "In 1967, American movies changed their mind about everything. The studio system that had run Hollywood for forty years collapsed — and for one strange decade, the keys went to film-school kids, method actors who looked like people you knew, and cinematographers who shot in the dark. The Godfather, Taxi Driver, Chinatown, Jaws: the most celebrated run of films in the country's history came from the industry briefly losing control of itself.\n This episode traces how it happened: the Paramount Decrees and television gutting the old studios, Bonnie and Clyde and Easy Rider proving a young audience existed, the 1968 ratings system replacing the censors, and the auteurs — Coppola, Scorsese,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792002419317-d2864ec3bcbf5.jpg",
-   "url": "https://open.spotify.com/episode/6tw2rIa4hHBFi6r2CnFUK9",
-   "spotify_url": "https://open.spotify.com/episode/6tw2rIa4hHBFi6r2CnFUK9",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/208-New-Hollywood-The-Decade-the-Directors-Took-Over-e3qgqu3",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127478147/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2Ff3baec20-c056-76fe-5831-2e3ce57e9c9e.m4a",
    "number": "208"
   },
@@ -3804,7 +3832,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 208,
+   "episodes": 210,
    "spotify_matches": 1
   },
   "brazil": {
