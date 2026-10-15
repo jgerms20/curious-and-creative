@@ -1,0 +1,257 @@
+<title>Project Earlobe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one editorial column with a control-room status strip; tables and the flow diagram scroll inside their own boxes. */
+:root {
+  --bg: #F7F3EC; --surface: #FFFDF9; --ink: #161513; --muted: #5E5A53; --rule: #DED6C9;
+  --accent: #C25A3C; --sage: #5F6E5B; --ok: #2F7D4F; --warn: #A86A12; --chip: #EFE8DC;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #151413; --surface: #1D1B19; --ink: #EFE9DF; --muted: #A9A196; --rule: #33302B;
+  --accent: #E07A5A; --sage: #9DAE98; --ok: #5DBB83; --warn: #E0A548; --chip: #26231F; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #151413; --surface: #1D1B19; --ink: #EFE9DF; --muted: #A9A196; --rule: #33302B;
+  --accent: #E07A5A; --sage: #9DAE98; --ok: #5DBB83; --warn: #E0A548; --chip: #26231F; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font: 16px/1.6 var(--body); }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); letter-spacing: -0.01em; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.1rem; font-family: var(--body); font-weight: 600; }
+p { margin: 0; max-width: 66ch; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.eyebrow { font: 500 0.75rem/1 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+section { display: grid; gap: 18px; min-width: 0; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+.hero { display: grid; gap: 16px; }
+.onair { display: inline-flex; align-items: center; gap: 8px; font: 500 0.78rem/1 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+.onair::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); }
+.status { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; background: var(--chip); font: 500 0.8rem/1.2 var(--mono); }
+.pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); display: inline-block; }
+.pill.warn i { background: var(--warn); }
+.links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.link { display: grid; gap: 4px; padding: 14px 16px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); text-decoration: none; color: var(--ink); min-width: 0; }
+.link:hover { border-color: var(--accent); }
+.link b { font-weight: 600; }
+.link span { color: var(--muted); font-size: 0.9rem; }
+.link .go { color: var(--accent); font: 500 0.78rem/1 var(--mono); }
+.tablebox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 0.75rem/1.3 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+td.n, th.n { text-align: right; }
+tr:last-child td { border-bottom: 0; }
+.neg { color: var(--accent); }
+.pos { color: var(--ok); }
+.note { color: var(--muted); font-size: 0.9rem; }
+.callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; display: grid; gap: 6px; }
+.flowbox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); padding: 16px; }
+.episode { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 20px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); padding: 20px; }
+@media (max-width: 720px) { .episode { grid-template-columns: 1fr; } }
+.episode ol { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 6px; font-size: 0.92rem; }
+.episode ol li { display: grid; grid-template-columns: 3.4em 1fr; gap: 8px; }
+.episode ol li span { font-family: var(--mono); color: var(--muted); }
+.gate { display: grid; gap: 10px; align-content: start; }
+.stamp { font: 700 1.6rem/1 var(--display); color: var(--ok); letter-spacing: 0.02em; }
+.meter { display: grid; grid-template-columns: 8.5em 1fr 3em; align-items: center; gap: 10px; font-size: 0.88rem; }
+.meter div { height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; }
+.meter div b { display: block; height: 100%; background: var(--ok); }
+.meter em { font: 500 0.82rem var(--mono); font-style: normal; text-align: right; }
+.desks { display: grid; gap: 8px; }
+.desk { display: grid; grid-template-columns: 10em 1fr 2.5em; align-items: center; gap: 12px; font-size: 0.92rem; }
+.bar { display: flex; height: 12px; border-radius: 3px; overflow: hidden; background: var(--chip); }
+.bar .b { background: var(--ok); } .bar .x { background: var(--sage); opacity: .55; } .bar .f { background: var(--rule); }
+.desk em { font: 500 0.85rem var(--mono); font-style: normal; text-align: right; }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.todo { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; max-width: 70ch; }
+.todo li::marker { font-family: var(--mono); color: var(--muted); }
+code { font-family: var(--mono); font-size: 0.88em; background: var(--chip); padding: 1px 5px; border-radius: 4px; }
+footer { color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--rule); padding-top: 16px; }
+@media (max-width: 520px) { .desk { grid-template-columns: 7.5em 1fr 2.2em; } .meter { grid-template-columns: 7em 1fr 2.8em; } }
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <span class="onair">Curious &amp; Creative Network · review copy</span>
+  <h1>Project Earlobe</h1>
+  <p class="lede">An automated audio network. Agents find the stories, producers write them, a Trust Stack checks every claim against independent sources, and original AI voices read them, with an AI disclosure at the end of every episode.</p>
+  <div class="status">
+    <span class="pill"><i></i>Engine works end to end (dry run)</span>
+    <span class="pill"><i></i>1,012 tests passing</span>
+    <span class="pill"><i></i>PR #14 checks green</span>
+    <span class="pill warn"><i></i>Live mode waits on your API keys</span>
+  </div>
+</header>
+
+<section>
+  <span class="eyebrow">Where everything lives</span>
+  <h2>Read the work on GitHub</h2>
+  <p>Everything is in the <code>project-earlobe/</code> folder on the working branch of the Curious &amp; Creative repo. GitHub shows the docs as formatted pages.</p>
+  <div class="links">
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/docs/00-START-HERE.md"><b>Start here</b><span>What got built, the reading order, your first 10 actions</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/docs/business/business-plan.md"><b>Business plan</b><span>The whole network on one page</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/finance/cost-out-and-roi.md"><b>Cost-out &amp; ROI</b><span>Every cost line, three revenue cases, payback</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/docs/blueprint/how-it-works.md"><b>How it works</b><span>The loops 122 agents actually run</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/docs/research/jeanine-wright-deep-dive.md"><b>Jeanine Wright deep dive</b><span>Inception Point → Liquid Studios, reverse-engineered</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/docs/business/meeting-jeanine-wright.md"><b>Meeting prep</b><span>Talking points, questions, draft email</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/agents/README.md"><b>All 122 agents</b><span>Instruction files, grouped by desk</span><span class="go">Open →</span></a>
+    <a class="link" href="https://github.com/jgerms20/curious-and-creative/pull/14"><b>Pull request #14</b><span>Review every file, then merge to make it official</span><span class="go">Open →</span></a>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Money at a glance · base case · prices as of Oct 2026</span>
+  <h2>What it costs, what it earns</h2>
+  <div class="tablebox"><table>
+    <thead><tr><th>Stage</th><th class="n">Shows</th><th class="n">Episodes / mo</th><th class="n">Cost / mo</th><th class="n">Cost / episode</th><th class="n">Net / mo</th><th class="n">Network only</th></tr></thead>
+    <tbody>
+      <tr><td>Test markets</td><td class="n">7</td><td class="n">125</td><td class="n">$1,432</td><td class="n">$11.44</td><td class="n pos">$2,417</td><td class="n neg">−$583</td></tr>
+      <tr><td>Wave 1</td><td class="n">27</td><td class="n">444</td><td class="n">$2,826</td><td class="n">$6.36</td><td class="n pos">$9,437</td><td class="n pos">$1,437</td></tr>
+      <tr><td>Scale</td><td class="n">157</td><td class="n">2,278</td><td class="n">$8,608</td><td class="n">$3.78</td><td class="n pos">$39,812</td><td class="n pos">$16,312</td></tr>
+      <tr><td>Dominate</td><td class="n">693</td><td class="n">9,689</td><td class="n">$27,723</td><td class="n">$2.86</td><td class="n pos">$170,094</td><td class="n pos">$95,594</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">"Network only" counts ads, local sponsors and premium subscriptions, and leaves out B2B, the Trust Stack API and Studio Services.</p>
+
+  <div class="tablebox"><table>
+    <thead><tr><th>Year one</th><th class="n">Conservative</th><th class="n">Base</th><th class="n">Optimistic</th></tr></thead>
+    <tbody>
+      <tr><td>Payback month</td><td class="n">9</td><td class="n">7</td><td class="n">5</td></tr>
+      <tr><td>Cash needed before payback</td><td class="n">$11,683</td><td class="n">$9,326</td><td class="n">$8,156</td></tr>
+      <tr><td>Revenue</td><td class="n">$102,706</td><td class="n">$236,757</td><td class="n">$446,267</td></tr>
+      <tr><td>Total cost, including $7.3k startup</td><td class="n">$71,763</td><td class="n">$71,763</td><td class="n">$71,763</td></tr>
+      <tr><td>Network shows only, year-one net</td><td class="n neg">−$24,856</td><td class="n pos">$46,644</td><td class="n pos">$166,529</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout">
+    <h3>The part to plan around</h3>
+    <p>A verified 7-minute local brief costs about $3.91 in AI and voice. On ads alone it breaks even near 455 downloads an episode, and research puts a new local show nearer 120. Local sponsors, Studio Services and B2B carry the early months. Keep about $25k of runway for the conservative case.</p>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">How an episode gets made</span>
+  <h2>From a press release to your feed</h2>
+  <div class="flowbox">
+<pre class="mermaid">
+flowchart LR
+  S["Sensors<br/>beat agents, court watch,<br/>press releases"] --> D["Story Desk<br/>cluster and score"]
+  D --> A["Assignment Editor<br/>picks the rundown"]
+  A --> P["Producer<br/>writes script,<br/>every claim tagged"]
+  P --> T["Trust Stack<br/>blind verifier, fact check,<br/>bias, legal"]
+  T --> G{"Standards Editor<br/>gate"}
+  G -- "PUBLISH" --> V["Studio<br/>original voices +<br/>AI disclosure"]
+  G -- "REWRITE" --> P
+  G -- "HOLD (breaking)" --> T
+  G -- "KILL" --> X["Logged, not aired"]
+  V --> F["Publisher<br/>feed, notes, trust log"]
+</pre>
+  </div>
+  <p class="note">The gate is plain code, not a model. The same reports always produce the same decision. Breaking news waits until three independent outlets or an official source confirm it.</p>
+</section>
+
+<section>
+  <span class="eyebrow">Sample output · dry run, placeholder stories</span>
+  <h2>A Columbia Daily episode, produced by the engine</h2>
+  <div class="episode">
+    <div style="display:grid; gap:12px; min-width:0">
+      <h3>[SAMPLE] Columbia Daily · Oct 13, 2026 · 2:33 · hosts Mara and Theo</h3>
+      <ol>
+        <li><span>00:00</span>Intro</li>
+        <li><span>00:08</span>City Council approves a park budget amendment, 5-2</li>
+        <li><span>00:25</span>Flood watch for the Midlands through Sunday</li>
+        <li><span>00:41</span>School board delays vote on later start times</li>
+        <li><span>00:57</span>Bridge closed after inspectors find a crack</li>
+        <li><span>01:15</span>High school football clinches the region title</li>
+        <li><span>01:30</span>Brewery plans a second taproom</li>
+        <li><span>01:48</span>AI disclosure</li>
+      </ol>
+      <p class="note">Each claim links to its sources in the show notes: a city record plus WIS, The State and SC Daily Gazette for the council story. All stories here are fictional test data.</p>
+    </div>
+    <div class="gate">
+      <span class="eyebrow">Trust gate result</span>
+      <span class="stamp">PUBLISH</span>
+      <div class="meter">Corroboration <div><b style="width:100%"></b></div><em>100%</em></div>
+      <div class="meter">Accuracy <div><b style="width:100%"></b></div><em>100%</em></div>
+      <div class="meter">Balance <div><b style="width:85%"></b></div><em>85</em></div>
+      <p class="note">11 claims checked · 13 sources · 0 rewrites · lane: standard</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Launch lineup · test markets</span>
+  <h2>Seven shows to start</h2>
+  <div class="tablebox"><table>
+    <thead><tr><th>Show</th><th>Layer</th><th>Cadence</th><th>Length</th><th>Check rules</th></tr></thead>
+    <tbody>
+      <tr><td>Columbia Daily</td><td>Local brief</td><td>Weekdays 6:00 ET</td><td>6–8 min</td><td>Standard</td></tr>
+      <tr><td>LA Daily</td><td>Local brief</td><td>Weekdays 6:00 PT</td><td>6–8 min</td><td>Standard</td></tr>
+      <tr><td>The Breaking Desk</td><td>National breaking</td><td>When a major story is confirmed</td><td>2–4 min</td><td>Breaking: 3 independent sources</td></tr>
+      <tr><td>LA Courts Roundup</td><td>Courts</td><td>Weekdays</td><td>8–12 min</td><td>Strict: official records</td></tr>
+      <tr><td>Case Tracker</td><td>True crime, live</td><td>Fridays + development flashes</td><td>15–25 min</td><td>Strict</td></tr>
+      <tr><td>Cold Case Files</td><td>True crime, archive</td><td>Tue / Thu</td><td>18–25 min</td><td>Strict</td></tr>
+      <tr><td>History of Hollywood</td><td>Archive</td><td>Mon / Wed / Fri</td><td>15–20 min</td><td>Archive</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">NYC Daily and Chicago Daily are configured for Wave 1. The <a href="https://github.com/jgerms20/curious-and-creative/blob/claude/podcast-studio-ai-factcheck-1tfzno/project-earlobe/docs/shows/network-lineup.md">full lineup</a> lists 40+ shows across every layer.</p>
+</section>
+
+<section>
+  <span class="eyebrow">The workforce</span>
+  <h2>122 agents across 10 desks</h2>
+  <div class="legend"><span><i style="background:var(--ok)"></i>Built (code exists)</span><span><i style="background:var(--sage);opacity:.55"></i>Next wave</span><span><i style="background:var(--rule)"></i>Future</span></div>
+  <div class="desks" id="desks"></div>
+</section>
+
+<section>
+  <span class="eyebrow">This week</span>
+  <h2>Your first ten actions</h2>
+  <ol class="todo">
+    <li>Anthropic API account with a monthly spend cap (about $300/mo at test).</li>
+    <li>Set the three model-tier variables (values come from Claude in chat).</li>
+    <li>ElevenLabs plan, six original voices, and the Startup Grant application.</li>
+    <li>Add the GitHub secrets so the scheduled shows can run.</li>
+    <li>Media liability insurance quotes, asking about court and crime coverage.</li>
+    <li>Book a media-lawyer review of the standards.</li>
+    <li>Separate business card for network spending.</li>
+    <li>Send the Jeanine Wright email from the meeting prep.</li>
+    <li>Domain, DBA filing and trademark clearance.</li>
+    <li>Start a 2–3 week private dark run and listen to ten episodes.</li>
+  </ol>
+</section>
+
+<section>
+  <span class="eyebrow">Next step for showing it off</span>
+  <h2>When you want a public site</h2>
+  <p>This page is your private review copy. The engine already writes a public RSS feed, show notes and a trust log for every episode. Once real episodes exist, we can put the listener-facing network site on Vercel or GitHub Pages: show pages, players, the corrections log and the trust log. Connect the repo and point it at the generated pages.</p>
+</section>
+
+<footer>Curious &amp; Creative LLC · Project Earlobe · numbers from finance/cost-out-and-roi.md and docs/research/facts-and-figures.md · estimates are labeled in the source docs</footer>
+</div>
+
+<script>
+const desks = [
+  ["Command", 3, 8, 0], ["Sensors", 3, 11, 2], ["Editorial", 4, 12, 1], ["Trust Stack", 8, 5, 1],
+  ["Studio", 3, 5, 1], ["Distribution", 2, 8, 1], ["Growth", 0, 11, 1], ["Revenue", 0, 9, 5],
+  ["Business Ops", 0, 10, 1], ["Studio Services", 0, 3, 4]
+];
+const max = Math.max(...desks.map(d => d[1] + d[2] + d[3]));
+const host = document.getElementById("desks");
+for (const [name, b, x, f] of desks) {
+  const total = b + x + f;
+  const row = document.createElement("div");
+  row.className = "desk";
+  row.innerHTML = `<span>${name}</span><div class="bar" style="width:${(total / max) * 100}%" title="${b} built, ${x} next, ${f} future">
+    <span class="b" style="width:${b / total * 100}%"></span><span class="x" style="width:${x / total * 100}%"></span><span class="f" style="width:${f / total * 100}%"></span></div><em>${total}</em>`;
+  host.appendChild(row);
+}
+</script>

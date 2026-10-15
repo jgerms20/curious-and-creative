@@ -1,0 +1,6 @@
+# Kill switch. monitor/killswitch.py: killed(show_id) is True if the env var EARLOBE_KILL
+# ("all" or comma-separated show ids) says so, OR this file does. Env wins when both are set.
+# Edit and commit to stop publishing without touching code; a killed show produces nothing.
+all: false          # true = halt every show (dry runs still work)
+shows: []           # e.g. [la-courts, cold-case-files]
+reason: ""          # free text, written to the trust log when a show is skipped

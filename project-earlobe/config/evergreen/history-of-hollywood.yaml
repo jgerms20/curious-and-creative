@@ -1,0 +1,91 @@
+# History of Hollywood: topic queue and research brief for the evergreen pipeline.
+# Read by earlobe.config.load_evergreen("history-of-hollywood") and used by pipeline.run_evergreen().
+#
+# One topic is produced per run, in the order listed. A topic that has been published is skipped on
+# later runs; a topic that the trust gate killed is skipped for a week, then tried again. Add topics at
+# the bottom. Topics are neutral one-liners: they name a subject, never a conclusion. The research step
+# finds the primary records; nothing here is a source.
+#
+# Fields
+#   agent         agent id the research call is logged under (agents/sensors/archive-miner.md)
+#   tier          model tier of the research call: opus | sonnet | haiku (never a model id)
+#   max_searches  web-search budget for one topic's research pass
+#   risk_flags    flags applied to every topic of this queue (schemas.RISK_FLAGS)
+#   brief         research instructions added to the archive researcher's system prompt
+#   editor_notes  hints passed to the scriptwriter beside the research pack
+#   topics        [{id, title, angle}]  id is permanent: it keys "already covered"
+agent: archive-miner
+tier: sonnet
+max_searches: 12
+risk_flags: []
+brief: |
+  You are researching one episode of History of Hollywood, a narrative history of the American film
+  industry and the Los Angeles neighborhoods and institutions around it.
+
+  Look for primary records first: Library of Congress collections and Chronicling America newspapers,
+  National Archives catalog entries, Calisphere and other state and university digital collections,
+  city and county records, the Margaret Herrick Library's published finding aids, trade papers digitized
+  by the Media History Digital Library, court decisions, and the official histories published by the
+  institutions concerned. Contemporary newspaper coverage and reputable published histories are tier 2
+  or tier 3 support. Encyclopedias, fan sites, blogs and forum posts are leads only: use them to find
+  the primary record, then cite the record, never the lead.
+
+  Prefer facts that two independent sources agree on. Where accounts conflict (studio publicity
+  against the contemporary press is the usual case), say so in "uncertain" and give both accounts in the
+  summary, attributed. Do not repeat legend as fact. Dates, box-office figures, counts and quotations are
+  the usual weak points: include one only when a source you list states it.
+
+  Rights: describe documents in your own words. Never copy article text, captions, film dialogue or song
+  lyrics into the summary or the excerpts.
+
+  People: this is history, not gossip. Stay with public, documented, professional facts. Do not include
+  health, family or sexual-conduct details, or allegations that were never resolved on the record.
+editor_notes:
+  - "Tell the story in plain chronological order, with the setting, the stakes, the turn, and why it still matters."
+  - "Label studio publicity, legend and memory as such. Attribute every account to its record or outlet."
+topics:
+  - id: hh-01
+    title: "The move of film production to Southern California in the 1910s"
+    angle: "Why filmmakers left the East Coast, and what Los Angeles offered them."
+  - id: hh-02
+    title: "The Hollywood sign, from a real estate advertisement to a landmark"
+    angle: "Its 1923 origin, its decline and its restoration, told from city and press records."
+  - id: hh-03
+    title: "The arrival of synchronized sound and the end of the silent era"
+    angle: "The late-1920s transition and what it changed for theaters, studios and crews."
+  - id: hh-04
+    title: "The founding of the Academy of Motion Picture Arts and Sciences and the first awards ceremony"
+    angle: "The Academy's 1927 founding and the 1929 dinner, from contemporary records."
+  - id: hh-05
+    title: "How the classic studio system organized production, contracts and theaters"
+    angle: "Vertical integration, long-term contracts and block booking, explained step by step."
+  - id: hh-06
+    title: "The Production Code era and how films were reviewed before release"
+    angle: "How the code was written, enforced and eventually replaced by a rating system."
+  - id: hh-07
+    title: "The Technicolor three-strip process and the spread of color film"
+    angle: "How the process worked, what it cost, and which productions used it."
+  - id: hh-08
+    title: "Hollywood studios during the Second World War"
+    angle: "Training films, newsreels and war-bond drives, and how production changed."
+  - id: hh-09
+    title: "The Paramount antitrust case and the end of studio-owned theater chains"
+    angle: "The 1948 Supreme Court decision and its effect on how films reached audiences."
+  - id: hh-10
+    title: "The rise of television and the studios' response in the 1950s"
+    angle: "Falling attendance, wide-screen formats and the studios' move into television production."
+  - id: hh-11
+    title: "Grauman's Chinese Theatre and the forecourt handprint tradition"
+    angle: "The theater's 1927 opening and how the forecourt ceremonies began."
+  - id: hh-12
+    title: "The movie palaces of downtown Los Angeles"
+    angle: "The Broadway theater district: who built it, how it was used, and what remains."
+  - id: hh-13
+    title: "The first full-length animated feature films and the Burbank animation studios"
+    angle: "The production of a 1937 feature and the craft and labor behind it."
+  - id: hh-14
+    title: "The craft of film sound effects and the origins of Foley work"
+    angle: "How effects were made live to picture in the early sound era."
+  - id: hh-15
+    title: "Studio backlots and the sets that were rebuilt as other places"
+    angle: "How standing sets and back-lot streets were built, reused and eventually lost."

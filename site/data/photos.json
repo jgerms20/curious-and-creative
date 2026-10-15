@@ -98,6 +98,22 @@
    "featured": true
   },
   {
+   "id": "shop-rio-fog-islands-moon",
+   "set": "Rio de Janeiro",
+   "alt": "A full moon rises over fog-shrouded islands in Guanabara Bay, Rio de Janeiro.",
+   "src": "assets/photos/shop-rio-fog-islands-moon.jpg",
+   "thumb": "assets/photos/shop-rio-fog-islands-moon-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "shop-rio-two-brothers",
+   "set": "Rio de Janeiro",
+   "alt": "The peak of Dois Irmãos rises over a lagoon and the Rio de Janeiro skyline at dusk.",
+   "src": "assets/photos/shop-rio-two-brothers.jpg",
+   "thumb": "assets/photos/shop-rio-two-brothers-sm.jpg",
+   "featured": false
+  },
+  {
    "id": "portraits-jmg_1763",
    "set": "Portraits",
    "alt": "Two people stand in red and blue light against a wall covered in newspaper pages.",
@@ -199,22 +215,6 @@
    "alt": "Friends pose together during a crowded evening market event.",
    "src": "assets/photos/events-dsc00028.jpg",
    "thumb": "assets/photos/events-dsc00028-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "shop-rio-fog-islands-moon",
-   "set": "Rio de Janeiro",
-   "alt": "A full moon rises over fog-shrouded islands in Guanabara Bay, Rio de Janeiro.",
-   "src": "assets/photos/shop-rio-fog-islands-moon.jpg",
-   "thumb": "assets/photos/shop-rio-fog-islands-moon-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "shop-rio-two-brothers",
-   "set": "Rio de Janeiro",
-   "alt": "The peak of Dois Irmãos rises over a lagoon and the Rio de Janeiro skyline at dusk.",
-   "src": "assets/photos/shop-rio-two-brothers.jpg",
-   "thumb": "assets/photos/shop-rio-two-brothers-sm.jpg",
    "featured": false
   },
   {

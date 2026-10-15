@@ -1,0 +1,8 @@
+.env
+data/
+*.mp3
+*.wav
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
