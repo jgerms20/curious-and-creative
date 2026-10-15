@@ -23,6 +23,9 @@
     if (CC.page === "about") about(data);
     if (CC.page === "network") networkPage(data);
     if (CC.page === "shop") shop(data);
+    if (CC.page === "videos") videosPage(data);
+    if (CC.page === "writing") writing();
+    if (CC.page === "inventions") inventions();
     CC.reveal();
   });
 
@@ -37,7 +40,7 @@
       return `<section class="showblock rv" id="${s.key}" data-show="${s.key}">
         <div><div class="showblock__art">${s.art ? `<img src="${esc(CC.art(s))}" alt="${esc(s.name)} cover art" loading="lazy">` : ""}</div></div>
         <div>
-          <span class="show-tag" data-show="${s.key}"><i></i>${esc(s.kind === "youtube" ? "YouTube show" : "Podcast")} · ${esc((s.hosts || []).join(" & "))}</span>
+          <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.kind === "youtube" ? "YouTube show" : "Podcast")} · ${esc((s.hosts || []).join(" & "))}</span>
           <h2 style="margin-top:.6rem">${esc(s.name)}</h2>
           <p class="showblock__about">${esc(s.about || s.description || s.tagline || "")}</p>
           <div class="showblock__facts">
@@ -57,6 +60,10 @@
     const head = (t, d) => `<div class="pill-row"><h2 class="pill-title${t.includes("More") ? " pill-title--gold" : ""}">${t}</h2>${d ? `<a class="pill-more" href="${url("pages/network.html")}">${d}</a>` : ""}</div>`;
     host.innerHTML = head("The main lineup") + data.primary.map(block).join("") +
       (data.secondary.length ? head("More from the network", "See the network map →") + data.secondary.map(block).join("") : "");
+    host.before(sorter(data, (k) => {
+      host.querySelectorAll(".showblock").forEach((b) => { b.hidden = k !== "all" && CC.hostGroup(data.byKey[b.id] || {}) !== k; });
+      host.querySelectorAll(".pill-row").forEach((r) => { let n = r.nextElementSibling, any = false; while (n && !n.classList.contains("pill-row")) { if (!n.hidden) any = true; n = n.nextElementSibling; } r.hidden = !any; });
+    }));
     if (location.hash) { const el = document.querySelector(location.hash); if (el) setTimeout(() => el.scrollIntoView(), 50); }
   }
 
@@ -212,11 +219,113 @@
   }
 
   /* ---------------- about: live counts ---------------- */
+  /* host sorter: Joshua / Janel / shared, one color each */
+  const sorter = (data, onPick) => {
+    const counts = { joshua: 0, janel: 0, shared: 0 };
+    data.shows.forEach((x) => counts[CC.hostGroup(x)]++);
+    const opts = [["all", "Everyone", data.shows.length], ["shared", "Together", counts.shared], ["joshua", "Joshua", counts.joshua], ["janel", "Janel", counts.janel]];
+    const el = document.createElement("div");
+    el.className = "sorter";
+    el.setAttribute("role", "group");
+    el.setAttribute("aria-label", "Filter shows by host");
+    el.innerHTML = opts.filter(([, , n]) => n).map(([k, l, n], i) => `<button class="filter${i ? "" : " is-on"}" type="button" data-host="${k === "all" ? "" : k}" data-pick="${k}">${k === "all" ? "" : '<span class="host-dot"></span>'}${l} <small style="opacity:.6">${n}</small></button>`).join("");
+    el.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-pick]");
+      if (!b) return;
+      el.querySelectorAll(".filter").forEach((x) => x.classList.toggle("is-on", x === b));
+      onPick(b.dataset.pick);
+    });
+    return el;
+  };
+  CC.sorter = sorter;
+
   function about(data) {
     const el = document.getElementById("about-shows");
     if (!el) return;
-    el.innerHTML = data.primary.map((s) => `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
-      <span class="show-tag" data-show="${s.key}"><i></i>${esc((s.hosts || []).join(" & "))}</span>
-      <h3>${esc(s.name)}</h3><p>${esc(s.tagline || "")}</p></a>`).join("");
+    el.innerHTML = [...data.primary, ...data.secondary].map((s) => {
+      const g = CC.hostGroup(s);
+      return `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-host="${g}">
+      <span class="host-tag"><span class="host-dot"></span>${esc(CC.HOST_LABEL[g])}</span>
+      <h3>${esc(s.name)}</h3><p>${esc(s.tagline || "")}</p></a>`;
+    }).join("");
+    el.before(sorter(data, (k) => el.querySelectorAll("[data-host]").forEach((t) => { t.hidden = k !== "all" && t.dataset.host !== k; })));
   }
+
+  /* ---------------- videos page ---------------- */
+  function videosPage(data) {
+    const host = document.getElementById("videos-main");
+    const grid = document.getElementById("videos-grid");
+    if (!host || !grid) return;
+    const vids = (data.episodes || []).filter((e) => (e.kind === "video" || e.spotify_video) && data.byKey[e.show]).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    if (!vids.length) { host.innerHTML = `<p class="search__empty">New videos land here automatically.</p>`; return; }
+    const shorts = (data.episodes || []).filter((e) => e.kind === "short");
+    const play = (i, autoplay) => {
+      const v = vids[i];
+      const s = data.byKey[v.show] || {};
+      const sid = !v.youtube_id && v.spotify_url ? v.spotify_url.split("/episode/")[1]?.split("?")[0] : null;
+      const frame = sid ? `<iframe src="https://open.spotify.com/embed/episode/${encodeURIComponent(sid)}/video?utm_source=generator&theme=0" title="${esc(v.title)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
+        : autoplay ? `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube_id)}?autoplay=1&rel=0" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`
+        : `<img class="vid__poster" src="https://i.ytimg.com/vi/${esc(v.youtube_id)}/maxresdefault.jpg" onerror="this.onerror=null;this.src='${esc(v.image)}'" alt=""><button class="vid__playbtn" type="button" aria-label="Play ${esc(v.title)}"><span>${icon.play}</span></button>`;
+      host.innerHTML = `<div class="vid__player">${frame}</div>
+        <div class="vfeat__meta"><span class="show-tag" data-show="${esc(v.show)}"><i></i>${esc(s.name || "")} · ${esc(ago(v.date))}</span>
+        <h2 class="vid__ftitle" style="color:inherit">${esc(v.title)}</h2><p class="vfeat__dek">${esc(v.description || "")}</p>
+        <p class="showblock__links"><a class="btn btn--sm" href="${esc(v.url)}" target="_blank" rel="noopener">${sid ? "Watch on Spotify" : "Watch on YouTube"} ↗</a></p></div>`;
+      const btn = host.querySelector(".vid__playbtn");
+      if (btn) btn.addEventListener("click", () => play(i, true));
+      grid.querySelectorAll(".vcard").forEach((c, k) => c.classList.toggle("is-on", k === i));
+    };
+    grid.innerHTML = vids.map((v, i) => `<button class="vcard" type="button" data-i="${i}" data-show="${esc(v.show)}">
+      <span class="vcard__thumb"><img src="${esc(v.image || CC.art(data.byKey[v.show]))}" alt="" loading="lazy"><span class="card__play">${icon.play}</span></span>
+      <span class="show-tag" data-show="${esc(v.show)}"><i></i>${esc((data.byKey[v.show] || {}).short || "")}</span>
+      <b>${esc(v.title)}</b><small>${esc(ago(v.date))}</small></button>`).join("");
+    grid.addEventListener("click", (e) => { const c = e.target.closest(".vcard"); if (c) { play(Number(c.dataset.i), true); host.scrollIntoView({ behavior: "smooth", block: "start" }); } });
+    play(0, false);
+    const sh = document.getElementById("videos-shorts");
+    if (sh && shorts.length) {
+      sh.hidden = false;
+      sh.querySelector(".shorts").innerHTML = shorts.map((v) => `<a class="short" href="${esc(v.url)}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/${esc(v.youtube_id)}/oardefault.jpg" onerror="this.onerror=null;this.src='${esc(v.image)}'" alt="" loading="lazy"><span class="short__cap">${esc(v.title)}</span></a>`).join("");
+    }
+  }
+
+  /* ---------------- writing ---------------- */
+  function writing() {
+    const src = document.getElementById("writing-sources");
+    const list = document.getElementById("writing-posts");
+    if (!src) return;
+    fetch(url("data/writing.json"), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((w) => {
+      w = w || { sources: [], posts: [] };
+      src.innerHTML = w.sources.map((s) => `<article class="wsrc" data-host="${esc(s.key)}">
+        <span class="host-tag"><span class="host-dot"></span>${esc(s.author)}</span>
+        <h3>${esc(s.title || `${s.author} on Substack`)}</h3>
+        <p>${s.count ? `${s.count} recent posts` : s.url ? "Essays, notes, and long reads." : "Coming soon to Substack."}</p>
+        ${s.url ? `<p class="showblock__links"><a class="btn btn--sm" href="${esc(s.url)}" target="_blank" rel="noopener">Read on Substack</a><a class="btn btn--ghost btn--sm" href="${esc(s.url)}/subscribe" target="_blank" rel="noopener">Subscribe</a></p>` : ""}
+      </article>`).join("");
+      if (!list) return;
+      list.innerHTML = w.posts.length ? w.posts.map((p) => `<a class="ep" href="${esc(p.url)}" target="_blank" rel="noopener" data-host="${p.author && p.author.startsWith("Janel") ? "janel" : "joshua"}">
+        ${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : '<span class="ph" style="background:var(--h)"></span>'}
+        <span><b>${esc(p.title)}</b><small>${esc(p.author || "")} — ${esc(p.excerpt || "")}</small></span>
+        <span class="ep__when">${esc(ago(p.date))}</span></a>`).join("") : `<p class="eyebrow" style="text-transform:none;letter-spacing:0">New posts from both Substacks show up here automatically.</p>`;
+    });
+  }
+
+  /* ---------------- inventions ---------------- */
+  function inventions() {
+    const host = document.getElementById("projects");
+    if (!host) return;
+    fetch(url("data/projects.json"), { cache: "no-cache" }).then((r) => r.json()).then((d) => {
+      host.innerHTML = d.groups.map((g) => {
+        const items = d.projects.filter((p) => p.group === g.key && p.id !== "kindling");
+        if (!items.length) return "";
+        return `<section class="pgroup rv"><div class="pill-row"><h2 class="pill-title${g.key === "research" ? " pill-title--green" : g.key === "music" ? " pill-title--pink" : g.key === "games" ? " pill-title--gold" : ""}">${esc(g.title)}</h2><span class="eyebrow">${esc(g.dek)}</span></div>
+          <div class="projects${g.key === "lab" ? " projects--lab" : ""}">${items.map((p) => {
+            const href = p.internal ? url(p.url) : p.url;
+            return `<a class="proj${p.feature ? " proj--feature" : ""}" href="${esc(href)}"${p.internal ? "" : ' target="_blank" rel="noopener"'}>
+              <span class="proj__art"><img src="${esc(url("assets/projects/" + p.art))}" alt="" loading="lazy"><span class="chip">${esc(p.status)}</span></span>
+              <span class="proj__body"><small>${esc(p.kicker)}</small><b>${esc(p.name)}</b><span class="proj__blurb">${esc(p.blurb)}</span><em>${esc(p.built)}</em><span class="proj__go">Open ${p.internal ? "→" : "↗"}</span></span></a>`;
+          }).join("")}</div></section>`;
+      }).join("");
+      CC.reveal(host);
+    });
+  }
+
 })();

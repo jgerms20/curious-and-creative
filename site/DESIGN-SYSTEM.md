@@ -18,6 +18,13 @@ media-network layout (Ringer-inspired structure), C&C colors, light + dark.
 - `episode_links` in `shows.json`: paste Spotify episode URLs to pin episodes the feeds don't expose.
 - Spotify-only shows record each newest episode as it appears; pin the show's RSS feed in `shows.json` to get the full back catalog.
 
+## Nav & pages
+Header: Home · About · Podcasts · Videos · Production (`pages/studio.html`, "Curious & Creative Studio") · Photography · Shop · Inventions. Writing, Kindling, Network, Archive, and Contact live in the menu drawer and footer.
+- `pages/videos.html`: featured player + every video (YouTube and Spotify video episodes).
+- `pages/writing.html`: both Substacks from `data/writing.json` (refreshed by the pipeline; Substack blocks GitHub's servers, so it reads the feed through rss2json).
+- `pages/inventions.html`: Kindling hero + projects from `data/projects.json` with original cover art in `assets/projects/*.svg`.
+- Host colors (`data-host`, `CC.hostGroup`): Joshua green, Janel pink, shared gold. Used on About and Podcasts, with a sorter.
+
 ## Network, Shop, Backstage
 - `CC.network(data)` (js/cc.js) draws the show web: hub, Joshua and Janel, primary inner ring, secondary outer ring, open "next show" seats. Used on the homepage and `pages/network.html`.
 - `pages/shop.html` lists `shop_items` from Supabase (public read of anything not `hidden`) plus Kindling products from `data/kindling-shop.json`. Items and photos are managed in Backstage → Shop (images go to the public `shop` storage bucket).

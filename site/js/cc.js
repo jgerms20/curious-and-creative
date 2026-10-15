@@ -42,17 +42,18 @@
 
   /* ---------------- site map (for nav + search) ---------------- */
   const PAGES = [
-    { label: "Home", href: "index.html", words: "home front page latest" },
-    { label: "About", href: "pages/about.html", words: "about us story who joshua janel founders team duo" },
-    { label: "Studio", href: "pages/studio.html", words: "studio services strategy brand building production consulting hire work with us" },
-    { label: "Podcasts", href: "pages/shows.html", words: "podcasts shows listen episodes spotify apple youtube" },
-    { label: "Videos", href: "index.html#videos", words: "videos youtube watch approachable ai" },
-    { label: "Photography", href: "pages/art.html", words: "photography photos art prints gallery portraits fashion events rio landscapes travel" },
-    { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
-    { label: "Inventions", href: "pages/inventions.html", words: "inventions build products" },
+    { label: "Home", href: "index.html", nav: true, words: "home front page latest" },
+    { label: "About", href: "pages/about.html", nav: true, words: "about us story who joshua janel founders team duo" },
+    { label: "Podcasts", href: "pages/shows.html", nav: true, words: "podcasts shows listen episodes spotify apple youtube" },
+    { label: "Videos", href: "pages/videos.html", nav: true, words: "videos youtube watch approachable ai video episodes" },
+    { label: "Production", href: "pages/studio.html", nav: true, words: "production studio company services strategy brand building podcast video production consulting hire work with us" },
+    { label: "Photography", href: "pages/art.html", nav: true, words: "photography photos gallery portraits fashion events rio landscapes travel" },
+    { label: "Shop", href: "pages/shop.html", nav: true, words: "shop store buy order prints art artwork janel joshua kindling deck" },
+    { label: "Inventions", href: "pages/inventions.html", nav: true, words: "inventions apps tools games life gamified grandmaster meme library jukeboxd aetheria gen alpha research lab" },
+    { label: "Writing", href: "pages/writing.html", words: "writing substack essays newsletter posts" },
     { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
-    { label: "Shop", href: "pages/shop.html", words: "shop store buy order prints art artwork janel joshua kindling deck" },
     { label: "Network", href: "pages/network.html", words: "network shows web map secondary god is brazilian dominate the decade aspiring abolitionist" },
+    { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
     { label: "Contact", href: "pages/contact.html", words: "contact email hello pitch guest press" },
   ];
   CC.PAGES = PAGES;
@@ -70,7 +71,7 @@
 
   /* ---------------- chrome: header / drawer / search / footer ---------------- */
   const navLink = (href, label) => {
-    const here = page && href === `pages/${page}.html`;
+    const here = page && (href === `pages/${page}.html` || (page === "index" && href === "index.html"));
     return `<a href="${url(href)}"${here ? ' aria-current="page"' : ""}>${label}</a>`;
   };
 
@@ -80,7 +81,7 @@
       <div class="hdr__bar wrap">
         <a class="wordmark" href="${url("index.html")}" aria-label="Curious and Creative — home"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
-        <nav class="hdr__links" aria-label="Primary">${navLink("pages/about.html", "About")}${navLink("pages/studio.html", "Studio")}${navLink("pages/shows.html", "Podcasts")}${navLink("index.html#videos", "Videos")}${navLink("pages/art.html", "Photography")}${navLink("pages/shop.html", "Shop")}</nav>
+        <nav class="hdr__links" aria-label="Primary">${PAGES.filter((p) => p.nav).map((p) => navLink(p.href, p.label)).join("")}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
         <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${icon.moon}${icon.sun}</button>
         <button class="icon-btn" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon.menu}</button>
@@ -91,7 +92,7 @@
     <footer class="ftr wrap">
       <div class="ftr__bar">
         <a class="wordmark" href="${url("index.html")}"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
-        <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => !["Home", "Videos"].includes(p.label)).map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
+        <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.label !== "Home").map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
         <p class="ftr__copy">© ${new Date().getFullYear()} Curious &amp; Creative · Joshua German &amp; Janel Moore</p>
       </div>
       <p class="ftr__sign">Built curious. Made creative. · <a href="${url("backstage/")}" style="opacity:.7">Team</a></p>
@@ -109,7 +110,7 @@
       <div><h3>Find us</h3><div class="drawer__social">
         <a href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://jgerms20.substack.com" target="_blank" rel="noopener">Substack</a>
+        <a href="https://jgerms20.substack.com" target="_blank" rel="noopener">Joshua on Substack</a>
         <a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>
       </div></div>
     </aside>
@@ -297,6 +298,12 @@
   /* ---------------- data ---------------- */
   const SHOW_ORDER = (shows) => [...shows].sort((a, b) => (b.flagship ? 1 : 0) - (a.flagship ? 1 : 0) || String(b.latest || "").localeCompare(String(a.latest || "")));
   CC.showOrder = SHOW_ORDER;
+  CC.hostGroup = (s) => {
+    const h = ((s && s.hosts) || []).join(" ").toLowerCase();
+    const jo = h.includes("joshua"), ja = h.includes("janel");
+    return jo && ja ? "shared" : ja ? "janel" : "joshua";
+  };
+  CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel" };
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
   CC.epHref = (e) => e.url || e.spotify_url || "#";
@@ -355,9 +362,9 @@
     };
     const slots = {
       top: [[-90, 300, 215]],
-      left: { primary: [[214, 300, 215], [146, 300, 215], [180, 330, 215]], secondary: [[244, 420, 290], [180, 360, 285], [120, 420, 290]] },
+      left: { primary: [[214, 300, 215], [146, 300, 215], [116, 300, 215]], secondary: [[244, 420, 290], [180, 360, 285], [120, 420, 290]] },
       right: { primary: [[-34, 300, 215], [34, 300, 215], [0, 330, 215]], secondary: [[16, 420, 260], [-64, 420, 290], [60, 420, 290]] },
-      future: [[72, 430, 290], [90, 440, 300], [108, 430, 290]],
+      future: [[48, 430, 290], [66, 440, 300], [84, 440, 300]],
     };
     const used = { left: { primary: 0, secondary: 0 }, right: { primary: 0, secondary: 0 } };
     const nodes = data.shows.map((s) => {

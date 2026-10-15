@@ -222,14 +222,14 @@
     const cards = picks.slice(0, 7);
     const perShow = data.primary.map((s) => [s, eps.find((e) => e.show === s.key)]).filter(([, e]) => e);
     const photo = data.photos && data.photos.find((p) => p.set === "Events & Live") || (data.photos || [])[0];
-    let html = card(cards[0], by, true) + cards.slice(1, 5).map((e) => card(e, by)).join("");
-    html += kindlingCard();
+    let html = card(cards[0], by, true) + cards.slice(1, 7).map((e) => card(e, by)).join("");
     if (photo) html += `<a class="special special--photo rv" href="${url("pages/art.html")}"><img src="${esc(url(photo.thumb))}" alt="${esc(photo.alt)}" loading="lazy"><span class="special__in"><span class="special__label">Photography</span><span class="special__title" style="font-size:1.6rem">${esc(photo.set)}</span><span class="special__go">Open the gallery ${icon.arrow}</span></span></a>`;
     html += `<div class="list-card rv"><div class="list-card__head"><span>Fresh from every show</span><span>${perShow.length}</span></div><ol>
       ${perShow.map(([s, e]) => `<li data-show="${s.key}"><a href="${esc(CC.epHref(e))}"${ext(CC.epHref(e))}><span>${esc(e.title)}<small>${esc(s.short || s.name)} · ${esc(ago(e.date))}</small></span></a></li>`).join("")}
     </ol></div>`;
     grid.innerHTML = html;
-    dealKindling(grid);
+    const kh = document.getElementById("kindling-home");
+    if (kh) { kh.innerHTML = kindlingCard(); dealKindling(kh); }
   }
 
   /* ------------------------------------------------ the network */
@@ -256,14 +256,17 @@
 
   /* ------------------------------------------------ Kindling showcase */
   function kindlingCard() {
-    return `<section class="kshow rv" aria-label="Kindling, our card game">
+    return `<section class="kshow kshow--wide rv" aria-label="Kindling, our card game">
       <div class="kshow__copy">
         <span class="special__label"><span class="dot dot--live"></span> Invention No. 1 · The game</span>
         <h3 class="kshow__title">Kindling</h3>
-        <p>A card game for people who want more of each other. Questions, dares, dates, and rituals across four decks, with consent built into the rules.</p>
+        <p>A card game for people who want more of each other. Questions, dares, dates, and rituals, dialed from heat 1 to 5, with consent built into every rule. For couples, throuples, and friends.</p>
+        <div class="kstats"><div><b>334</b><span>cards</span></div><div><b>4</b><span>decks</span></div><div><b>1–5</b><span>heat</span></div></div>
+        <div class="kdecks"><span class="kdeck" style="--k:#FF6A2B"><i></i>Embers · core</span><span class="kdeck" style="--k:#E2363B"><i></i>Wildfire</span><span class="kdeck" style="--k:#E2728A"><i></i>Slow Burn</span><span class="kdeck" style="--k:#B88CFF"><i></i>After Dark 18+</span></div>
         <div class="kshow__actions">
           <a class="btn" href="${url("kindling/play.html")}">Play free</a>
           <a class="btn btn--ghost" href="${url("kindling/shop.html")}">Pre-order the box</a>
+          <a class="btn btn--ghost" href="${url("kindling/")}">See the game</a>
         </div>
         <a class="kshow__more" href="${url("kindling/deck.html")}">Browse all 334 cards →</a>
       </div>
@@ -285,7 +288,7 @@
     if (!fan) return;
     fetch(url("data/kindling-cards.json")).then((r) => (r.ok ? r.json() : null)).then((d) => {
       // homepage stays friend-safe: low heat, any pairing, no After Dark
-      const pool = ((d && d.cards) || []).filter((c) => c.deck !== "afterdark" && c.heat <= 2 && c.pairing === "any" && c.text.length < 120);
+      const pool = ((d && d.cards) || []).filter((c) => c.deck !== "afterdark" && c.type !== "wild" && c.heat >= 1 && c.heat <= 2 && c.pairing === "any" && c.text.length < 110);
       if (!pool.length) return;
       const pick = () => pool[Math.floor(Math.random() * pool.length)];
       let hand = [pick(), pick(), pick()];
@@ -320,7 +323,7 @@
               <span><span class="vid__t">${esc(v.title)}</span><span class="vid__m">${esc((by[v.show] || {}).short || "")} · ${esc(ago(v.date))}</span></span>
             </button>`).join("")}
           </div>
-          <a class="btn vid__all" href="${url("pages/archive.html?show=approachable")}">All videos ${icon.arrow}</a>
+          <a class="btn vid__all" href="${url("pages/videos.html")}">All videos ${icon.arrow}</a>
         </div>
       </div>
       <div class="vid__main">

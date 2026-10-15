@@ -923,11 +923,18 @@ def do_writing(reg):
         if feed:
             try:
                 try:
-                    raw = fetch(feed)
+                    f = parse_feed_posts(fetch(feed), w.get("author"))
                 except Exception as e:  # noqa: BLE001
-                    log(f"  writing feed retry with a feed-reader agent ({e})")
-                    raw = fetch_as(feed, "Feedly/1.0 (+http://www.feedly.com/fetcher.html; like FeedFetcher-Google)")
-                f = parse_feed_posts(raw, w.get("author"))
+                    # Substack blocks datacenter IPs; read the same feed through rss2json instead
+                    log(f"  writing feed blocked ({e}); trying rss2json")
+                    j = json.loads(fetch("https://api.rss2json.com/v1/api.json?rss_url=" + urllib.parse.quote(feed, safe="")))
+                    if j.get("status") != "ok":
+                        raise RuntimeError(j.get("message") or "rss2json failed")
+                    f = {"title": (j.get("feed") or {}).get("title"), "url": (j.get("feed") or {}).get("link"),
+                         "posts": [{"title": it.get("title", "").strip(), "url": it.get("link"), "date": parse_date(it.get("pubDate", "").replace(" ", "T") + "Z") if it.get("pubDate") else None,
+                                    "excerpt": strip_html(it.get("description") or it.get("content") or "", 280),
+                                    "image": it.get("thumbnail") or ((it.get("enclosure") or {}).get("link") if "image" in ((it.get("enclosure") or {}).get("type") or "") else None),
+                                    "author": w.get("author")} for it in j.get("items", [])]}
                 src.update(title=f["title"] or w.get("title"), url=f["url"] or w.get("url"), count=len(f["posts"]))
                 out["posts"] += f["posts"]
                 log(f"  writing {w.get('author')}: {len(f['posts'])} posts")
