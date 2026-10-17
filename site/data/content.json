@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T15:42:19Z",
+ "generated_at": "2026-10-17T20:42:53Z",
  "shows": [
   {
    "key": "ccpod",
@@ -44,8 +44,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-17T03:18:56Z",
-   "count": 216
+   "latest": "2026-10-17T19:55:35Z",
+   "count": 218
   },
   {
    "key": "approachable",
@@ -105,7 +105,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-15T22:34:00Z",
    "count": 5
   },
@@ -186,6 +186,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:1331e935 14b9 4190 8bfc 436ee085f9f6",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#219 The Grove & The Americana: Fake Towns, Real Empire",
+   "date": "2026-10-17T19:55:35Z",
+   "duration": 2976,
+   "description": "Rick Caruso's father swept floors at the Farmers Market. The son built a town next door.\n The Grove opened in 2002 after fifteen years of failed schemes and neighborhood war, and then out-sold almost every real mall in America. The Americana opened in Glendale in 2008, backed by a redevelopment agency, fought by the mall across the street all the way to a jury, and walked straight into the financial crisis. Both are still standing. This is the story of the trolley, the fountain, the percentage rents nobody else dared charge, the rival who ended up bankrupt while Caruso bought his anchor store out from under him, and the building philosophy that embarrassed every public megaproject in Los…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792266838352-dec527772bbd4.jpg",
+   "url": "https://open.spotify.com/episode/22NCk7s2gZZMt048VNcGeA",
+   "spotify_url": "https://open.spotify.com/episode/22NCk7s2gZZMt048VNcGeA",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127633430/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2F484973ff-60c4-d821-270e-def1fd8e70b5.m4a",
+   "number": "219"
+  },
+  {
    "id": "polymath:079b791e 21cc 41eb 9b81 8c084ff72c01",
    "show": "polymath",
    "kind": "episode",
@@ -194,8 +208,8 @@
    "duration": 3031,
    "description": "Nicole Avant grew up in the most connected house in Black Hollywood, and then she built a bigger one.\n Ambassador to the Bahamas at 41. The producer who willed The Black Godfather into existence. Half of the couple whose Hancock Park home runs Democratic politics like an embassy. But the real story is the family playbook: Clarence Avant built the deals, Jacqueline Avant built the culture and the institutions, and Nicole joined what she inherited to the biggest platform in entertainment. What actually gets built when powerful families merge, and why the people at the top keep choosing exactly that. With a nod to #184, our Mellody Hobson episode, and the other half of the pattern.\n Follow…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792207037394-b18c909c89431.jpg",
-   "url": "https://open.spotify.com/episode/2SMA8VHHSQYDsmwAIyhqnM",
-   "spotify_url": "https://open.spotify.com/episode/2SMA8VHHSQYDsmwAIyhqnM",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/218-Nicole-Avant-Power--Marriage--and-the-Family-Way-e3qkoea",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127606666/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2F464b2a1e-f00b-1b8c-6d2c-ab00acde743e.m4a",
    "number": "218"
   },
@@ -486,6 +500,20 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127286196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2F2a9efa6e-ed86-da7a-805a-ae52f4311292.m4a",
    "number": "201"
+  },
+  {
+   "id": "polymath:1f784d8f ce09 40b3 9d4a 16053a7b9a51",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#200 The Curiosity Continues...",
+   "date": "2026-10-10T18:04:00Z",
+   "duration": 4603,
+   "description": "Two hundred episodes, five months, and more rabbit holes than I ever expected. We're back for another human check-in, and this time I'm reflecting on just how far The Eclectic Polymath has come, what I've learned along the way, and how this little experiment in curiosity keeps evolving.\n I revisit some of my favorite episodes from the last stretch, the random moments that inspired them, and the connections that have started to emerge across everything we've explored. From Bruce Lee and Big Ben to Erykah Badu, Marvel, marriage, and everything in between, I'm learning more about what makes a great episode, what sparks my curiosity, and how this podcast has become my own personal curriculum.\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/200-The-Curiosity-Continues-e3qlcuq",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127627674/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2F434377214-44100-2-1644318d0e193.mp3",
+   "number": "200"
   },
   {
    "id": "approachable:MZHfbT_1v1c",
@@ -4008,7 +4036,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 216,
+   "episodes": 218,
    "spotify_matches": 1
   },
   "approachable": {
