@@ -459,7 +459,58 @@ def spotify_episode(eid):
     rd = (ent.get("releaseDate") or {}).get("isoString")
     return {"title": ent.get("title") or ent.get("name") or "", "spotify_url": f"https://open.spotify.com/episode/{ent['id']}",
             "duration": round((ent.get("duration") or 0) / 1000) or None, "date": parse_date(rd) if rd else None,
-            "description": "", "image": cover, "video": bool(ent.get("hasVideo"))}
+            "description": "", "image": cover, "video": bool(ent.get("hasVideo")), "show_uri": ent.get("relatedEntityUri")}
+
+
+def big_art(url):
+    """Spotify image URLs carry a size code; ask for the 640px version."""
+    return re.sub(r"(/image/ab676563[0-9a-f]{4})5f1f", r"\1ba8a", url) if url else url
+
+
+def episode_art(spotify_url):
+    """The episode's current artwork, straight from Spotify (so new art shows up on the next run)."""
+    try:
+        d = json.loads(fetch("https://open.spotify.com/oembed?url=" + urllib.parse.quote(spotify_url, safe=""), timeout=15))
+        return big_art(d.get("thumbnail_url"))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+CRAWLERS = ["Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+            "Twitterbot/1.0",
+            "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"]
+
+
+def spotify_episode_ids(show_id):
+    """Every episode id of a Spotify show we can see without API keys: the anonymous
+    web-player token, then the show page as search crawlers get it."""
+    dbg = DEBUG.setdefault("catalog", {}).setdefault(show_id, {})
+    ids = []
+    try:
+        tok = json.loads(fetch("https://open.spotify.com/get_access_token?reason=transport&productType=web_player", timeout=15)).get("accessToken")
+        dbg["anon_token"] = bool(tok)
+        nxt = f"https://api.spotify.com/v1/shows/{show_id}/episodes?market=US&limit=50" if tok else None
+        while nxt:
+            req = urllib.request.Request(nxt, headers={"Authorization": f"Bearer {tok}", "User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                page = json.loads(r.read())
+            ids += [e["id"] for e in page.get("items") or [] if e]
+            nxt = page.get("next")
+        dbg["anon_api"] = len(ids)
+    except Exception as e:  # noqa: BLE001
+        dbg["anon_error"] = str(e)[:200]
+    for ua in CRAWLERS:
+        try:
+            page = fetch_as(f"https://open.spotify.com/show/{show_id}", ua, timeout=15)
+            found = re.findall(r"(?:/episode/|spotify:episode:)([A-Za-z0-9]{22})", page)
+            dbg[f"crawler:{ua.split('/')[0].split('(')[-1][:20]}"] = len(set(found))
+            ids += found
+        except Exception as e:  # noqa: BLE001
+            dbg[f"crawler_error:{ua[:20]}"] = str(e)[:120]
+    out = list(dict.fromkeys(ids))
+    dbg["total"] = len(out)
+    return out
 
 
 def discover_feed(show, spotify_name):
@@ -676,6 +727,33 @@ def do_podcast(show, prev_eps):
         have = {e["id"] for e in eps}
         eps += [e for e in prev_eps if e.get("show") == key and e["id"] not in have]
 
+    if show.get("spotify") and not items and not (sp and sp.get("full")):
+        # Spotify-only show: find every episode, not just the latest one the embed shows
+        have = {e.get("spotify_url", "").rsplit("/", 1)[-1] for e in eps}
+        for eid in spotify_episode_ids(show["spotify"]):
+            if eid in have:
+                continue
+            try:
+                got = spotify_episode(eid)
+            except Exception as e:  # noqa: BLE001
+                log(f"  episode {eid} failed: {e}")
+                got = None
+            if got and got.get("show_uri") and got["show_uri"] != f"spotify:show:{show['spotify']}":
+                continue  # a recommendation from another show, not ours
+            if got and got.get("title"):
+                have.add(eid)
+                eps.append({"id": f"{key}:{eid}", "show": key, "kind": "episode", "title": got["title"], "date": got["date"],
+                            "duration": got["duration"], "description": got["description"], "image": got["image"],
+                            "url": got["spotify_url"], "spotify_url": got["spotify_url"], "spotify_video": got["video"]})
+                log(f"  found episode: {got['title']}")
+        # artwork changes on Spotify reach the site on the next run
+        for e in eps[:80]:
+            if e.get("spotify_url") and not items:
+                art = episode_art(e["spotify_url"])
+                if art:
+                    e["image"] = art
+        eps.sort(key=lambda e: e.get("date") or "", reverse=True)
+
     if show.get("video_check"):
         known = {e["id"]: e.get("spotify_video") for e in prev_eps if e.get("show") == key}
         for e in eps[:25]:
@@ -691,7 +769,10 @@ def do_podcast(show, prev_eps):
     if only:
         eps = [e for e in eps if any(w in (e["title"] + " " + e["description"]).lower() for w in only)]
 
-    cover = show.get("art_url") or (channel and channel.get("image")) or (sp and sp.get("cover")) or (apple and apple.get("artworkUrl600"))
+    live = (channel and channel.get("image")) or big_art(sp and sp.get("cover"))
+    if not live and show.get("spotify"):
+        live = big_art((spotify_oembed(show["spotify"]) or {}).get("cover"))
+    cover = live or show.get("art_url") or (apple and apple.get("artworkUrl600"))  # current art from the feed/Spotify first
     art = save_art(key, cover)
     out["show"] = {
         "feed": feed_url,
