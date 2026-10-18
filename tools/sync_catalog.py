@@ -86,27 +86,52 @@ def number(title):
     return int(m.group(1)) if m else None
 
 
+PAIR = re.compile(r'episodes/[^"]*?-(e[0-9a-z]{5,})","stationId":"[^"]*","title":"(?:[^"\\]|\\.)*","spotifyUrl":"https://open\.spotify\.com/episode/([A-Za-z0-9]{22})"')
+
+
+def share_id(link):
+    """Spotify for Creators episode links end in a short id: .../214-David-Ellison-...-e3qhmbc"""
+    m = re.search(r"-(e[0-9a-z]{5,})/?$", link or "")
+    return m.group(1) if m else None
+
+
 def resolve_spotify(link, cache):
-    """Spotify for Creators episode link -> open.spotify.com episode URL."""
-    if link in cache:
-        return cache[link]
-    found = None
+    """Spotify for Creators episode link -> open.spotify.com episode URL.
+    The creators page embeds its episode list as JSON ({"...episodes/<slug>-<id>",
+    "title", "spotifyUrl"}), so one fetch usually resolves many episodes at once."""
+    eid = share_id(link)
+    if not eid:
+        return None
+    if cache.get("eid:" + eid):
+        return cache["eid:" + eid]
     try:
         final, body = get(link)
-        ids = list(dict.fromkeys(SPOTIFY_EP.findall(final) + SPOTIFY_EP.findall(body)))
-        if len(DEBUG["resolve"]) < 3:  # what the page looked like, so a failed resolve can be diagnosed
-            i = body.find("open.spotify.com")
-            DEBUG["resolve"].append({"link": link, "final": final, "len": len(body), "ids": ids[:5],
-                                     "near": body[max(0, i - 200):i + 200] if i >= 0 else body[:400]})
-        if len(ids) == 1:  # one unambiguous episode id on the page
-            found = f"https://open.spotify.com/episode/{ids[0]}"
+        body = body.replace("\\u002F", "/").replace("\\/", "/")
+        pairs = PAIR.findall(body)
+        for k, sid in pairs:
+            cache["eid:" + k] = f"https://open.spotify.com/episode/{sid}"
+        if eid not in dict(pairs):  # fall back to the first episode URL after this page's own id
+            i = body.find(eid + '"')
+            m = SPOTIFY_EP.search(body, i) if i >= 0 else None
+            if m and m.start() - i < 2000:
+                cache["eid:" + eid] = f"https://open.spotify.com/episode/{m.group(1)}"
+        if len(DEBUG["resolve"]) < 2:
+            DEBUG["resolve"].append({"link": link, "final": final, "len": len(body), "pairs": len(pairs),
+                                     "found": cache.get("eid:" + eid)})
     except Exception as e:  # noqa: BLE001
         print(f"  resolve failed {link}: {e}")
-        if len(DEBUG["resolve"]) < 3:
+        if len(DEBUG["resolve"]) < 2:
             DEBUG["resolve"].append({"link": link, "error": str(e)})
-        return None  # not cached: try again next run
-    cache[link] = found
-    return found
+    return cache.get("eid:" + eid)
+
+
+def meta_description(page):
+    for tag in re.findall(r"<meta\b[^>]*>", page):
+        if re.search(r'(?:property|name)="(?:og:description|description)"', tag):
+            m = re.search(r'content="([^"]*)"', tag)
+            if m and m.group(1).strip():
+                return html.unescape(m.group(1)).strip()
+    return ""
 
 
 def norm(t):
@@ -144,8 +169,9 @@ def polymath_entries(rss_url, cache, api):
     ch = ET.fromstring(xml_text.encode("utf-8")).find("channel")
     items = ch.findall("item")
     links = [(it.findtext("link") or "").strip() for it in items]
-    todo = [l for l in links if l and l not in cache and norm(next((it.findtext("title") for it in items if (it.findtext("link") or "").strip() == l), "")) not in api]
-    with ThreadPoolExecutor(8) as pool:  # resolve the uncached links in parallel
+    titles = {(it.findtext("link") or "").strip(): it.findtext("title") for it in items}
+    todo = [l for l in links if l and not cache.get(f"eid:{share_id(l)}") and norm(titles.get(l)) not in api]
+    with ThreadPoolExecutor(6) as pool:  # each page also resolves its neighbours
         list(pool.map(lambda l: resolve_spotify(l, cache), todo))
     out = []
     for it in items:
@@ -158,7 +184,7 @@ def polymath_entries(rss_url, cache, api):
             "description": text_paragraphs(it.findtext("content:encoded", namespaces=NS) or it.findtext("description")),
             "duration_ms": (seconds(it.findtext("itunes:duration", namespaces=NS)) or 0) * 1000 or None,
             "publish_date": iso_date(it.findtext("pubDate")),
-            "spotify_url": api.get(norm(title)) or (cache.get(link) if link else None),
+            "spotify_url": api.get(norm(title)) or cache.get(f"eid:{share_id(link)}"),
             "show": POLYMATH["show"],
         }
         out.append(rec)
@@ -173,15 +199,18 @@ def brazil_entries(cache):
             continue
         url = e["spotify_url"]
         desc = cache.get("desc:" + url)
-        if desc is None:
+        if not desc:
             try:
                 _, page = get(url)
-                m = re.search(r'<meta (?:property|name)="(?:og:)?description" content="([^"]*)"', page)
-                desc = html.unescape(m.group(1)).strip() if m else ""
+                desc = meta_description(page)
+                if not desc and "brazil" not in DEBUG:
+                    i = page.find("description")
+                    DEBUG["brazil"] = {"url": url, "len": len(page), "near": page[max(0, i - 300):i + 500]}
             except Exception as ex:  # noqa: BLE001
                 print(f"  description fetch failed {url}: {ex}")
                 desc = ""
-            cache["desc:" + url] = desc
+            if desc:  # only cache what was found; try again next run otherwise
+                cache["desc:" + url] = desc
         out.append({
             "episode_number": number(e.get("title")),
             "title": e.get("title", "").strip(),
