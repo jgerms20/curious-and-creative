@@ -1,13 +1,13 @@
 {
  "spotify": {
   "033ze48fmi1cTvj2M7Pb6M": {
-   "legacy_len": 11631,
+   "legacy_len": 11633,
    "legacy_episode_ids": 1,
    "len": 11633,
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"61b2f783cb3c2ceb4bb3bfc25466c3a9-7f0390a3df510dc3-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=61b2f783cb3c2ceb4bb3bfc25466c3a9,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.9180440850643413,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"0e68c5a4a695f8bd91e168723ce37e17-2a2d0712f670cc25-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=0e68c5a4a695f8bd91e168723ce37e17,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.3952008225781005,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
    "episode_ids": [
     "4FNzTh4mSHC8hy3Ea1bk2y"
    ],
@@ -20,20 +20,20 @@
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"5815432b05ed68e0de5f58d3d5de2e56-e054a9b82df5c057-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=5815432b05ed68e0de5f58d3d5de2e56,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.5183067988522397,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"a6da22ed38c6be6d04ec8b35ede2a7a3-78c4fe0ea8ca4d85-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=a6da22ed38c6be6d04ec8b35ede2a7a3,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.9360400469414155,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
    "episode_ids": [
     "4RO1UApTgYqUdWMuE5Crux"
    ],
    "anchor_ids": []
   },
   "033G4KctzeuD3Pu4db1AQa": {
-   "legacy_len": 11609,
+   "legacy_len": 11613,
    "legacy_episode_ids": 1,
-   "len": 11609,
+   "len": 11607,
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"b444cd4a20d62041ae61a915f05cdefd-0a16b4bb1b7b4714-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=b444cd4a20d62041ae61a915f05cdefd,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.25256361001330385,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"ec7f4f763251c4bc18e6678d5a8646e0-d7305682801099e4-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=ec7f4f763251c4bc18e6678d5a8646e0,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.5460496887861399,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
    "episode_ids": [
     "75VIZfJzZUK5h5P6qkGryF"
    ],
@@ -42,64 +42,95 @@
   "79MaSzrv6uJkaHiFoZQrWk": {
    "legacy_len": 11585,
    "legacy_episode_ids": 1,
-   "len": 11587,
+   "len": 11585,
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"8606c1af03a2d9771b0edf3d22106875-6fd1f1233e19bef3-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=8606c1af03a2d9771b0edf3d22106875,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.04007258422752824,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"ea7538579fcc1b902ea172b6fe21529e-7c41b77ebdcd0802-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=ea7538579fcc1b902ea172b6fe21529e,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.4607581670651876,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
    "episode_ids": [
     "6pq1lb9RuRPNphkSDhjjEz"
    ],
    "anchor_ids": []
   },
   "3IiC15tFfb1rHoDm9R6Zxp": {
-   "legacy_len": 11785,
+   "legacy_len": 11787,
    "legacy_episode_ids": 1,
-   "len": 11787,
+   "len": 11785,
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"671c492e637f5f437c3beaf00a38dc2a-55edc24ba5ae117d-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=671c492e637f5f437c3beaf00a38dc2a,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.21902040302431136,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"6223c9b3b370ca280898efb3e0ce7ab6-7ee25e1ac53990d8-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=6223c9b3b370ca280898efb3e0ce7ab6,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.1254070737855707,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
    "episode_ids": [
     "3gyOSBlUzrGOmho0wbkkHJ"
    ],
    "anchor_ids": []
   },
   "4tAY78JV37aIgmJ2d1iF3w": {
-   "legacy_len": 11827,
+   "legacy_len": 11825,
    "legacy_episode_ids": 1,
-   "len": 11825,
+   "len": 11823,
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"80d1765199a6a17fa2397576c7558ff9-0e943046a6bfb9dc-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=80d1765199a6a17fa2397576c7558ff9,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.8787929441684454,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"95cfb8fbfc53d125c3825d54860e5d73-135823e1fb0871dc-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=95cfb8fbfc53d125c3825d54860e5d73,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.626401412227928,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><li",
    "episode_ids": [
     "3QvNoGZqpr58FDBARvnvXN"
    ],
    "anchor_ids": []
   },
   "7natfWFnBgakjLLZcEDZaw": {
-   "legacy_len": 11732,
+   "legacy_len": 11734,
    "legacy_episode_ids": 1,
-   "len": 11734,
+   "len": 11732,
    "script_ids": [
     "__NEXT_DATA__"
    ],
-   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"3d8c58d2f31bdc3655ff2336dd2b5ef7-81211da9d5bb3f4b-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=3d8c58d2f31bdc3655ff2336dd2b5ef7,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.18933912770579953,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><",
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/665681fe4f09b342.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"a42130d740bac27a70f59f285a946ed5-166da0c4d9dad188-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=931339f3c49fe57b10c3876ebe5066d8a7b8578d,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=a42130d740bac27a70f59f285a946ed5,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.9978396692669054,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><l",
    "episode_ids": [
     "03foC2x4DgvoR9GyAMmxiG"
    ],
    "anchor_ids": []
   }
  },
- "catalog": {
-  "033ze48fmi1cTvj2M7Pb6M": {
-   "anon_error": "HTTP Error 403: URL Blocked",
-   "crawler:Mozilla": 0,
-   "crawler:facebookexternalhit": 0,
-   "crawler:Twitterbot": 0,
-   "total": 0
+ "creators": {
+  "ccpod": {
+   "creators.spotify.com/pod/profile/curiouscreative": "53859 Brand Logo rss=False station=7a9c7c58"
   },
+  "tmtt": {
+   "creators.spotify.com/pod/profile/toomuchtotweet": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/toomuchtotweet": "12022 None rss=False station=None",
+   "anchor.fm/toomuchtotweet": "12022 None rss=False station=None",
+   "creators.spotify.com/pod/profile/too-much-to-tweet": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/too-much-to-tweet": "12031 None rss=False station=None",
+   "anchor.fm/too-much-to-tweet": "12031 None rss=False station=None"
+  },
+  "riff": {
+   "creators.spotify.com/pod/profile/thedailyriff": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/thedailyriff": "12016 None rss=False station=None",
+   "anchor.fm/thedailyriff": "12016 None rss=False station=None",
+   "creators.spotify.com/pod/profile/dailyriff": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/dailyriff": "12007 None rss=False station=None",
+   "anchor.fm/dailyriff": "12007 None rss=False station=None",
+   "creators.spotify.com/pod/profile/the-daily-riff": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/the-daily-riff": "12022 None rss=False station=None",
+   "anchor.fm/the-daily-riff": "12022 None rss=False station=None",
+   "creators.spotify.com/pod/profile/daily-riff": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/daily-riff": "12010 None rss=False station=None",
+   "anchor.fm/daily-riff": "12010 None rss=False station=None",
+   "creators.spotify.com/pod/profile/jgerms20": "896200 Brand Logo rss=False station=111be5840",
+   "creators.spotify.com/pod/show/jgerms20": "896201 Brand Logo rss=False station=111be5840",
+   "anchor.fm/jgerms20": "896201 Brand Logo rss=False station=111be5840"
+  },
+  "brazil": {
+   "creators.spotify.com/pod/profile/godisbrazilian": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/godisbrazilian": "12022 None rss=False station=None",
+   "anchor.fm/godisbrazilian": "12022 None rss=False station=None",
+   "creators.spotify.com/pod/profile/god-is-brazilian": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/god-is-brazilian": "12028 None rss=False station=None",
+   "anchor.fm/god-is-brazilian": "12028 None rss=False station=None"
+  }
+ },
+ "catalog": {
   "033G4KctzeuD3Pu4db1AQa": {
    "anon_error": "HTTP Error 403: URL Blocked",
    "crawler:Mozilla": 0,

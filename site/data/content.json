@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T09:13:29Z",
+ "generated_at": "2026-10-18T09:15:39Z",
  "shows": [
   {
    "key": "ccpod",
@@ -17,12 +17,15 @@
    "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
    "rss": null,
    "tier": "primary",
+   "feed": "https://anchor.fm/s/7a9c7c58/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
-   "feed_title": "Curious + Creative",
+   "feed_title": "Curious Creative",
+   "description": "A space to talk about all things creativity and curiosity with your neurospicy host, Anna Bitters.",
+   "complete": true,
    "art": "assets/art/ccpod.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
-   "latest": "2026-10-18T02:17:00Z",
-   "count": 2
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/20470758/20470758-1651448225896-68f5d88bda0d.jpg",
+   "latest": "2022-04-27T16:20:30Z",
+   "count": 1
   },
   {
    "key": "polymath",
@@ -217,19 +220,6 @@
    "number": "221"
   },
   {
-   "id": "ccpod:4FNzTh4mSHC8hy3Ea1bk2y",
-   "show": "ccpod",
-   "kind": "episode",
-   "title": "#003: Your Mother, Your Mother, Your Mother",
-   "date": "2026-10-18T02:17:00Z",
-   "duration": 4315,
-   "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
-   "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
-   "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
-   "spotify_video": false
-  },
-  {
    "id": "polymath:d4df1c98 8fab 47d6 86a6 0043882b8f8e",
    "show": "polymath",
    "kind": "episode",
@@ -334,7 +324,7 @@
    "date": "2026-10-15T21:22:00Z",
    "duration": 2283,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_video": false
@@ -347,7 +337,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -360,7 +350,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -373,7 +363,7 @@
    "date": "2026-10-15T11:12:00Z",
    "duration": 2222,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_video": false
@@ -719,7 +709,7 @@
    "date": "2026-10-05T17:39:00Z",
    "duration": 960,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
@@ -759,7 +749,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -2097,22 +2087,9 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
-   "spotify_video": false
-  },
-  {
-   "id": "ccpod:1c29WyilCTFCyjUvtJkWWl",
-   "show": "ccpod",
-   "kind": "episode",
-   "title": "#002 Obsession, Backrooms & Hollywood's New Era",
-   "date": "2026-07-22T20:42:00Z",
-   "duration": 3002,
-   "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
-   "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
-   "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
   },
   {
@@ -3618,6 +3595,20 @@
    "number": "4"
   },
   {
+   "id": "ccpod:eda72780 950b 4c9d 96ba 9924d34d9d0f",
+   "show": "ccpod",
+   "kind": "episode",
+   "title": "Messy AF, let’s go.",
+   "date": "2022-04-27T16:20:30Z",
+   "duration": 425,
+   "description": "Welcome to the shit show. I hope you enjoy.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/20470758/20470758-1651076334537-75c0119c15716.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/curiouscreative/episodes/Messy-AF--lets-go-e1ho7ab",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/7a9c7c58/podcast/play/51174155/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-27%2F262102793-44100-2-1b8f8a14e0ddb.m4a",
+   "number": "1"
+  },
+  {
    "id": "dominate:3d6beba5 c614 40ca 928c 6e163699f285",
    "show": "dominate",
    "kind": "episode",
@@ -4083,11 +4074,11 @@
  "report": {
   "ccpod": {
    "ok": true,
-   "feed": null,
+   "feed": "https://anchor.fm/s/7a9c7c58/podcast/rss",
    "spotify_name": "Curious + Creative",
-   "full_catalog": false,
-   "episodes": 2,
-   "spotify_matches": 2
+   "full_catalog": true,
+   "episodes": 1,
+   "spotify_matches": 0
   },
   "polymath": {
    "ok": true,
