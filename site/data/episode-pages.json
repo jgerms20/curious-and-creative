@@ -1,0 +1,7 @@
+{
+ "_readme": "Written by tools/build_episodes.py. 'batches' = published build batches; 'pages' maps show:number:spotifyId -> page.",
+ "batches": [
+  1
+ ],
+ "pages": {}
+}

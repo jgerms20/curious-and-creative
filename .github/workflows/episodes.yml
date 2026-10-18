@@ -1,0 +1,63 @@
+name: Build episode pages
+
+# Extends the episode catalog from the public feeds, caches cover art and
+# regenerates the per-episode pages + sitemap (tools/build_episodes.py), then
+# commits the result back to the branch. Needs the network, so it runs here.
+on:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - tools/**
+      - site/data/episodes.json
+      - site/data/overrides.json
+      - site/data/episode-pages.json
+      - .github/workflows/episodes.yml
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Also publish this build batch (1-8); blank = rebuild what's live"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install image tools
+        continue-on-error: true
+        run: python3 -m pip install --quiet pillow
+
+      - name: Extend the catalog from the feeds
+        timeout-minutes: 10
+        continue-on-error: true
+        run: python3 tools/sync_catalog.py
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+
+      - name: Build episode pages
+        timeout-minutes: 15
+        run: |
+          set -o pipefail
+          args=""
+          if [ -n "${{ github.event.inputs.batch }}" ]; then args="--batch ${{ github.event.inputs.batch }}"; fi
+          python3 tools/build_episodes.py $args 2>&1 | tee site/data/_episodes_report.txt || echo "::warning::acceptance checks reported failures (see site/data/_episodes_report.txt)"
+
+      - name: Commit pages
+        run: |
+          git config user.name "cc-content-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Build episode pages"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

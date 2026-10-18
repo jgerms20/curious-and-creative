@@ -319,6 +319,8 @@
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
   CC.epHref = (e) => e.url || e.spotify_url || "#";
+  // the episode's own page on this site when one is published, else its listen link
+  CC.epLink = (e) => (e.page ? url(e.page) : CC.epHref(e));
   CC.isNew = (iso) => iso && Date.now() - new Date(iso).getTime() < 21 * 86400000;
   CC.showLinks = (s) => {
     const l = [];
@@ -329,8 +331,21 @@
   };
 
   const loadJSON = (p) => fetch(url(p), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json")]).then(([content, photos, registry]) => {
+  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json"), loadJSON("data/episode-pages.json")]).then(([content, photos, registry, epPages]) => {
     const data = content || { shows: [], episodes: [] };
+    // published episode pages, keyed show:number:spotifyId (tools/build_episodes.py)
+    const pageBy = {};
+    Object.entries((epPages && epPages.pages) || {}).forEach(([k, path]) => {
+      const [show, n, sid] = k.split(":");
+      pageBy[`${show}:${n}:${sid}`] = path;
+      pageBy[`${show}:${n}`] = pageBy[`${show}:${n}`] === undefined ? path : null; // null = ambiguous number
+    });
+    (data.episodes || []).forEach((e) => {
+      const m = /^\s*#\s*(\d+)/.exec(e.title || "");
+      if (!m || e.kind === "short") return;
+      const n = +m[1], sid = ((e.spotify_url || "").match(/episode\/([A-Za-z0-9]{22})/) || [])[1];
+      e.page = (sid && pageBy[`${e.show}:${n}:${sid}`]) || pageBy[`${e.show}:${n}`] || undefined;
+    });
     // registry edits (tier, feature, copy) apply immediately, before the next refresh
     const reg = Object.fromEntries(((registry && registry.shows) || []).map((s) => [s.key, s]));
     data.shows = (data.shows || []).map((s) => {
@@ -351,7 +366,7 @@
     data.shows.forEach((s) => addDoc({ type: "show", show: s.key, title: s.name, sub: `${s.kind === "youtube" ? "YouTube show" : "Podcast"} · ${(s.hosts || []).join(", ")}`, text: [s.tagline, s.about, s.description].filter(Boolean).join(" "), img: CC.art(s), href: url(`pages/shows.html#${s.key}`), boost: 1 }));
     (data.episodes || []).forEach((e) => {
       const s = data.byKey[e.show] || {};
-      addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epHref(e), date: e.date });
+      addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epLink(e), date: e.date });
     });
     data.photos.forEach((p) => addDoc({ type: "photo", title: p.alt || p.set, sub: `Photography · ${p.set}`, text: "photo photography " + p.set, img: url(p.thumb), href: url(`pages/art.html#${p.id}`) }));
 

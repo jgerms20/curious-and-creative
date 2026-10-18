@@ -8,6 +8,13 @@
     const h = CC.epHref(e);
     const vid = e.kind === "video" || e.kind === "short";
     const img = vid ? e.image : e.image || CC.art(s);
+    const sp = e.spotify_url || (/spotify\.com\//.test(e.url || "") && e.url);
+    if (e.page) // the row opens the episode's page; Spotify stays one tap away
+      return `<div class="ep ep--page" data-show="${esc(e.show)}">
+      ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph"></span>'}
+      <span><b><a class="ep__page" href="${esc(url(e.page))}">${esc(e.title)}</a></b><small>${esc([s && (s.short || s.name), e.description].filter(Boolean).join(" — "))}</small></span>
+      <span class="ep__when">${esc(ago(e.date))}${e.duration ? `<br>${esc(dur(e.duration))}` : ""}${sp ? `<br><a class="ep__sp" href="${esc(sp)}" target="_blank" rel="noopener">Spotify</a>` : ""}</span>
+    </div>`;
     return `<a class="ep${vid ? " ep--video" : ""}" href="${esc(h)}"${ext(h)} data-show="${esc(e.show)}">
       ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph"></span>'}
       <span><b>${esc(e.title)}</b><small>${esc([s && (s.short || s.name), e.description].filter(Boolean).join(" — "))}</small></span>
@@ -91,9 +98,9 @@
       let items;
       if (q) {
         const ids = new Set(CC.searchDocs(q, (d) => d.type === "episode").map((d) => d.href + "|" + d.title));
-        items = all.filter((e) => ids.has(CC.epHref(e) + "|" + e.title));
+        items = all.filter((e) => ids.has(CC.epLink(e) + "|" + e.title));
         const rank = [...ids];
-        items.sort((a, b) => rank.indexOf(CC.epHref(a) + "|" + a.title) - rank.indexOf(CC.epHref(b) + "|" + b.title));
+        items.sort((a, b) => rank.indexOf(CC.epLink(a) + "|" + a.title) - rank.indexOf(CC.epLink(b) + "|" + b.title));
       } else items = all;
       items = items.filter(filter);
       countEl.textContent = `${items.length} ${items.length === 1 ? "result" : "results"}${q ? ` for “${q}”` : ""}`;
