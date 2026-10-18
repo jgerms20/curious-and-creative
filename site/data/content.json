@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T20:50:33Z",
+ "generated_at": "2026-10-18T04:43:24Z",
  "shows": [
   {
    "key": "ccpod",
@@ -21,8 +21,8 @@
    "feed_title": "Curious + Creative",
    "art": "assets/art/ccpod.jpg",
    "art_remote": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
-   "latest": "2026-07-22T20:42:00Z",
-   "count": 1
+   "latest": "2026-10-18T02:17:00Z",
+   "count": 2
   },
   {
    "key": "polymath",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-15T07:02:59Z",
-   "count": 212
+   "latest": "2026-10-18T03:34:55Z",
+   "count": 220
   },
   {
    "key": "approachable",
@@ -108,8 +108,8 @@
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
    "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
-   "latest": "2026-10-15T20:27:00Z",
-   "count": 3
+   "latest": "2026-10-15T22:34:00Z",
+   "count": 5
   },
   {
    "key": "dominate",
@@ -188,6 +188,143 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:93b1d2a4 96fb 4f81 9055 36d3f3b837ad",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#221 The Homestead: Who Got Set Up, Who Got Stripped",
+   "date": "2026-10-18T03:34:55Z",
+   "duration": 4462,
+   "description": "The United States once ran the largest wealth-building program in its history: 160 acres, nearly free, to anyone who would work it. About a quarter of American adults today descend from the people who got it.\n This is the compare and contrast. What a setup looks like when it comes with a deed, protected title, credit, and institutions behind it, and what it looks like when it doesn't: freedpeople handed 400,000 acres and then stripped of them within the year, Black farmers who built to 15 million acres by 1910 and lost most of it, and the Native nations whose land the free land was. Then the sequel: the same play run again through FHA mortgages and Levittown, where uniformity itself became…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792297845663-2b27c7fd5cfdb.jpg",
+   "url": "https://open.spotify.com/episode/0JahAvjONFmqvu5K4u56D3",
+   "spotify_url": "https://open.spotify.com/episode/0JahAvjONFmqvu5K4u56D3",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127645877/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-18%2F9b13c05d-eea5-e1b1-248a-6920328996d8.m4a",
+   "number": "221"
+  },
+  {
+   "id": "ccpod:4FNzTh4mSHC8hy3Ea1bk2y",
+   "show": "ccpod",
+   "kind": "episode",
+   "title": "Episode #003: Your Mother, Your Mother, Your Mother",
+   "date": "2026-10-18T02:17:00Z",
+   "duration": 4315,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
+   "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
+   "spotify_video": false
+  },
+  {
+   "id": "polymath:d4df1c98 8fab 47d6 86a6 0043882b8f8e",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#220 Nathan Fielder: The Man Who Rehearsed Reality",
+   "date": "2026-10-17T21:43:43Z",
+   "duration": 3001,
+   "description": "He has a business degree, a pilot’s license, and a theory about why people don’t speak up.\n Nathan Fielder turned a small-business advice show into a series of experiments on how people comply, perform, and go along: a coffee shop that ran on parody law, a jacket company built on a joke that stopped being one, and a finale that quietly became the best film of its year. Then The Rehearsal scaled the method up, simulations inside simulations, until a season of television about cockpit communication ended with him at the controls of a real 737 full of actors, arguing with the FAA on CNN. This episode is about the lens itself: how the deadpan, the paperwork, and the escalating commitment…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792272856637-9710f04a89226.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/220-Nathan-Fielder-The-Man-Who-Rehearsed-Reality-e3qllf8",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127636392/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2Fdb3ac1cd-b745-e57e-a20e-26ca091f6e64.m4a",
+   "number": "220"
+  },
+  {
+   "id": "polymath:1331e935 14b9 4190 8bfc 436ee085f9f6",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#219 The Grove & The Americana: Fake Towns, Real Empire",
+   "date": "2026-10-17T19:55:35Z",
+   "duration": 2976,
+   "description": "Rick Caruso's father swept floors at the Farmers Market. The son built a town next door.\n The Grove opened in 2002 after fifteen years of failed schemes and neighborhood war, and then out-sold almost every real mall in America. The Americana opened in Glendale in 2008, backed by a redevelopment agency, fought by the mall across the street all the way to a jury, and walked straight into the financial crisis. Both are still standing. This is the story of the trolley, the fountain, the percentage rents nobody else dared charge, the rival who ended up bankrupt while Caruso bought his anchor store out from under him, and the building philosophy that embarrassed every public megaproject in Los…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792266838352-dec527772bbd4.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/219-The-Grove--The-Americana-Fake-Towns--Real-Empire-e3qliim",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127633430/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2F484973ff-60c4-d821-270e-def1fd8e70b5.m4a",
+   "number": "219"
+  },
+  {
+   "id": "polymath:079b791e 21cc 41eb 9b81 8c084ff72c01",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#218 Nicole Avant: Power, Marriage, and the Family Way",
+   "date": "2026-10-17T03:18:56Z",
+   "duration": 3031,
+   "description": "Nicole Avant grew up in the most connected house in Black Hollywood, and then she built a bigger one.\n Ambassador to the Bahamas at 41. The producer who willed The Black Godfather into existence. Half of the couple whose Hancock Park home runs Democratic politics like an embassy. But the real story is the family playbook: Clarence Avant built the deals, Jacqueline Avant built the culture and the institutions, and Nicole joined what she inherited to the biggest platform in entertainment. What actually gets built when powerful families merge, and why the people at the top keep choosing exactly that. With a nod to #184, our Mellody Hobson episode, and the other half of the pattern.\n Follow…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792207037394-b18c909c89431.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/218-Nicole-Avant-Power--Marriage--and-the-Family-Way-e3qkoea",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127606666/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2F464b2a1e-f00b-1b8c-6d2c-ab00acde743e.m4a",
+   "number": "218"
+  },
+  {
+   "id": "polymath:30443487 dec5 4755 b39c 03119a9a97e9",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#217 A Different World: The Sitcom That Refused to End",
+   "date": "2026-10-16T14:34:30Z",
+   "duration": 3068,
+   "description": "A Different World is not a nostalgia story anymore. The Netflix sequel premiered September 24, hit number one in the US, and got renewed eight days later, with Debbie Allen still holding the wheel nearly 40 years after she first saved the show.\n You remember Whitley and Dwayne, the flip-up glasses, and Thursday nights behind The Cosby Show, when Hillman finished as high as number 2 in all of television and number 1 in Black households. What most people missed: season one was a flop with critics, Lisa Bonet was gone within a year, and the show only became itself when a Howard alumna took over and started sending her writers to real Black colleges.\n This episode covers the Allen…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792161184414-19e7835644c34.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/217-A-Different-World-The-Sitcom-That-Refused-to-End-e3qjs6n",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127577751/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-16%2Fda9e569e-f15e-823b-30c4-1d26b47c65e5.mp3",
+   "number": "217"
+  },
+  {
+   "id": "polymath:dd808adc e27d 4f67 b876 c00f4977ed9d",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#216 How Karen Bass Became the Establishment",
+   "date": "2026-10-16T14:26:15Z",
+   "duration": 3302,
+   "description": "The police union spent against Karen Bass in 2022. This year it is spending millions for her. That flip tells you most of what you need to know about the mayor Los Angeles is deciding whether to keep.\n You may know her as the first Black woman to lead a state legislature in American history, the congresswoman behind the George Floyd Justice in Policing Act, or the mayor who declared a homelessness emergency on day one. Before all of it, she was a physician assistant in the county emergency room during the crack epidemic, watching the same families come back night after night.\n This episode follows the organizer who built Community Coalition out of that emergency room, the reformer whose…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792160720495-a205a14e0ab07.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/216-How-Karen-Bass-Became-the-Establishment-e3qjrn4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127577252/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-16%2F40438854-cc4c-d89f-8345-7aa7d8d39654.mp3",
+   "number": "216"
+  },
+  {
+   "id": "polymath:5f203206 71d9 4dfc 91dc e3c7bd4362b7",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#215 Nithya Raman: Hollywood's Socialist Is Leading the Mayor's Race",
+   "date": "2026-10-16T14:17:31Z",
+   "duration": 2648,
+   "description": "Nineteen days before the election, the challenger is ahead. Nithya Raman endorsed Mayor Karen Bass for re-election in January, then filed to run against her hours before the February deadline, and the September Berkeley IGS poll has her leading the incumbent 39 to 28.\n You may know her as the \"Hollywood socialist\" from Council District 4, or from the rent cap fight that rewrote the rules for some 650,000 rent-stabilized homes. Before any of that, she was a six-year-old immigrant from Kerala, an urban planner mapping slums in Delhi and Chennai, and the city staffer who found that nearly 90% of LA's homelessness spending went to jailing people.\n This episode traces how that planner became the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792130748087-6f878b91aaa59.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/215-Nithya-Raman-Hollywoods-Socialist-Is-Leading-the-Mayors-Race-e3qj939",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127558185/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-16%2Fad8704e0-a228-0fee-4b53-24c81f260db2.mp3",
+   "number": "215"
+  },
+  {
+   "id": "riff:6pq1lb9RuRPNphkSDhjjEz",
+   "show": "riff",
+   "kind": "episode",
+   "title": "#21 The Week Ahead: October 19-25",
+   "date": "2026-10-15T22:34:00Z",
+   "duration": 2143,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
+   "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
+   "spotify_video": false
+  },
+  {
+   "id": "riff:4BaNHWmBqtYcR7qTrFXAK0",
+   "show": "riff",
+   "kind": "episode",
+   "title": "#11 Chicago: The Sound of the Great Migration, Still Moving",
+   "date": "2026-10-15T21:22:00Z",
+   "duration": 2283,
+   "description": "",
+   "image": null,
+   "url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
+   "spotify_url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
+   "spotify_video": false
+  },
   {
    "id": "riff:2pWoI1OQBEJii1hkKl15hl",
    "show": "riff",
@@ -407,6 +544,20 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127286196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2F2a9efa6e-ed86-da7a-805a-ae52f4311292.m4a",
    "number": "201"
+  },
+  {
+   "id": "polymath:1f784d8f ce09 40b3 9d4a 16053a7b9a51",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#200 The Curiosity Continues...",
+   "date": "2026-10-10T18:04:00Z",
+   "duration": 4603,
+   "description": "Two hundred episodes, five months, and more rabbit holes than I ever expected. We're back for another human check-in, and this time I'm reflecting on just how far The Eclectic Polymath has come, what I've learned along the way, and how this little experiment in curiosity keeps evolving.\n I revisit some of my favorite episodes from the last stretch, the random moments that inspired them, and the connections that have started to emerge across everything we've explored. From Bruce Lee and Big Ben to Erykah Badu, Marvel, marriage, and everything in between, I'm learning more about what makes a great episode, what sparks my curiosity, and how this podcast has become my own personal curriculum.\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/200-The-Curiosity-Continues-e3qlcuq",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127627674/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-17%2F434377214-44100-2-1644318d0e193.mp3",
+   "number": "200"
   },
   {
    "id": "approachable:MZHfbT_1v1c",
@@ -3921,16 +4072,16 @@
    "feed": null,
    "spotify_name": "Curious + Creative",
    "full_catalog": false,
-   "episodes": 1,
-   "spotify_matches": 1
+   "episodes": 2,
+   "spotify_matches": 2
   },
   "polymath": {
    "ok": true,
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 212,
-   "spotify_matches": 0
+   "episodes": 220,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -3950,8 +4101,8 @@
    "feed": null,
    "spotify_name": "The Daily Riff",
    "full_catalog": false,
-   "episodes": 3,
-   "spotify_matches": 3
+   "episodes": 5,
+   "spotify_matches": 5
   },
   "dominate": {
    "ok": true,
