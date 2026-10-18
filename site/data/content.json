@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T10:28:44Z",
+ "generated_at": "2026-10-18T14:41:15Z",
  "shows": [
   {
    "key": "ccpod",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -107,7 +107,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-15T22:34:00Z",
    "count": 5
   },
@@ -192,7 +192,7 @@
    "id": "polymath:97ba1dc8 c9c9 4d64 a7ed 499dc423f8ad",
    "show": "polymath",
    "kind": "episode",
-   "title": "France Erupts: Nobody Leads It, Nobody Can Stop It",
+   "title": "#222 What's going on in France?… and why?",
    "date": "2026-10-18T08:59:01Z",
    "duration": 3386,
    "description": "Half a million people in the streets. Schoolkids sitting on top of the Republic's own statue. Town halls burning by night. And no leader anywhere who can call it off, because nobody called it on.\n This started with a school in Créteil that had no teachers. It became the biggest test yet of how France actually governs itself: through the street. Why French governments retreat, when they don't, and why a movement nobody leads might be the hardest kind to beat, and the easiest kind to outlast. Plus what it sets up for 2027, when Macron is gone and Le Pen is waiting.\n Follow along for the next deep dive.\n Stay curious.",
@@ -224,7 +224,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -321,7 +321,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -347,7 +347,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -498,7 +498,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -759,7 +759,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -826,7 +826,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -853,7 +853,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
