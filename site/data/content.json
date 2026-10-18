@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T14:41:15Z",
+ "generated_at": "2026-10-18T18:13:17Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-18T08:59:01Z",
-   "count": 221
+   "latest": "2026-10-18T17:36:00Z",
+   "count": 222
   },
   {
    "key": "approachable",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -157,7 +157,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-13T01:12:00Z",
    "count": 9
   },
@@ -189,6 +189,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:e24dcb92 e80b 4a84 b4fd e21395970c57",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#224 Flávio Bolsonaro: The Heir, the Exile, and the Algorithm",
+   "date": "2026-10-18T17:36:00Z",
+   "duration": 3483,
+   "description": "On October 4, Flávio Bolsonaro beat Lula in the first round of Brazil's presidential election, 56.1 million votes to 53.9 million. His father, the man who built the movement, followed it under house arrest: 27 years for the coup plot, barred from office until 2030, banned from even posting online.\n So how is the movement winning? This episode maps the succession: the heir chosen from custody, the brother running foreign policy from exile in Texas, the stepmother and brothers winning Senate seats of their own, the biggest party in Congress, a billion reais a year in public money, and a runoff being fought inside Instagram's algorithm, with Brazil's electoral court fining Meta into…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792344807490-b72c5d4ae8963.jpg",
+   "url": "https://open.spotify.com/episode/0RZeeXzJaT11gB5HRfzh9f",
+   "spotify_url": "https://open.spotify.com/episode/0RZeeXzJaT11gB5HRfzh9f",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127674157/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-18%2F9dd059e4-e4c0-01f6-0012-9c332d535644.m4a",
+   "number": "224"
+  },
+  {
    "id": "polymath:97ba1dc8 c9c9 4d64 a7ed 499dc423f8ad",
    "show": "polymath",
    "kind": "episode",
@@ -197,8 +211,8 @@
    "duration": 3386,
    "description": "Half a million people in the streets. Schoolkids sitting on top of the Republic's own statue. Town halls burning by night. And no leader anywhere who can call it off, because nobody called it on.\n This started with a school in Créteil that had no teachers. It became the biggest test yet of how France actually governs itself: through the street. Why French governments retreat, when they don't, and why a movement nobody leads might be the hardest kind to beat, and the easiest kind to outlast. Plus what it sets up for 2027, when Macron is gone and Le Pen is waiting.\n Follow along for the next deep dive.\n Stay curious.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792313662339-55bbc1d83bb7a.jpg",
-   "url": "https://open.spotify.com/episode/4RO1UApTgYqUdWMuE5Crux",
-   "spotify_url": "https://open.spotify.com/episode/4RO1UApTgYqUdWMuE5Crux",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/222-Whats-going-on-in-France--and-why-e3qm71l",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127654389/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-18%2Fda99a397-db24-7284-e00c-f6eea38449a7.m4a",
    "number": "222"
   },
@@ -224,7 +238,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -347,7 +361,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -746,7 +760,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -759,7 +773,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -786,7 +800,7 @@
    "date": "2026-10-04T20:11:00Z",
    "duration": 1075,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
    "url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_video": false
@@ -826,7 +840,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -853,7 +867,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -4094,7 +4108,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 221,
+   "episodes": 222,
    "spotify_matches": 1
   },
   "approachable": {
