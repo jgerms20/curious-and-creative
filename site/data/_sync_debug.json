@@ -1,26 +1,24 @@
 {
  "resolve": [
   {
-   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/214-David-Ellison-Hollywoods-New-Landlord-e3qhmbc",
-   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/214-David-Ellison-Hollywoods-New-Landlord-e3qhmbc",
-   "len": 922732,
-   "ids": [],
-   "near": "d\\u002Fepisodes\\u002F221-The-Homestead-Who-Got-Set-Up--Who-Got-Stripped-e3qlunl\",\"stationId\":\"111be5840\",\"title\":\"#221 The Homestead: Who Got Set Up, Who Got Stripped\",\"spotifyUrl\":\"https:\\u002F\\u002Fopen.spotify.com\\u002Fepisode\\u002F0JahAvjONFmqvu5K4u56D3\"},{\"created\":\"2026-10-17T21:30:29.000Z\",\"createdUnixTimestamp\":1792272629,\"isDeleted\":false,\"modified\":\"2026-10-17T21:43:43.000Z\",\"publishOn\":"
+   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/221-The-Homestead-Who-Got-Set-Up--Who-Got-Stripped-e3qlunl",
+   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/221-The-Homestead-Who-Got-Set-Up--Who-Got-Stripped-e3qlunl",
+   "len": 896782,
+   "pairs": 220,
+   "found": "https://open.spotify.com/episode/0JahAvjONFmqvu5K4u56D3"
   },
   {
-   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/219-The-Grove--The-Americana-Fake-Towns--Real-Empire-e3qliim",
-   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/219-The-Grove--The-Americana-Fake-Towns--Real-Empire-e3qliim",
-   "len": 922995,
-   "ids": [],
-   "near": "d\\u002Fepisodes\\u002F221-The-Homestead-Who-Got-Set-Up--Who-Got-Stripped-e3qlunl\",\"stationId\":\"111be5840\",\"title\":\"#221 The Homestead: Who Got Set Up, Who Got Stripped\",\"spotifyUrl\":\"https:\\u002F\\u002Fopen.spotify.com\\u002Fepisode\\u002F0JahAvjONFmqvu5K4u56D3\"},{\"created\":\"2026-10-17T21:30:29.000Z\",\"createdUnixTimestamp\":1792272629,\"isDeleted\":false,\"modified\":\"2026-10-17T21:43:43.000Z\",\"publishOn\":"
-  },
-  {
-   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/218-Nicole-Avant-Power--Marriage--and-the-Family-Way-e3qkoea",
-   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/218-Nicole-Avant-Power--Marriage--and-the-Family-Way-e3qkoea",
-   "len": 922655,
-   "ids": [],
-   "near": "d\\u002Fepisodes\\u002F221-The-Homestead-Who-Got-Set-Up--Who-Got-Stripped-e3qlunl\",\"stationId\":\"111be5840\",\"title\":\"#221 The Homestead: Who Got Set Up, Who Got Stripped\",\"spotifyUrl\":\"https:\\u002F\\u002Fopen.spotify.com\\u002Fepisode\\u002F0JahAvjONFmqvu5K4u56D3\"},{\"created\":\"2026-10-17T21:30:29.000Z\",\"createdUnixTimestamp\":1792272629,\"isDeleted\":false,\"modified\":\"2026-10-17T21:43:43.000Z\",\"publishOn\":"
+   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/216-How-Karen-Bass-Became-the-Establishment-e3qjrn4",
+   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/216-How-Karen-Bass-Became-the-Establishment-e3qjrn4",
+   "len": 896325,
+   "pairs": 220,
+   "found": "https://open.spotify.com/episode/4gpFyNU0dZH2wr9b7UhjAI"
   }
  ],
- "skipped": 229
+ "brazil": {
+  "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
+  "len": 166727,
+  "near": "fetch\" crossorigin=\"anonymous\" type=\"application/json\"/><style>.grecaptcha-badge { display: none !important;}</style><script src=\"https://www.google.com/recaptcha/enterprise.js?render=6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39\" async=\"\" defer=\"\"></script><link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"Spotify\" href=\"https://open.spotifycdn.com/cdn/generated/opensearch.4cd8879e.xml\"/><script defer=\"\" src=\"https://open.spotifycdn.com/cdn/js/gtm.96d60fd6.js\"></script><script defer=\"\" src=\"https://open.spotifycdn.com/cdn/js/retargeting-pixels.02346b5d.js\"></script></head><body class=\"\"><div class=\"body-drag-top\"></div><div aria-hidden=\"true\" id=\"video-player-parking-surface\" inert=\"\" style=\"position:fixed;top:-10000px;left:-10000px;width:160px;height:90px;overflow:hidden;o"
+ },
+ "skipped": 9
 }
