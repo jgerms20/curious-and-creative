@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T04:43:24Z",
+ "generated_at": "2026-10-18T09:04:58Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-18T03:34:55Z",
-   "count": 220
+   "latest": "2026-10-18T08:59:01Z",
+   "count": 221
   },
   {
    "key": "approachable",
@@ -189,6 +189,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:97ba1dc8 c9c9 4d64 a7ed 499dc423f8ad",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "France Erupts: Nobody Leads It, Nobody Can Stop It",
+   "date": "2026-10-18T08:59:01Z",
+   "duration": 3386,
+   "description": "Half a million people in the streets. Schoolkids sitting on top of the Republic's own statue. Town halls burning by night. And no leader anywhere who can call it off, because nobody called it on.\n This started with a school in Créteil that had no teachers. It became the biggest test yet of how France actually governs itself: through the street. Why French governments retreat, when they don't, and why a movement nobody leads might be the hardest kind to beat, and the easiest kind to outlast. Plus what it sets up for 2027, when Macron is gone and Le Pen is waiting.\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792313662339-55bbc1d83bb7a.jpg",
+   "url": "https://open.spotify.com/episode/4RO1UApTgYqUdWMuE5Crux",
+   "spotify_url": "https://open.spotify.com/episode/4RO1UApTgYqUdWMuE5Crux",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127654389/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-18%2Fda99a397-db24-7284-e00c-f6eea38449a7.m4a",
+   "number": "222"
+  },
+  {
    "id": "polymath:93b1d2a4 96fb 4f81 9055 36d3f3b837ad",
    "show": "polymath",
    "kind": "episode",
@@ -197,8 +211,8 @@
    "duration": 4462,
    "description": "The United States once ran the largest wealth-building program in its history: 160 acres, nearly free, to anyone who would work it. About a quarter of American adults today descend from the people who got it.\n This is the compare and contrast. What a setup looks like when it comes with a deed, protected title, credit, and institutions behind it, and what it looks like when it doesn't: freedpeople handed 400,000 acres and then stripped of them within the year, Black farmers who built to 15 million acres by 1910 and lost most of it, and the Native nations whose land the free land was. Then the sequel: the same play run again through FHA mortgages and Levittown, where uniformity itself became…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792297845663-2b27c7fd5cfdb.jpg",
-   "url": "https://open.spotify.com/episode/0JahAvjONFmqvu5K4u56D3",
-   "spotify_url": "https://open.spotify.com/episode/0JahAvjONFmqvu5K4u56D3",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/221-The-Homestead-Who-Got-Set-Up--Who-Got-Stripped-e3qlunl",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127645877/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-18%2F9b13c05d-eea5-e1b1-248a-6920328996d8.m4a",
    "number": "221"
   },
@@ -206,7 +220,7 @@
    "id": "ccpod:4FNzTh4mSHC8hy3Ea1bk2y",
    "show": "ccpod",
    "kind": "episode",
-   "title": "Episode #003: Your Mother, Your Mother, Your Mother",
+   "title": "#003: Your Mother, Your Mother, Your Mother",
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
@@ -4080,7 +4094,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 220,
+   "episodes": 221,
    "spotify_matches": 1
   },
   "approachable": {
