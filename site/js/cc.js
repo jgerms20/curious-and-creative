@@ -337,14 +337,17 @@
     const pageBy = {};
     Object.entries((epPages && epPages.pages) || {}).forEach(([k, path]) => {
       const [show, n, sid] = k.split(":");
-      pageBy[`${show}:${n}:${sid}`] = path;
-      pageBy[`${show}:${n}`] = pageBy[`${show}:${n}`] === undefined ? path : null; // null = ambiguous number
+      pageBy[`${show}:${n}:${sid}`] = { path, sid };
+      pageBy[`${show}:${n}`] = pageBy[`${show}:${n}`] === undefined ? { path, sid } : null; // null = ambiguous number
     });
     (data.episodes || []).forEach((e) => {
       const m = /^\s*#\s*(\d+)/.exec(e.title || "");
       if (!m || e.kind === "short") return;
       const n = +m[1], sid = ((e.spotify_url || "").match(/episode\/([A-Za-z0-9]{22})/) || [])[1];
-      e.page = (sid && pageBy[`${e.show}:${n}:${sid}`]) || pageBy[`${e.show}:${n}`] || undefined;
+      const hit = (sid && pageBy[`${e.show}:${n}:${sid}`]) || pageBy[`${e.show}:${n}`];
+      if (!hit) return;
+      e.page = hit.path;
+      e.spotify_url = e.spotify_url || `https://open.spotify.com/episode/${hit.sid}`;
     });
     // registry edits (tier, feature, copy) apply immediately, before the next refresh
     const reg = Object.fromEntries(((registry && registry.shows) || []).map((s) => [s.key, s]));
