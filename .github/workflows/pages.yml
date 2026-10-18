@@ -5,8 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # pull new episodes / videos every 6 hours (runs on main)
-    - cron: "23 */6 * * *"
+    # pull new episodes, videos and artwork every hour (runs on main)
+    - cron: "23 * * * *"
   workflow_dispatch:
 
 permissions:
