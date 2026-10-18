@@ -1,7 +1,8 @@
 {
  "_readme": "Written by tools/build_episodes.py. 'batches' = published build batches; 'pages' maps show:number:spotifyId -> page.",
  "batches": [
-  1
+  1,
+  2
  ],
  "pages": {
   "polymath:126:3FMY4Z3qQcueQgreL3xI0V": "episodes/eclectic-polymath/126-josh-kushner-thrive-capital-openai-and-the-quiet.html",

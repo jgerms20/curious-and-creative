@@ -153,6 +153,26 @@ def meta_description(page):
     return ""
 
 
+def embed_description(url):
+    """Fallback: the episode's embed page boots from __NEXT_DATA__ JSON."""
+    m = SPOTIFY_EP.search(url)
+    if not m:
+        return ""
+    try:
+        _, page = get(f"https://open.spotify.com/embed/episode/{m.group(1)}")
+        nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+        ent = json.loads(nd.group(1))["props"]["pageProps"]["state"]["data"]["entity"]
+        if "embed" not in DEBUG:
+            DEBUG["embed"] = {"keys": sorted(ent.keys())}
+        for k in ("htmlDescription", "description", "subtitle"):
+            v = ent.get(k)
+            if isinstance(v, str) and len(v.strip()) > 40:
+                return text_paragraphs(v)
+    except Exception as e:  # noqa: BLE001
+        DEBUG.setdefault("embed_error", str(e))
+    return ""
+
+
 def norm(t):
     return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
 
@@ -221,7 +241,7 @@ def brazil_entries(cache):
         if not desc:
             try:
                 _, page = get(url)
-                desc = meta_description(page)
+                desc = meta_description(page) or embed_description(url)
                 if not desc and "brazil" not in DEBUG:
                     i = page.find("description")
                     DEBUG["brazil"] = {"url": url, "len": len(page), "scripts": re.findall(r"<script[^>]*?(?:id|type)=\"([^\"]+)\"", page)[:30],
