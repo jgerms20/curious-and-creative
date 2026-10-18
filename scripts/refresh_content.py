@@ -534,16 +534,32 @@ def discover_feed(show, spotify_name):
     for n in names:
         base = re.sub(r"[^a-z0-9]+", "", (n or "").lower())
         slugs += [base, base.replace("the", "", 1)]
+    for n in names:
+        words = re.findall(r"[a-z0-9]+", (n or "").lower().replace("&", " and ").replace("+", " and "))
+        slugs += ["-".join(words), "".join(words), "-".join(w for w in words if w not in ("the", "podcast")),
+                  "".join(w for w in words if w not in ("the", "podcast", "and"))]
+    tried = DEBUG.setdefault("creators", {}).setdefault(show["key"], {})
     for slug in dict.fromkeys(x for x in slugs if x):
-        for host in ("creators.spotify.com/pod/show", "podcasters.spotify.com/pod/show", "anchor.fm"):
+        for host in ("creators.spotify.com/pod/profile", "creators.spotify.com/pod/show", "anchor.fm"):
             try:
-                page = fetch(f"https://{host}/{slug}", timeout=12)
-            except Exception:  # noqa: BLE001
+                page = fetch(f"https://{host}/{slug}", timeout=12).replace("\\u002F", "/")
+            except Exception as e:  # noqa: BLE001
+                tried[f"{host}/{slug}"] = str(e)[:60]
                 continue
             m = re.search(r"https://anchor\.fm/s/[0-9a-f]+/podcast/rss", page)
-            if m and any(w and w in norm(page[:20000]) for w in want):
-                log(f"  creators page {host}/{slug} -> {m.group(0)}")
-                return m.group(0)
+            st = re.search(r'"stationId":"([0-9a-f]+)"', page)
+            title = re.search(r"<title>(.*?)</title>", page, re.S)
+            tried[f"{host}/{slug}"] = f"{len(page)} {title and title.group(1)[:60]} rss={bool(m)} station={st and st.group(1)}"
+            url = m.group(0) if m else (st and f"https://anchor.fm/s/{st.group(1)}/podcast/rss")
+            if url and any(w and w in norm(page[:200000]) for w in want):
+                try:  # the feed has to be this show's, not a namesake's
+                    ch, _ = parse_rss(fetch(url))
+                    if norm(ch["title"]) in want or any(w and w in norm(ch["title"]) for w in want):
+                        log(f"  creators page {host}/{slug} -> {url}")
+                        return url
+                    tried[f"{host}/{slug}"] += f" feed title {ch['title']!r} not ours"
+                except Exception as e:  # noqa: BLE001
+                    tried[f"{host}/{slug}"] += f" feed failed {e}"
     return None
 
 
