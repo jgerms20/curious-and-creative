@@ -1,0 +1,42 @@
+{
+ "resolve": [],
+ "embed": {
+  "keys": [
+   "audioPreview",
+   "contentRatings",
+   "duration",
+   "hasVideo",
+   "id",
+   "isAudiobook",
+   "isExplicit",
+   "isNineteenPlus",
+   "isPlayable",
+   "isTrailer",
+   "name",
+   "playabilityReason",
+   "relatedEntityCoverArt",
+   "relatedEntityUri",
+   "releaseDate",
+   "subtitle",
+   "title",
+   "type",
+   "uri",
+   "videoPreview",
+   "videoThumbnailImage",
+   "visualIdentity"
+  ]
+ },
+ "brazil": {
+  "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
+  "len": 166727,
+  "scripts": [
+   "appServerConfig",
+   "__CDN_FILE_URLS__",
+   "featureFlags",
+   "seoExperiments",
+   "remoteConfig"
+  ],
+  "near": "fetch\" crossorigin=\"anonymous\" type=\"application/json\"/><style>.grecaptcha-badge { display: none !important;}</style><script src=\"https://www.google.com/recaptcha/enterprise.js?render=6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39\" async=\"\" defer=\"\"></script><link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"Spotify\" href=\"https://open.spotifycdn.com/cdn/generated/opensearch.4cd8879e.xml\"/><script defer=\"\" src=\"https://open.spotifycdn.com/cdn/js/gtm.96d60fd6.js\"></script><script defer=\"\" src=\"https://open.spotifycdn.com/cdn/js/retargeting-pixels.02346b5d.js\"></script></head><body class=\"\"><div class=\"body-drag-top\"></div><div aria-hidden=\"true\" id=\"video-player-parking-surface\" inert=\"\" style=\"position:fixed;top:-10000px;left:-10000px;width:160px;height:90px;overflow:hidden;o"
+ },
+ "skipped": 9
+}

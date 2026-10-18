@@ -8,6 +8,13 @@
     const h = CC.epHref(e);
     const vid = e.kind === "video" || e.kind === "short";
     const img = vid ? e.image : e.image || CC.art(s);
+    const sp = e.spotify_url || (/spotify\.com\//.test(e.url || "") && e.url);
+    if (e.page) // the row opens the episode's page; Spotify stays one tap away
+      return `<div class="ep ep--page" data-show="${esc(e.show)}">
+      ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph"></span>'}
+      <span><b><a class="ep__page" href="${esc(url(e.page))}">${esc(e.title)}</a></b><small>${esc([s && (s.short || s.name), e.description].filter(Boolean).join(" — "))}</small></span>
+      <span class="ep__when">${esc(ago(e.date))}${e.duration ? `<br>${esc(dur(e.duration))}` : ""}${sp ? `<br><a class="ep__sp" href="${esc(sp)}" target="_blank" rel="noopener">Spotify</a>` : ""}</span>
+    </div>`;
     return `<a class="ep${vid ? " ep--video" : ""}" href="${esc(h)}"${ext(h)} data-show="${esc(e.show)}">
       ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph"></span>'}
       <span><b>${esc(e.title)}</b><small>${esc([s && (s.short || s.name), e.description].filter(Boolean).join(" — "))}</small></span>
@@ -40,7 +47,7 @@
       return `<section class="showblock rv" id="${s.key}" data-show="${s.key}">
         <div><div class="showblock__art">${s.art ? `<img src="${esc(CC.art(s))}" alt="${esc(s.name)} cover art" loading="lazy">` : ""}</div></div>
         <div>
-          <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.kind === "youtube" ? "YouTube show" : "Podcast")} · ${esc((s.hosts || []).join(" & "))}</span>
+          <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.kind === "youtube" ? "YouTube show" : "Podcast")} · ${esc(s.ai ? CC.showByline(s) : (s.hosts || []).join(" & "))}</span>
           <h2 style="margin-top:.6rem">${esc(s.name)}</h2>
           <p class="showblock__about">${esc(s.about || s.description || s.tagline || "")}</p>
           <div class="showblock__facts">
@@ -61,7 +68,7 @@
     host.innerHTML = head("The main lineup") + data.primary.map(block).join("") +
       (data.secondary.length ? head("More from the network", "See the network map →") + data.secondary.map(block).join("") : "");
     host.before(sorter(data, (k) => {
-      host.querySelectorAll(".showblock").forEach((b) => { b.hidden = k !== "all" && CC.hostGroup(data.byKey[b.id] || {}) !== k; });
+      host.querySelectorAll(".showblock").forEach((b) => { b.hidden = k !== "all" && !CC.showTags(data.byKey[b.id] || {}).includes(k); });
       host.querySelectorAll(".pill-row").forEach((r) => { let n = r.nextElementSibling, any = false; while (n && !n.classList.contains("pill-row")) { if (!n.hidden) any = true; n = n.nextElementSibling; } r.hidden = !any; });
     }));
     if (location.hash) { const el = document.querySelector(location.hash); if (el) setTimeout(() => el.scrollIntoView(), 50); }
@@ -91,9 +98,9 @@
       let items;
       if (q) {
         const ids = new Set(CC.searchDocs(q, (d) => d.type === "episode").map((d) => d.href + "|" + d.title));
-        items = all.filter((e) => ids.has(CC.epHref(e) + "|" + e.title));
+        items = all.filter((e) => ids.has(CC.epLink(e) + "|" + e.title));
         const rank = [...ids];
-        items.sort((a, b) => rank.indexOf(CC.epHref(a) + "|" + a.title) - rank.indexOf(CC.epHref(b) + "|" + b.title));
+        items.sort((a, b) => rank.indexOf(CC.epLink(a) + "|" + a.title) - rank.indexOf(CC.epLink(b) + "|" + b.title));
       } else items = all;
       items = items.filter(filter);
       countEl.textContent = `${items.length} ${items.length === 1 ? "result" : "results"}${q ? ` for “${q}”` : ""}`;
@@ -185,7 +192,7 @@
     const host = document.getElementById("shop-items");
     if (!host) return;
     const money = (c) => (c == null ? "" : `$${(c / 100).toFixed(c % 100 ? 2 : 0)}`);
-    const GROUPS = [["prints", "Photo prints", "Joshua's photographs, printed to hang."], ["janel-art", "Art by Janel", "Original work from Janel Moore."], ["joshua-art", "Art by Joshua", "Paintings and mixed media from Joshua German."], ["merch", "Merch", "Wear the network."], ["other", "More", ""]];
+    const GROUPS = [["prints", "Photo prints", "Joshua's photographs, printed to hang.", ["prints"]], ["art", "Art", "Original work from Janel and Joshua.", ["janel-art", "joshua-art"]], ["merch", "Merch", "Wear the network.", ["merch"]], ["other", "More", "", ["other"]]];
     const itemHTML = (it) => {
       const href = it.buy_url || (it.status === "coming-soon" ? `mailto:jgerms20@gmail.com?subject=${encodeURIComponent("Notify me: " + it.title)}` : "");
       const label = it.status === "sold-out" ? "Sold out" : it.status === "coming-soon" ? "Notify me" : it.price_cents != null ? `Buy · ${money(it.price_cents)}` : "See details";
@@ -197,10 +204,10 @@
       </article>`;
     };
     const render = (items) => {
-      host.innerHTML = GROUPS.map(([k, t, d]) => {
-        const list = items.filter((i) => i.category === k);
+      host.innerHTML = GROUPS.map(([k, t, d, cats]) => {
+        const list = items.filter((i) => cats.includes(i.category));
         if (!list.length) return "";
-        return `<section class="shop-group rv"><div class="pill-row"><h2 class="pill-title${k === "prints" ? " pill-title--gold" : k === "janel-art" ? " pill-title--pink" : ""}">${t}</h2>${d ? `<span class="eyebrow">${esc(d)}</span>` : ""}</div><div class="items">${list.map(itemHTML).join("")}</div></section>`;
+        return `<section class="shop-group rv"><div class="pill-row"><h2 class="pill-title${k === "prints" ? " pill-title--gold" : k === "art" ? " pill-title--pink" : ""}">${t}</h2>${d ? `<span class="eyebrow">${esc(d)}</span>` : ""}</div><div class="items">${list.map(itemHTML).join("")}</div></section>`;
       }).join("");
       CC.reveal(host);
     };
@@ -221,13 +228,13 @@
   /* ---------------- about: live counts ---------------- */
   /* host sorter: Joshua / Janel / shared, one color each */
   const sorter = (data, onPick) => {
-    const counts = { joshua: 0, janel: 0, shared: 0 };
-    data.shows.forEach((x) => counts[CC.hostGroup(x)]++);
-    const opts = [["all", "Everyone", data.shows.length], ["shared", "Together", counts.shared], ["joshua", "Joshua", counts.joshua], ["janel", "Janel", counts.janel]];
+    const counts = { joshua: 0, janel: 0, shared: 0, ai: 0 };
+    data.shows.forEach((x) => CC.showTags(x).forEach((t) => counts[t]++));
+    const opts = [["all", "Everything", data.shows.length], ["shared", "Together", counts.shared], ["joshua", "Joshua", counts.joshua], ["janel", "Janel", counts.janel], ["ai", "AI-generated", counts.ai]];
     const el = document.createElement("div");
     el.className = "sorter";
     el.setAttribute("role", "group");
-    el.setAttribute("aria-label", "Filter shows by host");
+    el.setAttribute("aria-label", "Filter shows by who makes them");
     el.innerHTML = opts.filter(([, , n]) => n).map(([k, l, n], i) => `<button class="filter${i ? "" : " is-on"}" type="button" data-host="${k === "all" ? "" : k}" data-pick="${k}">${k === "all" ? "" : '<span class="host-dot"></span>'}${l} <small style="opacity:.6">${n}</small></button>`).join("");
     el.addEventListener("click", (e) => {
       const b = e.target.closest("[data-pick]");
@@ -244,11 +251,11 @@
     if (!el) return;
     el.innerHTML = [...data.primary, ...data.secondary].map((s) => {
       const g = CC.hostGroup(s);
-      return `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-host="${g}">
-      <span class="host-tag"><span class="host-dot"></span>${esc(CC.HOST_LABEL[g])}</span>
+      return `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-host="${g}" data-tags="${CC.showTags(s).join(" ")}">
+      <span class="host-tag"><span class="host-dot"></span>${esc(CC.showByline(s))}</span>
       <h3>${esc(s.name)}</h3><p>${esc(s.tagline || "")}</p></a>`;
     }).join("");
-    el.before(sorter(data, (k) => el.querySelectorAll("[data-host]").forEach((t) => { t.hidden = k !== "all" && t.dataset.host !== k; })));
+    el.before(sorter(data, (k) => el.querySelectorAll("[data-tags]").forEach((t) => { t.hidden = k !== "all" && !t.dataset.tags.split(" ").includes(k); })));
   }
 
   /* ---------------- videos page ---------------- */
@@ -300,6 +307,22 @@
         <p>${s.count ? `${s.count} recent posts` : s.url ? "Essays, notes, and long reads." : "Coming soon to Substack."}</p>
         ${s.url ? `<p class="showblock__links"><a class="btn btn--sm" href="${esc(s.url)}" target="_blank" rel="noopener">Read on Substack</a><a class="btn btn--ghost btn--sm" href="${esc(s.url)}/subscribe" target="_blank" rel="noopener">Subscribe</a></p>` : ""}
       </article>`).join("");
+      const lbp = document.getElementById("lb-profiles");
+      const lbr = document.getElementById("lb-reviews");
+      const lbs = w.letterboxd || [];
+      if (lbp) lbp.innerHTML = lbs.map((x) => `<article class="wsrc" data-host="${esc(x.key)}">
+        <span class="host-tag"><span class="host-dot"></span>${esc(x.author)}</span>
+        <h3>${esc(x.author)} on Letterboxd</h3>
+        <p>${x.entries ? `${x.entries.filter((e) => e.review).length} recent reviews · ${x.entries.length} films logged` : x.url ? "Diary, ratings, and reviews." : "Profile link coming soon."}</p>
+        ${x.url ? `<p class="showblock__links"><a class="btn btn--sm" href="${esc(x.url)}" target="_blank" rel="noopener">Follow on Letterboxd</a></p>` : ""}
+      </article>`).join("");
+      if (lbr) {
+        const stars = (e) => e.rating ? "★".repeat(Math.floor(Number(e.rating))) + (Number(e.rating) % 1 ? "½" : "") : e.stars || "";
+        const revs = lbs.flatMap((x) => (x.entries || []).filter((e) => e.review).map((e) => ({ ...e, author: x.author, key: x.key }))).sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 8);
+        lbr.innerHTML = revs.map((e) => `<a class="review" href="${esc(e.url)}" target="_blank" rel="noopener" data-host="${esc(e.key)}">
+          ${e.poster ? `<img src="${esc(e.poster)}" alt="${esc(e.film)} poster" loading="lazy">` : '<span class="ph"></span>'}
+          <span><b>${esc(e.film)}${e.year ? ` <small>${esc(e.year)}</small>` : ""}</b><span class="review__stars">${esc(stars(e))}</span><span class="review__text">${esc(e.review)}</span><small>${esc(e.author)} · ${esc(ago(e.date))}</small></span></a>`).join("");
+      }
       if (!list) return;
       list.innerHTML = w.posts.length ? w.posts.map((p) => `<a class="ep" href="${esc(p.url)}" target="_blank" rel="noopener" data-host="${p.author && p.author.startsWith("Janel") ? "janel" : "joshua"}">
         ${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : '<span class="ph" style="background:var(--h)"></span>'}

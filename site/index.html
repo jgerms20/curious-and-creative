@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/cc.css" />
+  <link rel="stylesheet" href="kindling/kindling.css" />
 </head>
 <body data-page="index" data-root="./">
 <div data-cc="header"></div>
@@ -43,24 +44,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- THE LATEST -->
-  <section class="wrap" id="latest" aria-labelledby="latest-h">
-    <div class="pill-row">
-      <h2 class="pill-title pill-title--green" id="latest-h">The Latest</h2>
-      <a class="pill-more" href="pages/archive.html">Everything, newest first →</a>
-    </div>
-    <div class="grid" id="latest-grid"></div>
-  </section>
-
-  <!-- KINDLING: our card game -->
-  <section class="wrap" id="kindling" aria-labelledby="kindling-h">
-    <div class="pill-row">
-      <h2 class="pill-title" style="background:#FF6A2B;color:#fff" id="kindling-h">Kindling</h2>
-      <a class="pill-more" href="pages/inventions.html">Everything we've built →</a>
-    </div>
-    <div id="kindling-home"></div>
   </section>
 
   <!-- ABOUT -->
@@ -93,16 +76,48 @@
     </div>
   </section>
 
+  <!-- THE LATEST -->
+  <section class="wrap" id="latest" aria-labelledby="latest-h">
+    <div class="pill-row">
+      <h2 class="pill-title pill-title--green" id="latest-h">The Latest</h2>
+      <a class="pill-more" href="pages/archive.html">Everything, newest first →</a>
+    </div>
+    <div class="grid" id="latest-grid"></div>
+  </section>
+
+  <!-- KINDLING: our card game (same box as the Inventions page) -->
+  <section class="wrap" id="kindling" aria-labelledby="kindling-h">
+    <div class="pill-row">
+      <h2 class="pill-title" style="background:#FF6A2B;color:#fff" id="kindling-h">Kindling</h2>
+      <a class="pill-more" href="pages/inventions.html">Everything we've built →</a>
+    </div>
+    <section class="k-hero rv" data-tilt-zone>
+      <div>
+        <div class="k-hero__eyebrow"><span class="chip"><span class="dot dot--live"></span> Invention 01</span><span class="chip">Pre-orders open</span></div>
+        <h2 style="font-size:clamp(3.4rem,8vw,6.5rem);margin:1rem 0 .6rem;font-weight:400;text-transform:none" data-k-word>kindling</h2>
+        <p class="k-hero__lede">A card game for people who want <em>more of each other.</em></p>
+        <p class="k-hero__sub">334 cards across four decks: questions, touch, dares, dates, and an 18+ pack for exploring kink, all dialed from heat 1 to 5, with consent built into every rule. For couples, throuples, and friends.</p>
+        <div class="k-hero__ctas">
+          <a class="btn btn--flame" href="kindling/">See the game</a>
+          <a class="btn btn--ghost-cream" href="kindling/shop.html">Shop · from $39</a>
+          <a class="btn btn--ghost-cream" href="kindling/play.html">Play free</a>
+        </div>
+      </div>
+      <div class="k-hero__stage"><div class="k-hero__fan" data-inv-fan></div><div data-inv-box></div></div>
+    </section>
+  </section>
+
+
   <!-- STUDIO -->
   <section class="wrap" id="studio" aria-labelledby="studio-h">
     <div class="pill-row">
       <h2 class="pill-title pill-title--green" id="studio-h">Production</h2>
-      <a class="pill-more" href="pages/studio.html">Curious &amp; Creative Studio →</a>
+      <a class="pill-more" href="pages/studio.html">About the production company →</a>
     </div>
     <div class="studio rv">
       <div class="studio__lead">
-        <h3 class="studio__title">Curious &amp; Creative <em>Studio.</em></h3>
-        <p>Our production company in the making. Podcasts, video, and photography made end to end, plus the strategy and story that make people care, for brands, founders, and creators.</p>
+        <h3 class="studio__title">Curious &amp; Creative <em>Production Company.</em></h3>
+        <p>Podcasts, video, and photography made end to end, plus the strategy and story that make people care, for brands, founders, and creators.</p>
         <div class="hero__actions"><a class="btn" href="pages/contact.html?topic=project">Start a project</a><a class="btn btn--ghost" href="pages/studio.html">See services</a></div>
       </div>
       <div class="studio__grid">
@@ -206,5 +221,21 @@
 <div data-cc="footer"></div>
 <script src="js/cc.js"></script>
 <script src="js/home.js"></script>
+<script src="kindling/kindling.js"></script>
+<script>
+  (function () {
+    var K = window.K;
+    if (!K) return;
+    var word = document.querySelector("#kindling [data-k-word]");
+    if (word) word.innerHTML = K.word();
+    var slot = document.querySelector("#kindling [data-inv-box]");
+    if (slot) { slot.innerHTML = K.boxHTML("embers"); K.tilt(slot.querySelector(".kbox")); }
+    K.data.then(function () {
+      var picks = ["What makes you feel wanted", "Take a pole or striptease class", "Read aloud to them while they're in the bath"];
+      var fan = document.querySelector("#kindling [data-inv-fan]");
+      if (fan) fan.innerHTML = picks.map(function (t) { return K.cards.find(function (c) { return c.text.indexOf(t) === 0; }); }).filter(Boolean).map(function (c) { return K.cardHTML(c); }).join("");
+    });
+  })();
+</script>
 </body>
 </html>

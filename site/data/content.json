@@ -37,6 +37,7 @@
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
    "rss": "https://anchor.fm/s/111be5840/podcast/rss",
    "tier": "primary",
+   "ai": "assisted",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
    "feed_title": "The Eclectic Polymath Podcast",
@@ -96,12 +97,13 @@
    "kind": "podcast",
    "tier": "primary",
    "hosts": [
-    "Joshua German"
+    "AI-generated"
    ],
-   "tagline": "Jazz, every day.",
+   "tagline": "A daily dose of jazz, made with AI.",
    "about": "",
    "spotify": "79MaSzrv6uJkaHiFoZQrWk",
    "rss": null,
+   "ai": "full",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
@@ -151,6 +153,7 @@
    "spotify": "4tAY78JV37aIgmJ2d1iF3w",
    "rss": null,
    "tier": "secondary",
+   "ai": "full",
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",

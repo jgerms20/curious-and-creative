@@ -50,7 +50,7 @@
     { label: "Photography", href: "pages/art.html", nav: true, words: "photography photos gallery portraits fashion events rio landscapes travel" },
     { label: "Shop", href: "pages/shop.html", nav: true, words: "shop store buy order prints art artwork janel joshua kindling deck" },
     { label: "Inventions", href: "pages/inventions.html", nav: true, words: "inventions apps tools games life gamified grandmaster meme library jukeboxd aetheria gen alpha research lab" },
-    { label: "Writing", href: "pages/writing.html", words: "writing substack essays newsletter posts" },
+    { label: "Writing", href: "pages/writing.html", nav: true, words: "writing substack essays newsletter posts" },
     { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
     { label: "Network", href: "pages/network.html", words: "network shows web map secondary god is brazilian dominate the decade aspiring abolitionist" },
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
@@ -298,15 +298,29 @@
   /* ---------------- data ---------------- */
   const SHOW_ORDER = (shows) => [...shows].sort((a, b) => (b.flagship ? 1 : 0) - (a.flagship ? 1 : 0) || String(b.latest || "").localeCompare(String(a.latest || "")));
   CC.showOrder = SHOW_ORDER;
+  // one color per show: who makes it (AI-made shows get their own group)
   CC.hostGroup = (s) => {
+    if (s && s.ai === "full") return "ai";
     const h = ((s && s.hosts) || []).join(" ").toLowerCase();
     const jo = h.includes("joshua"), ja = h.includes("janel");
     return jo && ja ? "shared" : ja ? "janel" : "joshua";
   };
-  CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel" };
+  // every group a show belongs to, for the sorter (Polymath = Joshua + AI)
+  CC.showTags = (s) => {
+    const h = ((s && s.hosts) || []).join(" ").toLowerCase();
+    const t = new Set([CC.hostGroup(s)]);
+    if (s && s.ai) t.add("ai");
+    if (h.includes("joshua") && !h.includes("janel")) t.add("joshua");
+    if (h.includes("janel") && !h.includes("joshua")) t.add("janel");
+    return [...t];
+  };
+  CC.showByline = (s) => (s && s.ai === "assisted" ? "Joshua + AI" : s && s.ai === "full" ? (((s.hosts || []).join("").toLowerCase().includes("joshua")) ? "AI-generated · Joshua" : "AI-generated") : CC.HOST_LABEL[CC.hostGroup(s)]);
+  CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel", ai: "AI-generated" };
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
   CC.epHref = (e) => e.url || e.spotify_url || "#";
+  // the episode's own page on this site when one is published, else its listen link
+  CC.epLink = (e) => (e.page ? url(e.page) : CC.epHref(e));
   CC.isNew = (iso) => iso && Date.now() - new Date(iso).getTime() < 21 * 86400000;
   CC.showLinks = (s) => {
     const l = [];
@@ -317,13 +331,29 @@
   };
 
   const loadJSON = (p) => fetch(url(p), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json")]).then(([content, photos, registry]) => {
+  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json"), loadJSON("data/episode-pages.json")]).then(([content, photos, registry, epPages]) => {
     const data = content || { shows: [], episodes: [] };
+    // published episode pages, keyed show:number:spotifyId (tools/build_episodes.py)
+    const pageBy = {};
+    Object.entries((epPages && epPages.pages) || {}).forEach(([k, path]) => {
+      const [show, n, sid] = k.split(":");
+      pageBy[`${show}:${n}:${sid}`] = { path, sid };
+      pageBy[`${show}:${n}`] = pageBy[`${show}:${n}`] === undefined ? { path, sid } : null; // null = ambiguous number
+    });
+    (data.episodes || []).forEach((e) => {
+      const m = /^\s*#\s*(\d+)/.exec(e.title || "");
+      if (!m || e.kind === "short") return;
+      const n = +m[1], sid = ((e.spotify_url || "").match(/episode\/([A-Za-z0-9]{22})/) || [])[1];
+      const hit = (sid && pageBy[`${e.show}:${n}:${sid}`]) || pageBy[`${e.show}:${n}`];
+      if (!hit) return;
+      e.page = hit.path;
+      e.spotify_url = e.spotify_url || `https://open.spotify.com/episode/${hit.sid}`;
+    });
     // registry edits (tier, feature, copy) apply immediately, before the next refresh
     const reg = Object.fromEntries(((registry && registry.shows) || []).map((s) => [s.key, s]));
     data.shows = (data.shows || []).map((s) => {
       const r = reg[s.key] || {};
-      return { ...s, tier: r.tier || s.tier || "primary", feature: r.feature ?? s.feature, name: r.name || s.name, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts };
+      return { ...s, ai: r.ai || s.ai, tier: r.tier || s.tier || "primary", feature: r.feature ?? s.feature, name: r.name || s.name, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts };
     });
     const allPhotos = (photos && photos.photos) || [];
     data.photos = allPhotos.some((p) => p.featured) ? allPhotos.filter((p) => p.featured) : allPhotos;
@@ -339,7 +369,7 @@
     data.shows.forEach((s) => addDoc({ type: "show", show: s.key, title: s.name, sub: `${s.kind === "youtube" ? "YouTube show" : "Podcast"} · ${(s.hosts || []).join(", ")}`, text: [s.tagline, s.about, s.description].filter(Boolean).join(" "), img: CC.art(s), href: url(`pages/shows.html#${s.key}`), boost: 1 }));
     (data.episodes || []).forEach((e) => {
       const s = data.byKey[e.show] || {};
-      addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epHref(e), date: e.date });
+      addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epLink(e), date: e.date });
     });
     data.photos.forEach((p) => addDoc({ type: "photo", title: p.alt || p.set, sub: `Photography · ${p.set}`, text: "photo photography " + p.set, img: url(p.thumb), href: url(`pages/art.html#${p.id}`) }));
 
@@ -353,44 +383,41 @@
 
 
   /* ---------------- the network web (shows ↔ hosts) ---------------- */
-  CC.network = (data, opts = {}) => {
-    const W = 1000, H = 690, cx = 500, cy = 330;
-    const pt = (deg, rx, ry) => [cx + rx * Math.cos((deg * Math.PI) / 180), cy + ry * Math.sin((deg * Math.PI) / 180)];
-    const who = (s) => {
+  CC.network = (data) => {
+    const W = 1000, H = 712, hub = [500, 290];
+    const people = { joshua: [290, 360, "Joshua", "assets/people/joshua.jpg"], janel: [710, 360, "Janel", "assets/people/janel.jpg"] };
+    const aiNode = [500, 500];
+    // hand-placed spots for known shows; anything new falls into the spare slots
+    const SPOT = { ccpod: [500, 90], polymath: [230, 170], approachable: [120, 370], dominate: [170, 560], brazil: [370, 618], riff: [630, 618], tmtt: [820, 170], abolitionist: [880, 440] };
+    const spare = [[930, 300], [90, 220], [940, 640]];
+    const futures = [[790, 600], [910, 600]];
+    const links = (s) => {
       const h = (s.hosts || []).join(" ").toLowerCase();
-      return [h.includes("joshua") && "joshua", h.includes("janel") && "janel"].filter(Boolean);
+      const out = [];
+      if (h.includes("joshua")) out.push("joshua");
+      if (h.includes("janel")) out.push("janel");
+      if (s.ai) out.push("ai");
+      return out;
     };
-    const slots = {
-      top: [[-90, 300, 215]],
-      left: { primary: [[214, 300, 215], [146, 300, 215], [116, 300, 215]], secondary: [[244, 420, 290], [180, 360, 285], [120, 420, 290]] },
-      right: { primary: [[-34, 300, 215], [34, 300, 215], [0, 330, 215]], secondary: [[16, 420, 260], [-64, 420, 290], [60, 420, 290]] },
-      future: [[48, 430, 290], [66, 440, 300], [84, 440, 300]],
-    };
-    const used = { left: { primary: 0, secondary: 0 }, right: { primary: 0, secondary: 0 } };
+    let si = 0;
     const nodes = data.shows.map((s) => {
-      const hosts = who(s);
+      const [x, y] = SPOT[s.key] || spare[si++] || [500, 680];
       const tier = s.tier === "secondary" ? "secondary" : "primary";
-      let pos;
-      if (s.flagship) pos = slots.top[0];
-      else {
-        const side = hosts.includes("janel") && !hosts.includes("joshua") ? "right" : "left";
-        pos = slots[side][tier][used[side][tier]++] || slots[side][tier][0];
-      }
-      const [x, y] = pt(...pos);
-      return { s, hosts, tier, x, y, r: s.flagship ? 58 : tier === "primary" ? 46 : 32 };
+      return { s, x, y, tier, links: links(s), r: s.flagship ? 58 : tier === "primary" ? 46 : 32 };
     });
-    const people = { joshua: [cx - 150, cy + 25, "Joshua", "assets/people/joshua.jpg"], janel: [cx + 150, cy + 25, "Janel", "assets/people/janel.jpg"] };
-    const line = (a, b, cls, key) => `<line class="web__edge ${cls}" data-edge="${key}" x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}"/>`;
-    let edges = Object.keys(people).map((k) => line([cx, cy - 40], people[k], "web__edge--core", k)).join("");
-    nodes.forEach((n) => n.hosts.forEach((h) => { edges += line(people[h], [n.x, n.y], `web__edge--${n.tier}`, `${h} ${n.s.key}`); }));
-    const futures = slots.future.map((f, i) => { const [x, y] = pt(...f); return { x, y, i }; });
-    futures.forEach((f) => { edges += line([cx, cy - 40], [f.x, f.y], "web__edge--future", "future"); });
-    const img = (id, x, y, r, src, label) => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--c)"/>`}<text class="web__label" x="${x}" y="${y + r + 22}">${esc(label)}</text>`;
-    const showNodes = nodes.map((n, i) => `<a class="web__node web__node--${n.tier}" href="${url(`pages/shows.html#${n.s.key}`)}" data-show="${n.s.key}" data-node="${n.s.key}" data-links="${n.hosts.join(" ")}" aria-label="${esc(n.s.name)}">${img("wc" + i, n.x, n.y, n.r, n.s.art, n.s.short || n.s.name)}${n.s.archive ? `<text class="web__tag" x="${n.x}" y="${n.y + n.r + 40}">archive</text>` : ""}</a>`).join("");
-    const peopleNodes = Object.entries(people).map(([k, [x, y, label, src]]) => `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${label}">${img("wp" + k, x, y, 40, src, label)}</a>`).join("");
-    const futureNodes = futures.map((f) => `<g class="web__node web__node--future" aria-hidden="true"><circle cx="${f.x}" cy="${f.y}" r="26"/><text class="web__plus" x="${f.x}" y="${f.y + 7}">+</text><text class="web__label" x="${f.x}" y="${f.y + 50}">Next show</text></g>`).join("");
-    const hub = `<g class="web__hub"><circle cx="${cx}" cy="${cy - 40}" r="62"/><text x="${cx}" y="${cy - 46}">Curious</text><text x="${cx}" y="${cy - 26}">&amp; Creative</text></g>`;
-    return `<svg class="web" viewBox="0 0 ${W} ${H}" role="img" aria-label="The Curious & Creative network: Joshua and Janel connected to every show they host">${edges}${futureNodes}${hub}${peopleNodes}${showNodes}</svg>`;
+    const at = (k) => (k === "ai" ? aiNode : people[k]);
+    const line = (p, q, cls, key) => `<line class="web__edge ${cls}" data-edge="${key}" x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}"/>`;
+    let edges = ["joshua", "janel"].map((k) => line(hub, people[k], "web__edge--core", k)).join("") + line(hub, aiNode, "web__edge--core web__edge--ai", "ai");
+    nodes.forEach((n) => n.links.forEach((k) => { edges += line(at(k), [n.x, n.y], `web__edge--${n.tier}${k === "ai" ? " web__edge--ai" : ""}`, `${k} ${n.s.key}`); }));
+    futures.forEach((f) => { edges += line(hub, f, "web__edge--future", "future"); });
+    const label = (s) => (s.flagship ? "The Curious & Creative Podcast" : s.short || s.name);
+    const img = (id, x, y, r, src, text) => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--c)"/>`}<text class="web__label" x="${x}" y="${y + r + 22}">${esc(text)}</text>`;
+    const showNodes = nodes.map((n, i) => `<a class="web__node web__node--${n.tier}" href="${url(`pages/shows.html#${n.s.key}`)}" data-show="${n.s.key}" data-node="${n.s.key}" data-links="${n.links.join(" ")}" aria-label="${esc(n.s.name)}">${img("wc" + i, n.x, n.y, n.r, n.s.art, label(n.s))}${n.s.archive ? `<text class="web__tag" x="${n.x}" y="${n.y + n.r + 40}">archive</text>` : ""}</a>`).join("");
+    const peopleNodes = Object.entries(people).map(([k, [x, y, name, src]]) => `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${name}">${img("wp" + k, x, y, 40, src, name)}</a>`).join("");
+    const ai = `<g class="web__node web__node--ai" data-node="ai" tabindex="0" aria-label="AI-generated"><circle cx="${aiNode[0]}" cy="${aiNode[1]}" r="40"/><path transform="translate(${aiNode[0]} ${aiNode[1]})" d="M0-22 5-5 22 0 5 5 0 22-5 5-22 0-5-5Z"/><text class="web__label" x="${aiNode[0]}" y="${aiNode[1] + 62}">AI-generated</text></g>`;
+    const futureNodes = futures.map(([x, y]) => `<g class="web__node web__node--future" aria-hidden="true"><circle cx="${x}" cy="${y}" r="26"/><text class="web__plus" x="${x}" y="${y + 9}">?</text></g>`).join("") + `<text class="web__label web__label--quiet" x="${(futures[0][0] + futures[1][0]) / 2}" y="${futures[0][1] + 58}">Always building</text>`;
+    const hubNode = `<g class="web__hub"><clipPath id="whub"><circle cx="${hub[0]}" cy="${hub[1]}" r="62"/></clipPath><circle class="web__hub-ring" cx="${hub[0]}" cy="${hub[1]}" r="68"/><image href="${esc(url("assets/brand/cc-logo.jpg"))}" x="${hub[0] - 62}" y="${hub[1] - 62}" width="124" height="124" clip-path="url(#whub)" preserveAspectRatio="xMidYMid slice"/><text class="web__hub-label" x="${hub[0]}" y="${hub[1] + 92}">Curious &amp; Creative Network</text></g>`;
+    return `<svg class="web" viewBox="0 0 ${W} ${H}" role="img" aria-label="The Curious & Creative Network: Joshua, Janel, and AI connected to every show">${edges}${futureNodes}${ai}${peopleNodes}${showNodes}${hubNode}</svg>`;
   };
   CC.wireNetwork = (root) => {
     const svg = root.querySelector(".web");
@@ -404,6 +431,7 @@
       });
     };
     svg.querySelectorAll("[data-node]").forEach((n) => {
+      if (n.dataset.node === "ai") n.dataset.links = "";
       n.addEventListener("mouseenter", () => focus(n.dataset.node));
       n.addEventListener("focus", () => focus(n.dataset.node));
       n.addEventListener("mouseleave", () => focus(null));

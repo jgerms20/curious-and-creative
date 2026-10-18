@@ -1,0 +1,3 @@
+{
+ "_readme": "Per-episode extras for tools/build_episodes.py, keyed '<show-slug>:<episode number>' (e.g. 'eclectic-polymath:126'). All fields optional: youtube (URL; the only way a YouTube link appears), cover (site-relative path, wins over cached art), cluster (topic key or list, overrides title matching), highlights (list of strings, or {\"t\": \"12:34\", \"text\": \"...\"} for real, checked timestamps; never generated)."
+}
