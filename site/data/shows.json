@@ -29,18 +29,7 @@
     "test"
    ],
    "tier": "primary",
-   "episode_links": [],
-   "creator_slugs": [
-    "curiouscreative",
-    "curious-creative",
-    "curiousandcreative",
-    "curious-and-creative",
-    "curiouscreativepod",
-    "curious-creative-podcast",
-    "jgerms20",
-    "janelmoore",
-    "janel-moore"
-   ]
+   "episode_links": []
   },
   {
    "key": "polymath",
@@ -116,14 +105,7 @@
     "The Daily Riff"
    ],
    "rss": null,
-   "ai": "full",
-   "creator_slugs": [
-    "thedailyriff",
-    "dailyriff",
-    "the-daily-riff",
-    "daily-riff",
-    "jgerms20"
-   ]
+   "ai": "full"
   },
   {
    "key": "dominate",

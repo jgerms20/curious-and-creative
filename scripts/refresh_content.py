@@ -513,7 +513,7 @@ def spotify_episode_ids(show_id):
     return out
 
 
-def discover_feed(show, spotify_name):
+def discover_feed(show, spotify_name, known=()):
     """Find a Spotify-hosted show's public RSS feed without API keys."""
     names = [n for n in dict.fromkeys([spotify_name, show["name"], show.get("short")]) if n]
     want = [norm(n) for n in names]
@@ -553,11 +553,12 @@ def discover_feed(show, spotify_name):
             url = m.group(0) if m else (st and f"https://anchor.fm/s/{st.group(1)}/podcast/rss")
             if url and any(w and w in norm(page[:200000]) for w in want):
                 try:  # the feed has to be this show's, not a namesake's
-                    ch, _ = parse_rss(fetch(url))
-                    if norm(ch["title"]) in want or any(w and w in norm(ch["title"]) for w in want):
+                    ch, its = parse_rss(fetch(url))
+                    # a namesake can share the show's name: accept only a feed that carries episodes we know are ours
+                    if known and any(match_spotify(it["title"], known) for it in its):
                         log(f"  creators page {host}/{slug} -> {url}")
                         return url
-                    tried[f"{host}/{slug}"] += f" feed title {ch['title']!r} not ours"
+                    tried[f"{host}/{slug}"] += f" feed {ch['title']!r} has none of our episodes"
                 except Exception as e:  # noqa: BLE001
                     tried[f"{host}/{slug}"] += f" feed failed {e}"
     return None
@@ -686,7 +687,8 @@ def do_podcast(show, prev_eps):
             feed_url = apple.get("feedUrl")
             log(f"  chose feed: {apple.get('collectionName')} -> {feed_url}")
     if not feed_url and show.get("spotify") and not (sp and sp.get("full")):
-        feed_url = discover_feed(show, sp and sp.get("name"))
+        known = (sp["episodes"] if sp else []) + [e for e in prev_eps if e.get("show") == key]
+        feed_url = discover_feed(show, sp and sp.get("name"), known)
     channel, items = None, []
     if feed_url:
         try:
