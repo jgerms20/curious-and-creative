@@ -126,11 +126,30 @@ def resolve_spotify(link, cache):
 
 
 def meta_description(page):
+    """Episode description from a Spotify episode page: meta tags, JSON-LD, or the
+    base64 initialState blob the web player boots from."""
     for tag in re.findall(r"<meta\b[^>]*>", page):
         if re.search(r'(?:property|name)="(?:og:description|description)"', tag):
             m = re.search(r'content="([^"]*)"', tag)
             if m and m.group(1).strip():
                 return html.unescape(m.group(1)).strip()
+    for body in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', page, re.S):
+        try:
+            d = json.loads(body)
+            if isinstance(d, dict) and d.get("description"):
+                return d["description"].strip()
+        except ValueError:
+            pass
+    m = re.search(r'<script[^>]*id="initialState"[^>]*>([^<]+)</script>', page)
+    if m:
+        try:
+            state = base64.b64decode(m.group(1).strip() + "=" * (-len(m.group(1).strip()) % 4)).decode("utf-8", "replace")
+            for key in ("htmlDescription", "description"):
+                d = re.search(r'"%s":\s*"((?:[^"\\]|\\.)*)"' % key, state)
+                if d and d.group(1).strip():
+                    return text_paragraphs(json.loads('"' + d.group(1) + '"'))
+        except Exception:  # noqa: BLE001
+            pass
     return ""
 
 
@@ -205,7 +224,8 @@ def brazil_entries(cache):
                 desc = meta_description(page)
                 if not desc and "brazil" not in DEBUG:
                     i = page.find("description")
-                    DEBUG["brazil"] = {"url": url, "len": len(page), "near": page[max(0, i - 300):i + 500]}
+                    DEBUG["brazil"] = {"url": url, "len": len(page), "scripts": re.findall(r"<script[^>]*?(?:id|type)=\"([^\"]+)\"", page)[:30],
+                                       "near": page[max(0, i - 300):i + 500]}
             except Exception as ex:  # noqa: BLE001
                 print(f"  description fetch failed {url}: {ex}")
                 desc = ""

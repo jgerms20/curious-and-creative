@@ -77,7 +77,7 @@ CLUSTERS = {
                     "Dangote", "Emanuel", "Grede", "Avant", "Pichai", "Nadella", "Dorsey", "NVIDIA", "Thrive Capital",
                     "Trusts", "Estate Planning", "Billion", "Crypto", "Bankman-Fried", "Theranos", "Ten Percent", "CAA",
                     "Clearing Houses", "GameStop", "Ownership", "Wealth"],
-    "brazil": ["Brazil", "Brazilian", "Brasil", "Sao Paulo", "Rio", "Pix", "Salvador", "Quilombos", "Santa Teresa",
+    "brazil": ["Brazil", "Brazils", "Brazilian", "Amazon", "Brasil", "Sao Paulo", "Rio", "Pix", "Salvador", "Quilombos", "Santa Teresa",
                "Car Wash", "Gonzaguinha", "Pericles", "Pagode", "Oscar Freire"],
     "music": ["Music", "Motown", "Hitsville", "Jazz", "Coltrane", "Kamasi", "Funk", "George Clinton", "Badu", "Nipsey",
               "Spotify", "The Smiths", "Indie Band", "Rap", "Hip-Hop", "Kendrick", "Record Label", "Masters",
@@ -88,12 +88,27 @@ CLUSTERS = {
                      "South LA", "CAA", "WME", "Agent"],
     "history-ideas": ["Mbiti", "African Time", "Five Percent", "Religious Studies", "Orwell", "Emerson", "Rome", "Egypt",
                       "Socialism", "Talmud", "Buddha", "Buddhist", "Confucius", "Islam", "Church", "Harlem", "Pompeii",
-                      "Bolshevik", "Apartheid", "Systems Thinking", "Black Feminism", "Genres", "New Deal", "Medici"],
+                      "Bolshevik", "Apartheid", "Systems Thinking", "Black Feminism", "Genres", "New Deal", "Medici",
+                      "British India", "East India Company", "Arabization", "Cultural Revolution", "Humiliation",
+                      "Dinosaurs", "Homestead", "Big Ben", "Clock", "Polygraph", "Migration", "Empire", "Revolution", "Philosophy", "Theory"],
     "body-health": ["GLP", "Peptides", "Body Hacking", "Eczema", "CRISPR", "Yoga", "Fitness", "Medical Tourism", "Chakras",
                     "Cannabis"],
     "politics-world": ["Putin", "Xi Jinping", "Khamenei", "Kim Jong Un", "bin Salman", "Castro", "Cuba", "Cuban", "Iran",
                        "Taiwan", "Mussolini", "Oslo", "Yom Kippur", "Mongolia", "Philippines", "Obama", "Iran-Contra",
-                       "PATRIOT Act", "Assange", "Khashoggi", "Clyburn", "Wes Moore", "Huey Long", "Fidel"],
+                       "PATRIOT Act", "Assange", "Khashoggi", "Clyburn", "Wes Moore", "Huey Long", "Fidel", "China",
+                       "Chinese", "El Mencho", "Narco", "Cartel", "Fred Hampton", "Occupy", "Geopolitics", "Holy Wars"],
+    "sports-games": ["FIFA", "NBA", "NFL", "World Cup", "Football", "Soccer", "Lockout", "Sports", "League", "Bill Simmons",
+                     "Poker", "Chess", "Bowling", "Billiard", "Pool Halls", "Olympics", "Broncos", "Lakers", "Athlete"],
+    "media-culture": ["Oprah", "Vogue", "Wintour", "Degrassi", "New York Times", "Media", "Television", "TV", "Fashion",
+                      "Bourdain", "Celebrity", "Kevin Hart", "Taste", "Diana", "Princess", "Yoko Ono", "Plath", "Memes",
+                      "Humor", "Breakup", "Me Too", "Hoaxes", "Influencer", "Creator", "Comedy", "Netflix", "Barbecue",
+                      "Food", "Spirits", "Scholastic", "39 Clues", "A Different World", "Watches", "Anime", "Japan",
+                      "Hello Kitty", "Cuteness", "Bruce Lee", "Film", "Journalism", "Dieter Rams", "Design", "Genre"],
+    "faith-cosmos": ["Faith", "Tithing", "Holy", "Prophecy", "Sacred", "Aquarius", "Saturn", "Astrology", "Heaven", "Islam",
+                     "Islamization", "Church", "Christianity", "Religion", "Religious", "Spiritual", "Ghosts", "Buddha"],
+    "love-relationships": ["Love", "Gottman", "Marriage", "Breakup", "Relationships", "Intimacy", "Dating", "Twins", "Family"],
+    "places-leisure": ["Theme Parks", "Travel", "Queen Mary", "SeaWorld", "Megaregion", "Earthquake", "Roller Rinks",
+                       "Bowling", "Pool Halls", "Destinations", "Dollywood", "Pop-Up", "Halloween", "Community", "Cities", "City", "Malls"],
     "tech-ai": ["AI", "NVIDIA", "DeepMind", "Hassabis", "OpenAI", "Google", "Microsoft", "Twitter", "Bitcoin", "Xbox",
                 "Nanotechnology", "Wii", "Gaming", "Unabomber", "Theranos", "Gen Alpha", "Internet"],
 }
@@ -112,6 +127,7 @@ def esc(s):
 
 
 def fold(s):
+    s = s.replace("\u2019", "'").replace("\u2018", "'")  # keep apostrophes: "Brazil’s" must still match Brazil
     return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
 
 
@@ -199,24 +215,33 @@ def trimmed(desc):
 
 def key_points(desc, shown):
     """3-5 sentences lifted verbatim from the description: the names, numbers and turns
-    a searcher would recognise. Never rewritten."""
+    a searcher would recognise. Never rewritten; a long sentence may be cut at a colon,
+    semicolon or dash into its verbatim clauses."""
     body = strip_signoff(paragraphs(desc))
     seen = " ".join(shown)
     cands = []
     for i, p in enumerate(body):
         for j, s in enumerate(sentences(p)):
-            if not 45 <= len(s) <= 240 or s.endswith(("?", "…", "...")):
-                continue
-            words = s.split()
-            names = sum(1 for w in words[1:] if w[:1].isupper())
-            nums = len(re.findall(r"\$?\d[\d,.]*", s))
-            score = names + 2 * nums
-            if score >= 2:
-                cands.append((s not in seen, score, i, j, s))
-    best = sorted(cands, key=lambda c: (-c[0], -c[1]))[:5]  # not already in "About" first, then most specific
+            parts = [s] if len(s) <= 240 else [c.strip(" ,") for c in re.split(r":\s|;\s|\s?—\s?|\s–\s", s)]
+            if len(parts) == 1 and len(s) > 240:
+                parts = [s]  # nowhere to cut it: keep the whole sentence if it isn't huge
+            for k, c in enumerate(parts):
+                if not 40 <= len(c) <= 320 or c.endswith(("?", "…", "...")):
+                    continue
+                words = c.split()
+                names = sum(1 for w in words[1:] if w[:1].isupper())
+                nums = len(re.findall(r"\$?\d[\d,.]*", c))
+                cands.append((c not in seen, names + 2 * nums, i, j, k, c))
+    named = [c for c in cands if c[1] >= 1]
+    best = sorted(named, key=lambda c: (-c[0], -c[1]))[:5]  # not already in "About" first, then most specific
+    for c in cands:  # too few names/numbers: top up with the description's own next sentences
+        if len(best) >= 3:
+            break
+        if c not in best:
+            best.append(c)
     if len(best) < 3:
         return []
-    return [c[4] for c in sorted(best, key=lambda c: (c[2], c[3]))]
+    return [c[5] for c in sorted(best, key=lambda c: c[2:5])]
 
 
 def clusters_for(title, override=None):
@@ -261,7 +286,16 @@ def cover_for(ep, overrides, fetch=True):
         thumb = json.loads(urllib.request.urlopen(req, timeout=20).read()).get("thumbnail_url")
         if not thumb:
             return None
-        img = urllib.request.urlopen(urllib.request.Request(thumb, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+        img = None
+        big = re.sub(r"(/image/ab676563[0-9a-f]{4})5f1f", r"\1ba8a", thumb)  # oEmbed gives 300px; same art at 640px
+        for u in dict.fromkeys([big, thumb]):
+            try:
+                img = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+                break
+            except Exception:  # noqa: BLE001
+                continue
+        if not img:
+            return None
         os.makedirs(COVERS, exist_ok=True)
         path = os.path.join(COVERS, f"{name}.jpg")
         try:  # keep it at most 800x800 when Pillow is around; Spotify art is already 640px
