@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T16:11:22Z",
+ "generated_at": "2026-10-19T21:10:30Z",
  "shows": [
   {
    "key": "ccpod",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -107,7 +107,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-15T22:34:00Z",
    "count": 5
   },
@@ -157,9 +157,9 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-18T18:52:00Z",
-   "count": 10
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-10-19T18:40:00Z",
+   "count": 11
   },
   {
    "key": "abolitionist",
@@ -189,6 +189,19 @@
  ],
  "episodes": [
   {
+   "id": "brazil:15U065FkO9qzLjFpjpYJCT",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#19 A \"Democracia Racial\" do Brasil: Mito, Realidade e o Significado de Raça (Português)",
+   "date": "2026-10-19T18:40:00Z",
+   "duration": 778,
+   "description": "",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
+   "url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
+   "spotify_url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
+   "spotify_video": false
+  },
+  {
    "id": "brazil:5QhTn3V5CS2ZXX2aI94y7U",
    "show": "brazil",
    "kind": "episode",
@@ -196,7 +209,7 @@
    "date": "2026-10-18T18:52:00Z",
    "duration": 896,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa2a23030ca9b181c9f0f2cb5",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa2a23030ca9b181c9f0f2cb5",
    "url": "https://open.spotify.com/episode/5QhTn3V5CS2ZXX2aI94y7U",
    "spotify_url": "https://open.spotify.com/episode/5QhTn3V5CS2ZXX2aI94y7U",
    "spotify_video": false
@@ -348,7 +361,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -361,7 +374,7 @@
    "date": "2026-10-15T21:22:00Z",
    "duration": 2283,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_video": false
@@ -387,7 +400,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -840,7 +853,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -880,7 +893,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -2124,7 +2137,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -2137,7 +2150,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4158,8 +4171,8 @@
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 10,
-   "spotify_matches": 10
+   "episodes": 11,
+   "spotify_matches": 11
   },
   "abolitionist": {
    "ok": true,
