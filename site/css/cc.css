@@ -879,3 +879,29 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .ep--page { position: relative; }
 .ep__page::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .ep__sp { position: relative; z-index: 1; display: inline-block; margin-top: .3rem; color: var(--green-ink); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ---------- header dropdown (Podcasts) ---------- */
+.hdr__dd { position: relative; display: flex; align-items: center; }
+.hdr__dd > a { display: inline-flex; align-items: center; gap: .3em; }
+.hdr__dd > a::before { content: ""; order: 2; width: .38em; height: .38em; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-.12em) rotate(45deg); transition: transform var(--speed) var(--ease); }
+.hdr__dd.is-open > a::before { transform: translateY(.08em) rotate(225deg); }
+.hdr__menu {
+  position: absolute; top: calc(100% + 14px); left: 50%; z-index: 70;
+  width: min(620px, 92vw); padding: .75rem; border-radius: 20px;
+  background: var(--paper); border: 1px solid var(--line-strong);
+  box-shadow: 0 24px 60px -24px rgba(0,0,0,.45);
+  opacity: 0; visibility: hidden; transform: translate(-50%, -6px);
+  transition: opacity var(--speed) var(--ease), transform var(--speed) var(--ease), visibility 0s linear var(--speed);
+}
+.hdr__menu::before { content: ""; position: absolute; left: 0; right: 0; top: -16px; height: 16px; } /* hover bridge */
+.hdr__dd.is-open .hdr__menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0s; }
+.hdr__menu-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .25rem; }
+.hdr__menu-list a { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: .75rem; align-items: center; padding: .55rem; border-radius: 12px; font-weight: 400; }
+.hdr__menu-list a::after { display: none; }
+.hdr__menu-list a:hover, .hdr__menu-list a:focus-visible { background: var(--paper-2); }
+.hdr__menu-list img, .hdr__menu-list .ph { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; background: var(--c, var(--paper-2)); }
+.hdr__menu-list b { display: block; font-weight: 800; font-size: .92rem; line-height: 1.2; }
+.hdr__menu-list small { display: block; color: var(--ink-soft); font-size: .78rem; font-weight: 650; margin-top: .15rem; }
+.hdr__menu-foot { display: flex; gap: 1.5rem; justify-content: flex-end; margin-top: .5rem; padding: .7rem .55rem .2rem; border-top: 1px solid var(--line); font-size: .85rem; }
+.hdr__menu-foot a { font-weight: 800; }
+@media (prefers-reduced-motion: reduce) { .hdr__menu, .hdr__dd > a::before { transition: none; } }

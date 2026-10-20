@@ -44,7 +44,7 @@
   const PAGES = [
     { label: "Home", href: "index.html", nav: true, words: "home front page latest" },
     { label: "About", href: "pages/about.html", nav: true, words: "about us story who joshua janel founders team duo" },
-    { label: "Podcasts", href: "pages/shows.html", nav: true, words: "podcasts shows listen episodes spotify apple youtube" },
+    { label: "Podcasts", href: "pages/shows.html", nav: true, menu: "shows", words: "podcasts shows listen episodes spotify apple youtube" },
     { label: "Videos", href: "pages/videos.html", nav: true, words: "videos youtube watch approachable ai video episodes" },
     { label: "Production", href: "pages/studio.html", nav: true, words: "production studio company services strategy brand building podcast video production consulting hire work with us" },
     { label: "Photography", href: "pages/art.html", nav: true, words: "photography photos gallery portraits fashion events rio landscapes travel" },
@@ -74,6 +74,15 @@
     const here = page && (href === `pages/${page}.html` || (page === "index" && href === "index.html"));
     return `<a href="${url(href)}"${here ? ' aria-current="page"' : ""}>${label}</a>`;
   };
+  // a nav item with a dropdown panel (filled once the data loads); opens on hover or keyboard focus
+  const navItem = (p) => (!p.menu ? navLink(p.href, p.label) : `
+    <div class="hdr__dd" data-dd>
+      ${navLink(p.href, p.label).replace("<a ", '<a aria-haspopup="true" aria-expanded="false" ')}
+      <div class="hdr__menu" data-nav-menu="${p.menu}">
+        <div class="hdr__menu-list"></div>
+        <p class="hdr__menu-foot"><a href="${url(p.href)}">All ${p.label.toLowerCase()} →</a><a href="${url("pages/archive.html")}">Every episode →</a></p>
+      </div>
+    </div>`);
 
   const header = `
     <a class="skip" href="#main">Skip to content</a>
@@ -81,7 +90,7 @@
       <div class="hdr__bar wrap">
         <a class="wordmark" href="${url("index.html")}" aria-label="Curious and Creative — home"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
-        <nav class="hdr__links" aria-label="Primary">${PAGES.filter((p) => p.nav).map((p) => navLink(p.href, p.label)).join("")}</nav>
+        <nav class="hdr__links" aria-label="Primary">${PAGES.filter((p) => p.nav).map(navItem).join("")}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
         <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${icon.moon}${icon.sun}</button>
         <button class="icon-btn" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon.menu}</button>
@@ -168,6 +177,15 @@
   const input = document.getElementById("search-input");
 
   const openDrawer = () => { scrim.classList.add("is-open"); openLayer(drawerEl, "[data-close-drawer].icon-btn"); document.querySelectorAll("[data-open-drawer]").forEach((b) => b.setAttribute("aria-expanded", "true")); };
+  document.querySelectorAll("[data-dd]").forEach((dd) => {
+    const trigger = dd.querySelector("a"); let t, hush = false;
+    const set = (open) => { clearTimeout(t); dd.classList.toggle("is-open", open); trigger.setAttribute("aria-expanded", String(open)); };
+    dd.addEventListener("mouseenter", () => set(true));
+    dd.addEventListener("mouseleave", () => { t = setTimeout(() => set(false), 120); }); // a little grace for the cursor
+    dd.addEventListener("focusin", () => { if (!hush) set(true); hush = false; });
+    dd.addEventListener("focusout", (e) => { if (!dd.contains(e.relatedTarget)) set(false); });
+    dd.addEventListener("keydown", (e) => { if (e.key === "Escape" && dd.classList.contains("is-open")) { set(false); hush = document.activeElement !== trigger; trigger.focus(); } });
+  });
   const closeDrawer = () => { scrim.classList.remove("is-open"); closeLayer(drawerEl); document.querySelectorAll("[data-open-drawer]").forEach((b) => b.setAttribute("aria-expanded", "false")); };
   CC.openSearch = (q) => {
     if (drawerEl.classList.contains("is-open")) closeDrawer();
@@ -372,6 +390,11 @@
       addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epLink(e), date: e.date });
     });
     data.photos.forEach((p) => addDoc({ type: "photo", title: p.alt || p.set, sub: `Photography · ${p.set}`, text: "photo photography " + p.set, img: url(p.thumb), href: url(`pages/art.html#${p.id}`) }));
+
+    const menu = document.querySelector('[data-nav-menu="shows"] .hdr__menu-list');
+    if (menu) menu.innerHTML = data.shows.map((s) => `<a href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+      ${s.art ? `<img src="${CC.art(s)}" alt="" loading="lazy" width="44" height="44">` : '<span class="ph"></span>'}
+      <span><b>${esc(s.name)}</b><small>${esc(CC.showByline(s) || s.tagline || "")}</small></span></a>`).join("");
 
     const ds = document.querySelector("[data-drawer-shows]");
     if (ds) ds.innerHTML = data.shows.map((s) => `<a href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">${s.art ? `<img src="${CC.art(s)}" alt="" loading="lazy">` : '<span class="ph"></span>'}${esc(s.name)}</a>`).join("");
