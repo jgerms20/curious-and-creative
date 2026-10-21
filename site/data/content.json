@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T20:15:44Z",
+ "generated_at": "2026-10-21T23:28:19Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-21T15:38:11Z",
-   "count": 224
+   "latest": "2026-10-21T20:28:34Z",
+   "count": 225
   },
   {
    "key": "approachable",
@@ -107,7 +107,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-15T22:34:00Z",
    "count": 5
   },
@@ -157,7 +157,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-19T18:40:00Z",
    "count": 11
   },
@@ -189,6 +189,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:62f1b827 5d78 4e70 be86 e8d1254f7e51",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#227 Asteroid Mining: Humanity's Next Industry",
+   "date": "2026-10-21T20:28:34Z",
+   "duration": 3191,
+   "description": "What is actually out there, and what could it mean for us if we could reach it? Asteroids are failed planets, frozen feedstock from the solar system's construction, and water locked in clay older than Earth. This episode explores what asteroid mining really is: the metal cores of shattered worlds, the platinum-group metals the hydrogen economy is running short on, and the gas stations floating at the top of Earth's gravity well.\n Along the way: the missions that already went out and touched them (Hayabusa2, OSIRIS-REx, NASA's Psyche, China's Tianwen-2), the startups that tried and died, how close the technology honestly is, the price paradox that breaks the famous business model, who owns…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792614356084-988e6dbec42a9.jpg",
+   "url": "https://open.spotify.com/episode/3p1vzWZW9cOFfDuvNL3254",
+   "spotify_url": "https://open.spotify.com/episode/3p1vzWZW9cOFfDuvNL3254",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127855378/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-21%2Fe7daf340-b159-5a8c-c381-688cb18d4b51.m4a",
+   "number": "227"
+  },
+  {
    "id": "polymath:c5150759 fd6b 4373 86fa 2c45bc1ec5f6",
    "show": "polymath",
    "kind": "episode",
@@ -197,8 +211,8 @@
    "duration": 3239,
    "description": "Six consecutive number-one openings. A Best Picture winner. The best studio year of the decade. It still wasn't enough. When the Paramount Skydance merger closed in October 2026, Mike De Luca and Pam Abdy were out at Warner Bros. This episode is their complete arc, and what it says about who gets to run Hollywood now.\n Inside: the lineage (a German-Jewish immigrant mother and an Italian-American father in Brooklyn; a Syrian American father and an Italian American family in Florham Park with a mob history the profiles skip), the bottom-rung starts (his story department desk at New Line at twenty, her receptionist chair at Danny DeVito's company), the reigns at New Line and New Regency, the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792596978429-db329b8bad218.jpg",
-   "url": "https://open.spotify.com/episode/0E0iWvfSMeePSDMRdfizXg",
-   "spotify_url": "https://open.spotify.com/episode/0E0iWvfSMeePSDMRdfizXg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/225-Mike--Pam-The-Last-Studio-Heads-of-Hollywood-e3qruhs",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127842300/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-21%2F685c7504-6be5-072b-e75c-cbdae868d00e.m4a",
    "number": "225"
   },
@@ -223,7 +237,7 @@
    "date": "2026-10-19T18:40:00Z",
    "duration": 778,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
    "url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_video": false
@@ -428,7 +442,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -454,7 +468,7 @@
    "date": "2026-10-15T11:12:00Z",
    "duration": 2222,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_video": false
@@ -907,7 +921,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -2191,7 +2205,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4175,7 +4189,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 224,
+   "episodes": 225,
    "spotify_matches": 1
   },
   "approachable": {
