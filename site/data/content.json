@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T15:24:22Z",
+ "generated_at": "2026-10-21T20:15:44Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-18T17:36:00Z",
-   "count": 223
+   "latest": "2026-10-21T15:38:11Z",
+   "count": 224
   },
   {
    "key": "approachable",
@@ -157,7 +157,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-19T18:40:00Z",
    "count": 11
   },
@@ -188,6 +188,20 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:c5150759 fd6b 4373 86fa 2c45bc1ec5f6",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#225 Mike & Pam: The Last Studio Heads of Hollywood",
+   "date": "2026-10-21T15:38:11Z",
+   "duration": 3239,
+   "description": "Six consecutive number-one openings. A Best Picture winner. The best studio year of the decade. It still wasn't enough. When the Paramount Skydance merger closed in October 2026, Mike De Luca and Pam Abdy were out at Warner Bros. This episode is their complete arc, and what it says about who gets to run Hollywood now.\n Inside: the lineage (a German-Jewish immigrant mother and an Italian-American father in Brooklyn; a Syrian American father and an Italian American family in Florham Park with a mob history the profiles skip), the bottom-rung starts (his story department desk at New Line at twenty, her receptionist chair at Danny DeVito's company), the reigns at New Line and New Regency, the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792596978429-db329b8bad218.jpg",
+   "url": "https://open.spotify.com/episode/0E0iWvfSMeePSDMRdfizXg",
+   "spotify_url": "https://open.spotify.com/episode/0E0iWvfSMeePSDMRdfizXg",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127842300/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-21%2F685c7504-6be5-072b-e75c-cbdae868d00e.m4a",
+   "number": "225"
+  },
   {
    "id": "ccpod:5MP6BACDwM6OvAtZKDkS0g",
    "show": "ccpod",
@@ -236,8 +250,8 @@
    "duration": 3483,
    "description": "On October 4, Flávio Bolsonaro beat Lula in the first round of Brazil's presidential election, 56.1 million votes to 53.9 million. His father, the man who built the movement, followed it under house arrest: 27 years for the coup plot, barred from office until 2030, banned from even posting online.\n So how is the movement winning? This episode maps the succession: the heir chosen from custody, the brother running foreign policy from exile in Texas, the stepmother and brothers winning Senate seats of their own, the biggest party in Congress, a billion reais a year in public money, and a runoff being fought inside Instagram's algorithm, with Brazil's electoral court fining Meta into…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792344807490-b72c5d4ae8963.jpg",
-   "url": "https://open.spotify.com/episode/0RZeeXzJaT11gB5HRfzh9f",
-   "spotify_url": "https://open.spotify.com/episode/0RZeeXzJaT11gB5HRfzh9f",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/224-Flvio-Bolsonaro-The-Heir--the-Exile--and-the-Algorithm-e3qmqbd",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127674157/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-18%2F9dd059e4-e4c0-01f6-0012-9c332d535644.m4a",
    "number": "224"
   },
@@ -401,7 +415,7 @@
    "date": "2026-10-15T21:22:00Z",
    "duration": 2283,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_video": false
@@ -414,7 +428,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -813,7 +827,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -853,7 +867,7 @@
    "date": "2026-10-04T20:11:00Z",
    "duration": 1075,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
    "url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_video": false
@@ -933,7 +947,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -2177,7 +2191,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4161,7 +4175,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 223,
+   "episodes": 224,
    "spotify_matches": 1
   },
   "approachable": {
