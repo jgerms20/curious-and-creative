@@ -946,3 +946,8 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .web__tag--hybrid { fill: #13A89E; }
 .net__legend { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-size: .85rem; font-weight: 750; color: var(--ink-soft); }
 .net__legend li { display: inline-flex; align-items: center; gap: .45em; }
+/* the longer wordmark (Curious Creative Co.) has to share a phone-width header with three buttons */
+@media (max-width: 440px) { .hdr__bar { gap: .45rem; } .hdr .wordmark { font-size: .95rem; gap: .14em; } .hdr .icon-btn { width: 40px; height: 40px; } }
+@media (max-width: 350px) { .hdr .wordmark .a { display: none; } }
+.web__node--hybrid .web__ring { stroke: var(--green); }
+[data-show="morningread"] { --c: #C9781C; }
