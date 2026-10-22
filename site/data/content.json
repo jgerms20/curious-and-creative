@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T20:13:45Z",
+ "generated_at": "2026-10-22T23:31:30Z",
  "shows": [
   {
    "key": "ccpod",
@@ -18,7 +18,7 @@
    "rss": null,
    "tier": "primary",
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
-   "feed_title": "Curious + Creative",
+   "feed_title": "Curious and Creative",
    "art": "assets/art/ccpod.jpg",
    "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
    "latest": "2026-10-20T06:39:00Z",
@@ -37,7 +37,7 @@
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
    "rss": "https://anchor.fm/s/111be5840/podcast/rss",
    "tier": "primary",
-   "ai": "assisted",
+   "ai": "hybrid",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
    "feed_title": "The Eclectic Polymath Podcast",
@@ -46,7 +46,7 @@
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
    "latest": "2026-10-21T20:28:34Z",
-   "count": 225
+   "count": 226
   },
   {
    "key": "approachable",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -104,6 +104,7 @@
    "spotify": "79MaSzrv6uJkaHiFoZQrWk",
    "rss": null,
    "ai": "full",
+   "principal": "Joshua German",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
@@ -146,7 +147,7 @@
    "short": "God Is Brazilian",
    "kind": "podcast",
    "hosts": [
-    "Joshua German"
+    "AI-generated"
    ],
    "tagline": "A podcast by Joshua German.",
    "about": "",
@@ -154,12 +155,35 @@
    "rss": null,
    "tier": "secondary",
    "ai": "full",
+   "principal": "Joshua German",
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-19T18:40:00Z",
    "count": 11
+  },
+  {
+   "key": "morningread",
+   "name": "The Morning Read",
+   "short": "The Morning Read",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "A morning read, made with AI.",
+   "about": "",
+   "spotify": "1Dtk8svL8ahjAPtso2lBMp",
+   "rss": null,
+   "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
+   "feed_title": "The Morning Read",
+   "art": "assets/art/morningread.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a575b8e353de70af5d48ab3ad",
+   "latest": "2026-10-22T18:58:00Z",
+   "count": 1
   },
   {
    "key": "abolitionist",
@@ -188,6 +212,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "morningread:6hFvuPA0CQ67f5aVH91gYY",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "The Morning Read — Thursday, October 22: Diplomats Out of Saudi Arabia",
+   "date": "2026-10-22T18:58:00Z",
+   "duration": 1193,
+   "description": "",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a144dcbe9d61248d7ba1350dc",
+   "url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
+   "spotify_url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
+   "spotify_video": false
+  },
   {
    "id": "polymath:62f1b827 5d78 4e70 be86 e8d1254f7e51",
    "show": "polymath",
@@ -224,7 +261,7 @@
    "date": "2026-10-20T06:39:00Z",
    "duration": 1714,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
    "url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_video": false
@@ -250,7 +287,7 @@
    "date": "2026-10-18T18:52:00Z",
    "duration": 896,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa2a23030ca9b181c9f0f2cb5",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa2a23030ca9b181c9f0f2cb5",
    "url": "https://open.spotify.com/episode/5QhTn3V5CS2ZXX2aI94y7U",
    "spotify_url": "https://open.spotify.com/episode/5QhTn3V5CS2ZXX2aI94y7U",
    "spotify_video": false
@@ -416,7 +453,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -429,7 +466,7 @@
    "date": "2026-10-15T21:22:00Z",
    "duration": 2283,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_video": false
@@ -455,7 +492,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -500,6 +537,20 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127505833/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F1be05257-a8af-5894-e011-d3d9be06a9c5.m4a",
    "number": null
+  },
+  {
+   "id": "polymath:a11eb02b c312 4ef3 b04c 7c2c145631d0",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#211 Arturo Schomburg: The Man Who Built the Counter-Archive",
+   "date": "2026-10-15T02:30:00Z",
+   "duration": 2734,
+   "description": "Arturo Schomburg was a kid in San Juan when a teacher told him Black people had no history. He spent the rest of his life proving her wrong, one book at a time.\n This episode follows the Afro-Puerto Rican collector who built the archive Black history runs on, and widens into the bigger question his life poses: who decides what gets saved? Slavery's records were written by enslavers, so Schomburg built a counter-archive inside the public library — and a century later we're still working out what that means.\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792660833337-a7bf531a34d9d.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/211-Arturo-Schomburg-The-Man-Who-Built-the-Counter-Archive-e3qt5eq",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127882138/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-22%2Fb1242bc7-d847-a0ea-dace-9ca171f71c0d.m4a",
+   "number": "211"
   },
   {
    "id": "polymath:e56c9099 8302 4105 b4e3 ca17b894e409",
@@ -593,7 +644,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -644,14 +695,14 @@
    "id": "polymath:5ccb967f b8fd 46f3 9215 5ffe9b1831a0",
    "show": "polymath",
    "kind": "episode",
-   "title": "#201 Smoke Shops & Dispensaries: How Cannabis Got Its Storefront",
+   "title": "#201 Smoke Shops & Dispensaries: The Business Behind the Counter",
    "date": "2026-10-11T10:40:01Z",
-   "duration": 3615,
-   "description": "For fifty years, the American smoke shop sold millions of dollars of cannabis gear under one rule: nobody could say what any of it was for. This episode traces the head shop from its 1966 counterculture birth — the Psychedelic Shop on Haight Street — through the \"for tobacco use only\" era, Operation Pipe Dreams, and Tommy Chong's prison sentence.\n Then the turn: how the AIDS crisis, Dennis Peron, and Proposition 215 transformed the gray-zone storefront into the legal dispensary — and how MedMen's billion-dollar \"Apple Store of Weed,\" a punishing federal tax rule, and LA's broken licensing system explain why the original head shop is still standing.\n Follow along for the next deep dive.\n…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1791717857710-2374608fd9765.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/201-Smoke-Shops--Dispensaries-How-Cannabis-Got-Its-Storefront-e3qavfk",
+   "duration": 3516,
+   "description": "There are roughly 18,000 smoke shops in America, and almost nobody understands how they make money. This episode goes behind the counter: startup costs from $50,000 to $180,000, the margin ladder that runs the whole business — cigarettes at 4 to 6 percent just to pull traffic, glass and hemp at 50 to 70 percent paying the rent — plus the distributors, the 800-store chains, and the high-risk payment processing that can freeze a shop's money overnight.\n Then the legal patchwork they sell under — the federal paraphernalia law, FDA vape crackdowns, New York's Operation Padlock — and the big question at the center: are these shops quietly building the storefronts, zoning positions, and customer…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792696076892-3294e87b019e1.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/201-Smoke-Shops--Dispensaries-The-Business-Behind-the-Counter-e3qavfk",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127286196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-11%2F2a9efa6e-ed86-da7a-805a-ae52f4311292.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127286196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-22%2Fb7cd5d9d-9745-ce76-1976-c1d6a6766234.m4a",
    "number": "201"
   },
   {
@@ -841,7 +892,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -908,7 +959,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -921,7 +972,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -948,7 +999,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -2205,7 +2256,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4179,7 +4230,7 @@
   "ccpod": {
    "ok": true,
    "feed": null,
-   "spotify_name": "Curious + Creative",
+   "spotify_name": "Curious and Creative",
    "full_catalog": false,
    "episodes": 3,
    "spotify_matches": 3
@@ -4189,7 +4240,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath Podcast",
    "full_catalog": true,
-   "episodes": 225,
+   "episodes": 226,
    "spotify_matches": 1
   },
   "approachable": {
@@ -4228,6 +4279,14 @@
    "full_catalog": false,
    "episodes": 11,
    "spotify_matches": 11
+  },
+  "morningread": {
+   "ok": true,
+   "feed": null,
+   "spotify_name": "The Morning Read",
+   "full_catalog": false,
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "abolitionist": {
    "ok": true,
