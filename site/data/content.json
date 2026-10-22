@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T23:31:30Z",
+ "generated_at": "2026-10-22T23:28:25Z",
  "shows": [
   {
    "key": "ccpod",
@@ -20,7 +20,7 @@
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
    "feed_title": "Curious and Creative",
    "art": "assets/art/ccpod.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
    "latest": "2026-10-20T06:39:00Z",
    "count": 3
   },
@@ -108,7 +108,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-15T22:34:00Z",
    "count": 5
   },
@@ -356,7 +356,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -479,7 +479,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -1012,7 +1012,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
