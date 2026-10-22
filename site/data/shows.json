@@ -51,7 +51,7 @@
    ],
    "rss": "https://anchor.fm/s/111be5840/podcast/rss",
    "tier": "primary",
-   "ai": "assisted"
+   "ai": "hybrid"
   },
   {
    "key": "approachable",
@@ -105,7 +105,8 @@
     "The Daily Riff"
    ],
    "rss": null,
-   "ai": "full"
+   "ai": "full",
+   "principal": "Joshua German"
   },
   {
    "key": "dominate",
@@ -132,7 +133,7 @@
    "short": "God Is Brazilian",
    "kind": "podcast",
    "hosts": [
-    "Joshua German"
+    "AI-generated"
    ],
    "tagline": "A podcast by Joshua German.",
    "about": "",
@@ -145,7 +146,27 @@
     "german"
    ],
    "tier": "secondary",
-   "ai": "full"
+   "ai": "full",
+   "principal": "Joshua German"
+  },
+  {
+   "key": "morningread",
+   "name": "The Morning Read",
+   "short": "The Morning Read",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "A morning read, made with AI.",
+   "about": "",
+   "spotify": "1Dtk8svL8ahjAPtso2lBMp",
+   "itunes_search": [
+    "The Morning Read"
+   ],
+   "rss": null
   },
   {
    "key": "abolitionist",

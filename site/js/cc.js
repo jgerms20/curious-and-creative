@@ -1,4 +1,4 @@
-/* Curious & Creative — shared site runtime.
+/* Curious Creative Company — shared site runtime.
    Every page: <body data-page="…" data-root="./ or ../">, with
    <div data-cc="header"></div> and <div data-cc="footer"></div>.
    Content comes from data/content.json (refreshed by the GitHub Action). */
@@ -45,14 +45,14 @@
     { label: "Home", href: "index.html", nav: true, words: "home front page latest" },
     { label: "About", href: "pages/about.html", nav: true, words: "about us story who joshua janel founders team duo" },
     { label: "Podcasts", href: "pages/shows.html", nav: true, menu: "shows", words: "podcasts shows listen episodes spotify apple youtube" },
-    { label: "Videos", href: "pages/videos.html", nav: true, words: "videos youtube watch approachable ai video episodes" },
-    { label: "Production", href: "pages/studio.html", nav: true, words: "production studio company services strategy brand building podcast video production consulting hire work with us" },
+    { label: "Network", href: "pages/network.html", nav: true, words: "network shows web map secondary god is brazilian dominate the decade aspiring abolitionist morning read daily riff ai-generated hybrid" },
+    { label: "Videos", href: "pages/videos.html", words: "videos youtube watch approachable ai video episodes" },
+    { label: "Studio", href: "pages/studio.html", nav: true, words: "studio services offerings production company photography videography video podcast setup launch network brand assets strategy consulting marketing advertising branding events hire work with us" },
     { label: "Photography", href: "pages/art.html", nav: true, words: "photography photos gallery portraits fashion events rio landscapes travel" },
     { label: "Shop", href: "pages/shop.html", nav: true, words: "shop store buy order prints art artwork janel joshua kindling deck" },
     { label: "Inventions", href: "pages/inventions.html", nav: true, words: "inventions apps tools games life gamified grandmaster meme library jukeboxd aetheria gen alpha research lab" },
-    { label: "Writing", href: "pages/writing.html", nav: true, words: "writing substack essays newsletter posts" },
+    { label: "Writing", href: "pages/writing.html", words: "writing substack essays newsletter posts" },
     { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
-    { label: "Network", href: "pages/network.html", words: "network shows web map secondary god is brazilian dominate the decade aspiring abolitionist" },
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
     { label: "Contact", href: "pages/contact.html", words: "contact email hello pitch guest press" },
   ];
@@ -88,7 +88,7 @@
     <a class="skip" href="#main">Skip to content</a>
     <header class="hdr" id="hdr">
       <div class="hdr__bar wrap">
-        <a class="wordmark" href="${url("index.html")}" aria-label="Curious and Creative — home"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
+        <a class="wordmark" href="${url("index.html")}" aria-label="Curious Creative Company — home"><span class="g">Curious</span><span class="p">Creative</span><span class="a">Co.</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
         <nav class="hdr__links" aria-label="Primary">${PAGES.filter((p) => p.nav).map(navItem).join("")}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
@@ -100,9 +100,9 @@
   const footer = `
     <footer class="ftr wrap">
       <div class="ftr__bar">
-        <a class="wordmark" href="${url("index.html")}"><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span></a>
+        <a class="wordmark" href="${url("index.html")}"><span class="g">Curious</span><span class="p">Creative</span><span class="a">Co.</span></a>
         <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.label !== "Home").map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
-        <p class="ftr__copy">© ${new Date().getFullYear()} Curious &amp; Creative · Joshua German &amp; Janel Moore</p>
+        <p class="ftr__copy">© ${new Date().getFullYear()} Curious Creative Company · Joshua German &amp; Janel Moore</p>
       </div>
       <p class="ftr__sign">Built curious. Made creative. · <a href="${url("backstage/")}" style="opacity:.7">Team</a></p>
     </footer>`;
@@ -111,7 +111,7 @@
     <div class="scrim" data-close-drawer></div>
     <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
       <div class="drawer__top">
-        <a class="wordmark" href="${url("index.html")}"><span class="g" style="color:#5BD36B">Curious</span><span class="a">&amp;</span><span class="p" style="color:#FF6FB0">Creative</span></a>
+        <a class="wordmark" href="${url("index.html")}"><span class="g" style="color:#5BD36B">Curious</span><span class="p" style="color:#FF6FB0">Creative</span><span class="a">Co.</span></a>
         <button class="icon-btn" type="button" data-close-drawer aria-label="Close menu">${icon.close}</button>
       </div>
       <nav class="drawer__nav" aria-label="Menu">${PAGES.map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
@@ -316,24 +316,32 @@
   /* ---------------- data ---------------- */
   const SHOW_ORDER = (shows) => [...shows].sort((a, b) => (b.flagship ? 1 : 0) - (a.flagship ? 1 : 0) || String(b.latest || "").localeCompare(String(a.latest || "")));
   CC.showOrder = SHOW_ORDER;
-  // one color per show: who makes it (AI-made shows get their own group)
+  // one color per show: who makes it. AI-generated shows and hybrids (a host + AI) get their own groups.
+  const isHybrid = (s) => !!s && (s.ai === "hybrid" || s.ai === "assisted");
+  CC.isHybrid = isHybrid;
   CC.hostGroup = (s) => {
     if (s && s.ai === "full") return "ai";
+    if (isHybrid(s)) return "hybrid";
     const h = ((s && s.hosts) || []).join(" ").toLowerCase();
     const jo = h.includes("joshua"), ja = h.includes("janel");
     return jo && ja ? "shared" : ja ? "janel" : "joshua";
   };
-  // every group a show belongs to, for the sorter (Polymath = Joshua + AI)
+  // every group a show belongs to, for the sorter (a hybrid also counts under its host)
   CC.showTags = (s) => {
     const h = ((s && s.hosts) || []).join(" ").toLowerCase();
     const t = new Set([CC.hostGroup(s)]);
-    if (s && s.ai) t.add("ai");
     if (h.includes("joshua") && !h.includes("janel")) t.add("joshua");
     if (h.includes("janel") && !h.includes("joshua")) t.add("janel");
     return [...t];
   };
-  CC.showByline = (s) => (s && s.ai === "assisted" ? "Joshua + AI" : s && s.ai === "full" ? (((s.hosts || []).join("").toLowerCase().includes("joshua")) ? "AI-generated · Joshua" : "AI-generated") : CC.HOST_LABEL[CC.hostGroup(s)]);
-  CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel", ai: "AI-generated" };
+  const firstName = (n) => (n || "").split(" ")[0];
+  CC.showByline = (s) => {
+    if (!s) return "";
+    if (isHybrid(s)) return `Hybrid · ${(s.hosts || []).map(firstName).join(" & ") || "Joshua"} + AI`;
+    if (s.ai === "full") return s.principal ? `AI-generated · ${firstName(s.principal)}, principal` : "AI-generated";
+    return CC.HOST_LABEL[CC.hostGroup(s)];
+  };
+  CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel", ai: "AI-generated", hybrid: "Hybrid · human + AI" };
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
   CC.epHref = (e) => e.url || e.spotify_url || "#";
@@ -371,7 +379,7 @@
     const reg = Object.fromEntries(((registry && registry.shows) || []).map((s) => [s.key, s]));
     data.shows = (data.shows || []).map((s) => {
       const r = reg[s.key] || {};
-      return { ...s, ai: r.ai || s.ai, tier: r.tier || s.tier || "primary", feature: r.feature ?? s.feature, name: r.name || s.name, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts };
+      return { ...s, ai: r.ai || s.ai, tier: r.tier || s.tier || "primary", feature: r.feature ?? s.feature, name: r.name || s.name, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts, principal: r.principal || s.principal };
     });
     const allPhotos = (photos && photos.photos) || [];
     data.photos = allPhotos.some((p) => p.featured) ? allPhotos.filter((p) => p.featured) : allPhotos;
@@ -407,37 +415,40 @@
 
   /* ---------------- the network web (shows ↔ hosts) ---------------- */
   CC.network = (data) => {
-    const W = 1000, H = 712, hub = [500, 290];
+    const W = 1000, H = 744, hub = [500, 290];
     const people = { joshua: [290, 360, "Joshua", "assets/people/joshua.jpg"], janel: [710, 360, "Janel", "assets/people/janel.jpg"] };
     const aiNode = [500, 500];
     // hand-placed spots for known shows; anything new falls into the spare slots
-    const SPOT = { ccpod: [500, 90], polymath: [230, 170], approachable: [120, 370], dominate: [170, 560], brazil: [370, 618], riff: [630, 618], tmtt: [820, 170], abolitionist: [880, 440] };
+    const SPOT = { ccpod: [500, 90], polymath: [230, 170], approachable: [120, 370], dominate: [170, 560], brazil: [360, 612], riff: [640, 612], morningread: [500, 668], tmtt: [820, 170], abolitionist: [880, 440] };
     const spare = [[930, 300], [90, 220], [940, 640]];
     const futures = [[790, 600], [910, 600]];
     const links = (s) => {
+      // AI-generated shows hang off the AI node only (Joshua is its principal); hybrids link to their host and AI
+      if (s.ai === "full") return ["ai"];
       const h = (s.hosts || []).join(" ").toLowerCase();
       const out = [];
       if (h.includes("joshua")) out.push("joshua");
       if (h.includes("janel")) out.push("janel");
-      if (s.ai) out.push("ai");
+      if (CC.isHybrid(s)) out.push("ai");
       return out;
     };
     let si = 0;
     const nodes = data.shows.map((s) => {
       const [x, y] = SPOT[s.key] || spare[si++] || [500, 680];
       const tier = s.tier === "secondary" ? "secondary" : "primary";
-      return { s, x, y, tier, links: links(s), r: s.flagship ? 58 : tier === "primary" ? 46 : 32 };
+      return { s, x, y, tier, hybrid: CC.isHybrid(s), links: links(s), r: s.flagship ? 58 : tier === "primary" ? 46 : 32 };
     });
     const at = (k) => (k === "ai" ? aiNode : people[k]);
     const line = (p, q, cls, key) => `<line class="web__edge ${cls}" data-edge="${key}" x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}"/>`;
-    let edges = ["joshua", "janel"].map((k) => line(hub, people[k], "web__edge--core", k)).join("") + line(hub, aiNode, "web__edge--core web__edge--ai", "ai");
-    nodes.forEach((n) => n.links.forEach((k) => { edges += line(at(k), [n.x, n.y], `web__edge--${n.tier}${k === "ai" ? " web__edge--ai" : ""}`, `${k} ${n.s.key}`); }));
+    let edges = ["joshua", "janel"].map((k) => line(hub, people[k], "web__edge--core", k)).join("") + line(hub, aiNode, "web__edge--core web__edge--ai", "ai")
+      + line(people.joshua, aiNode, "web__edge--principal", "joshua ai"); // Joshua is the principal behind the AI-generated shows
+    nodes.forEach((n) => n.links.forEach((k) => { edges += line(at(k), [n.x, n.y], `web__edge--${n.tier}${k === "ai" ? (n.hybrid ? " web__edge--hybrid" : " web__edge--ai") : ""}`, `${k} ${n.s.key}`); }));
     futures.forEach((f) => { edges += line(hub, f, "web__edge--future", "future"); });
     const label = (s) => (s.flagship ? "The Curious & Creative Podcast" : s.short || s.name);
-    const img = (id, x, y, r, src, text) => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--c)"/>`}<text class="web__label" x="${x}" y="${y + r + 22}">${esc(text)}</text>`;
-    const showNodes = nodes.map((n, i) => `<a class="web__node web__node--${n.tier}" href="${url(`pages/shows.html#${n.s.key}`)}" data-show="${n.s.key}" data-node="${n.s.key}" data-links="${n.links.join(" ")}" aria-label="${esc(n.s.name)}">${img("wc" + i, n.x, n.y, n.r, n.s.art, label(n.s))}${n.s.archive ? `<text class="web__tag" x="${n.x}" y="${n.y + n.r + 40}">archive</text>` : ""}</a>`).join("");
+    const img = (id, x, y, r, src, text, hybrid) => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${hybrid ? `<path class="web__ring-ai" d="M${x} ${y - r - 4}A${r + 4} ${r + 4} 0 0 1 ${x} ${y + r + 4}"/>` : ""}${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--c)"/>`}<text class="web__label" x="${x}" y="${y + r + 22}">${esc(text)}</text>`;
+    const showNodes = nodes.map((n, i) => `<a class="web__node web__node--${n.tier}" href="${url(`pages/shows.html#${n.s.key}`)}" data-show="${n.s.key}" data-node="${n.s.key}" data-links="${n.links.join(" ")}" aria-label="${esc(n.s.name)}">${img("wc" + i, n.x, n.y, n.r, n.s.art, label(n.s), n.hybrid)}${n.hybrid ? `<text class="web__tag web__tag--hybrid" x="${n.x}" y="${n.y + n.r + 40}">hybrid · human + AI</text>` : n.s.archive ? `<text class="web__tag" x="${n.x}" y="${n.y + n.r + 40}">archive</text>` : ""}</a>`).join("");
     const peopleNodes = Object.entries(people).map(([k, [x, y, name, src]]) => `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${name}">${img("wp" + k, x, y, 40, src, name)}</a>`).join("");
-    const ai = `<g class="web__node web__node--ai" data-node="ai" tabindex="0" aria-label="AI-generated"><circle cx="${aiNode[0]}" cy="${aiNode[1]}" r="40"/><path transform="translate(${aiNode[0]} ${aiNode[1]})" d="M0-22 5-5 22 0 5 5 0 22-5 5-22 0-5-5Z"/><text class="web__label" x="${aiNode[0]}" y="${aiNode[1] + 62}">AI-generated</text></g>`;
+    const ai = `<g class="web__node web__node--ai" data-node="ai" tabindex="0" aria-label="AI-generated"><circle cx="${aiNode[0]}" cy="${aiNode[1]}" r="40"/><path transform="translate(${aiNode[0]} ${aiNode[1]})" d="M0-22 5-5 22 0 5 5 0 22-5 5-22 0-5-5Z"/><text class="web__label" x="${aiNode[0]}" y="${aiNode[1] + 62}">AI-generated</text><text class="web__tag" x="${aiNode[0]}" y="${aiNode[1] + 80}">Joshua, principal</text></g>`;
     const futureNodes = futures.map(([x, y]) => `<g class="web__node web__node--future" aria-hidden="true"><circle cx="${x}" cy="${y}" r="26"/><text class="web__plus" x="${x}" y="${y + 9}">?</text></g>`).join("") + `<text class="web__label web__label--quiet" x="${(futures[0][0] + futures[1][0]) / 2}" y="${futures[0][1] + 58}">Always building</text>`;
     const hubNode = `<g class="web__hub"><clipPath id="whub"><circle cx="${hub[0]}" cy="${hub[1]}" r="62"/></clipPath><circle class="web__hub-ring" cx="${hub[0]}" cy="${hub[1]}" r="68"/><image href="${esc(url("assets/brand/cc-logo.jpg"))}" x="${hub[0] - 62}" y="${hub[1] - 62}" width="124" height="124" clip-path="url(#whub)" preserveAspectRatio="xMidYMid slice"/><text class="web__hub-label" x="${hub[0]}" y="${hub[1] + 92}">Curious &amp; Creative Network</text></g>`;
     return `<svg class="web" viewBox="0 0 ${W} ${H}" role="img" aria-label="The Curious & Creative Network: Joshua, Janel, and AI connected to every show">${edges}${futureNodes}${ai}${peopleNodes}${showNodes}${hubNode}</svg>`;
@@ -454,7 +465,7 @@
       });
     };
     svg.querySelectorAll("[data-node]").forEach((n) => {
-      if (n.dataset.node === "ai") n.dataset.links = "";
+      if (n.dataset.node === "ai") n.dataset.links = "joshua";
       n.addEventListener("mouseenter", () => focus(n.dataset.node));
       n.addEventListener("focus", () => focus(n.dataset.node));
       n.addEventListener("mouseleave", () => focus(null));

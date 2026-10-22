@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Curious &amp; Creative</title>
-  <meta name="description" content="Get in touch with Curious & Creative — guest pitches, projects, photography, partnerships, and press." />
-  <meta property="og:title" content="Contact — Curious &amp; Creative" />
-  <meta property="og:description" content="Get in touch with Curious & Creative — guest pitches, projects, photography, partnerships, and press." />
+  <title>Contact — Curious Creative Company</title>
+  <meta name="description" content="Get in touch with Curious Creative Company — guest pitches, projects, photography, partnerships, and press." />
+  <meta property="og:title" content="Contact — Curious Creative Company" />
+  <meta property="og:description" content="Get in touch with Curious Creative Company — guest pitches, projects, photography, partnerships, and press." />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +32,10 @@
         <option value="guest">Guest pitch</option>
         <option value="project">Project / brand work</option>
         <option value="photo">Photography</option>
+        <option value="video">Videography</option>
+        <option value="podcast">Start a podcast / join the network</option>
+        <option value="strategy">Strategy &amp; consulting</option>
+        <option value="events">Events</option>
         <option value="venture">Venture / partnership</option>
         <option value="press">Press</option>
       </select>
@@ -62,7 +66,7 @@
     e.preventDefault();
     const label = f.topic.options[f.topic.selectedIndex].text;
     const body = `${f.message.value}\n\n— ${f.name.value} (${f.email.value})`;
-    location.href = `mailto:${f.dataset.to}?subject=${encodeURIComponent("Curious & Creative: " + label)}&body=${encodeURIComponent(body)}`;
+    location.href = `mailto:${f.dataset.to}?subject=${encodeURIComponent("Curious Creative Company: " + label)}&body=${encodeURIComponent(body)}`;
   });
 })();
 </script>
