@@ -37,7 +37,7 @@
    "spotify": "3dlagzJ0jiWLTB9mF3y069",
    "rss": "https://anchor.fm/s/111be5840/podcast/rss",
    "tier": "primary",
-   "ai": "assisted",
+   "ai": "hybrid",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
    "feed_title": "The Eclectic Polymath Podcast",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -104,6 +104,7 @@
    "spotify": "79MaSzrv6uJkaHiFoZQrWk",
    "rss": null,
    "ai": "full",
+   "principal": "Joshua German",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
@@ -146,7 +147,7 @@
    "short": "God Is Brazilian",
    "kind": "podcast",
    "hosts": [
-    "Joshua German"
+    "AI-generated"
    ],
    "tagline": "A podcast by Joshua German.",
    "about": "",
@@ -154,12 +155,35 @@
    "rss": null,
    "tier": "secondary",
    "ai": "full",
+   "principal": "Joshua German",
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
    "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-19T18:40:00Z",
    "count": 11
+  },
+  {
+   "key": "morningread",
+   "name": "The Morning Read",
+   "short": "The Morning Read",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "A morning read, made with AI.",
+   "about": "",
+   "spotify": "1Dtk8svL8ahjAPtso2lBMp",
+   "rss": null,
+   "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
+   "feed_title": "The Morning Read",
+   "art": "assets/art/morningread.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a575b8e353de70af5d48ab3ad",
+   "latest": "2026-10-22T18:58:00Z",
+   "count": 1
   },
   {
    "key": "abolitionist",
@@ -188,6 +212,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "morningread:6hFvuPA0CQ67f5aVH91gYY",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "The Morning Read — Thursday, October 22: Diplomats Out of Saudi Arabia",
+   "date": "2026-10-22T18:58:00Z",
+   "duration": 1193,
+   "description": "",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a144dcbe9d61248d7ba1350dc",
+   "url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
+   "spotify_url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
+   "spotify_video": false
+  },
   {
    "id": "polymath:62f1b827 5d78 4e70 be86 e8d1254f7e51",
    "show": "polymath",
@@ -224,7 +261,7 @@
    "date": "2026-10-20T06:39:00Z",
    "duration": 1714,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
    "url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_video": false
@@ -455,7 +492,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -4242,6 +4279,14 @@
    "full_catalog": false,
    "episodes": 11,
    "spotify_matches": 11
+  },
+  "morningread": {
+   "ok": true,
+   "feed": null,
+   "spotify_name": "The Morning Read",
+   "full_catalog": false,
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "abolitionist": {
    "ok": true,

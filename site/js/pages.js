@@ -180,7 +180,7 @@
         const e = (data.episodes || []).find((x) => x.show === s.key);
         return `<a class="net__show${s.feature ? " net__show--feature" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
           ${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : '<span class="ph"></span>'}
-          <span><small>${esc((s.hosts || []).join(" & "))}${s.count ? ` · ${s.count} ${s.kind === "youtube" ? "videos" : "episodes"}` : ""}</small><b>${esc(s.name)}</b><em>${esc(s.tagline || (e ? "Latest: " + e.title : ""))}</em></span></a>`;
+          <span><small>${esc(s.ai ? CC.showByline(s) : (s.hosts || []).join(" & "))}${s.count ? ` · ${s.count} ${s.kind === "youtube" ? "videos" : "episodes"}` : ""}</small><b>${esc(s.name)}</b><em>${esc(s.tagline || (e ? "Latest: " + e.title : ""))}</em></span></a>`;
       }).join("");
     };
     tier(data.primary, "net-primary");
@@ -228,9 +228,9 @@
   /* ---------------- about: live counts ---------------- */
   /* host sorter: Joshua / Janel / shared, one color each */
   const sorter = (data, onPick) => {
-    const counts = { joshua: 0, janel: 0, shared: 0, ai: 0 };
+    const counts = { joshua: 0, janel: 0, shared: 0, hybrid: 0, ai: 0 };
     data.shows.forEach((x) => CC.showTags(x).forEach((t) => counts[t]++));
-    const opts = [["all", "Everything", data.shows.length], ["shared", "Together", counts.shared], ["joshua", "Joshua", counts.joshua], ["janel", "Janel", counts.janel], ["ai", "AI-generated", counts.ai]];
+    const opts = [["all", "Everything", data.shows.length], ["shared", "Together", counts.shared], ["joshua", "Joshua", counts.joshua], ["janel", "Janel", counts.janel], ["hybrid", "Hybrid", counts.hybrid], ["ai", "AI-generated", counts.ai]];
     const el = document.createElement("div");
     el.className = "sorter";
     el.setAttribute("role", "group");

@@ -3,7 +3,7 @@
   "033ze48fmi1cTvj2M7Pb6M": {
    "legacy_len": 12103,
    "legacy_episode_ids": 1,
-   "len": 12097,
+   "len": 12101,
    "script_ids": [
     "__NEXT_DATA__"
    ],
@@ -42,7 +42,7 @@
   "79MaSzrv6uJkaHiFoZQrWk": {
    "legacy_len": 11581,
    "legacy_episode_ids": 1,
-   "len": 11585,
+   "len": 11587,
    "script_ids": [
     "__NEXT_DATA__"
    ],
@@ -66,7 +66,7 @@
    "anchor_ids": []
   },
   "4tAY78JV37aIgmJ2d1iF3w": {
-   "legacy_len": 11827,
+   "legacy_len": 11825,
    "legacy_episode_ids": 1,
    "len": 11827,
    "script_ids": [
@@ -78,10 +78,23 @@
    ],
    "anchor_ids": []
   },
+  "1Dtk8svL8ahjAPtso2lBMp": {
+   "legacy_len": 11740,
+   "legacy_episode_ids": 1,
+   "len": 11742,
+   "script_ids": [
+    "__NEXT_DATA__"
+   ],
+   "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\"></title><link rel=\"icon\" href=\"/favicon.ico\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/28a3e1c9d0760fe0.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/616c40daf9f6fd55.css\" as=\"style\"/><link rel=\"preload\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/4852ebbd8c3d22a3.css\" as=\"style\"/><meta name=\"sentry-trace\" content=\"7216816f685fa01bb4cd355da0b3e8f8-d203cf9217ad7770-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=557ff9f549c8f9bfe0fa660a806a82ecc1193651,sentry-public_key=4cc707ab12ea4779b417479c0550a5cb,sentry-trace_id=7216816f685fa01bb4cd355da0b3e8f8,sentry-org_id=22381,sentry-sampled=false,sentry-sample_rand=0.39703827437662165,sentry-sample_rate=0\"/><link rel=\"stylesheet\" href=\"https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css\" data-n-g=\"\"/><",
+   "episode_ids": [
+    "6hFvuPA0CQ67f5aVH91gYY"
+   ],
+   "anchor_ids": []
+  },
   "7natfWFnBgakjLLZcEDZaw": {
    "legacy_len": 11730,
    "legacy_episode_ids": 1,
-   "len": 11734,
+   "len": 11732,
    "script_ids": [
     "__NEXT_DATA__"
    ],
@@ -145,6 +158,20 @@
    "creators.spotify.com/pod/profile/god-is-brazilian": "HTTP Error 404: Not Found",
    "creators.spotify.com/pod/show/god-is-brazilian": "12028 None rss=False station=None",
    "anchor.fm/god-is-brazilian": "12028 None rss=False station=None"
+  },
+  "morningread": {
+   "creators.spotify.com/pod/profile/themorningread": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/themorningread": "12022 None rss=False station=None",
+   "anchor.fm/themorningread": "12022 None rss=False station=None",
+   "creators.spotify.com/pod/profile/morningread": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/morningread": "12013 None rss=False station=None",
+   "anchor.fm/morningread": "12013 None rss=False station=None",
+   "creators.spotify.com/pod/profile/the-morning-read": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/the-morning-read": "12028 None rss=False station=None",
+   "anchor.fm/the-morning-read": "12028 None rss=False station=None",
+   "creators.spotify.com/pod/profile/morning-read": "HTTP Error 404: Not Found",
+   "creators.spotify.com/pod/show/morning-read": "12016 None rss=False station=None",
+   "anchor.fm/morning-read": "12016 None rss=False station=None"
   }
  },
  "catalog": {
@@ -170,6 +197,13 @@
    "total": 0
   },
   "4tAY78JV37aIgmJ2d1iF3w": {
+   "anon_error": "HTTP Error 403: URL Blocked",
+   "crawler:Mozilla": 0,
+   "crawler:facebookexternalhit": 0,
+   "crawler:Twitterbot": 0,
+   "total": 0
+  },
+  "1Dtk8svL8ahjAPtso2lBMp": {
    "anon_error": "HTTP Error 403: URL Blocked",
    "crawler:Mozilla": 0,
    "crawler:facebookexternalhit": 0,
