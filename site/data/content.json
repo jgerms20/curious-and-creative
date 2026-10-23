@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T15:13:32Z",
+ "generated_at": "2026-10-23T19:21:53Z",
  "shows": [
   {
    "key": "ccpod",
@@ -20,7 +20,7 @@
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
    "feed_title": "Curious and Creative",
    "art": "assets/art/ccpod.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
    "latest": "2026-10-20T06:39:00Z",
    "count": 3
   },
@@ -40,13 +40,13 @@
    "ai": "hybrid",
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069",
-   "feed_title": "The Eclectic Polymath Podcast",
+   "feed_title": "The Eclectic Polymath with Joshua German",
    "description": "There’s too much interesting stuff in the world to only care about one thing.\nThe Eclectic Polymath Podcast explores a different curiosity every episode: fascinating people, strange moments in history, cultural shifts, political movements, religions, technologies, music, myths, ideas, and questions you may never have thought to ask.\nSome episodes explain how something became the way it is. Others unpack the life of someone worth knowing, trace an idea across centuries, or follow one rabbit hole until it connects to five others.\nYou don’t need to be an expert. You just need to stay curious.",
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-21T20:28:34Z",
-   "count": 226
+   "latest": "2026-10-23T01:00:00Z",
+   "count": 233
   },
   {
    "key": "approachable",
@@ -108,7 +108,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-15T22:34:00Z",
    "count": 5
   },
@@ -159,7 +159,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-19T18:40:00Z",
    "count": 11
   },
@@ -213,6 +213,48 @@
  ],
  "episodes": [
   {
+   "id": "polymath:1e0310f6 197c 426e 9473 77b842344841",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#233 McDonald's Monopoly: Why You're Always One Piece Away",
+   "date": "2026-10-23T01:00:00Z",
+   "duration": 2979,
+   "description": "You have never won McDonald's Monopoly, and neither has anyone you know — but you have absolutely been one piece away. This episode opens the machine up: who invented the promotion in 1987, how the odds are actually printed, why the law requires a mail-in route that gives you the same chance for the price of two stamps, and the twelve years when the winning pieces were being stolen from the inside.\n Inside: the rare-piece design (in the 2014 rules, Boardwalk was a single piece at 1 in 651,841,628); the psychology of the near-miss; Jerome Jacobson, the security chief who ran the theft ring until the FBI's Operation Final Answer took down 51 people in August 2001 — weeks before 9/11 buried…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792782374064-ff88617a6cfaa.jpg",
+   "url": "https://open.spotify.com/episode/6wB28hw6mVeBSzrVRUaU4v",
+   "spotify_url": "https://open.spotify.com/episode/6wB28hw6mVeBSzrVRUaU4v",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127969157/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2Fc3322950-f52b-7fbe-8eb5-a50b383ada71.m4a",
+   "number": "233"
+  },
+  {
+   "id": "polymath:e3f6d5cc 7dfc 4d8c 9fdc e08a81669dee",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#232 Epstein's Last Men Standing: The Lawyer and Accountant Nobody Charged",
+   "date": "2026-10-22T22:00:00Z",
+   "duration": 2756,
+   "description": "For two decades, Jeffrey Epstein's operation ran through two professionals: his lawyer Darren Indyke and his accountant Richard Kahn. On October 21, 2026, New Mexico's attorney general sued them — the first law-enforcement action either man has ever faced. This episode asks who they are, what the documented record actually shows, and why accountability arrived as a civil suit seven years after Epstein's death.\n Inside: the 1953 Trust in Epstein's own words (the $50 million and $25 million bequests, the forgiven debts); the estate's full arithmetic, from $577 million to the $121 million paid to 136 claimants; their sworn congressional denials; the banks that paid hundreds of millions while…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792781596280-25c0c5def968e.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/232-Epsteins-Last-Men-Standing-The-Lawyer-and-Accountant-Nobody-Charged-e3qvpod",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127968461/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2Fa645b922-bee3-49ae-1b4e-94764621d348.m4a",
+   "number": "232"
+  },
+  {
+   "id": "polymath:9fad85b8 68fe 4a3c ae7a 04f35263e257",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#231 Eisenkot: The General Running to Replace Netanyahu",
+   "date": "2026-10-22T19:00:00Z",
+   "duration": 3029,
+   "description": "Five days before Israel votes, the man leading half the polls is a general who has never held office — and the math says nobody can win. This episode reconstructs Gadi Eisenkot's rise, the party he built in a year, and the deadlock waiting on the other side of October 27.\n Inside: the son he buried and the doctrine he wrote; Gantz's exit and the threshold arithmetic behind it; the red line he read into the record (\"I will not serve under Netanyahu\"); the state-inquiry fight driving the whole election; and the honest counter-case — the ten-poll average actually has Likud ahead, and Israel's generals have a mixed record once they take the chair.\n Follow along for the next deep dive.\n Stay…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792780545253-6b8bee2385ae8.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/231-Eisenkot-The-General-Running-to-Replace-Netanyahu-e3qvp5i",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127967858/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F87b73706-2872-9546-04a0-b9df2986a60b.m4a",
+   "number": "231"
+  },
+  {
    "id": "morningread:6hFvuPA0CQ67f5aVH91gYY",
    "show": "morningread",
    "kind": "episode",
@@ -226,6 +268,48 @@
    "spotify_video": false
   },
   {
+   "id": "polymath:77cfa9ef 4545 468b 8e54 c564508d3e72",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#230 Lovecraft Country: The Hit HBO Cancelled and Never Explained",
+   "date": "2026-10-22T16:00:00Z",
+   "duration": 3756,
+   "description": "A hit show, cancelled after one season, by a network that never explained why. Lovecraft Country grew its audience all season, topped HBO Max, and pulled 18 Emmy nominations, including Drama Series, eleven days after HBO ended it. A second season, Supremacy, existed on paper, complete with a map of a divided America built on the finale's spell. So what actually happened? This episode reconstructs the decision from the record: the numbers by their separate measures, the cost nobody ever sourced, the graded causes (economics, a book that ended, an institution mid-merger, and one anonymously sourced account that must be carried carefully), and Casey Bloys' only explanation: \"a confluence of…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792775567319-ee23002e353dc.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/230-Lovecraft-Country-The-Hit-HBO-Cancelled-and-Never-Explained-e3qtpd8",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127902568/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-22%2Fc26fcb93-f005-b9cb-5bf3-b64c6be0fb2d.m4a",
+   "number": "230"
+  },
+  {
+   "id": "polymath:c3083a4c bb77 4ce1 b992 4953c0a621d1",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#229 Jonathan Majors: The Villain Who Broke Marvel's Timeline",
+   "date": "2026-10-22T01:00:00Z",
+   "duration": 3068,
+   "description": "He was supposed to be everywhere. Marvel built its Multiverse Saga on one actor playing infinite variants of the same villain — then a Manhattan jury, a split verdict, and a firing within hours ended it. This episode reconstructs the whole braid: Jonathan Majors' trial count by count, the Kang architecture across Loki and Quantumania, the timeline that was designed and the one that actually happened, and how Marvel replaced a saga with a mask it already owned.\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792779503830-9056b3541b8f6.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/229-Jonathan-Majors-The-Villain-Who-Broke-Marvels-Timeline-e3qvo3q",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127966778/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2Fe576e532-82a9-9a51-b6d8-26e80f1c0082.m4a",
+   "number": "229"
+  },
+  {
+   "id": "polymath:713535d2 1b49 4c23 9d0d 0a0194263306",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#228 Are Redheads Black? The Gene, the Pharaoh, and the Meme",
+   "date": "2026-10-21T22:00:00Z",
+   "duration": 3239,
+   "description": "In May 2025, the internet declared redheads Black — and meant it at least five different ways. This episode separates the claims and tests each one: the genetics of the red-hair gene and where its mutations actually arose, a redheaded pharaoh under a Paris microscope, Malcolm X's family tree, and the Melanesian islanders who evolved red hair through a completely different gene. What's literally true, what's a distortion, and what's false — layer by layer.\n Follow along for the next deep dive.\n Stay curious.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792777903233-9a33e0b380d89.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/228-Are-Redheads-Black--The-Gene--the-Pharaoh--and-the-Meme-e3qvnfo",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127966136/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F7aa7f112-7542-8cf2-de63-89c45628fcc7.m4a",
+   "number": "228"
+  },
+  {
    "id": "polymath:62f1b827 5d78 4e70 be86 e8d1254f7e51",
    "show": "polymath",
    "kind": "episode",
@@ -234,10 +318,24 @@
    "duration": 3191,
    "description": "What is actually out there, and what could it mean for us if we could reach it? Asteroids are failed planets, frozen feedstock from the solar system's construction, and water locked in clay older than Earth. This episode explores what asteroid mining really is: the metal cores of shattered worlds, the platinum-group metals the hydrogen economy is running short on, and the gas stations floating at the top of Earth's gravity well.\n Along the way: the missions that already went out and touched them (Hayabusa2, OSIRIS-REx, NASA's Psyche, China's Tianwen-2), the startups that tried and died, how close the technology honestly is, the price paradox that breaks the famous business model, who owns…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792614356084-988e6dbec42a9.jpg",
-   "url": "https://open.spotify.com/episode/3p1vzWZW9cOFfDuvNL3254",
-   "spotify_url": "https://open.spotify.com/episode/3p1vzWZW9cOFfDuvNL3254",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/227-Asteroid-Mining-Humanitys-Next-Industry-e3qsbai",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127855378/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-21%2Fe7daf340-b159-5a8c-c381-688cb18d4b51.m4a",
    "number": "227"
+  },
+  {
+   "id": "polymath:aa21cd01 f7df 47f2 bc84 aa40d8782007",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#226 The Envelope: How Moonlight Really Won.",
+   "date": "2026-10-21T20:15:00Z",
+   "duration": 3173,
+   "description": "It is still the most shocking moment in Oscars history: La La Land announced as Best Picture, speeches underway — then the correction. Moonlight had won. This episode reconstructs that night minute by minute and asks the question underneath it: the count was never wrong, only the envelope was. So what actually failed?\n Inside: the duplicate card that survived in the wrong set, the backstage photo tweeted minutes before the handoff, how preferential voting really works, why the results are memorized and written down nowhere, PwC's role since 1935 and the sealed envelope born in 1941, and the counterfactual the system cannot answer — if the count itself were ever wrong, no one would ever…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792776872809-083c9f750c51d.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/226-The-Envelope-How-Moonlight-Really-Won-e3qvmpa",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127965418/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F16255a3e-afd6-17e3-a744-b3e5279380f6.m4a",
+   "number": "226"
   },
   {
    "id": "polymath:c5150759 fd6b 4373 86fa 2c45bc1ec5f6",
@@ -356,7 +454,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -466,7 +564,7 @@
    "date": "2026-10-15T21:22:00Z",
    "duration": 2283,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_url": "https://open.spotify.com/episode/4BaNHWmBqtYcR7qTrFXAK0",
    "spotify_video": false
@@ -892,7 +990,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -905,7 +1003,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -932,7 +1030,7 @@
    "date": "2026-10-04T20:11:00Z",
    "duration": 1075,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
    "url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_video": false
@@ -959,7 +1057,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -972,7 +1070,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -999,7 +1097,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -4238,9 +4336,9 @@
   "polymath": {
    "ok": true,
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
-   "spotify_name": "The Eclectic Polymath Podcast",
+   "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 226,
+   "episodes": 233,
    "spotify_matches": 1
   },
   "approachable": {
