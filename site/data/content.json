@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T01:22:11Z",
+ "generated_at": "2026-10-26T06:32:16Z",
  "shows": [
   {
    "key": "ccpod",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -109,8 +109,8 @@
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
    "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
-   "latest": "2026-10-23T16:00:00Z",
-   "count": 6
+   "latest": "2026-10-26T04:00:00Z",
+   "count": 7
   },
   {
    "key": "dominate",
@@ -159,7 +159,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-23T20:00:00Z",
    "count": 12
   },
@@ -213,6 +213,19 @@
  ],
  "episodes": [
   {
+   "id": "riff:4O4oE9FdrKwZs72X1KAyOs",
+   "show": "riff",
+   "kind": "episode",
+   "title": "The Week Ahead: October 26 – November 1",
+   "date": "2026-10-26T04:00:00Z",
+   "duration": 2428,
+   "description": "",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a9b9f60e9b417207d6441740a",
+   "url": "https://open.spotify.com/episode/4O4oE9FdrKwZs72X1KAyOs",
+   "spotify_url": "https://open.spotify.com/episode/4O4oE9FdrKwZs72X1KAyOs",
+   "spotify_video": false
+  },
+  {
    "id": "brazil:4hWgfgic2US6TtVJb16Jyf",
    "show": "brazil",
    "kind": "episode",
@@ -234,8 +247,8 @@
    "duration": 2668,
    "description": "On October 23, 2026, Japan learned that Ryū Murakami was dead, and almost every English-language obituary had to begin the same way: not that Murakami. This episode is about the one the world mostly didn't read: the novelist who grew up in the shadow of an American naval base, won Japan's biggest literary prize at 24 with a novel of drugs and drift, and spent fifty years writing the people postwar Japan's success story left behind.\n Inside: Coin Locker Babies and the masterpiece that took fifteen years to reach English; the double-Murakami rivalry, including the sense of competition Haruki himself says helped push him to become a novelist; Audition, Miike, and the Western cult that credited…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792784079250-91ad27894ed59.jpg",
-   "url": "https://open.spotify.com/episode/4TwvSppUBE1xV8B8ooys0l",
-   "spotify_url": "https://open.spotify.com/episode/4TwvSppUBE1xV8B8ooys0l",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/235-Ry-Murakami-The-Other-Murakami-e3qvret",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/127970205/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F71ecc2a0-7b74-3fc8-994f-fc06e2c1689f.m4a",
    "number": "235"
   },
@@ -316,7 +329,7 @@
    "date": "2026-10-22T18:58:00Z",
    "duration": 1193,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a144dcbe9d61248d7ba1350dc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a144dcbe9d61248d7ba1350dc",
    "url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
    "spotify_url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
    "spotify_video": false
@@ -413,7 +426,7 @@
    "date": "2026-10-20T06:39:00Z",
    "duration": 1714,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
    "url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_video": false
@@ -631,7 +644,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -644,7 +657,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -796,7 +809,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -1111,7 +1124,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -1124,7 +1137,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -1164,7 +1177,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -2395,7 +2408,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -2408,7 +2421,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4393,7 +4406,7 @@
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
    "episodes": 235,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -4413,8 +4426,8 @@
    "feed": null,
    "spotify_name": "The Daily Riff",
    "full_catalog": false,
-   "episodes": 6,
-   "spotify_matches": 6
+   "episodes": 7,
+   "spotify_matches": 7
   },
   "dominate": {
    "ok": true,
