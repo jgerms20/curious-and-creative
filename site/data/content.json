@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T14:24:59Z",
+ "generated_at": "2026-10-26T20:37:43Z",
  "shows": [
   {
    "key": "ccpod",
@@ -108,7 +108,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-26T04:00:00Z",
    "count": 7
   },
@@ -159,7 +159,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-23T20:00:00Z",
    "count": 12
   },
@@ -181,9 +181,9 @@
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
    "art": "assets/art/morningread.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a575b8e353de70af5d48ab3ad",
-   "latest": "2026-10-22T18:58:00Z",
-   "count": 1
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a575b8e353de70af5d48ab3ad",
+   "latest": "2026-10-26T18:32:00Z",
+   "count": 2
   },
   {
    "key": "abolitionist",
@@ -212,6 +212,19 @@
   }
  ],
  "episodes": [
+  {
+   "id": "morningread:54Uk0qbZf2ZdG9lWvIrNDv",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "The Morning Read — Monday, October 26: Lula Wins a Fourth Term",
+   "date": "2026-10-26T18:32:00Z",
+   "duration": 1298,
+   "description": "",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a691ad38dcfc14e7a67cf9657",
+   "url": "https://open.spotify.com/episode/54Uk0qbZf2ZdG9lWvIrNDv",
+   "spotify_url": "https://open.spotify.com/episode/54Uk0qbZf2ZdG9lWvIrNDv",
+   "spotify_video": false
+  },
   {
    "id": "polymath:9df48401 8879 4d3a a87f 526e0466f06a",
    "show": "polymath",
@@ -289,7 +302,7 @@
    "date": "2026-10-23T20:00:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
    "url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_video": false
@@ -577,7 +590,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -674,7 +687,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -713,7 +726,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -1086,7 +1099,7 @@
    "date": "2026-10-05T17:39:00Z",
    "duration": 960,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
@@ -1113,7 +1126,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -1193,7 +1206,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -4506,8 +4519,8 @@
    "feed": null,
    "spotify_name": "The Morning Read",
    "full_catalog": false,
-   "episodes": 1,
-   "spotify_matches": 1
+   "episodes": 2,
+   "spotify_matches": 2
   },
   "abolitionist": {
    "ok": true,
