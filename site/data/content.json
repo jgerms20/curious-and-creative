@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T06:32:16Z",
+ "generated_at": "2026-10-26T14:24:59Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-23T16:00:01Z",
-   "count": 235
+   "latest": "2026-10-26T13:42:42Z",
+   "count": 239
   },
   {
    "key": "approachable",
@@ -213,6 +213,48 @@
  ],
  "episodes": [
   {
+   "id": "polymath:9df48401 8879 4d3a a87f 526e0466f06a",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#239 The Greenville Clowns: The Monster Nobody Ever Found",
+   "date": "2026-10-26T13:42:42Z",
+   "duration": 2914,
+   "description": "In late August 2016, a mother in Greenville, South Carolina reported what her son had seen in the woods behind their apartment complex: clowns, whispering, flashing green lights, trying to lure children in. Deputies searched the abandoned house by the pond and found nothing. Within nine days the story was national. Within six weeks it was a worldwide panic — school lockdowns, clown hunts, a benched Ronald McDonald, a question at a White House briefing.\n This episode reconstructs the whole cascade from the Greenville file itself, which is the strangest document in the story: no clown was ever found, photographed credibly, or arrested there, and there was never a case. It also traces the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793022010216-2fef7c5890c4e.jpg",
+   "url": "https://open.spotify.com/episode/6qFsSnIk5CQ2HucjHsR2ix",
+   "spotify_url": "https://open.spotify.com/episode/6qFsSnIk5CQ2HucjHsR2ix",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128111857/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fdbc070ee-2e47-88b9-e4f9-dfe12bbb045b.m4a",
+   "number": "239"
+  },
+  {
+   "id": "polymath:44c2632b 4910 408c 88bd 9b8b0ebb2388",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#238 Jay-Z vs. Nas: Two Casinos, Two Theories of Black Capital",
+   "date": "2026-10-26T13:24:37Z",
+   "duration": 2462,
+   "description": "In September 2025, New York ran the same experiment twice. Jay-Z stood before a community committee and pitched a Caesars casino in the middle of Times Square: \"We from these neighborhoods. We are the community.\" The committee voted him down, 4 to 2. Eight days later, Queens voted 6 to 0 for a $5.5 billion Resorts World expansion with Nas as its hometown face — and the borough president cast his yes while quoting \"Queens Get the Money.\"\n This episode reconstructs both fights: the Broadway coalition that killed the Times Square bid, the governor, mayor, and building trades who backed it anyway, and the consent-first Queens campaign that never faced a single speaker against it. It keeps the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793020958425-4cf6ed2c5fed2.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/238-Jay-Z-vs--Nas-Two-Casinos--Two-Theories-of-Black-Capital-e3r3hi6",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128091142/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2F2f142950-ebcc-ae57-6b51-187776b34384.m4a",
+   "number": "238"
+  },
+  {
+   "id": "polymath:3cda3385 ee84 47d5 ad69 94e7288a906b",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#237 Obama's Incomplete Bill: The Healthcare Law That Never Finished the Job",
+   "date": "2026-10-26T04:56:46Z",
+   "duration": 3634,
+   "description": "When Barack Obama signed the Affordable Care Act in March 2010, he called it the culmination of a century’s fight. Fifteen years later, even its defenders reach for the same word: incomplete. This episode takes that word apart — because the bill was left unfinished in three different ways, and they are not the same story.\n Part of it was designed out: the public option traded away senator by senator, the deals cut with the drug and hospital industries, a law built on private insurers from the first sketch. Part of it was cut out: the Supreme Court made Medicaid expansion optional, opening a coverage gap that today holds about 1.2 million people, disproportionately Black and Southern. And…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792990572137-2abfb320d31d7.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/237-Obamas-Incomplete-Bill-The-Healthcare-Law-That-Never-Finished-the-Job-e3r38ak",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128081684/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fbc01737e-d027-5b5d-0c6e-f38b24769a39.m4a",
+   "number": "237"
+  },
+  {
    "id": "riff:4O4oE9FdrKwZs72X1KAyOs",
    "show": "riff",
    "kind": "episode",
@@ -224,6 +266,20 @@
    "url": "https://open.spotify.com/episode/4O4oE9FdrKwZs72X1KAyOs",
    "spotify_url": "https://open.spotify.com/episode/4O4oE9FdrKwZs72X1KAyOs",
    "spotify_video": false
+  },
+  {
+   "id": "polymath:7cc788d3 a257 4064 8179 98c259c695f7",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#236 Harold Washington: The Mayor Who Beat the Machine",
+   "date": "2026-10-25T01:00:00Z",
+   "duration": 2958,
+   "description": "Harold Washington didn't inherit Chicago. He registered it. Before the 1983 run he set a condition: 50,000 new Black voters, or no campaign. Black Chicago delivered nearly double, and the machine that had run the city for half a century met the one candidate it couldn't absorb.\n This episode goes deep on the whole arc: the Daley machine and the Black submachine Washington came up under, the ugliest general election in modern Chicago history, and the Council Wars that froze his first term. Then the record itself: the appointments, Executive Order 85-2 opening city contracts, Fair Share budgeting, and what it concretely meant for Black Chicago.\n And finally the two legacies: \"Harold,\" the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792978104126-7c17d1675b347.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/236-Harold-Washington-The-Mayor-Who-Beat-the-Machine-e3r357t",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128078525/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fb5a44a9a-39aa-767b-620e-8a5b84491457.m4a",
+   "number": "236"
   },
   {
    "id": "brazil:4hWgfgic2US6TtVJb16Jyf",
@@ -644,7 +700,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -657,7 +713,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -670,7 +726,7 @@
    "date": "2026-10-15T11:12:00Z",
    "duration": 2222,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_video": false
@@ -809,7 +865,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -1030,7 +1086,7 @@
    "date": "2026-10-05T17:39:00Z",
    "duration": 960,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
@@ -1124,7 +1180,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -1137,7 +1193,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -1164,7 +1220,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -1177,7 +1233,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -2421,7 +2477,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4405,8 +4461,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 235,
-   "spotify_matches": 0
+   "episodes": 239,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
