@@ -166,7 +166,63 @@
    "itunes_search": [
     "The Morning Read"
    ],
-   "rss": null
+   "rss": null,
+   "match_owner": [
+    "Joshua German",
+    "Joshua McKenzie German",
+    "jgerms20",
+    "jgerms"
+   ]
+  },
+  {
+   "key": "hollywoodinsider",
+   "name": "Hollywood Insider",
+   "short": "Hollywood Insider",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "What's really happening in Hollywood, made with AI.",
+   "about": "",
+   "spotify": null,
+   "rss": null,
+   "itunes_search": [
+    "Hollywood Insider"
+   ],
+   "match_owner": [
+    "Joshua German",
+    "Joshua McKenzie German",
+    "jgerms20",
+    "jgerms"
+   ]
+  },
+  {
+   "key": "fastbreak",
+   "name": "The Fast Break",
+   "short": "The Fast Break",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "Sports, fast, made with AI.",
+   "about": "",
+   "spotify": null,
+   "rss": null,
+   "itunes_search": [
+    "The Fast Break"
+   ],
+   "match_owner": [
+    "Joshua German",
+    "Joshua McKenzie German",
+    "jgerms20",
+    "jgerms"
+   ]
   },
   {
    "key": "abolitionist",
