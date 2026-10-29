@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T08:40:25Z",
+ "generated_at": "2026-10-29T16:17:13Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-29T02:19:31Z",
-   "count": 245
+   "latest": "2026-10-28T21:37:12Z",
+   "count": 244
   },
   {
    "key": "approachable",
@@ -108,9 +108,9 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
-   "latest": "2026-10-28T17:29:00Z",
-   "count": 10
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "latest": "2026-10-29T14:47:00Z",
+   "count": 11
   },
   {
    "key": "dominate",
@@ -181,9 +181,9 @@
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
    "art": "assets/art/morningread.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
-   "latest": "2026-10-28T17:41:00Z",
-   "count": 3
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
+   "latest": "2026-10-29T13:34:00Z",
+   "count": 4
   },
   {
    "key": "abolitionist",
@@ -213,18 +213,44 @@
  ],
  "episodes": [
   {
-   "id": "polymath:54137c10 5545 4ee5 bd0c 693f4b08aae0",
+   "id": "riff:0fOZboUXPRPcb62tCjKM4n",
+   "show": "riff",
+   "kind": "episode",
+   "title": "Immanuel Wilkins: The Genius at the Vanguard",
+   "date": "2026-10-29T14:47:00Z",
+   "duration": 2554,
+   "description": "",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a32599379dc14175a0c1c453f",
+   "url": "https://open.spotify.com/episode/0fOZboUXPRPcb62tCjKM4n",
+   "spotify_url": "https://open.spotify.com/episode/0fOZboUXPRPcb62tCjKM4n",
+   "spotify_video": false
+  },
+  {
+   "id": "morningread:6ki9i2c6fXcvjpzULHIgzE",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Thursday, October 29, 2026",
+   "date": "2026-10-29T13:34:00Z",
+   "duration": 1191,
+   "description": "",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a883e5e1ad80cb4808e5f053d",
+   "url": "https://open.spotify.com/episode/6ki9i2c6fXcvjpzULHIgzE",
+   "spotify_url": "https://open.spotify.com/episode/6ki9i2c6fXcvjpzULHIgzE",
+   "spotify_video": false
+  },
+  {
+   "id": "polymath:32234930 9f2b 4fa1 98b4 085a0d1e7e87",
    "show": "polymath",
    "kind": "episode",
-   "title": "#246 Los Angeles: The Capital of the Pacific Century",
-   "date": "2026-10-29T02:19:31Z",
-   "duration": 3954,
-   "description": "An Instagram reel argued Los Angeles is destined to become the greatest city in the world, and its comments kept returning to one phrase: the third wave. This episode audits the claim — the waves of LA's history, the city it never finished building, and the ocean it faces.\n The Pacific passed the Atlantic in American trade in the early 1980s and now runs about two to one in goods. San Pedro Bay moves nearly a third of the nation's containerized trade. Mayors from Tom Bradley to Eric Garcetti have called LA the capital of the Pacific Rim. The numbers, the rivals, and the counterarguments — peak China, the Taiwan Strait, a county population that has started to shrink — all get their hearing.\n…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793240279536-a76e6add7bd6c.jpg",
-   "url": "https://open.spotify.com/episode/2hVT2KVrMP5SIZzoOP4Xbn",
-   "spotify_url": "https://open.spotify.com/episode/2hVT2KVrMP5SIZzoOP4Xbn",
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128325820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-29%2Fe58103e8-e3c9-0239-89cf-42a2193310b0.m4a",
-   "number": "246"
+   "title": "#243 Serbia's Student List: The Movement With No Leader That Beat the Strongman",
+   "date": "2026-10-28T21:37:12Z",
+   "duration": 2701,
+   "description": "On October 25, 2026, Serbia handed power to something with no precedent in Europe: a candidate list designed by a leaderless movement — 250 names chosen by student plenums, under rules written to make sure none of them could ever become the story. This episode is how that machine was built, and what it has to survive now that it has won.\n It starts with sixteen minutes of silence. The Novi Sad station canopy collapse of November 2024 — sixteen dead, and then an accountability void: indictments filed, charges against six of the accused later dropped with an appeal pending, no trial ever scheduled. Grief became a system: open plenums voting on everything, a daily silence at 11:52 in more than…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793223364606-532aaa1876cf3.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/243-Serbias-Student-List-The-Movement-With-No-Leader-That-Beat-the-Strongman-e3ra156",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128303718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2F38da79d4-b303-8d7f-b844-62223c93d6f4.m4a",
+   "number": "243"
   },
   {
    "id": "polymath:ed629b5b cd70 49db 943b 74a880394417",
@@ -239,20 +265,6 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/128302200/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fc4196c36-976c-acc1-d42e-721840e8ce34.m4a",
    "number": "244"
-  },
-  {
-   "id": "polymath:32234930 9f2b 4fa1 98b4 085a0d1e7e87",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#243 Serbia's Student List: The Movement With No Leader That Beat the Strongman",
-   "date": "2026-10-28T20:14:01Z",
-   "duration": 2701,
-   "description": "On October 25, 2026, Serbia handed power to something with no precedent in Europe: a candidate list designed by a leaderless movement — 250 names chosen by student plenums, under rules written to make sure none of them could ever become the story. This episode is how that machine was built, and what it has to survive now that it has won.\n It starts with sixteen minutes of silence. The Novi Sad station canopy collapse of November 2024 — sixteen dead, and then an accountability void: indictments filed, charges against six of the accused later dropped with an appeal pending, no trial ever scheduled. Grief became a system: open plenums voting on everything, a daily silence at 11:52 in more than…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793223364606-532aaa1876cf3.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/243-Serbias-Student-List-The-Movement-With-No-Leader-That-Beat-the-Strongman-e3ra156",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128303718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2F38da79d4-b303-8d7f-b844-62223c93d6f4.m4a",
-   "number": "243"
   },
   {
    "id": "polymath:33273cc5 97e7 40cd 885b b8f659bab409",
@@ -276,7 +288,7 @@
    "date": "2026-10-28T17:41:00Z",
    "duration": 729,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a506ec25feb5b0450e7cc981d",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a506ec25feb5b0450e7cc981d",
    "url": "https://open.spotify.com/episode/0t4U4xxBlPidvhI4u62u0x",
    "spotify_url": "https://open.spotify.com/episode/0t4U4xxBlPidvhI4u62u0x",
    "spotify_video": false
@@ -303,7 +315,7 @@
    "date": "2026-10-28T17:29:00Z",
    "duration": 2032,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
    "url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_video": false
@@ -343,7 +355,7 @@
    "date": "2026-10-26T21:23:00Z",
    "duration": 1645,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
    "url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_video": false
@@ -356,7 +368,7 @@
    "date": "2026-10-26T21:14:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a73fe1c4f1485aeb59d3ca086",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a73fe1c4f1485aeb59d3ca086",
    "url": "https://open.spotify.com/episode/0j0DAmLGAEWXniX9VL1LrH",
    "spotify_url": "https://open.spotify.com/episode/0j0DAmLGAEWXniX9VL1LrH",
    "spotify_video": false
@@ -369,7 +381,7 @@
    "date": "2026-10-26T18:32:00Z",
    "duration": 1298,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a691ad38dcfc14e7a67cf9657",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a691ad38dcfc14e7a67cf9657",
    "url": "https://open.spotify.com/episode/54Uk0qbZf2ZdG9lWvIrNDv",
    "spotify_url": "https://open.spotify.com/episode/54Uk0qbZf2ZdG9lWvIrNDv",
    "spotify_video": false
@@ -451,7 +463,7 @@
    "date": "2026-10-23T20:00:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
    "url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_video": false
@@ -478,7 +490,7 @@
    "date": "2026-10-23T16:00:00Z",
    "duration": 1280,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa2242a6bc1ae0210d177e823",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa2242a6bc1ae0210d177e823",
    "url": "https://open.spotify.com/episode/0NhokwIetrzAcCutEdXdwE",
    "spotify_url": "https://open.spotify.com/episode/0NhokwIetrzAcCutEdXdwE",
    "spotify_video": false
@@ -547,7 +559,7 @@
    "date": "2026-10-22T18:58:00Z",
    "duration": 1193,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a144dcbe9d61248d7ba1350dc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a144dcbe9d61248d7ba1350dc",
    "url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
    "spotify_url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
    "spotify_video": false
@@ -644,7 +656,7 @@
    "date": "2026-10-20T06:39:00Z",
    "duration": 1714,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
    "url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_video": false
@@ -657,7 +669,7 @@
    "date": "2026-10-19T18:40:00Z",
    "duration": 778,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
    "url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_video": false
@@ -875,7 +887,7 @@
    "date": "2026-10-15T20:19:00Z",
    "duration": 2104,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_url": "https://open.spotify.com/episode/67ZFR85yAZ8cEMdXAPEZ04",
    "spotify_video": false
@@ -1027,7 +1039,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -1248,7 +1260,7 @@
    "date": "2026-10-05T17:39:00Z",
    "duration": 960,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
@@ -1275,7 +1287,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -1288,7 +1300,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -1342,7 +1354,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -1395,7 +1407,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -2626,7 +2638,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -4623,8 +4635,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 245,
-   "spotify_matches": 1
+   "episodes": 244,
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -4644,8 +4656,8 @@
    "feed": null,
    "spotify_name": "The Daily Riff",
    "full_catalog": false,
-   "episodes": 10,
-   "spotify_matches": 10
+   "episodes": 11,
+   "spotify_matches": 11
   },
   "dominate": {
    "ok": true,
@@ -4668,8 +4680,8 @@
    "feed": null,
    "spotify_name": "The Morning Read",
    "full_catalog": false,
-   "episodes": 3,
-   "spotify_matches": 3
+   "episodes": 4,
+   "spotify_matches": 4
   },
   "abolitionist": {
    "ok": true,
