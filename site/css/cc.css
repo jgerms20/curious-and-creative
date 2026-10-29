@@ -948,6 +948,51 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .net__legend li { display: inline-flex; align-items: center; gap: .45em; }
 /* the longer wordmark (Curious Creative Co.) has to share a phone-width header with three buttons */
 @media (max-width: 440px) { .hdr__bar { gap: .45rem; } .hdr .wordmark { font-size: .95rem; gap: .14em; } .hdr .icon-btn { width: 40px; height: 40px; } }
-@media (max-width: 350px) { .hdr .wordmark .a { display: none; } }
+@media (max-width: 350px) { .hdr .wordmark .co { display: none; } }
 .web__node--hybrid .web__ring { stroke: var(--green); }
 [data-show="morningread"] { --c: #C9781C; }
+
+/* wordmark: THE CURIOUS & CREATIVE CO. */
+.wordmark .the { font-size: .52em; font-weight: 850; letter-spacing: .04em; align-self: center; color: var(--ink-soft); margin-right: .05em; }
+.wordmark .co { color: var(--wm-pink); }
+@media (max-width: 440px) { .hdr .wordmark .the { display: none; } }
+#photovideo #photography { margin-top: 1.25rem; }
+/* studio: photography and videography sections */
+.studio-sec { margin-top: clamp(3rem, 7vw, 5rem); scroll-margin-top: 96px; }
+.studio-sec__lede { color: var(--ink-soft); font-size: 1.08rem; max-width: 60ch; margin: -.5rem 0 1.25rem; }
+.studio-sec .showblock__links { margin-top: 1.5rem; }
+
+/* network as a solar system: orbits, a faint star field, a glowing sun */
+.web__orbit { fill: none; stroke: var(--line-strong); stroke-width: 1.2; stroke-dasharray: 2 7; opacity: .7; }
+.web__orbit--0 { stroke-dasharray: 3 6; }
+.web__star { fill: var(--ink); opacity: .14; }
+.web__hub-glow { fill: color-mix(in srgb, var(--gold) 22%, transparent); }
+@media (prefers-reduced-motion: no-preference) {
+  .web__orbit { animation: web-orbit 60s linear infinite; }
+  .web__orbit--1 { animation-duration: 90s; animation-direction: reverse; }
+  .web__orbit--2 { animation-duration: 120s; }
+  .web__hub-glow { animation: web-glow 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+}
+@keyframes web-orbit { to { stroke-dashoffset: -180; } }
+@keyframes web-glow { 50% { transform: scale(1.08); opacity: .75; } }
+.web--orbit .web__label { font-size: 16px; }
+@media (max-width: 600px) { .web--orbit .web__label { font-size: 24px; } .web--orbit .web__tag { font-size: 17px; } }
+.web__hub .web__hub-glow { fill: color-mix(in srgb, var(--gold) 26%, transparent); }
+.web__noart { fill: var(--c, var(--grape)); }
+.web__initials { fill: #fff; font-weight: 900; text-anchor: middle; letter-spacing: -.02em; }
+
+/* password gate for invite-only projects */
+.gate { margin: auto; border: 0; border-radius: var(--box-r); padding: 0; background: var(--card); color: var(--ink); width: min(420px, calc(100vw - 32px)); box-shadow: 0 30px 80px -20px rgba(0,0,0,.55); }
+.gate::backdrop { background: rgba(10, 6, 24, .6); backdrop-filter: blur(4px); }
+.gate__form { display: grid; gap: .8rem; padding: 2rem; text-align: left; }
+.gate__lock { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; font: italic 700 2.4rem Georgia, serif; color: #fff; background: linear-gradient(135deg, #3A1C78, #0B5C7A); }
+.gate h2 { font-size: 1.5rem; font-weight: 880; }
+.gate p { color: var(--ink-soft); }
+.gate input { font: inherit; padding: .8em 1em; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); }
+.gate__err { color: var(--wm-pink) !important; font-weight: 750; }
+
+/* about: the flagship stands out */
+.tile--star { grid-column: span 2; position: relative; background: linear-gradient(135deg, color-mix(in srgb, var(--gold) 18%, var(--card)), var(--card) 60%); border: 2px solid var(--gold); }
+.tile--star h3 { font-size: 1.7rem; }
+.tile__star { align-self: flex-start; display: inline-flex; gap: .35em; align-items: center; padding: .3em .7em; border-radius: var(--pill); background: var(--gold); color: #1a1205; font-size: .75rem; font-weight: 850; text-transform: uppercase; letter-spacing: .06em; }
+@media (max-width: 640px) { .tile--star { grid-column: auto; } }

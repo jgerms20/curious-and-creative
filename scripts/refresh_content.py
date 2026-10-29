@@ -559,7 +559,7 @@ def discover_feed(show, spotify_name, known=()):
                     # or, for a brand-new show with no episodes yet, a feed owned by us
                     owners = [norm(o) for o in show.get("match_owner", [])]
                     ours = (known and any(match_spotify(it["title"], known) for it in its)) or \
-                        (owners and any(o and o in norm(ch.get("author")) for o in owners))
+                        (owners and any(o and o in norm(ch.get("author")) for o in owners) and norm(ch["title"]) in want)
                     tried[f"{host}/{slug}"] += f" feed {ch['title']!r} by {ch.get('author')!r}, {len(its)} items"
                     if ours:
                         log(f"  creators page {host}/{slug} -> {url}")
@@ -1152,7 +1152,7 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs")}
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs", "match_owner")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]
