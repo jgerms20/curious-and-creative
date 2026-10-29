@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T21:45:26Z",
+ "generated_at": "2026-10-29T01:52:57Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-26T13:42:42Z",
-   "count": 239
+   "latest": "2026-10-28T20:17:22Z",
+   "count": 244
   },
   {
    "key": "approachable",
@@ -108,7 +108,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-10-28T17:29:00Z",
    "count": 10
   },
@@ -181,7 +181,7 @@
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
    "art": "assets/art/morningread.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a575b8e353de70af5d48ab3ad",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
    "latest": "2026-10-28T17:41:00Z",
    "count": 3
   },
@@ -213,17 +213,73 @@
  ],
  "episodes": [
   {
+   "id": "polymath:ed629b5b cd70 49db 943b 74a880394417",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#244 Anthropic by the Numbers: The IPO Document Nobody Read",
+   "date": "2026-10-28T20:17:22Z",
+   "duration": 3319,
+   "description": "Everyone has an opinion about Anthropic's IPO. This episode ignores all of them. It is built from one document and one document only: the S-1 Anthropic filed with the SEC on October 26, 2026 — the registration statement for its Nasdaq debut under the ticker ANT, read cover to cover.\n What the filing actually says is stranger than the commentary. Revenue of roughly $16 billion in the first half of 2026 against a net loss of about $80.7 billion in the same six months. Full-year net losses of $1.5 billion in 2023, $8.3 billion in 2024, and $42.0 billion in 2025 — driven less by operations than by stock compensation and the revaluation of its own funding instruments. A dual-class structure that…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793218576272-4d619a5b1ad13.jpg",
+   "url": "https://open.spotify.com/episode/1sPFk3tLCuKqSKlX5gvwFh",
+   "spotify_url": "https://open.spotify.com/episode/1sPFk3tLCuKqSKlX5gvwFh",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128302200/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fc4196c36-976c-acc1-d42e-721840e8ce34.m4a",
+   "number": "244"
+  },
+  {
+   "id": "polymath:32234930 9f2b 4fa1 98b4 085a0d1e7e87",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#243 Serbia's Student List: The Movement With No Leader That Beat the Strongman",
+   "date": "2026-10-28T20:14:01Z",
+   "duration": 2701,
+   "description": "On October 25, 2026, Serbia handed power to something with no precedent in Europe: a candidate list designed by a leaderless movement — 250 names chosen by student plenums, under rules written to make sure none of them could ever become the story. This episode is how that machine was built, and what it has to survive now that it has won.\n It starts with sixteen minutes of silence. The Novi Sad station canopy collapse of November 2024 — sixteen dead, and then an accountability void: indictments filed, charges against six of the accused later dropped with an appeal pending, no trial ever scheduled. Grief became a system: open plenums voting on everything, a daily silence at 11:52 in more than…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793223364606-532aaa1876cf3.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/243-Serbias-Student-List-The-Movement-With-No-Leader-That-Beat-the-Strongman-e3ra156",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128303718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2F38da79d4-b303-8d7f-b844-62223c93d6f4.m4a",
+   "number": "243"
+  },
+  {
+   "id": "polymath:33273cc5 97e7 40cd 885b b8f659bab409",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#242 DreamWorks: The Studio Built to Beat Disney",
+   "date": "2026-10-28T20:12:32Z",
+   "duration": 3290,
+   "description": "In his new memoir, Ari Emanuel tells the story of how Jeffrey Katzenberg got pushed out of Disney — and what got built next. In October 1994, Katzenberg, Steven Spielberg, and David Geffen announced DreamWorks SKG: the first new major studio in decades, priced at $2.7 billion before it had made a single film, on three names and one grudge.\n This episode reconstructs the whole arc: the Disney Renaissance Katzenberg ran and the presidency he was denied when Frank Wells died; the 2-percent lawsuit and the settlement Geffen brokered at his Malibu home; the two checks that actually capitalized the dream — Paul Allen's $500 million and Miky Lee's $300 million for Korea's CJ — and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793218288807-0646eb57cc794.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/242-DreamWorks-The-Studio-Built-to-Beat-Disney-e3r9unt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128301245/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fd1471d2e-d9b9-343a-bbfa-64a7407c6e1a.m4a",
+   "number": "242"
+  },
+  {
    "id": "morningread:0t4U4xxBlPidvhI4u62u0x",
    "show": "morningread",
    "kind": "episode",
-   "title": "The Morning Read — Wednesday, October 28: Israel Deadlocked",
+   "title": "Wednesday, October 28, 2026",
    "date": "2026-10-28T17:41:00Z",
    "duration": 729,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a6251573c9ba67ca1557e418d",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a506ec25feb5b0450e7cc981d",
    "url": "https://open.spotify.com/episode/0t4U4xxBlPidvhI4u62u0x",
    "spotify_url": "https://open.spotify.com/episode/0t4U4xxBlPidvhI4u62u0x",
    "spotify_video": false
+  },
+  {
+   "id": "polymath:efc44058 468c 46a2 81e3 e01a100fbf27",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#241 The Bible's Supporting Cast: The Minor Characters Who Move the Whole Story",
+   "date": "2026-10-28T17:38:32Z",
+   "duration": 3905,
+   "description": "They get two verses, one sentence, sometimes no name at all — and the whole story turns on them. This episode is about the Bible's secondary characters: the midwives who lie to Pharaoh before Moses is born, the wife whose quick hands save Moses' life, the foreign priest who designs Israel's court system, and the captive child whose single sentence sets a general's healing in motion.\n We work through the cast — Zipporah and Jethro, Tamar and Rahab, Abigail talking David down from a massacre, Uriah closing out David's own hall of fame, Huldah authenticating the scroll that becomes scripture, Ebed-Melech going down into the pit for Jeremiah, Phoebe carrying the letter to the Romans — and ask…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793209081043-b7940c6ebbc52.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/241-The-Bibles-Supporting-Cast-The-Minor-Characters-Who-Move-the-Whole-Story-e3r9jad",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128289549/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fe504bfe0-ab3b-3aec-b956-e550079e550b.m4a",
+   "number": "241"
   },
   {
    "id": "riff:7a5UZZDih07Fv7lxmIaxYD",
@@ -233,10 +289,24 @@
    "date": "2026-10-28T17:29:00Z",
    "duration": 2032,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
    "url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_video": false
+  },
+  {
+   "id": "polymath:f220af12 ccb6 47ff af8b 69e488247772",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#240 The Eras of Disney: From Snow White to Soul, and the Next Hundred Years",
+   "date": "2026-10-28T17:27:20Z",
+   "duration": 2757,
+   "description": "Ask a room of Disney fans to name the eras and you will start an argument — because every border in Disney's century is a disguised theory of what an era even is. Does the Silver Age end in 1959, when the fairy-tale style peaked, or in 1967, when Walt died? This episode maps the whole taxonomy: the Golden Age, the wartime package years, the Bronze Age drift, the Dark Age, the Renaissance, the Revival, and the era we are in now that still has no name.\n The anchors are two films. The Lion King, the Renaissance's commercial peak — made by the crew the studio itself called the B-team while its A-listers worked on Pocahontas. And Soul, Pixar's creative landmark and the purest symbol of the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793208371002-d60da8c3a6577.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/240-The-Eras-of-Disney-From-Snow-White-to-Soul--and-the-Next-Hundred-Years-e3r9dnt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128283837/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2F5297b5e0-82d2-a119-92c4-8a70f61c02e9.m4a",
+   "number": "240"
   },
   {
    "id": "riff:2XknqJJWEmSRO7wAltXNm7",
@@ -285,7 +355,7 @@
    "date": "2026-10-26T18:32:00Z",
    "duration": 1298,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a691ad38dcfc14e7a67cf9657",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a691ad38dcfc14e7a67cf9657",
    "url": "https://open.spotify.com/episode/54Uk0qbZf2ZdG9lWvIrNDv",
    "spotify_url": "https://open.spotify.com/episode/54Uk0qbZf2ZdG9lWvIrNDv",
    "spotify_video": false
@@ -367,7 +437,7 @@
    "date": "2026-10-23T20:00:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
    "url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_video": false
@@ -394,7 +464,7 @@
    "date": "2026-10-23T16:00:00Z",
    "duration": 1280,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa2242a6bc1ae0210d177e823",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa2242a6bc1ae0210d177e823",
    "url": "https://open.spotify.com/episode/0NhokwIetrzAcCutEdXdwE",
    "spotify_url": "https://open.spotify.com/episode/0NhokwIetrzAcCutEdXdwE",
    "spotify_video": false
@@ -573,7 +643,7 @@
    "date": "2026-10-19T18:40:00Z",
    "duration": 778,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
    "url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_video": false
@@ -752,7 +822,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -943,7 +1013,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -1191,7 +1261,7 @@
    "date": "2026-10-05T11:04:00Z",
    "duration": 1569,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a75bb60fbb0822aab95e92583",
    "url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_url": "https://open.spotify.com/episode/3niTLcEgqoKPRwG9iR1FdK",
    "spotify_video": false
@@ -1204,7 +1274,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -1271,7 +1341,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -1311,7 +1381,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -4539,8 +4609,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 239,
-   "spotify_matches": 0
+   "episodes": 244,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
