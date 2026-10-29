@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shows — Curious Creative Company</title>
-  <meta name="description" content="Every Curious Creative Company show — The Curious & Creative Podcast, The Eclectic Polymath, Too Much to Tweet, Approachable AI, Aspiring Abolitionist, and Dominate the Decade." />
-  <meta property="og:title" content="Shows — Curious Creative Company" />
-  <meta property="og:description" content="Every Curious Creative Company show — The Curious & Creative Podcast, The Eclectic Polymath, Too Much to Tweet, Approachable AI, Aspiring Abolitionist, and Dominate the Decade." />
+  <title>The Podcast Network — The Curious &amp; Creative Company</title>
+  <meta name="description" content="The Curious &amp; Creative Podcast Network: The Curious &amp; Creative Podcast, The Eclectic Polymath, Too Much to Tweet, Approachable AI, and our AI-generated shows, mapped and updated as new episodes drop." />
+  <meta property="og:title" content="The Curious &amp; Creative Podcast Network" />
+  <meta property="og:description" content="The Curious &amp; Creative Podcast Network: The Curious &amp; Creative Podcast, The Eclectic Polymath, Too Much to Tweet, Approachable AI, and our AI-generated shows, mapped and updated as new episodes drop." />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,15 +18,29 @@
 <div data-cc="header"></div>
 <main id="main" class="wrap">
 <header class="phead">
-  <span class="pill-title pill-title--pink">Podcasts &amp; videos</span>
-  <h1 class="phead__title">The mics are on. <em>The takes are hot.</em></h1>
-  <p class="phead__lede">Every show in the network, freshest first. Episodes update on their own from each show's feed, so this page is always current.</p>
-  <p class="showblock__links"><a class="btn btn--dark btn--sm" href="archive.html">Search every episode</a></p>
+  <span class="pill-title pill-title--pink">Podcast Network</span>
+  <h1 class="phead__title">The Curious &amp; Creative <em>Podcast Network.</em></h1>
+  <p class="phead__lede">Every show we make, in one place: the ones Joshua and Janel host, a hybrid of a host and AI, and a growing set of AI-generated shows. Episodes update on their own from each show's feed, and new shows join the map as they launch.</p>
+  <p class="showblock__links"><a class="btn btn--dark btn--sm" href="archive.html">Search every episode</a><a class="btn btn--ghost btn--sm" href="studio.html#podcast">Start a show with us</a></p>
 </header>
+
+<section id="network" aria-label="The network map">
+  <div class="net" style="grid-template-columns:1fr"><div class="net__map" id="net-map"></div></div>
+  <ul class="net__legend" aria-label="Legend">
+    <li data-host="joshua"><span class="host-dot"></span>Joshua</li>
+    <li data-host="janel"><span class="host-dot"></span>Janel</li>
+    <li data-host="shared"><span class="host-dot"></span>Joshua &amp; Janel</li>
+    <li data-host="hybrid"><span class="host-dot"></span>Hybrid: a host + AI</li>
+    <li data-host="ai"><span class="host-dot"></span>AI-generated</li>
+  </ul>
+</section>
+
+<div class="pill-row" style="margin-top:clamp(2.5rem,6vw,4rem)"><h2 class="pill-title">Every show</h2></div>
 <div id="shows-list"></div>
-<section class="cta rv" style="background:var(--green)" id="newsletter-cta">
-  <div><h2>Pitch a guest</h2><p>Founders, artists, policy minds, anyone with a sharp take and a microphone tolerance — we want to hear about them.</p></div>
-  <a class="btn btn--light" href="contact.html?topic=guest">Pitch us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+
+<section class="cta rv" style="background:var(--grape)">
+  <div><h2>Start a show, join the network</h2><p>We'll take your podcast from zero to on air, then bring it into the network. Or pitch a guest for one of ours.</p></div>
+  <p class="showblock__links" style="margin:0"><a class="btn btn--light" href="studio.html#podcast">Start a show <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a class="btn btn--light" href="contact.html?topic=guest">Pitch a guest</a></p>
 </section>
 </main>
 <div data-cc="footer"></div>

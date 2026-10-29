@@ -1,4 +1,4 @@
-/* Curious Creative Company — shared site runtime.
+/* Curious & Creative Company — shared site runtime.
    Every page: <body data-page="…" data-root="./ or ../">, with
    <div data-cc="header"></div> and <div data-cc="footer"></div>.
    Content comes from data/content.json (refreshed by the GitHub Action). */
@@ -44,13 +44,12 @@
   const PAGES = [
     { label: "Home", href: "index.html", nav: true, words: "home front page latest" },
     { label: "About", href: "pages/about.html", nav: true, words: "about us story who joshua janel founders team duo" },
-    { label: "Podcasts", href: "pages/shows.html", nav: true, menu: "shows", words: "podcasts shows listen episodes spotify apple youtube" },
-    { label: "Network", href: "pages/network.html", nav: true, words: "network shows web map secondary god is brazilian dominate the decade aspiring abolitionist morning read daily riff ai-generated hybrid" },
-    { label: "Videos", href: "pages/videos.html", words: "videos youtube watch approachable ai video episodes" },
-    { label: "Studio", href: "pages/studio.html", nav: true, words: "studio services offerings production company photography videography video podcast setup launch network brand assets strategy consulting marketing advertising branding events hire work with us" },
-    { label: "Photography", href: "pages/art.html", nav: true, words: "photography photos gallery portraits fashion events rio landscapes travel" },
+    { label: "Podcast Network", href: "pages/shows.html", nav: true, menu: "shows", words: "podcasts shows network listen episodes spotify apple youtube web map god is brazilian dominate the decade aspiring abolitionist morning read hollywood insider fast break daily riff ai-generated hybrid" },
+    { label: "Studio", href: "pages/studio.html", nav: true, words: "studio services offerings production company photography photos gallery portraits fashion events rio videography video editing podcast editing podcast setup launch network brand assets strategy consulting marketing advertising branding hire work with us" },
     { label: "Shop", href: "pages/shop.html", nav: true, words: "shop store buy order prints art artwork janel joshua kindling deck" },
     { label: "Inventions", href: "pages/inventions.html", nav: true, words: "inventions apps tools games life gamified grandmaster meme library jukeboxd aetheria gen alpha research lab" },
+    { label: "Photography", href: "pages/studio.html#photography", words: "photography photos gallery portraits fashion events rio landscapes travel" },
+    { label: "Videos", href: "pages/videos.html", words: "videos youtube watch approachable ai video episodes" },
     { label: "Writing", href: "pages/writing.html", words: "writing substack essays newsletter posts" },
     { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
@@ -80,7 +79,7 @@
       ${navLink(p.href, p.label).replace("<a ", '<a aria-haspopup="true" aria-expanded="false" ')}
       <div class="hdr__menu" data-nav-menu="${p.menu}">
         <div class="hdr__menu-list"></div>
-        <p class="hdr__menu-foot"><a href="${url(p.href)}">All ${p.label.toLowerCase()} →</a><a href="${url("pages/archive.html")}">Every episode →</a></p>
+        <p class="hdr__menu-foot"><a href="${url(p.href + "#network")}">The network map →</a><a href="${url(p.href)}">All shows →</a><a href="${url("pages/archive.html")}">Every episode →</a></p>
       </div>
     </div>`);
 
@@ -88,7 +87,7 @@
     <a class="skip" href="#main">Skip to content</a>
     <header class="hdr" id="hdr">
       <div class="hdr__bar wrap">
-        <a class="wordmark" href="${url("index.html")}" aria-label="Curious Creative Company — home"><span class="g">Curious</span><span class="p">Creative</span><span class="a">Co.</span></a>
+        <a class="wordmark" href="${url("index.html")}" aria-label="The Curious &amp; Creative Company — home"><span class="the">The</span><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span><span class="co">Co.</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
         <nav class="hdr__links" aria-label="Primary">${PAGES.filter((p) => p.nav).map(navItem).join("")}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
@@ -100,9 +99,9 @@
   const footer = `
     <footer class="ftr wrap">
       <div class="ftr__bar">
-        <a class="wordmark" href="${url("index.html")}"><span class="g">Curious</span><span class="p">Creative</span><span class="a">Co.</span></a>
+        <a class="wordmark" href="${url("index.html")}"><span class="the">The</span><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span><span class="co">Co.</span></a>
         <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.label !== "Home").map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
-        <p class="ftr__copy">© ${new Date().getFullYear()} Curious Creative Company · Joshua German &amp; Janel Moore</p>
+        <p class="ftr__copy">© ${new Date().getFullYear()} The Curious &amp; Creative Company · Joshua German &amp; Janel Moore</p>
       </div>
       <p class="ftr__sign">Built curious. Made creative. · <a href="${url("backstage/")}" style="opacity:.7">Team</a></p>
     </footer>`;
@@ -111,7 +110,7 @@
     <div class="scrim" data-close-drawer></div>
     <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
       <div class="drawer__top">
-        <a class="wordmark" href="${url("index.html")}"><span class="g" style="color:#5BD36B">Curious</span><span class="p" style="color:#FF6FB0">Creative</span><span class="a">Co.</span></a>
+        <a class="wordmark" href="${url("index.html")}"><span class="the" style="color:#fff">The</span><span class="g" style="color:#5BD36B">Curious</span><span class="a">&amp;</span><span class="p" style="color:#FF6FB0">Creative</span><span class="co">Co.</span></a>
         <button class="icon-btn" type="button" data-close-drawer aria-label="Close menu">${icon.close}</button>
       </div>
       <nav class="drawer__nav" aria-label="Menu">${PAGES.map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
@@ -338,7 +337,7 @@
   CC.showByline = (s) => {
     if (!s) return "";
     if (isHybrid(s)) return `Hybrid · ${(s.hosts || []).map(firstName).join(" & ") || "Joshua"} + AI`;
-    if (s.ai === "full") return s.principal ? `AI-generated · ${firstName(s.principal)}, principal` : "AI-generated";
+    if (s.ai === "full") return "AI-generated";
     return CC.HOST_LABEL[CC.hostGroup(s)];
   };
   CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel", ai: "AI-generated", hybrid: "Hybrid · human + AI" };
@@ -397,7 +396,7 @@
       const s = data.byKey[e.show] || {};
       addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epLink(e), date: e.date });
     });
-    data.photos.forEach((p) => addDoc({ type: "photo", title: p.alt || p.set, sub: `Photography · ${p.set}`, text: "photo photography " + p.set, img: url(p.thumb), href: url(`pages/art.html#${p.id}`) }));
+    data.photos.forEach((p) => addDoc({ type: "photo", title: p.alt || p.set, sub: `Photography · ${p.set}`, text: "photo photography " + p.set, img: url(p.thumb), href: url(`pages/studio.html#${p.id}`) }));
 
     const menu = document.querySelector('[data-nav-menu="shows"] .hdr__menu-list');
     if (menu) menu.innerHTML = data.shows.map((s) => `<a href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
@@ -413,45 +412,77 @@
   });
 
 
-  /* ---------------- the network web (shows ↔ hosts) ---------------- */
+  /* ---------------- the network: a solar system that lays itself out ----------------
+     The network is the sun. Joshua, Janel, and AI orbit it; every show orbits outside,
+     grouped beside whoever makes it. Nothing is hand-placed: a new show takes its slot on
+     the next refresh and the whole system re-spaces itself. */
   CC.network = (data) => {
-    const W = 1000, H = 744, hub = [500, 290];
-    const people = { joshua: [290, 360, "Joshua", "assets/people/joshua.jpg"], janel: [710, 360, "Janel", "assets/people/janel.jpg"] };
-    const aiNode = [500, 500];
-    // hand-placed spots for known shows; anything new falls into the spare slots
-    const SPOT = { ccpod: [500, 90], polymath: [230, 170], approachable: [120, 370], dominate: [170, 560], brazil: [360, 612], riff: [640, 612], morningread: [500, 668], tmtt: [820, 170], abolitionist: [880, 440] };
-    const spare = [[930, 300], [90, 220], [940, 640]];
-    const futures = [[790, 600], [910, 600]];
-    const links = (s) => {
-      // AI-generated shows hang off the AI node only (Joshua is its principal); hybrids link to their host and AI
-      if (s.ai === "full") return ["ai"];
-      const h = (s.hosts || []).join(" ").toLowerCase();
-      const out = [];
-      if (h.includes("joshua")) out.push("joshua");
-      if (h.includes("janel")) out.push("janel");
-      if (CC.isHybrid(s)) out.push("ai");
-      return out;
-    };
-    let si = 0;
-    const nodes = data.shows.map((s) => {
-      const [x, y] = SPOT[s.key] || spare[si++] || [500, 680];
-      const tier = s.tier === "secondary" ? "secondary" : "primary";
-      return { s, x, y, tier, hybrid: CC.isHybrid(s), links: links(s), r: s.flagship ? 58 : tier === "primary" ? 46 : 32 };
+    const S = 1000, C = 500, R_MAKERS = 170, R_SHOWS = [312, 388], FUTURE = 2;
+    const rad = (d) => (d * Math.PI) / 180;
+    const pt = (r, deg) => [Math.round(C + r * Math.cos(rad(deg))), Math.round(C + r * Math.sin(rad(deg)))];
+    // clockwise from the top: shared shows, Janel's, AI-generated, hybrids, Joshua's, then open seats
+    const ORDER = ["shared", "janel", "ai", "hybrid", "joshua"];
+    const rank = (s) => (s.flagship ? 0 : s.tier === "secondary" ? 2 : 1);
+    const seq = [];
+    ORDER.forEach((g) => data.shows.filter((s) => CC.hostGroup(s) === g)
+      .sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name))
+      .forEach((s) => seq.push({ s, g })));
+    for (let i = 0; i < FUTURE; i++) seq.push({ future: true, g: "future" });
+    // the flagship's long label gets more room on the orbit; open seats get a little less
+    seq.forEach((n) => { n.w = n.future ? 0.8 : n.s.flagship ? 1.7 : 1; });
+    const unit = 360 / seq.reduce((t, n) => t + n.w, 0);
+    const sharedSpan = seq.filter((n) => n.g === "shared").reduce((t, n) => t + n.w, 0);
+    let at = 270 - (sharedSpan * unit) / 2; // centre the shared shows at the top
+    seq.forEach((n, i) => {
+      n.deg = at + (n.w * unit) / 2;
+      at += n.w * unit;
+      n.r = n.future ? 26 : n.s.flagship ? 56 : n.s.tier === "secondary" ? 32 : 42;
+      [n.x, n.y] = pt(R_SHOWS[i % 2], n.deg);
     });
-    const at = (k) => (k === "ai" ? aiNode : people[k]);
+    // each maker sits on the inner orbit, beside the shows it makes
+    const meanDeg = (list) => {
+      const x = list.reduce((t, n) => t + Math.cos(rad(n.deg)), 0), y = list.reduce((t, n) => t + Math.sin(rad(n.deg)), 0);
+      return (Math.atan2(y, x) * 180) / Math.PI;
+    };
+    const makerDeg = { joshua: 210, janel: 330, ai: 90 };
+    ["joshua", "janel", "ai"].forEach((k) => { const own = seq.filter((n) => n.g === k); if (own.length) makerDeg[k] = meanDeg(own); });
+    const makers = {
+      joshua: [...pt(R_MAKERS, makerDeg.joshua), "Joshua", "assets/people/joshua.jpg"],
+      janel: [...pt(R_MAKERS, makerDeg.janel), "Janel", "assets/people/janel.jpg"],
+      ai: [...pt(R_MAKERS, makerDeg.ai), "AI-generated", null],
+    };
+    const linksOf = (s) => {
+      const g = CC.hostGroup(s);
+      if (g === "ai") return ["ai"];
+      if (g === "hybrid") return ["joshua", "ai"];
+      if (g === "shared") return ["joshua", "janel"];
+      return [g];
+    };
+    const soon = (s) => !s.archive && !s.count && s.kind !== "youtube";
     const line = (p, q, cls, key) => `<line class="web__edge ${cls}" data-edge="${key}" x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}"/>`;
-    let edges = ["joshua", "janel"].map((k) => line(hub, people[k], "web__edge--core", k)).join("") + line(hub, aiNode, "web__edge--core web__edge--ai", "ai")
-      + line(people.joshua, aiNode, "web__edge--principal", "joshua ai"); // Joshua is the principal behind the AI-generated shows
-    nodes.forEach((n) => n.links.forEach((k) => { edges += line(at(k), [n.x, n.y], `web__edge--${n.tier}${k === "ai" ? (n.hybrid ? " web__edge--hybrid" : " web__edge--ai") : ""}`, `${k} ${n.s.key}`); }));
-    futures.forEach((f) => { edges += line(hub, f, "web__edge--future", "future"); });
+    const orbits = [R_MAKERS, ...R_SHOWS].map((r, i) => `<circle class="web__orbit web__orbit--${i}" cx="${C}" cy="${C}" r="${r}"/>`).join("");
+    const stars = Array.from({ length: 46 }, (_, i) => { const a = (i * 137.508) % 360, r = 60 + ((i * 97) % 430); const [x, y] = pt(r, a); return `<circle class="web__star" cx="${x}" cy="${y}" r="${1 + (i % 3) * 0.6}"/>`; }).join("");
+    let edges = Object.entries(makers).map(([k, m]) => line([C, C], m, `web__edge--core${k === "ai" ? " web__edge--ai" : ""}`, k)).join("");
+    seq.forEach((n) => {
+      if (n.future) { edges += line([C, C], [n.x, n.y], "web__edge--future", "future"); return; }
+      linksOf(n.s).forEach((k) => { edges += line(makers[k], [n.x, n.y], `web__edge--${n.s.tier === "secondary" ? "secondary" : "primary"}${k === "ai" ? (n.g === "hybrid" ? " web__edge--hybrid" : " web__edge--ai") : ""}`, `${k} ${n.s.key}`); });
+    });
     const label = (s) => (s.flagship ? "The Curious & Creative Podcast" : s.short || s.name);
-    const img = (id, x, y, r, src, text, hybrid) => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${hybrid ? `<path class="web__ring-ai" d="M${x} ${y - r - 4}A${r + 4} ${r + 4} 0 0 1 ${x} ${y + r + 4}"/>` : ""}${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--c)"/>`}<text class="web__label" x="${x}" y="${y + r + 22}">${esc(text)}</text>`;
-    const showNodes = nodes.map((n, i) => `<a class="web__node web__node--${n.tier}${n.hybrid ? " web__node--hybrid" : ""}" href="${url(`pages/shows.html#${n.s.key}`)}" data-show="${n.s.key}" data-node="${n.s.key}" data-links="${n.links.join(" ")}" aria-label="${esc(n.s.name)}">${img("wc" + i, n.x, n.y, n.r, n.s.art, label(n.s), n.hybrid)}${n.hybrid ? `<text class="web__tag web__tag--hybrid" x="${n.x}" y="${n.y + n.r + 40}">hybrid · human + AI</text>` : n.s.archive ? `<text class="web__tag" x="${n.x}" y="${n.y + n.r + 40}">archive</text>` : ""}</a>`).join("");
-    const peopleNodes = Object.entries(people).map(([k, [x, y, name, src]]) => `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${name}">${img("wp" + k, x, y, 40, src, name)}</a>`).join("");
-    const ai = `<g class="web__node web__node--ai" data-node="ai" tabindex="0" aria-label="AI-generated"><circle cx="${aiNode[0]}" cy="${aiNode[1]}" r="40"/><path transform="translate(${aiNode[0]} ${aiNode[1]})" d="M0-22 5-5 22 0 5 5 0 22-5 5-22 0-5-5Z"/><text class="web__label" x="${aiNode[0]}" y="${aiNode[1] + 62}">AI-generated</text><text class="web__tag" x="${aiNode[0]}" y="${aiNode[1] + 80}">Joshua, principal</text></g>`;
-    const futureNodes = futures.map(([x, y]) => `<g class="web__node web__node--future" aria-hidden="true"><circle cx="${x}" cy="${y}" r="26"/><text class="web__plus" x="${x}" y="${y + 9}">?</text></g>`).join("") + `<text class="web__label web__label--quiet" x="${(futures[0][0] + futures[1][0]) / 2}" y="${futures[0][1] + 58}">Always building</text>`;
-    const hubNode = `<g class="web__hub"><clipPath id="whub"><circle cx="${hub[0]}" cy="${hub[1]}" r="62"/></clipPath><circle class="web__hub-ring" cx="${hub[0]}" cy="${hub[1]}" r="68"/><image href="${esc(url("assets/brand/cc-logo.jpg"))}" x="${hub[0] - 62}" y="${hub[1] - 62}" width="124" height="124" clip-path="url(#whub)" preserveAspectRatio="xMidYMid slice"/><text class="web__hub-label" x="${hub[0]}" y="${hub[1] + 92}">Curious &amp; Creative Network</text></g>`;
-    return `<svg class="web" viewBox="0 0 ${W} ${H}" role="img" aria-label="The Curious & Creative Network: Joshua, Janel, and AI connected to every show">${edges}${futureNodes}${ai}${peopleNodes}${showNodes}${hubNode}</svg>`;
+    const disc = (id, x, y, r, src, hybrid, initials = "") => `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${r}"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="${r + 4}"/>${hybrid ? `<path class="web__ring-ai" d="M${x} ${y - r - 4}A${r + 4} ${r + 4} 0 0 1 ${x} ${y + r + 4}"/>` : ""}${src ? `<image href="${esc(url(src))}" x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" clip-path="url(#${id})" preserveAspectRatio="xMidYMid slice"/>` : `<circle cx="${x}" cy="${y}" r="${r}" class="web__noart"/><text class="web__initials" x="${x}" y="${y + r * 0.22}" style="font-size:${Math.round(r * 0.62)}px">${esc(initials)}</text>`}`;
+    const text = (x, y, cls, t) => `<text class="${cls}" x="${x}" y="${y}">${esc(t)}</text>`;
+    const showNodes = seq.map((n, i) => {
+      if (n.future) return `<g class="web__node web__node--future" aria-hidden="true"><circle cx="${n.x}" cy="${n.y}" r="${n.r}"/>${text(n.x, n.y + 9, "web__plus", "?")}${text(n.x, n.y + n.r + 22, "web__label web__label--quiet", "Coming soon")}</g>`;
+      const s = n.s, tag = n.g === "hybrid" ? "hybrid · human + AI" : soon(s) ? "coming soon" : s.archive ? "archive" : "";
+      return `<a class="web__node web__node--${s.tier === "secondary" ? "secondary" : "primary"}${n.g === "hybrid" ? " web__node--hybrid" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}" data-node="${s.key}" data-links="${linksOf(s).join(" ")}" aria-label="${esc(s.name)}">`
+        + disc("wc" + i, n.x, n.y, n.r, s.art, n.g === "hybrid", (s.short || s.name).replace(/^The /, "").split(/\s+/).map((w) => w[0]).join("").slice(0, 2)) + text(n.x, n.y + n.r + 22, "web__label", label(s))
+        + (tag ? text(n.x, n.y + n.r + 40, `web__tag${n.g === "hybrid" ? " web__tag--hybrid" : ""}`, tag) : "") + "</a>";
+    }).join("");
+    const makerNodes = Object.entries(makers).map(([k, [x, y, name, src]]) => (k === "ai"
+      ? `<g class="web__node web__node--ai" data-node="ai" tabindex="0" aria-label="AI-generated"><circle cx="${x}" cy="${y}" r="40"/><path transform="translate(${x} ${y})" d="M0-22 5-5 22 0 5 5 0 22-5 5-22 0-5-5Z"/>${text(x, y + 62, "web__label", name)}</g>`
+      : `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${name}">${disc("wp" + k, x, y, 40, src)}${text(x, y + 62, "web__label", name)}</a>`)).join("");
+    const hub = `<g class="web__hub"><clipPath id="whub"><circle cx="${C}" cy="${C}" r="62"/></clipPath><circle class="web__hub-glow" cx="${C}" cy="${C}" r="92"/><circle class="web__hub-ring" cx="${C}" cy="${C}" r="68"/><image href="${esc(url("assets/brand/cc-logo.jpg"))}" x="${C - 62}" y="${C - 62}" width="124" height="124" clip-path="url(#whub)" preserveAspectRatio="xMidYMid slice"/></g>`;
+    const shows = seq.filter((n) => !n.future).length;
+    return `<svg class="web web--orbit" viewBox="0 0 ${S} ${S}" role="img" aria-label="The Curious & Creative Podcast Network: ${shows} shows orbiting Joshua, Janel, and AI">${stars}${orbits}${edges}${makerNodes}${showNodes}${hub}</svg>`;
   };
   CC.wireNetwork = (root) => {
     const svg = root.querySelector(".web");

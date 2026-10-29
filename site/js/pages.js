@@ -24,9 +24,9 @@
   CC.epRow = epRow;
 
   CC.ready.then((data) => {
-    if (CC.page === "shows") shows(data);
+    if (CC.page === "shows") { networkPage(data); shows(data); }
     if (CC.page === "archive") archive(data);
-    if (CC.page === "art") gallery(data);
+    if (CC.page === "art" || CC.page === "studio") gallery(data);
     if (CC.page === "about") about(data);
     if (CC.page === "network") networkPage(data);
     if (CC.page === "shop") shop(data);
@@ -64,7 +64,7 @@
         </div>
       </section>`;
     };
-    const head = (t, d) => `<div class="pill-row"><h2 class="pill-title${t.includes("More") ? " pill-title--gold" : ""}">${t}</h2>${d ? `<a class="pill-more" href="${url("pages/network.html")}">${d}</a>` : ""}</div>`;
+    const head = (t, d) => `<div class="pill-row"><h2 class="pill-title${t.includes("More") ? " pill-title--gold" : ""}">${t}</h2>${d ? `<a class="pill-more" href="${url("pages/shows.html#network")}">${d}</a>` : ""}</div>`;
     host.innerHTML = head("The main lineup") + data.primary.map(block).join("") +
       (data.secondary.length ? head("More from the network", "See the network map →") + data.secondary.map(block).join("") : "");
     host.before(sorter(data, (k) => {
@@ -249,9 +249,14 @@
   function about(data) {
     const el = document.getElementById("about-shows");
     if (!el) return;
-    el.innerHTML = [...data.primary, ...data.secondary].map((s) => {
+    // the flagship first, then our headline shows, then the rest of the human-made shows, then AI-generated
+    const LEAD = ["ccpod", "polymath", "tmtt", "approachable"];
+    const rank = (s) => (LEAD.includes(s.key) ? LEAD.indexOf(s.key) : CC.hostGroup(s) === "ai" ? 200 : 100);
+    const list = [...data.shows].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
+    el.innerHTML = list.map((s) => {
       const g = CC.hostGroup(s);
-      return `<a class="tile" href="${url(`pages/shows.html#${s.key}`)}" data-host="${g}" data-tags="${CC.showTags(s).join(" ")}">
+      return `<a class="tile${s.flagship ? " tile--star" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-host="${g}" data-tags="${CC.showTags(s).join(" ")}">
+      ${s.flagship ? '<span class="tile__star"><span aria-hidden="true">★</span> Our flagship</span>' : ""}
       <span class="host-tag"><span class="host-dot"></span>${esc(CC.showByline(s))}</span>
       <h3>${esc(s.name)}</h3><p>${esc(s.tagline || "")}</p></a>`;
     }).join("");
@@ -342,13 +347,58 @@
         return `<section class="pgroup rv"><div class="pill-row"><h2 class="pill-title${g.key === "research" ? " pill-title--green" : g.key === "music" ? " pill-title--pink" : g.key === "games" ? " pill-title--gold" : ""}">${esc(g.title)}</h2><span class="eyebrow">${esc(g.dek)}</span></div>
           <div class="projects${g.key === "lab" ? " projects--lab" : ""}">${items.map((p) => {
             const href = p.internal ? url(p.url) : p.url;
+            if (p.gate) return `<a class="proj${p.feature ? " proj--feature" : ""} proj--gated" href="#" data-gate="${esc(p.id)}">
+              <span class="proj__art"><img src="${esc(url("assets/projects/" + p.art))}" alt="" loading="lazy"><span class="chip">🔒 ${esc(p.status)}</span></span>
+              <span class="proj__body"><small>${esc(p.kicker)}</small><b>${esc(p.name)}</b><span class="proj__blurb">${esc(p.blurb)}</span><em>${esc(p.built)}</em><span class="proj__go">Enter the password →</span></span></a>`;
             return `<a class="proj${p.feature ? " proj--feature" : ""}" href="${esc(href)}"${p.internal ? "" : ' target="_blank" rel="noopener"'}>
               <span class="proj__art"><img src="${esc(url("assets/projects/" + p.art))}" alt="" loading="lazy"><span class="chip">${esc(p.status)}</span></span>
               <span class="proj__body"><small>${esc(p.kicker)}</small><b>${esc(p.name)}</b><span class="proj__blurb">${esc(p.blurb)}</span><em>${esc(p.built)}</em><span class="proj__go">Open ${p.internal ? "→" : "↗"}</span></span></a>`;
           }).join("")}</div></section>`;
       }).join("");
       CC.reveal(host);
+      host.addEventListener("click", (e) => {
+        const a = e.target.closest("[data-gate]");
+        if (!a) return;
+        e.preventDefault();
+        passwordGate(d.projects.find((p) => p.id === a.dataset.gate));
+      });
     });
+  }
+
+  /* a light password gate in front of an invite-only project (keeps casual visitors out; the
+     password's hash lives in projects.json, so it is not real access control) */
+  const sha256 = async (t) => [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t)))].map((b) => b.toString(16).padStart(2, "0")).join("");
+  function passwordGate(p) {
+    if (!p) return;
+    const key = "cc-gate-" + p.id;
+    try { if (sessionStorage.getItem(key) === p.gate) { location.href = p.url; return; } } catch (e) { /* storage blocked */ }
+    let dlg = document.getElementById("gate");
+    if (!dlg) {
+      dlg = document.createElement("dialog");
+      dlg.id = "gate";
+      dlg.className = "gate";
+      document.body.appendChild(dlg);
+    }
+    dlg.innerHTML = `<form method="dialog" class="gate__form">
+      <span class="gate__lock" aria-hidden="true">α</span>
+      <h2>${esc(p.name)}</h2>
+      <p>This lab is invite-only. Enter the password to go in.</p>
+      <label class="sr-only" for="gate-pw">Password</label>
+      <input id="gate-pw" type="password" autocomplete="off" placeholder="Password" required>
+      <p class="gate__err" role="alert" hidden>That's not it. Try again.</p>
+      <div class="showblock__links"><button class="btn" type="submit" value="go">Enter</button><button class="btn btn--ghost" type="button" data-gate-close>Not now</button></div>
+    </form>`;
+    const form = dlg.querySelector("form"), input = dlg.querySelector("input"), err = dlg.querySelector(".gate__err");
+    dlg.querySelector("[data-gate-close]").addEventListener("click", () => dlg.close());
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if ((await sha256(input.value.trim().toLowerCase())) === p.gate) {
+        try { sessionStorage.setItem(key, p.gate); } catch (x) { /* storage blocked */ }
+        location.href = p.url;
+      } else { err.hidden = false; input.select(); }
+    });
+    dlg.showModal();
+    input.focus();
   }
 
 })();

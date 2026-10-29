@@ -98,12 +98,12 @@
       slides.push({
         kicker: [`<span class="chip">Photography</span>`, `<span class="chip">${data.photos.length} frames</span>`],
         title: "Portraits, fashion & nights out — on film and digital",
-        href: url("pages/art.html"),
+        href: url("pages/studio.html#photography"),
         dek: "Joshua's photography: people, places, and live events from Los Angeles to Rio de Janeiro.",
         meta: "Now booking shoots",
         img: url(p.src),
         photo: true,
-        actions: [["See the photography", url("pages/art.html"), "btn"], ["Book a shoot", "https://joshuamgerman.com/photography/", "btn btn--ghost"]],
+        actions: [["See the photography", url("pages/studio.html#photography"), "btn"], ["Book a shoot", "https://joshuamgerman.com/photography/", "btn btn--ghost"]],
       });
     }
     const duoAt = slides.findIndex((x) => x.duo);
@@ -223,7 +223,7 @@
     const perShow = data.primary.map((s) => [s, eps.find((e) => e.show === s.key)]).filter(([, e]) => e);
     const photo = data.photos && data.photos.find((p) => p.set === "Events & Live") || (data.photos || [])[0];
     let html = card(cards[0], by, true) + cards.slice(1, 7).map((e) => card(e, by)).join("");
-    if (photo) html += `<a class="special special--photo rv" href="${url("pages/art.html")}"><img src="${esc(url(photo.thumb))}" alt="${esc(photo.alt)}" loading="lazy"><span class="special__in"><span class="special__label">Photography</span><span class="special__title" style="font-size:1.6rem">${esc(photo.set)}</span><span class="special__go">Open the gallery ${icon.arrow}</span></span></a>`;
+    if (photo) html += `<a class="special special--photo rv" href="${url("pages/studio.html#photography")}"><img src="${esc(url(photo.thumb))}" alt="${esc(photo.alt)}" loading="lazy"><span class="special__in"><span class="special__label">Photography</span><span class="special__title" style="font-size:1.6rem">${esc(photo.set)}</span><span class="special__go">Open the gallery ${icon.arrow}</span></span></a>`;
     html += `<div class="list-card rv"><div class="list-card__head"><span>Fresh from every show</span><span>${perShow.length}</span></div><ol>
       ${perShow.map(([s, e]) => `<li data-show="${s.key}"><a href="${esc(CC.epHref(e))}"${ext(CC.epHref(e))}><span>${esc(e.title)}<small>${esc(s.short || s.name)} · ${esc(ago(e.date))}</small></span></a></li>`).join("")}
     </ol></div>`;
@@ -247,7 +247,7 @@
             <span><small>${s.feature ? "From the vault · Joshua co-hosts" : esc((s.hosts || []).join(" & "))}</small><b>${esc(s.name)}</b>${s.feature && s.about ? `<em>${esc(s.about)}</em>` : e ? `<em>Latest: ${esc(e.title)}</em>` : ""}</span>
           </a>`;
         }).join("")}
-        <a class="pill-more" href="${url("pages/network.html")}">Explore the network →</a>
+        <a class="pill-more" href="${url("pages/shows.html#network")}">Explore the network →</a>
       </div>`;
     CC.wireNetwork(host);
   }
@@ -429,7 +429,7 @@
     const total = eps.length;
     items.splice(1, 0, `<a class="tcard tcard--green" href="${url("pages/archive.html")}"><span class="tcard__big">${total}</span><b>episodes &amp; videos across ${shows.length} shows</b></a>`);
     items.splice(3, 0, `<a class="tcard tcard--gold" href="${url("pages/about.html")}"><b style="font-size:1.15rem">“Everything is interesting when you dig deep enough.”</b><small>— The Eclectic Polymath</small></a>`);
-    (data.photos || []).filter((_, i) => i % 4 === 0).slice(0, 4).forEach((p, i) => items.splice(4 + i * 3, 0, `<a class="tcard tcard--photo" href="${url(`pages/art.html#${p.id}`)}"><img src="${esc(url(p.thumb))}" alt="${esc(p.alt)}" loading="lazy"></a>`));
+    (data.photos || []).filter((_, i) => i % 4 === 0).slice(0, 4).forEach((p, i) => items.splice(4 + i * 3, 0, `<a class="tcard tcard--photo" href="${url(`pages/studio.html#${p.id}`)}"><img src="${esc(url(p.thumb))}" alt="${esc(p.alt)}" loading="lazy"></a>`));
     items.push(`<a class="tcard tcard--dark" href="${url("kindling/")}"><small>Invention No. 1</small><b style="font-size:1.6rem">Kindling</b><small>Pre-orders open →</small></a>`);
     items.push(`<a class="tcard tcard--pink" href="#newsletter"><b style="font-size:1.2rem">Get new episodes in your inbox</b><small>Join the newsletter ↓</small></a>`);
     const set = items.map((h, i) => h.replace('class="tcard', `style="--tilt:${tilts[i % tilts.length]}deg" class="tcard`)).join("");
@@ -446,6 +446,6 @@
     const pick = [];
     for (let i = 0; pick.length < 9 && i < 12; i++) Object.values(sets).forEach((arr) => { if (arr[i] && pick.length < 9) pick.push(arr[i]); });
     sec.hidden = false;
-    document.getElementById("photo-strip").innerHTML = pick.map((p) => `<a href="${url(`pages/art.html#${p.id}`)}"><img src="${esc(url(p.thumb))}" alt="${esc(p.alt)}" loading="lazy"><span class="chip">${esc(p.set)}</span></a>`).join("");
+    document.getElementById("photo-strip").innerHTML = pick.map((p) => `<a href="${url(`pages/studio.html#${p.id}`)}"><img src="${esc(url(p.thumb))}" alt="${esc(p.alt)}" loading="lazy"><span class="chip">${esc(p.set)}</span></a>`).join("");
   }
 })();

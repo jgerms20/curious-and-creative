@@ -549,16 +549,21 @@ def discover_feed(show, spotify_name, known=()):
             m = re.search(r"https://anchor\.fm/s/[0-9a-f]+/podcast/rss", page)
             st = re.search(r'"stationId":"([0-9a-f]+)"', page)
             title = re.search(r"<title>(.*?)</title>", page, re.S)
-            tried[f"{host}/{slug}"] = f"{len(page)} {title and title.group(1)[:60]} rss={bool(m)} station={st and st.group(1)}"
+            shows_on_page = sorted(set(re.findall(r"open\.spotify\.com/show/([A-Za-z0-9]{22})", page)))
+            tried[f"{host}/{slug}"] = f"{len(page)} {title and title.group(1)[:60]} rss={bool(m)} station={st and st.group(1)} spotify_shows={shows_on_page[:3]}"
             url = m.group(0) if m else (st and f"https://anchor.fm/s/{st.group(1)}/podcast/rss")
             if url and any(w and w in norm(page[:200000]) for w in want):
                 try:  # the feed has to be this show's, not a namesake's
                     ch, its = parse_rss(fetch(url))
                     # a namesake can share the show's name: accept only a feed that carries episodes we know are ours
-                    if known and any(match_spotify(it["title"], known) for it in its):
+                    # or, for a brand-new show with no episodes yet, a feed owned by us
+                    owners = [norm(o) for o in show.get("match_owner", [])]
+                    ours = (known and any(match_spotify(it["title"], known) for it in its)) or \
+                        (owners and any(o and o in norm(ch.get("author")) for o in owners) and norm(ch["title"]) in want)
+                    tried[f"{host}/{slug}"] += f" feed {ch['title']!r} by {ch.get('author')!r}, {len(its)} items"
+                    if ours:
                         log(f"  creators page {host}/{slug} -> {url}")
                         return url
-                    tried[f"{host}/{slug}"] += f" feed {ch['title']!r} has none of our episodes"
                 except Exception as e:  # noqa: BLE001
                     tried[f"{host}/{slug}"] += f" feed failed {e}"
     return None
@@ -625,6 +630,8 @@ def parse_rss(xml_text):
         "description": strip_html(ch.findtext("description") or ch.findtext("itunes:summary", namespaces=NS), 600),
         "image": img.get("href") if img is not None else (ch.findtext("image/url") or None),
         "link": ch.findtext("link"),
+        "author": " ".join(filter(None, [ch.findtext("itunes:author", namespaces=NS), ch.findtext("itunes:owner/itunes:name", namespaces=NS),
+                                          ch.findtext("itunes:owner/itunes:email", namespaces=NS), ch.findtext("managingEditor")])),
     }
     items = []
     for it in ch.findall("item"):
@@ -686,7 +693,7 @@ def do_podcast(show, prev_eps):
         if apple:
             feed_url = apple.get("feedUrl")
             log(f"  chose feed: {apple.get('collectionName')} -> {feed_url}")
-    if not feed_url and show.get("spotify") and not (sp and sp.get("full")):
+    if not feed_url and (show.get("spotify") or show.get("match_owner")) and not (sp and sp.get("full")):
         known = (sp["episodes"] if sp else []) + [e for e in prev_eps if e.get("show") == key]
         feed_url = discover_feed(show, sp and sp.get("name"), known)
     channel, items = None, []
@@ -1145,7 +1152,7 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs")}
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs", "match_owner")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]
