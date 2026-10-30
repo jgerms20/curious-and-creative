@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T19:32:53Z",
+ "generated_at": "2026-10-30T23:55:35Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-29T02:19:31Z",
-   "count": 245
+   "latest": "2026-10-30T22:45:36Z",
+   "count": 246
   },
   {
    "key": "approachable",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -159,7 +159,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-29T16:47:00Z",
    "count": 14
   },
@@ -249,6 +249,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:4df20d30 0ca7 4f1d 9c9a a5b7e487b1ef",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "Spain: The Cultural Superpower History Tried to Erase",
+   "date": "2026-10-30T22:45:36Z",
+   "duration": 4181,
+   "description": "A movie about a murdered poet just won at Cannes — and it opens the door on the biggest buried story in Western culture. Spain has been one of the world's great cultural capitals not once but three times: the Golden Age that invented the novel and gave us Velázquez, the 1920s Madrid of Lorca, Dalí, and Buñuel, and the explosion that followed Franco. Each time, politics walked in and cut it short.\n This episode follows the whole arc: Cervantes and the Siglo de Oro, the Residencia de Estudiantes where Lorca, Dalí, and Buñuel shared a dormitory, the Spanish Civil War as a culture war — Lorca shot without trial, Guernica bombed, Picasso's painting exiled for 44 years — and the queer history…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793400290492-51d7daa4e9bd6.jpg",
+   "url": "https://open.spotify.com/episode/2Z9arv5aDPS69xU1mdWgo2",
+   "spotify_url": "https://open.spotify.com/episode/2Z9arv5aDPS69xU1mdWgo2",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128460248/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2F9d32f1a0-a8a2-7c44-f21d-4ce77c5203da.m4a",
+   "number": "247"
+  },
+  {
    "id": "riff:5rffT9FV8MvsUQbfTsu0dQ",
    "show": "riff",
    "kind": "episode",
@@ -295,7 +309,7 @@
    "date": "2026-10-29T14:47:00Z",
    "duration": 2554,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a32599379dc14175a0c1c453f",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a32599379dc14175a0c1c453f",
    "url": "https://open.spotify.com/episode/0fOZboUXPRPcb62tCjKM4n",
    "spotify_url": "https://open.spotify.com/episode/0fOZboUXPRPcb62tCjKM4n",
    "spotify_video": false
@@ -322,8 +336,8 @@
    "duration": 3954,
    "description": "An Instagram reel argued Los Angeles is destined to become the greatest city in the world, and its comments kept returning to one phrase: the third wave. This episode audits the claim — the waves of LA's history, the city it never finished building, and the ocean it faces.\n The Pacific passed the Atlantic in American trade in the early 1980s and now runs about two to one in goods. San Pedro Bay moves nearly a third of the nation's containerized trade. Mayors from Tom Bradley to Eric Garcetti have called LA the capital of the Pacific Rim. The numbers, the rivals, and the counterarguments — peak China, the Taiwan Strait, a county population that has started to shrink — all get their hearing.\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793240279536-a76e6add7bd6c.jpg",
-   "url": "https://open.spotify.com/episode/2hVT2KVrMP5SIZzoOP4Xbn",
-   "spotify_url": "https://open.spotify.com/episode/2hVT2KVrMP5SIZzoOP4Xbn",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/246-Los-Angeles-The-Capital-of-the-Pacific-Century-e3ramns",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/128325820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-29%2Fe58103e8-e3c9-0239-89cf-42a2193310b0.m4a",
    "number": "246"
   },
@@ -404,7 +418,7 @@
    "date": "2026-10-28T17:29:00Z",
    "duration": 2032,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
    "url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_video": false
@@ -444,7 +458,7 @@
    "date": "2026-10-26T21:23:00Z",
    "duration": 1645,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
    "url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_video": false
@@ -937,7 +951,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -989,7 +1003,7 @@
    "date": "2026-10-15T11:12:00Z",
    "duration": 2222,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_video": false
@@ -1128,7 +1142,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -1416,7 +1430,7 @@
    "date": "2026-10-04T20:11:00Z",
    "duration": 1075,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
    "url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_video": false
@@ -1443,7 +1457,7 @@
    "date": "2026-10-04T08:03:00Z",
    "duration": 1581,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a8bb1042d0c59c37c893b7ce5",
    "url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_url": "https://open.spotify.com/episode/04XTVh2aZs9XWqSx8xcglZ",
    "spotify_video": false
@@ -1483,7 +1497,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -2727,7 +2741,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -2740,7 +2754,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4724,7 +4738,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 245,
+   "episodes": 246,
    "spotify_matches": 1
   },
   "approachable": {
