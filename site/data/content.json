@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T21:45:29Z",
+ "generated_at": "2026-11-01T01:18:07Z",
  "shows": [
   {
    "key": "ccpod",
@@ -45,8 +45,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-10-31T19:14:18Z",
-   "count": 247
+   "latest": "2026-11-01T00:23:29Z",
+   "count": 248
   },
   {
    "key": "approachable",
@@ -86,7 +86,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -159,7 +159,7 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
    "latest": "2026-10-29T16:47:00Z",
    "count": 14
   },
@@ -181,7 +181,7 @@
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
    "art": "assets/art/morningread.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
    "latest": "2026-10-31T15:08:00Z",
    "count": 6
   },
@@ -249,6 +249,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:b27ae469 3dff 451f 978a 6d21acc8a0d3",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#249 The Audio Century: How Audio Is Replacing Screens",
+   "date": "2026-11-01T00:23:29Z",
+   "duration": 2889,
+   "description": "Two decades in, podcasting still cannot agree on what a listener is. This episode is a deep dive into the business of podcasting and the future of audio itself: where the industry stands, why it is still being formed, and where it goes over the next ten, twenty, fifty, and one hundred years.\n The business now: US podcast ad revenue hit $2.86 billion in 2025, the platform war between YouTube, Spotify, Apple, and now Netflix is reshaping the medium around video, and nine-figure deals have turned podcasters into moguls. Underneath, the industry still runs on an open RSS standard from 2001, measurement systems that cannot deduplicate one listener across platforms, and a legal frontier being…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793492549346-19396cafcbe29.jpg",
+   "url": "https://open.spotify.com/episode/4sj5COhOYOqEzxNHT9YCqc",
+   "spotify_url": "https://open.spotify.com/episode/4sj5COhOYOqEzxNHT9YCqc",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128528000/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-1%2F076d5e62-a5e4-ebd6-f706-05ab0851ef6b.m4a",
+   "number": "249"
+  },
+  {
    "id": "polymath:339844bd 2c3f 4443 a926 c978a4f8daae",
    "show": "polymath",
    "kind": "episode",
@@ -257,8 +271,8 @@
    "duration": 3860,
    "description": "Fourteen statewide propositions, two county charter amendments, seven city measures, and a mayoral runoff, all on one ballot, all decided on Tuesday. This episode is the complete voting prep for the November 3, 2026 California general election: every proposition and every Los Angeles measure on the ballot at 3045 South Crenshaw, in ballot order, with who wrote each one, who is paying for each side, and what a yes and a no actually change.\n Inside: the $11.25 billion housing bond and the Realtors' $25 billion homebuyer loan machine, the fight to make the high-income tax permanent, voter ID, recall reform and its self-replacement flaw, and the most expensive fight on the ballot, the one-time…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793474032492-8d27403cd3c15.jpg",
-   "url": "https://open.spotify.com/episode/1LsiABpQamM6OE2RWfD9l5",
-   "spotify_url": "https://open.spotify.com/episode/1LsiABpQamM6OE2RWfD9l5",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/248-Los-Angeles-Votes-Bass--Raman--and-the-Ballot-That-Rewrites-Two-Governments-e3rgel0",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/128514144/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2F269625fa-11e8-7bf9-d2fb-04e0e1daa9c2.m4a",
    "number": "248"
   },
@@ -270,7 +284,7 @@
    "date": "2026-10-31T15:20:00Z",
    "duration": 2633,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aeb8745e115b41dada2a3557d",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aeb8745e115b41dada2a3557d",
    "url": "https://open.spotify.com/episode/7p1A3XMzRKDqzs7lQNuk94",
    "spotify_url": "https://open.spotify.com/episode/7p1A3XMzRKDqzs7lQNuk94",
    "spotify_video": false
@@ -283,7 +297,7 @@
    "date": "2026-10-31T15:08:00Z",
    "duration": 783,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab0dc176d7416b8baf70633d5",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab0dc176d7416b8baf70633d5",
    "url": "https://open.spotify.com/episode/77CHK8ODuYp6bjPaGpcTCx",
    "spotify_url": "https://open.spotify.com/episode/77CHK8ODuYp6bjPaGpcTCx",
    "spotify_video": false
@@ -458,7 +472,7 @@
    "date": "2026-10-28T17:29:00Z",
    "duration": 2032,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab96cef2464599b354a4ac2bd",
    "url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_url": "https://open.spotify.com/episode/7a5UZZDih07Fv7lxmIaxYD",
    "spotify_video": false
@@ -498,7 +512,7 @@
    "date": "2026-10-26T21:23:00Z",
    "duration": 1645,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
    "url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_video": false
@@ -606,7 +620,7 @@
    "date": "2026-10-23T20:00:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a653ec8aaf76cceaf3ec35639",
    "url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_url": "https://open.spotify.com/episode/4hWgfgic2US6TtVJb16Jyf",
    "spotify_video": false
@@ -991,7 +1005,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -1043,7 +1057,7 @@
    "date": "2026-10-15T11:12:00Z",
    "duration": 2222,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_video": false
@@ -1510,7 +1524,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -1550,7 +1564,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -2781,7 +2795,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -4778,7 +4792,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 247,
+   "episodes": 248,
    "spotify_matches": 1
   },
   "approachable": {
