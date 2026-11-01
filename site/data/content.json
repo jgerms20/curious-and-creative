@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T15:19:29Z",
+ "generated_at": "2026-11-01T19:48:32Z",
  "shows": [
   {
    "key": "ccpod",
@@ -108,9 +108,9 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Daily Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
-   "latest": "2026-10-31T15:20:00Z",
-   "count": 13
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "latest": "2026-11-01T17:55:00Z",
+   "count": 14
   },
   {
    "key": "dominate",
@@ -181,7 +181,7 @@
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
    "art": "assets/art/morningread.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
    "latest": "2026-11-01T12:24:00Z",
    "count": 7
   },
@@ -249,6 +249,19 @@
  ],
  "episodes": [
   {
+   "id": "riff:5R3qbyiVkafdakg5Sz786x",
+   "show": "riff",
+   "kind": "episode",
+   "title": "The Week Ahead: November 2-8",
+   "date": "2026-11-01T17:55:00Z",
+   "duration": 2568,
+   "description": "",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a28ba5018a21b5b3374bd8267",
+   "url": "https://open.spotify.com/episode/5R3qbyiVkafdakg5Sz786x",
+   "spotify_url": "https://open.spotify.com/episode/5R3qbyiVkafdakg5Sz786x",
+   "spotify_video": false
+  },
+  {
    "id": "morningread:0WOzV9qbsBrfZoFJzw8eK0",
    "show": "morningread",
    "kind": "episode",
@@ -310,7 +323,7 @@
    "date": "2026-10-31T15:08:00Z",
    "duration": 783,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab0dc176d7416b8baf70633d5",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab0dc176d7416b8baf70633d5",
    "url": "https://open.spotify.com/episode/77CHK8ODuYp6bjPaGpcTCx",
    "spotify_url": "https://open.spotify.com/episode/77CHK8ODuYp6bjPaGpcTCx",
    "spotify_video": false
@@ -525,7 +538,7 @@
    "date": "2026-10-26T21:23:00Z",
    "duration": 1645,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
    "url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_video": false
@@ -538,7 +551,7 @@
    "date": "2026-10-26T21:14:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a73fe1c4f1485aeb59d3ca086",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a73fe1c4f1485aeb59d3ca086",
    "url": "https://open.spotify.com/episode/0j0DAmLGAEWXniX9VL1LrH",
    "spotify_url": "https://open.spotify.com/episode/0j0DAmLGAEWXniX9VL1LrH",
    "spotify_video": false
@@ -729,7 +742,7 @@
    "date": "2026-10-22T18:58:00Z",
    "duration": 1193,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a0d868bfb283d52197f796fdb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a0d868bfb283d52197f796fdb",
    "url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
    "spotify_url": "https://open.spotify.com/episode/6hFvuPA0CQ67f5aVH91gYY",
    "spotify_video": false
@@ -839,7 +852,7 @@
    "date": "2026-10-19T18:40:00Z",
    "duration": 778,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab126da536a0a03ce78624da0",
    "url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_url": "https://open.spotify.com/episode/15U065FkO9qzLjFpjpYJCT",
    "spotify_video": false
@@ -921,7 +934,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -1018,7 +1031,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -1044,7 +1057,7 @@
    "date": "2026-10-15T20:27:00Z",
    "duration": 2860,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_url": "https://open.spotify.com/episode/2pWoI1OQBEJii1hkKl15hl",
    "spotify_video": false
@@ -1070,7 +1083,7 @@
    "date": "2026-10-15T11:12:00Z",
    "duration": 2222,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_url": "https://open.spotify.com/episode/4pyb52nSDEdR8tsNdym7oC",
    "spotify_video": false
@@ -1470,7 +1483,7 @@
    "date": "2026-10-05T04:59:00Z",
    "duration": 1183,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8adabd7d4c0289671b1d69e238",
    "url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_url": "https://open.spotify.com/episode/1BkshQwArEKxDCGaYyhYcg",
    "spotify_video": false
@@ -1564,7 +1577,7 @@
    "date": "2026-10-03T20:05:00Z",
    "duration": 991,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aba4eee75fbf0101ea63de8c0",
    "url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_url": "https://open.spotify.com/episode/3ZrWK9iUKhsel2AHfbfYo2",
    "spotify_video": false
@@ -1577,7 +1590,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -4826,8 +4839,8 @@
    "feed": null,
    "spotify_name": "The Daily Riff",
    "full_catalog": false,
-   "episodes": 13,
-   "spotify_matches": 13
+   "episodes": 14,
+   "spotify_matches": 14
   },
   "dominate": {
    "ok": true,
