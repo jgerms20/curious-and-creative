@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T17:16:20Z",
+ "generated_at": "2026-11-02T23:57:37Z",
  "shows": [
   {
    "key": "ccpod",
@@ -20,7 +20,7 @@
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
    "feed_title": "Curious and Creative",
    "art": "assets/art/ccpod.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aed297133296396b09882ba74",
    "latest": "2026-10-20T06:39:00Z",
    "count": 3
   },
@@ -108,7 +108,7 @@
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Jazz Riff",
    "art": "assets/art/riff.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "latest": "2026-11-02T15:43:00Z",
    "count": 15
   },
@@ -159,9 +159,9 @@
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
    "art": "assets/art/brazil.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
-   "latest": "2026-10-29T16:47:00Z",
-   "count": 14
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aa67fd6da9547cf47b9b85b01",
+   "latest": "2026-11-02T17:52:00Z",
+   "count": 15
   },
   {
    "key": "morningread",
@@ -181,7 +181,7 @@
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
    "art": "assets/art/morningread.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a7cc87eef493f1787315c28b6",
    "latest": "2026-11-02T11:07:00Z",
    "count": 8
   },
@@ -249,6 +249,19 @@
  ],
  "episodes": [
   {
+   "id": "brazil:6RYeRUteipghGjHZc9mtEe",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#23 Pix: Como o Brasil Construiu um Sistema de Pagamento Que os Americanos Não Têm (Português)",
+   "date": "2026-11-02T17:52:00Z",
+   "duration": 827,
+   "description": "",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae5edfb0c07d84829704f6263",
+   "url": "https://open.spotify.com/episode/6RYeRUteipghGjHZc9mtEe",
+   "spotify_url": "https://open.spotify.com/episode/6RYeRUteipghGjHZc9mtEe",
+   "spotify_video": false
+  },
+  {
    "id": "riff:0cM6bDbzPmZv70MeQD8QuG",
    "show": "riff",
    "kind": "episode",
@@ -269,7 +282,7 @@
    "date": "2026-11-02T11:07:00Z",
    "duration": 1169,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a9ef6c64c970673d8cf25a206",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a9ef6c64c970673d8cf25a206",
    "url": "https://open.spotify.com/episode/6jCErM5Y3Bf5z5Zz0eZ1EI",
    "spotify_url": "https://open.spotify.com/episode/6jCErM5Y3Bf5z5Zz0eZ1EI",
    "spotify_video": false
@@ -282,7 +295,7 @@
    "date": "2026-11-01T17:55:00Z",
    "duration": 2568,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a28ba5018a21b5b3374bd8267",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a28ba5018a21b5b3374bd8267",
    "url": "https://open.spotify.com/episode/5R3qbyiVkafdakg5Sz786x",
    "spotify_url": "https://open.spotify.com/episode/5R3qbyiVkafdakg5Sz786x",
    "spotify_video": false
@@ -295,7 +308,7 @@
    "date": "2026-11-01T12:24:00Z",
    "duration": 1290,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a92d8b8e9c22089c5efb292b6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a92d8b8e9c22089c5efb292b6",
    "url": "https://open.spotify.com/episode/0WOzV9qbsBrfZoFJzw8eK0",
    "spotify_url": "https://open.spotify.com/episode/0WOzV9qbsBrfZoFJzw8eK0",
    "spotify_video": false
@@ -336,7 +349,7 @@
    "date": "2026-10-31T15:20:00Z",
    "duration": 2633,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8aeb8745e115b41dada2a3557d",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8aeb8745e115b41dada2a3557d",
    "url": "https://open.spotify.com/episode/7p1A3XMzRKDqzs7lQNuk94",
    "spotify_url": "https://open.spotify.com/episode/7p1A3XMzRKDqzs7lQNuk94",
    "spotify_video": false
@@ -376,7 +389,7 @@
    "date": "2026-10-30T16:23:00Z",
    "duration": 2635,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a37f412f9a7056b7f0b8297b8",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a37f412f9a7056b7f0b8297b8",
    "url": "https://open.spotify.com/episode/5rffT9FV8MvsUQbfTsu0dQ",
    "spotify_url": "https://open.spotify.com/episode/5rffT9FV8MvsUQbfTsu0dQ",
    "spotify_video": false
@@ -415,7 +428,7 @@
    "date": "2026-10-29T14:47:00Z",
    "duration": 2554,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a32599379dc14175a0c1c453f",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a32599379dc14175a0c1c453f",
    "url": "https://open.spotify.com/episode/0fOZboUXPRPcb62tCjKM4n",
    "spotify_url": "https://open.spotify.com/episode/0fOZboUXPRPcb62tCjKM4n",
    "spotify_video": false
@@ -428,7 +441,7 @@
    "date": "2026-10-29T13:34:00Z",
    "duration": 1191,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a4d00feda1a3db2a2ab4286bf",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a4d00feda1a3db2a2ab4286bf",
    "url": "https://open.spotify.com/episode/6ki9i2c6fXcvjpzULHIgzE",
    "spotify_url": "https://open.spotify.com/episode/6ki9i2c6fXcvjpzULHIgzE",
    "spotify_video": false
@@ -564,7 +577,7 @@
    "date": "2026-10-26T21:23:00Z",
    "duration": 1645,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a70b1209ac78b8ceb58ceb8e2",
    "url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_url": "https://open.spotify.com/episode/7pJSZCz8dBNbcOrwIQHgbv",
    "spotify_video": false
@@ -577,7 +590,7 @@
    "date": "2026-10-26T21:14:00Z",
    "duration": 1416,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a73fe1c4f1485aeb59d3ca086",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a73fe1c4f1485aeb59d3ca086",
    "url": "https://open.spotify.com/episode/0j0DAmLGAEWXniX9VL1LrH",
    "spotify_url": "https://open.spotify.com/episode/0j0DAmLGAEWXniX9VL1LrH",
    "spotify_video": false
@@ -645,7 +658,7 @@
    "date": "2026-10-26T04:00:00Z",
    "duration": 2428,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a9b9f60e9b417207d6441740a",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a9b9f60e9b417207d6441740a",
    "url": "https://open.spotify.com/episode/4O4oE9FdrKwZs72X1KAyOs",
    "spotify_url": "https://open.spotify.com/episode/4O4oE9FdrKwZs72X1KAyOs",
    "spotify_video": false
@@ -865,7 +878,7 @@
    "date": "2026-10-20T06:39:00Z",
    "duration": 1714,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab1fcf06bc301c86a4f9850dc",
    "url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_url": "https://open.spotify.com/episode/5MP6BACDwM6OvAtZKDkS0g",
    "spotify_video": false
@@ -960,7 +973,7 @@
    "date": "2026-10-18T02:17:00Z",
    "duration": 4315,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a225acadf788df6748c8c8f46",
    "url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_url": "https://open.spotify.com/episode/4FNzTh4mSHC8hy3Ea1bk2y",
    "spotify_video": false
@@ -1057,7 +1070,7 @@
    "date": "2026-10-15T22:34:00Z",
    "duration": 2143,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3ab8c8bccf3cc39b6e9e7bf6",
    "url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_url": "https://open.spotify.com/episode/6pq1lb9RuRPNphkSDhjjEz",
    "spotify_video": false
@@ -1248,7 +1261,7 @@
    "date": "2026-10-13T01:12:00Z",
    "duration": 1170,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab13f168b4deaf773f38dd99e",
    "url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_url": "https://open.spotify.com/episode/3QvNoGZqpr58FDBARvnvXN",
    "spotify_video": false
@@ -1469,7 +1482,7 @@
    "date": "2026-10-05T17:39:00Z",
    "duration": 960,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a1ba14687c8f6981ef84f592f",
    "url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_url": "https://open.spotify.com/episode/564EauYPeUuarR3FNhB10h",
    "spotify_video": false
@@ -1536,7 +1549,7 @@
    "date": "2026-10-04T20:11:00Z",
    "duration": 1075,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae0f05f96c7551d1a8d093876",
    "url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_url": "https://open.spotify.com/episode/1nOdjBWv0hqJracOoasDSn",
    "spotify_video": false
@@ -1576,7 +1589,7 @@
    "date": "2026-10-04T05:03:00Z",
    "duration": 1997,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8af684acab2f22cfd6cfff48cb",
    "url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_url": "https://open.spotify.com/episode/4R0PlOOdnRVL8U9NckyGP9",
    "spotify_video": false
@@ -1616,7 +1629,7 @@
    "date": "2026-10-02T18:51:00Z",
    "duration": 2612,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a3cb874015669e8b0bde455ff",
    "url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_url": "https://open.spotify.com/episode/7vrA6kgiv00Oj5BhRuGxYn",
    "spotify_video": false
@@ -2860,7 +2873,7 @@
    "date": "2026-07-22T20:42:00Z",
    "duration": 3002,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a52ec51bd5f694dd10750804e",
    "url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_url": "https://open.spotify.com/episode/1c29WyilCTFCyjUvtJkWWl",
    "spotify_video": false
@@ -4881,8 +4894,8 @@
    "feed": null,
    "spotify_name": "God is Brazilian",
    "full_catalog": false,
-   "episodes": 14,
-   "spotify_matches": 14
+   "episodes": 15,
+   "spotify_matches": 15
   },
   "morningread": {
    "ok": true,
