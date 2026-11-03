@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T03:45:21Z",
+ "generated_at": "2026-11-03T03:55:15Z",
  "shows": [
   {
    "key": "ccpod",
@@ -30,7 +30,7 @@
   {
    "key": "polymath",
    "name": "The Eclectic Polymath Podcast",
-   "short": "The Eclectic Polymath",
+   "short": "Eclectic Polymath",
    "kind": "podcast",
    "hosts": [
     "Joshua German"
@@ -90,7 +90,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -513,8 +513,8 @@
    "complete": true,
    "art": "assets/art/optionsdesk.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107161/47107161-1793316392630-4f694b23fc264.jpg",
-   "latest": "2026-11-02T12:32:08Z",
-   "count": 5
+   "latest": "2026-11-01T13:10:40Z",
+   "count": 4
   },
   {
    "key": "cryptoread",
@@ -971,20 +971,6 @@
    "url": "https://open.spotify.com/episode/1oNxTIXTf6SYNZbaxg5nE2",
    "spotify_url": "https://open.spotify.com/episode/1oNxTIXTf6SYNZbaxg5nE2",
    "audio": "https://anchor.fm/s/119606d2c/podcast/play/128613616/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F88be479c-1e64-0739-245b-2a89522d5c41.m4a",
-   "number": null
-  },
-  {
-   "id": "optionsdesk:49487eb9 ce27 489c 8339 cabe7991dd41",
-   "show": "optionsdesk",
-   "kind": "episode",
-   "title": "Monday, November 2, 2026",
-   "date": "2026-11-02T12:32:08Z",
-   "duration": 1156,
-   "description": "Futures bounce after Friday's selloff into the heaviest week of the quarter: ISM manufacturing at 10 a.m., Apple and Palantir after the close, the midterms tomorrow and payrolls Friday. The desk works an Apple iron condor into its print, a Palantir bull call spread that respects its habit of outrunning the implied move, a SPY hedge held to November 20th, and an Exxon call spread following the call-heavy flow — plus the explainer on reading the implied move from the straddle and building a condor beyond it.\n Setups: AAPL Nov 6 iron condor 330/320 puts + 365/375 calls · PLTR Nov 13 185/210 bull call spread · SPY Nov 20 750/735 bear put spread · XOM Nov 20 190/205 bull call spread · Explainer:…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107161/47107161-1793622695376-aaf46eee6f64f.jpg",
-   "url": "https://open.spotify.com/episode/2aNVutj8HvWzKSxWP5ozNP",
-   "spotify_url": "https://open.spotify.com/episode/2aNVutj8HvWzKSxWP5ozNP",
-   "audio": "https://anchor.fm/s/119606944/podcast/play/128613305/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ff75a24ac-b175-e529-6efa-4ebd78363bc5.m4a",
    "number": null
   },
   {
@@ -7403,8 +7389,8 @@
    "feed": "https://anchor.fm/s/119606944/podcast/rss",
    "spotify_name": "The Options Desk",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 1
+   "episodes": 4,
+   "spotify_matches": 0
   },
   "cryptoread": {
    "ok": true,
