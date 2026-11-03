@@ -15,7 +15,7 @@
    "about": "A deep dive into the minds of artists, creators, and innovators — the ideas, decisions, and cultural moments that shape how we see (and sell) the world.",
    "spotify": "033ze48fmi1cTvj2M7Pb6M",
    "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
-   "rss": null,
+   "rss": "https://anchor.fm/s/113d16640/podcast/rss",
    "video_check": true,
    "itunes_search": [
     "Curious + Creative",
@@ -33,7 +33,7 @@
   },
   {
    "key": "polymath",
-   "name": "The Eclectic Polymath",
+   "name": "The Eclectic Polymath Podcast",
    "short": "Eclectic Polymath",
    "kind": "podcast",
    "hosts": [
@@ -66,7 +66,8 @@
    "youtube_handle": "@Approachable.A.I",
    "youtube_channel_id": "UCzBu_yom9iyvImXsQR6K_mw",
    "art_url": "https://joshuamgerman.com/photos/podcasts/approachable-ai-logo.jpg",
-   "tier": "primary"
+   "tier": "primary",
+   "spotify_url": "https://open.spotify.com/show/0341xuu1WqXu4NiFUkdTFl"
   },
   {
    "key": "tmtt",
@@ -90,25 +91,6 @@
    "tier": "primary"
   },
   {
-   "key": "riff",
-   "name": "The Daily Riff",
-   "short": "The Daily Riff",
-   "kind": "podcast",
-   "tier": "primary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "tagline": "A daily dose of jazz, made with AI.",
-   "about": "",
-   "spotify": "79MaSzrv6uJkaHiFoZQrWk",
-   "itunes_search": [
-    "The Daily Riff"
-   ],
-   "rss": null,
-   "ai": "full",
-   "principal": "Joshua German"
-  },
-  {
    "key": "dominate",
    "name": "Dominate the Decade",
    "short": "Dominate the Decade",
@@ -124,117 +106,8 @@
    "spotify": "3IiC15tFfb1rHoDm9R6Zxp",
    "rss": "https://anchor.fm/s/24421480/podcast/rss",
    "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
-   "tier": "secondary",
+   "tier": "primary",
    "feature": true
-  },
-  {
-   "key": "brazil",
-   "name": "God Is Brazilian",
-   "short": "God Is Brazilian",
-   "kind": "podcast",
-   "hosts": [
-    "AI-generated"
-   ],
-   "tagline": "Brazil's cities, culture, and history, made with AI.",
-   "about": "",
-   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
-   "rss": null,
-   "itunes_search": [
-    "God is Brazilian"
-   ],
-   "match_artist": [
-    "german"
-   ],
-   "tier": "secondary",
-   "ai": "full",
-   "principal": "Joshua German"
-  },
-  {
-   "key": "morningread",
-   "name": "The Morning Read",
-   "short": "The Morning Read",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "tagline": "A morning read, made with AI.",
-   "about": "",
-   "spotify": "1Dtk8svL8ahjAPtso2lBMp",
-   "itunes_search": [
-    "The Morning Read"
-   ],
-   "rss": null,
-   "match_owner": [
-    "Joshua German",
-    "Joshua McKenzie German",
-    "jgerms20",
-    "jgerms"
-   ],
-   "match_artist": [
-    "german",
-    "jgerms"
-   ]
-  },
-  {
-   "key": "hollywoodinsider",
-   "name": "Hollywood Insider",
-   "short": "Hollywood Insider",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "tagline": "What's really happening in Hollywood, made with AI.",
-   "about": "",
-   "spotify": null,
-   "rss": null,
-   "itunes_search": [
-    "Hollywood Insider"
-   ],
-   "match_owner": [
-    "Joshua German",
-    "Joshua McKenzie German",
-    "jgerms20",
-    "jgerms"
-   ],
-   "match_artist": [
-    "german",
-    "jgerms"
-   ]
-  },
-  {
-   "key": "fastbreak",
-   "name": "The Fast Break",
-   "short": "The Fast Break",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "tagline": "Sports, fast, made with AI.",
-   "about": "",
-   "spotify": null,
-   "rss": null,
-   "itunes_search": [
-    "The Fast Break"
-   ],
-   "match_owner": [
-    "Joshua German",
-    "Joshua McKenzie German",
-    "jgerms20",
-    "jgerms"
-   ],
-   "match_artist": [
-    "german",
-    "jgerms"
-   ]
   },
   {
    "key": "abolitionist",
@@ -249,7 +122,482 @@
    "spotify": "7natfWFnBgakjLLZcEDZaw",
    "rss": "https://anchor.fm/s/28e3d53c/podcast/rss",
    "apple": "https://podcasts.apple.com/us/podcast/aspiring-abolitionist/id1521120915",
-   "tier": "secondary"
+   "tier": "primary"
+  },
+  {
+   "key": "riff",
+   "name": "The Jazz Riff",
+   "short": "The Jazz Riff",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "tagline": "Jazz only, four times a week.",
+   "about": "",
+   "spotify": "79MaSzrv6uJkaHiFoZQrWk",
+   "rss": "https://anchor.fm/s/1187405a4/podcast/rss",
+   "ai": "full",
+   "principal": "Joshua German",
+   "keep": 30,
+   "category": "culture",
+   "cadence": "Mon · Wed · Fri · Sun"
+  },
+  {
+   "key": "brazil",
+   "name": "God is Brazilian",
+   "short": "God is Brazilian",
+   "kind": "podcast",
+   "hosts": [
+    "AI-generated"
+   ],
+   "tagline": "Brazil's cities, culture, and history.",
+   "about": "",
+   "spotify": "4tAY78JV37aIgmJ2d1iF3w",
+   "rss": "https://anchor.fm/s/11714b104/podcast/rss",
+   "tier": "secondary",
+   "ai": "full",
+   "principal": "Joshua German",
+   "keep": 30,
+   "category": "culture"
+  },
+  {
+   "key": "harlem",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Once Upon a Time in Harlem",
+   "short": "Once Upon a Time in Harlem",
+   "category": "culture",
+   "spotify": "0eKxqwy7sMDyNXkCRR2IMN",
+   "rss": "https://anchor.fm/s/119157f24/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "designdigest",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Design Digest",
+   "short": "The Design Digest",
+   "category": "culture",
+   "spotify": "1I3nVM9LPlxYQzy8VPtGTD",
+   "rss": "https://anchor.fm/s/119758914/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "dominatedconvo",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Dominated the Conversation",
+   "short": "Dominated the Conversation",
+   "category": "culture",
+   "spotify": "48nwiqvaZCXqEiI1lGhb47",
+   "rss": "https://anchor.fm/s/119799630/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "morningread",
+   "name": "The Morning Read",
+   "short": "The Morning Read",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "",
+   "about": "",
+   "spotify": "1Dtk8svL8ahjAPtso2lBMp",
+   "rss": "https://anchor.fm/s/118e6e448/podcast/rss",
+   "keep": 30,
+   "category": "news",
+   "cadence": "Twice daily · AM + PM"
+  },
+  {
+   "key": "ladaily",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The LA Daily",
+   "short": "The LA Daily",
+   "category": "news",
+   "spotify": "075sJdyAJA6JNbdZGwnyq0",
+   "rss": "https://anchor.fm/s/11960849c/podcast/rss",
+   "tagline": "",
+   "cadence": "Twice daily · AM + PM"
+  },
+  {
+   "key": "globalread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Global Read",
+   "short": "The Global Read",
+   "category": "news",
+   "spotify": "0LOla5sXCGZ4pDLIk1qecU",
+   "rss": "https://anchor.fm/s/1195d888c/podcast/rss",
+   "tagline": "",
+   "cadence": "Twice daily · AM + PM"
+  },
+  {
+   "key": "marketread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Market Read",
+   "short": "The Market Read",
+   "category": "news",
+   "spotify": "7o0wIklaVB3sYrcTOt9Wnz",
+   "rss": "https://anchor.fm/s/1195d8bac/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "nyread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The New York Read",
+   "short": "The New York Read",
+   "category": "news",
+   "spotify": "4VzGjjkSb5y61OjTVInWA1",
+   "rss": "https://anchor.fm/s/119608a14/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "columbiaread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Columbia Read",
+   "short": "The Columbia Read",
+   "category": "news",
+   "spotify": "0dTaZgM38D6shA8x5BTITR",
+   "rss": "https://anchor.fm/s/11974f1e8/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "airead",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The AI Read",
+   "short": "The AI Read",
+   "category": "news",
+   "spotify": "0p46JOERBiE9vjed6Pt68I",
+   "rss": "https://anchor.fm/s/119609054/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "techread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Tech Read",
+   "short": "The Tech Read",
+   "category": "news",
+   "spotify": "1hQp8wRwxTf0BO6OfTtdDe",
+   "rss": "https://anchor.fm/s/1196c6280/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "optionsdesk",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Options Desk",
+   "short": "The Options Desk",
+   "category": "news",
+   "spotify": "5EvGemFi7cyaWysrrYXpIp",
+   "rss": "https://anchor.fm/s/119606944/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "cryptoread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Crypto Read",
+   "short": "The Crypto Read",
+   "category": "news",
+   "spotify": "1OhlHYPg6qvrXoGKhc2WvQ",
+   "rss": "https://anchor.fm/s/119606d2c/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "hollywoodinsider",
+   "name": "The Business of Hollywood",
+   "short": "The Business of Hollywood",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "",
+   "about": "",
+   "spotify": "23w2HgOlsc8OJUyx3z955X",
+   "rss": "https://anchor.fm/s/1195dc2c0/podcast/rss",
+   "keep": 30,
+   "category": "industry"
+  },
+  {
+   "key": "tvinsider",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The TV Insider",
+   "short": "The TV Insider",
+   "category": "industry",
+   "spotify": "5jXIg7zndmpXNrGRF3s68O",
+   "rss": "https://anchor.fm/s/1195dae0c/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "fastbreak",
+   "name": "The Fast Break",
+   "short": "The Fast Break",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "tagline": "",
+   "about": "",
+   "spotify": "1ll5TImMkA9Ys8czUWuv5S",
+   "rss": "https://anchor.fm/s/1195461f8/podcast/rss",
+   "keep": 30,
+   "category": "sports"
+  },
+  {
+   "key": "blitz",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Blitz",
+   "short": "The Blitz",
+   "category": "sports",
+   "spotify": "0GRrulRcTaVs3rSqdqJFCQ",
+   "rss": "https://anchor.fm/s/1196c5024/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "waiverwire",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "The Waiver Wire",
+   "short": "The Waiver Wire",
+   "category": "sports",
+   "spotify": "4DZg4aE2C8FF1nV31XWCf6",
+   "rss": "https://anchor.fm/s/1198cbdb4/podcast/rss",
+   "tagline": "",
+   "cadence": "5x a week in season"
+  },
+  {
+   "key": "celticsdaily",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Celtics Daily",
+   "short": "Celtics Daily",
+   "category": "sports",
+   "spotify": "4JSb8qpLtYL7O8eJp8F7qc",
+   "rss": "https://anchor.fm/s/1196c53a8/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "coltsdaily",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Colts Daily",
+   "short": "Colts Daily",
+   "category": "sports",
+   "spotify": "44iglaK8xQPnHHAVpUAgyx",
+   "rss": "https://anchor.fm/s/119609694/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "cfbdaily",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "College Football Daily",
+   "short": "College Football Daily",
+   "category": "sports",
+   "spotify": "1fl00ImvclkYpwWiZzHtna",
+   "rss": "https://anchor.fm/s/119609a7c/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "cbbdaily",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "College Basketball Daily",
+   "short": "College Basketball Daily",
+   "category": "sports",
+   "spotify": "70qRlnh5hY1WHBSMNvnPQE",
+   "rss": "https://anchor.fm/s/11979a24c/podcast/rss",
+   "tagline": "",
+   "cadence": "Weekly · Monday wrap"
+  },
+  {
+   "key": "gamecocksdaily",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Gamecocks Daily",
+   "short": "Gamecocks Daily",
+   "category": "sports",
+   "spotify": "6A71aYP8TxEEJgOCOyTQs4",
+   "rss": "https://anchor.fm/s/1196d625c/podcast/rss",
+   "tagline": ""
+  },
+  {
+   "key": "gamecockshoops",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Gamecocks Basketball Daily",
+   "short": "Gamecocks Basketball Daily",
+   "category": "sports",
+   "spotify": "2sP82t7Zd091zEe80Dk8Qi",
+   "rss": "https://anchor.fm/s/11979a058/podcast/rss",
+   "tagline": "",
+   "cadence": "Mon · Wed · Fri"
   }
  ],
  "probe_sites": [
@@ -316,5 +664,11 @@
    "find_via": "jgerms",
    "match": "janel"
   }
- ]
+ ],
+ "categories": {
+  "culture": "Culture",
+  "news": "News & reads",
+  "industry": "Industry",
+  "sports": "Sports"
+ }
 }

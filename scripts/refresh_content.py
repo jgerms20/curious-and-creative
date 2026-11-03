@@ -1152,12 +1152,15 @@ def main():
             res = {"show": {k: v for k, v in prev_shows.get(show["key"], {}).items()},
                    "episodes": [e for e in prev_eps if e.get("show") == show["key"]]}
         eps = sorted(res["episodes"], key=lambda e: e.get("date") or "", reverse=True)
-        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs", "match_owner")}
+        total = len(eps)
+        if show.get("keep"):  # daily shows: keep the site's data small, the feed has the rest
+            eps = eps[:show["keep"]]
+        meta = {k: v for k, v in show.items() if k not in ("itunes_search", "match_artist", "only_matching", "hide_matching", "video_check", "episode_links", "creator_slugs", "match_owner", "keep")}
         meta.update({k: v for k, v in res["show"].items() if v})
         if not res["show"].get("art") and prev_shows.get(show["key"], {}).get("art"):
             meta["art"] = prev_shows[show["key"]]["art"]
         meta["latest"] = eps[0]["date"] if eps else None
-        meta["count"] = len(eps)
+        meta["count"] = total
         shows.append(meta)
         episodes += eps
         for e in eps[:3]:

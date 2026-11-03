@@ -996,3 +996,55 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .tile--star h3 { font-size: 1.7rem; }
 .tile__star { align-self: flex-start; display: inline-flex; gap: .35em; align-items: center; padding: .3em .7em; border-radius: var(--pill); background: var(--gold); color: #1a1205; font-size: .75rem; font-weight: 850; text-transform: uppercase; letter-spacing: .06em; }
 @media (max-width: 640px) { .tile--star { grid-column: auto; } }
+
+/* header: four nav items and a search icon (no wide search pill) */
+.hdr__search { display: none !important; }
+.hdr__search-mobile { display: grid; }
+.hdr__links { margin-left: auto; gap: 1.4rem; font-size: .98rem; }
+@media (min-width: 861px) { .hdr__links { display: flex !important; } }
+@media (max-width: 860px) { .hdr__links { display: none !important; } .hdr__search-mobile { margin-left: auto; } }
+.shop-inv { margin-top: clamp(3rem, 7vw, 5rem); scroll-margin-top: 96px; }
+
+/* network v4: category planets with their shows as moons */
+.web__orbit--moon { stroke-dasharray: 1 5; opacity: .55; animation-duration: 40s; }
+.web__planet-body { fill: color-mix(in srgb, var(--grape) 22%, var(--card)); stroke: var(--grape); stroke-width: 2.5; }
+.web__planet-n { font-size: 18px; font-weight: 900; fill: var(--ink); text-anchor: middle; pointer-events: none; }
+.web__moon .web__ring { stroke-width: 2; stroke: var(--grape); }
+.web__tip { font-size: 15px; paint-order: stroke; stroke: var(--paper); stroke-width: 5px; stroke-linejoin: round; pointer-events: none; }
+.web__node--future.web__planet circle { fill: none; stroke: var(--ink-soft); stroke-width: 2; stroke-dasharray: 4 5; }
+
+/* network page: regular shows by category */
+.ncat { margin-top: 2rem; scroll-margin-top: 96px; }
+.ncat__title { font-size: 1.35rem; font-weight: 880; margin-bottom: 1rem; display: flex; align-items: baseline; gap: .5rem; }
+.ncat__title small { font-size: .85rem; color: var(--ink-soft); font-weight: 750; }
+.ncards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 1rem; }
+.ncard { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 1rem; padding: 1rem; border-radius: var(--card-r); background: var(--card); border: 1px solid var(--line); scroll-margin-top: 96px; }
+.ncard__art img, .ncard__initials { width: 84px; height: 84px; border-radius: 14px; object-fit: cover; display: grid; place-items: center; background: var(--c, var(--grape)); color: #fff; font-weight: 900; font-size: 1.6rem; }
+.ncard h3 { font-size: 1.12rem; font-weight: 850; margin-top: .3rem; line-height: 1.2; }
+.ncard p { color: var(--ink-soft); font-size: .88rem; margin-top: .25rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ncard__latest { display: block; margin-top: .6rem; font-size: .88rem; font-weight: 750; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.ncard__latest small { display: block; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
+a.ncard__latest:hover { text-decoration: underline; }
+.ncard__links { display: flex !important; gap: .9rem; margin-top: .5rem !important; font-size: .8rem; font-weight: 800; }
+.ncard__links a { color: var(--ink); }
+.hdr__menu-cat .ph { display: grid; place-items: center; font-weight: 900; color: #fff; background: var(--grape); }
+
+/* manifesto */
+.manifesto { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
+.tenets { list-style: none; padding: 0; margin: 0; counter-reset: tenet; display: grid; gap: 1.1rem; }
+.tenets li { counter-increment: tenet; display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .15rem 1rem; padding: 1.1rem 1.25rem; border-radius: var(--card-r); background: var(--card); border: 1px solid var(--line); }
+.tenets li::before { content: counter(tenet); grid-row: span 2; font-weight: 900; font-stretch: 80%; font-size: 2.4rem; line-height: 1; color: var(--gold); }
+.tenets b { font-size: 1.2rem; font-weight: 880; }
+.tenets span { color: var(--ink-soft); }
+.tag-line { position: sticky; top: 96px; padding: 1.75rem; border-radius: var(--box-r); background: var(--box, #141217); color: #fff; }
+.tag-line .eyebrow { color: rgba(255,255,255,.7); }
+.tag-line p { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 900; font-stretch: 85%; line-height: 1.1; margin: .75rem 0 1.25rem; }
+.tag-line .pill-more { color: #fff; }
+@media (max-width: 860px) { .manifesto { grid-template-columns: 1fr; } .tag-line { position: static; } }
+/* studio: the 10-step offer ladder */
+.offers--ladder { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.offers--ladder .offer h2 { font-size: 1.25rem; }
+.offers__bundle { margin-top: 1.5rem; padding: 1.1rem 1.4rem; border-radius: var(--card-r); background: var(--paper-2); border: 1px solid var(--line); max-width: 75ch; }
+.studio__grid--ten .studio__svc { padding: .9rem 1rem; }
+.studio__grid--ten .studio__svc span { font-size: 1.2rem; }
+.web .web__label--end { text-anchor: end; }
