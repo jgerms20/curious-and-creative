@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T07:00:17Z",
+ "generated_at": "2026-11-03T15:21:58Z",
  "shows": [
   {
    "key": "ccpod",
@@ -90,7 +90,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -145,8 +145,8 @@
    "complete": true,
    "art": "assets/art/abolitionist.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "latest": "2025-01-21T14:00:00Z",
-   "count": 13
+   "latest": "2026-11-03T05:57:21Z",
+   "count": 14
   },
   {
    "key": "riff",
@@ -245,7 +245,7 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/119758914/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1I3nVM9LPlxYQzy8VPtGTD",
-   "feed_title": "Form &amp; Function",
+   "feed_title": "The Design Digest",
    "description": "Design news, people, events and history — global and Los Angeles — three times a week. The Week Ahead on Mondays, a designer Deep Dive on Wednesdays, and The Weekend on Fridays: fairs, exhibitions, openings, and the stories behind the objects and spaces. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/designdigest.jpg",
@@ -586,7 +586,7 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5jXIg7zndmpXNrGRF3s68O",
-   "feed_title": "Primetime",
+   "feed_title": "The TV Insider",
    "description": "Television, every morning. Renewals, cancellations, ratings, premieres, and the streaming wars — what to watch and why it matters, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
@@ -770,7 +770,7 @@
    "cadence": "Weekly · Monday wrap",
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/70qRlnh5hY1WHBSMNvnPQE",
-   "feed_title": "College Basketball Daily",
+   "feed_title": "Bracketology",
    "description": "College basketball, covered nationally, every day. College Basketball Daily runs through the men's and women's games: the night's results and upsets, the rankings, the bracket picture, and the stories moving the sport, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/cbbdaily.jpg",
@@ -833,6 +833,20 @@
   }
  ],
  "episodes": [
+  {
+   "id": "abolitionist:03000c61 1605 4507 b64f ab2d962b8000",
+   "show": "abolitionist",
+   "kind": "episode",
+   "title": "Election Eve 2026: The Races I’m Watching",
+   "date": "2026-11-03T05:57:21Z",
+   "duration": 1874,
+   "description": "On the eve of the 2026 midterms, I’m looking at the races and headlines that are on my mind... from Los Angeles and California to Texas, Ohio, Michigan, Georgia, Florida, North Carolina, and beyond. We talk local leadership, homelessness, public safety, affordability, campaign spending, organizing, and the pull between local issues and national stages. These are my election-eve observations and predictions, recorded before Election Day.\n Chapters \n (00:00) Election Eve: Los Angeles and California (06:48) Texas: the race and campaign spending (10:13) Ohio and Michigan: ads and party politics (19:23) Georgia, organizing, and the New South (23:04) Florida and North Carolina (26:04) Iowa,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/6760199/6760199-1793685134721-1e64ac6ab40b1.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/janel-moore/episodes/Election-Eve-2026-The-Races-Im-Watching-e3rkuu5",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/28e3d53c/podcast/play/128661893/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fd0adc4f7-22d7-9123-2fa7-65a52ae00a21.mp3",
+   "number": null
+  },
   {
    "id": "brazil:f8a7cf6d 4bdb 4a3f bd72 1f14f598a07d",
    "show": "brazil",
@@ -1150,8 +1164,8 @@
    "duration": 960,
    "description": "Detroit handed Minnesota its first loss, 19-15, behind Jahmyr Gibbs and a late Jameson Williams touchdown. Joe Burrow threw for 462 yards and five touchdowns and ran in the overtime winner as Cincinnati outlasted Tennessee 43-36. Buffalo routed Baltimore 36-10 as Josh Allen broke Jim Kelly's franchise touchdown record and Lamar Jackson was lost to injured reserve. Denver's goal-line stand beat Kansas City 28-24, and Washington closed Sunday night with a 27-10 win over Philadelphia.\n Lions 19, Vikings 15 · Bills 36, Ravens 10 · Bengals 43, Titans 36 (OT) · Cardinals 33, Cowboys 30 (OT) · Raiders 38, Jets 33 · Steelers 27, Browns 6 · Buccaneers 16, Falcons 0 · Jaguars 42, Colts 7 · Rams 24,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793595462502-e6566c64abf16.jpg",
-   "url": "https://open.spotify.com/episode/2jUnLLjOPLUkqv4QBBKVLG",
-   "spotify_url": "https://open.spotify.com/episode/2jUnLLjOPLUkqv4QBBKVLG",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Sunday--November-1--2026-e3rito7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128595143/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fe12a4668-805d-e500-f341-0b54ed7addd7.m4a",
    "number": null
   },
@@ -7305,7 +7319,7 @@
    "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
    "spotify_name": "Aspiring Abolitionist",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "riff": {
@@ -7375,7 +7389,7 @@
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
-   "spotify_name": "The Market Read",
+   "spotify_name": "The Opening Bell",
    "full_catalog": true,
    "episodes": 5,
    "spotify_matches": 1
@@ -7458,7 +7472,7 @@
    "spotify_name": "The Blitz",
    "full_catalog": true,
    "episodes": 4,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "waiverwire": {
    "ok": true,
@@ -7495,7 +7509,7 @@
   "cbbdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
-   "spotify_name": "College Basketball Daily",
+   "spotify_name": "Bracketology",
    "full_catalog": true,
    "episodes": 2,
    "spotify_matches": 1
