@@ -32,7 +32,7 @@
     if (CC.page === "shop") shop(data);
     if (CC.page === "videos") videosPage(data);
     if (CC.page === "writing") writing();
-    if (CC.page === "inventions") inventions();
+    if (CC.page === "inventions" || CC.page === "shop") inventions();
     CC.reveal();
   });
 
@@ -64,13 +64,34 @@
         </div>
       </section>`;
     };
-    const head = (t, d) => `<div class="pill-row"><h2 class="pill-title${t.includes("More") ? " pill-title--gold" : ""}">${t}</h2>${d ? `<a class="pill-more" href="${url("pages/shows.html#network")}">${d}</a>` : ""}</div>`;
-    host.innerHTML = head("The main lineup") + data.primary.map(block).join("") +
-      (data.secondary.length ? head("More from the network", "See the network map →") + data.secondary.map(block).join("") : "");
+    // a regular show: compact card with its cadence and latest episode
+    const card = (s) => {
+      const e = (data.episodes || []).find((x) => x.show === s.key);
+      const links = CC.showLinks(s);
+      return `<article class="ncard" id="${s.key}" data-show="${s.key}">
+        <span class="ncard__art">${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : `<span class="ncard__initials">${esc((s.short || s.name).replace(/^The /, "").split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`}</span>
+        <div class="ncard__body">
+          <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.cadence || CC.showByline(s))}</span>
+          <h3>${esc(s.name)}</h3>
+          <p>${esc(s.tagline || s.description || "")}</p>
+          ${e ? `<a class="ncard__latest" href="${esc(CC.epLink(e))}"${/^https?:/.test(CC.epLink(e)) ? ' target="_blank" rel="noopener"' : ""}><small>Latest · ${esc(ago(e.date))}</small>${esc(e.title)}</a>` : `<span class="ncard__latest"><small>Coming soon</small>First episode on the way.</span>`}
+          ${links.length ? `<p class="ncard__links">${links.map(([l, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`).join("")}</p>` : ""}
+        </div>
+      </article>`;
+    };
+    const head = (t, sub) => `<div class="pill-row"><h2 class="pill-title${t === "Flagships" ? " pill-title--gold" : ""}">${t}</h2>${sub ? `<span class="eyebrow">${sub}</span>` : ""}</div>`;
+    const cats = [...new Set(data.secondary.map((s) => s.category || "more"))].sort((a, b) => Object.keys(CC.categories).indexOf(a) - Object.keys(CC.categories).indexOf(b));
+    host.innerHTML = head("Flagships", "Handmade, hosted by us") + data.primary.map(block).join("") +
+      (data.secondary.length ? head("The network", `${data.secondary.length} regular shows`) + cats.map((k) => {
+        const list = data.secondary.filter((s) => (s.category || "more") === k);
+        return `<section class="ncat" id="cat-${k}"><h3 class="ncat__title">${esc(CC.categories[k] || "More")} <small>${list.length}</small></h3><div class="ncards">${list.map(card).join("")}</div></section>`;
+      }).join("") : "");
     host.before(sorter(data, (k) => {
-      host.querySelectorAll(".showblock").forEach((b) => { b.hidden = k !== "all" && !CC.showTags(data.byKey[b.id] || {}).includes(k); });
+      host.querySelectorAll(".showblock, .ncard").forEach((b) => { b.hidden = k !== "all" && !CC.showTags(data.byKey[b.id] || {}).includes(k); });
+      host.querySelectorAll(".ncat").forEach((c) => { c.hidden = ![...c.querySelectorAll(".ncard")].some((x) => !x.hidden); });
       host.querySelectorAll(".pill-row").forEach((r) => { let n = r.nextElementSibling, any = false; while (n && !n.classList.contains("pill-row")) { if (!n.hidden) any = true; n = n.nextElementSibling; } r.hidden = !any; });
     }));
+    document.querySelectorAll("[data-show-count]").forEach((el) => { el.textContent = data.shows.length; });
     if (location.hash) { const el = document.querySelector(location.hash); if (el) setTimeout(() => el.scrollIntoView(), 50); }
   }
 

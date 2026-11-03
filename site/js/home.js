@@ -234,20 +234,21 @@
   function network(data) {
     const host = document.getElementById("net");
     if (!host) return;
-    const latestOf = (k) => (data.episodes || []).find((e) => e.show === k);
-    const sec = data.secondary.slice().sort((a, b) => (b.feature ? 1 : 0) - (a.feature ? 1 : 0));
+    // the freshest episodes from across the regular shows, newest first
+    const regular = new Set(data.secondary.map((s) => s.key));
+    const fresh = (data.episodes || []).filter((e) => regular.has(e.show)).sort((x, y) => String(y.date).localeCompare(String(x.date))).slice(0, 6);
     host.innerHTML = `<div class="net__map">${CC.network(data)}</div>
       <div class="net__side">
-        <h3 class="net__title">More from the network</h3>
-        <p class="net__dek">Shows we host and guest on beyond the main lineup, with more audience-focused pods on the way.</p>
-        ${sec.map((s) => {
-          const e = latestOf(s.key);
-          return `<a class="net__show${s.feature ? " net__show--feature" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+        <h3 class="net__title">Fresh from the network</h3>
+        <p class="net__dek">${data.shows.length} shows. Accurate information, reported where nobody else is reporting, and made to be enjoyed.</p>
+        ${fresh.map((e) => {
+          const s = data.byKey[e.show] || {};
+          return `<a class="net__show" href="${esc(CC.epLink(e))}"${/^https?:/.test(CC.epLink(e)) ? ' target="_blank" rel="noopener"' : ""} data-show="${s.key}">
             ${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : '<span class="ph"></span>'}
-            <span><small>${s.feature ? "From the vault · Joshua co-hosts" : esc((s.hosts || []).join(" & "))}</small><b>${esc(s.name)}</b>${s.feature && s.about ? `<em>${esc(s.about)}</em>` : e ? `<em>Latest: ${esc(e.title)}</em>` : ""}</span>
+            <span><small>${esc(s.short || s.name || "")} · ${esc(ago(e.date))}</small><b>${esc(e.title)}</b></span>
           </a>`;
         }).join("")}
-        <a class="pill-more" href="${url("pages/shows.html#network")}">Explore the network →</a>
+        <p class="showblock__links"><a class="pill-more" href="${url("pages/shows.html")}">Every show →</a><a class="pill-more" href="${url("pages/manifesto.html")}">Our standards →</a></p>
       </div>`;
     CC.wireNetwork(host);
   }
