@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T04:12:02Z",
+ "generated_at": "2026-11-03T07:00:17Z",
  "shows": [
   {
    "key": "ccpod",
@@ -90,7 +90,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -245,7 +245,7 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/119758914/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1I3nVM9LPlxYQzy8VPtGTD",
-   "feed_title": "The Design Digest",
+   "feed_title": "Form &amp; Function",
    "description": "Design news, people, events and history — global and Los Angeles — three times a week. The Week Ahead on Mondays, a designer Deep Dive on Wednesdays, and The Weekend on Fridays: fairs, exhibitions, openings, and the stories behind the objects and spaces. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/designdigest.jpg",
@@ -435,8 +435,8 @@
    "complete": true,
    "art": "assets/art/columbiaread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47120618/47120618-1793473024667-3c58a827bef36.jpg",
-   "latest": "2026-10-31T19:01:33Z",
-   "count": 1
+   "latest": "2026-11-02T12:04:54Z",
+   "count": 2
   },
   {
    "key": "airead",
@@ -565,8 +565,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-10-31T13:38:49Z",
-   "count": 2
+   "latest": "2026-11-02T12:06:07Z",
+   "count": 3
   },
   {
    "key": "tvinsider",
@@ -586,7 +586,7 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5jXIg7zndmpXNrGRF3s68O",
-   "feed_title": "The TV Insider",
+   "feed_title": "Primetime",
    "description": "Television, every morning. Renewals, cancellations, ratings, premieres, and the streaming wars — what to watch and why it matters, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
@@ -999,6 +999,34 @@
    "url": "https://open.spotify.com/episode/2aNVutj8HvWzKSxWP5ozNP",
    "spotify_url": "https://open.spotify.com/episode/2aNVutj8HvWzKSxWP5ozNP",
    "audio": "https://anchor.fm/s/119606944/podcast/play/128613305/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ff75a24ac-b175-e529-6efa-4ebd78363bc5.m4a",
+   "number": null
+  },
+  {
+   "id": "hollywoodinsider:bd3c7f92 18ca 4077 a049 f5ea20662a51",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "Regal and Cinemark Pass on Brad Pitt's Cliff Booth as Netflix's Window Meets the IMAX Wall | Monday, November 2, 2026",
+   "date": "2026-11-02T12:06:07Z",
+   "duration": 937,
+   "description": "Regal and Cinemark refuse Netflix's Cliff Booth their IMAX screens, a 7 million dollar documentary beats Clayface by 200,684 dollars on Halloween weekend, Resident Evil tops 400 million worldwide, and a cat and a kaiju tie in next weekend's tracking. Plus: South Korea's Oscar submission goes to 190 countries on Netflix, Marrakech unveils its lineup, A24's Primetime tops Australia, and a Jimmy Stewart biopic gives a million dollars of tickets to veterans.\n • Regal and Cinemark pass on Cliff Booth's IMAX run as the window fight goes public — https://recentlyheard.com/netflixs-cliff-booth-wont-play-on-cinemark-or-regals-imax-screens/\n • UPDATE: You Can See Everything beats Clayface by $200,684…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1793621126559-e5d54b2f4cb88.jpg",
+   "url": "https://open.spotify.com/episode/4lzqvkiaSYAxCY7T6e3PvK",
+   "spotify_url": "https://open.spotify.com/episode/4lzqvkiaSYAxCY7T6e3PvK",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/128611745/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F8cc8e8d2-8ef6-0775-a041-170149989788.m4a",
+   "number": null
+  },
+  {
+   "id": "columbiaread:265531e0 3c16 46fe 9120 a1755b7c7417",
+   "show": "columbiaread",
+   "kind": "episode",
+   "title": "Monday, November 2, 2026",
+   "date": "2026-11-02T12:04:54Z",
+   "duration": 1204,
+   "description": "Columbia heads into Election Day with a Senate race tied at 48-48 and a new governor to choose, the No. 1 Gamecocks women open their season today in Paris, the football team is ranked again after routing Oklahoma, two plants bring nearly $60 million and 430 jobs to Richland County, and the latest numbers say Columbia is a buyer's market while rents keep climbing.\n In today's brief:\n • Election Eve: Tomorrow South Carolina chooses a governor, a senator, and a whole State House — https://scvotes.gov/early-voting-ends-saturday-reminders-for-election-day-november-3/\n • Today at noon: No. 1 South Carolina opens its season in Paris against No. 20 Maryland —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1793621058364-2517c00259ec1.jpg",
+   "url": "https://open.spotify.com/episode/6fTmVgJMukn9SHc5BHKkCH",
+   "spotify_url": "https://open.spotify.com/episode/6fTmVgJMukn9SHc5BHKkCH",
+   "audio": "https://anchor.fm/s/11974f1e8/podcast/play/128611632/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ff029855d-417d-1375-59b4-ffb3925f34a3.m4a",
    "number": null
   },
   {
@@ -7307,7 +7335,7 @@
   "designdigest": {
    "ok": true,
    "feed": "https://anchor.fm/s/119758914/podcast/rss",
-   "spotify_name": "The Design Digest",
+   "spotify_name": "Form & Function",
    "full_catalog": true,
    "episodes": 2,
    "spotify_matches": 1
@@ -7365,8 +7393,8 @@
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
-   "episodes": 1,
-   "spotify_matches": 0
+   "episodes": 2,
+   "spotify_matches": 1
   },
   "airead": {
    "ok": true,
@@ -7405,13 +7433,13 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 2,
-   "spotify_matches": 0
+   "episodes": 3,
+   "spotify_matches": 1
   },
   "tvinsider": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
-   "spotify_name": "The TV Insider",
+   "spotify_name": "Primetime",
    "full_catalog": true,
    "episodes": 4,
    "spotify_matches": 1
