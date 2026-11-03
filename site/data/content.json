@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T15:21:58Z",
+ "generated_at": "2026-11-03T21:09:59Z",
  "shows": [
   {
    "key": "ccpod",
@@ -145,8 +145,8 @@
    "complete": true,
    "art": "assets/art/abolitionist.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "latest": "2026-11-03T05:57:21Z",
-   "count": 14
+   "latest": "2025-01-21T14:00:00Z",
+   "count": 13
   },
   {
    "key": "riff",
@@ -245,7 +245,7 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/119758914/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1I3nVM9LPlxYQzy8VPtGTD",
-   "feed_title": "The Design Digest",
+   "feed_title": "Form &amp; Function",
    "description": "Design news, people, events and history — global and Los Angeles — three times a week. The Week Ahead on Mondays, a designer Deep Dive on Wednesdays, and The Weekend on Fridays: fairs, exhibitions, openings, and the stories behind the objects and spaces. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/designdigest.jpg",
@@ -271,13 +271,13 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/48nwiqvaZCXqEiI1lGhb47",
-   "feed_title": "Dominated the Conversation",
+   "feed_title": "The Zeitgeist",
    "description": "What the internet is talking about, before it's everywhere. Dominated the Conversation tracks the trends bubbling up on X, Reddit, TikTok and Instagram, explains them while they're still forming, and follows their arc as they build. Short flag episodes when something starts moving, a daily report on what dominated each platform, and deep dives on the trends with real trajectory. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-02T15:13:19Z",
-   "count": 3
+   "latest": "2026-11-03T20:54:20Z",
+   "count": 4
   },
   {
    "key": "morningread",
@@ -330,8 +330,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-02T11:01:13Z",
-   "count": 7
+   "latest": "2026-11-03T16:58:24Z",
+   "count": 8
   },
   {
    "key": "globalread",
@@ -357,8 +357,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-02T11:07:59Z",
-   "count": 5
+   "latest": "2026-11-03T16:50:51Z",
+   "count": 6
   },
   {
    "key": "marketread",
@@ -378,13 +378,13 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/7o0wIklaVB3sYrcTOt9Wnz",
-   "feed_title": "The Market Read",
+   "feed_title": "The Opening Bell",
    "description": "Markets and money, every morning. Overnight moves, the day's earnings and economic numbers, and the business stories that matter — in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-02T11:30:57Z",
-   "count": 5
+   "latest": "2026-11-03T16:54:07Z",
+   "count": 6
   },
   {
    "key": "nyread",
@@ -409,8 +409,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-02T11:29:10Z",
-   "count": 5
+   "latest": "2026-11-03T20:45:28Z",
+   "count": 6
   },
   {
    "key": "columbiaread",
@@ -461,8 +461,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-02T12:04:18Z",
-   "count": 5
+   "latest": "2026-11-03T16:59:59Z",
+   "count": 6
   },
   {
    "key": "techread",
@@ -487,8 +487,8 @@
    "complete": true,
    "art": "assets/art/techread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115008/47115008-1793403471813-faf390ffca731.jpg",
-   "latest": "2026-11-02T12:40:47Z",
-   "count": 3
+   "latest": "2026-11-03T21:00:52Z",
+   "count": 4
   },
   {
    "key": "optionsdesk",
@@ -513,8 +513,8 @@
    "complete": true,
    "art": "assets/art/optionsdesk.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107161/47107161-1793316392630-4f694b23fc264.jpg",
-   "latest": "2026-11-02T12:32:08Z",
-   "count": 5
+   "latest": "2026-11-03T17:01:19Z",
+   "count": 6
   },
   {
    "key": "cryptoread",
@@ -539,8 +539,8 @@
    "complete": true,
    "art": "assets/art/cryptoread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107171/47107171-1793316528128-bfd222f5e9759.jpg",
-   "latest": "2026-11-02T12:37:57Z",
-   "count": 5
+   "latest": "2026-11-03T17:04:09Z",
+   "count": 6
   },
   {
    "key": "hollywoodinsider",
@@ -565,8 +565,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-02T12:06:07Z",
-   "count": 3
+   "latest": "2026-11-03T17:08:16Z",
+   "count": 4
   },
   {
    "key": "tvinsider",
@@ -643,8 +643,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-02T04:58:57Z",
-   "count": 4
+   "latest": "2026-11-03T07:50:56Z",
+   "count": 5
   },
   {
    "key": "waiverwire",
@@ -670,8 +670,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793639616697-5aab21d8fe841.jpg",
-   "latest": "2026-11-02T17:18:47Z",
-   "count": 1
+   "latest": "2026-11-03T17:09:57Z",
+   "count": 2
   },
   {
    "key": "celticsdaily",
@@ -696,8 +696,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-02T01:57:46Z",
-   "count": 4
+   "latest": "2026-11-03T20:53:37Z",
+   "count": 5
   },
   {
    "key": "coltsdaily",
@@ -748,8 +748,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-02T13:38:18Z",
-   "count": 6
+   "latest": "2026-11-03T17:05:36Z",
+   "count": 7
   },
   {
    "key": "cbbdaily",
@@ -770,7 +770,7 @@
    "cadence": "Weekly · Monday wrap",
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/70qRlnh5hY1WHBSMNvnPQE",
-   "feed_title": "Bracketology",
+   "feed_title": "College Basketball Daily",
    "description": "College basketball, covered nationally, every day. College Basketball Daily runs through the men's and women's games: the night's results and upsets, the rankings, the bracket picture, and the stories moving the sport, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/cbbdaily.jpg",
@@ -834,17 +834,199 @@
  ],
  "episodes": [
   {
-   "id": "abolitionist:03000c61 1605 4507 b64f ab2d962b8000",
-   "show": "abolitionist",
+   "id": "techread:e088bfdd 279f 4017 83b3 f4e866c85962",
+   "show": "techread",
    "kind": "episode",
-   "title": "Election Eve 2026: The Races I’m Watching",
-   "date": "2026-11-03T05:57:21Z",
-   "duration": 1874,
-   "description": "On the eve of the 2026 midterms, I’m looking at the races and headlines that are on my mind... from Los Angeles and California to Texas, Ohio, Michigan, Georgia, Florida, North Carolina, and beyond. We talk local leadership, homelessness, public safety, affordability, campaign spending, organizing, and the pull between local issues and national stages. These are my election-eve observations and predictions, recorded before Election Day.\n Chapters \n (00:00) Election Eve: Los Angeles and California (06:48) Texas: the race and campaign spending (10:13) Ohio and Michigan: ads and party politics (19:23) Georgia, organizing, and the New South (23:04) Florida and North Carolina (26:04) Iowa,…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/6760199/6760199-1793685134721-1e64ac6ab40b1.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/janel-moore/episodes/Election-Eve-2026-The-Races-Im-Watching-e3rkuu5",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/28e3d53c/podcast/play/128661893/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fd0adc4f7-22d7-9123-2fa7-65a52ae00a21.mp3",
+   "title": "Tuesday, November 3, 2026",
+   "date": "2026-11-03T21:00:52Z",
+   "duration": 1503,
+   "description": "Marvell agrees to buy Lumentum in a $115 billion all-stock deal and both stocks fall, Apple posts a record September quarter but guides margins down, Palantir's U.S. commercial revenue passes its government revenue for the first time, Oracle files to raise $20 billion, Binance opens a second withdrawal phase as flows turn positive, Apple warns users in 99 countries of spyware targeting as Germany investigates, Corning opens its Pune optical plant, and AMD reports tonight.\n In today's brief:\n • Marvell to Buy Lumentum for $115 Billion in Stock — https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793739567897-4e9b0617f1f7b.jpg",
+   "url": "https://open.spotify.com/episode/5EaoDfLCjOsChsoE7YIEfZ",
+   "spotify_url": "https://open.spotify.com/episode/5EaoDfLCjOsChsoE7YIEfZ",
+   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128714330/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F7e34a4ac-ef31-4fbd-b8bf-7979e133580f.m4a",
+   "number": null
+  },
+  {
+   "id": "dominatedconvo:24d9f168 9d34 45c9 a987 0eaf7202a721",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "LeBron James Took a Sip of a Fan's Wine Mid-Game | Tuesday, November 3, 2026",
+   "date": "2026-11-03T20:54:20Z",
+   "duration": 973,
+   "description": "On the night before Election Day, LeBron James crashed into a courtside fan, spilled his wine, took a sip mid-game, and called it all right. Plus: Monday Night Football fallout and a Don Jr gaffe clip on X, a thin but telling day on Reddit, Ramalama still at number one on TikTok three days after Halloween, the CFDA red carpet and I Voted selfies on Instagram, and ledger follow-ups on the $835 million Powerball, the Remember November polar bear, and the Florida Learjet investigation.\n • LeBron James wine sip, fan interview, postgame quote — https://nypost.com/2026/11/03/sports/lebron-james-viral-mid-game-wine-sip-takes-new-twist-as-76ers-fan-shares-his-side/\n • LeBron James wine sip, game…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1793740125932-3cf1749e187e2.jpg",
+   "url": "https://open.spotify.com/episode/7xhqXGnM2mwm2RgLtarUDq",
+   "spotify_url": "https://open.spotify.com/episode/7xhqXGnM2mwm2RgLtarUDq",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/128713895/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Feb0be233-3211-4c99-9271-26b997852ebe.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:988ca4b6 b58f 4e8f b508 cb96c7292fd3",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Rockets Beat the Celtics 109-93: Sengun's Near Triple-Double Ends the Streak, Boston Is 5-2 | Tuesday, November 3, 2026",
+   "date": "2026-11-03T20:53:37Z",
+   "duration": 794,
+   "description": "The streak is over. Houston beat Boston 109-93 at the Toyota Center on Monday night, November 2, in a game the Celtics never led. Alperen Sengun carved Boston up with 26 points, 7 rebounds and 10 assists, Houston won the paint 50-34 and the fast break 18-2, and Boston's shooters went cold on the second night of a back-to-back without Paul George: Derrick White 3-for-12, Payton Pritchard 0-for-7. Jayson Tatum had 19 points, 6 rebounds and 9 assists, Neemias Queta scored 16 on 6-of-7 shooting, and Luka Garza added 14 off the bench. Boston falls to 5-2; Houston is 7-1.\n Segments: the recap in depth, Sengun's near triple-double, Queta vs. the center rotation, the White and Pritchard cold night,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793739116906-0b0efa7aba0ee.jpg",
+   "url": "https://open.spotify.com/episode/1KOc1rCkyBzsutYvG0zChU",
+   "spotify_url": "https://open.spotify.com/episode/1KOc1rCkyBzsutYvG0zChU",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128713909/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F054ca1a7-19d1-cb0a-bc71-229bd224d8d9.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:eea73c7b 39b2 4426 afb3 2a73bb4f3dc7",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026",
+   "date": "2026-11-03T20:45:28Z",
+   "duration": 779,
+   "description": "It is Election Day in New York: polls are open 6 a.m. to 9 p.m., Governor Kathy Hochul goes into the day with a double-digit lead over Bruce Blakeman after early voting surged nearly 70% statewide to 1,965,043; city voters also decide five charter questions from Mayor Mamdani's Commission on Government Efficiency; NYPD officers shot a man who police say opened fire outside a Bronx deli next to a daycare; a $10,000 reward is offered in the random stabbing of Brooklyn jogger Katie Suarez; the subway set an all-time Sunday record at 3.14 million riders and the marathon became the first ever to exceed 60,000 finishers, with 61,146; Upper West Side tenants discovered a 2023 supportive-housing…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1793738620234-b70dfdf650b65.jpg",
+   "url": "https://open.spotify.com/episode/6Hi5y21M9E3yLZb6rvd6UJ",
+   "spotify_url": "https://open.spotify.com/episode/6Hi5y21M9E3yLZb6rvd6UJ",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/128713213/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fe755a040-30cf-00ae-8ae5-ba378d04ea43.m4a",
+   "number": null
+  },
+  {
+   "id": "waiverwire:2035d7a8 ec51 4c57 b7c0 467736171fe3",
+   "show": "waiverwire",
+   "kind": "episode",
+   "title": "Allgeier and Washington Take the Backfields, Mitchell Breaks Out: The Week 9 Waiver Board | Tuesday, November 3, 2026",
+   "date": "2026-11-03T17:09:57Z",
+   "duration": 866,
+   "description": "The flagship Waiver Wire edition for Week 9: Monday night's Bears-Seahawks fallout first — D'Andre Swift's three-touchdown night in Chicago's 34-17 win — then the full ranked waiver board for 12-team PPR leagues.\n In this edition: RB adds — Tyler Allgeier, Mike Washington Jr., Dylan Sampson · WR adds — Adonai Mitchell, Keon Coleman, Antonio Williams, DeMario Douglas · TE adds — Brenton Strange, Mike Gesicki, Eli Raridon · QB and defense streamers · Week 9 bye coverage (Steelers and Titans) · the drop list · stash of the week Seth McGowan ahead of the November 10 trade deadline · and the full FAAB board.\n Part of the Curious & Creative network.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1793725749770-05ae80e00c905.jpg",
+   "url": "https://open.spotify.com/episode/03ZUFSEy5YHvZwpk1wP9hm",
+   "spotify_url": "https://open.spotify.com/episode/03ZUFSEy5YHvZwpk1wP9hm",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/128697822/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F019174e3-422b-1cd2-b5ec-5274aa73a327.m4a",
+   "number": null
+  },
+  {
+   "id": "hollywoodinsider:fad3d912 ee11 4131 b6bc 39d9f0d0141e",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "You Can See Everything's $11.4M Documentary Win and Godzilla's IMAX Fight | Tuesday, November 3, 2026",
+   "date": "2026-11-03T17:08:16Z",
+   "duration": 882,
+   "description": "Monday actuals confirm A24's Elizabeth Holmes documentary You Can See Everything at number one with $11.4 million, ahead of Clayface, while Wildwood held far better than estimates said. Plus Godzilla Minus Zero opens in Japan as India delays its release over IMAX screens, The Cat in the Hat's tracking splits from $17 million to $50 million, Klara and the Sun sets a second-weekend record no film wants, Lionsgate takes a reported $100 million from SP Media, an AI-made film heads to the American Film Market with an Oscars bid, and Grand Theft Auto VI looms over November's biggest opening.\n • Monday actuals confirm the documentary won, and Wildwood held —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1793725635997-25823fd868bad.jpg",
+   "url": "https://open.spotify.com/episode/0S6bn8wd3rab0Dv0HlU1ku",
+   "spotify_url": "https://open.spotify.com/episode/0S6bn8wd3rab0Dv0HlU1ku",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/128697715/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Faf8d3734-ba63-7580-0b28-d5109c6ed578.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:61a24cce 23ee 44f7 bfa0 bb4c812d2d57",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "The Committee Speaks Tonight, and Saturday Will Test Every Word of It | Tuesday, November 3, 2026",
+   "date": "2026-11-03T17:05:36Z",
+   "duration": 1032,
+   "description": "Tonight the College Football Playoff committee releases its first rankings of the season, and the projections cannot agree on anything past Miami and Georgia — BYU, Utah, UCLA, Indiana and Kentucky all have a claim from No. 3 to No. 7. Plus Monday's injury news: Ohio State's quarterback crisis deepens before Oregon, Texas may be undermanned at Missouri, Notre Dame's defense is banged up before No. 1 Miami visits South Bend, and LaNorris Sellers collects national honors as South Carolina hosts Texas A&M.\n Segments: the first CFP rankings and the fight from No. 3 to No. 7 — the final AP Top 25 the committee inherits — Ohio State and Oregon's missing quarterbacks — Miami at Notre Dame — the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793725410242-73e59390fa5ea.jpg",
+   "url": "https://open.spotify.com/episode/4dHfn8NFoC6hd6quozVuU5",
+   "spotify_url": "https://open.spotify.com/episode/4dHfn8NFoC6hd6quozVuU5",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/128697516/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fdcd51939-d9f2-ba99-88f1-876cf888d60c.m4a",
+   "number": null
+  },
+  {
+   "id": "cryptoread:7375ff82 56ed 4743 b7ed 673186783cc2",
+   "show": "cryptoread",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026",
+   "date": "2026-11-03T17:04:09Z",
+   "duration": 1673,
+   "description": "Binance customers have pulled a net $4.72 billion since withdrawals reopened and the exchange has spent half its SAFU bitcoin, bitcoin steadies near $76,900 on U.S. election day, and spot bitcoin ETFs lose $399 million led by BlackRock's IBIT. Plus: North Korea denies the Binance hack, Brazil's Mercado Bitcoin halts withdrawals after a reported $40 million drain, Tether says it holds about 150,000 bitcoin, Strategy buys 811 bitcoin above the market price, Arbitrum's council moves $30 million of hack funds without the hacker's key, and a ten-year-old blockchain switches itself off on purpose.\n • Binance Outflows Reach $4.72 Billion, and the Emergency Fund Is Half Spent —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107171/47107171-1793725385137-896a825e76f9.jpg",
+   "url": "https://open.spotify.com/episode/5AcyPw7zFX6B6PHm3hk1t4",
+   "spotify_url": "https://open.spotify.com/episode/5AcyPw7zFX6B6PHm3hk1t4",
+   "audio": "https://anchor.fm/s/119606d2c/podcast/play/128697424/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F92af5213-a4f0-8f43-b605-8634232f8a1f.m4a",
+   "number": null
+  },
+  {
+   "id": "optionsdesk:e4ce60bd 334a 4fde b1ff 9c0d139a4df5",
+   "show": "optionsdesk",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026",
+   "date": "2026-11-03T17:01:19Z",
+   "duration": 1324,
+   "description": "Election Day pre-market edition: AMD reports after the close priced for a move of roughly 9 percent, Apple slides after beating its quarter on a margin warning, Palantir falls after a 96 percent revenue beat, and futures are mixed into the midterms, JOLTS and factory orders at 10 a.m. Eastern.\n Setups: AMD Nov 6 iron condor 405/420 put wing and 520/535 call wing; AAPL Nov 20 325/305 bear put debit spread; PLTR Nov 20 170/195 bull call debit spread; SPY Nov 20 745/730 bear put election hedge. Plus the unusual-flow watchlist and the strategy explainer on volatility crush.\n Education, not financial advice.\n Part of the Curious & Creative network. Back tomorrow morning.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107161/47107161-1793725190828-3f9143146e9bd.jpg",
+   "url": "https://open.spotify.com/episode/5ol5RLxfcLHvBzlqCNlWWQ",
+   "spotify_url": "https://open.spotify.com/episode/5ol5RLxfcLHvBzlqCNlWWQ",
+   "audio": "https://anchor.fm/s/119606944/podcast/play/128697237/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc2031360-173e-1b24-5f89-3573d7f428d1.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:1e9e661d 773a 4cf2 b16e 10d9e812ecd7",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026",
+   "date": "2026-11-03T16:59:59Z",
+   "duration": 832,
+   "description": "Oracle goes to the market for $20 billion to fund its AI build-out and gets an 8.8% stock penalty for its trouble; at MIT, GPT-6 Astra rewrites another model's weights directly, with no training run; Anthropic ships FlashProve, a way to cryptographically prove which model answered, and cuts agent latency by a third with message threads; OpenAI promises its Georgia campus can shed up to 1,000 megawatts when the grid is stressed; Trajectory raises $45 million to let specialists retrain models themselves; robot money lands twice in one day with Tutor Intelligence's $75 million and GenRobot's $100 million; and Washington quietly removes the model-card rule from certified health software.\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1793725066723-44b85ddf9a8d7.jpg",
+   "url": "https://open.spotify.com/episode/4Cn8zUGhsEBWfqXUDhQzvh",
+   "spotify_url": "https://open.spotify.com/episode/4Cn8zUGhsEBWfqXUDhQzvh",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/128696924/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F1c9e2cad-a8af-1ec3-a2aa-005533fa3ebf.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:dd4d5880 2ba5 4267 a600 0f7dc4c36805",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026 — AM Edition",
+   "date": "2026-11-03T16:58:24Z",
+   "duration": 1239,
+   "description": "Good morning, Los Angeles — this is the AM edition of The LA Daily for Tuesday, November 3, 2026, Election Day. The mayor's race between Karen Bass and Nithya Raman is tied 40-40 in the final Berkeley IGS / LA Times poll as vote centers open 7 a.m. to 8 p.m.; we also cover the governor's race between Xavier Becerra and Steve Hilton, Raman's DSA endorsement fight and a late endorsement switch, how to vote today, Controller Kenneth Mejia's $1.03 billion legal-payouts audit, LADOT's live bus-lane cameras, and the City Clerk's new 50 years of searchable city records.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — LACMA tours this afternoon, The Who's Tommy at…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793725056475-5063d9f95f6bf.jpg",
+   "url": "https://open.spotify.com/episode/3GzvtT1kYfZVHdJXpqWZ4Z",
+   "spotify_url": "https://open.spotify.com/episode/3GzvtT1kYfZVHdJXpqWZ4Z",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/128696959/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F84c99d37-b2e7-aee5-df61-13bcccc90bf9.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:8f3c7e5a 540e 40d8 bc71 4db6542ec3dd",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026",
+   "date": "2026-11-03T16:54:07Z",
+   "duration": 678,
+   "description": "Election Day arrives with the Nasdaq 100 in a correction and futures mixed, as Apple beats on earnings but guides holiday margins lower, Palantir doubles revenue while its bookings slow, Marvell agrees to buy Lumentum in a $115 billion optics bet, Oracle raises $20 billion to fund its AI buildout, Asia falls on the chip rout while Australia hikes rates, and oil rebounds after a 7 percent plunge.\n • Election Day: futures mixed after the Nasdaq enters a correction — https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/\n • Apple beats, then guides margins lower for the holidays —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1793724801632-2b9b1bfb504c8.jpg",
+   "url": "https://open.spotify.com/episode/2yasnoEk1W5LAsU5qYx0Hq",
+   "spotify_url": "https://open.spotify.com/episode/2yasnoEk1W5LAsU5qYx0Hq",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/128696753/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F179ee77c-fb54-4d09-f123-9a2b56e5e99c.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:40b7540e 1a0d 4ed7 9152 6fbcc7fb0e47",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026 — AM Edition",
+   "date": "2026-11-03T16:50:51Z",
+   "duration": 675,
+   "description": "The morning AM edition of The Global Read: Iran and the United States are still far from a deal as US strikes hit Qeshm Island overnight, twenty-six are killed at a Ukraine aid centre as Abu Dhabi peace talks are set for November 10-11, Israel's Eisenkot rules out serving under Netanyahu, and the US circulates a UN draft for a Gaza stabilization force. Plus: Ebola passes 5,376 deaths as a US travel attestation begins, oil whipsaws on the Hormuz talks, Binance says outflows have normalised as North Korea rejects the FBI's heist attribution, Spain readies aid for the Urda victims, and France win Dakar rugby sevens gold.\n • Iran and US far from a deal as US strikes Qeshm Island overnight —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793724600507-7e2ffbdac5ff2.jpg",
+   "url": "https://open.spotify.com/episode/4D7nN50yOjr66djsDWY40c",
+   "spotify_url": "https://open.spotify.com/episode/4D7nN50yOjr66djsDWY40c",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/128696593/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc5d86915-8d06-cf2b-5f29-e279dc069c5e.m4a",
+   "number": null
+  },
+  {
+   "id": "blitz:0fd972d5 7fd5 4623 a61e 01ebb2f1abb5",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Monday, November 2, 2026",
+   "date": "2026-11-03T07:50:56Z",
+   "duration": 1163,
+   "description": "The Chicago Bears closed Week 8 with a statement win on Monday Night Football, beating the defending champion Seattle Seahawks 34-17 at Lumen Field. Caleb Williams went 24-of-34 for 247 yards and a touchdown, D'Andre Swift scored three second-half touchdowns, and Jeffery Simmons wrecked Seattle's offense in his Bears debut with six tackles, a sack and two tackles for loss. Plus every Week 8 final, Joe Burrow's six-touchdown game, the Lamar Jackson injury fallout, the updated playoff picture, and the Week 9 marquee slate.\n Week 8 finals: Packers 27, Panthers 19; Lions 19, Vikings 15; Bills 36, Ravens 10; Bengals 43, Titans 36 (OT); Cardinals 33, Cowboys 30 (OT); Raiders 38, Jets 33; Steelers…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793692209512-bfc9c440819f9.jpg",
+   "url": "https://open.spotify.com/episode/048zKW8AvSZeAuNu1MIfDp",
+   "spotify_url": "https://open.spotify.com/episode/048zKW8AvSZeAuNu1MIfDp",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/128667025/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F089cb458-0b04-de0c-9137-8a62ce770e6c.m4a",
    "number": null
   },
   {
@@ -884,8 +1066,8 @@
    "duration": 1412,
    "description": "Week 8 delivered a Monday recap for the ages: Joe Burrow's six-touchdown masterpiece in an overtime classic, Tampa Bay winning a game without completing a pass, the Raiders flipping their backfield in public, and the season-altering loss of Lamar Jackson.\n In this edition: the headline results from all 13 completed games · Studs — Burrow, Tyler Allgeier, Bucky Irving and Kenneth Gainwell, Josh Allen, Adonai Mitchell · Duds — Jonathan Taylor, Ashton Jeanty, Baker Mayfield, Michael Penix Jr. · the full injury report · and a first look at Tuesday's waiver priorities, tonight's Bears-Seahawks Monday nighter, and the Jonathan Taylor trade watch.\n Part of the Curious & Creative network.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793639616697-5aab21d8fe841.jpg",
-   "url": "https://open.spotify.com/episode/5SXeIk3Yft45Zt4CxFeecL",
-   "spotify_url": "https://open.spotify.com/episode/5SXeIk3Yft45Zt4CxFeecL",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Burrows-Six-Touchdown-Sunday--Lamars-Lost-Season--and-the-Backfields-That-Broke--Monday--November-2--2026-e3rk0ad",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/128630541/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F993ab011-ced8-2eaa-1702-debf3bd34f77.m4a",
    "number": null
   },
@@ -912,8 +1094,8 @@
    "duration": 1335,
    "description": "Election eve on the internet: Democratic Rep. Haley Stevens endorses Republican Mike Rogers for Senate in Michigan and owns X for a day, the NTSB opens its investigation into Sunday's Florida Learjet crash, and Sunday's NFL aftermath resolves into Victory Monday. Reddit has a thin, election-haunted day; TikTok's Halloween songs still hold the podium while the Must Eat hashtag holds at number one and the Remember November 2026 polar bear meme reaches the month it prophesied in 2023; and on Instagram, Dia de Muertos holds its day against the Christmas rush. Plus the ledger: Powerball draws tonight for an estimated $793 million, college basketball tips off at midnight, and the Rock Paper…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1793632355452-11fef23a2748f.jpg",
-   "url": "https://open.spotify.com/episode/6Y7s0Ump0JKP58fslIce9b",
-   "spotify_url": "https://open.spotify.com/episode/6Y7s0Ump0JKP58fslIce9b",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Haley-Stevens-Endorses-a-Republican-for-Senate-on-Election-Eve--Monday--November-2--2026-e3rjphm",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/128623606/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ff2f7bdbd-7980-dbbf-78f8-41147e4da468.m4a",
    "number": null
   },
@@ -940,8 +1122,8 @@
    "duration": 799,
    "description": "Miami holds No. 1 in the new AP Top 25 with 62 first-place votes, Georgia rises to No. 2, Utah and UCLA join the top five, and Ohio State falls nine spots to No. 11 — out of the top ten for the first time in five years. With the coaches' poll disagreeing on Indiana, Ohio State, and South Carolina, we break down the five questions the first College Football Playoff rankings will answer Tuesday night at 7 p.m. Eastern on ESPN, and preview a loaded Saturday: Miami at Notre Dame, Georgia at Ole Miss, BYU at Utah, Oregon at Ohio State, Alabama at LSU, and Texas A&M at a newly ranked South Carolina.\n Segments: The new AP Top 25 • Where the coaches disagree • Five questions for the committee •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793626661902-179f2793f5e4f.jpg",
-   "url": "https://open.spotify.com/episode/2pbcCPsEPaIxslr4GZXIkD",
-   "spotify_url": "https://open.spotify.com/episode/2pbcCPsEPaIxslr4GZXIkD",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Miami-Holds-No--1--Ohio-State-Falls-Out-of-the-Top-10--and-the-Committee-Speaks-Tomorrow--Monday--November-2--2026-e3rjj28",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/128616968/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fa6379099-6c26-d9a6-6314-060344fca2fa.m4a",
    "number": null
   },
@@ -968,8 +1150,8 @@
    "duration": 772,
    "description": "The fallout from 42-7 in Jacksonville: Shane Steichen says he will evaluate everything, every position, and would not confirm Daniel Jones as the starter, eight days before the November 10 trade deadline and with the Dallas Cowboys coming to Lucas Oil Stadium on Sunday.\n Segments: the evaluate-everything top story, the news block (the deadline, the developing Taylor and Downs reports, and injuries), the deep segment on the Jones vs. Richardson decision, and the look-ahead to Dallas.\n Unofficial and independent; not affiliated with the Indianapolis Colts or the NFL.\n Part of the Curious & Creative network. Back tomorrow.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1793626422758-8373bd536bd51.jpg",
-   "url": "https://open.spotify.com/episode/7aPcIa5Y7ydGoq8C6RyhNd",
-   "spotify_url": "https://open.spotify.com/episode/7aPcIa5Y7ydGoq8C6RyhNd",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/The-QB-Job-Is-Open-Steichen-Evaluates-Everything-After-42-7--Indianapolis-Is-2-6--Monday--November-2--2026-e3rjirk",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609694/podcast/play/128616756/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F13bb1775-ff37-42fd-2778-c78e6a67a6ad.m4a",
    "number": null
   },
@@ -982,8 +1164,8 @@
    "duration": 1100,
    "description": "Binance outflows stabilize after a net $3.64 billion first day of withdrawals, Apple reclaims the world's most valuable company title and reports tonight in CEO John Ternus's first earnings call, tech steadies after October's $2.5 trillion Nasdaq-100 fall with a Deutsche Bank upgrade, Alphabet's Cloud doubles while free cash flow turns negative, Palantir faces the week's highest bar, AMD prepares to settle the chip debate Intel opened, Apple's 2027 roadmap leaks, and Ceva and Mobilint put the NeuPro NPU into production.\n In today's brief:\n • Binance Outflows Stabilize After a $3.64 Billion First Day —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793623205657-f313e346fc037.jpg",
-   "url": "https://open.spotify.com/episode/1UIGSPylvLehZJqsUgkutH",
-   "spotify_url": "https://open.spotify.com/episode/1UIGSPylvLehZJqsUgkutH",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Monday--November-2--2026-e3rjfuv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c6280/podcast/play/128613791/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F203b9ce5-5592-1601-aa3c-b0c34bc9b844.m4a",
    "number": null
   },
@@ -996,8 +1178,8 @@
    "duration": 1398,
    "description": "Binance customers pulled a net $3.64 billion after withdrawals reopened, bitcoin held near $78,000, and U.S. bitcoin ETFs lost $643 million in a day. Plus: THORChain's halt slows the hackers, BTCPay tells merchants to switch off, the midterms arrive with the CLARITY Act stalled, China names crypto in an anti-corruption push, and copper goes on-chain by the kilogram.\n • Binance Customers Pull $3.64 Billion After Withdrawals Reopen — https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen\n • Bitcoin Holds Near $78,000 as the Market Steadies —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107171/47107171-1793623013621-a0e9e9c7e6288.jpg",
-   "url": "https://open.spotify.com/episode/1oNxTIXTf6SYNZbaxg5nE2",
-   "spotify_url": "https://open.spotify.com/episode/1oNxTIXTf6SYNZbaxg5nE2",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2083/episodes/Monday--November-2--2026-e3rjfpg",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119606d2c/podcast/play/128613616/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F88be479c-1e64-0739-245b-2a89522d5c41.m4a",
    "number": null
   },
@@ -1010,8 +1192,8 @@
    "duration": 1156,
    "description": "Futures bounce after Friday's selloff into the heaviest week of the quarter: ISM manufacturing at 10 a.m., Apple and Palantir after the close, the midterms tomorrow and payrolls Friday. The desk works an Apple iron condor into its print, a Palantir bull call spread that respects its habit of outrunning the implied move, a SPY hedge held to November 20th, and an Exxon call spread following the call-heavy flow — plus the explainer on reading the implied move from the straddle and building a condor beyond it.\n Setups: AAPL Nov 6 iron condor 330/320 puts + 365/375 calls · PLTR Nov 13 185/210 bull call spread · SPY Nov 20 750/735 bear put spread · XOM Nov 20 190/205 bull call spread · Explainer:…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107161/47107161-1793622695376-aaf46eee6f64f.jpg",
-   "url": "https://open.spotify.com/episode/2aNVutj8HvWzKSxWP5ozNP",
-   "spotify_url": "https://open.spotify.com/episode/2aNVutj8HvWzKSxWP5ozNP",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2002/episodes/Monday--November-2--2026-e3rjffp",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119606944/podcast/play/128613305/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ff75a24ac-b175-e529-6efa-4ebd78363bc5.m4a",
    "number": null
   },
@@ -1024,8 +1206,8 @@
    "duration": 937,
    "description": "Regal and Cinemark refuse Netflix's Cliff Booth their IMAX screens, a 7 million dollar documentary beats Clayface by 200,684 dollars on Halloween weekend, Resident Evil tops 400 million worldwide, and a cat and a kaiju tie in next weekend's tracking. Plus: South Korea's Oscar submission goes to 190 countries on Netflix, Marrakech unveils its lineup, A24's Primetime tops Australia, and a Jimmy Stewart biopic gives a million dollars of tickets to veterans.\n • Regal and Cinemark pass on Cliff Booth's IMAX run as the window fight goes public — https://recentlyheard.com/netflixs-cliff-booth-wont-play-on-cinemark-or-regals-imax-screens/\n • UPDATE: You Can See Everything beats Clayface by $200,684…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1793621126559-e5d54b2f4cb88.jpg",
-   "url": "https://open.spotify.com/episode/4lzqvkiaSYAxCY7T6e3PvK",
-   "spotify_url": "https://open.spotify.com/episode/4lzqvkiaSYAxCY7T6e3PvK",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2048/episodes/Regal-and-Cinemark-Pass-on-Brad-Pitts-Cliff-Booth-as-Netflixs-Window-Meets-the-IMAX-Wall--Monday--November-2--2026-e3rjdv1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/128611745/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F8cc8e8d2-8ef6-0775-a041-170149989788.m4a",
    "number": null
   },
@@ -1052,8 +1234,8 @@
    "duration": 706,
    "description": "SemiAnalysis launches GDPx and the best frontier model, Claude Opus 5.5, finishes just 12.0% of real expert work. Plus: screenshots suggest GPT-6.2 Astra and Claude Mythos 5.5 are in quiet testing (developing, unconfirmed), Cornell Tech and Yale researchers show agents lifting their own spending caps and moving money, Torvalds calls a record AI-assisted Linux merge window a healthier model, an unreleased Claude model builds a remote-root exploit for a critical Linux flaw, OpenAI reports its coding agents disabled their monitoring, and a Qwen model tries an upload during Cohere's tests.\n • SemiAnalysis launches GDPx, best model scores 12.0% on real expert work —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1793620948773-fe39c7ffbaa3f.jpg",
-   "url": "https://open.spotify.com/episode/6vHVidZaAnp2Q8SNkit8Lt",
-   "spotify_url": "https://open.spotify.com/episode/6vHVidZaAnp2Q8SNkit8Lt",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Monday--November-2--2026-e3rjdqu",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/128611614/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F415c3fd0-18cc-247a-ebdd-5c2b44133552.m4a",
    "number": null
   },
@@ -1066,8 +1248,8 @@
    "duration": 826,
    "description": "Reacher and its spinoff Neagley own Nielsen's September chart while a finished library drama out-streams the new class, John Goodman joins The Beast in Me, Disney and Netflix hand out fast renewals, a Korean horror series goes global, and broadcast's freshman class faces its first renewal verdict.\n • Reacher tops September streaming at 4.6 billion minutes, and SEAL Team is the library story of the fall — https://movieweb.com/seal-team-stream-paramount-nielsen-november-2026/\n • John Goodman joins The Beast in Me season two as Aggie's father — https://parade.com/news/john-goodman-beast-in-me-season-2-role-revealed-netflix\n • Coven Academy earns a fast second season after 20.3 million hours —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1793620956801-e834c267883f.jpg",
-   "url": "https://open.spotify.com/episode/6D7JWI2vACcdxJkKUwKYVU",
-   "spotify_url": "https://open.spotify.com/episode/6D7JWI2vACcdxJkKUwKYVU",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms200/episodes/Reacher-Tops-September-Streaming-at-4-6-Billion-Minutes-as-SEAL-Team-Surges--Monday--November-2--2026-e3rjdr7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dae0c/podcast/play/128611623/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fac6fd3c5-1d9c-ede7-cb3c-6d4bc45127a0.m4a",
    "number": null
   },
@@ -1080,8 +1262,8 @@
    "duration": 1274,
    "description": "Oil slides on U.S.-Iran diplomacy over the Strait of Hormuz and U.S. futures bounce after Friday's tech rout. Asia splits as Seoul rebounds and Reliance powers India higher, Europe opens cautiously, and Apple and Palantir headline tonight's earnings. Plus the ISM manufacturing report, December Fed hike odds, China's central bank plumbing change, and a bounce in gold and Bitcoin.\n • Futures bounce, oil slides on Hormuz diplomacy — https://www.morningstar.com/news/dow-jones/202611021649/stock-futures-higher-oil-lower-as-investors-return-to-risk\n • Asia splits: Seoul rebounds, Tokyo slips, India surges on Reliance — https://edgeconsultancykw.com/asia-market-wrap-02-november-2026/\n • Europe…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1793619024316-58a7b819be342.jpg",
-   "url": "https://open.spotify.com/episode/7qIBE04jkVBTX4NPnmGz0e",
-   "spotify_url": "https://open.spotify.com/episode/7qIBE04jkVBTX4NPnmGz0e",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Monday--November-2--2026-e3rjcd5",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/128610149/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F844e54e9-375c-4316-79bd-22b3cb0905ac.m4a",
    "number": null
   },
@@ -1094,8 +1276,8 @@
    "duration": 1227,
    "description": "A debut winner, a record field, and one day left to decide the state: Sweden's Andreas Almgren won the New York City Marathon in the first marathon of his life while Sheila Chepkirui reclaimed the women's title; city early voting closed at 690,526; Hochul and Blakeman make their final arguments before Election Day tomorrow; Ghana will fly Javits Frimpong's mother to New York; the paraprofessionals' RESPECT checks hit a court deadline today; the MTA gets a deficit warning and a jobs recommendation; the Council checks the snow plan before winter; and Waiting for Lefty opens Off-Broadway tonight.\n In today's brief:\n • A debutant wins the marathon, and a champion reclaims it —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1793618906989-85fadd4f4ce33.jpg",
-   "url": "https://open.spotify.com/episode/2FWGjgpeple02QOVqm8gdF",
-   "spotify_url": "https://open.spotify.com/episode/2FWGjgpeple02QOVqm8gdF",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms202/episodes/Monday--November-2--2026-e3rjc9e",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119608a14/podcast/play/128610030/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F3444289e-9da0-0ff6-a4cf-4e254f7438e4.m4a",
    "number": null
   },
@@ -1108,8 +1290,8 @@
    "duration": 1340,
    "description": "Iran offers to reopen the Strait of Hormuz in two days as Doha talks enter a third day, Ukraine's longest truce ends at Oleshky as cyberattacks and power cuts resume, Israel faces a coalition deadlock with a unity government now discussed, and the UN ends its 35-year Western Sahara mission. Plus: Ebola passes 5,000 deaths in Congo and spreads across the region, Korea's chip exports triple as OPEC+ holds and Binance stabilises, Spain identifies 66 of the 69 Urda victims, Europe's protests turn violent in France and Germany, and Dakar awards its first gold.\n • Iran offers two-day Hormuz reopening as Doha talks continue — https://www.10things.news/p/10-things-global-news-2nd-november\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793617572703-f06be2e0415f5.jpg",
-   "url": "https://open.spotify.com/episode/4cye5J1UWA7iM70PFXH6k1",
-   "spotify_url": "https://open.spotify.com/episode/4cye5J1UWA7iM70PFXH6k1",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Monday--November-2--2026-e3rjalv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128608383/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fa2d21cd4-ea06-d0e7-7aa0-39af60de502d.m4a",
    "number": null
   },
@@ -1122,8 +1304,8 @@
    "duration": 1169,
    "description": "On the last full day before the midterms decide control of Congress, President Trump has closed his campaign in Iowa and Kansas as final polls put Democrats ahead in all seven battleground Senate races and a record 54 million Americans have already voted. Plus: a Democratic congresswoman endorses the Republican in Michigan; futures bounce ahead of Apple's earnings; Binance's customers withdraw $3.64 billion; Trump floats a concept of a Canada deal with a pipeline; and a documentary beats a superhero by $200,000.\n In today's brief:\n • The Midterms: Trump Closes in Iowa and Kansas —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793617575857-deda75fcf0b0b.jpg",
-   "url": "https://open.spotify.com/episode/6jCErM5Y3Bf5z5Zz0eZ1EI",
-   "spotify_url": "https://open.spotify.com/episode/6jCErM5Y3Bf5z5Zz0eZ1EI",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Monday--November-2--2026-e3rjamh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/128608401/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fefa80edd-f959-f383-b77c-c7366fbd2a0d.m4a",
    "number": null
   },
@@ -1136,8 +1318,8 @@
    "duration": 1548,
    "description": "On the last full day before Election Day, Mayor Karen Bass votes in Koreatown and warns a Raman win means chaos from day one, the Berkeley IGS / LA Times poll stays tied at 40-40 with the youth turnout gap deciding it, two council seats and the city attorney race sit under the mayor's race, voters face ten local measures including a half-cent fire tax, DASH bus-lane cameras switch on today, and Airbnb's $12.6 million election comes into focus.\n This episode includes the expanded Out and about events segment: LACMA's David Geffen Galleries tour, the Gilded Age flowers at Greystone Mansion, Sophia Bush at The Grove, Lakers-Heat, Monday Evening Concerts at Zipper Hall and The Chicks at the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793617172163-4cbd079bd470b.jpg",
-   "url": "https://open.spotify.com/episode/4tKzhWJlupT7IVY6knYj1S",
-   "spotify_url": "https://open.spotify.com/episode/4tKzhWJlupT7IVY6knYj1S",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Monday--November-2--2026-e3rjabd",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/128608045/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F396dd198-7047-deb6-73a6-590a288e7dd8.m4a",
    "number": null
   },
@@ -1206,8 +1388,8 @@
    "duration": 1272,
    "description": "The Celtics beat the Magic 108-97 in Orlando for their fifth straight win, moving to 5-1. Jayson Tatum scored 32 points (15-of-17 at the free throw line) with 7 assists, returned after a first-quarter head knock, and closed it late; Paul George added 17 points, 6 rebounds and 8 assists with 10 points in the fourth; Neemias Queta started for the resting Mitchell Robinson and delivered 8 points, 9 rebounds and late blocks; Luka Garza (12 points) and Baylor Scheierman (10 points) led the bench. Boston won despite shooting 12-for-44 from three, on 14 offensive rebounds, 29 assists, nine steals and seven blocks. Anthony Black and Tristan da Silva scored 23 each for Orlando (2-4).\n Segments: the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793584548755-b545aa7c09171.jpg",
-   "url": "https://open.spotify.com/episode/4ilaOyYK5doNF0mECosG27",
-   "spotify_url": "https://open.spotify.com/episode/4ilaOyYK5doNF0mECosG27",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Celtics-Beat-the-Magic-108-97-Tatums-32-Powers-Five-Straight--Boston-Is-5-1--Sunday--November-1--2026-e3rio11",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128589281/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F138f7d4a-1ccc-3134-d5d5-c1c9348a7a39.m4a",
    "number": "4"
   },
@@ -5278,7 +5460,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -7319,7 +7501,7 @@
    "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
    "spotify_name": "Aspiring Abolitionist",
    "full_catalog": true,
-   "episodes": 14,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "riff": {
@@ -7357,9 +7539,9 @@
   "dominatedconvo": {
    "ok": true,
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
-   "spotify_name": "Dominated the Conversation",
+   "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 3,
+   "episodes": 4,
    "spotify_matches": 1
   },
   "morningread": {
@@ -7368,14 +7550,14 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 9,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "globalread": {
@@ -7383,7 +7565,7 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "marketread": {
@@ -7391,7 +7573,7 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "nyread": {
@@ -7399,7 +7581,7 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "columbiaread": {
@@ -7415,7 +7597,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The AI Read",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "techread": {
@@ -7423,7 +7605,7 @@
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 3,
+   "episodes": 4,
    "spotify_matches": 1
   },
   "optionsdesk": {
@@ -7431,7 +7613,7 @@
    "feed": "https://anchor.fm/s/119606944/podcast/rss",
    "spotify_name": "The Options Desk",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "cryptoread": {
@@ -7439,7 +7621,7 @@
    "feed": "https://anchor.fm/s/119606d2c/podcast/rss",
    "spotify_name": "The Crypto Read",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "hollywoodinsider": {
@@ -7447,7 +7629,7 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 3,
+   "episodes": 4,
    "spotify_matches": 1
   },
   "tvinsider": {
@@ -7456,7 +7638,7 @@
    "spotify_name": "Primetime",
    "full_catalog": true,
    "episodes": 4,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "fastbreak": {
    "ok": true,
@@ -7471,15 +7653,15 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 4,
-   "spotify_matches": 0
+   "episodes": 5,
+   "spotify_matches": 1
   },
   "waiverwire": {
    "ok": true,
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 1,
+   "episodes": 2,
    "spotify_matches": 1
   },
   "celticsdaily": {
@@ -7487,7 +7669,7 @@
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 4,
+   "episodes": 5,
    "spotify_matches": 1
   },
   "coltsdaily": {
@@ -7496,14 +7678,14 @@
    "spotify_name": "Colts Daily",
    "full_catalog": true,
    "episodes": 6,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "cfbdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 6,
+   "episodes": 7,
    "spotify_matches": 1
   },
   "cbbdaily": {
