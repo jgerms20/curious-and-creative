@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T21:09:59Z",
+ "generated_at": "2026-11-04T01:30:34Z",
  "shows": [
   {
    "key": "ccpod",
@@ -145,8 +145,8 @@
    "complete": true,
    "art": "assets/art/abolitionist.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "latest": "2025-01-21T14:00:00Z",
-   "count": 13
+   "latest": "2026-11-03T05:57:21Z",
+   "count": 14
   },
   {
    "key": "riff",
@@ -303,8 +303,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-02T11:07:10Z",
-   "count": 9
+   "latest": "2026-11-03T16:58:37Z",
+   "count": 10
   },
   {
    "key": "ladaily",
@@ -586,13 +586,13 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5jXIg7zndmpXNrGRF3s68O",
-   "feed_title": "The TV Insider",
+   "feed_title": "Primetime",
    "description": "Television, every morning. Renewals, cancellations, ratings, premieres, and the streaming wars — what to watch and why it matters, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-02T12:03:17Z",
-   "count": 4
+   "latest": "2026-11-03T16:56:16Z",
+   "count": 5
   },
   {
    "key": "fastbreak",
@@ -669,7 +669,7 @@
    "description": "The Waiver Wire is your fantasy football week, on schedule: Monday's Studs, Duds & News recaps the weekend, Tuesday's Waiver Wire ranks the adds, drops, and FAAB bids, Wednesday finds the buy-lows and sell-highs, Thursday calls the Starts of the Week, and Sunday's In or Out makes the final start/sit calls. Every take is angled through fantasy value — points, usage, and opportunity — for 12-team PPR leagues. Part of the Curious & Creative network. Unofficial; not affiliated with the NFL.",
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
-   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793639616697-5aab21d8fe841.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
    "latest": "2026-11-03T17:09:57Z",
    "count": 2
   },
@@ -722,8 +722,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-02T13:34:29Z",
-   "count": 6
+   "latest": "2026-11-03T16:58:16Z",
+   "count": 7
   },
   {
    "key": "cfbdaily",
@@ -770,7 +770,7 @@
    "cadence": "Weekly · Monday wrap",
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/70qRlnh5hY1WHBSMNvnPQE",
-   "feed_title": "College Basketball Daily",
+   "feed_title": "Bracketology",
    "description": "College basketball, covered nationally, every day. College Basketball Daily runs through the men's and women's games: the night's results and upsets, the rankings, the bracket picture, and the stories moving the sport, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/cbbdaily.jpg",
@@ -974,6 +974,20 @@
    "number": null
   },
   {
+   "id": "morningread:eb67a9ee c6b6 4795 9a4d d7d09fe242ee",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Tuesday, November 3, 2026 — AM Edition",
+   "date": "2026-11-03T16:58:37Z",
+   "duration": 1114,
+   "description": "Election Day is here: Americans are voting in midterms that decide control of Congress for the final two years of President Trump's second term, with Democrats favoured to take the House, the Senate on a knife edge, and a record 57 and a half million ballots already cast. Plus: a judge blocks the administration's noncitizen-voter lists; a thousand federal monitors fan out to all 50 states; a US strike on Iran's Qeshm Island puts a risk premium back into oil; AMD reports after the close; and Binance opens its second phase of withdrawals.\n In today's brief:\n • Election Day: The Verdict on Trump —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793725040755-1f2bcc1f37ee8.jpg",
+   "url": "https://open.spotify.com/episode/4dd34qRAc2L6P0fBVBa5Cq",
+   "spotify_url": "https://open.spotify.com/episode/4dd34qRAc2L6P0fBVBa5Cq",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/128696978/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F1b4466a5-8e31-65cc-5c82-204615813b1c.m4a",
+   "number": null
+  },
+  {
    "id": "ladaily:dd4d5880 2ba5 4267 a600 0f7dc4c36805",
    "show": "ladaily",
    "kind": "episode",
@@ -985,6 +999,34 @@
    "url": "https://open.spotify.com/episode/3GzvtT1kYfZVHdJXpqWZ4Z",
    "spotify_url": "https://open.spotify.com/episode/3GzvtT1kYfZVHdJXpqWZ4Z",
    "audio": "https://anchor.fm/s/11960849c/podcast/play/128696959/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F84c99d37-b2e7-aee5-df61-13bcccc90bf9.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:ff07320e 6211 4f12 9c93 5bd1d3906c41",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Jones Keeps the Job, For Right Now: Steichen Sticks With His QB, Indianapolis Is 2-6 | Tuesday, November 3, 2026",
+   "date": "2026-11-03T16:58:16Z",
+   "duration": 1125,
+   "description": "Daniel Jones keeps the job, for right now: Shane Steichen sticks with his quarterback for Dallas after the 42-7 loss in Jacksonville, one week before the November 10 trade deadline, with the Cowboys at Lucas Oil Stadium on Sunday.\n Segments: the Jones decision and the meaning of \"right now,\" the news block (Taylor and Downs deadline market, injuries on both sides), the deep segment on what the Nelson and Buckner trades cost in the trenches and the young defenders worth keeping, and the full Dallas preview.\n Unofficial and independent; not affiliated with the Indianapolis Colts or the NFL.\n Part of the Curious & Creative network. Back tomorrow.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1793725033580-ff89731444e9.jpg",
+   "url": "https://open.spotify.com/episode/6Orxpxs8s1PjuewKm6Mvdy",
+   "spotify_url": "https://open.spotify.com/episode/6Orxpxs8s1PjuewKm6Mvdy",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/128696918/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F15bf0338-6eba-93d0-4a2d-5e5984669b33.m4a",
+   "number": null
+  },
+  {
+   "id": "tvinsider:ebe08f57 1ff8 42b7 bd1e 50c05a004833",
+   "show": "tvinsider",
+   "kind": "episode",
+   "title": "HBO Renews Sharon Horgan's 'Youth' for Season 2 One Day After the Finale | Tuesday, November 3, 2026",
+   "date": "2026-11-03T16:56:16Z",
+   "duration": 1305,
+   "description": "HBO renews Sharon Horgan's Youth the morning after its finale, Election Night clears broadcast primetime and becomes a streaming business test, Nobody Wants This posts the year's biggest returning-comedy opening, Netflix premieres the steampunk western Bass X Machina, The Gilded Age opens Season 4 in HBO's Sunday slot, Nielsen's animation report crowns SpongeBob, Bluey and Family Guy, and Prime Video readies its Muhammad Ali series The Greatest.\n • HBO renews Sharon Horgan's Youth for Season 2, one day after the finale — https://www.justjared.com/2026/11/02/is-youth-coming-back-for-season-2-hbo-reveals-fate-of-sharon-horgans-comedy-series/\n • Election Night clears primetime: ABC, NBC and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1793724894328-52e64f9cbac7f.jpg",
+   "url": "https://open.spotify.com/episode/16N2VnFJ2Z9cjaU1RtHuA4",
+   "spotify_url": "https://open.spotify.com/episode/16N2VnFJ2Z9cjaU1RtHuA4",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/128696740/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F547d23d1-5f26-9fae-b856-87a21d37e37c.m4a",
    "number": null
   },
   {
@@ -1030,6 +1072,20 @@
    "number": null
   },
   {
+   "id": "abolitionist:03000c61 1605 4507 b64f ab2d962b8000",
+   "show": "abolitionist",
+   "kind": "episode",
+   "title": "Election Eve 2026: The Races I’m Watching",
+   "date": "2026-11-03T05:57:21Z",
+   "duration": 1874,
+   "description": "On the eve of the 2026 midterms, I’m looking at the races and headlines that are on my mind... from Los Angeles and California to Texas, Ohio, Michigan, Georgia, Florida, North Carolina, and beyond. We talk local leadership, homelessness, public safety, affordability, campaign spending, organizing, and the pull between local issues and national stages. These are my election-eve observations and predictions, recorded before Election Day.\n Chapters \n (00:00) Election Eve: Los Angeles and California (06:48) Texas: the race and campaign spending (10:13) Ohio and Michigan: ads and party politics (19:23) Georgia, organizing, and the New South (23:04) Florida and North Carolina (26:04) Iowa,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/6760199/6760199-1793685134721-1e64ac6ab40b1.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/janel-moore/episodes/Election-Eve-2026-The-Races-Im-Watching-e3rkuu5",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/28e3d53c/podcast/play/128661893/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fd0adc4f7-22d7-9123-2fa7-65a52ae00a21.mp3",
+   "number": null
+  },
+  {
    "id": "brazil:f8a7cf6d 4bdb 4a3f bd72 1f14f598a07d",
    "show": "brazil",
    "kind": "episode",
@@ -1065,7 +1121,7 @@
    "date": "2026-11-02T17:18:47Z",
    "duration": 1412,
    "description": "Week 8 delivered a Monday recap for the ages: Joe Burrow's six-touchdown masterpiece in an overtime classic, Tampa Bay winning a game without completing a pass, the Raiders flipping their backfield in public, and the season-altering loss of Lamar Jackson.\n In this edition: the headline results from all 13 completed games · Studs — Burrow, Tyler Allgeier, Bucky Irving and Kenneth Gainwell, Josh Allen, Adonai Mitchell · Duds — Jonathan Taylor, Ashton Jeanty, Baker Mayfield, Michael Penix Jr. · the full injury report · and a first look at Tuesday's waiver priorities, tonight's Bears-Seahawks Monday nighter, and the Jonathan Taylor trade watch.\n Part of the Curious & Creative network.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793639616697-5aab21d8fe841.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Burrows-Six-Touchdown-Sunday--Lamars-Lost-Season--and-the-Backfields-That-Broke--Monday--November-2--2026-e3rk0ad",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/128630541/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F993ab011-ced8-2eaa-1702-debf3bd34f77.m4a",
@@ -1707,12 +1763,12 @@
    "kind": "episode",
    "title": "#249 The Audio Century: How Audio Is Replacing Screens",
    "date": "2026-11-01T00:23:29Z",
-   "duration": 2889,
+   "duration": 2923,
    "description": "Two decades in, podcasting still cannot agree on what a listener is. This episode is a deep dive into the business of podcasting and the future of audio itself: where the industry stands, why it is still being formed, and where it goes over the next ten, twenty, fifty, and one hundred years.\n The business now: US podcast ad revenue hit $2.86 billion in 2025, the platform war between YouTube, Spotify, Apple, and now Netflix is reshaping the medium around video, and nine-figure deals have turned podcasters into moguls. Underneath, the industry still runs on an open RSS standard from 2001, measurement systems that cannot deduplicate one listener across platforms, and a legal frontier being…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793492549346-19396cafcbe29.jpg",
    "url": "https://open.spotify.com/episode/4sj5COhOYOqEzxNHT9YCqc",
    "spotify_url": "https://open.spotify.com/episode/4sj5COhOYOqEzxNHT9YCqc",
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128528000/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-1%2F076d5e62-a5e4-ebd6-f706-05ab0851ef6b.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128528000/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc279ad73-b78b-14bd-d6cc-37b690d1e8d4.m4a",
    "number": "249"
   },
   {
@@ -1763,12 +1819,12 @@
    "kind": "episode",
    "title": "#248 Los Angeles Votes: Bass, Raman, and the Ballot That Rewrites Two Governments",
    "date": "2026-10-31T19:14:18Z",
-   "duration": 3860,
+   "duration": 3894,
    "description": "Fourteen statewide propositions, two county charter amendments, seven city measures, and a mayoral runoff, all on one ballot, all decided on Tuesday. This episode is the complete voting prep for the November 3, 2026 California general election: every proposition and every Los Angeles measure on the ballot at 3045 South Crenshaw, in ballot order, with who wrote each one, who is paying for each side, and what a yes and a no actually change.\n Inside: the $11.25 billion housing bond and the Realtors' $25 billion homebuyer loan machine, the fight to make the high-income tax permanent, voter ID, recall reform and its self-replacement flaw, and the most expensive fight on the ballot, the one-time…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793474032492-8d27403cd3c15.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/248-Los-Angeles-Votes-Bass--Raman--and-the-Ballot-That-Rewrites-Two-Governments-e3rgel0",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128514144/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2F269625fa-11e8-7bf9-d2fb-04e0e1daa9c2.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128514144/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fe6b304bd-3907-5bbf-b234-02a6a0700007.m4a",
    "number": "248"
   },
   {
@@ -2113,12 +2169,12 @@
    "kind": "episode",
    "title": "#247 Spain: The Cultural Superpower History Tried to Erase",
    "date": "2026-10-30T22:45:36Z",
-   "duration": 4181,
+   "duration": 4215,
    "description": "A movie about a murdered poet just won at Cannes — and it opens the door on the biggest buried story in Western culture. Spain has been one of the world's great cultural capitals not once but three times: the Golden Age that invented the novel and gave us Velázquez, the 1920s Madrid of Lorca, Dalí, and Buñuel, and the explosion that followed Franco. Each time, politics walked in and cut it short.\n This episode follows the whole arc: Cervantes and the Siglo de Oro, the Residencia de Estudiantes where Lorca, Dalí, and Buñuel shared a dormitory, the Spanish Civil War as a culture war — Lorca shot without trial, Guernica bombed, Picasso's painting exiled for 44 years — and the queer history…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793400290492-51d7daa4e9bd6.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/247-Spain-The-Cultural-Superpower-History-Tried-to-Erase-e3req0o",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128460248/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2F9d32f1a0-a8a2-7c44-f21d-4ce77c5203da.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128460248/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F4f08b70c-1f5d-109b-d9b6-ccf8c732e5a2.m4a",
    "number": "247"
   },
   {
@@ -2505,12 +2561,12 @@
    "kind": "episode",
    "title": "#246 Los Angeles: The Capital of the Pacific Century",
    "date": "2026-10-29T02:19:31Z",
-   "duration": 3954,
+   "duration": 3988,
    "description": "An Instagram reel argued Los Angeles is destined to become the greatest city in the world, and its comments kept returning to one phrase: the third wave. This episode audits the claim — the waves of LA's history, the city it never finished building, and the ocean it faces.\n The Pacific passed the Atlantic in American trade in the early 1980s and now runs about two to one in goods. San Pedro Bay moves nearly a third of the nation's containerized trade. Mayors from Tom Bradley to Eric Garcetti have called LA the capital of the Pacific Rim. The numbers, the rivals, and the counterarguments — peak China, the Taiwan Strait, a county population that has started to shrink — all get their hearing.\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793240279536-a76e6add7bd6c.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/246-Los-Angeles-The-Capital-of-the-Pacific-Century-e3ramns",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128325820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-29%2Fe58103e8-e3c9-0239-89cf-42a2193310b0.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128325820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F89a2d22f-40d6-f482-be8f-562b0d427548.m4a",
    "number": "246"
   },
   {
@@ -2519,12 +2575,12 @@
    "kind": "episode",
    "title": "#244 Anthropic: By the Numbers",
    "date": "2026-10-28T20:17:22Z",
-   "duration": 3319,
+   "duration": 3353,
    "description": "Everyone has an opinion about Anthropic's IPO. This episode ignores all of them. It is built from one document and one document only: the S-1 Anthropic filed with the SEC on October 26, 2026 — the registration statement for its Nasdaq debut under the ticker ANT, read cover to cover.\n What the filing actually says is stranger than the commentary. Revenue of roughly $16 billion in the first half of 2026 against a net loss of about $80.7 billion in the same six months. Full-year net losses of $1.5 billion in 2023, $8.3 billion in 2024, and $42.0 billion in 2025 — driven less by operations than by stock compensation and the revaluation of its own funding instruments. A dual-class structure that…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793218576272-4d619a5b1ad13.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/244-Anthropic-By-the-Numbers-e3r9vlo",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128302200/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fc4196c36-976c-acc1-d42e-721840e8ce34.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128302200/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fb5c84ee2-a74f-1121-22ee-4817dc404bce.m4a",
    "number": "244"
   },
   {
@@ -2533,12 +2589,12 @@
    "kind": "episode",
    "title": "#243 Serbia's Student List: The Movement With No Leader That Beat the Strongman",
    "date": "2026-10-28T20:14:01Z",
-   "duration": 2701,
+   "duration": 2735,
    "description": "On October 25, 2026, Serbia handed power to something with no precedent in Europe: a candidate list designed by a leaderless movement — 250 names chosen by student plenums, under rules written to make sure none of them could ever become the story. This episode is how that machine was built, and what it has to survive now that it has won.\n It starts with sixteen minutes of silence. The Novi Sad station canopy collapse of November 2024 — sixteen dead, and then an accountability void: indictments filed, charges against six of the accused later dropped with an appeal pending, no trial ever scheduled. Grief became a system: open plenums voting on everything, a daily silence at 11:52 in more than…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793223364606-532aaa1876cf3.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/243-Serbias-Student-List-The-Movement-With-No-Leader-That-Beat-the-Strongman-e3ra156",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128303718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2F38da79d4-b303-8d7f-b844-62223c93d6f4.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128303718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F8867ce3d-83b7-ba13-3d40-8932f0beea88.m4a",
    "number": "243"
   },
   {
@@ -2547,12 +2603,12 @@
    "kind": "episode",
    "title": "#242 DreamWorks: The Studio Built to Beat Disney",
    "date": "2026-10-28T20:12:32Z",
-   "duration": 3290,
+   "duration": 3324,
    "description": "In his new memoir, Ari Emanuel tells the story of how Jeffrey Katzenberg got pushed out of Disney — and what got built next. In October 1994, Katzenberg, Steven Spielberg, and David Geffen announced DreamWorks SKG: the first new major studio in decades, priced at $2.7 billion before it had made a single film, on three names and one grudge.\n This episode reconstructs the whole arc: the Disney Renaissance Katzenberg ran and the presidency he was denied when Frank Wells died; the 2-percent lawsuit and the settlement Geffen brokered at his Malibu home; the two checks that actually capitalized the dream — Paul Allen's $500 million and Miky Lee's $300 million for Korea's CJ — and the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793218288807-0646eb57cc794.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/242-DreamWorks-The-Studio-Built-to-Beat-Disney-e3r9unt",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128301245/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fd1471d2e-d9b9-343a-bbfa-64a7407c6e1a.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128301245/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F29faaa9d-398d-61d7-b544-3408f54142fa.m4a",
    "number": "242"
   },
   {
@@ -2575,12 +2631,12 @@
    "kind": "episode",
    "title": "#241 The Bible's Supporting Cast: The Minor Characters Who Move the Whole Story",
    "date": "2026-10-28T17:38:32Z",
-   "duration": 3905,
+   "duration": 3938,
    "description": "They get two verses, one sentence, sometimes no name at all — and the whole story turns on them. This episode is about the Bible's secondary characters: the midwives who lie to Pharaoh before Moses is born, the wife whose quick hands save Moses' life, the foreign priest who designs Israel's court system, and the captive child whose single sentence sets a general's healing in motion.\n We work through the cast — Zipporah and Jethro, Tamar and Rahab, Abigail talking David down from a massacre, Uriah closing out David's own hall of fame, Huldah authenticating the scroll that becomes scripture, Ebed-Melech going down into the pit for Jeremiah, Phoebe carrying the letter to the Romans — and ask…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793209081043-b7940c6ebbc52.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/241-The-Bibles-Supporting-Cast-The-Minor-Characters-Who-Move-the-Whole-Story-e3r9jad",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128289549/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2Fe504bfe0-ab3b-3aec-b956-e550079e550b.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128289549/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fef99f9a2-2570-47f8-dad8-92b4b98eb8f7.m4a",
    "number": "241"
   },
   {
@@ -2603,12 +2659,12 @@
    "kind": "episode",
    "title": "#240 The Eras of Disney: From Snow White to Soul, and the Next Hundred Years",
    "date": "2026-10-28T17:27:20Z",
-   "duration": 2757,
+   "duration": 2791,
    "description": "Ask a room of Disney fans to name the eras and you will start an argument — because every border in Disney's century is a disguised theory of what an era even is. Does the Silver Age end in 1959, when the fairy-tale style peaked, or in 1967, when Walt died? This episode maps the whole taxonomy: the Golden Age, the wartime package years, the Bronze Age drift, the Dark Age, the Renaissance, the Revival, and the era we are in now that still has no name.\n The anchors are two films. The Lion King, the Renaissance's commercial peak — made by the crew the studio itself called the B-team while its A-listers worked on Pocahontas. And Soul, Pixar's creative landmark and the purest symbol of the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793208371002-d60da8c3a6577.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/240-The-Eras-of-Disney-From-Snow-White-to-Soul--and-the-Next-Hundred-Years-e3r9dnt",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128283837/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-28%2F5297b5e0-82d2-a119-92c4-8a70f61c02e9.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128283837/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc1aa5882-edb9-f01b-551a-359182ddbb75.m4a",
    "number": "240"
   },
   {
@@ -2715,12 +2771,12 @@
    "kind": "episode",
    "title": "#239 The Greenville Clowns: The Monster Nobody Ever Found",
    "date": "2026-10-26T13:42:42Z",
-   "duration": 2914,
+   "duration": 2947,
    "description": "In late August 2016, a mother in Greenville, South Carolina reported what her son had seen in the woods behind their apartment complex: clowns, whispering, flashing green lights, trying to lure children in. Deputies searched the abandoned house by the pond and found nothing. Within nine days the story was national. Within six weeks it was a worldwide panic — school lockdowns, clown hunts, a benched Ronald McDonald, a question at a White House briefing.\n This episode reconstructs the whole cascade from the Greenville file itself, which is the strangest document in the story: no clown was ever found, photographed credibly, or arrested there, and there was never a case. It also traces the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793022010216-2fef7c5890c4e.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/239-The-Greenville-Clowns-The-Monster-Nobody-Ever-Found-e3r45ph",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128111857/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fdbc070ee-2e47-88b9-e4f9-dfe12bbb045b.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128111857/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fea632ebd-d036-a541-533c-af8ba0fc72b0.m4a",
    "number": "239"
   },
   {
@@ -2729,12 +2785,12 @@
    "kind": "episode",
    "title": "#238 Jay-Z vs. Nas: Two Casinos, Two Theories of Black Capital",
    "date": "2026-10-26T13:24:37Z",
-   "duration": 2462,
+   "duration": 2496,
    "description": "In September 2025, New York ran the same experiment twice. Jay-Z stood before a community committee and pitched a Caesars casino in the middle of Times Square: \"We from these neighborhoods. We are the community.\" The committee voted him down, 4 to 2. Eight days later, Queens voted 6 to 0 for a $5.5 billion Resorts World expansion with Nas as its hometown face — and the borough president cast his yes while quoting \"Queens Get the Money.\"\n This episode reconstructs both fights: the Broadway coalition that killed the Times Square bid, the governor, mayor, and building trades who backed it anyway, and the consent-first Queens campaign that never faced a single speaker against it. It keeps the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793020958425-4cf6ed2c5fed2.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/238-Jay-Z-vs--Nas-Two-Casinos--Two-Theories-of-Black-Capital-e3r3hi6",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128091142/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2F2f142950-ebcc-ae57-6b51-187776b34384.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128091142/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F685949b8-59a0-1077-a3e3-70b5482d9e37.m4a",
    "number": "238"
   },
   {
@@ -2757,12 +2813,12 @@
    "kind": "episode",
    "title": "#237 Obama's Incomplete Bill: The Healthcare Law That Never Finished the Job",
    "date": "2026-10-26T04:56:46Z",
-   "duration": 3634,
+   "duration": 3668,
    "description": "When Barack Obama signed the Affordable Care Act in March 2010, he called it the culmination of a century’s fight. Fifteen years later, even its defenders reach for the same word: incomplete. This episode takes that word apart — because the bill was left unfinished in three different ways, and they are not the same story.\n Part of it was designed out: the public option traded away senator by senator, the deals cut with the drug and hospital industries, a law built on private insurers from the first sketch. Part of it was cut out: the Supreme Court made Medicaid expansion optional, opening a coverage gap that today holds about 1.2 million people, disproportionately Black and Southern. And…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792990572137-2abfb320d31d7.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/237-Obamas-Incomplete-Bill-The-Healthcare-Law-That-Never-Finished-the-Job-e3r38ak",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128081684/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fbc01737e-d027-5b5d-0c6e-f38b24769a39.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128081684/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F8a931dc0-6bd6-d537-f1e9-f2833bb083af.m4a",
    "number": "237"
   },
   {
@@ -2841,12 +2897,12 @@
    "kind": "episode",
    "title": "#236 Harold Washington: The Mayor Who Beat the Machine",
    "date": "2026-10-25T01:00:00Z",
-   "duration": 2958,
+   "duration": 2992,
    "description": "Harold Washington didn't inherit Chicago. He registered it. Before the 1983 run he set a condition: 50,000 new Black voters, or no campaign. Black Chicago delivered nearly double, and the machine that had run the city for half a century met the one candidate it couldn't absorb.\n This episode goes deep on the whole arc: the Daley machine and the Black submachine Washington came up under, the ugliest general election in modern Chicago history, and the Council Wars that froze his first term. Then the record itself: the appointments, Executive Order 85-2 opening city contracts, Fair Share budgeting, and what it concretely meant for Black Chicago.\n And finally the two legacies: \"Harold,\" the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792978104126-7c17d1675b347.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/236-Harold-Washington-The-Mayor-Who-Beat-the-Machine-e3r357t",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/128078525/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fb5a44a9a-39aa-767b-620e-8a5b84491457.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128078525/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc4dd688a-0ade-775c-4544-7bba143e5fa4.m4a",
    "number": "236"
   },
   {
@@ -2897,12 +2953,12 @@
    "kind": "episode",
    "title": "#235 Ryū Murakami: The Other Murakami",
    "date": "2026-10-23T16:00:01Z",
-   "duration": 2668,
+   "duration": 2702,
    "description": "On October 23, 2026, Japan learned that Ryū Murakami was dead, and almost every English-language obituary had to begin the same way: not that Murakami. This episode is about the one the world mostly didn't read: the novelist who grew up in the shadow of an American naval base, won Japan's biggest literary prize at 24 with a novel of drugs and drift, and spent fifty years writing the people postwar Japan's success story left behind.\n Inside: Coin Locker Babies and the masterpiece that took fifteen years to reach English; the double-Murakami rivalry, including the sense of competition Haruki himself says helped push him to become a novelist; Audition, Miike, and the Western cult that credited…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792784079250-91ad27894ed59.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/235-Ry-Murakami-The-Other-Murakami-e3qvret",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127970205/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F71ecc2a0-7b74-3fc8-994f-fc06e2c1689f.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127970205/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F6f13b2f4-6294-23f8-0a22-eb21b0f0d010.m4a",
    "number": "235"
   },
   {
@@ -2925,12 +2981,12 @@
    "kind": "episode",
    "title": "#234 The Spice Wars: The Seed That Outpriced Manhattan",
    "date": "2026-10-23T15:00:01Z",
-   "duration": 4150,
+   "duration": 4183,
    "description": "In 1667, England and the Netherlands signed a peace that left the Dutch holding Run, a nutmeg island three kilometres long, and the English holding a muddy port called Manhattan. By the prices of the day, the Dutch won. This episode tells the story of how that could possibly be true: three thousand years of wars fought over flavor.\n It starts with salt, the spice nobody calls a spice: China's two-thousand-year state monopoly and the smugglers who nearly toppled dynasties, Sahara caravans trading salt almost weight for weight with gold, France's gabelle and the three thousand people a year punished for salt, and Gandhi's handful of shore salt against an empire. Then pepper, the black gold…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792783417242-a8e41615a7fb3.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/234-The-Spice-Wars-The-Seed-That-Outpriced-Manhattan-e3qvqv2",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127969698/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F237e8a71-3f91-b9e5-9fb6-9f38f040b46d.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127969698/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F69cd8fd4-8277-cbd3-6e32-7abaa3da3b07.m4a",
    "number": "234"
   },
   {
@@ -2939,12 +2995,12 @@
    "kind": "episode",
    "title": "#233 McDonald's Monopoly: Why You're Always One Piece Away",
    "date": "2026-10-23T01:00:00Z",
-   "duration": 2979,
+   "duration": 3013,
    "description": "You have never won McDonald's Monopoly, and neither has anyone you know — but you have absolutely been one piece away. This episode opens the machine up: who invented the promotion in 1987, how the odds are actually printed, why the law requires a mail-in route that gives you the same chance for the price of two stamps, and the twelve years when the winning pieces were being stolen from the inside.\n Inside: the rare-piece design (in the 2014 rules, Boardwalk was a single piece at 1 in 651,841,628); the psychology of the near-miss; Jerome Jacobson, the security chief who ran the theft ring until the FBI's Operation Final Answer took down 51 people in August 2001 — weeks before 9/11 buried…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792788567780-e886cb46c3e39.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/233-McDonalds-Monopoly-Why-Youre-Always-One-Piece-Away-e3qvqe5",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127969157/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2Fc3322950-f52b-7fbe-8eb5-a50b383ada71.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127969157/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F50ad4276-fe79-6461-a0c5-4a3b6b852e6d.m4a",
    "number": "233"
   },
   {
@@ -2953,12 +3009,12 @@
    "kind": "episode",
    "title": "#232 Epstein's Last Men Standing: The Lawyer and Accountant Nobody Charged",
    "date": "2026-10-22T22:00:00Z",
-   "duration": 2756,
+   "duration": 2790,
    "description": "For two decades, Jeffrey Epstein's operation ran through two professionals: his lawyer Darren Indyke and his accountant Richard Kahn. On October 21, 2026, New Mexico's attorney general sued them — the first law-enforcement action either man has ever faced. This episode asks who they are, what the documented record actually shows, and why accountability arrived as a civil suit seven years after Epstein's death.\n Inside: the 1953 Trust in Epstein's own words (the $50 million and $25 million bequests, the forgiven debts); the estate's full arithmetic, from $577 million to the $121 million paid to 136 claimants; their sworn congressional denials; the banks that paid hundreds of millions while…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792781596280-25c0c5def968e.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/232-Epsteins-Last-Men-Standing-The-Lawyer-and-Accountant-Nobody-Charged-e3qvpod",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127968461/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2Fa645b922-bee3-49ae-1b4e-94764621d348.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127968461/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc64d81cb-a567-38ba-d465-e09f55f52fc1.m4a",
    "number": "232"
   },
   {
@@ -2967,12 +3023,12 @@
    "kind": "episode",
    "title": "#231 Eisenkot: The General Running to Replace Netanyahu",
    "date": "2026-10-22T19:00:00Z",
-   "duration": 3029,
+   "duration": 3063,
    "description": "Five days before Israel votes, the man leading half the polls is a general who has never held office — and the math says nobody can win. This episode reconstructs Gadi Eisenkot's rise, the party he built in a year, and the deadlock waiting on the other side of October 27.\n Inside: the son he buried and the doctrine he wrote; Gantz's exit and the threshold arithmetic behind it; the red line he read into the record (\"I will not serve under Netanyahu\"); the state-inquiry fight driving the whole election; and the honest counter-case — the ten-poll average actually has Likud ahead, and Israel's generals have a mixed record once they take the chair.\n Follow along for the next deep dive.\n Stay…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792780545253-6b8bee2385ae8.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/231-Eisenkot-The-General-Running-to-Replace-Netanyahu-e3qvp5i",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127967858/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F87b73706-2872-9546-04a0-b9df2986a60b.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127967858/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F11d8d0ff-66a0-6fdb-8d18-dda54f8d66c6.m4a",
    "number": "231"
   },
   {
@@ -3009,12 +3065,12 @@
    "kind": "episode",
    "title": "#229 Jonathan Majors: The Villain Who Broke Marvel's Timeline",
    "date": "2026-10-22T01:00:00Z",
-   "duration": 3068,
+   "duration": 3102,
    "description": "He was supposed to be everywhere. Marvel built its Multiverse Saga on one actor playing infinite variants of the same villain — then a Manhattan jury, a split verdict, and a firing within hours ended it. This episode reconstructs the whole braid: Jonathan Majors' trial count by count, the Kang architecture across Loki and Quantumania, the timeline that was designed and the one that actually happened, and how Marvel replaced a saga with a mask it already owned.\n Follow along for the next deep dive.\n Stay curious.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792792702561-d777fe2d99532.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/229-Jonathan-Majors-The-Villain-Who-Broke-Marvels-Timeline-e3qvo3q",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127966778/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2Fe576e532-82a9-9a51-b6d8-26e80f1c0082.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127966778/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F1776be76-8037-5192-320e-50a68f603450.m4a",
    "number": "229"
   },
   {
@@ -3023,12 +3079,12 @@
    "kind": "episode",
    "title": "#228 Are Redheads Black? The Gene, the Pharaoh, and the Meme",
    "date": "2026-10-21T22:00:00Z",
-   "duration": 3239,
+   "duration": 3273,
    "description": "In May 2025, the internet declared redheads Black — and meant it at least five different ways. This episode separates the claims and tests each one: the genetics of the red-hair gene and where its mutations actually arose, a redheaded pharaoh under a Paris microscope, Malcolm X's family tree, and the Melanesian islanders who evolved red hair through a completely different gene. What's literally true, what's a distortion, and what's false — layer by layer.\n Follow along for the next deep dive.\n Stay curious.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1792777903233-9a33e0b380d89.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/228-Are-Redheads-Black--The-Gene--the-Pharaoh--and-the-Meme-e3qvnfo",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/127966136/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-23%2F7aa7f112-7542-8cf2-de63-89c45628fcc7.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/127966136/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Facd30470-0b30-9791-c2a8-c388e268d722.m4a",
    "number": "228"
   },
   {
@@ -7501,7 +7557,7 @@
    "feed": "https://anchor.fm/s/28e3d53c/podcast/rss",
    "spotify_name": "Aspiring Abolitionist",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "riff": {
@@ -7549,8 +7605,8 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 10,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
@@ -7637,8 +7693,8 @@
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime",
    "full_catalog": true,
-   "episodes": 4,
-   "spotify_matches": 0
+   "episodes": 5,
+   "spotify_matches": 1
   },
   "fastbreak": {
    "ok": true,
@@ -7677,8 +7733,8 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "cfbdaily": {
    "ok": true,
