@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T07:02:00Z",
+ "generated_at": "2026-11-05T15:38:40Z",
  "shows": [
   {
    "key": "ccpod",
@@ -617,8 +617,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-02T05:10:50Z",
-   "count": 7
+   "latest": "2026-11-05T07:31:54Z",
+   "count": 8
   },
   {
    "key": "blitz",
@@ -748,8 +748,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-03T17:05:36Z",
-   "count": 7
+   "latest": "2026-11-05T07:13:32Z",
+   "count": 8
   },
   {
    "key": "cbbdaily",
@@ -833,6 +833,34 @@
   }
  ],
  "episodes": [
+  {
+   "id": "fastbreak:297a97dc 8213 46cf 9653 3c78a642c73a",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Wednesday, November 4, 2026",
+   "date": "2026-11-05T07:31:54Z",
+   "duration": 1276,
+   "description": "Victor Wembanyama's historic night — a career-high 52 points, 24 rebounds and 8 blocks, the NBA's first 50-20-5 game since 1974 — carried the Spurs past Dallas 112-111, Shai Gilgeous-Alexander scored 42 in Oklahoma City's win over Cleveland, and Luka Doncic's 40 led the Lakers in Sacramento on a 14-game night.\n Scores: 76ers 112, Pistons 106 · Hawks 120, Wizards 105 · Celtics 109, Bucks 102 · Nets 114, Hornets 104 · Knicks 135, Bulls 105 · Pacers 107, Grizzlies 103 · Thunder 124, Cavaliers 116 · Pelicans 120, Jazz 113 (OT) · Timberwolves 117, Rockets 107 · Nuggets 128, Raptors 109 · Trail Blazers 132, Suns 119 · Spurs 112, Mavericks 111 · Lakers 116, Kings 103 · Heat 117, Clippers 116…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1793863870665-932b4efa3a52d.jpg",
+   "url": "https://open.spotify.com/episode/2895zpdHklI2Y4vfjIXisM",
+   "spotify_url": "https://open.spotify.com/episode/2895zpdHklI2Y4vfjIXisM",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/128828079/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2F634cc27e-7018-aaf1-6ff2-5fa7f5989466.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:69c90fa2 fa78 4d2f a24b 6f6782bd1610",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "UMass Wins a MACtion Overtime Classic on a Missed Extra Point, and Toledo Escapes Sacramento | Wednesday, November 4, 2026",
+   "date": "2026-11-05T07:13:32Z",
+   "duration": 1145,
+   "description": "Wednesday night MACtion delivered an overtime classic in Amherst, a favorite's escape in Sacramento, and a rivalry rout in Detroit. UMass beat Ball State 31-30 in overtime on Pop Watson's touchdown run and a missed Ball State extra point, Toledo survived Sacramento State 20-17 as a 25.5-point favorite, and Central Michigan routed Eastern Michigan 35-7 at Ford Field — plus the MAC race after Wednesday and the Saturday slate that will test the committee's first rankings.\n Inside: UMass 31, Ball State 30 (OT) in depth • Toledo 20, Sacramento State 17 • Central Michigan 35, Eastern Michigan 7 • The standouts • The MAC race • Playoff picture and the look-ahead to Saturday, November 7\n Part of…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793862784758-09e079463ba42.jpg",
+   "url": "https://open.spotify.com/episode/2puCAK9dXFdLZLxA0hvsUR",
+   "spotify_url": "https://open.spotify.com/episode/2puCAK9dXFdLZLxA0hvsUR",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/128827274/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2Ff9b8cd7b-5f08-3754-d4c8-174cee972e1e.m4a",
+   "number": null
+  },
   {
    "id": "techread:e7b33479 53a7 4595 8534 0f19d3bf034a",
    "show": "techread",
@@ -1081,8 +1109,8 @@
    "duration": 1032,
    "description": "Tonight the College Football Playoff committee releases its first rankings of the season, and the projections cannot agree on anything past Miami and Georgia — BYU, Utah, UCLA, Indiana and Kentucky all have a claim from No. 3 to No. 7. Plus Monday's injury news: Ohio State's quarterback crisis deepens before Oregon, Texas may be undermanned at Missouri, Notre Dame's defense is banged up before No. 1 Miami visits South Bend, and LaNorris Sellers collects national honors as South Carolina hosts Texas A&M.\n Segments: the first CFP rankings and the fight from No. 3 to No. 7 — the final AP Top 25 the committee inherits — Ohio State and Oregon's missing quarterbacks — Miami at Notre Dame — the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793725410242-73e59390fa5ea.jpg",
-   "url": "https://open.spotify.com/episode/4dHfn8NFoC6hd6quozVuU5",
-   "spotify_url": "https://open.spotify.com/episode/4dHfn8NFoC6hd6quozVuU5",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/The-Committee-Speaks-Tonight--and-Saturday-Will-Test-Every-Word-of-It--Tuesday--November-3--2026-e3rm1nc",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/128697516/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fdcd51939-d9f2-ba99-88f1-876cf888d60c.m4a",
    "number": null
   },
@@ -1221,8 +1249,8 @@
    "duration": 1163,
    "description": "The Chicago Bears closed Week 8 with a statement win on Monday Night Football, beating the defending champion Seattle Seahawks 34-17 at Lumen Field. Caleb Williams went 24-of-34 for 247 yards and a touchdown, D'Andre Swift scored three second-half touchdowns, and Jeffery Simmons wrecked Seattle's offense in his Bears debut with six tackles, a sack and two tackles for loss. Plus every Week 8 final, Joe Burrow's six-touchdown game, the Lamar Jackson injury fallout, the updated playoff picture, and the Week 9 marquee slate.\n Week 8 finals: Packers 27, Panthers 19; Lions 19, Vikings 15; Bills 36, Ravens 10; Bengals 43, Titans 36 (OT); Cardinals 33, Cowboys 30 (OT); Raiders 38, Jets 33; Steelers…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793808736196-defb8a6cb0298.jpg",
-   "url": "https://open.spotify.com/episode/048zKW8AvSZeAuNu1MIfDp",
-   "spotify_url": "https://open.spotify.com/episode/048zKW8AvSZeAuNu1MIfDp",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Monday--November-2--2026-e3rl3uh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128667025/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F089cb458-0b04-de0c-9137-8a62ce770e6c.m4a",
    "number": null
   },
@@ -1543,8 +1571,8 @@
    "duration": 754,
    "description": "Luka Doncic's historic two-way night — 45 points, 15 rebounds, 5 steals and 8 threes — carried the Lakers past Toronto 131-125, rookie Yaxel Lendeborg scored a career-high 37 without Curry or Green in Golden State's win, and Jayson Tatum's 32 pushed Boston's streak to five.\n Scores: Celtics 108, Magic 97 · Nets 98, Pacers 90 · Warriors 124, Clippers 112 · Lakers 131, Raptors 125.\n The deep dive: Luka Doncic's league-leading start and the Lakers' dependence problem — a plus-17.9 net rating with him on the floor, and a bench that keeps giving it back.\n Part of the Curious & Creative network. Back tomorrow night.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1793596209619-c0355293c0751.jpg",
-   "url": "https://open.spotify.com/episode/29G6vdlt0ewgHk8qGRsYRU",
-   "spotify_url": "https://open.spotify.com/episode/29G6vdlt0ewgHk8qGRsYRU",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Sunday--November-1--2026-e3riu2n",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/128595479/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F6b6ba845-fe48-8516-0392-bcc831b6c3b3.m4a",
    "number": null
   },
@@ -7855,7 +7883,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "blitz": {
@@ -7864,7 +7892,7 @@
    "spotify_name": "The Blitz",
    "full_catalog": true,
    "episodes": 5,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "waiverwire": {
    "ok": true,
@@ -7895,7 +7923,7 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "cbbdaily": {
