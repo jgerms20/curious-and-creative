@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T15:38:40Z",
+ "generated_at": "2026-11-05T22:09:04Z",
  "shows": [
   {
    "key": "ccpod",
@@ -643,8 +643,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-03T07:50:56Z",
-   "count": 5
+   "latest": "2026-11-05T07:45:50Z",
+   "count": 6
   },
   {
    "key": "waiverwire",
@@ -833,6 +833,20 @@
   }
  ],
  "episodes": [
+  {
+   "id": "blitz:a879777e 1355 4d5b 9c3f 2f3e169127ca",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Wednesday, November 4, 2026",
+   "date": "2026-11-05T07:45:50Z",
+   "duration": 1211,
+   "description": "No game tonight, but Baltimore owned the day: the Ravens are finalizing a trade for Cardinals quarterback Jacoby Brissett after Lamar Jackson's thumb surgery and Tyler Huntley's season-ending turf toe injury, with undrafted rookie Joe Fagnano starting Thursday against Jacksonville. Plus the full Week 8 scoreboard, Joe Burrow's 462-yard game, the trade-deadline and injured-reserve wire, and the playoff picture entering Week 9.\n Week 8 finals: Packers 27, Panthers 19; Bills 36, Ravens 10; Bengals 43, Titans 36 (OT); Cardinals 33, Cowboys 30 (OT); Lions 19, Vikings 15; Jaguars 42, Colts 7; Raiders 38, Jets 33; Steelers 27, Browns 6; Buccaneers 16, Falcons 0; Rams 24, Chargers 9; Broncos 28,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793864707668-77fd565c49db8.jpg",
+   "url": "https://open.spotify.com/episode/14d5sLUKk7sdgeqFqRpW36",
+   "spotify_url": "https://open.spotify.com/episode/14d5sLUKk7sdgeqFqRpW36",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/128828679/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2Fc8e67277-2810-674a-9453-3ef08c08cc26.m4a",
+   "number": null
+  },
   {
    "id": "fastbreak:297a97dc 8213 46cf 9653 3c78a642c73a",
    "show": "fastbreak",
@@ -7891,8 +7905,8 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 0
+   "episodes": 6,
+   "spotify_matches": 1
   },
   "waiverwire": {
    "ok": true,
