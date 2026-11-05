@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T23:47:55Z",
+ "generated_at": "2026-11-05T07:02:00Z",
  "shows": [
   {
    "key": "ccpod",
@@ -357,8 +357,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-03T16:50:51Z",
-   "count": 6
+   "latest": "2026-11-04T21:45:26Z",
+   "count": 7
   },
   {
    "key": "marketread",
@@ -487,8 +487,8 @@
    "complete": true,
    "art": "assets/art/techread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115008/47115008-1793403471813-faf390ffca731.jpg",
-   "latest": "2026-11-03T21:00:52Z",
-   "count": 4
+   "latest": "2026-11-04T22:13:29Z",
+   "count": 5
   },
   {
    "key": "optionsdesk",
@@ -513,8 +513,8 @@
    "complete": true,
    "art": "assets/art/optionsdesk.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107161/47107161-1793316392630-4f694b23fc264.jpg",
-   "latest": "2026-11-03T17:01:19Z",
-   "count": 6
+   "latest": "2026-11-04T21:39:18Z",
+   "count": 7
   },
   {
    "key": "cryptoread",
@@ -834,6 +834,20 @@
  ],
  "episodes": [
   {
+   "id": "techread:e7b33479 53a7 4595 8534 0f19d3bf034a",
+   "show": "techread",
+   "kind": "episode",
+   "title": "Wednesday, November 4, 2026",
+   "date": "2026-11-04T22:13:29Z",
+   "duration": 1284,
+   "description": "AMD posts a record quarter with data center sales nearly doubling and guides to about $17 billion, Arista records its fastest growth since its IPO, Super Micro's revenue nearly quadruples with caveats underneath, Shopify falls on a small GMV miss, Skyworks tumbles on a soft smartphone forecast, Democrats sweep Congress and the tech rulebook changes hands, Binance takes its broader reserves snapshot, and Uber, Qualcomm and Arm report today.\n In today's brief:\n • AMD Posts a Record Quarter as Data Center Sales Nearly Double — https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/\n • Arista Posts Its Fastest Growth Since Its IPO —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793830386903-bc64d0b749996.jpg",
+   "url": "https://open.spotify.com/episode/28uwbVNg6dtHLBCGWFctKo",
+   "spotify_url": "https://open.spotify.com/episode/28uwbVNg6dtHLBCGWFctKo",
+   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128800801/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fc5d2c58a-2679-cf0b-0c0e-4acd59dd1ec2.m4a",
+   "number": null
+  },
+  {
    "id": "nyread:286664d5 2fc1 4b0c 9eb6 7f76996900ea",
    "show": "nyread",
    "kind": "episode",
@@ -862,6 +876,20 @@
    "number": null
   },
   {
+   "id": "globalread:46e03809 796f 4f5d ad26 09294e25569f",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Wednesday, November 4, 2026 — AM Edition",
+   "date": "2026-11-04T21:45:26Z",
+   "duration": 1192,
+   "description": "This is the morning AM edition of The Global Read for Wednesday, November 4, 2026. American voters hand both chambers of Congress to the Democrats in a midterm rebuke driven in part by the Iran war; Tehran's Revolutionary Guard claims four tankers destroyed by mines in Hormuz while Qatar's feedback window runs; Russia strikes power stations in Kyiv and Zhytomyr six days before the Abu Dhabi talks; Israel's President Herzog opens coalition consultations after the election committee rules the vote clean; North Korea fires missiles for the fourth time in a month; Spain's transport minister resigns over the Urda crash; South Africa votes in municipal elections that test the ANC; and oil rises…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793828663023-04a572b5e2593.jpg",
+   "url": "https://open.spotify.com/episode/5fiL5WpqNxBB85I6MInoXE",
+   "spotify_url": "https://open.spotify.com/episode/5fiL5WpqNxBB85I6MInoXE",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/128799149/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F5ae76abc-2116-6cf1-cc87-70afa0212ed2.m4a",
+   "number": null
+  },
+  {
    "id": "airead:a3b4839b 6003 4cb0 98a2 1a658352f1ca",
    "show": "airead",
    "kind": "episode",
@@ -887,6 +915,20 @@
    "url": "https://open.spotify.com/episode/0cytPlj0VVW5hcsgkDzsJg",
    "spotify_url": "https://open.spotify.com/episode/0cytPlj0VVW5hcsgkDzsJg",
    "audio": "https://anchor.fm/s/11960849c/podcast/play/128799033/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F0da91e5c-eebe-4f2d-413a-f8297ca14a87.m4a",
+   "number": null
+  },
+  {
+   "id": "optionsdesk:e2d64a60 a593 49aa b99a 3ed5e5c54bda",
+   "show": "optionsdesk",
+   "kind": "episode",
+   "title": "Wednesday, November 4, 2026",
+   "date": "2026-11-04T21:39:18Z",
+   "duration": 750,
+   "description": "The morning after the midterms: futures whipsawed down then sharply higher as Democrats were projected to take both chambers, AMD and Arista ripped after hours on record quarters, and Qualcomm, Arm and AppLovin report after today's close — a pre-market desk built around tonight's prints, defined risk first.\n Setups: QCOM Nov 6 iron condor 145/135 put wing + 185/195 call wing into AMC earnings (implied ±9.5%); ARM Nov 6 iron condor 170/155 + 225/240; AMD Nov 20 520/560 bull call debit spread post-beat; SPY Nov 20 745/730 bear put hedge. Explainer: expected-move math — turning a straddle price into a strike map.\n Education, not financial advice.\n Part of the Curious & Creative network. Back…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107161/47107161-1793828271407-b9f5c357a1b19.jpg",
+   "url": "https://open.spotify.com/episode/252XC2r1M3AnQqWiNQoJ7y",
+   "spotify_url": "https://open.spotify.com/episode/252XC2r1M3AnQqWiNQoJ7y",
+   "audio": "https://anchor.fm/s/119606944/podcast/play/128798836/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F294a6a2f-cda5-e57c-9edb-27382da72a80.m4a",
    "number": null
   },
   {
@@ -1164,7 +1206,7 @@
    "date": "2026-11-03T16:50:51Z",
    "duration": 675,
    "description": "The morning AM edition of The Global Read: Iran and the United States are still far from a deal as US strikes hit Qeshm Island overnight, twenty-six are killed at a Ukraine aid centre as Abu Dhabi peace talks are set for November 10-11, Israel's Eisenkot rules out serving under Netanyahu, and the US circulates a UN draft for a Gaza stabilization force. Plus: Ebola passes 5,376 deaths as a US travel attestation begins, oil whipsaws on the Hormuz talks, Binance says outflows have normalised as North Korea rejects the FBI's heist attribution, Spain readies aid for the Urda victims, and France win Dakar rugby sevens gold.\n • Iran and US far from a deal as US strikes Qeshm Island overnight —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793724600507-7e2ffbdac5ff2.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793807185077-5c452588b892e.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Tuesday--November-3--2026--AM-Edition-e3rm0qh",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128696593/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc5d86915-8d06-cf2b-5f29-e279dc069c5e.m4a",
@@ -1248,7 +1290,7 @@
    "date": "2026-11-02T15:43:36Z",
    "duration": 1274,
    "description": "The Sweep is back — six cities, one week, for the week of November 2–8. New York opens with Elena Pinderhughes at the Blue Note and Cyrille Aimée at Birdland; Chicago answers with a ten-dollar Green Mill Monday and Monty Alexander opening his Jazz Showcase residency.London runs seven nights through Ronnie Scott's from its Jazz Orchestra to Theo Croker and Makoto Ozone, Paris marks Coltrane 100 at the Cité de la Musique, and Tokyo hosts Aziza — Dave Holland, Chris Potter, Lionel Loueke and Eric Harland — for three nights at Blue Note Tokyo. At home in LA: Michael Landau at The Baked Potato, Azar Lawrence in Venice, and the Marlonious Jazz Orchestra's Billie Holiday program in Sierra…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793634048498-11b1d826c13b9.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793817404826-b4a95b99a3bde.jpg",
    "url": "https://open.spotify.com/episode/0cM6bDbzPmZv70MeQD8QuG",
    "spotify_url": "https://open.spotify.com/episode/0cM6bDbzPmZv70MeQD8QuG",
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/128625215/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fc57c47d0-9c5d-2f00-6f77-53271dacc29a.m4a",
@@ -1458,7 +1500,7 @@
    "date": "2026-11-02T11:07:59Z",
    "duration": 1340,
    "description": "Iran offers to reopen the Strait of Hormuz in two days as Doha talks enter a third day, Ukraine's longest truce ends at Oleshky as cyberattacks and power cuts resume, Israel faces a coalition deadlock with a unity government now discussed, and the UN ends its 35-year Western Sahara mission. Plus: Ebola passes 5,000 deaths in Congo and spreads across the region, Korea's chip exports triple as OPEC+ holds and Binance stabilises, Spain identifies 66 of the 69 Urda victims, Europe's protests turn violent in France and Germany, and Dakar awards its first gold.\n • Iran offers two-day Hormuz reopening as Doha talks continue — https://www.10things.news/p/10-things-global-news-2nd-november\n •…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793617572703-f06be2e0415f5.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793807079377-359c8ec6ae7bb.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Monday--November-2--2026-e3rjalv",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128608383/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fa2d21cd4-ea06-d0e7-7aa0-39af60de502d.m4a",
@@ -1556,7 +1598,7 @@
    "date": "2026-11-02T01:57:46Z",
    "duration": 1272,
    "description": "The Celtics beat the Magic 108-97 in Orlando for their fifth straight win, moving to 5-1. Jayson Tatum scored 32 points (15-of-17 at the free throw line) with 7 assists, returned after a first-quarter head knock, and closed it late; Paul George added 17 points, 6 rebounds and 8 assists with 10 points in the fourth; Neemias Queta started for the resting Mitchell Robinson and delivered 8 points, 9 rebounds and late blocks; Luka Garza (12 points) and Baylor Scheierman (10 points) led the bench. Boston won despite shooting 12-for-44 from three, on 14 offensive rebounds, 29 assists, nine steals and seven blocks. Anthony Black and Tristan da Silva scored 23 each for Orlando (2-4).\n Segments: the…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793584548755-b545aa7c09171.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793807934950-1bb90f2712cdc.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Celtics-Beat-the-Magic-108-97-Tatums-32-Powers-Five-Straight--Boston-Is-5-1--Sunday--November-1--2026-e3rio11",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128589281/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F138f7d4a-1ccc-3134-d5d5-c1c9348a7a39.m4a",
@@ -1584,7 +1626,7 @@
    "date": "2026-11-01T17:55:58Z",
    "duration": 2568,
    "description": "The Week Ahead, November 2–8: the full rundown — news, new wax, and what's actually happening in Los Angeles, from the big rooms to the tiny ones. Friday is debut day twice over: brothers Zohar & Adam release Osmosis on Mack Avenue with Christian McBride guesting, and Mathis Picard's large ensemble debuts The Sound Orchestra on La Reserve.\n In LA: Doug Webb's three nights at The Baked Potato with Danny Carey on drums, Gerald Clayton's Tuesday Happenings at Sam First, Gabrielle Cavassa's Diavola night, the Chris Dave / Eric Gales / MonoNeon / Cory Henry summit at Blue Note LA, and the week's pick — Helen Sung's Oracles Quartet West Coast debut at Sam First on Friday. From the vault: Adolphe…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793555669956-e883fdfaff6d4.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793817367264-1f8418ac5333.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/The-Week-Ahead-November-2-8-e3ri6kn",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/128571479/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-1%2F31e21c05-f3fb-65a0-de9a-42baf10c0e57.m4a",
@@ -1710,7 +1752,7 @@
    "date": "2026-11-01T13:54:06Z",
    "duration": 1267,
    "description": "Congo's Ebola epidemic passes five thousand deaths, the deadliest in the country's history, as Ukraine completes the Oleshky evacuation under the war's longest local ceasefire while the drone war continues, the FBI attributes the record 6.3 billion dollar Binance theft to North Korea, and the G20 ends in Atlanta without consensus as China's factories slip back into contraction. Plus: the UN demands answers after a staffer dies in Houthi detention, Europe's youth take to the streets, Poland's constitutional crisis deepens, two UN missions end, and Dakar opens Africa's first Olympic event.\n • Ebola in Congo passes 5,000 deaths in the country's deadliest epidemic —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793541033201-638ebd0d40688.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793806978989-781ab74b12e4b.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Sunday--November-1--2026-e3rhsq3",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128561411/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-1%2F106bb061-db86-eefd-3a44-cf71601bbafa.m4a",
@@ -1724,7 +1766,7 @@
    "date": "2026-11-01T13:39:38Z",
    "duration": 1232,
    "description": "South Carolina is 5-3 and one win from a bowl after the 42-25 statement at Oklahoma, and now Texas A&M comes to Williams-Brice on Saturday, November 7 (3 p.m. ET, ESPN) with last year's 31-30 heartbreak still fresh.\n Inside: what the Oklahoma win changes and the full Texas A&M preview / the news block: Matt Fuller's likely season-ending injury and the backfield plan, Troy Pikes' first-half suspension, and the turnover warning / the deep segment on Dylan Stewart against a struggling Marcel Reed / the road ahead to Arkansas, Georgia, and Clemson.\n Unofficial and independent; not affiliated with the University of South Carolina or the SEC.\n Part of the Curious & Creative network. Back with the…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1793540317019-95c466d43f85b.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1793808120409-326e3fc06a471.jpg",
    "url": "https://open.spotify.com/episode/3KMgE7chS71ps9Zg1t0lYQ",
    "spotify_url": "https://open.spotify.com/episode/3KMgE7chS71ps9Zg1t0lYQ",
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/128561059/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-1%2F393bcc7e-fc33-5379-f29b-1ddb843ada9b.m4a",
@@ -1990,7 +2032,7 @@
    "date": "2026-10-31T15:20:52Z",
    "duration": 2632,
    "description": "Today is Illinois Jacquet's 104th birthday — born October 31, 1922, in Broussard, Louisiana. At 19, on the first recording session of his career, he played an 80-second solo on Lionel Hampton's \"Flying Home\" that invented R&B saxophone — and every tenor who took his chair after him had to play it note for note.\n From his father's band in Houston and the Milt Larkin Orchestra at 15, through Nat King Cole's introduction and the alto-to-tenor switch, the first Jazz at the Philharmonic in 1944, the Texas Tenors, and \"Swing's the Thing\" — to Harvard in 1983 and a \"C-Jam Blues\" with President Clinton. Listening picks: \"Flying Home\" (1942), \"Harlem Nocturne,\" and the film \"Jammin' the Blues.\"\n…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793459939071-1477fcd9f5d37.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793817454403-e5afb72ab9736.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/Illinois-Jacquet-The-Solo-They-All-Had-to-Play-Note-for-Note-e3rg1tg",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/128501104/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2F17547aa1-14a3-9186-305d-c1e8c6b405b9.m4a",
@@ -2032,7 +2074,7 @@
    "date": "2026-10-31T13:57:48Z",
    "duration": 918,
    "description": "South Carolina is 4-3 and it is game day in Norman: back-to-back ranked wins over Florida and Tennessee, LaNorris Sellers and the SEC's best rushing attack against Brent Venables' Oklahoma defense, a final availability report with no new names, the recruiting payoff from the Tennessee win, and the No. 1 women's basketball team opening in Paris on Monday.\n Today: the full Oklahoma preview, kickoff 4:15 p.m. ET on SEC Network, with odds, weather and series history; the news block, with the final availability report, Oklahoma's best offensive game of the season, and the Nate Kamba flip; the deep segment on Sellers vs. Venables and the third-down game; and basketball, with Paris on Monday and…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1793454954520-18eddc456e7c2.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1793808209229-c558f938d7421.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/Sellers-vs--Venables-in-Norman-South-Carolina-Is-4-3--Saturday--October-31--2026-e3rfv3p",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/128498233/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2Fac8830ca-1093-5e42-d653-bbaeb7692436.m4a",
@@ -2172,7 +2214,7 @@
    "date": "2026-10-31T10:29:11Z",
    "duration": 1132,
    "description": "Iran's disputed claim that more tankers struck mines in the Strait of Hormuz leads today's briefing, followed by a G20 meeting in Atlanta that skipped its family photo, Zelenskiy's talks in Turkey and a new Patriot sale for Ukraine, and the end of Ukraine's refinery-strike pause.\n Hormuz tankers (developing) • G20 in Atlanta • Ukraine diplomacy and Patriot sale • Refinery strikes resume • Israel coalition talks • Binance heist attribution • Britain and the Commonwealth apology question • India PM-KISAN • Pope Leo XIV votes\n Part of the Curious & Creative network. Back tomorrow morning.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793442439689-7c0e864f99548.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793806867372-cc42991721f43.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Saturday--October-31--2026-e3rfl9o",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128488184/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2F00d88a49-a391-2b17-6d72-cd571417d2b4.m4a",
@@ -7733,8 +7775,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
@@ -7773,16 +7815,16 @@
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 4,
-   "spotify_matches": 0
+   "episodes": 5,
+   "spotify_matches": 1
   },
   "optionsdesk": {
    "ok": true,
    "feed": "https://anchor.fm/s/119606944/podcast/rss",
    "spotify_name": "The Options Desk",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "cryptoread": {
    "ok": true,
