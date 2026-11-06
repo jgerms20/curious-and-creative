@@ -51,7 +51,8 @@
    ],
    "rss": "https://anchor.fm/s/111be5840/podcast/rss",
    "tier": "primary",
-   "ai": "hybrid"
+   "ai": "hybrid",
+   "slug": "eclectic-polymath"
   },
   {
    "key": "approachable",
@@ -670,5 +671,15 @@
   "news": "News & reads",
   "industry": "Industry",
   "sports": "Sports"
+ },
+ "hosts": {
+  "Joshua German": {
+   "bio": "Senior Connections Strategist and photographer. Runs the Curious + Creative Network.",
+   "photo": "assets/people/joshua.jpg"
+  },
+  "Janel Moore": {
+   "bio": "Technology and finance at Truist; political fundraising veteran; artist. Hosts Too Much to Tweet and Aspiring Abolitionist.",
+   "photo": "assets/people/janel.jpg"
+  }
  }
 }

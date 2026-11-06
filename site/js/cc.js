@@ -342,6 +342,7 @@
     return CC.HOST_LABEL[CC.hostGroup(s)];
   };
   CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel", ai: "AI-generated", hybrid: "Hybrid · human + AI" };
+  CC.showHref = (s) => url(s && s.page ? s.page : `pages/shows.html#${s && s.key}`);
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
   CC.epHref = (e) => e.url || e.spotify_url || "#";
@@ -357,7 +358,7 @@
   };
 
   const loadJSON = (p) => fetch(url(p), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json"), loadJSON("data/episode-pages.json")]).then(([content, photos, registry, epPages]) => {
+  CC.ready = Promise.all([loadJSON("data/content.json"), loadJSON("data/photos.json"), loadJSON("data/shows.json"), loadJSON("data/episode-pages.json"), loadJSON("data/show-pages.json")]).then(([content, photos, registry, epPages, showPages]) => {
     const data = content || { shows: [], episodes: [] };
     // published episode pages, keyed show:number:spotifyId (tools/build_episodes.py)
     const pageBy = {};
@@ -387,6 +388,8 @@
         name: r.name || s.name, short: r.short || s.short, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts, principal: r.principal || s.principal,
         category: r.category, cadence: r.cadence, archive: r.archive ?? s.archive, spotify_url: s.spotify_url || r.spotify_url || (r.spotify && `https://open.spotify.com/show/${r.spotify}`) };
     }) : data.shows || [];
+    const pagesOf = (showPages && showPages.pages) || {};
+    data.shows.forEach((s) => { s.page = pagesOf[s.key]; });
     const live = new Set(data.shows.map((s) => s.key));
     data.episodes = (data.episodes || []).filter((e) => live.has(e.show));
     const allPhotos = (photos && photos.photos) || [];
@@ -403,7 +406,7 @@
 
     INDEX = [];
     PAGES.forEach((p) => addDoc({ type: "page", title: p.label, sub: "Page", text: p.words, href: url(p.href), boost: 0.5 }));
-    data.shows.forEach((s) => addDoc({ type: "show", show: s.key, title: s.name, sub: `${s.kind === "youtube" ? "YouTube show" : "Podcast"} · ${(s.hosts || []).join(", ")}`, text: [s.tagline, s.about, s.description].filter(Boolean).join(" "), img: CC.art(s), href: url(`pages/shows.html#${s.key}`), boost: 1 }));
+    data.shows.forEach((s) => addDoc({ type: "show", show: s.key, title: s.name, sub: `${s.kind === "youtube" ? "YouTube show" : "Podcast"} · ${(s.hosts || []).join(", ")}`, text: [s.tagline, s.about, s.description].filter(Boolean).join(" "), img: CC.art(s), href: CC.showHref(s), boost: 1 }));
     (data.episodes || []).forEach((e) => {
       const s = data.byKey[e.show] || {};
       addDoc({ type: "episode", show: e.show, title: e.title, sub: `${s.short || s.name || ""} · ${ago(e.date)}`, text: e.description || "", img: CC.epImg(e, s), href: CC.epLink(e), date: e.date });
@@ -414,14 +417,14 @@
     // the flagships by name, then one entry per category of regular shows
     const catCount = {};
     data.secondary.forEach((s) => { const k = s.category || "more"; catCount[k] = (catCount[k] || 0) + 1; });
-    if (menu) menu.innerHTML = data.primary.map((s) => `<a href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+    if (menu) menu.innerHTML = data.primary.map((s) => `<a href="${CC.showHref(s)}" data-show="${s.key}">
       ${s.art ? `<img src="${CC.art(s)}" alt="" loading="lazy" width="44" height="44">` : '<span class="ph"></span>'}
       <span><b>${esc(s.name)}</b><small>${esc(CC.showByline(s) || s.tagline || "")}</small></span></a>`).join("")
       + Object.keys(catCount).sort((a, b) => Object.keys(CC.categories).indexOf(a) - Object.keys(CC.categories).indexOf(b)).map((k) => `<a href="${url(`pages/shows.html#cat-${k}`)}" class="hdr__menu-cat">
       <span class="ph">${catCount[k]}</span><span><b>${esc(CC.categories[k] || "More shows")}</b><small>${catCount[k]} shows on the network</small></span></a>`).join("");
 
     const ds = document.querySelector("[data-drawer-shows]");
-    if (ds) ds.innerHTML = data.shows.map((s) => `<a href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">${s.art ? `<img src="${CC.art(s)}" alt="" loading="lazy">` : '<span class="ph"></span>'}${esc(s.name)}</a>`).join("");
+    if (ds) ds.innerHTML = data.shows.map((s) => `<a href="${CC.showHref(s)}" data-show="${s.key}">${s.art ? `<img src="${CC.art(s)}" alt="" loading="lazy">` : '<span class="ph"></span>'}${esc(s.name)}</a>`).join("");
     if (input.value) runSearch();
     const qp = new URLSearchParams(location.search).get("q");
     if (qp && page !== "archive") CC.openSearch(qp);
@@ -491,13 +494,13 @@
       const beside = !n.above && n.x < C[0] - 60 && n.x - n.r - 12 - name.length * 13 > 8; // only if it fits at phone label size
       const ly = n.above ? n.y - n.r - (tag ? 30 : 14) : beside ? n.y + (tag ? -2 : 6) : n.y + n.r + 22;
       const lx = beside ? n.x - n.r - 12 : n.x;
-      return `<a class="web__node web__node--primary${hybrid ? " web__node--hybrid" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}" data-node="${s.key}" data-links="${flagLinks(s).join(" ")}" aria-label="${esc(s.name)}">`
+      return `<a class="web__node web__node--primary${hybrid ? " web__node--hybrid" : ""}" href="${CC.showHref(s)}" data-show="${s.key}" data-node="${s.key}" data-links="${flagLinks(s).join(" ")}" aria-label="${esc(s.name)}">`
         + disc("wf" + i, n.x, n.y, n.r, s, hybrid) + text(lx, ly, `web__label${beside ? " web__label--end" : ""}`, name)
         + (tag ? text(lx, ly + 18, `web__tag${hybrid ? " web__tag--hybrid" : ""}${beside ? " web__label--end" : ""}`, tag) : "") + "</a>";
     }).join("");
     const openNode = `<a class="web__node web__node--future web__planet" href="${url("pages/manifesto.html#request")}" data-node="open" aria-label="Coming soon: ask us for a show"><circle cx="${open[0]}" cy="${open[1]}" r="30"/>${text(open[0], open[1] + 9, "web__plus", "?")}${text(open[0], open[1] + 56, "web__label web__label--quiet", "Coming soon")}${text(open[0], open[1] + 74, "web__tag", "ask us for a show")}</a>`;
     const planetNodes = planets.map((p, i) => {
-      const moons = p.moons.map((m, j) => `<a class="web__node web__moon" href="${url(`pages/shows.html#${m.s.key}`)}" data-show="${m.s.key}" data-node="${m.s.key}" data-links="cat-${p.k}" aria-label="${esc(m.s.name)}"><title>${esc(m.s.name)}</title>${disc(`wm${i}-${j}`, m.x, m.y, 15, m.s)}</a>`).join("");
+      const moons = p.moons.map((m, j) => `<a class="web__node web__moon" href="${CC.showHref(m.s)}" data-show="${m.s.key}" data-node="${m.s.key}" data-links="cat-${p.k}" aria-label="${esc(m.s.name)}"><title>${esc(m.s.name)}</title>${disc(`wm${i}-${j}`, m.x, m.y, 15, m.s)}</a>`).join("");
       return `<g class="web__system" data-cat="${p.k}">${moons}<a class="web__node web__planet" href="${url(`pages/shows.html#cat-${p.k}`)}" data-node="cat-${p.k}" data-links="ai" aria-label="${esc(p.label)}: ${p.shows.length} shows"><circle class="web__planet-body" cx="${p.x}" cy="${p.y}" r="30"/>${text(p.x, p.y + 6, "web__planet-n", String(p.shows.length))}</a>${text(p.x, p.y + p.ring + 30, "web__label", p.label)}</g>`;
     }).join("");
     const makerNodes = Object.entries(makers).map(([k, [x, y, name, src]]) => (k === "ai"
