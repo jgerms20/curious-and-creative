@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T18:08:18Z",
+ "generated_at": "2026-11-06T23:18:18Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-06T04:28:59Z",
-   "count": 11
+   "latest": "2026-11-04T21:41:47Z",
+   "count": 9
   },
   {
    "key": "globalread",
@@ -566,8 +566,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-06T12:04:14Z",
-   "count": 5
+   "latest": "2026-11-03T17:08:16Z",
+   "count": 4
   },
   {
    "key": "tvinsider",
@@ -644,8 +644,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-06T05:15:09Z",
-   "count": 7
+   "latest": "2026-11-05T07:45:50Z",
+   "count": 6
   },
   {
    "key": "waiverwire",
@@ -723,8 +723,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-06T13:36:55Z",
-   "count": 8
+   "latest": "2026-11-03T16:58:16Z",
+   "count": 7
   },
   {
    "key": "cfbdaily",
@@ -835,20 +835,6 @@
  ],
  "episodes": [
   {
-   "id": "coltsdaily:5b73a89b ede0 4bf0 ac7f 9d2a37d16b65",
-   "show": "coltsdaily",
-   "kind": "episode",
-   "title": "Taylor Calls It Noise, Rookies Step In: Indianapolis Is 2-6 | Friday, November 6, 2026",
-   "date": "2026-11-06T13:36:55Z",
-   "duration": 1210,
-   "description": "Four days from the trade deadline, Jonathan Taylor called the talk noise, Daniel Jones's QB1 status was reported up in the air even as Shane Steichen sticks with him for Dallas, and Thursday's practice report kept two defensive starters out while upgrading tight end Drew Ogletree. The Colts are 2-6, third in the AFC South, and host the 3-5 Dallas Cowboys on Sunday, November 8 at 1 p.m. ET at Lucas Oil Stadium on FOX.\n Segments: Taylor and both quarterbacks answer the deadline on Thursday, and the reported plan to assess after the weekend; the Thursday injury report for both teams, including the Dallas safeties moving out of concussion protocol; a deep segment on the rookie duo of C.J.…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1793972196125-a2faa06849385.jpg",
-   "url": "https://open.spotify.com/episode/0h0gLm2kHx2mMqyHVVYLsf",
-   "spotify_url": "https://open.spotify.com/episode/0h0gLm2kHx2mMqyHVVYLsf",
-   "audio": "https://anchor.fm/s/119609694/podcast/play/128926329/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F7f1f570a-80dd-6e49-abc4-98b306aad362.m4a",
-   "number": null
-  },
-  {
    "id": "tvinsider:f378db77 d484 4c1c 9d15 4d4d1a2e6f96",
    "show": "tvinsider",
    "kind": "episode",
@@ -863,34 +849,6 @@
    "number": null
   },
   {
-   "id": "hollywoodinsider:a0dae1d8 cfe5 423c 9b9d d03db3d1aa13",
-   "show": "hollywoodinsider",
-   "kind": "episode",
-   "title": "Godzilla Minus Zero's $6M Previews Triple Minus One and Break GKIDS' Record | Friday, November 6, 2026",
-   "date": "2026-11-06T12:04:14Z",
-   "duration": 1153,
-   "description": "Godzilla Minus Zero roars into its opening weekend with record previews, Ramayana tops the U.S. chart on Thursday, Lionsgate posts a franchise-powered quarter and greenlights an animated John Wick, Pixar names a new president, Fox signs a book-driven first-look deal, and the American Film Market board fills up ahead of Tuesday's open.\n • Godzilla Minus Zero's $6M previews triple Minus One and break GKIDS' record — https://thefifthskill.com/box-office-godzilla-minus-zero-roars-6m-previews-cat-in-the-hat-1m/\n • Ramayana was No. 1 in America on Thursday with the biggest Bollywood previews ever in North America —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1793966624706-95791390cd382.jpg",
-   "url": "https://open.spotify.com/episode/3KE2cAttt6lMtE2FO2M0ex",
-   "spotify_url": "https://open.spotify.com/episode/3KE2cAttt6lMtE2FO2M0ex",
-   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/128920660/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fa86259b9-1aeb-b5c9-8d3a-19f8fefbbe67.m4a",
-   "number": null
-  },
-  {
-   "id": "blitz:5bac019b b7e0 4631 8ff8 69012220e33d",
-   "show": "blitz",
-   "kind": "episode",
-   "title": "Thursday, November 5, 2026",
-   "date": "2026-11-06T05:15:09Z",
-   "duration": 1373,
-   "description": "Week 9 opened with a rout in the rain: the Jacksonville Jaguars beat the Baltimore Ravens 33-10 on Thursday Night Football. Trevor Lawrence threw for 242 yards and a touchdown, Cam Little kicked four field goals, and Jacksonville's defense intercepted rookie Joe Fagnano twice. Baltimore lost its fourth straight, fell to 4-5, and lost All-Pro safety Kyle Hamilton to a hip injury.\n Final: Jacksonville Jaguars 33, Baltimore Ravens 10. Plus: the updated AFC playoff picture (Jacksonville climbs to the No. 3 seed), Derrick Henry's climb up the all-time rushing list, the Jacoby Brissett clock, and the full Week 9 slate ahead, from Madrid on Sunday morning to Bills at Vikings on Monday night.\n Part…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793942045001-eb9d444640a2b.jpg",
-   "url": "https://open.spotify.com/episode/3oGdcnXuBvjj8HEXcUOGE8",
-   "spotify_url": "https://open.spotify.com/episode/3oGdcnXuBvjj8HEXcUOGE8",
-   "audio": "https://anchor.fm/s/1196c5024/podcast/play/128902504/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F99566234-9ba0-515e-e077-89ce3f472b97.m4a",
-   "number": null
-  },
-  {
    "id": "celticsdaily:b37fdc67 881c 46e2 a711 dd232501336f",
    "show": "celticsdaily",
    "kind": "episode",
@@ -899,8 +857,8 @@
    "duration": 747,
    "description": "The Boston Celtics, playing without Jayson Tatum, built a 21-point halftime lead, survived a 38-point third quarter from Milwaukee, gave up the lead for the first time all night in the fourth quarter, and still closed it out, beating the Milwaukee Bucks 109-102 at TD Garden to improve to 6-2.\n Paul George led all scorers with 25 points in his return, Derrick White added 24, and the two fueled a late seven-point run — White's free throws and Neemias Queta's block on Ryan Rollins sealing it — after Payton Pritchard exited in the third quarter with a right eye abrasion.\n What it means: Boston wakes up 6-2, third in the East and 5-0 at home — but the second-half defense was a warning. Next up:…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793939585894-11dc0dab3c76d.jpg",
-   "url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
-   "spotify_url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Celtics-Survive-Near-Collapse-Against-Bucks--Boston-Is-6-2--Thursday--November-5--2026-e3rs878",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128900776/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Ff78029f5-d1a9-82cd-f3f7-dfeb1f28912f.m4a",
    "number": null
   },
@@ -916,20 +874,6 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Thursday--November-5--2026--AM-Edition-e3rs84a",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128900682/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F0230b5e8-5b5a-d368-6ed9-4b195dd226f6.m4a",
-   "number": null
-  },
-  {
-   "id": "ladaily:a821d5c4 08f6 44c0 9dce 2c2eebe47dce",
-   "show": "ladaily",
-   "kind": "episode",
-   "title": "Thursday, November 5, 2026 — AM Edition",
-   "date": "2026-11-06T04:28:59Z",
-   "duration": 1155,
-   "description": "One day after Los Angeles woke up without a mayor-elect, it wakes up with a projected one — Decision Desk HQ says Nithya Raman has beaten Karen Bass, and the count that could still test that call resumes this morning.\n Developing: Nithya Raman is projected to win the mayor's race, leading Karen Bass by 26,124 votes — but the AP has not called it, and ballots are still being counted. The Angeleno \n Marissa Roy wins city attorney in a landslide, 66.5 percent to 33.5 percent, while two council seats — District 3 by 294 votes, District 9 by 1,898 — are still too close to call. MyNewsLA \n Called and conceded: Angela Gonzales-Torres unseats Rep. Jimmy Gomez in the 34th District, 58.7 percent to…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Thursday--November-5--2026--AM-Edition-e3rs81c",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/11960849c/podcast/play/128900588/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fbe620cb1-54b1-f184-09b8-5566f86b53b4.m4a",
    "number": null
   },
   {
@@ -989,20 +933,6 @@
    "number": null
   },
   {
-   "id": "ladaily:7fa8d162 f100 4ddc bc2d d6d2e71130af",
-   "show": "ladaily",
-   "kind": "episode",
-   "title": "Thursday, November 5, 2026 — PM Edition",
-   "date": "2026-11-06T03:12:11Z",
-   "duration": 1368,
-   "description": "Good evening, Los Angeles — this is the PM evening edition of The LA Daily for Thursday, November 5, 2026. This morning the mayor's race was still developing, projected for Nithya Raman by Decision Desk HQ only; today the Associated Press called the race for Raman, Karen Bass conceded just before midday promising a smooth transition, and the afternoon count widened Raman's lead to 47,253 votes, 52.70% to 47.30%. Raman's term begins December 14, with certification set for November 27.\n We advance the day's stories: what the mayor-elect has promised — a first-day housing executive order and a pledge to triple homebuilding — the police union that spent millions against her congratulating her…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793934664195-61cad6a93713.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Thursday--November-5--2026--PM-Edition-e3rs49u",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/11960849c/podcast/play/128896766/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F4a7dc5d8-c30a-01f9-e78b-4ea8497ecd60.m4a",
-   "number": null
-  },
-  {
    "id": "blitz:a879777e 1355 4d5b 9c3f 2f3e169127ca",
    "show": "blitz",
    "kind": "episode",
@@ -1011,8 +941,8 @@
    "duration": 1211,
    "description": "No game tonight, but Baltimore owned the day: the Ravens are finalizing a trade for Cardinals quarterback Jacoby Brissett after Lamar Jackson's thumb surgery and Tyler Huntley's season-ending turf toe injury, with undrafted rookie Joe Fagnano starting Thursday against Jacksonville. Plus the full Week 8 scoreboard, Joe Burrow's 462-yard game, the trade-deadline and injured-reserve wire, and the playoff picture entering Week 9.\n Week 8 finals: Packers 27, Panthers 19; Bills 36, Ravens 10; Bengals 43, Titans 36 (OT); Cardinals 33, Cowboys 30 (OT); Lions 19, Vikings 15; Jaguars 42, Colts 7; Raiders 38, Jets 33; Steelers 27, Browns 6; Buccaneers 16, Falcons 0; Rams 24, Chargers 9; Broncos 28,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793864707668-77fd565c49db8.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Wednesday--November-4--2026-e3rq1q7",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/3aXGGUjtTHaSQJB8A99DcP",
+   "spotify_url": "https://open.spotify.com/episode/3aXGGUjtTHaSQJB8A99DcP",
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128828679/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2Fc8e67277-2810-674a-9453-3ef08c08cc26.m4a",
    "number": null
   },
@@ -1109,8 +1039,8 @@
    "duration": 1502,
    "description": "Anthropic's amended IPO filing pairs $33.24 billion in nine-month revenue with $895.4 billion in compute commitments and a warning that it may soon cross its own threshold for AI accelerating AI research; Tencent releases Hy4 with vision and computer use and deliberately limited cybersecurity training data; Menlo Ventures counts $176.8 billion in enterprise AI spending, with agents now generating 80% of tokens on OpenRouter; OpenAI says ChatGPT's search volume is about a fifth of Google's, with 1.2 billion weekly users; Google puts Guided Learning into Classroom worldwide with a controlled trial behind it; fal raises $1.3 billion at a reported $16 billion valuation while Applied Compute…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1793828655898-169b736c3357c.jpg",
-   "url": "https://open.spotify.com/episode/2neRKtn0PTXVMeOuKxOoyt",
-   "spotify_url": "https://open.spotify.com/episode/2neRKtn0PTXVMeOuKxOoyt",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Wednesday--November-4--2026-e3rp512",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/128799202/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fce969ffe-6d2f-207b-7b55-4d1ce351c0a1.m4a",
    "number": null
   },
@@ -1165,8 +1095,8 @@
    "duration": 718,
    "description": "Democrats swept both chambers of Congress and futures whipsawed from a Nasdaq slide to a pre-dawn rally; AMD, Arista and Super Micro all beat and guided higher on AI demand; Asia split and Europe rose on the result; gold reclaimed $4,000 while Bitcoin traded like a risk asset; and a 42-company S&P 500 earnings day plus ADP and ISM data decide the close.\n • The Blue Sweep: Futures Fall, Then Rebound as the House Is Called — https://wixx.com/2026/11/03/us-stock-futures-dip-as-investors-await-midterm-election-results/\n • AMD: Data Center Revenue Nearly Doubles to $8.5 Billion — https://www.financenewsint.com/articles/amd-hits-record-13-4-b-revenue-as-data-center-sales-nearly-double\n • Arista…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1793828192692-16c690f69d2ad.jpg",
-   "url": "https://open.spotify.com/episode/5dTxYB7ZWcl8dVyWH4o24W",
-   "spotify_url": "https://open.spotify.com/episode/5dTxYB7ZWcl8dVyWH4o24W",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Wednesday--November-4--2026-e3rp4ha",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/128798698/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F69254bba-ddee-ee66-8ce6-b31c0eb1b32d.m4a",
    "number": null
   },
@@ -1530,8 +1460,8 @@
    "duration": 960,
    "description": "Two collectible design fairs land in New York in the same week, Dubai turns a design district into a festival, and Los Angeles spends the week on housing, leadership and who design is for. The Week Ahead plans the design week: LA first, then the US, then the world.\n In this episode:\n • Design Leadership Network Design Summit in Los Angeles, November 4-6 — http://businessofhome.com/articles/november-s-can-t-miss-design-events-4278542d-ccfb-4f47-aa55-93c35d0619ac\n • MAK Center: Social Housing, Vienna-Los Angeles at the Schindler House, West Hollywood, with Re-Enacting the Lie on November 5 — https://www.makcenter.org/exhibitions/social-housing-vienna-los-angeles\n • LACMA this week and ahead:…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47121005/47121005-1793630021070-cc6154a667a0b.jpg",
-   "url": "https://open.spotify.com/episode/1sTNt5K5n2YyzJysO9QqEY",
-   "spotify_url": "https://open.spotify.com/episode/1sTNt5K5n2YyzJysO9QqEY",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2049/episodes/Salon-Week-in-New-York-The-Week-Ahead--Monday--November-2--2026-e3rjmou",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119758914/podcast/play/128620766/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fdf1f6bde-73d3-3718-fe27-c989a8b4952f.m4a",
    "number": null
   },
@@ -1558,8 +1488,8 @@
    "duration": 1098,
    "description": "Game day in Paris: the No. 1 South Carolina women open their season today at noon Eastern against No. 20 Maryland at Adidas Arena, and we break the matchup down piece by piece: Maryland's returning backcourt and Nunu Agara, South Carolina's size advantage, and the returns of Chloe Kitts and Ashlyn Watkins. Then the deep segment: the men's opener tomorrow night against Stetson, Collin Kuhl, the back-to-back wrinkle, and the Bieliauskas question.\n Segments: the scoreboard and form / the Paris matchup / fallout and news / the Stetson deep segment / the look-ahead.\n Part of the Curious & Creative network.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123686/47123686-1793808283878-c7cb8d9244091.jpg",
-   "url": "https://open.spotify.com/episode/1Lc9m539U4WlmHTUKDgShz",
-   "spotify_url": "https://open.spotify.com/episode/1Lc9m539U4WlmHTUKDgShz",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20472/episodes/Paris-Game-Day-No--1-South-Carolina-Meets-No--20-Maryland-at-Noon--South-Carolina-Is-0-0--Monday--November-2--2026-e3rjisn",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11979a058/podcast/play/128616791/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F7d1ea405-f632-c2ae-ee64-e0ea1dd9f42b.m4a",
    "number": null
   },
@@ -1642,8 +1572,8 @@
    "duration": 1204,
    "description": "Columbia heads into Election Day with a Senate race tied at 48-48 and a new governor to choose, the No. 1 Gamecocks women open their season today in Paris, the football team is ranked again after routing Oklahoma, two plants bring nearly $60 million and 430 jobs to Richland County, and the latest numbers say Columbia is a buyer's market while rents keep climbing.\n In today's brief:\n • Election Eve: Tomorrow South Carolina chooses a governor, a senator, and a whole State House — https://scvotes.gov/early-voting-ends-saturday-reminders-for-election-day-november-3/\n • Today at noon: No. 1 South Carolina opens its season in Paris against No. 20 Maryland —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1793817760167-a5f5b5f4672e1.jpg",
-   "url": "https://open.spotify.com/episode/6fTmVgJMukn9SHc5BHKkCH",
-   "spotify_url": "https://open.spotify.com/episode/6fTmVgJMukn9SHc5BHKkCH",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20036/episodes/Monday--November-2--2026-e3rjdrg",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11974f1e8/podcast/play/128611632/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ff029855d-417d-1375-59b4-ffb3925f34a3.m4a",
    "number": null
   },
@@ -1978,8 +1908,8 @@
    "duration": 1232,
    "description": "South Carolina is 5-3 and one win from a bowl after the 42-25 statement at Oklahoma, and now Texas A&M comes to Williams-Brice on Saturday, November 7 (3 p.m. ET, ESPN) with last year's 31-30 heartbreak still fresh.\n Inside: what the Oklahoma win changes and the full Texas A&M preview / the news block: Matt Fuller's likely season-ending injury and the backfield plan, Troy Pikes' first-half suspension, and the turnover warning / the deep segment on Dylan Stewart against a struggling Marcel Reed / the road ahead to Arkansas, Georgia, and Clemson.\n Unofficial and independent; not affiliated with the University of South Carolina or the SEC.\n Part of the Curious & Creative network. Back with the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1793808120409-326e3fc06a471.jpg",
-   "url": "https://open.spotify.com/episode/3KMgE7chS71ps9Zg1t0lYQ",
-   "spotify_url": "https://open.spotify.com/episode/3KMgE7chS71ps9Zg1t0lYQ",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/One-Win-From-a-Bowl--Revenge-Next-South-Carolina-Is-5-3--Sunday--November-1--2026-e3rhsf3",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/128561059/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-1%2F393bcc7e-fc33-5379-f29b-1ddb843ada9b.m4a",
    "number": null
   },
@@ -5881,7 +5811,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -7955,7 +7885,7 @@
    "spotify_name": "Form & Function",
    "full_catalog": true,
    "episodes": 2,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "dominatedconvo": {
    "ok": true,
@@ -7978,7 +7908,7 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 11,
+   "episodes": 9,
    "spotify_matches": 0
   },
   "globalread": {
@@ -7995,7 +7925,7 @@
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
    "episodes": 7,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "nyread": {
    "ok": true,
@@ -8011,7 +7941,7 @@
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
    "episodes": 2,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "airead": {
    "ok": true,
@@ -8019,7 +7949,7 @@
    "spotify_name": "The AI Read",
    "full_catalog": true,
    "episodes": 7,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
@@ -8050,13 +7980,13 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 1
+   "episodes": 4,
+   "spotify_matches": 0
   },
   "tvinsider": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
-   "spotify_name": "Primetime",
+   "spotify_name": "Primetime TV",
    "full_catalog": true,
    "episodes": 6,
    "spotify_matches": 1
@@ -8074,7 +8004,7 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -8091,15 +8021,15 @@
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
    "episodes": 6,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "coltsdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 1
+   "episodes": 7,
+   "spotify_matches": 0
   },
   "cfbdaily": {
    "ok": true,
@@ -8123,7 +8053,7 @@
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
    "episodes": 4,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "gamecockshoops": {
    "ok": true,
@@ -8131,7 +8061,7 @@
    "spotify_name": "Gamecocks Basketball Daily",
    "full_catalog": true,
    "episodes": 2,
-   "spotify_matches": 1
+   "spotify_matches": 0
   }
  },
  "people": {
