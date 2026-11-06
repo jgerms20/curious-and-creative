@@ -48,13 +48,14 @@
         <div><div class="showblock__art">${s.art ? `<img src="${esc(CC.art(s))}" alt="${esc(s.name)} cover art" loading="lazy">` : ""}</div></div>
         <div>
           <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.kind === "youtube" ? "YouTube show" : "Podcast")} · ${esc(s.ai ? CC.showByline(s) : (s.hosts || []).join(" & "))}</span>
-          <h2 style="margin-top:.6rem">${esc(s.name)}</h2>
+          <h2 style="margin-top:.6rem">${s.page ? `<a href="${CC.showHref(s)}">${esc(s.name)}</a>` : esc(s.name)}</h2>
           <p class="showblock__about">${esc(s.about || s.description || s.tagline || "")}</p>
           <div class="showblock__facts">
             <span class="chip chip--line">${CC.isNew(s.latest) ? '<span class="dot dot--live"></span>' : ""}${esc(status)}</span>
             ${s.count && (s.feed || s.kind === "youtube") ? `<span class="chip chip--line">${s.count} ${s.kind === "youtube" ? (s.count === 1 ? "video" : "videos") : (s.count === 1 ? "episode" : "episodes")}</span>` : ""}
           </div>
           <div class="showblock__links">
+            ${s.page ? `<a class="btn btn--dark btn--sm" href="${CC.showHref(s)}">Visit the show ${icon.arrow}</a>` : ""}
             ${links.map(([l, h], i) => `<a class="btn ${i ? "btn--ghost" : ""} btn--sm" href="${esc(h)}" target="_blank" rel="noopener">${i ? "" : icon.play} ${esc(l)}</a>`).join("")}
             ${s.key === "ccpod" && !links.length ? `<a class="btn btn--sm" href="#newsletter-cta">Get notified</a>` : ""}
           </div>
@@ -72,7 +73,7 @@
         <span class="ncard__art">${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : `<span class="ncard__initials">${esc((s.short || s.name).replace(/^The /, "").split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`}</span>
         <div class="ncard__body">
           <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.cadence || CC.showByline(s))}</span>
-          <h3>${esc(s.name)}</h3>
+          <h3>${s.page ? `<a href="${CC.showHref(s)}">${esc(s.name)}</a>` : esc(s.name)}</h3>
           <p>${esc(s.tagline || s.description || "")}</p>
           ${e ? `<a class="ncard__latest" href="${esc(CC.epLink(e))}"${/^https?:/.test(CC.epLink(e)) ? ' target="_blank" rel="noopener"' : ""}><small>Latest · ${esc(ago(e.date))}</small>${esc(e.title)}</a>` : `<span class="ncard__latest"><small>Coming soon</small>First episode on the way.</span>`}
           ${links.length ? `<p class="ncard__links">${links.map(([l, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`).join("")}</p>` : ""}
@@ -199,7 +200,7 @@
       if (!host) return;
       host.innerHTML = list.map((s) => {
         const e = (data.episodes || []).find((x) => x.show === s.key);
-        return `<a class="net__show${s.feature ? " net__show--feature" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-show="${s.key}">
+        return `<a class="net__show${s.feature ? " net__show--feature" : ""}" href="${CC.showHref(s)}" data-show="${s.key}">
           ${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : '<span class="ph"></span>'}
           <span><small>${esc(s.ai ? CC.showByline(s) : (s.hosts || []).join(" & "))}${s.count ? ` · ${s.count} ${s.kind === "youtube" ? "videos" : "episodes"}` : ""}</small><b>${esc(s.name)}</b><em>${esc(s.tagline || (e ? "Latest: " + e.title : ""))}</em></span></a>`;
       }).join("");
@@ -276,7 +277,7 @@
     const list = [...data.shows].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
     el.innerHTML = list.map((s) => {
       const g = CC.hostGroup(s);
-      return `<a class="tile${s.flagship ? " tile--star" : ""}" href="${url(`pages/shows.html#${s.key}`)}" data-host="${g}" data-tags="${CC.showTags(s).join(" ")}">
+      return `<a class="tile${s.flagship ? " tile--star" : ""}" href="${CC.showHref(s)}" data-host="${g}" data-tags="${CC.showTags(s).join(" ")}">
       ${s.flagship ? '<span class="tile__star"><span aria-hidden="true">★</span> Our flagship</span>' : ""}
       <span class="host-tag"><span class="host-dot"></span>${esc(CC.showByline(s))}</span>
       <h3>${esc(s.name)}</h3><p>${esc(s.tagline || "")}</p></a>`;

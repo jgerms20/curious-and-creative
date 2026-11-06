@@ -90,7 +90,7 @@
         meta: [(s.hosts || []).join(" & "), dur(e.duration)].filter(Boolean).map(esc).join(" · "),
         img: e.kind === "video" ? e.image : CC.art(s) || e.image,
         video: e.kind === "video",
-        actions: [[`${icon.play} ${listenVerb(e)} now`, CC.epHref(e), "btn"], [`More ${esc(s.short || s.name)}`, url(`pages/shows.html#${s.key}`), "btn btn--ghost"]],
+        actions: [[`${icon.play} ${listenVerb(e)} now`, CC.epHref(e), "btn"], [`More ${esc(s.short || s.name)}`, CC.showHref(s), "btn btn--ghost"]],
       });
     });
     if (data.photos && data.photos.length) {
@@ -369,7 +369,7 @@
         <h4 class="pcard__name">${esc(s.name)}</h4>
         <p class="pcard__host">${esc((s.hosts || []).join(" · "))}</p>
         <p class="pcard__latest">${e ? `Latest: ${esc(e.title)}` : esc(s.tagline || "")}</p>
-        <div class="pcard__links">${CC.showLinks(s).map(([l, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(l)}</a>`).join("")}<a href="${url(`pages/shows.html#${s.key}`)}">Episodes</a></div>
+        <div class="pcard__links">${CC.showLinks(s).map(([l, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(l)}</a>`).join("")}<a href="${CC.showHref(s)}">Episodes</a></div>
       </article>`;
     }).join("");
     list.innerHTML = shows.map((s, i) => {
@@ -425,7 +425,7 @@
     const items = [];
     shows.forEach((s) => {
       const e = eps.find((x) => x.show === s.key);
-      items.push(`<a class="tcard" data-show="${s.key}" href="${url(`pages/shows.html#${s.key}`)}">${s.art ? `<img class="tcard__art" src="${esc(CC.art(s))}" alt="" loading="lazy">` : ""}<b>${esc(s.name)}</b><small>${e ? `${e.kind === "video" ? "New video" : "Latest"} · ${esc(ago(e.date))}` : esc(s.tagline || "")}</small></a>`);
+      items.push(`<a class="tcard" data-show="${s.key}" href="${CC.showHref(s)}">${s.art ? `<img class="tcard__art" src="${esc(CC.art(s))}" alt="" loading="lazy">` : ""}<b>${esc(s.name)}</b><small>${e ? `${e.kind === "video" ? "New video" : "Latest"} · ${esc(ago(e.date))}` : esc(s.tagline || "")}</small></a>`);
     });
     const total = eps.length;
     items.splice(1, 0, `<a class="tcard tcard--green" href="${url("pages/archive.html")}"><span class="tcard__big">${total}</span><b>episodes &amp; videos across ${shows.length} shows</b></a>`);
