@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T11:11:31Z",
+ "generated_at": "2026-11-06T18:08:18Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -566,8 +566,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-03T17:08:16Z",
-   "count": 4
+   "latest": "2026-11-06T12:04:14Z",
+   "count": 5
   },
   {
    "key": "tvinsider",
@@ -592,8 +592,8 @@
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-03T16:56:16Z",
-   "count": 5
+   "latest": "2026-11-06T12:05:02Z",
+   "count": 6
   },
   {
    "key": "fastbreak",
@@ -723,8 +723,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-03T16:58:16Z",
-   "count": 7
+   "latest": "2026-11-06T13:36:55Z",
+   "count": 8
   },
   {
    "key": "cfbdaily",
@@ -835,6 +835,48 @@
  ],
  "episodes": [
   {
+   "id": "coltsdaily:5b73a89b ede0 4bf0 ac7f 9d2a37d16b65",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Taylor Calls It Noise, Rookies Step In: Indianapolis Is 2-6 | Friday, November 6, 2026",
+   "date": "2026-11-06T13:36:55Z",
+   "duration": 1210,
+   "description": "Four days from the trade deadline, Jonathan Taylor called the talk noise, Daniel Jones's QB1 status was reported up in the air even as Shane Steichen sticks with him for Dallas, and Thursday's practice report kept two defensive starters out while upgrading tight end Drew Ogletree. The Colts are 2-6, third in the AFC South, and host the 3-5 Dallas Cowboys on Sunday, November 8 at 1 p.m. ET at Lucas Oil Stadium on FOX.\n Segments: Taylor and both quarterbacks answer the deadline on Thursday, and the reported plan to assess after the weekend; the Thursday injury report for both teams, including the Dallas safeties moving out of concussion protocol; a deep segment on the rookie duo of C.J.…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1793972196125-a2faa06849385.jpg",
+   "url": "https://open.spotify.com/episode/0h0gLm2kHx2mMqyHVVYLsf",
+   "spotify_url": "https://open.spotify.com/episode/0h0gLm2kHx2mMqyHVVYLsf",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/128926329/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F7f1f570a-80dd-6e49-abc4-98b306aad362.m4a",
+   "number": null
+  },
+  {
+   "id": "tvinsider:f378db77 d484 4c1c 9d15 4d4d1a2e6f96",
+   "show": "tvinsider",
+   "kind": "episode",
+   "title": "Channel 4 Axes 'Married at First Sight UK' After 10 Years and Scraps a Filmed Series | Friday, November 6, 2026",
+   "date": "2026-11-06T12:05:02Z",
+   "duration": 860,
+   "description": "Channel 4 ends Married at First Sight UK after ten years and shelves a filmed series on welfare grounds, MGM Plus's From becomes the biggest show on streaming by moving to Netflix with 1.65 billion minutes, Keeley Hawes returns in The Assassin season two on Prime Video, Prime Video orders a new Terminal List series with Chris Pratt, NBC bets its post-NFL launch on The Rockford Files, Sherlock & Daughter comes home to HBO Max UK, and Awkwafina tries to revive her family's restaurant on Apple TV.\n • Channel 4 Axes Married at First Sight UK After 10 Years and Scraps a Filmed Series — https://www.reuters.com/world/uk/uks-channel-4-cancels-married-first-sight-after-rape-allegations-2026-11-05/\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1793966662989-23331eafa7faa.jpg",
+   "url": "https://open.spotify.com/episode/4z0Vb5lEGT3OXbhHQgSEJc",
+   "spotify_url": "https://open.spotify.com/episode/4z0Vb5lEGT3OXbhHQgSEJc",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/128920692/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fb19e0977-6847-7116-bea8-aca1fd7be949.m4a",
+   "number": null
+  },
+  {
+   "id": "hollywoodinsider:a0dae1d8 cfe5 423c 9b9d d03db3d1aa13",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "Godzilla Minus Zero's $6M Previews Triple Minus One and Break GKIDS' Record | Friday, November 6, 2026",
+   "date": "2026-11-06T12:04:14Z",
+   "duration": 1153,
+   "description": "Godzilla Minus Zero roars into its opening weekend with record previews, Ramayana tops the U.S. chart on Thursday, Lionsgate posts a franchise-powered quarter and greenlights an animated John Wick, Pixar names a new president, Fox signs a book-driven first-look deal, and the American Film Market board fills up ahead of Tuesday's open.\n • Godzilla Minus Zero's $6M previews triple Minus One and break GKIDS' record — https://thefifthskill.com/box-office-godzilla-minus-zero-roars-6m-previews-cat-in-the-hat-1m/\n • Ramayana was No. 1 in America on Thursday with the biggest Bollywood previews ever in North America —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1793966624706-95791390cd382.jpg",
+   "url": "https://open.spotify.com/episode/3KE2cAttt6lMtE2FO2M0ex",
+   "spotify_url": "https://open.spotify.com/episode/3KE2cAttt6lMtE2FO2M0ex",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/128920660/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fa86259b9-1aeb-b5c9-8d3a-19f8fefbbe67.m4a",
+   "number": null
+  },
+  {
    "id": "blitz:5bac019b b7e0 4631 8ff8 69012220e33d",
    "show": "blitz",
    "kind": "episode",
@@ -843,8 +885,8 @@
    "duration": 1373,
    "description": "Week 9 opened with a rout in the rain: the Jacksonville Jaguars beat the Baltimore Ravens 33-10 on Thursday Night Football. Trevor Lawrence threw for 242 yards and a touchdown, Cam Little kicked four field goals, and Jacksonville's defense intercepted rookie Joe Fagnano twice. Baltimore lost its fourth straight, fell to 4-5, and lost All-Pro safety Kyle Hamilton to a hip injury.\n Final: Jacksonville Jaguars 33, Baltimore Ravens 10. Plus: the updated AFC playoff picture (Jacksonville climbs to the No. 3 seed), Derrick Henry's climb up the all-time rushing list, the Jacoby Brissett clock, and the full Week 9 slate ahead, from Madrid on Sunday morning to Bills at Vikings on Monday night.\n Part…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793942045001-eb9d444640a2b.jpg",
-   "url": "https://open.spotify.com/episode/1ZasiQuuo4p8JJgNmtUJzS",
-   "spotify_url": "https://open.spotify.com/episode/1ZasiQuuo4p8JJgNmtUJzS",
+   "url": "https://open.spotify.com/episode/3oGdcnXuBvjj8HEXcUOGE8",
+   "spotify_url": "https://open.spotify.com/episode/3oGdcnXuBvjj8HEXcUOGE8",
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128902504/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F99566234-9ba0-515e-e077-89ce3f472b97.m4a",
    "number": null
   },
@@ -871,8 +913,8 @@
    "duration": 972,
    "description": "A tanker has been struck by two projectiles in the Gulf north of Qatar, with the crew's fate still unknown — the latest attack on shipping in waters where diplomacy has not yet stopped the shooting, even as oil prices fall for a fourth straight day.\n Hormuz and the Gulf: a tanker was struck by two unidentified projectiles about fifty nautical miles north of Qatar; the crew's status is unclear. Brent fell for a fourth straight day, to $93.82. Reuters \n Israel: United Torah Judaism withheld its endorsement from any candidate, and Gadi Eisenkot moved to 56 recommendations against 46 for Netanyahu. DevDiscourse \n China blocks the deal: Beijing stopped SoftBank's $5.4 billion purchase of ABB…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "url": "https://open.spotify.com/episode/4XBKxxv7EAIVVonqY9hZhq",
-   "spotify_url": "https://open.spotify.com/episode/4XBKxxv7EAIVVonqY9hZhq",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Thursday--November-5--2026--AM-Edition-e3rs84a",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128900682/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F0230b5e8-5b5a-d368-6ed9-4b195dd226f6.m4a",
    "number": null
   },
@@ -885,8 +927,8 @@
    "duration": 1155,
    "description": "One day after Los Angeles woke up without a mayor-elect, it wakes up with a projected one — Decision Desk HQ says Nithya Raman has beaten Karen Bass, and the count that could still test that call resumes this morning.\n Developing: Nithya Raman is projected to win the mayor's race, leading Karen Bass by 26,124 votes — but the AP has not called it, and ballots are still being counted. The Angeleno \n Marissa Roy wins city attorney in a landslide, 66.5 percent to 33.5 percent, while two council seats — District 3 by 294 votes, District 9 by 1,898 — are still too close to call. MyNewsLA \n Called and conceded: Angela Gonzales-Torres unseats Rep. Jimmy Gomez in the 34th District, 58.7 percent to…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "url": "https://open.spotify.com/episode/40JFGzG1xuvRvpFK1tm9cX",
-   "spotify_url": "https://open.spotify.com/episode/40JFGzG1xuvRvpFK1tm9cX",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Thursday--November-5--2026--AM-Edition-e3rs81c",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/128900588/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fbe620cb1-54b1-f184-09b8-5566f86b53b4.m4a",
    "number": null
   },
@@ -899,8 +941,8 @@
    "duration": 887,
    "description": "Two days after Democrats seized both chambers of Congress, the transition has begun in earnest — the incoming majority is naming its investigations, the outgoing House Speaker is stepping aside, and a lame-duck fight over government funding is now the first test of divided government.\n Democrats vow to rein in Trump, and Speaker Mike Johnson says he will not continue to lead his caucus next year. Reuters \n The investigations take shape: \"Lawyer up.\" Incoming oversight chairs name their targets — the Trump family's business dealings, corporate corruption, DHS and immigration enforcement, and the Epstein files. Cointelegraph \n Still counting: Colom leads Hyde-Smith by 1,138 in Mississippi and…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "url": "https://open.spotify.com/episode/7o7ur7xf6YIBfYvLDL6ltX",
-   "spotify_url": "https://open.spotify.com/episode/7o7ur7xf6YIBfYvLDL6ltX",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Thursday--November-5--2026--AM-Edition-e3rs7uh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/128900497/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F50de7f79-6ab4-bccb-4e6e-d19e835f9b9d.m4a",
    "number": null
   },
@@ -983,8 +1025,8 @@
    "duration": 1276,
    "description": "Victor Wembanyama's historic night — a career-high 52 points, 24 rebounds and 8 blocks, the NBA's first 50-20-5 game since 1974 — carried the Spurs past Dallas 112-111, Shai Gilgeous-Alexander scored 42 in Oklahoma City's win over Cleveland, and Luka Doncic's 40 led the Lakers in Sacramento on a 14-game night.\n Scores: 76ers 112, Pistons 106 · Hawks 120, Wizards 105 · Celtics 109, Bucks 102 · Nets 114, Hornets 104 · Knicks 135, Bulls 105 · Pacers 107, Grizzlies 103 · Thunder 124, Cavaliers 116 · Pelicans 120, Jazz 113 (OT) · Timberwolves 117, Rockets 107 · Nuggets 128, Raptors 109 · Trail Blazers 132, Suns 119 · Spurs 112, Mavericks 111 · Lakers 116, Kings 103 · Heat 117, Clippers 116…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1793863870665-932b4efa3a52d.jpg",
-   "url": "https://open.spotify.com/episode/2895zpdHklI2Y4vfjIXisM",
-   "spotify_url": "https://open.spotify.com/episode/2895zpdHklI2Y4vfjIXisM",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Wednesday--November-4--2026-e3rq17f",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/128828079/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2F634cc27e-7018-aaf1-6ff2-5fa7f5989466.m4a",
    "number": null
   },
@@ -997,8 +1039,8 @@
    "duration": 1145,
    "description": "Wednesday night MACtion delivered an overtime classic in Amherst, a favorite's escape in Sacramento, and a rivalry rout in Detroit. UMass beat Ball State 31-30 in overtime on Pop Watson's touchdown run and a missed Ball State extra point, Toledo survived Sacramento State 20-17 as a 25.5-point favorite, and Central Michigan routed Eastern Michigan 35-7 at Ford Field — plus the MAC race after Wednesday and the Saturday slate that will test the committee's first rankings.\n Inside: UMass 31, Ball State 30 (OT) in depth • Toledo 20, Sacramento State 17 • Central Michigan 35, Eastern Michigan 7 • The standouts • The MAC race • Playoff picture and the look-ahead to Saturday, November 7\n Part of…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793862784758-09e079463ba42.jpg",
-   "url": "https://open.spotify.com/episode/2puCAK9dXFdLZLxA0hvsUR",
-   "spotify_url": "https://open.spotify.com/episode/2puCAK9dXFdLZLxA0hvsUR",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/UMass-Wins-a-MACtion-Overtime-Classic-on-a-Missed-Extra-Point--and-Toledo-Escapes-Sacramento--Wednesday--November-4--2026-e3rq0ea",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/128827274/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2Ff9b8cd7b-5f08-3754-d4c8-174cee972e1e.m4a",
    "number": null
   },
@@ -1180,8 +1222,8 @@
    "duration": 973,
    "description": "On the night before Election Day, LeBron James crashed into a courtside fan, spilled his wine, took a sip mid-game, and called it all right. Plus: Monday Night Football fallout and a Don Jr gaffe clip on X, a thin but telling day on Reddit, Ramalama still at number one on TikTok three days after Halloween, the CFDA red carpet and I Voted selfies on Instagram, and ledger follow-ups on the $835 million Powerball, the Remember November polar bear, and the Florida Learjet investigation.\n • LeBron James wine sip, fan interview, postgame quote — https://nypost.com/2026/11/03/sports/lebron-james-viral-mid-game-wine-sip-takes-new-twist-as-76ers-fan-shares-his-side/\n • LeBron James wine sip, game…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1793740125932-3cf1749e187e2.jpg",
-   "url": "https://open.spotify.com/episode/7xhqXGnM2mwm2RgLtarUDq",
-   "spotify_url": "https://open.spotify.com/episode/7xhqXGnM2mwm2RgLtarUDq",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/LeBron-James-Took-a-Sip-of-a-Fans-Wine-Mid-Game--Tuesday--November-3--2026-e3rmhn7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/128713895/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Feb0be233-3211-4c99-9271-26b997852ebe.m4a",
    "number": null
   },
@@ -1236,8 +1278,8 @@
    "duration": 882,
    "description": "Monday actuals confirm A24's Elizabeth Holmes documentary You Can See Everything at number one with $11.4 million, ahead of Clayface, while Wildwood held far better than estimates said. Plus Godzilla Minus Zero opens in Japan as India delays its release over IMAX screens, The Cat in the Hat's tracking splits from $17 million to $50 million, Klara and the Sun sets a second-weekend record no film wants, Lionsgate takes a reported $100 million from SP Media, an AI-made film heads to the American Film Market with an Oscars bid, and Grand Theft Auto VI looms over November's biggest opening.\n • Monday actuals confirm the documentary won, and Wildwood held —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1793725635997-25823fd868bad.jpg",
-   "url": "https://open.spotify.com/episode/0S6bn8wd3rab0Dv0HlU1ku",
-   "spotify_url": "https://open.spotify.com/episode/0S6bn8wd3rab0Dv0HlU1ku",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2048/episodes/You-Can-See-Everythings-11-4M-Documentary-Win-and-Godzillas-IMAX-Fight--Tuesday--November-3--2026-e3rm1tj",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/128697715/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Faf8d3734-ba63-7580-0b28-d5109c6ed578.m4a",
    "number": null
   },
@@ -1334,8 +1376,8 @@
    "duration": 1125,
    "description": "Daniel Jones keeps the job, for right now: Shane Steichen sticks with his quarterback for Dallas after the 42-7 loss in Jacksonville, one week before the November 10 trade deadline, with the Cowboys at Lucas Oil Stadium on Sunday.\n Segments: the Jones decision and the meaning of \"right now,\" the news block (Taylor and Downs deadline market, injuries on both sides), the deep segment on what the Nelson and Buckner trades cost in the trenches and the young defenders worth keeping, and the full Dallas preview.\n Unofficial and independent; not affiliated with the Indianapolis Colts or the NFL.\n Part of the Curious & Creative network. Back tomorrow.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1793809215082-0e15ba33151e.jpg",
-   "url": "https://open.spotify.com/episode/6Orxpxs8s1PjuewKm6Mvdy",
-   "spotify_url": "https://open.spotify.com/episode/6Orxpxs8s1PjuewKm6Mvdy",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/Jones-Keeps-the-Job--For-Right-Now-Steichen-Sticks-With-His-QB--Indianapolis-Is-2-6--Tuesday--November-3--2026-e3rm14m",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609694/podcast/play/128696918/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F15bf0338-6eba-93d0-4a2d-5e5984669b33.m4a",
    "number": null
   },
@@ -1348,8 +1390,8 @@
    "duration": 1305,
    "description": "HBO renews Sharon Horgan's Youth the morning after its finale, Election Night clears broadcast primetime and becomes a streaming business test, Nobody Wants This posts the year's biggest returning-comedy opening, Netflix premieres the steampunk western Bass X Machina, The Gilded Age opens Season 4 in HBO's Sunday slot, Nielsen's animation report crowns SpongeBob, Bluey and Family Guy, and Prime Video readies its Muhammad Ali series The Greatest.\n • HBO renews Sharon Horgan's Youth for Season 2, one day after the finale — https://www.justjared.com/2026/11/02/is-youth-coming-back-for-season-2-hbo-reveals-fate-of-sharon-horgans-comedy-series/\n • Election Night clears primetime: ABC, NBC and…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1793724894328-52e64f9cbac7f.jpg",
-   "url": "https://open.spotify.com/episode/16N2VnFJ2Z9cjaU1RtHuA4",
-   "spotify_url": "https://open.spotify.com/episode/16N2VnFJ2Z9cjaU1RtHuA4",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms200/episodes/HBO-Renews-Sharon-Horgans-Youth-for-Season-2-One-Day-After-the-Finale--Tuesday--November-3--2026-e3rm0v4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dae0c/podcast/play/128696740/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F547d23d1-5f26-9fae-b856-87a21d37e37c.m4a",
    "number": null
   },
@@ -1460,8 +1502,8 @@
    "duration": 1274,
    "description": "The Sweep is back — six cities, one week, for the week of November 2–8. New York opens with Elena Pinderhughes at the Blue Note and Cyrille Aimée at Birdland; Chicago answers with a ten-dollar Green Mill Monday and Monty Alexander opening his Jazz Showcase residency.London runs seven nights through Ronnie Scott's from its Jazz Orchestra to Theo Croker and Makoto Ozone, Paris marks Coltrane 100 at the Cité de la Musique, and Tokyo hosts Aziza — Dave Holland, Chris Potter, Lionel Loueke and Eric Harland — for three nights at Blue Note Tokyo. At home in LA: Michael Landau at The Baked Potato, Azar Lawrence in Venice, and the Marlonious Jazz Orchestra's Billie Holiday program in Sierra…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1793817404826-b4a95b99a3bde.jpg",
-   "url": "https://open.spotify.com/episode/0cM6bDbzPmZv70MeQD8QuG",
-   "spotify_url": "https://open.spotify.com/episode/0cM6bDbzPmZv70MeQD8QuG",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/The-Sweep-Six-Cities--November-28-e3rjr3v",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/128625215/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Fc57c47d0-9c5d-2f00-6f77-53271dacc29a.m4a",
    "number": "31"
   },
@@ -7889,7 +7931,7 @@
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
    "episodes": 31,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "brazil": {
    "ok": true,
@@ -7921,7 +7963,7 @@
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
    "episodes": 4,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "morningread": {
    "ok": true,
@@ -7929,7 +7971,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 13,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -7937,7 +7979,7 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 11,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
@@ -7945,7 +7987,7 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 9,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -8008,7 +8050,7 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 4,
+   "episodes": 5,
    "spotify_matches": 1
   },
   "tvinsider": {
@@ -8016,7 +8058,7 @@
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "fastbreak": {
@@ -8025,7 +8067,7 @@
    "spotify_name": "The Fast Break",
    "full_catalog": true,
    "episodes": 8,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "blitz": {
    "ok": true,
@@ -8056,7 +8098,7 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "cfbdaily": {
@@ -8065,7 +8107,7 @@
    "spotify_name": "College Football Daily",
    "full_catalog": true,
    "episodes": 8,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
