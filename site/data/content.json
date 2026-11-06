@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T02:36:10Z",
+ "generated_at": "2026-11-06T06:17:06Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -644,8 +644,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-05T07:45:50Z",
-   "count": 6
+   "latest": "2026-11-06T05:15:09Z",
+   "count": 7
   },
   {
    "key": "waiverwire",
@@ -697,8 +697,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-03T20:53:37Z",
-   "count": 5
+   "latest": "2026-11-06T04:33:38Z",
+   "count": 6
   },
   {
    "key": "coltsdaily",
@@ -835,6 +835,34 @@
  ],
  "episodes": [
   {
+   "id": "blitz:5bac019b b7e0 4631 8ff8 69012220e33d",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026",
+   "date": "2026-11-06T05:15:09Z",
+   "duration": 1373,
+   "description": "Week 9 opened with a rout in the rain: the Jacksonville Jaguars beat the Baltimore Ravens 33-10 on Thursday Night Football. Trevor Lawrence threw for 242 yards and a touchdown, Cam Little kicked four field goals, and Jacksonville's defense intercepted rookie Joe Fagnano twice. Baltimore lost its fourth straight, fell to 4-5, and lost All-Pro safety Kyle Hamilton to a hip injury.\n Final: Jacksonville Jaguars 33, Baltimore Ravens 10. Plus: the updated AFC playoff picture (Jacksonville climbs to the No. 3 seed), Derrick Henry's climb up the all-time rushing list, the Jacoby Brissett clock, and the full Week 9 slate ahead, from Madrid on Sunday morning to Bills at Vikings on Monday night.\n Part…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793942045001-eb9d444640a2b.jpg",
+   "url": "https://open.spotify.com/episode/1ZasiQuuo4p8JJgNmtUJzS",
+   "spotify_url": "https://open.spotify.com/episode/1ZasiQuuo4p8JJgNmtUJzS",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/128902504/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F99566234-9ba0-515e-e077-89ce3f472b97.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:b37fdc67 881c 46e2 a711 dd232501336f",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Celtics Survive Near Collapse Against Bucks, Boston Is 6-2 | Thursday, November 5, 2026",
+   "date": "2026-11-06T04:33:38Z",
+   "duration": 747,
+   "description": "The Boston Celtics, playing without Jayson Tatum, built a 21-point halftime lead, survived a 38-point third quarter from Milwaukee, gave up the lead for the first time all night in the fourth quarter, and still closed it out, beating the Milwaukee Bucks 109-102 at TD Garden to improve to 6-2.\n Paul George led all scorers with 25 points in his return, Derrick White added 24, and the two fueled a late seven-point run — White's free throws and Neemias Queta's block on Ryan Rollins sealing it — after Payton Pritchard exited in the third quarter with a right eye abrasion.\n What it means: Boston wakes up 6-2, third in the East and 5-0 at home — but the second-half defense was a warning. Next up:…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793939585894-11dc0dab3c76d.jpg",
+   "url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
+   "spotify_url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128900776/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Ff78029f5-d1a9-82cd-f3f7-dfeb1f28912f.m4a",
+   "number": null
+  },
+  {
    "id": "blitz:a879777e 1355 4d5b 9c3f 2f3e169127ca",
    "show": "blitz",
    "kind": "episode",
@@ -843,8 +871,8 @@
    "duration": 1211,
    "description": "No game tonight, but Baltimore owned the day: the Ravens are finalizing a trade for Cardinals quarterback Jacoby Brissett after Lamar Jackson's thumb surgery and Tyler Huntley's season-ending turf toe injury, with undrafted rookie Joe Fagnano starting Thursday against Jacksonville. Plus the full Week 8 scoreboard, Joe Burrow's 462-yard game, the trade-deadline and injured-reserve wire, and the playoff picture entering Week 9.\n Week 8 finals: Packers 27, Panthers 19; Bills 36, Ravens 10; Bengals 43, Titans 36 (OT); Cardinals 33, Cowboys 30 (OT); Lions 19, Vikings 15; Jaguars 42, Colts 7; Raiders 38, Jets 33; Steelers 27, Browns 6; Buccaneers 16, Falcons 0; Rams 24, Chargers 9; Broncos 28,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793864707668-77fd565c49db8.jpg",
-   "url": "https://open.spotify.com/episode/14d5sLUKk7sdgeqFqRpW36",
-   "spotify_url": "https://open.spotify.com/episode/14d5sLUKk7sdgeqFqRpW36",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Wednesday--November-4--2026-e3rq1q7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128828679/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2Fc8e67277-2810-674a-9453-3ef08c08cc26.m4a",
    "number": null
   },
@@ -913,8 +941,8 @@
    "duration": 1243,
    "description": "Democrats have seized control of both the House and the Senate in a sweeping midterm repudiation of President Trump, flipping seven Senate seats in states he won, as the president accepts the result and markets sell the AI trade. Plus: South Carolina and Texas deliver the night's biggest upsets; Michigan is called while Alaska and Mississippi still count; a night of historic firsts in the governors' races; and Bitcoin rides out the sweep.\n In today's brief:\n • Democrats Seize Both Chambers — https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/\n • The Seven Senate Flips —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793828791182-4b3f46353ff88.jpg",
-   "url": "https://open.spotify.com/episode/2S22WggM20c1je68uDIAN6",
-   "spotify_url": "https://open.spotify.com/episode/2S22WggM20c1je68uDIAN6",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Wednesday--November-4--2026--AM-Edition-e3rp56m",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/128799382/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fdb751183-fcf7-a816-2288-7995cffc660f.m4a",
    "number": null
   },
@@ -927,8 +955,8 @@
    "duration": 1192,
    "description": "This is the morning AM edition of The Global Read for Wednesday, November 4, 2026. American voters hand both chambers of Congress to the Democrats in a midterm rebuke driven in part by the Iran war; Tehran's Revolutionary Guard claims four tankers destroyed by mines in Hormuz while Qatar's feedback window runs; Russia strikes power stations in Kyiv and Zhytomyr six days before the Abu Dhabi talks; Israel's President Herzog opens coalition consultations after the election committee rules the vote clean; North Korea fires missiles for the fourth time in a month; Spain's transport minister resigns over the Urda crash; South Africa votes in municipal elections that test the ANC; and oil rises…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793828663023-04a572b5e2593.jpg",
-   "url": "https://open.spotify.com/episode/5fiL5WpqNxBB85I6MInoXE",
-   "spotify_url": "https://open.spotify.com/episode/5fiL5WpqNxBB85I6MInoXE",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Wednesday--November-4--2026--AM-Edition-e3rp4vd",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128799149/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F5ae76abc-2116-6cf1-cc87-70afa0212ed2.m4a",
    "number": null
   },
@@ -955,8 +983,8 @@
    "duration": 1326,
    "description": "Good morning, Los Angeles — this is the AM edition of The LA Daily for Wednesday, November 4, 2026, the morning after Election Day. The mayor's race is DEVELOPING and uncalled: in the county Registrar's count as of 10:44 p.m. Tuesday, Karen Bass leads Nithya Raman by just 8,086 votes, 50.7% to 49.3%, with the next update at 4 p.m. today. We also cover Xavier Becerra's historic win for governor, Marissa Roy's surge in the city attorney race and the two open council seats, the fire tax and charter measures, the state propositions, Rep. Jimmy Gomez trailing in the 34th District, 81 post-production layoffs in Burbank, and a 25-home filing in Valley Village.\n Plus the expanded what's-on segment,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793828467818-1dfcb2dc249b4.jpg",
-   "url": "https://open.spotify.com/episode/0cytPlj0VVW5hcsgkDzsJg",
-   "spotify_url": "https://open.spotify.com/episode/0cytPlj0VVW5hcsgkDzsJg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Wednesday--November-4--2026--AM-Edition-e3rp4rp",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/128799033/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F0da91e5c-eebe-4f2d-413a-f8297ca14a87.m4a",
    "number": null
   },
@@ -1068,8 +1096,8 @@
    "duration": 794,
    "description": "The streak is over. Houston beat Boston 109-93 at the Toyota Center on Monday night, November 2, in a game the Celtics never led. Alperen Sengun carved Boston up with 26 points, 7 rebounds and 10 assists, Houston won the paint 50-34 and the fast break 18-2, and Boston's shooters went cold on the second night of a back-to-back without Paul George: Derrick White 3-for-12, Payton Pritchard 0-for-7. Jayson Tatum had 19 points, 6 rebounds and 9 assists, Neemias Queta scored 16 on 6-of-7 shooting, and Luka Garza added 14 off the bench. Boston falls to 5-2; Houston is 7-1.\n Segments: the recap in depth, Sengun's near triple-double, Queta vs. the center rotation, the White and Pritchard cold night,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793739116906-0b0efa7aba0ee.jpg",
-   "url": "https://open.spotify.com/episode/1KOc1rCkyBzsutYvG0zChU",
-   "spotify_url": "https://open.spotify.com/episode/1KOc1rCkyBzsutYvG0zChU",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Rockets-Beat-the-Celtics-109-93-Senguns-Near-Triple-Double-Ends-the-Streak--Boston-Is-5-2--Tuesday--November-3--2026-e3rmhnl",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128713909/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F054ca1a7-19d1-cb0a-bc71-229bd224d8d9.m4a",
    "number": null
   },
@@ -1278,8 +1306,8 @@
    "duration": 1874,
    "description": "On the eve of the 2026 midterms, I’m looking at the races and headlines that are on my mind... from Los Angeles and California to Texas, Ohio, Michigan, Georgia, Florida, North Carolina, and beyond. We talk local leadership, homelessness, public safety, affordability, campaign spending, organizing, and the pull between local issues and national stages. These are my election-eve observations and predictions, recorded before Election Day.\n Chapters \n (00:00) Election Eve: Los Angeles and California (06:48) Texas: the race and campaign spending (10:13) Ohio and Michigan: ads and party politics (19:23) Georgia, organizing, and the New South (23:04) Florida and North Carolina (26:04) Iowa,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/6760199/6760199-1793685134721-1e64ac6ab40b1.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/janel-moore/episodes/Election-Eve-2026-The-Races-Im-Watching-e3rkuu5",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/3Yw5zQMUhLVMiNTZ6klrYf",
+   "spotify_url": "https://open.spotify.com/episode/3Yw5zQMUhLVMiNTZ6klrYf",
    "audio": "https://anchor.fm/s/28e3d53c/podcast/play/128661893/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fd0adc4f7-22d7-9123-2fa7-65a52ae00a21.mp3",
    "number": null
   },
@@ -1964,8 +1992,8 @@
    "duration": 2923,
    "description": "Two decades in, podcasting still cannot agree on what a listener is. This episode is a deep dive into the business of podcasting and the future of audio itself: where the industry stands, why it is still being formed, and where it goes over the next ten, twenty, fifty, and one hundred years.\n The business now: US podcast ad revenue hit $2.86 billion in 2025, the platform war between YouTube, Spotify, Apple, and now Netflix is reshaping the medium around video, and nine-figure deals have turned podcasters into moguls. Underneath, the industry still runs on an open RSS standard from 2001, measurement systems that cannot deduplicate one listener across platforms, and a legal frontier being…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793492549346-19396cafcbe29.jpg",
-   "url": "https://open.spotify.com/episode/4sj5COhOYOqEzxNHT9YCqc",
-   "spotify_url": "https://open.spotify.com/episode/4sj5COhOYOqEzxNHT9YCqc",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/249-The-Audio-Century-How-Audio-Is-Replacing-Screens-e3rgs60",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/128528000/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2Fc279ad73-b78b-14bd-d6cc-37b690d1e8d4.m4a",
    "number": "249"
   },
@@ -5713,7 +5741,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -7215,8 +7243,8 @@
    "duration": 1023,
    "description": "It’s Inauguration Day 2025, and Donald Trump is back in the Oval Office. \n From 42 executive orders—including pardons, policy reversals, and global declarations—to claims about reshaping America’s role on the world stage, we break down the first day of this new presidency. \n Join us as we explore what these moves mean for the U.S. and beyond.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/6760199/6760199-1737450635481-ed92e7f5a89ad.jpg",
-   "url": "https://open.spotify.com/episode/03foC2x4DgvoR9GyAMmxiG",
-   "spotify_url": "https://open.spotify.com/episode/03foC2x4DgvoR9GyAMmxiG",
+   "url": "https://podcasters.spotify.com/pod/show/janel-moore/episodes/Day-One-Trumps-Return--Executive-Orders--and-Global-Shifts-e2tp8g2",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/28e3d53c/podcast/play/97345474/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-0-21%2F393471715-44100-2-be60ce1d77ea5.m4a",
    "number": "1"
   },
@@ -7726,7 +7754,7 @@
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
    "episodes": 248,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -7803,7 +7831,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 11,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -7811,7 +7839,7 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 9,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
@@ -7819,7 +7847,7 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 7,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -7906,7 +7934,7 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 6,
+   "episodes": 7,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -7922,7 +7950,7 @@
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "coltsdaily": {
