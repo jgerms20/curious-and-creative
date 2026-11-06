@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T06:17:06Z",
+ "generated_at": "2026-11-06T11:11:31Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-01T00:23:29Z",
-   "count": 248
+   "latest": "2026-11-06T03:51:34Z",
+   "count": 249
   },
   {
    "key": "approachable",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-04T21:46:58Z",
-   "count": 11
+   "latest": "2026-11-06T04:26:49Z",
+   "count": 13
   },
   {
    "key": "ladaily",
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-04T21:41:47Z",
-   "count": 9
+   "latest": "2026-11-06T04:28:59Z",
+   "count": 11
   },
   {
    "key": "globalread",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-04T21:45:26Z",
-   "count": 7
+   "latest": "2026-11-06T04:31:29Z",
+   "count": 9
   },
   {
    "key": "marketread",
@@ -860,6 +860,104 @@
    "url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
    "spotify_url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128900776/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Ff78029f5-d1a9-82cd-f3f7-dfeb1f28912f.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:0864b1cf f673 4932 8020 7e16d2b23159",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026 — AM Edition",
+   "date": "2026-11-06T04:31:29Z",
+   "duration": 972,
+   "description": "A tanker has been struck by two projectiles in the Gulf north of Qatar, with the crew's fate still unknown — the latest attack on shipping in waters where diplomacy has not yet stopped the shooting, even as oil prices fall for a fourth straight day.\n Hormuz and the Gulf: a tanker was struck by two unidentified projectiles about fifty nautical miles north of Qatar; the crew's status is unclear. Brent fell for a fourth straight day, to $93.82. Reuters \n Israel: United Torah Judaism withheld its endorsement from any candidate, and Gadi Eisenkot moved to 56 recommendations against 46 for Netanyahu. DevDiscourse \n China blocks the deal: Beijing stopped SoftBank's $5.4 billion purchase of ABB…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
+   "url": "https://open.spotify.com/episode/4XBKxxv7EAIVVonqY9hZhq",
+   "spotify_url": "https://open.spotify.com/episode/4XBKxxv7EAIVVonqY9hZhq",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/128900682/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F0230b5e8-5b5a-d368-6ed9-4b195dd226f6.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:a821d5c4 08f6 44c0 9dce 2c2eebe47dce",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026 — AM Edition",
+   "date": "2026-11-06T04:28:59Z",
+   "duration": 1155,
+   "description": "One day after Los Angeles woke up without a mayor-elect, it wakes up with a projected one — Decision Desk HQ says Nithya Raman has beaten Karen Bass, and the count that could still test that call resumes this morning.\n Developing: Nithya Raman is projected to win the mayor's race, leading Karen Bass by 26,124 votes — but the AP has not called it, and ballots are still being counted. The Angeleno \n Marissa Roy wins city attorney in a landslide, 66.5 percent to 33.5 percent, while two council seats — District 3 by 294 votes, District 9 by 1,898 — are still too close to call. MyNewsLA \n Called and conceded: Angela Gonzales-Torres unseats Rep. Jimmy Gomez in the 34th District, 58.7 percent to…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
+   "url": "https://open.spotify.com/episode/40JFGzG1xuvRvpFK1tm9cX",
+   "spotify_url": "https://open.spotify.com/episode/40JFGzG1xuvRvpFK1tm9cX",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/128900588/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fbe620cb1-54b1-f184-09b8-5566f86b53b4.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:ef611ec1 6259 4828 af39 b5efe8963af1",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026 — AM Edition",
+   "date": "2026-11-06T04:26:49Z",
+   "duration": 887,
+   "description": "Two days after Democrats seized both chambers of Congress, the transition has begun in earnest — the incoming majority is naming its investigations, the outgoing House Speaker is stepping aside, and a lame-duck fight over government funding is now the first test of divided government.\n Democrats vow to rein in Trump, and Speaker Mike Johnson says he will not continue to lead his caucus next year. Reuters \n The investigations take shape: \"Lawyer up.\" Incoming oversight chairs name their targets — the Trump family's business dealings, corporate corruption, DHS and immigration enforcement, and the Epstein files. Cointelegraph \n Still counting: Colom leads Hyde-Smith by 1,138 in Mississippi and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
+   "url": "https://open.spotify.com/episode/7o7ur7xf6YIBfYvLDL6ltX",
+   "spotify_url": "https://open.spotify.com/episode/7o7ur7xf6YIBfYvLDL6ltX",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/128900497/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F50de7f79-6ab4-bccb-4e6e-d19e835f9b9d.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:bc9f3764 4dfd 45f9 beda 5fa4baa98ae6",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#251 Arnold Schwarzenegger: The Recall That Invented the Celebrity Candidate",
+   "date": "2026-11-06T03:51:34Z",
+   "duration": 3387,
+   "description": "In October 2003, California fired its governor mid-term — and replaced him with a movie star. This episode traces how the 2003 gubernatorial recall worked, who paid for it, why Gray Davis was so unpopular, and how Arnold Schwarzenegger turned stardom into campaign infrastructure — from the 135-candidate ballot to the Year of Reform, the governing arc from 65 percent approval to 37 and back, and the legacy the recall normalized: celebrity as a path to power.\n California's 2003 recall uniquely combined a direct-democracy mechanism with celebrity politics, removing Governor Gray Davis amid an energy crisis, a massive budget deficit, and a tripled car tax. Backed by heavy financial support and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793937037745-105e513b3ebf6.jpg",
+   "url": "https://open.spotify.com/episode/3fL4OY3OMjL1gUeerRXcye",
+   "spotify_url": "https://open.spotify.com/episode/3fL4OY3OMjL1gUeerRXcye",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/128898687/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F3edf01f2-fdec-36f3-be99-ba421e6606c1.m4a",
+   "number": "251"
+  },
+  {
+   "id": "globalread:e5a0ccf0 5c84 4bde aed5 ba8a28ef1715",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026 — PM Edition",
+   "date": "2026-11-06T03:31:18Z",
+   "duration": 864,
+   "description": "This is the evening edition of The Global Read for Thursday, November 5, 2026 — what developed in the world today, and what to watch overnight in Europe and Asia. A tanker struck north of Qatar is identified as the Velos Sapphire with a seafarer reported killed, the Bank of England raises rates for the first time since 2023, and Israel's mandate count settles at 67 to 46.\n Tonight: the Gulf attacks widen and oil rebounds; London's rate rise and Europe's mixed close; Herzog to name Israel's mandate on Sunday; the Komyshuvakha toll reaches 43 as Spain pledges $490 million; South Africa's count at halfway; Paraguay's president announces his resignation and faces trial instead; Hong Kong…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793935847926-adf812f7b4d5e.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Thursday--November-5--2026--PM-Edition-e3rs586",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/128897734/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F9e6af4d0-be70-77d8-f490-6888f2218748.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:34acc98e f55f 492b aee6 7669e31cdbc8",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026 — PM Edition",
+   "date": "2026-11-06T03:30:59Z",
+   "duration": 1000,
+   "description": "Wall Street erased Wednesday's record post-election rally in a single session on Thursday, the Dow down 1,833 points, the Nasdaq in a correction, and chip stocks down 12 percent, as data-centre politics went national and oil reversed on tanker fires in Hormuz. Plus: Jeffries plans a first-100-hours blitz; the House majority swells past 254 while the Senate still waits; jobless claims hit a 57-year low; and Airbnb and Live Nation beat after the close.\n In today's brief:\n • The Markets: The Rally, Erased in a Day — https://theretest.com/brief/2026-11-05-close\n • Why the Chips Fell: Data-Centre Politics Goes National —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793935832833-c7dc3afb26a62.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Thursday--November-5--2026--PM-Edition-e3rs582",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/128897730/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F815d6728-4b9c-5798-5f6d-96548df3a1b6.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:7fa8d162 f100 4ddc bc2d d6d2e71130af",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026 — PM Edition",
+   "date": "2026-11-06T03:12:11Z",
+   "duration": 1368,
+   "description": "Good evening, Los Angeles — this is the PM evening edition of The LA Daily for Thursday, November 5, 2026. This morning the mayor's race was still developing, projected for Nithya Raman by Decision Desk HQ only; today the Associated Press called the race for Raman, Karen Bass conceded just before midday promising a smooth transition, and the afternoon count widened Raman's lead to 47,253 votes, 52.70% to 47.30%. Raman's term begins December 14, with certification set for November 27.\n We advance the day's stories: what the mayor-elect has promised — a first-day housing executive order and a pledge to triple homebuilding — the police union that spent millions against her congratulating her…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793934664195-61cad6a93713.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Thursday--November-5--2026--PM-Edition-e3rs49u",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/128896766/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F4a7dc5d8-c30a-01f9-e78b-4ea8497ecd60.m4a",
    "number": null
   },
   {
@@ -5741,7 +5839,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -7753,8 +7851,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 248,
-   "spotify_matches": 0
+   "episodes": 249,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -7830,24 +7928,24 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 11,
-   "spotify_matches": 0
+   "episodes": 13,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 11,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
