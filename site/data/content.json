@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T16:56:00Z",
+ "generated_at": "2026-11-07T20:59:35Z",
  "shows": [
   {
    "key": "ccpod",
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-06T04:26:49Z",
-   "count": 13
+   "latest": "2026-11-06T17:06:46Z",
+   "count": 14
   },
   {
    "key": "ladaily",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-04T21:44:49Z",
-   "count": 7
+   "latest": "2026-11-06T18:39:01Z",
+   "count": 8
   },
   {
    "key": "techread",
@@ -905,6 +905,20 @@
    "number": null
   },
   {
+   "id": "airead:3ac453d2 c92f 4ba5 9ceb b549e98fb62e",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Friday, November 6, 2026",
+   "date": "2026-11-06T18:39:01Z",
+   "duration": 1443,
+   "description": "OpenAI launched GPT-6 Cyber, a vetted-only cybersecurity model at twice its rivals' prices; Google made Gemini Omni 1.2 Flash generally available with 15-second video at 30 percent less; Anthropic put read-only bank access inside Claude and paid for news for the first time. Baidu open-sourced ERNIE 5.5 Flash Base, METR found AI doubling Anthropic's pace of model progress, OpenAI promised data-center towns no secret deals, and Europe hired Capgemini to stress-test frontier models — plus NVIDIA's open world models for robots and cars.\n • OpenAI launches GPT-6 Cyber, a vetted-only security model —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1793990283741-713e27224e63f.jpg",
+   "url": "https://open.spotify.com/episode/7v6Zaqi3MUZU2xpDmjCGSE",
+   "spotify_url": "https://open.spotify.com/episode/7v6Zaqi3MUZU2xpDmjCGSE",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/128944177/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F455d683a-8d0c-221f-1a60-22985030ac97.m4a",
+   "number": null
+  },
+  {
    "id": "designdigest:a7b229a9 df6c 4d36 8e69 3a39b5410017",
    "show": "designdigest",
    "kind": "episode",
@@ -986,6 +1000,20 @@
    "url": "https://open.spotify.com/episode/0azNkB2Zn3PphnkrWPGlX5",
    "spotify_url": "https://open.spotify.com/episode/0azNkB2Zn3PphnkrWPGlX5",
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128938947/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F47ce02d9-cf26-d78f-4077-c4e80584cf01.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:0b4c668f 84f5 4e27 a4c5 47b62d553b45",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Friday, November 6, 2026",
+   "date": "2026-11-06T17:06:46Z",
+   "duration": 1350,
+   "description": "Three days after losing Congress, President Trump draws the first lines of divided government — tariffs stay, the veto is ready, and money is the one subject he will discuss — as Wall Street steadies after its worst day in nineteen months and the October jobs report decides whether Thursday's rout was a verdict or a panic. Plus: Mississippi's Senate lead grows while Alaska waits; the lame-duck Congress gets a December 11th deadline; Brent crude pushes back toward a hundred dollars on Hormuz tanker fires; the leadership races take shape; and Airbnb and Live Nation buck the selloff.\n In today's brief:\n • The President Draws His Lines: Tariffs Stay, the Veto Is Ready —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793984699054-763deb899eb4d.jpg",
+   "url": "https://open.spotify.com/episode/4iXaWKw2IpIL21TMyv2HCc",
+   "spotify_url": "https://open.spotify.com/episode/4iXaWKw2IpIL21TMyv2HCc",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/128938802/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fdaf28277-260e-6959-26f8-918bbf138f03.m4a",
    "number": null
   },
   {
@@ -1150,7 +1178,7 @@
    "date": "2026-11-06T04:26:49Z",
    "duration": 887,
    "description": "Two days after Democrats seized both chambers of Congress, the transition has begun in earnest — the incoming majority is naming its investigations, the outgoing House Speaker is stepping aside, and a lame-duck fight over government funding is now the first test of divided government.\n Democrats vow to rein in Trump, and Speaker Mike Johnson says he will not continue to lead his caucus next year. Reuters \n The investigations take shape: \"Lawyer up.\" Incoming oversight chairs name their targets — the Trump family's business dealings, corporate corruption, DHS and immigration enforcement, and the Epstein files. Cointelegraph \n Still counting: Colom leads Hyde-Smith by 1,138 in Mississippi and…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793997030255-0adff8036f71f.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Thursday--November-5--2026--AM-Edition-e3rs7uh",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/128900497/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F50de7f79-6ab4-bccb-4e6e-d19e835f9b9d.m4a",
@@ -6049,7 +6077,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8138,8 +8166,8 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 0
+   "episodes": 14,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
@@ -8186,8 +8214,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The AI Read",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 8,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
