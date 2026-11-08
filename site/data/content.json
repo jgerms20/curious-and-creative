@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T19:52:07Z",
+ "generated_at": "2026-11-08T23:49:33Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-07T08:51:35Z",
-   "count": 250
+   "latest": "2026-11-08T02:47:44Z",
+   "count": 252
   },
   {
    "key": "approachable",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -834,6 +834,34 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:cb8eaed1 e978 40f3 bc85 13defeef9232",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#253 The Missing Pact: Why Asia Never Built Its NATO",
+   "date": "2026-11-08T02:47:44Z",
+   "duration": 5046,
+   "description": "Europe came out of the Second World War and built a table: NATO, pooled coal and steel, eventually a shared history textbook between France and Germany. East Asia came out of the same war and built a wheel. The United States sits at the hub, and Japan, South Korea, the Philippines, and Taiwan each hold a separate spoke, facing Washington one at a time and rarely each other. This episode asks why. The answer is not that Asia's nations failed to organize. It is that the system was designed, in San Francisco in 1951, so they would not have to, and so Washington would never lose control of clients it feared might drag it into a larger war.\n We trace the founding bargain that kept Emperor…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794105969963-c6a72b03873ee.jpg",
+   "url": "https://open.spotify.com/episode/0yGI2M4k420Ap0vR2COAL2",
+   "spotify_url": "https://open.spotify.com/episode/0yGI2M4k420Ap0vR2COAL2",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129027322/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-8%2Fa1d64014-6b61-7b07-51b7-13a772af7215.m4a",
+   "number": "253"
+  },
+  {
+   "id": "polymath:4fe41eb6 7428 48b2 8658 835b9b056040",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#252 Godzilla: The Monster Japan Built to Carry Its Grief",
+   "date": "2026-11-08T00:44:21Z",
+   "duration": 3255,
+   "description": "On November 3, 1954, Japanese audiences filed into theaters to watch a monster destroy Tokyo. Gojira was not escapism. It arrived nine years after Hiroshima and Nagasaki, two years after an Allied occupation that had forbidden the country to speak publicly about the atomic bombings, and eight months after an American hydrogen bomb test irradiated the crew of the fishing boat Lucky Dragon No. 5. This episode tells the story of what Godzilla actually is: not a movie monster later read as a metaphor, but a nation's grief given a body.\n We trace the years of silence under occupation censorship, the hibakusha literature and testimony that carried the witness the films could not, and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794101398140-66708e9cfe289.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/252-Godzilla-The-Monster-Japan-Built-to-Carry-Its-Grief-e3rvvd4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129022820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-8%2F91478b93-8e38-d351-c366-7041cbd82f7f.m4a",
+   "number": "252"
+  },
   {
    "id": "gamecocksdaily:7eeab8b1 63dd 44a9 893a d253ec794acb",
    "show": "gamecocksdaily",
@@ -8103,8 +8131,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 250,
-   "spotify_matches": 0
+   "episodes": 252,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
