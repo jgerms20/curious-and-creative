@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T20:59:35Z",
+ "generated_at": "2026-11-08T00:47:53Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-07T08:51:35Z",
-   "count": 250
+   "latest": "2026-11-08T00:44:21Z",
+   "count": 251
   },
   {
    "key": "approachable",
@@ -802,8 +802,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-06T18:42:21Z",
-   "count": 5
+   "latest": "2026-11-08T00:03:58Z",
+   "count": 6
   },
   {
    "key": "gamecockshoops",
@@ -835,6 +835,34 @@
  ],
  "episodes": [
   {
+   "id": "polymath:4fe41eb6 7428 48b2 8658 835b9b056040",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#252 Godzilla: The Monster Japan Built to Carry Its Grief",
+   "date": "2026-11-08T00:44:21Z",
+   "duration": 3242,
+   "description": "On November 3, 1954, Japanese audiences filed into theaters to watch a monster destroy Tokyo. Gojira was not escapism. It arrived nine years after Hiroshima and Nagasaki, two years after an Allied occupation that had forbidden the country to speak publicly about the atomic bombings, and eight months after an American hydrogen bomb test irradiated the crew of the fishing boat Lucky Dragon No. 5. This episode tells the story of what Godzilla actually is: not a movie monster later read as a metaphor, but a nation's grief given a body.\n We trace the years of silence under occupation censorship, the hibakusha literature and testimony that carried the witness the films could not, and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794098615462-56c2bc7443e1b.jpg",
+   "url": "https://open.spotify.com/episode/2uGjSXVoFbdMGNDRmeMpQH",
+   "spotify_url": "https://open.spotify.com/episode/2uGjSXVoFbdMGNDRmeMpQH",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129022820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-8%2Fa4cef041-819e-675d-e076-d95641b2903e.m4a",
+   "number": "252"
+  },
+  {
+   "id": "gamecocksdaily:7eeab8b1 63dd 44a9 893a d253ec794acb",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "Sellers Seals It on One Ankle, Bowl Bound at Last: South Carolina Is 6-3 | Saturday, November 7, 2026",
+   "date": "2026-11-08T00:03:58Z",
+   "duration": 1282,
+   "description": "South Carolina 17, Texas A&M 9 at Williams-Brice: a fourth straight win and bowl eligibility, sealed when a hobbled LaNorris Sellers broke a 41-yard touchdown run with 1:27 left. The defense allowed 457 yards and zero touchdowns.\n Inside: the full game story from Columbia, from a scoreless first quarter to the final stand at the 10 / Sellers by the numbers: 251 passing yards, the screen touchdown to Mazeo Bennett Jr., and the ankle that sent him for X-rays at halftime / a defense that bent all afternoon and never broke, led by JayR Johnson's 11 tackles / what bowl eligibility and four straight wins mean, and the trip to Arkansas next.\n Unofficial and independent; not affiliated with the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794096177461-28985c5bcbc98.jpg",
+   "url": "https://open.spotify.com/episode/2jkS5vgIlELSRb2Uff6Exj",
+   "spotify_url": "https://open.spotify.com/episode/2jkS5vgIlELSRb2Uff6Exj",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129021258/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-8%2F702f5b00-bc9c-0d61-f618-c080c9f2b912.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:bc9f3764 4dfd 45f9 beda 5fa4baa98ae6",
    "show": "polymath",
    "kind": "episode",
@@ -843,8 +871,8 @@
    "duration": 3387,
    "description": "In October 2003, California fired its governor mid-term — and replaced him with a movie star. This episode traces how the 2003 gubernatorial recall worked, who paid for it, why Gray Davis was so unpopular, and how Arnold Schwarzenegger turned stardom into campaign infrastructure — from the 135-candidate ballot to the Year of Reform, the governing arc from 65 percent approval to 37 and back, and the legacy the recall normalized: celebrity as a path to power.\n California's 2003 recall uniquely combined a direct-democracy mechanism with celebrity politics, removing Governor Gray Davis amid an energy crisis, a massive budget deficit, and a tripled car tax. Backed by heavy financial support and…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1793937037745-105e513b3ebf6.jpg",
-   "url": "https://open.spotify.com/episode/3fL4OY3OMjL1gUeerRXcye",
-   "spotify_url": "https://open.spotify.com/episode/3fL4OY3OMjL1gUeerRXcye",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/251-Arnold-Schwarzenegger-The-Recall-That-Invented-the-Celebrity-Candidate-e3rs65v",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/128898687/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F3edf01f2-fdec-36f3-be99-ba421e6606c1.m4a",
    "number": "251"
   },
@@ -885,8 +913,8 @@
    "duration": 905,
    "description": "South Carolina hosts Texas A&M on Saturday at Williams-Brice with bowl eligibility on the line: the availability report clears Quay'Sheed Scott and Donovan Murph, Matt Fuller's season is likely over, and the Aggies arrive 4 and 0 after byes under Mike Elko, still chasing their first road win.\n • Availability: Scott and Murph Ready; Currence and Thomas Out; Fuller Likely Done for the Year — https://www.saturdaydownsouth.com/news/college-football/shane-beamer-provides-encouraging-injury-update-for-south-carolina-db-wr-for-week-10-vs-texas-am/\n • Two More Gamecocks Out for Texas A&M; Murph Expected to Play —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1793990507022-64adb7113f3e8.jpg",
-   "url": "https://open.spotify.com/episode/0lopOhw98cx4QzA0zqqlfj",
-   "spotify_url": "https://open.spotify.com/episode/0lopOhw98cx4QzA0zqqlfj",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/Gamecocks-Target-Bowl-Eligibility-Against-Texas-AM-Gamecocks-Daily--Friday--November-6--2026-e3rtinv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/128944319/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fa47b0b3b-66df-6a04-b26f-9c057581cab7.m4a",
    "number": null
   },
@@ -8089,7 +8117,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 250,
+   "episodes": 251,
    "spotify_matches": 1
   },
   "approachable": {
@@ -8318,7 +8346,7 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "gamecockshoops": {
