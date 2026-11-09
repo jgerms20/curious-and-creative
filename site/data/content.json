@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T17:40:51Z",
+ "generated_at": "2026-11-09T21:44:53Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -277,8 +277,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-06T15:21:01Z",
-   "count": 5
+   "latest": "2026-11-09T19:26:37Z",
+   "count": 6
   },
   {
    "key": "morningread",
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-06T17:06:46Z",
-   "count": 14
+   "latest": "2026-11-09T19:11:32Z",
+   "count": 15
   },
   {
    "key": "ladaily",
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-06T17:07:48Z",
-   "count": 12
+   "latest": "2026-11-09T19:16:28Z",
+   "count": 13
   },
   {
    "key": "globalread",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-06T17:07:03Z",
-   "count": 10
+   "latest": "2026-11-09T19:14:10Z",
+   "count": 11
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-06T18:36:32Z",
-   "count": 8
+   "latest": "2026-11-09T19:18:36Z",
+   "count": 9
   },
   {
    "key": "nyread",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-06T18:39:01Z",
-   "count": 8
+   "latest": "2026-11-09T19:20:34Z",
+   "count": 9
   },
   {
    "key": "techread",
@@ -618,8 +618,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-06T15:13:33Z",
-   "count": 9
+   "latest": "2026-11-09T21:15:29Z",
+   "count": 10
   },
   {
    "key": "blitz",
@@ -644,8 +644,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-06T20:11:33Z",
-   "count": 7
+   "latest": "2026-11-09T21:34:01Z",
+   "count": 10
   },
   {
    "key": "waiverwire",
@@ -697,8 +697,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-06T04:33:38Z",
-   "count": 6
+   "latest": "2026-11-09T21:09:00Z",
+   "count": 7
   },
   {
    "key": "coltsdaily",
@@ -723,8 +723,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-06T13:36:55Z",
-   "count": 8
+   "latest": "2026-11-09T21:02:48Z",
+   "count": 10
   },
   {
    "key": "cfbdaily",
@@ -835,6 +835,188 @@
  ],
  "episodes": [
   {
+   "id": "blitz:3a1da741 1374 4c52 8a07 96fc325375e9",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-09T21:34:01Z",
+   "duration": 1185,
+   "description": "The Sunday slate is complete. Green Bay 45, New England 27 — Jordan Love 23-of-29 for 372 yards, three passing touchdowns and a rushing score. Houston 44, LA Chargers 22 — five touchdown passes from C.J. Stroud on 384 yards. Cincinnati 34-17 in Madrid — Joe Burrow 271 yards and four total touchdowns, Ja'Marr Chase 10 catches for 155 and a score. Kansas City 35, New York Jets 12 — Walker with 143 scrimmage yards and three touchdowns. And on Sunday night, Chicago 27, Tampa Bay 24 on a 38-yard walk-off field goal by Santos as time expired. Plus the injury roundup: Mahomes (elbow) and Nacua (knee) both face Monday MRIs, Jacobs has a fractured finger, Herbert a possible fractured left finger,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794259997905-abed514ddccf6.jpg",
+   "url": "https://open.spotify.com/episode/4DtRfBJgErYvXfoS7aXYNu",
+   "spotify_url": "https://open.spotify.com/episode/4DtRfBJgErYvXfoS7aXYNu",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129150017/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Ffe9ddba8-3854-901e-fea0-92e635e429c4.m4a",
+   "number": "10"
+  },
+  {
+   "id": "blitz:d112380b 0793 4ab1 af53 f62c21b67e48",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T21:28:11Z",
+   "duration": 1417,
+   "description": "No games on Saturday, but the week moved. Kyler Murray is out Monday with a Grade 2 hamstring strain, so Carson Wentz makes his 101st career start; Claiborne and Jennings were ruled out Saturday; the 49ers moved Kirk to injured reserve and activated Robinson, and the Commanders put Brown on IR. Plus Thursday's final — Jaguars 33, Ravens 10 — the final Sunday and Monday night reports, the Week 8 fines, and the Colts shutting the door on a Daniel Jones trade.\n The deep dive: the backup-quarterback takeover, what Wentz starting means for Arizona, and the post-Thursday-night playoff picture across the remaining 14-game Week 9 slate.\n Part of the Curious & Creative network. Back tomorrow night.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794259654023-c8cb18f0e2e9.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Saturday--November-7--2026-e3s3rcf",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129149775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F14ef26b0-08e5-00ac-f29b-f18166fa58a4.m4a",
+   "number": "9"
+  },
+  {
+   "id": "blitz:191a2c6e 0331 40fa b0b4 4495dcf28171",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Friday, November 6, 2026",
+   "date": "2026-11-09T21:22:13Z",
+   "duration": 1163,
+   "description": "Thursday night final: Jacksonville 33, Baltimore 10. The Friday headline: the Ravens are finalizing a trade for Jacoby Brissett — Baltimore receives Brissett and a 2027 fifth-round pick, Arizona receives a 2027 fourth and a 2028 seventh, and Brissett's debut is slated for Monday, November 16 against the Chargers. Plus the full Thursday night lines, Friday's final Week 9 injury reports, and the post-Thursday-night playoff picture.\n The deep dive: what the Brissett trade says about where Baltimore's season is headed, and the full remaining 14-game Week 9 slate.\n Part of the Curious & Creative network. Back tomorrow night.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794259311571-bec2fbb775791.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Friday--November-6--2026-e3s3r24",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129149444/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F1f306da2-49ea-7d51-3bcb-ef6ea612a9dc.m4a",
+   "number": "8"
+  },
+  {
+   "id": "fastbreak:4871dcb2 eee0 413c b70c 89b9c682d919",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-09T21:15:29Z",
+   "duration": 845,
+   "description": "All seven Sunday games are final. Philadelphia 127, Chicago 121 — Brown 29 and Maxey 27 for the 76ers, Giddey 19 points and 15 assists for the Bulls. Los Angeles Lakers 121, Detroit 116. Minnesota 115, Utah 100 — Dosunmu 26 and Ball 24. Dallas 130, Brooklyn 93 — Flagg 25 points, 5 rebounds and 12 assists, Irving 21. Boston 117, Milwaukee 97 — George 27 and Tatum 21 against Kuzma's 27 in the Bucks' sixth straight loss. LA Clippers 139, New Orleans 123 — Garland 24 points and 10 assists, Murphy 26, and Williamson 25 on 9-of-9 shooting. Miami 114, Sacramento 108 — Giannis 29 and 14, Thompson 23 with seven threes, and Acuff Jr. 32, 5 and 10 in the loss.\n The deep dive: Austin Reaves dropped a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794258904086-ce71d40e03d4c.jpg",
+   "url": "https://open.spotify.com/episode/2XAE5qqZrLpT3Zu9RC2TMn",
+   "spotify_url": "https://open.spotify.com/episode/2XAE5qqZrLpT3Zu9RC2TMn",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129149184/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fb3b3ae4f-72d9-4adc-63d6-55499cf4fc7d.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:9fb50295 aa66 4430 9c40 100016bfe39e",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Celtics Beat the Bucks 117-97: George's 27 Flips a 14-Point Hole, Boston Is 8-2 | Sunday, November 8, 2026",
+   "date": "2026-11-09T21:09:00Z",
+   "duration": 1113,
+   "description": "Boston erased a 14-point deficit to beat the Milwaukee Bucks 117-97 at Fiserv Forum. Milwaukee led 20-6 early before a Jayson Tatum three started an 18-0 Boston run, and Paul George gave the Celtics the lead for good early in the second quarter on the way to a 58-45 halftime lead and a largest lead of 23. George scored 27 points on 11-of-18 shooting with five threes, Tatum had 21 points, 4 rebounds and 6 assists in his return after resting November 4 — 16 of them in the first quarter before resting the entire fourth — and Neemias Queta added 13 points, 9 rebounds and 4 assists. Boston is 8-2, winners of three straight.\n Segments: the 18-0 run that flipped the game, George's 27 and Tatum's…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1794258523527-f83c287c95e8d.jpg",
+   "url": "https://open.spotify.com/episode/2DAf0B6K6aixH3lqRi5wMy",
+   "spotify_url": "https://open.spotify.com/episode/2DAf0B6K6aixH3lqRi5wMy",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129148904/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F505f7bc5-aa7a-cccb-411e-f325f636c7ee.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:9d13f5ed dcad 477e a298 d9d32877a333",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Led With 1:37 Left, Lost in 29 Seconds: Prescott and Lamb Steal It Late, Indianapolis Is 2-7 | Sunday, November 8, 2026",
+   "date": "2026-11-09T21:02:48Z",
+   "duration": 1406,
+   "description": "The Colts led 23-20 with 1:37 left and lost 27-23 to the Dallas Cowboys at Lucas Oil Stadium. Dak Prescott threw for 335 yards and two touchdowns, CeeDee Lamb caught 10 passes for 195 yards, Javonte Williams scored the winner from 1 yard with 1:08 left after Prescott hit Ryan Flournoy for 46 yards, and Caleb Downs intercepted Daniel Jones to seal it. Indianapolis falls to 2-7 with its fifth straight loss.\n Segments: the quarter-by-quarter recap and the 29-second final drive, Prescott and Lamb vs. Jones and Taylor, the rookie defenders and Spencer Shrader's 47-, 59- and 50-yard field goals, the third-quarter injuries including Charvarius Ward, what 2-7 means with the Tuesday trade deadline,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1794258134186-9f696aced2131.jpg",
+   "url": "https://open.spotify.com/episode/5vJe7GY92GsacQYIaoOrr1",
+   "spotify_url": "https://open.spotify.com/episode/5vJe7GY92GsacQYIaoOrr1",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/129148589/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fb2175687-0d84-3cb9-1a31-893a0a1e1031.m4a",
+   "number": null
+  },
+  {
+   "id": "dominatedconvo:b23faeac e889 4322 b9e8 761dc1158d51",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "Stephen Miller Becomes Chief of Staff Three Days After the Midterms | Saturday, November 7, 2026",
+   "date": "2026-11-09T19:26:37Z",
+   "duration": 874,
+   "description": "Stephen Miller becomes chief of staff three days after the midterms, and the feed had thoughts. Plus: Robert Pattinson's Bond screen tests, the still-uncalled Mississippi and Alaska Senate races, Godzilla Minus Zero's North American opening, the AI template batch and the Can I Ride dance, and Wizard Cat owning Instagram Reels.\n Part of the Curious & Creative network. Back tomorrow.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794252373820-fe2e6a8f1055d.jpg",
+   "url": "https://open.spotify.com/episode/5oae3mIpsisszggK58RxQD",
+   "spotify_url": "https://open.spotify.com/episode/5oae3mIpsisszggK58RxQD",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129143359/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F8254e32f-d880-ca58-d914-79d10d7c54d4.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:0f6528e5 532c 4bf6 a35e 0d38206cfd00",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Colts Are Taking Calls on Daniel Jones: Allen Gets the Green Dot, Indianapolis Is 2-6 | Saturday, November 7, 2026",
+   "date": "2026-11-09T19:24:37Z",
+   "duration": 939,
+   "description": "The Colts have engaged in trade discussions about starting quarterback Daniel Jones, per a Saturday report from ESPN and NFL Network, with multiple teams calling and Indianapolis willing to listen ahead of Tuesday's 4 p.m. ET deadline, while ESPN's Friday-night update put the Jonathan Taylor price at the equivalent of a first-round pick. The Colts are 2-6, third in the AFC South, and host the 3-5 Dallas Cowboys on Sunday, November 8 at 1 p.m. ET at Lucas Oil Stadium on FOX.\n Segments: the Jones trade talks and the $10.51 million injury guarantee underneath them, plus the Taylor asking price; Friday's final injury report, with Justin Walley and Akeem Davis-Gaither out, Jalen Travis and A.J.…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1794252256843-1875ef7ad6303.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/Colts-Are-Taking-Calls-on-Daniel-Jones-Allen-Gets-the-Green-Dot--Indianapolis-Is-2-6--Saturday--November-7--2026-e3s3ksv",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609694/podcast/play/129143135/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F5a157e14-8d5c-e74a-f37e-3bd00ef25021.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:9f9c6839 4eb8 45e4 b1d6 7a242bc46917",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:20:34Z",
+   "duration": 1307,
+   "description": "OpenAI closed an $11 billion first tranche at a $1.25 trillion valuation, below its original ask; Google took over Crusoe's Wyoming site with a $17 billion build planned, and Microsoft began handing back rented Oracle capacity running older Nvidia chips. Anthropic's IPO valuation talk slipped to $1.2–$1.3 trillion, Thinking Machines shipped Inkling 2 Small with its open weights still pending, Stanford found 44 percent of famous LLM findings have expired, Google switched Gemini and Search off by default for K-12 students, and data-center politics moved from protests to legislation — plus the USDA's bounded AI check on its own crop numbers.\n • OpenAI closes $11B first tranche at $1.25T…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794252005374-cb3637e80f5a2.jpg",
+   "url": "https://open.spotify.com/episode/6Hrn9HfxjKyz2qADoIdJsz",
+   "spotify_url": "https://open.spotify.com/episode/6Hrn9HfxjKyz2qADoIdJsz",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129142922/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fee296e0e-3e77-1bff-a455-08fb1436778f.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:5c783f93 41b5 40fc 97d4 03fc13353d1b",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:18:36Z",
+   "duration": 1077,
+   "description": "Saturday edition, built on Friday's close: the Nasdaq bounced 1.09 percent to 24,579.42 and the S&P 500 added 0.31 percent to 7,376.86 while the Dow slipped 0.46 percent to 51,285.73, closing a week that left the S&P down 2.7 percent and the Nasdaq down 3.4 percent. October payrolls blew past forecasts at 165,000 against a 65,000 consensus, unemployment held at 4.1 percent, and December rate-hike odds climbed to about 78 percent. Chips led the bounce, options volume stayed heavy with the VIX easing, Bitcoin steadied near 76,000 dollars after a rough week for the spot ETFs, and Berkshire Hathaway's Saturday report closes the show.\n Part of the Curious & Creative network. Back tomorrow…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794251889363-07b2e2ea7cd27.jpg",
+   "url": "https://open.spotify.com/episode/1NQhYKidSLYWTiQbAqO8CT",
+   "spotify_url": "https://open.spotify.com/episode/1NQhYKidSLYWTiQbAqO8CT",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129142811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F6436b88b-35d0-fb0a-e419-f1e9f922a8d6.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:3bcf77d8 eb08 43a8 922d ea74b08d577c",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:16:28Z",
+   "duration": 1334,
+   "description": "Los Angeles wakes up to a Red Flag Saturday and a transition that just got emphatic: Friday's count widened Nithya Raman's lead over Karen Bass to 68,493 votes, her transition team is taking shape with Garcetti veterans, the council that never endorsed her must now govern with her, and the council has set a 90-day clock on a homelessness plan for the 2028 Games.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — the Wende Museum's Competing Cosmologies opening, Self Help Graphics' 53rd Día de los Muertos in Boyle Heights, LA Zine Fest, the LA NDN Flea at The Broad, Fall Brewery Artwalk, Corita Day at SCI-Arc, Jimmy Eat World and The Format at the Bowl, Tinashe…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794251752118-096ebc0efc3fd.jpg",
+   "url": "https://open.spotify.com/episode/30exSZ6yECIJdbLSKBmeRh",
+   "spotify_url": "https://open.spotify.com/episode/30exSZ6yECIJdbLSKBmeRh",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129142677/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F8d6c6cfd-b634-31c6-bb0d-ee73ea75f626.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:e8d38b49 982a 4fe8 a9e0 72b673c71de5",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:14:10Z",
+   "duration": 1384,
+   "description": "Paraguay's Senate removes President Santiago Pena over the Ueno Bank collapse and swears in Pedro Alliana within the hour, with Pena placed under house arrest; Wall Street's chips bounce after Thursday's rout, but a far stronger than expected October jobs report pushes December rate-hike odds to about seventy-eight percent; Brent settles at ninety-eight dollars after its steepest weekly fall since Covid, as Tehran sends a proposal through Qatar; Ukraine confirms its Afipsky refinery strike as Zelenskyy says every power plant is damaged; Israel's opposition advances as Liberman lifts his veto on the ultra-Orthodox; South Africa's count reaches ninety-seven percent with one ward tied exactly;…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794251615471-38a50f3ba8711.jpg",
+   "url": "https://open.spotify.com/episode/4uUCQI2Gaax4lezoIUlpPf",
+   "spotify_url": "https://open.spotify.com/episode/4uUCQI2Gaax4lezoIUlpPf",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129142555/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F9f7bf06c-cb9d-76a7-a4fd-dab37f07924d.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:69892f6e d3f3 4c53 99cb db3bf20a6066",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:11:32Z",
+   "duration": 811,
+   "description": "Three days after losing Congress, President Trump promotes Stephen Miller to chief of staff — the first reshuffle of divided government — on the same day American forces strike Iran again. Plus: hiring blows past every forecast at 165,000; Wall Street bounces without recovering; the Fed leans toward a December hike; Mississippi's lead grows while Alaska waits; measles passes 5,000 cases; Washington presses Beijing on the trade truce; and a monster carries the box office.\n In today's brief:\n • The President Promotes Stephen Miller — https://www.reuters.com/world/us/trump-says-stephen-miller-become-chief-staff-2026-11-06/\n • The Jobs Report Blows Past Every Forecast: 165,000 —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794251451114-f83396f65a3b8.jpg",
+   "url": "https://open.spotify.com/episode/4tb0eeiadr23Yi26haHxx6",
+   "spotify_url": "https://open.spotify.com/episode/4tb0eeiadr23Yi26haHxx6",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129142391/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F93d54be0-7f1c-ab29-0bcf-1d1506f981ac.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:cb8eaed1 e978 40f3 bc85 13defeef9232",
    "show": "polymath",
    "kind": "episode",
@@ -913,8 +1095,8 @@
    "duration": 1308,
    "description": "No game tonight, but Baltimore owned the day: the Ravens are finalizing a trade for Cardinals quarterback Jacoby Brissett after Lamar Jackson's thumb surgery and Tyler Huntley's season-ending turf toe injury, with undrafted rookie Joe Fagnano starting Thursday against Jacksonville. Plus the full Week 8 scoreboard, Joe Burrow's 462-yard game, the trade-deadline and injured-reserve wire, and the playoff picture entering Week 9.\n Week 8 finals: Packers 27, Panthers 19; Bills 36, Ravens 10; Bengals 43, Titans 36 (OT); Cardinals 33, Cowboys 30 (OT); Lions 19, Vikings 15; Jaguars 42, Colts 7; Raiders 38, Jets 33; Steelers 27, Browns 6; Buccaneers 16, Falcons 0; Rams 24, Chargers 9; Broncos 28,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1793995860998-976cc878d4de9.jpg",
-   "url": "https://open.spotify.com/episode/3aXGGUjtTHaSQJB8A99DcP",
-   "spotify_url": "https://open.spotify.com/episode/3aXGGUjtTHaSQJB8A99DcP",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Wednesday--November-4--2026-e3rtnk8",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128949320/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F0f9e05ad-0379-782a-83ab-742e27303c55.m4a",
    "number": null
   },
@@ -955,8 +1137,8 @@
    "duration": 1443,
    "description": "OpenAI launched GPT-6 Cyber, a vetted-only cybersecurity model at twice its rivals' prices; Google made Gemini Omni 1.2 Flash generally available with 15-second video at 30 percent less; Anthropic put read-only bank access inside Claude and paid for news for the first time. Baidu open-sourced ERNIE 5.5 Flash Base, METR found AI doubling Anthropic's pace of model progress, OpenAI promised data-center towns no secret deals, and Europe hired Capgemini to stress-test frontier models — plus NVIDIA's open world models for robots and cars.\n • OpenAI launches GPT-6 Cyber, a vetted-only security model —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1793990283741-713e27224e63f.jpg",
-   "url": "https://open.spotify.com/episode/7v6Zaqi3MUZU2xpDmjCGSE",
-   "spotify_url": "https://open.spotify.com/episode/7v6Zaqi3MUZU2xpDmjCGSE",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Friday--November-6--2026-e3rtijh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/128944177/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F455d683a-8d0c-221f-1a60-22985030ac97.m4a",
    "number": null
   },
@@ -983,8 +1165,8 @@
    "duration": 1323,
    "description": "The Nasdaq is in a correction after Thursday's 5.52 percent plunge wiped out roughly $2.5 trillion in market value, and futures are trying to bounce ahead of the October jobs report. Chips imploded 12.25 percent; Seoul and Tokyo both closed down six percent; Europe fell by less; Airbnb and Cloudflare bucked the rout after hours; the Bank of England hiked to 4 percent; jobless claims sit at a 57-year low; and oil whipsaws while Bitcoin holds above $76,000.\n • Thursday's Rout: The Nasdaq Enters a Correction, Futures Try to Bounce — https://www.tipranks.com/news/u-s-stock-futures-mixed-after-nasdaq-enters-correction-territory\n • Chips Implode: The Semiconductor Index Falls 12.25 Percent —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1793990140331-9da3f5493e3c.jpg",
-   "url": "https://open.spotify.com/episode/6cjiIqarT5x97IKba7p33Z",
-   "spotify_url": "https://open.spotify.com/episode/6cjiIqarT5x97IKba7p33Z",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Friday--November-6--2026-e3rtie7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/128944007/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F77cf97f6-0550-80ff-d89e-25a02b334110.m4a",
    "number": null
   },
@@ -1025,8 +1207,8 @@
    "duration": 1298,
    "description": "Los Angeles wakes up this morning with a mayor-elect and a clock running: Nithya Raman says she has 40 days to build a transition before she takes office in mid-December, and at her first press conference she would not say whether the police chief keeps his job. Plus: her lead widens to 47,253 votes, the housing mandate meets the builders, the rest of City Hall settles, voters taxed themselves for fire and parks, Becerra's win runs bigger in LA County, the Sepulveda scoping series reaches Culver City tomorrow, a Red Flag Saturday is coming, and what's on in Los Angeles this weekend.\n • The Transition Begins: Raman's First Press Conference, a Call to the Chief, and No Answer Yet on McDonnell…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793984818351-7f0d59bb3533f.jpg",
-   "url": "https://open.spotify.com/episode/2qRn8MWsOyEgrYOHtDMnCL",
-   "spotify_url": "https://open.spotify.com/episode/2qRn8MWsOyEgrYOHtDMnCL",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Friday--November-6--2026-e3rtdh7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/128938983/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fa9451afa-2f0e-bc21-946b-4b595444897f.m4a",
    "number": null
   },
@@ -1039,8 +1221,8 @@
    "duration": 1354,
    "description": "This is the morning AM edition of The Global Read for Friday, November 6, 2026. Wall Street's worst day in nineteen months spreads to Asia as the AI selloff goes global; oil rebounds for a second day while Hormuz flows run below sixty percent of capacity; Paraguay's Senate trial of President Pena opens as the first Ueno depositors are paid; South Africa's count reaches seventy-two percent with the ANC near thirty-two; fire is reported at Russia's Afipsky refinery ahead of the Abu Dhabi talks; Africa CDC warns Congo's Ebola response is losing the tracing race; net-zero pledges hold steady as COP31 host Turkey unveils a five hundred billion dollar energy plan; and France's prime minister…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1793984798811-6a33cc9c7d163.jpg",
-   "url": "https://open.spotify.com/episode/0azNkB2Zn3PphnkrWPGlX5",
-   "spotify_url": "https://open.spotify.com/episode/0azNkB2Zn3PphnkrWPGlX5",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Friday--November-6--2026--AM-Edition-e3rtdg3",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/128938947/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F47ce02d9-cf26-d78f-4077-c4e80584cf01.m4a",
    "number": null
   },
@@ -1053,8 +1235,8 @@
    "duration": 1350,
    "description": "Three days after losing Congress, President Trump draws the first lines of divided government — tariffs stay, the veto is ready, and money is the one subject he will discuss — as Wall Street steadies after its worst day in nineteen months and the October jobs report decides whether Thursday's rout was a verdict or a panic. Plus: Mississippi's Senate lead grows while Alaska waits; the lame-duck Congress gets a December 11th deadline; Brent crude pushes back toward a hundred dollars on Hormuz tanker fires; the leadership races take shape; and Airbnb and Live Nation buck the selloff.\n In today's brief:\n • The President Draws His Lines: Tariffs Stay, the Veto Is Ready —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793984699054-763deb899eb4d.jpg",
-   "url": "https://open.spotify.com/episode/4iXaWKw2IpIL21TMyv2HCc",
-   "spotify_url": "https://open.spotify.com/episode/4iXaWKw2IpIL21TMyv2HCc",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Friday--November-6--2026-e3rtdbi",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/128938802/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fdaf28277-260e-6959-26f8-918bbf138f03.m4a",
    "number": null
   },
@@ -1081,8 +1263,8 @@
    "duration": 1253,
    "description": "Elon Musk announced in a single post on X that Tesla will wind down Cybertruck production at Gigafactory Texas around the middle of next year to make room for the Cybercab, and Friday's conversation ran outward from that one sentence: Thursday Night Football owning X overnight, Russell Brand's conviction and the resurfaced 'after November 5th' post, Reddit's favorite-loss scoreboard and day three of the endorsement scoreboard, the White House posting in Ocarina of Time six days after this show first flagged the remake, Paper Moon Static accelerating at worldwide number one on TikTok while the Must Eat hashtag streak ends, and Olivia Rodrigo opening the Christmas release season.\n • Tesla…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1793978413849-7f36a8c09d1b7.jpg",
-   "url": "https://open.spotify.com/episode/5X51u31NV84Jhrf1vfvMGH",
-   "spotify_url": "https://open.spotify.com/episode/5X51u31NV84Jhrf1vfvMGH",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Tesla-Is-Winding-Down-the-Cybertruck--Friday--November-6--2026-e3rt733",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/128932387/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F1878aff9-a4da-c840-595a-03cc82a6849d.m4a",
    "number": null
   },
@@ -1109,8 +1291,8 @@
    "duration": 721,
    "description": "Stephen Curry scored 22 of his 29 points after halftime as Golden State beat Miami 120-100 for its sixth straight win, and Devin Booker's 30 points and 8 assists carried Phoenix past Orlando 117-104 to snap the Suns' four-game losing streak.\n Scores: Golden State Warriors 120, Miami Heat 100 • Phoenix Suns 117, Orlando Magic 104\n The deep dive: Golden State has won six straight, and Curry's third quarters are why the West has to take this version of the Warriors seriously\n Part of the Curious & Creative network. Back tomorrow night.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1793996881577-6449c37518f7f.jpg",
-   "url": "https://open.spotify.com/episode/49jEryeW8YMu9ulQkyKrWa",
-   "spotify_url": "https://open.spotify.com/episode/49jEryeW8YMu9ulQkyKrWa",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Thursday--November-5--2026-e3rt6lq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/128931962/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F9ba9f40e-6ed3-df55-f283-9a91943c625c.m4a",
    "number": null
   },
@@ -1137,8 +1319,8 @@
    "duration": 1210,
    "description": "Four days from the trade deadline, Jonathan Taylor called the talk noise, Daniel Jones's QB1 status was reported up in the air even as Shane Steichen sticks with him for Dallas, and Thursday's practice report kept two defensive starters out while upgrading tight end Drew Ogletree. The Colts are 2-6, third in the AFC South, and host the 3-5 Dallas Cowboys on Sunday, November 8 at 1 p.m. ET at Lucas Oil Stadium on FOX.\n Segments: Taylor and both quarterbacks answer the deadline on Thursday, and the reported plan to assess after the weekend; the Thursday injury report for both teams, including the Dallas safeties moving out of concussion protocol; a deep segment on the rookie duo of C.J.…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1793996838996-fd41fd718e1fb.jpg",
-   "url": "https://open.spotify.com/episode/0h0gLm2kHx2mMqyHVVYLsf",
-   "spotify_url": "https://open.spotify.com/episode/0h0gLm2kHx2mMqyHVVYLsf",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/Taylor-Calls-It-Noise--Rookies-Step-In-Indianapolis-Is-2-6--Friday--November-6--2026-e3rt15p",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609694/podcast/play/128926329/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F7f1f570a-80dd-6e49-abc4-98b306aad362.m4a",
    "number": null
   },
@@ -1179,8 +1361,8 @@
    "duration": 747,
    "description": "The Boston Celtics, playing without Jayson Tatum, built a 21-point halftime lead, survived a 38-point third quarter from Milwaukee, gave up the lead for the first time all night in the fourth quarter, and still closed it out, beating the Milwaukee Bucks 109-102 at TD Garden to improve to 6-2.\n Paul George led all scorers with 25 points in his return, Derrick White added 24, and the two fueled a late seven-point run — White's free throws and Neemias Queta's block on Ryan Rollins sealing it — after Payton Pritchard exited in the third quarter with a right eye abrasion.\n What it means: Boston wakes up 6-2, third in the East and 5-0 at home — but the second-half defense was a warning. Next up:…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1793939585894-11dc0dab3c76d.jpg",
-   "url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
-   "spotify_url": "https://open.spotify.com/episode/7jQT0R2RSlxXCBkD2UmfCx",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Celtics-Beat-the-Bucks-109-102-George-and-White-Close-It-After-the-Lead-Vanishes--Boston-Is-6-2--Thursday--November-5--2026-e3rs878",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/128900776/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Ff78029f5-d1a9-82cd-f3f7-dfeb1f28912f.m4a",
    "number": null
   },
@@ -6119,7 +6301,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8200,7 +8382,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "morningread": {
@@ -8208,7 +8390,7 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 14,
+   "episodes": 15,
    "spotify_matches": 1
   },
   "ladaily": {
@@ -8216,7 +8398,7 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "globalread": {
@@ -8224,7 +8406,7 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 10,
+   "episodes": 11,
    "spotify_matches": 1
   },
   "marketread": {
@@ -8232,7 +8414,7 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 9,
    "spotify_matches": 1
   },
   "nyread": {
@@ -8256,7 +8438,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The AI Read",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 9,
    "spotify_matches": 1
   },
   "techread": {
@@ -8304,7 +8486,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 9,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "blitz": {
@@ -8312,7 +8494,7 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -8328,7 +8510,7 @@
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 6,
+   "episodes": 7,
    "spotify_matches": 1
   },
   "coltsdaily": {
@@ -8336,7 +8518,7 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "cfbdaily": {
