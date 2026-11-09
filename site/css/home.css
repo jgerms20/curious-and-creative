@@ -1,0 +1,141 @@
+/* ============================================================
+   Homepage only (index.html). Builds on the tokens and atoms in
+   css/cc.css; leg colors: Network gold, Studio green, Consultancy grape.
+   ============================================================ */
+
+.home { --leg-network: var(--gold); --leg-studio: var(--green); --leg-consult: var(--grape); --hl-a: 62%; }
+:root[data-theme="dark"] .home { --hl-a: 42%; }
+
+.pill-title--grape { background: var(--grape); color: #fff; }
+.btn--grape { background: var(--grape); color: var(--black); }
+
+/* ---------- 1. pitch ---------- */
+.pitch { padding-top: clamp(2.25rem, 6vw, 4.5rem); }
+.pitch__kicker { display: flex; align-items: center; gap: .7rem; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-soft); }
+.pitch__mark { flex: 0 0 auto; width: 38px; height: 10px; border-radius: var(--pill); background: linear-gradient(90deg, var(--leg-network) 0 33.3%, var(--leg-studio) 33.3% 66.6%, var(--leg-consult) 66.6%); }
+
+.pitch__title {
+  margin-top: 1.1rem;
+  font-size: clamp(1.6rem, 3.7vw, 3.35rem);
+  font-weight: 820; font-stretch: 80%;
+  line-height: 1.07; letter-spacing: -.018em;
+  max-width: 34ch;
+  text-wrap: pretty;
+}
+.hl { color: inherit; background: none; padding: 0 .06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.hl--network { background: linear-gradient(transparent var(--hl-a), color-mix(in srgb, var(--leg-network) 75%, transparent) var(--hl-a)); }
+.hl--studio { background: linear-gradient(transparent var(--hl-a), color-mix(in srgb, var(--leg-studio) 55%, transparent) var(--hl-a)); }
+.hl--consult { background: linear-gradient(transparent var(--hl-a), color-mix(in srgb, var(--leg-consult) 55%, transparent) var(--hl-a)); }
+
+.pitch__body { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.25rem 3rem; align-items: end; margin-top: clamp(1.5rem, 3.5vw, 2.5rem); padding-top: clamp(1.25rem, 3vw, 1.75rem); border-top: 1px solid var(--line-strong); }
+.pitch__lede { font-size: clamp(1.05rem, 1.5vw, 1.2rem); color: var(--ink-soft); max-width: 64ch; }
+.pitch__actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+@media (max-width: 860px) { .pitch__body { grid-template-columns: 1fr; } }
+
+/* the three legs */
+.legs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.75rem, 1.6vw, 1.25rem); margin-top: clamp(2rem, 5vw, 3.5rem); }
+.leg { --leg: var(--leg-network); }
+.leg--studio { --leg: var(--leg-studio); }
+.leg--consult { --leg: var(--leg-consult); }
+.leg a {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; flex-direction: column; gap: .7rem; height: 100%; min-height: 320px;
+  padding: clamp(1.35rem, 2.4vw, 1.9rem);
+  border-radius: 28px; background: var(--leg); color: var(--black);
+  transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease);
+}
+.leg a:hover { transform: translateY(-5px) rotate(-.4deg); box-shadow: var(--shadow-lg); }
+.leg a:focus-visible { outline-color: var(--ink); outline-offset: 4px; }
+/* each leg gets its own texture: broadcast rings, a contact-sheet dot grid, a strategy grid */
+.leg a::before { content: ""; position: absolute; z-index: -1; inset: 0 0 auto auto; width: 70%; height: 70%; opacity: .5; pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at 100% 0, #000 20%, transparent 72%); mask-image: radial-gradient(circle at 100% 0, #000 20%, transparent 72%); }
+.leg--network a::before { background: repeating-radial-gradient(circle at 100% 0, transparent 0 20px, rgba(20, 17, 21, .16) 20px 22px); }
+.leg--studio a::before { background: radial-gradient(rgba(20, 17, 21, .26) 1.6px, transparent 1.8px) 0 0 / 16px 16px; }
+.leg--consult a::before { background: linear-gradient(rgba(20, 17, 21, .16) 1px, transparent 1px) 0 0 / 26px 26px, linear-gradient(90deg, rgba(20, 17, 21, .16) 1px, transparent 1px) 0 0 / 26px 26px; }
+.leg__num { font-weight: 900; font-stretch: 72%; font-size: clamp(3.2rem, 6vw, 5rem); line-height: .82; letter-spacing: -.03em; }
+.leg__title { font-size: clamp(1.6rem, 2.6vw, 2.3rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .95; margin-top: auto; }
+.leg__sum { font-weight: 560; font-size: 1rem; line-height: 1.45; max-width: 36ch; }
+.leg__go { font-weight: 850; font-size: .92rem; align-self: flex-start; border-bottom: 2px solid currentColor; padding-bottom: 2px; display: inline-flex; gap: .4em; }
+.leg__go span { transition: transform var(--speed) var(--ease); }
+.leg a:hover .leg__go span { transform: translateX(4px); }
+@media (max-width: 900px) {
+  .legs { grid-template-columns: 1fr; }
+  .leg a { min-height: 0; }
+  .leg__title { margin-top: .4rem; }
+}
+
+/* ---------- 2. proof rail container (cards come from js/cases.js) ---------- */
+.proof { min-width: 0; }
+
+/* ---------- 3–5. leg summaries ---------- */
+.legsec { --leg: var(--leg-network); display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(1.5rem, 4.5vw, 4rem); align-items: start; }
+.legsec--studio { --leg: var(--leg-studio); }
+.legsec--consult { --leg: var(--leg-consult); }
+.legsec__para { font-size: clamp(1.08rem, 1.55vw, 1.3rem); line-height: 1.55; max-width: 60ch; padding-left: clamp(1rem, 2vw, 1.4rem); border-left: 6px solid var(--leg); }
+.legsec__links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+.legsec__aside { border: 1px solid var(--line); background: var(--card); border-radius: var(--card-r); padding: clamp(1.1rem, 2.2vw, 1.6rem); border-top: 6px solid var(--leg); }
+.legsec__aside > .eyebrow { margin-bottom: .6rem; }
+@media (max-width: 860px) { .legsec { grid-template-columns: 1fr; } }
+
+/* flagship shows */
+.flagships li + li { border-top: 1px solid var(--line); }
+.flagship { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: .9rem; align-items: center; padding: .7rem 0; }
+.flagship img, .flagship .ph { width: 56px; height: 56px; border-radius: 12px; object-fit: cover; background: var(--c, var(--box-2)); box-shadow: 0 0 0 3px var(--c, transparent); }
+.flagship__txt b { display: block; font-weight: 850; line-height: 1.2; }
+.flagship__txt small { display: block; color: var(--ink-soft); font-size: .86rem; line-height: 1.35; margin-top: .15rem; }
+.flagship__go { font-weight: 900; transition: transform var(--speed) var(--ease); }
+.flagship:hover .flagship__go { transform: translateX(4px); }
+.flagship:hover b { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* newsletter (kept on the homepage inside the Network section) */
+.nl { margin-top: clamp(1.75rem, 4vw, 2.5rem); background: var(--box); color: var(--box-ink); border-radius: var(--box-r); padding: clamp(1.4rem, 3vw, 2.1rem); display: flex; flex-direction: column; align-items: flex-start; gap: .65rem; }
+.nl .eyebrow { color: var(--leg-network); }
+.nl__title { font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 900; font-stretch: 80%; text-transform: uppercase; line-height: .98; }
+.nl p { color: var(--box-soft); max-width: 46ch; }
+
+/* studio services */
+.svcs { counter-reset: svc; }
+.svcs li { display: flex; align-items: baseline; flex-wrap: wrap; gap: .25rem .8rem; padding: .62rem 0; font-weight: 880; font-stretch: 80%; text-transform: uppercase; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.1; }
+.svcs li + li { border-top: 1px solid var(--line); }
+.svcs li > span { font-size: .8rem; font-stretch: 100%; color: var(--green-ink); font-weight: 900; min-width: 1.7em; }
+.svcs__feat::after { content: "Specialty of the house"; font-size: 10.5px; font-stretch: 100%; letter-spacing: .08em; font-weight: 850; background: var(--leg-studio); color: var(--black); padding: .35em .75em; border-radius: var(--pill); align-self: center; }
+
+/* consultancy entry offers */
+.entries { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+.entries a { display: flex; flex-direction: column; gap: .55rem; height: 100%; padding: .95rem 1rem; border-radius: 16px; background: var(--paper-2); border: 1px solid var(--line); font-weight: 850; line-height: 1.2; transition: transform var(--speed) var(--ease), border-color var(--speed) var(--ease); }
+.entries a:hover { transform: translateY(-3px); border-color: var(--leg-consult); }
+.entries__n { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--leg-consult); color: var(--black); font-size: .8rem; font-weight: 900; }
+@media (max-width: 380px) { .entries { grid-template-columns: 1fr; } }
+
+/* ---------- 6. team ---------- */
+.team__para { font-size: clamp(1.08rem, 1.55vw, 1.3rem); line-height: 1.55; max-width: 70ch; }
+.founders { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: clamp(1.5rem, 3.5vw, 2.25rem); }
+.founder { display: grid; grid-template-columns: clamp(96px, 12vw, 150px) minmax(0, 1fr); gap: clamp(1rem, 2vw, 1.5rem); align-items: start; border: 1px solid var(--line); background: var(--card); border-radius: var(--card-r); padding: clamp(1rem, 2vw, 1.4rem); }
+.founder__photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 16px; background: var(--paper-2); }
+.founder__body { display: flex; flex-direction: column; gap: .4rem; }
+.founder__name { font-size: clamp(1.35rem, 2.2vw, 1.75rem); font-weight: 900; font-stretch: 80%; text-transform: uppercase; line-height: 1; }
+.founder__body p { color: var(--ink-soft); line-height: 1.45; }
+.founder nav { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin-top: .3rem; font-size: .85rem; font-weight: 800; }
+.founder nav a { border-bottom: 1.5px solid var(--line-strong); }
+.founder nav a:hover { border-color: currentColor; }
+@media (max-width: 860px) { .founders { grid-template-columns: 1fr; } }
+
+/* founder experience: its own section, deliberately unlike the company-work cards */
+.fx { margin-top: clamp(2.5rem, 6vw, 4rem); padding: clamp(1.75rem, 4vw, 2.75rem) 0; border-block: 2px solid var(--ink); display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.fx__title { font-size: clamp(1.3rem, 2.6vw, 2.1rem); font-weight: 820; font-stretch: 82%; line-height: 1.12; max-width: 40ch; }
+.fx__brands { display: flex; flex-wrap: wrap; gap: .1rem 0; font-weight: 900; font-stretch: 72%; text-transform: uppercase; font-size: clamp(1.5rem, 4.4vw, 3.3rem); line-height: 1.05; letter-spacing: -.01em; color: var(--ink-soft); }
+.fx__brands li + li::before { content: "/"; margin: 0 .35em; color: var(--line-strong); font-weight: 400; }
+
+/* ---------- 7. contact ---------- */
+.contact { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--box-r); padding: clamp(1.4rem, 4vw, 3rem); }
+.contact__intro { font-size: clamp(1.15rem, 1.9vw, 1.5rem); font-weight: 650; line-height: 1.4; }
+.contact__intro a { border-bottom: 2px solid var(--pink); overflow-wrap: anywhere; }
+.contact__intro a:hover { color: var(--pink-ink); }
+.contact__form { min-width: 0; }
+.contact__fallback { margin: 0; }
+@media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+
+/* guard: keep icons in rail cards icon-sized even before the shared case styles load */
+.proof svg { width: 1em; height: 1em; }
+/* contain the visually hidden leg radios (absolute, width:100%) so they can't widen the page */
+.contact__form .inq__leg { position: relative; }

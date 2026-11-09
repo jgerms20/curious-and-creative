@@ -1,5 +1,5 @@
 {
- "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin 'rss' / 'spotify' / 'youtube_channel_id' when known to skip discovery. 'itunes_search' only accepts a result whose name matches AND (when 'match_artist' is set) whose host matches. The site sorts shows by most recent activity, flagship first.",
+ "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin 'rss' / 'spotify' / 'youtube_channel_id' when known to skip discovery. 'itunes_search' only accepts a result whose name matches AND (when 'match_artist' is set) whose host matches. The site sorts shows by most recent activity, flagship first. Optional 'socials': the show's own social channels as an object of platform -> full https URL, e.g. {\"instagram\": \"https://www.instagram.com/…\", \"tiktok\": \"https://www.tiktok.com/@…\"} (keys: instagram, tiktok, youtube, x, threads, facebook, linkedin, bluesky, substack). They render as small links on the network page and as buttons on the show's page (tools/build_shows.py). Add only channels that really exist; leave the field out otherwise and nothing renders.",
  "shows": [
   {
    "key": "ccpod",
@@ -674,7 +674,7 @@
  },
  "hosts": {
   "Joshua German": {
-   "bio": "Senior Connections Strategist and photographer. Runs the Curious + Creative Network.",
+   "bio": "Co-founder of The Curious & Creative Company. Leads creative strategy, production, and editorial direction.",
    "photo": "assets/people/joshua.jpg"
   },
   "Janel Moore": {

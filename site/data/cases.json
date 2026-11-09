@@ -1,0 +1,25 @@
+{
+ "_readme": "Case studies, hand-edited. Rendered by js/cases.js (CC.renderCases) on the homepage proof rail and on each leg's 'Selected work' section. Add a case by appending an object to 'cases'. Fields render in this order and ONLY when present (leave a field out, or empty, and nothing renders for it; never add placeholder text): id (required, lowercase-hyphenated; the case's anchor is #case-<id>), leg (required: 'studio' | 'network' | 'consultancy'), client (required, spelled exactly as the client spells it), occasion (what the job was for), date (YYYY-MM-DD), summary (one line for the compact rail card; defaults to the assignment), assignment (what we were asked to do), crew (list of {name, role}), captured (list of strings: what was captured or made on the day), deliverables (list of strings), media (list of {type: 'image'|'video', src: path under the site root or a full URL, alt (required for images), caption, poster (video only), embed (optional iframe URL, e.g. a YouTube embed, instead of src)}), turnaround (only if it was actually stated), testimonial ({quote, name, role, approved: true}; renders only when approved is true and the client signed off). Do not add clients, results, numbers, or quotes that are not real and approved.",
+ "cases": [
+  {
+   "id": "koat-ss27",
+   "leg": "studio",
+   "client": "KOAT",
+   "occasion": "SS27 presentation coverage",
+   "date": "2026-11-07",
+   "summary": "Documentary and behind-the-scenes coverage of a fashion presentation.",
+   "assignment": "Documentary and behind-the-scenes coverage of a fashion presentation.",
+   "crew": [
+    { "name": "Joshua German", "role": "Stills and video on a two-camera setup" },
+    { "name": "Janel Moore", "role": "Covered the room on camcorder" }
+   ],
+   "captured": [
+    "Documentary and behind-the-scenes stills of the presentation",
+    "Video on a two-camera setup",
+    "Camcorder coverage of the room"
+   ],
+   "deliverables": [],
+   "media": []
+  }
+ ]
+}

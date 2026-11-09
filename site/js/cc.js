@@ -41,21 +41,23 @@
   Object.assign(CC, { esc, url, ago, dur, icon });
 
   /* ---------------- site map (for nav + search) ---------------- */
+  // nav: true = top nav (in order); footer: false = search and drawer only
   const PAGES = [
-    { label: "Home", href: "index.html", words: "home front page latest" },
-    { label: "Our Story", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders team duo company" },
-    { label: "Podcast Network", href: "pages/shows.html", nav: true, menu: "shows", words: "podcasts shows network curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break waiver wire gamecocks columbia" },
-    { label: "Studio", href: "pages/studio.html", nav: true, words: "studio services offerings photography websites website build social media digital presence community management growth ads advertising ai workflow enablement podcast setup marketing funnel podcast production editing video strategy consulting branding events hire work with us" },
-    { label: "Shop", href: "pages/shop.html", nav: true, words: "shop store buy order prints art artwork janel joshua kindling deck inventions apps tools games research lab gen alpha" },
+    { label: "Home", href: "index.html", footer: false, words: "home front page latest" },
+    { label: "The Network", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break waiver wire gamecocks columbia" },
+    { label: "The Studio", href: "pages/studio.html", nav: true, words: "the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
+    { label: "The Consultancy", href: "pages/consultancy.html", nav: true, words: "the consultancy consulting strategy brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
+    { label: "About", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders co-founders team company" },
+    { label: "Contact", href: "pages/contact.html", nav: true, words: "contact email inquiry hello hire work with us pitch guest press request a show" },
+    { label: "Shop", href: "pages/shop.html", words: "shop store buy order prints art artwork janel joshua" },
+    { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
     { label: "Manifesto", href: "pages/manifesto.html", words: "manifesto mission standards accuracy journalism principles corrections request a show ideas" },
-    { label: "Inventions", href: "pages/inventions.html", words: "inventions apps tools games life gamified grandmaster meme library jukeboxd aetheria gen alpha research lab" },
-    { label: "Photography", href: "pages/studio.html#photography", words: "photography photos gallery portraits fashion events rio landscapes travel views by germ" },
     { label: "Videos", href: "pages/videos.html", words: "videos youtube watch approachable ai video episodes" },
     { label: "Writing", href: "pages/writing.html", words: "writing substack essays newsletter posts" },
-    { label: "Kindling", href: "kindling/", words: "kindling card game couples intimacy deck play" },
-    { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
-    { label: "Contact", href: "pages/contact.html", words: "contact email hello pitch guest press request a show" },
+    { label: "Photography", href: "pages/studio.html#photography", footer: false, words: "photography photos gallery portraits fashion events rio landscapes travel views by germ" },
   ];
+  // the SCAiL line appears in the site footer and once on the About page, nowhere else
+  const SCAIL = "The founders also lead SCAiL, a South Carolina nonprofit working to bring AI literacy to communities that are usually last in line for it.";
   CC.PAGES = PAGES;
 
   /* ---------------- theme ---------------- */
@@ -101,9 +103,10 @@
     <footer class="ftr wrap">
       <div class="ftr__bar">
         <a class="wordmark" href="${url("index.html")}"><span class="the">The</span><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span><span class="co">Co.</span></a>
-        <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.label !== "Home").map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
-        <p class="ftr__copy">© ${new Date().getFullYear()} The Curious &amp; Creative Company · Joshua German &amp; Janel Moore</p>
+        <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.footer !== false).map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
+        <p class="ftr__copy">© ${new Date().getFullYear()} The Curious &amp; Creative Company</p>
       </div>
+      <p class="ftr__scail">${SCAIL}</p>
       <p class="ftr__sign">Built curious. Made creative. · <a href="${url("backstage/")}" style="opacity:.7">Team</a></p>
     </footer>`;
 

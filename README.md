@@ -1,154 +1,44 @@
-# Marketing Team - Curious & Creative
+# The Curious & Creative Company — website
 
-A comprehensive marketing team structure with specialized AI agents organized by department. This system enables sophisticated multi-agent orchestration for complex marketing workflows.
+This repository holds the website for The Curious & Creative Company, a Los Angeles creative company
+founded by Joshua German and Janel Moore. The company has three parts:
 
-## Team Structure
+- **The Network**: a media network of original shows and the social channels around them.
+- **The Studio**: photography, event coverage, video, editing, podcast production, and websites for clients.
+- **The Consultancy**: brand and cultural strategy, audience and content systems, podcast strategy, and AI
+  workflow design, enablement, and training.
 
-### 📊 Strategy Department
-- **Communication Strategist** - Platform specialist understanding specs, trends, and channel strategies (OOH, digital, social, TV, radio, audio, email)
-- **Brand Strategist** - Brand positioning expert, messaging, and what the brand stands for
-- **Data Strategist** - Data analysis and insights specialist
+## How the site is built
 
-### 🎨 Creative Department
-- **Copywriter** - Creative writing for all marketing materials
-- **Art Director** - Visual design and creative direction
+The site is static HTML, CSS, and JavaScript in `site/`, with no build step for the pages themselves.
 
-### 📋 Administration Department
-- **Account Manager** - Meeting coordination, client relations, billing, and administrative operations
+- `site/index.html` and `site/pages/*.html` are the pages. `site/js/cc.js` draws the shared header, footer,
+  menu, and search on every page; `site/css/cc.css` is the shared stylesheet.
+- Show and episode content is read at load time from JSON in `site/data/` (`shows.json` is the show
+  registry; `content.json` is what the feeds returned).
+- `scripts/refresh_content.py` pulls the latest episodes, videos, and artwork from the shows' podcast feeds
+  and YouTube into `site/data/content.json`.
+- `tools/build_shows.py` generates one page per show in `site/shows/`.
+- `tools/build_episodes.py` generates per-episode pages in `site/episodes/` and `site/sitemap.xml`.
 
-### 🎬 Production Department
-- **Production Manager** - Logistics coordination, cost management, and production oversight
+## Deploy
 
-### ⭐ Specialized Agents
-- **Presentation Builder** - Creates compelling presentations and decks
-- **Awards Agent** - Handles award submissions, case study drafting, and recognition programs
+`.github/workflows/pages.yml` deploys `site/` to GitHub Pages on every push to `main` and every hour.
+Each run refreshes content (`scripts/refresh_content.py`, then `tools/build_shows.py --fetch --published`),
+commits any changed data back to the repo, and publishes. `.github/workflows/episodes.yml` rebuilds the
+episode pages, and `.github/workflows/refresh-content.yml` refreshes content on working branches.
 
----
+## Run it locally
 
-## 🎯 How to Use This System
-
-### Quick Start
-1. **Single-Agent Tasks**: Consult [ROUTING-RULES.md](ROUTING-RULES.md) to identify which agent to engage
-2. **Multi-Agent Workflows**: Use pre-built orchestrations in [AGENT-SKILLS.md](AGENT-SKILLS.md)
-3. **Agent Details**: Review individual agent files in department folders for specific capabilities
-
-### Key Documents
-
-#### [ROUTING-RULES.md](ROUTING-RULES.md) - Agent Delegation Guide
-Comprehensive routing rules that define:
-- When to delegate to each agent (trigger keywords, request types)
-- Single-agent vs. multi-agent decision logic
-- Handoff protocols between agents
-- Special routing scenarios (urgent, budget-sensitive, client-facing)
-- Decision tree for complex requests
-
-**Use this when:** You need to determine which agent(s) should handle a request
-
-#### [AGENT-SKILLS.md](AGENT-SKILLS.md) - Reusable Capabilities
-Specific skills for each agent including:
-- Individual agent skills (40+ pre-defined capabilities)
-- Multi-agent workflow orchestrations
-- Usage syntax and examples
-- Input/output specifications
-
-**Use this when:** You want to invoke specific capabilities or chain multiple agents together
-
----
-
-## 🔄 Common Workflows
-
-### Content Creation
-**Agents:** Data Strategist → Brand Strategist → Copywriter → Art Director → Communication Strategist
-
-**Example:** "Research AI trends and create a blog post with supporting graphics"
-
-### Campaign Development
-**Agents:** Brand Strategist → Communication Strategist → Copywriter → Art Director → Production Manager → Data Strategist
-
-**Example:** "Develop an integrated campaign to launch our new product line"
-
-### Performance Analysis & Reporting
-**Agents:** Data Strategist → Communication Strategist → Brand Strategist → Presentation Builder → Account Manager
-
-**Example:** "Analyze Q4 campaign performance and create executive presentation"
-
-### Pitch/Proposal Creation
-**Agents:** Brand Strategist → Communication Strategist → Data Strategist → Copywriter → Presentation Builder
-
-**Example:** "Create a new business pitch for [prospect company]"
-
-### Awards Submission
-**Agents:** Data Strategist → Awards Agent → Copywriter → Presentation Builder → Account Manager
-
-**Example:** "Submit our sustainability campaign to Cannes Lions"
-
----
-
-## 📁 Directory Structure
-
-```
-Curious & Creative/
-├── README.md (this file)
-├── ROUTING-RULES.md (agent delegation guide)
-├── AGENT-SKILLS.md (reusable capabilities)
-├── Strategy/
-│   ├── communication-strategist.md
-│   ├── brand-strategist.md
-│   └── data-strategist.md
-├── Creative/
-│   ├── copywriter.md
-│   └── art-director.md
-├── Administration/
-│   └── account-manager.md
-├── Production/
-│   └── production-manager.md
-└── Specialized/
-    ├── presentation-builder.md
-    └── awards-agent.md
+```sh
+cd site
+python3 -m http.server 8765
 ```
 
----
+Then open http://localhost:8765/. The refresh and build scripts use the Python standard library (Pillow is
+optional, for cover thumbnails) and need network access to reach the feeds.
 
-## 💡 Best Practices
+## Other folders
 
-1. **Start with Routing Rules**: Always consult ROUTING-RULES.md first to identify the right agent(s)
-2. **Use Skills for Common Tasks**: Leverage pre-built skills in AGENT-SKILLS.md for efficiency
-3. **Consider Handoffs**: Most requests need 2-3 agents working in sequence
-4. **Include Account Manager**: For client-facing work, always loop in Account Manager
-5. **Measure Everything**: Engage Data Strategist early to define success metrics
-6. **Brand Alignment First**: For new initiatives, start with Brand Strategist
-7. **Document as You Go**: Use Awards Agent to capture campaign stories in real-time
-
----
-
-## 🚀 Quick Reference
-
-| Need | Primary Agent | Supporting Agents |
-|------|---------------|-------------------|
-| Platform strategy | Communication Strategist | Data Strategist |
-| Brand positioning | Brand Strategist | Communication Strategist |
-| Performance analysis | Data Strategist | - |
-| Written content | Copywriter | Brand Strategist |
-| Visual content | Art Director | Brand Strategist |
-| Client meetings | Account Manager | Relevant specialists |
-| Production quotes | Production Manager | Art Director |
-| Presentations | Presentation Builder | Data Strategist |
-| Case studies | Awards Agent | Data Strategist, Copywriter |
-| Full campaigns | All agents | Account Manager (coordinator) |
-
----
-
-## 📞 Getting Help
-
-Each agent file contains:
-- Detailed role overview and expertise
-- Specific use cases and trigger scenarios
-- Example prompts for common requests
-- Skills and capabilities breakdown
-
-For complex requests involving multiple agents, refer to the Multi-Agent Workflow section in ROUTING-RULES.md.
-
----
-
-*Created: January 2026*
-*Last Updated: January 2026*
+The repository also holds planning, production, and side-project folders outside `site/`. They are not part
+of the website build.

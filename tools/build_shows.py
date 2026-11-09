@@ -46,6 +46,8 @@ DATA = os.path.join(SITE, "data")
 NS = {"itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd", "content": "http://purl.org/rss/1.0/modules/content/"}
 PAPER = {"light": (0xFF, 0xFC, 0xF5), "dark": (0x0F, 0x0D, 0x11)}
 CAT_NAMES = {"culture": "Culture", "news": "News & reads", "industry": "Industry", "sports": "Sports"}
+SOCIAL_NAMES = {"instagram": "Instagram", "tiktok": "TikTok", "youtube": "YouTube", "x": "X", "twitter": "X", "threads": "Threads",
+                "facebook": "Facebook", "linkedin": "LinkedIn", "bluesky": "Bluesky", "substack": "Substack"}
 
 
 def esc(s):
@@ -251,6 +253,10 @@ def show_page(show, info, eps, related, pal, links, root, hosts_info):
     buttons = []
     for label, href, primary in links:
         buttons.append(f'<a class="sp-btn{" sp-btn--primary" if primary else ""}" href="{esc(href)}" target="_blank" rel="noopener">{esc(label)}</a>')
+    # the show's own social channels (registry field `socials`), only when real links exist
+    for platform, href in (show.get("socials") or {}).items():
+        if isinstance(href, str) and href.startswith(("https://", "http://")):
+            buttons.append(f'<a class="sp-btn" href="{esc(href)}" target="_blank" rel="noopener">{esc(SOCIAL_NAMES.get(platform, platform))}</a>')
 
     def listen(e):
         return e.get("spotify_url") or e.get("url")

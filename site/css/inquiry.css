@@ -1,0 +1,22 @@
+/* Inquiry form (js/inquiry.js) */
+.inq { display: grid; gap: 1.25rem; }
+.inq__legs { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.inq__legs legend { font-weight: 850; margin-bottom: .6rem; }
+.inq__leg { position: relative; }
+.inq__leg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; pointer-events: none; }
+.inq__leg span { display: inline-block; padding: .6em 1.1em; border-radius: var(--pill); border: 1.5px solid var(--line-strong); font-weight: 800; font-size: .92rem; cursor: pointer; transition: background var(--speed) var(--ease), border-color var(--speed) var(--ease); }
+.inq__leg input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.inq__leg input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
+.inq__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.inq__grid label { display: grid; gap: .35rem; font-weight: 750; font-size: .9rem; }
+.inq__wide { grid-column: 1 / -1; }
+.inq input, .inq select, .inq textarea { font: inherit; font-weight: 500; width: 100%; padding: .75em .9em; border-radius: 12px; border: 1.5px solid var(--line-strong); background: var(--card); color: var(--ink); }
+.inq input:focus, .inq select:focus, .inq textarea:focus { outline: 2px solid var(--ink); outline-offset: 1px; }
+.inq__hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.inq .btn { justify-self: start; }
+.inq__status:empty { display: none; }
+.inq__status { font-weight: 800; }
+.inq__status[data-kind="error"] { color: var(--wm-pink); }
+.inq__status[data-kind="ok"] { font-size: 1.2rem; }
+.inq__note { color: var(--ink-soft); font-size: .85rem; }
+@media (max-width: 600px) { .inq__grid { grid-template-columns: 1fr; } }
