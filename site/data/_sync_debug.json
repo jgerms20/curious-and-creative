@@ -1,18 +1,18 @@
 {
  "resolve": [
   {
-   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/248-Los-Angeles-Votes-Bass--Raman--and-the-Ballot-That-Rewrites-Two-Governments-e3rgel0",
-   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/248-Los-Angeles-Votes-Bass--Raman--and-the-Ballot-That-Rewrites-Two-Governments-e3rgel0",
-   "len": 984847,
-   "pairs": 248,
-   "found": "https://open.spotify.com/episode/1LsiABpQamM6OE2RWfD9l5"
+   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/251-Arnold-Schwarzenegger-The-Recall-That-Invented-the-Celebrity-Candidate-e3rs65v",
+   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/251-Arnold-Schwarzenegger-The-Recall-That-Invented-the-Celebrity-Candidate-e3rs65v",
+   "len": 1007496,
+   "pairs": 252,
+   "found": "https://open.spotify.com/episode/3fL4OY3OMjL1gUeerRXcye"
   },
   {
-   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/243-Serbias-Student-List-The-Movement-With-No-Leader-That-Beat-the-Strongman-e3ra156",
-   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/243-Serbias-Student-List-The-Movement-With-No-Leader-That-Beat-the-Strongman-e3ra156",
-   "len": 985363,
-   "pairs": 248,
-   "found": "https://open.spotify.com/episode/57pberW3k1CreugWmghm9s"
+   "link": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/252-Godzilla-The-Monster-Japan-Built-to-Carry-Its-Grief-e3rvvd4",
+   "final": "https://creators.spotify.com/pod/profile/jgerms20/episodes/252-Godzilla-The-Monster-Japan-Built-to-Carry-Its-Grief-e3rvvd4",
+   "len": 1007063,
+   "pairs": 252,
+   "found": "https://open.spotify.com/episode/2uGjSXVoFbdMGNDRmeMpQH"
   }
  ],
  "embed": {
@@ -43,7 +43,7 @@
  },
  "brazil": {
   "url": "https://open.spotify.com/episode/6RYeRUteipghGjHZc9mtEe",
-  "len": 169199,
+  "len": 169187,
   "scripts": [
    "appServerConfig",
    "__CDN_FILE_URLS__",
