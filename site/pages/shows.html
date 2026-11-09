@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Curious + Creative Network — The Curious &amp; Creative Company</title>
-  <meta name="description" content="The Curious + Creative Network: accurate information, reported where nobody else is reporting, and made to be enjoyed. Flagship shows from Joshua German and Janel Moore, and a growing roster of focused shows on news, culture, industry, and sports." />
-  <meta property="og:title" content="The Curious + Creative Network" />
-  <meta property="og:description" content="The Curious + Creative Network: accurate information, reported where nobody else is reporting, and made to be enjoyed. Flagship shows from Joshua German and Janel Moore, and a growing roster of focused shows on news, culture, industry, and sports." />
+  <title>The Network — Curious &amp; Creative</title>
+  <meta name="description" content="The Network is the Curious &amp; Creative media network: original shows and the social channels around them, hosts developed over time, and publishing across podcast and social platforms." />
+  <meta property="og:title" content="The Network — Curious & Creative" />
+  <meta property="og:description" content="Original shows and the social channels around them, hosts developed over time, and publishing across podcast and social platforms." />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="../css/legs.css" />
 </head>
 <body data-page="shows" data-root="../">
 <div data-cc="header"></div>
 <main id="main" class="wrap">
 <header class="phead">
-  <span class="pill-title pill-title--pink">Podcast Network</span>
+  <span class="pill-title pill-title--pink">The Network</span>
   <h1 class="phead__title">The Curious + Creative <em>Network.</em></h1>
-  <p class="phead__lede">Accurate information, reported where nobody else is reporting, and made to be enjoyed. <span data-show-count>32</span> shows: the flagships we host ourselves, and focused shows on news, culture, industry, and sports, each directed by and accountable to a person. Episodes update on their own from every feed.</p>
-  <p class="showblock__links"><a class="btn btn--dark btn--sm" href="archive.html">Search every episode</a><a class="btn btn--ghost btn--sm" href="manifesto.html">Our standards</a><a class="btn btn--ghost btn--sm" href="#request">Ask for a show</a></p>
+  <p class="phead__lede">The Network is our media network. We build original shows and the social channels around them, develop hosts and personalities, and publish across podcast and social platforms. It starts with shows like The Eclectic Polymath, Approachable AI, God is Brazilian, and Too Much to Tweet, and it grows the way modern media networks grow: show by show, page by page, audience by audience.</p>
+  <p class="phead__lede">Behind the shows is one publishing system: flagship shows we host ourselves, focused shows on daily and weekly schedules, and a pipeline that runs from research to production, editing, artwork, and distribution.</p>
+  <p class="showblock__links"><a class="btn btn--dark btn--sm" href="archive.html">Search every episode</a><a class="btn btn--ghost btn--sm" href="#newsletter">Get the newsletter</a><a class="btn btn--ghost btn--sm" href="manifesto.html">Our standards</a><a class="btn btn--ghost btn--sm" href="#request">Ask for a show</a></p>
 </header>
 
 <section id="network" aria-label="The network map">
@@ -38,6 +40,24 @@
 <div class="pill-row" style="margin-top:clamp(2.5rem,6vw,4rem)"><h2 class="pill-title">Every show</h2></div>
 <div id="shows-list"></div>
 
+<section class="band band--solo" id="newsletter" aria-label="Newsletter">
+  <div class="band__card band__card--green">
+    <span class="eyebrow" style="color:#fff;opacity:.85">The newsletter</span>
+    <h2 class="band__title">The Network, in your inbox</h2>
+    <p>New episodes, new shows, and what we are working on, when there is something worth sending. Delivered through Substack.</p>
+    <form class="nl-form" id="nl-form" action="https://jgerms20.substack.com/subscribe" method="get" target="_blank">
+      <label class="sr-only" for="nl-email">Email address</label>
+      <input id="nl-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+      <button type="submit" aria-label="Subscribe on Substack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+    </form>
+  </div>
+</section>
+
+<section class="studio-sec" id="selected-work" data-slot="cases" aria-labelledby="work-h" hidden>
+  <div class="pill-row"><h2 class="pill-title" id="work-h">Selected work</h2></div>
+  <div data-cases="network" data-variant="full"></div>
+</section>
+
 <section class="cta rv" id="request" style="background:var(--grape)">
   <div><h2>Wish a show existed? Ask us.</h2><p>A town nobody covers, a beat nobody reports, a team nobody talks about. Tell us what your community needs and we'll build it.</p></div>
   <p class="showblock__links" style="margin:0"><a class="btn btn--light" href="contact.html?topic=request">Request a show <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a class="btn btn--light" href="studio.html#podcast">Start your own show</a></p>
@@ -46,5 +66,6 @@
 <div data-cc="footer"></div>
 <script src="../js/cc.js"></script>
 <script src="../js/pages.js"></script>
+<script src="../js/cases.js"></script>
 </body>
 </html>

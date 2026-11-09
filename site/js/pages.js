@@ -32,7 +32,6 @@
     if (CC.page === "shop") shop(data);
     if (CC.page === "videos") videosPage(data);
     if (CC.page === "writing") writing();
-    if (CC.page === "inventions" || CC.page === "shop") inventions();
     CC.reveal();
   });
 
@@ -57,7 +56,7 @@
           <div class="showblock__links">
             ${s.page ? `<a class="btn btn--dark btn--sm" href="${CC.showHref(s)}">Visit the show ${icon.arrow}</a>` : ""}
             ${links.map(([l, h], i) => `<a class="btn ${i ? "btn--ghost" : ""} btn--sm" href="${esc(h)}" target="_blank" rel="noopener">${i ? "" : icon.play} ${esc(l)}</a>`).join("")}
-            ${s.key === "ccpod" && !links.length ? `<a class="btn btn--sm" href="#newsletter-cta">Get notified</a>` : ""}
+            ${s.key === "ccpod" && !links.length ? `<a class="btn btn--sm" href="#newsletter">Get notified</a>` : ""}
           </div>
           ${eps.length ? `<div class="eps">${eps.slice(0, 5).map((e) => epRow(e, s)).join("")}</div>
             ${eps.length > 5 ? `<a class="pill-more eps__more" href="${url(`pages/archive.html?show=${s.key}`)}">All ${eps.length} ${s.kind === "youtube" ? "videos" : "episodes"} →</a>` : ""}`
@@ -94,6 +93,23 @@
     }));
     document.querySelectorAll("[data-show-count]").forEach((el) => { el.textContent = data.shows.length; });
     if (location.hash) { const el = document.querySelector(location.hash); if (el) setTimeout(() => el.scrollIntoView(), 50); }
+    showSocials(data, host);
+  }
+
+  // social-channel slot per show: registry field `socials` ({ instagram: "https://…", tiktok: "https://…" });
+  // renders only real http(s) links, and nothing at all for a show without them
+  const SOCIAL_NAMES = { instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube", x: "X", twitter: "X", threads: "Threads", facebook: "Facebook", linkedin: "LinkedIn", bluesky: "Bluesky", substack: "Substack" };
+  function showSocials(data, host) {
+    const paint = (reg) => ((reg && reg.shows) || []).forEach((r) => {
+      const soc = (data.byKey[r.key] || {}).socials || r.socials;
+      const list = Object.entries(soc || {}).filter(([, h]) => /^https?:\/\//.test(h || ""));
+      if (!list.length) return;
+      const html = `<p class="legs-socials" aria-label="${esc(r.name || r.key)} on social">${list.map(([k, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(SOCIAL_NAMES[k] || k)} ↗</a>`).join("")}</p>`;
+      host.querySelectorAll(`.showblock[data-show="${r.key}"] .showblock__links, .ncard[data-show="${r.key}"] .ncard__body`).forEach((el) => {
+        if (el.classList.contains("ncard__body")) el.insertAdjacentHTML("beforeend", html); else el.insertAdjacentHTML("afterend", html);
+      });
+    });
+    fetch(url("data/shows.json"), { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).then(paint).catch(() => {});
   }
 
   /* ---------------- archive ---------------- */
@@ -214,9 +230,10 @@
     const host = document.getElementById("shop-items");
     if (!host) return;
     const money = (c) => (c == null ? "" : `$${(c / 100).toFixed(c % 100 ? 2 : 0)}`);
-    const GROUPS = [["prints", "Photo prints", "Joshua's photographs, printed to hang.", ["prints"]], ["art", "Art", "Original work from Janel and Joshua.", ["janel-art", "joshua-art"]], ["merch", "Merch", "Wear the network.", ["merch"]], ["other", "More", "", ["other"]]];
+    // the shop carries prints and art only
+    const GROUPS = [["prints", "Photo prints", "Joshua's photographs, printed to hang.", ["prints"]], ["art", "Art", "Original work from Janel and Joshua.", ["janel-art", "joshua-art"]]];
     const itemHTML = (it) => {
-      const href = it.buy_url || (it.status === "coming-soon" ? `mailto:jgerms20@gmail.com?subject=${encodeURIComponent("Notify me: " + it.title)}` : "");
+      const href = it.buy_url || (it.status === "coming-soon" ? `mailto:admin@curiousandcreative.co?subject=${encodeURIComponent("Notify me: " + it.title)}` : "");
       const label = it.status === "sold-out" ? "Sold out" : it.status === "coming-soon" ? "Notify me" : it.price_cents != null ? `Buy · ${money(it.price_cents)}` : "See details";
       return `<article class="item${it.status === "coming-soon" ? " item--soon" : ""}">
         <div class="item__media">${it.image_url ? `<img src="${esc(url(it.image_url))}" alt="${esc(it.title)}" loading="lazy">` : `<span class="item__ph">${esc(it.status === "coming-soon" ? "Coming soon" : it.title)}</span>`}${it.status !== "available" ? `<span class="chip item__flag">${esc(it.status.replace("-", " "))}</span>` : ""}</div>
@@ -238,13 +255,6 @@
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then(render)
       .catch(() => { host.innerHTML = `<p class="search__empty">The shop is restocking. Check back soon, or <a class="pill-more" href="${url("pages/contact.html")}">ask us about a piece</a>.</p>`; });
-    // Kindling products straight from the game's own shop config
-    fetch(url("data/kindling-shop.json")).then((r) => (r.ok ? r.json() : null)).then((k) => {
-      const el = document.getElementById("shop-kindling");
-      if (!k || !el) return;
-      el.innerHTML = k.products.map((p) => `<a class="kprod" href="${url(`kindling/shop.html#${p.id}`)}" data-deck="${esc(p.deck || p.id)}">
-        <small>${esc(p.kind || "")}</small><b>${esc(p.name)}</b><span>${esc(p.cards || "")}</span><em>$${esc(p.price)}</em></a>`).join("");
-    }).catch(() => {});
   }
 
   /* ---------------- about: live counts ---------------- */
@@ -357,70 +367,4 @@
         <span class="ep__when">${esc(ago(p.date))}</span></a>`).join("") : `<p class="eyebrow" style="text-transform:none;letter-spacing:0">New posts from both Substacks show up here automatically.</p>`;
     });
   }
-
-  /* ---------------- inventions ---------------- */
-  function inventions() {
-    const host = document.getElementById("projects");
-    if (!host) return;
-    fetch(url("data/projects.json"), { cache: "no-cache" }).then((r) => r.json()).then((d) => {
-      host.innerHTML = d.groups.map((g) => {
-        const items = d.projects.filter((p) => p.group === g.key && p.id !== "kindling");
-        if (!items.length) return "";
-        return `<section class="pgroup rv"><div class="pill-row"><h2 class="pill-title${g.key === "research" ? " pill-title--green" : g.key === "music" ? " pill-title--pink" : g.key === "games" ? " pill-title--gold" : ""}">${esc(g.title)}</h2><span class="eyebrow">${esc(g.dek)}</span></div>
-          <div class="projects${g.key === "lab" ? " projects--lab" : ""}">${items.map((p) => {
-            const href = p.internal ? url(p.url) : p.url;
-            if (p.gate) return `<a class="proj${p.feature ? " proj--feature" : ""} proj--gated" href="#" data-gate="${esc(p.id)}">
-              <span class="proj__art"><img src="${esc(url("assets/projects/" + p.art))}" alt="" loading="lazy"><span class="chip">🔒 ${esc(p.status)}</span></span>
-              <span class="proj__body"><small>${esc(p.kicker)}</small><b>${esc(p.name)}</b><span class="proj__blurb">${esc(p.blurb)}</span><em>${esc(p.built)}</em><span class="proj__go">Enter the password →</span></span></a>`;
-            return `<a class="proj${p.feature ? " proj--feature" : ""}" href="${esc(href)}"${p.internal ? "" : ' target="_blank" rel="noopener"'}>
-              <span class="proj__art"><img src="${esc(url("assets/projects/" + p.art))}" alt="" loading="lazy"><span class="chip">${esc(p.status)}</span></span>
-              <span class="proj__body"><small>${esc(p.kicker)}</small><b>${esc(p.name)}</b><span class="proj__blurb">${esc(p.blurb)}</span><em>${esc(p.built)}</em><span class="proj__go">Open ${p.internal ? "→" : "↗"}</span></span></a>`;
-          }).join("")}</div></section>`;
-      }).join("");
-      CC.reveal(host);
-      host.addEventListener("click", (e) => {
-        const a = e.target.closest("[data-gate]");
-        if (!a) return;
-        e.preventDefault();
-        passwordGate(d.projects.find((p) => p.id === a.dataset.gate));
-      });
-    });
-  }
-
-  /* a light password gate in front of an invite-only project (keeps casual visitors out; the
-     password's hash lives in projects.json, so it is not real access control) */
-  const sha256 = async (t) => [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t)))].map((b) => b.toString(16).padStart(2, "0")).join("");
-  function passwordGate(p) {
-    if (!p) return;
-    const key = "cc-gate-" + p.id;
-    try { if (sessionStorage.getItem(key) === p.gate) { location.href = p.url; return; } } catch (e) { /* storage blocked */ }
-    let dlg = document.getElementById("gate");
-    if (!dlg) {
-      dlg = document.createElement("dialog");
-      dlg.id = "gate";
-      dlg.className = "gate";
-      document.body.appendChild(dlg);
-    }
-    dlg.innerHTML = `<form method="dialog" class="gate__form">
-      <span class="gate__lock" aria-hidden="true">α</span>
-      <h2>${esc(p.name)}</h2>
-      <p>This lab is invite-only. Enter the password to go in.</p>
-      <label class="sr-only" for="gate-pw">Password</label>
-      <input id="gate-pw" type="password" autocomplete="off" placeholder="Password" required>
-      <p class="gate__err" role="alert" hidden>That's not it. Try again.</p>
-      <div class="showblock__links"><button class="btn" type="submit" value="go">Enter</button><button class="btn btn--ghost" type="button" data-gate-close>Not now</button></div>
-    </form>`;
-    const form = dlg.querySelector("form"), input = dlg.querySelector("input"), err = dlg.querySelector(".gate__err");
-    dlg.querySelector("[data-gate-close]").addEventListener("click", () => dlg.close());
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      if ((await sha256(input.value.trim().toLowerCase())) === p.gate) {
-        try { sessionStorage.setItem(key, p.gate); } catch (x) { /* storage blocked */ }
-        location.href = p.url;
-      } else { err.hidden = false; input.select(); }
-    });
-    dlg.showModal();
-    input.focus();
-  }
-
 })();
