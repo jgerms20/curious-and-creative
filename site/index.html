@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Curious &amp; Creative Company — Studio, podcast network &amp; shop from Joshua German and Janel Moore</title>
-  <meta name="description" content="The Curious & Creative Company is the hub for everything Joshua German and Janel Moore make: The Curious & Creative Podcast, The Eclectic Polymath, Too Much to Tweet, Approachable AI, Aspiring Abolitionist, photography, and the studio." />
+  <title>The Curious &amp; Creative Company — Media network, studio, and consultancy in Los Angeles</title>
+  <meta name="description" content="Curious & Creative is a Los Angeles creative company that runs a media network of shows and social channels, produces photography, video, and podcasts for clients, and helps brands and teams turn cultural insight and practical AI into work people can use." />
   <meta property="og:title" content="The Curious & Creative Company" />
-  <meta property="og:description" content="Podcasts, photography, video, and a creative studio — from Joshua German and Janel Moore." />
+  <meta property="og:description" content="Curious & Creative is a Los Angeles creative company that runs a media network of shows and social channels, produces photography, video, and podcasts for clients, and helps brands and teams turn cultural insight and practical AI into work people can use." />
   <meta property="og:image" content="assets/people/duo.jpg" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
@@ -14,200 +14,196 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/cc.css" />
+  <link rel="stylesheet" href="css/inquiry.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body data-page="index" data-root="./">
 <div data-cc="header"></div>
 
-<nav class="pulse" aria-label="The Pulse — what just dropped">
-  <div class="pulse__in wrap">
-    <span class="pulse__label">The Pulse <span aria-hidden="true">⚡</span></span>
-    <div class="pulse__rail" id="pulse-rail">
-      <a class="pulse__chip" href="#latest">New this week<b data-new-count></b></a>
-    </div>
-  </div>
-</nav>
+<main id="main" class="home">
 
-<main id="main">
-  <!-- HERO: rotating featured slides, flagship first (built by js/home.js) -->
-  <section class="hero wrap" aria-roledescription="carousel" aria-label="Featured">
-    <div class="hero__stage" id="hero">
-      <div class="hero__slide is-active">
-        <div class="hero__bed" style="background-image:url(assets/people/duo.jpg)"></div>
-        <div class="hero__grain"></div>
-        <div class="hero__grid">
-          <div class="hero__copy">
-            <div class="hero__kicker"><span class="chip"><span class="dot"></span> The flagship</span></div>
-            <h1 class="hero__title">The Curious &amp; Creative Podcast</h1>
-            <p class="hero__dek">Where creative strategy meets real conversation.</p>
-          </div>
-        </div>
+  <!-- 1. PITCH + THE THREE LEGS -->
+  <section class="wrap pitch" aria-labelledby="pitch-h">
+    <p class="pitch__kicker"><span class="pitch__mark" aria-hidden="true"></span>The Curious &amp; Creative Company · Los Angeles</p>
+    <h1 class="pitch__title" id="pitch-h">Curious &amp; Creative is a Los Angeles creative company that <mark class="hl hl--network">runs a media network of shows and social channels</mark>, <mark class="hl hl--studio">produces photography, video, and podcasts for clients</mark>, and <mark class="hl hl--consult">helps brands and teams turn cultural insight and practical AI into work people can use</mark>.</h1>
+    <div class="pitch__body">
+      <p class="pitch__lede">Curious &amp; Creative is a Los Angeles creative company built by Joshua German and Janel Moore. We run a media network, produce photography, video, editing, and podcasts through our studio, and advise founders, brands, and marketing teams on culture, audience, and AI. The through line is simple: find the real story, make it well, and build the system that helps it travel.</p>
+      <div class="pitch__actions">
+        <a class="btn btn--dark" href="#contact">Start an inquiry</a>
+        <a class="btn btn--ghost" href="pages/about.html">Who we are</a>
       </div>
     </div>
+
+    <ol class="legs" aria-label="The three parts of the company">
+      <li class="leg leg--network">
+        <a href="pages/shows.html">
+          <span class="leg__num" aria-hidden="true">01</span>
+          <h2 class="leg__title">The Network</h2>
+          <p class="leg__sum">Our media network: original shows and the social channels around them, hosts developed over time, published across podcast and social platforms.</p>
+          <span class="leg__go">Explore the Network <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li class="leg leg--studio">
+        <a href="pages/studio.html">
+          <span class="leg__num" aria-hidden="true">02</span>
+          <h2 class="leg__title">The Studio</h2>
+          <p class="leg__sum">Where we make work for clients: photography, video, editing, websites, and podcasts produced end to end, with event coverage as a specialty of the house.</p>
+          <span class="leg__go">Explore the Studio <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li class="leg leg--consult">
+        <a href="pages/consultancy.html">
+          <span class="leg__num" aria-hidden="true">03</span>
+          <h2 class="leg__title">The Consultancy</h2>
+          <p class="leg__sum">Where we help brands and small businesses reach their audiences: brand and cultural strategy, audience and content systems, podcast strategy, and AI.</p>
+          <span class="leg__go">Explore the Consultancy <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+    </ol>
   </section>
 
-  <!-- ABOUT -->
-  <section class="wrap" id="about" aria-labelledby="about-h">
-    <div class="pill-row"><h2 class="pill-title" id="about-h">Who we are</h2></div>
-    <div class="duo rv">
-      <a class="duo__photo" href="pages/about.html">
-        <img src="assets/people/duo.jpg" alt="Joshua German and Janel Moore in front of a wall of bookshelves" loading="lazy" />
-        <span class="duo__names"><span>Joshua German</span><span>Janel Moore</span></span>
-      </a>
-      <div>
-        <h3 class="duo__title">Curious first. <em>Then creative.</em></h3>
-        <p class="duo__lede">We met at the University of South Carolina and never stopped trading ideas. Same curiosity, different directions: strategy and photography, policy and finance, research, AI, and art. The Curious &amp; Creative Company is where it all comes back together.</p>
-        <div class="duo__people">
-          <div class="person">
-            <img class="person__face" src="assets/people/joshua.jpg" alt="" loading="lazy" />
-            <b>Joshua German</b>
-            <span>Senior Connections Strategist and photographer. Hosts The Eclectic Polymath Podcast and Approachable AI, and runs the Curious + Creative Network.</span>
-            <nav><a href="https://joshuamgerman.com" target="_blank" rel="noopener">Website</a><a href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a></nav>
-          </div>
-          <div class="person">
-            <img class="person__face" src="assets/people/janel.jpg" alt="" loading="lazy" />
-            <b>Janel Moore</b>
-            <span>Technology and finance at Truist; political fundraising veteran; artist. Hosts Too Much to Tweet.</span>
-            <nav><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a><a href="pages/shows.html#tmtt">Her shows</a></nav>
-          </div>
-        </div>
-        <div class="duo__offer">
-          <h4>What we can do for you</h4>
-          <ul>
-            <li><a href="pages/studio.html#photography">Photography</a></li>
-            <li><a href="pages/studio.html#websites">Websites</a></li>
-            <li><a href="pages/studio.html#social">Social &amp; digital presence</a></li>
-            <li><a href="pages/studio.html#community">Community &amp; growth</a></li>
-            <li><a href="pages/studio.html#ads">Ads</a></li>
-            <li><a href="pages/studio.html#ai">AI workflow &amp; enablement</a></li>
-            <li><a href="pages/studio.html#svc-podcast">Podcast as a marketing funnel</a></li>
-            <li><a href="pages/studio.html#production">Podcast production</a></li>
-            <li><a href="pages/studio.html#strategy">Strategy &amp; consulting</a></li>
-            <li><a href="pages/studio.html#events">Event planning</a></li>
-          </ul>
-        </div>
-        <p style="margin-top:1.25rem" class="showblock__links"><a class="btn btn--dark" href="pages/about.html">Read our story</a><a class="btn btn--ghost" href="pages/studio.html">Work with us</a></p>
-      </div>
-    </div>
+  <!-- 2. SELECTED PROOF (company work only; renders nothing until cases exist) -->
+  <section class="wrap" id="work" data-slot="cases" aria-labelledby="work-h">
+    <div class="pill-row"><h2 class="pill-title" id="work-h">Selected work</h2></div>
+    <div class="proof" id="proof-rail"></div>
   </section>
 
-  <!-- THE LATEST -->
-  <section class="wrap" id="latest" aria-labelledby="latest-h">
-    <div class="pill-row">
-      <h2 class="pill-title pill-title--green" id="latest-h">The Latest</h2>
-      <a class="pill-more" href="pages/archive.html">Everything, newest first →</a>
-    </div>
-    <div class="grid" id="latest-grid"></div>
-  </section>
-
-  <!-- STUDIO -->
-  <section class="wrap" id="studio" aria-labelledby="studio-h">
-    <div class="pill-row">
-      <h2 class="pill-title pill-title--green" id="studio-h">Studio</h2>
-      <a class="pill-more" href="pages/studio.html">Everything we offer →</a>
-    </div>
-    <div class="studio rv">
-      <div class="studio__lead">
-        <h3 class="studio__title">What we make <em>for you.</em></h3>
-        <p>Photos, websites, social, community, ads, AI, podcasts, strategy, and events, bundled however you need them, from the team behind a <span data-show-count>32</span>-show podcast network.</p>
-        <div class="hero__actions"><a class="btn" href="pages/contact.html?topic=project">Start a project</a><a class="btn btn--ghost" href="pages/studio.html#podcast">Start a podcast</a></div>
-      </div>
-      <div class="studio__grid studio__grid--ten">
-        <a class="studio__svc" href="pages/studio.html#photography" style="--c:var(--gold)"><span>01</span><b>Photography</b><small>Spaces, products, people.</small></a>
-        <a class="studio__svc" href="pages/studio.html#websites" style="--c:var(--skyb)"><span>02</span><b>Websites</b><small>Built or updated.</small></a>
-        <a class="studio__svc" href="pages/studio.html#social" style="--c:var(--pink)"><span>03</span><b>Social &amp; digital presence</b><small>Show up everywhere.</small></a>
-        <a class="studio__svc" href="pages/studio.html#community" style="--c:var(--green)"><span>04</span><b>Community &amp; growth</b><small>Management and growth.</small></a>
-        <a class="studio__svc" href="pages/studio.html#ads" style="--c:var(--orange)"><span>05</span><b>Ads</b><small>Paid social and search.</small></a>
-        <a class="studio__svc" href="pages/studio.html#ai" style="--c:var(--grape)"><span>06</span><b>AI workflow &amp; enablement</b><small>Tools that actually help.</small></a>
-        <a class="studio__svc" href="pages/studio.html#svc-podcast" style="--c:var(--green)"><span>07</span><b>Podcast as a marketing funnel</b><small>A show that brings clients.</small></a>
-        <a class="studio__svc" href="pages/studio.html#production" style="--c:var(--pink)"><span>08</span><b>Podcast production</b><small>We run it; you show up.</small></a>
-        <a class="studio__svc" href="pages/studio.html#strategy" style="--c:var(--grape)"><span>09</span><b>Strategy &amp; consulting</b><small>How your business shows up.</small></a>
-        <a class="studio__svc" href="pages/studio.html#events" style="--c:var(--orange)"><span>10</span><b>Event planning</b><small>Launches, panels, live shows.</small></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PHOTO & VIDEO: the latest videos above a photo strip -->
-  <section class="wrap" id="photovideo" aria-labelledby="pv-h">
-    <div class="pill-row">
-      <h2 class="pill-title pill-title--gold" id="pv-h">Photo &amp; Video</h2>
-      <a class="pill-more" href="pages/studio.html#photography">Book a shoot →</a>
-    </div>
-    <div id="videos"><div class="box"><div class="vid" id="vid"></div></div></div>
-    <div id="photography" hidden><div class="photos rv" id="photo-strip"></div></div>
-  </section>
-
-  <!-- PODCASTS -->
-  <section class="wrap" id="podcasts" aria-labelledby="podcasts-h">
-    <div class="pill-row">
-      <h2 class="pill-title pill-title--pink" id="podcasts-h">Podcasts</h2>
-      <a class="pill-more" href="pages/shows.html">All shows →</a>
-    </div>
-    <div class="box">
-      <div class="pods">
-        <div>
-          <h3 class="pods__title">Every show,<br />freshest first.</h3>
-          <p class="pods__dek">The network re-sorts itself as new episodes drop. Tap a show to bring it forward, or shuffle and let the deck pick.</p>
-          <div class="pods__list" id="pods-list"></div>
-          <div class="pods__actions">
-            <button class="btn" type="button" id="pods-shuffle">Shuffle <span aria-hidden="true">🔀</span></button>
-            <a class="btn btn--ghost" href="pages/shows.html">Explore all shows</a>
-          </div>
-        </div>
-        <div class="pods__stack" id="pods-stack" aria-live="polite"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE NETWORK: every show, how they connect -->
+  <!-- 3. THE NETWORK -->
   <section class="wrap" id="network" aria-labelledby="network-h">
     <div class="pill-row">
-      <h2 class="pill-title pill-title--gold" id="network-h">The Curious + Creative Network</h2>
-      <a class="pill-more" href="pages/shows.html#network">See the whole web →</a>
+      <h2 class="pill-title pill-title--gold" id="network-h">The Network</h2>
+      <a class="pill-more" href="pages/shows.html">Every show →</a>
     </div>
-    <div class="net rv" id="net"></div>
+    <div class="legsec legsec--network">
+      <div class="legsec__copy">
+        <p class="legsec__para">The Network is our media network. We build original shows and the social channels around them, develop hosts and personalities, and publish across podcast and social platforms. It starts with shows like The Eclectic Polymath, Approachable AI, God is Brazilian, and Too Much to Tweet, and it grows the way modern media networks grow: show by show, page by page, audience by audience.</p>
+        <p class="legsec__links"><a class="btn btn--dark" href="pages/shows.html">Explore the Network</a></p>
+        <div class="nl" id="newsletter">
+          <span class="eyebrow">The newsletter</span>
+          <h3 class="nl__title">New shows and episodes, in your inbox</h3>
+          <p>Ideas, new episodes, and experiments, when there's something worth sending. Delivered through Substack.</p>
+          <form class="nl-form" id="nl-form" action="https://jgerms20.substack.com/subscribe" method="get" target="_blank">
+            <label class="sr-only" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit" aria-label="Subscribe on Substack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="legsec__aside">
+        <p class="eyebrow">Flagship shows</p>
+        <ul class="flagships" id="flagships" aria-label="Flagship shows"></ul>
+      </div>
+    </div>
   </section>
 
-  <!-- SHORTS (hidden until the channel has shorts) -->
-  <section class="wrap" id="shorts" aria-labelledby="shorts-h" hidden>
-    <div class="pill-row"><h2 class="pill-title pill-title--gold" id="shorts-h">Shorts</h2></div>
-    <div class="shorts" id="shorts-rail"></div>
+  <!-- 4. THE STUDIO -->
+  <section class="wrap" id="studio" aria-labelledby="studio-h">
+    <div class="pill-row">
+      <h2 class="pill-title pill-title--green" id="studio-h">The Studio</h2>
+      <a class="pill-more" href="pages/studio.html">Everything the Studio makes →</a>
+    </div>
+    <div class="legsec legsec--studio">
+      <div class="legsec__copy">
+        <p class="legsec__para">The Studio is where we make work for clients. We shoot photography and video, we edit, we build websites, and we produce podcasts end to end. Event coverage is a specialty of the house: documentary stills and video of presentations, launches, performances, and gatherings, captured as the room actually felt. Photography here is Curious &amp; Creative work from start to finish. You can follow the photography day to day on Instagram at @viewsbygerm.</p>
+        <p class="legsec__links"><a class="btn" href="pages/studio.html">Explore the Studio</a></p>
+      </div>
+      <div class="legsec__aside">
+        <p class="eyebrow">Services</p>
+        <ol class="svcs">
+          <li><span aria-hidden="true">01</span>Photography</li>
+          <li class="svcs__feat"><span aria-hidden="true">02</span>Event Coverage</li>
+          <li><span aria-hidden="true">03</span>Videography</li>
+          <li><span aria-hidden="true">04</span>Editing</li>
+          <li><span aria-hidden="true">05</span>Podcast Production</li>
+          <li><span aria-hidden="true">06</span>Websites</li>
+        </ol>
+      </div>
+    </div>
   </section>
 
-  <!-- FROM THE UNIVERSE: auto-scrolling ticker -->
-  <section id="universe" aria-labelledby="universe-h">
-    <div class="wrap pill-row">
-      <h2 class="pill-title pill-title--pink" id="universe-h">From the Universe</h2>
+  <!-- 5. THE CONSULTANCY -->
+  <section class="wrap" id="consultancy" aria-labelledby="consult-h">
+    <div class="pill-row">
+      <h2 class="pill-title pill-title--grape" id="consult-h">The Consultancy</h2>
+      <a class="pill-more" href="pages/consultancy.html">How we work with teams →</a>
     </div>
-    <div class="tick" aria-label="A slowly scrolling wall of things we make">
-      <div class="tick__track" id="tick"></div>
+    <div class="legsec legsec--consult">
+      <div class="legsec__copy">
+        <p class="legsec__para">The Consultancy is where we help brands and small businesses reach their audiences and improve their marketing. The work covers brand and cultural strategy, audience and content systems, podcast strategy, and AI: workflow design, enablement, and hands on training that teaches teams to use AI in their real work. The Gen Alpha Intelligence Lab, our research product on the next generation of audiences, sits here as proof that the strategy is backed by original research. Start with a Cultural Opportunity Sprint, an AI Workflow Audit, a Podcast Strategy Sprint, or a Fractional Creative Strategy block.</p>
+        <p class="legsec__links"><a class="btn btn--grape" href="pages/consultancy.html">Explore the Consultancy</a></p>
+      </div>
+      <div class="legsec__aside">
+        <p class="eyebrow">Ways to start</p>
+        <ul class="entries">
+          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">A</span>Cultural Opportunity Sprint</a></li>
+          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">B</span>AI Workflow Audit</a></li>
+          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">C</span>Podcast Strategy Sprint</a></li>
+          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">D</span>Fractional Creative Strategy</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-
-
-  <!-- NEWSLETTER + ARCHIVE -->
-  <section class="wrap band" id="newsletter" aria-label="Newsletter and archive">
-    <div class="band__card band__card--green">
-      <span class="eyebrow" style="color:#fff;opacity:.85">The newsletter</span>
-      <h2 class="band__title">The Curious &amp; Creative Company, in your inbox</h2>
-      <p>Ideas, new episodes, and experiments — when there's something worth sending. Delivered through Substack.</p>
-      <form class="nl-form" id="nl-form" action="https://jgerms20.substack.com/subscribe" method="get" target="_blank">
-        <label class="sr-only" for="nl-email">Email address</label>
-        <input id="nl-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
-        <button type="submit" aria-label="Subscribe on Substack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
-      </form>
+  <!-- 6. TEAM -->
+  <section class="wrap" id="team" aria-labelledby="team-h">
+    <div class="pill-row">
+      <h2 class="pill-title pill-title--pink" id="team-h">Who we are</h2>
+      <a class="pill-more" href="pages/about.html">Our story →</a>
     </div>
-    <div class="band__card band__card--line">
-      <span class="eyebrow">The archive</span>
-      <h2 class="band__title">Every episode. Every experiment.</h2>
-      <p><span data-ep-count>All</span> episodes and videos across every show — searchable, filterable, and all in one place.</p>
-      <a class="btn btn--dark" href="pages/archive.html">Take me there</a>
+    <div class="team">
+      <p class="team__para">Curious &amp; Creative is the company Joshua German and Janel Moore are building in Los Angeles. Joshua leads creative strategy, production, and editorial direction. Janel leads on technology, finance, and operations, and she is a creative partner in her own right, including as the host of Too Much to Tweet. Together they run a media network, a production studio, and a consultancy, and the three parts feed each other: the network keeps their instincts close to real audiences, the studio keeps their craft honest, and the consultancy turns both into judgment other people can hire.</p>
+      <div class="founders">
+        <article class="founder">
+          <img class="founder__photo" src="assets/people/joshua.jpg" alt="Portrait of Joshua German" loading="lazy" />
+          <div class="founder__body">
+            <span class="eyebrow">Co-founder</span>
+            <h3 class="founder__name">Joshua German</h3>
+            <p>Leads creative strategy, production, and editorial direction. Hosts The Eclectic Polymath and Approachable AI inside the Network.</p>
+            <nav aria-label="Joshua German elsewhere"><a href="https://joshuamgerman.com" target="_blank" rel="noopener">Website</a><a href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a></nav>
+          </div>
+        </article>
+        <article class="founder">
+          <img class="founder__photo" src="assets/people/janel.jpg" alt="Portrait of Janel Moore" loading="lazy" />
+          <div class="founder__body">
+            <span class="eyebrow">Co-founder</span>
+            <h3 class="founder__name">Janel Moore</h3>
+            <p>Brings technology, finance, fundraising, and campaign operations, and is a creative partner in her own right as the host of Too Much to Tweet inside the Network.</p>
+            <nav aria-label="Janel Moore elsewhere"><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a><a href="pages/shows.html#tmtt">Too Much to Tweet</a></nav>
+          </div>
+        </article>
+      </div>
+      <p class="legsec__links"><a class="btn btn--dark" href="pages/about.html">Read our story</a></p>
+    </div>
+  </section>
+
+  <!-- 6b. FOUNDER EXPERIENCE (its own section, never mixed with company work) -->
+  <section class="wrap" id="founder-experience" aria-labelledby="fx-h">
+    <div class="fx">
+      <span class="eyebrow">Founder experience</span>
+      <h2 class="fx__title" id="fx-h">Our founders bring experience from work on Levi's, Gatorade, DoorDash, DIRECTV, Sephora, MLB, and BMW.</h2>
+      <ul class="fx__brands" aria-hidden="true">
+        <li>Levi's</li><li>Gatorade</li><li>DoorDash</li><li>DIRECTV</li><li>Sephora</li><li>MLB</li><li>BMW</li>
+      </ul>
+      <a class="pill-more" href="pages/about.html">More about the founders →</a>
+    </div>
+  </section>
+
+  <!-- 7. CONTACT -->
+  <section class="wrap" id="contact" aria-labelledby="contact-h">
+    <div class="pill-row"><h2 class="pill-title" id="contact-h">Contact</h2></div>
+    <div class="contact">
+      <p class="contact__intro">Tell us what you are building and which part of the house it belongs in. Every inquiry lands in our shared company inbox at <a href="mailto:admin@curiousandcreative.co">admin@curiousandcreative.co</a>, and that is where our reply will come from.</p>
+      <div class="contact__form" id="inquiry">
+        <p class="contact__fallback"><a class="btn btn--dark" href="pages/contact.html">Start an inquiry</a></p>
+      </div>
     </div>
   </section>
 </main>
 
 <div data-cc="footer"></div>
 <script src="js/cc.js"></script>
+<script src="js/cases.js"></script>
+<script src="js/inquiry.js"></script>
 <script src="js/home.js"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@ const PAGES = {
   about:      '/pages/about.html',
   studio:     '/pages/studio.html',
   shows:      '/pages/shows.html',
-  inventions: '/pages/inventions.html',
+  consultancy: '/pages/consultancy.html',
   manifesto:  '/pages/manifesto.html',
   contact:    '/pages/contact.html',
   archive:    '/pages/archive.html',

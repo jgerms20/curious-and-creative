@@ -32,7 +32,7 @@ node .claude/skills/run-site/driver.mjs
 
 # Single page only
 node .claude/skills/run-site/driver.mjs about
-# Valid names: home about studio shows inventions art contact archive
+# Valid names: home about studio consultancy shows manifesto contact archive shop videos writing
 
 # Dark mode — seeds localStorage + emulates prefers-color-scheme: dark.
 # Writes <page>.dark.png alongside the light <page>.png.
