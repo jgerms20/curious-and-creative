@@ -13,41 +13,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="../css/legs.css" />
 </head>
 <body data-page="about" data-root="../">
 <div data-cc="header"></div>
 <main id="main" class="wrap">
-<header class="phead">
+<header class="phead about-top">
   <span class="pill-title">About</span>
   <h1 class="phead__title">Curious first. <em>Then creative.</em></h1>
-  <p class="phead__lede">Two co-founders, one Los Angeles company: a media network, a production studio, and a consultancy.</p>
 </header>
 
-<figure class="duo__photo about-duo rv">
-  <img src="../assets/people/duo.jpg" alt="Joshua German and Janel Moore standing in front of a wall of wooden bookshelves" />
+<figure class="duo__photo about-duo">
+  <img src="../assets/people/duo.jpg" alt="Joshua German and Janel Moore standing in front of a wall of wooden bookshelves" width="2000" height="1333" fetchpriority="high" />
   <figcaption class="duo__names"><span>Joshua German</span><span>Janel Moore</span></figcaption>
 </figure>
 
-<section class="split about-story rv" aria-labelledby="about-story-h">
-  <div>
-    <span class="pill-title pill-title--green">The company</span>
-    <h2 class="phead__title about-h" id="about-story-h">Same curiosity. Different directions.</h2>
-  </div>
-  <div class="prose">
-    <p>Curious &amp; Creative is the company Joshua German and Janel Moore are building in Los Angeles. Joshua leads creative strategy, production, and editorial direction. Janel leads on technology, finance, and operations, and she is a creative partner in her own right, including as the host of Too Much to Tweet. Together they run a media network, a production studio, and a consultancy, and the three parts feed each other: the network keeps their instincts close to real audiences, the studio keeps their craft honest, and the consultancy turns both into judgment other people can hire.</p>
-    <p>They met at the University of South Carolina and have been swapping ideas ever since. Underneath everything they make is the same instinct: notice what's interesting, dig until you actually understand it, then make something other people can feel.</p>
-  </div>
+<section class="ab-story" aria-labelledby="about-story-h">
+  <h2 class="pill-title pill-title--green" id="about-story-h">The company</h2>
+  <p class="ab-story__p">Curious &amp; Creative is the company Joshua German and Janel Moore are building in Los Angeles. Joshua leads creative strategy, production, and editorial direction. Janel leads on technology, finance, and operations, and she is a creative partner in her own right, including as the host of Too Much to Tweet. Together they run a media network, a production studio, and a consultancy, and the three parts feed each other: the network keeps their instincts close to real audiences, the studio keeps their craft honest, and the consultancy turns both into judgment other people can hire.</p>
+</section>
+
+<div class="pill-row"><h2 class="pill-title">The three parts</h2></div>
+<section class="lstrip" aria-label="The three parts of the company">
+  <a class="lstrip__item" href="shows.html" style="--c:var(--pink)"><span class="lstrip__media lstrip__media--covers"><img src="../assets/art/ccpod.jpg" alt="" loading="lazy" /><img src="../assets/art/polymath.jpg" alt="" loading="lazy" /><img src="../assets/art/tmtt.jpg" alt="" loading="lazy" /><img src="../assets/art/approachable.jpg" alt="" loading="lazy" /></span><span class="lstrip__body"><h3>The Network</h3><p>Original shows and the channels around them.</p></span></a>
+  <a class="lstrip__item" href="studio.html" style="--c:var(--green)"><span class="lstrip__media"><img src="../assets/photos/events-jmg_2254.jpg" alt="" loading="lazy" /></span><span class="lstrip__body"><h3>The Studio</h3><p>Photography, event coverage, video, editing, podcasts, and websites for clients.</p></span></a>
+  <a class="lstrip__item" href="consultancy.html" style="--c:var(--grape)"><span class="lstrip__media"><img src="../assets/projects/genalpha.svg" alt="" loading="lazy" /></span><span class="lstrip__body"><h3>The Consultancy</h3><p>Culture, audience, and practical AI for brands and teams.</p></span></a>
 </section>
 
 <div class="pill-row"><h2 class="pill-title pill-title--pink">The co-founders</h2></div>
-<section class="cols about-people rv">
+<section class="cols about-people">
   <article class="tile about-person">
     <img src="../assets/people/joshua.jpg" alt="Portrait of Joshua German" class="about-person__img" style="object-position:50% 45%" loading="lazy" />
     <div class="about-person__body">
       <span class="eyebrow">Co-founder</span>
       <h3>Joshua McKenzie German</h3>
-      <p>Joshua leads creative strategy, production, and editorial direction. He is a photographer, and he started as a reporter at The Daily Gamecock.</p>
-      <p>Inside The Network he hosts <a class="pill-more" href="shows.html#polymath">The Eclectic Polymath Podcast</a> and <a class="pill-more" href="shows.html#approachable">Approachable AI</a>, and directs regular shows like <a class="pill-more" href="shows.html#brazil">God is Brazilian</a>; he co-hosted <a class="pill-more" href="shows.html#dominate">Dominate the Decade</a>.</p>
+      <p class="about-person__role">Creative strategy, production, editorial.</p>
+      <ul class="about-person__shows" aria-label="Joshua's shows on The Network">
+        <li><a href="shows.html#polymath">The Eclectic Polymath Podcast</a></li>
+        <li><a href="shows.html#approachable">Approachable AI</a></li>
+        <li><a href="shows.html#brazil">God is Brazilian</a></li>
+        <li><a href="shows.html#dominate">Dominate the Decade</a></li>
+      </ul>
       <p class="showblock__links">
         <a class="btn btn--sm" href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>
         <a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a>
@@ -59,8 +65,11 @@
     <div class="about-person__body">
       <span class="eyebrow">Co-founder</span>
       <h3>Janel Moore</h3>
-      <p>Janel brings technology, finance, fundraising, and campaign operations to the company, and she is a creative partner in her own right. Her background spans technology in global corporate banking and payments, including at Truist and JP Morgan, and years of fundraising and financial operations for political campaigns across four states. She is also an artist.</p>
-      <p>Inside The Network she hosts <a class="pill-more" href="shows.html#tmtt">Too Much to Tweet</a> and <a class="pill-more" href="shows.html#abolitionist">Aspiring Abolitionist</a>, and she guested on Dominate the Decade.</p>
+      <p class="about-person__role">Technology, finance, campaigns — and host of Too Much to Tweet.</p>
+      <ul class="about-person__shows" aria-label="Janel's shows on The Network">
+        <li><a href="shows.html#tmtt">Too Much to Tweet</a></li>
+        <li><a href="shows.html#abolitionist">Aspiring Abolitionist</a></li>
+      </ul>
       <p class="showblock__links">
         <a class="btn btn--sm" href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn--ghost btn--sm" href="shop.html">Her art</a>
@@ -69,26 +78,18 @@
   </article>
 </section>
 
-<section class="about-xp rv" aria-labelledby="about-xp-h">
-  <span class="eyebrow">Founder experience</span>
-  <h2 id="about-xp-h">Our founders bring experience from work on Levi's, Gatorade, DoorDash, DIRECTV, Sephora, MLB, and BMW.</h2>
-  <p>This is the founders' individual experience, listed apart from Curious &amp; Creative's own work.</p>
+<section class="lxp" aria-labelledby="about-xp-h">
+  <span class="eyebrow">Founder experience, before Curious &amp; Creative</span>
+  <h2 id="about-xp-h">Our founders bring experience from work on <b>Levi's</b>, <b>Gatorade</b>, <b>DoorDash</b>, <b>DIRECTV</b>, <b>Sephora</b>, <b>MLB</b>, and <b>BMW</b>.</h2>
 </section>
 
-<p class="about-scail rv">The founders also lead SCAiL, a South Carolina nonprofit working to bring AI literacy to communities that are usually last in line for it.</p>
-
-<div class="pill-row"><h2 class="pill-title">The three parts</h2></div>
-<section class="cols rv">
-  <a class="tile" href="shows.html" style="--c:var(--pink)"><span class="tile__num">01</span><h3>The Network</h3><p>Our media network. We build original shows and the social channels around them, develop hosts and personalities, and publish across podcast and social platforms.</p></a>
-  <a class="tile" href="studio.html" style="--c:var(--green)"><span class="tile__num">02</span><h3>The Studio</h3><p>Where we make work for clients. We shoot photography and video, we edit, we build websites, and we produce podcasts end to end.</p></a>
-  <a class="tile" href="consultancy.html" style="--c:var(--gold)"><span class="tile__num">03</span><h3>The Consultancy</h3><p>Where we help brands and small businesses reach their audiences and improve their marketing.</p></a>
-</section>
+<p class="about-scail">The founders also lead SCAiL, a South Carolina nonprofit working to bring AI literacy to communities that are usually last in line for it.</p>
 
 <div class="pill-row"><h2 class="pill-title pill-title--gold">Shows on The Network</h2><a class="pill-more" href="shows.html#network">The whole network →</a></div>
 <section class="cols" id="about-shows"></section>
 
-<section class="cta rv" style="background:var(--pink)">
-  <div><h2>Curious? Same.</h2><p>Tell us what you are building, or just come say hi.</p></div>
+<section class="cta" style="background:var(--pink)">
+  <div><h2>Curious? Same.</h2><p>Tell us what you're building, or just come say hi.</p></div>
   <a class="btn btn--light" href="contact.html">Get in touch <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
 </section>
 </main>

@@ -45,7 +45,7 @@
       <span class="case-card__go">Read the case ${ARROW}</span>
     </a>`;
 
-  const list = (items) => `<ul>${items.filter(has).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  const list = (items) => `<ul class="case__tags">${items.filter(has).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
   const media = (m) => {
     if (m.embed) return `<figure class="case__media case__media--video"><iframe src="${esc(m.embed)}" title="${esc(m.caption || m.alt || "Video")}" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>${m.caption ? `<figcaption>${esc(m.caption)}</figcaption>` : ""}</figure>`;
     if (!m.src) return "";
@@ -54,16 +54,17 @@
   };
   const row = (label, body) => `<div class="case__row"><dt>${label}</dt><dd>${body}</dd></div>`;
 
+  // compact label / value rows, in the template's field order; a field that is missing renders nothing
   const full = (c) => {
     const rows = [];
-    if (has(c.assignment)) rows.push(row("The assignment", `<p>${esc(c.assignment)}</p>`));
+    if (has(c.assignment)) rows.push(row("Assignment", esc(c.assignment)));
     const crew = (c.crew || []).filter((p) => p && has(p.name));
-    if (crew.length) rows.push(row("Crew and roles", `<ul class="case__crew">${crew.map((p) => `<li><b>${esc(p.name)}</b>${has(p.role) ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`));
-    if (has((c.captured || []).filter(has))) rows.push(row("What was captured", list(c.captured)));
+    if (crew.length) rows.push(row("Crew", `<ul class="case__crew">${crew.map((p) => `<li><b>${esc(p.name)}</b>${has(p.role) ? `<span>${esc(p.role)}</span>` : ""}</li>`).join("")}</ul>`));
+    if (has((c.captured || []).filter(has))) rows.push(row("Captured", list(c.captured)));
     if (has((c.deliverables || []).filter(has))) rows.push(row("Deliverables", list(c.deliverables)));
     const shots = (c.media || []).map(media).filter(Boolean);
-    if (shots.length) rows.push(row("Selected stills and video", `<div class="case__gallery">${shots.join("")}</div>`));
-    if (has(c.turnaround)) rows.push(row("Turnaround", `<p>${esc(c.turnaround)}</p>`));
+    if (shots.length) rows.push(row("Stills &amp; video", `<div class="case__gallery">${shots.join("")}</div>`));
+    if (has(c.turnaround)) rows.push(row("Turnaround", esc(c.turnaround)));
     const t = c.testimonial;
     const quote = t && t.approved === true && has(t.quote)
       ? `<blockquote class="case__quote"><p>${esc(t.quote)}</p>${has(t.name) ? `<footer>${esc(t.name)}${has(t.role) ? `, ${esc(t.role)}` : ""}</footer>` : ""}</blockquote>` : "";
