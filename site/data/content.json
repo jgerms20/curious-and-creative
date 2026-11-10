@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T06:44:58Z",
+ "generated_at": "2026-11-10T10:03:27Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -277,8 +277,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-06T15:21:01Z",
-   "count": 5
+   "latest": "2026-11-09T19:26:37Z",
+   "count": 6
   },
   {
    "key": "morningread",
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-06T17:06:46Z",
-   "count": 14
+   "latest": "2026-11-10T00:15:41Z",
+   "count": 16
   },
   {
    "key": "ladaily",
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-06T17:07:48Z",
-   "count": 12
+   "latest": "2026-11-10T00:38:45Z",
+   "count": 14
   },
   {
    "key": "globalread",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-06T17:07:03Z",
-   "count": 10
+   "latest": "2026-11-10T00:28:01Z",
+   "count": 12
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-06T18:36:32Z",
-   "count": 8
+   "latest": "2026-11-09T19:18:36Z",
+   "count": 9
   },
   {
    "key": "nyread",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-06T18:39:01Z",
-   "count": 8
+   "latest": "2026-11-09T19:20:34Z",
+   "count": 9
   },
   {
    "key": "techread",
@@ -644,8 +644,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-06T20:11:33Z",
-   "count": 7
+   "latest": "2026-11-09T21:34:01Z",
+   "count": 10
   },
   {
    "key": "waiverwire",
@@ -723,8 +723,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-09T21:02:48Z",
-   "count": 10
+   "latest": "2026-11-06T13:36:55Z",
+   "count": 8
   },
   {
    "key": "cfbdaily",
@@ -835,6 +835,90 @@
  ],
  "episodes": [
   {
+   "id": "ladaily:b1f41a07 1a06 41b2 a4fe c232402f8c26",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-10T00:38:45Z",
+   "duration": 1276,
+   "description": "Los Angeles starts the first Monday of the transition with a question over City Hall: Mayor-elect Nithya Raman campaigned on replacing LAPD Chief Jim McDonnell, has spoken with him since winning, and has not yet said whether she will move right away — and the process is not hers alone. Plus: Raman's lead crosses 102,247 votes, District 9 tightens to 347, White Memorial Hospital owes answers in writing by November 21, the October housing data shows a $1 million median list price down 9 percent, UCLA breaks ground on a 19-story tower in Westwood, and a hot Monday peaks at the beach.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — Movie Night with Clue at Bacari…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794270840147-85f4e5b9f8cb2.jpg",
+   "url": "https://open.spotify.com/episode/5wfjj6Ute0TNtz3Et7oANy",
+   "spotify_url": "https://open.spotify.com/episode/5wfjj6Ute0TNtz3Et7oANy",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129158003/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F199e36b3-7b61-b3c4-a046-969657a3f361.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:fc599926 5f94 4fc2 b99f ad0404a54d2c",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-10T00:28:01Z",
+   "duration": 1229,
+   "description": "COP31 opens in Antalya with an hour lost to a fight over whether climate finance belongs on the agenda; Gadi Eisenkot formally receives the mandate in Jerusalem and reaches out to Netanyahu's own allies; two passenger trains collide south of Cairo, killing at least seven and injuring 112; South Africa's Electoral Commission declares the final results, ANC 30.76 percent, and the 14-day coalition clock starts; oil falls again on Monday as Trump signals restraint on Iran while ships are still hit near Hormuz; France's wage argument moves to the Matignon table, where the government's first offer is about 22 euros; a Paraguayan judge orders former president Pena held before trial as the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794270206398-1694c0e9bb1b5.jpg",
+   "url": "https://open.spotify.com/episode/4ZEygYbNa0c3XRFrnkc8YZ",
+   "spotify_url": "https://open.spotify.com/episode/4ZEygYbNa0c3XRFrnkc8YZ",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129157628/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Fba57cb50-416e-a11f-4478-174cf8ead412.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:19d0a059 2e63 4d45 ac14 b9c6cfab029c",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-10T00:15:41Z",
+   "duration": 1268,
+   "description": "President Trump says new strikes on Iran are \"highly unlikely\" and receives Qatar's prime minister at the White House today, as oil falls and ships are still being hit near the Strait of Hormuz. Plus: Stephen Miller's first day as chief of staff meets a Democratic firewall and a possible Hegseth impeachment vote; Nvidia's board opens a probe as its shares slide; the Dana White press-secretary offer was a joke, the president says; Alaska's next count is due; tomorrow's inflation report looms; Israel's government-forming clock is running; and Godzilla's record weekend awaits its actuals.\n In today's brief:\n • The War: Restraint on Sunday, Diplomacy on Monday —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794269701454-8f7c24344f97d.jpg",
+   "url": "https://open.spotify.com/episode/4JR1Np9RFuo3Yz4juydbNi",
+   "spotify_url": "https://open.spotify.com/episode/4JR1Np9RFuo3Yz4juydbNi",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129157331/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Faa93046f-58ec-ead4-9c6e-829f0f60422c.m4a",
+   "number": null
+  },
+  {
+   "id": "blitz:3a1da741 1374 4c52 8a07 96fc325375e9",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-09T21:34:01Z",
+   "duration": 1185,
+   "description": "The Sunday slate is complete. Green Bay 45, New England 27 — Jordan Love 23-of-29 for 372 yards, three passing touchdowns and a rushing score. Houston 44, LA Chargers 22 — five touchdown passes from C.J. Stroud on 384 yards. Cincinnati 34-17 in Madrid — Joe Burrow 271 yards and four total touchdowns, Ja'Marr Chase 10 catches for 155 and a score. Kansas City 35, New York Jets 12 — Walker with 143 scrimmage yards and three touchdowns. And on Sunday night, Chicago 27, Tampa Bay 24 on a 38-yard walk-off field goal by Santos as time expired. Plus the injury roundup: Mahomes (elbow) and Nacua (knee) both face Monday MRIs, Jacobs has a fractured finger, Herbert a possible fractured left finger,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794259997905-abed514ddccf6.jpg",
+   "url": "https://open.spotify.com/episode/4DtRfBJgErYvXfoS7aXYNu",
+   "spotify_url": "https://open.spotify.com/episode/4DtRfBJgErYvXfoS7aXYNu",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129150017/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Ffe9ddba8-3854-901e-fea0-92e635e429c4.m4a",
+   "number": "10"
+  },
+  {
+   "id": "blitz:d112380b 0793 4ab1 af53 f62c21b67e48",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T21:28:11Z",
+   "duration": 1417,
+   "description": "No games on Saturday, but the week moved. Kyler Murray is out Monday with a Grade 2 hamstring strain, so Carson Wentz makes his 101st career start; Claiborne and Jennings were ruled out Saturday; the 49ers moved Kirk to injured reserve and activated Robinson, and the Commanders put Brown on IR. Plus Thursday's final — Jaguars 33, Ravens 10 — the final Sunday and Monday night reports, the Week 8 fines, and the Colts shutting the door on a Daniel Jones trade.\n The deep dive: the backup-quarterback takeover, what Wentz starting means for Arizona, and the post-Thursday-night playoff picture across the remaining 14-game Week 9 slate.\n Part of the Curious & Creative network. Back tomorrow night.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794259654023-c8cb18f0e2e9.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Saturday--November-7--2026-e3s3rcf",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129149775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F14ef26b0-08e5-00ac-f29b-f18166fa58a4.m4a",
+   "number": "9"
+  },
+  {
+   "id": "blitz:191a2c6e 0331 40fa b0b4 4495dcf28171",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Friday, November 6, 2026",
+   "date": "2026-11-09T21:22:13Z",
+   "duration": 1163,
+   "description": "Thursday night final: Jacksonville 33, Baltimore 10. The Friday headline: the Ravens are finalizing a trade for Jacoby Brissett — Baltimore receives Brissett and a 2027 fifth-round pick, Arizona receives a 2027 fourth and a 2028 seventh, and Brissett's debut is slated for Monday, November 16 against the Chargers. Plus the full Thursday night lines, Friday's final Week 9 injury reports, and the post-Thursday-night playoff picture.\n The deep dive: what the Brissett trade says about where Baltimore's season is headed, and the full remaining 14-game Week 9 slate.\n Part of the Curious & Creative network. Back tomorrow night.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794259311571-bec2fbb775791.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Friday--November-6--2026-e3s3r24",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129149444/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F1f306da2-49ea-7d51-3bcb-ef6ea612a9dc.m4a",
+   "number": "8"
+  },
+  {
    "id": "celticsdaily:9fb50295 aa66 4430 9c40 100016bfe39e",
    "show": "celticsdaily",
    "kind": "episode",
@@ -849,31 +933,87 @@
    "number": null
   },
   {
-   "id": "coltsdaily:9d13f5ed dcad 477e a298 d9d32877a333",
-   "show": "coltsdaily",
+   "id": "dominatedconvo:b23faeac e889 4322 b9e8 761dc1158d51",
+   "show": "dominatedconvo",
    "kind": "episode",
-   "title": "Led With 1:37 Left, Lost in 29 Seconds: Prescott and Lamb Steal It Late, Indianapolis Is 2-7 | Sunday, November 8, 2026",
-   "date": "2026-11-09T21:02:48Z",
-   "duration": 1406,
-   "description": "The Colts led 23-20 with 1:37 left and lost 27-23 to the Dallas Cowboys at Lucas Oil Stadium. Dak Prescott threw for 335 yards and two touchdowns, CeeDee Lamb caught 10 passes for 195 yards, Javonte Williams scored the winner from 1 yard with 1:08 left after Prescott hit Ryan Flournoy for 46 yards, and Caleb Downs intercepted Daniel Jones to seal it. Indianapolis falls to 2-7 with its fifth straight loss.\n Segments: the quarter-by-quarter recap and the 29-second final drive, Prescott and Lamb vs. Jones and Taylor, the rookie defenders and Spencer Shrader's 47-, 59- and 50-yard field goals, the third-quarter injuries including Charvarius Ward, what 2-7 means with the Tuesday trade deadline,…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1794258134186-9f696aced2131.jpg",
-   "url": "https://open.spotify.com/episode/5vJe7GY92GsacQYIaoOrr1",
-   "spotify_url": "https://open.spotify.com/episode/5vJe7GY92GsacQYIaoOrr1",
-   "audio": "https://anchor.fm/s/119609694/podcast/play/129148589/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fb2175687-0d84-3cb9-1a31-893a0a1e1031.m4a",
+   "title": "Stephen Miller Becomes Chief of Staff Three Days After the Midterms | Saturday, November 7, 2026",
+   "date": "2026-11-09T19:26:37Z",
+   "duration": 874,
+   "description": "Stephen Miller becomes chief of staff three days after the midterms, and the feed had thoughts. Plus: Robert Pattinson's Bond screen tests, the still-uncalled Mississippi and Alaska Senate races, Godzilla Minus Zero's North American opening, the AI template batch and the Can I Ride dance, and Wizard Cat owning Instagram Reels.\n Part of the Curious & Creative network. Back tomorrow.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794252373820-fe2e6a8f1055d.jpg",
+   "url": "https://open.spotify.com/episode/5oae3mIpsisszggK58RxQD",
+   "spotify_url": "https://open.spotify.com/episode/5oae3mIpsisszggK58RxQD",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129143359/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F8254e32f-d880-ca58-d914-79d10d7c54d4.m4a",
    "number": null
   },
   {
-   "id": "coltsdaily:0f6528e5 532c 4bf6 a35e 0d38206cfd00",
-   "show": "coltsdaily",
+   "id": "airead:9f9c6839 4eb8 45e4 b1d6 7a242bc46917",
+   "show": "airead",
    "kind": "episode",
-   "title": "Colts Are Taking Calls on Daniel Jones: Allen Gets the Green Dot, Indianapolis Is 2-6 | Saturday, November 7, 2026",
-   "date": "2026-11-09T19:24:37Z",
-   "duration": 939,
-   "description": "The Colts have engaged in trade discussions about starting quarterback Daniel Jones, per a Saturday report from ESPN and NFL Network, with multiple teams calling and Indianapolis willing to listen ahead of Tuesday's 4 p.m. ET deadline, while ESPN's Friday-night update put the Jonathan Taylor price at the equivalent of a first-round pick. The Colts are 2-6, third in the AFC South, and host the 3-5 Dallas Cowboys on Sunday, November 8 at 1 p.m. ET at Lucas Oil Stadium on FOX.\n Segments: the Jones trade talks and the $10.51 million injury guarantee underneath them, plus the Taylor asking price; Friday's final injury report, with Justin Walley and Akeem Davis-Gaither out, Jalen Travis and A.J.…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1794252256843-1875ef7ad6303.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/Colts-Are-Taking-Calls-on-Daniel-Jones-Allen-Gets-the-Green-Dot--Indianapolis-Is-2-6--Saturday--November-7--2026-e3s3ksv",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:20:34Z",
+   "duration": 1307,
+   "description": "OpenAI closed an $11 billion first tranche at a $1.25 trillion valuation, below its original ask; Google took over Crusoe's Wyoming site with a $17 billion build planned, and Microsoft began handing back rented Oracle capacity running older Nvidia chips. Anthropic's IPO valuation talk slipped to $1.2–$1.3 trillion, Thinking Machines shipped Inkling 2 Small with its open weights still pending, Stanford found 44 percent of famous LLM findings have expired, Google switched Gemini and Search off by default for K-12 students, and data-center politics moved from protests to legislation — plus the USDA's bounded AI check on its own crop numbers.\n • OpenAI closes $11B first tranche at $1.25T…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794252005374-cb3637e80f5a2.jpg",
+   "url": "https://open.spotify.com/episode/6Hrn9HfxjKyz2qADoIdJsz",
+   "spotify_url": "https://open.spotify.com/episode/6Hrn9HfxjKyz2qADoIdJsz",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129142922/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fee296e0e-3e77-1bff-a455-08fb1436778f.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:5c783f93 41b5 40fc 97d4 03fc13353d1b",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:18:36Z",
+   "duration": 1077,
+   "description": "Saturday edition, built on Friday's close: the Nasdaq bounced 1.09 percent to 24,579.42 and the S&P 500 added 0.31 percent to 7,376.86 while the Dow slipped 0.46 percent to 51,285.73, closing a week that left the S&P down 2.7 percent and the Nasdaq down 3.4 percent. October payrolls blew past forecasts at 165,000 against a 65,000 consensus, unemployment held at 4.1 percent, and December rate-hike odds climbed to about 78 percent. Chips led the bounce, options volume stayed heavy with the VIX easing, Bitcoin steadied near 76,000 dollars after a rough week for the spot ETFs, and Berkshire Hathaway's Saturday report closes the show.\n Part of the Curious & Creative network. Back tomorrow…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794251889363-07b2e2ea7cd27.jpg",
+   "url": "https://open.spotify.com/episode/1NQhYKidSLYWTiQbAqO8CT",
+   "spotify_url": "https://open.spotify.com/episode/1NQhYKidSLYWTiQbAqO8CT",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129142811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F6436b88b-35d0-fb0a-e419-f1e9f922a8d6.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:3bcf77d8 eb08 43a8 922d ea74b08d577c",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:16:28Z",
+   "duration": 1334,
+   "description": "Los Angeles wakes up to a Red Flag Saturday and a transition that just got emphatic: Friday's count widened Nithya Raman's lead over Karen Bass to 68,493 votes, her transition team is taking shape with Garcetti veterans, the council that never endorsed her must now govern with her, and the council has set a 90-day clock on a homelessness plan for the 2028 Games.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — the Wende Museum's Competing Cosmologies opening, Self Help Graphics' 53rd Día de los Muertos in Boyle Heights, LA Zine Fest, the LA NDN Flea at The Broad, Fall Brewery Artwalk, Corita Day at SCI-Arc, Jimmy Eat World and The Format at the Bowl, Tinashe…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794251752118-096ebc0efc3fd.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Saturday--November-7--2026-e3s3kel",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/119609694/podcast/play/129143135/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F5a157e14-8d5c-e74a-f37e-3bd00ef25021.m4a",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129142677/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F8d6c6cfd-b634-31c6-bb0d-ee73ea75f626.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:e8d38b49 982a 4fe8 a9e0 72b673c71de5",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:14:10Z",
+   "duration": 1384,
+   "description": "Paraguay's Senate removes President Santiago Pena over the Ueno Bank collapse and swears in Pedro Alliana within the hour, with Pena placed under house arrest; Wall Street's chips bounce after Thursday's rout, but a far stronger than expected October jobs report pushes December rate-hike odds to about seventy-eight percent; Brent settles at ninety-eight dollars after its steepest weekly fall since Covid, as Tehran sends a proposal through Qatar; Ukraine confirms its Afipsky refinery strike as Zelenskyy says every power plant is damaged; Israel's opposition advances as Liberman lifts his veto on the ultra-Orthodox; South Africa's count reaches ninety-seven percent with one ward tied exactly;…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794251615471-38a50f3ba8711.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Saturday--November-7--2026-e3s3kar",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129142555/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F9f7bf06c-cb9d-76a7-a4fd-dab37f07924d.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:69892f6e d3f3 4c53 99cb db3bf20a6066",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:11:32Z",
+   "duration": 811,
+   "description": "Three days after losing Congress, President Trump promotes Stephen Miller to chief of staff — the first reshuffle of divided government — on the same day American forces strike Iran again. Plus: hiring blows past every forecast at 165,000; Wall Street bounces without recovering; the Fed leans toward a December hike; Mississippi's lead grows while Alaska waits; measles passes 5,000 cases; Washington presses Beijing on the trade truce; and a monster carries the box office.\n In today's brief:\n • The President Promotes Stephen Miller — https://www.reuters.com/world/us/trump-says-stephen-miller-become-chief-staff-2026-11-06/\n • The Jobs Report Blows Past Every Forecast: 165,000 —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794251451114-f83396f65a3b8.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Saturday--November-7--2026-e3s3k5n",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129142391/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F93d54be0-7f1c-ab29-0bcf-1d1506f981ac.m4a",
    "number": null
   },
   {
@@ -6161,7 +6301,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8242,40 +8382,40 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 0
+   "episodes": 6,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 0
+   "episodes": 14,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 0
+   "episodes": 12,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "nyread": {
    "ok": true,
@@ -8298,8 +8438,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The AI Read",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
@@ -8354,8 +8494,8 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 10,
+   "spotify_matches": 1
   },
   "waiverwire": {
    "ok": true,
@@ -8378,8 +8518,8 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 1
+   "episodes": 8,
+   "spotify_matches": 0
   },
   "cfbdaily": {
    "ok": true,
