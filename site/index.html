@@ -23,40 +23,58 @@
 <main id="main" class="home">
 
   <!-- 1. PITCH + THE THREE LEGS -->
-  <section class="wrap pitch" aria-labelledby="pitch-h">
-    <p class="pitch__kicker"><span class="pitch__mark" aria-hidden="true"></span>The Curious &amp; Creative Company · Los Angeles</p>
-    <h1 class="pitch__title" id="pitch-h">Curious &amp; Creative is a Los Angeles creative company that <mark class="hl hl--network">runs a media network of shows and social channels</mark>, <mark class="hl hl--studio">produces photography, video, and podcasts for clients</mark>, and <mark class="hl hl--consult">helps brands and teams turn cultural insight and practical AI into work people can use</mark>.</h1>
-    <div class="pitch__body">
-      <p class="pitch__lede">Curious &amp; Creative is a Los Angeles creative company built by Joshua German and Janel Moore. We run a media network, produce photography, video, editing, and podcasts through our studio, and advise founders, brands, and marketing teams on culture, audience, and AI. The through line is simple: find the real story, make it well, and build the system that helps it travel.</p>
-      <div class="pitch__actions">
+  <section class="wrap intro" aria-labelledby="intro-h">
+    <div class="intro__copy">
+      <p class="intro__kicker"><span class="intro__mark" aria-hidden="true"></span>The Curious &amp; Creative Company</p>
+      <h1 class="intro__title" id="intro-h">Curious first. <span>Then creative.</span></h1>
+      <p class="intro__line">A media network, a studio, and a consultancy in Los Angeles.</p>
+      <div class="intro__actions">
         <a class="btn btn--dark" href="#contact">Start an inquiry</a>
         <a class="btn btn--ghost" href="pages/about.html">Who we are</a>
       </div>
+    </div>
+    <div class="collage">
+      <img class="collage__duo" src="assets/people/duo.jpg" alt="Joshua German and Janel Moore, co-founders of Curious &amp; Creative, standing in front of a bookshelf." fetchpriority="high" />
+      <img src="assets/photos/portraits-jmg_9553-sm.jpg" alt="" />
+      <img src="assets/photos/fashion-jmg_1601-sm.jpg" alt="" />
+      <img src="assets/art/ccpod.jpg" alt="" />
+      <img src="assets/art/polymath.jpg" alt="" />
+      <img src="assets/art/approachable.jpg" alt="" />
+      <img src="assets/art/tmtt.jpg" alt="" />
     </div>
 
     <ol class="legs" aria-label="The three parts of the company">
       <li class="leg leg--network">
         <a href="pages/shows.html">
-          <span class="leg__num" aria-hidden="true">01</span>
-          <h2 class="leg__title">The Network</h2>
-          <p class="leg__sum">Our media network: original shows and the social channels around them, hosts developed over time, published across podcast and social platforms.</p>
-          <span class="leg__go">Explore the Network <span aria-hidden="true">→</span></span>
+          <span class="leg__visual leg__covers" id="leg-covers" aria-hidden="true"></span>
+          <span class="leg__body">
+            <span class="leg__num" aria-hidden="true">01</span>
+            <h2 class="leg__title">The Network</h2>
+            <span class="leg__sum">Original shows and the channels around them.</span>
+            <span class="leg__go">Explore <span aria-hidden="true">→</span></span>
+          </span>
         </a>
       </li>
       <li class="leg leg--studio">
         <a href="pages/studio.html">
-          <span class="leg__num" aria-hidden="true">02</span>
-          <h2 class="leg__title">The Studio</h2>
-          <p class="leg__sum">Where we make work for clients: photography, video, editing, websites, and podcasts produced end to end, with event coverage as a specialty of the house.</p>
-          <span class="leg__go">Explore the Studio <span aria-hidden="true">→</span></span>
+          <span class="leg__visual"><img src="assets/photos/events-jmg_2228-sm.jpg" alt="" loading="lazy" /></span>
+          <span class="leg__body">
+            <span class="leg__num" aria-hidden="true">02</span>
+            <h2 class="leg__title">The Studio</h2>
+            <span class="leg__sum">Photography, event coverage, video, editing, podcasts, and websites for clients.</span>
+            <span class="leg__go">Explore <span aria-hidden="true">→</span></span>
+          </span>
         </a>
       </li>
       <li class="leg leg--consult">
         <a href="pages/consultancy.html">
-          <span class="leg__num" aria-hidden="true">03</span>
-          <h2 class="leg__title">The Consultancy</h2>
-          <p class="leg__sum">Where we help brands and small businesses reach their audiences: brand and cultural strategy, audience and content systems, podcast strategy, and AI.</p>
-          <span class="leg__go">Explore the Consultancy <span aria-hidden="true">→</span></span>
+          <span class="leg__visual leg__visual--lab"><img src="assets/projects/genalpha.svg" alt="" loading="lazy" /></span>
+          <span class="leg__body">
+            <span class="leg__num" aria-hidden="true">03</span>
+            <h2 class="leg__title">The Consultancy</h2>
+            <span class="leg__sum">Culture, audience, and practical AI for brands and teams.</span>
+            <span class="leg__go">Explore <span aria-hidden="true">→</span></span>
+          </span>
         </a>
       </li>
     </ol>
@@ -68,80 +86,66 @@
     <div class="proof" id="proof-rail"></div>
   </section>
 
-  <!-- 3. THE NETWORK -->
+  <!-- 3. THE NETWORK: the cover wall -->
   <section class="wrap" id="network" aria-labelledby="network-h">
     <div class="pill-row">
       <h2 class="pill-title pill-title--gold" id="network-h">The Network</h2>
       <a class="pill-more" href="pages/shows.html">Every show →</a>
     </div>
-    <div class="legsec legsec--network">
-      <div class="legsec__copy">
-        <p class="legsec__para">The Network is our media network. We build original shows and the social channels around them, develop hosts and personalities, and publish across podcast and social platforms. It starts with shows like The Eclectic Polymath, Approachable AI, God is Brazilian, and Too Much to Tweet, and it grows the way modern media networks grow: show by show, page by page, audience by audience.</p>
-        <p class="legsec__links"><a class="btn btn--dark" href="pages/shows.html">Explore the Network</a></p>
-        <div class="nl" id="newsletter">
-          <span class="eyebrow">The newsletter</span>
-          <h3 class="nl__title">New shows and episodes, in your inbox</h3>
-          <p>Ideas, new episodes, and experiments, when there's something worth sending. Delivered through Substack.</p>
-          <form class="nl-form" id="nl-form" action="https://jgerms20.substack.com/subscribe" method="get" target="_blank">
-            <label class="sr-only" for="nl-email">Email address</label>
-            <input id="nl-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
-            <button type="submit" aria-label="Subscribe on Substack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
-          </form>
-        </div>
-      </div>
-      <div class="legsec__aside">
-        <p class="eyebrow">Flagship shows</p>
-        <ul class="flagships" id="flagships" aria-label="Flagship shows"></ul>
+    <p class="sec-line">Original shows and the channels around them.</p>
+    <ul class="wall" id="cover-wall" aria-label="Every show in the Network"></ul>
+    <div class="net-foot">
+      <a class="btn btn--dark" href="pages/shows.html">Every show</a>
+      <div class="nl" id="newsletter">
+        <span class="eyebrow">The newsletter</span>
+        <h3 class="nl__title">New shows and episodes, in your inbox</h3>
+        <form class="nl-form" id="nl-form" action="https://jgerms20.substack.com/subscribe" method="get" target="_blank">
+          <label class="sr-only" for="nl-email">Email address</label>
+          <input id="nl-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          <button type="submit" aria-label="Subscribe on Substack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- 4. THE STUDIO -->
+  <!-- 4. THE STUDIO: photo mosaic + the six services -->
   <section class="wrap" id="studio" aria-labelledby="studio-h">
     <div class="pill-row">
       <h2 class="pill-title pill-title--green" id="studio-h">The Studio</h2>
-      <a class="pill-more" href="pages/studio.html">Everything the Studio makes →</a>
+      <a class="pill-more" href="pages/studio.html">See the Studio →</a>
     </div>
-    <div class="legsec legsec--studio">
-      <div class="legsec__copy">
-        <p class="legsec__para">The Studio is where we make work for clients. We shoot photography and video, we edit, we build websites, and we produce podcasts end to end. Event coverage is a specialty of the house: documentary stills and video of presentations, launches, performances, and gatherings, captured as the room actually felt. Photography here is Curious &amp; Creative work from start to finish. You can follow the photography day to day on Instagram at @viewsbygerm.</p>
-        <p class="legsec__links"><a class="btn" href="pages/studio.html">Explore the Studio</a></p>
-      </div>
-      <div class="legsec__aside">
-        <p class="eyebrow">Services</p>
-        <ol class="svcs">
-          <li><span aria-hidden="true">01</span>Photography</li>
-          <li class="svcs__feat"><span aria-hidden="true">02</span>Event Coverage</li>
-          <li><span aria-hidden="true">03</span>Videography</li>
-          <li><span aria-hidden="true">04</span>Editing</li>
-          <li><span aria-hidden="true">05</span>Podcast Production</li>
-          <li><span aria-hidden="true">06</span>Websites</li>
-        </ol>
-      </div>
-    </div>
+    <div class="mosaic" id="studio-mosaic"></div>
+    <ul class="svc-chips" aria-label="Studio services">
+      <li><a href="pages/studio.html#photography">Photography</a></li>
+      <li class="svc-chips__feat"><a href="pages/studio.html#event-coverage">Event Coverage <span>Specialty</span></a></li>
+      <li><a href="pages/studio.html#videography">Videography</a></li>
+      <li><a href="pages/studio.html#editing">Editing</a></li>
+      <li><a href="pages/studio.html#podcast">Podcast Production</a></li>
+      <li><a href="pages/studio.html#websites">Websites</a></li>
+    </ul>
+    <p class="sec-cta"><a class="btn" href="pages/studio.html">See the Studio</a></p>
   </section>
 
-  <!-- 5. THE CONSULTANCY -->
+  <!-- 5. THE CONSULTANCY: four ways to start + the Gen Alpha Lab -->
   <section class="wrap" id="consultancy" aria-labelledby="consult-h">
     <div class="pill-row">
       <h2 class="pill-title pill-title--grape" id="consult-h">The Consultancy</h2>
-      <a class="pill-more" href="pages/consultancy.html">How we work with teams →</a>
+      <a class="pill-more" href="pages/consultancy.html">Ways to start →</a>
     </div>
-    <div class="legsec legsec--consult">
-      <div class="legsec__copy">
-        <p class="legsec__para">The Consultancy is where we help brands and small businesses reach their audiences and improve their marketing. The work covers brand and cultural strategy, audience and content systems, podcast strategy, and AI: workflow design, enablement, and hands on training that teaches teams to use AI in their real work. The Gen Alpha Intelligence Lab, our research product on the next generation of audiences, sits here as proof that the strategy is backed by original research. Start with a Cultural Opportunity Sprint, an AI Workflow Audit, a Podcast Strategy Sprint, or a Fractional Creative Strategy block.</p>
-        <p class="legsec__links"><a class="btn btn--grape" href="pages/consultancy.html">Explore the Consultancy</a></p>
-      </div>
-      <div class="legsec__aside">
-        <p class="eyebrow">Ways to start</p>
-        <ul class="entries">
-          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">A</span>Cultural Opportunity Sprint</a></li>
-          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">B</span>AI Workflow Audit</a></li>
-          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">C</span>Podcast Strategy Sprint</a></li>
-          <li><a href="pages/consultancy.html"><span class="entries__n" aria-hidden="true">D</span>Fractional Creative Strategy</a></li>
-        </ul>
-      </div>
+    <p class="sec-line">Culture, audience, and practical AI for brands and teams.</p>
+    <div class="consult">
+      <a class="lab" href="pages/consultancy.html#lab">
+        <img src="assets/projects/genalpha.svg" alt="Gen Alpha Intelligence Lab artwork: a glowing alpha symbol on deep violet." loading="lazy" />
+        <span class="lab__cap">Gen Alpha Intelligence Lab</span>
+      </a>
+      <ol class="ways" aria-label="Ways to start">
+        <li><a href="pages/consultancy.html#offers"><span aria-hidden="true">A</span>Cultural Opportunity Sprint</a></li>
+        <li><a href="pages/consultancy.html#offers"><span aria-hidden="true">B</span>AI Workflow Audit</a></li>
+        <li><a href="pages/consultancy.html#offers"><span aria-hidden="true">C</span>Podcast Strategy Sprint</a></li>
+        <li><a href="pages/consultancy.html#offers"><span aria-hidden="true">D</span>Fractional Creative Strategy</a></li>
+      </ol>
     </div>
+    <p class="sec-cta"><a class="btn btn--grape" href="pages/consultancy.html">Ways to start</a></p>
   </section>
 
   <!-- 6. TEAM -->
@@ -151,40 +155,32 @@
       <a class="pill-more" href="pages/about.html">Our story →</a>
     </div>
     <div class="team">
-      <p class="team__para">Curious &amp; Creative is the company Joshua German and Janel Moore are building in Los Angeles. Joshua leads creative strategy, production, and editorial direction. Janel leads on technology, finance, and operations, and she is a creative partner in her own right, including as the host of Too Much to Tweet. Together they run a media network, a production studio, and a consultancy, and the three parts feed each other: the network keeps their instincts close to real audiences, the studio keeps their craft honest, and the consultancy turns both into judgment other people can hire.</p>
-      <div class="founders">
-        <article class="founder">
-          <img class="founder__photo" src="assets/people/joshua.jpg" alt="Portrait of Joshua German" loading="lazy" />
-          <div class="founder__body">
-            <span class="eyebrow">Co-founder</span>
-            <h3 class="founder__name">Joshua German</h3>
-            <p>Leads creative strategy, production, and editorial direction. Hosts The Eclectic Polymath and Approachable AI inside the Network.</p>
-            <nav aria-label="Joshua German elsewhere"><a href="https://joshuamgerman.com" target="_blank" rel="noopener">Website</a><a href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a></nav>
-          </div>
-        </article>
-        <article class="founder">
-          <img class="founder__photo" src="assets/people/janel.jpg" alt="Portrait of Janel Moore" loading="lazy" />
-          <div class="founder__body">
-            <span class="eyebrow">Co-founder</span>
-            <h3 class="founder__name">Janel Moore</h3>
-            <p>Brings technology, finance, fundraising, and campaign operations, and is a creative partner in her own right as the host of Too Much to Tweet inside the Network.</p>
-            <nav aria-label="Janel Moore elsewhere"><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a><a href="pages/shows.html#tmtt">Too Much to Tweet</a></nav>
-          </div>
-        </article>
-      </div>
-      <p class="legsec__links"><a class="btn btn--dark" href="pages/about.html">Read our story</a></p>
+      <figure class="team__duo">
+        <img src="assets/people/duo.jpg" alt="Joshua German and Janel Moore standing together in front of a bookshelf." loading="lazy" />
+        <figcaption>Joshua German and Janel Moore, co-founders.</figcaption>
+      </figure>
+      <article class="founder">
+        <img class="founder__photo" src="assets/people/joshua.jpg" alt="Portrait of Joshua German" loading="lazy" />
+        <h3 class="founder__name">Joshua German</h3>
+        <p>Creative strategy, production, editorial.</p>
+        <nav aria-label="Joshua German elsewhere"><a href="https://joshuamgerman.com" target="_blank" rel="noopener">Website</a><a href="https://www.linkedin.com/in/joshua-german/" target="_blank" rel="noopener">LinkedIn</a></nav>
+      </article>
+      <article class="founder">
+        <img class="founder__photo" src="assets/people/janel.jpg" alt="Portrait of Janel Moore" loading="lazy" />
+        <h3 class="founder__name">Janel Moore</h3>
+        <p>Technology, finance, campaigns — and host of Too Much to Tweet.</p>
+        <nav aria-label="Janel Moore elsewhere"><a href="https://www.linkedin.com/in/janel-moore/" target="_blank" rel="noopener">LinkedIn</a><a href="pages/shows.html#tmtt">Too Much to Tweet</a></nav>
+      </article>
     </div>
   </section>
 
   <!-- 6b. FOUNDER EXPERIENCE (its own section, never mixed with company work) -->
   <section class="wrap" id="founder-experience" aria-labelledby="fx-h">
     <div class="fx">
-      <span class="eyebrow">Founder experience</span>
       <h2 class="fx__title" id="fx-h">Our founders bring experience from work on Levi's, Gatorade, DoorDash, DIRECTV, Sephora, MLB, and BMW.</h2>
       <ul class="fx__brands" aria-hidden="true">
         <li>Levi's</li><li>Gatorade</li><li>DoorDash</li><li>DIRECTV</li><li>Sephora</li><li>MLB</li><li>BMW</li>
       </ul>
-      <a class="pill-more" href="pages/about.html">More about the founders →</a>
     </div>
   </section>
 
@@ -192,9 +188,12 @@
   <section class="wrap" id="contact" aria-labelledby="contact-h">
     <div class="pill-row"><h2 class="pill-title" id="contact-h">Contact</h2></div>
     <div class="contact">
-      <p class="contact__intro">Tell us what you are building and which part of the house it belongs in. Every inquiry lands in our shared company inbox at <a href="mailto:admin@curiousandcreative.co">admin@curiousandcreative.co</a>, and that is where our reply will come from.</p>
-      <div class="contact__form" id="inquiry">
-        <p class="contact__fallback"><a class="btn btn--dark" href="pages/contact.html">Start an inquiry</a></p>
+      <p class="contact__intro">Tell us what you're building.</p>
+      <div class="contact__side">
+        <div class="contact__form" id="inquiry">
+          <p class="contact__fallback"><a class="btn btn--dark" href="pages/contact.html">Start an inquiry</a></p>
+        </div>
+        <p class="contact__mail">Or email <a href="mailto:admin@curiousandcreative.co">admin@curiousandcreative.co</a></p>
       </div>
     </div>
   </section>
