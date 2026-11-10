@@ -1,5 +1,5 @@
-/* Homepage: the pitch and leg summaries are static HTML; this file fills the
-   three data-driven slots (proof rail, flagship shows, inquiry form). */
+/* Homepage: the copy is static HTML; this file fills the data-driven slots
+   (proof rail, Network covers, Studio mosaic, inquiry form). */
 (() => {
   const CC = window.CC;
   if (!CC) return;
@@ -21,18 +21,45 @@
     CC.mountInquiry(inquiry);
   }
 
-  /* ---------------- 3. the Network: flagship shows ---------------- */
+  /* ---------------- 1 + 3. the Network: leg-card covers and the cover wall ---------------- */
   CC.ready.then((data) => {
-    const list = document.getElementById("flagships");
-    if (!list) return;
-    const shows = (CC.showOrder ? CC.showOrder(data.primary || []) : data.primary || []).filter((s) => !s.archive).slice(0, 5);
-    if (!shows.length) { list.closest(".legsec__aside").hidden = true; return; }
-    list.innerHTML = shows.map((s) => `<li data-show="${esc(s.key)}">
-      <a class="flagship" href="${esc(CC.showHref(s))}">
-        ${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : '<span class="ph" aria-hidden="true"></span>'}
-        <span class="flagship__txt"><b>${esc(s.name)}</b>${s.tagline ? `<small>${esc(s.tagline)}</small>` : ""}</span>
-        <span class="flagship__go" aria-hidden="true">→</span>
-      </a>
+    const shows = (data.shows || []).filter((s) => s.art);
+    // the flagship tier (primary, still running) first and larger, then everything else
+    const big = (s) => s.tier !== "secondary" && !s.archive;
+    const ordered = [...shows.filter(big), ...shows.filter((s) => !big(s))];
+
+    const leg = document.getElementById("leg-covers");
+    if (leg) leg.innerHTML = ordered.slice(0, 12).map((s) => `<img src="${esc(CC.art(s))}" alt="" loading="lazy">`).join("");
+
+    const wall = document.getElementById("cover-wall");
+    if (!wall) return;
+    if (!ordered.length) { wall.hidden = true; return; }
+    wall.innerHTML = ordered.map((s) => `<li class="${big(s) ? "wall__big" : ""}" data-show="${esc(s.key)}">
+      <a href="${esc(CC.showHref(s))}"><img src="${esc(CC.art(s))}" alt="${esc(s.name)}" loading="lazy" width="300" height="300"></a>
     </li>`).join("");
   });
+
+  /* ---------------- 4. the Studio: photo mosaic from photos.json ---------------- */
+  const mosaic = document.getElementById("studio-mosaic");
+  if (mosaic) {
+    // event work leads (the specialty), then portraits and fashion; skip photos already on the page
+    const PICK = ["events-jmg_2254", "events-jmg_7895", "fashion-jmg_8075", "events-jmg_2854", "portraits-jmg_8929",
+      "events-dsc00021", "fashion-jmg_3641", "portraits-jmg_6968", "events-dsc00028"];
+    const SETS = ["Events & Live", "Portraits", "Fashion"];
+    const onPage = new Set([...document.images].map((i) => i.getAttribute("src")));
+    fetch(CC.url("data/photos.json"), { cache: "no-cache" })
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null)
+      .then((json) => {
+        const all = ((json && json.photos) || []).filter((p) => !onPage.has(p.thumb) && !onPage.has(p.src));
+        const byId = Object.fromEntries(all.map((p) => [p.id, p]));
+        const picked = PICK.map((id) => byId[id]).filter(Boolean);
+        all.filter((p) => SETS.includes(p.set) && !picked.includes(p)).forEach((p) => { if (picked.length < PICK.length) picked.push(p); });
+        if (!picked.length) { mosaic.hidden = true; return; }
+        mosaic.innerHTML = picked.map((p, i) => `<figure class="mosaic__tile${i === 0 ? " mosaic__tile--lead" : ""}">
+          <img src="${esc(CC.url(i === 0 ? p.src : p.thumb))}" alt="${esc(p.alt || "")}" loading="lazy">
+          ${i === 0 ? `<figcaption><b>Event Coverage</b> Documentary stills and video, captured as the room actually felt.</figcaption>` : ""}
+        </figure>`).join("");
+      });
+  }
 })();
