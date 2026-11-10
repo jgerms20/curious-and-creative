@@ -4,7 +4,9 @@
   const { esc, url, ago, dur, icon } = CC;
   const ext = (h) => (/^https?:/.test(h) ? ' target="_blank" rel="noopener"' : "");
 
-  const epRow = (e, s) => {
+  // compact rows (the network page) show titles only; the archive keeps descriptions
+  const epRow = (e, s, compact) => {
+    const sub = compact ? "" : [s && (s.short || s.name), e.description].filter(Boolean).join(" — ");
     const h = CC.epHref(e);
     const vid = e.kind === "video" || e.kind === "short";
     const img = vid ? e.image : e.image || CC.art(s);
@@ -12,12 +14,12 @@
     if (e.page) // the row opens the episode's page; Spotify stays one tap away
       return `<div class="ep ep--page" data-show="${esc(e.show)}">
       ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph"></span>'}
-      <span><b><a class="ep__page" href="${esc(url(e.page))}">${esc(e.title)}</a></b><small>${esc([s && (s.short || s.name), e.description].filter(Boolean).join(" — "))}</small></span>
+      <span><b><a class="ep__page" href="${esc(url(e.page))}">${esc(e.title)}</a></b>${sub ? `<small>${esc(sub)}</small>` : ""}</span>
       <span class="ep__when">${esc(ago(e.date))}${e.duration ? `<br>${esc(dur(e.duration))}` : ""}${sp ? `<br><a class="ep__sp" href="${esc(sp)}" target="_blank" rel="noopener">Spotify</a>` : ""}</span>
     </div>`;
     return `<a class="ep${vid ? " ep--video" : ""}" href="${esc(h)}"${ext(h)} data-show="${esc(e.show)}">
       ${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph"></span>'}
-      <span><b>${esc(e.title)}</b><small>${esc([s && (s.short || s.name), e.description].filter(Boolean).join(" — "))}</small></span>
+      <span><b>${esc(e.title)}</b>${sub ? `<small>${esc(sub)}</small>` : ""}</span>
       <span class="ep__when">${esc(ago(e.date))}${e.duration ? `<br>${esc(dur(e.duration))}` : ""}</span>
     </a>`;
   };
@@ -58,7 +60,7 @@
             ${links.map(([l, h], i) => `<a class="btn ${i ? "btn--ghost" : ""} btn--sm" href="${esc(h)}" target="_blank" rel="noopener">${i ? "" : icon.play} ${esc(l)}</a>`).join("")}
             ${s.key === "ccpod" && !links.length ? `<a class="btn btn--sm" href="#newsletter">Get notified</a>` : ""}
           </div>
-          ${eps.length ? `<div class="eps">${eps.slice(0, 5).map((e) => epRow(e, s)).join("")}</div>
+          ${eps.length ? `<div class="eps">${eps.slice(0, 3).map((e) => epRow(e, s, true)).join("")}</div>
             ${eps.length > 5 ? `<a class="pill-more eps__more" href="${url(`pages/archive.html?show=${s.key}`)}">All ${eps.length} ${s.kind === "youtube" ? "videos" : "episodes"} →</a>` : ""}`
           : `<p class="eyebrow" style="margin-top:1.4rem">New episodes appear here automatically as they're published.</p>`}
         </div>

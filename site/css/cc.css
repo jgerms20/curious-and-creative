@@ -1009,3 +1009,5 @@ a.ncard__latest:hover { text-decoration: underline; }
 .about-xp h2 { margin-top: .75rem; font-size: clamp(1.5rem, 3.4vw, 2.5rem); font-weight: 880; font-stretch: 85%; line-height: 1.12; max-width: 30ch; }
 .about-xp p { margin-top: 1rem; color: var(--box-soft); max-width: 60ch; }
 .about-scail { margin-top: 1.5rem; max-width: 68ch; color: var(--ink-soft); font-size: 1rem; }
+/* network page: keep each show blurb to three lines; the show page carries the rest */
+.showblock__about { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
