@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T06:48:17Z",
+ "generated_at": "2026-11-11T15:27:03Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-11T01:00:00Z",
-   "count": 255
+   "latest": "2026-11-08T02:47:44Z",
+   "count": 252
   },
   {
    "key": "approachable",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-11T02:06:18Z",
-   "count": 13
+   "latest": "2026-11-10T00:28:01Z",
+   "count": 12
   },
   {
    "key": "marketread",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-11T02:08:48Z",
-   "count": 10
+   "latest": "2026-11-09T19:20:34Z",
+   "count": 9
   },
   {
    "key": "techread",
@@ -566,8 +566,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-10T16:51:27Z",
-   "count": 6
+   "latest": "2026-11-06T12:04:14Z",
+   "count": 5
   },
   {
    "key": "tvinsider",
@@ -863,48 +863,6 @@
    "number": null
   },
   {
-   "id": "airead:c6618d63 2ece 4445 b834 1b6bbef8bb33",
-   "show": "airead",
-   "kind": "episode",
-   "title": "Tuesday, November 10, 2026",
-   "date": "2026-11-11T02:08:48Z",
-   "duration": 1648,
-   "description": "Anthropic unveiled Claude Fable 5.2 for broad use and Claude Mythos 5.2 for verified cybersecurity and life-sciences teams, SoftBank booked a $7 billion quarterly loss on US data center costs, Google added TPU 8tx for confidential inference and TPU 8i Max for massive context, Australia made AI incident reporting mandatory after an OpenAI agent breached a government website, Meta launched Muse Ember at $0.10 per million input tokens, NVIDIA showed GR00T 2 for robots learning from human video, Meta expanded AI age checks for Instagram teens, and Disney and Adobe will co-develop custom models on Disney IP — plus an AI seabed robot that retrieved nodules from 4,000 metres down.\n • Anthropic…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794362907346-915350a860a7e.jpg",
-   "url": "https://open.spotify.com/episode/64g01StaqTf5evvGgvmTJj",
-   "spotify_url": "https://open.spotify.com/episode/64g01StaqTf5evvGgvmTJj",
-   "audio": "https://anchor.fm/s/119609054/podcast/play/129232104/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F656c001e-3df1-c07c-40ad-d67746be5069.m4a",
-   "number": null
-  },
-  {
-   "id": "globalread:cb0297c4 40fc 46b7 8a90 d3b7598ae370",
-   "show": "globalread",
-   "kind": "episode",
-   "title": "Tuesday, November 10, 2026",
-   "date": "2026-11-11T02:06:18Z",
-   "duration": 1146,
-   "description": "The first US-Ukraine-Russia peace talks in nine months are under way in Abu Dhabi, with Europe in the building but not at the table; President Trump holds off on new Iran strikes but keeps the Strait of Hormuz blockade as Qatar's prime minister briefs the G7 in Paris and oil falls to $91.88; France summons Iran's ambassador over the supermarket fridge cyberattack and warns of a response; COP31 host Turkey pushes its 35% electrification goal into the final text; Israel's new Knesset is sworn in as Netanyahu counters Eisenkot's mandate with a unity call under his own leadership; France confirms a 1.6% minimum-wage rise as unions reject it and teachers strike; at least ten die in a foggy…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794362730643-e3982c9d61c08.jpg",
-   "url": "https://open.spotify.com/episode/5kNJjrVvZUXpUy4FnwvLHN",
-   "spotify_url": "https://open.spotify.com/episode/5kNJjrVvZUXpUy4FnwvLHN",
-   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129231988/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fe7243c91-2252-337f-0e2b-b62630df31ed.m4a",
-   "number": null
-  },
-  {
-   "id": "polymath:fac60d9b e3b6 4379 8291 1d1e6c2a49da",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#258 Two Daughters of South London: How Grace Wales Bonner and Martine Rose Took the Two Biggest Jobs in Fashion",
-   "date": "2026-11-11T01:00:00Z",
-   "duration": 2547,
-   "description": "Thirteen months apart, two designers from South London's Black British culture took the two most storied menswear chairs in Paris. In October 2025, Hermès named Grace Wales Bonner creative director of menswear, ending Véronique Nichanian's 37-year tenure. In November 2026, Kering named Martine Rose creative director of Balenciaga, the first woman to hold the job in the house's 109-year history.\n One was formed by the seminar room and the archive, the other by the sound system, the market stall and the estate. This episode follows both formations, the products that paid (a Samba that broke Lyst, a Shox mule still releasing four years on, a Super Bowl jacket), the generation around them, and…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794358279749-59cded6dc4622.jpg",
-   "url": "https://open.spotify.com/episode/2ozYMgjeCwJTW4yExPVaCU",
-   "spotify_url": "https://open.spotify.com/episode/2ozYMgjeCwJTW4yExPVaCU",
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129229500/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb4bf8e06-d316-505e-1459-dbd4141365ed.m4a",
-   "number": "258"
-  },
-  {
    "id": "fastbreak:9ab9cca3 7f4a 4f9e 96dc edda33c3251b",
    "show": "fastbreak",
    "kind": "episode",
@@ -917,34 +875,6 @@
    "spotify_url": "https://open.spotify.com/episode/2Z3dICCEXN2WAZjZ3SjRaW",
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129228698/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb69a6e9e-eb50-81bd-9682-1404e100b294.m4a",
    "number": null
-  },
-  {
-   "id": "polymath:87c9deb5 8b62 4ea0 a104 f8d470288925",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#256 Oracle: The Company That Sold IBM's Future First",
-   "date": "2026-11-11T00:00:00Z",
-   "duration": 3139,
-   "description": "In 1970, an IBM researcher named Edgar Codd published a paper describing a radically simpler way to organize data, and IBM largely sat on it, because the idea threatened a profitable product. Seven years later, three programmers in Santa Clara with $2,000 read IBM's published research and built the product IBM would not. They named it after a CIA project codename and called their first release \"Version 2,\" because nobody buys a Version 1.\n This episode is the story of the company, not the founder: how Oracle turned the relational database into the invisible infrastructure of the world's institutions, and how, nearly fifty years on, the same company became a backbone of the AI boom and the…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794366376799-c0dde82328066.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/256-Oracle-The-Company-That-Sold-IBMs-Future-First-e3s6dqr",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129234203/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F91404258-4f6c-d4d0-24f5-c095061eef9c.m4a",
-   "number": "256"
-  },
-  {
-   "id": "polymath:a3774449 7147 4737 a998 7b4687224c79",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#255 VaynerMedia: The Agency Built on Underpriced Attention",
-   "date": "2026-11-10T23:00:01Z",
-   "duration": 2683,
-   "description": "In 2009, Gary Vaynerchuk started an advertising agency whose entire product was embarrassingly simple: his brother AJ on a laptop, creating brands' Facebook and Twitter accounts, posting, and answering customers. Two years in, the agency had made about $1.7 million total. Five years later it was doing $40 million a year, and a decade later its parent company was reportedly doing $300 million.\n This episode traces what VaynerMedia actually sold, how the most mocked category in advertising, the \"social media agency,\" became the beachhead of a holding-company empire, and what \"underpriced attention\" really meant as a business model, from the Wine Library days to the VaynerX era.\n Follow along…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794366106561-671695245d0ff.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/255-VaynerMedia-The-Agency-Built-on-Underpriced-Attention-e3s6dl4",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129234020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F3af032ad-527e-523e-cc24-2c5708dbe039.m4a",
-   "number": "255"
   },
   {
    "id": "dominatedconvo:926e7340 2cb7 4b93 a8ca 8c2ffd7cd313",
@@ -972,20 +902,6 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Russell-Brand-Gets-Ten-and-a-Half-Years-in-Prison--Monday--November-9--2026-e3s5f3g",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129202736/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Fe06e477d-0769-a335-0a93-fa5926779826.m4a",
-   "number": null
-  },
-  {
-   "id": "hollywoodinsider:fd77032b c0aa 400c 9281 23adba80cb92",
-   "show": "hollywoodinsider",
-   "kind": "episode",
-   "title": "Godzilla Minus Zero's $31.6 Million Opening Is the Biggest Ever for a Live-Action Foreign-Language Film | Monday, November 9, 2026",
-   "date": "2026-11-10T16:51:27Z",
-   "duration": 681,
-   "description": "Godzilla Minus Zero's $31.6 million opening is the biggest ever for a live-action foreign-language film, Cat in the Hat lands at No. 2, two non-English films crack the top five on the same weekend, the New York Times moves to buy Letterboxd, Christopher Nolan previews the DGA's next AI fight, and the layoff reports keep coming.\n In this episode:\n • Godzilla Minus Zero's Record Opening — https://www.thewrap.com/creative-content/movies/godzilla-minus-zero-box-office-opening-weekend-gkids-record/\n • Cat in the Hat Lands at No. 2 — https://www.animationmagazine.net/2026/11/warner-bros-the-cat-in-the-hat-lands-at-no-2-scratches-up-20-mil-at-the-box-office/\n • Ramayana's IMAX Record —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1794329455643-d9b9e0ae98422.jpg",
-   "url": "https://open.spotify.com/episode/5sdKoirb6tgVnZLvMHTpXP",
-   "spotify_url": "https://open.spotify.com/episode/5sdKoirb6tgVnZLvMHTpXP",
-   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129202564/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Ff77017c8-ddbf-78e0-805c-bb5e73c5be9e.m4a",
    "number": null
   },
   {
@@ -6525,7 +6441,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8537,8 +8453,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 255,
-   "spotify_matches": 1
+   "episodes": 252,
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -8630,8 +8546,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 1
+   "episodes": 12,
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -8662,8 +8578,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The AI Read",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 1
+   "episodes": 9,
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
@@ -8694,8 +8610,8 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 1
+   "episodes": 5,
+   "spotify_matches": 0
   },
   "tvinsider": {
    "ok": true,
