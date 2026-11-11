@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T23:34:20Z",
+ "generated_at": "2026-11-11T06:48:17Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-08T02:47:44Z",
-   "count": 252
+   "latest": "2026-11-11T01:00:00Z",
+   "count": 255
   },
   {
    "key": "approachable",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-10T00:28:01Z",
-   "count": 12
+   "latest": "2026-11-11T02:06:18Z",
+   "count": 13
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-09T19:18:36Z",
-   "count": 9
+   "latest": "2026-11-11T03:26:18Z",
+   "count": 11
   },
   {
    "key": "nyread",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-09T19:20:34Z",
-   "count": 9
+   "latest": "2026-11-11T02:08:48Z",
+   "count": 10
   },
   {
    "key": "techread",
@@ -618,8 +618,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-09T21:15:29Z",
-   "count": 10
+   "latest": "2026-11-11T00:27:01Z",
+   "count": 11
   },
   {
    "key": "blitz",
@@ -835,6 +835,118 @@
  ],
  "episodes": [
   {
+   "id": "marketread:f4a80297 e143 4c49 9074 93c844310573",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-11T03:26:18Z",
+   "duration": 1309,
+   "description": "DEVELOPING: Nvidia's board has opened an independent investigation into reports that chief executive Jensen Huang was the target of a foreign intelligence effort. Huang remains CEO, the board says it has no reason to believe national security or Nvidia secrets were compromised, and the stock fell 4.5% in premarket trading ahead of earnings on November 17 and a requested House briefing on November 18.\n In today's brief:\n • Nvidia investigation and the premarket reaction — https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/\n • Futures try to repair after a rough week —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794367503739-6e40c05d066c6.jpg",
+   "url": "https://open.spotify.com/episode/5P3DkGazYhdnND07RQFFW2",
+   "spotify_url": "https://open.spotify.com/episode/5P3DkGazYhdnND07RQFFW2",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129234812/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F2a73adfe-0b7f-0893-17ce-0da77f9170e6.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:ab97c91d adf3 479c b29c 0bea56a03060",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Tuesday, November 10, 2026",
+   "date": "2026-11-11T02:14:06Z",
+   "duration": 1467,
+   "description": "Wall Street carries Monday's biggest rally since April into the one report that can undo it: October inflation at 8:30 Eastern. Futures hold, oil breaks below $90, Asia surges, and everything waits on CPI, with a December hike priced at 84 percent and Nvidia trying to climb off a seven-month low.\n • Futures hold Monday's rally into CPI day — https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/\n • Oil breaks below $90 as Trump plays down new Iran strikes — https://www.morningstar.com/news/dow-jones/202611102803/oil-prices-extend-decline-after-trump-signals-restraint-on-iran-update\n • Asia surges and Europe follows: Kospi up more than 4 percent —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794363221073-f33971d4b9194.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Tuesday--November-10--2026-e3s6bv3",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129232291/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F48ef0ab0-906f-75a0-b103-4ebbe7026ae4.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:c6618d63 2ece 4445 b834 1b6bbef8bb33",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Tuesday, November 10, 2026",
+   "date": "2026-11-11T02:08:48Z",
+   "duration": 1648,
+   "description": "Anthropic unveiled Claude Fable 5.2 for broad use and Claude Mythos 5.2 for verified cybersecurity and life-sciences teams, SoftBank booked a $7 billion quarterly loss on US data center costs, Google added TPU 8tx for confidential inference and TPU 8i Max for massive context, Australia made AI incident reporting mandatory after an OpenAI agent breached a government website, Meta launched Muse Ember at $0.10 per million input tokens, NVIDIA showed GR00T 2 for robots learning from human video, Meta expanded AI age checks for Instagram teens, and Disney and Adobe will co-develop custom models on Disney IP — plus an AI seabed robot that retrieved nodules from 4,000 metres down.\n • Anthropic…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794362907346-915350a860a7e.jpg",
+   "url": "https://open.spotify.com/episode/64g01StaqTf5evvGgvmTJj",
+   "spotify_url": "https://open.spotify.com/episode/64g01StaqTf5evvGgvmTJj",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129232104/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F656c001e-3df1-c07c-40ad-d67746be5069.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:cb0297c4 40fc 46b7 8a90 d3b7598ae370",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Tuesday, November 10, 2026",
+   "date": "2026-11-11T02:06:18Z",
+   "duration": 1146,
+   "description": "The first US-Ukraine-Russia peace talks in nine months are under way in Abu Dhabi, with Europe in the building but not at the table; President Trump holds off on new Iran strikes but keeps the Strait of Hormuz blockade as Qatar's prime minister briefs the G7 in Paris and oil falls to $91.88; France summons Iran's ambassador over the supermarket fridge cyberattack and warns of a response; COP31 host Turkey pushes its 35% electrification goal into the final text; Israel's new Knesset is sworn in as Netanyahu counters Eisenkot's mandate with a unity call under his own leadership; France confirms a 1.6% minimum-wage rise as unions reject it and teachers strike; at least ten die in a foggy…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794362730643-e3982c9d61c08.jpg",
+   "url": "https://open.spotify.com/episode/5kNJjrVvZUXpUy4FnwvLHN",
+   "spotify_url": "https://open.spotify.com/episode/5kNJjrVvZUXpUy4FnwvLHN",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129231988/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fe7243c91-2252-337f-0e2b-b62630df31ed.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:fac60d9b e3b6 4379 8291 1d1e6c2a49da",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#258 Two Daughters of South London: How Grace Wales Bonner and Martine Rose Took the Two Biggest Jobs in Fashion",
+   "date": "2026-11-11T01:00:00Z",
+   "duration": 2547,
+   "description": "Thirteen months apart, two designers from South London's Black British culture took the two most storied menswear chairs in Paris. In October 2025, Hermès named Grace Wales Bonner creative director of menswear, ending Véronique Nichanian's 37-year tenure. In November 2026, Kering named Martine Rose creative director of Balenciaga, the first woman to hold the job in the house's 109-year history.\n One was formed by the seminar room and the archive, the other by the sound system, the market stall and the estate. This episode follows both formations, the products that paid (a Samba that broke Lyst, a Shox mule still releasing four years on, a Super Bowl jacket), the generation around them, and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794358279749-59cded6dc4622.jpg",
+   "url": "https://open.spotify.com/episode/2ozYMgjeCwJTW4yExPVaCU",
+   "spotify_url": "https://open.spotify.com/episode/2ozYMgjeCwJTW4yExPVaCU",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129229500/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb4bf8e06-d316-505e-1459-dbd4141365ed.m4a",
+   "number": "258"
+  },
+  {
+   "id": "fastbreak:9ab9cca3 7f4a 4f9e 96dc edda33c3251b",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-11T00:27:01Z",
+   "duration": 1123,
+   "description": "The league's next era arrived on the same night: Cooper Flagg scored 30 of his season-high 43 after halftime as Dallas came back to beat Indiana, and Victor Wembanyama put up 40 points and 8 blocks in 25 minutes at Phoenix. Plus Anthony Davis's 44 in a losing cause, a 51-point Warriors rout, and the Lakers' sixth straight win.\n • Los Angeles Lakers 124, Atlanta Hawks 114\n • Charlotte Hornets 124, Cleveland Cavaliers 112\n • Detroit Pistons 122, Washington Wizards 111\n • Memphis Grizzlies 118, Toronto Raptors 102\n • Dallas Mavericks 125, Indiana Pacers 122\n • Houston Rockets 110, Denver Nuggets 100\n • San Antonio Spurs 122, Phoenix Suns 96\n • Golden State Warriors 138, New Orleans Pelicans…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794357596660-e58c6f597118e.jpg",
+   "url": "https://open.spotify.com/episode/2Z3dICCEXN2WAZjZ3SjRaW",
+   "spotify_url": "https://open.spotify.com/episode/2Z3dICCEXN2WAZjZ3SjRaW",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129228698/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb69a6e9e-eb50-81bd-9682-1404e100b294.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:87c9deb5 8b62 4ea0 a104 f8d470288925",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#256 Oracle: The Company That Sold IBM's Future First",
+   "date": "2026-11-11T00:00:00Z",
+   "duration": 3139,
+   "description": "In 1970, an IBM researcher named Edgar Codd published a paper describing a radically simpler way to organize data, and IBM largely sat on it, because the idea threatened a profitable product. Seven years later, three programmers in Santa Clara with $2,000 read IBM's published research and built the product IBM would not. They named it after a CIA project codename and called their first release \"Version 2,\" because nobody buys a Version 1.\n This episode is the story of the company, not the founder: how Oracle turned the relational database into the invisible infrastructure of the world's institutions, and how, nearly fifty years on, the same company became a backbone of the AI boom and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794366376799-c0dde82328066.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/256-Oracle-The-Company-That-Sold-IBMs-Future-First-e3s6dqr",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129234203/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F91404258-4f6c-d4d0-24f5-c095061eef9c.m4a",
+   "number": "256"
+  },
+  {
+   "id": "polymath:a3774449 7147 4737 a998 7b4687224c79",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#255 VaynerMedia: The Agency Built on Underpriced Attention",
+   "date": "2026-11-10T23:00:01Z",
+   "duration": 2683,
+   "description": "In 2009, Gary Vaynerchuk started an advertising agency whose entire product was embarrassingly simple: his brother AJ on a laptop, creating brands' Facebook and Twitter accounts, posting, and answering customers. Two years in, the agency had made about $1.7 million total. Five years later it was doing $40 million a year, and a decade later its parent company was reportedly doing $300 million.\n This episode traces what VaynerMedia actually sold, how the most mocked category in advertising, the \"social media agency,\" became the beachhead of a holding-company empire, and what \"underpriced attention\" really meant as a business model, from the Wine Library days to the VaynerX era.\n Follow along…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794366106561-671695245d0ff.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/255-VaynerMedia-The-Agency-Built-on-Underpriced-Attention-e3s6dl4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129234020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F3af032ad-527e-523e-cc24-2c5708dbe039.m4a",
+   "number": "255"
+  },
+  {
    "id": "dominatedconvo:926e7340 2cb7 4b93 a8ca 8c2ffd7cd313",
    "show": "dominatedconvo",
    "kind": "episode",
@@ -927,8 +1039,8 @@
    "duration": 1229,
    "description": "COP31 opens in Antalya with an hour lost to a fight over whether climate finance belongs on the agenda; Gadi Eisenkot formally receives the mandate in Jerusalem and reaches out to Netanyahu's own allies; two passenger trains collide south of Cairo, killing at least seven and injuring 112; South Africa's Electoral Commission declares the final results, ANC 30.76 percent, and the 14-day coalition clock starts; oil falls again on Monday as Trump signals restraint on Iran while ships are still hit near Hormuz; France's wage argument moves to the Matignon table, where the government's first offer is about 22 euros; a Paraguayan judge orders former president Pena held before trial as the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794270206398-1694c0e9bb1b5.jpg",
-   "url": "https://open.spotify.com/episode/4ZEygYbNa0c3XRFrnkc8YZ",
-   "spotify_url": "https://open.spotify.com/episode/4ZEygYbNa0c3XRFrnkc8YZ",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Monday--November-9--2026-e3s431s",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129157628/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Fba57cb50-416e-a11f-4478-174cf8ead412.m4a",
    "number": null
   },
@@ -997,8 +1109,8 @@
    "duration": 845,
    "description": "All seven Sunday games are final. Philadelphia 127, Chicago 121 — Brown 29 and Maxey 27 for the 76ers, Giddey 19 points and 15 assists for the Bulls. Los Angeles Lakers 121, Detroit 116. Minnesota 115, Utah 100 — Dosunmu 26 and Ball 24. Dallas 130, Brooklyn 93 — Flagg 25 points, 5 rebounds and 12 assists, Irving 21. Boston 117, Milwaukee 97 — George 27 and Tatum 21 against Kuzma's 27 in the Bucks' sixth straight loss. LA Clippers 139, New Orleans 123 — Garland 24 points and 10 assists, Murphy 26, and Williamson 25 on 9-of-9 shooting. Miami 114, Sacramento 108 — Giannis 29 and 14, Thompson 23 with seven threes, and Acuff Jr. 32, 5 and 10 in the loss.\n The deep dive: Austin Reaves dropped a…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794258904086-ce71d40e03d4c.jpg",
-   "url": "https://open.spotify.com/episode/2XAE5qqZrLpT3Zu9RC2TMn",
-   "spotify_url": "https://open.spotify.com/episode/2XAE5qqZrLpT3Zu9RC2TMn",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Sunday--November-8--2026-e3s3qq0",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129149184/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fb3b3ae4f-72d9-4adc-63d6-55499cf4fc7d.m4a",
    "number": null
   },
@@ -1067,8 +1179,8 @@
    "duration": 1307,
    "description": "OpenAI closed an $11 billion first tranche at a $1.25 trillion valuation, below its original ask; Google took over Crusoe's Wyoming site with a $17 billion build planned, and Microsoft began handing back rented Oracle capacity running older Nvidia chips. Anthropic's IPO valuation talk slipped to $1.2–$1.3 trillion, Thinking Machines shipped Inkling 2 Small with its open weights still pending, Stanford found 44 percent of famous LLM findings have expired, Google switched Gemini and Search off by default for K-12 students, and data-center politics moved from protests to legislation — plus the USDA's bounded AI check on its own crop numbers.\n • OpenAI closes $11B first tranche at $1.25T…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794252005374-cb3637e80f5a2.jpg",
-   "url": "https://open.spotify.com/episode/6Hrn9HfxjKyz2qADoIdJsz",
-   "spotify_url": "https://open.spotify.com/episode/6Hrn9HfxjKyz2qADoIdJsz",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Saturday--November-7--2026-e3s3kma",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129142922/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2Fee296e0e-3e77-1bff-a455-08fb1436778f.m4a",
    "number": null
   },
@@ -1081,8 +1193,8 @@
    "duration": 1077,
    "description": "Saturday edition, built on Friday's close: the Nasdaq bounced 1.09 percent to 24,579.42 and the S&P 500 added 0.31 percent to 7,376.86 while the Dow slipped 0.46 percent to 51,285.73, closing a week that left the S&P down 2.7 percent and the Nasdaq down 3.4 percent. October payrolls blew past forecasts at 165,000 against a 65,000 consensus, unemployment held at 4.1 percent, and December rate-hike odds climbed to about 78 percent. Chips led the bounce, options volume stayed heavy with the VIX easing, Bitcoin steadied near 76,000 dollars after a rough week for the spot ETFs, and Berkshire Hathaway's Saturday report closes the show.\n Part of the Curious & Creative network. Back tomorrow…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794251889363-07b2e2ea7cd27.jpg",
-   "url": "https://open.spotify.com/episode/1NQhYKidSLYWTiQbAqO8CT",
-   "spotify_url": "https://open.spotify.com/episode/1NQhYKidSLYWTiQbAqO8CT",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Saturday--November-7--2026-e3s3kir",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129142811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F6436b88b-35d0-fb0a-e419-f1e9f922a8d6.m4a",
    "number": null
   },
@@ -1137,8 +1249,8 @@
    "duration": 5046,
    "description": "Europe came out of the Second World War and built a table: NATO, pooled coal and steel, eventually a shared history textbook between France and Germany. East Asia came out of the same war and built a wheel. The United States sits at the hub, and Japan, South Korea, the Philippines, and Taiwan each hold a separate spoke, facing Washington one at a time and rarely each other. This episode asks why. The answer is not that Asia's nations failed to organize. It is that the system was designed, in San Francisco in 1951, so they would not have to, and so Washington would never lose control of clients it feared might drag it into a larger war.\n We trace the founding bargain that kept Emperor…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794105969963-c6a72b03873ee.jpg",
-   "url": "https://open.spotify.com/episode/0yGI2M4k420Ap0vR2COAL2",
-   "spotify_url": "https://open.spotify.com/episode/0yGI2M4k420Ap0vR2COAL2",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/253-The-Missing-Pact-Why-Asia-Never-Built-Its-NATO-e3s03pq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129027322/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-8%2Fa1d64014-6b61-7b07-51b7-13a772af7215.m4a",
    "number": "253"
   },
@@ -6413,7 +6525,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8425,7 +8537,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 252,
+   "episodes": 255,
    "spotify_matches": 1
   },
   "approachable": {
@@ -8518,7 +8630,7 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "marketread": {
@@ -8526,7 +8638,7 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 9,
+   "episodes": 11,
    "spotify_matches": 1
   },
   "nyread": {
@@ -8550,7 +8662,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The AI Read",
    "full_catalog": true,
-   "episodes": 9,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "techread": {
@@ -8598,7 +8710,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 10,
+   "episodes": 11,
    "spotify_matches": 1
   },
   "blitz": {
