@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T15:27:03Z",
+ "generated_at": "2026-11-11T22:51:17Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-08T02:47:44Z",
-   "count": 252
+   "latest": "2026-11-11T17:46:15Z",
+   "count": 258
   },
   {
    "key": "approachable",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -277,8 +277,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-10T16:56:58Z",
-   "count": 8
+   "latest": "2026-11-11T20:02:49Z",
+   "count": 9
   },
   {
    "key": "morningread",
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-10T16:45:57Z",
-   "count": 17
+   "latest": "2026-11-11T17:25:39Z",
+   "count": 18
   },
   {
    "key": "ladaily",
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-10T16:49:00Z",
-   "count": 15
+   "latest": "2026-11-11T19:55:47Z",
+   "count": 16
   },
   {
    "key": "globalread",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-10T00:28:01Z",
-   "count": 12
+   "latest": "2026-11-11T20:09:14Z",
+   "count": 14
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-11T03:26:18Z",
-   "count": 11
+   "latest": "2026-11-09T19:18:36Z",
+   "count": 9
   },
   {
    "key": "nyread",
@@ -457,13 +457,13 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0p46JOERBiE9vjed6Pt68I",
-   "feed_title": "The AI Read",
+   "feed_title": "The Tech Read",
    "description": "Artificial intelligence, every morning. New models, research results, company moves, regulation, and real-world deployments — what actually changed, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-09T19:20:34Z",
-   "count": 9
+   "latest": "2026-11-11T02:08:48Z",
+   "count": 10
   },
   {
    "key": "techread",
@@ -566,8 +566,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-06T12:04:14Z",
-   "count": 5
+   "latest": "2026-11-10T16:51:27Z",
+   "count": 6
   },
   {
    "key": "tvinsider",
@@ -618,8 +618,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-11T00:27:01Z",
-   "count": 11
+   "latest": "2026-11-11T20:34:34Z",
+   "count": 12
   },
   {
    "key": "blitz",
@@ -697,8 +697,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-09T21:09:00Z",
-   "count": 7
+   "latest": "2026-11-11T20:28:30Z",
+   "count": 8
   },
   {
    "key": "coltsdaily",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-06T18:35:25Z",
-   "count": 10
+   "latest": "2026-11-11T20:40:31Z",
+   "count": 11
   },
   {
    "key": "cbbdaily",
@@ -797,7 +797,7 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/6A71aYP8TxEEJgOCOyTQs4",
-   "feed_title": "Gamecocks Daily",
+   "feed_title": "The Horseshoe",
    "description": "A daily South Carolina Gamecocks show from the Curious & Creative network: game recaps, team news, recruiting, matchup previews, and one deep segment, across football, basketball, and baseball, season by season.",
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
@@ -835,32 +835,172 @@
  ],
  "episodes": [
   {
-   "id": "marketread:f4a80297 e143 4c49 9074 93c844310573",
-   "show": "marketread",
+   "id": "cfbdaily:8df4ac89 b7be 4b64 b150 4fe4bf540745",
+   "show": "cfbdaily",
    "kind": "episode",
-   "title": "Monday, November 9, 2026",
-   "date": "2026-11-11T03:26:18Z",
-   "duration": 1309,
-   "description": "DEVELOPING: Nvidia's board has opened an independent investigation into reports that chief executive Jensen Huang was the target of a foreign intelligence effort. Huang remains CEO, the board says it has no reason to believe national security or Nvidia secrets were compromised, and the stock fell 4.5% in premarket trading ahead of earnings on November 17 and a requested House briefing on November 18.\n In today's brief:\n • Nvidia investigation and the premarket reaction — https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/\n • Futures try to repair after a rough week —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794367503739-6e40c05d066c6.jpg",
-   "url": "https://open.spotify.com/episode/5P3DkGazYhdnND07RQFFW2",
-   "spotify_url": "https://open.spotify.com/episode/5P3DkGazYhdnND07RQFFW2",
-   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129234812/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F2a73adfe-0b7f-0893-17ce-0da77f9170e6.m4a",
+   "title": "Miami Scores 34 Straight to Stun Ohio in the Battle of the Bricks | Tuesday, November 10, 2026",
+   "date": "2026-11-11T20:40:31Z",
+   "duration": 968,
+   "description": "MACtion delivered on a Tuesday night: Miami of Ohio scored 34 straight points to stun Ohio 34 to 17 in the Battle of the Bricks, Western Michigan ran away from Akron 42 to 14, and Bowling Green held off Kent State 33 to 28. Plus the latest College Football Playoff rankings and the controversy around them.\n • Miami (OH) 34, Ohio 17\n • Western Michigan 42, Akron 14\n • Bowling Green 33, Kent State 28\n Part of the Curious & Creative network.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794429609689-8be1e137a3e73.jpg",
+   "url": "https://open.spotify.com/episode/6At98QttHVa1Gh4sbsbHyg",
+   "spotify_url": "https://open.spotify.com/episode/6At98QttHVa1Gh4sbsbHyg",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129281495/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fbd75cd05-a14c-6dc8-9b8d-84ec6acbd59f.m4a",
    "number": null
   },
   {
-   "id": "marketread:ab97c91d adf3 479c b29c 0bea56a03060",
-   "show": "marketread",
+   "id": "fastbreak:cfb64442 71fc 4526 95ca a3081868f887",
+   "show": "fastbreak",
    "kind": "episode",
    "title": "Tuesday, November 10, 2026",
-   "date": "2026-11-11T02:14:06Z",
-   "duration": 1467,
-   "description": "Wall Street carries Monday's biggest rally since April into the one report that can undo it: October inflation at 8:30 Eastern. Futures hold, oil breaks below $90, Asia surges, and everything waits on CPI, with a December hike priced at 84 percent and Nvidia trying to climb off a seven-month low.\n • Futures hold Monday's rally into CPI day — https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/\n • Oil breaks below $90 as Trump plays down new Iran strikes — https://www.morningstar.com/news/dow-jones/202611102803/oil-prices-extend-decline-after-trump-signals-restraint-on-iran-update\n • Asia surges and Europe follows: Kospi up more than 4 percent —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794363221073-f33971d4b9194.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Tuesday--November-10--2026-e3s6bv3",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129232291/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F48ef0ab0-906f-75a0-b103-4ebbe7026ae4.m4a",
+   "date": "2026-11-11T20:34:34Z",
+   "duration": 1255,
+   "description": "Boston takes first place in the East in Philadelphia, Milwaukee collapses at home against the Knicks, and Portland stuns the Thunder. Every score from a six-game Tuesday night, plus the deep segment on what Boston's start and Milwaukee's slide mean.\n • New York Knicks 117, Milwaukee Bucks 85\n • Boston Celtics 123, Philadelphia 76ers 101\n • Phoenix Suns 133, Los Angeles Clippers 110\n • Miami Heat 115, Utah Jazz 109\n • Orlando Magic 107, Sacramento Kings 100\n • Portland Trail Blazers 123, Oklahoma City Thunder 103\n Part of the Curious & Creative network. Back after the next slate.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794429255082-7db51e858da2.jpg",
+   "url": "https://open.spotify.com/episode/1MIi9K10BSKXvMDdghwUt4",
+   "spotify_url": "https://open.spotify.com/episode/1MIi9K10BSKXvMDdghwUt4",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129281188/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F80ad9ab3-cacc-15ba-f517-30c3b4f775c2.m4a",
    "number": null
+  },
+  {
+   "id": "celticsdaily:667e7fb7 c9f0 402d 9a0a ef14ba6d578a",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Celtics Beat the 76ers 123-101: George Drops 36 in His Philly Return, Boston Is 9-2 | Tuesday, November 10, 2026",
+   "date": "2026-11-11T20:28:30Z",
+   "duration": 924,
+   "description": "The Boston Celtics went into Philadelphia for a first-place showdown and a reunion game loaded with storylines, and Paul George stole every one of them, dropping 36 points in his return to Philadelphia as Boston beat the 76ers 123 to 101 to take over first place in the Eastern Conference at 9 and 2.\n Jayson Tatum added 21 points, 6 rebounds and 4 assists, and Payton Pritchard scored 18 as the Celtics controlled the night in Philadelphia. Boston is right back at it tonight in Toronto on the second night of a back-to-back.\n Part of the Curious & Creative network. Celtics Daily is an unofficial, independent fan show, not affiliated with the Boston Celtics or the NBA.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1794428892397-9a937264b0a75.jpg",
+   "url": "https://open.spotify.com/episode/6n0AekzG6klINtL9w5PZCZ",
+   "spotify_url": "https://open.spotify.com/episode/6n0AekzG6klINtL9w5PZCZ",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129280896/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F236e6030-1795-d8b2-bffd-4419d4f57ff1.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:abfd7ff1 ad6b 4a71 9fcb c963b5850ca0",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Wednesday, November 11, 2026",
+   "date": "2026-11-11T20:09:14Z",
+   "duration": 999,
+   "description": "Abu Dhabi's Ukraine talks enter a second day with ceasefires for the Black Sea and the energy grid on the table, world leaders take the stage in Antalya as the climate summit turns to speeches, and oil climbs again as tankers keep burning in the Strait of Hormuz.\n In today's brief:\n • Abu Dhabi, day two: the Ukraine talks turn to partial ceasefires and a prisoner exchange — https://www.rigzone.com/news/wire/russia_and_ukraine_resume_push_for_peace_deal-11-nov-2026-185056-article/\n • Hormuz: oil rebounds from a two-month low as fresh tanker attacks offset truce hopes — https://www.kz1023.com/2026/11/10/oil-rises-from-two-month-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes/\n • COP31…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794427736515-91ebee1253f8d.jpg",
+   "url": "https://open.spotify.com/episode/0J5NWqFDkQKwge4D6n7MlS",
+   "spotify_url": "https://open.spotify.com/episode/0J5NWqFDkQKwge4D6n7MlS",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129279976/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F0e2addaf-56da-a56b-eb16-6dcd624ff850.m4a",
+   "number": null
+  },
+  {
+   "id": "dominatedconvo:6fbcd219 bb2e 45cd 879a 88cc098965dd",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "The House Blocks the Hegseth Impeachment 211 to 204 | Wednesday, November 11, 2026",
+   "date": "2026-11-11T20:02:49Z",
+   "duration": 2739,
+   "description": "One date, core-sampled. On Veterans Day 2026 the internet held a 51-year-old shipwreck, a blocked impeachment, and a Finnish embassy meme in the same feed, and this episode takes the whole strange day apart: what got mourned, what got fought over, and what got memed, and what the mix says about where attention actually lives now.\n Today's sample: the House votes 211 to 204 to bury the Hegseth impeachment articles in committee, with eleven Democrats absent and \"11 Democrats\" trending at number 17 on X. The Embassy of Finland in Canberra becomes a tragedy meme overnight. The Edmund Fitzgerald and the Gales of November hit their 51st anniversary. A new batch of AI-generated templates…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794427338587-1651eb0435cb.jpg",
+   "url": "https://open.spotify.com/episode/5gQwyBsFjqTlRkgb8SZyPE",
+   "spotify_url": "https://open.spotify.com/episode/5gQwyBsFjqTlRkgb8SZyPE",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129279658/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F24acaf1b-d3c3-336b-9c54-f82008139c58.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:4857eb62 3143 4b4d a332 31e32d3785a0",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Wednesday, November 11, 2026",
+   "date": "2026-11-11T19:55:47Z",
+   "duration": 1207,
+   "description": "Los Angeles marks Veterans Day with ceremonies across the county while the transition takes shape at City Hall: Mayor-elect Nithya Raman bids farewell to the City Council, promises to be \"spicy\" with colleagues who backed her opponent, and lays out the calendar to December 14. Plus: Raman promises a day-one public accounting of what Measure HLA actually costs, a new report shows just $368.9 million of the city's $1 billion-plus homelessness budget spent or committed, Raman's lead passes 106,000 votes while District 9 shrinks to 156, Sepulveda Transit Corridor comments close November 18, rain arrives Thursday night, and the Lakers take a six-game win streak into Milwaukee.\n Plus the expanded…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794426918537-5099c05efe49b.jpg",
+   "url": "https://open.spotify.com/episode/1vfvvqTS2AcvHrL0ZhrH21",
+   "spotify_url": "https://open.spotify.com/episode/1vfvvqTS2AcvHrL0ZhrH21",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129279318/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fd4f230d5-62ec-098d-2c42-48a57b888c41.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:aac94735 c42e 4259 b065 3fd20a77ae09",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#260 Demna: The Refugee Who Repriced Luxury",
+   "date": "2026-11-11T17:46:15Z",
+   "duration": 3152,
+   "description": "On March 13, 2025, Kering announced that Demna would become the artistic director of Gucci, the biggest and most troubled house in the group. The market's verdict arrived the next morning: Kering shares fell as much as 13 percent, wiping roughly three billion dollars off the company's value in a single day. Analysts called the choice controversial on the record. Cathy Horyn called the same man the rare designer who raises both the excitement and the revenue. Both readings were available on the same day, and this episode holds his whole record at once to understand why.\n Demna Gvasalia was born in Sukhumi in 1981 and fled the Abkhazia war as a child, a refugee formation that never left his…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794419121093-ef895006a7f65.jpg",
+   "url": "https://open.spotify.com/episode/1hkpIBPI3DtdKnmlSPMEjU",
+   "spotify_url": "https://open.spotify.com/episode/1hkpIBPI3DtdKnmlSPMEjU",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129272777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F7a69397a-b4f7-1d2e-fba1-256a6d5d0759.m4a",
+   "number": "260"
+  },
+  {
+   "id": "morningread:957e35c5 43ac 4408 b985 4dfe90068ffb",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Wednesday, November 11, 2026",
+   "date": "2026-11-11T17:25:39Z",
+   "duration": 988,
+   "description": "The House votes 211 to 204 to bury the Hegseth impeachment in committee, October inflation comes in hotter than expected for a third straight month, Republicans choose the leaders of their new minority, the last two Senate races grow closer without being called, Nvidia faces a reply deadline on Capitol Hill, Brent crude falls below ninety dollars, Israel swears in a Knesset with no government, and the Kennedy family goes to court over a triumphal arch.\n In today's brief:\n • The Hegseth vote: the House refers the impeachment articles to committee, 211-204 — https://www.courier-journal.com/story/news/politics/2026/11/10/pete-hegseth-impeachment-thomas-massie-house-vote/92713996007/\n • October…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794417888690-1db7feced49ed.jpg",
+   "url": "https://open.spotify.com/episode/6hUfZBO3vdsXtBgIIhX0HC",
+   "spotify_url": "https://open.spotify.com/episode/6hUfZBO3vdsXtBgIIhX0HC",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129271079/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb848c8a5-39d7-da33-ee3f-198d79d83da9.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:c6618d63 2ece 4445 b834 1b6bbef8bb33",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Tuesday, November 10, 2026",
+   "date": "2026-11-11T02:08:48Z",
+   "duration": 1648,
+   "description": "Anthropic unveiled Claude Fable 5.2 for broad use and Claude Mythos 5.2 for verified cybersecurity and life-sciences teams, SoftBank booked a $7 billion quarterly loss on US data center costs, Google added TPU 8tx for confidential inference and TPU 8i Max for massive context, Australia made AI incident reporting mandatory after an OpenAI agent breached a government website, Meta launched Muse Ember at $0.10 per million input tokens, NVIDIA showed GR00T 2 for robots learning from human video, Meta expanded AI age checks for Instagram teens, and Disney and Adobe will co-develop custom models on Disney IP — plus an AI seabed robot that retrieved nodules from 4,000 metres down.\n • Anthropic…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794362907346-915350a860a7e.jpg",
+   "url": "https://open.spotify.com/episode/64g01StaqTf5evvGgvmTJj",
+   "spotify_url": "https://open.spotify.com/episode/64g01StaqTf5evvGgvmTJj",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129232104/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F656c001e-3df1-c07c-40ad-d67746be5069.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:cb0297c4 40fc 46b7 8a90 d3b7598ae370",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Tuesday, November 10, 2026",
+   "date": "2026-11-11T02:06:18Z",
+   "duration": 1146,
+   "description": "The first US-Ukraine-Russia peace talks in nine months are under way in Abu Dhabi, with Europe in the building but not at the table; President Trump holds off on new Iran strikes but keeps the Strait of Hormuz blockade as Qatar's prime minister briefs the G7 in Paris and oil falls to $91.88; France summons Iran's ambassador over the supermarket fridge cyberattack and warns of a response; COP31 host Turkey pushes its 35% electrification goal into the final text; Israel's new Knesset is sworn in as Netanyahu counters Eisenkot's mandate with a unity call under his own leadership; France confirms a 1.6% minimum-wage rise as unions reject it and teachers strike; at least ten die in a foggy…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794362730643-e3982c9d61c08.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Tuesday--November-10--2026-e3s6blk",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129231988/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fe7243c91-2252-337f-0e2b-b62630df31ed.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:fac60d9b e3b6 4379 8291 1d1e6c2a49da",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#258 Two Daughters of South London: How Grace Wales Bonner and Martine Rose Took the Two Biggest Jobs in Fashion",
+   "date": "2026-11-11T01:00:00Z",
+   "duration": 2547,
+   "description": "Thirteen months apart, two designers from South London's Black British culture took the two most storied menswear chairs in Paris. In October 2025, Hermès named Grace Wales Bonner creative director of menswear, ending Véronique Nichanian's 37-year tenure. In November 2026, Kering named Martine Rose creative director of Balenciaga, the first woman to hold the job in the house's 109-year history.\n One was formed by the seminar room and the archive, the other by the sound system, the market stall and the estate. This episode follows both formations, the products that paid (a Samba that broke Lyst, a Shox mule still releasing four years on, a Super Bowl jacket), the generation around them, and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794358279749-59cded6dc4622.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/258-Two-Daughters-of-South-London-How-Grace-Wales-Bonner-and-Martine-Rose-Took-the-Two-Biggest-Jobs-in-Fashion-e3s697s",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129229500/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb4bf8e06-d316-505e-1459-dbd4141365ed.m4a",
+   "number": "258"
+  },
+  {
+   "id": "polymath:27cc5e62 9f0e 4e48 842a 8927a61906bf",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#257 The Cockroach Summer: How a Leaked Exam Ruined India's Faith in Merit",
+   "date": "2026-11-11T00:30:00Z",
+   "duration": 2320,
+   "description": "On May 15, 2026, the Chief Justice of India, Surya Kant, described unemployed young people drifting into activism as behaving like cockroaches. The clarification came the next day, and it made no difference at all. Within twenty-four hours, a thirty-year-old strategist named Abhijeet Dipke had asked what would happen if all the cockroaches came together, and the Cockroach Janta Party had a name, branding, and a membership form. Within three days it had 3.7 million followers.\n The insult landed on tinder: the NEET-UG medical entrance exam, taken by about 2.2 million candidates competing for roughly 130,000 places, had leaked on May 3, and the exam was cancelled. This episode traces what…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794418689176-4656b8ccadc81.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/257-The-Cockroach-Summer-How-a-Leaked-Exam-Ruined-Indias-Faith-in-Merit-e3s7j5b",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129272427/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fe424f3bd-3fd2-5f43-a3b4-a87a877d82c8.m4a",
+   "number": "257"
   },
   {
    "id": "fastbreak:9ab9cca3 7f4a 4f9e 96dc edda33c3251b",
@@ -871,10 +1011,52 @@
    "duration": 1123,
    "description": "The league's next era arrived on the same night: Cooper Flagg scored 30 of his season-high 43 after halftime as Dallas came back to beat Indiana, and Victor Wembanyama put up 40 points and 8 blocks in 25 minutes at Phoenix. Plus Anthony Davis's 44 in a losing cause, a 51-point Warriors rout, and the Lakers' sixth straight win.\n • Los Angeles Lakers 124, Atlanta Hawks 114\n • Charlotte Hornets 124, Cleveland Cavaliers 112\n • Detroit Pistons 122, Washington Wizards 111\n • Memphis Grizzlies 118, Toronto Raptors 102\n • Dallas Mavericks 125, Indiana Pacers 122\n • Houston Rockets 110, Denver Nuggets 100\n • San Antonio Spurs 122, Phoenix Suns 96\n • Golden State Warriors 138, New Orleans Pelicans…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794357596660-e58c6f597118e.jpg",
-   "url": "https://open.spotify.com/episode/2Z3dICCEXN2WAZjZ3SjRaW",
-   "spotify_url": "https://open.spotify.com/episode/2Z3dICCEXN2WAZjZ3SjRaW",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Monday--November-9--2026-e3s68eq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129228698/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb69a6e9e-eb50-81bd-9682-1404e100b294.m4a",
    "number": null
+  },
+  {
+   "id": "polymath:87c9deb5 8b62 4ea0 a104 f8d470288925",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#256 Oracle: The Company That Sold IBM's Future First",
+   "date": "2026-11-11T00:00:00Z",
+   "duration": 3139,
+   "description": "In 1970, an IBM researcher named Edgar Codd published a paper describing a radically simpler way to organize data, and IBM largely sat on it, because the idea threatened a profitable product. Seven years later, three programmers in Santa Clara with $2,000 read IBM's published research and built the product IBM would not. They named it after a CIA project codename and called their first release \"Version 2,\" because nobody buys a Version 1.\n This episode is the story of the company, not the founder: how Oracle turned the relational database into the invisible infrastructure of the world's institutions, and how, nearly fifty years on, the same company became a backbone of the AI boom and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794366376799-c0dde82328066.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/256-Oracle-The-Company-That-Sold-IBMs-Future-First-e3s6dqr",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129234203/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F91404258-4f6c-d4d0-24f5-c095061eef9c.m4a",
+   "number": "256"
+  },
+  {
+   "id": "polymath:a3774449 7147 4737 a998 7b4687224c79",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#255 VaynerMedia: The Agency Built on Underpriced Attention",
+   "date": "2026-11-10T23:00:01Z",
+   "duration": 2683,
+   "description": "In 2009, Gary Vaynerchuk started an advertising agency whose entire product was embarrassingly simple: his brother AJ on a laptop, creating brands' Facebook and Twitter accounts, posting, and answering customers. Two years in, the agency had made about $1.7 million total. Five years later it was doing $40 million a year, and a decade later its parent company was reportedly doing $300 million.\n This episode traces what VaynerMedia actually sold, how the most mocked category in advertising, the \"social media agency,\" became the beachhead of a holding-company empire, and what \"underpriced attention\" really meant as a business model, from the Wine Library days to the VaynerX era.\n Follow along…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794366106561-671695245d0ff.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/255-VaynerMedia-The-Agency-Built-on-Underpriced-Attention-e3s6dl4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129234020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F3af032ad-527e-523e-cc24-2c5708dbe039.m4a",
+   "number": "255"
+  },
+  {
+   "id": "polymath:4b82df93 6995 4bb1 a308 17ed15f8467c",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#254 Susie Wiles: The Most Powerful Person in Washington Nobody Voted For",
+   "date": "2026-11-10T22:30:00Z",
+   "duration": 2696,
+   "description": "On Tuesday, November 3, 2026, Republicans lost both chambers of Congress in the midterm elections. Three days later, a former White House adviser named Calley Means went on The Joe Rogan Experience and named the people he said had actually been running the government. By then, the most powerful of them was already gone. Susie Wiles, the first woman ever to serve as White House chief of staff, had resigned on November 5, and on November 9 her deputy Stephen Miller took the job.\n So who was actually running the White House: the elected president, or the unelected people standing at his door? This episode follows Wiles from her start as a receptionist in Jack Kemp's congressional office,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794418287108-6c3a18baece9b.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/254-Susie-Wiles-The-Most-Powerful-Person-in-Washington-Nobody-Voted-For-e3s7ipt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129272061/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fa87f7c46-8275-1b2a-111c-48f4469ba2d3.m4a",
+   "number": "254"
   },
   {
    "id": "dominatedconvo:926e7340 2cb7 4b93 a8ca 8c2ffd7cd313",
@@ -885,8 +1067,8 @@
    "duration": 3096,
    "description": "One word's full arc: born in the forums between 2009 and 2018, mainstreamed by TikTok, crowned when Dictionary.com named \"maxxing\" its Word of the Year, flagged by pediatricians in a Journal of Adolescent Health clinical commentary, and now the subject of Hulu's three-part docuseries \"Get Huge: Looksmaxxing to Death,\" which premieres today. Plus what the Clavicular case, headed for a November 24 hearing, means for the movement's future.\n Sources:\n • Hulu's \"Get Huge: Looksmaxxing to Death\" — https://www.usatoday.com/story/life/health-wellness/2026/11/10/looksmaxxing-hulu-documentary-get-huge-manosphere-deaths/92479025007/\n • What Is Looksmaxxing? —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794329791747-243191c74ec99.jpg",
-   "url": "https://open.spotify.com/episode/3WU3IYguSEpSQvCKq1WgKK",
-   "spotify_url": "https://open.spotify.com/episode/3WU3IYguSEpSQvCKq1WgKK",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Looksmaxxing-How-a-Forum-Slang-Word-Took-Over-the-Culture-e3s5f6u",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129202846/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F8117a279-a526-c8f1-510b-e17ad5adaf74.m4a",
    "number": null
   },
@@ -905,6 +1087,20 @@
    "number": null
   },
   {
+   "id": "hollywoodinsider:fd77032b c0aa 400c 9281 23adba80cb92",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "Godzilla Minus Zero's $31.6 Million Opening Is the Biggest Ever for a Live-Action Foreign-Language Film | Monday, November 9, 2026",
+   "date": "2026-11-10T16:51:27Z",
+   "duration": 681,
+   "description": "Godzilla Minus Zero's $31.6 million opening is the biggest ever for a live-action foreign-language film, Cat in the Hat lands at No. 2, two non-English films crack the top five on the same weekend, the New York Times moves to buy Letterboxd, Christopher Nolan previews the DGA's next AI fight, and the layoff reports keep coming.\n In this episode:\n • Godzilla Minus Zero's Record Opening — https://www.thewrap.com/creative-content/movies/godzilla-minus-zero-box-office-opening-weekend-gkids-record/\n • Cat in the Hat Lands at No. 2 — https://www.animationmagazine.net/2026/11/warner-bros-the-cat-in-the-hat-lands-at-no-2-scratches-up-20-mil-at-the-box-office/\n • Ramayana's IMAX Record —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1794329455643-d9b9e0ae98422.jpg",
+   "url": "https://open.spotify.com/episode/5sdKoirb6tgVnZLvMHTpXP",
+   "spotify_url": "https://open.spotify.com/episode/5sdKoirb6tgVnZLvMHTpXP",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129202564/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Ff77017c8-ddbf-78e0-805c-bb5e73c5be9e.m4a",
+   "number": null
+  },
+  {
    "id": "ladaily:c1ccd973 96a0 4d96 a146 6cb26fcd65b5",
    "show": "ladaily",
    "kind": "episode",
@@ -913,8 +1109,8 @@
    "duration": 1364,
    "description": "Los Angeles starts Tuesday with the transition moving to the street: LAist lays out why transit and street-safety advocates are cheering Nithya Raman's win, what Measure HLA enforcement and a $3.1 billion street overhaul would actually mean, and what she has promised for her first 100 days. Plus: Raman's lead grows to 104,240 while District 9 tightens to 286 votes, Supervisor Lindsey Horvath announces a run for the county's first elected CEO job, a federal prosecutor disputes the mayor-elect's account of the White Memorial hospital night, Raman's restaurant plan faces its December test, and the Lakers win their sixth straight.\n Plus the expanded what's-on segment, Out and about: what's on…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794329307661-8c1da2ae4ed47.jpg",
-   "url": "https://open.spotify.com/episode/57OOIctNlGmwEVInrxlg36",
-   "spotify_url": "https://open.spotify.com/episode/57OOIctNlGmwEVInrxlg36",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Tuesday--November-10--2026-e3s5epu",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129202430/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F426e1846-e902-feb6-fd82-5d118a8401ee.m4a",
    "number": null
   },
@@ -927,8 +1123,8 @@
    "duration": 865,
    "description": "Trump chooses the status quo on Iran after the Qatar meeting, Massie files eight impeachment articles against Hegseth with a House vote forced by Wednesday, markets rip on Monday while Nvidia falls alone under its own board probe, CPI lands today, and two Senate races are still counting.\n In today's brief:\n • The War: The Status Quo, by Choice — https://www.rigzone.com/news/wire/us_holds_off_strikes_after_qatari_mediation-10-nov-2026-185048-article/\n • Hegseth: The Articles Are Filed, and Today He Answers — https://www.courier-journal.com/story/news/politics/2026/11/09/thomas-massie-reintroduces-impeachment-articles-against-pete-hegseth/92694661007/\n • Monday's Markets: Everything Up,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794329137742-49e9940e83103.jpg",
-   "url": "https://open.spotify.com/episode/4Vhn4Pgn5CytuHiZVVBlqN",
-   "spotify_url": "https://open.spotify.com/episode/4Vhn4Pgn5CytuHiZVVBlqN",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Tuesday--November-10--2026-e3s5ejg",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129202224/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F5e938fea-5c3a-607d-f91d-771a268e3cdb.m4a",
    "number": null
   },
@@ -1039,8 +1235,8 @@
    "duration": 1113,
    "description": "Boston erased a 14-point deficit to beat the Milwaukee Bucks 117-97 at Fiserv Forum. Milwaukee led 20-6 early before a Jayson Tatum three started an 18-0 Boston run, and Paul George gave the Celtics the lead for good early in the second quarter on the way to a 58-45 halftime lead and a largest lead of 23. George scored 27 points on 11-of-18 shooting with five threes, Tatum had 21 points, 4 rebounds and 6 assists in his return after resting November 4 — 16 of them in the first quarter before resting the entire fourth — and Neemias Queta added 13 points, 9 rebounds and 4 assists. Boston is 8-2, winners of three straight.\n Segments: the 18-0 run that flipped the game, George's 27 and Tatum's…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1794258523527-f83c287c95e8d.jpg",
-   "url": "https://open.spotify.com/episode/2DAf0B6K6aixH3lqRi5wMy",
-   "spotify_url": "https://open.spotify.com/episode/2DAf0B6K6aixH3lqRi5wMy",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Celtics-Beat-the-Bucks-117-97-Georges-27-Flips-a-14-Point-Hole--Boston-Is-8-2--Sunday--November-8--2026-e3s3qh8",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129148904/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F505f7bc5-aa7a-cccb-411e-f325f636c7ee.m4a",
    "number": null
   },
@@ -1319,8 +1515,8 @@
    "duration": 796,
    "description": "The first College Football Playoff Top 25 is out with Miami and Georgia on top; Notre Dame hosts Miami on Saturday night with the Malachi Toney question hanging over it; Florida Atlantic hung 60 on UTSA and James Madison ran away in Hattiesburg on Thursday; five games go tonight; and Saturday brings BYU at Utah, Alabama at LSU, and Georgia at Ole Miss.\n • The First CFP Top 25: Miami and Georgia Lead the First Rankings — https://www.ncaa.com/news/football/article/2026-11-03/miami-georgia-lead-first-college-football-playoff-rankings-2026\n • Notre Dame vs. Miami: Freeman Still Preparing for Malachi Toney —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793990093701-f40761b8cbc5c.jpg",
-   "url": "https://open.spotify.com/episode/66fHaJMzDfL5BLgMGrTkLu",
-   "spotify_url": "https://open.spotify.com/episode/66fHaJMzDfL5BLgMGrTkLu",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Friday--November-6--2026-e3rtid4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/128943972/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Ff5e12bd5-3e13-87ef-fafb-610522df0848.m4a",
    "number": null
   },
@@ -6441,7 +6637,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8453,8 +8649,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 252,
-   "spotify_matches": 0
+   "episodes": 258,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -8522,7 +8718,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 9,
    "spotify_matches": 1
   },
   "morningread": {
@@ -8530,7 +8726,7 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 17,
+   "episodes": 18,
    "spotify_matches": 1
   },
   "ladaily": {
@@ -8538,7 +8734,7 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 15,
+   "episodes": 16,
    "spotify_matches": 1
   },
   "globalread": {
@@ -8546,16 +8742,16 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 0
+   "episodes": 14,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 11,
-   "spotify_matches": 1
+   "episodes": 9,
+   "spotify_matches": 0
   },
   "nyread": {
    "ok": true,
@@ -8576,10 +8772,10 @@
   "airead": {
    "ok": true,
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
-   "spotify_name": "The AI Read",
+   "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 10,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
@@ -8610,8 +8806,8 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 0
+   "episodes": 6,
+   "spotify_matches": 1
   },
   "tvinsider": {
    "ok": true,
@@ -8626,7 +8822,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 11,
+   "episodes": 12,
    "spotify_matches": 1
   },
   "blitz": {
@@ -8650,7 +8846,7 @@
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "coltsdaily": {
@@ -8666,7 +8862,7 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 10,
+   "episodes": 11,
    "spotify_matches": 1
   },
   "cbbdaily": {
@@ -8680,7 +8876,7 @@
   "gamecocksdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
-   "spotify_name": "Gamecocks Daily",
+   "spotify_name": "The Horseshoe",
    "full_catalog": true,
    "episodes": 6,
    "spotify_matches": 1
