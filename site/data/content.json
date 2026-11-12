@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T03:55:59Z",
+ "generated_at": "2026-11-12T12:57:38Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-11T01:00:00Z",
-   "count": 255
+   "latest": "2026-11-12T00:10:37Z",
+   "count": 259
   },
   {
    "key": "approachable",
@@ -173,8 +173,8 @@
    "complete": true,
    "art": "assets/art/riff.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "latest": "2026-11-06T15:44:44Z",
-   "count": 32
+   "latest": "2026-11-11T23:20:53Z",
+   "count": 33
   },
   {
    "key": "brazil",
@@ -277,8 +277,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-10T16:56:58Z",
-   "count": 8
+   "latest": "2026-11-11T20:02:49Z",
+   "count": 9
   },
   {
    "key": "morningread",
@@ -410,8 +410,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-04T21:47:39Z",
-   "count": 7
+   "latest": "2026-11-11T23:10:36Z",
+   "count": 8
   },
   {
    "key": "columbiaread",
@@ -457,13 +457,13 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0p46JOERBiE9vjed6Pt68I",
-   "feed_title": "The AI Read",
+   "feed_title": "The Tech Read",
    "description": "Artificial intelligence, every morning. New models, research results, company moves, regulation, and real-world deployments — what actually changed, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-11T02:08:48Z",
-   "count": 10
+   "latest": "2026-11-11T23:15:41Z",
+   "count": 11
   },
   {
    "key": "techread",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-11T23:28:53Z",
-   "count": 12
+   "latest": "2026-11-12T04:49:07Z",
+   "count": 13
   },
   {
    "key": "cbbdaily",
@@ -797,13 +797,13 @@
    "tagline": "",
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/6A71aYP8TxEEJgOCOyTQs4",
-   "feed_title": "Gamecocks Daily",
+   "feed_title": "The Horseshoe",
    "description": "A daily South Carolina Gamecocks show from the Curious & Creative network: game recaps, team news, recruiting, matchup previews, and one deep segment, across football, basketball, and baseball, season by season.",
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-08T00:03:58Z",
-   "count": 6
+   "latest": "2026-11-11T23:23:58Z",
+   "count": 7
   },
   {
    "key": "gamecockshoops",
@@ -835,6 +835,20 @@
  ],
  "episodes": [
   {
+   "id": "cfbdaily:fafe235e d1aa 42ef b7d4 ded7e851eca7",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Buffalo Runs for 296 Yards, Toledo Shuts Out UMass, and the MAC Race Tightens Into a Four-Way Tie | Wednesday, November 11, 2026",
+   "date": "2026-11-12T04:49:07Z",
+   "duration": 846,
+   "description": "Wednesday MACtion delivered three ground-game statements: Buffalo rushed for 296 yards and completed only five passes in a 28-7 win at Ball State behind Messiah Burch's 209 yards, Toledo shut out UMass 24-0 with every point scored in the first half, and Central Michigan scored once in every quarter to beat Sacramento State 28-7 — leaving Ohio, Western Michigan, Buffalo and Toledo tied at 5-1 atop the MAC.\n Buffalo 28, Ball State 7 • Toledo 24, UMass 0 • Central Michigan 28, Sacramento State 7 • The standouts • The four-way MAC tie • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794458903567-b040ce3a6644c.jpg",
+   "url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
+   "spotify_url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129300062/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F34fccd47-adab-491a-ca99-a274569f78a9.m4a",
+   "number": null
+  },
+  {
    "id": "celticsdaily:c55f8321 e008 4c77 b31f a87f825f00c7",
    "show": "celticsdaily",
    "kind": "episode",
@@ -849,6 +863,20 @@
    "number": null
   },
   {
+   "id": "polymath:fd084974 71b9 4e0c 995e 6b824d55e8eb",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#261 The Light They Sell You: What Red Light, Pressure Chambers, and the Longevity Stack Actually Prove",
+   "date": "2026-11-12T00:10:37Z",
+   "duration": 3520,
+   "description": "Healthy people are paying up to $136,000 to sit in pressurized oxygen chambers in their basements, and thousands more for home red light panels that can output less therapeutic energy than a sunny afternoon. This episode grades the evidence behind the longevity stack: photobiomodulation, hyperbaric oxygen, sauna, cold plunge, and the rest of what gets sold to people who can afford to buy time.\n Red light therapy has real physics and a real origin story, a Hungarian mouse lab in 1967 and a NASA wound-healing program, but the distance between \"light changes mitochondrial behavior in a dish\" and \"this panel will fix your skin, sleep, and hormones\" is exactly the distance this episode measures:…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794442157306-214ef88644727.jpg",
+   "url": "https://open.spotify.com/episode/7Gp8sYnIYQPUrKcFEbmOCx",
+   "spotify_url": "https://open.spotify.com/episode/7Gp8sYnIYQPUrKcFEbmOCx",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129289988/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F01f87c0b-e5fb-97ab-5614-60d0aeae1ad6.m4a",
+   "number": "261"
+  },
+  {
    "id": "cfbdaily:95143b2c 6f98 4880 b8f5 4cb3701fa861",
    "show": "cfbdaily",
    "kind": "episode",
@@ -857,8 +885,8 @@
    "duration": 1322,
    "description": "Georgia is the new No. 1 in the second College Football Playoff rankings, Notre Dame made the biggest one-week jump into the top five in playoff history, and Indiana fell five spots without playing — and now Saturday decides who survives, with elimination games in Baton Rouge and Bloomington and unbeaten Utah on the road in Tucson.\n Segments: the new top five and Notre Dame's historic jump • Indiana's freefall and the USC game it made enormous • the rest of the Top 25 and where the AP poll disagrees • Texas at LSU, an elimination game in Death Valley • Utah at Arizona and UCLA's Friday test • South Carolina's trap game at Arkansas, the Malachi Toney absence, and the rest of Saturday • the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794439703558-1d8f3a142cd68.jpg",
-   "url": "https://open.spotify.com/episode/7iOjdxfl9QKCRE7PzuQRiP",
-   "spotify_url": "https://open.spotify.com/episode/7iOjdxfl9QKCRE7PzuQRiP",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Georgia-Takes-No--1--Notre-Dame-Vaults-to-No--5--and-Saturday-Brings-Elimination-Games-in-Baton-Rouge-and-Bloomington--Wednesday--November-11--2026-e3s82uq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/129288602/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F23e1bf01-c074-9c1a-9859-35c280abdbe1.m4a",
    "number": null
   },
@@ -877,6 +905,48 @@
    "number": null
   },
   {
+   "id": "gamecocksdaily:9ff565ed c7a8 41ec bb1f e7f3b48e927e",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "No. 17 and Climbing, With One Ankle to Watch: South Carolina Is 6-3 | Wednesday, November 11, 2026",
+   "date": "2026-11-11T23:23:58Z",
+   "duration": 1106,
+   "description": "South Carolina climbs four spots to No. 17 in the College Football Playoff rankings, the highest-ranked three-loss team in the SEC, with Arkansas on Saturday night in Fayetteville. LaNorris Sellers' ankle is the week's one question: Shane Beamer says nothing has changed since Sunday, and the next data point is the SEC availability report.\n In this edition: the CFP climb and what it means · the Sellers ankle watch and the Cutter Woods contingency · 2028 four-star linebacker Skylar Alston commits · the deep segment: Sellers' split stats across the win streak, and protecting the ankle for Georgia · basketball: the No. 1 women roll to 2-0 and head to Clemson Thursday, the men host Saint Peter's…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794439417169-4a717de61518f.jpg",
+   "url": "https://open.spotify.com/episode/7jU8WBS7zd8yNnRJB9kHcd",
+   "spotify_url": "https://open.spotify.com/episode/7jU8WBS7zd8yNnRJB9kHcd",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129288420/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Ffb46c640-dd46-fa40-a101-2269d9352abd.m4a",
+   "number": null
+  },
+  {
+   "id": "riff:c70d385e 0141 4ec6 a544 d68e53f9b315",
+   "show": "riff",
+   "kind": "episode",
+   "title": "Tyreek McDole: A Voice in Full Color",
+   "date": "2026-11-11T23:20:53Z",
+   "duration": 812,
+   "description": "Five days after release, Tyreek McDole's CHROMA is the sound of a baritone finding his full spectrum. The Florida-born, New York-based singer — winner of the 2023 Sarah Vaughan International Jazz Vocal Competition — follows his No. 1 debut Open Up Your Senses with originals and reimagined songs by his muses, from Nina Simone and Miles Davis to Kendrick Lamar, produced with Theo Croker.\n From St. Cloud, Florida and Oberlin to Kenny Barron's bandstand: how a Haitian-American singer mentored by Gary Bartz and Sullivan Fortner built a voice in the lineage of Johnny Hartman and Leon Thomas — and why Will Friedwald called him \"the jazz voice of his generation.\" Plus the November European tour:…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1794439213761-c6c216693624e.jpg",
+   "url": "https://open.spotify.com/episode/3OfFApQ6dXLggS61bc731Q",
+   "spotify_url": "https://open.spotify.com/episode/3OfFApQ6dXLggS61bc731Q",
+   "audio": "https://anchor.fm/s/1187405a4/podcast/play/129288290/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Facc3a79b-120e-4f48-948a-917727e5b17c.m4a",
+   "number": "33"
+  },
+  {
+   "id": "airead:c33278a9 7d08 47e7 9fcc a8c799800d39",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Wednesday, November 11, 2026",
+   "date": "2026-11-11T23:15:41Z",
+   "duration": 1460,
+   "description": "Anthropic launches its IPO roadshow at $70 to $78 a share, Google opens Gemini 4 Carbon to all paying developers with a price that doubles December 1, Claude joins the meeting and ChatGPT opens a business directory, DeepMind formally verifies part of Signal's encryption, a blacklisted Chinese university is found with Nvidia H200 chips, the US and China open an AI risk dialogue, spies run a break-in through an AI agent while Intel and AMD patch over 200 flaws, and crypto slides as Bitcoin ETFs post a fourth day of outflows.\n • Anthropic launches IPO roadshow at $70–$78 a share —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794438917305-0654720a6879e.jpg",
+   "url": "https://open.spotify.com/episode/4FzbTtMDjOdFqNiwRxHEp0",
+   "spotify_url": "https://open.spotify.com/episode/4FzbTtMDjOdFqNiwRxHEp0",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129288118/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Ff16d1182-bebb-1e23-6400-69a9e4fa7393.m4a",
+   "number": null
+  },
+  {
    "id": "columbiaread:61477052 8481 4df8 ba9d 7a60ad9750db",
    "show": "columbiaread",
    "kind": "episode",
@@ -888,6 +958,20 @@
    "url": "https://open.spotify.com/episode/4WTeEgjJWqDO3FQe43CRHw",
    "spotify_url": "https://open.spotify.com/episode/4WTeEgjJWqDO3FQe43CRHw",
    "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129288033/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F9daa44f4-c843-074c-3d14-a46b85d0a6c8.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:bc101157 1876 4a2e 9f60 3738df26b071",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Wednesday, November 11, 2026",
+   "date": "2026-11-11T23:10:36Z",
+   "duration": 731,
+   "description": "Mayor Mamdani signed COPA into law on Tuesday, giving vetted nonprofits a first shot at buying troubled apartment buildings — the same afternoon the 38-building, 850-unit Emerald Equities portfolio went to foreclosure auction despite a City Hall-backed bid; a Brooklyn grand jury indicted a former school aide on a top count of second-degree murder in the killing of jogger Katie Suarez, as the mayor ordered a full review of his school hiring; more than 70 groups pressed the mayor to fund the way out of Rikers in the November financial plan; a federal judge ordered a narrow release of Bronx shelter records to ICE and the city is weighing its response; the A train's Lefferts branch is closed…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794438575994-8959b8ac238f6.jpg",
+   "url": "https://open.spotify.com/episode/2n0YVUCpl7GcyQXyg9R67O",
+   "spotify_url": "https://open.spotify.com/episode/2n0YVUCpl7GcyQXyg9R67O",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/129287876/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Faf37737a-1b7f-8f2a-10a3-9868d409b340.m4a",
    "number": null
   },
   {
@@ -961,6 +1045,20 @@
    "number": null
   },
   {
+   "id": "dominatedconvo:6fbcd219 bb2e 45cd 879a 88cc098965dd",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "The House Blocks the Hegseth Impeachment 211 to 204 | Wednesday, November 11, 2026",
+   "date": "2026-11-11T20:02:49Z",
+   "duration": 2739,
+   "description": "One date, core-sampled. On Veterans Day 2026 the internet held a 51-year-old shipwreck, a blocked impeachment, and a Finnish embassy meme in the same feed, and this episode takes the whole strange day apart: what got mourned, what got fought over, and what got memed, and what the mix says about where attention actually lives now.\n Today's sample: the House votes 211 to 204 to bury the Hegseth impeachment articles in committee, with eleven Democrats absent and \"11 Democrats\" trending at number 17 on X. The Embassy of Finland in Canberra becomes a tragedy meme overnight. The Edmund Fitzgerald and the Gales of November hit their 51st anniversary. A new batch of AI-generated templates…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794427338587-1651eb0435cb.jpg",
+   "url": "https://open.spotify.com/episode/5gQwyBsFjqTlRkgb8SZyPE",
+   "spotify_url": "https://open.spotify.com/episode/5gQwyBsFjqTlRkgb8SZyPE",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129279658/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F24acaf1b-d3c3-336b-9c54-f82008139c58.m4a",
+   "number": null
+  },
+  {
    "id": "ladaily:4857eb62 3143 4b4d a332 31e32d3785a0",
    "show": "ladaily",
    "kind": "episode",
@@ -973,6 +1071,20 @@
    "spotify_url": "https://open.spotify.com/episode/1vfvvqTS2AcvHrL0ZhrH21",
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129279318/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fd4f230d5-62ec-098d-2c42-48a57b888c41.m4a",
    "number": null
+  },
+  {
+   "id": "polymath:aac94735 c42e 4259 b065 3fd20a77ae09",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#260 Demna: The Refugee Who Repriced Luxury",
+   "date": "2026-11-11T17:46:15Z",
+   "duration": 3152,
+   "description": "On March 13, 2025, Kering announced that Demna would become the artistic director of Gucci, the biggest and most troubled house in the group. The market's verdict arrived the next morning: Kering shares fell as much as 13 percent, wiping roughly three billion dollars off the company's value in a single day. Analysts called the choice controversial on the record. Cathy Horyn called the same man the rare designer who raises both the excitement and the revenue. Both readings were available on the same day, and this episode holds his whole record at once to understand why.\n Demna Gvasalia was born in Sukhumi in 1981 and fled the Abkhazia war as a child, a refugee formation that never left his…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794419121093-ef895006a7f65.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/260-Demna-The-Refugee-Who-Repriced-Luxury-e3s7jg9",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129272777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F7a69397a-b4f7-1d2e-fba1-256a6d5d0759.m4a",
+   "number": "260"
   },
   {
    "id": "morningread:957e35c5 43ac 4408 b985 4dfe90068ffb",
@@ -1059,6 +1171,20 @@
    "number": "258"
   },
   {
+   "id": "polymath:27cc5e62 9f0e 4e48 842a 8927a61906bf",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#257 The Cockroach Summer: How a Leaked Exam Ruined India's Faith in Merit",
+   "date": "2026-11-11T00:30:00Z",
+   "duration": 2320,
+   "description": "On May 15, 2026, the Chief Justice of India, Surya Kant, described unemployed young people drifting into activism as behaving like cockroaches. The clarification came the next day, and it made no difference at all. Within twenty-four hours, a thirty-year-old strategist named Abhijeet Dipke had asked what would happen if all the cockroaches came together, and the Cockroach Janta Party had a name, branding, and a membership form. Within three days it had 3.7 million followers.\n The insult landed on tinder: the NEET-UG medical entrance exam, taken by about 2.2 million candidates competing for roughly 130,000 places, had leaked on May 3, and the exam was cancelled. This episode traces what…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794418689176-4656b8ccadc81.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/257-The-Cockroach-Summer-How-a-Leaked-Exam-Ruined-Indias-Faith-in-Merit-e3s7j5b",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129272427/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fe424f3bd-3fd2-5f43-a3b4-a87a877d82c8.m4a",
+   "number": "257"
+  },
+  {
    "id": "fastbreak:9ab9cca3 7f4a 4f9e 96dc edda33c3251b",
    "show": "fastbreak",
    "kind": "episode",
@@ -1099,6 +1225,20 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129234020/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F3af032ad-527e-523e-cc24-2c5708dbe039.m4a",
    "number": "255"
+  },
+  {
+   "id": "polymath:4b82df93 6995 4bb1 a308 17ed15f8467c",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#254 Susie Wiles: The Most Powerful Person in Washington Nobody Voted For",
+   "date": "2026-11-10T22:30:00Z",
+   "duration": 2696,
+   "description": "On Tuesday, November 3, 2026, Republicans lost both chambers of Congress in the midterm elections. Three days later, a former White House adviser named Calley Means went on The Joe Rogan Experience and named the people he said had actually been running the government. By then, the most powerful of them was already gone. Susie Wiles, the first woman ever to serve as White House chief of staff, had resigned on November 5, and on November 9 her deputy Stephen Miller took the job.\n So who was actually running the White House: the elected president, or the unelected people standing at his door? This episode follows Wiles from her start as a receptionist in Jack Kemp's congressional office,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794418287108-6c3a18baece9b.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/254-Susie-Wiles-The-Most-Powerful-Person-in-Washington-Nobody-Voted-For-e3s7ipt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129272061/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fa87f7c46-8275-1b2a-111c-48f4469ba2d3.m4a",
+   "number": "254"
   },
   {
    "id": "dominatedconvo:926e7340 2cb7 4b93 a8ca 8c2ffd7cd313",
@@ -4798,20 +4938,6 @@
    "number": "4"
   },
   {
-   "id": "riff:ed7965ce c967 4601 a7eb fccdd8b813c1",
-   "show": "riff",
-   "kind": "episode",
-   "title": "#3 The Sweep: Six Cities, One Week in Jazz",
-   "date": "2026-10-15T11:06:47Z",
-   "duration": 1224,
-   "description": "One episode, six cities, one week in jazz. The Sweep checks the pulse in Los Angeles, New York, Chicago, Paris, London, and Tokyo — residencies, festivals, and the rooms where the music is actually moving right now.\n Robert Glasper's eighth Robtober runs at Blue Note New York through November 1, SMOKE hosts its Monk Festival, Paris is mid–Jazz sur Seine (October 9–24), and London is counting down to the EFG London Jazz Festival, November 13–22.\n Love you madly.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/3-The-Sweep-Six-Cities--One-Week-in-Jazz-e3qhu6l",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1187405a4/podcast/play/127514261/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2Fc6dbf719-e29a-3301-39f7-4c2721694093.m4a",
-   "number": "3"
-  },
-  {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
    "kind": "episode",
@@ -6679,7 +6805,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8691,8 +8817,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 255,
-   "spotify_matches": 0
+   "episodes": 259,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -8728,8 +8854,8 @@
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
-   "episodes": 32,
-   "spotify_matches": 0
+   "episodes": 33,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
@@ -8760,8 +8886,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
@@ -8800,8 +8926,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 8,
+   "spotify_matches": 1
   },
   "columbiaread": {
    "ok": true,
@@ -8816,8 +8942,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 0
+   "episodes": 11,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
@@ -8904,7 +9030,7 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "cbbdaily": {
@@ -8920,8 +9046,8 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "The Horseshoe",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "gamecockshoops": {
    "ok": true,
