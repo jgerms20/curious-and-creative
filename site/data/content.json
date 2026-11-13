@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T09:44:52Z",
+ "generated_at": "2026-11-13T17:54:13Z",
  "shows": [
   {
    "key": "ccpod",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-11T20:22:34Z",
-   "count": 12
+   "latest": "2026-11-13T16:04:54Z",
+   "count": 13
   },
   {
    "key": "nyread",
@@ -566,8 +566,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-10T16:51:27Z",
-   "count": 6
+   "latest": "2026-11-13T16:23:23Z",
+   "count": 7
   },
   {
    "key": "tvinsider",
@@ -835,6 +835,34 @@
  ],
  "episodes": [
   {
+   "id": "hollywoodinsider:a9ab3ea3 208a 4e8a a237 b2392d1ac557",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "GTA VI Is Projected to Make $3.2 Billion, and Hollywood Is Terrified | Friday, November 13, 2026",
+   "date": "2026-11-13T16:23:23Z",
+   "duration": 1389,
+   "description": "GTA VI launches next week with a projected $3.2 billion first year and legacy studios are terrified; Johnny Depp's Ebenezer opens the holiday box office on an $88 million all-in bet; Skydance details $6 billion in cuts as James Gunn and Peter Safran exit DC Studios; Netflix circles the foreclosure auction for the historic Radford lot; Cat in the Hat beats Godzilla on Veterans Day; and the American Film Market bets big on Elden Ring.\n • GTA VI: A $3.2 Billion Launch and a Terrified Industry — https://www.brief.news/gaming/2026/11/11/gta-6-could-crowd-out-entertainment\n • Ebenezer: Paramount's $88 Million Bet on Johnny Depp —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1794588006067-e08c0089db5a9.jpg",
+   "url": "https://open.spotify.com/episode/33F0SMnEBNHKiZwXpf54JJ",
+   "spotify_url": "https://open.spotify.com/episode/33F0SMnEBNHKiZwXpf54JJ",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129388939/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F5230b722-7623-bb80-b5a6-69ea93b70be5.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:caecf069 dc53 4870 ba76 7fdb3e029aed",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T16:04:54Z",
+   "duration": 1308,
+   "description": "Jensen Huang is out at Nvidia after 33 years and Colette Kress steps in as interim CEO five days before earnings; futures dip and the ten-year yield holds above 5 percent; Cisco and Applied Materials beat and raise their forecasts; a Microsoft outage ripples worldwide; Nebius guides to the low end; Richemont and Generali lead Europe; and options traders brace for Tuesday's Nvidia print.\n • Huang Out at Nvidia: Kress Takes Over as Interim CEO — https://nicanews.online/2026/11/13/nvidia-ceo-jensen-huang-resigns-cfo-colette-kress-named-interim-chief/\n • Thursday's Close: Breadth, the 5 Percent Yield, Claims and Home Sales —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794585836779-c73a48a4baadd.jpg",
+   "url": "https://open.spotify.com/episode/0CGCCqHaacoDf44IPACsHc",
+   "spotify_url": "https://open.spotify.com/episode/0CGCCqHaacoDf44IPACsHc",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129387924/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F19eaa81e-3efd-4ba5-248f-fdc7ab472010.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:1bb12780 145b 47c2 a7e3 543bc0d4484d",
    "show": "polymath",
    "kind": "episode",
@@ -927,8 +955,8 @@
    "duration": 1106,
    "description": "South Carolina climbs four spots to No. 17 in the College Football Playoff rankings, the highest-ranked three-loss team in the SEC, with Arkansas on Saturday night in Fayetteville. LaNorris Sellers' ankle is the week's one question: Shane Beamer says nothing has changed since Sunday, and the next data point is the SEC availability report.\n In this edition: the CFP climb and what it means · the Sellers ankle watch and the Cutter Woods contingency · 2028 four-star linebacker Skylar Alston commits · the deep segment: Sellers' split stats across the win streak, and protecting the ankle for Georgia · basketball: the No. 1 women roll to 2-0 and head to Clemson Thursday, the men host Saint Peter's…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794439417169-4a717de61518f.jpg",
-   "url": "https://open.spotify.com/episode/7jU8WBS7zd8yNnRJB9kHcd",
-   "spotify_url": "https://open.spotify.com/episode/7jU8WBS7zd8yNnRJB9kHcd",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/No--17-and-Climbing--With-One-Ankle-to-Watch-South-Carolina-Is-6-3--Wednesday--November-11--2026-e3s82p4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129288420/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Ffb46c640-dd46-fa40-a101-2269d9352abd.m4a",
    "number": null
   },
@@ -955,8 +983,8 @@
    "duration": 1460,
    "description": "Anthropic launches its IPO roadshow at $70 to $78 a share, Google opens Gemini 4 Carbon to all paying developers with a price that doubles December 1, Claude joins the meeting and ChatGPT opens a business directory, DeepMind formally verifies part of Signal's encryption, a blacklisted Chinese university is found with Nvidia H200 chips, the US and China open an AI risk dialogue, spies run a break-in through an AI agent while Intel and AMD patch over 200 flaws, and crypto slides as Bitcoin ETFs post a fourth day of outflows.\n • Anthropic launches IPO roadshow at $70–$78 a share —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794438917305-0654720a6879e.jpg",
-   "url": "https://open.spotify.com/episode/4FzbTtMDjOdFqNiwRxHEp0",
-   "spotify_url": "https://open.spotify.com/episode/4FzbTtMDjOdFqNiwRxHEp0",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Wednesday--November-11--2026-e3s82fm",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129288118/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Ff16d1182-bebb-1e23-6400-69a9e4fa7393.m4a",
    "number": null
   },
@@ -983,8 +1011,8 @@
    "duration": 731,
    "description": "Mayor Mamdani signed COPA into law on Tuesday, giving vetted nonprofits a first shot at buying troubled apartment buildings — the same afternoon the 38-building, 850-unit Emerald Equities portfolio went to foreclosure auction despite a City Hall-backed bid; a Brooklyn grand jury indicted a former school aide on a top count of second-degree murder in the killing of jogger Katie Suarez, as the mayor ordered a full review of his school hiring; more than 70 groups pressed the mayor to fund the way out of Rikers in the November financial plan; a federal judge ordered a narrow release of Bronx shelter records to ICE and the city is weighing its response; the A train's Lefferts branch is closed…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794438575994-8959b8ac238f6.jpg",
-   "url": "https://open.spotify.com/episode/2n0YVUCpl7GcyQXyg9R67O",
-   "spotify_url": "https://open.spotify.com/episode/2n0YVUCpl7GcyQXyg9R67O",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms202/episodes/Wednesday--November-11--2026-e3s8284",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119608a14/podcast/play/129287876/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Faf37737a-1b7f-8f2a-10a3-9868d409b340.m4a",
    "number": null
   },
@@ -1039,8 +1067,8 @@
    "duration": 1016,
    "description": "October inflation beats the forecast for a third straight month, Waller's threshold puts a half-point hike in play, Nvidia falls for a second day as the board investigation deepens, and Costco pays out thirteen billion dollars because it can.\n In today's brief:\n • Hot October CPI: headline up 0.4 percent, core up 0.3, both beat the forecast — https://www.kucoin.com/news/flash/u-s-stocks-drop-as-october-cpi-exceeds-expectations-nvidia-falls-5-5\n • The Fed: Waller's threshold was hit exactly, and the half-point hike is now a live price — https://www.fxbrokertrust.com/insights/nvidia-sheds-430bn-as-inflation-and-hawkish-fed-rattle-wall-street\n • The setup today: futures bounce on Veterans Day,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794428530079-06f59b0b8fe28.jpg",
-   "url": "https://open.spotify.com/episode/0Bt5RoQiGH3AsTMBSsInpQ",
-   "spotify_url": "https://open.spotify.com/episode/0Bt5RoQiGH3AsTMBSsInpQ",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Wednesday--November-11--2026-e3s7r4v",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129280607/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F3af2ba6a-2cc1-e9da-8e84-2a22d641007b.m4a",
    "number": null
   },
@@ -1053,8 +1081,8 @@
    "duration": 999,
    "description": "Abu Dhabi's Ukraine talks enter a second day with ceasefires for the Black Sea and the energy grid on the table, world leaders take the stage in Antalya as the climate summit turns to speeches, and oil climbs again as tankers keep burning in the Strait of Hormuz.\n In today's brief:\n • Abu Dhabi, day two: the Ukraine talks turn to partial ceasefires and a prisoner exchange — https://www.rigzone.com/news/wire/russia_and_ukraine_resume_push_for_peace_deal-11-nov-2026-185056-article/\n • Hormuz: oil rebounds from a two-month low as fresh tanker attacks offset truce hopes — https://www.kz1023.com/2026/11/10/oil-rises-from-two-month-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes/\n • COP31…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794427736515-91ebee1253f8d.jpg",
-   "url": "https://open.spotify.com/episode/0J5NWqFDkQKwge4D6n7MlS",
-   "spotify_url": "https://open.spotify.com/episode/0J5NWqFDkQKwge4D6n7MlS",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Wednesday--November-11--2026-e3s7qh8",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129279976/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F0e2addaf-56da-a56b-eb16-6dcd624ff850.m4a",
    "number": null
   },
@@ -1067,8 +1095,8 @@
    "duration": 2739,
    "description": "One date, core-sampled. On Veterans Day 2026 the internet held a 51-year-old shipwreck, a blocked impeachment, and a Finnish embassy meme in the same feed, and this episode takes the whole strange day apart: what got mourned, what got fought over, and what got memed, and what the mix says about where attention actually lives now.\n Today's sample: the House votes 211 to 204 to bury the Hegseth impeachment articles in committee, with eleven Democrats absent and \"11 Democrats\" trending at number 17 on X. The Embassy of Finland in Canberra becomes a tragedy meme overnight. The Edmund Fitzgerald and the Gales of November hit their 51st anniversary. A new batch of AI-generated templates…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794427338587-1651eb0435cb.jpg",
-   "url": "https://open.spotify.com/episode/5gQwyBsFjqTlRkgb8SZyPE",
-   "spotify_url": "https://open.spotify.com/episode/5gQwyBsFjqTlRkgb8SZyPE",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/The-House-Blocks-the-Hegseth-Impeachment-211-to-204--Wednesday--November-11--2026-e3s7q7a",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129279658/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F24acaf1b-d3c3-336b-9c54-f82008139c58.m4a",
    "number": null
   },
@@ -1081,8 +1109,8 @@
    "duration": 1207,
    "description": "Los Angeles marks Veterans Day with ceremonies across the county while the transition takes shape at City Hall: Mayor-elect Nithya Raman bids farewell to the City Council, promises to be \"spicy\" with colleagues who backed her opponent, and lays out the calendar to December 14. Plus: Raman promises a day-one public accounting of what Measure HLA actually costs, a new report shows just $368.9 million of the city's $1 billion-plus homelessness budget spent or committed, Raman's lead passes 106,000 votes while District 9 shrinks to 156, Sepulveda Transit Corridor comments close November 18, rain arrives Thursday night, and the Lakers take a six-game win streak into Milwaukee.\n Plus the expanded…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794426918537-5099c05efe49b.jpg",
-   "url": "https://open.spotify.com/episode/1vfvvqTS2AcvHrL0ZhrH21",
-   "spotify_url": "https://open.spotify.com/episode/1vfvvqTS2AcvHrL0ZhrH21",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Wednesday--November-11--2026-e3s7psm",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129279318/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fd4f230d5-62ec-098d-2c42-48a57b888c41.m4a",
    "number": null
   },
@@ -1109,8 +1137,8 @@
    "duration": 988,
    "description": "The House votes 211 to 204 to bury the Hegseth impeachment in committee, October inflation comes in hotter than expected for a third straight month, Republicans choose the leaders of their new minority, the last two Senate races grow closer without being called, Nvidia faces a reply deadline on Capitol Hill, Brent crude falls below ninety dollars, Israel swears in a Knesset with no government, and the Kennedy family goes to court over a triumphal arch.\n In today's brief:\n • The Hegseth vote: the House refers the impeachment articles to committee, 211-204 — https://www.courier-journal.com/story/news/politics/2026/11/10/pete-hegseth-impeachment-thomas-massie-house-vote/92713996007/\n • October…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794417888690-1db7feced49ed.jpg",
-   "url": "https://open.spotify.com/episode/6hUfZBO3vdsXtBgIIhX0HC",
-   "spotify_url": "https://open.spotify.com/episode/6hUfZBO3vdsXtBgIIhX0HC",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Wednesday--November-11--2026-e3s7hr7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129271079/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb848c8a5-39d7-da33-ee3f-198d79d83da9.m4a",
    "number": null
   },
@@ -1291,8 +1319,8 @@
    "duration": 681,
    "description": "Godzilla Minus Zero's $31.6 million opening is the biggest ever for a live-action foreign-language film, Cat in the Hat lands at No. 2, two non-English films crack the top five on the same weekend, the New York Times moves to buy Letterboxd, Christopher Nolan previews the DGA's next AI fight, and the layoff reports keep coming.\n In this episode:\n • Godzilla Minus Zero's Record Opening — https://www.thewrap.com/creative-content/movies/godzilla-minus-zero-box-office-opening-weekend-gkids-record/\n • Cat in the Hat Lands at No. 2 — https://www.animationmagazine.net/2026/11/warner-bros-the-cat-in-the-hat-lands-at-no-2-scratches-up-20-mil-at-the-box-office/\n • Ramayana's IMAX Record —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1794329455643-d9b9e0ae98422.jpg",
-   "url": "https://open.spotify.com/episode/5sdKoirb6tgVnZLvMHTpXP",
-   "spotify_url": "https://open.spotify.com/episode/5sdKoirb6tgVnZLvMHTpXP",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2048/episodes/Godzilla-Minus-Zeros-31-6-Million-Opening-Is-the-Biggest-Ever-for-a-Live-Action-Foreign-Language-Film--Monday--November-9--2026-e3s5eu4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129202564/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2Ff77017c8-ddbf-78e0-805c-bb5e73c5be9e.m4a",
    "number": null
   },
@@ -1865,8 +1893,8 @@
    "duration": 860,
    "description": "Channel 4 ends Married at First Sight UK after ten years and shelves a filmed series on welfare grounds, MGM Plus's From becomes the biggest show on streaming by moving to Netflix with 1.65 billion minutes, Keeley Hawes returns in The Assassin season two on Prime Video, Prime Video orders a new Terminal List series with Chris Pratt, NBC bets its post-NFL launch on The Rockford Files, Sherlock & Daughter comes home to HBO Max UK, and Awkwafina tries to revive her family's restaurant on Apple TV.\n • Channel 4 Axes Married at First Sight UK After 10 Years and Scraps a Filmed Series — https://www.reuters.com/world/uk/uks-channel-4-cancels-married-first-sight-after-rape-allegations-2026-11-05/\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1793966662989-23331eafa7faa.jpg",
-   "url": "https://open.spotify.com/episode/4z0Vb5lEGT3OXbhHQgSEJc",
-   "spotify_url": "https://open.spotify.com/episode/4z0Vb5lEGT3OXbhHQgSEJc",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms200/episodes/Channel-4-Axes-Married-at-First-Sight-UK-After-10-Years-and-Scraps-a-Filmed-Series--Friday--November-6--2026-e3rsrlk",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dae0c/podcast/play/128920692/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Fb19e0977-6847-7116-bea8-aca1fd7be949.m4a",
    "number": null
   },
@@ -4134,8 +4162,8 @@
    "duration": 3142,
    "description": "In November 1926, a twenty-year-old who signed himself \"Richard Bruce\" published \"Smoke, Lilies and Jade\" in the single issue of Fire!! — the first published literary work by an African American to write openly about homosexuality. It ended with the words \"To Be Continued.\" The continuation never came. Almost everything about Richard Bruce Nugent arrived late — including the recognition.\n This episode follows him through the young Harlem that made him: the Fire!! editorial board alongside Thurman, Hughes, and Hurston; the rooming house at 267 West 136th Street — \"Niggerati Manor\" — whose walls he covered with murals; the magazine that burned in an actual fire while Thurman paid off its…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1792998134078-1001d72b07f54.jpg",
-   "url": "https://open.spotify.com/episode/78KMhnMcow3wksvClR6Fl6",
-   "spotify_url": "https://open.spotify.com/episode/78KMhnMcow3wksvClR6Fl6",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms201/episodes/5-Richard-Bruce-Nugent-The-Rebel-Who-Outlived-the-Harlem-Renaissance-e3r3hi0",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119157f24/podcast/play/128091136/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2Fe016823f-6e55-6a44-d259-9d155cfb2ea2.m4a",
    "number": "5"
   },
@@ -8885,7 +8913,7 @@
    "spotify_name": "Once Upon a Time in Harlem",
    "full_catalog": true,
    "episodes": 6,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "designdigest": {
    "ok": true,
@@ -8901,7 +8929,7 @@
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
    "episodes": 9,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "morningread": {
    "ok": true,
@@ -8909,7 +8937,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 18,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -8917,7 +8945,7 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 16,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
@@ -8925,14 +8953,14 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 14,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "nyread": {
@@ -8941,7 +8969,7 @@
    "spotify_name": "The New York Read",
    "full_catalog": true,
    "episodes": 8,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "columbiaread": {
    "ok": true,
@@ -8957,7 +8985,7 @@
    "spotify_name": "The Tech Read",
    "full_catalog": true,
    "episodes": 11,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
@@ -8988,7 +9016,7 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 6,
+   "episodes": 7,
    "spotify_matches": 1
   },
   "tvinsider": {
@@ -8997,7 +9025,7 @@
    "spotify_name": "Primetime TV",
    "full_catalog": true,
    "episodes": 6,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "fastbreak": {
    "ok": true,
@@ -9061,7 +9089,7 @@
    "spotify_name": "The Horseshoe",
    "full_catalog": true,
    "episodes": 7,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "gamecockshoops": {
    "ok": true,
