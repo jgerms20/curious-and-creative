@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T17:54:13Z",
+ "generated_at": "2026-11-13T23:43:03Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-11T17:25:39Z",
-   "count": 18
+   "latest": "2026-11-13T15:45:18Z",
+   "count": 19
   },
   {
    "key": "ladaily",
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-11T19:55:47Z",
-   "count": 16
+   "latest": "2026-11-13T15:51:11Z",
+   "count": 17
   },
   {
    "key": "globalread",
@@ -410,8 +410,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-11T23:10:36Z",
-   "count": 8
+   "latest": "2026-11-13T16:29:20Z",
+   "count": 9
   },
   {
    "key": "columbiaread",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-11T23:15:41Z",
-   "count": 11
+   "latest": "2026-11-13T16:17:39Z",
+   "count": 12
   },
   {
    "key": "techread",
@@ -592,8 +592,8 @@
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-06T12:05:02Z",
-   "count": 6
+   "latest": "2026-11-13T16:35:14Z",
+   "count": 7
   },
   {
    "key": "fastbreak",
@@ -835,6 +835,34 @@
  ],
  "episodes": [
   {
+   "id": "tvinsider:9885b76e b508 41e5 a583 0f82276304c3",
+   "show": "tvinsider",
+   "kind": "episode",
+   "title": "Why TV Is Canceling Expensive Dramas | Friday, November 13, 2026",
+   "date": "2026-11-13T16:35:14Z",
+   "duration": 1414,
+   "description": "The expensive-drama era is ending: FX passes on more of Grotesquerie and The Beauty, Disney weighs thousands of layoffs with managers asked to find 20 percent savings, and Netflix's next big move might be NBCUniversal. Plus: FX doubles down on Adults with a 16-episode third season, The Rings of Power returns, From tops the Nielsen chart, and tonight brings Apple TV's heist series 12 12 12.\n • The Cost-Cutting Era: Expensive Dramas Are First to Go — https://www.thetvcave.com/post/no-season-2-for-grotesquerie-the-beauty\n • Disney Weighs Thousands of Layoffs — https://northlandnewsradio.com/2026/11/02/disney-eyes-thousands-of-layoffs-managers-asked-to-cut-20-in-costs-bloomberg-news-reports/\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1794587689396-fd1b36a5d2916.jpg",
+   "url": "https://open.spotify.com/episode/6WPcuMhMiHsv8prbMMh2vB",
+   "spotify_url": "https://open.spotify.com/episode/6WPcuMhMiHsv8prbMMh2vB",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129389506/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F71a867f6-d345-8b9d-dde8-811213e79793.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:97b0c3e8 c1c3 45bb 9c90 e28e10581c15",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T16:29:20Z",
+   "duration": 1238,
+   "description": "The search at the collapsed Flatbush building is over: eight dead, including two children, eighteen injured, and the city has turned to investigation, with inspectors ordered to about 100 construction sites linked to the project next door; City Hall is preparing to disband the NYPD's Strategic Response Group; the Council banned surveillance pricing 44-5 and voted 48-1 to wipe out property taxes for permanently and totally disabled veterans; fourteen East Harlem buildings from the Emerald portfolio reverted to the lender at auction, with thirteen more set for November 17; developers are gaming the 485-x program with 99-unit buildings; the A train's Lefferts shutdown ends Monday at 5 a.m.…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794587335605-c8ece50a5e779.jpg",
+   "url": "https://open.spotify.com/episode/3t6fYzz6L20NSYZEwjXiRE",
+   "spotify_url": "https://open.spotify.com/episode/3t6fYzz6L20NSYZEwjXiRE",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/129389228/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F648a6ac0-c23a-29e0-ffe5-498f23ae561c.m4a",
+   "number": null
+  },
+  {
    "id": "hollywoodinsider:a9ab3ea3 208a 4e8a a237 b2392d1ac557",
    "show": "hollywoodinsider",
    "kind": "episode",
@@ -849,6 +877,20 @@
    "number": null
   },
   {
+   "id": "airead:f8908eab e5ff 42ac a1b2 ca06c4f236b6",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T16:17:39Z",
+   "duration": 1495,
+   "description": "Nvidia lost its founder: Jensen Huang resigned as president, CEO and director, with CFO Colette Kress as interim CEO five days before earnings. Google shipped Gemini 4 Hydrogen into Search and the Gemini app, Anthropic opened self-hosted Claude Managed Agents in private beta, and four nonprofits sued to freeze frontier AI development. Plus TSMC's employee-data exposure, Malaysia's Megaspeed chip check, Gemini smart glasses from $395, crypto's fall below $70,000, and who's hiring.\n • Jensen Huang resigns as Nvidia CEO, Colette Kress named interim — https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/\n • Google launches Gemini 4…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794586635273-dea01e8af24ad.jpg",
+   "url": "https://open.spotify.com/episode/5OK83qi7K1TW41mUUEF2V5",
+   "spotify_url": "https://open.spotify.com/episode/5OK83qi7K1TW41mUUEF2V5",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129388529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F459501fc-b130-2962-d14c-ba6a4e065be7.m4a",
+   "number": null
+  },
+  {
    "id": "marketread:caecf069 dc53 4870 ba76 7fdb3e029aed",
    "show": "marketread",
    "kind": "episode",
@@ -860,6 +902,34 @@
    "url": "https://open.spotify.com/episode/0CGCCqHaacoDf44IPACsHc",
    "spotify_url": "https://open.spotify.com/episode/0CGCCqHaacoDf44IPACsHc",
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129387924/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F19eaa81e-3efd-4ba5-248f-fdc7ab472010.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:ddee7e1a 80e3 49bc 93b2 ddb0f6552493",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T15:51:11Z",
+   "duration": 1319,
+   "description": "Los Angeles starts a rainy Friday with the transition's most consequential meeting yet: Mayor-elect Nithya Raman and LAPD Chief Jim McDonnell sat down Thursday afternoon, are in regular contact, and the chief says the question now is where they align — weeks after a campaign in which she pledged to replace him. Plus: Karen Bass opens $72 million of homeless housing in North Hills and calls her defeat a national wave, the county count updates today with Raman trailing in her own District 4, voters back a charter overhaul that cuts required Council meetings to one day a week and moves the city to two-year budgets, downtown's graffiti towers are cleaned, a license-plate reader plan on Western…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794585027077-1a182b0f0cc2d.jpg",
+   "url": "https://open.spotify.com/episode/6d3BqKiY9vbGBBKR5vj20E",
+   "spotify_url": "https://open.spotify.com/episode/6d3BqKiY9vbGBBKR5vj20E",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129386942/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2Fd0017033-2d82-0607-5323-5c200044c0be.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:e0384314 3d3f 431e b910 f3bea999ca4b",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T15:45:18Z",
+   "duration": 1130,
+   "description": "Jensen Huang has resigned as Nvidia's chief executive after 33 years, and his finance chief Colette Kress takes over on an interim basis, five days before earnings. Plus: Congress summons Huang and the commerce secretary for December; the president says America does not need a deal with Iran as tankers are hit in Hormuz; the ten-year yield closes above 5 percent; claims rise and home sales hit a 16-year low; Cisco and Applied Materials beat while Nebius falls 17 percent; Mississippi certifies today and Alaska's lead grows; and Johnny Depp's Scrooge opens the holiday box office.\n In today's brief:\n • Nvidia: The Founder Is Out —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794584644204-c3eecc0b26d24.jpg",
+   "url": "https://open.spotify.com/episode/0paOwLvL7v4WKt83QukfSj",
+   "spotify_url": "https://open.spotify.com/episode/0paOwLvL7v4WKt83QukfSj",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129386596/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F04ea6243-494e-262f-e24b-c4d30d89c331.m4a",
    "number": null
   },
   {
@@ -8936,16 +9006,16 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 18,
-   "spotify_matches": 0
+   "episodes": 19,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 16,
-   "spotify_matches": 0
+   "episodes": 17,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
@@ -8968,8 +9038,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "columbiaread": {
    "ok": true,
@@ -8984,8 +9054,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 11,
-   "spotify_matches": 0
+   "episodes": 12,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
@@ -9024,8 +9094,8 @@
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime TV",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "fastbreak": {
    "ok": true,
