@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T01:58:39Z",
+ "generated_at": "2026-11-13T09:44:52Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-12T00:10:37Z",
-   "count": 259
+   "latest": "2026-11-13T00:50:55Z",
+   "count": 260
   },
   {
    "key": "approachable",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-11T23:28:53Z",
-   "count": 12
+   "latest": "2026-11-12T04:49:07Z",
+   "count": 13
   },
   {
    "key": "cbbdaily",
@@ -834,6 +834,34 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:1bb12780 145b 47c2 a7e3 543bc0d4484d",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#262 The Son-Rise Program: How One Family Turned a Claimed Cure Into an Empire",
+   "date": "2026-11-13T00:50:55Z",
+   "duration": 2664,
+   "description": "In the 1970s, Barry and Samahria Kaufman said they had cured their young son's autism by joining his world, rocking when he rocked and spinning plates when he spun plates, for twelve hours a day in a converted bathroom. The book became a bestseller. The bestseller became an NBC television movie. The movie became an institute on 85 acres in Massachusetts, and the institute became a ladder of courses that charged families tens of thousands of dollars to learn the method.\n This episode works the record underneath the miracle. The original diagnosis was formally disputed by clinicians who evaluated the child. No independent clinical documentation of the diagnosis, or of the cure, was ever…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794530964125-9a7514a9302f3.jpg",
+   "url": "https://open.spotify.com/episode/71ViA2GtDLwBb9LUWHzBr5",
+   "spotify_url": "https://open.spotify.com/episode/71ViA2GtDLwBb9LUWHzBr5",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129353319/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F670ccffd-fb16-5b17-a384-864f9a775b3b.m4a",
+   "number": "262"
+  },
+  {
+   "id": "cfbdaily:fafe235e d1aa 42ef b7d4 ded7e851eca7",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Buffalo Runs for 296 Yards, Toledo Shuts Out UMass, and the MAC Race Tightens Into a Four-Way Tie | Wednesday, November 11, 2026",
+   "date": "2026-11-12T04:49:07Z",
+   "duration": 846,
+   "description": "Wednesday MACtion delivered three ground-game statements: Buffalo rushed for 296 yards and completed only five passes in a 28-7 win at Ball State behind Messiah Burch's 209 yards, Toledo shut out UMass 24-0 with every point scored in the first half, and Central Michigan scored once in every quarter to beat Sacramento State 28-7 — leaving Ohio, Western Michigan, Buffalo and Toledo tied at 5-1 atop the MAC.\n Buffalo 28, Ball State 7 • Toledo 24, UMass 0 • Central Michigan 28, Sacramento State 7 • The standouts • The four-way MAC tie • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794458903567-b040ce3a6644c.jpg",
+   "url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
+   "spotify_url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129300062/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F34fccd47-adab-491a-ca99-a274569f78a9.m4a",
+   "number": null
+  },
   {
    "id": "celticsdaily:c55f8321 e008 4c77 b31f a87f825f00c7",
    "show": "celticsdaily",
@@ -6791,7 +6819,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -8803,8 +8831,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 259,
-   "spotify_matches": 0
+   "episodes": 260,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -9016,8 +9044,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 0
+   "episodes": 13,
+   "spotify_matches": 1
   },
   "cbbdaily": {
    "ok": true,
