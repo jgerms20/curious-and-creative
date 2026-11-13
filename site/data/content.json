@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T20:57:35Z",
+ "generated_at": "2026-11-13T01:58:39Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-12T04:49:07Z",
-   "count": 13
+   "latest": "2026-11-11T23:28:53Z",
+   "count": 12
   },
   {
    "key": "cbbdaily",
@@ -835,20 +835,6 @@
  ],
  "episodes": [
   {
-   "id": "cfbdaily:fafe235e d1aa 42ef b7d4 ded7e851eca7",
-   "show": "cfbdaily",
-   "kind": "episode",
-   "title": "Buffalo Runs for 296 Yards, Toledo Shuts Out UMass, and the MAC Race Tightens Into a Four-Way Tie | Wednesday, November 11, 2026",
-   "date": "2026-11-12T04:49:07Z",
-   "duration": 846,
-   "description": "Wednesday MACtion delivered three ground-game statements: Buffalo rushed for 296 yards and completed only five passes in a 28-7 win at Ball State behind Messiah Burch's 209 yards, Toledo shut out UMass 24-0 with every point scored in the first half, and Central Michigan scored once in every quarter to beat Sacramento State 28-7 — leaving Ohio, Western Michigan, Buffalo and Toledo tied at 5-1 atop the MAC.\n Buffalo 28, Ball State 7 • Toledo 24, UMass 0 • Central Michigan 28, Sacramento State 7 • The standouts • The four-way MAC tie • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794458903567-b040ce3a6644c.jpg",
-   "url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
-   "spotify_url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
-   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129300062/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F34fccd47-adab-491a-ca99-a274569f78a9.m4a",
-   "number": null
-  },
-  {
    "id": "celticsdaily:c55f8321 e008 4c77 b31f a87f825f00c7",
    "show": "celticsdaily",
    "kind": "episode",
@@ -871,8 +857,8 @@
    "duration": 3520,
    "description": "Healthy people are paying up to $136,000 to sit in pressurized oxygen chambers in their basements, and thousands more for home red light panels that can output less therapeutic energy than a sunny afternoon. This episode grades the evidence behind the longevity stack: photobiomodulation, hyperbaric oxygen, sauna, cold plunge, and the rest of what gets sold to people who can afford to buy time.\n Red light therapy has real physics and a real origin story, a Hungarian mouse lab in 1967 and a NASA wound-healing program, but the distance between \"light changes mitochondrial behavior in a dish\" and \"this panel will fix your skin, sleep, and hormones\" is exactly the distance this episode measures:…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794442157306-214ef88644727.jpg",
-   "url": "https://open.spotify.com/episode/7Gp8sYnIYQPUrKcFEbmOCx",
-   "spotify_url": "https://open.spotify.com/episode/7Gp8sYnIYQPUrKcFEbmOCx",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/261-The-Light-They-Sell-You-What-Red-Light--Pressure-Chambers--and-the-Longevity-Stack-Actually-Prove-e3s84a4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129289988/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F01f87c0b-e5fb-97ab-5614-60d0aeae1ad6.m4a",
    "number": "261"
   },
@@ -8818,7 +8804,7 @@
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
    "episodes": 259,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -9030,8 +9016,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 1
+   "episodes": 12,
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
