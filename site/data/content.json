@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T23:43:03Z",
+ "generated_at": "2026-11-14T06:45:41Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-13T00:50:55Z",
-   "count": 260
+   "latest": "2026-11-14T06:11:41Z",
+   "count": 262
   },
   {
    "key": "approachable",
@@ -277,8 +277,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-11T20:02:49Z",
-   "count": 9
+   "latest": "2026-11-13T15:25:11Z",
+   "count": 10
   },
   {
    "key": "morningread",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-11T20:09:14Z",
-   "count": 14
+   "latest": "2026-11-13T16:11:01Z",
+   "count": 15
   },
   {
    "key": "marketread",
@@ -410,8 +410,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-13T16:29:20Z",
-   "count": 9
+   "latest": "2026-11-11T23:10:36Z",
+   "count": 8
   },
   {
    "key": "columbiaread",
@@ -835,6 +835,34 @@
  ],
  "episodes": [
   {
+   "id": "polymath:01e3ae4b 37f5 463d 8f9b b532b6e9436f",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#264 Alexandr Wang: The $14.3 Billion Hire",
+   "date": "2026-11-14T06:11:41Z",
+   "duration": 3165,
+   "description": "In June 2025, Meta paid a reported $14.3 billion for 49 percent of Scale AI, and got its founder as the real prize: Alexandr Wang, a 28-year-old MIT dropout from Los Alamos, became the first Chief AI Officer in Meta's history. This is the story of how a data-labeling company became the junction box of the AI boom, and what that price actually bought.\n Wang grew up in the company town built around Los Alamos National Laboratory, the son of two immigrant physicists, and told his parents his startup was \"just for the summer.\" He never went back to MIT.\n Scale's public story was software. Its engine was piecework: hundreds of thousands of contractors on Remotasks and Outlier, paid by the task.…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794636663466-9a51873bcdb2d.jpg",
+   "url": "https://open.spotify.com/episode/3eHuA1Y1LY211A0FVn8mtj",
+   "spotify_url": "https://open.spotify.com/episode/3eHuA1Y1LY211A0FVn8mtj",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129416728/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2Fbad1d513-742e-c7d2-8079-4c0e7d747ee9.m4a",
+   "number": "264"
+  },
+  {
+   "id": "polymath:2bf8078e c3d7 408c a648 8b104de9834f",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#263 Alexander Wang: The Comeback That Never Went to Court",
+   "date": "2026-11-14T06:05:38Z",
+   "duration": 2637,
+   "description": "Alexander Wang turned six cashmere sweaters and the clothes models wore between shows into a luxury empire, then ran Balenciaga before he turned thirty-two. In December 2020, a wave of sexual-assault allegations, which he denied completely, seemed certain to end his career. This episode traces how the exit from disgrace ran through a single meeting, an apology-shaped statement, and the China market he had bet on a decade earlier, with no courtroom ever involved: no lawsuit was filed, no charges were ever reported, and no court made any finding.\n The party was the marketing. Wang's after-parties, from a 2009 gas-station blowout to the branded #WANGFEST spectacles, were the brand's…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794636297573-4fbb337d5823c.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/263-Alexander-Wang-The-Comeback-That-Never-Went-to-Court-e3sbvu4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129416580/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F93612175-367d-4ea8-a37a-8da0dfb9648b.m4a",
+   "number": "263"
+  },
+  {
    "id": "tvinsider:9885b76e b508 41e5 a583 0f82276304c3",
    "show": "tvinsider",
    "kind": "episode",
@@ -849,20 +877,6 @@
    "number": null
   },
   {
-   "id": "nyread:97b0c3e8 c1c3 45bb 9c90 e28e10581c15",
-   "show": "nyread",
-   "kind": "episode",
-   "title": "Friday, November 13, 2026",
-   "date": "2026-11-13T16:29:20Z",
-   "duration": 1238,
-   "description": "The search at the collapsed Flatbush building is over: eight dead, including two children, eighteen injured, and the city has turned to investigation, with inspectors ordered to about 100 construction sites linked to the project next door; City Hall is preparing to disband the NYPD's Strategic Response Group; the Council banned surveillance pricing 44-5 and voted 48-1 to wipe out property taxes for permanently and totally disabled veterans; fourteen East Harlem buildings from the Emerald portfolio reverted to the lender at auction, with thirteen more set for November 17; developers are gaming the 485-x program with 99-unit buildings; the A train's Lefferts shutdown ends Monday at 5 a.m.…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794587335605-c8ece50a5e779.jpg",
-   "url": "https://open.spotify.com/episode/3t6fYzz6L20NSYZEwjXiRE",
-   "spotify_url": "https://open.spotify.com/episode/3t6fYzz6L20NSYZEwjXiRE",
-   "audio": "https://anchor.fm/s/119608a14/podcast/play/129389228/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F648a6ac0-c23a-29e0-ffe5-498f23ae561c.m4a",
-   "number": null
-  },
-  {
    "id": "hollywoodinsider:a9ab3ea3 208a 4e8a a237 b2392d1ac557",
    "show": "hollywoodinsider",
    "kind": "episode",
@@ -870,7 +884,7 @@
    "date": "2026-11-13T16:23:23Z",
    "duration": 1389,
    "description": "GTA VI launches next week with a projected $3.2 billion first year and legacy studios are terrified; Johnny Depp's Ebenezer opens the holiday box office on an $88 million all-in bet; Skydance details $6 billion in cuts as James Gunn and Peter Safran exit DC Studios; Netflix circles the foreclosure auction for the historic Radford lot; Cat in the Hat beats Godzilla on Veterans Day; and the American Film Market bets big on Elden Ring.\n • GTA VI: A $3.2 Billion Launch and a Terrified Industry — https://www.brief.news/gaming/2026/11/11/gta-6-could-crowd-out-entertainment\n • Ebenezer: Paramount's $88 Million Bet on Johnny Depp —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1794588006067-e08c0089db5a9.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1794592387255-f719f56a96e56.jpg",
    "url": "https://open.spotify.com/episode/33F0SMnEBNHKiZwXpf54JJ",
    "spotify_url": "https://open.spotify.com/episode/33F0SMnEBNHKiZwXpf54JJ",
    "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129388939/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F5230b722-7623-bb80-b5a6-69ea93b70be5.m4a",
@@ -888,6 +902,20 @@
    "url": "https://open.spotify.com/episode/5OK83qi7K1TW41mUUEF2V5",
    "spotify_url": "https://open.spotify.com/episode/5OK83qi7K1TW41mUUEF2V5",
    "audio": "https://anchor.fm/s/119609054/podcast/play/129388529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F459501fc-b130-2962-d14c-ba6a4e065be7.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:38b25756 6e07 4575 9026 22ef33964e1d",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T16:11:01Z",
+   "duration": 1186,
+   "description": "An LNG tanker hits a mine in the Strait of Hormuz after four oil tankers are hit in two days while oil heads for a second weekly fall, US envoys say Europe will join the next Ukraine talks as Moscow declines to confirm it and restates its territorial terms, COP31's first week closes with its electrification pledge contested and the finance gap unclosed, South Africa's ANC closes ranks around President Ramaphosa and turns to town-by-town coalition deals, Congo's Ebola toll reaches 11,114 cases with 400 to 500 more each week, France's public-sector unions get their Matignon meeting four days before the November 17 strike, and Eisenkot's bloc moves to take the Knesset speaker's chair before…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794586230924-23c735c018c82.jpg",
+   "url": "https://open.spotify.com/episode/63D2qARzf78AZK5zHDQwEH",
+   "spotify_url": "https://open.spotify.com/episode/63D2qARzf78AZK5zHDQwEH",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129388212/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F91fb0ba2-2989-6dd6-fd69-b7a5148dc1a1.m4a",
    "number": null
   },
   {
@@ -933,6 +961,20 @@
    "number": null
   },
   {
+   "id": "dominatedconvo:c6a4f264 7b9b 41a7 86cb 56703add3ce3",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "Microsoft Goes Down on Friday the 13th and the Internet Asks If It Can Legally Go Home | Friday, November 13, 2026",
+   "date": "2026-11-13T15:25:11Z",
+   "duration": 1219,
+   "description": "Microsoft's email empire went down on Thursday and stayed down into Friday the 13th, and the internet responded by asking if it could legally go home: the outage received as a gift, on X, Reddit, Instagram and TikTok at once. Plus: the 1960 doomsday paper's date arrives; Chris Van Hollen challenges Chuck Schumer; Cam Skattebo's staredown outruns a comeback; Nvidia's employees ask for Jensen Huang back; the Logan Circle shooting resolves with its counts still disputed; Alaska counts a tenth day; and the Pirate Shop Token keeps its crown for a seventh day without earning a flag.\n • X US trending snapshot, Nov 13 (Microsoft #1) — Trending Soup — https://www.trendingsoup.com/xtrends/us\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794583476891-9ed2f2316a7d2.jpg",
+   "url": "https://open.spotify.com/episode/4SSmQ4w8KNZO4C99OloGeO",
+   "spotify_url": "https://open.spotify.com/episode/4SSmQ4w8KNZO4C99OloGeO",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129385534/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F6330becc-e394-330e-e715-e4758454e1e4.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:1bb12780 145b 47c2 a7e3 543bc0d4484d",
    "show": "polymath",
    "kind": "episode",
@@ -941,8 +983,8 @@
    "duration": 2664,
    "description": "In the 1970s, Barry and Samahria Kaufman said they had cured their young son's autism by joining his world, rocking when he rocked and spinning plates when he spun plates, for twelve hours a day in a converted bathroom. The book became a bestseller. The bestseller became an NBC television movie. The movie became an institute on 85 acres in Massachusetts, and the institute became a ladder of courses that charged families tens of thousands of dollars to learn the method.\n This episode works the record underneath the miracle. The original diagnosis was formally disputed by clinicians who evaluated the child. No independent clinical documentation of the diagnosis, or of the cure, was ever…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794530964125-9a7514a9302f3.jpg",
-   "url": "https://open.spotify.com/episode/71ViA2GtDLwBb9LUWHzBr5",
-   "spotify_url": "https://open.spotify.com/episode/71ViA2GtDLwBb9LUWHzBr5",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/262-The-Son-Rise-Program-How-One-Family-Turned-a-Claimed-Cure-Into-an-Empire-e3sa257",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129353319/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F670ccffd-fb16-5b17-a384-864f9a775b3b.m4a",
    "number": "262"
   },
@@ -1109,8 +1151,8 @@
    "duration": 1255,
    "description": "Boston takes first place in the East in Philadelphia, Milwaukee collapses at home against the Knicks, and Portland stuns the Thunder. Every score from a six-game Tuesday night, plus the deep segment on what Boston's start and Milwaukee's slide mean.\n • New York Knicks 117, Milwaukee Bucks 85\n • Boston Celtics 123, Philadelphia 76ers 101\n • Phoenix Suns 133, Los Angeles Clippers 110\n • Miami Heat 115, Utah Jazz 109\n • Orlando Magic 107, Sacramento Kings 100\n • Portland Trail Blazers 123, Oklahoma City Thunder 103\n Part of the Curious & Creative network. Back after the next slate.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794429255082-7db51e858da2.jpg",
-   "url": "https://open.spotify.com/episode/1MIi9K10BSKXvMDdghwUt4",
-   "spotify_url": "https://open.spotify.com/episode/1MIi9K10BSKXvMDdghwUt4",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Tuesday--November-10--2026-e3s7rn4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129281188/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F80ad9ab3-cacc-15ba-f517-30c3b4f775c2.m4a",
    "number": null
   },
@@ -8929,7 +8971,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 260,
+   "episodes": 262,
    "spotify_matches": 1
   },
   "approachable": {
@@ -8998,8 +9040,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 10,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
@@ -9022,8 +9064,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 15,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
@@ -9038,8 +9080,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 1
+   "episodes": 8,
+   "spotify_matches": 0
   },
   "columbiaread": {
    "ok": true,
@@ -9103,7 +9145,7 @@
    "spotify_name": "The Fast Break",
    "full_catalog": true,
    "episodes": 12,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "blitz": {
    "ok": true,

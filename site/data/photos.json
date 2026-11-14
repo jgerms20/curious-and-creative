@@ -114,54 +114,6 @@
    "featured": false
   },
   {
-   "id": "portraits-jmg_1763",
-   "set": "Portraits",
-   "alt": "Two people stand in red and blue light against a wall covered in newspaper pages.",
-   "src": "assets/photos/portraits-jmg_1763.jpg",
-   "thumb": "assets/photos/portraits-jmg_1763-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "portraits-jmg_8750",
-   "set": "Portraits",
-   "alt": "Portrait of a woman standing beside railway tracks in warm evening light.",
-   "src": "assets/photos/portraits-jmg_8750.jpg",
-   "thumb": "assets/photos/portraits-jmg_8750-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "portraits-jmg_8386",
-   "set": "Portraits",
-   "alt": "Portrait of a woman in warm window light beside a chrome pole.",
-   "src": "assets/photos/portraits-jmg_8386.jpg",
-   "thumb": "assets/photos/portraits-jmg_8386-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "fashion-jmg_3641",
-   "set": "Fashion",
-   "alt": "Fashion portrait of a model seated in a patterned green look and white trousers.",
-   "src": "assets/photos/fashion-jmg_3641.jpg",
-   "thumb": "assets/photos/fashion-jmg_3641-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "fashion-jmg_4379",
-   "set": "Fashion",
-   "alt": "Fashion portrait of a woman with copper hair seated against a rough concrete wall.",
-   "src": "assets/photos/fashion-jmg_4379.jpg",
-   "thumb": "assets/photos/fashion-jmg_4379-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "fashion-jmg_8986",
-   "set": "Fashion",
-   "alt": "A couple in dark clothing stands close together before a graffiti-covered wall.",
-   "src": "assets/photos/fashion-jmg_8986.jpg",
-   "thumb": "assets/photos/fashion-jmg_8986-sm.jpg",
-   "featured": false
-  },
-  {
    "id": "events-jmg_7895",
    "set": "Events & Live",
    "alt": "A small production crew gathers around a plated dish on a culinary set.",
@@ -183,6 +135,46 @@
    "alt": "Hands finish a row of carefully plated dishes at an event.",
    "src": "assets/photos/events-jmg_7787.jpg",
    "thumb": "assets/photos/events-jmg_7787-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "portraits-jmg_1763",
+   "set": "Portraits",
+   "alt": "Two people stand in red and blue light against a wall covered in newspaper pages.",
+   "src": "assets/photos/portraits-jmg_1763.jpg",
+   "thumb": "assets/photos/portraits-jmg_1763-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "portraits-jmg_8750",
+   "set": "Portraits",
+   "alt": "Portrait of a woman standing beside railway tracks in warm evening light.",
+   "src": "assets/photos/portraits-jmg_8750.jpg",
+   "thumb": "assets/photos/portraits-jmg_8750-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "fashion-jmg_4379",
+   "set": "Fashion",
+   "alt": "Fashion portrait of a woman with copper hair seated against a rough concrete wall.",
+   "src": "assets/photos/fashion-jmg_4379.jpg",
+   "thumb": "assets/photos/fashion-jmg_4379-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "travel-jmg_7419",
+   "set": "Travel",
+   "alt": "Two visitors share a quiet conversation inside an art museum.",
+   "src": "assets/photos/travel-jmg_7419.jpg",
+   "thumb": "assets/photos/travel-jmg_7419-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "landscape-jmg_6799",
+   "set": "Landscapes",
+   "alt": "A lone walker crosses a mountain overlook as sunlight breaks through cloud.",
+   "src": "assets/photos/landscape-jmg_6799.jpg",
+   "thumb": "assets/photos/landscape-jmg_6799-sm.jpg",
    "featured": false
   },
   {
@@ -218,6 +210,30 @@
    "featured": false
   },
   {
+   "id": "portraits-jmg_8386",
+   "set": "Portraits",
+   "alt": "Portrait of a woman in warm window light beside a chrome pole.",
+   "src": "assets/photos/portraits-jmg_8386.jpg",
+   "thumb": "assets/photos/portraits-jmg_8386-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "fashion-jmg_3641",
+   "set": "Fashion",
+   "alt": "Fashion portrait of a model seated in a patterned green look and white trousers.",
+   "src": "assets/photos/fashion-jmg_3641.jpg",
+   "thumb": "assets/photos/fashion-jmg_3641-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "fashion-jmg_8986",
+   "set": "Fashion",
+   "alt": "A couple in dark clothing stands close together before a graffiti-covered wall.",
+   "src": "assets/photos/fashion-jmg_8986.jpg",
+   "thumb": "assets/photos/fashion-jmg_8986-sm.jpg",
+   "featured": false
+  },
+  {
    "id": "landscape-jmg_5693",
    "set": "Landscapes",
    "alt": "Mist moves through a pine forest and mountain valley.",
@@ -226,19 +242,27 @@
    "featured": false
   },
   {
-   "id": "landscape-jmg_6799",
-   "set": "Landscapes",
-   "alt": "A lone walker crosses a mountain overlook as sunlight breaks through cloud.",
-   "src": "assets/photos/landscape-jmg_6799.jpg",
-   "thumb": "assets/photos/landscape-jmg_6799-sm.jpg",
-   "featured": false
-  },
-  {
    "id": "landscape-jmg_6109",
    "set": "Landscapes",
    "alt": "Rock formations sit offshore beneath a pale band of ocean haze.",
    "src": "assets/photos/landscape-jmg_6109.jpg",
    "thumb": "assets/photos/landscape-jmg_6109-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "travel-jmg_3086",
+   "set": "Travel",
+   "alt": "Palm trees and beach umbrellas form silhouettes against a blue-orange dusk sky.",
+   "src": "assets/photos/travel-jmg_3086.jpg",
+   "thumb": "assets/photos/travel-jmg_3086-sm.jpg",
+   "featured": false
+  },
+  {
+   "id": "travel-dsc00870",
+   "set": "Travel",
+   "alt": "Swimmers appear as small figures in a calm sea beneath a pastel sky.",
+   "src": "assets/photos/travel-dsc00870.jpg",
+   "thumb": "assets/photos/travel-dsc00870-sm.jpg",
    "featured": false
   },
   {
@@ -271,30 +295,6 @@
    "alt": "Two rock formations rise from bright blue water along the coast.",
    "src": "assets/photos/landscape-jmg_5559.jpg",
    "thumb": "assets/photos/landscape-jmg_5559-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "travel-jmg_3086",
-   "set": "Travel",
-   "alt": "Palm trees and beach umbrellas form silhouettes against a blue-orange dusk sky.",
-   "src": "assets/photos/travel-jmg_3086.jpg",
-   "thumb": "assets/photos/travel-jmg_3086-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "travel-jmg_7419",
-   "set": "Travel",
-   "alt": "Two visitors share a quiet conversation inside an art museum.",
-   "src": "assets/photos/travel-jmg_7419.jpg",
-   "thumb": "assets/photos/travel-jmg_7419-sm.jpg",
-   "featured": false
-  },
-  {
-   "id": "travel-dsc00870",
-   "set": "Travel",
-   "alt": "Swimmers appear as small figures in a calm sea beneath a pastel sky.",
-   "src": "assets/photos/travel-dsc00870.jpg",
-   "thumb": "assets/photos/travel-dsc00870-sm.jpg",
    "featured": false
   }
  ]
