@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T19:17:46Z",
+ "generated_at": "2026-11-14T23:08:45Z",
  "shows": [
   {
    "key": "ccpod",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-13T16:11:01Z",
-   "count": 15
+   "latest": "2026-11-14T21:46:04Z",
+   "count": 16
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-13T16:04:54Z",
-   "count": 13
+   "latest": "2026-11-14T21:33:01Z",
+   "count": 14
   },
   {
    "key": "nyread",
@@ -488,8 +488,8 @@
    "complete": true,
    "art": "assets/art/techread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115008/47115008-1793403471813-faf390ffca731.jpg",
-   "latest": "2026-11-04T22:13:29Z",
-   "count": 5
+   "latest": "2026-11-14T22:15:12Z",
+   "count": 6
   },
   {
    "key": "optionsdesk",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-12T04:49:07Z",
-   "count": 13
+   "latest": "2026-11-14T22:50:18Z",
+   "count": 15
   },
   {
    "key": "cbbdaily",
@@ -835,6 +835,76 @@
  ],
  "episodes": [
   {
+   "id": "cfbdaily:bcdd26b0 b2db 40ce b611 f67fe5807c89",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Memphis Blows a 21-Point Lead, Then Wins a 52-41 Shootout at South Florida | Thursday, November 12, 2026",
+   "date": "2026-11-14T22:50:18Z",
+   "duration": 898,
+   "description": "Thursday night in Week 11 was chaos in Tampa and a rout built on turnovers in Monroe: Memphis led South Florida 21-0, trailed 41-38 with eight minutes left, and still won 52-41 on a 76-yard touchdown and a closing score, while Louisiana outscored UL Monroe 28-7 in the second half behind a fumble-return touchdown and 274 rushing yards to win the Battle on the Bayou 42-21.\n Memphis 52, South Florida 41 • Louisiana 42, UL Monroe 21 • The standouts • The conference races • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794696567196-838a2111c6384.jpg",
+   "url": "https://open.spotify.com/episode/4AcqM6R0vF8EFYF2MKnVWf",
+   "spotify_url": "https://open.spotify.com/episode/4AcqM6R0vF8EFYF2MKnVWf",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129449250/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F0725a2fc-7553-57ec-32e2-a5425095c963.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:c9680d63 3e46 4a21 905c 64d12db5d3b7",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Colorado Stuns No. 14 Houston in Boulder, and UCLA Reaches 10-0 | Friday, November 13, 2026",
+   "date": "2026-11-14T22:37:11Z",
+   "duration": 808,
+   "description": "Friday night in Week 11 delivered an upset, a survival, and a defensive grind: Colorado scored 28 unanswered points to stun No. 14 Houston 42-32 in Boulder for its first top-15 win since 2007, No. 4 UCLA held off Illinois 22-14 to reach 10-0 for the first time since 1998, and Florida State edged Pitt 16-10 behind three field goals and one decisive takeaway.\n Colorado 42, No. 14 Houston 32 • No. 4 UCLA 22, Illinois 14 • Florida State 16, Pittsburgh 10 • The standouts • The playoff picture • Saturday's slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794695748415-ec800f98aced8.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Colorado-Stuns-No--14-Houston-in-Boulder--and-UCLA-Reaches-10-0--Friday--November-13--2026-e3scvcd",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129448781/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F3e8f49fb-00bd-dde0-db07-3cc7f7eb5a72.m4a",
+   "number": null
+  },
+  {
+   "id": "techread:4a70e8a3 830b 4709 a83b a5b7b7d4fbe5",
+   "show": "techread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T22:15:12Z",
+   "duration": 1547,
+   "description": "OpenAI gave its agents a wallet: ChatGPT Wallet launched for US Pro subscribers, letting a dot pay with a token and a Face ID or fingerprint check on every purchase. Anthropic's IPO is about six times oversubscribed before it prices, Microsoft is restoring Microsoft 365 after an outage that degraded 19 services through Exchange Online, and Nvidia heads into Tuesday's earnings under an interim CEO. Plus OpenAI's Daybreak security agents, two attacks on AMD's confidential computing, a breach that exposed Notion AI chats, and crypto's break below $70,000.\n • OpenAI launches ChatGPT Wallet, letting AI agents pay for purchases —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1794694475633-525fb8809441.jpg",
+   "url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
+   "spotify_url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
+   "audio": "https://anchor.fm/s/1196c6280/podcast/play/129448125/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2Fd8769dd3-cc37-6403-c826-c5c08dab0582.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:127983d7 1b78 45ed ac75 8b4e950ebfa4",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T21:46:04Z",
+   "duration": 1251,
+   "description": "The United Nations tells the Security Council that at least 25 seafarers have been killed in and around the Strait of Hormuz as Tehran reports more tankers on fire, Europe names the team it wants at the Ukraine negotiating table while the Kremlin sets conditions, COP31 reaches its halfway point in Antalya with the climate-finance argument unresolved, the IEA says the oil market is tipping back into surplus, South Africa's ANC opens coalition talks to every party, Congo's Ebola count reaches 11,197 cases, France's November 17 strike gains the CFDT and the rail unions, and Microsoft's two-day global outage largely ends.\n • Hormuz DEVELOPING: UN counts 25 seafarers killed as more tankers are…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794692738215-c18bd1da31233.jpg",
+   "url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
+   "spotify_url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129446308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F203c04de-3a33-1803-a8b6-54968fd11e90.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:c3983af9 f4a6 49be 8012 d3deaa6c5324",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T21:33:01Z",
+   "duration": 1239,
+   "description": "Wall Street snapped a four-week losing streak with its best week in weeks, but Friday ended the way the week lived: chips gave back the rally, the 10-year Treasury yield closed at 5.15 percent, and every position on the board now waits for one event, Nvidia's earnings on Tuesday, the first under interim chief executive Colette Kress. Plus: producer prices print soft for the month and hot for the year, the dollar closes at a 19-month high, Europe banks its best week since June, bitcoin breaks its 200-week line, and the options market prices a 9.2 percent move into Nvidia.\n In today's brief:\n • Friday's Close: The Indexes Split, Chips Gave Back the Rally, and the Week Still Ended Green —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794691948230-9d40334580483.jpg",
+   "url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
+   "spotify_url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129445870/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F2ec25f51-97d5-30fb-6c68-19985067ec5b.m4a",
+   "number": null
+  },
+  {
    "id": "fastbreak:917fa07c 6252 4d34 92f6 b28e2f23da7a",
    "show": "fastbreak",
    "kind": "episode",
@@ -842,7 +912,7 @@
    "date": "2026-11-14T06:40:41Z",
    "duration": 1601,
    "description": "Alperen Sengun scored a season-high 43 points with 12 rebounds as Houston beat Utah 125-118, the Clippers edged Oklahoma City 113-112 on Darius Garland's late free throw despite 40 from Shai Gilgeous-Alexander, and San Antonio routed Golden State 123-85 for an eleventh straight win.\n Scores: Magic 107, Bucks 99 · Pacers 106, Knicks 104 · Heat 133, Cavaliers 121 · Bulls 125, Hawks 117 (OT) · Grizzlies 142, Pelicans 111 · Rockets 125, Jazz 118 · Spurs 123, Warriors 85 · Trail Blazers 120, Kings 107 · Clippers 113, Thunder 112.\n The deep dive: Alperen Sengun's 43-point night and Houston at 10-3 — how the Rockets became the West's third power behind San Antonio and the Lakers, with Kevin Durant…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794638399825-b76d43ae50cbf.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794640995334-478e661847c2.jpg",
    "url": "https://open.spotify.com/episode/0yC4F6RcjArJ4a2efi1zra",
    "spotify_url": "https://open.spotify.com/episode/0yC4F6RcjArJ4a2efi1zra",
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129417537/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F3f352222-de97-ca28-e5a1-12904312a9c7.m4a",
@@ -969,8 +1039,8 @@
    "duration": 1186,
    "description": "An LNG tanker hits a mine in the Strait of Hormuz after four oil tankers are hit in two days while oil heads for a second weekly fall, US envoys say Europe will join the next Ukraine talks as Moscow declines to confirm it and restates its territorial terms, COP31's first week closes with its electrification pledge contested and the finance gap unclosed, South Africa's ANC closes ranks around President Ramaphosa and turns to town-by-town coalition deals, Congo's Ebola toll reaches 11,114 cases with 400 to 500 more each week, France's public-sector unions get their Matignon meeting four days before the November 17 strike, and Eisenkot's bloc moves to take the Knesset speaker's chair before…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794586230924-23c735c018c82.jpg",
-   "url": "https://open.spotify.com/episode/63D2qARzf78AZK5zHDQwEH",
-   "spotify_url": "https://open.spotify.com/episode/63D2qARzf78AZK5zHDQwEH",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Friday--November-13--2026-e3sb47k",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129388212/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F91fb0ba2-2989-6dd6-fd69-b7a5148dc1a1.m4a",
    "number": null
   },
@@ -983,8 +1053,8 @@
    "duration": 1308,
    "description": "Jensen Huang is out at Nvidia after 33 years and Colette Kress steps in as interim CEO five days before earnings; futures dip and the ten-year yield holds above 5 percent; Cisco and Applied Materials beat and raise their forecasts; a Microsoft outage ripples worldwide; Nebius guides to the low end; Richemont and Generali lead Europe; and options traders brace for Tuesday's Nvidia print.\n • Huang Out at Nvidia: Kress Takes Over as Interim CEO — https://nicanews.online/2026/11/13/nvidia-ceo-jensen-huang-resigns-cfo-colette-kress-named-interim-chief/\n • Thursday's Close: Breadth, the 5 Percent Yield, Claims and Home Sales —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794585836779-c73a48a4baadd.jpg",
-   "url": "https://open.spotify.com/episode/0CGCCqHaacoDf44IPACsHc",
-   "spotify_url": "https://open.spotify.com/episode/0CGCCqHaacoDf44IPACsHc",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Friday--November-13--2026-e3sb3uk",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129387924/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F19eaa81e-3efd-4ba5-248f-fdc7ab472010.m4a",
    "number": null
   },
@@ -997,8 +1067,8 @@
    "duration": 1319,
    "description": "Los Angeles starts a rainy Friday with the transition's most consequential meeting yet: Mayor-elect Nithya Raman and LAPD Chief Jim McDonnell sat down Thursday afternoon, are in regular contact, and the chief says the question now is where they align — weeks after a campaign in which she pledged to replace him. Plus: Karen Bass opens $72 million of homeless housing in North Hills and calls her defeat a national wave, the county count updates today with Raman trailing in her own District 4, voters back a charter overhaul that cuts required Council meetings to one day a week and moves the city to two-year budgets, downtown's graffiti towers are cleaned, a license-plate reader plan on Western…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794585027077-1a182b0f0cc2d.jpg",
-   "url": "https://open.spotify.com/episode/6d3BqKiY9vbGBBKR5vj20E",
-   "spotify_url": "https://open.spotify.com/episode/6d3BqKiY9vbGBBKR5vj20E",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Friday--November-13--2026-e3sb2vu",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129386942/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2Fd0017033-2d82-0607-5323-5c200044c0be.m4a",
    "number": null
   },
@@ -1011,8 +1081,8 @@
    "duration": 1130,
    "description": "Jensen Huang has resigned as Nvidia's chief executive after 33 years, and his finance chief Colette Kress takes over on an interim basis, five days before earnings. Plus: Congress summons Huang and the commerce secretary for December; the president says America does not need a deal with Iran as tankers are hit in Hormuz; the ten-year yield closes above 5 percent; claims rise and home sales hit a 16-year low; Cisco and Applied Materials beat while Nebius falls 17 percent; Mississippi certifies today and Alaska's lead grows; and Johnny Depp's Scrooge opens the holiday box office.\n In today's brief:\n • Nvidia: The Founder Is Out —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794584644204-c3eecc0b26d24.jpg",
-   "url": "https://open.spotify.com/episode/0paOwLvL7v4WKt83QukfSj",
-   "spotify_url": "https://open.spotify.com/episode/0paOwLvL7v4WKt83QukfSj",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Friday--November-13--2026-e3sb2l4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129386596/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F04ea6243-494e-262f-e24b-c4d30d89c331.m4a",
    "number": null
   },
@@ -1025,8 +1095,8 @@
    "duration": 1219,
    "description": "Microsoft's email empire went down on Thursday and stayed down into Friday the 13th, and the internet responded by asking if it could legally go home: the outage received as a gift, on X, Reddit, Instagram and TikTok at once. Plus: the 1960 doomsday paper's date arrives; Chris Van Hollen challenges Chuck Schumer; Cam Skattebo's staredown outruns a comeback; Nvidia's employees ask for Jensen Huang back; the Logan Circle shooting resolves with its counts still disputed; Alaska counts a tenth day; and the Pirate Shop Token keeps its crown for a seventh day without earning a flag.\n • X US trending snapshot, Nov 13 (Microsoft #1) — Trending Soup — https://www.trendingsoup.com/xtrends/us\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794583476891-9ed2f2316a7d2.jpg",
-   "url": "https://open.spotify.com/episode/4SSmQ4w8KNZO4C99OloGeO",
-   "spotify_url": "https://open.spotify.com/episode/4SSmQ4w8KNZO4C99OloGeO",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Microsoft-Goes-Down-on-Friday-the-13th-and-the-Internet-Asks-If-It-Can-Legally-Go-Home--Friday--November-13--2026-e3sb1ju",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129385534/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F6330becc-e394-330e-e715-e4758454e1e4.m4a",
    "number": null
   },
@@ -1053,8 +1123,8 @@
    "duration": 846,
    "description": "Wednesday MACtion delivered three ground-game statements: Buffalo rushed for 296 yards and completed only five passes in a 28-7 win at Ball State behind Messiah Burch's 209 yards, Toledo shut out UMass 24-0 with every point scored in the first half, and Central Michigan scored once in every quarter to beat Sacramento State 28-7 — leaving Ohio, Western Michigan, Buffalo and Toledo tied at 5-1 atop the MAC.\n Buffalo 28, Ball State 7 • Toledo 24, UMass 0 • Central Michigan 28, Sacramento State 7 • The standouts • The four-way MAC tie • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794458903567-b040ce3a6644c.jpg",
-   "url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
-   "spotify_url": "https://open.spotify.com/episode/0m9nz4DotmyFuFs477xiXP",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Buffalo-Runs-for-296-Yards--Toledo-Shuts-Out-UMass--and-the-MAC-Race-Tightens-Into-a-Four-Way-Tie--Wednesday--November-11--2026-e3s8e4u",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/129300062/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F34fccd47-adab-491a-ca99-a274569f78a9.m4a",
    "number": null
   },
@@ -1137,8 +1207,8 @@
    "duration": 812,
    "description": "Five days after release, Tyreek McDole's CHROMA is the sound of a baritone finding his full spectrum. The Florida-born, New York-based singer — winner of the 2023 Sarah Vaughan International Jazz Vocal Competition — follows his No. 1 debut Open Up Your Senses with originals and reimagined songs by his muses, from Nina Simone and Miles Davis to Kendrick Lamar, produced with Theo Croker.\n From St. Cloud, Florida and Oberlin to Kenny Barron's bandstand: how a Haitian-American singer mentored by Gary Bartz and Sullivan Fortner built a voice in the lineage of Johnny Hartman and Leon Thomas — and why Will Friedwald called him \"the jazz voice of his generation.\" Plus the November European tour:…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1794439213761-c6c216693624e.jpg",
-   "url": "https://open.spotify.com/episode/3OfFApQ6dXLggS61bc731Q",
-   "spotify_url": "https://open.spotify.com/episode/3OfFApQ6dXLggS61bc731Q",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/Tyreek-McDole-A-Voice-in-Full-Color-e3s82l2",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/129288290/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Facc3a79b-120e-4f48-948a-917727e5b17c.m4a",
    "number": "33"
   },
@@ -2215,8 +2285,8 @@
    "duration": 1284,
    "description": "AMD posts a record quarter with data center sales nearly doubling and guides to about $17 billion, Arista records its fastest growth since its IPO, Super Micro's revenue nearly quadruples with caveats underneath, Shopify falls on a small GMV miss, Skyworks tumbles on a soft smartphone forecast, Democrats sweep Congress and the tech rulebook changes hands, Binance takes its broader reserves snapshot, and Uber, Qualcomm and Arm report today.\n In today's brief:\n • AMD Posts a Record Quarter as Data Center Sales Nearly Double — https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/\n • Arista Posts Its Fastest Growth Since Its IPO —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793830386903-bc64d0b749996.jpg",
-   "url": "https://open.spotify.com/episode/28uwbVNg6dtHLBCGWFctKo",
-   "spotify_url": "https://open.spotify.com/episode/28uwbVNg6dtHLBCGWFctKo",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Wednesday--November-4--2026-e3rp6j1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c6280/podcast/play/128800801/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fc5d2c58a-2679-cf0b-0c0e-4acd59dd1ec2.m4a",
    "number": null
   },
@@ -9065,7 +9135,7 @@
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
    "episodes": 33,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "brazil": {
    "ok": true,
@@ -9097,7 +9167,7 @@
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
    "episodes": 10,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "morningread": {
    "ok": true,
@@ -9105,7 +9175,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 19,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -9113,14 +9183,14 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 17,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 15,
+   "episodes": 16,
    "spotify_matches": 1
   },
   "marketread": {
@@ -9128,7 +9198,7 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "nyread": {
@@ -9160,7 +9230,7 @@
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 5,
+   "episodes": 6,
    "spotify_matches": 1
   },
   "optionsdesk": {
@@ -9240,7 +9310,7 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 15,
    "spotify_matches": 1
   },
   "cbbdaily": {
