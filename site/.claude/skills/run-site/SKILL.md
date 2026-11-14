@@ -100,3 +100,13 @@ There is no test suite. The driver IS the smoke test.
 - `SKILL.md` — this file
 - `driver.mjs` — Playwright smoke driver
 - `screenshots/` — output from each run (gitignored-equivalent: small + regenerable, no need to commit)
+
+## Link check (part of "done")
+
+After any change that removes, renames, or moves a page, crawl every internal link:
+
+```bash
+node .claude/skills/run-site/crawl.mjs   # prints "checked N bad 0" when clean
+```
+
+Any non-200 is a bug to fix before shipping (this is the check that would have caught the old Inventions 404).

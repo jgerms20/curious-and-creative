@@ -62,6 +62,9 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Keep pipeline debug files off the public site
+        run: rm -f site/data/_*.json site/data/_*.txt
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

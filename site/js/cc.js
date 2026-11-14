@@ -44,7 +44,7 @@
   // nav: true = top nav (in order); footer: false = search and drawer only
   const PAGES = [
     { label: "Home", href: "index.html", footer: false, words: "home front page latest" },
-    { label: "The Network", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break waiver wire gamecocks columbia" },
+    { label: "The Network", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break horseshoe columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books" },
     { label: "The Studio", href: "pages/studio.html", nav: true, words: "the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
     { label: "The Consultancy", href: "pages/consultancy.html", nav: true, words: "the consultancy consulting strategy brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
     { label: "About", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders co-founders team company" },
@@ -120,9 +120,9 @@
       <nav class="drawer__nav" aria-label="Menu">${PAGES.map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
       <div><h3>Our shows</h3><div class="drawer__shows" data-drawer-shows></div></div>
       <div><h3>Find us</h3><div class="drawer__social">
-        <a href="https://instagram.com/jgerms20" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://jgerms20.substack.com" target="_blank" rel="noopener">Joshua on Substack</a>
+        <a href="mailto:admin@curiousandcreative.co">admin@curiousandcreative.co</a>
+        <a href="${url("index.html#newsletter")}">Newsletter</a>
+        <a href="https://www.youtube.com/@Approachable.A.I" target="_blank" rel="noopener">Approachable AI on YouTube</a>
         <a href="https://joshuamgerman.com" target="_blank" rel="noopener">joshuamgerman.com</a>
       </div></div>
     </aside>
@@ -381,7 +381,7 @@
     });
     // the registry is the roster: its edits apply immediately, a newly registered show appears
     // before its first refresh, and a show taken out of it disappears
-    const regList = (registry && registry.shows) || [];
+    const regList = ((registry && registry.shows) || []).filter((s) => s.active !== false); // active:false = off the network, pages kept
     const reg = Object.fromEntries(regList.map((s) => [s.key, s]));
     const fetched = Object.fromEntries((data.shows || []).map((s) => [s.key, s]));
     CC.categories = (registry && registry.categories) || {};
