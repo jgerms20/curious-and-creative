@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T23:43:03Z",
+ "generated_at": "2026-11-14T03:22:24Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -165,7 +165,7 @@
    "ai": "full",
    "principal": "Joshua German",
    "category": "culture",
-   "cadence": "Mon · Wed · Fri · Sun",
+   "cadence": "Mon · Wed · Fri",
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Jazz Riff",
@@ -192,6 +192,7 @@
    "ai": "full",
    "principal": "Joshua German",
    "category": "culture",
+   "cadence": "Weekly · English + Portuguese",
    "feed": "https://anchor.fm/s/11714b104/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
@@ -218,6 +219,7 @@
    "spotify": "0eKxqwy7sMDyNXkCRR2IMN",
    "rss": "https://anchor.fm/s/119157f24/podcast/rss",
    "tagline": "",
+   "cadence": "Tue · Fri",
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0eKxqwy7sMDyNXkCRR2IMN",
    "feed_title": "Once Upon a Time in Harlem",
@@ -225,8 +227,8 @@
    "complete": true,
    "art": "assets/art/harlem.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47058065/47058065-1792877027478-e10b06672d3e3.jpg",
-   "latest": "2026-10-26T07:03:00Z",
-   "count": 6
+   "latest": "2026-11-13T16:53:44Z",
+   "count": 7
   },
   {
    "key": "designdigest",
@@ -264,12 +266,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "Dominated the Conversation",
-   "short": "Dominated the Conversation",
+   "name": "The Zeitgeist",
+   "short": "The Zeitgeist",
    "category": "culture",
    "spotify": "48nwiqvaZCXqEiI1lGhb47",
    "rss": "https://anchor.fm/s/119799630/podcast/rss",
    "tagline": "",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/48nwiqvaZCXqEiI1lGhb47",
    "feed_title": "The Zeitgeist",
@@ -277,8 +280,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-11T20:02:49Z",
-   "count": 9
+   "latest": "2026-11-13T15:25:11Z",
+   "count": 10
   },
   {
    "key": "morningread",
@@ -296,7 +299,7 @@
    "spotify": "1Dtk8svL8ahjAPtso2lBMp",
    "rss": "https://anchor.fm/s/118e6e448/podcast/rss",
    "category": "news",
-   "cadence": "Twice daily · AM + PM",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
@@ -323,7 +326,7 @@
    "spotify": "075sJdyAJA6JNbdZGwnyq0",
    "rss": "https://anchor.fm/s/11960849c/podcast/rss",
    "tagline": "",
-   "cadence": "Twice daily · AM + PM",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/075sJdyAJA6JNbdZGwnyq0",
    "feed_title": "The LA Daily",
@@ -350,7 +353,7 @@
    "spotify": "0LOla5sXCGZ4pDLIk1qecU",
    "rss": "https://anchor.fm/s/1195d888c/podcast/rss",
    "tagline": "",
-   "cadence": "Twice daily · AM + PM",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0LOla5sXCGZ4pDLIk1qecU",
    "feed_title": "The Global Read",
@@ -358,8 +361,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-11T20:09:14Z",
-   "count": 14
+   "latest": "2026-11-13T16:11:01Z",
+   "count": 15
   },
   {
    "key": "marketread",
@@ -371,12 +374,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The Market Read",
-   "short": "The Market Read",
+   "name": "The Opening Bell",
+   "short": "The Opening Bell",
    "category": "news",
    "spotify": "7o0wIklaVB3sYrcTOt9Wnz",
    "rss": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "tagline": "",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/7o0wIklaVB3sYrcTOt9Wnz",
    "feed_title": "The Opening Bell",
@@ -403,6 +407,7 @@
    "spotify": "4VzGjjkSb5y61OjTVInWA1",
    "rss": "https://anchor.fm/s/119608a14/podcast/rss",
    "tagline": "",
+   "cadence": "Mon · Wed · Fri",
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4VzGjjkSb5y61OjTVInWA1",
    "feed_title": "The New York Read",
@@ -429,6 +434,7 @@
    "spotify": "0dTaZgM38D6shA8x5BTITR",
    "rss": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "tagline": "",
+   "cadence": "Mon · Wed",
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0dTaZgM38D6shA8x5BTITR",
    "feed_title": "The Columbia Read",
@@ -449,12 +455,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The AI Read",
-   "short": "The AI Read",
+   "name": "The Tech Read",
+   "short": "The Tech Read",
    "category": "news",
    "spotify": "0p46JOERBiE9vjed6Pt68I",
    "rss": "https://anchor.fm/s/119609054/podcast/rss",
    "tagline": "",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0p46JOERBiE9vjed6Pt68I",
    "feed_title": "The Tech Read",
@@ -481,6 +488,7 @@
    "spotify": "1hQp8wRwxTf0BO6OfTtdDe",
    "rss": "https://anchor.fm/s/1196c6280/podcast/rss",
    "tagline": "",
+   "active": false,
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1hQp8wRwxTf0BO6OfTtdDe",
    "feed_title": "The Tech Read",
@@ -507,6 +515,7 @@
    "spotify": "5EvGemFi7cyaWysrrYXpIp",
    "rss": "https://anchor.fm/s/119606944/podcast/rss",
    "tagline": "",
+   "active": false,
    "feed": "https://anchor.fm/s/119606944/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5EvGemFi7cyaWysrrYXpIp",
    "feed_title": "The Options Desk",
@@ -533,6 +542,7 @@
    "spotify": "1OhlHYPg6qvrXoGKhc2WvQ",
    "rss": "https://anchor.fm/s/119606d2c/podcast/rss",
    "tagline": "",
+   "active": false,
    "feed": "https://anchor.fm/s/119606d2c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1OhlHYPg6qvrXoGKhc2WvQ",
    "feed_title": "The Crypto Read",
@@ -559,6 +569,7 @@
    "spotify": "23w2HgOlsc8OJUyx3z955X",
    "rss": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "category": "industry",
+   "cadence": "Mon · Fri",
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/23w2HgOlsc8OJUyx3z955X",
    "feed_title": "The Business of Hollywood",
@@ -579,12 +590,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The TV Insider",
-   "short": "The TV Insider",
+   "name": "Primetime TV",
+   "short": "Primetime TV",
    "category": "industry",
    "spotify": "5jXIg7zndmpXNrGRF3s68O",
    "rss": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "tagline": "",
+   "cadence": "Fri",
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5jXIg7zndmpXNrGRF3s68O",
    "feed_title": "Primetime TV",
@@ -637,6 +649,7 @@
    "spotify": "0GRrulRcTaVs3rSqdqJFCQ",
    "rss": "https://anchor.fm/s/1196c5024/podcast/rss",
    "tagline": "",
+   "cadence": "Game days",
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0GRrulRcTaVs3rSqdqJFCQ",
    "feed_title": "The Blitz",
@@ -664,6 +677,7 @@
    "rss": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "tagline": "",
    "cadence": "5x a week in season",
+   "active": false,
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4DZg4aE2C8FF1nV31XWCf6",
    "feed_title": "The Waiver Wire",
@@ -690,6 +704,7 @@
    "spotify": "4JSb8qpLtYL7O8eJp8F7qc",
    "rss": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "tagline": "",
+   "cadence": "Postgame",
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4JSb8qpLtYL7O8eJp8F7qc",
    "feed_title": "Celtics Daily",
@@ -716,6 +731,7 @@
    "spotify": "44iglaK8xQPnHHAVpUAgyx",
    "rss": "https://anchor.fm/s/119609694/podcast/rss",
    "tagline": "",
+   "cadence": "Tue · Thu + postgame",
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/44iglaK8xQPnHHAVpUAgyx",
    "feed_title": "Colts Daily",
@@ -742,6 +758,7 @@
    "spotify": "1fl00ImvclkYpwWiZzHtna",
    "rss": "https://anchor.fm/s/119609a7c/podcast/rss",
    "tagline": "",
+   "cadence": "Sat postgame + Wed",
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1fl00ImvclkYpwWiZzHtna",
    "feed_title": "College Football Daily",
@@ -762,13 +779,12 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "College Basketball Daily",
-   "short": "College Basketball Daily",
+   "name": "Bracketology",
+   "short": "Bracketology",
    "category": "sports",
    "spotify": "70qRlnh5hY1WHBSMNvnPQE",
    "rss": "https://anchor.fm/s/11979a24c/podcast/rss",
    "tagline": "",
-   "cadence": "Weekly · Monday wrap",
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/70qRlnh5hY1WHBSMNvnPQE",
    "feed_title": "Bracketology",
@@ -789,12 +805,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "Gamecocks Daily",
-   "short": "Gamecocks Daily",
+   "name": "The Horseshoe",
+   "short": "The Horseshoe",
    "category": "sports",
    "spotify": "6A71aYP8TxEEJgOCOyTQs4",
    "rss": "https://anchor.fm/s/1196d625c/podcast/rss",
    "tagline": "",
+   "cadence": "Tue · Thu + postgame",
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/6A71aYP8TxEEJgOCOyTQs4",
    "feed_title": "The Horseshoe",
@@ -802,8 +819,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-11T23:23:58Z",
-   "count": 7
+   "latest": "2026-11-13T16:46:47Z",
+   "count": 8
   },
   {
    "key": "gamecockshoops",
@@ -822,6 +839,7 @@
    "rss": "https://anchor.fm/s/11979a058/podcast/rss",
    "tagline": "",
    "cadence": "Mon · Wed · Fri",
+   "active": false,
    "feed": "https://anchor.fm/s/11979a058/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/2sP82t7Zd091zEe80Dk8Qi",
    "feed_title": "Gamecocks Basketball Daily",
@@ -831,9 +849,143 @@
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123686/47123686-1793486169544-fe6b5b99555b2.jpg",
    "latest": "2026-11-06T18:40:57Z",
    "count": 3
+  },
+  {
+   "key": "politicalread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "The Political Read",
+   "short": "The Political Read",
+   "category": "news",
+   "tagline": "",
+   "cadence": "Daily",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "cbbweekly",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "College Basketball Daily",
+   "short": "College Basketball Daily",
+   "category": "sports",
+   "tagline": "",
+   "cadence": "Weekly · Monday wrap",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "cutandsew",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Cut & Sew",
+   "short": "Cut & Sew",
+   "category": "culture",
+   "tagline": "",
+   "cadence": "Wed",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "coverup",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "The Cover-Up",
+   "short": "The Cover-Up",
+   "category": "culture",
+   "tagline": "",
+   "cadence": "Thu",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "coldopen",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Cold Open",
+   "short": "Cold Open",
+   "category": "culture",
+   "tagline": "",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "cookedbooks",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Cooked Books",
+   "short": "Cooked Books",
+   "category": "culture",
+   "tagline": "",
+   "latest": null,
+   "count": 0
   }
  ],
  "episodes": [
+  {
+   "id": "harlem:04fe4b3b 33a4 4693 b797 93ef519107a1",
+   "show": "harlem",
+   "kind": "episode",
+   "title": "#006 Aaron Douglas: The Man Who Gave a Movement Its Face",
+   "date": "2026-11-13T16:53:44Z",
+   "duration": 1755,
+   "description": "He drew what the Harlem Renaissance looked like. Aaron Douglas's silhouettes and radiating rings of light became the visual signature of an entire movement, and then the histories of that movement somehow learned to skip him.\n Douglas arrived in Harlem in the spring of 1925 as a 26-year-old Kansas schoolteacher who meant to pass through on his way to Paris. Within months, Alain Locke had put his designs inside The New Negro, the anthology that announced the movement to the world; the illustrator Winold Reiss had taught him to build a modern Black image out of African sources; and his book jackets, including Claude McKay's Home to Harlem, were everywhere the movement was read.\n This episode…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1794588796197-66433ce6a6cdb.jpg",
+   "url": "https://open.spotify.com/episode/4wVHhF477UtLKNXoXK9I1l",
+   "spotify_url": "https://open.spotify.com/episode/4wVHhF477UtLKNXoXK9I1l",
+   "audio": "https://anchor.fm/s/119157f24/podcast/play/129390322/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2Ffa36cc85-859d-f9d6-b3b0-599d82a3e4be.m4a",
+   "number": "6"
+  },
+  {
+   "id": "gamecocksdaily:5403894c c357 495d bc59 7f333bf8275f",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "Trap Game in Fayetteville: Sellers Probable, Harbor Doubtful for 6-3 South Carolina | Friday, November 13, 2026",
+   "date": "2026-11-13T16:46:47Z",
+   "duration": 1146,
+   "description": "South Carolina heads to Fayetteville for the trap game: No. 17 in the playoff rankings, 6-3 and winners of four straight, with LaNorris Sellers upgraded to probable and top receiver Nyck Harbor doubtful against a 3-6 Arkansas team that has to win out to make a bowl. Kickoff Saturday at 7:45 p.m. Eastern on SEC Network.\n In this edition: the Arkansas preview and the matchup that decides it (the SEC's worst run defense against the conference's third-best rushing attack), the full injury report, the basketball segment (the No. 1 women's team beat Clemson 65-44 for a 16th straight win in the rivalry; the men routed Saint Peter's 77-41), and the look-ahead to Georgia and Clemson.\n Unofficial and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794588380692-51acee7ea2685.jpg",
+   "url": "https://open.spotify.com/episode/3HabzY44qNoi52TK8gnZ77",
+   "spotify_url": "https://open.spotify.com/episode/3HabzY44qNoi52TK8gnZ77",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129390055/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F8832e57f-186f-40d6-344a-fe239b11235e.m4a",
+   "number": null
+  },
   {
    "id": "tvinsider:9885b76e b508 41e5 a583 0f82276304c3",
    "show": "tvinsider",
@@ -891,6 +1043,20 @@
    "number": null
   },
   {
+   "id": "globalread:38b25756 6e07 4575 9026 22ef33964e1d",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T16:11:01Z",
+   "duration": 1186,
+   "description": "An LNG tanker hits a mine in the Strait of Hormuz after four oil tankers are hit in two days while oil heads for a second weekly fall, US envoys say Europe will join the next Ukraine talks as Moscow declines to confirm it and restates its territorial terms, COP31's first week closes with its electrification pledge contested and the finance gap unclosed, South Africa's ANC closes ranks around President Ramaphosa and turns to town-by-town coalition deals, Congo's Ebola toll reaches 11,114 cases with 400 to 500 more each week, France's public-sector unions get their Matignon meeting four days before the November 17 strike, and Eisenkot's bloc moves to take the Knesset speaker's chair before…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794586230924-23c735c018c82.jpg",
+   "url": "https://open.spotify.com/episode/63D2qARzf78AZK5zHDQwEH",
+   "spotify_url": "https://open.spotify.com/episode/63D2qARzf78AZK5zHDQwEH",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129388212/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F91fb0ba2-2989-6dd6-fd69-b7a5148dc1a1.m4a",
+   "number": null
+  },
+  {
    "id": "marketread:caecf069 dc53 4870 ba76 7fdb3e029aed",
    "show": "marketread",
    "kind": "episode",
@@ -930,6 +1096,20 @@
    "url": "https://open.spotify.com/episode/0paOwLvL7v4WKt83QukfSj",
    "spotify_url": "https://open.spotify.com/episode/0paOwLvL7v4WKt83QukfSj",
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129386596/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F04ea6243-494e-262f-e24b-c4d30d89c331.m4a",
+   "number": null
+  },
+  {
+   "id": "dominatedconvo:c6a4f264 7b9b 41a7 86cb 56703add3ce3",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "Microsoft Goes Down on Friday the 13th and the Internet Asks If It Can Legally Go Home | Friday, November 13, 2026",
+   "date": "2026-11-13T15:25:11Z",
+   "duration": 1219,
+   "description": "Microsoft's email empire went down on Thursday and stayed down into Friday the 13th, and the internet responded by asking if it could legally go home: the outage received as a gift, on X, Reddit, Instagram and TikTok at once. Plus: the 1960 doomsday paper's date arrives; Chris Van Hollen challenges Chuck Schumer; Cam Skattebo's staredown outruns a comeback; Nvidia's employees ask for Jensen Huang back; the Logan Circle shooting resolves with its counts still disputed; Alaska counts a tenth day; and the Pirate Shop Token keeps its crown for a seventh day without earning a flag.\n • X US trending snapshot, Nov 13 (Microsoft #1) — Trending Soup — https://www.trendingsoup.com/xtrends/us\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794583476891-9ed2f2316a7d2.jpg",
+   "url": "https://open.spotify.com/episode/4SSmQ4w8KNZO4C99OloGeO",
+   "spotify_url": "https://open.spotify.com/episode/4SSmQ4w8KNZO4C99OloGeO",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129385534/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F6330becc-e394-330e-e715-e4758454e1e4.m4a",
    "number": null
   },
   {
@@ -8982,8 +9162,8 @@
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_name": "Once Upon a Time in Harlem",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "designdigest": {
    "ok": true,
@@ -8998,8 +9178,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 10,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
@@ -9022,8 +9202,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 15,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
@@ -9158,8 +9338,8 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "The Horseshoe",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 8,
+   "spotify_matches": 1
   },
   "gamecockshoops": {
    "ok": true,
@@ -9168,6 +9348,54 @@
    "full_catalog": true,
    "episodes": 3,
    "spotify_matches": 1
+  },
+  "politicalread": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "cbbweekly": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "cutandsew": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "coverup": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "coldopen": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "cookedbooks": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
   }
  },
  "people": {
