@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T06:45:41Z",
+ "generated_at": "2026-11-14T14:20:16Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -225,8 +225,8 @@
    "complete": true,
    "art": "assets/art/harlem.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47058065/47058065-1792877027478-e10b06672d3e3.jpg",
-   "latest": "2026-10-26T07:03:00Z",
-   "count": 6
+   "latest": "2026-11-13T16:53:44Z",
+   "count": 7
   },
   {
    "key": "designdigest",
@@ -410,8 +410,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-11T23:10:36Z",
-   "count": 8
+   "latest": "2026-11-13T16:29:20Z",
+   "count": 9
   },
   {
    "key": "columbiaread",
@@ -618,8 +618,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-11T20:34:34Z",
-   "count": 12
+   "latest": "2026-11-14T06:40:41Z",
+   "count": 13
   },
   {
    "key": "blitz",
@@ -802,8 +802,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-11T23:23:58Z",
-   "count": 7
+   "latest": "2026-11-13T16:46:47Z",
+   "count": 8
   },
   {
    "key": "gamecockshoops",
@@ -835,6 +835,20 @@
  ],
  "episodes": [
   {
+   "id": "fastbreak:917fa07c 6252 4d34 92f6 b28e2f23da7a",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-14T06:40:41Z",
+   "duration": 1601,
+   "description": "Alperen Sengun scored a season-high 43 points with 12 rebounds as Houston beat Utah 125-118, the Clippers edged Oklahoma City 113-112 on Darius Garland's late free throw despite 40 from Shai Gilgeous-Alexander, and San Antonio routed Golden State 123-85 for an eleventh straight win.\n Scores: Magic 107, Bucks 99 · Pacers 106, Knicks 104 · Heat 133, Cavaliers 121 · Bulls 125, Hawks 117 (OT) · Grizzlies 142, Pelicans 111 · Rockets 125, Jazz 118 · Spurs 123, Warriors 85 · Trail Blazers 120, Kings 107 · Clippers 113, Thunder 112.\n The deep dive: Alperen Sengun's 43-point night and Houston at 10-3 — how the Rockets became the West's third power behind San Antonio and the Lakers, with Kevin Durant…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794640995334-478e661847c2.jpg",
+   "url": "https://open.spotify.com/episode/0yC4F6RcjArJ4a2efi1zra",
+   "spotify_url": "https://open.spotify.com/episode/0yC4F6RcjArJ4a2efi1zra",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129417537/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F3f352222-de97-ca28-e5a1-12904312a9c7.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:01e3ae4b 37f5 463d 8f9b b532b6e9436f",
    "show": "polymath",
    "kind": "episode",
@@ -863,6 +877,34 @@
    "number": "263"
   },
   {
+   "id": "harlem:04fe4b3b 33a4 4693 b797 93ef519107a1",
+   "show": "harlem",
+   "kind": "episode",
+   "title": "#006 Aaron Douglas: The Man Who Gave a Movement Its Face",
+   "date": "2026-11-13T16:53:44Z",
+   "duration": 1755,
+   "description": "He drew what the Harlem Renaissance looked like. Aaron Douglas's silhouettes and radiating rings of light became the visual signature of an entire movement, and then the histories of that movement somehow learned to skip him.\n Douglas arrived in Harlem in the spring of 1925 as a 26-year-old Kansas schoolteacher who meant to pass through on his way to Paris. Within months, Alain Locke had put his designs inside The New Negro, the anthology that announced the movement to the world; the illustrator Winold Reiss had taught him to build a modern Black image out of African sources; and his book jackets, including Claude McKay's Home to Harlem, were everywhere the movement was read.\n This episode…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1794588796197-66433ce6a6cdb.jpg",
+   "url": "https://open.spotify.com/episode/4wVHhF477UtLKNXoXK9I1l",
+   "spotify_url": "https://open.spotify.com/episode/4wVHhF477UtLKNXoXK9I1l",
+   "audio": "https://anchor.fm/s/119157f24/podcast/play/129390322/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2Ffa36cc85-859d-f9d6-b3b0-599d82a3e4be.m4a",
+   "number": "6"
+  },
+  {
+   "id": "gamecocksdaily:5403894c c357 495d bc59 7f333bf8275f",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "Trap Game in Fayetteville: Sellers Probable, Harbor Doubtful for 6-3 South Carolina | Friday, November 13, 2026",
+   "date": "2026-11-13T16:46:47Z",
+   "duration": 1146,
+   "description": "South Carolina heads to Fayetteville for the trap game: No. 17 in the playoff rankings, 6-3 and winners of four straight, with LaNorris Sellers upgraded to probable and top receiver Nyck Harbor doubtful against a 3-6 Arkansas team that has to win out to make a bowl. Kickoff Saturday at 7:45 p.m. Eastern on SEC Network.\n In this edition: the Arkansas preview and the matchup that decides it (the SEC's worst run defense against the conference's third-best rushing attack), the full injury report, the basketball segment (the No. 1 women's team beat Clemson 65-44 for a 16th straight win in the rivalry; the men routed Saint Peter's 77-41), and the look-ahead to Georgia and Clemson.\n Unofficial and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794588380692-51acee7ea2685.jpg",
+   "url": "https://open.spotify.com/episode/3HabzY44qNoi52TK8gnZ77",
+   "spotify_url": "https://open.spotify.com/episode/3HabzY44qNoi52TK8gnZ77",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129390055/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F8832e57f-186f-40d6-344a-fe239b11235e.m4a",
+   "number": null
+  },
+  {
    "id": "tvinsider:9885b76e b508 41e5 a583 0f82276304c3",
    "show": "tvinsider",
    "kind": "episode",
@@ -874,6 +916,20 @@
    "url": "https://open.spotify.com/episode/6WPcuMhMiHsv8prbMMh2vB",
    "spotify_url": "https://open.spotify.com/episode/6WPcuMhMiHsv8prbMMh2vB",
    "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129389506/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F71a867f6-d345-8b9d-dde8-811213e79793.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:97b0c3e8 c1c3 45bb 9c90 e28e10581c15",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T16:29:20Z",
+   "duration": 1238,
+   "description": "The search at the collapsed Flatbush building is over: eight dead, including two children, eighteen injured, and the city has turned to investigation, with inspectors ordered to about 100 construction sites linked to the project next door; City Hall is preparing to disband the NYPD's Strategic Response Group; the Council banned surveillance pricing 44-5 and voted 48-1 to wipe out property taxes for permanently and totally disabled veterans; fourteen East Harlem buildings from the Emerald portfolio reverted to the lender at auction, with thirteen more set for November 17; developers are gaming the 485-x program with 99-unit buildings; the A train's Lefferts shutdown ends Monday at 5 a.m.…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794587335605-c8ece50a5e779.jpg",
+   "url": "https://open.spotify.com/episode/3t6fYzz6L20NSYZEwjXiRE",
+   "spotify_url": "https://open.spotify.com/episode/3t6fYzz6L20NSYZEwjXiRE",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/129389228/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F648a6ac0-c23a-29e0-ffe5-498f23ae561c.m4a",
    "number": null
   },
   {
@@ -6959,7 +7015,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -9024,8 +9080,8 @@
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_name": "Once Upon a Time in Harlem",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 0
+   "episodes": 7,
+   "spotify_matches": 1
   },
   "designdigest": {
    "ok": true,
@@ -9080,8 +9136,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "columbiaread": {
    "ok": true,
@@ -9144,8 +9200,8 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 0
+   "episodes": 13,
+   "spotify_matches": 1
   },
   "blitz": {
    "ok": true,
@@ -9200,8 +9256,8 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "The Horseshoe",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 8,
+   "spotify_matches": 1
   },
   "gamecockshoops": {
    "ok": true,
