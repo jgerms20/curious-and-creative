@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T11:14:54Z",
+ "generated_at": "2026-11-15T17:52:27Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -671,8 +671,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-11T23:26:22Z",
-   "count": 3
+   "latest": "2026-11-15T08:54:26Z",
+   "count": 4
   },
   {
    "key": "celticsdaily",
@@ -843,8 +843,8 @@
    "duration": 1352,
    "description": "America's airlines cancelled nearly 6,500 flights on Saturday as the country dug out from Friday's nationwide ground stop, with a full recovery promised by Sunday night and a $50 billion argument over the fix already under way. Plus: Bahrain says it intercepted a second Iranian attack; the Senate leadership fight gets a poll number; Democrats split over the permitting bill; the Fed names AI its top financial risk; Nvidia and Anthropic face their pricing week; and a pardon bill meets the Constitution.\n In today's brief:\n • The Recovery: A Cause, a Price Tag, and a Sunday Deadline — https://thepointsguy.com/news/faa-groundstop-flights-grounded-nationwide\n • The War: A Second Claim Over…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794738908534-1902d7bcc3582.jpg",
-   "url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
-   "spotify_url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Sunday--November-15--2026-e3sdoiv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129474591/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F145b60eb-6f0c-4a58-a5ea-ac23430135a6.m4a",
    "number": null
   },
@@ -860,6 +860,20 @@
    "url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
    "spotify_url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129474536/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Ff0e75865-b6be-cfcb-d04d-9903b9710a60.m4a",
+   "number": null
+  },
+  {
+   "id": "waiverwire:590cdb87 00e2 4bee a34c 6df287955ee9",
+   "show": "waiverwire",
+   "kind": "episode",
+   "title": "Stroud's Five Touchdowns, Burrow in Madrid, and Nacua's Knee: Week 9 Studs, Duds & News | Monday, November 9, 2026",
+   "date": "2026-11-15T08:54:26Z",
+   "duration": 714,
+   "description": "Week 9 Studs, Duds & News: fourteen games are final, and the weekend belonged to C.J. Stroud's five touchdowns, Joe Burrow's Madrid masterpiece, and Kenneth Walker's three scores — while the injury tent filled up behind them.\n In this edition: every final from Thursday and Sunday · Studs — Stroud, Burrow, Chase, Love, Prescott, Sanders, Walker, Boutte, Dell, and Waller · Duds — Goff, Mayfield, Swift, Judkins, Jeanty, Mitchell's zero, and Kraft · the fallout — Nacua's MRI, Mahomes' elbow tests, Jacobs' fractured finger, and Stevenson's knee · the Jonathan Taylor trade watch · and tonight's Bills-Vikings Monday nighter, previewed with its result still pending.\n Part of the Curious & Creative…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1794732813194-59a051408fd8f.jpg",
+   "url": "https://open.spotify.com/episode/0ehUiWAlrVE3oZhwsmUoQ4",
+   "spotify_url": "https://open.spotify.com/episode/0ehUiWAlrVE3oZhwsmUoQ4",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129471687/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Fd633fc28-4e08-edea-c029-d7a2594b3b6a.m4a",
    "number": null
   },
   {
@@ -9354,10 +9368,10 @@
   "morningread": {
    "ok": true,
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
-   "spotify_name": "The Morning Read",
+   "spotify_name": "Sunday, November 15, 2026",
    "full_catalog": true,
    "episodes": 21,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -9468,8 +9482,8 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 3,
-   "spotify_matches": 0
+   "episodes": 4,
+   "spotify_matches": 1
   },
   "celticsdaily": {
    "ok": true,
