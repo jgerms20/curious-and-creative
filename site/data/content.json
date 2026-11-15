@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T17:52:27Z",
+ "generated_at": "2026-11-15T22:59:42Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-14T21:46:04Z",
-   "count": 16
+   "latest": "2026-11-15T22:18:05Z",
+   "count": 17
   },
   {
    "key": "marketread",
@@ -835,6 +835,20 @@
  ],
  "episodes": [
   {
+   "id": "globalread:0464e251 cc7f 4181 a7e9 7e9d32295d1f",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Sunday, November 15, 2026",
+   "date": "2026-11-15T22:18:05Z",
+   "duration": 1493,
+   "description": "Washington floats the question it had avoided for months — would Ukraine withdraw from the Donbas it still holds in exchange for NATO membership — and President Zelenskyy says only a referendum could answer it, as Europe agrees its own delegation for the next round of talks; the UN Security Council hears the Hormuz toll of 25 dead seafarers and adopts nothing; COP31 circulates its first outline in Antalya with the finance gap costed at $840 billion; Benjamin Netanyahu's unity appeal is rejected as spin by Gadi Eisenkot on the same evening; South Africa's ANC opens coalition talks with MK, the IFP and BOSA against a November 26 deadline; Congo's Ebola outbreak reaches six months with the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794780952015-c3717ec14b328.jpg",
+   "url": "https://open.spotify.com/episode/01XzPiUR7lM2kjIep02grB",
+   "spotify_url": "https://open.spotify.com/episode/01XzPiUR7lM2kjIep02grB",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129504372/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F60802f1a-bb13-e625-016d-a1903a5b8f94.m4a",
+   "number": null
+  },
+  {
    "id": "morningread:9ace85c1 395b 4d19 8bf4 b4bcac1d5c87",
    "show": "morningread",
    "kind": "episode",
@@ -843,8 +857,8 @@
    "duration": 1352,
    "description": "America's airlines cancelled nearly 6,500 flights on Saturday as the country dug out from Friday's nationwide ground stop, with a full recovery promised by Sunday night and a $50 billion argument over the fix already under way. Plus: Bahrain says it intercepted a second Iranian attack; the Senate leadership fight gets a poll number; Democrats split over the permitting bill; the Fed names AI its top financial risk; Nvidia and Anthropic face their pricing week; and a pardon bill meets the Constitution.\n In today's brief:\n • The Recovery: A Cause, a Price Tag, and a Sunday Deadline — https://thepointsguy.com/news/faa-groundstop-flights-grounded-nationwide\n • The War: A Second Claim Over…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794738908534-1902d7bcc3582.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Sunday--November-15--2026-e3sdoiv",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
+   "spotify_url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129474591/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F145b60eb-6f0c-4a58-a5ea-ac23430135a6.m4a",
    "number": null
   },
@@ -1095,8 +1109,8 @@
    "duration": 1251,
    "description": "The United Nations tells the Security Council that at least 25 seafarers have been killed in and around the Strait of Hormuz as Tehran reports more tankers on fire, Europe names the team it wants at the Ukraine negotiating table while the Kremlin sets conditions, COP31 reaches its halfway point in Antalya with the climate-finance argument unresolved, the IEA says the oil market is tipping back into surplus, South Africa's ANC opens coalition talks to every party, Congo's Ebola count reaches 11,197 cases, France's November 17 strike gains the CFDT and the rail unions, and Microsoft's two-day global outage largely ends.\n • Hormuz DEVELOPING: UN counts 25 seafarers killed as more tankers are…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794692738215-c18bd1da31233.jpg",
-   "url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
-   "spotify_url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Saturday--November-14--2026-e3scsv4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129446308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F203c04de-3a33-1803-a8b6-54968fd11e90.m4a",
    "number": null
   },
@@ -7281,7 +7295,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -9368,10 +9382,10 @@
   "morningread": {
    "ok": true,
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
-   "spotify_name": "Sunday, November 15, 2026",
+   "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 21,
-   "spotify_matches": 0
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
@@ -9386,7 +9400,7 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 16,
+   "episodes": 17,
    "spotify_matches": 1
   },
   "marketread": {
