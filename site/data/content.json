@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T02:50:53Z",
+ "generated_at": "2026-11-15T11:14:54Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-14T06:11:41Z",
-   "count": 262
+   "latest": "2026-11-15T03:41:42Z",
+   "count": 264
   },
   {
    "key": "approachable",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -173,8 +173,8 @@
    "complete": true,
    "art": "assets/art/riff.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "latest": "2026-11-11T23:20:53Z",
-   "count": 33
+   "latest": "2026-11-14T22:58:47Z",
+   "count": 34
   },
   {
    "key": "brazil",
@@ -199,8 +199,8 @@
    "complete": true,
    "art": "assets/art/brazil.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46721993/46721993-1789009717963-59de87d6384f7.jpg",
-   "latest": "2026-11-02T17:52:08Z",
-   "count": 46
+   "latest": "2026-11-15T00:04:15Z",
+   "count": 48
   },
   {
    "key": "harlem",
@@ -277,8 +277,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-13T15:25:11Z",
-   "count": 10
+   "latest": "2026-11-14T22:00:23Z",
+   "count": 11
   },
   {
    "key": "morningread",
@@ -304,8 +304,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-13T15:45:18Z",
-   "count": 19
+   "latest": "2026-11-15T10:35:40Z",
+   "count": 21
   },
   {
    "key": "ladaily",
@@ -331,8 +331,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-13T15:51:11Z",
-   "count": 17
+   "latest": "2026-11-15T10:34:22Z",
+   "count": 19
   },
   {
    "key": "globalread",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-13T16:11:01Z",
-   "count": 15
+   "latest": "2026-11-14T21:46:04Z",
+   "count": 16
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-13T16:04:54Z",
-   "count": 13
+   "latest": "2026-11-14T21:33:01Z",
+   "count": 14
   },
   {
    "key": "nyread",
@@ -436,8 +436,8 @@
    "complete": true,
    "art": "assets/art/columbiaread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47120618/47120618-1793473024667-3c58a827bef36.jpg",
-   "latest": "2026-11-11T23:12:58Z",
-   "count": 4
+   "latest": "2026-11-15T07:02:46Z",
+   "count": 5
   },
   {
    "key": "airead",
@@ -462,8 +462,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-13T16:17:39Z",
-   "count": 12
+   "latest": "2026-11-14T23:29:14Z",
+   "count": 13
   },
   {
    "key": "techread",
@@ -488,8 +488,8 @@
    "complete": true,
    "art": "assets/art/techread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115008/47115008-1793403471813-faf390ffca731.jpg",
-   "latest": "2026-11-04T22:13:29Z",
-   "count": 5
+   "latest": "2026-11-14T22:15:12Z",
+   "count": 6
   },
   {
    "key": "optionsdesk",
@@ -592,8 +592,8 @@
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-13T16:35:14Z",
-   "count": 7
+   "latest": "2026-11-15T05:09:56Z",
+   "count": 8
   },
   {
    "key": "fastbreak",
@@ -618,8 +618,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-14T06:40:41Z",
-   "count": 13
+   "latest": "2026-11-15T04:50:35Z",
+   "count": 14
   },
   {
    "key": "blitz",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-12T04:49:07Z",
-   "count": 13
+   "latest": "2026-11-15T08:09:27Z",
+   "count": 16
   },
   {
    "key": "cbbdaily",
@@ -802,8 +802,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-13T16:46:47Z",
-   "count": 8
+   "latest": "2026-11-15T05:01:20Z",
+   "count": 9
   },
   {
    "key": "gamecockshoops",
@@ -835,6 +835,300 @@
  ],
  "episodes": [
   {
+   "id": "morningread:9ace85c1 395b 4d19 8bf4 b4bcac1d5c87",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Sunday, November 15, 2026",
+   "date": "2026-11-15T10:35:40Z",
+   "duration": 1352,
+   "description": "America's airlines cancelled nearly 6,500 flights on Saturday as the country dug out from Friday's nationwide ground stop, with a full recovery promised by Sunday night and a $50 billion argument over the fix already under way. Plus: Bahrain says it intercepted a second Iranian attack; the Senate leadership fight gets a poll number; Democrats split over the permitting bill; the Fed names AI its top financial risk; Nvidia and Anthropic face their pricing week; and a pardon bill meets the Constitution.\n In today's brief:\n • The Recovery: A Cause, a Price Tag, and a Sunday Deadline — https://thepointsguy.com/news/faa-groundstop-flights-grounded-nationwide\n • The War: A Second Claim Over…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794738908534-1902d7bcc3582.jpg",
+   "url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
+   "spotify_url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129474591/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F145b60eb-6f0c-4a58-a5ea-ac23430135a6.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:e6782bbb 8734 44e4 8136 de69b4915465",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Sunday, November 15, 2026",
+   "date": "2026-11-15T10:34:22Z",
+   "duration": 1085,
+   "description": "Los Angeles wakes up to a dry Sunday and a warning from the mayor-elect's own movement: the Long Beach chapter of the Democratic Socialists of America tells Nithya Raman to govern like a \"true democratic socialist\" — or it will bring the fight to her, above all over LAPD Chief Jim McDonnell. Plus: Council District 9 is down to 41 votes with 13,000 ballots awaiting signature cures, the surf stays dangerous through Tuesday even as the rain breaks, Metro moves the Sepulveda rail comment deadline to November 23 with its last meeting Monday in Sherman Oaks, Raman inherits LA28 from an isolated seat at City Hall, and the Lakers close their road trip in Phoenix without Austin Reaves.\n Plus the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794738797478-be5933cda2dc5.jpg",
+   "url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
+   "spotify_url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129474536/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Ff0e75865-b6be-cfcb-d04d-9903b9710a60.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:bdb8e358 75d9 4b8e 9325 79a69e90f5cf",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Texas Stuns LSU at the Death, Utah Survives a Tucson Shootout | Saturday, November 14, 2026",
+   "date": "2026-11-15T08:09:27Z",
+   "duration": 1091,
+   "description": "Saturday night in Week 11 came down to the final seconds twice: No. 6 Texas rallied from 21-10 down to beat No. 21 LSU 22-21 in Baton Rouge on Arch Manning's touchdown pass with three seconds left, and No. 2 Utah stayed unbeaten at 10-0 with a 40-39 shootout win at No. 23 Arizona on a 70-yard touchdown with 2:35 left. Plus Florida's upset of No. 11 Kentucky, Arkansas's rout of No. 17 South Carolina, and the full playoff picture heading into Tuesday's rankings.\n Texas 22, No. 21 LSU 21 • No. 2 Utah 40, No. 23 Arizona 39 • No. 1 Georgia 48, Missouri 21 • Florida 21, No. 11 Kentucky 14 • Arkansas 34, No. 17 South Carolina 6 • Texas Tech 52, Oklahoma State 27 • Wake Forest 49, SMU 7 • Boise…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794730109386-7668c311738e.jpg",
+   "url": "https://open.spotify.com/episode/1SO2eYk5RafdYU1JOjcAKw",
+   "spotify_url": "https://open.spotify.com/episode/1SO2eYk5RafdYU1JOjcAKw",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129470087/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F5a3704eb-9e84-80bf-529d-43a21d22b4cb.m4a",
+   "number": null
+  },
+  {
+   "id": "columbiaread:2d861917 a079 4968 b684 98d69916bb13",
+   "show": "columbiaread",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-15T07:02:46Z",
+   "duration": 1388,
+   "description": "South Carolina beat Texas A&M 17-9 on Homecoming at Williams-Brice: LaNorris Sellers returned from an ankle scare to throw for 251 yards and run in the 41-yard clincher, the Gamecocks are bowl eligible at 6-3 and up to No. 20, and tomorrow the State Board of Canvassers meets in Columbia to certify the election and order recounts.\n In today's brief: the Homecoming win and Sellers' ankle · the State Board of Canvassers certification and the District 89 and District 27 recounts · No. 1 South Carolina women rout No. 12 North Carolina 84-39 in Charlotte, with Chloe Kitts back · the men beat Southeast Missouri State 78-68 behind Kory Mincy · District 2 still too early to call · the Scout Motors…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1794733151232-26d9a10cb945f.jpg",
+   "url": "https://open.spotify.com/episode/2jlMjpdEXY3919ddSE7ZSt",
+   "spotify_url": "https://open.spotify.com/episode/2jlMjpdEXY3919ddSE7ZSt",
+   "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129467310/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F35afc90b-df69-dea5-b6f7-646b26295cb6.m4a",
+   "number": null
+  },
+  {
+   "id": "tvinsider:c8db4ac9 732d 46fa ad70 7e3a972f914d",
+   "show": "tvinsider",
+   "kind": "episode",
+   "title": "Nobody Wants This Renewed for Season 4 Two Weeks After Season 3 as Netflix Locks In Its Flagship Rom-Com | Monday, November 9, 2026",
+   "date": "2026-11-15T05:09:56Z",
+   "duration": 942,
+   "description": "Nobody Wants This is renewed for Season 4 two weeks after Season 3, as Netflix locks in its flagship rom-com — the fastest comedy renewal on the streamer this fall.\n Nobody Wants This renewed for Season 4 at Netflix, two weeks after Season 3: https://www.thewrap.com/creative-content/tv-shows/nobody-wants-this-renewed-season-4-netflix/\n The Institute Season 2 premiered Sunday on MGM Plus, writing past Stephen King's novel: https://bloody-disgusting.com/reviews/3974611/the-institute-season-2-review/\n City of God: The Fight Rages On Season 2 premiered Sunday on HBO Max, with Cenoura back: https://www.martincid.com/tv-shows/city-of-god-the-fight-rages-on/\n Apple TV renews Knife Edge: Chasing…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1794719334875-4f7b314026852.jpg",
+   "url": "https://open.spotify.com/episode/0X793CTJoLxRXF8biHsLFj",
+   "spotify_url": "https://open.spotify.com/episode/0X793CTJoLxRXF8biHsLFj",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129464166/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Fc44dfcbd-fd60-3108-a3fc-787a31047a26.m4a",
+   "number": null
+  },
+  {
+   "id": "gamecocksdaily:d5baf46e eede 4983 b3db b7f0de334557",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "The Trap Game Sprung in Fayetteville: South Carolina Is 6-4 | Saturday, November 14, 2026",
+   "date": "2026-11-15T05:01:20Z",
+   "duration": 1233,
+   "description": "Arkansas 34, South Carolina 6 in Fayetteville. LaNorris Sellers never took a snap, Cutter Woods threw three interceptions in his first true start, and the Gamecocks went 1 for 5 in the red zone despite outgaining Arkansas 369 to 355. The four-game win streak is over, and South Carolina falls to 6-4 overall and 4-4 in the SEC.\n Inside: how the game was lost before kickoff and in the red zone · Woods' first start, graded honestly · Jabree Coleman, the one bright spot · Jahiem Johnson's pick-six dagger · injuries: Sellers and Mazeo Bennett (developing) · what it means with Georgia coming to Williams-Brice next Saturday night.\n Unofficial and independent; not affiliated with the University of…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794733109068-168fd9f55b699.jpg",
+   "url": "https://open.spotify.com/episode/635TYFJRggm6hBa0f8Mufa",
+   "spotify_url": "https://open.spotify.com/episode/635TYFJRggm6hBa0f8Mufa",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129463945/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F5d2367f0-198d-75e7-5c0b-3b6cbc6fa0d2.m4a",
+   "number": null
+  },
+  {
+   "id": "fastbreak:a560b893 3266 458f ac31 5adcc248c688",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-15T04:50:35Z",
+   "duration": 896,
+   "description": "Giannis Antetokounmpo went for 34 points, 14 rebounds and 8 assists one night after scoring 37, Miami beat Detroit 137-117, and Tyrese Proctor's first career triple-double led a Cleveland team missing its entire starting five past Dallas 127-117.\n Scores: Nuggets 116, Pelicans 108 · Cavaliers 127, Mavericks 117 · Grizzlies 129, Nets 110 · Bulls 117, Timberwolves 106 · Heat 137, Pistons 117.\n The deep dive: Miami's frontcourt on a back-to-back — Antetokounmpo and Adebayo combined for 71 points Friday and 54 more Saturday, and what Miami at 7-6 means for the East behind Boston and Philadelphia.\n Part of the Curious & Creative network. Back tomorrow night.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794718127198-8925cd4254422.jpg",
+   "url": "https://open.spotify.com/episode/1DT9yWSMhmbN7sElMGqDLb",
+   "spotify_url": "https://open.spotify.com/episode/1DT9yWSMhmbN7sElMGqDLb",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129463694/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F12292b36-e1a1-e963-5cbd-c6c385620d23.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:f69eda44 6893 448d 894d 6829f06e3e1e",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "The Future of War Is Already Here",
+   "date": "2026-11-15T03:41:42Z",
+   "duration": 3937,
+   "description": "The future of war is not coming. In Ukraine, it has been in combat for years, and it looks less like a fighter jet than a workbench of cheap drones built like consumer electronics.\n A first-person-view drone costing a few hundred dollars can destroy armor worth millions. A February 2025 RUSI report found tactical drones accounted for roughly 60 to 70 percent of damaged and destroyed Russian systems, and a 10-to-15-kilometer kill zone now sits on either side of the front. When jamming kills the radio link, fiber-optic drones and machine vision for the final approach keep flying — with, in the systems CSIS studied, a human still making the engagement decision. At sea, Ukraine’s Magura boats…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794714076781-8bf3018cfe1cb.jpg",
+   "url": "https://open.spotify.com/episode/46Y2O8mXKUFnZLE55eIOA7",
+   "spotify_url": "https://open.spotify.com/episode/46Y2O8mXKUFnZLE55eIOA7",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129462006/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F8d68e051-5b8b-8fe5-b415-92f41d84f9f6.m4a",
+   "number": "266"
+  },
+  {
+   "id": "polymath:89841b83 26e0 464d b372 1bc049fae7f2",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "Donna Summer: The Mother of Modern Dance Music",
+   "date": "2026-11-15T03:39:35Z",
+   "duration": 2891,
+   "description": "She was called the Queen of Disco, but that title is too small. Donna Summer did not just rule an era — she started the ones that followed it.\n In 1975, “Love to Love You Baby” stretched a pop hit to seventeen minutes and helped invent the extended dance record. Two years later, “I Feel Love,” built almost entirely on a Moog synthesizer, landed like a message from ahead: Brian Eno reportedly told David Bowie he had heard “the sound of the future.” The Library of Congress later added it to the National Recording Registry, and its sequenced bassline, four-on-the-floor kick, and weightless vocal became the template for house, techno, Hi-NRG, Eurodance, and EDM.\n Then came the reign listeners…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794713860299-1bb6725df104a.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/Donna-Summer-The-Mother-of-Modern-Dance-Music-e3sdc5q",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129461882/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F2981aca5-a41c-c7b4-e103-006d2ff2413c.m4a",
+   "number": "265"
+  },
+  {
+   "id": "brazil:fd3de8b1 b55d 453c 9d14 32becd5ef441",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#24 CPF, Câmeras e o Estado de Dados Brasileiro (Português)",
+   "date": "2026-11-15T00:04:15Z",
+   "duration": 1510,
+   "description": "\"CPF na nota?\" Em todo caixa do Brasil, a pergunta pede onze dígitos que os brasileiros recitam de memória, em voz alta, numa fila de estranhos. Criado em 1965 como número de contribuinte, o CPF virou a chave de tudo: conta em banco, emprego, empréstimo, linha de telefone, desconto na farmácia, o elevador do prédio comercial — e, como chave Pix, um jeito de qualquer pessoa que saiba o número lhe enviar dinheiro.\n Este episódio percorre o Estado de dados construído em torno desse número: os programas de nota fiscal que transformaram consumidores em fiscais, o score de crédito e o \"nome sujo\" atrelados aos mesmos dígitos, a CIN e o gov.br colapsando 27 identidades estaduais no CPF, o…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46721993/46721993-1794701016269-ce3f062df98b9.jpg",
+   "url": "https://open.spotify.com/episode/2wX1fH7YXI6mkegO6aZceW",
+   "spotify_url": "https://open.spotify.com/episode/2wX1fH7YXI6mkegO6aZceW",
+   "audio": "https://anchor.fm/s/11714b104/podcast/play/129456308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F7027c27b-a00d-b230-7963-76b631091992.m4a",
+   "number": "24"
+  },
+  {
+   "id": "brazil:daa9dde8 28ee 4ff9 8d18 2883a871bb40",
+   "show": "brazil",
+   "kind": "episode",
+   "title": "#24 CPF, Cameras and the Brazilian Data State (English)",
+   "date": "2026-11-15T00:00:56Z",
+   "duration": 3424,
+   "description": "\"CPF na nota?\" — your CPF on the receipt? In Brazil, every checkout asks for eleven digits that Brazilians recite from memory, out loud, in a queue of strangers. Created in 1965 as a tax number, the CPF became the key to everything: a bank account, a job, a loan, a phone line, a pharmacy discount, the elevator in an office tower — and, as a Pix key, a way for anyone who knows the number to send you money.\n This episode traces the data state built around that number: the Nota Fiscal Paulista programmes that turned shoppers into tax inspectors, the credit score and the \"dirty name\" attached to the same digits, the CIN national identity card and the gov.br platform collapsing 27 state IDs into…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46721993/46721993-1794700774309-0208be327dbe5.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms204/episodes/24-CPF--Cameras-and-the-Brazilian-Data-State-English-e3sd6k2",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/11714b104/podcast/play/129456194/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F4f0dd988-cfa0-bc25-2e47-3d9d5417eb1f.m4a",
+   "number": "24"
+  },
+  {
+   "id": "airead:e6227db0 a0c1 4aab a956 058ce69fa180",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-14T23:29:14Z",
+   "duration": 1231,
+   "description": "Banks and credit investors are pulling back on AI debt after a $2.5 trillion Nasdaq 100 drop, Anthropic reportedly secured $3.4 billion in generators for 1.7 gigawatts of data center power, SoftBank faces scrutiny ahead of Tuesday earnings, Taiwan's October exports hit a record $96.76 billion on AI chips, President Trump signaled openness to AI guardrails, Nvidia's board is reviewing whether its CEO was targeted by a foreign intelligence effort, and TeraWulf's quarter shows the Anthropic lease economics up close — plus new small models listed with no independent scores yet.\n • Banks and credit investors grow wary of AI debt after the selloff —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794698886827-ea90988027435.jpg",
+   "url": "https://open.spotify.com/episode/7ggzc2H9i7IiOtfy7qKdK3",
+   "spotify_url": "https://open.spotify.com/episode/7ggzc2H9i7IiOtfy7qKdK3",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129455306/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F95b4a7a6-8311-90b8-eb50-77c77a7a52b8.m4a",
+   "number": null
+  },
+  {
+   "id": "riff:72370335 fbdf 45ef a0ee 8bce5cb09fe0",
+   "show": "riff",
+   "kind": "episode",
+   "title": "Hampton Hawes: The Pianist a President Set Free",
+   "date": "2026-11-14T22:58:47Z",
+   "duration": 1291,
+   "description": "November 13 is Hampton Hawes Day in Los Angeles, and no date ever held more of one life: Hawes was born on it in 1928, finished the legendary All Night Session on the morning of it in 1956, and was arrested on it in 1958, on his 30th birthday. This is the story of the preacher's son who put Charlie Parker's language on the piano, refused to inform and took ten years, watched a president's inaugural address from a prison hospital and decided that president would listen, and came home to write Raise Up Off Me, the first book about the bebop era written by a musician who lived it.\n What to hear first: Hampton Hawes Trio, Vol. 1 (1955), the All Night Session volumes, Four! (1958) with Barney…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1794697066704-db2781f7c1edb.jpg",
+   "url": "https://open.spotify.com/episode/0T3eNhCrAn3uH97wDFXmYp",
+   "spotify_url": "https://open.spotify.com/episode/0T3eNhCrAn3uH97wDFXmYp",
+   "audio": "https://anchor.fm/s/1187405a4/podcast/play/129449522/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F28172db2-2a4f-a703-5cda-95ddbe900398.m4a",
+   "number": "34"
+  },
+  {
+   "id": "cfbdaily:bcdd26b0 b2db 40ce b611 f67fe5807c89",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Memphis Blows a 21-Point Lead, Then Wins a 52-41 Shootout at South Florida | Thursday, November 12, 2026",
+   "date": "2026-11-14T22:50:18Z",
+   "duration": 898,
+   "description": "Thursday night in Week 11 was chaos in Tampa and a rout built on turnovers in Monroe: Memphis led South Florida 21-0, trailed 41-38 with eight minutes left, and still won 52-41 on a 76-yard touchdown and a closing score, while Louisiana outscored UL Monroe 28-7 in the second half behind a fumble-return touchdown and 274 rushing yards to win the Battle on the Bayou 42-21.\n Memphis 52, South Florida 41 • Louisiana 42, UL Monroe 21 • The standouts • The conference races • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794696567196-838a2111c6384.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Memphis-Blows-a-21-Point-Lead--Then-Wins-a-52-41-Shootout-at-South-Florida--Thursday--November-12--2026-e3scvr2",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129449250/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F0725a2fc-7553-57ec-32e2-a5425095c963.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:c9680d63 3e46 4a21 905c 64d12db5d3b7",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Colorado Stuns No. 14 Houston in Boulder, and UCLA Reaches 10-0 | Friday, November 13, 2026",
+   "date": "2026-11-14T22:37:11Z",
+   "duration": 808,
+   "description": "Friday night in Week 11 delivered an upset, a survival, and a defensive grind: Colorado scored 28 unanswered points to stun No. 14 Houston 42-32 in Boulder for its first top-15 win since 2007, No. 4 UCLA held off Illinois 22-14 to reach 10-0 for the first time since 1998, and Florida State edged Pitt 16-10 behind three field goals and one decisive takeaway.\n Colorado 42, No. 14 Houston 32 • No. 4 UCLA 22, Illinois 14 • Florida State 16, Pittsburgh 10 • The standouts • The playoff picture • Saturday's slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794695748415-ec800f98aced8.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Colorado-Stuns-No--14-Houston-in-Boulder--and-UCLA-Reaches-10-0--Friday--November-13--2026-e3scvcd",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129448781/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F3e8f49fb-00bd-dde0-db07-3cc7f7eb5a72.m4a",
+   "number": null
+  },
+  {
+   "id": "techread:4a70e8a3 830b 4709 a83b a5b7b7d4fbe5",
+   "show": "techread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T22:15:12Z",
+   "duration": 1547,
+   "description": "OpenAI gave its agents a wallet: ChatGPT Wallet launched for US Pro subscribers, letting a dot pay with a token and a Face ID or fingerprint check on every purchase. Anthropic's IPO is about six times oversubscribed before it prices, Microsoft is restoring Microsoft 365 after an outage that degraded 19 services through Exchange Online, and Nvidia heads into Tuesday's earnings under an interim CEO. Plus OpenAI's Daybreak security agents, two attacks on AMD's confidential computing, a breach that exposed Notion AI chats, and crypto's break below $70,000.\n • OpenAI launches ChatGPT Wallet, letting AI agents pay for purchases —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1794694475633-525fb8809441.jpg",
+   "url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
+   "spotify_url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
+   "audio": "https://anchor.fm/s/1196c6280/podcast/play/129448125/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2Fd8769dd3-cc37-6403-c826-c5c08dab0582.m4a",
+   "number": null
+  },
+  {
+   "id": "dominatedconvo:bb753ed8 af44 43bc 8ae2 ae5935688a97",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "The FAA Grounded America for Four Hours and Saturday Is Still Digging Out | Saturday, November 14, 2026",
+   "date": "2026-11-14T22:00:23Z",
+   "duration": 1375,
+   "description": "Saturday opens in the dig-out from the first nationwide FAA ground stop since 9/11: radar and communications instability at air traffic control centers halted every departure in America for more than four hours on Friday, thousands of flights are still canceled today, and the precise cause is still developing. Then the fallout that owned X, as Ole Miss at Oklahoma gets moved to Sunday because the Rebels could not fly; Microsoft declares its day-long global outage over; Alaska's last uncalled Senate race sits 445 votes from a majority; Jensen Huang gets his hashtags; and the platform roundup across X, Reddit, TikTok and Instagram, plus what is bubbling up next.\n • FAA Ground Stop, Reuters…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794693583973-39610c5630f84.jpg",
+   "url": "https://open.spotify.com/episode/3XzB0xNvQeQTPSCxePM3Nl",
+   "spotify_url": "https://open.spotify.com/episode/3XzB0xNvQeQTPSCxePM3Nl",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129447639/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F7729d186-033b-fa20-170c-f2e055c452ed.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:127983d7 1b78 45ed ac75 8b4e950ebfa4",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T21:46:04Z",
+   "duration": 1251,
+   "description": "The United Nations tells the Security Council that at least 25 seafarers have been killed in and around the Strait of Hormuz as Tehran reports more tankers on fire, Europe names the team it wants at the Ukraine negotiating table while the Kremlin sets conditions, COP31 reaches its halfway point in Antalya with the climate-finance argument unresolved, the IEA says the oil market is tipping back into surplus, South Africa's ANC opens coalition talks to every party, Congo's Ebola count reaches 11,197 cases, France's November 17 strike gains the CFDT and the rail unions, and Microsoft's two-day global outage largely ends.\n • Hormuz DEVELOPING: UN counts 25 seafarers killed as more tankers are…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794692738215-c18bd1da31233.jpg",
+   "url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
+   "spotify_url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129446308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F203c04de-3a33-1803-a8b6-54968fd11e90.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:c3983af9 f4a6 49be 8012 d3deaa6c5324",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T21:33:01Z",
+   "duration": 1239,
+   "description": "Wall Street snapped a four-week losing streak with its best week in weeks, but Friday ended the way the week lived: chips gave back the rally, the 10-year Treasury yield closed at 5.15 percent, and every position on the board now waits for one event, Nvidia's earnings on Tuesday, the first under interim chief executive Colette Kress. Plus: producer prices print soft for the month and hot for the year, the dollar closes at a 19-month high, Europe banks its best week since June, bitcoin breaks its 200-week line, and the options market prices a 9.2 percent move into Nvidia.\n In today's brief:\n • Friday's Close: The Indexes Split, Chips Gave Back the Rally, and the Week Still Ended Green —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794691948230-9d40334580483.jpg",
+   "url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
+   "spotify_url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129445870/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F2ec25f51-97d5-30fb-6c68-19985067ec5b.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:e064d486 fc7d 40ac 8b5c 5aaed897c23b",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T21:05:20Z",
+   "duration": 1244,
+   "description": "Los Angeles wakes up wet on Saturday, with the transition's first real policy agreement on top: Mayor-elect Nithya Raman and LAPD Chief Jim McDonnell now agree that roughly a third of the LAPD's 1.45 million yearly calls are mental-health calls, and that clinicians should carry more of them. Plus: the storm train floods Wilmington and the surf peaks at 8 to 12 feet today, the county count leaves Council District 9 at 41 votes, the supervisors order the Sheriff's Department to name its deputy gangs and vote to follow county ad dollars into community newsrooms, Metro takes Sepulveda rail comments in Van Nuys this morning, and City Hall declares Billy Idol Day.\n Plus the expanded what's-on…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794690221006-15a4b4dbe8c7f.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Saturday--November-14--2026-e3scrji",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129444914/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F88c11748-cea1-375e-8be7-6f3358d343d7.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:e1858b93 e691 4f89 8703 a6dd93f118c9",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T20:50:24Z",
+   "duration": 1279,
+   "description": "The United States grounded every departing flight for more than four hours on Friday after a telecommunications failure hit air traffic control, and the airlines are still digging out. Plus: Van Hollen challenges Schumer for Senate majority leader; the Nvidia fight becomes a public cabinet argument over the Megaspeed blacklist; Iran and Washington trade incompatible claims over Bahrain and Hormuz; producer inflation runs at 6.5 percent as chips sell off; Alaska's last Senate race widens; Microsoft closes out the week the email stopped; and Johnny Depp's Scrooge tops the Friday box office.\n In today's brief:\n • The Ground Stop: America Stops Flying —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794689366623-c5ae03814d95d.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Saturday--November-14--2026-e3scr6h",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129444497/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F94cc1a35-031d-0900-797a-4bc54949cc0f.m4a",
+   "number": null
+  },
+  {
    "id": "fastbreak:917fa07c 6252 4d34 92f6 b28e2f23da7a",
    "show": "fastbreak",
    "kind": "episode",
@@ -843,8 +1137,8 @@
    "duration": 1601,
    "description": "Alperen Sengun scored a season-high 43 points with 12 rebounds as Houston beat Utah 125-118, the Clippers edged Oklahoma City 113-112 on Darius Garland's late free throw despite 40 from Shai Gilgeous-Alexander, and San Antonio routed Golden State 123-85 for an eleventh straight win.\n Scores: Magic 107, Bucks 99 · Pacers 106, Knicks 104 · Heat 133, Cavaliers 121 · Bulls 125, Hawks 117 (OT) · Grizzlies 142, Pelicans 111 · Rockets 125, Jazz 118 · Spurs 123, Warriors 85 · Trail Blazers 120, Kings 107 · Clippers 113, Thunder 112.\n The deep dive: Alperen Sengun's 43-point night and Houston at 10-3 — how the Rockets became the West's third power behind San Antonio and the Lakers, with Kevin Durant…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794640995334-478e661847c2.jpg",
-   "url": "https://open.spotify.com/episode/0yC4F6RcjArJ4a2efi1zra",
-   "spotify_url": "https://open.spotify.com/episode/0yC4F6RcjArJ4a2efi1zra",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Friday--November-13--2026-e3sc0s1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129417537/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F3f352222-de97-ca28-e5a1-12904312a9c7.m4a",
    "number": null
   },
@@ -857,8 +1151,8 @@
    "duration": 3165,
    "description": "In June 2025, Meta paid a reported $14.3 billion for 49 percent of Scale AI, and got its founder as the real prize: Alexandr Wang, a 28-year-old MIT dropout from Los Alamos, became the first Chief AI Officer in Meta's history. This is the story of how a data-labeling company became the junction box of the AI boom, and what that price actually bought.\n Wang grew up in the company town built around Los Alamos National Laboratory, the son of two immigrant physicists, and told his parents his startup was \"just for the summer.\" He never went back to MIT.\n Scale's public story was software. Its engine was piecework: hundreds of thousands of contractors on Remotasks and Outlier, paid by the task.…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794636663466-9a51873bcdb2d.jpg",
-   "url": "https://open.spotify.com/episode/3eHuA1Y1LY211A0FVn8mtj",
-   "spotify_url": "https://open.spotify.com/episode/3eHuA1Y1LY211A0FVn8mtj",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/264-Alexandr-Wang-The-14-3-Billion-Hire-e3sc02o",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129416728/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2Fbad1d513-742e-c7d2-8079-4c0e7d747ee9.m4a",
    "number": "264"
   },
@@ -899,8 +1193,8 @@
    "duration": 1146,
    "description": "South Carolina heads to Fayetteville for the trap game: No. 17 in the playoff rankings, 6-3 and winners of four straight, with LaNorris Sellers upgraded to probable and top receiver Nyck Harbor doubtful against a 3-6 Arkansas team that has to win out to make a bowl. Kickoff Saturday at 7:45 p.m. Eastern on SEC Network.\n In this edition: the Arkansas preview and the matchup that decides it (the SEC's worst run defense against the conference's third-best rushing attack), the full injury report, the basketball segment (the No. 1 women's team beat Clemson 65-44 for a 16th straight win in the rivalry; the men routed Saint Peter's 77-41), and the look-ahead to Georgia and Clemson.\n Unofficial and…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794588380692-51acee7ea2685.jpg",
-   "url": "https://open.spotify.com/episode/3HabzY44qNoi52TK8gnZ77",
-   "spotify_url": "https://open.spotify.com/episode/3HabzY44qNoi52TK8gnZ77",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/Trap-Game-in-Fayetteville-Sellers-Probable--Harbor-Doubtful-for-6-3-South-Carolina--Friday--November-13--2026-e3sb617",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129390055/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F8832e57f-186f-40d6-344a-fe239b11235e.m4a",
    "number": null
   },
@@ -913,8 +1207,8 @@
    "duration": 1414,
    "description": "The expensive-drama era is ending: FX passes on more of Grotesquerie and The Beauty, Disney weighs thousands of layoffs with managers asked to find 20 percent savings, and Netflix's next big move might be NBCUniversal. Plus: FX doubles down on Adults with a 16-episode third season, The Rings of Power returns, From tops the Nielsen chart, and tonight brings Apple TV's heist series 12 12 12.\n • The Cost-Cutting Era: Expensive Dramas Are First to Go — https://www.thetvcave.com/post/no-season-2-for-grotesquerie-the-beauty\n • Disney Weighs Thousands of Layoffs — https://northlandnewsradio.com/2026/11/02/disney-eyes-thousands-of-layoffs-managers-asked-to-cut-20-in-costs-bloomberg-news-reports/\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1794587689396-fd1b36a5d2916.jpg",
-   "url": "https://open.spotify.com/episode/6WPcuMhMiHsv8prbMMh2vB",
-   "spotify_url": "https://open.spotify.com/episode/6WPcuMhMiHsv8prbMMh2vB",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms200/episodes/Why-TV-Is-Canceling-Expensive-Dramas--Friday--November-13--2026-e3sb5g2",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129389506/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F71a867f6-d345-8b9d-dde8-811213e79793.m4a",
    "number": null
   },
@@ -1109,8 +1403,8 @@
    "duration": 912,
    "description": "Week 10 Buy Low, Sell High: the NFL trade deadline closed the month's two biggest questions — Jonathan Taylor stayed in Indianapolis and Cincinnati added no running back — and Week 9's usage-versus-production gaps have mispriced stars across every roster.\n In this edition: the settled deadline market · buy lows — Gibbs, Chase Brown, Jeanty, Kyren Williams, Smith-Njigba, St. Brown, Flowers, Kraft, Lemon and Caleb Williams · sell highs with the reason each value is dropping — Stroud, McCaffrey, Golden, Boutte, Dell, Kelce and Waller · the Puka Nacua hold decision · and how to structure the offer before your league's deadline.\n Part of the Curious & Creative network.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1794439555186-34309f118ea7b.jpg",
-   "url": "https://open.spotify.com/episode/5JKyoTe2VI1Mp9hf0pxmfo",
-   "spotify_url": "https://open.spotify.com/episode/5JKyoTe2VI1Mp9hf0pxmfo",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Gibbs-and-Smith-Njigba-at-a-Discount--Stroud-at-His-Peak-Buy-Low--Sell-High-for-Week-10--Wednesday--November-11--2026-e3s82s5",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129288517/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F3fc4d2f9-acdc-77a9-7867-82b544c6d379.m4a",
    "number": null
   },
@@ -1165,8 +1459,8 @@
    "duration": 1517,
    "description": "South Carolina's District 2 recount is ordered with Joe Wilson's margin under one point, the State Board of Canvassers certifies the general election and orders House recounts, the Gamecocks climb to No. 17 in the College Football Playoff rankings with LaNorris Sellers' ankle unchanged, flu activity runs second-highest in the nation, both basketball teams are in action, Columbia's housing market keeps cooling, and a 103-year-old D-Day veteran receives France's Legion of Honor at Fort Jackson.\n In today's brief:\n • District 2 heads to a recount: Wilson 147,790, Khalifa 144,948 (DEVELOPING) —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1794438748228-273140cd23b1a.jpg",
-   "url": "https://open.spotify.com/episode/4WTeEgjJWqDO3FQe43CRHw",
-   "spotify_url": "https://open.spotify.com/episode/4WTeEgjJWqDO3FQe43CRHw",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20036/episodes/Wednesday--November-11--2026-e3s82d1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129288033/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F9daa44f4-c843-074c-3d14-a46b85d0a6c8.m4a",
    "number": null
   },
@@ -5134,20 +5428,6 @@
    "number": "5"
   },
   {
-   "id": "riff:5a6cc255 9651 4269 8c56 1d7b9e41598b",
-   "show": "riff",
-   "kind": "episode",
-   "title": "#4 A Love Supreme: The Prayer Coltrane Recorded in One Day",
-   "date": "2026-10-15T11:12:39Z",
-   "duration": 2222,
-   "description": "One December day in 1964 — December 9, at Rudy Van Gelder's studio — John Coltrane's quartet recorded a four-part prayer in essentially a single session: A Love Supreme. How it was made, and why this record, of all records, got canonized.\n The four-note \"Acknowledgement\" motif, the poem hidden in the liner notes and chanted back through the horn, the Smithsonian manuscript, and the Saint John Coltrane Church — plus the 2021 Live in Seattle tapes as the album's afterlife.\n Love you madly.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/4-A-Love-Supreme-The-Prayer-Coltrane-Recorded-in-One-Day-e3qhuc0",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1187405a4/podcast/play/127514432/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F8d0f29cd-5df2-db29-4fea-5e5da9737ed6.m4a",
-   "number": "4"
-  },
-  {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
    "kind": "episode",
@@ -5760,34 +6040,6 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/11714b104/podcast/play/126704822/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-2%2Fc728db53-e0db-ef43-6425-aa961e1ebd4c.m4a",
    "number": "10"
-  },
-  {
-   "id": "brazil:720a3ac0 c661 4554 9792 133df9c1ea26",
-   "show": "brazil",
-   "kind": "episode",
-   "title": "#9 Santa Teresa: Rio's Hilltop Bohemia and the Fight to Preserve It (Português)",
-   "date": "2026-10-03T18:00:00Z",
-   "duration": 1075,
-   "description": "Nas alturas acima das praias e das torres modernas do Rio de Janeiro, Santa Teresa parece um bairro que escapou do ciclo normal de desenvolvimento. Suas ruas sinuosas, casarões antigos, bondinho histórico, encostas verdejantes e cultura artística fizeram dele um dos lugares mais singulares da cidade. Mas como surgiu esse bairro tão incomum, e o que permitiu que tanto do seu caráter sobrevivesse? Este episódio acompanha a evolução de Santa Teresa, de refúgio nas colinas no século XIX a um bairro moldado por artistas, intelectuais, moradores antigos e um ecossistema cultural notavelmente diverso. Exploramos como a geografia influenciou sua arquitetura, por que suas ruas estreitas e edifícios…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46721993/46721993-1791144603431-8d4ebb7dae48d.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms204/episodes/9-Santa-Teresa-Rios-Hilltop-Bohemia-and-the-Fight-to-Preserve-It-Portugus-e3psouk",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/11714b104/podcast/play/126820756/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-4%2F495615d7-6008-4854-14ce-3ffaf9ae34b5.m4a",
-   "number": null
-  },
-  {
-   "id": "brazil:da1c48ce 6ee4 4bb3 bf2c 9c016e3f6c6f",
-   "show": "brazil",
-   "kind": "episode",
-   "title": "#9 Santa Teresa: Rio's Hilltop Bohemia and the Fight to Preserve It (English)",
-   "date": "2026-10-03T17:00:00Z",
-   "duration": 2434,
-   "description": "High above Rio de Janeiro’s beaches and modern towers, Santa Teresa feels like a neighborhood that escaped the normal development cycle. Its winding streets, old mansions, historic tram, lush hillsides, and artistic culture have made it one of the city’s most distinctive places. But how did this unusual neighborhood come to exist, and what has allowed so much of its character to survive?This episode traces Santa Teresa’s evolution from a nineteenth-century hillside retreat into a neighborhood shaped by artists, intellectuals, longtime residents, and a remarkably diverse cultural ecosystem. We explore how geography influenced its architecture, why its narrow roads and historic buildings…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46721993/46721993-1790966209152-221be18ec53de.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms204/episodes/9-Santa-Teresa-Rios-Hilltop-Bohemia-and-the-Fight-to-Preserve-It-English-e3pp7j0",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/11714b104/podcast/play/126704672/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-2%2F5488b2ac-0e6e-d535-9706-08b322306a7e.m4a",
-   "number": "9"
   },
   {
    "id": "polymath:19457af0 b2da 4183 a7d6 1dc21cf20051",
@@ -9027,7 +9279,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 262,
+   "episodes": 264,
    "spotify_matches": 1
   },
   "approachable": {
@@ -9064,16 +9316,16 @@
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
-   "episodes": 33,
-   "spotify_matches": 0
+   "episodes": 34,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
    "feed": "https://anchor.fm/s/11714b104/podcast/rss",
    "spotify_name": "God is Brazilian",
    "full_catalog": true,
-   "episodes": 46,
-   "spotify_matches": 0
+   "episodes": 48,
+   "spotify_matches": 1
   },
   "harlem": {
    "ok": true,
@@ -9096,40 +9348,40 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 0
+   "episodes": 11,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 21,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 17,
-   "spotify_matches": 0
+   "episodes": 19,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 15,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 0
+   "episodes": 14,
+   "spotify_matches": 1
   },
   "nyread": {
    "ok": true,
@@ -9144,7 +9396,7 @@
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
-   "episodes": 4,
+   "episodes": 5,
    "spotify_matches": 1
   },
   "airead": {
@@ -9152,16 +9404,16 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 0
+   "episodes": 13,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 0
+   "episodes": 6,
+   "spotify_matches": 1
   },
   "optionsdesk": {
    "ok": true,
@@ -9192,7 +9444,7 @@
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime TV",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "fastbreak": {
@@ -9200,7 +9452,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "blitz": {
@@ -9217,7 +9469,7 @@
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
    "episodes": 3,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "celticsdaily": {
    "ok": true,
@@ -9240,8 +9492,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "cbbdaily": {
    "ok": true,
@@ -9256,7 +9508,7 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "The Horseshoe",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 9,
    "spotify_matches": 1
   },
   "gamecockshoops": {
