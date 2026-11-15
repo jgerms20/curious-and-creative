@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T23:08:45Z",
+ "generated_at": "2026-11-15T02:50:53Z",
  "shows": [
   {
    "key": "ccpod",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-14T21:46:04Z",
-   "count": 16
+   "latest": "2026-11-13T16:11:01Z",
+   "count": 15
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-14T21:33:01Z",
-   "count": 14
+   "latest": "2026-11-13T16:04:54Z",
+   "count": 13
   },
   {
    "key": "nyread",
@@ -488,8 +488,8 @@
    "complete": true,
    "art": "assets/art/techread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115008/47115008-1793403471813-faf390ffca731.jpg",
-   "latest": "2026-11-14T22:15:12Z",
-   "count": 6
+   "latest": "2026-11-04T22:13:29Z",
+   "count": 5
   },
   {
    "key": "optionsdesk",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-14T22:50:18Z",
-   "count": 15
+   "latest": "2026-11-12T04:49:07Z",
+   "count": 13
   },
   {
    "key": "cbbdaily",
@@ -834,76 +834,6 @@
   }
  ],
  "episodes": [
-  {
-   "id": "cfbdaily:bcdd26b0 b2db 40ce b611 f67fe5807c89",
-   "show": "cfbdaily",
-   "kind": "episode",
-   "title": "Memphis Blows a 21-Point Lead, Then Wins a 52-41 Shootout at South Florida | Thursday, November 12, 2026",
-   "date": "2026-11-14T22:50:18Z",
-   "duration": 898,
-   "description": "Thursday night in Week 11 was chaos in Tampa and a rout built on turnovers in Monroe: Memphis led South Florida 21-0, trailed 41-38 with eight minutes left, and still won 52-41 on a 76-yard touchdown and a closing score, while Louisiana outscored UL Monroe 28-7 in the second half behind a fumble-return touchdown and 274 rushing yards to win the Battle on the Bayou 42-21.\n Memphis 52, South Florida 41 • Louisiana 42, UL Monroe 21 • The standouts • The conference races • Saturday's ranked slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794696567196-838a2111c6384.jpg",
-   "url": "https://open.spotify.com/episode/4AcqM6R0vF8EFYF2MKnVWf",
-   "spotify_url": "https://open.spotify.com/episode/4AcqM6R0vF8EFYF2MKnVWf",
-   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129449250/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F0725a2fc-7553-57ec-32e2-a5425095c963.m4a",
-   "number": null
-  },
-  {
-   "id": "cfbdaily:c9680d63 3e46 4a21 905c 64d12db5d3b7",
-   "show": "cfbdaily",
-   "kind": "episode",
-   "title": "Colorado Stuns No. 14 Houston in Boulder, and UCLA Reaches 10-0 | Friday, November 13, 2026",
-   "date": "2026-11-14T22:37:11Z",
-   "duration": 808,
-   "description": "Friday night in Week 11 delivered an upset, a survival, and a defensive grind: Colorado scored 28 unanswered points to stun No. 14 Houston 42-32 in Boulder for its first top-15 win since 2007, No. 4 UCLA held off Illinois 22-14 to reach 10-0 for the first time since 1998, and Florida State edged Pitt 16-10 behind three field goals and one decisive takeaway.\n Colorado 42, No. 14 Houston 32 • No. 4 UCLA 22, Illinois 14 • Florida State 16, Pittsburgh 10 • The standouts • The playoff picture • Saturday's slate\n Part of the Curious & Creative network. Back Wednesday with the midweek lookahead.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794695748415-ec800f98aced8.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Colorado-Stuns-No--14-Houston-in-Boulder--and-UCLA-Reaches-10-0--Friday--November-13--2026-e3scvcd",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129448781/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F3e8f49fb-00bd-dde0-db07-3cc7f7eb5a72.m4a",
-   "number": null
-  },
-  {
-   "id": "techread:4a70e8a3 830b 4709 a83b a5b7b7d4fbe5",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Saturday, November 14, 2026",
-   "date": "2026-11-14T22:15:12Z",
-   "duration": 1547,
-   "description": "OpenAI gave its agents a wallet: ChatGPT Wallet launched for US Pro subscribers, letting a dot pay with a token and a Face ID or fingerprint check on every purchase. Anthropic's IPO is about six times oversubscribed before it prices, Microsoft is restoring Microsoft 365 after an outage that degraded 19 services through Exchange Online, and Nvidia heads into Tuesday's earnings under an interim CEO. Plus OpenAI's Daybreak security agents, two attacks on AMD's confidential computing, a breach that exposed Notion AI chats, and crypto's break below $70,000.\n • OpenAI launches ChatGPT Wallet, letting AI agents pay for purchases —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1794694475633-525fb8809441.jpg",
-   "url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
-   "spotify_url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/129448125/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2Fd8769dd3-cc37-6403-c826-c5c08dab0582.m4a",
-   "number": null
-  },
-  {
-   "id": "globalread:127983d7 1b78 45ed ac75 8b4e950ebfa4",
-   "show": "globalread",
-   "kind": "episode",
-   "title": "Saturday, November 14, 2026",
-   "date": "2026-11-14T21:46:04Z",
-   "duration": 1251,
-   "description": "The United Nations tells the Security Council that at least 25 seafarers have been killed in and around the Strait of Hormuz as Tehran reports more tankers on fire, Europe names the team it wants at the Ukraine negotiating table while the Kremlin sets conditions, COP31 reaches its halfway point in Antalya with the climate-finance argument unresolved, the IEA says the oil market is tipping back into surplus, South Africa's ANC opens coalition talks to every party, Congo's Ebola count reaches 11,197 cases, France's November 17 strike gains the CFDT and the rail unions, and Microsoft's two-day global outage largely ends.\n • Hormuz DEVELOPING: UN counts 25 seafarers killed as more tankers are…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794692738215-c18bd1da31233.jpg",
-   "url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
-   "spotify_url": "https://open.spotify.com/episode/7B9OWlYj7XhbBhpAVHrv1h",
-   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129446308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F203c04de-3a33-1803-a8b6-54968fd11e90.m4a",
-   "number": null
-  },
-  {
-   "id": "marketread:c3983af9 f4a6 49be 8012 d3deaa6c5324",
-   "show": "marketread",
-   "kind": "episode",
-   "title": "Saturday, November 14, 2026",
-   "date": "2026-11-14T21:33:01Z",
-   "duration": 1239,
-   "description": "Wall Street snapped a four-week losing streak with its best week in weeks, but Friday ended the way the week lived: chips gave back the rally, the 10-year Treasury yield closed at 5.15 percent, and every position on the board now waits for one event, Nvidia's earnings on Tuesday, the first under interim chief executive Colette Kress. Plus: producer prices print soft for the month and hot for the year, the dollar closes at a 19-month high, Europe banks its best week since June, bitcoin breaks its 200-week line, and the options market prices a 9.2 percent move into Nvidia.\n In today's brief:\n • Friday's Close: The Indexes Split, Chips Gave Back the Rally, and the Week Still Ended Green —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794691948230-9d40334580483.jpg",
-   "url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
-   "spotify_url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
-   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129445870/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F2ec25f51-97d5-30fb-6c68-19985067ec5b.m4a",
-   "number": null
-  },
   {
    "id": "fastbreak:917fa07c 6252 4d34 92f6 b28e2f23da7a",
    "show": "fastbreak",
@@ -1025,8 +955,8 @@
    "duration": 1495,
    "description": "Nvidia lost its founder: Jensen Huang resigned as president, CEO and director, with CFO Colette Kress as interim CEO five days before earnings. Google shipped Gemini 4 Hydrogen into Search and the Gemini app, Anthropic opened self-hosted Claude Managed Agents in private beta, and four nonprofits sued to freeze frontier AI development. Plus TSMC's employee-data exposure, Malaysia's Megaspeed chip check, Gemini smart glasses from $395, crypto's fall below $70,000, and who's hiring.\n • Jensen Huang resigns as Nvidia CEO, Colette Kress named interim — https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/\n • Google launches Gemini 4…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794586635273-dea01e8af24ad.jpg",
-   "url": "https://open.spotify.com/episode/5OK83qi7K1TW41mUUEF2V5",
-   "spotify_url": "https://open.spotify.com/episode/5OK83qi7K1TW41mUUEF2V5",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Friday--November-13--2026-e3sb4hh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129388529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F459501fc-b130-2962-d14c-ba6a4e065be7.m4a",
    "number": null
   },
@@ -2692,8 +2622,8 @@
    "duration": 826,
    "description": "Numa barraca de feira em Itajubá, colado acima das verduras, há um cartaz escrito à mão: \"Pix!!!!\" Nada de maquininha, nada de caixa registradora — porque em novembro de 2020 o Banco Central do Brasil lançou um sistema de pagamento instantâneo, que funciona sem parar e é gratuito para todas as pessoas do país. Cinco anos depois, ele movimenta mais transações do que todos os cartões de crédito, débito e pré-pagos do Brasil somados.\n Este episódio conta como: o mundo do dinheiro lento — TED, DOC e boleto de três dias — que o Pix substituiu; as três regras que o tornaram inevitável (obrigatório para todos os grandes bancos, gratuito para a pessoa física, idêntico em todos os aplicativos); o…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46721993/46721993-1793641874918-9624fc0b259be.jpg",
-   "url": "https://open.spotify.com/episode/6RYeRUteipghGjHZc9mtEe",
-   "spotify_url": "https://open.spotify.com/episode/6RYeRUteipghGjHZc9mtEe",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms204/episodes/23-Pix-Como-o-Brasil-Construiu-um-Sistema-de-Pagamento-Que-os-Americanos-No-Tm-Portugus-e3rk21u",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11714b104/podcast/play/128632318/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2Ffcd89944-295d-0fc8-39e0-a7b3a4ca58c9.m4a",
    "number": "23"
   },
@@ -9143,7 +9073,7 @@
    "spotify_name": "God is Brazilian",
    "full_catalog": true,
    "episodes": 46,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "harlem": {
    "ok": true,
@@ -9190,16 +9120,16 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 16,
-   "spotify_matches": 1
+   "episodes": 15,
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 1
+   "episodes": 13,
+   "spotify_matches": 0
   },
   "nyread": {
    "ok": true,
@@ -9223,15 +9153,15 @@
    "spotify_name": "The Tech Read",
    "full_catalog": true,
    "episodes": 12,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 1
+   "episodes": 5,
+   "spotify_matches": 0
   },
   "optionsdesk": {
    "ok": true,
@@ -9310,8 +9240,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 15,
-   "spotify_matches": 1
+   "episodes": 13,
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
