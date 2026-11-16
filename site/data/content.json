@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T02:53:06Z",
+ "generated_at": "2026-11-16T11:46:06Z",
  "shows": [
   {
    "key": "ccpod",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-15T22:18:05Z",
-   "count": 17
+   "latest": "2026-11-14T21:46:04Z",
+   "count": 16
   },
   {
    "key": "marketread",
@@ -436,8 +436,8 @@
    "complete": true,
    "art": "assets/art/columbiaread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47120618/47120618-1793473024667-3c58a827bef36.jpg",
-   "latest": "2026-11-11T23:12:58Z",
-   "count": 4
+   "latest": "2026-11-15T07:02:46Z",
+   "count": 5
   },
   {
    "key": "airead",
@@ -592,8 +592,8 @@
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-13T16:35:14Z",
-   "count": 7
+   "latest": "2026-11-15T05:09:56Z",
+   "count": 8
   },
   {
    "key": "fastbreak",
@@ -671,8 +671,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-11T23:26:22Z",
-   "count": 3
+   "latest": "2026-11-15T08:54:26Z",
+   "count": 4
   },
   {
    "key": "celticsdaily",
@@ -749,8 +749,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-14T22:50:18Z",
-   "count": 15
+   "latest": "2026-11-15T08:09:27Z",
+   "count": 16
   },
   {
    "key": "cbbdaily",
@@ -835,20 +835,6 @@
  ],
  "episodes": [
   {
-   "id": "globalread:0464e251 cc7f 4181 a7e9 7e9d32295d1f",
-   "show": "globalread",
-   "kind": "episode",
-   "title": "Sunday, November 15, 2026",
-   "date": "2026-11-15T22:18:05Z",
-   "duration": 1493,
-   "description": "Washington floats the question it had avoided for months — would Ukraine withdraw from the Donbas it still holds in exchange for NATO membership — and President Zelenskyy says only a referendum could answer it, as Europe agrees its own delegation for the next round of talks; the UN Security Council hears the Hormuz toll of 25 dead seafarers and adopts nothing; COP31 circulates its first outline in Antalya with the finance gap costed at $840 billion; Benjamin Netanyahu's unity appeal is rejected as spin by Gadi Eisenkot on the same evening; South Africa's ANC opens coalition talks with MK, the IFP and BOSA against a November 26 deadline; Congo's Ebola outbreak reaches six months with the…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794780952015-c3717ec14b328.jpg",
-   "url": "https://open.spotify.com/episode/01XzPiUR7lM2kjIep02grB",
-   "spotify_url": "https://open.spotify.com/episode/01XzPiUR7lM2kjIep02grB",
-   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129504372/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F60802f1a-bb13-e625-016d-a1903a5b8f94.m4a",
-   "number": null
-  },
-  {
    "id": "morningread:9ace85c1 395b 4d19 8bf4 b4bcac1d5c87",
    "show": "morningread",
    "kind": "episode",
@@ -874,6 +860,62 @@
    "url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
    "spotify_url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129474536/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Ff0e75865-b6be-cfcb-d04d-9903b9710a60.m4a",
+   "number": null
+  },
+  {
+   "id": "waiverwire:590cdb87 00e2 4bee a34c 6df287955ee9",
+   "show": "waiverwire",
+   "kind": "episode",
+   "title": "Stroud's Five Touchdowns, Burrow in Madrid, and Nacua's Knee: Week 9 Studs, Duds & News | Monday, November 9, 2026",
+   "date": "2026-11-15T08:54:26Z",
+   "duration": 714,
+   "description": "Week 9 Studs, Duds & News: fourteen games are final, and the weekend belonged to C.J. Stroud's five touchdowns, Joe Burrow's Madrid masterpiece, and Kenneth Walker's three scores — while the injury tent filled up behind them.\n In this edition: every final from Thursday and Sunday · Studs — Stroud, Burrow, Chase, Love, Prescott, Sanders, Walker, Boutte, Dell, and Waller · Duds — Goff, Mayfield, Swift, Judkins, Jeanty, Mitchell's zero, and Kraft · the fallout — Nacua's MRI, Mahomes' elbow tests, Jacobs' fractured finger, and Stevenson's knee · the Jonathan Taylor trade watch · and tonight's Bills-Vikings Monday nighter, previewed with its result still pending.\n Part of the Curious & Creative…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1794732813194-59a051408fd8f.jpg",
+   "url": "https://open.spotify.com/episode/0ehUiWAlrVE3oZhwsmUoQ4",
+   "spotify_url": "https://open.spotify.com/episode/0ehUiWAlrVE3oZhwsmUoQ4",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129471687/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Fd633fc28-4e08-edea-c029-d7a2594b3b6a.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:bdb8e358 75d9 4b8e 9325 79a69e90f5cf",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Texas Stuns LSU at the Death, Utah Survives a Tucson Shootout | Saturday, November 14, 2026",
+   "date": "2026-11-15T08:09:27Z",
+   "duration": 1091,
+   "description": "Saturday night in Week 11 came down to the final seconds twice: No. 6 Texas rallied from 21-10 down to beat No. 21 LSU 22-21 in Baton Rouge on Arch Manning's touchdown pass with three seconds left, and No. 2 Utah stayed unbeaten at 10-0 with a 40-39 shootout win at No. 23 Arizona on a 70-yard touchdown with 2:35 left. Plus Florida's upset of No. 11 Kentucky, Arkansas's rout of No. 17 South Carolina, and the full playoff picture heading into Tuesday's rankings.\n Texas 22, No. 21 LSU 21 • No. 2 Utah 40, No. 23 Arizona 39 • No. 1 Georgia 48, Missouri 21 • Florida 21, No. 11 Kentucky 14 • Arkansas 34, No. 17 South Carolina 6 • Texas Tech 52, Oklahoma State 27 • Wake Forest 49, SMU 7 • Boise…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794730109386-7668c311738e.jpg",
+   "url": "https://open.spotify.com/episode/1SO2eYk5RafdYU1JOjcAKw",
+   "spotify_url": "https://open.spotify.com/episode/1SO2eYk5RafdYU1JOjcAKw",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129470087/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F5a3704eb-9e84-80bf-529d-43a21d22b4cb.m4a",
+   "number": null
+  },
+  {
+   "id": "columbiaread:2d861917 a079 4968 b684 98d69916bb13",
+   "show": "columbiaread",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-15T07:02:46Z",
+   "duration": 1388,
+   "description": "South Carolina beat Texas A&M 17-9 on Homecoming at Williams-Brice: LaNorris Sellers returned from an ankle scare to throw for 251 yards and run in the 41-yard clincher, the Gamecocks are bowl eligible at 6-3 and up to No. 20, and tomorrow the State Board of Canvassers meets in Columbia to certify the election and order recounts.\n In today's brief: the Homecoming win and Sellers' ankle · the State Board of Canvassers certification and the District 89 and District 27 recounts · No. 1 South Carolina women rout No. 12 North Carolina 84-39 in Charlotte, with Chloe Kitts back · the men beat Southeast Missouri State 78-68 behind Kory Mincy · District 2 still too early to call · the Scout Motors…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1794733151232-26d9a10cb945f.jpg",
+   "url": "https://open.spotify.com/episode/2jlMjpdEXY3919ddSE7ZSt",
+   "spotify_url": "https://open.spotify.com/episode/2jlMjpdEXY3919ddSE7ZSt",
+   "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129467310/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F35afc90b-df69-dea5-b6f7-646b26295cb6.m4a",
+   "number": null
+  },
+  {
+   "id": "tvinsider:c8db4ac9 732d 46fa ad70 7e3a972f914d",
+   "show": "tvinsider",
+   "kind": "episode",
+   "title": "Nobody Wants This Renewed for Season 4 Two Weeks After Season 3 as Netflix Locks In Its Flagship Rom-Com | Monday, November 9, 2026",
+   "date": "2026-11-15T05:09:56Z",
+   "duration": 942,
+   "description": "Nobody Wants This is renewed for Season 4 two weeks after Season 3, as Netflix locks in its flagship rom-com — the fastest comedy renewal on the streamer this fall.\n Nobody Wants This renewed for Season 4 at Netflix, two weeks after Season 3: https://www.thewrap.com/creative-content/tv-shows/nobody-wants-this-renewed-season-4-netflix/\n The Institute Season 2 premiered Sunday on MGM Plus, writing past Stephen King's novel: https://bloody-disgusting.com/reviews/3974611/the-institute-season-2-review/\n City of God: The Fight Rages On Season 2 premiered Sunday on HBO Max, with Cenoura back: https://www.martincid.com/tv-shows/city-of-god-the-fight-rages-on/\n Apple TV renews Knife Edge: Chasing…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1794719334875-4f7b314026852.jpg",
+   "url": "https://open.spotify.com/episode/0X793CTJoLxRXF8biHsLFj",
+   "spotify_url": "https://open.spotify.com/episode/0X793CTJoLxRXF8biHsLFj",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129464166/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Fc44dfcbd-fd60-3108-a3fc-787a31047a26.m4a",
    "number": null
   },
   {
@@ -9344,8 +9386,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 17,
-   "spotify_matches": 1
+   "episodes": 16,
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -9368,8 +9410,8 @@
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
-   "episodes": 4,
-   "spotify_matches": 0
+   "episodes": 5,
+   "spotify_matches": 1
   },
   "airead": {
    "ok": true,
@@ -9416,8 +9458,8 @@
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime TV",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 8,
+   "spotify_matches": 1
   },
   "fastbreak": {
    "ok": true,
@@ -9440,8 +9482,8 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 3,
-   "spotify_matches": 0
+   "episodes": 4,
+   "spotify_matches": 1
   },
   "celticsdaily": {
    "ok": true,
@@ -9464,8 +9506,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 15,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "cbbdaily": {
    "ok": true,
