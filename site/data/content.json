@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T11:46:06Z",
+ "generated_at": "2026-11-16T22:21:10Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-15T03:41:42Z",
-   "count": 264
+   "latest": "2026-11-16T20:29:43Z",
+   "count": 265
   },
   {
    "key": "approachable",
@@ -358,8 +358,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-14T21:46:04Z",
-   "count": 16
+   "latest": "2026-11-16T19:06:38Z",
+   "count": 19
   },
   {
    "key": "marketread",
@@ -384,8 +384,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-14T21:33:01Z",
-   "count": 14
+   "latest": "2026-11-16T17:27:20Z",
+   "count": 15
   },
   {
    "key": "nyread",
@@ -835,6 +835,76 @@
  ],
  "episodes": [
   {
+   "id": "polymath:6d318085 6c78 4ab6 9969 6eeb36a246d5",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#267 Gut Health: The Center Where Mood, Stress, and Intuition Actually Live",
+   "date": "2026-11-16T20:29:43Z",
+   "duration": 4554,
+   "description": "Your gut is not just where food goes. It is home to trillions of microbes, a nervous system of its own, and a constant conversation with your brain that shapes your mood, your sleep, your skin, and how stressed you feel on an ordinary Tuesday.\n This episode sorts what science has actually proven about the gut from what it hasn't, then goes where the lab reports stop: the belly as a center of intuition in Japanese, Chinese, and Indian traditions, the tension your hips have been holding, the story your spine tells, and the small bone at the base of it all that ancient languages literally called sacred.\n If you have ever trusted a gut feeling, carried stress in your stomach, or wondered why…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794860873848-e74300b61e7e6.jpg",
+   "url": "https://open.spotify.com/episode/14Bl903yzOnm3BfZOV9UI7",
+   "spotify_url": "https://open.spotify.com/episode/14Bl903yzOnm3BfZOV9UI7",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129572088/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F4eb64607-aa03-884a-7270-3ca0f051ba38.m4a",
+   "number": "267"
+  },
+  {
+   "id": "globalread:3a74a2a6 f2bf 4bb2 93b4 f968d8359056",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "China Confirms First Xi-Trump-Putin Summit in Shenzhen | Monday, November 16, 2026",
+   "date": "2026-11-16T19:06:38Z",
+   "duration": 1545,
+   "description": "China confirms the first-ever Xi-Trump-Putin summit for Thursday in Shenzhen, with the New START framework gone and no agreement expected. Ukraine answers its exclusion with a 1,336-drone barrage that hits the Crimea bridge. Abu Dhabi agrees a prisoner exchange while the territory and NATO questions stay open. Hormuz shipping runs at 8 percent of normal as the US prepares Operation Iron Gate against Iran's land routes. France braces for Tuesday's national strike, South Africa's ANC opens coalition talks with every party, the Congo Ebola outbreak passes 11,200 cases at six months, and COP31 enters week two deadlocked over climate money.\n 0:00 China confirms the first Xi-Trump-Putin…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794855805260-904fb7c6664cd.jpg",
+   "url": "https://open.spotify.com/episode/43hWhx7sy12BS0fg3PeTDV",
+   "spotify_url": "https://open.spotify.com/episode/43hWhx7sy12BS0fg3PeTDV",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129567103/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2Fe9664441-47da-6581-a9b1-a028145e1cbe.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:81abc49a 7f8a 41d9 9a06 e11aef9b9ea3",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Monday, November 16, 2026",
+   "date": "2026-11-16T17:27:20Z",
+   "duration": 1175,
+   "description": "Asia's chip complex had one of its worst days on record overnight: Taiwan's Taiex fell 6 percent with TSMC down nearly 6, the Kospi lost 3.6 percent, and the Nikkei dropped back below 60,000, while Hong Kong rose and Europe held near record highs. U.S. futures are lower into the heaviest week of the month: Nvidia reports tomorrow under interim CEO Colette Kress, with the founder's possible return and a public board fight hanging over the call; the 10-year yield sits above 5.1 percent; Chair Warsh speaks at noon; and the trillion-dollar Anthropic IPO prices Wednesday, the same morning VIX options expire and the Fed minutes land.\n 0:00 The Asian chip rout3:46 Nvidia reports tomorrow5:25 The…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794849843973-a9627a302439.jpg",
+   "url": "https://open.spotify.com/episode/0EDdrAfAn93KQ9UifmiL47",
+   "spotify_url": "https://open.spotify.com/episode/0EDdrAfAn93KQ9UifmiL47",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129561608/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F19d2536a-38b7-4774-239f-098b08e81cc9.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:e5aee902 3527 44b2 80a0 295438e760f9",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-16T17:00:10Z",
+   "duration": 1343,
+   "description": "Israel's President Herzog chooses Gadi Eisenkot over Benjamin Netanyahu to try to form the next government, with the formal mandate handed over in Jerusalem today; South Africa's ANC goes into Sunday's declaration at 30.81 percent, its worst result since 1994, with 135 councils hung; COP31 opens Monday in Antalya with 1.5 degrees conceded and Nepal and Bhutan pushing a mountain agenda after the Bhote Koshi disaster; Qatar's Hormuz plan would trade IAEA inspectors for a lifted blockade and a second-day reopening; France's fourth Saturday draws 146,000 as the banned Concorde rally is contained and its spokespeople are taken into custody; Paraguay's prosecutors formally charge former president…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794848298347-dbe41fdb1b788.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Sunday--November-8--2026-e3sgbh5",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129559525/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2Fa7df2f61-5175-d00d-1b50-ca0999506c09.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:0464e251 cc7f 4181 a7e9 7e9d32295d1f",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Sunday, November 15, 2026",
+   "date": "2026-11-15T22:18:05Z",
+   "duration": 1493,
+   "description": "Washington floats the question it had avoided for months — would Ukraine withdraw from the Donbas it still holds in exchange for NATO membership — and President Zelenskyy says only a referendum could answer it, as Europe agrees its own delegation for the next round of talks; the UN Security Council hears the Hormuz toll of 25 dead seafarers and adopts nothing; COP31 circulates its first outline in Antalya with the finance gap costed at $840 billion; Benjamin Netanyahu's unity appeal is rejected as spin by Gadi Eisenkot on the same evening; South Africa's ANC opens coalition talks with MK, the IFP and BOSA against a November 26 deadline; Congo's Ebola outbreak reaches six months with the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794780952015-c3717ec14b328.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Sunday--November-15--2026-e3sellk",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129504372/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F60802f1a-bb13-e625-016d-a1903a5b8f94.m4a",
+   "number": null
+  },
+  {
    "id": "morningread:9ace85c1 395b 4d19 8bf4 b4bcac1d5c87",
    "show": "morningread",
    "kind": "episode",
@@ -843,8 +913,8 @@
    "duration": 1352,
    "description": "America's airlines cancelled nearly 6,500 flights on Saturday as the country dug out from Friday's nationwide ground stop, with a full recovery promised by Sunday night and a $50 billion argument over the fix already under way. Plus: Bahrain says it intercepted a second Iranian attack; the Senate leadership fight gets a poll number; Democrats split over the permitting bill; the Fed names AI its top financial risk; Nvidia and Anthropic face their pricing week; and a pardon bill meets the Constitution.\n In today's brief:\n • The Recovery: A Cause, a Price Tag, and a Sunday Deadline — https://thepointsguy.com/news/faa-groundstop-flights-grounded-nationwide\n • The War: A Second Claim Over…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794738908534-1902d7bcc3582.jpg",
-   "url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
-   "spotify_url": "https://open.spotify.com/episode/0368i238apA6tODuG7mtSm",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Sunday--November-15--2026-e3sdoiv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129474591/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F145b60eb-6f0c-4a58-a5ea-ac23430135a6.m4a",
    "number": null
   },
@@ -857,8 +927,8 @@
    "duration": 1085,
    "description": "Los Angeles wakes up to a dry Sunday and a warning from the mayor-elect's own movement: the Long Beach chapter of the Democratic Socialists of America tells Nithya Raman to govern like a \"true democratic socialist\" — or it will bring the fight to her, above all over LAPD Chief Jim McDonnell. Plus: Council District 9 is down to 41 votes with 13,000 ballots awaiting signature cures, the surf stays dangerous through Tuesday even as the rain breaks, Metro moves the Sepulveda rail comment deadline to November 23 with its last meeting Monday in Sherman Oaks, Raman inherits LA28 from an isolated seat at City Hall, and the Lakers close their road trip in Phoenix without Austin Reaves.\n Plus the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794738797478-be5933cda2dc5.jpg",
-   "url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
-   "spotify_url": "https://open.spotify.com/episode/3nvwt1H1QLIcs8dnzyMObu",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Sunday--November-15--2026-e3sdoh8",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129474536/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Ff0e75865-b6be-cfcb-d04d-9903b9710a60.m4a",
    "number": null
   },
@@ -950,13 +1020,13 @@
    "id": "polymath:f69eda44 6893 448d 894d 6829f06e3e1e",
    "show": "polymath",
    "kind": "episode",
-   "title": "The Future of War Is Already Here",
+   "title": "#266 The Future of War Is Already Here",
    "date": "2026-11-15T03:41:42Z",
    "duration": 3937,
    "description": "The future of war is not coming. In Ukraine, it has been in combat for years, and it looks less like a fighter jet than a workbench of cheap drones built like consumer electronics.\n A first-person-view drone costing a few hundred dollars can destroy armor worth millions. A February 2025 RUSI report found tactical drones accounted for roughly 60 to 70 percent of damaged and destroyed Russian systems, and a 10-to-15-kilometer kill zone now sits on either side of the front. When jamming kills the radio link, fiber-optic drones and machine vision for the final approach keep flying — with, in the systems CSIS studied, a human still making the engagement decision. At sea, Ukraine’s Magura boats…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794714076781-8bf3018cfe1cb.jpg",
-   "url": "https://open.spotify.com/episode/46Y2O8mXKUFnZLE55eIOA7",
-   "spotify_url": "https://open.spotify.com/episode/46Y2O8mXKUFnZLE55eIOA7",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/266-The-Future-of-War-Is-Already-Here-e3sdc9m",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129462006/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F8d68e051-5b8b-8fe5-b415-92f41d84f9f6.m4a",
    "number": "266"
   },
@@ -964,12 +1034,12 @@
    "id": "polymath:89841b83 26e0 464d b372 1bc049fae7f2",
    "show": "polymath",
    "kind": "episode",
-   "title": "Donna Summer: The Mother of Modern Dance Music",
+   "title": "#265 Donna Summer: The Mother of Modern Dance Music",
    "date": "2026-11-15T03:39:35Z",
    "duration": 2891,
    "description": "She was called the Queen of Disco, but that title is too small. Donna Summer did not just rule an era — she started the ones that followed it.\n In 1975, “Love to Love You Baby” stretched a pop hit to seventeen minutes and helped invent the extended dance record. Two years later, “I Feel Love,” built almost entirely on a Moog synthesizer, landed like a message from ahead: Brian Eno reportedly told David Bowie he had heard “the sound of the future.” The Library of Congress later added it to the National Recording Registry, and its sequenced bassline, four-on-the-floor kick, and weightless vocal became the template for house, techno, Hi-NRG, Eurodance, and EDM.\n Then came the reign listeners…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794713860299-1bb6725df104a.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/Donna-Summer-The-Mother-of-Modern-Dance-Music-e3sdc5q",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/265-Donna-Summer-The-Mother-of-Modern-Dance-Music-e3sdc5q",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129461882/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F2981aca5-a41c-c7b4-e103-006d2ff2413c.m4a",
    "number": "265"
@@ -1011,8 +1081,8 @@
    "duration": 1231,
    "description": "Banks and credit investors are pulling back on AI debt after a $2.5 trillion Nasdaq 100 drop, Anthropic reportedly secured $3.4 billion in generators for 1.7 gigawatts of data center power, SoftBank faces scrutiny ahead of Tuesday earnings, Taiwan's October exports hit a record $96.76 billion on AI chips, President Trump signaled openness to AI guardrails, Nvidia's board is reviewing whether its CEO was targeted by a foreign intelligence effort, and TeraWulf's quarter shows the Anthropic lease economics up close — plus new small models listed with no independent scores yet.\n • Banks and credit investors grow wary of AI debt after the selloff —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794698886827-ea90988027435.jpg",
-   "url": "https://open.spotify.com/episode/7ggzc2H9i7IiOtfy7qKdK3",
-   "spotify_url": "https://open.spotify.com/episode/7ggzc2H9i7IiOtfy7qKdK3",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Monday--November-9--2026-e3sd5oa",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129455306/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F95b4a7a6-8311-90b8-eb50-77c77a7a52b8.m4a",
    "number": null
   },
@@ -1081,8 +1151,8 @@
    "duration": 1375,
    "description": "Saturday opens in the dig-out from the first nationwide FAA ground stop since 9/11: radar and communications instability at air traffic control centers halted every departure in America for more than four hours on Friday, thousands of flights are still canceled today, and the precise cause is still developing. Then the fallout that owned X, as Ole Miss at Oklahoma gets moved to Sunday because the Rebels could not fly; Microsoft declares its day-long global outage over; Alaska's last uncalled Senate race sits 445 votes from a majority; Jensen Huang gets his hashtags; and the platform roundup across X, Reddit, TikTok and Instagram, plus what is bubbling up next.\n • FAA Ground Stop, Reuters…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794693583973-39610c5630f84.jpg",
-   "url": "https://open.spotify.com/episode/3XzB0xNvQeQTPSCxePM3Nl",
-   "spotify_url": "https://open.spotify.com/episode/3XzB0xNvQeQTPSCxePM3Nl",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/The-FAA-Grounded-America-for-Four-Hours-and-Saturday-Is-Still-Digging-Out--Saturday--November-14--2026-e3scu8n",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129447639/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F7729d186-033b-fa20-170c-f2e055c452ed.m4a",
    "number": null
   },
@@ -1109,8 +1179,8 @@
    "duration": 1239,
    "description": "Wall Street snapped a four-week losing streak with its best week in weeks, but Friday ended the way the week lived: chips gave back the rally, the 10-year Treasury yield closed at 5.15 percent, and every position on the board now waits for one event, Nvidia's earnings on Tuesday, the first under interim chief executive Colette Kress. Plus: producer prices print soft for the month and hot for the year, the dollar closes at a 19-month high, Europe banks its best week since June, bitcoin breaks its 200-week line, and the options market prices a 9.2 percent move into Nvidia.\n In today's brief:\n • Friday's Close: The Indexes Split, Chips Gave Back the Rally, and the Week Still Ended Green —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794691948230-9d40334580483.jpg",
-   "url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
-   "spotify_url": "https://open.spotify.com/episode/2YXbGTlMxUJoMpNOOcQGQ2",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Saturday--November-14--2026-e3scshe",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129445870/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F2ec25f51-97d5-30fb-6c68-19985067ec5b.m4a",
    "number": null
   },
@@ -9293,7 +9363,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 264,
+   "episodes": 265,
    "spotify_matches": 1
   },
   "approachable": {
@@ -9363,7 +9433,7 @@
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
    "episodes": 11,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "morningread": {
    "ok": true,
@@ -9371,7 +9441,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 21,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -9379,22 +9449,22 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 19,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 16,
-   "spotify_matches": 0
+   "episodes": 19,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 14,
+   "episodes": 15,
    "spotify_matches": 1
   },
   "nyread": {
@@ -9419,7 +9489,7 @@
    "spotify_name": "The Tech Read",
    "full_catalog": true,
    "episodes": 13,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
