@@ -159,3 +159,10 @@
   .leg a, .leg__go span, .wall a, .svc-chips a, .lab, .ways a { transition: none; }
   .leg a:hover, .wall a:hover, .svc-chips a:hover, .lab:hover, .ways a:hover, .leg a:hover .leg__go span { transform: none; }
 }
+.lab--strat { display: flex; background: var(--grape); }
+.leg__visual--strat { display: flex; background: var(--grape); }
+@media (max-width: 700px) {
+  .leg__visual--strat .stratile { justify-content: center; padding: .8rem; }
+  .leg__visual--strat .stratile__k { display: none; }
+  .leg__visual--strat .stratile__big--sm { font-size: 1.15rem; }
+}

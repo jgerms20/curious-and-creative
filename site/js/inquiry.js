@@ -5,7 +5,7 @@
 (() => {
   const CC = window.CC || (window.CC = {});
   const INBOX = "admin@curiousandcreative.co";
-  const LEGS = [["network", "The Network"], ["studio", "The Studio"], ["consultancy", "The Consultancy"], ["other", "Not sure yet"]];
+  const LEGS = [["network", "The Network"], ["studio", "Productions"], ["consultancy", "The Consultancy"], ["other", "Not sure yet"]];
   // older links still say ?topic=…; send them to the right part of the house
   const TOPIC_LEG = {
     request: "network", guest: "network", podcast: "network", network: "network",
