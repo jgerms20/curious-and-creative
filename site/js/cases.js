@@ -20,7 +20,7 @@
   }
 
   const LEGS = {
-    studio: { label: "The Studio", page: "pages/studio.html" },
+    studio: { label: "Productions", page: "pages/studio.html" },
     network: { label: "The Network", page: "pages/shows.html" },
     consultancy: { label: "The Consultancy", page: "pages/consultancy.html" },
   };

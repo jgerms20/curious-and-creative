@@ -19,7 +19,7 @@ media-network layout (Ringer-inspired structure), C&C colors, light + dark.
 - Spotify-only shows record each newest episode as it appears; pin the show's RSS feed in `shows.json` to get the full back catalog.
 
 ## Nav & pages
-Header: The Network (`pages/shows.html`) · The Studio · The Consultancy · About · Contact. Shop, Archive, Manifesto, Videos, and Writing live in the menu drawer and footer. Standing rules: `.claude/skills/cc-house-rules/SKILL.md`.
+Header: The Network (`pages/shows.html`) · Productions (`pages/studio.html`, "Curious & Creative Productions") · The Consultancy · About · Contact. Shop, Archive, Manifesto, Videos, and Writing live in the menu drawer and footer. Standing rules: `.claude/skills/cc-house-rules/SKILL.md`.
 - `pages/videos.html`: featured player + every video (YouTube and Spotify video episodes).
 - `pages/writing.html`: both Substacks from `data/writing.json` (refreshed by the pipeline; Substack blocks GitHub's servers, so it reads the feed through rss2json).
 - Inventions and Kindling moved to joshuamgerman.com on Nov 9, 2026. They are not linked from this site; the old `/kindling/` files remain only so existing links don't break.

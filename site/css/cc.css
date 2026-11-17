@@ -1011,3 +1011,11 @@ a.ncard__latest:hover { text-decoration: underline; }
 .about-scail { margin-top: 1.5rem; max-width: 68ch; color: var(--ink-soft); font-size: 1rem; }
 /* network page: keep each show blurb to three lines; the show page carries the rest */
 .showblock__about { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Strategy tile: the Consultancy's type-led visual (instead of Gen Alpha art) */
+.stratile { display: flex; flex-direction: column; justify-content: space-between; gap: .8rem; width: 100%; height: 100%; padding: clamp(.9rem, 2.4vw, 1.4rem); background: var(--grape); color: #fff; font-family: var(--font); }
+.stratile__k { align-self: flex-start; font-size: .72rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; padding: .35em .8em; border-radius: var(--pill); background: rgba(0, 0, 0, .22); }
+.stratile__list { display: grid; gap: .1em; font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .95; font-size: clamp(1.05rem, 2.6vw, 1.7rem); }
+.stratile__list span:nth-child(even) { color: #160B33; }
+.stratile__big { font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .92; font-size: clamp(1.8rem, 4.6vw, 3.2rem); max-width: 14ch; }
+.stratile__big--sm { font-size: clamp(1.3rem, 3.4vw, 2.1rem); }

@@ -21,14 +21,15 @@ Joshua shouldn't have to re-explain these. If a request conflicts with a rule, a
 - **Founder-experience line**, word for word, in its own section: "Our founders bring experience from work on Levi's, Gatorade, DoorDash, DIRECTV, Sephora, MLB, and BMW." That experience is agency work, never C&C client work.
 - **SCAiL** appears only in the site footer and once on About.
 - **Contact** is admin@curiousandcreative.co through the Supabase inquiry form (`CC.mountInquiry`). No personal Gmail anywhere.
-- **Exactly one @viewsbygerm link**, at the end of Studio > Photography.
+- **Exactly one @viewsbygerm link**, at the end of Productions > Photography.
 - **Gen Alpha Intelligence Lab** sits behind a password gate (`CC.labGate`). Never print the password on a page.
 - **Kindling and Inventions** live on joshuamgerman.com, not here.
 
 ## Structure (CONFIRMED)
-- Three legs: **The Network**, **The Studio**, **The Consultancy**.
+- Three legs: **The Network**, **Curious & Creative Productions** (nav label "Productions"; was "The Studio", renamed Nov 17; URL stays `pages/studio.html`, inquiry value stays `studio`), **The Consultancy**.
+- The Consultancy leads with strategy (the type-led `.stratile`). Gen Alpha is a small "original research" card lower on its page, never the leg's front image.
 - The homepage and leg pages use identical leg names and leg lines.
-- Event coverage is a named Studio service.
+- Event coverage is a named Productions service.
 - Anything else drafted Nov 8–9 is PROPOSED until Joshua rules on it. Don't lock it in.
 
 ## Voice

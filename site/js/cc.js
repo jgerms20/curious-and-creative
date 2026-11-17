@@ -45,7 +45,7 @@
   const PAGES = [
     { label: "Home", href: "index.html", footer: false, words: "home front page latest" },
     { label: "The Network", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break horseshoe columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books" },
-    { label: "The Studio", href: "pages/studio.html", nav: true, words: "the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
+    { label: "Productions", href: "pages/studio.html", nav: true, words: "productions curious and creative productions the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
     { label: "The Consultancy", href: "pages/consultancy.html", nav: true, words: "the consultancy consulting strategy brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
     { label: "About", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders co-founders team company" },
     { label: "Contact", href: "pages/contact.html", nav: true, words: "contact email inquiry hello hire work with us pitch guest press request a show" },
