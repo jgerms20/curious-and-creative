@@ -26,8 +26,9 @@ Joshua shouldn't have to re-explain these. If a request conflicts with a rule, a
 - **Kindling and Inventions** live on joshuamgerman.com, not here.
 
 ## Structure (CONFIRMED)
-- Three legs: **The Network**, **Curious & Creative Productions** (nav label "Productions"; was "The Studio", renamed Nov 17; URL stays `pages/studio.html`, inquiry value stays `studio`), **The Consultancy**.
-- The Consultancy leads with strategy (the type-led `.stratile`). Gen Alpha is a small "original research" card lower on its page, never the leg's front image.
+- Three legs: **The Network**, **Curious & Creative Productions** (nav label "Productions"; was "The Studio", renamed Nov 17; URL stays `pages/studio.html`, inquiry value stays `studio`), **Strategy** (renamed from The Consultancy Nov 17; "consulting" may appear in copy; URL stays `pages/consultancy.html`, inquiry value stays `consultancy`).
+- Strategy is literal strategy, sold by need: research and polling, forecasting, audience strategy, campaign strategy, podcast strategy, AI workflow strategy; engagements are sprint, project, or ongoing. Its visual is the type-led `.stratile`. Gen Alpha is a small "original research" card lower on its page, never the leg's front image.
+- Nav: The Network · Productions · Strategy · Manifesto · About · Contact. The Manifesto is the company's mission (curiosity, evidence, journalistic integrity, taste, AI amplifies judgment and never makes the call); the Network's eight standards sit under it.
 - The homepage and leg pages use identical leg names and leg lines.
 - Event coverage is a named Productions service.
 - Anything else drafted Nov 8–9 is PROPOSED until Joshua rules on it. Don't lock it in.

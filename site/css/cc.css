@@ -1019,3 +1019,12 @@ a.ncard__latest:hover { text-decoration: underline; }
 .stratile__list span:nth-child(even) { color: #160B33; }
 .stratile__big { font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .92; font-size: clamp(1.8rem, 4.6vw, 3.2rem); max-width: 14ch; }
 .stratile__big--sm { font-size: clamp(1.3rem, 3.4vw, 2.1rem); }
+
+/* Manifesto: the company poem, set large, line by line */
+.mfo { padding: clamp(1.5rem, 5vw, 4rem) 0 clamp(2.5rem, 6vw, 4.5rem); }
+.mfo__poem { margin-top: clamp(1.2rem, 3vw, 2rem); display: grid; gap: clamp(.6rem, 1.4vw, 1rem); max-width: 64rem; font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 600; line-height: 1.4; }
+.mfo__poem p { margin: 0; max-width: 40ch; }
+.mfo__big { margin-top: clamp(1rem, 3vw, 2rem) !important; font-size: clamp(2.4rem, 7vw, 5.4rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .9; letter-spacing: -.01em; max-width: none !important; }
+.mfo__big:first-child { margin-top: 0 !important; }
+.mfo__sign { max-width: none !important; margin-top: clamp(1.5rem, 4vw, 2.5rem) !important; font-size: clamp(2rem, 6vw, 4.2rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .92; }
+.mfo__sign span { color: var(--pink); }
