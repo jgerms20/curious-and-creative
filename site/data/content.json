@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T21:47:59Z",
+ "generated_at": "2026-11-17T23:01:12Z",
  "shows": [
   {
    "key": "ccpod",
@@ -685,8 +685,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-17T00:49:29Z",
-   "count": 5
+   "latest": "2026-11-17T14:32:32Z",
+   "count": 6
   },
   {
    "key": "celticsdaily",
@@ -1012,6 +1012,20 @@
    "url": "https://open.spotify.com/episode/0fKvrMbo7D4wobwXLsKetB",
    "spotify_url": "https://open.spotify.com/episode/0fKvrMbo7D4wobwXLsKetB",
    "audio": "https://anchor.fm/s/119799630/podcast/play/129623410/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F7b3d915a-1ccc-98e5-48a0-4261b735233c.m4a",
+   "number": null
+  },
+  {
+   "id": "waiverwire:1f85ee09 1a87 4817 bbac 5c340d0037df",
+   "show": "waiverwire",
+   "kind": "episode",
+   "title": "Tyson, Black and Harris Lead the Bye-pocalypse Waiver Board | Tuesday, November 17, 2026",
+   "date": "2026-11-17T14:32:32Z",
+   "duration": 1452,
+   "description": "Week 11 is the bye-pocalypse: Atlanta, Cleveland, Green Bay, the Rams, New England and Seattle are all off, so today's claims are starters, not luxuries. Monday night closed Week 10 with the Chargers' first win, 23-20 at Baltimore, behind Omarion Hampton's 105 rushing yards — and this flagship edition folds that fallout in first, then ranks the adds by position with FAAB guidance.\n The board: check for Emmett Johnson first, then Kaelon Black, Seth McGowan and Thursday's Emari Demercado ticket at running back; Jordyn Tyson, Adonai Mitchell, Tre' Harris, Ryan Flournoy and Caleb Douglas at receiver; Chig Okonkwo and Cam Ward as the streamers; the Chiefs, Bears and Lions defenses; an honest…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1794925867711-12a8a91d966cb.jpg",
+   "url": "https://open.spotify.com/episode/6a9uVzCtQzjc3P8vr3Tlx9",
+   "spotify_url": "https://open.spotify.com/episode/6a9uVzCtQzjc3P8vr3Tlx9",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129620913/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F09e4716b-04e9-a6ca-0ac3-9d4e284456a9.m4a",
    "number": null
   },
   {
@@ -10096,8 +10110,8 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 5,
-   "spotify_matches": 0
+   "episodes": 6,
+   "spotify_matches": 1
   },
   "celticsdaily": {
    "ok": true,
