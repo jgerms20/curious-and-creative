@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T14:41:16Z",
+ "generated_at": "2026-11-17T21:47:59Z",
  "shows": [
   {
    "key": "ccpod",
@@ -49,8 +49,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-17T00:52:04Z",
-   "count": 266
+   "latest": "2026-11-17T21:42:01Z",
+   "count": 268
   },
   {
    "key": "approachable",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -165,7 +165,7 @@
    "ai": "full",
    "principal": "Joshua German",
    "category": "culture",
-   "cadence": "Mon · Wed · Fri · Sun",
+   "cadence": "Mon · Wed · Fri",
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Jazz Riff",
@@ -192,6 +192,7 @@
    "ai": "full",
    "principal": "Joshua German",
    "category": "culture",
+   "cadence": "Weekly · English + Portuguese",
    "feed": "https://anchor.fm/s/11714b104/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4tAY78JV37aIgmJ2d1iF3w",
    "feed_title": "God is Brazilian",
@@ -218,6 +219,7 @@
    "spotify": "0eKxqwy7sMDyNXkCRR2IMN",
    "rss": "https://anchor.fm/s/119157f24/podcast/rss",
    "tagline": "",
+   "cadence": "Tue · Fri",
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0eKxqwy7sMDyNXkCRR2IMN",
    "feed_title": "Once Upon a Time in Harlem",
@@ -225,8 +227,8 @@
    "complete": true,
    "art": "assets/art/harlem.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47058065/47058065-1792877027478-e10b06672d3e3.jpg",
-   "latest": "2026-11-13T16:53:44Z",
-   "count": 7
+   "latest": "2026-11-17T20:03:11Z",
+   "count": 8
   },
   {
    "key": "designdigest",
@@ -264,12 +266,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "Dominated the Conversation",
-   "short": "Dominated the Conversation",
+   "name": "The Zeitgeist",
+   "short": "The Zeitgeist",
    "category": "culture",
    "spotify": "48nwiqvaZCXqEiI1lGhb47",
    "rss": "https://anchor.fm/s/119799630/podcast/rss",
    "tagline": "",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/48nwiqvaZCXqEiI1lGhb47",
    "feed_title": "The Zeitgeist",
@@ -277,8 +280,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-17T05:11:07Z",
-   "count": 13
+   "latest": "2026-11-17T15:21:42Z",
+   "count": 14
   },
   {
    "key": "morningread",
@@ -296,7 +299,7 @@
    "spotify": "1Dtk8svL8ahjAPtso2lBMp",
    "rss": "https://anchor.fm/s/118e6e448/podcast/rss",
    "category": "news",
-   "cadence": "Twice daily · AM + PM",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1Dtk8svL8ahjAPtso2lBMp",
    "feed_title": "The Morning Read",
@@ -323,7 +326,7 @@
    "spotify": "075sJdyAJA6JNbdZGwnyq0",
    "rss": "https://anchor.fm/s/11960849c/podcast/rss",
    "tagline": "",
-   "cadence": "Twice daily · AM + PM",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/075sJdyAJA6JNbdZGwnyq0",
    "feed_title": "The LA Daily",
@@ -331,8 +334,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-15T10:34:22Z",
-   "count": 19
+   "latest": "2026-11-17T11:02:03Z",
+   "count": 22
   },
   {
    "key": "globalread",
@@ -350,7 +353,7 @@
    "spotify": "0LOla5sXCGZ4pDLIk1qecU",
    "rss": "https://anchor.fm/s/1195d888c/podcast/rss",
    "tagline": "",
-   "cadence": "Twice daily · AM + PM",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0LOla5sXCGZ4pDLIk1qecU",
    "feed_title": "The Global Read",
@@ -358,8 +361,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-16T19:06:38Z",
-   "count": 19
+   "latest": "2026-11-17T10:56:44Z",
+   "count": 20
   },
   {
    "key": "marketread",
@@ -371,12 +374,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The Market Read",
-   "short": "The Market Read",
+   "name": "The Opening Bell",
+   "short": "The Opening Bell",
    "category": "news",
    "spotify": "7o0wIklaVB3sYrcTOt9Wnz",
    "rss": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "tagline": "",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/7o0wIklaVB3sYrcTOt9Wnz",
    "feed_title": "The Opening Bell",
@@ -403,6 +407,7 @@
    "spotify": "4VzGjjkSb5y61OjTVInWA1",
    "rss": "https://anchor.fm/s/119608a14/podcast/rss",
    "tagline": "",
+   "cadence": "Mon · Wed · Fri",
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4VzGjjkSb5y61OjTVInWA1",
    "feed_title": "The New York Read",
@@ -410,8 +415,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-13T16:29:20Z",
-   "count": 9
+   "latest": "2026-11-16T22:57:06Z",
+   "count": 10
   },
   {
    "key": "columbiaread",
@@ -429,6 +434,7 @@
    "spotify": "0dTaZgM38D6shA8x5BTITR",
    "rss": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "tagline": "",
+   "cadence": "Mon · Wed",
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0dTaZgM38D6shA8x5BTITR",
    "feed_title": "The Columbia Read",
@@ -449,12 +455,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The AI Read",
-   "short": "The AI Read",
+   "name": "The Tech Read",
+   "short": "The Tech Read",
    "category": "news",
    "spotify": "0p46JOERBiE9vjed6Pt68I",
    "rss": "https://anchor.fm/s/119609054/podcast/rss",
    "tagline": "",
+   "cadence": "Daily",
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0p46JOERBiE9vjed6Pt68I",
    "feed_title": "The Tech Read",
@@ -462,8 +469,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-14T23:29:14Z",
-   "count": 13
+   "latest": "2026-11-17T12:12:01Z",
+   "count": 16
   },
   {
    "key": "techread",
@@ -481,6 +488,7 @@
    "spotify": "1hQp8wRwxTf0BO6OfTtdDe",
    "rss": "https://anchor.fm/s/1196c6280/podcast/rss",
    "tagline": "",
+   "active": false,
    "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1hQp8wRwxTf0BO6OfTtdDe",
    "feed_title": "The Tech Read",
@@ -507,6 +515,7 @@
    "spotify": "5EvGemFi7cyaWysrrYXpIp",
    "rss": "https://anchor.fm/s/119606944/podcast/rss",
    "tagline": "",
+   "active": false,
    "feed": "https://anchor.fm/s/119606944/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5EvGemFi7cyaWysrrYXpIp",
    "feed_title": "The Options Desk",
@@ -533,6 +542,7 @@
    "spotify": "1OhlHYPg6qvrXoGKhc2WvQ",
    "rss": "https://anchor.fm/s/119606d2c/podcast/rss",
    "tagline": "",
+   "active": false,
    "feed": "https://anchor.fm/s/119606d2c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1OhlHYPg6qvrXoGKhc2WvQ",
    "feed_title": "The Crypto Read",
@@ -559,6 +569,7 @@
    "spotify": "23w2HgOlsc8OJUyx3z955X",
    "rss": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "category": "industry",
+   "cadence": "Mon · Fri",
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/23w2HgOlsc8OJUyx3z955X",
    "feed_title": "The Business of Hollywood",
@@ -579,12 +590,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The TV Insider",
-   "short": "The TV Insider",
+   "name": "Primetime TV",
+   "short": "Primetime TV",
    "category": "industry",
    "spotify": "5jXIg7zndmpXNrGRF3s68O",
    "rss": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "tagline": "",
+   "cadence": "Fri",
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/5jXIg7zndmpXNrGRF3s68O",
    "feed_title": "Primetime TV",
@@ -637,6 +649,7 @@
    "spotify": "0GRrulRcTaVs3rSqdqJFCQ",
    "rss": "https://anchor.fm/s/1196c5024/podcast/rss",
    "tagline": "",
+   "cadence": "Game days",
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/0GRrulRcTaVs3rSqdqJFCQ",
    "feed_title": "The Blitz",
@@ -664,6 +677,7 @@
    "rss": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "tagline": "",
    "cadence": "5x a week in season",
+   "active": false,
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4DZg4aE2C8FF1nV31XWCf6",
    "feed_title": "The Waiver Wire",
@@ -671,8 +685,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-17T14:32:32Z",
-   "count": 6
+   "latest": "2026-11-17T00:49:29Z",
+   "count": 5
   },
   {
    "key": "celticsdaily",
@@ -690,6 +704,7 @@
    "spotify": "4JSb8qpLtYL7O8eJp8F7qc",
    "rss": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "tagline": "",
+   "cadence": "Postgame",
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4JSb8qpLtYL7O8eJp8F7qc",
    "feed_title": "Celtics Daily",
@@ -697,8 +712,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-12T03:36:26Z",
-   "count": 9
+   "latest": "2026-11-17T06:52:38Z",
+   "count": 11
   },
   {
    "key": "coltsdaily",
@@ -716,6 +731,7 @@
    "spotify": "44iglaK8xQPnHHAVpUAgyx",
    "rss": "https://anchor.fm/s/119609694/podcast/rss",
    "tagline": "",
+   "cadence": "Tue · Thu + postgame",
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/44iglaK8xQPnHHAVpUAgyx",
    "feed_title": "Colts Daily",
@@ -723,8 +739,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-09T21:02:48Z",
-   "count": 10
+   "latest": "2026-11-17T13:53:43Z",
+   "count": 11
   },
   {
    "key": "cfbdaily",
@@ -742,6 +758,7 @@
    "spotify": "1fl00ImvclkYpwWiZzHtna",
    "rss": "https://anchor.fm/s/119609a7c/podcast/rss",
    "tagline": "",
+   "cadence": "Sat postgame + Wed",
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/1fl00ImvclkYpwWiZzHtna",
    "feed_title": "College Football Daily",
@@ -762,13 +779,12 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "College Basketball Daily",
-   "short": "College Basketball Daily",
+   "name": "Bracketology",
+   "short": "Bracketology",
    "category": "sports",
    "spotify": "70qRlnh5hY1WHBSMNvnPQE",
    "rss": "https://anchor.fm/s/11979a24c/podcast/rss",
    "tagline": "",
-   "cadence": "Weekly · Monday wrap",
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/70qRlnh5hY1WHBSMNvnPQE",
    "feed_title": "Bracketology",
@@ -789,12 +805,13 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "Gamecocks Daily",
-   "short": "Gamecocks Daily",
+   "name": "The Horseshoe",
+   "short": "The Horseshoe",
    "category": "sports",
    "spotify": "6A71aYP8TxEEJgOCOyTQs4",
    "rss": "https://anchor.fm/s/1196d625c/podcast/rss",
    "tagline": "",
+   "cadence": "Tue · Thu + postgame",
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/6A71aYP8TxEEJgOCOyTQs4",
    "feed_title": "The Horseshoe",
@@ -822,6 +839,7 @@
    "rss": "https://anchor.fm/s/11979a058/podcast/rss",
    "tagline": "",
    "cadence": "Mon · Wed · Fri",
+   "active": false,
    "feed": "https://anchor.fm/s/11979a058/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/2sP82t7Zd091zEe80Dk8Qi",
    "feed_title": "Gamecocks Basketball Daily",
@@ -831,21 +849,183 @@
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123686/47123686-1793486169544-fe6b5b99555b2.jpg",
    "latest": "2026-11-06T18:40:57Z",
    "count": 3
+  },
+  {
+   "key": "politicalread",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "The Political Read",
+   "short": "The Political Read",
+   "category": "news",
+   "tagline": "",
+   "cadence": "Daily",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "cbbweekly",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "College Basketball Daily",
+   "short": "College Basketball Daily",
+   "category": "sports",
+   "tagline": "",
+   "cadence": "Weekly · Monday wrap",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "cutandsew",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Cut & Sew",
+   "short": "Cut & Sew",
+   "category": "culture",
+   "tagline": "",
+   "cadence": "Wed",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "coverup",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "The Cover-Up",
+   "short": "The Cover-Up",
+   "category": "culture",
+   "tagline": "",
+   "cadence": "Thu",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "coldopen",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Cold Open",
+   "short": "Cold Open",
+   "category": "culture",
+   "tagline": "",
+   "latest": null,
+   "count": 0
+  },
+  {
+   "key": "cookedbooks",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Cooked Books",
+   "short": "Cooked Books",
+   "category": "culture",
+   "tagline": "",
+   "latest": null,
+   "count": 0
   }
  ],
  "episodes": [
   {
-   "id": "waiverwire:1f85ee09 1a87 4817 bbac 5c340d0037df",
-   "show": "waiverwire",
+   "id": "polymath:1a45a30f caad 4f59 9310 6be15d96b36c",
+   "show": "polymath",
    "kind": "episode",
-   "title": "Tyson, Black and Harris Lead the Bye-pocalypse Waiver Board | Tuesday, November 17, 2026",
-   "date": "2026-11-17T14:32:32Z",
-   "duration": 1452,
-   "description": "Week 11 is the bye-pocalypse: Atlanta, Cleveland, Green Bay, the Rams, New England and Seattle are all off, so today's claims are starters, not luxuries. Monday night closed Week 10 with the Chargers' first win, 23-20 at Baltimore, behind Omarion Hampton's 105 rushing yards — and this flagship edition folds that fallout in first, then ranks the adds by position with FAAB guidance.\n The board: check for Emmett Johnson first, then Kaelon Black, Seth McGowan and Thursday's Emari Demercado ticket at running back; Jordyn Tyson, Adonai Mitchell, Tre' Harris, Ryan Flournoy and Caleb Douglas at receiver; Chig Okonkwo and Cam Ward as the streamers; the Chiefs, Bears and Lions defenses; an honest…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1794925867711-12a8a91d966cb.jpg",
-   "url": "https://open.spotify.com/episode/6a9uVzCtQzjc3P8vr3Tlx9",
-   "spotify_url": "https://open.spotify.com/episode/6a9uVzCtQzjc3P8vr3Tlx9",
-   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129620913/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F09e4716b-04e9-a6ca-0ac3-9d4e284456a9.m4a",
+   "title": "#269 The Publishing Industry: The Editors, Agents, and Readers Who Decide What Gets Published",
+   "date": "2026-11-17T21:42:01Z",
+   "duration": 3675,
+   "description": "Publishing looks simple from the outside: a writer writes a book, and it appears on a shelf. This episode follows what actually happens in between, from the history of how publishing houses came to be to the jobs inside one today: the editors who acquire, the readers who screen manuscripts for a living, and the teams who turn a finished draft into a book readers can find.\n You will learn how a manuscript moves through a house, what literary agents actually do for writers, and how the money works: advances, royalties, and the subrights that can matter as much as the book itself. Voice and tone are treated as practical craft levers, with Frank Herbert as one example of a writer whose voice…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794951623716-3f44a14c80912.jpg",
+   "url": "https://open.spotify.com/episode/324jcVCmihtLbcUhTC49WV",
+   "spotify_url": "https://open.spotify.com/episode/324jcVCmihtLbcUhTC49WV",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129645986/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Fe43df0ba-1ded-f3d8-6177-9f5dcaf04d92.m4a",
+   "number": "269"
+  },
+  {
+   "id": "polymath:aa74aad4 670c 49b2 9a20 f85b20a6f7d5",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#259 Everest: Thin Air, and the Mind That Goes Looking for God",
+   "date": "2026-11-17T21:31:55Z",
+   "duration": 3748,
+   "description": "A single mountain that refuses every category: laboratory, puzzle, industry, temple. This episode follows Mount Everest through all four, from the 2026 film Everest: The Other Side and Jim Morrison's ski descent to the death-zone physiology that starves the brain at 8,400 metres.\n It takes up the sensed presence climbers have reported since Frank Smythe shared his mint cake with an invisible companion in 1933, the neuroscience that can induce the same presence in a laboratory, and the industry that allocates the mountain's risk: permits, queues, sponsorship, and the Sherpa climbers who carry the heaviest share of it.\n And it ends where the mountain's meaning is oldest: a goddess's palace, a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794950987344-bb88797d42004.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/259-Everest-Thin-Air--and-the-Mind-That-Goes-Looking-for-God-e3sivfl",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129645493/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F120ea801-002e-bc6d-78aa-c3c89efa9228.m4a",
+   "number": "259"
+  },
+  {
+   "id": "harlem:7591acdd bbb6 48e1 bf38 89c300394c98",
+   "show": "harlem",
+   "kind": "episode",
+   "title": "#007 The Cotton Club: The Room Harlem Could Not Enter",
+   "date": "2026-11-17T20:03:11Z",
+   "duration": 3092,
+   "description": "The most famous nightclub in America sat in the middle of Harlem, and Harlem could not get in. On the corner of West 142nd Street and Lenox Avenue, the Cotton Club put Duke Ellington, Cab Calloway, and Lena Horne on its stage, in front of audiences those performers were never allowed to join.\n It began as Jack Johnson's Club Deluxe and became a mob business: bootlegger Owney Madden rebuilt it as a whites-only room dressed to look like a Southern plantation, and used it to sell his beer. This episode follows how the club actually worked, the color line at the door and in the chorus line, the radio broadcasts that carried its bands across America, and the artists who turned a segregated room…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1794945710111-73166f59f3d6d.jpg",
+   "url": "https://open.spotify.com/episode/2Lpt7aA38SNs4cj4fBR9j1",
+   "spotify_url": "https://open.spotify.com/episode/2Lpt7aA38SNs4cj4fBR9j1",
+   "audio": "https://anchor.fm/s/119157f24/podcast/play/129639662/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F3274fc3b-7c0f-e929-0e6a-cfaefe5d9e63.m4a",
+   "number": "7"
+  },
+  {
+   "id": "dominatedconvo:d19385ef a3ae 4cae b8e8 26d693db267d",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "Robert Pattinson Is James Bond and the Internet Spent the Morning Checking If the Lights Were Still On | Tuesday, November 17, 2026",
+   "date": "2026-11-17T15:21:42Z",
+   "duration": 1330,
+   "description": "Five unrelated systems failed in five days (Microsoft's long outage, Friday's FAA ground stop, the overnight banking-app glitch, and United's Monday-evening outage) and the internet stitched them into one grand theory, on the very morning a viral prophecy said the lights would go out. The blackout turned out to be a routine one-minute emergency-alert test. Meanwhile Robert Pattinson was announced as the new James Bond in a flawless Instagram video while four Bond eras trended at once. Ahead: Nvidia's first earnings since Jensen Huang's resignation tonight, Alaska's ranked-choice tabulation Wednesday, and GTA VI on Thursday. Plus the platform roundup and what is bubbling up.\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794928818366-8fb8831b26c7c.jpg",
+   "url": "https://open.spotify.com/episode/0fKvrMbo7D4wobwXLsKetB",
+   "spotify_url": "https://open.spotify.com/episode/0fKvrMbo7D4wobwXLsKetB",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129623410/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F7b3d915a-1ccc-98e5-48a0-4261b735233c.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:f6c6b6e0 1c69 46ad af7a 8850fa9ea07a",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Jones Keeps the Job for Thursday Only: The Win Changed Nothing at Quarterback, Indianapolis Is 3-7 | Tuesday, November 17, 2026",
+   "date": "2026-11-17T13:53:43Z",
+   "duration": 1083,
+   "description": "The Indianapolis Colts beat Miami 24-22 to end a five-game losing streak, and the quarterback question got louder anyway: Daniel Jones threw for 108 yards with two interceptions and a 1.7 QBR, and while Shane Steichen confirmed Jones starts Thursday night at Houston, Monday was the first time he would not promise anything beyond that game. Plus: both starting cornerbacks and the left tackle on Monday's injury report, the young core making the decisive plays, and a Texans team that blew a 17-0 lead on Sunday and has not won at home all season.\n Segments: Jones starts Thursday, nothing promised after · What the Miami win actually was · Monday's injury report and roster moves · The quarterback…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1794924424098-8f4fd45dd00ae.jpg",
+   "url": "https://open.spotify.com/episode/1AVMu03W6mNwCSCVrzvlgi",
+   "spotify_url": "https://open.spotify.com/episode/1AVMu03W6mNwCSCVrzvlgi",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/129617544/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Fb1a3bb1e-6c46-62ef-630a-8b1e5cffb6f1.m4a",
    "number": null
   },
   {
@@ -860,6 +1040,20 @@
    "url": "https://open.spotify.com/episode/3Axev3e6B6xMrgk5D5L9fB",
    "spotify_url": "https://open.spotify.com/episode/3Axev3e6B6xMrgk5D5L9fB",
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/129614833/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Feed4722a-1a80-e391-65b4-26e77947dec6.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:e46af75e a744 47a4 9c2d 3236fb243b00",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Tuesday, November 17, 2026",
+   "date": "2026-11-17T12:12:01Z",
+   "duration": 981,
+   "description": "Washington licenses rented AI compute like shipped chips in a new Commerce rule covering five countries and overseas data centers, Nvidia reports its first quarter without Jensen Huang tonight, Anthropic's IPO is reportedly close to seven times oversubscribed a day before pricing, Alibaba ships Qwen4-Max at 2.4 trillion parameters, Claude acts inside other apps, OpenAI formalizes outside model assessments, science gets an open tool stack, and bitcoin steadies near $64,761 while ETFs sell and treasuries buy.\n • US licenses remote access to AI chips in new Commerce rule — https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794917478193-f1df8e6651a4a.jpg",
+   "url": "https://open.spotify.com/episode/4iHuETcwbidvSXnstI306i",
+   "spotify_url": "https://open.spotify.com/episode/4iHuETcwbidvSXnstI306i",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129612703/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F556114fc-77db-e101-dc36-6e643e3eb68e.m4a",
    "number": null
   },
   {
@@ -891,6 +1085,34 @@
    "number": null
   },
   {
+   "id": "ladaily:fb5baaa6 77e2 4442 8afd 376b0ac518ff",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Tuesday, November 17, 2026",
+   "date": "2026-11-17T11:02:03Z",
+   "duration": 1375,
+   "description": "Dolores Huerta lies in honor at the State Capitol — the first non-elected person in California history to receive the honor, with 600 people marching behind her casket. Plus: the season's first atmospheric river targets Thursday after a dry Tuesday, thousands of LAUSD students walk out over ICE, a judge refuses to pause the ruling on LA's top federal prosecutor, the county count stands with District 9 at 41 votes ahead of today's 5 p.m. update, District 4 makes its special-election case in Sherman Oaks, the Sepulveda comment clock runs to November 23, and the Lakers come home without Austin Reaves.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — the Lakers…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794913258743-f0455fa53a56d.jpg",
+   "url": "https://open.spotify.com/episode/5qnGUyG1cHdj1Sgsr9U3L0",
+   "spotify_url": "https://open.spotify.com/episode/5qnGUyG1cHdj1Sgsr9U3L0",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129609721/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F5a9e0cc1-b9e5-eee9-ade4-3688d6425a1f.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:e09ce790 b67e 48df a585 bda74d875e57",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Tanker Hit Off Oman as Hormuz Claims Multiply | Tuesday, November 17, 2026",
+   "date": "2026-11-17T10:56:44Z",
+   "duration": 1332,
+   "description": "A tanker is hit by a projectile off Oman as Iran claims more mine strikes in Hormuz and oil falls anyway, Ukraine and its European backers agree to meet in Berlin while Moscow objects, COP31's first draft exposes the finance and fossil-fuel divisions, the Shenzhen three-president meeting is two days away with expectations being lowered, Israel's speaker vote tests Eisenkot's numbers today, France's strike day arrives, South Africa's ANC owes its coalition statement with the first local deal done, and Congo's Ebola count passes 11,376 cases with children bearing the heaviest toll.\n 0:13 — Tanker hit off Oman as Hormuz claims multiply\n5:08 — Shenzhen summit: three presidents, competing…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794912954071-bbcfc15a5de15.jpg",
+   "url": "https://open.spotify.com/episode/7iroRsBCPVgkE1seE2Bo2M",
+   "spotify_url": "https://open.spotify.com/episode/7iroRsBCPVgkE1seE2Bo2M",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129609528/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F91da8140-ee1d-f0da-77fe-2a6eb80511e2.m4a",
+   "number": null
+  },
+  {
    "id": "fastbreak:f5446d50 a0b2 4553 b3c2 1b703fcefad4",
    "show": "fastbreak",
    "kind": "episode",
@@ -902,6 +1124,20 @@
    "url": "https://open.spotify.com/episode/2Trhv3qC3xeQJh5A8zosma",
    "spotify_url": "https://open.spotify.com/episode/2Trhv3qC3xeQJh5A8zosma",
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129606049/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Fe040b26e-26a3-e2e8-ece1-e4930bdbe2b1.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:ce9604cd f1e6 4239 b59c 50d09e59d730",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Celtics Beat the Hornets 119-80: Tatum Drops 34 in a 39-Point Rout, Boston Is 7-2 | Friday, November 6, 2026",
+   "date": "2026-11-17T06:52:38Z",
+   "duration": 603,
+   "description": "The Boston Celtics dismantled the Charlotte Hornets 119-80 in a wire-to-wire NBA Cup rout on Friday, November 6, 2026. Jayson Tatum returned from rest with 34 points, 8 rebounds and 9 assists in just 29 minutes, and Boston buried 24 threes on the way to 7-2 overall and 2-0 in Cup play. Derrick White added 18 and Payton Pritchard returned from an eye abrasion as the Celtics never trailed. Next up: a rematch at Milwaukee on Sunday, November 8.\n Timestamps:\n 0:00 - Intro and the 119-80 wire-to-wire rout\n 1:12 - The Tatum takeover: 34 points, 8 rebounds, 9 assists\n 2:58 - The three-point avalanche: 24 of 44 from deep\n 4:27 - Depth on display: White's 18 and Pritchard's return\n 6:14 -…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1794898312782-0a3c727637e38.jpg",
+   "url": "https://open.spotify.com/episode/1sCMpGnrOfJKRKn1TIQqBB",
+   "spotify_url": "https://open.spotify.com/episode/1sCMpGnrOfJKRKn1TIQqBB",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129600934/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F2cd38cd6-e2ff-1de0-2d04-ad91af23f9d1.m4a",
    "number": null
   },
   {
@@ -941,9 +1177,37 @@
    "duration": 1208,
    "description": "A president offered the White House press secretary job to the head of the UFC in a social media post, and a full day later nobody on any platform can agree on whether he was joking. Plus college football's Saturday on X, looksmaxxing reaching the top of Reddit's science page, a TikTok sound holding worldwide number one at two million videos, the Fortnite Pirate Shop Token bubbling up, and Godzilla Minus Zero chasing a box office record.\n Timestamps:\n 0:00 The Lead: Trump Offers Dana White the Press Secretary Job\n 5:37 College Football's Saturday on X\n 6:41 Instagram and the Diwali Current\n 8:10 Reddit: Looksmaxxing Reaches the Science Page\n 11:26 Bubbling Up: The Fortnite Pirate Shop…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1794892206325-170fab6d94539.jpg",
-   "url": "https://open.spotify.com/episode/0N7dgP2Nvnc8k6T34pYSsi",
-   "spotify_url": "https://open.spotify.com/episode/0N7dgP2Nvnc8k6T34pYSsi",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Trump-Offers-Dana-White-the-Press-Secretary-Job-and-the-Internet-Cannot-Tell-If-He-Is-Joking--Sunday--November-8--2026-e3shgf8",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129597352/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Fcf12a2f0-b5b9-1f07-e262-21d01223e749.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:5cf5f662 f307 41d0 a1c7 43a135fb649d",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Magic Beat the Celtics 115-105: Orlando's Paint Attack Ends the Streak and the Perfect Home Start, Boston Is 11-3 | Monday, November 16, 2026",
+   "date": "2026-11-17T03:12:28Z",
+   "duration": 1089,
+   "description": "The Orlando Magic beat the Boston Celtics 115-105 at TD Garden on Monday night, ending Boston's six-game winning streak and its perfect home start. Orlando won the paint 54-32, made 20 free throws to Boston's 9, and took the fourth quarter 40-28 after Boston's 36-point third quarter had flipped the game. Jayson Tatum finished with 24 points and 12 rebounds, Paul George scored 22 and Payton Pritchard added 21 off the bench. Desmond Bane led Orlando with 24 points, and Franz Wagner added 21 points, 7 rebounds and 9 assists. Boston is 11-3.\n Segments: the three numbers that explain the loss; the first-half slog and the third-quarter flip; the center question with Neemias Queta rested; credit…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1794885919775-7eb1d2b2bf62d.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Magic-Beat-the-Celtics-115-105-Orlandos-Paint-Attack-Ends-the-Streak-and-the-Perfect-Home-Start--Boston-Is-11-3--Monday--November-16--2026-e3shc58",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129592936/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F9d9c3a1b-b1f9-4da0-f8b4-d86460f8c0c6.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:5db2e46b deec 4c9b 9a69 9cdd0bf0a1f2",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-17T01:01:38Z",
+   "duration": 1334,
+   "description": "TSMC is reportedly weighing a move into 3D DRAM memory at Nvidia's request, with no decision confirmed — DEVELOPING. Meta brought Muse Wonder's Active Memory and Active Focus to everyone in Muse and Meta AI, Anthropic mapped how Claude agents remember and correct their own notes, CISA added an actively exploited SonicWall VPN flaw with a November 20 deadline, Europe's December 2 AI Act bans and marking deadline are weeks away, and ServiceNow cut staff in the UK, US and India while hiring for AI skills — plus a tiny free open model with a data warning attached.\n • TSMC weighs 3D DRAM at Nvidia's request, no decision confirmed —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794877207184-4c73a78ec6234.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Sunday--November-8--2026-e3sh5eg",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129586064/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F5e96bf11-0b2e-07eb-35ba-e3b9024ffb81.m4a",
    "number": null
   },
   {
@@ -955,8 +1219,8 @@
    "duration": 2803,
    "description": "In 1957, a working journalist with no college degree drove to the Oregon coast to write a magazine article about sand dunes. He never wrote it. The research swallowed him instead, and six years later it had become Dune — the most influential science fiction novel ever written, rejected by more than twenty publishers and rescued by a car-manual company.\n This episode is the story of Frank Herbert and the one book that outgrew him: the odd jobs and newsrooms that educated him, the wife whose salary financed six years of research, the desert religions and Caucasus histories he quarried to build Arrakis, and the warning at the book's center — Herbert wrote Paul Atreides as a caution about…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794876700457-e52f3f17a6e92.jpg",
-   "url": "https://open.spotify.com/episode/0VO9nABCQXNzni79QNTZMi",
-   "spotify_url": "https://open.spotify.com/episode/0VO9nABCQXNzni79QNTZMi",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/268-Frank-Herbert-The-Man-Who-Wrote-Dune-as-a-Warning-e3sh4sm",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129585494/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F3419f5c0-7698-ef92-f9d9-5d91dba68d77.m4a",
    "number": "268"
   },
@@ -1003,6 +1267,20 @@
    "number": null
   },
   {
+   "id": "nyread:f25f0425 c301 4f0d 89c3 72fae3142c55",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Monday, November 16, 2026",
+   "date": "2026-11-16T22:57:06Z",
+   "duration": 939,
+   "description": "Today Mayor Mamdani announces the future of the NYPD's Strategic Response Group — the protest unit he promised to disband — and the argument is already joined over whether it is a disbanding or a rebrand; Flatbush held an interfaith vigil Sunday for the eight killed in the building collapse, a missing cat named Isaac came home, and the Buildings Department's inspections widen to more than 160 linked sites; bodegas get 90 more days on the federal SNAP stocking rules, nationwide; Brooklyn tells DOT its $4 billion BQE bypass is not a real choice, while Greenpoint's McGuinness Boulevard redesign is finished; battery fires are up 68% and the city's own swapping partner broke FDNY rules, with a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794869692054-0719a460fd5be.jpg",
+   "url": "https://open.spotify.com/episode/1soD4Pow1aa5r7lQsBSmbC",
+   "spotify_url": "https://open.spotify.com/episode/1soD4Pow1aa5r7lQsBSmbC",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/129580775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F5fa098cc-a349-b3db-f565-0fa8b847a2b0.m4a",
+   "number": null
+  },
+  {
    "id": "marketread:b36d8863 071c 44dc 97f2 25b3f673f50b",
    "show": "marketread",
    "kind": "episode",
@@ -1029,6 +1307,34 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129572088/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F4eb64607-aa03-884a-7270-3ca0f051ba38.m4a",
    "number": "267"
+  },
+  {
+   "id": "airead:0ab68812 5248 420d 8ad0 474aec92dad2",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Monday, November 16, 2026",
+   "date": "2026-11-16T19:53:19Z",
+   "duration": 1632,
+   "description": "Anthropic's suppliers buy $26 billion of its IPO ahead of pricing Wednesday, Nvidia reports its first quarter without Jensen Huang on Tuesday, a senator says Commerce failed to stop AI chips reaching China, TSMC invests in both frontier labs, researchers break AMD's confidential cloud protection, Claude ships for factory floors, Google's agents work with the laptop shut, and bitcoin flushes below $62,000 before bouncing without its ETF buyers.\n 0:00 Anthropic's suppliers buy $26B of its IPO5:01 Nvidia reports without Jensen Huang6:56 A senator says Commerce let AI chips reach China10:12 TSMC invests in both frontier labs12:08 ETH Zurich breaks AMD's confidential cloud16:11 Claude ships for…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794858574040-45115b33f2719.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Monday--November-16--2026-e3sgllm",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129569910/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F664d676b-b30e-c99c-684e-d9434b372eb0.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:21dbd1f2 184e 44b1 8338 a52ca498a514",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-16T19:12:16Z",
+   "duration": 1264,
+   "description": "Los Angeles wakes up on the first Sunday of its new era with its mayor-elect in the street: Nithya Raman joined protesters outside White Memorial hospital in Boyle Heights after ICE agents blocked an emergency entrance Friday night, while the count widened to 94,921 votes, a $321.8 million budget hole got a number, two Red Flag fires stayed small, and a ninety-degree Sunday closes the weekend.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — the Rose Bowl Flea at dawn, the LA NDN Flea at The Broad, Free Second Sunday at the USC Pacific Asia Museum, the Chargers at SoFi, the LA Phil at 2 p.m., and Lauryn Hill and Wyclef Jean at the Hollywood Bowl tonight.\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794856235047-a0a529bc75c01.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Sunday--November-8--2026-e3sgjbn",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129567543/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2Fb17fdca3-bd81-02e9-ecdb-a51e733b551a.m4a",
+   "number": null
   },
   {
    "id": "globalread:3a74a2a6 f2bf 4bb2 93b4 f968d8359056",
@@ -1070,6 +1376,20 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Sunday--November-8--2026-e3sgbh5",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129559525/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2Fa7df2f61-5175-d00d-1b50-ca0999506c09.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:77d58462 07af 4764 b33d da3c406fe980",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Monday, November 16, 2026",
+   "date": "2026-11-16T16:37:25Z",
+   "duration": 970,
+   "description": "California lays Dolores Huerta to rest today — she lies in honor in the State Capitol Rotunda with flags at half-staff, the farewell this show's first edition began on October 29. Plus: District 4 organizes for a special election to replace Mayor-elect Nithya Raman on the Council, Raman hosts her last Diwali at City Hall as a council member, Metro's final Sepulveda Corridor meeting is tonight in Sherman Oaks, the surf stays dangerous through Tuesday, the skies recover from Friday's nationwide FAA ground stop, and the Lakers survive in Phoenix for eight straight.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — The Grove lights its 100-foot tree for its 25th…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794846838736-6996f830bdfc1.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Monday--November-16--2026-e3sga7l",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129558197/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F1b3c2b18-7f70-be5c-8cda-bb4a6980fc84.m4a",
    "number": null
   },
   {
@@ -1487,8 +1807,8 @@
    "duration": 1755,
    "description": "He drew what the Harlem Renaissance looked like. Aaron Douglas's silhouettes and radiating rings of light became the visual signature of an entire movement, and then the histories of that movement somehow learned to skip him.\n Douglas arrived in Harlem in the spring of 1925 as a 26-year-old Kansas schoolteacher who meant to pass through on his way to Paris. Within months, Alain Locke had put his designs inside The New Negro, the anthology that announced the movement to the world; the illustrator Winold Reiss had taught him to build a modern Black image out of African sources; and his book jackets, including Claude McKay's Home to Harlem, were everywhere the movement was read.\n This episode…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1794588796197-66433ce6a6cdb.jpg",
-   "url": "https://open.spotify.com/episode/4wVHhF477UtLKNXoXK9I1l",
-   "spotify_url": "https://open.spotify.com/episode/4wVHhF477UtLKNXoXK9I1l",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms201/episodes/006-Aaron-Douglas-The-Man-Who-Gave-a-Movement-Its-Face-e3sb69i",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119157f24/podcast/play/129390322/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2Ffa36cc85-859d-f9d6-b3b0-599d82a3e4be.m4a",
    "number": "6"
   },
@@ -9587,7 +9907,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 266,
+   "episodes": 268,
    "spotify_matches": 1
   },
   "approachable": {
@@ -9640,7 +9960,7 @@
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_name": "Once Upon a Time in Harlem",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "designdigest": {
@@ -9656,7 +9976,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "morningread": {
@@ -9672,16 +9992,16 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 22,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 20,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
@@ -9696,8 +10016,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 10,
+   "spotify_matches": 1
   },
   "columbiaread": {
    "ok": true,
@@ -9712,8 +10032,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "techread": {
    "ok": true,
@@ -9776,24 +10096,24 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 6,
-   "spotify_matches": 1
+   "episodes": 5,
+   "spotify_matches": 0
   },
   "celticsdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 9,
-   "spotify_matches": 0
+   "episodes": 11,
+   "spotify_matches": 1
   },
   "coltsdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 0
+   "episodes": 11,
+   "spotify_matches": 1
   },
   "cfbdaily": {
    "ok": true,
@@ -9826,6 +10146,54 @@
    "full_catalog": true,
    "episodes": 3,
    "spotify_matches": 1
+  },
+  "politicalread": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "cbbweekly": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "cutandsew": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "coverup": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "coldopen": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
+  },
+  "cookedbooks": {
+   "ok": false,
+   "feed": null,
+   "spotify_name": null,
+   "full_catalog": false,
+   "episodes": 0,
+   "spotify_matches": 0
   }
  },
  "people": {
