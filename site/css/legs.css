@@ -235,3 +235,10 @@
 .legs-socials a { color: var(--ink); border-bottom: 1.5px solid var(--line-strong); }
 .legs-socials a:hover { border-color: currentColor; }
 .lstrip__media--strat { display: flex; background: var(--grape); }
+
+/* Strategy: how we work */
+.cengage { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.cengage li { display: grid; gap: .35rem; padding: clamp(1rem, 2.5vw, 1.4rem); border-radius: var(--card-r); background: var(--card); border: 1px solid var(--line); }
+.cengage b { font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: 1; }
+.cengage span { color: var(--ink-soft); }
+@media (max-width: 760px) { .cengage { grid-template-columns: 1fr; } }
