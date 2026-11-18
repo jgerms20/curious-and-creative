@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T07:02:40Z",
+ "generated_at": "2026-11-18T14:19:46Z",
  "shows": [
   {
    "key": "ccpod",
@@ -307,8 +307,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-17T11:07:34Z",
-   "count": 24
+   "latest": "2026-11-18T10:58:26Z",
+   "count": 25
   },
   {
    "key": "ladaily",
@@ -388,8 +388,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-17T11:30:52Z",
-   "count": 17
+   "latest": "2026-11-18T11:37:57Z",
+   "count": 18
   },
   {
    "key": "nyread",
@@ -959,6 +959,34 @@
  ],
  "episodes": [
   {
+   "id": "marketread:49ec0afd 4ea4 4d6f af77 409906666685",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Wednesday, November 18, 2026",
+   "date": "2026-11-18T11:37:57Z",
+   "duration": 1446,
+   "description": "Nvidia cleared the bar after a fourth straight losing session: revenue of $115.84 billion, up 103%, Data Center at $107.6 billion, and a $130 billion fourth-quarter guide lifted futures, with Nasdaq futures up about 1%. Asia was split as Seoul and Taipei bounced and Hong Kong fell, Europe steadied after its worst day since March, UK inflation rose to 3.6%, oil slipped on a 5.28 million-barrel API build, and the VIX closed at 25.46 into this morning's expiry. Target, Lowe's and TJX report today, the Fed minutes land at 2 p.m. Eastern, and Anthropic prices tonight.\n • Nvidia beats after Huang's exit — revenue $115.84B, EPS $2.68, $130B guide —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795001834534-95211fed287f2.jpg",
+   "url": "https://open.spotify.com/episode/7FhroTOeYISBTwQ25lK9wC",
+   "spotify_url": "https://open.spotify.com/episode/7FhroTOeYISBTwQ25lK9wC",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129682199/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F8ffb109c-e258-88b0-cee3-39b7ef21614f.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:087aebe9 7a38 4dc5 bfca 86dce6b8d593",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Wednesday, November 18, 2026",
+   "date": "2026-11-18T10:58:26Z",
+   "duration": 1403,
+   "description": "Nvidia has reported the biggest quarter in its history on the first earnings call without its founder, and its board used the same call to say he is not coming back. Plus: the NSA's classified internal network goes down in the sixth big outage in six days; Alaska's last Senate race is called and the Senate is settled at 56 to 44; the president takes the Quad to Manila and heads for Shenzhen; Wall Street falls for a fourth day as the shopper holds up and the factories soften; Anthropic prices tonight; the measles announcement is made; and Israel changes its speaker.\n Timestamps:\n 0:00 — Opening\n 1:18 — Nvidia: The Record Quarter, and the Door Closed\n 5:49 — The Outage Week Reaches the NSA\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794999443578-d4bf4b6532e28.jpg",
+   "url": "https://open.spotify.com/episode/2ZZW2rIq8egt62aCwdrpN5",
+   "spotify_url": "https://open.spotify.com/episode/2ZZW2rIq8egt62aCwdrpN5",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129679739/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F1a532b0a-d69f-cc10-9e13-244f14c4a21b.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:1a45a30f caad 4f59 9310 6be15d96b36c",
    "show": "polymath",
    "kind": "episode",
@@ -1023,8 +1051,8 @@
    "duration": 1452,
    "description": "Week 11 is the bye-pocalypse: Atlanta, Cleveland, Green Bay, the Rams, New England and Seattle are all off, so today's claims are starters, not luxuries. Monday night closed Week 10 with the Chargers' first win, 23-20 at Baltimore, behind Omarion Hampton's 105 rushing yards — and this flagship edition folds that fallout in first, then ranks the adds by position with FAAB guidance.\n The board: check for Emmett Johnson first, then Kaelon Black, Seth McGowan and Thursday's Emari Demercado ticket at running back; Jordyn Tyson, Adonai Mitchell, Tre' Harris, Ryan Flournoy and Caleb Douglas at receiver; Chig Okonkwo and Cam Ward as the streamers; the Chiefs, Bears and Lions defenses; an honest…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1794925867711-12a8a91d966cb.jpg",
-   "url": "https://open.spotify.com/episode/6a9uVzCtQzjc3P8vr3Tlx9",
-   "spotify_url": "https://open.spotify.com/episode/6a9uVzCtQzjc3P8vr3Tlx9",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Tyson--Black-and-Harris-Lead-the-Bye-pocalypse-Waiver-Board--Tuesday--November-17--2026-e3si7fh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129620913/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F09e4716b-04e9-a6ca-0ac3-9d4e284456a9.m4a",
    "number": null
   },
@@ -1051,8 +1079,8 @@
    "duration": 821,
    "description": "Arizona survives TCU 29-28 on a field goal with 43 seconds left, SMU routs Virginia Tech 51-28, East Carolina walks off South Florida 20-17 on a 55-yard field goal, Illinois beats Nebraska 24-13 to become bowl eligible, and No. 22 New Mexico wins its first game as an AP-ranked team, 31-3 at Nevada. What Friday night means for the Big 12, ACC, Big Ten, American and Mountain West races, and for Tuesday's playoff rankings.\n Timestamps:\n0:13 Welcome and Friday night in one picture\n1:07 Arizona 29, TCU 28: the headline game\n4:19 SMU 51, Virginia Tech 28: the explosion\n5:43 East Carolina 20, South Florida 17: the walk-off\n7:29 Illinois 24, Nebraska 13: the grind\n9:20 New Mexico 31, Nevada 3: the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1794920227809-0f3bd3fdb9e37.jpg",
-   "url": "https://open.spotify.com/episode/3Axev3e6B6xMrgk5D5L9fB",
-   "spotify_url": "https://open.spotify.com/episode/3Axev3e6B6xMrgk5D5L9fB",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Arizona-Survives-TCU-on-a-Last-Minute-Field-Goal--and-East-Carolina-Walks-Off-South-Florida--Friday--November-6--2026-e3si1hh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/129614833/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Feed4722a-1a80-e391-65b4-26e77947dec6.m4a",
    "number": null
   },
@@ -1065,8 +1093,8 @@
    "duration": 981,
    "description": "Washington licenses rented AI compute like shipped chips in a new Commerce rule covering five countries and overseas data centers, Nvidia reports its first quarter without Jensen Huang tonight, Anthropic's IPO is reportedly close to seven times oversubscribed a day before pricing, Alibaba ships Qwen4-Max at 2.4 trillion parameters, Claude acts inside other apps, OpenAI formalizes outside model assessments, science gets an open tool stack, and bitcoin steadies near $64,761 while ETFs sell and treasuries buy.\n • US licenses remote access to AI chips in new Commerce rule — https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1794917478193-f1df8e6651a4a.jpg",
-   "url": "https://open.spotify.com/episode/4iHuETcwbidvSXnstI306i",
-   "spotify_url": "https://open.spotify.com/episode/4iHuETcwbidvSXnstI306i",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Tuesday--November-17--2026-e3shvev",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129612703/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F556114fc-77db-e101-dc36-6e643e3eb68e.m4a",
    "number": null
   },
@@ -1079,8 +1107,8 @@
    "duration": 823,
    "description": "Wall Street starts Tuesday in a correction: the Nasdaq fell 2.49% Monday to 24,509.76, its third straight loss, with Nvidia down 4.12% to $156.14 into tonight's earnings. Washington tightened AI chip export rules covering Thailand and Malaysia data centres, Asia fell again (Kospi -2.59% to 4,968.48, Taiex -2.31%, Nikkei -1.34%), Europe pulled back from records (STOXX 600 -0.64%), Chair Warsh laid out three AI scenarios including a disappointment case, the VIX jumped to 22.91, and Anthropic's IPO is now close to 7x oversubscribed ahead of Wednesday pricing.\n • Monday's rout and the lower open — futures point down again — https://edgeconsultancykw.com/us-market-wrap-16-november-2026/\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1794915013444-cf2690a8aff26.jpg",
-   "url": "https://open.spotify.com/episode/2yzDg6L7ZuQrA1MZnFiOBf",
-   "spotify_url": "https://open.spotify.com/episode/2yzDg6L7ZuQrA1MZnFiOBf",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Tuesday--November-17--2026-e3shtk3",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129610819/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F65b6ed80-96fa-ec6f-2ff6-1bd97d3f8362.m4a",
    "number": null
   },
@@ -1093,8 +1121,8 @@
    "duration": 1303,
    "description": "President Trump is on his way to Asia for a first-ever three-way meeting with China's Xi Jinping and Russia's Vladimir Putin, on a day when Nvidia reports after the close, Israel's parliament votes on its speaker, and the measles announcement is due. Plus: air travel is largely back to normal as the $50 billion funding fight moves to Congress; Wall Street enters a correction; Anthropic prices tomorrow; and Alaska's last Senate race sits 52 votes from a majority.\n Timestamps:\n 0:00 — Opening: A Global Stress Test\n 1:40 — The President Goes to Asia: Manila First, Then Shenzhen\n 5:03 — Israel: The Speaker Vote, Today at Four\n 6:56 — The Recovery, Confirmed: Air Travel Is Largely Back, and the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1794913578003-a42941247826e.jpg",
-   "url": "https://open.spotify.com/episode/3Wttv9VbOHVC1dr19QUATQ",
-   "spotify_url": "https://open.spotify.com/episode/3Wttv9VbOHVC1dr19QUATQ",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Tuesday--November-17--2026-e3shsnr",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129609915/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F5b9cea6e-5910-e650-28db-23db821691b0.m4a",
    "number": null
   },
@@ -1107,8 +1135,8 @@
    "duration": 1375,
    "description": "Dolores Huerta lies in honor at the State Capitol — the first non-elected person in California history to receive the honor, with 600 people marching behind her casket. Plus: the season's first atmospheric river targets Thursday after a dry Tuesday, thousands of LAUSD students walk out over ICE, a judge refuses to pause the ruling on LA's top federal prosecutor, the county count stands with District 9 at 41 votes ahead of today's 5 p.m. update, District 4 makes its special-election case in Sherman Oaks, the Sepulveda comment clock runs to November 23, and the Lakers come home without Austin Reaves.\n Plus the expanded what's-on segment, Out and about: what's on in Los Angeles — the Lakers…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1794913258743-f0455fa53a56d.jpg",
-   "url": "https://open.spotify.com/episode/5qnGUyG1cHdj1Sgsr9U3L0",
-   "spotify_url": "https://open.spotify.com/episode/5qnGUyG1cHdj1Sgsr9U3L0",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Tuesday--November-17--2026-e3shshp",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129609721/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F5a9e0cc1-b9e5-eee9-ade4-3688d6425a1f.m4a",
    "number": null
   },
@@ -1121,8 +1149,8 @@
    "duration": 1332,
    "description": "A tanker is hit by a projectile off Oman as Iran claims more mine strikes in Hormuz and oil falls anyway, Ukraine and its European backers agree to meet in Berlin while Moscow objects, COP31's first draft exposes the finance and fossil-fuel divisions, the Shenzhen three-president meeting is two days away with expectations being lowered, Israel's speaker vote tests Eisenkot's numbers today, France's strike day arrives, South Africa's ANC owes its coalition statement with the first local deal done, and Congo's Ebola count passes 11,376 cases with children bearing the heaviest toll.\n 0:13 — Tanker hit off Oman as Hormuz claims multiply\n5:08 — Shenzhen summit: three presidents, competing…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1794912954071-bbcfc15a5de15.jpg",
-   "url": "https://open.spotify.com/episode/7iroRsBCPVgkE1seE2Bo2M",
-   "spotify_url": "https://open.spotify.com/episode/7iroRsBCPVgkE1seE2Bo2M",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Tanker-Hit-Off-Oman-as-Hormuz-Claims-Multiply--Tuesday--November-17--2026-e3shsbo",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129609528/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F91da8140-ee1d-f0da-77fe-2a6eb80511e2.m4a",
    "number": null
   },
@@ -1135,8 +1163,8 @@
    "duration": 1281,
    "description": "Luka Doncic scored 53 points, including a 62-foot halftime buzzer-beater, as the Lakers beat Portland 124-118, Jayson Tatum had 34 in 29 minutes in Boston's 119-80 rout in Charlotte, and Ajay Mitchell scored a career-high 35 in Oklahoma City's 128-97 win in Memphis on a nine-game NBA Cup night.\n Scores: Lakers 124, Trail Blazers 118 · Hawks 139, Wizards 132 · Celtics 119, Hornets 80 · Cavaliers 119, 76ers 95 · Mavericks 112, Jazz 100 · Thunder 128, Grizzlies 97 · Timberwolves 115, Pelicans 109 · Raptors 121, Bucks 107 · Spurs 124, Kings 109.\n The deep dive: Luka Doncic's 53-point night and fourth straight 40-point game — the MVP pace carrying the Lakers through the West's top tier.\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1794907810275-a86350bf37254.jpg",
-   "url": "https://open.spotify.com/episode/2Trhv3qC3xeQJh5A8zosma",
-   "spotify_url": "https://open.spotify.com/episode/2Trhv3qC3xeQJh5A8zosma",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Friday--November-6--2026-e3shov1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129606049/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Fe040b26e-26a3-e2e8-ece1-e4930bdbe2b1.m4a",
    "number": null
   },
@@ -1275,8 +1303,8 @@
    "duration": 914,
    "description": "The recounts are certified, and they changed the math at the State House: Joe Wilson holds the District 2 congressional seat by 2,840 votes, and Joe Madge's 106-vote win over House Majority Leader Micah Caskey breaks the Republican supermajority. Plus a developing story out of the Jamil Temple, where a deputy working security at a gun show was shot and the man who shot him was killed.\n Also today: a driver is killed on I-26 after getting out of his overturned car, Finlay Park follows its reopening year with a two-festival weekend, the Planning Commission moves nine land-use items at City Hall, the state's SC Nexus energy push runs through Columbia with Westinghouse's billion-dollar…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1794876177529-806fab9e7db.jpg",
-   "url": "https://open.spotify.com/episode/7wEPTBUyQ26PHxhUoLwAHD",
-   "spotify_url": "https://open.spotify.com/episode/7wEPTBUyQ26PHxhUoLwAHD",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20036/episodes/Monday--November-16--2026-e3sh4gh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129585105/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F2a0c9226-1216-7e6d-a180-b65a6001b056.m4a",
    "number": null
   },
@@ -1289,8 +1317,8 @@
    "duration": 939,
    "description": "Today Mayor Mamdani announces the future of the NYPD's Strategic Response Group — the protest unit he promised to disband — and the argument is already joined over whether it is a disbanding or a rebrand; Flatbush held an interfaith vigil Sunday for the eight killed in the building collapse, a missing cat named Isaac came home, and the Buildings Department's inspections widen to more than 160 linked sites; bodegas get 90 more days on the federal SNAP stocking rules, nationwide; Brooklyn tells DOT its $4 billion BQE bypass is not a real choice, while Greenpoint's McGuinness Boulevard redesign is finished; battery fires are up 68% and the city's own swapping partner broke FDNY rules, with a…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1794869692054-0719a460fd5be.jpg",
-   "url": "https://open.spotify.com/episode/1soD4Pow1aa5r7lQsBSmbC",
-   "spotify_url": "https://open.spotify.com/episode/1soD4Pow1aa5r7lQsBSmbC",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms202/episodes/Monday--November-16--2026-e3sh097",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119608a14/podcast/play/129580775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2F5fa098cc-a349-b3db-f565-0fa8b847a2b0.m4a",
    "number": null
   },
@@ -1555,8 +1583,8 @@
    "duration": 1233,
    "description": "Arkansas 34, South Carolina 6 in Fayetteville. LaNorris Sellers never took a snap, Cutter Woods threw three interceptions in his first true start, and the Gamecocks went 1 for 5 in the red zone despite outgaining Arkansas 369 to 355. The four-game win streak is over, and South Carolina falls to 6-4 overall and 4-4 in the SEC.\n Inside: how the game was lost before kickoff and in the red zone · Woods' first start, graded honestly · Jabree Coleman, the one bright spot · Jahiem Johnson's pick-six dagger · injuries: Sellers and Mazeo Bennett (developing) · what it means with Georgia coming to Williams-Brice next Saturday night.\n Unofficial and independent; not affiliated with the University of…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1794733109068-168fd9f55b699.jpg",
-   "url": "https://open.spotify.com/episode/635TYFJRggm6hBa0f8Mufa",
-   "spotify_url": "https://open.spotify.com/episode/635TYFJRggm6hBa0f8Mufa",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/The-Trap-Game-Sprung-in-Fayetteville-South-Carolina-Is-6-4--Saturday--November-14--2026-e3sde69",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129463945/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F5d2367f0-198d-75e7-5c0b-3b6cbc6fa0d2.m4a",
    "number": null
   },
@@ -2843,8 +2871,8 @@
    "duration": 796,
    "description": "The first College Football Playoff Top 25 is out with Miami and Georgia on top; Notre Dame hosts Miami on Saturday night with the Malachi Toney question hanging over it; Florida Atlantic hung 60 on UTSA and James Madison ran away in Hattiesburg on Thursday; five games go tonight; and Saturday brings BYU at Utah, Alabama at LSU, and Georgia at Ole Miss.\n • The First CFP Top 25: Miami and Georgia Lead the First Rankings — https://www.ncaa.com/news/football/article/2026-11-03/miami-georgia-lead-first-college-football-playoff-rankings-2026\n • Notre Dame vs. Miami: Freeman Still Preparing for Malachi Toney —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1793990093701-f40761b8cbc5c.jpg",
-   "url": "https://open.spotify.com/episode/3Axev3e6B6xMrgk5D5L9fB",
-   "spotify_url": "https://open.spotify.com/episode/3Axev3e6B6xMrgk5D5L9fB",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Friday--November-6--2026-e3rtid4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/128943972/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2Ff5e12bd5-3e13-87ef-fafb-610522df0848.m4a",
    "number": null
   },
@@ -9998,7 +10026,7 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 24,
+   "episodes": 25,
    "spotify_matches": 1
   },
   "ladaily": {
@@ -10007,7 +10035,7 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 22,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
@@ -10015,14 +10043,14 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 20,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 17,
+   "episodes": 18,
    "spotify_matches": 1
   },
   "nyread": {
@@ -10031,7 +10059,7 @@
    "spotify_name": "The New York Read",
    "full_catalog": true,
    "episodes": 10,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "columbiaread": {
    "ok": true,
@@ -10039,7 +10067,7 @@
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
    "episodes": 6,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "airead": {
    "ok": true,
@@ -10047,7 +10075,7 @@
    "spotify_name": "The Tech Read",
    "full_catalog": true,
    "episodes": 16,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
@@ -10095,7 +10123,7 @@
    "spotify_name": "The Fast Break",
    "full_catalog": true,
    "episodes": 16,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "blitz": {
    "ok": true,
@@ -10111,7 +10139,7 @@
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
    "episodes": 6,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "celticsdaily": {
    "ok": true,
@@ -10135,7 +10163,7 @@
    "spotify_name": "College Football Daily",
    "full_catalog": true,
    "episodes": 17,
-   "spotify_matches": 2
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
@@ -10151,7 +10179,7 @@
    "spotify_name": "The Horseshoe",
    "full_catalog": true,
    "episodes": 9,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "gamecockshoops": {
    "ok": true,
