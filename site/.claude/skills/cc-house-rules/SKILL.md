@@ -85,7 +85,8 @@ Joshua shouldn't have to re-explain these. If a request conflicts with a rule, a
 1. Run the `run-site` smoke test on every page you touched.
 2. `node .claude/skills/run-site/crawl.mjs` reports `bad 0`.
 3. Grep new copy for "—".
-4. **Git:**
+4. **Merge (Joshua, Nov 19: "always merge"):** once checks pass, merge the PR yourself, then confirm the Pages deploy. No need to wait for approval.
+5. **Git:**
    - Work on the session branch. Never force-push.
    - If the last PR merged, reset to `origin/main` and open a NEW PR.
    - Merge main into the branch rather than rebasing.
