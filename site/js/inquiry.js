@@ -5,7 +5,7 @@
 (() => {
   const CC = window.CC || (window.CC = {});
   const INBOX = "admin@curiousandcreative.co";
-  const LEGS = [["network", "The Network"], ["studio", "Productions"], ["consultancy", "Strategy"], ["other", "Not sure yet"]];
+  const LEGS = [["network", "Curious & Creative Network"], ["studio", "Curious & Creative Productions"], ["consultancy", "Curious & Creative Strategy"], ["other", "Not sure yet"]];
   // older links still say ?topic=…; send them to the right part of the house
   const TOPIC_LEG = {
     request: "network", guest: "network", podcast: "network", network: "network",
@@ -26,7 +26,7 @@
       <form class="inq" novalidate>
         <fieldset class="inq__legs">
           <legend>Which part of the house?</legend>
-          ${LEGS.map(([v, l]) => `<label class="inq__leg"><input type="radio" name="leg" value="${v}"${v === preset ? " checked" : ""} required><span>${l}</span></label>`).join("")}
+          ${LEGS.map(([v, l]) => `<label class="inq__leg"><input type="radio" name="leg" value="${v}"${v === preset ? " checked" : ""} required><span>${esc(l)}</span></label>`).join("")}
         </fieldset>
         <div class="inq__grid">
           <label>Name<input name="name" required maxlength="200" autocomplete="name"></label>

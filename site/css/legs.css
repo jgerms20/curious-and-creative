@@ -242,3 +242,9 @@
 .cengage b { font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: 1; }
 .cengage span { color: var(--ink-soft); }
 @media (max-width: 760px) { .cengage { grid-template-columns: 1fr; } }
+
+/* Gen Alpha as the featured example of research we build */
+.legs-lab--feature { grid-template-columns: clamp(140px, 26vw, 300px) minmax(0, 1fr); margin-top: clamp(2.5rem, 6vw, 4rem); padding: clamp(1.25rem, 3vw, 2rem); }
+.legs-lab--feature .legs-lab__title { font-size: clamp(1.8rem, 4vw, 3rem); }
+.legs-lab--feature p { max-width: 58ch; }
+@media (max-width: 640px) { .legs-lab--feature { grid-template-columns: 1fr; } .legs-lab--feature .legs-lab__thumb { max-width: 180px; } }

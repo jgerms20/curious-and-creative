@@ -363,10 +363,24 @@
           <span><b>${esc(e.film)}${e.year ? ` <small>${esc(e.year)}</small>` : ""}</b><span class="review__stars">${esc(stars(e))}</span><span class="review__text">${esc(e.review)}</span><small>${esc(e.author)} · ${esc(ago(e.date))}</small></span></a>`).join("");
       }
       if (!list) return;
-      list.innerHTML = w.posts.length ? w.posts.map((p) => `<a class="ep" href="${esc(p.url)}" target="_blank" rel="noopener" data-host="${p.author && p.author.startsWith("Janel") ? "janel" : "joshua"}">
+      // the pipeline can be blocked by Substack; if it found nothing, read the feeds from the browser instead
+      if (!w.posts.length && !w._browserTried) {
+        const feeds = w.sources.filter((s) => s.feed);
+        if (feeds.length) {
+          w._browserTried = true;
+          Promise.all(feeds.map((s) => fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(s.feed))
+            .then((r) => (r.ok ? r.json() : null)).catch(() => null)
+            .then((j) => ((j && j.items) || []).map((it) => ({ title: it.title, url: it.link, date: it.pubDate && it.pubDate.replace(" ", "T") + "Z",
+              image: it.thumbnail || (it.enclosure && it.enclosure.link) || "", author: s.author,
+              excerpt: String(it.description || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 140) })))))
+            .then((all) => { const posts = all.flat().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 12); if (posts.length) { w.posts = posts; render(); } });
+        }
+      }
+      const render = () => { list.innerHTML = w.posts.length ? w.posts.map((p) => `<a class="ep" href="${esc(p.url)}" target="_blank" rel="noopener" data-host="${p.author && p.author.startsWith("Janel") ? "janel" : "joshua"}">
         ${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : '<span class="ph" style="background:var(--h)"></span>'}
         <span><b>${esc(p.title)}</b><small>${esc(p.author || "")} — ${esc(p.excerpt || "")}</small></span>
-        <span class="ep__when">${esc(ago(p.date))}</span></a>`).join("") : `<p class="eyebrow" style="text-transform:none;letter-spacing:0">New posts from both Substacks show up here automatically.</p>`;
+        <span class="ep__when">${esc(ago(p.date))}</span></a>`).join("") : `<p class="eyebrow" style="text-transform:none;letter-spacing:0">New posts from both Substacks show up here automatically.</p>`; };
+      render();
     });
   }
 })();

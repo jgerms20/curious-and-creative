@@ -166,3 +166,29 @@
   .leg__visual--strat .stratile__k { display: none; }
   .leg__visual--strat .stratile__big--sm { font-size: 1.15rem; }
 }
+
+/* ---------- Nov 19: hero is just the two of us ---------- */
+.intro__title b { display: block; font-weight: inherit; color: var(--wm-green); }
+:root[data-theme="dark"] .intro__title b { color: #5BD36B; }
+.hero-duo { margin: 0; border-radius: 28px; overflow: hidden; background: var(--paper-2); aspect-ratio: 4 / 3; box-shadow: var(--shadow-lg); }
+.hero-duo img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+@media (max-width: 900px) { .hero-duo { aspect-ratio: 5 / 4; } }
+
+/* team: two people, side by side */
+.team { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; }
+.founder__role { font-size: .78rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; color: var(--ink) !important; }
+@media (max-width: 860px) { .team { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 460px) { .team { grid-template-columns: 1fr; } }
+
+/* network: shows by vertical */
+.verts { display: grid; gap: clamp(1rem, 2.4vw, 1.6rem); }
+.vert__k { display: flex; align-items: baseline; gap: .5rem; font-size: .8rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; margin-bottom: .55rem; }
+.vert__k span { color: var(--ink-soft); font-weight: 700; }
+.vert__row { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
+.vert:first-child .vert__row { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.vert__row a { display: block; aspect-ratio: 1; border-radius: 12px; overflow: hidden; background: var(--box-2, var(--box)); outline: 1px solid var(--line); outline-offset: -1px; transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease); }
+.vert__row img { width: 100%; height: 100%; object-fit: cover; }
+.vert__row a:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+@media (max-width: 600px) { .vert__row { grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 6px; } .vert:first-child .vert__row { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+@media (prefers-reduced-motion: reduce) { .vert__row a { transition: none; } }

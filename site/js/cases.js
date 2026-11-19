@@ -20,9 +20,9 @@
   }
 
   const LEGS = {
-    studio: { label: "Productions", page: "pages/studio.html" },
-    network: { label: "The Network", page: "pages/shows.html" },
-    consultancy: { label: "Strategy", page: "pages/consultancy.html" },
+    studio: { label: "Curious & Creative Productions", page: "pages/studio.html" },
+    network: { label: "Curious & Creative Network", page: "pages/shows.html" },
+    consultancy: { label: "Curious & Creative Strategy", page: "pages/consultancy.html" },
   };
   const has = (v) => (Array.isArray(v) ? v.length > 0 : v != null && String(v).trim() !== "");
   const when = (iso) => {
