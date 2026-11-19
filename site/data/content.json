@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T22:09:39Z",
+ "generated_at": "2026-11-19T00:08:45Z",
  "shows": [
   {
    "key": "ccpod",
@@ -280,8 +280,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-18T21:32:43Z",
-   "count": 15
+   "latest": "2026-11-17T15:21:42Z",
+   "count": 14
   },
   {
    "key": "morningread",
@@ -814,7 +814,7 @@
    "cadence": "Tue · Thu + postgame",
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/6A71aYP8TxEEJgOCOyTQs4",
-   "feed_title": "Gamecocks Daily",
+   "feed_title": "The Horseshoe",
    "description": "A daily South Carolina Gamecocks show from the Curious & Creative network: game recaps, team news, recruiting, matchup previews, and one deep segment, across football, basketball, and baseball, season by season.",
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
@@ -959,24 +959,10 @@
  ],
  "episodes": [
   {
-   "id": "dominatedconvo:f8b4bd52 07ae 4f98 8697 06a1fe27c122",
-   "show": "dominatedconvo",
-   "kind": "episode",
-   "title": "GTA 6 Reviews Land at 99 and the Whole Internet Clears Its Calendar for Tomorrow | Wednesday, November 18, 2026",
-   "date": "2026-11-18T21:32:43Z",
-   "duration": 1283,
-   "description": "November was supposed to be the month of prophesied failures. Instead, November 17 became verdict day. A game nobody could play yet tied the highest review score ever recorded. A chipmaker posted the biggest quarter in its history while its board closed the door on its founder. The last Senate race in America was finally called, two weeks after Election Day. And the United States lost a public health status it had held for twenty-six years. The fantasy world got the perfect grade. The real systems got the mixed ones.\n Plus: how each platform processed a day of verdicts, and tomorrow's collision, when GTA 6 unlocks at midnight and Anthropic starts trading the same morning.\n Chapters:\n…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795037529287-e83a26af29d26.jpg",
-   "url": "https://open.spotify.com/episode/4YarPZLkJNvUCeA4RZCkG4",
-   "spotify_url": "https://open.spotify.com/episode/4YarPZLkJNvUCeA4RZCkG4",
-   "audio": "https://anchor.fm/s/119799630/podcast/play/129715374/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F9f1aa14d-f6a8-6456-57d8-6c1091590482.m4a",
-   "number": null
-  },
-  {
    "id": "polymath:eeaf1cae deb2 4d17 9bd0 fe1ae785abf1",
    "show": "polymath",
    "kind": "episode",
-   "title": "#270 Starting an Ad Agency: Why Four People Can Outrun Four Hundred",
+   "title": "#270 Starting an Agency: Why Four People Can Outrun Four Hundred",
    "date": "2026-11-18T21:20:56Z",
    "duration": 2838,
    "description": "Es Muy Good did not exist until December 2025. Within months, the four-person agency — founders Steve Gonzalez and Steven Nasopoulos, plus a head of production and a head of operations — became the shop behind Kalshi's national TV blitz: more than 35 linear TV spots in six months, with Martha Stewart, Shane Gillis and Danny McBride, Timothée Chalamet, Giannis Antetokounmpo, Marshawn Lynch and Canelo Álvarez. This episode looks at how they did it: embedded in Kalshi's Slack, taking 1 a.m. calls, working from a standby network of freelancers, and hiring A-list directors and cinematographers job by job instead of building departments.\n That model turns out to be old and new at once.…",
@@ -1153,20 +1139,6 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129645986/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Fe43df0ba-1ded-f3d8-6177-9f5dcaf04d92.m4a",
    "number": "269"
-  },
-  {
-   "id": "polymath:aa74aad4 670c 49b2 9a20 f85b20a6f7d5",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#259 Everest: Thin Air, and the Mind That Goes Looking for God",
-   "date": "2026-11-17T21:31:55Z",
-   "duration": 3748,
-   "description": "A single mountain that refuses every category: laboratory, puzzle, industry, temple. This episode follows Mount Everest through all four, from the 2026 film Everest: The Other Side and Jim Morrison's ski descent to the death-zone physiology that starves the brain at 8,400 metres.\n It takes up the sensed presence climbers have reported since Frank Smythe shared his mint cake with an invisible companion in 1933, the neuroscience that can induce the same presence in a laboratory, and the industry that allocates the mountain's risk: permits, queues, sponsorship, and the Sherpa climbers who carry the heaviest share of it.\n And it ends where the mountain's meaning is oldest: a goddess's palace, a…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794950987344-bb88797d42004.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/259-Everest-Thin-Air--and-the-Mind-That-Goes-Looking-for-God-e3sivfl",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129645493/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F120ea801-002e-bc6d-78aa-c3c89efa9228.m4a",
-   "number": "259"
   },
   {
    "id": "harlem:7591acdd bbb6 48e1 bf38 89c300394c98",
@@ -2427,6 +2399,20 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129271079/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Fb848c8a5-39d7-da33-ee3f-198d79d83da9.m4a",
    "number": null
+  },
+  {
+   "id": "polymath:aa74aad4 670c 49b2 9a20 f85b20a6f7d5",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#259 Everest: Thin Air, and the Mind That Goes Looking for God",
+   "date": "2026-11-11T09:00:00Z",
+   "duration": 3748,
+   "description": "A single mountain that refuses every category: laboratory, puzzle, industry, temple. This episode follows Mount Everest through all four, from the 2026 film Everest: The Other Side and Jim Morrison's ski descent to the death-zone physiology that starves the brain at 8,400 metres.\n It takes up the sensed presence climbers have reported since Frank Smythe shared his mint cake with an invisible companion in 1933, the neuroscience that can induce the same presence in a laboratory, and the industry that allocates the mountain's risk: permits, queues, sponsorship, and the Sherpa climbers who carry the heaviest share of it.\n And it ends where the mountain's meaning is oldest: a goddess's palace, a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1794950987344-bb88797d42004.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/259-Everest-Thin-Air--and-the-Mind-That-Goes-Looking-for-God-e3sivfl",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129645493/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F120ea801-002e-bc6d-78aa-c3c89efa9228.m4a",
+   "number": "259"
   },
   {
    "id": "marketread:f4a80297 e143 4c49 9074 93c844310573",
@@ -10172,8 +10158,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 15,
-   "spotify_matches": 1
+   "episodes": 14,
+   "spotify_matches": 0
   },
   "morningread": {
    "ok": true,
