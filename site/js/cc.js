@@ -11,7 +11,7 @@
 
   /* ---------------- helpers ---------------- */
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const url = (p) => (!p ? "" : /^(https?:|mailto:|#)/.test(p) ? p : root + p);
+  const url = (p) => (!p ? "" : /^(https?:|mailto:|#|data:)/.test(p) ? p : root + p);
   const ago = (iso) => {
     if (!iso) return "";
     const d = (Date.now() - new Date(iso).getTime()) / 86400000;
@@ -44,11 +44,11 @@
   // nav: true = top nav (in order); footer: false = search and drawer only
   const PAGES = [
     { label: "Home", href: "index.html", footer: false, words: "home front page latest" },
-    { label: "The Network", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break horseshoe columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books" },
-    { label: "Productions", href: "pages/studio.html", nav: true, words: "productions curious and creative productions the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
-    { label: "Strategy", href: "pages/consultancy.html", nav: true, words: "strategy consulting consultancy research data polling surveys forecasting forecast trends audience campaign brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
-    { label: "Manifesto", href: "pages/manifesto.html", nav: true, words: "manifesto mission standards accuracy journalism principles corrections request a show ideas" },
     { label: "About", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders co-founders team company" },
+    { label: "Network", full: "Curious & Creative Network", group: "cc", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break horseshoe columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books" },
+    { label: "Productions", full: "Curious & Creative Productions", group: "cc", href: "pages/studio.html", nav: true, words: "productions curious and creative productions the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
+    { label: "Strategy", full: "Curious & Creative Strategy", group: "cc", href: "pages/consultancy.html", nav: true, words: "strategy consulting consultancy research data polling surveys forecasting forecast trends audience campaign brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
+    { label: "Our Standards", href: "pages/manifesto.html", nav: true, words: "our standards manifesto mission ai-native ai native taste standards accuracy journalism principles corrections request a show ideas" },
     { label: "Contact", href: "pages/contact.html", nav: true, words: "contact email inquiry hello hire work with us pitch guest press request a show" },
     { label: "Shop", href: "pages/shop.html", words: "shop store buy order prints art artwork janel joshua" },
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
@@ -56,8 +56,6 @@
     { label: "Writing", href: "pages/writing.html", words: "writing substack essays newsletter posts" },
     { label: "Photography", href: "pages/studio.html#photography", footer: false, words: "photography photos gallery portraits fashion events rio landscapes travel views by germ" },
   ];
-  // the SCAiL line appears in the site footer and once on the About page, nowhere else
-  const SCAIL = "The founders also lead SCAiL, a South Carolina nonprofit working to bring AI literacy to communities that are usually last in line for it.";
   CC.PAGES = PAGES;
 
   /* ---------------- theme ---------------- */
@@ -82,9 +80,21 @@
       ${navLink(p.href, p.label).replace("<a ", '<a aria-haspopup="true" aria-expanded="false" ')}
       <div class="hdr__menu" data-nav-menu="${p.menu}">
         <div class="hdr__menu-list"></div>
-        <p class="hdr__menu-foot"><a href="${url("pages/manifesto.html")}">Our standards →</a><a href="${url(p.href + "#network")}">The network map →</a><a href="${url(p.href)}">All shows →</a><a href="${url("pages/archive.html")}">Every episode →</a></p>
+        <p class="hdr__menu-foot"><a href="${url("pages/manifesto.html")}">Our Standards →</a><a href="${url(p.href + "#network")}">The network map →</a><a href="${url(p.href)}">All shows →</a><a href="${url("pages/archive.html")}">Every episode →</a></p>
       </div>
     </div>`);
+
+  // the three divisions sit together under one "Curious & Creative" label, so each reads in full
+  const navHTML = () => {
+    const items = PAGES.filter((p) => p.nav); let out = "", open = false;
+    items.forEach((p) => {
+      if (p.group && !open) { out += `<div class="hdr__group" role="group" aria-label="Curious &amp; Creative"><span class="hdr__group-k" aria-hidden="true">Curious &amp; Creative</span><span class="hdr__group-links">`; open = true; }
+      if (!p.group && open) { out += "</span></div>"; open = false; }
+      out += navItem(p);
+    });
+    return out + (open ? "</span></div>" : "");
+  };
+  const fullName = (p) => (p.full || p.label).replace(/&(?!amp;)/g, "&amp;");
 
   const header = `
     <a class="skip" href="#main">Skip to content</a>
@@ -92,7 +102,7 @@
       <div class="hdr__bar wrap">
         <a class="wordmark" href="${url("index.html")}" aria-label="The Curious &amp; Creative Company — home"><span class="the">The</span><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span><span class="co">Co.</span></a>
         <button class="hdr__search" type="button" data-open-search aria-haspopup="dialog">${icon.search}<span>Discover anything</span><kbd>/</kbd></button>
-        <nav class="hdr__links" aria-label="Primary">${PAGES.filter((p) => p.nav).map(navItem).join("")}</nav>
+        <nav class="hdr__links" aria-label="Primary">${navHTML()}</nav>
         <button class="icon-btn hdr__search-mobile" type="button" data-open-search aria-label="Search">${icon.search}</button>
         <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${icon.moon}${icon.sun}</button>
         <button class="icon-btn" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon.menu}</button>
@@ -103,10 +113,9 @@
     <footer class="ftr wrap">
       <div class="ftr__bar">
         <a class="wordmark" href="${url("index.html")}"><span class="the">The</span><span class="g">Curious</span><span class="a">&amp;</span><span class="p">Creative</span><span class="co">Co.</span></a>
-        <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.footer !== false).map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
+        <nav class="ftr__links" aria-label="Footer">${PAGES.filter((p) => p.footer !== false).map((p) => `<a href="${url(p.href)}">${fullName(p)}</a>`).join("")}</nav>
         <p class="ftr__copy">© ${new Date().getFullYear()} The Curious &amp; Creative Company</p>
       </div>
-      <p class="ftr__scail">${SCAIL}</p>
       <p class="ftr__sign">Built curious. Made creative. · <a href="${url("backstage/")}" style="opacity:.7">Team</a></p>
     </footer>`;
 
@@ -117,7 +126,7 @@
         <a class="wordmark" href="${url("index.html")}"><span class="the" style="color:#fff">The</span><span class="g" style="color:#5BD36B">Curious</span><span class="a">&amp;</span><span class="p" style="color:#FF6FB0">Creative</span><span class="co">Co.</span></a>
         <button class="icon-btn" type="button" data-close-drawer aria-label="Close menu">${icon.close}</button>
       </div>
-      <nav class="drawer__nav" aria-label="Menu">${PAGES.map((p) => `<a href="${url(p.href)}">${p.label}</a>`).join("")}</nav>
+      <nav class="drawer__nav" aria-label="Menu">${PAGES.map((p) => `<a href="${url(p.href)}">${fullName(p)}</a>`).join("")}</nav>
       <div><h3>Our shows</h3><div class="drawer__shows" data-drawer-shows></div></div>
       <div><h3>Find us</h3><div class="drawer__social">
         <a href="mailto:admin@curiousandcreative.co">admin@curiousandcreative.co</a>
@@ -346,6 +355,20 @@
   };
   CC.HOST_LABEL = { joshua: "Joshua", janel: "Janel", shared: "Joshua & Janel", ai: "AI-generated", hybrid: "Hybrid · human + AI" };
   CC.showHref = (s) => url(s && s.page ? s.page : `pages/shows.html#${s && s.key}`);
+  // a designed cover for a show whose art hasn't come through yet: never a blank card
+  const PH_COLORS = { news: ["#46C7E8", "#141115"], culture: ["#EC3F8E", "#FFFFFF"], industry: ["#8E6FE0", "#FFFFFF"], sports: ["#37B34A", "#141115"] };
+  CC.placeholderArt = (s) => {
+    const [bg, fg] = PH_COLORS[s.category] || ["#FFC93C", "#141115"];
+    const words = String(s.name || "").replace(/^The\s+/i, "").toUpperCase().split(/\s+/);
+    const lines = []; words.forEach((w) => { const l = lines[lines.length - 1]; if (l && (l + " " + w).length <= 11) lines[lines.length - 1] = l + " " + w; else lines.push(w); });
+    const size = lines.length > 3 ? 46 : 58, y0 = 300 - (lines.length - 1) * size * 0.5;
+    const xml = (x) => x.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[c]);
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="600" height="600" fill="${bg}"/><rect x="28" y="28" width="544" height="544" rx="28" fill="none" stroke="${fg}" stroke-opacity=".35" stroke-width="4"/>`
+      + `<text x="60" y="92" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="4" fill="${fg}" fill-opacity=".8">CURIOUS &amp; CREATIVE NETWORK</text>`
+      + lines.map((l, i) => `<text x="60" y="${y0 + i * size}" font-family="Archivo, Arial Black, sans-serif" font-weight="900" font-size="${size}" fill="${fg}">${xml(l)}</text>`).join("")
+      + (s.count ? "" : `<text x="60" y="540" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="4" fill="${fg}" fill-opacity=".7">COMING SOON</text>`) + "</svg>";
+    return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  };
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
   CC.epHref = (e) => e.url || e.spotify_url || "#";
@@ -392,7 +415,7 @@
         category: r.category, cadence: r.cadence, archive: r.archive ?? s.archive, spotify_url: s.spotify_url || r.spotify_url || (r.spotify && `https://open.spotify.com/show/${r.spotify}`) };
     }) : data.shows || [];
     const pagesOf = (showPages && showPages.pages) || {};
-    data.shows.forEach((s) => { s.page = pagesOf[s.key]; });
+    data.shows.forEach((s) => { s.page = pagesOf[s.key]; if (!s.art) { s.art = CC.placeholderArt(s); s.artPlaceholder = true; } });
     const live = new Set(data.shows.map((s) => s.key));
     data.episodes = (data.episodes || []).filter((e) => live.has(e.show));
     const allPhotos = (photos && photos.photos) || [];
@@ -510,7 +533,7 @@
       ? `<g class="web__node web__node--ai" data-node="ai" tabindex="0" aria-label="AI-generated"><circle cx="${x}" cy="${y}" r="34"/><path transform="translate(${x} ${y}) scale(.85)" d="M0-22 5-5 22 0 5 5 0 22-5 5-22 0-5-5Z"/>${text(x, y - 46, "web__label", name)}</g>`
       : `<a class="web__node web__node--host" href="${url("pages/about.html")}" data-node="${k}" aria-label="${name}"><clipPath id="wp${k}"><circle cx="${x}" cy="${y}" r="34"/></clipPath><circle class="web__ring" cx="${x}" cy="${y}" r="38"/><image href="${esc(url(src))}" x="${x - 34}" y="${y - 34}" width="68" height="68" clip-path="url(#wp${k})" preserveAspectRatio="xMidYMid slice"/>${text(x, y + 56, "web__label", name)}</a>`)).join("");
     const hub = `<g class="web__hub"><clipPath id="whub"><circle cx="${C[0]}" cy="${C[1]}" r="58"/></clipPath><circle class="web__hub-glow" cx="${C[0]}" cy="${C[1]}" r="86"/><circle class="web__hub-ring" cx="${C[0]}" cy="${C[1]}" r="63"/><image href="${esc(url("assets/brand/cc-logo.jpg"))}" x="${C[0] - 58}" y="${C[1] - 58}" width="116" height="116" clip-path="url(#whub)" preserveAspectRatio="xMidYMid slice"/></g>`;
-    return `<svg class="web web--orbit" viewBox="0 0 ${W} ${H}" role="img" aria-label="The Curious + Creative Network: ${data.shows.length} shows. Flagships orbit Joshua and Janel; ${regular.length} regular shows orbit their categories.">${stars}${orbits}${edges}${makerNodes}${planetNodes}${openNode}${flagNodes}${hub}</svg>`;
+    return `<svg class="web web--orbit" viewBox="0 0 ${W} ${H}" role="img" aria-label="Curious &amp; Creative Network: ${data.shows.length} shows. Flagships orbit Joshua and Janel; ${regular.length} regular shows orbit their categories.">${stars}${orbits}${edges}${makerNodes}${planetNodes}${openNode}${flagNodes}${hub}</svg>`;
   };
   CC.wireNetwork = (root) => {
     const svg = root.querySelector(".web");

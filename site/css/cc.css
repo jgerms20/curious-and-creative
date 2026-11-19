@@ -1028,3 +1028,49 @@ a.ncard__latest:hover { text-decoration: underline; }
 .mfo__big:first-child { margin-top: 0 !important; }
 .mfo__sign { max-width: none !important; margin-top: clamp(1.5rem, 4vw, 2.5rem) !important; font-size: clamp(2rem, 6vw, 4.2rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .92; }
 .mfo__sign span { color: var(--pink); }
+
+/* nav: the three divisions grouped under one "Curious & Creative" label */
+.hdr__group { display: grid; gap: 0; align-items: center; padding: .1rem .7rem .15rem; border-radius: 14px; border: 1.5px solid var(--line); }
+.hdr__group-k { font-size: 9.5px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); line-height: 1.2; }
+.hdr__group-links { display: flex; gap: .8rem; }
+
+/* founders' agency experience: floating logos */
+.fx { align-items: stretch; }
+.fx__label { font-size: .8rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+.logos { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: clamp(1.2rem, 3vw, 2.5rem) clamp(1.5rem, 4vw, 3rem); }
+.logos li { display: grid; place-items: center; height: clamp(36px, 5vw, 56px); animation: logo-float 6s var(--ease) infinite; }
+.logos li:nth-child(2n) { animation-delay: -2s; } .logos li:nth-child(3n) { animation-delay: -4s; }
+.logos img { height: 100%; width: auto; max-width: 140px; opacity: .85; }
+:root[data-theme="dark"] .logos img { filter: invert(1); }
+.logos__word { font-size: clamp(1.3rem, 3vw, 2.2rem); font-weight: 900; line-height: 1; white-space: nowrap; opacity: .85; }
+.logos__word--levis { font-stretch: 80%; font-style: italic; letter-spacing: -.02em; }
+.logos__word--gatorade { font-stretch: 70%; text-transform: uppercase; font-style: italic; }
+.logos__word--directv { font-stretch: 90%; letter-spacing: -.03em; }
+.logos__word--sephora { font-weight: 500; letter-spacing: .32em; text-transform: uppercase; font-size: clamp(1rem, 2.2vw, 1.5rem); }
+@keyframes logo-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@media (prefers-reduced-motion: reduce) { .logos li, .vert__row a { animation: none; transition: none; } }
+
+.fx--page { margin: clamp(2.5rem, 6vw, 4rem) 0; padding: clamp(1.25rem, 3vw, 2rem) 0; border-block: 2px solid var(--ink); display: flex; flex-direction: column; gap: 1.2rem; }
+/* About: Our Standards teaser */
+.std-teaser { margin: clamp(2.5rem, 6vw, 4rem) 0; padding: clamp(1.5rem, 4vw, 3rem); border-radius: var(--box-r); background: var(--box); color: var(--box-ink); display: grid; gap: 1rem; justify-items: start; }
+.std-teaser__big { font-size: clamp(2.2rem, 6vw, 4.4rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .9; max-width: 18ch; }
+.std-teaser p { color: var(--box-soft); font-size: 1.1rem; max-width: 52ch; }
+
+/* Our Standards: dark, colored treatment (was all white) */
+.mfo--dark { margin-top: clamp(1rem, 3vw, 2rem); padding: clamp(1.5rem, 5vw, 4rem); border-radius: var(--box-r); background: var(--box); color: var(--box-ink); }
+.mfo__h1 { margin-top: 1rem; font-size: .9rem; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; color: var(--box-soft); }
+.mfo--dark .mfo__poem p:not(.mfo__big):not(.mfo__sign) { color: var(--box-soft); }
+.mfo--dark .mfo__big { color: var(--gold); }
+.mfo--dark .mfo__poem > .mfo__big:nth-child(1) { color: #5BD36B; }
+.mfo--dark .mfo__poem > .mfo__big:nth-child(4) { color: #FF6FB0; }
+.mfo--dark .mfo__poem > .mfo__big:nth-child(6) { color: var(--gold); }
+.mfo--dark .mfo__poem > .mfo__big:nth-child(8) { color: var(--skyb); }
+.mfo--dark .mfo__poem > .mfo__big:nth-child(10) { color: var(--grape); }
+.mfo--dark .mfo__sign { color: var(--white); }
+.mfo--dark .mfo__sign span { color: #FF6FB0; }
+.std-head { margin-top: clamp(2.5rem, 6vw, 4rem); }
+.tenets li { border: 0; background: var(--paper-2, var(--card)); }
+.tenets li:nth-child(4n+1)::before { color: var(--green); }
+.tenets li:nth-child(4n+2)::before { color: var(--pink); }
+.tenets li:nth-child(4n+3)::before { color: var(--grape); }
+.tenets li:nth-child(4n+4)::before { color: var(--orange); }

@@ -31,12 +31,19 @@
     const leg = document.getElementById("leg-covers");
     if (leg) leg.innerHTML = ordered.slice(0, 12).map((s) => `<img src="${esc(CC.art(s))}" alt="" loading="lazy">`).join("");
 
+    // shows grouped by vertical: flagships first, then each category in the registry's order
     const wall = document.getElementById("cover-wall");
     if (!wall) return;
     if (!ordered.length) { wall.hidden = true; return; }
-    wall.innerHTML = ordered.map((s) => `<li class="${big(s) ? "wall__big" : ""}" data-show="${esc(s.key)}">
-      <a href="${esc(CC.showHref(s))}"><img src="${esc(CC.art(s))}" alt="${esc(s.name)}" loading="lazy" width="300" height="300"></a>
-    </li>`).join("");
+    const cats = CC.categories || {};
+    const groups = [["Flagships", ordered.filter(big)]].concat(
+      Object.entries(cats).map(([k, label]) => [label, ordered.filter((s) => !big(s) && s.category === k)]));
+    const rest = ordered.filter((s) => !big(s) && !cats[s.category]);
+    if (rest.length) groups.push(["More shows", rest]);
+    wall.innerHTML = groups.filter(([, list]) => list.length).map(([label, list]) => `<div class="vert">
+      <h3 class="vert__k">${esc(label)} <span>${list.length}</span></h3>
+      <ul class="vert__row">${list.map((s) => `<li data-show="${esc(s.key)}"><a href="${esc(CC.showHref(s))}" title="${esc(s.name)}"><img src="${esc(CC.art(s))}" alt="${esc(s.name)}" loading="lazy" width="200" height="200"></a></li>`).join("")}</ul>
+    </div>`).join("");
   });
 
   /* ---------------- 4. the Studio: photo mosaic from photos.json ---------------- */

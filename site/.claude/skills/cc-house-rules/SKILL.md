@@ -7,6 +7,20 @@ description: The Curious & Creative Company's standing brand, copy, roster, and 
 
 Joshua shouldn't have to re-explain these. If a request conflicts with a rule, ask before you build.
 
+
+## Nov 19 rulings (Joshua + Muse brief) — these override older lines below where they conflict
+- Positioning: **an AI-native creative company** (Es Muy Good is the model: a small core team, specialists brought in job by job, embedded with clients). AI-native appears in the hero, About, Productions, Strategy, and Our Standards; AI amplifies judgment, never makes the call.
+- Division names in full on cards, page titles, h1s, footer, drawer, inquiry form: **Curious & Creative Network**, **Curious & Creative Productions**, **Curious & Creative Strategy**. The top nav groups the three short labels under one "Curious & Creative" label.
+- Nav order: About · [Curious & Creative: Network · Productions · Strategy] · Our Standards · Contact.
+- "Manifesto" is now **Our Standards** (`pages/manifesto.html`, dark/colored treatment).
+- Homepage hero is only the founders' photo. "Curious first." green, "Then creative." pink.
+- Team titles: Joshua McKenzie German, Founder & CEO (joshua@curiousandcreative.co); Janel Moore, Co-founder & COO.
+- The founder-experience sentence is replaced by a floating logo row labeled "Our founders' agency experience" (Levi's, Gatorade, DoorDash, DIRECTV, Sephora, MLB, BMW). Real SVGs live in `assets/logos/`; brands without a file render as a styled wordmark until Joshua supplies the official logo.
+- **SCAiL is removed** from the footer and About.
+- Photography is **Joshua German Photography, @joshuagermanphoto** (replaces @viewsbygerm).
+- Every show card shows art: shows without a cover get the generated `CC.placeholderArt` cover (category color, show name).
+- Do not edit show entries in `data/shows.json`; Umar's data update lands separately.
+
 ## Who's who
 - **Joshua German** and **Janel Moore** are the co-founders.
   - Joshua: creative strategy, production, editorial.
