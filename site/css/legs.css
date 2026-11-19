@@ -248,3 +248,18 @@
 .legs-lab--feature .legs-lab__title { font-size: clamp(1.8rem, 4vw, 3rem); }
 .legs-lab--feature p { max-width: 58ch; }
 @media (max-width: 640px) { .legs-lab--feature { grid-template-columns: 1fr; } .legs-lab--feature .legs-lab__thumb { max-width: 180px; } }
+
+/* Productions: events steps + packages */
+.evsteps { list-style: none; padding: 0; margin: .8rem 0 1rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem 1.2rem; }
+.evsteps li { display: grid; gap: .15rem; }
+.evsteps b { font-weight: 900; font-stretch: 80%; text-transform: uppercase; font-size: 1.1rem; }
+.evsteps span { font-size: .92rem; opacity: .85; }
+@media (max-width: 520px) { .evsteps { grid-template-columns: 1fr; } }
+.packs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.pack { display: flex; flex-direction: column; gap: .5rem; padding: clamp(1rem, 2.5vw, 1.4rem); border-radius: var(--card-r); background: var(--c); color: var(--t, #fff); }
+.pack h3 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: 1; }
+.pack p { font-weight: 650; }
+.pack ul { margin: .3rem 0 0; padding-left: 1.1rem; display: grid; gap: .25rem; font-size: .92rem; }
+@media (max-width: 1000px) { .packs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .packs { grid-template-columns: 1fr; } }
+.lhero__title { font-size: clamp(2.4rem, 5.2vw, 4.6rem); overflow-wrap: anywhere; }

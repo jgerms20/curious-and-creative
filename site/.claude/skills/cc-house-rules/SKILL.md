@@ -10,8 +10,11 @@ Joshua shouldn't have to re-explain these. If a request conflicts with a rule, a
 
 ## Nov 19 rulings (Joshua + Muse brief) — these override older lines below where they conflict
 - Positioning: **an AI-native creative company** (Es Muy Good is the model: a small core team, specialists brought in job by job, embedded with clients). AI-native appears in the hero, About, Productions, Strategy, and Our Standards; AI amplifies judgment, never makes the call.
-- Division names in full on cards, page titles, h1s, footer, drawer, inquiry form: **Curious & Creative Network**, **Curious & Creative Productions**, **Curious & Creative Strategy**. The top nav groups the three short labels under one "Curious & Creative" label.
-- Nav order: About · [Curious & Creative: Network · Productions · Strategy] · Our Standards · Contact.
+- Division names in full on cards, page titles, h1s, footer, drawer, inquiry form: **Curious & Creative Network**, **Curious & Creative Productions**, **Curious & Creative Strategy**. The top nav uses plain short labels (Network, Productions, Strategy): no box or group label around them (Joshua, Nov 19).
+- Nav order: About · Network · Productions · Strategy · Our Standards · Contact.
+- Productions services: Events (planning, production, coverage, recap) · Photography & Videography · Editing & Post · Podcast Production · Websites & Branding · Content Packages, plus packages (Event, Launch, Content, Podcast). No "specialty" badge; never show photos dressed up as videos.
+- Homepage Network section uses the real show cards (`CC.showCard`), one swipeable row per vertical, not tiles.
+- Es Muy Good model (WSJ, Nov 17 2026): two founders plus heads of production and operations, a standby network of creatives, embedded in the client's channels, fast turnarounds. AI-native is our addition.
 - "Manifesto" is now **Our Standards** (`pages/manifesto.html`, dark/colored treatment).
 - Homepage hero is only the founders' photo. "Curious first." green, "Then creative." pink.
 - Team titles: Joshua McKenzie German, Founder & CEO (joshua@curiousandcreative.co); Janel Moore, Co-founder & COO.
@@ -44,7 +47,7 @@ Joshua shouldn't have to re-explain these. If a request conflicts with a rule, a
 - Strategy is literal strategy, sold by need: research and polling, forecasting, audience strategy, campaign strategy, podcast strategy, AI workflow strategy; engagements are sprint, project, or ongoing. Its visual is the type-led `.stratile`. Gen Alpha is a small "original research" card lower on its page, never the leg's front image.
 - Nav: The Network · Productions · Strategy · Manifesto · About · Contact. The Manifesto is the company's mission (curiosity, evidence, journalistic integrity, taste, AI amplifies judgment and never makes the call); the Network's eight standards sit under it.
 - The homepage and leg pages use identical leg names and leg lines.
-- Event coverage is a named Productions service.
+- Events (incl. coverage) is a named Productions service.
 - Anything else drafted Nov 8–9 is PROPOSED until Joshua rules on it. Don't lock it in.
 
 ## Voice

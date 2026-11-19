@@ -67,20 +67,7 @@
       </section>`;
     };
     // a regular show: compact card with its cadence and latest episode
-    const card = (s) => {
-      const e = (data.episodes || []).find((x) => x.show === s.key);
-      const links = CC.showLinks(s);
-      return `<article class="ncard" id="${s.key}" data-show="${s.key}">
-        <span class="ncard__art">${s.art ? `<img src="${esc(CC.art(s))}" alt="" loading="lazy">` : `<span class="ncard__initials">${esc((s.short || s.name).replace(/^The /, "").split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`}</span>
-        <div class="ncard__body">
-          <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.cadence || CC.showByline(s))}</span>
-          <h3>${s.page ? `<a href="${CC.showHref(s)}">${esc(s.name)}</a>` : esc(s.name)}</h3>
-          <p>${esc(s.tagline || s.description || "")}</p>
-          ${e ? `<a class="ncard__latest" href="${esc(CC.epLink(e))}"${/^https?:/.test(CC.epLink(e)) ? ' target="_blank" rel="noopener"' : ""}><small>Latest · ${esc(ago(e.date))}</small>${esc(e.title)}</a>` : `<span class="ncard__latest"><small>Coming soon</small>First episode on the way.</span>`}
-          ${links.length ? `<p class="ncard__links">${links.map(([l, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`).join("")}</p>` : ""}
-        </div>
-      </article>`;
-    };
+    const card = (s) => CC.showCard(s, data);
     const head = (t, sub) => `<div class="pill-row"><h2 class="pill-title${t === "Flagships" ? " pill-title--gold" : ""}">${t}</h2>${sub ? `<span class="eyebrow">${sub}</span>` : ""}</div>`;
     const cats = [...new Set(data.secondary.map((s) => s.category || "more"))].sort((a, b) => Object.keys(CC.categories).indexOf(a) - Object.keys(CC.categories).indexOf(b));
     host.innerHTML = head("Flagships", "Handmade, hosted by us") + data.primary.map(block).join("") +
