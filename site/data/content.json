@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T00:08:45Z",
+ "generated_at": "2026-11-19T00:21:37Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -280,8 +280,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-17T15:21:42Z",
-   "count": 14
+   "latest": "2026-11-18T21:32:43Z",
+   "count": 15
   },
   {
    "key": "morningread",
@@ -442,8 +442,8 @@
    "complete": true,
    "art": "assets/art/columbiaread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47120618/47120618-1793473024667-3c58a827bef36.jpg",
-   "latest": "2026-11-18T12:05:25Z",
-   "count": 7
+   "latest": "2026-11-17T00:43:19Z",
+   "count": 6
   },
   {
    "key": "airead",
@@ -766,8 +766,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-18T13:50:39Z",
-   "count": 18
+   "latest": "2026-11-17T12:58:23Z",
+   "count": 17
   },
   {
    "key": "cbbdaily",
@@ -959,6 +959,20 @@
  ],
  "episodes": [
   {
+   "id": "dominatedconvo:f8b4bd52 07ae 4f98 8697 06a1fe27c122",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "GTA 6 Reviews Land at 99 and the Whole Internet Clears Its Calendar for Tomorrow | Wednesday, November 18, 2026",
+   "date": "2026-11-18T21:32:43Z",
+   "duration": 1283,
+   "description": "November was supposed to be the month of prophesied failures. Instead, November 17 became verdict day. A game nobody could play yet tied the highest review score ever recorded. A chipmaker posted the biggest quarter in its history while its board closed the door on its founder. The last Senate race in America was finally called, two weeks after Election Day. And the United States lost a public health status it had held for twenty-six years. The fantasy world got the perfect grade. The real systems got the mixed ones.\n Plus: how each platform processed a day of verdicts, and tomorrow's collision, when GTA 6 unlocks at midnight and Anthropic starts trading the same morning.\n Chapters:\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795037529287-e83a26af29d26.jpg",
+   "url": "https://open.spotify.com/episode/4YarPZLkJNvUCeA4RZCkG4",
+   "spotify_url": "https://open.spotify.com/episode/4YarPZLkJNvUCeA4RZCkG4",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129715374/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F9f1aa14d-f6a8-6456-57d8-6c1091590482.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:eeaf1cae deb2 4d17 9bd0 fe1ae785abf1",
    "show": "polymath",
    "kind": "episode",
@@ -1001,20 +1015,6 @@
    "number": null
   },
   {
-   "id": "cfbdaily:10abed10 f8b6 42ab 968e ea3c4a3c579b",
-   "show": "cfbdaily",
-   "kind": "episode",
-   "title": "Texas Climbs to No. 5 and the Bubble Tightens Behind Boise State | Tuesday, November 17, 2026",
-   "date": "2026-11-18T13:50:39Z",
-   "duration": 1359,
-   "description": "The committee's third Top 25 is out: Georgia, Utah, Alabama and UCLA hold the byes, Texas climbs to No. 5 past Notre Dame, Wake Forest takes the last at-large seat — and Texas Tech, ranked No. 12, would be out. Plus the Alabama standard, South Carolina's two different verdicts, the Heisman board, and a minefield Saturday with no ranked-versus-ranked games.\n Segments: The New Rankings · Synthesis: What the Committee Is Telling Us · The Playoff Picture and the Texas Tech Problem · What Saturday Changed · South Carolina Spotlight · The Awards Watch · Availability and the Carousel · Predictions and the Saturday Look-Ahead\n Timestamps:\n0:10 The New Rankings\n5:19 Synthesis: What the Committee Is…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795009790244-aea2260c6e6fa.jpg",
-   "url": "https://open.spotify.com/episode/1UHhT3sTmitaX8CxC1u3sD",
-   "spotify_url": "https://open.spotify.com/episode/1UHhT3sTmitaX8CxC1u3sD",
-   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129689393/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2Fec8b5c2a-c2d7-e3d6-b853-51596f6313f0.m4a",
-   "number": null
-  },
-  {
    "id": "airead:79c3c6c8 da64 45b6 8600 13a1c44e2f9e",
    "show": "airead",
    "kind": "episode",
@@ -1026,20 +1026,6 @@
    "url": "https://open.spotify.com/episode/4H2oPudpXiTBXIcCzrmkI4",
    "spotify_url": "https://open.spotify.com/episode/4H2oPudpXiTBXIcCzrmkI4",
    "audio": "https://anchor.fm/s/119609054/podcast/play/129685265/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2Facaf6f40-8d07-2b9f-e1c9-80bf2893ecb2.m4a",
-   "number": null
-  },
-  {
-   "id": "columbiaread:b7458562 5690 4053 b996 b95350921f95",
-   "show": "columbiaread",
-   "kind": "episode",
-   "title": "Wednesday, November 18, 2026",
-   "date": "2026-11-18T12:05:25Z",
-   "duration": 899,
-   "description": "The State House handoff is underway: Gov.-elect Alan Wilson held his first transition meeting Tuesday and gave every Cabinet director until December 4th to say whether they want to stay, while Sen.-elect Annie Andrews builds her Senate office after a week of orientation in Washington.\n Also today: Columbia protests the $67 billion Dominion–NextEra merger at the final November hearing, Southeast Park's new center would carry fallen Officer Christopher DeLong's name, a court test for Richland One's newest board member, a developing murder charge in Lower Richland, the standing real estate beat at 1,460 homes for sale, and McMaster's final Carolighting on Sunday.\n Timestamps:\n 0:00 — The…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1795003469597-500aadae2a577.jpg",
-   "url": "https://open.spotify.com/episode/0D6NsdAOHqkgIfNl060qng",
-   "spotify_url": "https://open.spotify.com/episode/0D6NsdAOHqkgIfNl060qng",
-   "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129683762/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F15420bce-7928-63f2-8723-c527f12c7a5c.m4a",
    "number": null
   },
   {
@@ -8077,7 +8063,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -10158,8 +10144,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 15,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
@@ -10206,8 +10192,8 @@
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 1
+   "episodes": 6,
+   "spotify_matches": 0
   },
   "airead": {
    "ok": true,
@@ -10302,8 +10288,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 18,
-   "spotify_matches": 1
+   "episodes": 17,
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
