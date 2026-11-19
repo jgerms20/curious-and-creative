@@ -1029,10 +1029,6 @@ a.ncard__latest:hover { text-decoration: underline; }
 .mfo__sign { max-width: none !important; margin-top: clamp(1.5rem, 4vw, 2.5rem) !important; font-size: clamp(2rem, 6vw, 4.2rem); font-weight: 900; font-stretch: 78%; text-transform: uppercase; line-height: .92; }
 .mfo__sign span { color: var(--pink); }
 
-/* nav: the three divisions grouped under one "Curious & Creative" label */
-.hdr__group { display: grid; gap: 0; align-items: center; padding: .1rem .7rem .15rem; border-radius: 14px; border: 1.5px solid var(--line); }
-.hdr__group-k { font-size: 9.5px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); line-height: 1.2; }
-.hdr__group-links { display: flex; gap: .8rem; }
 
 /* founders' agency experience: floating logos */
 .fx { align-items: stretch; }

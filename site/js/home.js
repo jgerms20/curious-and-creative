@@ -40,10 +40,11 @@
       Object.entries(cats).map(([k, label]) => [label, ordered.filter((s) => !big(s) && s.category === k)]));
     const rest = ordered.filter((s) => !big(s) && !cats[s.category]);
     if (rest.length) groups.push(["More shows", rest]);
-    wall.innerHTML = groups.filter(([, list]) => list.length).map(([label, list]) => `<div class="vert">
-      <h3 class="vert__k">${esc(label)} <span>${list.length}</span></h3>
-      <ul class="vert__row">${list.map((s) => `<li data-show="${esc(s.key)}"><a href="${esc(CC.showHref(s))}" title="${esc(s.name)}"><img src="${esc(CC.art(s))}" alt="${esc(s.name)}" loading="lazy" width="200" height="200"></a></li>`).join("")}</ul>
-    </div>`).join("");
+    // the real show cards, one swipeable row per vertical
+    wall.innerHTML = groups.filter(([, list]) => list.length).map(([label, list]) => `<section class="vert">
+      <div class="vert__head"><h3 class="vert__k">${esc(label)} <span>${list.length}</span></h3><a class="pill-more" href="${esc(CC.url("pages/shows.html"))}">See all →</a></div>
+      <div class="vert__cards">${list.map((s) => CC.showCard(s, data)).join("")}</div>
+    </section>`).join("");
   });
 
   /* ---------------- 4. the Studio: photo mosaic from photos.json ---------------- */
@@ -65,7 +66,7 @@
         if (!picked.length) { mosaic.hidden = true; return; }
         mosaic.innerHTML = picked.map((p, i) => `<figure class="mosaic__tile${i === 0 ? " mosaic__tile--lead" : ""}">
           <img src="${esc(CC.url(i === 0 ? p.src : p.thumb))}" alt="${esc(p.alt || "")}" loading="lazy">
-          ${i === 0 ? `<figcaption><b>Event Coverage</b> Documentary stills and video, captured as the room actually felt.</figcaption>` : ""}
+          ${i === 0 ? `<figcaption><b>Events</b> Planned, produced, and covered.</figcaption>` : ""}
         </figure>`).join("");
       });
   }

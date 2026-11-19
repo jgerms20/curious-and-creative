@@ -46,7 +46,7 @@
     { label: "Home", href: "index.html", footer: false, words: "home front page latest" },
     { label: "About", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders co-founders team company" },
     { label: "Network", full: "Curious & Creative Network", group: "cc", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break horseshoe columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books" },
-    { label: "Productions", full: "Curious & Creative Productions", group: "cc", href: "pages/studio.html", nav: true, words: "productions curious and creative productions the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
+    { label: "Productions", full: "Curious & Creative Productions", group: "cc", href: "pages/studio.html", nav: true, words: "productions curious and creative productions events event planning event production event coverage packages branding brand identity content the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
     { label: "Strategy", full: "Curious & Creative Strategy", group: "cc", href: "pages/consultancy.html", nav: true, words: "strategy consulting consultancy research data polling surveys forecasting forecast trends audience campaign brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
     { label: "Our Standards", href: "pages/manifesto.html", nav: true, words: "our standards manifesto mission ai-native ai native taste standards accuracy journalism principles corrections request a show ideas" },
     { label: "Contact", href: "pages/contact.html", nav: true, words: "contact email inquiry hello hire work with us pitch guest press request a show" },
@@ -84,16 +84,7 @@
       </div>
     </div>`);
 
-  // the three divisions sit together under one "Curious & Creative" label, so each reads in full
-  const navHTML = () => {
-    const items = PAGES.filter((p) => p.nav); let out = "", open = false;
-    items.forEach((p) => {
-      if (p.group && !open) { out += `<div class="hdr__group" role="group" aria-label="Curious &amp; Creative"><span class="hdr__group-k" aria-hidden="true">Curious &amp; Creative</span><span class="hdr__group-links">`; open = true; }
-      if (!p.group && open) { out += "</span></div>"; open = false; }
-      out += navItem(p);
-    });
-    return out + (open ? "</span></div>" : "");
-  };
+  const navHTML = () => PAGES.filter((p) => p.nav).map(navItem).join("");
   const fullName = (p) => (p.full || p.label).replace(/&(?!amp;)/g, "&amp;");
 
   const header = `
@@ -368,6 +359,21 @@
       + lines.map((l, i) => `<text x="60" y="${y0 + i * size}" font-family="Archivo, Arial Black, sans-serif" font-weight="900" font-size="${size}" fill="${fg}">${xml(l)}</text>`).join("")
       + (s.count ? "" : `<text x="60" y="540" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="4" fill="${fg}" fill-opacity=".7">COMING SOON</text>`) + "</svg>";
     return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  };
+  // a show as a compact card: cover, cadence, name, tagline, latest episode (Network page and homepage)
+  CC.showCard = (s, data) => {
+    const e = ((data && data.episodes) || []).find((x) => x.show === s.key);
+    const links = CC.showLinks(s);
+    return `<article class="ncard" id="${s.key}" data-show="${s.key}">
+        <span class="ncard__art"><img src="${esc(CC.art(s))}" alt="" loading="lazy"></span>
+        <div class="ncard__body">
+          <span class="host-tag" data-host="${CC.hostGroup(s)}"><span class="host-dot"></span>${esc(s.cadence || CC.showByline(s))}</span>
+          <h3><a href="${CC.showHref(s)}">${esc(s.name)}</a></h3>
+          <p>${esc(s.tagline || s.description || "")}</p>
+          ${e ? `<a class="ncard__latest" href="${esc(CC.epLink(e))}"${/^https?:/.test(CC.epLink(e)) ? ' target="_blank" rel="noopener"' : ""}><small>Latest · ${esc(ago(e.date))}</small>${esc(e.title)}</a>` : `<span class="ncard__latest"><small>Coming soon</small>First episode on the way.</span>`}
+          ${links.length ? `<p class="ncard__links">${links.map(([l, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`).join("")}</p>` : ""}
+        </div>
+      </article>`;
   };
   CC.art = (s) => (s && s.art ? url(s.art) : "");
   CC.epImg = (e, show) => (e.image ? e.image : CC.art(show));
