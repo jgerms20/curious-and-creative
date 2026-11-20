@@ -1,5 +1,5 @@
 {
- "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin 'rss' / 'spotify' / 'youtube_channel_id' when known to skip discovery. 'itunes_search' only accepts a result whose name matches AND (when 'match_artist' is set) whose host matches. The site sorts shows by most recent activity, flagship first. Optional 'socials': the show's own social channels as an object of platform -> full https URL, e.g. {\"instagram\": \"https://www.instagram.com/…\", \"tiktok\": \"https://www.tiktok.com/@…\"} (keys: instagram, tiktok, youtube, x, threads, facebook, linkedin, bluesky, substack). They render as small links on the network page and as buttons on the show's page (tools/build_shows.py). Add only channels that really exist; leave the field out otherwise and nothing renders. Set \"active\": false to take a show off the network (nav, map, lists, search) without deleting it; its old episode pages keep working.",
+ "_readme": "Hand-edited show registry. scripts/refresh_content.py reads this, pulls real episodes from each show's feed, and writes site/data/content.json. Pin 'rss' / 'spotify' / 'youtube_channel_id' when known to skip discovery. 'itunes_search' only accepts a result whose name matches AND (when 'match_artist' is set) whose host matches. The site sorts shows by most recent activity, flagship first. Optional 'socials': the show's own social channels as an object of platform -> full https URL, e.g. {\"instagram\": \"https://www.instagram.com/…\", \"tiktok\": \"https://www.tiktok.com/@…\"} (keys: instagram, tiktok, youtube, x, threads, facebook, linkedin, bluesky, substack). They render as small links on the network page and as buttons on the show's page (tools/build_shows.py). Add only channels that really exist; leave the field out otherwise and nothing renders. Set \"active\": false to take a show off the network (nav, map, lists, search) without deleting it; its old episode pages keep working. Optional 'also_in': a list of extra category keys a show is also listed under (e.g. a flagship also shown under Culture).",
  "shows": [
   {
    "key": "ccpod",
@@ -29,7 +29,10 @@
     "test"
    ],
    "tier": "primary",
-   "episode_links": []
+   "episode_links": [],
+   "also_in": [
+    "culture"
+   ]
   },
   {
    "key": "polymath",
@@ -89,7 +92,10 @@
     "moore"
    ],
    "rss": null,
-   "tier": "primary"
+   "tier": "primary",
+   "also_in": [
+    "culture"
+   ]
   },
   {
    "key": "dominate",
@@ -108,7 +114,10 @@
    "rss": "https://anchor.fm/s/24421480/podcast/rss",
    "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
    "tier": "primary",
-   "feature": true
+   "feature": true,
+   "also_in": [
+    "culture"
+   ]
   },
   {
    "key": "abolitionist",
@@ -134,7 +143,7 @@
    "hosts": [
     "AI-generated"
    ],
-   "tagline": "Jazz only, four times a week.",
+   "tagline": "Jazz only, one combined episode every Friday.",
    "about": "",
    "spotify": "79MaSzrv6uJkaHiFoZQrWk",
    "rss": "https://anchor.fm/s/1187405a4/podcast/rss",
@@ -142,7 +151,7 @@
    "principal": "Joshua German",
    "keep": 30,
    "category": "culture",
-   "cadence": "Mon · Wed · Fri"
+   "cadence": "Fridays · one combined episode"
   },
   {
    "key": "brazil",
@@ -195,7 +204,7 @@
    "keep": 30,
    "name": "The Design Digest",
    "short": "The Design Digest",
-   "category": "culture",
+   "category": "industry",
    "spotify": "1I3nVM9LPlxYQzy8VPtGTD",
    "rss": "https://anchor.fm/s/119758914/podcast/rss",
    "tagline": ""
@@ -353,25 +362,6 @@
    "cadence": "Daily"
   },
   {
-   "key": "techread",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "about": "",
-   "keep": 30,
-   "name": "The Tech Read",
-   "short": "The Tech Read",
-   "category": "news",
-   "spotify": "1hQp8wRwxTf0BO6OfTtdDe",
-   "rss": "https://anchor.fm/s/1196c6280/podcast/rss",
-   "tagline": "",
-   "active": false
-  },
-  {
    "key": "optionsdesk",
    "kind": "podcast",
    "tier": "secondary",
@@ -502,7 +492,7 @@
    "rss": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "tagline": "",
    "cadence": "5x a week in season",
-   "active": false
+   "active": true
   },
   {
    "key": "celticsdaily",
@@ -590,8 +580,8 @@
    "ai": "full",
    "about": "",
    "keep": 30,
-   "name": "The Horseshoe",
-   "short": "The Horseshoe",
+   "name": "Gamecocks Daily",
+   "short": "Gamecocks Daily",
    "category": "sports",
    "spotify": "6A71aYP8TxEEJgOCOyTQs4",
    "rss": "https://anchor.fm/s/1196d625c/podcast/rss",
@@ -636,27 +626,9 @@
    "match_owner": [
     "Joshua German"
    ],
-   "cadence": "Daily"
-  },
-  {
-   "key": "cbbweekly",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "about": "",
-   "keep": 30,
-   "name": "College Basketball Daily",
-   "short": "College Basketball Daily",
-   "category": "sports",
-   "tagline": "",
-   "match_owner": [
-    "Joshua German"
-   ],
-   "cadence": "Weekly · Monday wrap"
+   "cadence": "Daily",
+   "spotify": "4otFTX6t7uMbjV1H1U1tyx",
+   "rss": "https://anchor.fm/s/119a81f14/podcast/rss"
   },
   {
    "key": "cutandsew",
@@ -671,12 +643,13 @@
    "keep": 30,
    "name": "Cut & Sew",
    "short": "Cut & Sew",
-   "category": "culture",
+   "category": "industry",
    "tagline": "",
    "match_owner": [
     "Joshua German"
    ],
-   "cadence": "Wed"
+   "cadence": "Wed",
+   "spotify": "6nwdYn042ClFOjyTc2cA3K"
   },
   {
    "key": "coverup",
@@ -691,12 +664,14 @@
    "keep": 30,
    "name": "The Cover-Up",
    "short": "The Cover-Up",
-   "category": "culture",
+   "category": "investigative",
    "tagline": "",
    "match_owner": [
     "Joshua German"
    ],
-   "cadence": "Thu"
+   "cadence": "Thu",
+   "spotify": "2bCfclnB7YLUv0gfNNvmhs",
+   "rss": "https://anchor.fm/s/119aba9b8/podcast/rss"
   },
   {
    "key": "coldopen",
@@ -711,11 +686,13 @@
    "keep": 30,
    "name": "Cold Open",
    "short": "Cold Open",
-   "category": "culture",
+   "category": "investigative",
    "tagline": "",
    "match_owner": [
     "Joshua German"
-   ]
+   ],
+   "spotify": "05mm8yT6xvNcPxC4UKT231",
+   "rss": "https://anchor.fm/s/119abe25c/podcast/rss"
   },
   {
    "key": "cookedbooks",
@@ -730,7 +707,30 @@
    "keep": 30,
    "name": "Cooked Books",
    "short": "Cooked Books",
-   "category": "culture",
+   "category": "investigative",
+   "tagline": "",
+   "match_owner": [
+    "Joshua German"
+   ],
+   "spotify": "61PVt6PNtNpUkckR6uhEuS",
+   "rss": "https://anchor.fm/s/119aa8394/podcast/rss"
+  },
+  {
+   "key": "followingthemoney",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "keep": 30,
+   "name": "Following the Money",
+   "short": "Following the Money",
+   "category": "investigative",
+   "spotify": "7koV3RANtAstMaM5QUBxUm",
+   "rss": "https://anchor.fm/s/11a29d3c4/podcast/rss",
    "tagline": "",
    "match_owner": [
     "Joshua German"
@@ -806,6 +806,7 @@
   "culture": "Culture",
   "news": "News & reads",
   "industry": "Industry",
+  "investigative": "Investigative Journalism",
   "sports": "Sports"
  },
  "hosts": {

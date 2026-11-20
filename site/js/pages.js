@@ -69,14 +69,16 @@
     // a regular show: compact card with its cadence and latest episode
     const card = (s) => CC.showCard(s, data);
     const head = (t, sub) => `<div class="pill-row"><h2 class="pill-title${t === "Flagships" ? " pill-title--gold" : ""}">${t}</h2>${sub ? `<span class="eyebrow">${sub}</span>` : ""}</div>`;
-    const cats = [...new Set(data.secondary.map((s) => s.category || "more"))].sort((a, b) => Object.keys(CC.categories).indexOf(a) - Object.keys(CC.categories).indexOf(b));
+    const alsoIn = (k) => data.primary.filter((s) => (s.also_in || []).includes(k));
+    const cats = [...new Set(data.secondary.map((s) => s.category || "more").concat(data.primary.flatMap((s) => s.also_in || [])))].sort((a, b) => Object.keys(CC.categories).indexOf(a) - Object.keys(CC.categories).indexOf(b));
     host.innerHTML = head("Flagships", "Handmade, hosted by us") + data.primary.map(block).join("") +
       (data.secondary.length ? head("The network", `${data.secondary.length} regular shows`) + cats.map((k) => {
         const list = data.secondary.filter((s) => (s.category || "more") === k);
-        return `<section class="ncat" id="cat-${k}"><h3 class="ncat__title">${esc(CC.categories[k] || "More")} <small>${list.length}</small></h3><div class="ncards">${list.map(card).join("")}</div></section>`;
+        const extra = alsoIn(k);
+        return `<section class="ncat" id="cat-${k}"><h3 class="ncat__title">${esc(CC.categories[k] || "More")} <small>${list.length + extra.length}</small></h3><div class="ncards">${list.map(card).join("")}${extra.map((s) => card(s).replace(` id="${s.key}"`, "")).join("")}</div></section>`;
       }).join("") : "");
     host.before(sorter(data, (k) => {
-      host.querySelectorAll(".showblock, .ncard").forEach((b) => { b.hidden = k !== "all" && !CC.showTags(data.byKey[b.id] || {}).includes(k); });
+      host.querySelectorAll(".showblock, .ncard").forEach((b) => { b.hidden = k !== "all" && !CC.showTags(data.byKey[b.dataset.show || b.id] || {}).includes(k); });
       host.querySelectorAll(".ncat").forEach((c) => { c.hidden = ![...c.querySelectorAll(".ncard")].some((x) => !x.hidden); });
       host.querySelectorAll(".pill-row").forEach((r) => { let n = r.nextElementSibling, any = false; while (n && !n.classList.contains("pill-row")) { if (!n.hidden) any = true; n = n.nextElementSibling; } r.hidden = !any; });
     }));
