@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T03:33:52Z",
+ "generated_at": "2026-11-20T08:26:22Z",
  "shows": [
   {
    "key": "ccpod",
@@ -17,6 +17,9 @@
    "art_url": "https://joshuamgerman.com/photos/podcasts/curious-creative-logo.jpg",
    "rss": "https://anchor.fm/s/113d16640/podcast/rss",
    "tier": "primary",
+   "also_in": [
+    "culture"
+   ],
    "feed": "https://anchor.fm/s/113d16640/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/033ze48fmi1cTvj2M7Pb6M",
    "feed_title": "Curious and Creative",
@@ -49,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-18T21:20:56Z",
-   "count": 269
+   "latest": "2026-11-20T07:10:16Z",
+   "count": 274
   },
   {
    "key": "approachable",
@@ -88,10 +91,13 @@
    "spotify": "033G4KctzeuD3Pu4db1AQa",
    "rss": null,
    "tier": "primary",
+   "also_in": [
+    "culture"
+   ],
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -113,6 +119,9 @@
    "apple": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
    "tier": "primary",
    "feature": true,
+   "also_in": [
+    "culture"
+   ],
    "feed": "https://anchor.fm/s/24421480/podcast/rss",
    "apple_url": "https://podcasts.apple.com/us/podcast/dominate-the-decade/id1517223875",
    "spotify_url": "https://open.spotify.com/show/3IiC15tFfb1rHoDm9R6Zxp",
@@ -158,14 +167,14 @@
    "hosts": [
     "AI-generated"
    ],
-   "tagline": "Jazz only, four times a week.",
+   "tagline": "Jazz only, one combined episode every Friday.",
    "about": "",
    "spotify": "79MaSzrv6uJkaHiFoZQrWk",
    "rss": "https://anchor.fm/s/1187405a4/podcast/rss",
    "ai": "full",
    "principal": "Joshua German",
    "category": "culture",
-   "cadence": "Mon · Wed · Fri",
+   "cadence": "Fridays · one combined episode",
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/79MaSzrv6uJkaHiFoZQrWk",
    "feed_title": "The Jazz Riff",
@@ -242,7 +251,7 @@
    "about": "",
    "name": "The Design Digest",
    "short": "The Design Digest",
-   "category": "culture",
+   "category": "industry",
    "spotify": "1I3nVM9LPlxYQzy8VPtGTD",
    "rss": "https://anchor.fm/s/119758914/podcast/rss",
    "tagline": "",
@@ -388,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-18T11:37:57Z",
-   "count": 18
+   "latest": "2026-11-19T11:40:29Z",
+   "count": 19
   },
   {
    "key": "nyread",
@@ -469,35 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-18T12:30:45Z",
-   "count": 17
-  },
-  {
-   "key": "techread",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "about": "",
-   "name": "The Tech Read",
-   "short": "The Tech Read",
-   "category": "news",
-   "spotify": "1hQp8wRwxTf0BO6OfTtdDe",
-   "rss": "https://anchor.fm/s/1196c6280/podcast/rss",
-   "tagline": "",
-   "active": false,
-   "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
-   "spotify_url": "https://open.spotify.com/show/1hQp8wRwxTf0BO6OfTtdDe",
-   "feed_title": "The Tech Read",
-   "description": "The day's technology news, read in depth: product launches, the big tech companies, gadgets, platforms, and policy. Part of the Curious & Creative network's daily Read family.",
-   "complete": true,
-   "art": "assets/art/techread.jpg",
-   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115008/47115008-1793403471813-faf390ffca731.jpg",
-   "latest": "2026-11-14T22:15:12Z",
-   "count": 6
+   "latest": "2026-11-19T12:19:36Z",
+   "count": 18
   },
   {
    "key": "optionsdesk",
@@ -657,8 +639,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-17T05:12:32Z",
-   "count": 11
+   "latest": "2026-11-20T04:58:23Z",
+   "count": 12
   },
   {
    "key": "waiverwire",
@@ -677,7 +659,7 @@
    "rss": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "tagline": "",
    "cadence": "5x a week in season",
-   "active": false,
+   "active": true,
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/4DZg4aE2C8FF1nV31XWCf6",
    "feed_title": "The Waiver Wire",
@@ -739,8 +721,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-19T13:34:49Z",
-   "count": 12
+   "latest": "2026-11-20T04:50:46Z",
+   "count": 13
   },
   {
    "key": "cfbdaily",
@@ -805,8 +787,8 @@
    "principal": "Joshua German",
    "ai": "full",
    "about": "",
-   "name": "The Horseshoe",
-   "short": "The Horseshoe",
+   "name": "Gamecocks Daily",
+   "short": "Gamecocks Daily",
    "category": "sports",
    "spotify": "6A71aYP8TxEEJgOCOyTQs4",
    "rss": "https://anchor.fm/s/1196d625c/podcast/rss",
@@ -865,26 +847,17 @@
    "category": "news",
    "tagline": "",
    "cadence": "Daily",
-   "latest": null,
-   "count": 0
-  },
-  {
-   "key": "cbbweekly",
-   "kind": "podcast",
-   "tier": "secondary",
-   "hosts": [
-    "AI-generated"
-   ],
-   "principal": "Joshua German",
-   "ai": "full",
-   "about": "",
-   "name": "College Basketball Daily",
-   "short": "College Basketball Daily",
-   "category": "sports",
-   "tagline": "",
-   "cadence": "Weekly · Monday wrap",
-   "latest": null,
-   "count": 0
+   "spotify": "4otFTX6t7uMbjV1H1U1tyx",
+   "rss": "https://anchor.fm/s/119a81f14/podcast/rss",
+   "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
+   "spotify_url": "https://open.spotify.com/show/4otFTX6t7uMbjV1H1U1tyx",
+   "feed_title": "The Political Read",
+   "description": "The Political Read is the national political beat, every morning: the White House, Congress, the campaign trail, and the courts, reported straight — what happened, why it matters, and what happens next. Through the midterms and beyond, it follows the races, the votes, and the math that decides who holds power in America. Part of the Curious & Creative network.",
+   "complete": true,
+   "art": "assets/art/politicalread.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
+   "latest": "2026-11-19T12:41:50Z",
+   "count": 14
   },
   {
    "key": "cutandsew",
@@ -898,11 +871,16 @@
    "about": "",
    "name": "Cut & Sew",
    "short": "Cut & Sew",
-   "category": "culture",
+   "category": "industry",
    "tagline": "",
    "cadence": "Wed",
-   "latest": null,
-   "count": 0
+   "spotify": "6nwdYn042ClFOjyTc2cA3K",
+   "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
+   "feed_title": "Cut & Sew",
+   "art": "assets/art/cutandsew.jpg",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "latest": "2026-11-18T13:54:00Z",
+   "count": 1
   },
   {
    "key": "coverup",
@@ -916,11 +894,20 @@
    "about": "",
    "name": "The Cover-Up",
    "short": "The Cover-Up",
-   "category": "culture",
+   "category": "investigative",
    "tagline": "",
    "cadence": "Thu",
-   "latest": null,
-   "count": 0
+   "spotify": "2bCfclnB7YLUv0gfNNvmhs",
+   "rss": "https://anchor.fm/s/119aba9b8/podcast/rss",
+   "feed": "https://anchor.fm/s/119aba9b8/podcast/rss",
+   "spotify_url": "https://open.spotify.com/show/2bCfclnB7YLUv0gfNNvmhs",
+   "feed_title": "The Cover-Up",
+   "description": "One political scandal a week: the act, the cover-up, and the paper trail that undid both. Who knew, who buried it, and what it cost. Hosts June Callahan, a former Senate committee archivist, and Walt Briggs, a former congressional correspondent, work each case from the record. Part of the Curious + Creative network.",
+   "complete": true,
+   "art": "assets/art/coverup.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47156478/47156478-1793826230120-ca706eed6ae58.jpg",
+   "latest": "2026-11-19T15:48:55Z",
+   "count": 2
   },
   {
    "key": "coldopen",
@@ -934,10 +921,19 @@
    "about": "",
    "name": "Cold Open",
    "short": "Cold Open",
-   "category": "culture",
+   "category": "investigative",
    "tagline": "",
-   "latest": null,
-   "count": 0
+   "spotify": "05mm8yT6xvNcPxC4UKT231",
+   "rss": "https://anchor.fm/s/119abe25c/podcast/rss",
+   "feed": "https://anchor.fm/s/119abe25c/podcast/rss",
+   "spotify_url": "https://open.spotify.com/show/05mm8yT6xvNcPxC4UKT231",
+   "feed_title": "Cold Open",
+   "description": "One documented case a week: the record, the money, and the mechanics. No gore, no guessing. Hosts Dana Whitfield and Marc Bell work each case from the files: the documents, the evidence, and the money trail. Part of the Curious + Creative network.",
+   "complete": true,
+   "art": "assets/art/coldopen.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47156623/47156623-1793827263568-52202005dbd5e.jpg",
+   "latest": "2026-11-04T21:30:22Z",
+   "count": 1
   },
   {
    "key": "cookedbooks",
@@ -951,13 +947,160 @@
    "about": "",
    "name": "Cooked Books",
    "short": "Cooked Books",
-   "category": "culture",
+   "category": "investigative",
    "tagline": "",
-   "latest": null,
-   "count": 0
+   "spotify": "61PVt6PNtNpUkckR6uhEuS",
+   "rss": "https://anchor.fm/s/119aa8394/podcast/rss",
+   "feed": "https://anchor.fm/s/119aa8394/podcast/rss",
+   "spotify_url": "https://open.spotify.com/show/61PVt6PNtNpUkckR6uhEuS",
+   "feed_title": "Cooked Books",
+   "description": "One corporate fraud a week: the scheme, the entries, and the money trail. Who got paid, and who paid. Hosts Nadia Reyes, a former Big Four audit senior, and Frank Delgado, a former IRS Criminal Investigation forensic accountant, work each case from the record: the filings, the court documents, and the ledger. Part of the Curious + Creative network.",
+   "complete": true,
+   "art": "assets/art/cookedbooks.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47155725/47155725-1793820694154-de677474d800d.jpg",
+   "latest": "2026-11-15T10:22:32Z",
+   "count": 1
+  },
+  {
+   "key": "followingthemoney",
+   "kind": "podcast",
+   "tier": "secondary",
+   "hosts": [
+    "AI-generated"
+   ],
+   "principal": "Joshua German",
+   "ai": "full",
+   "about": "",
+   "name": "Following the Money",
+   "short": "Following the Money",
+   "category": "investigative",
+   "spotify": "7koV3RANtAstMaM5QUBxUm",
+   "rss": "https://anchor.fm/s/11a29d3c4/podcast/rss",
+   "tagline": "",
+   "feed": "https://anchor.fm/s/11a29d3c4/podcast/rss",
+   "spotify_url": "https://open.spotify.com/show/7koV3RANtAstMaM5QUBxUm",
+   "feed_title": "Following the Money",
+   "description": "Following the Money is an AI watchdog that tracks money and power with receipts, every Friday. One strand follows campaign finance: PACs, dark money groups, and leaders committees in FEC and OpenSecrets filings. The other maps church and public figure networks through public records: leader connected LLCs, property and business filings, and who sits inside those entities. Every connection is sourced to a named document. Theorizing is labeled as theorizing. Association is never framed as a charge. This is a Curious and Creative Network podcast.",
+   "complete": true,
+   "art": "assets/art/followingthemoney.jpg",
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47239161/47239161-1794733992144-583ec3550a988.jpg",
+   "latest": "2026-11-15T09:51:40Z",
+   "count": 1
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:a3aae537 363b 4d18 b92e ad125764706a",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#275 Black Boston: The Community That Made Study a Form of Resistance",
+   "date": "2026-11-20T07:10:16Z",
+   "duration": 3247,
+   "description": "Ask most people what they know about Black Boston and the answer is often a pause — yet Black people were 10 percent of Boston's population in 1752, and roughly one in four Bostonians is Black today. Enslaved Africans arrived in Boston Harbor in 1638, and a free Black community on Beacon Hill built a church, a school, and an abolitionist network before the Civil War.\n This episode traces that record: the African Meeting House of 1806, the school fight won in the legislature in 1855, Robert Morris, the first Black lawyer to practice in Boston, and William Monroe Trotter's uncompromising Boston Guardian. It follows the community south to Roxbury, Dorchester, and Mattapan, and a line of…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795158535554-f356430d188c6.jpg",
+   "url": "https://open.spotify.com/episode/5q75dWVsbELlTIQMjHm4Jn",
+   "spotify_url": "https://open.spotify.com/episode/5q75dWVsbELlTIQMjHm4Jn",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129794499/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb3027b9f-27ee-cc8e-a6f7-42424ad68fd3.m4a",
+   "number": "275"
+  },
+  {
+   "id": "blitz:5f9d8234 1875 416a 8f73 7ea45fb81f91",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Thursday, November 19, 2026",
+   "date": "2026-11-20T04:58:23Z",
+   "duration": 1217,
+   "description": "C.J. Stroud threw three touchdown passes and David Montgomery ran for 107 yards in his return as the Houston Texans routed the Indianapolis Colts 26-3 on Thursday Night Football, scoring 26 unanswered points after an early Colts field goal. Will Anderson Jr. added a safety, and Daniel Jones was benched in the fourth quarter as the Colts fell to 3-8.\n Scores: Texans 26, Colts 3 — the only game of the night, opening Week 11. Houston moves to 4-6 with its first home win of the season; Indianapolis drops to 3-8.\n Part of the Curious & Creative network. Back after the next slate.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795152588617-b06d643d913af.jpg",
+   "url": "https://open.spotify.com/episode/3tnYnwLYgZXxXCS4vrDXED",
+   "spotify_url": "https://open.spotify.com/episode/3tnYnwLYgZXxXCS4vrDXED",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129790972/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fff24778e-b54a-1d27-0ae6-4016b7e9ddb3.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:5a37429b 97d3 4f6f b5fe ff5f7cd8b878",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Benched Again: Jones Pulled as Texans Roll 26-3, Indianapolis Is 3-8 | Thursday, November 19, 2026",
+   "date": "2026-11-20T04:50:46Z",
+   "duration": 1186,
+   "description": "The Texans beat the Colts 26-3 on Thursday Night Football. Indianapolis led 3-0 on the opening drive, then Houston scored 26 unanswered points: a 43-yard C.J. Stroud touchdown to Nico Collins, a safety from Will Anderson Jr., and a first career touchdown for rookie tight end Marlin Klein. Daniel Jones went 12 of 27 for 144 yards and was benched for Anthony Richardson for the second time in three games. Jonathan Taylor was held to 21 yards on 11 carries. The Colts fall to 3-8 heading into the mini-bye.\n Segments: how the lead evaporated; Taylor's night; Stroud and the Houston attack; the injury-ravaged line; the quarterback question; the AFC South picture; and the look-ahead to the Giants on…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795150224278-4b41ff3275131.jpg",
+   "url": "https://open.spotify.com/episode/5mvpETmHbXrnyi50YD3UZ7",
+   "spotify_url": "https://open.spotify.com/episode/5mvpETmHbXrnyi50YD3UZ7",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/129790745/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F1f00fd2f-fc74-795b-5da1-9ee20678c532.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:4bfc5d75 6338 43a4 893a 53b1d4397d09",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#274 John Ballard: How a Man Born Enslaved Built a Homestead in the Santa Monica Mountains",
+   "date": "2026-11-20T02:20:26Z",
+   "duration": 3491,
+   "description": "John Ballard was born in Kentucky around 1830, almost certainly enslaved, and first appears in California records in 1859. In Los Angeles he worked as a blacksmith, teamster, and firewood seller, helped found the city's first Black church as a trustee in 1869, and registered to vote in 1870. In 1880 he bought 160 acres near Seminole Hot Springs in the Santa Monica Mountains, where his cabin was burned twice and he rebuilt twice.\n In 1900, at seventy, Ballard proved up a federal homestead patent for 144 acres, with a house, orchard, and vineyard in his sworn testimony. His youngest daughter, Alice Ballard, patented 160 adjoining acres, filed in 1900 and approved in 1901. The peak above their…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795141107313-e2807ea6a724e.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/274-John-Ballard-How-a-Man-Born-Enslaved-Built-a-Homestead-in-the-Santa-Monica-Mountains-e3sn8bb",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129785643/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F326065ad-98a2-7f7b-65d0-f91c97374d30.m4a",
+   "number": "274"
+  },
+  {
+   "id": "polymath:042cc6c8 b494 4049 8f10 2c27cd8619df",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#273 The Video Game Industry: How a Game Is Made, Financed, and Played by Millions",
+   "date": "2026-11-20T01:21:46Z",
+   "duration": 3921,
+   "description": "A game looks simple from the outside: a studio makes it, and it appears on a screen. This episode follows what actually happens in between: how a game gets made end to end, from pitch and prototype through the vertical slice, full production, certification, and launch, and how many people and countries stand between an idea and a player.\n You will learn where the money goes: what games cost to build, how a $70 sale is split, and how Grand Theft Auto V became the extreme case. The episode goes inside performance capture and voice acting, how roles are cast and what the union agreement pays, then turns to the second industry inside the first: how Roblox and Fortnite Creative turned players…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795142210678-9abd97ab1114.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/273-The-Video-Game-Industry-How-a-Game-Is-Made--Financed--and-Played-by-Millions-e3sn6bl",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129783605/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F2ab3b089-8e2d-f2be-520e-1122bc707fce.m4a",
+   "number": "273"
+  },
+  {
+   "id": "polymath:6265ea5d 939d 4dc3 8f92 0e61c2e56694",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#272 Rockstar Games: How a Record Label Playbook Created Grand Theft Auto",
+   "date": "2026-11-20T01:15:01Z",
+   "duration": 2854,
+   "description": "Rockstar Games did not start as a game company. It started as an argument: that a game studio should work like a record label. Five men from the British music business, Sam Houser, Dan Houser, Terry Donovan, Jamie King, and Gary Foreman, built that label inside Take-Two Interactive in New York in December 1998, signing developers like acts, packaging games like albums, and trusting the star logo.\n The journey starts a year earlier in Dundee, Scotland, where DMA Design turned a cops-and-robbers prototype called Race 'n' Chase into Grand Theft Auto in 1997, and learned that provoked condemnation could do the work of advertising. Then Take-Two's acquisition of DMA, the renaming as Rockstar…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795142615941-c5d7236dc51de.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/272-Rockstar-Games-How-a-Record-Label-Playbook-Created-Grand-Theft-Auto-e3sn7v4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129785252/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb5c03577-a6ba-c0a5-35f7-51160a61c15d.m4a",
+   "number": "272"
+  },
+  {
+   "id": "polymath:600a9377 1d9b 42ed 813e 9f1f8beae493",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#271 Sister Cities: Eisenhower Launched a Diplomacy Run by Mayors and Volunteers",
+   "date": "2026-11-19T22:49:38Z",
+   "duration": 3991,
+   "description": "A sister city is a long-term partnership between two communities in different countries, signed by the highest elected officials on both sides. The city signs, but volunteers, schools, nonprofits, and businesses run the relationship. The agreements are not treaties and carry no binding force under international law.\n President Dwight D. Eisenhower launched the program at the White House Conference on Citizen Diplomacy in September 1956, arguing citizens had to meet face to face for peace to hold. The first documented U.S. pairing, Toledo, Ohio and Toledo, Spain, was signed in 1931; Sister Cities International incorporated in 1967.\n A pairing starts with local research, moves through a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795128455577-3f194bb99326.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/271-Sister-Cities-Eisenhower-Launched-a-Diplomacy-Run-by-Mayors-and-Volunteers-e3sn0l4",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129777764/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2Fe3c5b543-5d30-287e-513c-f6f8989b92c3.m4a",
+   "number": "271"
+  },
+  {
+   "id": "coverup:9169133a 8302 4ccc 9159 55b0cd08a61e",
+   "show": "coverup",
+   "kind": "episode",
+   "title": "The Cover-Up — Eric Adams: The Resignations Were the Record",
+   "date": "2026-11-19T15:48:55Z",
+   "duration": 2689,
+   "description": "A sitting mayor of New York City was indicted on corruption charges he denied. Before a single witness was called, the Justice Department ordered its own prosecutors to drop the case — and the prosecutors resigned instead. Seven of them in five days. This episode follows the paper trail: the directive, the letters, the motion, and the 78-page opinion that ended the case for good.\n Stated plainly: Eric Adams was charged in a five-count federal indictment and pleaded not guilty. The charges were dismissed with prejudice on April 2, 2025, before any trial. He was never tried, never convicted, and never acquitted. Every allegation in the indictment remains an allegation.\n Timestamps — 0:13 The…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47156478/47156478-1795103298691-00801ea485251.jpg",
+   "url": "https://open.spotify.com/episode/3NLfj71AMCfEsBJSWZ1xLl",
+   "spotify_url": "https://open.spotify.com/episode/3NLfj71AMCfEsBJSWZ1xLl",
+   "audio": "https://anchor.fm/s/119aba9b8/podcast/play/129756660/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2Fd2875af5-d329-8527-5013-49af6198eb4f.m4a",
+   "number": null
+  },
   {
    "id": "dominatedconvo:2c3ebfab b827 4983 ab22 ee9ffdacadd3",
    "show": "dominatedconvo",
@@ -995,9 +1138,51 @@
    "duration": 777,
    "description": "Thursday night in Houston, and the Colts walk into NRG Stadium short-handed in exactly the wrong places. Both starting tackles are out, Sauce Gardner is questionable after three straight missed practices, and the league's sack leader, Will Anderson Jr., is waiting on the other side. Daniel Jones starts, with Shane Steichen's \"right now\" hanging over the job, and the run game has to carry a night the market has priced at Texans by twelve and a half.\n Segments: the Houston game and what a survivable night looks like; the Miami win, kept short; the final injury report on both sides; the deep segment on the edges, Luke Tenuta's first NFL start against Anderson; and the look-ahead to the Giants,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795095253271-1b3975d023415.jpg",
-   "url": "https://open.spotify.com/episode/6XWalEN95kzsgiWvbGrYaJ",
-   "spotify_url": "https://open.spotify.com/episode/6XWalEN95kzsgiWvbGrYaJ",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/Both-Tackles-Out--Anderson-Waiting-Colts-Walk-Into-Houston-Short-Handed--Indianapolis-Is-3-7--Thursday--November-19--2026-e3sm54b",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609694/podcast/play/129749579/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F24e6397f-4140-f7b3-2eff-f8bd5327d0c3.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:d8166f7e fddc 44b9 8eca 00473cdf94d1",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Thursday, November 19, 2026",
+   "date": "2026-11-19T12:41:50Z",
+   "duration": 1267,
+   "description": "For the first time in history, the presidents of the United States, China and Russia sat down together: Donald Trump, Xi Jinping and Vladimir Putin met Thursday at Kylin Villa in Shenzhen, after separate Trump-Putin and Trump-Xi bilaterals. Reuters reports Ukraine dominated the Trump-Putin meeting by the Kremlin's account, while Xi did not take the issue up in his opening remarks with Trump — and Trump measured the day in the reception he received, with the Thailand and Philippines trade announcements still short on terms, figures and timelines. He heads home to a capital reshaped by the midterms.\n Also today: House Democrats nominate Hakeem Jeffries for speaker, 251–11 in a closed-door…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795092079987-84be21c5abb4c.jpg",
+   "url": "https://open.spotify.com/episode/3Plcps0doXroAeO9nEinj8",
+   "spotify_url": "https://open.spotify.com/episode/3Plcps0doXroAeO9nEinj8",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129747355/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2Ffd22b900-0670-f6df-121a-1446857bf33c.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:1cd2255d 9200 4e60 a5c8 d09cff1e7ab9",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Thursday, November 19, 2026",
+   "date": "2026-11-19T12:19:36Z",
+   "duration": 1406,
+   "description": "Anthropic begins trading on the Nasdaq after pricing the largest IPO on record at $83, Google ships Gemini 4 Neon at $3/$15, OpenAI's models improve AMD chip designs by up to 14%, a GAO report says all four big chatbots produced viable attack plans in covert testing, Palo Alto Networks agrees to buy Applied Compute for $4.5 billion, Nvidia halts H200 sales to China, a poisoned Microsoft agent package and a 10-year-old nginx flaw headline security, officials tell Congress the outage pile-up was not a coordinated attack, and bitcoin falls to $63,048 as ETF outflows resume.\n • Anthropic prices at $83, upsizes to 980M shares, trades today as ANT — https://www.thebigant.com/\n • Google ships…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795090720747-69d0a2a73f5a3.jpg",
+   "url": "https://open.spotify.com/episode/5DNw2VgzE0OoLkT0eMO9H1",
+   "spotify_url": "https://open.spotify.com/episode/5DNw2VgzE0OoLkT0eMO9H1",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129746444/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F5e554733-a580-7f52-bf4b-708e05778d3e.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:2923e06a 596b 4eb3 a2ea d4dbf5986bd7",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Thursday, November 19, 2026",
+   "date": "2026-11-19T11:40:29Z",
+   "duration": 810,
+   "description": "Anthropic priced at $83 a share, above its $70–78 range, raising about $81.3 billion in the largest IPO on record, and debuts today on the Nasdaq as ANT. Futures are up sharply, Nasdaq futures +1.82%, after Wednesday's split close: the S&P 500 fell a fifth straight day to 7,323.63, the Dow fell 1.11% to 50,198.17, and Nvidia faded 2.89% to $150.96. The Fed minutes were hawkish, retail beat across the board, housing split, oil steadied after a 3.4 million-barrel EIA build, and the VIX sits at 24.56 in backwardation into Friday's OpEx. Walmart and jobless claims land at 8:30 a.m. Eastern.\n • Anthropic prices at $83 — 980M shares, ~$81.3B, debuts today as ANT —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795088366743-c6bd9a80ac21a.jpg",
+   "url": "https://open.spotify.com/episode/3BBOFmTBsiNTjKW5ro9LCu",
+   "spotify_url": "https://open.spotify.com/episode/3BBOFmTBsiNTjKW5ro9LCu",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129744672/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2Feb726994-599b-acb3-c6ea-05f863633dfb.m4a",
    "number": null
   },
   {
@@ -1051,8 +1236,8 @@
    "duration": 1275,
    "description": "Keyonte George scored 30 points with 10 assists as the Utah Jazz — 2-13 entering the night and missing Lauri Markkanen — beat the Lakers 109-97 in Los Angeles to end the league's longest winning streak at nine games, on a 12-game Wednesday when Boston blew a 17-point lead in Denver and Philadelphia opened up first place in the East at 13-3.\n Scores: Jazz 109, Lakers 97 · Nuggets 105, Celtics 101 · 76ers 121, Magic 116 · Heat 137, Bucks 130 · Grizzlies 124, Cavaliers 121 · Hawks 117, Thunder 112 · Mavericks 116, Warriors 94 · Rockets 119, Pacers 104 · Pistons 122, Pelicans 109 · Suns 128, Kings 107 · Bulls 137, Nets 107 · Wizards 103, Raptors 99.\n The deep dive: The top of the league wobbled…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795068562803-ca44ad08341e4.jpg",
-   "url": "https://open.spotify.com/episode/0PC4YvfDv8ASNOoHZuIZQR",
-   "spotify_url": "https://open.spotify.com/episode/0PC4YvfDv8ASNOoHZuIZQR",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Wednesday--November-18--2026-e3slm10",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129734112/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2Fdfd1296e-bc2e-238c-9081-7efd30d48ccc.m4a",
    "number": null
   },
@@ -1127,6 +1312,19 @@
    "number": null
   },
   {
+   "id": "cutandsew:2F0BCoIbrv5HzEsv8Pmpzr",
+   "show": "cutandsew",
+   "kind": "episode",
+   "title": "Ralph Lauren and the American Myth Business: How a Bronx Tie Salesman Built an $8 Billion Dream | Wednesday, November 18, 2026",
+   "date": "2026-11-18T13:54:00Z",
+   "duration": 3021,
+   "description": "",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
+   "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
+   "spotify_video": false
+  },
+  {
    "id": "cfbdaily:10abed10 f8b6 42ab 968e ea3c4a3c579b",
    "show": "cfbdaily",
    "kind": "episode",
@@ -1138,6 +1336,20 @@
    "url": "https://open.spotify.com/episode/1UHhT3sTmitaX8CxC1u3sD",
    "spotify_url": "https://open.spotify.com/episode/1UHhT3sTmitaX8CxC1u3sD",
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/129689393/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2Fec8b5c2a-c2d7-e3d6-b853-51596f6313f0.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:4a96c5a7 ab67 4575 af50 8816799c88dd",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Wednesday, November 18, 2026",
+   "date": "2026-11-18T12:44:38Z",
+   "duration": 807,
+   "description": "The last race of the 2026 midterms is called: the Associated Press called Alaska's Senate race for Mary Peltola on Tuesday evening, 144,302 votes (50.12%) to Dan Sullivan's 131,844 (45.80%), clearing the first-choice majority so no ranked-choice round is needed. Democrats hold the Senate 56–44 — nine flips, the party's biggest midterm gain since 1958 — with certification set for November 25.\n Also today: House Democrats vote behind closed doors on their speaker nominee, with Hakeem Jeffries unopposed but facing a recorded vote and progressive demands for an agenda; the Senate confirms Anna St. John to the Fifth Circuit 52–46 while the Oklahoma nominees stall; the 400-page permitting…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795005790027-2254fb3f9a81b.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Wednesday--November-18--2026-e3sk6uh",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129685905/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F9acc2106-a563-0d65-a9d3-526f1e001658.m4a",
    "number": null
   },
   {
@@ -1337,6 +1549,20 @@
    "number": null
   },
   {
+   "id": "politicalread:8ef9ab08 d506 4e6e b0c2 cb29229f7ee9",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Tuesday, November 17, 2026",
+   "date": "2026-11-17T12:44:42Z",
+   "duration": 1037,
+   "description": "The oversight war is headed for the courts. Democrats taking Congress in January have promised sweeping investigations of the Trump administration, but Reuters reports the Supreme Court's recent rulings — the Mazars subpoena standard and the 2024 immunity decision — have redrawn the lines that fight will be litigated inside, with enforcement routed through a Justice Department that is itself a target. Plus: the Senate confirms Daniel Domenico 51–46 as the lame-duck judges blitz continues, Alaska sits one day from its ranked-choice tabulation still uncalled by AP, and a new Reuters/Ipsos poll puts Trump at 32% and Schumer underwater with his own party.\n Stories covered: Reuters — How the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794919402371-1d00b570767c2.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Tuesday--November-17--2026-e3si0tm",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129614198/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2Ff50fcf80-2d67-16cc-17db-4808d533b331.m4a",
+   "number": null
+  },
+  {
    "id": "airead:e46af75e a744 47a4 9c2d 3236fb243b00",
    "show": "airead",
    "kind": "episode",
@@ -1457,8 +1683,8 @@
    "duration": 1279,
    "description": "Week 10 closes with a stunner in Baltimore: the Los Angeles Chargers, the last winless team in the league, beat the Ravens 23-20 on Monday Night Football for their first win of the season. Omarion Hampton ran for 105 yards and a touchdown, Justin Herbert added a 22-yard rushing score and made no mistakes, and Los Angeles outrushed Baltimore 160 to 16 while Jacoby Brissett threw for 340 yards in his Ravens debut and still lost. Plus the full Week 10 scoreboard, Sunday's standout lines (Burrow's 409 yards, Purdy and McCaffrey in the 49ers' 46-40 shootout win, Mahomes' five touchdowns, Gibbs' 252 scrimmage yards), the injuries that matter, the updated playoff picture, and the Week 11 marquee…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1794892316047-5238cc703cf1.jpg",
-   "url": "https://open.spotify.com/episode/6o6REfvOckT0Y7ZYfbCPzv",
-   "spotify_url": "https://open.spotify.com/episode/6o6REfvOckT0Y7ZYfbCPzv",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Monday--November-16--2026-e3shgi1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/129597441/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F69eccd01-9fac-ba10-7b37-7fd795ab5ca6.m4a",
    "number": null
   },
@@ -1488,6 +1714,20 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Magic-Beat-the-Celtics-115-105-Orlandos-Paint-Attack-Ends-the-Streak-and-the-Perfect-Home-Start--Boston-Is-11-3--Monday--November-16--2026-e3shc58",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129592936/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F9d9c3a1b-b1f9-4da0-f8b4-d86460f8c0c6.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:241f422e 051d 4b43 aa80 d5511f53b452",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Sunday, November 8, 2026",
+   "date": "2026-11-17T03:02:01Z",
+   "duration": 1063,
+   "description": "Five days after voters took both chambers of Congress from his party, President Trump answers with a bunker strategy: Stephen Miller, the architect of the immigration crackdown, is elevated to White House chief of staff, and the administration signals it will fight rather than bargain with the Democratic majorities arriving in January. Plus the full Sunday count, the two Senate races still uncalled, the lame-duck funding cliff, and the arriving majority's agenda.\n In today's brief:\n • The Lead: Miller at the Helm, and a White House Choosing Conflict\n• The Movement Asks Whether It Is Over: Reuters Inside the MAGA Reckoning\n• The Count: AP Calls Democratic Control of Both Chambers\n•…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794884381009-36c35e2a53301.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Sunday--November-8--2026-e3shboi",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129592530/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F29378e69-8659-3a5c-15e4-ff67e3994278.m4a",
    "number": null
   },
   {
@@ -1659,6 +1899,20 @@
    "number": null
   },
   {
+   "id": "politicalread:65853eaf 0a2f 4c9e bf92 1e881cb62246",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Monday, November 16, 2026",
+   "date": "2026-11-16T17:01:16Z",
+   "duration": 739,
+   "description": "President Trump left Washington this morning for Asia and Thursday's first-ever face-to-face among Trump, Xi Jinping, and Vladimir Putin in Shenzhen, a trip shadowed at home by an allegation story the hosts handle with care: the claims about Nvidia's Jensen Huang are allegations, his denial is on the record, and no finding has been reported against anyone. At home, Senator Maria Cantwell's letter puts the AI chip export fight on the Commerce Secretary's desk, the 2028 Republican field is opening years early, Van Hollen's challenge to Schumer turns on vote claims neither side can audit, the lame-duck Senate votes at 5:30 p.m., a 120-delegate American coalition is doing shadow diplomacy at…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794848265912-abe7e67b6753.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Monday--November-16--2026-e3sgbti",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129559922/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-16%2Fbd1f6e68-7c05-65ff-cbd8-cf74248daa99.m4a",
+   "number": null
+  },
+  {
    "id": "globalread:e5aee902 3527 44b2 80a0 295438e760f9",
    "show": "globalread",
    "kind": "episode",
@@ -1769,6 +2023,34 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129474536/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Ff0e75865-b6be-cfcb-d04d-9903b9710a60.m4a",
    "number": null
+  },
+  {
+   "id": "cookedbooks:f8b250d2 b5fe 4b7e 89b5 2be5f48fa30b",
+   "show": "cookedbooks",
+   "kind": "episode",
+   "title": "Cooked Books — Enron: Enron Hid Its Debt in Partnerships It Controlled",
+   "date": "2026-11-15T10:22:32Z",
+   "duration": 3031,
+   "description": "Enron reported $100.8 billion in revenue in 2000, ranked seventh on the Fortune 500, and was named America's most innovative company six years running. A year later it filed the largest bankruptcy in American history. This episode shows the bookkeeping that made both facts true at once.\n You will finally understand three things. Mark-to-market accounting let Enron book the estimated lifetime profit of a long-term contract as income in the quarter the contract was signed, using its own models for prices no market had set. A special purpose entity let Enron keep debt and losing assets off its balance sheet, as long as an outside investor appeared to hold at least 3 percent at genuine risk.…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47155725/47155725-1794737994792-b9a286dd5176b.jpg",
+   "url": "https://open.spotify.com/episode/3GmobMx4iG1uZlBWgiatXM",
+   "spotify_url": "https://open.spotify.com/episode/3GmobMx4iG1uZlBWgiatXM",
+   "audio": "https://anchor.fm/s/119aa8394/podcast/play/129474088/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2Fe2edb767-c139-5e8d-4eb0-97a19e542ccb.m4a",
+   "number": "1"
+  },
+  {
+   "id": "followingthemoney:342b3c86 cac5 4269 89e2 f888797e4e4b",
+   "show": "followingthemoney",
+   "kind": "episode",
+   "title": "Senate Leadership Fund: $545,581,108.72 in Total Receipts in Its Pre-General FEC Filing | Sunday, November 15, 2026",
+   "date": "2026-11-15T09:51:40Z",
+   "duration": 3177,
+   "description": "This week on the ledger: Senate Leadership Fund (SLF PAC) filed its FEC summary (Jan 1, 2025 through Oct 14, 2026) showing $545,581,108.72 in total receipts, alongside Senate Majority PAC, House Majority PAC, and Congressional Leadership Fund on the same coverage. Ensign Peak Advisors filed a Form 13F-HR Nov 12, 2026 showing $60,611,728,144 in reported value. FEC post-general reports are due December 3, 2026.\n 0:00 The Ledger · 11:28 Receipt #1: The 2026 Midterm Money Map · 32:59 Receipt #2: The Ensign Peak 13F · 47:47 No Movement Report · 49:34 Next Watch\n Receipt #1: Senate Leadership Fund: $545,581,108.72 in Total Receipts in Its Pre-General FEC Filing\n Source document: FEC committee…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47239161/47239161-1794736142561-b78f4a81caec5.jpg",
+   "url": "https://open.spotify.com/episode/0L4JOP2JhT8BTPwGaMmQOI",
+   "spotify_url": "https://open.spotify.com/episode/0L4JOP2JhT8BTPwGaMmQOI",
+   "audio": "https://anchor.fm/s/11a29d3c4/podcast/play/129473162/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F0f83178d-eb54-1bd2-cf65-e708e3b0eff4.m4a",
+   "number": "1"
   },
   {
    "id": "waiverwire:590cdb87 00e2 4bee a34c 6df287955ee9",
@@ -1883,6 +2165,20 @@
    "number": "265"
   },
   {
+   "id": "politicalread:44fd5725 02a1 4fbc a5f9 887dd8fb0bd0",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Monday, November 9, 2026",
+   "date": "2026-11-15T00:57:37Z",
+   "duration": 1194,
+   "description": "Stephen Miller takes over as White House chief of staff today, on the morning after President Trump told 60 Minutes the immigration crackdown Miller designed might have been \"too tough.\" Republican pushback is already public — Tillis, Stutzman and Bacon — deputy chief of staff Richard Walters is departing, and Congress returns for a lame-duck session with 16 House session days to the December 11 funding deadline.\n In today's brief:\n • Miller Day One: The \"Too Tough\" Interview and the Promotion an Hour Later — https://www.cnn.com/2026/11/08/politics/trumps-regrets-immigration-enforcement-60-minutes-interview\n • Tillis Calls Miller \"Worst of All Possible Choices\" —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794704145226-36d4ffc3c3094.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Monday--November-9--2026-e3sd80n",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129457623/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F31f35459-1acf-0b70-0d12-e966a16ff069.m4a",
+   "number": null
+  },
+  {
    "id": "brazil:fd3de8b1 b55d 453c 9d14 32becd5ef441",
    "show": "brazil",
    "kind": "episode",
@@ -1967,20 +2263,6 @@
    "number": null
   },
   {
-   "id": "techread:4a70e8a3 830b 4709 a83b a5b7b7d4fbe5",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Saturday, November 14, 2026",
-   "date": "2026-11-14T22:15:12Z",
-   "duration": 1547,
-   "description": "OpenAI gave its agents a wallet: ChatGPT Wallet launched for US Pro subscribers, letting a dot pay with a token and a Face ID or fingerprint check on every purchase. Anthropic's IPO is about six times oversubscribed before it prices, Microsoft is restoring Microsoft 365 after an outage that degraded 19 services through Exchange Online, and Nvidia heads into Tuesday's earnings under an interim CEO. Plus OpenAI's Daybreak security agents, two attacks on AMD's confidential computing, a breach that exposed Notion AI chats, and crypto's break below $70,000.\n • OpenAI launches ChatGPT Wallet, letting AI agents pay for purchases —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1794694475633-525fb8809441.jpg",
-   "url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
-   "spotify_url": "https://open.spotify.com/episode/3sWqjKiOG2qYKCr8lNmiIN",
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/129448125/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2Fd8769dd3-cc37-6403-c826-c5c08dab0582.m4a",
-   "number": null
-  },
-  {
    "id": "dominatedconvo:bb753ed8 af44 43bc 8ae2 ae5935688a97",
    "show": "dominatedconvo",
    "kind": "episode",
@@ -2020,6 +2302,20 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Saturday--November-14--2026-e3scshe",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129445870/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F2ec25f51-97d5-30fb-6c68-19985067ec5b.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:59e9dbee 7cba 48ff b9f7 d483ff9b9b5d",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Saturday, November 14, 2026",
+   "date": "2026-11-14T21:19:56Z",
+   "duration": 1455,
+   "description": "Eleven days after voters took Congress away from his party, President Trump is privately telling his advisers he may hold off on new attacks on Iran, and that hesitation is the clearest sign yet that the midterm results are already changing what this White House does. Plus: Democrats pitch dealmaking, from a gold TrumpCare card to LBJ plaques; the administration asks the Supreme Court to cut judges' power again; Alaska calls its last governor's race and votes to keep ranked choice; both parties converge on Nvidia from opposite directions; and Friday's ground stop becomes a 30 billion dollar lame-duck fight against the December 11 funding deadline.\n In today's brief:\n • The Lead: Trump May…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794691159824-cba4dcc0dda5.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Saturday--November-14--2026-e3scs1j",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129445363/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F06d33fde-05f0-3a26-41b7-8a1f171b5526.m4a",
    "number": null
   },
   {
@@ -2202,6 +2498,20 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Friday--November-13--2026-e3sb3uk",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129387924/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F19eaa81e-3efd-4ba5-248f-fdc7ab472010.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:e7ef4309 d02d 465f 958e bc4d33291646",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Friday, November 13, 2026",
+   "date": "2026-11-13T15:58:01Z",
+   "duration": 703,
+   "description": "The new Democratic Congress takes shape: Brian Schatz puts a ban on congressional stock trading in the must-pass top three, Democrats prepare a barrage of probes as Republicans harden their ranks, ending the Iran war becomes the first funding fight, Kansas elects Cindy Holscher governor in its closest race since 1974, Alaska's Senate race is still counting with Mary Peltola ahead, Mississippi certifies Scott Colom's Senate win today, the US is revealed to have handled $12 billion of Venezuela's oil revenues, and the White House asks Congress for $30.1 billion for aviation reform.\n • The 2027 Agenda: Democrats Plot Their Must-Have Victories, Stock Ban First —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794585451931-3adf040c2f97a.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Friday--November-13--2026-e3sb39s",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129387260/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-13%2F2650487b-064a-ed14-b20f-6cc036db4d39.m4a",
    "number": null
   },
   {
@@ -2457,6 +2767,20 @@
    "number": null
   },
   {
+   "id": "politicalread:8c6866c4 060f 42ce 9f81 c2c47981b3d1",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Wednesday, November 11, 2026",
+   "date": "2026-11-11T20:16:05Z",
+   "duration": 792,
+   "description": "The Republican House used one of its last acts in the majority to protect the Pentagon chief its own voters blamed for the midterm wipeout, voting 211 to 204 to bury the Hegseth impeachment resolution in committee, on the same day both parties began remaking the leadership that will run the next Congress.\n In today's brief:\n • The Hegseth vote: the House refers the impeachment articles to committee, 211-204 — https://www.courier-journal.com/story/news/politics/2026/11/10/pete-hegseth-impeachment-thomas-massie-house-vote/92713996007/\n • House Republicans choose their next leader as the minority era begins —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794428147470-ac9ddb355f3f5.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Wednesday--November-11--2026-e3s7qrq",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129280314/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2Faf29c046-5ce4-dc43-1d1f-0e4cf29289c4.m4a",
+   "number": null
+  },
+  {
    "id": "globalread:abfd7ff1 ad6b 4a71 9fcb c963b5850ca0",
    "show": "globalread",
    "kind": "episode",
@@ -2566,6 +2890,20 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Tuesday--November-10--2026-e3s6bv3",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129232291/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F48ef0ab0-906f-75a0-b103-4ebbe7026ae4.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:1a8030af 4aa0 4f57 ad46 3eabebc2dda3",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Tuesday, November 10, 2026",
+   "date": "2026-11-11T02:11:41Z",
+   "duration": 1362,
+   "description": "One week after losing both chambers, Republicans choose their minority leaders by secret ballot today: Scalise against Jordan in the House, Thune unopposed but pressed in the Senate. A Reuters/Ipsos poll finds 71 percent of Americans want the new Congress to end Trump's Iran war, the last Senate ballots are still being counted in Mississippi and Alaska, Massie forces a House impeachment vote on Hegseth, and Florida begins its recount.\n • Republicans choose their leaders in Congress — https://www.reuters.com/world/us/week-after-huge-election-losses-republicans-choose-their-leaders-congress-2026-11-10/\n • Most Americans want the new Democratic Congress to end Trump's Iran war, Reuters/Ipsos…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794363065651-eb32f42f93da9.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Tuesday--November-10--2026-e3s6bs9",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129232201/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F56bbc06c-2bfa-463f-e2ff-3f5c2f270d1c.m4a",
    "number": null
   },
   {
@@ -2905,6 +3243,20 @@
    "number": null
   },
   {
+   "id": "politicalread:abb6c990 d392 4523 ae52 d42272195fd0",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Saturday, November 7, 2026",
+   "date": "2026-11-09T19:22:25Z",
+   "duration": 1476,
+   "description": "Three days after the midterms, the House count stands at 254 called for Democrats and 162 for Republicans, with 19 races still uncalled and the popular vote running 63.6 million to 48.9 million. In Mississippi, Scott Colom's lead widened to 2,574 votes on Friday evening with an affidavit-ballot fight ahead and deadlines on November 10 and 13. Alaska's Senate and governor races are still too early to call ahead of the November 18 ranked-choice tabulation, Kansas close-race audits start Monday in Johnson County, and the governing math is coming into focus: Ukraine aid, veto counts, and an early ballot-measure warning for the next cycle.\n Part of the Curious & Creative network. Back tomorrow…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1794252118478-1f702cee09d42.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Saturday--November-7--2026-e3s3kpe",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129143022/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F532bf679-a4a1-21fe-7ad4-3aea49eca23d.m4a",
+   "number": null
+  },
+  {
    "id": "airead:9f9c6839 4eb8 45e4 b1d6 7a242bc46917",
    "show": "airead",
    "kind": "episode",
@@ -3157,6 +3509,20 @@
    "number": null
   },
   {
+   "id": "politicalread:6a943023 cd11 4a54 91dc 16aebf336a69",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Friday, November 6, 2026",
+   "date": "2026-11-06T17:08:33Z",
+   "duration": 1046,
+   "description": "Three days after the vote, the Democratic House majority is still growing on paper (249 called, 30 districts left deciding the margin), the Senate's last two races in Alaska and Mississippi run on longer clocks, Kansas is counting its governor's race by hand against today's mail-ballot deadline, Washington's investigations bar is staffing up for January's subpoena season, and the President turns outward to North Korea and Iran.\n • The Lead Story in Depth: The Majority Keeps Growing — https://apnews.com/projects/elections-2026/?ap_doc=ap%2Frg1%2FWyJhcC92Mi8yMDI2MTEwMy9sLzk5OTk5OS9VUy9uIixbIjE3ODUwNiIsIjE3ODUwNyIsIjE3ODUwOCJdXQ\n • The Senate's Last Two: Alaska and Mississippi, on Different…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1793984852435-54c41bfa472e5.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Friday--November-6--2026-e3rtdg6",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/128938950/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F50652c9a-77bf-7bfc-5775-12165e6e8c62.m4a",
+   "number": null
+  },
+  {
    "id": "ladaily:3bc4a07b 9d55 4e07 8754 73ebcdddbe55",
    "show": "ladaily",
    "kind": "episode",
@@ -3367,6 +3733,20 @@
    "number": null
   },
   {
+   "id": "politicalread:f816da41 48fb 4e40 b075 f941c3b3acf7",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Thursday, November 5, 2026",
+   "date": "2026-11-06T04:25:21Z",
+   "duration": 793,
+   "description": "Democrats spent their first full day as the incoming majority in both chambers vowing to rein in President Donald Trump with investigations, subpoenas and an affordability agenda — while the President showed reporters his under-construction White House ballroom and reminded them he still holds the veto.\n The lead: House Democratic Leader Hakeem Jeffries laid out an affordability and accountability agenda, and President Trump said he will accept the results but veto Democratic bills. Reuters \n The count: the AP has called control of both chambers for Democrats — House 235 seats won and 26 more leading, Senate at least 54–44 — with Alaska and Mississippi still too close to call. USA Today \n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Thursday--November-5--2026-e3rs7s2",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/128900418/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F023d830f-8731-141c-3dc2-72d23f42f288.m4a",
+   "number": null
+  },
+  {
    "id": "globalread:e5a0ccf0 5c84 4bde aed5 ba8a28ef1715",
    "show": "globalread",
    "kind": "episode",
@@ -3434,20 +3814,6 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/UMass-Wins-a-MACtion-Overtime-Classic-on-a-Missed-Extra-Point--and-Toledo-Escapes-Sacramento--Wednesday--November-4--2026-e3rq0ea",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/128827274/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2Ff9b8cd7b-5f08-3754-d4c8-174cee972e1e.m4a",
-   "number": null
-  },
-  {
-   "id": "techread:e7b33479 53a7 4595 8534 0f19d3bf034a",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Wednesday, November 4, 2026",
-   "date": "2026-11-04T22:13:29Z",
-   "duration": 1284,
-   "description": "AMD posts a record quarter with data center sales nearly doubling and guides to about $17 billion, Arista records its fastest growth since its IPO, Super Micro's revenue nearly quadruples with caveats underneath, Shopify falls on a small GMV miss, Skyworks tumbles on a soft smartphone forecast, Democrats sweep Congress and the tech rulebook changes hands, Binance takes its broader reserves snapshot, and Uber, Qualcomm and Arm report today.\n In today's brief:\n • AMD Posts a Record Quarter as Data Center Sales Nearly Double — https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/\n • Arista Posts Its Fastest Growth Since Its IPO —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793830386903-bc64d0b749996.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Wednesday--November-4--2026-e3rp6j1",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128800801/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fc5d2c58a-2679-cf0b-0c0e-4acd59dd1ec2.m4a",
    "number": null
   },
   {
@@ -3563,6 +3929,48 @@
    "number": null
   },
   {
+   "id": "coldopen:2dca3b2a 49cb 4157 bcc6 cf97b192c967",
+   "show": "coldopen",
+   "kind": "episode",
+   "title": "Cold Open — The Lindbergh Kidnapping: The Money That Talked",
+   "date": "2026-11-04T21:30:22Z",
+   "duration": 2864,
+   "description": "On the night of March 1, 1932, a ladder went up to a nursery window in Hopewell, New Jersey, and the Lindbergh baby was gone. This premiere follows the case the way it was actually solved: not by a confession, but by the ransom money and a ladder.\n The record: the ransom notes and the cemetery drops, the marked gold certificates surfacing one by one, Arthur Koehler's wood forensics tying a ladder rail to Bruno Hauptmann's attic, and the handwriting evidence with its documented limits. The proceedings: the Flemington trial and what the jury actually heard. The ledger: who got paid, and who paid.\n Part of the Curious + Creative network. A new case every week.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47156623/47156623-1793827731717-d339582ec7b1.jpg",
+   "url": "https://open.spotify.com/episode/4bLYf2y4s2LxSSklGeLjQx",
+   "spotify_url": "https://open.spotify.com/episode/4bLYf2y4s2LxSSklGeLjQx",
+   "audio": "https://anchor.fm/s/119abe25c/podcast/play/128798024/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fb55bd415-745e-bd1c-699f-bb9b944578c3.m4a",
+   "number": null
+  },
+  {
+   "id": "coverup:3c61ef3b a9f3 4807 a071 1af3f041f917",
+   "show": "coverup",
+   "kind": "episode",
+   "title": "The Cover-Up — Watergate: The Tapes Were the Confession",
+   "date": "2026-11-04T21:12:45Z",
+   "duration": 4051,
+   "description": "On June 23, 1972, six days after the Watergate break-in, Richard Nixon approved a plan to use the CIA to block the FBI's investigation. The tape of that conversation ended his presidency. This premiere reconstructs the cover-up from the record: who ordered what, who paid whom, and how it unraveled.\n The mechanics: the hush money, the CIA-FBI deflection, the perjury and the destruction. The proceedings: the burglars' trial, the Senate hearings, the special prosecutors, the Saturday Night Massacre, the Supreme Court, and the indictments that separated the break-in defendants from the cover-up defendants. The ledger: the sentences, the pardons, and what each man paid.\n Part of the Curious +…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47156478/47156478-1793826696363-fa92b60babbbe.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20517/episodes/The-Cover-Up--Watergate-The-Tapes-Were-the-Confession-e3rp2s3",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119aba9b8/podcast/play/128796995/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fd758cbed-29a0-a1ae-72d2-5a81ad788d61.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:2343d0e1 9b21 4008 91db bb2a181871d7",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Wednesday, November 4, 2026",
+   "date": "2026-11-04T16:29:51Z",
+   "duration": 1265,
+   "description": "Democrats take both chambers in the 2026 midterms. As called by the Associated Press, the Senate flips on seven Democratic pickups and the House follows, while Democrats move toward a majority of the nation's governorships for the first time in two decades. Alaska and Mississippi's Senate races, and the Alaska and Kansas governor's races, were still too early to call this morning.\n • Democrats take both chambers — https://apnews.com/projects/elections-2026\n • The Senate flips: the seven races that decided the chamber — https://apnews.com/projects/elections-2026\n • The House: beyond the top line — https://apnews.com/projects/elections-2026\n • The governors: Democrats take a majority of…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1793809719314-029d6245736c6.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Wednesday--November-4--2026-e3roh3h",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/128778801/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fd64318ad-8ed4-a412-fd83-fc8df8da4bdb.m4a",
+   "number": null
+  },
+  {
    "id": "ccpod:4e048a0e 4e04 4738 9a3a a7225d6a2f2e",
    "show": "ccpod",
    "kind": "episode",
@@ -3590,20 +3998,6 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/113d16640/podcast/play/127972345/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2Fdbf64f4c-5e7a-886e-947f-c1a86ac81af1.mp3",
    "number": "5"
-  },
-  {
-   "id": "techread:e088bfdd 279f 4017 83b3 f4e866c85962",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Tuesday, November 3, 2026",
-   "date": "2026-11-03T21:00:52Z",
-   "duration": 1503,
-   "description": "Marvell agrees to buy Lumentum in a $115 billion all-stock deal and both stocks fall, Apple posts a record September quarter but guides margins down, Palantir's U.S. commercial revenue passes its government revenue for the first time, Oracle files to raise $20 billion, Binance opens a second withdrawal phase as flows turn positive, Apple warns users in 99 countries of spyware targeting as Germany investigates, Corning opens its Pune optical plant, and AMD reports tonight.\n In today's brief:\n • Marvell to Buy Lumentum for $115 Billion in Stock — https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity\n •…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793739567897-4e9b0617f1f7b.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Tuesday--November-3--2026-e3rmi4q",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128714330/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-3%2F7e34a4ac-ef31-4fbd-b8bf-7979e133580f.m4a",
-   "number": null
   },
   {
    "id": "dominatedconvo:24d9f168 9d34 45c9 a987 0eaf7202a721",
@@ -3967,20 +4361,6 @@
    "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/The-QB-Job-Is-Open-Steichen-Evaluates-Everything-After-42-7--Indianapolis-Is-2-6--Monday--November-2--2026-e3rjirk",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/119609694/podcast/play/128616756/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F13bb1775-ff37-42fd-2778-c78e6a67a6ad.m4a",
-   "number": null
-  },
-  {
-   "id": "techread:8e5ee461 30c9 4f35 9124 b9c70b45e717",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Monday, November 2, 2026",
-   "date": "2026-11-02T12:40:47Z",
-   "duration": 1100,
-   "description": "Binance outflows stabilize after a net $3.64 billion first day of withdrawals, Apple reclaims the world's most valuable company title and reports tonight in CEO John Ternus's first earnings call, tech steadies after October's $2.5 trillion Nasdaq-100 fall with a Deutsche Bank upgrade, Alphabet's Cloud doubles while free cash flow turns negative, Palantir faces the week's highest bar, AMD prepares to settle the chip debate Intel opened, Apple's 2027 roadmap leaks, and Ceva and Mobilint put the NeuPro NPU into production.\n In today's brief:\n • Binance Outflows Stabilize After a $3.64 Billion First Day —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793623205657-f313e346fc037.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Monday--November-2--2026-e3rjfuv",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128613791/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F203b9ce5-5592-1601-aa3c-b0c34bc9b844.m4a",
    "number": null
   },
   {
@@ -4726,20 +5106,6 @@
    "number": null
   },
   {
-   "id": "techread:950ffdab 2ad3 4ac8 ae18 83051cc5524f",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Saturday, October 31, 2026",
-   "date": "2026-10-31T12:50:41Z",
-   "duration": 1040,
-   "description": "October ends with a rout: the Nasdaq falls 2.86% on Friday to close its worst month since March 2025, Big Tech's $740 billion spending plan meets the debt market, Asia's chip suppliers insist demand is real, SanDisk posts a record quarter and falls 13%, Binance sets out its recovery plan, Anthropic faces a reported credit-rating question, and Apple's A20 Pro moves to 2 nanometers without growing.\n In today's brief:\n • Friday's Rout Caps a Brutal October for Tech — https://www.dimsumdaily.hk/tech-sell-off-hits-nasdaq-as-investors-rotate-into-defensives/ \n • The $740 Billion Question: Big Tech's Spending, and the Debt Behind It —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793448806148-69f5f3b3c2e27.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Saturday--October-31--2026-e3rfpm5",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128492677/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2F6eb7d696-640f-b3cd-8f22-2e7b48bca9a2.m4a",
-   "number": null
-  },
-  {
    "id": "coltsdaily:e5588d28 4cc2 4483 9531 c4381726165e",
    "show": "coltsdaily",
    "kind": "episode",
@@ -4878,20 +5244,6 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/128468616/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-31%2F5a7fa0d4-4688-cf8b-8472-d289eb8e62f8.m4a",
    "number": "2"
-  },
-  {
-   "id": "techread:7084b89a d2a5 4a34 8c4d 2a921d1182cb",
-   "show": "techread",
-   "kind": "episode",
-   "title": "Friday, October 30, 2026",
-   "date": "2026-10-30T23:59:50Z",
-   "duration": 1289,
-   "description": "Intel has the worst day in its history and takes the chip sector down with it, the AI spending bill comes due at Alphabet and Amazon while Microsoft stays cash-positive, Samsung warns the memory shortage gets worse, and Binance loses $6.3 billion in twenty minutes.\n In today's brief:\n • Intel's Warning Sparks a Global Chip Rout — https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/\n • Alphabet's Record One-Day Fall — https://srnnews.com/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors/\n • Amazon: AWS Surges, Cash Burns — https://seekingalpha.com/pr/20706513-amazon-com-announces-third-quarter-results\n • Microsoft, the Outlier…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115008/47115008-1793404695921-fbf0d5db2b8da.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2003/episodes/Friday--October-30--2026-e3retcv",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196c6280/podcast/play/128463711/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2F15877093-b6b6-aaeb-6053-1ff23cdafd73.m4a",
-   "number": null
   },
   {
    "id": "celticsdaily:5247476a 8ae8 4255 851c 05865bbcdd23",
@@ -10215,8 +10567,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 269,
-   "spotify_matches": 0
+   "episodes": 274,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -10316,8 +10668,8 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 18,
-   "spotify_matches": 0
+   "episodes": 19,
+   "spotify_matches": 1
   },
   "nyread": {
    "ok": true,
@@ -10340,15 +10692,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 17,
-   "spotify_matches": 0
-  },
-  "techread": {
-   "ok": true,
-   "feed": "https://anchor.fm/s/1196c6280/podcast/rss",
-   "spotify_name": "The Tech Read",
-   "full_catalog": true,
-   "episodes": 6,
+   "episodes": 18,
    "spotify_matches": 1
   },
   "optionsdesk": {
@@ -10389,14 +10733,14 @@
    "spotify_name": "The Fast Break",
    "full_catalog": true,
    "episodes": 18,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "blitz": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 11,
+   "episodes": 12,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -10420,7 +10764,7 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "cfbdaily": {
@@ -10456,52 +10800,52 @@
    "spotify_matches": 1
   },
   "politicalread": {
-   "ok": false,
-   "feed": null,
-   "spotify_name": null,
-   "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
-  },
-  "cbbweekly": {
-   "ok": false,
-   "feed": null,
-   "spotify_name": null,
-   "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
+   "ok": true,
+   "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
+   "spotify_name": "The Political Read",
+   "full_catalog": true,
+   "episodes": 14,
+   "spotify_matches": 1
   },
   "cutandsew": {
-   "ok": false,
+   "ok": true,
    "feed": null,
-   "spotify_name": null,
+   "spotify_name": "Cut & Sew",
    "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "coverup": {
-   "ok": false,
-   "feed": null,
-   "spotify_name": null,
-   "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
+   "ok": true,
+   "feed": "https://anchor.fm/s/119aba9b8/podcast/rss",
+   "spotify_name": "The Cover-Up",
+   "full_catalog": true,
+   "episodes": 2,
+   "spotify_matches": 1
   },
   "coldopen": {
-   "ok": false,
-   "feed": null,
-   "spotify_name": null,
-   "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
+   "ok": true,
+   "feed": "https://anchor.fm/s/119abe25c/podcast/rss",
+   "spotify_name": "Cold Open",
+   "full_catalog": true,
+   "episodes": 1,
+   "spotify_matches": 1
   },
   "cookedbooks": {
-   "ok": false,
-   "feed": null,
-   "spotify_name": null,
-   "full_catalog": false,
-   "episodes": 0,
-   "spotify_matches": 0
+   "ok": true,
+   "feed": "https://anchor.fm/s/119aa8394/podcast/rss",
+   "spotify_name": "Cooked Books",
+   "full_catalog": true,
+   "episodes": 1,
+   "spotify_matches": 1
+  },
+  "followingthemoney": {
+   "ok": true,
+   "feed": "https://anchor.fm/s/11a29d3c4/podcast/rss",
+   "spotify_name": "Following the Money",
+   "full_catalog": true,
+   "episodes": 1,
+   "spotify_matches": 1
   }
  },
  "people": {
