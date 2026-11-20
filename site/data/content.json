@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T08:26:22Z",
+ "generated_at": "2026-11-20T08:28:20Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-20T07:10:16Z",
-   "count": 274
+   "latest": "2026-11-19T22:49:38Z",
+   "count": 270
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -639,8 +639,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-20T04:58:23Z",
-   "count": 12
+   "latest": "2026-11-17T05:12:32Z",
+   "count": 11
   },
   {
    "key": "waiverwire",
@@ -721,8 +721,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-20T04:50:46Z",
-   "count": 13
+   "latest": "2026-11-19T13:34:49Z",
+   "count": 12
   },
   {
    "key": "cfbdaily",
@@ -990,97 +990,13 @@
  ],
  "episodes": [
   {
-   "id": "polymath:a3aae537 363b 4d18 b92e ad125764706a",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#275 Black Boston: The Community That Made Study a Form of Resistance",
-   "date": "2026-11-20T07:10:16Z",
-   "duration": 3247,
-   "description": "Ask most people what they know about Black Boston and the answer is often a pause — yet Black people were 10 percent of Boston's population in 1752, and roughly one in four Bostonians is Black today. Enslaved Africans arrived in Boston Harbor in 1638, and a free Black community on Beacon Hill built a church, a school, and an abolitionist network before the Civil War.\n This episode traces that record: the African Meeting House of 1806, the school fight won in the legislature in 1855, Robert Morris, the first Black lawyer to practice in Boston, and William Monroe Trotter's uncompromising Boston Guardian. It follows the community south to Roxbury, Dorchester, and Mattapan, and a line of…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795158535554-f356430d188c6.jpg",
-   "url": "https://open.spotify.com/episode/5q75dWVsbELlTIQMjHm4Jn",
-   "spotify_url": "https://open.spotify.com/episode/5q75dWVsbELlTIQMjHm4Jn",
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129794499/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb3027b9f-27ee-cc8e-a6f7-42424ad68fd3.m4a",
-   "number": "275"
-  },
-  {
-   "id": "blitz:5f9d8234 1875 416a 8f73 7ea45fb81f91",
-   "show": "blitz",
-   "kind": "episode",
-   "title": "Thursday, November 19, 2026",
-   "date": "2026-11-20T04:58:23Z",
-   "duration": 1217,
-   "description": "C.J. Stroud threw three touchdown passes and David Montgomery ran for 107 yards in his return as the Houston Texans routed the Indianapolis Colts 26-3 on Thursday Night Football, scoring 26 unanswered points after an early Colts field goal. Will Anderson Jr. added a safety, and Daniel Jones was benched in the fourth quarter as the Colts fell to 3-8.\n Scores: Texans 26, Colts 3 — the only game of the night, opening Week 11. Houston moves to 4-6 with its first home win of the season; Indianapolis drops to 3-8.\n Part of the Curious & Creative network. Back after the next slate.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795152588617-b06d643d913af.jpg",
-   "url": "https://open.spotify.com/episode/3tnYnwLYgZXxXCS4vrDXED",
-   "spotify_url": "https://open.spotify.com/episode/3tnYnwLYgZXxXCS4vrDXED",
-   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129790972/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fff24778e-b54a-1d27-0ae6-4016b7e9ddb3.m4a",
-   "number": null
-  },
-  {
-   "id": "coltsdaily:5a37429b 97d3 4f6f b5fe ff5f7cd8b878",
-   "show": "coltsdaily",
-   "kind": "episode",
-   "title": "Benched Again: Jones Pulled as Texans Roll 26-3, Indianapolis Is 3-8 | Thursday, November 19, 2026",
-   "date": "2026-11-20T04:50:46Z",
-   "duration": 1186,
-   "description": "The Texans beat the Colts 26-3 on Thursday Night Football. Indianapolis led 3-0 on the opening drive, then Houston scored 26 unanswered points: a 43-yard C.J. Stroud touchdown to Nico Collins, a safety from Will Anderson Jr., and a first career touchdown for rookie tight end Marlin Klein. Daniel Jones went 12 of 27 for 144 yards and was benched for Anthony Richardson for the second time in three games. Jonathan Taylor was held to 21 yards on 11 carries. The Colts fall to 3-8 heading into the mini-bye.\n Segments: how the lead evaporated; Taylor's night; Stroud and the Houston attack; the injury-ravaged line; the quarterback question; the AFC South picture; and the look-ahead to the Giants on…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795150224278-4b41ff3275131.jpg",
-   "url": "https://open.spotify.com/episode/5mvpETmHbXrnyi50YD3UZ7",
-   "spotify_url": "https://open.spotify.com/episode/5mvpETmHbXrnyi50YD3UZ7",
-   "audio": "https://anchor.fm/s/119609694/podcast/play/129790745/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F1f00fd2f-fc74-795b-5da1-9ee20678c532.m4a",
-   "number": null
-  },
-  {
-   "id": "polymath:4bfc5d75 6338 43a4 893a 53b1d4397d09",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#274 John Ballard: How a Man Born Enslaved Built a Homestead in the Santa Monica Mountains",
-   "date": "2026-11-20T02:20:26Z",
-   "duration": 3491,
-   "description": "John Ballard was born in Kentucky around 1830, almost certainly enslaved, and first appears in California records in 1859. In Los Angeles he worked as a blacksmith, teamster, and firewood seller, helped found the city's first Black church as a trustee in 1869, and registered to vote in 1870. In 1880 he bought 160 acres near Seminole Hot Springs in the Santa Monica Mountains, where his cabin was burned twice and he rebuilt twice.\n In 1900, at seventy, Ballard proved up a federal homestead patent for 144 acres, with a house, orchard, and vineyard in his sworn testimony. His youngest daughter, Alice Ballard, patented 160 adjoining acres, filed in 1900 and approved in 1901. The peak above their…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795141107313-e2807ea6a724e.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/274-John-Ballard-How-a-Man-Born-Enslaved-Built-a-Homestead-in-the-Santa-Monica-Mountains-e3sn8bb",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129785643/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F326065ad-98a2-7f7b-65d0-f91c97374d30.m4a",
-   "number": "274"
-  },
-  {
-   "id": "polymath:042cc6c8 b494 4049 8f10 2c27cd8619df",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#273 The Video Game Industry: How a Game Is Made, Financed, and Played by Millions",
-   "date": "2026-11-20T01:21:46Z",
-   "duration": 3921,
-   "description": "A game looks simple from the outside: a studio makes it, and it appears on a screen. This episode follows what actually happens in between: how a game gets made end to end, from pitch and prototype through the vertical slice, full production, certification, and launch, and how many people and countries stand between an idea and a player.\n You will learn where the money goes: what games cost to build, how a $70 sale is split, and how Grand Theft Auto V became the extreme case. The episode goes inside performance capture and voice acting, how roles are cast and what the union agreement pays, then turns to the second industry inside the first: how Roblox and Fortnite Creative turned players…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795142210678-9abd97ab1114.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/273-The-Video-Game-Industry-How-a-Game-Is-Made--Financed--and-Played-by-Millions-e3sn6bl",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129783605/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F2ab3b089-8e2d-f2be-520e-1122bc707fce.m4a",
-   "number": "273"
-  },
-  {
-   "id": "polymath:6265ea5d 939d 4dc3 8f92 0e61c2e56694",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#272 Rockstar Games: How a Record Label Playbook Created Grand Theft Auto",
-   "date": "2026-11-20T01:15:01Z",
-   "duration": 2854,
-   "description": "Rockstar Games did not start as a game company. It started as an argument: that a game studio should work like a record label. Five men from the British music business, Sam Houser, Dan Houser, Terry Donovan, Jamie King, and Gary Foreman, built that label inside Take-Two Interactive in New York in December 1998, signing developers like acts, packaging games like albums, and trusting the star logo.\n The journey starts a year earlier in Dundee, Scotland, where DMA Design turned a cops-and-robbers prototype called Race 'n' Chase into Grand Theft Auto in 1997, and learned that provoked condemnation could do the work of advertising. Then Take-Two's acquisition of DMA, the renaming as Rockstar…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795142615941-c5d7236dc51de.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/272-Rockstar-Games-How-a-Record-Label-Playbook-Created-Grand-Theft-Auto-e3sn7v4",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129785252/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb5c03577-a6ba-c0a5-35f7-51160a61c15d.m4a",
-   "number": "272"
-  },
-  {
    "id": "polymath:600a9377 1d9b 42ed 813e 9f1f8beae493",
    "show": "polymath",
    "kind": "episode",
    "title": "#271 Sister Cities: Eisenhower Launched a Diplomacy Run by Mayors and Volunteers",
    "date": "2026-11-19T22:49:38Z",
    "duration": 3991,
-   "description": "A sister city is a long-term partnership between two communities in different countries, signed by the highest elected officials on both sides. The city signs, but volunteers, schools, nonprofits, and businesses run the relationship. The agreements are not treaties and carry no binding force under international law.\n President Dwight D. Eisenhower launched the program at the White House Conference on Citizen Diplomacy in September 1956, arguing citizens had to meet face to face for peace to hold. The first documented U.S. pairing, Toledo, Ohio and Toledo, Spain, was signed in 1931; Sister Cities International incorporated in 1967.\n A pairing starts with local research, moves through a…",
+   "description": "A sister city is a long-term partnership between two communities in different countries, made official when the highest elected officials on both sides sign an agreement. The city signs, but volunteers, schools, nonprofits, and businesses run the relationship. The agreements are not treaties and carry no binding force under international law.\n President Dwight D. Eisenhower launched the program at the White House Conference on Citizen Diplomacy in September 1956, arguing that citizens had to meet face to face for peace to hold. Toledo, Ohio and Toledo, Spain had signed the first formally documented U.S. pairing in 1931. Sister Cities International incorporated as a separate nonprofit in…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795128455577-3f194bb99326.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/271-Sister-Cities-Eisenhower-Launched-a-Diplomacy-Run-by-Mayors-and-Volunteers-e3sn0l4",
    "spotify_url": null,
@@ -10567,8 +10483,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 274,
-   "spotify_matches": 1
+   "episodes": 270,
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -10740,8 +10656,8 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 1
+   "episodes": 11,
+   "spotify_matches": 0
   },
   "waiverwire": {
    "ok": true,
@@ -10764,8 +10680,8 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 1
+   "episodes": 12,
+   "spotify_matches": 0
   },
   "cfbdaily": {
    "ok": true,
