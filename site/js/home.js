@@ -37,8 +37,8 @@
     if (!ordered.length) { wall.hidden = true; return; }
     const cats = CC.categories || {};
     const groups = [["Flagships", ordered.filter(big)]].concat(
-      Object.entries(cats).map(([k, label]) => [label, ordered.filter((s) => !big(s) && s.category === k)]));
-    const rest = ordered.filter((s) => !big(s) && !cats[s.category]);
+      Object.entries(cats).map(([k, label]) => [label, ordered.filter((s) => !big(s) && s.category === k).concat(ordered.filter((s) => (big(s) || s.category !== k) && (s.also_in || []).includes(k)))]));
+    const rest = ordered.filter((s) => !big(s) && !cats[s.category] && !(s.also_in || []).some((k) => cats[k]));
     if (rest.length) groups.push(["More shows", rest]);
     // the real show cards, one swipeable row per vertical
     wall.innerHTML = groups.filter(([, list]) => list.length).map(([label, list]) => `<section class="vert">

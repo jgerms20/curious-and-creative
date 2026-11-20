@@ -45,7 +45,7 @@
   const PAGES = [
     { label: "Home", href: "index.html", footer: false, words: "home front page latest" },
     { label: "About", href: "pages/about.html", nav: true, words: "about our story who joshua janel founders co-founders team company" },
-    { label: "Network", full: "Curious & Creative Network", group: "cc", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break horseshoe columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books" },
+    { label: "Network", full: "Curious & Creative Network", group: "cc", href: "pages/shows.html", nav: true, menu: "shows", words: "the network media network shows podcasts social channels hosts curious + creative network listen episodes spotify apple youtube flagship regular culture news reads sports industry jazz riff morning read la daily global read business of hollywood fast break gamecocks daily columbia zeitgeist opening bell tech read primetime political read bracketology cut and sew cover-up cold open cooked books following the money investigative journalism" },
     { label: "Productions", full: "Curious & Creative Productions", group: "cc", href: "pages/studio.html", nav: true, words: "productions curious and creative productions events event planning event production event coverage packages branding brand identity content the studio production photography event coverage events videography video editing podcast production websites website build hire work with us" },
     { label: "Strategy", full: "Curious & Creative Strategy", group: "cc", href: "pages/consultancy.html", nav: true, words: "strategy consulting consultancy research data polling surveys forecasting forecast trends audience campaign brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
     { label: "Our Standards", href: "pages/manifesto.html", nav: true, words: "our standards manifesto mission ai-native ai native taste standards accuracy journalism principles corrections request a show ideas" },
@@ -418,7 +418,7 @@
       const s = fetched[r.key] || { count: 0, spotify_url: r.spotify && `https://open.spotify.com/show/${r.spotify}` };
       return { ...s, key: r.key, kind: r.kind || s.kind, ai: r.ai || s.ai, tier: r.tier || s.tier || "primary", feature: r.feature ?? s.feature, flagship: r.flagship ?? s.flagship,
         name: r.name || s.name, short: r.short || s.short, tagline: r.tagline || s.tagline, about: r.about || s.about, hosts: r.hosts || s.hosts, principal: r.principal || s.principal,
-        category: r.category, cadence: r.cadence, archive: r.archive ?? s.archive, spotify_url: s.spotify_url || r.spotify_url || (r.spotify && `https://open.spotify.com/show/${r.spotify}`) };
+        category: r.category, also_in: r.also_in || [], cadence: r.cadence, archive: r.archive ?? s.archive, spotify_url: s.spotify_url || r.spotify_url || (r.spotify && `https://open.spotify.com/show/${r.spotify}`) };
     }) : data.shows || [];
     const pagesOf = (showPages && showPages.pages) || {};
     data.shows.forEach((s) => { s.page = pagesOf[s.key]; if (!s.art) { s.art = CC.placeholderArt(s); s.artPlaceholder = true; } });
@@ -449,6 +449,7 @@
     // the flagships by name, then one entry per category of regular shows
     const catCount = {};
     data.secondary.forEach((s) => { const k = s.category || "more"; catCount[k] = (catCount[k] || 0) + 1; });
+    data.primary.forEach((s) => (s.also_in || []).forEach((k) => { catCount[k] = (catCount[k] || 0) + 1; }));
     if (menu) menu.innerHTML = data.primary.map((s) => `<a href="${CC.showHref(s)}" data-show="${s.key}">
       ${s.art ? `<img src="${CC.art(s)}" alt="" loading="lazy" width="44" height="44">` : '<span class="ph"></span>'}
       <span><b>${esc(s.name)}</b><small>${esc(CC.showByline(s) || s.tagline || "")}</small></span></a>`).join("")
