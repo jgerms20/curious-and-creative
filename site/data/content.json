@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T22:19:05Z",
+ "generated_at": "2026-11-20T03:33:52Z",
  "shows": [
   {
    "key": "ccpod",
@@ -91,7 +91,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -279,9 +279,9 @@
    "description": "What the internet is talking about, before it's everywhere. Dominated the Conversation tracks the trends bubbling up on X, Reddit, TikTok and Instagram, explains them while they're still forming, and follows their arc as they build. Short flag episodes when something starts moving, a daily report on what dominated each platform, and deep dives on the trends with real trajectory. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
-   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1793485587739-510b912fa9c43.jpg",
-   "latest": "2026-11-18T21:32:43Z",
-   "count": 15
+   "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
+   "latest": "2026-11-19T15:30:17Z",
+   "count": 16
   },
   {
    "key": "morningread",
@@ -361,8 +361,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-18T11:03:32Z",
-   "count": 21
+   "latest": "2026-11-19T11:07:35Z",
+   "count": 22
   },
   {
    "key": "marketread",
@@ -388,8 +388,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-19T11:40:29Z",
-   "count": 19
+   "latest": "2026-11-18T11:37:57Z",
+   "count": 18
   },
   {
    "key": "nyread",
@@ -469,8 +469,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-19T12:19:36Z",
-   "count": 18
+   "latest": "2026-11-18T12:30:45Z",
+   "count": 17
   },
   {
    "key": "techread",
@@ -685,8 +685,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-18T14:01:18Z",
-   "count": 7
+   "latest": "2026-11-19T13:38:32Z",
+   "count": 8
   },
   {
    "key": "celticsdaily",
@@ -739,8 +739,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-17T13:53:43Z",
-   "count": 11
+   "latest": "2026-11-19T13:34:49Z",
+   "count": 12
   },
   {
    "key": "cfbdaily",
@@ -959,31 +959,59 @@
  ],
  "episodes": [
   {
-   "id": "airead:1cd2255d 9200 4e60 a5c8 d09cff1e7ab9",
-   "show": "airead",
+   "id": "dominatedconvo:2c3ebfab b827 4983 ab22 ee9ffdacadd3",
+   "show": "dominatedconvo",
    "kind": "episode",
-   "title": "Thursday, November 19, 2026",
-   "date": "2026-11-19T12:19:36Z",
-   "duration": 1406,
-   "description": "Anthropic begins trading on the Nasdaq after pricing the largest IPO on record at $83, Google ships Gemini 4 Neon at $3/$15, OpenAI's models improve AMD chip designs by up to 14%, a GAO report says all four big chatbots produced viable attack plans in covert testing, Palo Alto Networks agrees to buy Applied Compute for $4.5 billion, Nvidia halts H200 sales to China, a poisoned Microsoft agent package and a 10-year-old nginx flaw headline security, officials tell Congress the outage pile-up was not a coordinated attack, and bitcoin falls to $63,048 as ETF outflows resume.\n • Anthropic prices at $83, upsizes to 980M shares, trades today as ANT — https://www.thebigant.com/\n • Google ships…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795090720747-69d0a2a73f5a3.jpg",
-   "url": "https://open.spotify.com/episode/5DNw2VgzE0OoLkT0eMO9H1",
-   "spotify_url": "https://open.spotify.com/episode/5DNw2VgzE0OoLkT0eMO9H1",
-   "audio": "https://anchor.fm/s/119609054/podcast/play/129746444/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F5e554733-a580-7f52-bf4b-708e05778d3e.m4a",
+   "title": "GTA 6 Is Finally Out and the First Reviews Are Already Fighting | Thursday, November 19, 2026",
+   "date": "2026-11-19T15:30:17Z",
+   "duration": 1550,
+   "description": "GTA 6 finally unlocked at midnight after thirteen years, and the first players are already arguing with the critics' 99 — while the launch itself broke PlayStation Network, the seventh system failure in seven days. Anthropic priced its IPO at $83 and starts trading today as ANT, the largest IPO on record. Ella Langley swept the CMAs with six wins, the most ever in a single year. And overnight, Iran struck US bases in Kuwait and Bahrain after a US strike on Qeshm Island. Plus Alaska's count closes, Nvidia's board shuts the door on Jensen Huang, the platform roundup, and what is bubbling up.\n Timestamps:\n0:00 A day of arrivals: GTA 6 is finally out\n6:36 The launch breaks PlayStation: the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795103141236-f7e370ab36458.jpg",
+   "url": "https://open.spotify.com/episode/2VkOhyRPephyBZ5amMFl2R",
+   "spotify_url": "https://open.spotify.com/episode/2VkOhyRPephyBZ5amMFl2R",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129755770/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F2524db10-77ae-1aed-8d9c-8e23cd45ab25.m4a",
    "number": null
   },
   {
-   "id": "marketread:2923e06a 596b 4eb3 a2ea d4dbf5986bd7",
-   "show": "marketread",
+   "id": "waiverwire:c8406bac 71e0 48d5 a69a 3c281d451803",
+   "show": "waiverwire",
    "kind": "episode",
-   "title": "Thursday, November 19, 2026",
-   "date": "2026-11-19T11:40:29Z",
-   "duration": 810,
-   "description": "Anthropic priced at $83 a share, above its $70–78 range, raising about $81.3 billion in the largest IPO on record, and debuts today on the Nasdaq as ANT. Futures are up sharply, Nasdaq futures +1.82%, after Wednesday's split close: the S&P 500 fell a fifth straight day to 7,323.63, the Dow fell 1.11% to 50,198.17, and Nvidia faded 2.89% to $150.96. The Fed minutes were hawkish, retail beat across the board, housing split, oil steadied after a 3.4 million-barrel EIA build, and the VIX sits at 24.56 in backwardation into Friday's OpEx. Walmart and jobless claims land at 8:30 a.m. Eastern.\n • Anthropic prices at $83 — 980M shares, ~$81.3B, debuts today as ANT —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795088366743-c6bd9a80ac21a.jpg",
-   "url": "https://open.spotify.com/episode/3BBOFmTBsiNTjKW5ro9LCu",
-   "spotify_url": "https://open.spotify.com/episode/3BBOFmTBsiNTjKW5ro9LCu",
-   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129744672/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2Feb726994-599b-acb3-c6ea-05f863633dfb.m4a",
+   "title": "Stroud and Collins Tonight, Pollard's Smash Spot, and the Purdy Problem | Thursday, November 19, 2026",
+   "date": "2026-11-19T13:38:32Z",
+   "duration": 1207,
+   "description": "Week 11 Starts of the Week: six teams are on bye, the biggest bye week of the season, so today is about confidence — who starts, who sits, and how sure you should feel about it, by position, with the matchups and the injury picture that decide those calls.\n In this edition: the bye-pocalypse frame and the season-altering injuries · quarterbacks C.J. Stroud and Caleb Williams up, Brock Purdy down (with the honest disagreement) · Tony Pollard, the start of the week, and the Emmett Johnson–Kenneth Walker decision · D'Andre Swift's smash spot · receivers Rome Odunze and Tee Higgins, tight end streamer Chigoziem Okonkwo, and the Brock Bowers watch · weekend matchup previews · and tonight's Colts…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
+   "url": "https://open.spotify.com/episode/5iK9bOYSArtkQaXDZqwt5g",
+   "spotify_url": "https://open.spotify.com/episode/5iK9bOYSArtkQaXDZqwt5g",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129749852/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F090291ef-b95c-1ec0-c7b1-a958dee86d81.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:b6f3bb59 845e 40bd bdd1 30baaf71aab4",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Both Tackles Out, Anderson Waiting: Colts Walk Into Houston Short-Handed, Indianapolis Is 3-7 | Thursday, November 19, 2026",
+   "date": "2026-11-19T13:34:49Z",
+   "duration": 777,
+   "description": "Thursday night in Houston, and the Colts walk into NRG Stadium short-handed in exactly the wrong places. Both starting tackles are out, Sauce Gardner is questionable after three straight missed practices, and the league's sack leader, Will Anderson Jr., is waiting on the other side. Daniel Jones starts, with Shane Steichen's \"right now\" hanging over the job, and the run game has to carry a night the market has priced at Texans by twelve and a half.\n Segments: the Houston game and what a survivable night looks like; the Miami win, kept short; the final injury report on both sides; the deep segment on the edges, Luke Tenuta's first NFL start against Anderson; and the look-ahead to the Giants,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795095253271-1b3975d023415.jpg",
+   "url": "https://open.spotify.com/episode/6XWalEN95kzsgiWvbGrYaJ",
+   "spotify_url": "https://open.spotify.com/episode/6XWalEN95kzsgiWvbGrYaJ",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/129749579/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F24e6397f-4140-f7b3-2eff-f8bd5327d0c3.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:abbbd836 3ac0 4f0f 8e8a 400ee552eda1",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Trump, Xi and Putin Hold First Three-Way Summit in Shenzhen | Thursday, November 19, 2026",
+   "date": "2026-11-19T11:07:35Z",
+   "duration": 1289,
+   "description": "Trump, Xi and Putin hold their first-ever three-way summit in Shenzhen, Ukraine strikes the Kerch Bridge for a third time in four days and halts rail traffic, Europe's Coalition of the Willing meets in Berlin to answer Shenzhen, the IEA calls the Hormuz crisis the largest threat to energy security in history, COP31 ministers hunt for common ground in a Turkish Divan with 21 issues open, Bangladesh shuts down in an Awami League lockdown as the Yunus family home is set ablaze, the World Court delivers its Rohingya genocide judgment, and Gauteng's coalition talks move to the deputy mayoralties.\n 0:13 Welcome and the Shenzhen three-way summit\n3:38 Berlin: the Coalition of the Willing answers…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795086365460-6fc6cf81cfc8d.jpg",
+   "url": "https://open.spotify.com/episode/4S4DzzX9tXigAs4EQe1XKe",
+   "spotify_url": "https://open.spotify.com/episode/4S4DzzX9tXigAs4EQe1XKe",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129743390/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F6164c4cb-3000-a153-157d-1a5a980987d7.m4a",
    "number": null
   },
   {
@@ -1065,8 +1093,8 @@
    "duration": 2838,
    "description": "Es Muy Good did not exist until December 2025. Within months, the four-person agency — founders Steve Gonzalez and Steven Nasopoulos, plus a head of production and a head of operations — became the shop behind Kalshi's national TV blitz: more than 35 linear TV spots in six months, with Martha Stewart, Shane Gillis and Danny McBride, Timothée Chalamet, Giannis Antetokounmpo, Marshawn Lynch and Canelo Álvarez. This episode looks at how they did it: embedded in Kalshi's Slack, taking 1 a.m. calls, working from a standby network of freelancers, and hiring A-list directors and cinematographers job by job instead of building departments.\n That model turns out to be old and new at once.…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795036742262-083d353cc6d9.jpg",
-   "url": "https://open.spotify.com/episode/6Hid8QQqPq6EsNvOKAfUwt",
-   "spotify_url": "https://open.spotify.com/episode/6Hid8QQqPq6EsNvOKAfUwt",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/270-Starting-an-Agency-Why-Four-People-Can-Outrun-Four-Hundred-e3sl344",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129714756/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F147332fd-5118-4863-0688-509af23dbf0a.m4a",
    "number": "270"
   },
@@ -10188,7 +10216,7 @@
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
    "episodes": 269,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -10256,8 +10284,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 15,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "morningread": {
    "ok": true,
@@ -10280,16 +10308,16 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 21,
-   "spotify_matches": 0
+   "episodes": 22,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 1
+   "episodes": 18,
+   "spotify_matches": 0
   },
   "nyread": {
    "ok": true,
@@ -10312,8 +10340,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 18,
-   "spotify_matches": 1
+   "episodes": 17,
+   "spotify_matches": 0
   },
   "techread": {
    "ok": true,
@@ -10376,8 +10404,8 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 7,
-   "spotify_matches": 0
+   "episodes": 8,
+   "spotify_matches": 1
   },
   "celticsdaily": {
    "ok": true,
@@ -10392,8 +10420,8 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 11,
-   "spotify_matches": 0
+   "episodes": 12,
+   "spotify_matches": 1
   },
   "cfbdaily": {
    "ok": true,
