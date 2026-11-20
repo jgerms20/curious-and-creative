@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T13:14:45Z",
+ "generated_at": "2026-11-20T21:19:32Z",
  "shows": [
   {
    "key": "ccpod",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -182,8 +182,8 @@
    "complete": true,
    "art": "assets/art/riff.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "latest": "2026-11-14T22:58:47Z",
-   "count": 34
+   "latest": "2026-11-20T17:17:13Z",
+   "count": 35
   },
   {
    "key": "brazil",
@@ -236,8 +236,8 @@
    "complete": true,
    "art": "assets/art/harlem.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47058065/47058065-1792877027478-e10b06672d3e3.jpg",
-   "latest": "2026-11-17T20:03:11Z",
-   "count": 8
+   "latest": "2026-11-20T15:39:56Z",
+   "count": 9
   },
   {
    "key": "designdigest",
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-19T15:30:17Z",
-   "count": 16
+   "latest": "2026-11-20T15:30:43Z",
+   "count": 17
   },
   {
    "key": "morningread",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-20T11:08:11Z",
-   "count": 27
+   "latest": "2026-11-19T10:55:16Z",
+   "count": 26
   },
   {
    "key": "ladaily",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-19T11:40:29Z",
-   "count": 19
+   "latest": "2026-11-20T11:52:23Z",
+   "count": 20
   },
   {
    "key": "nyread",
@@ -424,8 +424,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-20T11:42:25Z",
-   "count": 12
+   "latest": "2026-11-18T11:38:36Z",
+   "count": 11
   },
   {
    "key": "columbiaread",
@@ -451,8 +451,8 @@
    "complete": true,
    "art": "assets/art/columbiaread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47120618/47120618-1793473024667-3c58a827bef36.jpg",
-   "latest": "2026-11-18T12:05:25Z",
-   "count": 7
+   "latest": "2026-11-20T15:51:31Z",
+   "count": 8
   },
   {
    "key": "airead",
@@ -559,8 +559,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-17T00:46:56Z",
-   "count": 8
+   "latest": "2026-11-20T12:15:46Z",
+   "count": 9
   },
   {
    "key": "tvinsider",
@@ -586,8 +586,8 @@
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-15T05:09:56Z",
-   "count": 8
+   "latest": "2026-11-20T12:18:22Z",
+   "count": 9
   },
   {
    "key": "fastbreak",
@@ -801,8 +801,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-18T14:08:09Z",
-   "count": 10
+   "latest": "2026-11-20T13:47:19Z",
+   "count": 11
   },
   {
    "key": "gamecockshoops",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-19T12:41:50Z",
-   "count": 14
+   "latest": "2026-11-20T12:41:23Z",
+   "count": 15
   },
   {
    "key": "cutandsew",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -984,11 +984,109 @@
    "complete": true,
    "art": "assets/art/followingthemoney.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47239161/47239161-1794733992144-583ec3550a988.jpg",
-   "latest": "2026-11-15T09:51:40Z",
-   "count": 1
+   "latest": "2026-11-20T13:34:06Z",
+   "count": 2
   }
  ],
  "episodes": [
+  {
+   "id": "riff:efdf9ed1 e2cb 43be bd7e af6564afc1c0",
+   "show": "riff",
+   "kind": "episode",
+   "title": "Coleman Hawkins: The Man Who Made the Tenor a Jazz Horn — November 20–26",
+   "date": "2026-11-20T17:17:13Z",
+   "duration": 4051,
+   "description": "The Week Ahead, November 20–26: Joshua Redman's If Ever You Would Leave Us (We Play For Rollins) is out today on Blue Note — a joyful all-star tribute to Sonny Rollins with Christian McBride, Marcus Gilmore, Chris Potter, Cécile McLorin Salvant and Gabrielle Cavassa. Three festivals land on one weekend: the EFG London Jazz Festival closes (Samara Joy at the Royal Festival Hall on Sunday), Newark's TD James Moody Festival closes at NJPAC (the Charles Lloyd Quartet on Saturday, the Sarah Vaughan vocal finals on Sunday), and the Hollywood Real Jazz Festival debuts free in Florida with Ron Carter headlining Saturday. Plus the DownBeat Readers Poll — Carter and Herbie Hancock on top, Kenny…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1795194948735-d581ee81e4124.jpg",
+   "url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
+   "spotify_url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
+   "audio": "https://anchor.fm/s/1187405a4/podcast/play/129817961/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F21707581-7b79-c587-be13-bd47434962b2.m4a",
+   "number": "35"
+  },
+  {
+   "id": "columbiaread:a3584658 5cfe 47a3 8d0c 4e3ba6775621",
+   "show": "columbiaread",
+   "kind": "episode",
+   "title": "Friday, November 20, 2026",
+   "date": "2026-11-20T15:51:31Z",
+   "duration": 1290,
+   "description": "City Hall just had its biggest building night of the year: on Tuesday, Columbia City Council put the $18.3 million Williams Street Connector and the $45.4 million Columbia Canal embankment repair under contract in the same meeting — and said no, twice, to a Wilson Boulevard annexation and a title-loan zoning change.\n Also today: five judges are officially in line for the South Carolina Supreme Court, Susan Smith is denied parole again, a name and a charge in the Lower Richland killing, Richland County tightens the vape map, a Walmart Supercenter is planned for Hardscrabble Road, the standing real estate beat at 1,475 homes and 100 days, and a Midlands church closing in on $2.5 million in…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1795189843240-aa89ff01d8b46.jpg",
+   "url": "https://open.spotify.com/episode/0Kf7DZH1AAjLqVzPABoxkK",
+   "spotify_url": "https://open.spotify.com/episode/0Kf7DZH1AAjLqVzPABoxkK",
+   "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129813718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F36aef831-a7e4-4771-d5c9-c9ecdaa8487c.m4a",
+   "number": null
+  },
+  {
+   "id": "harlem:8ee2c3bc 9293 4953 9192 c1890cdbdf23",
+   "show": "harlem",
+   "kind": "episode",
+   "title": "#008 Augusta Savage: The Sculptor Whose Monument Was Her Students",
+   "date": "2026-11-20T15:39:56Z",
+   "duration": 2621,
+   "description": "Her largest sculpture stood sixteen feet tall at the 1939 World's Fair, and when the fair closed it was demolished, because Augusta Savage could not afford bronze, shipping, or storage. She had already answered that ending in 1935: \"My monument will be in their work,\" she said of her students.\n Savage arrived in New York in 1921 with $4.60, finished Cooper Union's four-year course in three, and sculpted Du Bois and Garvey. In 1923 a committee of eminent American men rescinded the Fontainebleau scholarship she had won, because she was Black. Six years later her bust of her nephew, Gamin, won her Paris outright.\n This episode follows her from the red clay of Green Cove Springs through the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1795189159861-35e102ea8c077.jpg",
+   "url": "https://open.spotify.com/episode/4QqInJpxd54sKoMeUDSTa0",
+   "spotify_url": "https://open.spotify.com/episode/4QqInJpxd54sKoMeUDSTa0",
+   "audio": "https://anchor.fm/s/119157f24/podcast/play/129813197/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F0670beaf-4ee0-bdae-ef55-0fa5136b31fe.m4a",
+   "number": "8"
+  },
+  {
+   "id": "dominatedconvo:c14144a8 69f7 4fe7 980f f5231d59252f",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "GTA 6 Sold 24 Million Copies in a Day and Half the Internet Spent Launch Day Doing Chores | Friday, November 20, 2026",
+   "date": "2026-11-20T15:30:43Z",
+   "duration": 1352,
+   "description": "GTA 6's launch-day receipts are in: an estimated 24.6 million copies and $2.36 billion in a single day, with 125 million hours watched, and half the internet spent launch day doing in-game chores. Anthropic closed its first day as a public company up 17% while the market fell, and this morning the froth is coming off. The White House cyber director is out in the middle of the outage chain. Fiona the hippo died, Patrick Stewart's cause of death was confirmed, and Trump, Xi and Putin sat down at one table in Shenzhen. Plus the Hunger Games opens, California shakes, the platform roundup, and what is bubbling up.\n Timestamps:\n0:00 Scale and its shadow: the day the receipts came in\n1:33 GTA 6's…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795188560767-8b572b9bd4389.jpg",
+   "url": "https://open.spotify.com/episode/7mrGMPMY2FizDyzVPyhLYU",
+   "spotify_url": "https://open.spotify.com/episode/7mrGMPMY2FizDyzVPyhLYU",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129812801/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fd52c1298-db59-a701-3996-852154e4de7e.m4a",
+   "number": null
+  },
+  {
+   "id": "gamecocksdaily:3f8b8054 ca56 47bb 9888 96025fea22c1",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "Sellers Is Back, No. 1 Is Here: South Carolina Is 6-4 | Friday, November 20, 2026",
+   "date": "2026-11-20T13:47:19Z",
+   "duration": 1241,
+   "description": "LaNorris Sellers is off the availability report and expected to play as No. 21 South Carolina (6-4) hosts No. 1 Georgia (9-1) on Senior Night at Williams-Brice Stadium, Saturday at 7:30 p.m. ET on ABC: the first meeting since 2023 and Georgia's first trip to Columbia since 2022.\n Inside: the full Georgia preview and what Saturday still means / the Sellers question, with the Arkansas caveat / Thursday's availability report: Harbor probable, Stewart questionable, Bennett, Collier and Addison doubtful / the deep segment: the red zone and Stockton against Sellers / basketball: the 5-0 men hold off Elon 80-72, the No. 1 women head to Providence / the look-ahead: Clemson on November 28 and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795182364193-50871639a122b.jpg",
+   "url": "https://open.spotify.com/episode/7vwjoKCV7fEHLCJgC7oYaH",
+   "spotify_url": "https://open.spotify.com/episode/7vwjoKCV7fEHLCJgC7oYaH",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129808183/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F69ee1a40-c7a2-8ff0-825f-b2d3d83d85dd.m4a",
+   "number": null
+  },
+  {
+   "id": "followingthemoney:64dd6d70 eaa6 4231 8c3c b42a2f1ac6e5",
+   "show": "followingthemoney",
+   "kind": "episode",
+   "title": "Our Heritage Matters: $8.5 Million in Reported Independent Expenditures, No Donor Named in Any Public Record | Friday, November 20, 2026",
+   "date": "2026-11-20T13:34:06Z",
+   "duration": 2625,
+   "description": "The second ledger opens with a calendar fact: no tracked committee has filed a new periodic report since Episode 1, because in an election year the post-general report, due December 3, 2026, replaces the November monthly report. What exists is the closing-days paper: SLF PAC's 24-hour notices filed November 1 to 3, 2026, about $43.9 million dated October 27 to November 1 on Lowdown's sum of its FEC filings, and a final Texas PAC tally of $181,850,225 against $158.0 million raised, the difference unexplained until December 3.\n Receipt #1 is a new name. Our Heritage Matters (C00963736) filed its FEC Form 1 on October 15, 2026, one day after the pre-general donor books closed, treasurer Mike…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47239161/47239161-1795181532450-2c637508b7d4e.jpg",
+   "url": "https://open.spotify.com/episode/2jOfKyBiXpW1ljTAQ9lu4S",
+   "spotify_url": "https://open.spotify.com/episode/2jOfKyBiXpW1ljTAQ9lu4S",
+   "audio": "https://anchor.fm/s/11a29d3c4/podcast/play/129807543/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F31aad8f3-09b7-283f-d93a-c9a71e252cb4.m4a",
+   "number": "2"
+  },
+  {
+   "id": "politicalread:0b670538 a2e9 4928 ba76 f09a6f77b85b",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Friday, November 20, 2026",
+   "date": "2026-11-20T12:41:23Z",
+   "duration": 1039,
+   "description": "Congress heads home for Thanksgiving three weeks from a government shutdown, and the fight is not really about spending levels — it is about whether Congress keeps paying for the Iran war. Reuters reports both parties want a stopgap into early next year, but Democrats are split over using the December 11 deadline to restrict the war, Republicans declined to take up President Trump's $350 billion defense demand, and Majority Leader John Thune calls another shutdown \"a colossal mistake.\" Senator Peter Welch names the knot: \"We don't want to fund the war, we don't want to shut down.\"\n Also covered: the Senate rejects the Iran war powers resolution (H.Con.Res. 93) 48–51 — Reuters, Nov 19 ; the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795178416135-4c7507a322cdb.jpg",
+   "url": "https://open.spotify.com/episode/73K4D3uAaGIHKBirJIfM5E",
+   "spotify_url": "https://open.spotify.com/episode/73K4D3uAaGIHKBirJIfM5E",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129805306/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb30f1f05-324d-f42c-8e9f-6128a0202cae.m4a",
+   "number": null
+  },
   {
    "id": "airead:28139191 8d6a 4bca b800 9f8a13f61a88",
    "show": "airead",
@@ -1004,31 +1102,45 @@
    "number": null
   },
   {
-   "id": "nyread:556c897d a835 4583 add0 5f29e3c370f8",
-   "show": "nyread",
+   "id": "tvinsider:ba5f6884 c2aa 4c9b 92f5 310113195edc",
+   "show": "tvinsider",
    "kind": "episode",
-   "title": "Friday, November 20, 2026",
-   "date": "2026-11-20T11:42:25Z",
-   "duration": 726,
-   "description": "The carriage era is ending — Mayor Mamdani signed Romanch's Law on Thursday and the drivers' union sued in federal court the same day; the mayor's Rikers plan lands today, with a 2027 closure law and borough jails that cannot open before 2032; the Bruckner shelter, the city's last emergency migrant shelter, is in its final weeks under a judge's ICE subpoena order; an MTA lot in Crown Heights becomes 375 homes; a Council bill takes on Hunts Point's polluting refrigeration trailers; the Council's Thursday package covers doulas, dental care and $2.1 million for nontraditional workers; an executive order sets citywide kosher and halal meal standards; Much Ado About Nothing opens at the Winter…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1795174920885-c107eb609ca2c.jpg",
-   "url": "https://open.spotify.com/episode/51DxXGo4b1ngebL1IkKNTv",
-   "spotify_url": "https://open.spotify.com/episode/51DxXGo4b1ngebL1IkKNTv",
-   "audio": "https://anchor.fm/s/119608a14/podcast/play/129803150/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F60b3ee83-8013-7b6d-8f18-e988dca389eb.m4a",
+   "title": "HBO Renews 'The Gilded Age' for Season 5 Three Episodes Into Its Biggest Season Yet | Friday, November 20, 2026",
+   "date": "2026-11-20T12:18:22Z",
+   "duration": 1298,
+   "description": "HBO renews The Gilded Age for Season 5 three episodes into its biggest season yet, NBC's Traitors: New Blood earns a Season 2 on finale day, Disney beats estimates and confirms more layoffs on the road to $3 billion in savings, Apple TV orders Slow Horses through Season 10, Nielsen's originals chart posts its softest week in two years, CBS supersizes Survivor and doubles Ghosts, and Virgin River becomes Netflix's longest-running scripted series.\n • HBO Renews The Gilded Age for Season 5 as Season 4 Averages 5.9 Million Viewers — https://www.thewrap.com/creative-content/tv-shows/the-gilded-age-renewed-season-5-hbo/\n • The Traitors: New Blood Renewed for Season 2 at NBC —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1795177009521-8b4d20de45258.jpg",
+   "url": "https://open.spotify.com/episode/5sVTb9tx6MYTi0gdRuACIH",
+   "spotify_url": "https://open.spotify.com/episode/5sVTb9tx6MYTi0gdRuACIH",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129804280/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb0803932-8d4f-d2cc-b902-e3bae8c1310c.m4a",
    "number": null
   },
   {
-   "id": "morningread:622db2e8 971c 4497 8b8d fa8d19bacfa4",
-   "show": "morningread",
+   "id": "hollywoodinsider:0cf84956 b79d 48bb b924 7370d51b141a",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "Disney Beats the Street on Streaming, Then Hands Its Workforce a $3 Billion Bill | Friday, November 20, 2026",
+   "date": "2026-11-20T12:15:46Z",
+   "duration": 976,
+   "description": "Disney beat the street on streaming, posting $824 million in streaming profit, then told its own workforce the efficiency bill is $3 billion, with more layoffs confirmed on the record. Also today: GTA VI's estimated $2.36 billion launch day, Sunrise on the Reaping's $21.25 million in previews, Amazon's new Bond, Skydance's film chiefs and their 30-film obligation, Chris Pratt at Paramount, I Play Rocky going wide, Black Bear's win for Bill Hader's They Know, and Club Kid's specialty run.\n • Disney beats the street on streaming, then hands its workforce a $3 billion bill — https://www.thewrap.com/industry-news/business/disney-earnings-q4-2026/\n • GTA VI posts an estimated $2.36 billion on…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1795176901454-aa955986d003d.jpg",
+   "url": "https://open.spotify.com/episode/6AOMgQabmUngZIms34cnNc",
+   "spotify_url": "https://open.spotify.com/episode/6AOMgQabmUngZIms34cnNc",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129804378/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fdf7a9924-217d-a408-a976-89393ad33f78.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:182f02bc 0e65 48e1 ba54 740d8fac71ff",
+   "show": "marketread",
    "kind": "episode",
    "title": "Friday, November 20, 2026",
-   "date": "2026-11-20T11:08:11Z",
-   "duration": 1258,
-   "description": "Anthropic's record debut ends with the Dow down 1,100 points and the S&P 500 lower for a sixth straight day. Plus: Walmart beats and raises its forecast; claims rise as factory activity cools; the Senate passes permitting reform 62 to 33 and rejects the Iran war powers resolution 51 to 48; California subpoenas Nvidia; the cyber director is replaced; the Shenzhen declaration is published; the Justice Department stands down in Alaska; Florida's river breaks its record; and the Hunger Games returns.\n Timestamps:\n 0:00 — Opening\n 0:13 — The Markets: Anthropic's Debut, and a Sixth Straight Loss\n 4:08 — Walmart: A Beat and a Raised Forecast\n 5:41 — The Data: Claims Rise, Factory Activity Cools\n…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795172857544-9ea0ebf1aa394.jpg",
-   "url": "https://open.spotify.com/episode/1NfWVWxD9d04i101Nwea9Q",
-   "spotify_url": "https://open.spotify.com/episode/1NfWVWxD9d04i101Nwea9Q",
-   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129801926/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb15e3196-1693-4898-93a9-39186bc80d7f.m4a",
+   "date": "2026-11-20T11:52:23Z",
+   "duration": 687,
+   "description": "The relief rally lasted four hours. Futures were up more than one percent into the largest IPO on record, and by Thursday's close the S&P 500 had fallen a sixth straight day to 7,175.83, the Dow had closed below 50,000 at 49,097.06, and Anthropic had faded from a $111.50 open to a $97.17 close while the AI complex sold off around it. Overnight Asia posted its worst week since 2020, Europe opened down one percent, futures are lower again, and the VIX closed at 28.44 into today's monthly options expiration.\n • Futures slide after Thursday's reversal — Reuters, 4:57 a.m. ET: Dow E-minis -0.2%, S&P -0.76%, Nasdaq 100 -1.63% —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795175476011-3d34bd71999.jpg",
+   "url": "https://open.spotify.com/episode/1q1MyQxR9lfKQ29BrnGE3D",
+   "spotify_url": "https://open.spotify.com/episode/1q1MyQxR9lfKQ29BrnGE3D",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129803482/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Faa4bfea6-9f75-f844-c572-3e0ce313213b.m4a",
    "number": null
   },
   {
@@ -1208,8 +1320,8 @@
    "duration": 1550,
    "description": "GTA 6 finally unlocked at midnight after thirteen years, and the first players are already arguing with the critics' 99 — while the launch itself broke PlayStation Network, the seventh system failure in seven days. Anthropic priced its IPO at $83 and starts trading today as ANT, the largest IPO on record. Ella Langley swept the CMAs with six wins, the most ever in a single year. And overnight, Iran struck US bases in Kuwait and Bahrain after a US strike on Qeshm Island. Plus Alaska's count closes, Nvidia's board shuts the door on Jensen Huang, the platform roundup, and what is bubbling up.\n Timestamps:\n0:00 A day of arrivals: GTA 6 is finally out\n6:36 The launch breaks PlayStation: the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795103141236-f7e370ab36458.jpg",
-   "url": "https://open.spotify.com/episode/2VkOhyRPephyBZ5amMFl2R",
-   "spotify_url": "https://open.spotify.com/episode/2VkOhyRPephyBZ5amMFl2R",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/GTA-6-Is-Finally-Out-and-the-First-Reviews-Are-Already-Fighting--Thursday--November-19--2026-e3smb5q",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129755770/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F2524db10-77ae-1aed-8d9c-8e23cd45ab25.m4a",
    "number": null
   },
@@ -1390,8 +1502,8 @@
    "duration": 1044,
    "description": "No. 21 South Carolina is 6-4 with its playoff hopes gone and one game that still changes everything: No. 1 Georgia at Williams-Brice on Senior Night. LaNorris Sellers is trending toward playing, the receiver room is the thinnest it has been all season, and tonight's SEC availability report is the first real answer of Georgia week.\n Inside: the fall to No. 21 and what Saturday still means / the Sellers benchmark and tonight's availability report / the receiver room: Bennett, Harbor, Augustave and Tuggle / the deep segment: Gunner Stockton, the quarterback who got away, against the one who stayed / basketball: the No. 1 women beat No. 3 Southern Cal and rout FGCU to 5-0, the men host Elon…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795010825521-9aeb42e3a6607.jpg",
-   "url": "https://open.spotify.com/episode/5sHuUrIZQbnEZDA3If2Bp4",
-   "spotify_url": "https://open.spotify.com/episode/5sHuUrIZQbnEZDA3If2Bp4",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/No--21--Thin-at-Receiver--No--1-Coming-to-Town-South-Carolina-Is-6-4--Wednesday--November-18--2026-e3skbt3",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129690979/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F3bbe2602-98d8-f2b1-e0b9-265aa43ba98c.m4a",
    "number": null
   },
@@ -1417,7 +1529,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -1473,8 +1585,8 @@
    "duration": 899,
    "description": "The State House handoff is underway: Gov.-elect Alan Wilson held his first transition meeting Tuesday and gave every Cabinet director until December 4th to say whether they want to stay, while Sen.-elect Annie Andrews builds her Senate office after a week of orientation in Washington.\n Also today: Columbia protests the $67 billion Dominion–NextEra merger at the final November hearing, Southeast Park's new center would carry fallen Officer Christopher DeLong's name, a court test for Richland One's newest board member, a developing murder charge in Lower Richland, the standing real estate beat at 1,460 homes for sale, and McMaster's final Carolighting on Sunday.\n Timestamps:\n 0:00 — The…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1795003469597-500aadae2a577.jpg",
-   "url": "https://open.spotify.com/episode/0D6NsdAOHqkgIfNl060qng",
-   "spotify_url": "https://open.spotify.com/episode/0D6NsdAOHqkgIfNl060qng",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20036/episodes/Wednesday--November-18--2026-e3sk4ri",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129683762/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F15420bce-7928-63f2-8723-c527f12c7a5c.m4a",
    "number": null
   },
@@ -1585,8 +1697,8 @@
    "duration": 3092,
    "description": "The most famous nightclub in America sat in the middle of Harlem, and Harlem could not get in. On the corner of West 142nd Street and Lenox Avenue, the Cotton Club put Duke Ellington, Cab Calloway, and Lena Horne on its stage, in front of audiences those performers were never allowed to join.\n It began as Jack Johnson's Club Deluxe and became a mob business: bootlegger Owney Madden rebuilt it as a whites-only room dressed to look like a Southern plantation, and used it to sell his beer. This episode follows how the club actually worked, the color line at the door and in the chorus line, the radio broadcasts that carried its bands across America, and the artists who turned a segregated room…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1794945710111-73166f59f3d6d.jpg",
-   "url": "https://open.spotify.com/episode/2Lpt7aA38SNs4cj4fBR9j1",
-   "spotify_url": "https://open.spotify.com/episode/2Lpt7aA38SNs4cj4fBR9j1",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms201/episodes/007-The-Cotton-Club-The-Room-Harlem-Could-Not-Enter-e3sippe",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119157f24/podcast/play/129639662/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-17%2F3274fc3b-7c0f-e929-0e6a-cfaefe5d9e63.m4a",
    "number": "7"
   },
@@ -2145,8 +2257,8 @@
    "duration": 3177,
    "description": "This week on the ledger: Senate Leadership Fund (SLF PAC) filed its FEC summary (Jan 1, 2025 through Oct 14, 2026) showing $545,581,108.72 in total receipts, alongside Senate Majority PAC, House Majority PAC, and Congressional Leadership Fund on the same coverage. Ensign Peak Advisors filed a Form 13F-HR Nov 12, 2026 showing $60,611,728,144 in reported value. FEC post-general reports are due December 3, 2026.\n 0:00 The Ledger · 11:28 Receipt #1: The 2026 Midterm Money Map · 32:59 Receipt #2: The Ensign Peak 13F · 47:47 No Movement Report · 49:34 Next Watch\n Receipt #1: Senate Leadership Fund: $545,581,108.72 in Total Receipts in Its Pre-General FEC Filing\n Source document: FEC committee…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47239161/47239161-1794736142561-b78f4a81caec5.jpg",
-   "url": "https://open.spotify.com/episode/0L4JOP2JhT8BTPwGaMmQOI",
-   "spotify_url": "https://open.spotify.com/episode/0L4JOP2JhT8BTPwGaMmQOI",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2076/episodes/Senate-Leadership-Fund-545-581-108-72-in-Total-Receipts-in-Its-Pre-General-FEC-Filing--Sunday--November-15--2026-e3sdn6a",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11a29d3c4/podcast/play/129473162/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-15%2F0f83178d-eb54-1bd2-cf65-e708e3b0eff4.m4a",
    "number": "1"
   },
@@ -2327,8 +2439,8 @@
    "duration": 1291,
    "description": "November 13 is Hampton Hawes Day in Los Angeles, and no date ever held more of one life: Hawes was born on it in 1928, finished the legendary All Night Session on the morning of it in 1956, and was arrested on it in 1958, on his 30th birthday. This is the story of the preacher's son who put Charlie Parker's language on the piano, refused to inform and took ten years, watched a president's inaugural address from a prison hospital and decided that president would listen, and came home to write Raise Up Off Me, the first book about the bebop era written by a musician who lived it.\n What to hear first: Hampton Hawes Trio, Vol. 1 (1955), the All Night Session volumes, Four! (1958) with Barney…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1794697066704-db2781f7c1edb.jpg",
-   "url": "https://open.spotify.com/episode/0T3eNhCrAn3uH97wDFXmYp",
-   "spotify_url": "https://open.spotify.com/episode/0T3eNhCrAn3uH97wDFXmYp",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/Hampton-Hawes-The-Pianist-a-President-Set-Free-e3sd03i",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/129449522/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-14%2F28172db2-2a4f-a703-5cda-95ddbe900398.m4a",
    "number": "34"
   },
@@ -3993,8 +4105,8 @@
    "duration": 750,
    "description": "The morning after the midterms: futures whipsawed down then sharply higher as Democrats were projected to take both chambers, AMD and Arista ripped after hours on record quarters, and Qualcomm, Arm and AppLovin report after today's close — a pre-market desk built around tonight's prints, defined risk first.\n Setups: QCOM Nov 6 iron condor 145/135 put wing + 185/195 call wing into AMC earnings (implied ±9.5%); ARM Nov 6 iron condor 170/155 + 225/240; AMD Nov 20 520/560 bull call debit spread post-beat; SPY Nov 20 745/730 bear put hedge. Explainer: expected-move math — turning a straddle price into a strike map.\n Education, not financial advice.\n Part of the Curious & Creative network. Back…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107161/47107161-1793828271407-b9f5c357a1b19.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2002/episodes/Wednesday--November-4--2026-e3rp4lk",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/252XC2r1M3AnQqWiNQoJ7y",
+   "spotify_url": "https://open.spotify.com/episode/252XC2r1M3AnQqWiNQoJ7y",
    "audio": "https://anchor.fm/s/119606944/podcast/play/128798836/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-4%2F294a6a2f-cda5-e57c-9edb-27382da72a80.m4a",
    "number": null
   },
@@ -6800,20 +6912,6 @@
    "number": "6"
   },
   {
-   "id": "riff:897f54c0 4178 4eff 9a0d e15aad493084",
-   "show": "riff",
-   "kind": "episode",
-   "title": "#5 Samara Joy: The Voice That Brought the Standards Back",
-   "date": "2026-10-15T20:19:26Z",
-   "duration": 2104,
-   "description": "A kid from Castle Hill in the Bronx, raised on gospel with the Savettes, wins the Sarah Vaughan competition in 2019 — and then runs the table: Best New Artist at the 2023 Grammys and a sixth Grammy for Portrait in February 2026. Samara Joy made the standards feel new again.\n Start with Portrait, cut at Van Gelder Studio — the same room as Coltrane — and hear a singer in her twenties phrase like she has all the time in the world.\n Love you madly.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/5-Samara-Joy-The-Voice-That-Brought-the-Standards-Back-e3qim2k",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1187405a4/podcast/play/127538708/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F69984379-96de-4894-2b71-139c77fb6ebb.m4a",
-   "number": "5"
-  },
-  {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
    "kind": "episode",
@@ -8653,7 +8751,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -10702,7 +10800,7 @@
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
-   "episodes": 34,
+   "episodes": 35,
    "spotify_matches": 1
   },
   "brazil": {
@@ -10718,7 +10816,7 @@
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_name": "Once Upon a Time in Harlem",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 9,
    "spotify_matches": 1
   },
   "designdigest": {
@@ -10734,7 +10832,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 16,
+   "episodes": 17,
    "spotify_matches": 1
   },
   "morningread": {
@@ -10742,8 +10840,8 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 27,
-   "spotify_matches": 1
+   "episodes": 26,
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -10766,23 +10864,23 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 20,
+   "spotify_matches": 1
   },
   "nyread": {
    "ok": true,
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 1
+   "episodes": 11,
+   "spotify_matches": 0
   },
   "columbiaread": {
    "ok": true,
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
-   "episodes": 7,
+   "episodes": 8,
    "spotify_matches": 1
   },
   "airead": {
@@ -10796,10 +10894,10 @@
   "optionsdesk": {
    "ok": true,
    "feed": "https://anchor.fm/s/119606944/podcast/rss",
-   "spotify_name": "Wednesday, November 4, 2026",
+   "spotify_name": "The Options Desk",
    "full_catalog": true,
    "episodes": 7,
-   "spotify_matches": 0
+   "spotify_matches": 1
   },
   "cryptoread": {
    "ok": true,
@@ -10814,16 +10912,16 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "tvinsider": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime TV",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "fastbreak": {
    "ok": true,
@@ -10886,7 +10984,7 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
-   "episodes": 10,
+   "episodes": 11,
    "spotify_matches": 1
   },
   "gamecockshoops": {
@@ -10902,8 +11000,8 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 15,
+   "spotify_matches": 1
   },
   "cutandsew": {
    "ok": true,
@@ -10942,7 +11040,7 @@
    "feed": "https://anchor.fm/s/11a29d3c4/podcast/rss",
    "spotify_name": "Following the Money",
    "full_catalog": true,
-   "episodes": 1,
+   "episodes": 2,
    "spotify_matches": 1
   }
  },
