@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T21:19:32Z",
+ "generated_at": "2026-11-21T02:33:42Z",
  "shows": [
   {
    "key": "ccpod",
@@ -182,8 +182,8 @@
    "complete": true,
    "art": "assets/art/riff.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "latest": "2026-11-20T17:17:13Z",
-   "count": 35
+   "latest": "2026-11-14T22:58:47Z",
+   "count": 34
   },
   {
    "key": "brazil",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-19T10:55:16Z",
-   "count": 26
+   "latest": "2026-11-20T11:08:11Z",
+   "count": 27
   },
   {
    "key": "ladaily",
@@ -424,8 +424,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-18T11:38:36Z",
-   "count": 11
+   "latest": "2026-11-20T11:42:25Z",
+   "count": 12
   },
   {
    "key": "columbiaread",
@@ -770,7 +770,7 @@
    "feed": "https://anchor.fm/s/11979a24c/podcast/rss",
    "spotify_url": "https://open.spotify.com/show/70qRlnh5hY1WHBSMNvnPQE",
    "feed_title": "Bracketology",
-   "description": "College basketball, covered nationally, every day. College Basketball Daily runs through the men's and women's games: the night's results and upsets, the rankings, the bracket picture, and the stories moving the sport, in about twenty minutes. Part of the Curious & Creative network.",
+   "description": "Bracketology is the college basketball show from Curious & Creative: a weekly wrap of the men's and women's games — the results and upsets that matter, the rankings, the bracket picture, and the stories moving the sport, in about twenty minutes. Part of the Curious & Creative network.",
    "complete": true,
    "art": "assets/art/cbbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123691/47123691-1793486223429-91e29c29b26a.jpg",
@@ -990,20 +990,6 @@
  ],
  "episodes": [
   {
-   "id": "riff:efdf9ed1 e2cb 43be bd7e af6564afc1c0",
-   "show": "riff",
-   "kind": "episode",
-   "title": "Coleman Hawkins: The Man Who Made the Tenor a Jazz Horn — November 20–26",
-   "date": "2026-11-20T17:17:13Z",
-   "duration": 4051,
-   "description": "The Week Ahead, November 20–26: Joshua Redman's If Ever You Would Leave Us (We Play For Rollins) is out today on Blue Note — a joyful all-star tribute to Sonny Rollins with Christian McBride, Marcus Gilmore, Chris Potter, Cécile McLorin Salvant and Gabrielle Cavassa. Three festivals land on one weekend: the EFG London Jazz Festival closes (Samara Joy at the Royal Festival Hall on Sunday), Newark's TD James Moody Festival closes at NJPAC (the Charles Lloyd Quartet on Saturday, the Sarah Vaughan vocal finals on Sunday), and the Hollywood Real Jazz Festival debuts free in Florida with Ron Carter headlining Saturday. Plus the DownBeat Readers Poll — Carter and Herbie Hancock on top, Kenny…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1795194948735-d581ee81e4124.jpg",
-   "url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
-   "spotify_url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
-   "audio": "https://anchor.fm/s/1187405a4/podcast/play/129817961/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F21707581-7b79-c587-be13-bd47434962b2.m4a",
-   "number": "35"
-  },
-  {
    "id": "columbiaread:a3584658 5cfe 47a3 8d0c 4e3ba6775621",
    "show": "columbiaread",
    "kind": "episode",
@@ -1141,6 +1127,34 @@
    "url": "https://open.spotify.com/episode/1q1MyQxR9lfKQ29BrnGE3D",
    "spotify_url": "https://open.spotify.com/episode/1q1MyQxR9lfKQ29BrnGE3D",
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129803482/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Faa4bfea6-9f75-f844-c572-3e0ce313213b.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:556c897d a835 4583 add0 5f29e3c370f8",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Friday, November 20, 2026",
+   "date": "2026-11-20T11:42:25Z",
+   "duration": 726,
+   "description": "The carriage era is ending — Mayor Mamdani signed Romanch's Law on Thursday and the drivers' union sued in federal court the same day; the mayor's Rikers plan lands today, with a 2027 closure law and borough jails that cannot open before 2032; the Bruckner shelter, the city's last emergency migrant shelter, is in its final weeks under a judge's ICE subpoena order; an MTA lot in Crown Heights becomes 375 homes; a Council bill takes on Hunts Point's polluting refrigeration trailers; the Council's Thursday package covers doulas, dental care and $2.1 million for nontraditional workers; an executive order sets citywide kosher and halal meal standards; Much Ado About Nothing opens at the Winter…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1795174920885-c107eb609ca2c.jpg",
+   "url": "https://open.spotify.com/episode/51DxXGo4b1ngebL1IkKNTv",
+   "spotify_url": "https://open.spotify.com/episode/51DxXGo4b1ngebL1IkKNTv",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/129803150/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F60b3ee83-8013-7b6d-8f18-e988dca389eb.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:622db2e8 971c 4497 8b8d fa8d19bacfa4",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Friday, November 20, 2026",
+   "date": "2026-11-20T11:08:11Z",
+   "duration": 1258,
+   "description": "Anthropic's record debut ends with the Dow down 1,100 points and the S&P 500 lower for a sixth straight day. Plus: Walmart beats and raises its forecast; claims rise as factory activity cools; the Senate passes permitting reform 62 to 33 and rejects the Iran war powers resolution 51 to 48; California subpoenas Nvidia; the cyber director is replaced; the Shenzhen declaration is published; the Justice Department stands down in Alaska; Florida's river breaks its record; and the Hunger Games returns.\n Timestamps:\n 0:00 — Opening\n 0:13 — The Markets: Anthropic's Debut, and a Sixth Straight Loss\n 4:08 — Walmart: A Beat and a Raised Forecast\n 5:41 — The Data: Claims Rise, Factory Activity Cools\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795172857544-9ea0ebf1aa394.jpg",
+   "url": "https://open.spotify.com/episode/1NfWVWxD9d04i101Nwea9Q",
+   "spotify_url": "https://open.spotify.com/episode/1NfWVWxD9d04i101Nwea9Q",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129801926/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb15e3196-1693-4898-93a9-39186bc80d7f.m4a",
    "number": null
   },
   {
@@ -6912,6 +6926,20 @@
    "number": "6"
   },
   {
+   "id": "riff:897f54c0 4178 4eff 9a0d e15aad493084",
+   "show": "riff",
+   "kind": "episode",
+   "title": "#5 Samara Joy: The Voice That Brought the Standards Back",
+   "date": "2026-10-15T20:19:26Z",
+   "duration": 2104,
+   "description": "A kid from Castle Hill in the Bronx, raised on gospel with the Savettes, wins the Sarah Vaughan competition in 2019 — and then runs the table: Best New Artist at the 2023 Grammys and a sixth Grammy for Portrait in February 2026. Samara Joy made the standards feel new again.\n Start with Portrait, cut at Van Gelder Studio — the same room as Coltrane — and hear a singer in her twenties phrase like she has all the time in the world.\n Love you madly.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/5-Samara-Joy-The-Voice-That-Brought-the-Standards-Back-e3qim2k",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/1187405a4/podcast/play/127538708/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F69984379-96de-4894-2b71-139c77fb6ebb.m4a",
+   "number": "5"
+  },
+  {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
    "kind": "episode",
@@ -10800,8 +10828,8 @@
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
-   "episodes": 35,
-   "spotify_matches": 1
+   "episodes": 34,
+   "spotify_matches": 0
   },
   "brazil": {
    "ok": true,
@@ -10840,8 +10868,8 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 26,
-   "spotify_matches": 0
+   "episodes": 27,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
@@ -10872,8 +10900,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 11,
-   "spotify_matches": 0
+   "episodes": 12,
+   "spotify_matches": 1
   },
   "columbiaread": {
    "ok": true,
