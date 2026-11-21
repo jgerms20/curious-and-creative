@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T11:27:14Z",
+ "generated_at": "2026-11-21T19:31:21Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-21T04:28:21Z",
-   "count": 277
+   "latest": "2026-11-21T18:59:23Z",
+   "count": 279
   },
   {
    "key": "approachable",
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-20T15:30:43Z",
-   "count": 17
+   "latest": "2026-11-21T15:17:05Z",
+   "count": 18
   },
   {
    "key": "morningread",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-20T11:08:11Z",
-   "count": 27
+   "latest": "2026-11-21T11:02:08Z",
+   "count": 28
   },
   {
    "key": "ladaily",
@@ -343,8 +343,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-20T11:00:02Z",
-   "count": 25
+   "latest": "2026-11-21T11:15:35Z",
+   "count": 26
   },
   {
    "key": "globalread",
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-20T10:47:03Z",
-   "count": 23
+   "latest": "2026-11-21T10:41:09Z",
+   "count": 24
   },
   {
    "key": "marketread",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-20T11:52:23Z",
-   "count": 20
+   "latest": "2026-11-21T11:32:36Z",
+   "count": 21
   },
   {
    "key": "nyread",
@@ -478,8 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-20T12:28:27Z",
-   "count": 19
+   "latest": "2026-11-21T12:18:22Z",
+   "count": 20
   },
   {
    "key": "optionsdesk",
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-20T05:00:41Z",
-   "count": 19
+   "latest": "2026-11-21T06:41:57Z",
+   "count": 20
   },
   {
    "key": "blitz",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-20T12:41:23Z",
-   "count": 15
+   "latest": "2026-11-21T12:47:07Z",
+   "count": 16
   },
   {
    "key": "cutandsew",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -990,6 +990,146 @@
  ],
  "episodes": [
   {
+   "id": "polymath:3afb247a 9cd2 434f b286 e3af0d9434b3",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#280 Kyivstoner: Why Russia Tried to Kill a Rapper Nobody Knew",
+   "date": "2026-11-21T18:59:23Z",
+   "duration": 2574,
+   "description": "Five minutes before showtime on September 25, 2026, Danish police stopped a car heading toward a concert venue north of Copenhagen. Inside, prosecutors allege, were two loaded pistols and two knives. The man about to take the stage was Kyivstoner — and Denmark's security service, PET, said the men in that car had been sent to kill him on behalf of Russian intelligence.\n Kyivstoner is the stage name of Albert Vasiliev, a 34-year-old Ukrainian-born rapper, comedian, and streamer who built his career between Kyiv, the United States, and the internet. He holds both Ukrainian and US citizenship, and by the numbers he is a modest act: his most popular songs have drawn about 1.2 million streams on…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795287524915-66232b6c9ab78.jpg",
+   "url": "https://open.spotify.com/episode/5yeNJWqnD3xqnN0fC40YtX",
+   "spotify_url": "https://open.spotify.com/episode/5yeNJWqnD3xqnN0fC40YtX",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129867486/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Ffd6dc227-cb87-427c-4cba-a0a5cf2bd72b.m4a",
+   "number": "280"
+  },
+  {
+   "id": "polymath:d2083d21 1923 4c3b 9881 cee2f582f39d",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#279 Chapo Isidro: The Cartel Boss That Outlasted El Chapo",
+   "date": "2026-11-21T18:47:50Z",
+   "duration": 3441,
+   "description": "For 20 years, Fausto Isidro Meza Flores stayed a second-tier name while the kingpins around him fell. Known as Chapo Isidro, he was on the FBI's Ten Most Wanted list when Mexican military forces captured him in Guasave, Sinaloa, on November 20, 2026.\n He rose as Alfredo Beltrán Leyva's right-hand man, then survived the Beltrán Leyva Organization's collapse: Alfredo arrested in 2008, Arturo killed in 2009, Héctor captured in 2014. He did not fight for national leadership. He held his home ground in northern Sinaloa, built his organization from his own family, and kept a low profile that generated almost no press for years at a time.\n From Guasave, his Meza-Flores organization, known in…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795286798510-94ac1b73cbfbb.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/279-Chapo-Isidro-The-Cartel-Boss-That-Outlasted-El-Chapo-e3spnuv",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129867167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F7acba0ea-67ed-9cf5-ec2b-edad0aaa6124.m4a",
+   "number": "279"
+  },
+  {
+   "id": "dominatedconvo:d81ebfd5 ddab 4a79 a8c8 120977292f8f",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "An Anthropic Mathematician Says Claude Helped Prove the Riemann Hypothesis | Saturday, November 21, 2026",
+   "date": "2026-11-21T15:17:05Z",
+   "duration": 1228,
+   "description": "An Anthropic mathematician says he and Claude have proved the Riemann hypothesis, the most famous unsolved problem in mathematics, and the internet is now checking the claim. Plus the week's verdicts land at once: Rockstar posts GTA 6's official number, $3.79 billion in a day, the biggest entertainment launch in history; the stock market delivers the opposite verdict, with the S&P down 3.7 percent and Anthropic's stock nearly back to its IPO price; the new Hunger Games heads for a $110 million opening; and a federal jury convicts the man who started the Palisades Fire. Bubbling up: the Pirate Shop Token's Treasure Hours Saturday, the My Moon My Man soft-launch format at number one, and…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795274159918-3505a3609956d.jpg",
+   "url": "https://open.spotify.com/episode/6mHuQn19hhUZdyth2ZhdCD",
+   "spotify_url": "https://open.spotify.com/episode/6mHuQn19hhUZdyth2ZhdCD",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129860012/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Faa4e8eab-96d0-927d-1503-d4ab8470d1a3.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:14b95957 4559 45b2 9b96 ec2302ef99d3",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-21T12:47:07Z",
+   "duration": 1343,
+   "description": "The party that won the midterms is writing down what it intends to do with the win. Reuters reports the incoming Democratic majorities — 56 to 44 in the Senate, 257 to 172 in the House — will unveil a first-100-days agenda in early December: war powers, Medicaid and SNAP restoration, a stock-trading ban, a minimum-wage fight. Every item runs into the same two walls: 60 votes in the Senate, and a president whose vetoes, Senator John Boozman says, will not be overridden. Plus: the December 11th shutdown knot, the president's Friday briefing and its healthcare opening, two judges confirmed with five more teed up, and the Saudi nuclear pact's Senate vote.\n Timestamps:\n 0:00 — Welcome to The…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795265189864-9c2d09910ed12.jpg",
+   "url": "https://open.spotify.com/episode/1bhwoRAt5UFRgFv04y53a1",
+   "spotify_url": "https://open.spotify.com/episode/1bhwoRAt5UFRgFv04y53a1",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129855684/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F51b88d9e-a4b3-54d2-43b5-8fd08c795dc9.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:f116b80a a2b8 4afc ad7b 56f2f7cbcc0a",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-21T12:18:22Z",
+   "duration": 1310,
+   "description": "Grand Theft Auto VI's record 3.79 billion dollar first day leads Saturday's edition. Also today: Anthropic's stock slides back toward its 83 dollar IPO price as its 119.5 billion dollar financing closes, Google ships a computer-using Gemini on the Mac while Apple's own agent plans surface and vanish, Microsoft undercuts the coding-model market with a discount that expires, OpenAI hardens its models against theft, a claimed proof of the Riemann hypothesis awaits verification, Samsung reshuffles its chip leadership, and Bitcoin breaks below 60,000 dollars.\n • Grand Theft Auto VI sells 3.79 billion dollars in one day —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795263438581-f5c421a78ec38.jpg",
+   "url": "https://open.spotify.com/episode/6AiC8xwMQdAG4m013mzXo2",
+   "spotify_url": "https://open.spotify.com/episode/6AiC8xwMQdAG4m013mzXo2",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129854979/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F0ab433ff-5330-b079-8f1e-a1d0df865689.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:de8bad12 b385 4e71 8a5b c4d040055c05",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-21T11:32:36Z",
+   "duration": 856,
+   "description": "Friday was the worst day of a brutal week: the S&P 500 fell 3.70% to 6,910.39, its seventh straight loss and a close in correction territory, the Nasdaq Composite plunged 5.28% and turned negative for 2026, Nvidia crashed 14% to a 52-week low on reports of an SEC accounting review, and the VIX touched 40 for the first time since April 2025. We walk through the chip rout, Anthropic's second day, the global selloff, the options desk's warning about systematic selling next week, and why gold fell with everything else — then the Thanksgiving-shortened week ahead, with Dell earnings Tuesday and the PCE inflation report Wednesday.\n • Friday's tape: seventh straight loss, S&P 500 and Dow in…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795260730937-cffe4df0df0c8.jpg",
+   "url": "https://open.spotify.com/episode/7ujFcNSkqtnvRs3Z5JQeHv",
+   "spotify_url": "https://open.spotify.com/episode/7ujFcNSkqtnvRs3Z5JQeHv",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129853857/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Ff8ec0fbd-81e3-82c7-ff3d-060a9c4c0c4a.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:f7866fba 4a92 4b65 a0a7 a289d523d84e",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-21T11:15:35Z",
+   "duration": 1486,
+   "description": "A transition day at City Hall: the Council tables two charter proposals that would have curbed the mayor's power — one to let the Council remove department heads, one to overturn mayoral directives — and sends them back to committee after Controller Mejia's \"shady\" warning and hundreds of public comments, while approving a patch for a projected $321 million overspend. The same day, Mayor-elect Nithya Raman names her transition leadership and a 30-member \"A Committee for the City.\" Plus: a magnitude 4.4 earthquake near Commerce wakes the county at 3:25 a.m. with no damage, the Ninth Circuit stays Bill Essayli's disqualification four days before it was to take effect, the county orders…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795259669338-acfa81ca815fc.jpg",
+   "url": "https://open.spotify.com/episode/3fbDneypURSGCkdECD8L20",
+   "spotify_url": "https://open.spotify.com/episode/3fbDneypURSGCkdECD8L20",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129853446/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Feac0c31f-68b0-533c-f4bb-447aedba1411.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:69d1470e 0762 485b 9b6c 7d9337da94b0",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-21T11:02:08Z",
+   "duration": 1176,
+   "description": "The selloff stopped being a dip on Friday: the S&P 500 fell for a seventh straight day into a formal correction, and the Nasdaq gave back every gain it had made this year. Plus: the president's 90-minute account of Shenzhen; a threatened tax on data centres built abroad; the president presses Nvidia to take Jensen Huang back; 879,000 chip approvals for China made public; permitting reform hits the House's arithmetic; three weeks to the December 11th funding deadline with no deal; health insurers bounce on an upgrade; and Florida's river holds at its record.\n Timestamps:\n 0:00 — Welcome to The Morning Read\n 1:28 — The Markets: A Correction, Confirmed\n 4:32 — The White House: Ninety Minutes…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795258885484-1247d4d9cb122.jpg",
+   "url": "https://open.spotify.com/episode/6Bs7AbbJ64nn7vHOrQX5m7",
+   "spotify_url": "https://open.spotify.com/episode/6Bs7AbbJ64nn7vHOrQX5m7",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129853144/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Fb820da71-07e2-6ce0-ac86-afa766a5a8ca.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:5ae0917b 8e1b 4db6 a0ae 1dadd51c7cad",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "COP31 Runs Past Its Deadline With No Deal | Saturday, November 21, 2026",
+   "date": "2026-11-21T10:41:09Z",
+   "duration": 1027,
+   "description": "The COP31 climate talks in Antalya run past their Friday deadline with the closing plenary suspended and fossil fuels stripped from the draft, Ukraine counts nine dead from Friday's record barrage as Washington pushes for a deal by January, a four-trillion-dollar sell-off rolls from Asia's chip stocks to Wall Street, a magnitude 6.8 earthquake shakes Peru's Andes, oil posts a third weekly loss despite a tanker fire near Hormuz, Gauteng's coalition deal reaches the weekend unsigned, scientists explain why Congo's Ebola outbreak hides as malaria and kills seven in ten infected small children, France deploys 70,000 officers for a sixth Saturday of protests, and Israel's Lieberman says an…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795257641036-476ccf397088d.jpg",
+   "url": "https://open.spotify.com/episode/4XyvdXbXU77DXxIFHO6CkI",
+   "spotify_url": "https://open.spotify.com/episode/4XyvdXbXU77DXxIFHO6CkI",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129852727/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F6fe3d60d-fb19-a584-b67c-72d4b0ab4e2d.m4a",
+   "number": null
+  },
+  {
+   "id": "fastbreak:d156b85e 1b16 4f23 9f49 165559c94031",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Friday, November 20, 2026",
+   "date": "2026-11-21T06:41:57Z",
+   "duration": 1457,
+   "description": "James Harden scored 51 points — his 26th career 50-point game, passing Kobe Bryant for third in NBA history — as Cleveland beat Indiana 128-119 on a nine-game NBA Cup Friday that also saw Shai Gilgeous-Alexander score 40 in a Thunder comeback and Franz Wagner hit a game-winner for Orlando in Brooklyn.\n Scores: Hawks 111, Hornets 97 · Magic 113, Nets 111 · Cavaliers 128, Pacers 119 · Raptors 105, Pistons 102 · Wizards 98, Bulls 94 · Thunder 126, Pelicans 120 · Suns 111, Jazz 101 · Nuggets 133, Rockets 124 · Lakers 106, Kings 104.\n The deep dive: Fifty-one at thirty-seven — Harden passes Kobe on the 50-point list, what it means for Cleveland, and a Cup picture that snapped into focus across…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795243279670-26e009093b44f.jpg",
+   "url": "https://open.spotify.com/episode/2xsYg6qMnhwj2JbsP3RZ0y",
+   "spotify_url": "https://open.spotify.com/episode/2xsYg6qMnhwj2JbsP3RZ0y",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129847668/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F2eb7dd78-a67c-6835-2cba-0cb740c0c4d7.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:8555e773 6989 4482 a36a 2ab8eb58c739",
    "show": "polymath",
    "kind": "episode",
@@ -998,8 +1138,8 @@
    "duration": 2859,
    "description": "Suzanne Collins turns a childhood split — a father's war in Vietnam, watched on television at home — into Panem, a regime that rules by turning children's deaths into broadcast spectacle. The Hunger Games grows from that image into more than 100 million books in 55 languages, claimed instantly by teenagers and refused to be put down by adults.\n Under the pace sits a deliberate argument. Collins builds the trilogy and its prequels around just war theory — when rebellion is justified, what a just cause may never do, and why the many submit to the few — while tracing propaganda, spectacle, and the trauma of survivors never allowed to stop performing for the cameras.\n That argument builds a…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795235221306-bd44a751eb021.jpg",
-   "url": "https://open.spotify.com/episode/2ZTJIqXmy8Akw5tZsfm52d",
-   "spotify_url": "https://open.spotify.com/episode/2ZTJIqXmy8Akw5tZsfm52d",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/278-Suzanne-Collins-How-a-Childrens-TV-Writer-Wrote-the-Defining-Rebellion-of-a-Generation-e3sp25l",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129844853/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F25a732b1-49dc-20c6-2cfe-282b036a54f4.m4a",
    "number": "278"
   },
@@ -1068,8 +1208,8 @@
    "duration": 1352,
    "description": "GTA 6's launch-day receipts are in: an estimated 24.6 million copies and $2.36 billion in a single day, with 125 million hours watched, and half the internet spent launch day doing in-game chores. Anthropic closed its first day as a public company up 17% while the market fell, and this morning the froth is coming off. The White House cyber director is out in the middle of the outage chain. Fiona the hippo died, Patrick Stewart's cause of death was confirmed, and Trump, Xi and Putin sat down at one table in Shenzhen. Plus the Hunger Games opens, California shakes, the platform roundup, and what is bubbling up.\n Timestamps:\n0:00 Scale and its shadow: the day the receipts came in\n1:33 GTA 6's…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795188560767-8b572b9bd4389.jpg",
-   "url": "https://open.spotify.com/episode/7mrGMPMY2FizDyzVPyhLYU",
-   "spotify_url": "https://open.spotify.com/episode/7mrGMPMY2FizDyzVPyhLYU",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/GTA-6-Sold-24-Million-Copies-in-a-Day-and-Half-the-Internet-Spent-Launch-Day-Doing-Chores--Friday--November-20--2026-e3so2s1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129812801/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fd52c1298-db59-a701-3996-852154e4de7e.m4a",
    "number": null
   },
@@ -1110,8 +1250,8 @@
    "duration": 1039,
    "description": "Congress heads home for Thanksgiving three weeks from a government shutdown, and the fight is not really about spending levels — it is about whether Congress keeps paying for the Iran war. Reuters reports both parties want a stopgap into early next year, but Democrats are split over using the December 11 deadline to restrict the war, Republicans declined to take up President Trump's $350 billion defense demand, and Majority Leader John Thune calls another shutdown \"a colossal mistake.\" Senator Peter Welch names the knot: \"We don't want to fund the war, we don't want to shut down.\"\n Also covered: the Senate rejects the Iran war powers resolution (H.Con.Res. 93) 48–51 — Reuters, Nov 19 ; the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795178416135-4c7507a322cdb.jpg",
-   "url": "https://open.spotify.com/episode/73K4D3uAaGIHKBirJIfM5E",
-   "spotify_url": "https://open.spotify.com/episode/73K4D3uAaGIHKBirJIfM5E",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Friday--November-20--2026-e3snrhq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119a81f14/podcast/play/129805306/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb30f1f05-324d-f42c-8e9f-6128a0202cae.m4a",
    "number": null
   },
@@ -1124,8 +1264,8 @@
    "duration": 1401,
    "description": "Anthropic's first day as a public company leads Friday's edition: the record IPO opened at $111.50, touched about $115, and closed at $97.17, up 17% — while the Dow fell 1,100 points. Also today: OpenAI puts a Critical-rated cyber model on open sale, Google's Gemini 4 Neon starts a price war for professional work, two critical NGINX flaws found by an AI harness need patching this morning, chip controls leak in both directions, AI improves the chips that run AI, Equinor confirms an attack, and Bitcoin hits a four-month low on a record day of ETF outflows.\n • Anthropic's first day: a record IPO meets a falling market — https://www.investopedia.com/anthropic-ipo-live-blog-ant-stock-12264678\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795177665520-64dbfccb2dd6c.jpg",
-   "url": "https://open.spotify.com/episode/6SLnZzGAMAzJmUpOASoyRb",
-   "spotify_url": "https://open.spotify.com/episode/6SLnZzGAMAzJmUpOASoyRb",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Friday--November-20--2026-e3snr2o",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129804824/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F46cba9a4-c174-5634-5bee-3dea84a10bd7.m4a",
    "number": null
   },
@@ -1166,8 +1306,8 @@
    "duration": 687,
    "description": "The relief rally lasted four hours. Futures were up more than one percent into the largest IPO on record, and by Thursday's close the S&P 500 had fallen a sixth straight day to 7,175.83, the Dow had closed below 50,000 at 49,097.06, and Anthropic had faded from a $111.50 open to a $97.17 close while the AI complex sold off around it. Overnight Asia posted its worst week since 2020, Europe opened down one percent, futures are lower again, and the VIX closed at 28.44 into today's monthly options expiration.\n • Futures slide after Thursday's reversal — Reuters, 4:57 a.m. ET: Dow E-minis -0.2%, S&P -0.76%, Nasdaq 100 -1.63% —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795175476011-3d34bd71999.jpg",
-   "url": "https://open.spotify.com/episode/1q1MyQxR9lfKQ29BrnGE3D",
-   "spotify_url": "https://open.spotify.com/episode/1q1MyQxR9lfKQ29BrnGE3D",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Friday--November-20--2026-e3snpoq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129803482/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Faa4bfea6-9f75-f844-c572-3e0ce313213b.m4a",
    "number": null
   },
@@ -10819,7 +10959,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 277,
+   "episodes": 279,
    "spotify_matches": 1
   },
   "approachable": {
@@ -10888,7 +11028,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 17,
+   "episodes": 18,
    "spotify_matches": 1
   },
   "morningread": {
@@ -10896,31 +11036,31 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 27,
-   "spotify_matches": 0
+   "episodes": 28,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 25,
-   "spotify_matches": 0
+   "episodes": 26,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 23,
-   "spotify_matches": 0
+   "episodes": 24,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 20,
+   "episodes": 21,
    "spotify_matches": 1
   },
   "nyread": {
@@ -10944,7 +11084,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 19,
+   "episodes": 20,
    "spotify_matches": 1
   },
   "optionsdesk": {
@@ -10984,8 +11124,8 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 20,
+   "spotify_matches": 1
   },
   "blitz": {
    "ok": true,
@@ -11056,7 +11196,7 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 15,
+   "episodes": 16,
    "spotify_matches": 1
   },
   "cutandsew": {
