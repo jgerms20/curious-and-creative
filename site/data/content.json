@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T02:33:42Z",
+ "generated_at": "2026-11-21T11:27:14Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-20T08:54:03Z",
-   "count": 275
+   "latest": "2026-11-21T04:28:21Z",
+   "count": 277
   },
   {
    "key": "approachable",
@@ -182,8 +182,8 @@
    "complete": true,
    "art": "assets/art/riff.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "latest": "2026-11-14T22:58:47Z",
-   "count": 34
+   "latest": "2026-11-20T17:17:13Z",
+   "count": 35
   },
   {
    "key": "brazil",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -989,6 +989,48 @@
   }
  ],
  "episodes": [
+  {
+   "id": "polymath:8555e773 6989 4482 a36a 2ab8eb58c739",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#278 Suzanne Collins: How a Children's TV Writer Wrote the Defining Rebellion of a Generation",
+   "date": "2026-11-21T04:28:21Z",
+   "duration": 2859,
+   "description": "Suzanne Collins turns a childhood split — a father's war in Vietnam, watched on television at home — into Panem, a regime that rules by turning children's deaths into broadcast spectacle. The Hunger Games grows from that image into more than 100 million books in 55 languages, claimed instantly by teenagers and refused to be put down by adults.\n Under the pace sits a deliberate argument. Collins builds the trilogy and its prequels around just war theory — when rebellion is justified, what a just cause may never do, and why the many submit to the few — while tracing propaganda, spectacle, and the trauma of survivors never allowed to stop performing for the cameras.\n That argument builds a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795235221306-bd44a751eb021.jpg",
+   "url": "https://open.spotify.com/episode/2ZTJIqXmy8Akw5tZsfm52d",
+   "spotify_url": "https://open.spotify.com/episode/2ZTJIqXmy8Akw5tZsfm52d",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129844853/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F25a732b1-49dc-20c6-2cfe-282b036a54f4.m4a",
+   "number": "278"
+  },
+  {
+   "id": "polymath:50c366b7 b86f 42ff 82e6 ac36e7849f2e",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#277 Hunter Schafer: The Actor That Wrote Her Own Breakthrough",
+   "date": "2026-11-21T03:44:08Z",
+   "duration": 2611,
+   "description": "Hunter Schafer entered public life at 17, not as an actor but as the youngest named plaintiff in Carcaño v. McCrory , the challenge to North Carolina's HB2 \"bathroom bill.\" A visual artist raised in Raleigh, trained in UNCSA's high school Visual Arts program, class of 2017, she modeled for Dior and Marc Jacobs, gave up an accepted place at Central Saint Martins, and answered an Instagram open call for trans girls that required no acting experience.\n Cast as Jules Vaughn in Euphoria , she helped shape Jules and co-wrote the special \"Fuck Anyone Who's Not a Sea Blob,\" then built a film career — Tigris in The Ballad of Songbirds & Snakes , a first lead in Cuckoo , Kinds of Kindness , Mother…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795232539364-cd52a707488d.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/277-Hunter-Schafer-The-Actor-That-Wrote-Her-Own-Breakthrough-e3sp13t",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129843773/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F23d9fda5-cf4c-26f9-cc69-67d1af007a0e.m4a",
+   "number": "277"
+  },
+  {
+   "id": "riff:efdf9ed1 e2cb 43be bd7e af6564afc1c0",
+   "show": "riff",
+   "kind": "episode",
+   "title": "Coleman Hawkins: The Man Who Made the Tenor a Jazz Horn — November 20–26",
+   "date": "2026-11-20T17:17:13Z",
+   "duration": 4051,
+   "description": "The Week Ahead, November 20–26: Joshua Redman's If Ever You Would Leave Us (We Play For Rollins) is out today on Blue Note — a joyful all-star tribute to Sonny Rollins with Christian McBride, Marcus Gilmore, Chris Potter, Cécile McLorin Salvant and Gabrielle Cavassa. Three festivals land on one weekend: the EFG London Jazz Festival closes (Samara Joy at the Royal Festival Hall on Sunday), Newark's TD James Moody Festival closes at NJPAC (the Charles Lloyd Quartet on Saturday, the Sarah Vaughan vocal finals on Sunday), and the Hollywood Real Jazz Festival debuts free in Florida with Ron Carter headlining Saturday. Plus the DownBeat Readers Poll — Carter and Herbie Hancock on top, Kenny…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1795194948735-d581ee81e4124.jpg",
+   "url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
+   "spotify_url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
+   "audio": "https://anchor.fm/s/1187405a4/podcast/play/129817961/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F21707581-7b79-c587-be13-bd47434962b2.m4a",
+   "number": "35"
+  },
   {
    "id": "columbiaread:a3584658 5cfe 47a3 8d0c 4e3ba6775621",
    "show": "columbiaread",
@@ -1152,8 +1194,8 @@
    "duration": 1258,
    "description": "Anthropic's record debut ends with the Dow down 1,100 points and the S&P 500 lower for a sixth straight day. Plus: Walmart beats and raises its forecast; claims rise as factory activity cools; the Senate passes permitting reform 62 to 33 and rejects the Iran war powers resolution 51 to 48; California subpoenas Nvidia; the cyber director is replaced; the Shenzhen declaration is published; the Justice Department stands down in Alaska; Florida's river breaks its record; and the Hunger Games returns.\n Timestamps:\n 0:00 — Opening\n 0:13 — The Markets: Anthropic's Debut, and a Sixth Straight Loss\n 4:08 — Walmart: A Beat and a Raised Forecast\n 5:41 — The Data: Claims Rise, Factory Activity Cools\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795172857544-9ea0ebf1aa394.jpg",
-   "url": "https://open.spotify.com/episode/1NfWVWxD9d04i101Nwea9Q",
-   "spotify_url": "https://open.spotify.com/episode/1NfWVWxD9d04i101Nwea9Q",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Friday--November-20--2026-e3sno86",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129801926/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb15e3196-1693-4898-93a9-39186bc80d7f.m4a",
    "number": null
   },
@@ -1166,8 +1208,8 @@
    "duration": 1321,
    "description": "The storm, after: Thursday's atmospheric river flooded Valley streets, forced helicopter swift-water rescues on the LA River and in South El Monte, and closed the Sepulveda Basin — and the burn scars held, with evacuation warnings expiring at 8 a.m. Plus: District 9's lead grows to 87 votes with only cure ballots left, the Vincent Thomas Bridge detour floods and Caltrans reroutes to PCH, Essayli gets a Mar-a-Lago assignment four days before his disqualification takes effect, Dolores Huerta's farewell fills a Bakersfield arena today, record king tides are coming for Thanksgiving week, the shorthanded Lakers host the Kings, and the LA Auto Show opens.\n Plus the expanded what's-on segment, Out…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795172368251-57365a7b3d9a3.jpg",
-   "url": "https://open.spotify.com/episode/3wKKnozJFiz9c6X6uKE6RX",
-   "spotify_url": "https://open.spotify.com/episode/3wKKnozJFiz9c6X6uKE6RX",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Friday--November-20--2026-e3snnv3",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129801635/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F93456883-e042-f915-9c93-d30b21926de2.m4a",
    "number": null
   },
@@ -1180,8 +1222,8 @@
    "duration": 691,
    "description": "Russia fires more than 100 missiles and some 400 drones at Ukraine hours after the Shenzhen peace declaration, damaging three Kyiv bridges and leaving the grid extremely critical, the declaration's own text promises nuclear-risk dialogue with no timetable and no mention of Ukraine, Europe's leaders say they are ready to talk to Moscow while the EU summons Russia's envoy over damaged embassies, COP31 reaches its final day with fossil fuels stripped from the draft, oil edges up on tanker incidents and a strike on Riyadh as the IEA says Hormuz has changed energy markets for good, Asian markets head for their worst week since 2020 despite Anthropic's record IPO, Bangladesh counts arrests after…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795171541085-1b64cf39ba3b3.jpg",
-   "url": "https://open.spotify.com/episode/3feRrpT9QVPvZVhSv7StKW",
-   "spotify_url": "https://open.spotify.com/episode/3feRrpT9QVPvZVhSv7StKW",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Russia-Pounds-Kyiv-Hours-After-Shenzhen-Peace-Declaration--Friday--November-20--2026-e3snni6",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129801222/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F1461aa14-4caf-2175-cd18-ca3287696395.m4a",
    "number": null
   },
@@ -1194,8 +1236,8 @@
    "duration": 3011,
    "description": "Jordan Firstman spent a decade as the talented name in other people's credits — a writer on Search Party and Big Mouth , making sharp short films on the side, watching the show he most wanted to make sit in development. Then, in the spring of 2020, locked down with nothing but a phone, he started posting his Impressions to Instagram, and the audience he had been waiting for permission to reach found him directly.\n You will recognize the beats: banana bread's publicist, the Secrets his followers sent him that later became a Capitol Records album, the fictionalized Jordan Firstman at the center of Sebastián Silva's Rotting in the Sun , Charlie in Rachel Sennott's I Love LA , and Club Kid ,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795164762613-1c56d93dc279.jpg",
-   "url": "https://open.spotify.com/episode/5pqL2SEFF9t3qMjvKcUmSA",
-   "spotify_url": "https://open.spotify.com/episode/5pqL2SEFF9t3qMjvKcUmSA",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/276-Jordan-Firstman-How-a-Decade-Behind-the-Scenes-Earned-Him-the-Lead-e3snjsa",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129797450/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F6a64ee9f-038d-9b8f-9963-1848f654eb99.m4a",
    "number": "276"
   },
@@ -1222,8 +1264,8 @@
    "duration": 1176,
    "description": "Damian Lillard scored 33 points in his return to Milwaukee as Portland beat the Bucks 124-114, dropping Milwaukee to 1-15 with a twelfth straight loss — on a four-game Thursday when Victor Wembanyama's 32 points pulled San Antonio level with the Lakers at 13-3 atop the West.\n Scores: Trail Blazers 124, Bucks 114 · Spurs 124, Clippers 112 · Grizzlies 126, Warriors 98 · Knicks 102, Timberwolves 99.\n The deep dive: One and fifteen — Milwaukee's historic collapse, the June trade that took Giannis to Miami, and the night Lillard and Holiday came back to beat the Bucks in their own building.\n (00:00) Welcome to The Fast Break\n(01:44) Trail Blazers 124, Bucks 114\n(04:52) Spurs 124, Clippers…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795150739226-64ca79d5e9cee.jpg",
-   "url": "https://open.spotify.com/episode/1U1DL4jYAfrL0HDueBo1VP",
-   "spotify_url": "https://open.spotify.com/episode/1U1DL4jYAfrL0HDueBo1VP",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Thursday--November-19--2026-e3sndj2",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129791010/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F77350f84-66e4-13ce-975e-01a77ccdedd2.m4a",
    "number": null
   },
@@ -1543,7 +1585,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -6926,20 +6968,6 @@
    "number": "6"
   },
   {
-   "id": "riff:897f54c0 4178 4eff 9a0d e15aad493084",
-   "show": "riff",
-   "kind": "episode",
-   "title": "#5 Samara Joy: The Voice That Brought the Standards Back",
-   "date": "2026-10-15T20:19:26Z",
-   "duration": 2104,
-   "description": "A kid from Castle Hill in the Bronx, raised on gospel with the Savettes, wins the Sarah Vaughan competition in 2019 — and then runs the table: Best New Artist at the 2023 Grammys and a sixth Grammy for Portrait in February 2026. Samara Joy made the standards feel new again.\n Start with Portrait, cut at Van Gelder Studio — the same room as Coltrane — and hear a singer in her twenties phrase like she has all the time in the world.\n Love you madly.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/5-Samara-Joy-The-Voice-That-Brought-the-Standards-Back-e3qim2k",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1187405a4/podcast/play/127538708/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F69984379-96de-4894-2b71-139c77fb6ebb.m4a",
-   "number": "5"
-  },
-  {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
    "kind": "episode",
@@ -10791,7 +10819,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 275,
+   "episodes": 277,
    "spotify_matches": 1
   },
   "approachable": {
@@ -10828,8 +10856,8 @@
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
-   "episodes": 34,
-   "spotify_matches": 0
+   "episodes": 35,
+   "spotify_matches": 1
   },
   "brazil": {
    "ok": true,
@@ -10869,7 +10897,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 27,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -10877,7 +10905,7 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 25,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
@@ -10885,7 +10913,7 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 23,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -10957,7 +10985,7 @@
    "spotify_name": "The Fast Break",
    "full_catalog": true,
    "episodes": 19,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "blitz": {
    "ok": true,
