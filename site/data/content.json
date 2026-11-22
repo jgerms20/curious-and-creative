@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T16:28:37Z",
+ "generated_at": "2026-11-22T22:36:10Z",
  "shows": [
   {
    "key": "ccpod",
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-22T13:46:38Z",
-   "count": 19
+   "latest": "2026-11-21T15:17:05Z",
+   "count": 18
   },
   {
    "key": "morningread",
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-21T10:41:09Z",
-   "count": 24
+   "latest": "2026-11-22T10:43:35Z",
+   "count": 25
   },
   {
    "key": "marketread",
@@ -748,8 +748,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-22T08:03:39Z",
-   "count": 19
+   "latest": "2026-11-18T13:50:39Z",
+   "count": 18
   },
   {
    "key": "cbbdaily",
@@ -801,8 +801,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-22T13:30:49Z",
-   "count": 13
+   "latest": "2026-11-20T13:47:19Z",
+   "count": 11
   },
   {
    "key": "gamecockshoops",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-22T12:34:07Z",
-   "count": 17
+   "latest": "2026-11-21T12:47:07Z",
+   "count": 16
   },
   {
    "key": "cutandsew",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -990,48 +990,6 @@
  ],
  "episodes": [
   {
-   "id": "dominatedconvo:c752fdb9 05f9 4d31 950f 50b85a3ebfd8",
-   "show": "dominatedconvo",
-   "kind": "episode",
-   "title": "How a Protein Ad Won Mississippi a Senate Seat | Sunday, November 22, 2026",
-   "date": "2026-11-22T13:46:38Z",
-   "duration": 1406,
-   "description": "Mississippi has a new senator, and he got there on thirty seconds of grocery-store honesty. Scott Colom's \"Pick Another Protein\" ad turned a line about beef prices into the most effective campaign ad of the cycle, and USA Today laid out this morning how it happened. Today on The Zeitgeist: the ad, the memes, and the Nike promise that followed, plus the Mamdani eye-roll clip taking over X, the Riemann proof's big verification update on Reddit, a Fortnite flying glitch ruling TikTok, GTA 6's record first day and Jordan's move to ban it, a viral wedding photo from Cabo, and Noah Schnapp's Hunger Games joke landing badly.\n 0:15 The lead: Scott Colom's \"Pick Another Protein\" ad\n 7:33 X: the…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795355150276-0f37995601aae.jpg",
-   "url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
-   "spotify_url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
-   "audio": "https://anchor.fm/s/119799630/podcast/play/129898977/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Ff10503e9-02f7-5b73-e013-f1771a818d89.m4a",
-   "number": null
-  },
-  {
-   "id": "gamecocksdaily:2a17ff67 1db9 4bf7 b83b e9deb4dd3de7",
-   "show": "gamecocksdaily",
-   "kind": "episode",
-   "title": "One Game Left to Save the Story: South Carolina Is 6-5 | Sunday, November 22, 2026",
-   "date": "2026-11-22T13:30:49Z",
-   "duration": 636,
-   "description": "Two straight 34-6 losses have stripped South Carolina's season down to one game. The Georgia postgame response is already in the feed from last night; this follow-up edition asks what the last two weeks actually mean at 6-5, and why the Palmetto Bowl at Clemson now decides how 2026 is remembered.\n Inside: the red-zone and second-half pattern behind both losses / Beamer's \"unacceptable\" verdict and apology / Bennett, Collier and Addison trending back for Clemson / the deep segment on LaNorris Sellers, Senior Day, and the draft decision hanging over 2027 / basketball: the No. 1 women roll at Providence and head to UConn, the 5-0 men face their Acrisure measuring stick / the full look ahead to…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795354180958-628ecadf569aa.jpg",
-   "url": "https://open.spotify.com/episode/4YUjAkuHk08zlRZYR6GvEG",
-   "spotify_url": "https://open.spotify.com/episode/4YUjAkuHk08zlRZYR6GvEG",
-   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129898533/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fd11839cb-4bc2-3409-2cee-ecca758dfdb6.m4a",
-   "number": null
-  },
-  {
-   "id": "politicalread:6a594d16 42d4 46ae a19c 99328f13db83",
-   "show": "politicalread",
-   "kind": "episode",
-   "title": "Sunday, November 22, 2026",
-   "date": "2026-11-22T12:34:07Z",
-   "duration": 1072,
-   "description": "Chuck Schumer led Senate Democrats to a decisive 56-seat majority in the midterms — and now progressives are telling him to step aside for it. Reuters reports the first contested Senate Democratic leadership race since 1994: Schumer, who turns 76 on Monday and says \"I will be elected majority leader,\" against Chris Van Hollen, who says the caucus needs new leadership before the December 1 secret ballot. Sixteen senators have publicly committed to Schumer; six to Van Hollen; the rest will decide it in private.\n Also today: President Trump's Friday executive order requiring federal contractors to notify the White House before answering Congress; Trump's Saturday offer to work with Democrats…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795350790966-25939bb275738.jpg",
-   "url": "https://open.spotify.com/episode/3490Tdq4zt2TQDmKK9neoE",
-   "spotify_url": "https://open.spotify.com/episode/3490Tdq4zt2TQDmKK9neoE",
-   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129896633/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F8d539698-d5a4-79d9-466d-7bc61afbfafa.m4a",
-   "number": null
-  },
-  {
    "id": "airead:e28b2bf5 d7fb 47a1 8ebc b779d06cbdb9",
    "show": "airead",
    "kind": "episode",
@@ -1057,6 +1015,20 @@
    "url": "https://open.spotify.com/episode/2LLVZ8MrkmYawzplJBF5jD",
    "spotify_url": "https://open.spotify.com/episode/2LLVZ8MrkmYawzplJBF5jD",
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129894354/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fffa7f4fb-541f-ab95-2d37-1d1199de266b.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:6c461c10 7cb7 456f 8f4c d3cb271a6331",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "COP31 Puts Its Final Deal to the Vote Without Naming Fossil Fuels | Sunday, November 22, 2026",
+   "date": "2026-11-22T10:43:35Z",
+   "duration": 1366,
+   "description": "After two days in overtime, COP31 in Antalya puts a final deal before nearly 200 governments that never mentions fossil fuels, a Russian military-linked cargo ship burns off Finland after a drone strike, Zelenskyy agrees to a pre-Christmas talks round but wants the guarantees on paper, two more tankers are hit near Hormuz, rescuers in Indonesia search for 36 missing workers after a factory fire, Peru counts one dead and more than 150 homes uninhabitable after its earthquake, the EU and Indonesia sign a trade deal ten years in the making, ActionSA rejects the DA's final Gauteng offer, and France's sixth protest Saturday draws smaller crowds.\n Timestamps:\n 0:00 — Welcome to The Global Read\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795344186535-61c30cf3a27f.jpg",
+   "url": "https://open.spotify.com/episode/5JBilNFZEcKt4ayB17UveW",
+   "spotify_url": "https://open.spotify.com/episode/5JBilNFZEcKt4ayB17UveW",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129892860/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fc802ddb4-9fd4-58dd-fdb1-d40640b90416.m4a",
    "number": null
   },
   {
@@ -1088,20 +1060,6 @@
    "number": null
   },
   {
-   "id": "cfbdaily:60a28a09 aca3 4634 9d66 a3ca153bd61c",
-   "show": "cfbdaily",
-   "kind": "episode",
-   "title": "Two Overtime Upsets Blow Up the Big Ten's Playoff Picture | Saturday, November 21, 2026",
-   "date": "2026-11-22T08:03:39Z",
-   "duration": 747,
-   "description": "Washington stunned No. 8 Indiana in overtime and Michigan beat No. 4 UCLA in triple overtime, while Nebraska's 31-28 win ended Ohio State's playoff hopes — a Saturday that reshaped the Big Ten, the bubble, and the Heisman race, with Georgia, Utah, Alabama and Texas holding at the top.\n The day's synthesis, key results and what they mean, the awards watch, the playoff picture and bubble, projected Tuesday CFP rankings, and predictions for rivalry week.\n Part of the Curious & Creative network. Back Tuesday night with the rankings edition.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795334557746-a884ffdb331ee.jpg",
-   "url": "https://open.spotify.com/episode/3MGej8EuCpUxwZHBXpbRJp",
-   "spotify_url": "https://open.spotify.com/episode/3MGej8EuCpUxwZHBXpbRJp",
-   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129888173/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F0c4e3f90-3f6c-475a-dd57-178f93feeb6e.m4a",
-   "number": null
-  },
-  {
    "id": "fastbreak:7673df9e e6f7 42fa 855d cfd28f628faf",
    "show": "fastbreak",
    "kind": "episode",
@@ -1130,20 +1088,6 @@
    "number": null
   },
   {
-   "id": "gamecocksdaily:99d74ebd ca99 4fac a47f 333531742b06",
-   "show": "gamecocksdaily",
-   "kind": "episode",
-   "title": "A Fight for a Half, Then the Standard Showed: South Carolina Is 6-5 | Saturday, November 21, 2026",
-   "date": "2026-11-22T04:43:26Z",
-   "duration": 1262,
-   "description": "Georgia 34, South Carolina 6 at Williams-Brice Stadium on Senior Night. For a half it was a genuine fight: the Gamecocks led twice on Malik Orsan field goals and stood in against the number one team in the country. Then Georgia's depth and precision accumulated, 28 unanswered points, and the distance between a bowl team and the standard of the conference showed itself. What the red-zone field goals really cost, how the third quarter broke in all three phases, what Georgia did to cage LaNorris Sellers in his return, and why the whole season now comes down to one Saturday at Clemson.\n Chapters:\n (00:00) The result: Georgia 34, South Carolina 6\n (01:38) The strong start, and field goals…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795322535412-4e3cd46dbd103.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/A-Fight-for-a-Half--Then-the-Standard-Showed-South-Carolina-Is-6-5--Saturday--November-21--2026-e3sq818",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129883624/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F90d85185-86ce-1314-1019-d35e08ac051d.m4a",
-   "number": null
-  },
-  {
    "id": "polymath:3afb247a 9cd2 434f b286 e3af0d9434b3",
    "show": "polymath",
    "kind": "episode",
@@ -1152,8 +1096,8 @@
    "duration": 2574,
    "description": "Five minutes before showtime on September 25, 2026, Danish police stopped a car heading toward a concert venue north of Copenhagen. Inside, prosecutors allege, were two loaded pistols and two knives. The man about to take the stage was Kyivstoner — and Denmark's security service, PET, said the men in that car had been sent to kill him on behalf of Russian intelligence.\n Kyivstoner is the stage name of Albert Vasiliev, a 34-year-old Ukrainian-born rapper, comedian, and streamer who built his career between Kyiv, the United States, and the internet. He holds both Ukrainian and US citizenship, and by the numbers he is a modest act: his most popular songs have drawn about 1.2 million streams on…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795287524915-66232b6c9ab78.jpg",
-   "url": "https://open.spotify.com/episode/5yeNJWqnD3xqnN0fC40YtX",
-   "spotify_url": "https://open.spotify.com/episode/5yeNJWqnD3xqnN0fC40YtX",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/280-Kyivstoner-Why-Russia-Tried-to-Kill-a-Rapper-Nobody-Knew-e3spo8u",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129867486/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Ffd6dc227-cb87-427c-4cba-a0a5cf2bd72b.m4a",
    "number": "280"
   },
@@ -1373,12 +1317,12 @@
    "kind": "episode",
    "title": "Sellers Is Back, No. 1 Is Here: South Carolina Is 6-4 | Friday, November 20, 2026",
    "date": "2026-11-20T13:47:19Z",
-   "duration": 1247,
+   "duration": 1241,
    "description": "LaNorris Sellers is off the availability report and expected to play as No. 21 South Carolina (6-4) hosts No. 1 Georgia (9-1) on Senior Night at Williams-Brice Stadium, Saturday at 7:30 p.m. ET on ABC: the first meeting since 2023 and Georgia's first trip to Columbia since 2022.\n Inside: the full Georgia preview and what Saturday still means / the Sellers question, with the Arkansas caveat / Thursday's availability report: Harbor probable, Stewart questionable, Bennett, Collier and Addison doubtful / the deep segment: the red zone and Stockton against Sellers / basketball: the 5-0 men hold off Elon 80-72, the No. 1 women head to Providence / the look-ahead: Clemson on November 28 and the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795182364193-50871639a122b.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/Sellers-Is-Back--No--1-Is-Here-South-Carolina-Is-6-4--Friday--November-20--2026-e3snubn",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129808183/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F2ce22be9-3283-4d4e-0b9c-197c744fdc60.m4a",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129808183/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F69ee1a40-c7a2-8ff0-825f-b2d3d83d85dd.m4a",
    "number": null
   },
   {
@@ -1849,12 +1793,12 @@
    "kind": "episode",
    "title": "No. 21, Thin at Receiver, No. 1 Coming to Town: South Carolina Is 6-4 | Wednesday, November 18, 2026",
    "date": "2026-11-18T14:08:09Z",
-   "duration": 1050,
+   "duration": 1044,
    "description": "No. 21 South Carolina is 6-4 with its playoff hopes gone and one game that still changes everything: No. 1 Georgia at Williams-Brice on Senior Night. LaNorris Sellers is trending toward playing, the receiver room is the thinnest it has been all season, and tonight's SEC availability report is the first real answer of Georgia week.\n Inside: the fall to No. 21 and what Saturday still means / the Sellers benchmark and tonight's availability report / the receiver room: Bennett, Harbor, Augustave and Tuggle / the deep segment: Gunner Stockton, the quarterback who got away, against the one who stayed / basketball: the No. 1 women beat No. 3 Southern Cal and rout FGCU to 5-0, the men host Elon…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795010825521-9aeb42e3a6607.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/No--21--Thin-at-Receiver--No--1-Coming-to-Town-South-Carolina-Is-6-4--Wednesday--November-18--2026-e3skbt3",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129690979/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F5954f2f2-73a6-5239-ffad-a79c1ef0bcda.m4a",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129690979/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F3bbe2602-98d8-f2b1-e0b9-265aa43ba98c.m4a",
    "number": null
   },
   {
@@ -11114,7 +11058,7 @@
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
    "episodes": 279,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -11182,8 +11126,8 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 1
+   "episodes": 18,
+   "spotify_matches": 0
   },
   "morningread": {
    "ok": true,
@@ -11206,8 +11150,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 24,
-   "spotify_matches": 0
+   "episodes": 25,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
@@ -11318,8 +11262,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 1
+   "episodes": 18,
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
@@ -11334,8 +11278,8 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 1
+   "episodes": 11,
+   "spotify_matches": 0
   },
   "gamecockshoops": {
    "ok": true,
@@ -11350,8 +11294,8 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 17,
-   "spotify_matches": 1
+   "episodes": 16,
+   "spotify_matches": 0
   },
   "cutandsew": {
    "ok": true,
