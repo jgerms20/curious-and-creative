@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T08:13:43Z",
+ "generated_at": "2026-11-22T16:28:37Z",
  "shows": [
   {
    "key": "ccpod",
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-21T15:17:05Z",
-   "count": 18
+   "latest": "2026-11-22T13:46:38Z",
+   "count": 19
   },
   {
    "key": "morningread",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-21T11:02:08Z",
-   "count": 28
+   "latest": "2026-11-22T10:42:49Z",
+   "count": 29
   },
   {
    "key": "ladaily",
@@ -343,8 +343,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-21T11:15:35Z",
-   "count": 26
+   "latest": "2026-11-22T10:42:42Z",
+   "count": 27
   },
   {
    "key": "globalread",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-21T11:32:36Z",
-   "count": 21
+   "latest": "2026-11-22T11:27:04Z",
+   "count": 22
   },
   {
    "key": "nyread",
@@ -478,8 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-20T12:28:27Z",
-   "count": 19
+   "latest": "2026-11-22T12:13:18Z",
+   "count": 21
   },
   {
    "key": "optionsdesk",
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-21T06:41:57Z",
-   "count": 20
+   "latest": "2026-11-22T06:42:32Z",
+   "count": 21
   },
   {
    "key": "blitz",
@@ -694,8 +694,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-19T06:09:09Z",
-   "count": 12
+   "latest": "2026-11-22T06:29:39Z",
+   "count": 13
   },
   {
    "key": "coltsdaily",
@@ -748,8 +748,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-18T13:50:39Z",
-   "count": 18
+   "latest": "2026-11-22T08:03:39Z",
+   "count": 19
   },
   {
    "key": "cbbdaily",
@@ -801,8 +801,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-22T04:43:26Z",
-   "count": 12
+   "latest": "2026-11-22T13:30:49Z",
+   "count": 13
   },
   {
    "key": "gamecockshoops",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-21T12:47:07Z",
-   "count": 16
+   "latest": "2026-11-22T12:34:07Z",
+   "count": 17
   },
   {
    "key": "cutandsew",
@@ -990,6 +990,146 @@
  ],
  "episodes": [
   {
+   "id": "dominatedconvo:c752fdb9 05f9 4d31 950f 50b85a3ebfd8",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "How a Protein Ad Won Mississippi a Senate Seat | Sunday, November 22, 2026",
+   "date": "2026-11-22T13:46:38Z",
+   "duration": 1406,
+   "description": "Mississippi has a new senator, and he got there on thirty seconds of grocery-store honesty. Scott Colom's \"Pick Another Protein\" ad turned a line about beef prices into the most effective campaign ad of the cycle, and USA Today laid out this morning how it happened. Today on The Zeitgeist: the ad, the memes, and the Nike promise that followed, plus the Mamdani eye-roll clip taking over X, the Riemann proof's big verification update on Reddit, a Fortnite flying glitch ruling TikTok, GTA 6's record first day and Jordan's move to ban it, a viral wedding photo from Cabo, and Noah Schnapp's Hunger Games joke landing badly.\n 0:15 The lead: Scott Colom's \"Pick Another Protein\" ad\n 7:33 X: the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795355150276-0f37995601aae.jpg",
+   "url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
+   "spotify_url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129898977/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Ff10503e9-02f7-5b73-e013-f1771a818d89.m4a",
+   "number": null
+  },
+  {
+   "id": "gamecocksdaily:2a17ff67 1db9 4bf7 b83b e9deb4dd3de7",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "One Game Left to Save the Story: South Carolina Is 6-5 | Sunday, November 22, 2026",
+   "date": "2026-11-22T13:30:49Z",
+   "duration": 636,
+   "description": "Two straight 34-6 losses have stripped South Carolina's season down to one game. The Georgia postgame response is already in the feed from last night; this follow-up edition asks what the last two weeks actually mean at 6-5, and why the Palmetto Bowl at Clemson now decides how 2026 is remembered.\n Inside: the red-zone and second-half pattern behind both losses / Beamer's \"unacceptable\" verdict and apology / Bennett, Collier and Addison trending back for Clemson / the deep segment on LaNorris Sellers, Senior Day, and the draft decision hanging over 2027 / basketball: the No. 1 women roll at Providence and head to UConn, the 5-0 men face their Acrisure measuring stick / the full look ahead to…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795354180958-628ecadf569aa.jpg",
+   "url": "https://open.spotify.com/episode/4YUjAkuHk08zlRZYR6GvEG",
+   "spotify_url": "https://open.spotify.com/episode/4YUjAkuHk08zlRZYR6GvEG",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/129898533/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fd11839cb-4bc2-3409-2cee-ecca758dfdb6.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:6a594d16 42d4 46ae a19c 99328f13db83",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Sunday, November 22, 2026",
+   "date": "2026-11-22T12:34:07Z",
+   "duration": 1072,
+   "description": "Chuck Schumer led Senate Democrats to a decisive 56-seat majority in the midterms — and now progressives are telling him to step aside for it. Reuters reports the first contested Senate Democratic leadership race since 1994: Schumer, who turns 76 on Monday and says \"I will be elected majority leader,\" against Chris Van Hollen, who says the caucus needs new leadership before the December 1 secret ballot. Sixteen senators have publicly committed to Schumer; six to Van Hollen; the rest will decide it in private.\n Also today: President Trump's Friday executive order requiring federal contractors to notify the White House before answering Congress; Trump's Saturday offer to work with Democrats…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795350790966-25939bb275738.jpg",
+   "url": "https://open.spotify.com/episode/3490Tdq4zt2TQDmKK9neoE",
+   "spotify_url": "https://open.spotify.com/episode/3490Tdq4zt2TQDmKK9neoE",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129896633/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F8d539698-d5a4-79d9-466d-7bc61afbfafa.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:e28b2bf5 d7fb 47a1 8ebc b779d06cbdb9",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Sunday, November 22, 2026",
+   "date": "2026-11-22T12:13:18Z",
+   "duration": 971,
+   "description": "Sunday's edition leads with the weekend rout: the Nasdaq in a bear market and bitcoin's Saturday flush to $55,106 with about $2.5 billion in liquidations. Then: AI is finding software flaws faster than anyone can patch them, OpenAI ships GPT-Live-1.1 for voice agents, House Republicans push an open-weight answer to China, the AUDIT AI Act and New York's new ASSET enforcement unit, CISA's latest exploited-flaw warnings, Vercel's gateway spending numbers, Tencent's open Hy4 model, and UN talks on autonomous weapons ending without rules.\n • The weekend rout: Nasdaq bear market, bitcoin touches $55,106, ETF outflows near $3.6B in November —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795349524221-4042da2266e38.jpg",
+   "url": "https://open.spotify.com/episode/46oFuy14pqAQkwPKYNMesL",
+   "spotify_url": "https://open.spotify.com/episode/46oFuy14pqAQkwPKYNMesL",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129895923/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F5d99d23c-8242-f09c-eaf2-8f8bbccafb20.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:40262290 9c0c 4796 8fb7 c41188193d72",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Sunday, November 22, 2026",
+   "date": "2026-11-22T11:27:04Z",
+   "duration": 613,
+   "description": "Sunday edition: Friday's crash put the S&P 500 (-3.7% to 6,910.39) and the Dow into correction and the Nasdaq (-5.28%) negative for the year, capping the S&P's worst week since April 2025. The weekend debate — Black Monday fears online vs. strategists calling capitulation — plus Nvidia's SEC probe, Anthropic's five-cent defense of its $83 IPO price, a mechanical VIX spike to 40, and a Thanksgiving week where Wednesday's PCE decides.\n • Friday's correction and the Black Monday debate — https://www.barrons.com/articles/stock-market-black-monday-crash-wall-street-a06dbf99\n • Nvidia faces an SEC accounting investigation (DEVELOPING) —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795346802854-a9a58ad0309a8.jpg",
+   "url": "https://open.spotify.com/episode/2LLVZ8MrkmYawzplJBF5jD",
+   "spotify_url": "https://open.spotify.com/episode/2LLVZ8MrkmYawzplJBF5jD",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129894354/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fffa7f4fb-541f-ab95-2d37-1d1199de266b.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:ee6ca0a5 2407 4e28 a33b 29d7594e3e07",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Sunday, November 22, 2026",
+   "date": "2026-11-22T10:42:49Z",
+   "duration": 1172,
+   "description": "For the second day running, tankers have been hit by unidentified projectiles in the Strait of Hormuz, and nobody has claimed the strikes. Plus: Senate Republicans block their own president's Pentagon and cyber nominees; the FBI investigates a breach of the nation's crime database; JPMorgan, Visa and Mastercard explain a breach that was their vendors'; a judge lets the president's $15 billion suit against The New York Times proceed; a Fed governor argues policy is still too loose as Bitcoin tests its lows; Florida's record crest moves north; and Kyiv tells its version of what the president told Europe.\n Timestamps:\n 0:00 — Welcome to The Morning Read\n 0:59 — Hormuz: Two More Tankers Hit\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795344148671-d0e0edb001751.jpg",
+   "url": "https://open.spotify.com/episode/63OdPXwzGuF1U2Sj0sZVjk",
+   "spotify_url": "https://open.spotify.com/episode/63OdPXwzGuF1U2Sj0sZVjk",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129892862/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fa5011b12-8f30-9bbe-608d-94004ab51263.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:2d394fb0 15bc 46d4 8976 f82b0c3d92b9",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Sunday, November 22, 2026",
+   "date": "2026-11-22T10:42:42Z",
+   "duration": 1206,
+   "description": "A quiet Sunday with every clock running: Congresswoman Luz Rivas tells Metro to reconsider the Fashion Square and The Plant rail-yard sites for the Sepulveda Transit Corridor and to extend public comment from tomorrow's deadline to January. The charter overhaul voters approved holds in the count — EE at 52.7 percent, LA at 62.5 percent — with an implementation motion already filed, while District 9 stays frozen at 87 votes with only cured ballots left and a Wednesday 5 p.m. cure deadline. County canvassers are knocking on doors in Castaic, Val Verde and Hasley Canyon today for the Chiquita Canyon household survey, the county releases its final Whiteman Airport study with three futures for…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795344094213-e5cbe6eedfa2c.jpg",
+   "url": "https://open.spotify.com/episode/2QUO9o2MyqqUttsaia8w0U",
+   "spotify_url": "https://open.spotify.com/episode/2QUO9o2MyqqUttsaia8w0U",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129892849/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F51559ecb-a2db-4723-6708-293e2d18b98d.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:60a28a09 aca3 4634 9d66 a3ca153bd61c",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Two Overtime Upsets Blow Up the Big Ten's Playoff Picture | Saturday, November 21, 2026",
+   "date": "2026-11-22T08:03:39Z",
+   "duration": 747,
+   "description": "Washington stunned No. 8 Indiana in overtime and Michigan beat No. 4 UCLA in triple overtime, while Nebraska's 31-28 win ended Ohio State's playoff hopes — a Saturday that reshaped the Big Ten, the bubble, and the Heisman race, with Georgia, Utah, Alabama and Texas holding at the top.\n The day's synthesis, key results and what they mean, the awards watch, the playoff picture and bubble, projected Tuesday CFP rankings, and predictions for rivalry week.\n Part of the Curious & Creative network. Back Tuesday night with the rankings edition.",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795334557746-a884ffdb331ee.jpg",
+   "url": "https://open.spotify.com/episode/3MGej8EuCpUxwZHBXpbRJp",
+   "spotify_url": "https://open.spotify.com/episode/3MGej8EuCpUxwZHBXpbRJp",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/129888173/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F0c4e3f90-3f6c-475a-dd57-178f93feeb6e.m4a",
+   "number": null
+  },
+  {
+   "id": "fastbreak:7673df9e e6f7 42fa 855d cfd28f628faf",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-22T06:42:32Z",
+   "duration": 1183,
+   "description": "Two players scored 50 points on the same Saturday: Victor Wembanyama had 50 points and 19 rebounds as San Antonio routed New Orleans 114-91 to reach 14-3, while Tyler Herro's career-high 50 could not save Milwaukee in a 132-129 loss at Philadelphia — the Bucks' 13th straight defeat. Sacramento stunned Boston 97-96 on Keegan Murray's putback with five seconds left.\n Scores: 76ers 132, Bucks 129 · Knicks 97, Trail Blazers 96 · Timberwolves 104, Grizzlies 95 · Spurs 114, Pelicans 91 · Mavericks 110, Clippers 100 · Kings 97, Celtics 96.\n The deep dive: Two 50s, two directions — Wembanyama lifts San Antonio level with the Lakers atop the West while Herro's career night cannot lift 1-16…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795329638645-dfeec2f628587.jpg",
+   "url": "https://open.spotify.com/episode/49QY0Vbr0KIsjimm8mLJZv",
+   "spotify_url": "https://open.spotify.com/episode/49QY0Vbr0KIsjimm8mLJZv",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129886252/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fc2350ad3-65c6-0597-7180-fbe2a1f27c9e.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:e07a13d1 470d 49b2 bde1 aa0bc9c1ff1d",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Kings Beat the Celtics 97-96: Murray's Putback at Five Seconds Hands Boston a Third Straight Loss, Boston Is 11-5 | Saturday, November 21, 2026",
+   "date": "2026-11-22T06:29:39Z",
+   "duration": 1137,
+   "description": "The Kings, 1-14 and winless at home all season, beat Boston 97-96 in Sacramento: Keegan Murray's putback with five seconds left, a 35-13 third quarter that erased a 13-point halftime lead, and ten missed Boston free throws in a one-point loss. Mike Conley scored 19 off the bench and Payton Pritchard nearly saved it at the end, but the Celtics, without Jayson Tatum, Derrick White, and Mitchell Robinson, drop a third straight and fall to 11-5.\n Segments: the result and the final minute / the third-quarter collapse / Conley, George, Queta and the short-handed rotation / the shooting and free-throw math / what a third straight loss means / the look ahead to Golden State tomorrow.\n Unofficial…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795328919892-1603c556a4176.jpg",
+   "url": "https://open.spotify.com/episode/5ZYdpSM6UHvYIqZguTO4Ke",
+   "spotify_url": "https://open.spotify.com/episode/5ZYdpSM6UHvYIqZguTO4Ke",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129886001/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fcf12aa4b-7aae-8de2-b974-77a020951e4b.m4a",
+   "number": null
+  },
+  {
    "id": "gamecocksdaily:99d74ebd ca99 4fac a47f 333531742b06",
    "show": "gamecocksdaily",
    "kind": "episode",
@@ -998,8 +1138,8 @@
    "duration": 1262,
    "description": "Georgia 34, South Carolina 6 at Williams-Brice Stadium on Senior Night. For a half it was a genuine fight: the Gamecocks led twice on Malik Orsan field goals and stood in against the number one team in the country. Then Georgia's depth and precision accumulated, 28 unanswered points, and the distance between a bowl team and the standard of the conference showed itself. What the red-zone field goals really cost, how the third quarter broke in all three phases, what Georgia did to cage LaNorris Sellers in his return, and why the whole season now comes down to one Saturday at Clemson.\n Chapters:\n (00:00) The result: Georgia 34, South Carolina 6\n (01:38) The strong start, and field goals…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795322535412-4e3cd46dbd103.jpg",
-   "url": "https://open.spotify.com/episode/2XkqzKfYNlOT2LJpsd9ZfW",
-   "spotify_url": "https://open.spotify.com/episode/2XkqzKfYNlOT2LJpsd9ZfW",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/A-Fight-for-a-Half--Then-the-Standard-Showed-South-Carolina-Is-6-5--Saturday--November-21--2026-e3sq818",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129883624/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F90d85185-86ce-1314-1019-d35e08ac051d.m4a",
    "number": null
   },
@@ -1040,8 +1180,8 @@
    "duration": 1228,
    "description": "An Anthropic mathematician says he and Claude have proved the Riemann hypothesis, the most famous unsolved problem in mathematics, and the internet is now checking the claim. Plus the week's verdicts land at once: Rockstar posts GTA 6's official number, $3.79 billion in a day, the biggest entertainment launch in history; the stock market delivers the opposite verdict, with the S&P down 3.7 percent and Anthropic's stock nearly back to its IPO price; the new Hunger Games heads for a $110 million opening; and a federal jury convicts the man who started the Palisades Fire. Bubbling up: the Pirate Shop Token's Treasure Hours Saturday, the My Moon My Man soft-launch format at number one, and…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795274159918-3505a3609956d.jpg",
-   "url": "https://open.spotify.com/episode/6mHuQn19hhUZdyth2ZhdCD",
-   "spotify_url": "https://open.spotify.com/episode/6mHuQn19hhUZdyth2ZhdCD",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/An-Anthropic-Mathematician-Says-Claude-Helped-Prove-the-Riemann-Hypothesis--Saturday--November-21--2026-e3spgvc",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129860012/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Faa4e8eab-96d0-927d-1503-d4ab8470d1a3.m4a",
    "number": null
   },
@@ -1054,9 +1194,23 @@
    "duration": 1343,
    "description": "The party that won the midterms is writing down what it intends to do with the win. Reuters reports the incoming Democratic majorities — 56 to 44 in the Senate, 257 to 172 in the House — will unveil a first-100-days agenda in early December: war powers, Medicaid and SNAP restoration, a stock-trading ban, a minimum-wage fight. Every item runs into the same two walls: 60 votes in the Senate, and a president whose vetoes, Senator John Boozman says, will not be overridden. Plus: the December 11th shutdown knot, the president's Friday briefing and its healthcare opening, two judges confirmed with five more teed up, and the Saudi nuclear pact's Senate vote.\n Timestamps:\n 0:00 — Welcome to The…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795265189864-9c2d09910ed12.jpg",
-   "url": "https://open.spotify.com/episode/1bhwoRAt5UFRgFv04y53a1",
-   "spotify_url": "https://open.spotify.com/episode/1bhwoRAt5UFRgFv04y53a1",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Saturday--November-21--2026-e3spco4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119a81f14/podcast/play/129855684/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F51b88d9e-a4b3-54d2-43b5-8fd08c795dc9.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:f116b80a a2b8 4afc ad7b 56f2f7cbcc0a",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Saturday, November 21, 2026",
+   "date": "2026-11-21T12:18:22Z",
+   "duration": 1310,
+   "description": "Grand Theft Auto VI's record 3.79 billion dollar first day leads Saturday's edition. Also today: Anthropic's stock slides back toward its 83 dollar IPO price as its 119.5 billion dollar financing closes, Google ships a computer-using Gemini on the Mac while Apple's own agent plans surface and vanish, Microsoft undercuts the coding-model market with a discount that expires, OpenAI hardens its models against theft, a claimed proof of the Riemann hypothesis awaits verification, Samsung reshuffles its chip leadership, and Bitcoin breaks below 60,000 dollars.\n • Grand Theft Auto VI sells 3.79 billion dollars in one day —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795263438581-f5c421a78ec38.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Saturday--November-21--2026-e3spc23",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129854979/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F0ab433ff-5330-b079-8f1e-a1d0df865689.m4a",
    "number": null
   },
   {
@@ -1068,8 +1222,8 @@
    "duration": 856,
    "description": "Friday was the worst day of a brutal week: the S&P 500 fell 3.70% to 6,910.39, its seventh straight loss and a close in correction territory, the Nasdaq Composite plunged 5.28% and turned negative for 2026, Nvidia crashed 14% to a 52-week low on reports of an SEC accounting review, and the VIX touched 40 for the first time since April 2025. We walk through the chip rout, Anthropic's second day, the global selloff, the options desk's warning about systematic selling next week, and why gold fell with everything else — then the Thanksgiving-shortened week ahead, with Dell earnings Tuesday and the PCE inflation report Wednesday.\n • Friday's tape: seventh straight loss, S&P 500 and Dow in…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795260730937-cffe4df0df0c8.jpg",
-   "url": "https://open.spotify.com/episode/7ujFcNSkqtnvRs3Z5JQeHv",
-   "spotify_url": "https://open.spotify.com/episode/7ujFcNSkqtnvRs3Z5JQeHv",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Saturday--November-21--2026-e3spav1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129853857/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Ff8ec0fbd-81e3-82c7-ff3d-060a9c4c0c4a.m4a",
    "number": null
   },
@@ -1082,8 +1236,8 @@
    "duration": 1486,
    "description": "A transition day at City Hall: the Council tables two charter proposals that would have curbed the mayor's power — one to let the Council remove department heads, one to overturn mayoral directives — and sends them back to committee after Controller Mejia's \"shady\" warning and hundreds of public comments, while approving a patch for a projected $321 million overspend. The same day, Mayor-elect Nithya Raman names her transition leadership and a 30-member \"A Committee for the City.\" Plus: a magnitude 4.4 earthquake near Commerce wakes the county at 3:25 a.m. with no damage, the Ninth Circuit stays Bill Essayli's disqualification four days before it was to take effect, the county orders…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795259669338-acfa81ca815fc.jpg",
-   "url": "https://open.spotify.com/episode/3fbDneypURSGCkdECD8L20",
-   "spotify_url": "https://open.spotify.com/episode/3fbDneypURSGCkdECD8L20",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Saturday--November-21--2026-e3spai6",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129853446/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Feac0c31f-68b0-533c-f4bb-447aedba1411.m4a",
    "number": null
   },
@@ -1096,8 +1250,8 @@
    "duration": 1176,
    "description": "The selloff stopped being a dip on Friday: the S&P 500 fell for a seventh straight day into a formal correction, and the Nasdaq gave back every gain it had made this year. Plus: the president's 90-minute account of Shenzhen; a threatened tax on data centres built abroad; the president presses Nvidia to take Jensen Huang back; 879,000 chip approvals for China made public; permitting reform hits the House's arithmetic; three weeks to the December 11th funding deadline with no deal; health insurers bounce on an upgrade; and Florida's river holds at its record.\n Timestamps:\n 0:00 — Welcome to The Morning Read\n 1:28 — The Markets: A Correction, Confirmed\n 4:32 — The White House: Ninety Minutes…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795258885484-1247d4d9cb122.jpg",
-   "url": "https://open.spotify.com/episode/6Bs7AbbJ64nn7vHOrQX5m7",
-   "spotify_url": "https://open.spotify.com/episode/6Bs7AbbJ64nn7vHOrQX5m7",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Saturday--November-21--2026-e3spa8o",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129853144/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Fb820da71-07e2-6ce0-ac86-afa766a5a8ca.m4a",
    "number": null
   },
@@ -1110,8 +1264,8 @@
    "duration": 1027,
    "description": "The COP31 climate talks in Antalya run past their Friday deadline with the closing plenary suspended and fossil fuels stripped from the draft, Ukraine counts nine dead from Friday's record barrage as Washington pushes for a deal by January, a four-trillion-dollar sell-off rolls from Asia's chip stocks to Wall Street, a magnitude 6.8 earthquake shakes Peru's Andes, oil posts a third weekly loss despite a tanker fire near Hormuz, Gauteng's coalition deal reaches the weekend unsigned, scientists explain why Congo's Ebola outbreak hides as malaria and kills seven in ten infected small children, France deploys 70,000 officers for a sixth Saturday of protests, and Israel's Lieberman says an…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795257641036-476ccf397088d.jpg",
-   "url": "https://open.spotify.com/episode/4XyvdXbXU77DXxIFHO6CkI",
-   "spotify_url": "https://open.spotify.com/episode/4XyvdXbXU77DXxIFHO6CkI",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/COP31-Runs-Past-Its-Deadline-With-No-Deal--Saturday--November-21--2026-e3sp9rn",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129852727/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F6fe3d60d-fb19-a584-b67c-72d4b0ab4e2d.m4a",
    "number": null
   },
@@ -1530,8 +1684,8 @@
    "duration": 1207,
    "description": "Week 11 Starts of the Week: six teams are on bye, the biggest bye week of the season, so today is about confidence — who starts, who sits, and how sure you should feel about it, by position, with the matchups and the injury picture that decide those calls.\n In this edition: the bye-pocalypse frame and the season-altering injuries · quarterbacks C.J. Stroud and Caleb Williams up, Brock Purdy down (with the honest disagreement) · Tony Pollard, the start of the week, and the Emmett Johnson–Kenneth Walker decision · D'Andre Swift's smash spot · receivers Rome Odunze and Tee Higgins, tight end streamer Chigoziem Okonkwo, and the Brock Bowers watch · weekend matchup previews · and tonight's Colts…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "url": "https://open.spotify.com/episode/5iK9bOYSArtkQaXDZqwt5g",
-   "spotify_url": "https://open.spotify.com/episode/5iK9bOYSArtkQaXDZqwt5g",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Stroud-and-Collins-Tonight--Pollards-Smash-Spot--and-the-Purdy-Problem--Thursday--November-19--2026-e3sm5cs",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129749852/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-19%2F090291ef-b95c-1ec0-c7b1-a958dee86d81.m4a",
    "number": null
   },
@@ -11028,7 +11182,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 18,
+   "episodes": 19,
    "spotify_matches": 1
   },
   "morningread": {
@@ -11036,7 +11190,7 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 28,
+   "episodes": 29,
    "spotify_matches": 1
   },
   "ladaily": {
@@ -11044,7 +11198,7 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 26,
+   "episodes": 27,
    "spotify_matches": 1
   },
   "globalread": {
@@ -11053,14 +11207,14 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 24,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 21,
+   "episodes": 22,
    "spotify_matches": 1
   },
   "nyread": {
@@ -11084,8 +11238,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 21,
+   "spotify_matches": 1
   },
   "optionsdesk": {
    "ok": true,
@@ -11124,8 +11278,8 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 20,
-   "spotify_matches": 0
+   "episodes": 21,
+   "spotify_matches": 1
   },
   "blitz": {
    "ok": true,
@@ -11141,15 +11295,15 @@
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
    "episodes": 8,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "celticsdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 12,
-   "spotify_matches": 0
+   "episodes": 13,
+   "spotify_matches": 1
   },
   "coltsdaily": {
    "ok": true,
@@ -11164,8 +11318,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 18,
-   "spotify_matches": 0
+   "episodes": 19,
+   "spotify_matches": 1
   },
   "cbbdaily": {
    "ok": true,
@@ -11180,7 +11334,7 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "gamecockshoops": {
@@ -11196,7 +11350,7 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 16,
+   "episodes": 17,
    "spotify_matches": 1
   },
   "cutandsew": {
