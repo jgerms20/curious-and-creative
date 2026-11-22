@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T19:31:21Z",
+ "generated_at": "2026-11-22T00:29:37Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-21T18:59:23Z",
-   "count": 279
+   "latest": "2026-11-21T04:28:21Z",
+   "count": 277
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-21T06:41:57Z",
-   "count": 20
+   "latest": "2026-11-20T05:00:41Z",
+   "count": 19
   },
   {
    "key": "blitz",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -990,34 +990,6 @@
  ],
  "episodes": [
   {
-   "id": "polymath:3afb247a 9cd2 434f b286 e3af0d9434b3",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#280 Kyivstoner: Why Russia Tried to Kill a Rapper Nobody Knew",
-   "date": "2026-11-21T18:59:23Z",
-   "duration": 2574,
-   "description": "Five minutes before showtime on September 25, 2026, Danish police stopped a car heading toward a concert venue north of Copenhagen. Inside, prosecutors allege, were two loaded pistols and two knives. The man about to take the stage was Kyivstoner — and Denmark's security service, PET, said the men in that car had been sent to kill him on behalf of Russian intelligence.\n Kyivstoner is the stage name of Albert Vasiliev, a 34-year-old Ukrainian-born rapper, comedian, and streamer who built his career between Kyiv, the United States, and the internet. He holds both Ukrainian and US citizenship, and by the numbers he is a modest act: his most popular songs have drawn about 1.2 million streams on…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795287524915-66232b6c9ab78.jpg",
-   "url": "https://open.spotify.com/episode/5yeNJWqnD3xqnN0fC40YtX",
-   "spotify_url": "https://open.spotify.com/episode/5yeNJWqnD3xqnN0fC40YtX",
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129867486/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2Ffd6dc227-cb87-427c-4cba-a0a5cf2bd72b.m4a",
-   "number": "280"
-  },
-  {
-   "id": "polymath:d2083d21 1923 4c3b 9881 cee2f582f39d",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#279 Chapo Isidro: The Cartel Boss That Outlasted El Chapo",
-   "date": "2026-11-21T18:47:50Z",
-   "duration": 3441,
-   "description": "For 20 years, Fausto Isidro Meza Flores stayed a second-tier name while the kingpins around him fell. Known as Chapo Isidro, he was on the FBI's Ten Most Wanted list when Mexican military forces captured him in Guasave, Sinaloa, on November 20, 2026.\n He rose as Alfredo Beltrán Leyva's right-hand man, then survived the Beltrán Leyva Organization's collapse: Alfredo arrested in 2008, Arturo killed in 2009, Héctor captured in 2014. He did not fight for national leadership. He held his home ground in northern Sinaloa, built his organization from his own family, and kept a low profile that generated almost no press for years at a time.\n From Guasave, his Meza-Flores organization, known in…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795286798510-94ac1b73cbfbb.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/279-Chapo-Isidro-The-Cartel-Boss-That-Outlasted-El-Chapo-e3spnuv",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/129867167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F7acba0ea-67ed-9cf5-ec2b-edad0aaa6124.m4a",
-   "number": "279"
-  },
-  {
    "id": "dominatedconvo:d81ebfd5 ddab 4a79 a8c8 120977292f8f",
    "show": "dominatedconvo",
    "kind": "episode",
@@ -1113,20 +1085,6 @@
    "url": "https://open.spotify.com/episode/4XyvdXbXU77DXxIFHO6CkI",
    "spotify_url": "https://open.spotify.com/episode/4XyvdXbXU77DXxIFHO6CkI",
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129852727/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F6fe3d60d-fb19-a584-b67c-72d4b0ab4e2d.m4a",
-   "number": null
-  },
-  {
-   "id": "fastbreak:d156b85e 1b16 4f23 9f49 165559c94031",
-   "show": "fastbreak",
-   "kind": "episode",
-   "title": "Friday, November 20, 2026",
-   "date": "2026-11-21T06:41:57Z",
-   "duration": 1457,
-   "description": "James Harden scored 51 points — his 26th career 50-point game, passing Kobe Bryant for third in NBA history — as Cleveland beat Indiana 128-119 on a nine-game NBA Cup Friday that also saw Shai Gilgeous-Alexander score 40 in a Thunder comeback and Franz Wagner hit a game-winner for Orlando in Brooklyn.\n Scores: Hawks 111, Hornets 97 · Magic 113, Nets 111 · Cavaliers 128, Pacers 119 · Raptors 105, Pistons 102 · Wizards 98, Bulls 94 · Thunder 126, Pelicans 120 · Suns 111, Jazz 101 · Nuggets 133, Rockets 124 · Lakers 106, Kings 104.\n The deep dive: Fifty-one at thirty-seven — Harden passes Kobe on the 50-point list, what it means for Cleveland, and a Cup picture that snapped into focus across…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795243279670-26e009093b44f.jpg",
-   "url": "https://open.spotify.com/episode/2xsYg6qMnhwj2JbsP3RZ0y",
-   "spotify_url": "https://open.spotify.com/episode/2xsYg6qMnhwj2JbsP3RZ0y",
-   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129847668/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-21%2F2eb7dd78-a67c-6835-2cba-0cb740c0c4d7.m4a",
    "number": null
   },
   {
@@ -8947,7 +8905,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -10959,8 +10917,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 279,
-   "spotify_matches": 1
+   "episodes": 277,
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -11124,8 +11082,8 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 20,
-   "spotify_matches": 1
+   "episodes": 19,
+   "spotify_matches": 0
   },
   "blitz": {
    "ok": true,
