@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Eclectic Polymath — The Curious &amp; Creative Company</title>
+  <meta name="description" content="The Eclectic Polymath with Joshua German: listen to the show and catch the latest episodes. Part of the Curious & Creative network." />
+  <meta property="og:title" content="The Eclectic Polymath — The Curious &amp; Creative Company" />
+  <meta property="og:description" content="The Eclectic Polymath with Joshua German: listen to the show and catch the latest episodes. Part of the Curious & Creative network." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <script>try{var t=localStorage.getItem("cc-theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cc.css" />
+  <link rel="stylesheet" href="../css/legs.css" />
+  <style>
+    /* Eclectic Polymath link-in-bio page (mobile-first, single narrow column) */
+    .epg { max-width: 560px; margin-inline: auto; padding-bottom: 1rem; }
+    .epg-head { text-align: center; margin-top: clamp(1.5rem, 5vw, 3rem); }
+    .epg-cover { width: min(280px, 68vw); height: auto; aspect-ratio: 1; object-fit: cover; border-radius: var(--card-r); box-shadow: var(--shadow); }
+    .epg-name { font-weight: 880; font-stretch: 85%; text-transform: uppercase; letter-spacing: .01em; line-height: 1.05; font-size: clamp(1.7rem, 6.5vw, 2.4rem); margin-top: 1.4rem; }
+    .epg-tag { color: var(--ink-soft); font-size: 1.05rem; margin-top: .6rem; }
+    .epg-listen { display: grid; gap: .7rem; margin-top: 2rem; }
+    .epg-listen .btn { width: 100%; }
+    .epg-btn--spotify { background: var(--grape); }
+    .epg .pill-row { margin: 2.75rem 0 1.25rem; }
+    .epg-list { display: grid; gap: .8rem; }
+    .epg-card { display: flex; gap: .95rem; align-items: center; border: 1px solid var(--line); background: var(--card); border-radius: var(--card-r); padding: .8rem; color: inherit; text-decoration: none; transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease), border-color var(--speed) var(--ease); }
+    .epg-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line-strong); }
+    .epg-card img { width: 84px; height: 84px; flex: 0 0 auto; border-radius: 14px; object-fit: cover; background: var(--line); }
+    .epg-card__body { min-width: 0; }
+    .epg-card__title { font-weight: 800; line-height: 1.25; font-size: 1rem; }
+    .epg-card__meta { color: var(--ink-soft); font-size: .85rem; font-weight: 700; margin-top: .35rem; text-transform: uppercase; letter-spacing: .05em; }
+    .epg-note { color: var(--ink-soft); text-align: center; padding: 1rem 0; }
+    .epg-note a { font-weight: 800; border-bottom: 2px solid currentColor; }
+    .epg-foot { text-align: center; margin-top: 3rem; color: var(--ink-soft); font-size: .95rem; }
+    .epg-foot a { font-weight: 800; color: inherit; border-bottom: 2px solid currentColor; padding-bottom: 1px; }
+  </style>
+</head>
+<body data-page="eclectic-polymath" data-root="../">
+<div data-cc="header"></div>
+<main id="main" class="wrap">
+<div class="epg" data-show="polymath">
+
+  <header class="epg-head">
+    <img class="epg-cover" src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg" alt="Cover art for The Eclectic Polymath with Joshua German" width="1080" height="1080" fetchpriority="high" />
+    <h1 class="epg-name">The Eclectic Polymath with Joshua German</h1>
+    <p class="epg-tag">Stay curious.</p>
+  </header>
+
+  <nav class="epg-listen" aria-label="Listen to the show">
+    <a class="btn epg-btn--spotify" href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">Listen on Spotify</a>
+    <a class="btn btn--dark" href="https://podcasts.apple.com/us/podcast/the-eclectic-polymath-with-joshua-german/id6790238134" target="_blank" rel="noopener">Listen on Apple Podcasts</a>
+    <a class="btn btn--ghost" href="https://www.iheart.com/podcast/1333-the-eclectic-polymath-pod-346912769/" target="_blank" rel="noopener">Listen on iHeart</a>
+  </nav>
+
+  <div class="pill-row"><h2 class="pill-title">Latest episodes</h2></div>
+  <section aria-label="Latest episodes">
+    <div id="ep-latest" class="epg-list">
+      <p class="epg-note" role="status">Loading the latest episodes…</p>
+    </div>
+    <p class="epg-note" id="ep-fallback" hidden>Latest episodes are on the <a href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">show page</a>.</p>
+    <noscript><p class="epg-note">Latest episodes are on the <a href="https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069" target="_blank" rel="noopener">show page</a>.</p></noscript>
+  </section>
+
+  <p class="epg-foot"><a href="shows.html">Part of the Curious &amp; Creative network</a></p>
+
+</div>
+</main>
+<div data-cc="footer"></div>
+<script src="../js/cc.js"></script>
+<script src="../js/pages.js"></script>
+<script>
+(function () {
+  var FEED = "https://anchor.fm/s/111be5840/podcast/rss";
+  var SHOW = "https://open.spotify.com/show/3dlagzJ0jiWLTB9mF3y069";
+  var list = document.getElementById("ep-latest");
+  var fallback = document.getElementById("ep-fallback");
+
+  function fail() {
+    list.innerHTML = "";
+    fallback.hidden = false;
+  }
+
+  function text(item, tag) {
+    var el = item.getElementsByTagName(tag)[0];
+    return el ? el.textContent.trim() : "";
+  }
+
+  function fmtDate(raw) {
+    var d = new Date(raw);
+    if (isNaN(d)) return raw;
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  function fmtDuration(raw) {
+    raw = (raw || "").trim();
+    if (!raw) return "";
+    if (/^\d+$/.test(raw)) {
+      var s = parseInt(raw, 10), h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), ss = s % 60;
+      var mm = h && m < 10 ? "0" + m : "" + m, sss = ss < 10 ? "0" + ss : "" + ss;
+      return h ? h + ":" + mm + ":" + sss : m + ":" + sss;
+    }
+    return raw.replace(/^00:/, "");
+  }
+
+  fetch(FEED)
+    .then(function (res) {
+      if (!res.ok) throw new Error("feed " + res.status);
+      return res.text();
+    })
+    .then(function (xmlText) {
+      var xml = new DOMParser().parseFromString(xmlText, "text/xml");
+      if (xml.getElementsByTagName("parsererror").length) throw new Error("feed parse error");
+      var items = xml.getElementsByTagName("item");
+      if (!items.length) throw new Error("no items");
+      var frag = document.createDocumentFragment();
+      var count = Math.min(items.length, 8);
+      for (var i = 0; i < count; i++) {
+        var item = items[i];
+        var title = text(item, "title");
+        var link = text(item, "link") || SHOW;
+        var imgEl = item.getElementsByTagName("itunes:image")[0];
+        var img = imgEl ? imgEl.getAttribute("href") : "";
+        var meta = [fmtDate(text(item, "pubDate")), fmtDuration(text(item, "itunes:duration"))].filter(Boolean).join(" · ");
+
+        var card = document.createElement("a");
+        card.className = "epg-card";
+        card.href = link;
+        card.target = "_blank";
+        card.rel = "noopener";
+        if (img) {
+          var im = document.createElement("img");
+          im.src = img;
+          im.alt = "";
+          im.loading = "lazy";
+          im.width = 84;
+          im.height = 84;
+          card.appendChild(im);
+        }
+        var body = document.createElement("div");
+        body.className = "epg-card__body";
+        var h = document.createElement("div");
+        h.className = "epg-card__title";
+        h.textContent = title;
+        body.appendChild(h);
+        if (meta) {
+          var p = document.createElement("p");
+          p.className = "epg-card__meta";
+          p.textContent = meta;
+          body.appendChild(p);
+        }
+        card.appendChild(body);
+        frag.appendChild(card);
+      }
+      list.innerHTML = "";
+      list.appendChild(frag);
+    })
+    .catch(fail);
+})();
+</script>
+</body>
+</html>
