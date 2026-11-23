@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T01:17:00Z",
+ "generated_at": "2026-11-23T03:49:37Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-22T19:16:06Z",
-   "count": 280
+   "latest": "2026-11-22T22:33:22Z",
+   "count": 281
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -667,8 +667,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-19T13:38:32Z",
-   "count": 8
+   "latest": "2026-11-22T13:42:35Z",
+   "count": 9
   },
   {
    "key": "celticsdaily",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -990,6 +990,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:e9adca16 d2ae 4cee a6c9 f7516f29404f",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#282 The Yalta Conference: How Roosevelt, Churchill, and Stalin Drew the Map of the Postwar World",
+   "date": "2026-11-22T22:33:22Z",
+   "duration": 3709,
+   "description": "In February 1945, the war was not over, and the map on the table was military. The Red Army stood on the Oder, about 40 miles from Berlin. The Western Allies had recovered from the Bulge but had not yet crossed the Rhine, and the war against Japan was expected to last into 1946 or beyond.\n From 4 to 11 February 1945, Roosevelt, Churchill, and Stalin met in the Crimea, with most plenaries at Livadia Palace. This episode follows the lead-up — Casablanca, Tehran, and Churchill's 1944 percentages discussion in Moscow — the Malta pre-meeting, and three agendas, not two. Roosevelt sought Soviet entry against Japan and a new world organisation. Churchill pressed for free elections in Poland and a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795386738624-cf6c79150403a.jpg",
+   "url": "https://open.spotify.com/episode/6i9fUzDJ7sCvJbX4EXBXYM",
+   "spotify_url": "https://open.spotify.com/episode/6i9fUzDJ7sCvJbX4EXBXYM",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129920879/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F7277ee11-b58e-7446-8195-e5865395a353.m4a",
+   "number": "282"
+  },
+  {
    "id": "polymath:69c141bd 2f70 4c77 83f8 81688ff69f6c",
    "show": "polymath",
    "kind": "episode",
@@ -1015,6 +1029,20 @@
    "url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
    "spotify_url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
    "audio": "https://anchor.fm/s/119799630/podcast/play/129898977/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Ff10503e9-02f7-5b73-e013-f1771a818d89.m4a",
+   "number": null
+  },
+  {
+   "id": "waiverwire:bc82a211 38ad 491c a8f3 82de8f93a03e",
+   "show": "waiverwire",
+   "kind": "episode",
+   "title": "Walker Out, Johnson In, and Bowers Is the Game-Time Call: Week 11 In or Out | Sunday, November 22, 2026",
+   "date": "2026-11-22T13:42:35Z",
+   "duration": 1232,
+   "description": "Week 11 In or Out: the final start/sit calls, built on the official Friday injury report plus Saturday updates. Kenneth Walker III is out and Emmett Johnson is the RB1 start; Dalton Kincaid and Carson Beck are out; DeVonta Smith, T.J. Hockenson, Kyle Monangai and Geno Smith are cleared. Brock Bowers and Mike Evans stay flagged as true game-time decisions — never guessed — each with its pivot.\n In this edition: what Houston's 26-3 Thursday night win over Indianapolis means now · the settled outs and who replaces them · the cleared returns and their real ceilings · the game-time decisions (Bowers, Evans, Mayfield, McConkey) · Washington's questionable Monday backfield · and the final board…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1795354903883-3e69dc060bd42.jpg",
+   "url": "https://open.spotify.com/episode/2MZZTvxGKrhsL5pkd8t6HS",
+   "spotify_url": "https://open.spotify.com/episode/2MZZTvxGKrhsL5pkd8t6HS",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129898898/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F4efc74f6-9e2e-9321-46e6-2c034b2bc357.m4a",
    "number": null
   },
   {
@@ -1907,7 +1935,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -9129,7 +9157,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -11141,8 +11169,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 280,
-   "spotify_matches": 0
+   "episodes": 281,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -11322,8 +11350,8 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 8,
-   "spotify_matches": 0
+   "episodes": 9,
+   "spotify_matches": 1
   },
   "celticsdaily": {
    "ok": true,
