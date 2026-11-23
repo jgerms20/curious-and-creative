@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T03:49:37Z",
+ "generated_at": "2026-11-23T14:58:23Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-22T22:33:22Z",
-   "count": 281
+   "latest": "2026-11-23T08:41:16Z",
+   "count": 282
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-22T13:46:38Z",
-   "count": 19
+   "latest": "2026-11-23T13:52:42Z",
+   "count": 20
   },
   {
    "key": "morningread",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-22T10:42:49Z",
-   "count": 29
+   "latest": "2026-11-23T10:36:22Z",
+   "count": 30
   },
   {
    "key": "ladaily",
@@ -343,8 +343,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-22T10:42:42Z",
-   "count": 27
+   "latest": "2026-11-23T10:33:01Z",
+   "count": 28
   },
   {
    "key": "globalread",
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-22T10:43:35Z",
-   "count": 25
+   "latest": "2026-11-23T10:38:20Z",
+   "count": 26
   },
   {
    "key": "marketread",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-22T11:27:04Z",
-   "count": 22
+   "latest": "2026-11-23T11:46:23Z",
+   "count": 23
   },
   {
    "key": "nyread",
@@ -424,8 +424,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-20T11:42:25Z",
-   "count": 12
+   "latest": "2026-11-23T11:39:23Z",
+   "count": 13
   },
   {
    "key": "columbiaread",
@@ -451,8 +451,8 @@
    "complete": true,
    "art": "assets/art/columbiaread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47120618/47120618-1793473024667-3c58a827bef36.jpg",
-   "latest": "2026-11-20T15:51:31Z",
-   "count": 8
+   "latest": "2026-11-23T12:17:30Z",
+   "count": 9
   },
   {
    "key": "airead",
@@ -478,8 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-22T12:13:18Z",
-   "count": 21
+   "latest": "2026-11-23T12:21:07Z",
+   "count": 22
   },
   {
    "key": "optionsdesk",
@@ -559,8 +559,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-20T12:15:46Z",
-   "count": 9
+   "latest": "2026-11-23T12:15:50Z",
+   "count": 10
   },
   {
    "key": "tvinsider",
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-22T06:42:32Z",
-   "count": 21
+   "latest": "2026-11-23T04:42:13Z",
+   "count": 22
   },
   {
    "key": "blitz",
@@ -639,8 +639,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-20T04:58:23Z",
-   "count": 12
+   "latest": "2026-11-23T05:14:36Z",
+   "count": 13
   },
   {
    "key": "waiverwire",
@@ -694,8 +694,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-22T06:29:39Z",
-   "count": 13
+   "latest": "2026-11-23T04:32:18Z",
+   "count": 14
   },
   {
    "key": "coltsdaily",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-22T12:34:07Z",
-   "count": 17
+   "latest": "2026-11-23T12:32:31Z",
+   "count": 18
   },
   {
    "key": "cutandsew",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-18T13:54:00Z",
    "count": 1
   },
@@ -990,6 +990,202 @@
  ],
  "episodes": [
   {
+   "id": "dominatedconvo:7a37ecdd 964a 4b50 b0b4 e20f8c097853",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "GTA VI and Hunger Games Split the Entire Internet for One Weekend | Monday, November 23, 2026",
+   "date": "2026-11-23T13:52:42Z",
+   "duration": 1354,
+   "description": "The internet did not fragment this weekend. It concentrated. Grand Theft Auto VI finished its first full weekend after the biggest entertainment launch in history, The Hunger Games: Sunrise on the Reaping tripled its predecessor's opening, and everything else, the sounds, the formats, the soft launches, orbited those two fictional worlds. Plus: what the GTA numbers actually say, Reddit's \"ordinary day at the singularity,\" the prince treatment debate, and what is bubbling up into Thanksgiving week.\n Timestamps\n(00:00) The franchise weekend: the monoculture snaps back\n(03:16) What the GTA VI numbers actually say\n(05:57) Hunger Games and the forecasters' miss\n(09:36) Platform rundown: X,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795441860511-238c159c85c2c.jpg",
+   "url": "https://open.spotify.com/episode/72E1UPIhuluGfyNytfqCxA",
+   "spotify_url": "https://open.spotify.com/episode/72E1UPIhuluGfyNytfqCxA",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/129954501/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F035a2574-ad1a-64f6-c45b-bfb872f51d3c.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:51ec6b06 3e64 43c5 b01f ccb12a0c4e16",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T12:32:31Z",
+   "duration": 808,
+   "description": "Reuters reports this morning that Nvidia rebuilt an 11-billion-dollar China business under the export bans — selling the RTX PRO 5500, a card Chinese buyers sought more than 6 million units of — and that the business is now wobbling after founder Jensen Huang's exit amid allegations the company says it has no reason to believe compromised national security. With the National Security Council and the FCC examining wider restrictions, the incoming Congress is promising bipartisan oversight after two years of close to none. Plus: Trump warns it will be \"very hard\" to work with Schumer eight days before the December 1 leadership vote, the contractor executive order moves the oversight fight…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795437112242-8db42e971417f.jpg",
+   "url": "https://open.spotify.com/episode/1LDxh3GtMJCs90mmQv9DOg",
+   "spotify_url": "https://open.spotify.com/episode/1LDxh3GtMJCs90mmQv9DOg",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/129950548/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Fecef9c44-7571-4b1e-a2d1-a13db1597508.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:c6c2cfb4 fe76 4728 b805 eb8ff8f2f3a6",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T12:21:07Z",
+   "duration": 993,
+   "description": "Monday's edition leads with OpenAI's post-incident account of Saturday's 211-minute outage, when database maintenance took down both authentication replicas and failed up to 75% of ChatGPT and API requests. Then: a claimed Claude-assisted proof of the Riemann Hypothesis under verification, OpenAI's chief scientist proposing a perplexity speed limit for the industry, Apple rolling Siri AI across its apps, a reported Chinese intelligence campaign for AI chips, Micron's 14% slide against a sold-out 2027 order book, bitcoin back above $61,000 while ETF outflows stretch to a fourth week, and Claude Computer Use reaching enterprise desktops.\n • OpenAI's 211-minute outage: both Postgres auth…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795436445681-9ca1c594390a8.jpg",
+   "url": "https://open.spotify.com/episode/0fK9HiCclGSa3stk9mVlgK",
+   "spotify_url": "https://open.spotify.com/episode/0fK9HiCclGSa3stk9mVlgK",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/129950067/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F4f1f918c-b62d-ba50-c550-4911b8d4a0b1.m4a",
+   "number": null
+  },
+  {
+   "id": "columbiaread:6914e6ea f2db 426a 82f9 c004b69dba92",
+   "show": "columbiaread",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T12:17:30Z",
+   "duration": 976,
+   "description": "The city stands behind its fire chief and calls Irmo's firing demand egregious; McMaster holds his final cabinet meeting as the Wilson transition sets a December 4 deadline; every witness opposes the Dominion–NextEra merger; the Arts Commission tightens grant rules; fire destroys the Omega Psi Phi chapter house; a wet Thanksgiving week ahead; real estate at 1,493 homes and 100 days; and The Brook Church feeds 1,200 families.\n In today's brief:\n • The city stands behind its fire chief — Irmo's firing demand called egregious — https://www.firehouse.com/community-risk/investigation-equipment/news/55420583/columbia-sc-calls-demand-to-terminate-fire-officers-egregious\n • McMaster's final cabinet…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1795436164645-10c52e6eccd8c.jpg",
+   "url": "https://open.spotify.com/episode/6hBaJN1I9u8kqUEDOHeyER",
+   "spotify_url": "https://open.spotify.com/episode/6hBaJN1I9u8kqUEDOHeyER",
+   "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129949899/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Ff58997d9-5802-f0fe-e157-13b597b16c0f.m4a",
+   "number": null
+  },
+  {
+   "id": "hollywoodinsider:947e3b53 2c6c 46e0 93a8 e0758bf644db",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "GTA VI's $3.79 Billion Day One Is the Biggest Launch Ever, and the Movies Survived It | Monday, November 23, 2026",
+   "date": "2026-11-23T12:15:50Z",
+   "duration": 1385,
+   "description": "Take-Two made it official: Grand Theft Auto VI did $3.79 billion on day one, the biggest entertainment launch ever, and the movies survived it. Sunrise on the Reaping opened to $120 million, Thanksgiving tracking puts Focker-in-Law ahead of Hexed while Netflix's Cliff Booth fights the IMAX window, a $7 million documentary crossed $100 million, and IMAX posted a record quarter.\n • GTA VI's official $3.79B day one is the biggest launch ever — https://www.usatoday.com/story/tech/gaming/2026/11/21/gta-6-first-day-sales-record/92897054007/\n • Sunrise on the Reaping opens to $120M domestic, $225M worldwide —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1795436056283-8deb9f0d0ba01.jpg",
+   "url": "https://open.spotify.com/episode/3Z62k9OkfWVb50LOeIl3FI",
+   "spotify_url": "https://open.spotify.com/episode/3Z62k9OkfWVb50LOeIl3FI",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129949821/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F1909f45a-77ad-61cb-d42d-c8ae51b5d19c.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:d7b68a94 d2f4 4895 814c d5a31002c64b",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T11:46:23Z",
+   "duration": 1075,
+   "description": "After the Nasdaq's worst week since March 2020, futures rebound sharply — Nasdaq 100 +3.02% in Reuters' early read — as Asia's governments step in to support their markets, Europe's chip names bounce, and Nvidia jumps premarket despite a Treasury deadline landing Wednesday, the same morning as the PCE report. Plus the options desk: the VIX at 35.89 and Anthropic options making their listed debut.\n • Futures rebound after the AI rout, strategists refuse to call it a recovery — https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/\n • Asia steps in: Taiwan bounces on short-sale curbs, the Kospi falls 3.3% through its own support package —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795434331141-fb8ea373a3578.jpg",
+   "url": "https://open.spotify.com/episode/7ehX5aqebQ8aB6HfAdtUar",
+   "spotify_url": "https://open.spotify.com/episode/7ehX5aqebQ8aB6HfAdtUar",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129948685/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F85f88188-8133-35ba-98be-36170015ba2f.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:07393e03 7b3a 4611 84ae 3ec29bb499aa",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T11:39:23Z",
+   "duration": 1140,
+   "description": "The Rikers plan is on paper — close the island by the end of 2032, five years past the legal deadline, with four borough jails opening from 2029 and a population that must shrink by thousands to fit them; a Chinatown killing leaves a suspect with five open cases held without bail and the city's pretrial debate reignited; the Bruckner shelter, the last emergency migrant shelter, is closed and the city tells the judge the ICE subpoena is moot; open primaries are back, with 75,000 new signatures and a mayor who is not having it; NYCHA offers 91 homes to the residents who live in them; the first Driver Health Hub opens at JFK today; a Thanksgiving storm threatens Wednesday travel and the parade…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1795433927071-f71c20fa60b08.jpg",
+   "url": "https://open.spotify.com/episode/0qgwsBkMzpufRBUXSCXHfn",
+   "spotify_url": "https://open.spotify.com/episode/0qgwsBkMzpufRBUXSCXHfn",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/129948406/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Fc12820eb-f041-af20-d1c6-81affff7ef17.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:b3aca9bd 1510 4145 8291 ec031b405f64",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Russian Corvette Sinks at Benghazi After Suspected Drone Attack | Monday, November 23, 2026",
+   "date": "2026-11-23T10:38:20Z",
+   "duration": 1440,
+   "description": "A Russian corvette sinks in Benghazi after a suspected sea drone attack; COP31 collapses with no deal; the AI sell-off goes global; a Russian strike on Dymer kills at least ten; two more supertankers ablaze near Hormuz; drones kill five children in Khartoum; Indonesia's factory fire toll rises; Israel's coalition talks end without a deal; and BepiColombo arrives at Mercury.\n Timestamps:\n 0:13 Welcome and the day's headlines\n 1:16 Russian corvette Merkury sinks at Benghazi (developing)\n 4:06 COP31 collapses with no deal\n 7:28 AI sell-off goes global; Nikkei falls 5%\n 10:24 Russian strike on Dymer kills at least 10\n 12:59 Tankers ablaze near Hormuz; the diesel shortage\n 15:27 Drones kill five…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795430282003-09438425832a7.jpg",
+   "url": "https://open.spotify.com/episode/5qnyEhD8JOXGJEaER4j4gi",
+   "spotify_url": "https://open.spotify.com/episode/5qnyEhD8JOXGJEaER4j4gi",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/129945834/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F733847db-6e21-3a9b-8720-5bca0fdd24e3.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:0b175b36 244c 4f3d bbbb b57ab9718724",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T10:36:22Z",
+   "duration": 835,
+   "description": "Iran says two more supertankers hit mines east of Hormuz and the president says he is inclined to strike Iran again after the new year, while oil barely moves. Plus: Delta's weight-and-balance outage delays more than 1,600 flights on the first weekend of the Thanksgiving rush; stock futures bounce after Wall Street's worst week since March 2020 as the Treasury secretary warns the Fed against over-tightening; the intelligence chief confirms the Nvidia-linked Megaspeed probe; a classified memo restricts the US-Canada defence relationship; a checkout breach copies card numbers and security codes; Florida's record crest arrives; and the Army and a court race two clocks in Iowa.\n Timestamps:\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795430167060-62291446e3673.jpg",
+   "url": "https://open.spotify.com/episode/66mlLpx6Z2HwIU52LBpBBm",
+   "spotify_url": "https://open.spotify.com/episode/66mlLpx6Z2HwIU52LBpBBm",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/129945761/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F9b76f287-2924-8729-c3f4-439d48d115ef.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:f69d5734 df3d 4fb2 bb85 fcb8838c9c98",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-23T10:33:01Z",
+   "duration": 1020,
+   "description": "Deadline day in Los Angeles: public comment on the Sepulveda Transit Corridor's rail-yard sites closes today with Congresswoman Rivas's request for an extension to January still unanswered on Metro's own page. The king-tide Coastal Flood Advisory is in effect from 3 a.m., with forecast peaks of 8.2 to 8.6 feet Wednesday and Thursday; Chiquita Canyon's fight escalates to a demand for long-term relocation for every Val Verde and Castaic resident who wants to leave; the Council starts the special-election roadmap for Raman's District 4 seat; District 9 stays at 87 votes with a Wednesday 5 p.m. cure deadline and county certification planned for Friday; Pathway Home brings 26 people indoors in…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795429940578-286675ac6f338.jpg",
+   "url": "https://open.spotify.com/episode/1iQBDAXBAIOLzosrVhkzj7",
+   "spotify_url": "https://open.spotify.com/episode/1iQBDAXBAIOLzosrVhkzj7",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/129945620/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Ff60019d8-4f2f-a9ea-8169-98d8edb96f81.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:1e606778 7206 43b2 a93a 6fbc30a4e048",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#283 Gianni De Gennaro: How a Missing Red Diary Followed Italy's Police Chief to the End",
+   "date": "2026-11-23T08:41:16Z",
+   "duration": 3489,
+   "description": "Gianni De Gennaro, Italy's national police chief from 2000 to 2007, was found dead at his country home in Tuscany on 21 November 2026. Authorities treated the death as an apparent suicide. He was 78, and days earlier Caltanissetta prosecutors had sought his house arrest in a new inquiry into the 1992 Borsellino bombing. He had denied wrongdoing.\n De Gennaro rose fighting Cosa Nostra alongside Giovanni Falcone. He helped oversee the 1984 extradition from Brazil of pentito Tommaso Buscetta, later headed the Anti-Mafia Investigative Directorate, coordinated intelligence, and chaired Finmeccanica, later Leonardo, from 2013 to 2020.\n On 19 July 1992, 57 days after Falcone was killed at Capaci, a…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795423221948-6537b1bda00b3.jpg",
+   "url": "https://open.spotify.com/episode/4NUFTuNAcKM2mm8il0ijtd",
+   "spotify_url": "https://open.spotify.com/episode/4NUFTuNAcKM2mm8il0ijtd",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/129941181/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F2164f018-dc14-a759-4a5e-3fbb8bba6729.m4a",
+   "number": "283"
+  },
+  {
+   "id": "blitz:a59dbc0f 1916 4fed b835 b2ac9d990d00",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Purdy Carves Up the Vikings in Mexico City: The 49ers Take the NFC's Top Seed | Sunday, November 22, 2026",
+   "date": "2026-11-23T05:14:36Z",
+   "duration": 1306,
+   "description": "San Francisco routed Minnesota 35-10 in Mexico City to stand alone atop the NFC at 9-1, behind three Brock Purdy touchdown passes. Buffalo kept the AFC's top seed at 9-1, Dallas hung 51 on Tennessee behind five Dak Prescott scores, and Detroit and Chicago both reached 8-2 to set up a Thanksgiving Day showdown for the NFC North.\n Scores: Bills 26, Dolphins 9 · Lions 31, Buccaneers 21 · Bears 21, Saints 13 · Cowboys 51, Titans 30 · Chiefs 34, Cardinals 7 · Panthers 35, Ravens 33 · Eagles 19, Steelers 16 · Jets 27, Chargers 24 · Giants 23, Jaguars 18 · Broncos 38, Raiders 24 · 49ers 35, Vikings 10.\n Chapters:\n (00:00) The 49ers own the night in Mexico City\n (05:12) The scoreboard: every Sunday…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795419856410-ecf1c24d1e726.jpg",
+   "url": "https://open.spotify.com/episode/2RA1W4j4j4xvpySZLjx95V",
+   "spotify_url": "https://open.spotify.com/episode/2RA1W4j4j4xvpySZLjx95V",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129935167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F44eb9194-c0bc-164f-a70a-8538e671d016.m4a",
+   "number": null
+  },
+  {
+   "id": "fastbreak:31b35481 93bd 45d1 b8b8 32c16466f04c",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Sunday, November 22, 2026",
+   "date": "2026-11-23T04:42:13Z",
+   "duration": 1351,
+   "description": "Jamal Murray scored a season-high 45 points and Nikola Jokic posted his 202nd career triple-double (37 points, 18 rebounds, 11 assists) as Denver outlasted Chicago 151-145 in overtime — one of four triple-doubles across a seven-game Sunday. Golden State edged Boston 88-87 without Stephen Curry, and Miami won its seventh straight, 123-113 over Oklahoma City.\n Scores: Hawks 107, Pistons 97 · Heat 123, Thunder 113 · Wizards 116, Magic 96 · Nuggets 151, Bulls 145 (OT) · Mavericks 116, Jazz 114 · Knicks 113, Pacers 106 · Warriors 88, Celtics 87.\n The deep dive: The triple-double night — Murray and Jokic combine for 82 and a duo record in Chicago, Jokic closes to seven behind Westbrook's all-time…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795408885964-90107b6efae26.jpg",
+   "url": "https://open.spotify.com/episode/4SaJ5fewoWSzEMjfX1yAld",
+   "spotify_url": "https://open.spotify.com/episode/4SaJ5fewoWSzEMjfX1yAld",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/129934168/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Fdeaa20d8-faab-e208-03d9-151477e2f0d4.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:f9a7d734 f226 4dea 8704 585ae3afca4f",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Warriors 88, Celtics 87: Another Double-Digit Lead Gone, Boston Is 11-6 | Sunday, November 22, 2026",
+   "date": "2026-11-23T04:32:18Z",
+   "duration": 924,
+   "description": "The Warriors, without Stephen Curry, beat the Celtics 88-87 at Chase Center. Boston led by 11 and by six entering the fourth, then scored 12 points in the quarter. Jayson Tatum had 27 points, 10 rebounds and 6 assists and was a plus-11 in a one-point loss. It is Boston's fourth straight defeat after an 11-2 start, the last three after double-digit leads. Boston is 11-6.\n The recap: how the game turned, the final minute, Tatum's night, the rebounding gap, and what a four-game skid means with Washington next on Tuesday.\n Chapters:\n (00:00) Warriors 88, Celtics 87: the fourth straight loss\n (02:59) The pattern: three blown leads in a row\n (05:53) The rebounding gap: 19 offensive rebounds\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795408259511-6127dd8c92ab9.jpg",
+   "url": "https://open.spotify.com/episode/0BcRazFlEsRGwLEfuseZId",
+   "spotify_url": "https://open.spotify.com/episode/0BcRazFlEsRGwLEfuseZId",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129933841/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F2c491089-1e39-c92f-5d31-07d9c5433471.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:e9adca16 d2ae 4cee a6c9 f7516f29404f",
    "show": "polymath",
    "kind": "episode",
@@ -998,8 +1194,8 @@
    "duration": 3709,
    "description": "In February 1945, the war was not over, and the map on the table was military. The Red Army stood on the Oder, about 40 miles from Berlin. The Western Allies had recovered from the Bulge but had not yet crossed the Rhine, and the war against Japan was expected to last into 1946 or beyond.\n From 4 to 11 February 1945, Roosevelt, Churchill, and Stalin met in the Crimea, with most plenaries at Livadia Palace. This episode follows the lead-up — Casablanca, Tehran, and Churchill's 1944 percentages discussion in Moscow — the Malta pre-meeting, and three agendas, not two. Roosevelt sought Soviet entry against Japan and a new world organisation. Churchill pressed for free elections in Poland and a…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795386738624-cf6c79150403a.jpg",
-   "url": "https://open.spotify.com/episode/6i9fUzDJ7sCvJbX4EXBXYM",
-   "spotify_url": "https://open.spotify.com/episode/6i9fUzDJ7sCvJbX4EXBXYM",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/282-The-Yalta-Conference-How-Roosevelt--Churchill--and-Stalin-Drew-the-Map-of-the-Postwar-World-e3srcdf",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129920879/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F7277ee11-b58e-7446-8195-e5865395a353.m4a",
    "number": "282"
   },
@@ -1026,8 +1222,8 @@
    "duration": 1406,
    "description": "Mississippi has a new senator, and he got there on thirty seconds of grocery-store honesty. Scott Colom's \"Pick Another Protein\" ad turned a line about beef prices into the most effective campaign ad of the cycle, and USA Today laid out this morning how it happened. Today on The Zeitgeist: the ad, the memes, and the Nike promise that followed, plus the Mamdani eye-roll clip taking over X, the Riemann proof's big verification update on Reddit, a Fortnite flying glitch ruling TikTok, GTA 6's record first day and Jordan's move to ban it, a viral wedding photo from Cabo, and Noah Schnapp's Hunger Games joke landing badly.\n 0:15 The lead: Scott Colom's \"Pick Another Protein\" ad\n 7:33 X: the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795355150276-0f37995601aae.jpg",
-   "url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
-   "spotify_url": "https://open.spotify.com/episode/5qA3eVEZfdvahe74M5wvz9",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/How-a-Protein-Ad-Won-Mississippi-a-Senate-Seat--Sunday--November-22--2026-e3sqn11",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129898977/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Ff10503e9-02f7-5b73-e013-f1771a818d89.m4a",
    "number": null
   },
@@ -1040,8 +1236,8 @@
    "duration": 1232,
    "description": "Week 11 In or Out: the final start/sit calls, built on the official Friday injury report plus Saturday updates. Kenneth Walker III is out and Emmett Johnson is the RB1 start; Dalton Kincaid and Carson Beck are out; DeVonta Smith, T.J. Hockenson, Kyle Monangai and Geno Smith are cleared. Brock Bowers and Mike Evans stay flagged as true game-time decisions — never guessed — each with its pivot.\n In this edition: what Houston's 26-3 Thursday night win over Indianapolis means now · the settled outs and who replaces them · the cleared returns and their real ceilings · the game-time decisions (Bowers, Evans, Mayfield, McConkey) · Washington's questionable Monday backfield · and the final board…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1795354903883-3e69dc060bd42.jpg",
-   "url": "https://open.spotify.com/episode/2MZZTvxGKrhsL5pkd8t6HS",
-   "spotify_url": "https://open.spotify.com/episode/2MZZTvxGKrhsL5pkd8t6HS",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Walker-Out--Johnson-In--and-Bowers-Is-the-Game-Time-Call-Week-11-In-or-Out--Sunday--November-22--2026-e3sqmui",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129898898/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F4efc74f6-9e2e-9321-46e6-2c034b2bc357.m4a",
    "number": null
   },
@@ -1068,8 +1264,8 @@
    "duration": 1072,
    "description": "Chuck Schumer led Senate Democrats to a decisive 56-seat majority in the midterms — and now progressives are telling him to step aside for it. Reuters reports the first contested Senate Democratic leadership race since 1994: Schumer, who turns 76 on Monday and says \"I will be elected majority leader,\" against Chris Van Hollen, who says the caucus needs new leadership before the December 1 secret ballot. Sixteen senators have publicly committed to Schumer; six to Van Hollen; the rest will decide it in private.\n Also today: President Trump's Friday executive order requiring federal contractors to notify the White House before answering Congress; Trump's Saturday offer to work with Democrats…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795350790966-25939bb275738.jpg",
-   "url": "https://open.spotify.com/episode/3490Tdq4zt2TQDmKK9neoE",
-   "spotify_url": "https://open.spotify.com/episode/3490Tdq4zt2TQDmKK9neoE",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Sunday--November-22--2026-e3sqknp",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119a81f14/podcast/play/129896633/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F8d539698-d5a4-79d9-466d-7bc61afbfafa.m4a",
    "number": null
   },
@@ -1082,8 +1278,8 @@
    "duration": 971,
    "description": "Sunday's edition leads with the weekend rout: the Nasdaq in a bear market and bitcoin's Saturday flush to $55,106 with about $2.5 billion in liquidations. Then: AI is finding software flaws faster than anyone can patch them, OpenAI ships GPT-Live-1.1 for voice agents, House Republicans push an open-weight answer to China, the AUDIT AI Act and New York's new ASSET enforcement unit, CISA's latest exploited-flaw warnings, Vercel's gateway spending numbers, Tencent's open Hy4 model, and UN talks on autonomous weapons ending without rules.\n • The weekend rout: Nasdaq bear market, bitcoin touches $55,106, ETF outflows near $3.6B in November —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795349524221-4042da2266e38.jpg",
-   "url": "https://open.spotify.com/episode/46oFuy14pqAQkwPKYNMesL",
-   "spotify_url": "https://open.spotify.com/episode/46oFuy14pqAQkwPKYNMesL",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Sunday--November-22--2026-e3sqk1j",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129895923/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F5d99d23c-8242-f09c-eaf2-8f8bbccafb20.m4a",
    "number": null
   },
@@ -1096,8 +1292,8 @@
    "duration": 613,
    "description": "Sunday edition: Friday's crash put the S&P 500 (-3.7% to 6,910.39) and the Dow into correction and the Nasdaq (-5.28%) negative for the year, capping the S&P's worst week since April 2025. The weekend debate — Black Monday fears online vs. strategists calling capitulation — plus Nvidia's SEC probe, Anthropic's five-cent defense of its $83 IPO price, a mechanical VIX spike to 40, and a Thanksgiving week where Wednesday's PCE decides.\n • Friday's correction and the Black Monday debate — https://www.barrons.com/articles/stock-market-black-monday-crash-wall-street-a06dbf99\n • Nvidia faces an SEC accounting investigation (DEVELOPING) —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795346802854-a9a58ad0309a8.jpg",
-   "url": "https://open.spotify.com/episode/2LLVZ8MrkmYawzplJBF5jD",
-   "spotify_url": "https://open.spotify.com/episode/2LLVZ8MrkmYawzplJBF5jD",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Sunday--November-22--2026-e3sqigi",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129894354/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fffa7f4fb-541f-ab95-2d37-1d1199de266b.m4a",
    "number": null
   },
@@ -1110,8 +1306,8 @@
    "duration": 1366,
    "description": "After two days in overtime, COP31 in Antalya puts a final deal before nearly 200 governments that never mentions fossil fuels, a Russian military-linked cargo ship burns off Finland after a drone strike, Zelenskyy agrees to a pre-Christmas talks round but wants the guarantees on paper, two more tankers are hit near Hormuz, rescuers in Indonesia search for 36 missing workers after a factory fire, Peru counts one dead and more than 150 homes uninhabitable after its earthquake, the EU and Indonesia sign a trade deal ten years in the making, ActionSA rejects the DA's final Gauteng offer, and France's sixth protest Saturday draws smaller crowds.\n Timestamps:\n 0:00 — Welcome to The Global Read\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795344186535-61c30cf3a27f.jpg",
-   "url": "https://open.spotify.com/episode/5JBilNFZEcKt4ayB17UveW",
-   "spotify_url": "https://open.spotify.com/episode/5JBilNFZEcKt4ayB17UveW",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/COP31-Puts-Its-Final-Deal-to-the-Vote-Without-Naming-Fossil-Fuels--Sunday--November-22--2026-e3sqh1s",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129892860/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fc802ddb4-9fd4-58dd-fdb1-d40640b90416.m4a",
    "number": null
   },
@@ -1124,8 +1320,8 @@
    "duration": 1172,
    "description": "For the second day running, tankers have been hit by unidentified projectiles in the Strait of Hormuz, and nobody has claimed the strikes. Plus: Senate Republicans block their own president's Pentagon and cyber nominees; the FBI investigates a breach of the nation's crime database; JPMorgan, Visa and Mastercard explain a breach that was their vendors'; a judge lets the president's $15 billion suit against The New York Times proceed; a Fed governor argues policy is still too loose as Bitcoin tests its lows; Florida's record crest moves north; and Kyiv tells its version of what the president told Europe.\n Timestamps:\n 0:00 — Welcome to The Morning Read\n 0:59 — Hormuz: Two More Tankers Hit\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795344148671-d0e0edb001751.jpg",
-   "url": "https://open.spotify.com/episode/63OdPXwzGuF1U2Sj0sZVjk",
-   "spotify_url": "https://open.spotify.com/episode/63OdPXwzGuF1U2Sj0sZVjk",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Sunday--November-22--2026-e3sqh1u",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129892862/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fa5011b12-8f30-9bbe-608d-94004ab51263.m4a",
    "number": null
   },
@@ -1138,8 +1334,8 @@
    "duration": 1206,
    "description": "A quiet Sunday with every clock running: Congresswoman Luz Rivas tells Metro to reconsider the Fashion Square and The Plant rail-yard sites for the Sepulveda Transit Corridor and to extend public comment from tomorrow's deadline to January. The charter overhaul voters approved holds in the count — EE at 52.7 percent, LA at 62.5 percent — with an implementation motion already filed, while District 9 stays frozen at 87 votes with only cured ballots left and a Wednesday 5 p.m. cure deadline. County canvassers are knocking on doors in Castaic, Val Verde and Hasley Canyon today for the Chiquita Canyon household survey, the county releases its final Whiteman Airport study with three futures for…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795344094213-e5cbe6eedfa2c.jpg",
-   "url": "https://open.spotify.com/episode/2QUO9o2MyqqUttsaia8w0U",
-   "spotify_url": "https://open.spotify.com/episode/2QUO9o2MyqqUttsaia8w0U",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Sunday--November-22--2026-e3sqh1h",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129892849/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F51559ecb-a2db-4723-6708-293e2d18b98d.m4a",
    "number": null
   },
@@ -1166,8 +1362,8 @@
    "duration": 1183,
    "description": "Two players scored 50 points on the same Saturday: Victor Wembanyama had 50 points and 19 rebounds as San Antonio routed New Orleans 114-91 to reach 14-3, while Tyler Herro's career-high 50 could not save Milwaukee in a 132-129 loss at Philadelphia — the Bucks' 13th straight defeat. Sacramento stunned Boston 97-96 on Keegan Murray's putback with five seconds left.\n Scores: 76ers 132, Bucks 129 · Knicks 97, Trail Blazers 96 · Timberwolves 104, Grizzlies 95 · Spurs 114, Pelicans 91 · Mavericks 110, Clippers 100 · Kings 97, Celtics 96.\n The deep dive: Two 50s, two directions — Wembanyama lifts San Antonio level with the Lakers atop the West while Herro's career night cannot lift 1-16…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795329638645-dfeec2f628587.jpg",
-   "url": "https://open.spotify.com/episode/49QY0Vbr0KIsjimm8mLJZv",
-   "spotify_url": "https://open.spotify.com/episode/49QY0Vbr0KIsjimm8mLJZv",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Saturday--November-21--2026-e3sqajc",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129886252/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fc2350ad3-65c6-0597-7180-fbe2a1f27c9e.m4a",
    "number": null
   },
@@ -1180,8 +1376,8 @@
    "duration": 1137,
    "description": "The Kings, 1-14 and winless at home all season, beat Boston 97-96 in Sacramento: Keegan Murray's putback with five seconds left, a 35-13 third quarter that erased a 13-point halftime lead, and ten missed Boston free throws in a one-point loss. Mike Conley scored 19 off the bench and Payton Pritchard nearly saved it at the end, but the Celtics, without Jayson Tatum, Derrick White, and Mitchell Robinson, drop a third straight and fall to 11-5.\n Segments: the result and the final minute / the third-quarter collapse / Conley, George, Queta and the short-handed rotation / the shooting and free-throw math / what a third straight loss means / the look ahead to Golden State tomorrow.\n Unofficial…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795328919892-1603c556a4176.jpg",
-   "url": "https://open.spotify.com/episode/5ZYdpSM6UHvYIqZguTO4Ke",
-   "spotify_url": "https://open.spotify.com/episode/5ZYdpSM6UHvYIqZguTO4Ke",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Kings-Beat-the-Celtics-97-96-Murrays-Putback-at-Five-Seconds-Hands-Boston-a-Third-Straight-Loss--Boston-Is-11-5--Saturday--November-21--2026-e3sqabh",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129886001/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fcf12aa4b-7aae-8de2-b974-77a020951e4b.m4a",
    "number": null
   },
@@ -1390,8 +1586,8 @@
    "duration": 1290,
    "description": "City Hall just had its biggest building night of the year: on Tuesday, Columbia City Council put the $18.3 million Williams Street Connector and the $45.4 million Columbia Canal embankment repair under contract in the same meeting — and said no, twice, to a Wilson Boulevard annexation and a title-loan zoning change.\n Also today: five judges are officially in line for the South Carolina Supreme Court, Susan Smith is denied parole again, a name and a charge in the Lower Richland killing, Richland County tightens the vape map, a Walmart Supercenter is planned for Hardscrabble Road, the standing real estate beat at 1,475 homes and 100 days, and a Midlands church closing in on $2.5 million in…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47120618/47120618-1795189843240-aa89ff01d8b46.jpg",
-   "url": "https://open.spotify.com/episode/0Kf7DZH1AAjLqVzPABoxkK",
-   "spotify_url": "https://open.spotify.com/episode/0Kf7DZH1AAjLqVzPABoxkK",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20036/episodes/Friday--November-20--2026-e3so3om",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11974f1e8/podcast/play/129813718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F36aef831-a7e4-4771-d5c9-c9ecdaa8487c.m4a",
    "number": null
   },
@@ -1502,8 +1698,8 @@
    "duration": 976,
    "description": "Disney beat the street on streaming, posting $824 million in streaming profit, then told its own workforce the efficiency bill is $3 billion, with more layoffs confirmed on the record. Also today: GTA VI's estimated $2.36 billion launch day, Sunrise on the Reaping's $21.25 million in previews, Amazon's new Bond, Skydance's film chiefs and their 30-film obligation, Chris Pratt at Paramount, I Play Rocky going wide, Black Bear's win for Bill Hader's They Know, and Club Kid's specialty run.\n • Disney beats the street on streaming, then hands its workforce a $3 billion bill — https://www.thewrap.com/industry-news/business/disney-earnings-q4-2026/\n • GTA VI posts an estimated $2.36 billion on…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1795176901454-aa955986d003d.jpg",
-   "url": "https://open.spotify.com/episode/6AOMgQabmUngZIms34cnNc",
-   "spotify_url": "https://open.spotify.com/episode/6AOMgQabmUngZIms34cnNc",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2048/episodes/Disney-Beats-the-Street-on-Streaming--Then-Hands-Its-Workforce-a-3-Billion-Bill--Friday--November-20--2026-e3snqkq",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129804378/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fdf7a9924-217d-a408-a976-89393ad33f78.m4a",
    "number": null
   },
@@ -1530,8 +1726,8 @@
    "duration": 726,
    "description": "The carriage era is ending — Mayor Mamdani signed Romanch's Law on Thursday and the drivers' union sued in federal court the same day; the mayor's Rikers plan lands today, with a 2027 closure law and borough jails that cannot open before 2032; the Bruckner shelter, the city's last emergency migrant shelter, is in its final weeks under a judge's ICE subpoena order; an MTA lot in Crown Heights becomes 375 homes; a Council bill takes on Hunts Point's polluting refrigeration trailers; the Council's Thursday package covers doulas, dental care and $2.1 million for nontraditional workers; an executive order sets citywide kosher and halal meal standards; Much Ado About Nothing opens at the Winter…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1795174920885-c107eb609ca2c.jpg",
-   "url": "https://open.spotify.com/episode/51DxXGo4b1ngebL1IkKNTv",
-   "spotify_url": "https://open.spotify.com/episode/51DxXGo4b1ngebL1IkKNTv",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms202/episodes/Friday--November-20--2026-e3snpee",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119608a14/podcast/play/129803150/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F60b3ee83-8013-7b6d-8f18-e988dca389eb.m4a",
    "number": null
   },
@@ -1628,8 +1824,8 @@
    "duration": 1217,
    "description": "C.J. Stroud threw three touchdown passes and David Montgomery ran for 107 yards in his return as the Houston Texans routed the Indianapolis Colts 26-3 on Thursday Night Football, scoring 26 unanswered points after an early Colts field goal. Will Anderson Jr. added a safety, and Daniel Jones was benched in the fourth quarter as the Colts fell to 3-8.\n Scores: Texans 26, Colts 3 — the only game of the night, opening Week 11. Houston moves to 4-6 with its first home win of the season; Indianapolis drops to 3-8.\n Part of the Curious & Creative network. Back after the next slate.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795152588617-b06d643d913af.jpg",
-   "url": "https://open.spotify.com/episode/3tnYnwLYgZXxXCS4vrDXED",
-   "spotify_url": "https://open.spotify.com/episode/3tnYnwLYgZXxXCS4vrDXED",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Thursday--November-19--2026-e3sndhs",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/129790972/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fff24778e-b54a-1d27-0ae6-4016b7e9ddb3.m4a",
    "number": null
   },
@@ -1935,7 +2131,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -11169,7 +11365,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 281,
+   "episodes": 282,
    "spotify_matches": 1
   },
   "approachable": {
@@ -11238,7 +11434,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 19,
+   "episodes": 20,
    "spotify_matches": 1
   },
   "morningread": {
@@ -11246,7 +11442,7 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 29,
+   "episodes": 30,
    "spotify_matches": 1
   },
   "ladaily": {
@@ -11254,7 +11450,7 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 27,
+   "episodes": 28,
    "spotify_matches": 1
   },
   "globalread": {
@@ -11262,7 +11458,7 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 25,
+   "episodes": 26,
    "spotify_matches": 1
   },
   "marketread": {
@@ -11270,7 +11466,7 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 22,
+   "episodes": 23,
    "spotify_matches": 1
   },
   "nyread": {
@@ -11278,7 +11474,7 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "columbiaread": {
@@ -11286,7 +11482,7 @@
    "feed": "https://anchor.fm/s/11974f1e8/podcast/rss",
    "spotify_name": "The Columbia Read",
    "full_catalog": true,
-   "episodes": 8,
+   "episodes": 9,
    "spotify_matches": 1
   },
   "airead": {
@@ -11294,7 +11490,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 21,
+   "episodes": 22,
    "spotify_matches": 1
   },
   "optionsdesk": {
@@ -11318,7 +11514,7 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 9,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "tvinsider": {
@@ -11334,7 +11530,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 21,
+   "episodes": 22,
    "spotify_matches": 1
   },
   "blitz": {
@@ -11342,7 +11538,7 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 12,
+   "episodes": 13,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -11351,14 +11547,14 @@
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
    "episodes": 9,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "celticsdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "coltsdaily": {
@@ -11406,7 +11602,7 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 17,
+   "episodes": 18,
    "spotify_matches": 1
   },
   "cutandsew": {
