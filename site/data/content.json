@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T02:44:18Z",
+ "generated_at": "2026-11-24T12:45:52Z",
  "shows": [
   {
    "key": "ccpod",
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-23T04:42:13Z",
-   "count": 22
+   "latest": "2026-11-24T06:45:23Z",
+   "count": 23
   },
   {
    "key": "blitz",
@@ -639,8 +639,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-23T05:14:36Z",
-   "count": 13
+   "latest": "2026-11-24T05:09:16Z",
+   "count": 14
   },
   {
    "key": "waiverwire",
@@ -990,6 +990,34 @@
  ],
  "episodes": [
   {
+   "id": "fastbreak:96c6c096 de7a 4861 a228 dc89313255de",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Monday, November 23, 2026",
+   "date": "2026-11-24T06:45:23Z",
+   "duration": 1544,
+   "description": "Deni Avdija scored 31 points as Portland won at Philadelphia 128-111 to end the 76ers' five-game winning streak, and San Antonio won at Sacramento 123-107 without Victor Wembanyama to join the Lakers at 15-3 atop the West. Milwaukee snapped its 13-game losing streak at Toronto, and Jaden McDaniels scored a career-best 34 in Minnesota's 142-116 rout of Brooklyn.\n Scores: Grizzlies 117, Hornets 111 · Trail Blazers 128, 76ers 111 · Pacers 125, Thunder 120 · Bucks 116, Raptors 111 · Timberwolves 142, Nets 116 · Bulls 122, Cavaliers 108 · Suns 123, Pelicans 119 (OT) · Rockets 116, Clippers 104 · Spurs 123, Kings 107 · Lakers 109, Jazz 94.\n The deep dive: Depth at the top — San Antonio wins…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795502673639-7d1120ba386c3.jpg",
+   "url": "https://open.spotify.com/episode/1FDg7OzQfiVeu9tWQ81dHw",
+   "spotify_url": "https://open.spotify.com/episode/1FDg7OzQfiVeu9tWQ81dHw",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/130005005/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F51c24325-b361-2179-aba3-70ac306997ed.m4a",
+   "number": null
+  },
+  {
+   "id": "blitz:f2080c1e 7c71 4974 b9e5 ca7df884e0f3",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Daniels Steals It at the Gun: Washington's Walk-Off Sinks Burrow and the Bengals | Monday, November 23, 2026",
+   "date": "2026-11-24T05:09:16Z",
+   "duration": 1243,
+   "description": "Washington stole Monday Night Football at the gun. Evan McPherson's 56-yard field goal put Cincinnati up 20-19 with 46 seconds left, and Jayden Daniels answered in four plays: two strikes to rookie Antonio Williams for 64 yards, a spike, and Drew Stevens' 26-yard walk-off as time expired. Commanders 22, Bengals 20. Daniels finished 23 of 35 for 289 yards plus 55 rushing, Williams caught 9 for 122, Stevens hit five field goals, and Washington held Joe Burrow (28 of 40, 300 yards, 2 TD) and the Bengals to 124 second-half yards and 31 rushing yards all night. Boye Mafe's three first-half sacks and a third-quarter power outage at Northwest Stadium round out a wild close to Week 11.\n Week 11…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795496838625-dcd034d6f9c23.jpg",
+   "url": "https://open.spotify.com/episode/3ukD8c9AnyEujI1Tz99l4L",
+   "spotify_url": "https://open.spotify.com/episode/3ukD8c9AnyEujI1Tz99l4L",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/129998223/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F82cb94fe-abac-b9a6-7b4c-1fc3d930860a.m4a",
+   "number": null
+  },
+  {
    "id": "dominatedconvo:7a37ecdd 964a 4b50 b0b4 e20f8c097853",
    "show": "dominatedconvo",
    "kind": "episode",
@@ -1026,8 +1054,8 @@
    "duration": 808,
    "description": "Reuters reports this morning that Nvidia rebuilt an 11-billion-dollar China business under the export bans — selling the RTX PRO 5500, a card Chinese buyers sought more than 6 million units of — and that the business is now wobbling after founder Jensen Huang's exit amid allegations the company says it has no reason to believe compromised national security. With the National Security Council and the FCC examining wider restrictions, the incoming Congress is promising bipartisan oversight after two years of close to none. Plus: Trump warns it will be \"very hard\" to work with Schumer eight days before the December 1 leadership vote, the contractor executive order moves the oversight fight…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795437112242-8db42e971417f.jpg",
-   "url": "https://open.spotify.com/episode/1LDxh3GtMJCs90mmQv9DOg",
-   "spotify_url": "https://open.spotify.com/episode/1LDxh3GtMJCs90mmQv9DOg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Monday--November-23--2026-e3ss9ck",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119a81f14/podcast/play/129950548/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Fecef9c44-7571-4b1e-a2d1-a13db1597508.m4a",
    "number": null
   },
@@ -1040,8 +1068,8 @@
    "duration": 993,
    "description": "Monday's edition leads with OpenAI's post-incident account of Saturday's 211-minute outage, when database maintenance took down both authentication replicas and failed up to 75% of ChatGPT and API requests. Then: a claimed Claude-assisted proof of the Riemann Hypothesis under verification, OpenAI's chief scientist proposing a perplexity speed limit for the industry, Apple rolling Siri AI across its apps, a reported Chinese intelligence campaign for AI chips, Micron's 14% slide against a sold-out 2027 order book, bitcoin back above $61,000 while ETF outflows stretch to a fourth week, and Claude Computer Use reaching enterprise desktops.\n • OpenAI's 211-minute outage: both Postgres auth…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795436445681-9ca1c594390a8.jpg",
-   "url": "https://open.spotify.com/episode/0fK9HiCclGSa3stk9mVlgK",
-   "spotify_url": "https://open.spotify.com/episode/0fK9HiCclGSa3stk9mVlgK",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Monday--November-23--2026-e3ss8tj",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/129950067/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F4f1f918c-b62d-ba50-c550-4911b8d4a0b1.m4a",
    "number": null
   },
@@ -1081,9 +1109,9 @@
    "date": "2026-11-23T11:46:23Z",
    "duration": 1075,
    "description": "After the Nasdaq's worst week since March 2020, futures rebound sharply — Nasdaq 100 +3.02% in Reuters' early read — as Asia's governments step in to support their markets, Europe's chip names bounce, and Nvidia jumps premarket despite a Treasury deadline landing Wednesday, the same morning as the PCE report. Plus the options desk: the VIX at 35.89 and Anthropic options making their listed debut.\n • Futures rebound after the AI rout, strategists refuse to call it a recovery — https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/\n • Asia steps in: Taiwan bounces on short-sale curbs, the Kospi falls 3.3% through its own support package —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795434331141-fb8ea373a3578.jpg",
-   "url": "https://open.spotify.com/episode/7ehX5aqebQ8aB6HfAdtUar",
-   "spotify_url": "https://open.spotify.com/episode/7ehX5aqebQ8aB6HfAdtUar",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795482621742-3125a2e967894.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Monday--November-23--2026-e3ss7id",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/129948685/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F85f88188-8133-35ba-98be-36170015ba2f.m4a",
    "number": null
   },
@@ -1110,8 +1138,8 @@
    "duration": 1440,
    "description": "A Russian corvette sinks in Benghazi after a suspected sea drone attack; COP31 collapses with no deal; the AI sell-off goes global; a Russian strike on Dymer kills at least ten; two more supertankers ablaze near Hormuz; drones kill five children in Khartoum; Indonesia's factory fire toll rises; Israel's coalition talks end without a deal; and BepiColombo arrives at Mercury.\n Timestamps:\n 0:13 Welcome and the day's headlines\n 1:16 Russian corvette Merkury sinks at Benghazi (developing)\n 4:06 COP31 collapses with no deal\n 7:28 AI sell-off goes global; Nikkei falls 5%\n 10:24 Russian strike on Dymer kills at least 10\n 12:59 Tankers ablaze near Hormuz; the diesel shortage\n 15:27 Drones kill five…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795430282003-09438425832a7.jpg",
-   "url": "https://open.spotify.com/episode/5qnyEhD8JOXGJEaER4j4gi",
-   "spotify_url": "https://open.spotify.com/episode/5qnyEhD8JOXGJEaER4j4gi",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Russian-Corvette-Sinks-at-Benghazi-After-Suspected-Drone-Attack--Monday--November-23--2026-e3ss4pa",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/129945834/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F733847db-6e21-3a9b-8720-5bca0fdd24e3.m4a",
    "number": null
   },
@@ -1124,8 +1152,8 @@
    "duration": 835,
    "description": "Iran says two more supertankers hit mines east of Hormuz and the president says he is inclined to strike Iran again after the new year, while oil barely moves. Plus: Delta's weight-and-balance outage delays more than 1,600 flights on the first weekend of the Thanksgiving rush; stock futures bounce after Wall Street's worst week since March 2020 as the Treasury secretary warns the Fed against over-tightening; the intelligence chief confirms the Nvidia-linked Megaspeed probe; a classified memo restricts the US-Canada defence relationship; a checkout breach copies card numbers and security codes; Florida's record crest arrives; and the Army and a court race two clocks in Iowa.\n Timestamps:\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795430167060-62291446e3673.jpg",
-   "url": "https://open.spotify.com/episode/66mlLpx6Z2HwIU52LBpBBm",
-   "spotify_url": "https://open.spotify.com/episode/66mlLpx6Z2HwIU52LBpBBm",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Monday--November-23--2026-e3ss4n1",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/129945761/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F9b76f287-2924-8729-c3f4-439d48d115ef.m4a",
    "number": null
   },
@@ -1138,8 +1166,8 @@
    "duration": 1020,
    "description": "Deadline day in Los Angeles: public comment on the Sepulveda Transit Corridor's rail-yard sites closes today with Congresswoman Rivas's request for an extension to January still unanswered on Metro's own page. The king-tide Coastal Flood Advisory is in effect from 3 a.m., with forecast peaks of 8.2 to 8.6 feet Wednesday and Thursday; Chiquita Canyon's fight escalates to a demand for long-term relocation for every Val Verde and Castaic resident who wants to leave; the Council starts the special-election roadmap for Raman's District 4 seat; District 9 stays at 87 votes with a Wednesday 5 p.m. cure deadline and county certification planned for Friday; Pathway Home brings 26 people indoors in…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795429940578-286675ac6f338.jpg",
-   "url": "https://open.spotify.com/episode/1iQBDAXBAIOLzosrVhkzj7",
-   "spotify_url": "https://open.spotify.com/episode/1iQBDAXBAIOLzosrVhkzj7",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Monday--November-23--2026-e3ss4ik",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/129945620/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Ff60019d8-4f2f-a9ea-8169-98d8edb96f81.m4a",
    "number": null
   },
@@ -1166,8 +1194,8 @@
    "duration": 1306,
    "description": "San Francisco routed Minnesota 35-10 in Mexico City to stand alone atop the NFC at 9-1, behind three Brock Purdy touchdown passes. Buffalo kept the AFC's top seed at 9-1, Dallas hung 51 on Tennessee behind five Dak Prescott scores, and Detroit and Chicago both reached 8-2 to set up a Thanksgiving Day showdown for the NFC North.\n Scores: Bills 26, Dolphins 9 · Lions 31, Buccaneers 21 · Bears 21, Saints 13 · Cowboys 51, Titans 30 · Chiefs 34, Cardinals 7 · Panthers 35, Ravens 33 · Eagles 19, Steelers 16 · Jets 27, Chargers 24 · Giants 23, Jaguars 18 · Broncos 38, Raiders 24 · 49ers 35, Vikings 10.\n Chapters:\n (00:00) The 49ers own the night in Mexico City\n (05:12) The scoreboard: every Sunday…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795419856410-ecf1c24d1e726.jpg",
-   "url": "https://open.spotify.com/episode/2RA1W4j4j4xvpySZLjx95V",
-   "spotify_url": "https://open.spotify.com/episode/2RA1W4j4j4xvpySZLjx95V",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Purdy-Carves-Up-the-Vikings-in-Mexico-City-The-49ers-Take-the-NFCs-Top-Seed--Sunday--November-22--2026-e3srqbv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/129935167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F44eb9194-c0bc-164f-a70a-8538e671d016.m4a",
    "number": null
   },
@@ -1179,9 +1207,9 @@
    "date": "2026-11-23T04:42:13Z",
    "duration": 1351,
    "description": "Jamal Murray scored a season-high 45 points and Nikola Jokic posted his 202nd career triple-double (37 points, 18 rebounds, 11 assists) as Denver outlasted Chicago 151-145 in overtime — one of four triple-doubles across a seven-game Sunday. Golden State edged Boston 88-87 without Stephen Curry, and Miami won its seventh straight, 123-113 over Oklahoma City.\n Scores: Hawks 107, Pistons 97 · Heat 123, Thunder 113 · Wizards 116, Magic 96 · Nuggets 151, Bulls 145 (OT) · Mavericks 116, Jazz 114 · Knicks 113, Pacers 106 · Warriors 88, Celtics 87.\n The deep dive: The triple-double night — Murray and Jokic combine for 82 and a duo record in Chicago, Jokic closes to seven behind Westbrook's all-time…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795408885964-90107b6efae26.jpg",
-   "url": "https://open.spotify.com/episode/4SaJ5fewoWSzEMjfX1yAld",
-   "spotify_url": "https://open.spotify.com/episode/4SaJ5fewoWSzEMjfX1yAld",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795489313941-e938b9f894b9.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Sunday--November-22--2026-e3srpco",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/129934168/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Fdeaa20d8-faab-e208-03d9-151477e2f0d4.m4a",
    "number": null
   },
@@ -1263,7 +1291,7 @@
    "date": "2026-11-22T13:30:49Z",
    "duration": 636,
    "description": "Two straight 34-6 losses have stripped South Carolina's season down to one game. The Georgia postgame response is already in the feed from last night; this follow-up edition asks what the last two weeks actually mean at 6-5, and why the Palmetto Bowl at Clemson now decides how 2026 is remembered.\n Inside: the red-zone and second-half pattern behind both losses / Beamer's \"unacceptable\" verdict and apology / Bennett, Collier and Addison trending back for Clemson / the deep segment on LaNorris Sellers, Senior Day, and the draft decision hanging over 2027 / basketball: the No. 1 women roll at Providence and head to UConn, the 5-0 men face their Acrisure measuring stick / the full look ahead to…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795354180958-628ecadf569aa.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795489404982-0be6828ccde67.jpg",
    "url": "https://open.spotify.com/episode/4YUjAkuHk08zlRZYR6GvEG",
    "spotify_url": "https://open.spotify.com/episode/4YUjAkuHk08zlRZYR6GvEG",
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129898533/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2Fd11839cb-4bc2-3409-2cee-ecca758dfdb6.m4a",
@@ -1403,7 +1431,7 @@
    "date": "2026-11-22T04:43:26Z",
    "duration": 1262,
    "description": "Georgia 34, South Carolina 6 at Williams-Brice Stadium on Senior Night. For a half it was a genuine fight: the Gamecocks led twice on Malik Orsan field goals and stood in against the number one team in the country. Then Georgia's depth and precision accumulated, 28 unanswered points, and the distance between a bowl team and the standard of the conference showed itself. What the red-zone field goals really cost, how the third quarter broke in all three phases, what Georgia did to cage LaNorris Sellers in his return, and why the whole season now comes down to one Saturday at Clemson.\n Chapters:\n (00:00) The result: Georgia 34, South Carolina 6\n (01:38) The strong start, and field goals…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795322535412-4e3cd46dbd103.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795489360856-3bfc3275360e.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/A-Fight-for-a-Half--Then-the-Standard-Showed-South-Carolina-Is-6-5--Saturday--November-21--2026-e3sq818",
    "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/129883624/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F90d85185-86ce-1314-1019-d35e08ac051d.m4a",
@@ -9367,7 +9395,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -11457,7 +11485,7 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 30,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
@@ -11465,7 +11493,7 @@
    "spotify_name": "The LA Daily",
    "full_catalog": true,
    "episodes": 28,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "globalread": {
    "ok": true,
@@ -11473,7 +11501,7 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 26,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -11481,7 +11509,7 @@
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
    "episodes": 23,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "nyread": {
    "ok": true,
@@ -11505,7 +11533,7 @@
    "spotify_name": "The Tech Read",
    "full_catalog": true,
    "episodes": 22,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "optionsdesk": {
    "ok": true,
@@ -11544,7 +11572,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 22,
+   "episodes": 23,
    "spotify_matches": 1
   },
   "blitz": {
@@ -11552,7 +11580,7 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -11617,7 +11645,7 @@
    "spotify_name": "The Political Read",
    "full_catalog": true,
    "episodes": 18,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "cutandsew": {
    "ok": true,
