@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T12:45:52Z",
+ "generated_at": "2026-11-24T23:08:12Z",
  "shows": [
   {
    "key": "ccpod",
@@ -236,8 +236,8 @@
    "complete": true,
    "art": "assets/art/harlem.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47058065/47058065-1792877027478-e10b06672d3e3.jpg",
-   "latest": "2026-11-20T15:39:56Z",
-   "count": 9
+   "latest": "2026-11-24T15:35:03Z",
+   "count": 10
   },
   {
    "key": "designdigest",
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-23T13:52:42Z",
-   "count": 20
+   "latest": "2026-11-24T14:50:13Z",
+   "count": 21
   },
   {
    "key": "morningread",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-23T10:36:22Z",
-   "count": 30
+   "latest": "2026-11-24T10:38:22Z",
+   "count": 31
   },
   {
    "key": "ladaily",
@@ -343,8 +343,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-23T10:33:01Z",
-   "count": 28
+   "latest": "2026-11-24T10:40:55Z",
+   "count": 29
   },
   {
    "key": "globalread",
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-23T10:38:20Z",
-   "count": 26
+   "latest": "2026-11-24T10:42:43Z",
+   "count": 27
   },
   {
    "key": "marketread",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-23T11:46:23Z",
-   "count": 23
+   "latest": "2026-11-24T11:41:53Z",
+   "count": 24
   },
   {
    "key": "nyread",
@@ -478,8 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-23T12:21:07Z",
-   "count": 22
+   "latest": "2026-11-24T12:19:37Z",
+   "count": 23
   },
   {
    "key": "optionsdesk",
@@ -667,8 +667,8 @@
    "complete": true,
    "art": "assets/art/waiverwire.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47136213/47136213-1793740555236-187e98c457c75.jpg",
-   "latest": "2026-11-23T13:51:17Z",
-   "count": 10
+   "latest": "2026-11-24T14:01:13Z",
+   "count": 11
   },
   {
    "key": "celticsdaily",
@@ -721,8 +721,8 @@
    "complete": true,
    "art": "assets/art/coltsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107277/47107277-1793317816382-ff0cd43d46ee3.jpg",
-   "latest": "2026-11-20T04:50:46Z",
-   "count": 13
+   "latest": "2026-11-24T13:54:13Z",
+   "count": 14
   },
   {
    "key": "cfbdaily",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-23T12:32:31Z",
-   "count": 18
+   "latest": "2026-11-24T12:35:06Z",
+   "count": 19
   },
   {
    "key": "cutandsew",
@@ -990,6 +990,146 @@
  ],
  "episodes": [
   {
+   "id": "harlem:04ee3af8 d37e 4056 bd3a 82d20b1b503c",
+   "show": "harlem",
+   "kind": "episode",
+   "title": "#009 James Van Der Zee: The Photographer Who Gave Harlem Its Face",
+   "date": "2026-11-24T15:35:03Z",
+   "duration": 2281,
+   "description": "In December 1967 a researcher from the Metropolitan Museum walked into a crowded Harlem studio and asked an 81-year-old portrait photographer whether he happened to have any photographs from the 1920s. James Van Der Zee showed him boxes of them, tens of thousands, nearly all signed and dated in the negative. The art world called it a discovery. Harlem had been looking at itself in his mirror for fifty years.\n Van Der Zee arrived in Harlem in 1906 as a musician, a pianist and violinist who had earned his first camera at fourteen by selling perfume packets in Lenox, Massachusetts. In 1916 he chose photography over music and opened the studio that became the Guarantee and then the G.G.G. at…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1795534384662-a2fbb035f44d2.jpg",
+   "url": "https://open.spotify.com/episode/1Cmo2nARifnbld80zbUoI5",
+   "spotify_url": "https://open.spotify.com/episode/1Cmo2nARifnbld80zbUoI5",
+   "audio": "https://anchor.fm/s/119157f24/podcast/play/130028261/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2Fc8bfc46b-84db-c93f-05d4-45d007a90681.m4a",
+   "number": "9"
+  },
+  {
+   "id": "dominatedconvo:a37f41c9 f640 4051 a4f7 b2f7a1c6b2ce",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "Jensen Huang Is Un-Fired: Nvidia's Board Reverses Itself in Eleven Days | Tuesday, November 24, 2026",
+   "date": "2026-11-24T14:50:13Z",
+   "duration": 1252,
+   "description": "Today was a day of reversals. Nvidia's board reinstated Jensen Huang eleven days after his resignation, and the market and the feed ratified it in hours, while the investigation behind it continues. Disney set the date for Hulu's full fold into Disney+, a 2007 Feist song sits on top of TikTok through a FINNEAS cover, Hunger Games and GTA VI split one weekend and both won, Democrats hold 258 House seats, and the Clavicular court checkpoint arrives in a case this show has tracked since October.\n Timestamps\n0:00 A day of reversals: the synthesis\n1:59 Jensen Huang is back at Nvidia\n5:47 Disney swallows Hulu\n7:42 The weekend that held two giants: Hunger Games and GTA VI\n10:17 FINNEAS covers…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795531716550-f0cdb301665d3.jpg",
+   "url": "https://open.spotify.com/episode/69LlrEb4Hx1s3hPyo3EWJF",
+   "spotify_url": "https://open.spotify.com/episode/69LlrEb4Hx1s3hPyo3EWJF",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/130025872/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F74e6ded7-e53e-2770-4263-454126234d41.m4a",
+   "number": null
+  },
+  {
+   "id": "waiverwire:36d980f2 f40b 46f0 b579 5b100a4a75bc",
+   "show": "waiverwire",
+   "kind": "episode",
+   "title": "Antonio Williams Headlines the Week 12 Waiver Board, and Every Claim Is Due Before Wednesday | Tuesday, November 24, 2026",
+   "date": "2026-11-24T14:01:13Z",
+   "duration": 1276,
+   "description": "Week 12 Waiver Wire, the flagship edition: Washington's 22-20 walk-off win over Cincinnati closed Week 11 on Monday night, and rookie Antonio Williams — nine catches, 122 yards, both clutch grabs on the winning drive — headlines the board. Week 12 is Thanksgiving week: no byes, all 32 teams play, and the week kicks off Wednesday night, so every Packers-Rams claim is due before Wednesday.\n In this edition: Monday Night Football fallout first · the Week 12 shape — no byes and a Wednesday deadline · running back adds ranked (Rodriguez, Hill, Shipley, Kaleb Johnson) · wide receiver adds ranked (Williams, Douglas, Dike, Hurst, Bernard) · tight end and quarterback streamers · defense streamers ·…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1795528718632-3db3c17a472cf.jpg",
+   "url": "https://open.spotify.com/episode/6FyGtf25dNUG3EpFWJ3FKt",
+   "spotify_url": "https://open.spotify.com/episode/6FyGtf25dNUG3EpFWJ3FKt",
+   "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/130022865/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F916527b8-1719-34b0-8172-4dda42126242.m4a",
+   "number": null
+  },
+  {
+   "id": "coltsdaily:066faaab 70fd 4915 9835 b0e86a8d4a13",
+   "show": "coltsdaily",
+   "kind": "episode",
+   "title": "Jones Is Gone, Richardson Is Back: The Last Six Games Are an Audition, Indianapolis Is 3-8 | Tuesday, November 24, 2026",
+   "date": "2026-11-24T13:54:13Z",
+   "duration": 1202,
+   "description": "The Daniel Jones era is over in Indianapolis: released Friday, unclaimed on waivers Monday, eleven games into an $88 million contract. Shane Steichen calls the split mutually beneficial, Anthony Richardson starts Sunday against the Giants, and the final six games at 3-8 are now one long evaluation: of Richardson, of Steichen, and of what this offense even is.\n Segments: Jones released and unclaimed: the deadline mistake and the money | The QB room scramble, Monday workouts, McGowan out, Pierce not shut down, and the standings | Deep segment: Anthony Richardson's last audition | Look-ahead: the 6-3-1 Giants at Lucas Oil on Sunday\n Timestamps:\n0:13 Welcome: Jones is gone, Richardson is…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795528351045-7660d48274fb3.jpg",
+   "url": "https://open.spotify.com/episode/3siAKxI90T3f46By1JalSY",
+   "spotify_url": "https://open.spotify.com/episode/3siAKxI90T3f46By1JalSY",
+   "audio": "https://anchor.fm/s/119609694/podcast/play/130022511/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F0a8450c5-0a2f-b93b-be85-2004f27d387d.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:3031937e 37b2 45ed b090 ef302231ee62",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Tuesday, November 24, 2026",
+   "date": "2026-11-24T12:35:06Z",
+   "duration": 1266,
+   "description": "The White House sent Congress a 12-page anomalies request on Monday, loading the stopgap bill that must pass by December 11 with billions for Golden Dome, Navy submarines and NASA's Artemis program, plus a rewrite of the federal hemp definition — all inside a funding fight already carrying the Iran war and a $350 billion defense argument.\n Timestamps\n0:13 The anomalies list and the December 11 funding fight\n5:30 The judges race: Fahey, Gaiser and the blue slip\n8:20 A Senate panel investigates Vance's ties to the Vitol oil deal\n11:22 Nvidia: Huang reinstated, Schumer promises an investigation\n13:29 Rep. Jimmy Gomez to resign after the Ethics Committee report\n15:17 Alaska certifies early: the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795523684253-9e529b5c71846.jpg",
+   "url": "https://open.spotify.com/episode/5MYtm0fYPTzhKGiIPiWY34",
+   "spotify_url": "https://open.spotify.com/episode/5MYtm0fYPTzhKGiIPiWY34",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/130018640/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F32dd51e8-fb63-dafe-a94b-6770b983cedc.m4a",
+   "number": null
+  },
+  {
+   "id": "airead:d8d81442 fafc 4002 9a00 4d8f1c78546e",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Tuesday, November 24, 2026",
+   "date": "2026-11-24T12:19:37Z",
+   "duration": 1336,
+   "description": "Tuesday's edition leads with Nvidia's board unanimously reinstating Jensen Huang as CEO eleven days after his resignation, with input from senior US government officials and the investigation still open. Then: Anthropic's Claude Ship hands agents approval authority over code, GPT-6.2 Sol reaches ChatGPT's Chat tab as two older models get a December 23 retirement date, Z.ai's GLM-5.4 loops its own layers, DeepMind's agent teams find Lean-verified quantum algorithms, CrowdStrike agrees to buy Zscaler for $43.9 billion, Virginia and Oregon sue over Grok deepfakes, and bitcoin falls back below $60,000 as ETF outflows set a monthly record.\n • Nvidia reinstates Jensen Huang as CEO eleven days…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795522736501-21cc63cbb2e81.jpg",
+   "url": "https://open.spotify.com/episode/32POdGiH6LLoCO27ij7drH",
+   "spotify_url": "https://open.spotify.com/episode/32POdGiH6LLoCO27ij7drH",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/130017859/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F7f450565-72b3-85f5-e3f4-a75a61ead36f.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:e3ab8564 5b16 4726 9457 c19b660da9ce",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Tuesday, November 24, 2026",
+   "date": "2026-11-24T11:41:53Z",
+   "duration": 659,
+   "description": "One day after Nvidia's board reinstated Jensen Huang and the market answered with its biggest rally since April 2025 — the Nasdaq up 6.51%, Nvidia up 31.48% — Tuesday opens with futures fading, Asia catching the rally, Europe sitting it out, and Dell's earnings and Wednesday's PCE print still ahead. Plus the governance backlash, two mega-deals worth $85B, Monday night's beat-and-sell earnings, and a historic VIX crush.\n • Monday's historic rally and Tuesday's futures fade — https://www.morningstar.com/news/dow-jones/202611241684/nasdaq-futures-fall-as-questions-linger-over-ai-trade\n • Nvidia reinstates Jensen Huang; the governance backlash builds (DEVELOPING) —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795520449555-723b6c46dc049.jpg",
+   "url": "https://open.spotify.com/episode/01o1N58d5diQAwezk1mZAM",
+   "spotify_url": "https://open.spotify.com/episode/01o1N58d5diQAwezk1mZAM",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130016298/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F99717b72-8f72-ef31-eb3f-2f573a531207.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:a442d33e 6293 4d02 a02d 54833dfc5ae3",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Solomon Islands Drops China Security Pact for Australia Treaty | Tuesday, November 24, 2026",
+   "date": "2026-11-24T10:42:43Z",
+   "duration": 822,
+   "description": "The Solomon Islands tells Beijing it will let the China security pact lapse and sign with Australia instead; Nvidia reinstates Jensen Huang and the AI sell-off reverses in a day; Ukraine claims the Benghazi corvette strike; NATO argues over airspace violations and what Article 5 means; Puigdemont is cleared to return to Spain; Czech and Hungarian leaders reject the EU budget; Congo halts cobalt exports; the US discusses training Syrian soldiers; and Canada and Qatar sign an investment pact.\n Timestamps:\n 0:13 — Welcome to The Global Read\n 1:08 — Solomon Islands drops the China security pact for an Australia treaty\n 3:23 — Nvidia reinstates Jensen Huang; the sell-off reverses\n 6:23 — Ukraine…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795516840668-54fdb3b48c37f.jpg",
+   "url": "https://open.spotify.com/episode/2vQbJP2qzGMegAFs8fpX3K",
+   "spotify_url": "https://open.spotify.com/episode/2vQbJP2qzGMegAFs8fpX3K",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/130013895/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F22558cba-b971-ef93-0e90-a3792c737325.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:54aba54f 2dca 4550 ab7e 8de00b6b048e",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Tuesday, November 24, 2026",
+   "date": "2026-11-24T10:40:55Z",
+   "duration": 938,
+   "description": "The king tides peak Wednesday and Thursday morning at 8.1 to 8.4 feet, and the National Weather Service says a Coastal Flood Warning is likely today, with a High Surf Advisory for 6-to-11-foot waves; Chiquita Canyon extends free hotel stays through December 3rd as county department heads give the Board of Supervisors a full report today; Los Angeles joins New York, Chicago, Boston, and San Francisco in suing over the HUD mixed-status rule, which the city says could push more than 2,500 U.S.-citizen children in LA into homelessness; Sepulveda Transit Corridor comments closed on schedule with no extension announced, while Congresswoman Rivas presses Metro to reopen them until January; the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795516821728-8eb7a1cb51e04.jpg",
+   "url": "https://open.spotify.com/episode/6bbEEFdYydAiccchowksnO",
+   "spotify_url": "https://open.spotify.com/episode/6bbEEFdYydAiccchowksnO",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/130013915/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2Fb80e5298-2dc8-d3c4-18ee-3ed7864b9810.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:84a7f13a 361c 41e8 b8f4 1b776ecaee48",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Tuesday, November 24, 2026",
+   "date": "2026-11-24T10:38:22Z",
+   "duration": 827,
+   "description": "Eleven days after he resigned, Jensen Huang is Nvidia's chief executive again — reinstated by a unanimous board after the President called that board himself — and Wall Street answers with its best day since April 2025. Plus: Iran calls the blockade an act of military aggression while oil falls to a three-month low; the Eighth Circuit clears Iowa's lead azide detonation for Wednesday morning; Delta is still digging out as the Thanksgiving travel period opens; Florida's record crest is confirmed and moving north; and Congress returns to a December 11th funding cliff.\n Timestamps:\n 0:00 — Welcome to The Morning Read\n 1:35 — Nvidia: The Return of Jensen Huang\n 4:10 — The Markets: The Best Day…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795516641106-68bbebca44273.jpg",
+   "url": "https://open.spotify.com/episode/4iaOX2uNVORKkNeyeyc4de",
+   "spotify_url": "https://open.spotify.com/episode/4iaOX2uNVORKkNeyeyc4de",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/130013810/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2Fbac96e00-7934-d8ed-d1e9-359286b54ca5.m4a",
+   "number": null
+  },
+  {
    "id": "fastbreak:96c6c096 de7a 4861 a228 dc89313255de",
    "show": "fastbreak",
    "kind": "episode",
@@ -1026,8 +1166,8 @@
    "duration": 1354,
    "description": "The internet did not fragment this weekend. It concentrated. Grand Theft Auto VI finished its first full weekend after the biggest entertainment launch in history, The Hunger Games: Sunrise on the Reaping tripled its predecessor's opening, and everything else, the sounds, the formats, the soft launches, orbited those two fictional worlds. Plus: what the GTA numbers actually say, Reddit's \"ordinary day at the singularity,\" the prince treatment debate, and what is bubbling up into Thanksgiving week.\n Timestamps\n(00:00) The franchise weekend: the monoculture snaps back\n(03:16) What the GTA VI numbers actually say\n(05:57) Hunger Games and the forecasters' miss\n(09:36) Platform rundown: X,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795441860511-238c159c85c2c.jpg",
-   "url": "https://open.spotify.com/episode/72E1UPIhuluGfyNytfqCxA",
-   "spotify_url": "https://open.spotify.com/episode/72E1UPIhuluGfyNytfqCxA",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/GTA-VI-and-Hunger-Games-Split-the-Entire-Internet-for-One-Weekend--Monday--November-23--2026-e3ssd85",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/129954501/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F035a2574-ad1a-64f6-c45b-bfb872f51d3c.m4a",
    "number": null
   },
@@ -1040,8 +1180,8 @@
    "duration": 1380,
    "description": "Week 11 Studs, Duds & News: the Monday recap of the weekend just played, Thursday November 19 through Sunday November 22. Dak Prescott's five-touchdown day powered Dallas's 51 points, Jonah Coleman took Denver's backfield with three rushing scores, Emmett Johnson did it again for Kansas City, and Mike Evans returned in Mexico City with 109 yards and a touchdown. On the other side, Indianapolis, Miami and Arizona essentially did not show up — and their starters paid for it.\n In this edition: the week in one pass · Studs — Prescott, Mahomes and Kelce, Purdy, Kittle and Evans, Coleman, Hubbard, and the rest of the board · Duds — the Colts, Dolphins and Cardinals offenses · the injury and news…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47136213/47136213-1795441822072-d6aad5ca59c5.jpg",
-   "url": "https://open.spotify.com/episode/27BEmUwAdz4eL1YDwcEKsH",
-   "spotify_url": "https://open.spotify.com/episode/27BEmUwAdz4eL1YDwcEKsH",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2051/episodes/Prescotts-Five-Touchdowns--Colemans-Three--and-Evans-Is-Back-Week-11-Studs--Duds--News--Monday--November-23--2026-e3ssd83",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1198cbdb4/podcast/play/129954499/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2Fda90e2b8-fdcf-60b0-2967-4ba1a33be2f3.m4a",
    "number": null
   },
@@ -1221,7 +1361,7 @@
    "date": "2026-11-23T04:32:18Z",
    "duration": 924,
    "description": "The Warriors, without Stephen Curry, beat the Celtics 88-87 at Chase Center. Boston led by 11 and by six entering the fourth, then scored 12 points in the quarter. Jayson Tatum had 27 points, 10 rebounds and 6 assists and was a plus-11 in a one-point loss. It is Boston's fourth straight defeat after an 11-2 start, the last three after double-digit leads. Boston is 11-6.\n The recap: how the game turned, the final minute, Tatum's night, the rebounding gap, and what a four-game skid means with Washington next on Tuesday.\n Chapters:\n (00:00) Warriors 88, Celtics 87: the fourth straight loss\n (02:59) The pattern: three blown leads in a row\n (05:53) The rebounding gap: 19 offensive rebounds\n…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795408259511-6127dd8c92ab9.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795482574430-0ff49563c4f84.jpg",
    "url": "https://open.spotify.com/episode/0BcRazFlEsRGwLEfuseZId",
    "spotify_url": "https://open.spotify.com/episode/0BcRazFlEsRGwLEfuseZId",
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129933841/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F2c491089-1e39-c92f-5d31-07d9c5433471.m4a",
@@ -1642,8 +1782,8 @@
    "duration": 2621,
    "description": "Her largest sculpture stood sixteen feet tall at the 1939 World's Fair, and when the fair closed it was demolished, because Augusta Savage could not afford bronze, shipping, or storage. She had already answered that ending in 1935: \"My monument will be in their work,\" she said of her students.\n Savage arrived in New York in 1921 with $4.60, finished Cooper Union's four-year course in three, and sculpted Du Bois and Garvey. In 1923 a committee of eminent American men rescinded the Fontainebleau scholarship she had won, because she was Black. Six years later her bust of her nephew, Gamin, won her Paris outright.\n This episode follows her from the red clay of Green Cove Springs through the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47058065/47058065-1795189159861-35e102ea8c077.jpg",
-   "url": "https://open.spotify.com/episode/4QqInJpxd54sKoMeUDSTa0",
-   "spotify_url": "https://open.spotify.com/episode/4QqInJpxd54sKoMeUDSTa0",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms201/episodes/008-Augusta-Savage-The-Sculptor-Whose-Monument-Was-Her-Students-e3so38d",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119157f24/podcast/play/129813197/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F0670beaf-4ee0-bdae-ef55-0fa5136b31fe.m4a",
    "number": "8"
   },
@@ -1880,8 +2020,8 @@
    "duration": 1186,
    "description": "The Texans beat the Colts 26-3 on Thursday Night Football. Indianapolis led 3-0 on the opening drive, then Houston scored 26 unanswered points: a 43-yard C.J. Stroud touchdown to Nico Collins, a safety from Will Anderson Jr., and a first career touchdown for rookie tight end Marlin Klein. Daniel Jones went 12 of 27 for 144 yards and was benched for Anthony Richardson for the second time in three games. Jonathan Taylor was held to 21 yards on 11 carries. The Colts fall to 3-8 heading into the mini-bye.\n Segments: how the lead evaporated; Taylor's night; Stroud and the Houston attack; the injury-ravaged line; the quarterback question; the AFC South picture; and the look-ahead to the Giants on…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795150224278-4b41ff3275131.jpg",
-   "url": "https://open.spotify.com/episode/5mvpETmHbXrnyi50YD3UZ7",
-   "spotify_url": "https://open.spotify.com/episode/5mvpETmHbXrnyi50YD3UZ7",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2060/episodes/Benched-Again-Jones-Pulled-as-Texans-Roll-26-3--Indianapolis-Is-3-8--Thursday--November-19--2026-e3sndap",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609694/podcast/play/129790745/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F1f00fd2f-fc74-795b-5da1-9ee20678c532.m4a",
    "number": null
   },
@@ -7080,20 +7220,6 @@
    "number": "226"
   },
   {
-   "id": "morningread:b4f49cdf 07f8 45e2 a4a1 f2ec03c69c54",
-   "show": "morningread",
-   "kind": "episode",
-   "title": "Wednesday, October 21, 2026",
-   "date": "2026-10-21T16:17:47Z",
-   "duration": 1186,
-   "description": "France's protest wave reaches the town halls, with the Limoges city hall burned overnight and fresh nationwide protests called for Saturday. Plus: Houthi attacks on Saudi airports, flagged as developing; Brazil four days from a runoff that's still a statistical tie; Israel's first polls since Gantz walked; the Congo wire under White House inquiry; Trump's $400 million midterm commitment; Banijay's CEO tells the streamers to give producers their IP back; and Japan launches a spacecraft to a Martian moon.\n Stories: France and the town halls · Saudi Arabia and Yemen · Brazil's runoff · Israel's polls · The Congo wire (developing) · The midterms · The business of entertainment · Japan's Phobos…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793296304380-8d1c9e04afcbd.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Wednesday--October-21--2026-e3qs0br",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/118e6e448/podcast/play/127844155/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-21%2Fdafb0116-c673-0032-a9dd-f8ada13abfc3.m4a",
-   "number": null
-  },
-  {
    "id": "polymath:c5150759 fd6b 4373 86fa 2c45bc1ec5f6",
    "show": "polymath",
    "kind": "episode",
@@ -9395,7 +9521,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -11460,7 +11586,7 @@
    "feed": "https://anchor.fm/s/119157f24/podcast/rss",
    "spotify_name": "Once Upon a Time in Harlem",
    "full_catalog": true,
-   "episodes": 9,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "designdigest": {
@@ -11476,7 +11602,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 20,
+   "episodes": 21,
    "spotify_matches": 1
   },
   "morningread": {
@@ -11484,32 +11610,32 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 30,
-   "spotify_matches": 0
+   "episodes": 31,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 28,
-   "spotify_matches": 0
+   "episodes": 29,
+   "spotify_matches": 1
   },
   "globalread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 26,
-   "spotify_matches": 0
+   "episodes": 27,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 23,
-   "spotify_matches": 0
+   "episodes": 24,
+   "spotify_matches": 1
   },
   "nyread": {
    "ok": true,
@@ -11532,8 +11658,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 22,
-   "spotify_matches": 0
+   "episodes": 23,
+   "spotify_matches": 1
   },
   "optionsdesk": {
    "ok": true,
@@ -11588,7 +11714,7 @@
    "feed": "https://anchor.fm/s/1198cbdb4/podcast/rss",
    "spotify_name": "The Waiver Wire",
    "full_catalog": true,
-   "episodes": 10,
+   "episodes": 11,
    "spotify_matches": 1
   },
   "celticsdaily": {
@@ -11604,7 +11730,7 @@
    "feed": "https://anchor.fm/s/119609694/podcast/rss",
    "spotify_name": "Colts Daily",
    "full_catalog": true,
-   "episodes": 13,
+   "episodes": 14,
    "spotify_matches": 1
   },
   "cfbdaily": {
@@ -11644,8 +11770,8 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 18,
-   "spotify_matches": 0
+   "episodes": 19,
+   "spotify_matches": 1
   },
   "cutandsew": {
    "ok": true,
