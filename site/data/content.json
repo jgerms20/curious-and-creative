@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T23:08:12Z",
+ "generated_at": "2026-11-25T05:31:20Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-23T08:41:16Z",
-   "count": 282
+   "latest": "2026-11-25T01:11:19Z",
+   "count": 283
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-24T10:42:43Z",
-   "count": 27
+   "latest": "2026-11-23T10:38:20Z",
+   "count": 26
   },
   {
    "key": "marketread",
@@ -990,6 +990,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:c53c354b 170f 4fa0 be1a 2cdfbf9b75bc",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#284 Sleep: Why the Eight-Hour Rule Came From a Factory, Not a Brain",
+   "date": "2026-11-25T01:11:19Z",
+   "duration": 3365,
+   "description": "Sleep is the strangest appointment you keep: a third of your life spent paralyzed and hallucinating, and science still cannot fully say what it is. This is a history and a census of the night: how humans slept in two shifts before electricity, how gaslight, Edison, and the factory clock squeezed the night into one block and sold eight hours as biology when it began as a labor slogan, and where sleep stands now, when the data says we may not be sleeping less at all while an industry sells the night back to us.\n Follow along for the next deep dive.\n Stay curious.\n Chapters:\n (00:00) The State We Still Can't Explain\n (03:09) The Architecture of a Night\n (09:57) Why Six Hours Is Not…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795569004441-3a8034e9b7573.jpg",
+   "url": "https://open.spotify.com/episode/0G6XqqogxjmXa1QuMqm7xo",
+   "spotify_url": "https://open.spotify.com/episode/0G6XqqogxjmXa1QuMqm7xo",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130057567/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fd720a60b-601c-fe87-346e-fef1e7072134.m4a",
+   "number": "284"
+  },
+  {
    "id": "harlem:04ee3af8 d37e 4056 bd3a 82d20b1b503c",
    "show": "harlem",
    "kind": "episode",
@@ -1039,7 +1053,7 @@
    "date": "2026-11-24T13:54:13Z",
    "duration": 1202,
    "description": "The Daniel Jones era is over in Indianapolis: released Friday, unclaimed on waivers Monday, eleven games into an $88 million contract. Shane Steichen calls the split mutually beneficial, Anthony Richardson starts Sunday against the Giants, and the final six games at 3-8 are now one long evaluation: of Richardson, of Steichen, and of what this offense even is.\n Segments: Jones released and unclaimed: the deadline mistake and the money | The QB room scramble, Monday workouts, McGowan out, Pierce not shut down, and the standings | Deep segment: Anthony Richardson's last audition | Look-ahead: the 6-3-1 Giants at Lucas Oil on Sunday\n Timestamps:\n0:13 Welcome: Jones is gone, Richardson is…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795528351045-7660d48274fb3.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107277/47107277-1795566418941-6706b46a0d82f.jpg",
    "url": "https://open.spotify.com/episode/3siAKxI90T3f46By1JalSY",
    "spotify_url": "https://open.spotify.com/episode/3siAKxI90T3f46By1JalSY",
    "audio": "https://anchor.fm/s/119609694/podcast/play/130022511/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F0a8450c5-0a2f-b93b-be85-2004f27d387d.m4a",
@@ -1081,24 +1095,10 @@
    "date": "2026-11-24T11:41:53Z",
    "duration": 659,
    "description": "One day after Nvidia's board reinstated Jensen Huang and the market answered with its biggest rally since April 2025 — the Nasdaq up 6.51%, Nvidia up 31.48% — Tuesday opens with futures fading, Asia catching the rally, Europe sitting it out, and Dell's earnings and Wednesday's PCE print still ahead. Plus the governance backlash, two mega-deals worth $85B, Monday night's beat-and-sell earnings, and a historic VIX crush.\n • Monday's historic rally and Tuesday's futures fade — https://www.morningstar.com/news/dow-jones/202611241684/nasdaq-futures-fall-as-questions-linger-over-ai-trade\n • Nvidia reinstates Jensen Huang; the governance backlash builds (DEVELOPING) —…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795520449555-723b6c46dc049.jpg",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795566349838-79e5f42eacdce.jpg",
    "url": "https://open.spotify.com/episode/01o1N58d5diQAwezk1mZAM",
    "spotify_url": "https://open.spotify.com/episode/01o1N58d5diQAwezk1mZAM",
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130016298/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F99717b72-8f72-ef31-eb3f-2f573a531207.m4a",
-   "number": null
-  },
-  {
-   "id": "globalread:a442d33e 6293 4d02 a02d 54833dfc5ae3",
-   "show": "globalread",
-   "kind": "episode",
-   "title": "Solomon Islands Drops China Security Pact for Australia Treaty | Tuesday, November 24, 2026",
-   "date": "2026-11-24T10:42:43Z",
-   "duration": 822,
-   "description": "The Solomon Islands tells Beijing it will let the China security pact lapse and sign with Australia instead; Nvidia reinstates Jensen Huang and the AI sell-off reverses in a day; Ukraine claims the Benghazi corvette strike; NATO argues over airspace violations and what Article 5 means; Puigdemont is cleared to return to Spain; Czech and Hungarian leaders reject the EU budget; Congo halts cobalt exports; the US discusses training Syrian soldiers; and Canada and Qatar sign an investment pact.\n Timestamps:\n 0:13 — Welcome to The Global Read\n 1:08 — Solomon Islands drops the China security pact for an Australia treaty\n 3:23 — Nvidia reinstates Jensen Huang; the sell-off reverses\n 6:23 — Ukraine…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795516840668-54fdb3b48c37f.jpg",
-   "url": "https://open.spotify.com/episode/2vQbJP2qzGMegAFs8fpX3K",
-   "spotify_url": "https://open.spotify.com/episode/2vQbJP2qzGMegAFs8fpX3K",
-   "audio": "https://anchor.fm/s/1195d888c/podcast/play/130013895/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F22558cba-b971-ef93-0e90-a3792c737325.m4a",
    "number": null
   },
   {
@@ -1320,8 +1320,8 @@
    "duration": 3489,
    "description": "Gianni De Gennaro, Italy's national police chief from 2000 to 2007, was found dead at his country home in Tuscany on 21 November 2026. Authorities treated the death as an apparent suicide. He was 78, and days earlier Caltanissetta prosecutors had sought his house arrest in a new inquiry into the 1992 Borsellino bombing. He had denied wrongdoing.\n De Gennaro rose fighting Cosa Nostra alongside Giovanni Falcone. He helped oversee the 1984 extradition from Brazil of pentito Tommaso Buscetta, later headed the Anti-Mafia Investigative Directorate, coordinated intelligence, and chaired Finmeccanica, later Leonardo, from 2013 to 2020.\n On 19 July 1992, 57 days after Falcone was killed at Capaci, a…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795423221948-6537b1bda00b3.jpg",
-   "url": "https://open.spotify.com/episode/4NUFTuNAcKM2mm8il0ijtd",
-   "spotify_url": "https://open.spotify.com/episode/4NUFTuNAcKM2mm8il0ijtd",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/283-Gianni-De-Gennaro-How-a-Missing-Red-Diary-Followed-Italys-Police-Chief-to-the-End-e3ss07t",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/129941181/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F2164f018-dc14-a759-4a5e-3fbb8bba6729.m4a",
    "number": "283"
   },
@@ -1362,8 +1362,8 @@
    "duration": 924,
    "description": "The Warriors, without Stephen Curry, beat the Celtics 88-87 at Chase Center. Boston led by 11 and by six entering the fourth, then scored 12 points in the quarter. Jayson Tatum had 27 points, 10 rebounds and 6 assists and was a plus-11 in a one-point loss. It is Boston's fourth straight defeat after an 11-2 start, the last three after double-digit leads. Boston is 11-6.\n The recap: how the game turned, the final minute, Tatum's night, the rebounding gap, and what a four-game skid means with Washington next on Tuesday.\n Chapters:\n (00:00) Warriors 88, Celtics 87: the fourth straight loss\n (02:59) The pattern: three blown leads in a row\n (05:53) The rebounding gap: 19 offensive rebounds\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795482574430-0ff49563c4f84.jpg",
-   "url": "https://open.spotify.com/episode/0BcRazFlEsRGwLEfuseZId",
-   "spotify_url": "https://open.spotify.com/episode/0BcRazFlEsRGwLEfuseZId",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Warriors-88--Celtics-87-Another-Double-Digit-Lead-Gone--Boston-Is-11-6--Sunday--November-22--2026-e3srp2h",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/129933841/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F2c491089-1e39-c92f-5d31-07d9c5433471.m4a",
    "number": null
   },
@@ -11533,7 +11533,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 282,
+   "episodes": 283,
    "spotify_matches": 1
   },
   "approachable": {
@@ -11626,8 +11626,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 27,
-   "spotify_matches": 1
+   "episodes": 26,
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
@@ -11723,7 +11723,7 @@
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
    "episodes": 14,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "coltsdaily": {
    "ok": true,
