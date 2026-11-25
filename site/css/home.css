@@ -191,3 +191,10 @@
 
 .verts, .vert { min-width: 0; max-width: 100%; }
 .vert__cards { max-width: 100%; min-width: 0; }
+
+/* capability strip: the six podcast services in one line */
+.capstrip { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; padding: .7rem 0; border-block: 1px solid var(--line-strong); font-size: .88rem; font-weight: 750; }
+.capstrip a { padding: .3em .75em; border-radius: var(--pill); border: 1px solid var(--line); }
+.capstrip a:hover { border-color: currentColor; }
+.capstrip .capstrip__k { border: 0; padding-left: 0; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; }
+@media (max-width: 600px) { .capstrip { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .capstrip a { white-space: nowrap; } }

@@ -50,6 +50,7 @@
     { label: "Strategy", full: "Curious & Creative Strategy", group: "cc", href: "pages/consultancy.html", nav: true, words: "strategy consulting consultancy research data polling surveys forecasting forecast trends audience campaign brand strategy cultural strategy culture audience content systems podcast strategy ai workflow ai enablement training gen alpha intelligence lab research cultural opportunity sprint ai workflow audit podcast strategy sprint fractional creative strategy" },
     { label: "Our Standards", href: "pages/manifesto.html", nav: true, words: "our standards manifesto mission ai-native ai native taste standards accuracy journalism principles corrections request a show ideas" },
     { label: "Contact", href: "pages/contact.html", nav: true, words: "contact email inquiry hello hire work with us pitch guest press request a show" },
+    { label: "Podcast Services", href: "pages/podcast-services.html", words: "podcast services start a podcast podcast production company show development end-to-end production video production strategy marketing audience growth production management training consulting workshops partner hire" },
     { label: "Shop", href: "pages/shop.html", words: "shop store buy order prints art artwork janel joshua" },
     { label: "Archive", href: "pages/archive.html", words: "archive every episode all back catalog history" },
     { label: "Videos", href: "pages/videos.html", words: "videos youtube watch approachable ai video episodes" },
@@ -71,7 +72,7 @@
 
   /* ---------------- chrome: header / drawer / search / footer ---------------- */
   const navLink = (href, label) => {
-    const here = page && (href === `pages/${page}.html` || (page === "index" && href === "index.html"));
+    const here = page && (href === `pages/${page}.html` || (page === "index" && href === "index.html") || (page === "podcast-services" && href === "pages/studio.html"));
     return `<a href="${url(href)}"${here ? ' aria-current="page"' : ""}>${label}</a>`;
   };
   // a nav item with a dropdown panel (filled once the data loads); opens on hover or keyboard focus
