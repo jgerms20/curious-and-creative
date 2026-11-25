@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T07:07:33Z",
+ "generated_at": "2026-11-25T07:07:09Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-23T08:41:16Z",
-   "count": 282
+   "latest": "2026-11-25T07:02:13Z",
+   "count": 284
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -748,8 +748,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-22T08:03:39Z",
-   "count": 19
+   "latest": "2026-11-25T05:38:15Z",
+   "count": 20
   },
   {
    "key": "cbbdaily",
@@ -990,6 +990,20 @@
  ],
  "episodes": [
   {
+   "id": "polymath:9d1483f1 5b21 4532 8b10 cee8978d80df",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#285 Red Bull: Why Selling the Image Beat Selling the Drink Itself",
+   "date": "2026-11-25T07:02:13Z",
+   "duration": 2270,
+   "description": "In 2012, Felix Baumgartner stepped out of a capsule 24 miles above the earth, and every rivet of it was paid for by an 8.4-ounce can. This episode traces how: a Thai pharmaceutical tonic built for truck drivers, Krating Daeng, meets an Austrian marketing executive with jet lag in 1982, and becomes Red Bull, a company that sells an image and lets a drink fund it.\n Then the mirror. Coca-Cola began as a tonic too, a century earlier, and its inventor sold his rights for $1,750 and died broke, while Chaleo Yoovidhya kept his bloc and died one of Thailand's richest men. Same DNA, opposite machines. The deal was the difference.\n Follow along for the next deep dive.\n Stay curious.\n Chapters:\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795590096117-2391db98f61a3.jpg",
+   "url": "https://open.spotify.com/episode/52I1qFRfh9biyEqI7KwLhU",
+   "spotify_url": "https://open.spotify.com/episode/52I1qFRfh9biyEqI7KwLhU",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130074183/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F6f676306-b60d-ac5d-e8bd-d4c77c492e98.m4a",
+   "number": "285"
+  },
+  {
    "id": "fastbreak:e35d7d7b 1c6f 47ab 904b 010a607b5567",
    "show": "fastbreak",
    "kind": "episode",
@@ -1001,6 +1015,20 @@
    "url": "https://open.spotify.com/episode/72m7rI6z9ii1XY7JUAH03i",
    "spotify_url": "https://open.spotify.com/episode/72m7rI6z9ii1XY7JUAH03i",
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/130072775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Feb26ddcd-ec7d-b56a-532e-bdabe551ab42.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:5c75d635 52a7 4988 ab1c bbdef84d4b04",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Tennessee Finally Passes Alabama, and the Big Ten Falls Out of the Top Five | Tuesday, November 24, 2026",
+   "date": "2026-11-25T05:38:15Z",
+   "duration": 923,
+   "description": "The fourth College Football Playoff rankings are out: Tennessee finally passes Alabama on the strength of its head-to-head win, Texas and Notre Dame move into the top four, Indiana falls six places to No. 14, and the Big Ten is shut out of the top five. We break down what the committee is signaling, the playoff picture and the bubble, including the Boise State problem, the Awards Watch with Jeremiah Smith in control of the Heisman race, the coaching carousel, and our predictions for rivalry week and next Tuesday's board.\n Segments: The new rankings — Synthesis: what the committee is telling us — The playoff picture: in, out, and the bubble — What Saturday changed — South Carolina and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795585060836-05e407acb9a0e.jpg",
+   "url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
+   "spotify_url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/130070278/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F476e2199-9ead-612d-0c28-75b43f34f078.m4a",
    "number": null
   },
   {
@@ -1016,6 +1044,20 @@
    "spotify_url": "https://open.spotify.com/episode/3ZMpTSblYxX865nrghazvm",
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/130067167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F79d69c96-e955-9d41-c709-7e7d3c9c175d.m4a",
    "number": null
+  },
+  {
+   "id": "polymath:c53c354b 170f 4fa0 be1a 2cdfbf9b75bc",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#284 Sleep: Why the Eight-Hour Rule Came From a Factory, Not a Brain",
+   "date": "2026-11-25T01:11:19Z",
+   "duration": 3365,
+   "description": "Sleep is the strangest appointment you keep: a third of your life spent paralyzed and hallucinating, and science still cannot fully say what it is. This is a history and a census of the night: how humans slept in two shifts before electricity, how gaslight, Edison, and the factory clock squeezed the night into one block and sold eight hours as biology when it began as a labor slogan, and where sleep stands now, when the data says we may not be sleeping less at all while an industry sells the night back to us.\n Follow along for the next deep dive.\n Stay curious.\n Chapters:\n (00:00) The State We Still Can't Explain\n (03:09) The Architecture of a Night\n (09:57) Why Six Hours Is Not…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795569004441-3a8034e9b7573.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/284-Sleep-Why-the-Eight-Hour-Rule-Came-From-a-Factory--Not-a-Brain-e3svhsv",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130057567/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fd720a60b-601c-fe87-346e-fef1e7072134.m4a",
+   "number": "284"
   },
   {
    "id": "harlem:04ee3af8 d37e 4056 bd3a 82d20b1b503c",
@@ -2327,7 +2369,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -11547,8 +11589,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 282,
-   "spotify_matches": 0
+   "episodes": 284,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -11752,8 +11794,8 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 19,
-   "spotify_matches": 0
+   "episodes": 20,
+   "spotify_matches": 1
   },
   "cbbdaily": {
    "ok": true,
