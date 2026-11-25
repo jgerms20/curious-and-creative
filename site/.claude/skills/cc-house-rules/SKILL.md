@@ -22,6 +22,7 @@ Joshua shouldn't have to re-explain these. If a request conflicts with a rule, a
 - **SCAiL is removed** from the footer and About.
 - Photography is **Joshua German Photography, @joshuagermanphoto** (replaces @viewsbygerm).
 - Every show card shows art: shows without a cover get the generated `CC.placeholderArt` cover (category color, show name).
+- **Podcast Services** (`pages/podcast-services.html`, Nov 25): partner-facing page inside Productions (not in the top nav; linked from Productions, the homepage capability strip, footer). Claim: "Better questions, on air." Stats only from verified data: "25+ shows", "280+ episodes of The Eclectic Polymath Podcast", "daily and weekly, produced fully in-house". Janel is not named on this page; Joshua may be.
 - Do not edit show entries in `data/shows.json`; Umar's data update lands separately.
 
 ## Who's who
