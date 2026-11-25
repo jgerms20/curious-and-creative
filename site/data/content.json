@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T05:31:20Z",
+ "generated_at": "2026-11-25T07:07:09Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-25T01:11:19Z",
-   "count": 283
+   "latest": "2026-11-25T07:02:13Z",
+   "count": 284
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-23T10:38:20Z",
-   "count": 26
+   "latest": "2026-11-24T10:42:43Z",
+   "count": 27
   },
   {
    "key": "marketread",
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-24T06:45:23Z",
-   "count": 23
+   "latest": "2026-11-25T06:29:18Z",
+   "count": 24
   },
   {
    "key": "blitz",
@@ -694,8 +694,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-23T04:32:18Z",
-   "count": 14
+   "latest": "2026-11-25T04:36:36Z",
+   "count": 15
   },
   {
    "key": "coltsdaily",
@@ -748,8 +748,8 @@
    "complete": true,
    "art": "assets/art/cfbdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107287/47107287-1793485331322-9f8d5fde73df9.jpg",
-   "latest": "2026-11-22T08:03:39Z",
-   "count": 19
+   "latest": "2026-11-25T05:38:15Z",
+   "count": 20
   },
   {
    "key": "cbbdaily",
@@ -990,6 +990,62 @@
  ],
  "episodes": [
   {
+   "id": "polymath:9d1483f1 5b21 4532 8b10 cee8978d80df",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#285 Red Bull: Why Selling the Image Beat Selling the Drink Itself",
+   "date": "2026-11-25T07:02:13Z",
+   "duration": 2270,
+   "description": "In 2012, Felix Baumgartner stepped out of a capsule 24 miles above the earth, and every rivet of it was paid for by an 8.4-ounce can. This episode traces how: a Thai pharmaceutical tonic built for truck drivers, Krating Daeng, meets an Austrian marketing executive with jet lag in 1982, and becomes Red Bull, a company that sells an image and lets a drink fund it.\n Then the mirror. Coca-Cola began as a tonic too, a century earlier, and its inventor sold his rights for $1,750 and died broke, while Chaleo Yoovidhya kept his bloc and died one of Thailand's richest men. Same DNA, opposite machines. The deal was the difference.\n Follow along for the next deep dive.\n Stay curious.\n Chapters:\n…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795590096117-2391db98f61a3.jpg",
+   "url": "https://open.spotify.com/episode/52I1qFRfh9biyEqI7KwLhU",
+   "spotify_url": "https://open.spotify.com/episode/52I1qFRfh9biyEqI7KwLhU",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130074183/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F6f676306-b60d-ac5d-e8bd-d4c77c492e98.m4a",
+   "number": "285"
+  },
+  {
+   "id": "fastbreak:e35d7d7b 1c6f 47ab 904b 010a607b5567",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Tuesday, November 24, 2026",
+   "date": "2026-11-25T06:29:18Z",
+   "duration": 1113,
+   "description": "A three-game NBA Cup night with three statements: Jayson Tatum scored 41 as Boston built a 34-point lead, nearly gave it all back, and beat Washington 131-116 to snap a four-game losing streak; Detroit won at Orlando 104-86 without Cade Cunningham, on defense and depth; and Cooper Flagg's 24 points and 12 assists led Dallas to a 120-101 win at Denver.\n Scores: Pistons 104, Magic 86 · Celtics 131, Wizards 116 · Mavericks 120, Nuggets 101.\n The deep dive: Cup night clarity — Boston and Dallas move to 3-0 in their groups, Detroit blocks Orlando from clinching East Group A, and the knockout picture heading into Friday's final group night.\n Chapters:\n (00:00) The Headline: Tatum's 41 and a Lead…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795588136862-a29d67d1cc8b7.jpg",
+   "url": "https://open.spotify.com/episode/72m7rI6z9ii1XY7JUAH03i",
+   "spotify_url": "https://open.spotify.com/episode/72m7rI6z9ii1XY7JUAH03i",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/130072775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Feb26ddcd-ec7d-b56a-532e-bdabe551ab42.m4a",
+   "number": null
+  },
+  {
+   "id": "cfbdaily:5c75d635 52a7 4988 ab1c bbdef84d4b04",
+   "show": "cfbdaily",
+   "kind": "episode",
+   "title": "Tennessee Finally Passes Alabama, and the Big Ten Falls Out of the Top Five | Tuesday, November 24, 2026",
+   "date": "2026-11-25T05:38:15Z",
+   "duration": 923,
+   "description": "The fourth College Football Playoff rankings are out: Tennessee finally passes Alabama on the strength of its head-to-head win, Texas and Notre Dame move into the top four, Indiana falls six places to No. 14, and the Big Ten is shut out of the top five. We break down what the committee is signaling, the playoff picture and the bubble, including the Boise State problem, the Awards Watch with Jeremiah Smith in control of the Heisman race, the coaching carousel, and our predictions for rivalry week and next Tuesday's board.\n Segments: The new rankings — Synthesis: what the committee is telling us — The playoff picture: in, out, and the bubble — What Saturday changed — South Carolina and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795585060836-05e407acb9a0e.jpg",
+   "url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
+   "spotify_url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
+   "audio": "https://anchor.fm/s/119609a7c/podcast/play/130070278/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F476e2199-9ead-612d-0c28-75b43f34f078.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:76dc92bd 2b35 4cfa a2ae abd190c3abbb",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Celtics 131, Wizards 116: Tatum's 41 Ends the Skid After a 34-Point Lead Nearly Vanished, Boston Is 12-6 | Tuesday, November 24, 2026",
+   "date": "2026-11-25T04:36:36Z",
+   "duration": 927,
+   "description": "Boston snapped its four-game losing streak in Washington, 131-116, on a night that was really two different games: an 80-point first half with a 46-point second quarter and a 34-point lead, then a second half Washington won 67-51, cutting it to five points late before Baylor Scheierman's two threes closed the door. Jayson Tatum scored a season-high 41, Paul George added 28 with a game-best plus-34, and Neemias Queta had 21 before foul trouble changed the game. Boston is 12-6, second in the East, and Friday's home game against Atlanta now clinches NBA Cup Group C with a win.\n Segments: the two stories of this game, the 46-point second quarter, Tatum's statement night, George and Queta, the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795581318725-314d94a8d6fa3.jpg",
+   "url": "https://open.spotify.com/episode/3ZMpTSblYxX865nrghazvm",
+   "spotify_url": "https://open.spotify.com/episode/3ZMpTSblYxX865nrghazvm",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/130067167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F79d69c96-e955-9d41-c709-7e7d3c9c175d.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:c53c354b 170f 4fa0 be1a 2cdfbf9b75bc",
    "show": "polymath",
    "kind": "episode",
@@ -998,8 +1054,8 @@
    "duration": 3365,
    "description": "Sleep is the strangest appointment you keep: a third of your life spent paralyzed and hallucinating, and science still cannot fully say what it is. This is a history and a census of the night: how humans slept in two shifts before electricity, how gaslight, Edison, and the factory clock squeezed the night into one block and sold eight hours as biology when it began as a labor slogan, and where sleep stands now, when the data says we may not be sleeping less at all while an industry sells the night back to us.\n Follow along for the next deep dive.\n Stay curious.\n Chapters:\n (00:00) The State We Still Can't Explain\n (03:09) The Architecture of a Night\n (09:57) Why Six Hours Is Not…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795569004441-3a8034e9b7573.jpg",
-   "url": "https://open.spotify.com/episode/0G6XqqogxjmXa1QuMqm7xo",
-   "spotify_url": "https://open.spotify.com/episode/0G6XqqogxjmXa1QuMqm7xo",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/284-Sleep-Why-the-Eight-Hour-Rule-Came-From-a-Factory--Not-a-Brain-e3svhsv",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/130057567/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fd720a60b-601c-fe87-346e-fef1e7072134.m4a",
    "number": "284"
   },
@@ -1102,6 +1158,20 @@
    "number": null
   },
   {
+   "id": "globalread:a442d33e 6293 4d02 a02d 54833dfc5ae3",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "Solomon Islands Drops China Security Pact for Australia Treaty | Tuesday, November 24, 2026",
+   "date": "2026-11-24T10:42:43Z",
+   "duration": 822,
+   "description": "The Solomon Islands tells Beijing it will let the China security pact lapse and sign with Australia instead; Nvidia reinstates Jensen Huang and the AI sell-off reverses in a day; Ukraine claims the Benghazi corvette strike; NATO argues over airspace violations and what Article 5 means; Puigdemont is cleared to return to Spain; Czech and Hungarian leaders reject the EU budget; Congo halts cobalt exports; the US discusses training Syrian soldiers; and Canada and Qatar sign an investment pact.\n Timestamps:\n 0:13 — Welcome to The Global Read\n 1:08 — Solomon Islands drops the China security pact for an Australia treaty\n 3:23 — Nvidia reinstates Jensen Huang; the sell-off reverses\n 6:23 — Ukraine…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795516840668-54fdb3b48c37f.jpg",
+   "url": "https://open.spotify.com/episode/2vQbJP2qzGMegAFs8fpX3K",
+   "spotify_url": "https://open.spotify.com/episode/2vQbJP2qzGMegAFs8fpX3K",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/130013895/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F22558cba-b971-ef93-0e90-a3792c737325.m4a",
+   "number": null
+  },
+  {
    "id": "ladaily:54aba54f 2dca 4550 ab7e 8de00b6b048e",
    "show": "ladaily",
    "kind": "episode",
@@ -1138,8 +1208,8 @@
    "duration": 1544,
    "description": "Deni Avdija scored 31 points as Portland won at Philadelphia 128-111 to end the 76ers' five-game winning streak, and San Antonio won at Sacramento 123-107 without Victor Wembanyama to join the Lakers at 15-3 atop the West. Milwaukee snapped its 13-game losing streak at Toronto, and Jaden McDaniels scored a career-best 34 in Minnesota's 142-116 rout of Brooklyn.\n Scores: Grizzlies 117, Hornets 111 · Trail Blazers 128, 76ers 111 · Pacers 125, Thunder 120 · Bucks 116, Raptors 111 · Timberwolves 142, Nets 116 · Bulls 122, Cavaliers 108 · Suns 123, Pelicans 119 (OT) · Rockets 116, Clippers 104 · Spurs 123, Kings 107 · Lakers 109, Jazz 94.\n The deep dive: Depth at the top — San Antonio wins…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795502673639-7d1120ba386c3.jpg",
-   "url": "https://open.spotify.com/episode/1FDg7OzQfiVeu9tWQ81dHw",
-   "spotify_url": "https://open.spotify.com/episode/1FDg7OzQfiVeu9tWQ81dHw",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Monday--November-23--2026-e3stuid",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/130005005/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F51c24325-b361-2179-aba3-70ac306997ed.m4a",
    "number": null
   },
@@ -1530,8 +1600,8 @@
    "duration": 747,
    "description": "Washington stunned No. 8 Indiana in overtime and Michigan beat No. 4 UCLA in triple overtime, while Nebraska's 31-28 win ended Ohio State's playoff hopes — a Saturday that reshaped the Big Ten, the bubble, and the Heisman race, with Georgia, Utah, Alabama and Texas holding at the top.\n The day's synthesis, key results and what they mean, the awards watch, the playoff picture and bubble, projected Tuesday CFP rankings, and predictions for rivalry week.\n Part of the Curious & Creative network. Back Tuesday night with the rankings edition.",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795334557746-a884ffdb331ee.jpg",
-   "url": "https://open.spotify.com/episode/3MGej8EuCpUxwZHBXpbRJp",
-   "spotify_url": "https://open.spotify.com/episode/3MGej8EuCpUxwZHBXpbRJp",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Two-Overtime-Upsets-Blow-Up-the-Big-Tens-Playoff-Picture--Saturday--November-21--2026-e3sqcfd",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/129888173/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-22%2F0c4e3f90-3f6c-475a-dd57-178f93feeb6e.m4a",
    "number": null
   },
@@ -2313,7 +2383,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -11533,7 +11603,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 283,
+   "episodes": 284,
    "spotify_matches": 1
   },
   "approachable": {
@@ -11626,8 +11696,8 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 26,
-   "spotify_matches": 0
+   "episodes": 27,
+   "spotify_matches": 1
   },
   "marketread": {
    "ok": true,
@@ -11698,7 +11768,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 23,
+   "episodes": 24,
    "spotify_matches": 1
   },
   "blitz": {
@@ -11722,8 +11792,8 @@
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 15,
+   "spotify_matches": 1
   },
   "coltsdaily": {
    "ok": true,
@@ -11738,7 +11808,7 @@
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
    "spotify_name": "College Football Daily",
    "full_catalog": true,
-   "episodes": 19,
+   "episodes": 20,
    "spotify_matches": 1
   },
   "cbbdaily": {
