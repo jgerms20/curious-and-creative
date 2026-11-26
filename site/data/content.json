@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T17:27:20Z",
+ "generated_at": "2026-11-26T01:52:34Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-25T15:19:47Z",
-   "count": 285
+   "latest": "2026-11-25T18:26:59Z",
+   "count": 287
   },
   {
    "key": "approachable",
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-24T10:38:22Z",
-   "count": 31
+   "latest": "2026-11-25T11:20:30Z",
+   "count": 32
   },
   {
    "key": "ladaily",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-24T11:41:53Z",
-   "count": 24
+   "latest": "2026-11-25T11:53:41Z",
+   "count": 25
   },
   {
    "key": "nyread",
@@ -478,8 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-24T12:19:37Z",
-   "count": 23
+   "latest": "2026-11-25T12:13:44Z",
+   "count": 24
   },
   {
    "key": "optionsdesk",
@@ -801,8 +801,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-22T13:30:49Z",
-   "count": 13
+   "latest": "2026-11-25T13:39:42Z",
+   "count": 14
   },
   {
    "key": "gamecockshoops",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-25T13:18:00Z",
    "count": 2
   },
@@ -990,6 +990,34 @@
  ],
  "episodes": [
   {
+   "id": "polymath:e1a853ed 584a 4761 9d86 d038cd1616f2",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#288 Carlos Arango: How the 'Basquiat of Mexico' Built His Own Gallery and Reached New York",
+   "date": "2026-11-25T18:26:59Z",
+   "duration": 2573,
+   "description": "Carlos Arango, known as CLOS, is a monumental presence in his own city and a ghost in the global art market's ledger. In Oaxaca de Juárez he works at the scale of buildings: seven steel crosses, up to six metres tall, stood in the Alameda for Holy Week 2026, the municipal government holds press conferences in his studio, and travellers pay to sleep inside his gallery, surrounded by his canvases. In the databases that run the multi-billion-dollar art market there are no published prices, no auction record, and no critical essay to be found. This episode tells the story the record actually supports: the Oaxaca formation he narrates himself, the large figurative work, the \"Basquiat of Mexico\"…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795631030026-841edc35e8d8e.jpg",
+   "url": "https://open.spotify.com/episode/6VzoYkvcVxJ82glISxa0hn",
+   "spotify_url": "https://open.spotify.com/episode/6VzoYkvcVxJ82glISxa0hn",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130112548/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F4f5394d3-1227-e0f8-7280-41f4f7f8b9e9.m4a",
+   "number": "288"
+  },
+  {
+   "id": "polymath:9f84b149 097f 46f0 a52f 833109ab9f6e",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#287 The Founder Mafias: Why PayPal, SpaceX, and Facebook Minted So Many Founders",
+   "date": "2026-11-25T17:38:51Z",
+   "duration": 1865,
+   "description": "Most companies produce employees. A few produce founders. This episode is about the second kind, and it starts with the most famous example in modern technology: the group that walked out of PayPal in 2002 and went on to build or fund YouTube, LinkedIn, Palantir, Yelp, Yammer, Tesla and SpaceX. Inside: two rival startups that hated each other, a boardroom coup carried out while the CEO was on a plane, a daily war against international fraud syndicates that produced the Igor fraud-detection system and one of the first CAPTCHAs, and the 2007 Fortune photograph that named them a mafia. Then the pattern widens: Fairchild Semiconductor and the Traitorous Eight in 1957, the SpaceX diaspora that…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795628252362-d2313a82aa5128.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/287-The-Founder-Mafias-Why-PayPal--SpaceX--and-Facebook-Minted-So-Many-Founders-e3t15dt",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130110333/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F73e16077-c501-2f27-12b8-38995c0bccd8.m4a",
+   "number": "287"
+  },
+  {
    "id": "polymath:28db6140 10a5 41f5 a01a 2d81424779dd",
    "show": "polymath",
    "kind": "episode",
@@ -998,8 +1026,8 @@
    "duration": 2937,
    "description": "Junior Bridgeman arrived in Milwaukee as a piece of the Kareem Abdul-Jabbar trade and left basketball with career earnings under three million dollars. Then he built one of the largest restaurant franchise operations in America, more than 450 Wendy's and Chili's at its peak, sold the core of it, and moved into Coca-Cola bottling. In 2020 his family bought Ebony and Jet out of bankruptcy, and in 2024 he bought back into the Bucks, this time as an owner. This episode traces the blueprint: the union presidency, the lawsuit that opened free agency, the failed Brooklyn restaurant, the counter shifts nobody was supposed to see, and the succession his family now runs.\n Follow along for the next…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795619942635-cca9381ebc405.jpg",
-   "url": "https://open.spotify.com/episode/5VU1AxXbioH5aIrmLEzs5x",
-   "spotify_url": "https://open.spotify.com/episode/5VU1AxXbioH5aIrmLEzs5x",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/286-Junior-Bridgeman-How-a-Sixth-Man-Built-a-Billion-Dollar-Empire-e3t0seg",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/130101136/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F395d295c-c998-ea0f-facd-7df986441463.m4a",
    "number": "286"
   },
@@ -1032,6 +1060,20 @@
    "number": null
   },
   {
+   "id": "gamecocksdaily:020f4c28 f1f0 4e05 8ea3 dd3af3087700",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "The Road Team Has Won Six Straight: South Carolina Is 6-5 | Wednesday, November 25, 2026",
+   "date": "2026-11-25T13:39:42Z",
+   "duration": 903,
+   "description": "South Carolina (6-5) goes to Death Valley for the 123rd Palmetto Bowl on Saturday unranked, beat up, and favored — and with the strangest fact in the rivalry working for the road team: the visiting team has won six straight, and no home crowd has seen a rivalry win since 2018. Clemson week, read at the level of what it means.\n Inside: rivalry week and the road-team streak / the returns: Bennett and Addison back at practice, Collier trending to Saturday, a beat-up defensive front, and Harbor still developing / the deep segment on Clemson's quarterback room — Reynolds and Vizzina out, walk-on Trent Pearman starting — and what it asks of South Carolina's defense / basketball: the No. 1 women…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795613909767-011caaefbc1fa.jpg",
+   "url": "https://open.spotify.com/episode/14m3ZukTJ9CnZ6ueqVSY2U",
+   "spotify_url": "https://open.spotify.com/episode/14m3ZukTJ9CnZ6ueqVSY2U",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/130092809/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F7a427603-f7bb-21c5-7974-1ed0277dded3.m4a",
+   "number": null
+  },
+  {
    "id": "cutandsew:7vBJMSR7kWfA0JEuA23k5b",
    "show": "cutandsew",
    "kind": "episode",
@@ -1039,7 +1081,7 @@
    "date": "2026-11-25T13:18:00Z",
    "duration": 1351,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab3afdc653ec16f5d672308bb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab3afdc653ec16f5d672308bb",
    "url": "https://open.spotify.com/episode/7vBJMSR7kWfA0JEuA23k5b",
    "spotify_url": "https://open.spotify.com/episode/7vBJMSR7kWfA0JEuA23k5b",
    "spotify_video": false
@@ -1059,6 +1101,20 @@
    "number": null
   },
   {
+   "id": "airead:5cc174bb 88c1 4dd1 be7e 86557b5a9871",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Wednesday, November 25, 2026",
+   "date": "2026-11-25T12:13:44Z",
+   "duration": 1528,
+   "description": "Washington blacklists seven Megaspeed-linked firms and the chip controls go regional, the reinstatement rally unwinds as Nvidia gives back $240 billion and Anthropic closes below its IPO price, TSMC files for a $22.6 billion 2-nanometer fab in Texas, Baidu open-sources ERNIE 5.5 Flash Preview, OpenAI and Cisco ship the Shirudo agent shield, Anthropic's Frontier Safeguards and the MCP stack mature, the market grades the CrowdStrike–Zscaler deal at its offer price, and bitcoin holds below $60,000 into today's PCE print.\n • US blacklists seven Megaspeed-linked firms; Malaysia orders data centers to cut them off — https://ai.zhudong.net/en/\n • Nvidia gives back $240B and Anthropic closes below…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795608697951-7d1a05a8fddb5.jpg",
+   "url": "https://open.spotify.com/episode/7aMatfOSlP74CMcGlFzMvg",
+   "spotify_url": "https://open.spotify.com/episode/7aMatfOSlP74CMcGlFzMvg",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/130088776/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fd9cc21f7-4b8d-f52c-4589-1756f343b691.m4a",
+   "number": null
+  },
+  {
    "id": "columbiaread:51c82c96 1680 47c4 a204 65030de89bb6",
    "show": "columbiaread",
    "kind": "episode",
@@ -1073,6 +1129,20 @@
    "number": null
   },
   {
+   "id": "marketread:cbafa166 7af4 450e bd66 48ff82ad9c63",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Wednesday, November 25, 2026",
+   "date": "2026-11-25T11:53:41Z",
+   "duration": 847,
+   "description": "Nasdaq futures fell more than 2% on Wednesday as reports of new U.S. tariff plans on 16 trading partners hit a market already bracing for the October PCE inflation report at 8:30 a.m. ET — the last big read before the Fed's December meeting. Asia's chip complex routed overnight, Dell posted a record quarter and fell anyway, software names beat and sold off, and consumer confidence surged to 103.3. Plus the options desk, with the VIX at 26.36 and hedges on into the Thanksgiving gap.\n • Futures slide over 2% on fresh U.S. tariff concerns; PCE in focus (DEVELOPING) — https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/\n •…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795607557401-23a2d4aa3b204.jpg",
+   "url": "https://open.spotify.com/episode/0YH7TJC7EvgdoelOPiBLgI",
+   "spotify_url": "https://open.spotify.com/episode/0YH7TJC7EvgdoelOPiBLgI",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130088068/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F513eb51b-1df0-3dce-e7e6-fe3906aae92a.m4a",
+   "number": null
+  },
+  {
    "id": "nyread:ee6dabeb 77a8 4122 965e 926eca9bbf79",
    "show": "nyread",
    "kind": "episode",
@@ -1084,6 +1154,20 @@
    "url": "https://open.spotify.com/episode/2bfxYfFPOPo69OBZBnR3Kl",
    "spotify_url": "https://open.spotify.com/episode/2bfxYfFPOPo69OBZBnR3Kl",
    "audio": "https://anchor.fm/s/119608a14/podcast/play/130087260/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fbf4c1076-9b39-13d0-405d-68ac271c997c.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:98456953 566d 47d2 a855 a1d97bd6bb4a",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Wednesday, November 25, 2026",
+   "date": "2026-11-25T11:20:30Z",
+   "duration": 899,
+   "description": "At 9 a.m. in Middletown, Iowa, the Army detonates nearly 10,000 pounds of degraded lead azide too unstable to move, under a FEMA alert and an hourly plume map. Plus: the administration loads its next tariff round on a Section 301 probe of 16 trading partners; the Dow closes above 50,000 while Nvidia gives back 5.9 percent; consumer confidence jumps to 103.3 as all six reporting retailers beat; O'Hare takes its second ground stop in two days; oil settles up $2 on three struck ships in Hormuz; and Sanford crosses into major flood ahead of tonight's crest.\n Timestamps:\n (00:16) Iowa: Detonation Day\n (04:02) Tariffs: The Next Round Is Loaded (DEVELOPING)\n (05:47) The Markets: The Dow Crosses,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795605600145-bd069fbf530a7.jpg",
+   "url": "https://open.spotify.com/episode/4MDHonauHjngFaPXLfssku",
+   "spotify_url": "https://open.spotify.com/episode/4MDHonauHjngFaPXLfssku",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/130086585/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F4f5ee003-23e8-23f2-5563-77d90a4058c8.m4a",
    "number": null
   },
   {
@@ -7331,20 +7415,6 @@
    "number": "231"
   },
   {
-   "id": "morningread:e5189ecc 16d9 489f b22d 656a52ef00e5",
-   "show": "morningread",
-   "kind": "episode",
-   "title": "Thursday, October 22, 2026",
-   "date": "2026-10-22T18:58:17Z",
-   "duration": 1193,
-   "description": "The United States orders its diplomats out of Saudi Arabia as Houthi attacks close in on the kingdom, with US and Israel strike plans on Iran flagged as developing. Plus: France bans the next protest wave, Zelensky floats a freeze formula, Brazil's runoff stays a coin flip four days out, and a Budapest dachshund closes the show.\n Stories: Saudi Arabia and the Houthis · Iran strike plans (developing) · France's protest bans · Ukraine's freeze formula · The midterms · Brazil's runoff · Markets and Meta · The UNEP emissions gap · The Buda dachshund.\n Part of the Curious & Creative network. Back tomorrow morning.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793296461458-5dcb148ee8253.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Thursday--October-22--2026-e3qtvlb",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/118e6e448/podcast/play/127908971/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-22%2Fd693b7fb-2d80-4983-c79a-225074ca85a5.m4a",
-   "number": null
-  },
-  {
    "id": "polymath:77cfa9ef 4545 468b 8e54 c564508d3e72",
    "show": "polymath",
    "kind": "episode",
@@ -11728,7 +11798,7 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 285,
+   "episodes": 287,
    "spotify_matches": 1
   },
   "approachable": {
@@ -11805,8 +11875,8 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 31,
-   "spotify_matches": 0
+   "episodes": 32,
+   "spotify_matches": 1
   },
   "ladaily": {
    "ok": true,
@@ -11829,8 +11899,8 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 24,
-   "spotify_matches": 0
+   "episodes": 25,
+   "spotify_matches": 1
   },
   "nyread": {
    "ok": true,
@@ -11853,8 +11923,8 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 23,
-   "spotify_matches": 0
+   "episodes": 24,
+   "spotify_matches": 1
   },
   "optionsdesk": {
    "ok": true,
@@ -11949,8 +12019,8 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
-   "episodes": 13,
-   "spotify_matches": 0
+   "episodes": 14,
+   "spotify_matches": 1
   },
   "gamecockshoops": {
    "ok": true,
