@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T11:07:35Z",
+ "generated_at": "2026-11-26T20:18:16Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-26T06:28:55Z",
-   "count": 288
+   "latest": "2026-11-26T10:47:11Z",
+   "count": 292
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -990,6 +990,62 @@
  ],
  "episodes": [
   {
+   "id": "polymath:b6fe2e34 7799 4f61 a65e a963afc9c39f",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#292 Shift Economics: Build Your Economics to Support Your Shifts",
+   "date": "2026-11-26T10:47:11Z",
+   "duration": 2992,
+   "description": "Most working lives are organized by time: hours, days, calendars. This episode is about a different unit. A shift is a whole commitment, a client, your children, rest itself, and a life holds only a small number of them. Four, in the telling where this model was first laid out. Not four categories to name, but a capacity, the way a hard drive holds what it holds. The model built on that count is called shift economics, and its core rule reverses the usual order: you build your economics to support your shifts, never the reverse.\n The episode works the model in full: the counting, with throttle levers that run a commitment hotter or cooler and the liquidity that keeps the count honest; rest…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795689982771-c89ad8b9db6c4.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/292-Shift-Economics-Build-Your-Economics-to-Support-Your-Shifts-e3t2chg",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130150384/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2Fd299052b-88cc-400e-b20c-20e8740466a2.m4a",
+   "number": "292"
+  },
+  {
+   "id": "polymath:b16d8b53 3991 4212 9fd0 54d8387f2476",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#293 Brent Staples: How Whistling Vivaldi Exposed the Fear Around Black Men",
+   "date": "2026-11-26T09:58:31Z",
+   "duration": 3095,
+   "description": "On a deserted Chicago street in the 1980s, a young Black journalist noticed what his presence did to strangers: women clutched their bags, car doors locked as he passed, and once he was mistaken for a burglar inside the office where he worked. Brent Staples wrote it down in \"Just Walk on By,\" and then he described his strangest countermeasure: whistling the melodies of Beethoven and Vivaldi, broadcasting harmlessness ahead of himself in the dark. This episode tells his story: the essay, the memoir Parallel Time, and his brother Blake, whose opposite road ended in February 1984.\n Then it follows the anecdote into the laboratory: Claude Steele and Joshua Aronson's 1995 stereotype threat…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795687080337-731b899b74a258.jpg",
+   "url": "https://open.spotify.com/episode/0g98cClBYFrxOXKgR0xlsn",
+   "spotify_url": "https://open.spotify.com/episode/0g98cClBYFrxOXKgR0xlsn",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130147952/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2F2aae4be4-a7ef-656f-ae49-4e3c9739a4b0.m4a",
+   "number": "293"
+  },
+  {
+   "id": "polymath:0ed35223 907b 4d0e 97a9 df91e0856db7",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#291 The Insider Economy: How Exclusives Became the Currency of Power",
+   "date": "2026-11-26T09:15:35Z",
+   "duration": 2983,
+   "description": "An exclusive is rarely found. It is allocated. This episode maps the insider economy of modern journalism through the career of Matt Belloni, who went from entertainment lawyer to editor of The Hollywood Reporter to founding partner at Puck and host of The Town, and who now sells the access he spent two decades building. The mechanics are named in full: allocation, embargoes and timed drops, the reliability economy, and the line between access reporting and accountability reporting.\n Then the machine is shown running in two other industries: Andrew Ross Sorkin in finance, where DealBook and Too Big to Fail run on banker cooperation, and Ezra Klein in policy, the explainer as insider. The…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795684493449-6cafca212c6b48.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/291-The-Insider-Economy-How-Exclusives-Became-the-Currency-of-Power-e3t28q6",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130146566/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2F20591d31-c259-375f-b2f6-492d5b652aea.m4a",
+   "number": "291"
+  },
+  {
+   "id": "polymath:c7f2cea5 a278 42e3 a27b e855001a48de",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#290 Todd Boehly: How a Sports Owner Became Washington's Buyer for a Russian Oil Major",
+   "date": "2026-11-26T08:24:19Z",
+   "duration": 3230,
+   "description": "A consortium led by Todd Boehly has signed to buy the international assets of Lukoil, Russia's second-largest oil company: refineries, oil fields, and a global retail network, at three different prices depending on how you count, with the consideration routed into a UAE escrow so no value reaches Lukoil up front. The deal is signed, not closed. OFAC still decides. This episode explains how the man Washington is being asked to trust with it was made: Guggenheim, the insurance float engine, and a sports portfolio that functioned as his audition.\n Inside: the 2015 split that created Eldridge Industries, the mini-Berkshire model, the Dodgers and the Lakers stake bought jointly with Mark Walter,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795681400074-334c31d3463918.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/290-Todd-Boehly-How-a-Sports-Owner-Became-Washingtons-Buyer-for-a-Russian-Oil-Major-e3t2713",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130144739/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2F32b7aa7f-807a-4c07-c297-00035f0b4c72.m4a",
+   "number": "290"
+  },
+  {
    "id": "fastbreak:8a7c172e d48a 4cc8 849e 0046ea67de37",
    "show": "fastbreak",
    "kind": "episode",
@@ -1051,12 +1107,12 @@
    "kind": "episode",
    "title": "#287 The Founder Mafias: Why PayPal, SpaceX, and Facebook Minted So Many Founders",
    "date": "2026-11-25T17:38:51Z",
-   "duration": 1865,
-   "description": "Most companies produce employees. A few produce founders. This episode is about the second kind, and it starts with the most famous example in modern technology: the group that walked out of PayPal in 2002 and went on to build or fund YouTube, LinkedIn, Palantir, Yelp, Yammer, Tesla and SpaceX. Inside: two rival startups that hated each other, a boardroom coup carried out while the CEO was on a plane, a daily war against international fraud syndicates that produced the Igor fraud-detection system and one of the first CAPTCHAs, and the 2007 Fortune photograph that named them a mafia. Then the pattern widens: Fairchild Semiconductor and the Traitorous Eight in 1957, the SpaceX diaspora that…",
+   "duration": 3472,
+   "description": "Most companies produce employees. A few produce founders. This is the long version of that story, and it starts with the most famous example in modern technology: the group that walked out of PayPal in 2002 and went on to build or fund YouTube, LinkedIn, Palantir, Yelp, Yammer, Tesla and SpaceX. Inside: two rival startups that hated each other, a boardroom coup carried out while the CEO was on a plane, a daily war against international fraud syndicates, and the 2007 Fortune photograph that named them a mafia. Then the roster gets its full depth, founder by founder, including the women the famous photograph left out.\n Then the lens widens past tech. SpaceX is covered as what it is, a…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795628252362-d2313a82aa5128.jpg",
    "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/287-The-Founder-Mafias-Why-PayPal--SpaceX--and-Facebook-Minted-So-Many-Founders-e3t15dt",
    "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/130110333/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F73e16077-c501-2f27-12b8-38995c0bccd8.m4a",
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130110333/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2F61aab53a-b946-a186-39a5-f5abe554a820.m4a",
    "number": "287"
   },
   {
@@ -1123,7 +1179,7 @@
    "date": "2026-11-25T13:18:00Z",
    "duration": 1351,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab3afdc653ec16f5d672308bb",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab3afdc653ec16f5d672308bb",
    "url": "https://open.spotify.com/episode/7vBJMSR7kWfA0JEuA23k5b",
    "spotify_url": "https://open.spotify.com/episode/7vBJMSR7kWfA0JEuA23k5b",
    "spotify_video": false
@@ -1277,8 +1333,8 @@
    "duration": 923,
    "description": "The fourth College Football Playoff rankings are out: Tennessee finally passes Alabama on the strength of its head-to-head win, Texas and Notre Dame move into the top four, Indiana falls six places to No. 14, and the Big Ten is shut out of the top five. We break down what the committee is signaling, the playoff picture and the bubble, including the Boise State problem, the Awards Watch with Jeremiah Smith in control of the Heisman race, the coaching carousel, and our predictions for rivalry week and next Tuesday's board.\n Segments: The new rankings — Synthesis: what the committee is telling us — The playoff picture: in, out, and the bubble — What Saturday changed — South Carolina and the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795585060836-05e407acb9a0e.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Tennessee-Finally-Passes-Alabama--and-the-Big-Ten-Falls-Out-of-the-Top-Five--Tuesday--November-24--2026-e3svua6",
-   "spotify_url": null,
+   "url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
+   "spotify_url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/130070278/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F476e2199-9ead-612d-0c28-75b43f34f078.m4a",
    "number": null
   },
@@ -2634,7 +2690,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -9828,7 +9884,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -11840,8 +11896,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 288,
-   "spotify_matches": 0
+   "episodes": 292,
+   "spotify_matches": 1
   },
   "approachable": {
    "ok": true,
@@ -12043,10 +12099,10 @@
   "cfbdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
-   "spotify_name": "Tennessee Finally Passes Alabama, and the Big Ten Falls Out of the Top Five | Tuesday, November 24, 2026",
+   "spotify_name": "College Football Daily",
    "full_catalog": true,
    "episodes": 20,
-   "spotify_matches": 0
+   "spotify_matches": 1
   },
   "cbbdaily": {
    "ok": true,
