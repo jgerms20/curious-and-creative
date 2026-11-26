@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T01:52:34Z",
+ "generated_at": "2026-11-26T11:07:35Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,8 +52,8 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-25T18:26:59Z",
-   "count": 287
+   "latest": "2026-11-26T06:28:55Z",
+   "count": 288
   },
   {
    "key": "approachable",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-25T06:29:18Z",
-   "count": 24
+   "latest": "2026-11-26T06:35:54Z",
+   "count": 25
   },
   {
    "key": "blitz",
@@ -639,8 +639,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-24T05:09:16Z",
-   "count": 14
+   "latest": "2026-11-26T05:03:28Z",
+   "count": 15
   },
   {
    "key": "waiverwire",
@@ -878,7 +878,7 @@
    "spotify_url": "https://open.spotify.com/show/6nwdYn042ClFOjyTc2cA3K",
    "feed_title": "Cut & Sew",
    "art": "assets/art/cutandsew.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a085c9a890f0aad96bade0680",
    "latest": "2026-11-25T13:18:00Z",
    "count": 2
   },
@@ -990,6 +990,48 @@
  ],
  "episodes": [
   {
+   "id": "fastbreak:8a7c172e d48a 4cc8 849e 0046ea67de37",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Wednesday, November 25, 2026",
+   "date": "2026-11-26T06:35:54Z",
+   "duration": 952,
+   "description": "Portland beat San Antonio 116-111 behind Deni Avdija's 33 points and his clutch three in the final minute, spoiling Victor Wembanyama's 44-point, 16-rebound night. LeBron James recorded his first triple-double as a 76er in Philadelphia's 111-104 win over Miami, and Kevin Durant reached 33,000 career points in Houston's win over Phoenix.\n Scores: 76ers 111, Heat 104 · Bulls 107, Hornets 105 · Knicks 121, Cavaliers 102 · Timberwolves 113, Thunder 106 · Grizzlies 115, Clippers 97 · Nets 104, Bucks 97 · Rockets 116, Suns 104 · Warriors 129, Kings 110 · Trail Blazers 116, Spurs 111.\n The deep dive: Portland beats the 44 — how depth beat star power across a nine-game Cup night, Dallas clinches…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795674914923-028a932830921.jpg",
+   "url": "https://open.spotify.com/episode/64yTJahR9MF0FOVlV4vRcn",
+   "spotify_url": "https://open.spotify.com/episode/64yTJahR9MF0FOVlV4vRcn",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/130141519/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2Faf0bb2b5-7257-b8ef-7cdc-6210ba72dd84.m4a",
+   "number": null
+  },
+  {
+   "id": "polymath:ca149a04 4ed2 44d3 9511 0d124f84f27f",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#289 Japan: How Endurance Built Both the Serenity and the Grind",
+   "date": "2026-11-26T06:28:55Z",
+   "duration": 3399,
+   "description": "Japan rebuilt from rubble into the world's second-largest economy in a generation, and it presents to the world as serene, harmonious, and at peace. It also runs one of the most demanding work cultures on earth. This episode treats that not as a contradiction to resolve, but as one system seen from two ends.\n We take apart the miracle machine, the salaryman bargain that powered it, and the virtue at its center: gaman, endurance, which produced both the serenity and the grind. Then the mechanism that holds the two together, honne and tatemae, the bill that arrived with the bubble and the lost decades, and the renegotiation now underway, from binding overtime caps to a generation quietly…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795674468420-ddd64da4c125a.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/289-Japan-How-Endurance-Built-Both-the-Serenity-and-the-Grind-e3t23jf",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130141231/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2Fe80930d0-a026-fff8-bca4-c1f73d039368.m4a",
+   "number": "289"
+  },
+  {
+   "id": "blitz:f35497ca 10c9 4c25 8194 bd8306c33377",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Corum Runs the Packers Off the Field: The Rams Take the NFC's Last Playoff Spot | Wednesday, November 25, 2026",
+   "date": "2026-11-26T05:03:28Z",
+   "duration": 947,
+   "description": "Blake Corum carried 32 times for 184 yards and a touchdown on his 26th birthday as the Los Angeles Rams beat the Green Bay Packers 26-13 on Thanksgiving Eve at SoFi Stadium, taking over the NFC's No. 7 seed at 7-4 while Green Bay falls to 6-5 and out of the playoff picture. The Rams ran for 241 yards and held the ball for 40:47; Brandon McManus went 4-for-4 on field goals against his old team, and Jordan Love threw two interceptions.\n Final: Los Angeles Rams 26, Green Bay Packers 13 (Q1 6-3, halftime 13-13, Q3 7-0, Q4 6-0).\n 0:00 Rams 26, Packers 13: Corum's Thanksgiving Eve takeover\n1:26 How the game turned: the kickers, the rally, and the wild fourth-and-1\n5:05 Standouts: Corum's 184…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795669338527-bb394fa6f0aef8.jpg",
+   "url": "https://open.spotify.com/episode/3FE5EQHloMdqCX1e7hACA2",
+   "spotify_url": "https://open.spotify.com/episode/3FE5EQHloMdqCX1e7hACA2",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/130138811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2F3031e85f-462d-3a94-a411-2b0971d82a0f.m4a",
+   "number": null
+  },
+  {
    "id": "polymath:e1a853ed 584a 4761 9d86 d038cd1616f2",
    "show": "polymath",
    "kind": "episode",
@@ -998,8 +1040,8 @@
    "duration": 2573,
    "description": "Carlos Arango, known as CLOS, is a monumental presence in his own city and a ghost in the global art market's ledger. In Oaxaca de Juárez he works at the scale of buildings: seven steel crosses, up to six metres tall, stood in the Alameda for Holy Week 2026, the municipal government holds press conferences in his studio, and travellers pay to sleep inside his gallery, surrounded by his canvases. In the databases that run the multi-billion-dollar art market there are no published prices, no auction record, and no critical essay to be found. This episode tells the story the record actually supports: the Oaxaca formation he narrates himself, the large figurative work, the \"Basquiat of Mexico\"…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795631030026-841edc35e8d8e.jpg",
-   "url": "https://open.spotify.com/episode/6VzoYkvcVxJ82glISxa0hn",
-   "spotify_url": "https://open.spotify.com/episode/6VzoYkvcVxJ82glISxa0hn",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/288-Carlos-Arango-How-the-Basquiat-of-Mexico-Built-His-Own-Gallery-and-Reached-New-York-e3t17j4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/111be5840/podcast/play/130112548/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F4f5394d3-1227-e0f8-7280-41f4f7f8b9e9.m4a",
    "number": "288"
   },
@@ -1221,8 +1263,8 @@
    "duration": 1113,
    "description": "A three-game NBA Cup night with three statements: Jayson Tatum scored 41 as Boston built a 34-point lead, nearly gave it all back, and beat Washington 131-116 to snap a four-game losing streak; Detroit won at Orlando 104-86 without Cade Cunningham, on defense and depth; and Cooper Flagg's 24 points and 12 assists led Dallas to a 120-101 win at Denver.\n Scores: Pistons 104, Magic 86 · Celtics 131, Wizards 116 · Mavericks 120, Nuggets 101.\n The deep dive: Cup night clarity — Boston and Dallas move to 3-0 in their groups, Detroit blocks Orlando from clinching East Group A, and the knockout picture heading into Friday's final group night.\n Chapters:\n (00:00) The Headline: Tatum's 41 and a Lead…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795588136862-a29d67d1cc8b7.jpg",
-   "url": "https://open.spotify.com/episode/72m7rI6z9ii1XY7JUAH03i",
-   "spotify_url": "https://open.spotify.com/episode/72m7rI6z9ii1XY7JUAH03i",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Tuesday--November-24--2026-e3t00o7",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/130072775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Feb26ddcd-ec7d-b56a-532e-bdabe551ab42.m4a",
    "number": null
   },
@@ -1235,8 +1277,8 @@
    "duration": 923,
    "description": "The fourth College Football Playoff rankings are out: Tennessee finally passes Alabama on the strength of its head-to-head win, Texas and Notre Dame move into the top four, Indiana falls six places to No. 14, and the Big Ten is shut out of the top five. We break down what the committee is signaling, the playoff picture and the bubble, including the Boise State problem, the Awards Watch with Jeremiah Smith in control of the Heisman race, the coaching carousel, and our predictions for rivalry week and next Tuesday's board.\n Segments: The new rankings — Synthesis: what the committee is telling us — The playoff picture: in, out, and the bubble — What Saturday changed — South Carolina and the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107287/47107287-1795585060836-05e407acb9a0e.jpg",
-   "url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
-   "spotify_url": "https://open.spotify.com/episode/1AoY6rOn774kGsE4RutsTG",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2009/episodes/Tennessee-Finally-Passes-Alabama--and-the-Big-Ten-Falls-Out-of-the-Top-Five--Tuesday--November-24--2026-e3svua6",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609a7c/podcast/play/130070278/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F476e2199-9ead-612d-0c28-75b43f34f078.m4a",
    "number": null
   },
@@ -1431,8 +1473,8 @@
    "duration": 1243,
    "description": "Washington stole Monday Night Football at the gun. Evan McPherson's 56-yard field goal put Cincinnati up 20-19 with 46 seconds left, and Jayden Daniels answered in four plays: two strikes to rookie Antonio Williams for 64 yards, a spike, and Drew Stevens' 26-yard walk-off as time expired. Commanders 22, Bengals 20. Daniels finished 23 of 35 for 289 yards plus 55 rushing, Williams caught 9 for 122, Stevens hit five field goals, and Washington held Joe Burrow (28 of 40, 300 yards, 2 TD) and the Bengals to 124 second-half yards and 31 rushing yards all night. Boye Mafe's three first-half sacks and a third-quarter power outage at Northwest Stadium round out a wild close to Week 11.\n Week 11…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795496838625-dcd034d6f9c23.jpg",
-   "url": "https://open.spotify.com/episode/3ukD8c9AnyEujI1Tz99l4L",
-   "spotify_url": "https://open.spotify.com/episode/3ukD8c9AnyEujI1Tz99l4L",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms209/episodes/Daniels-Steals-It-at-the-Gun-Washingtons-Walk-Off-Sinks-Burrow-and-the-Bengals--Monday--November-23--2026-e3stnuf",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c5024/podcast/play/129998223/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-24%2F82cb94fe-abac-b9a6-7b4c-1fc3d930860a.m4a",
    "number": null
   },
@@ -2592,7 +2634,7 @@
    "date": "2026-11-18T13:54:00Z",
    "duration": 3021,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a659460adca0d68b588f37370",
    "url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_url": "https://open.spotify.com/episode/2F0BCoIbrv5HzEsv8Pmpzr",
    "spotify_video": false
@@ -9786,7 +9828,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -11798,8 +11840,8 @@
    "feed": "https://anchor.fm/s/111be5840/podcast/rss",
    "spotify_name": "The Eclectic Polymath with Joshua German",
    "full_catalog": true,
-   "episodes": 287,
-   "spotify_matches": 1
+   "episodes": 288,
+   "spotify_matches": 0
   },
   "approachable": {
    "ok": true,
@@ -11963,7 +12005,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 24,
+   "episodes": 25,
    "spotify_matches": 1
   },
   "blitz": {
@@ -11971,7 +12013,7 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 14,
+   "episodes": 15,
    "spotify_matches": 1
   },
   "waiverwire": {
@@ -12001,10 +12043,10 @@
   "cfbdaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/119609a7c/podcast/rss",
-   "spotify_name": "College Football Daily",
+   "spotify_name": "Tennessee Finally Passes Alabama, and the Big Ten Falls Out of the Top Five | Tuesday, November 24, 2026",
    "full_catalog": true,
    "episodes": 20,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "cbbdaily": {
    "ok": true,
