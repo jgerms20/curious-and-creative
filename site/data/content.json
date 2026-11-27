@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T20:18:16Z",
+ "generated_at": "2026-11-27T02:58:20Z",
  "shows": [
   {
    "key": "ccpod",
@@ -52,7 +52,7 @@
    "complete": true,
    "art": "assets/art/polymath.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45826544/45826544-1776880694876-d8ab259e2aab7.jpg",
-   "latest": "2026-11-26T10:47:11Z",
+   "latest": "2026-11-26T09:58:31Z",
    "count": 292
   },
   {
@@ -990,20 +990,6 @@
  ],
  "episodes": [
   {
-   "id": "polymath:b6fe2e34 7799 4f61 a65e a963afc9c39f",
-   "show": "polymath",
-   "kind": "episode",
-   "title": "#292 Shift Economics: Build Your Economics to Support Your Shifts",
-   "date": "2026-11-26T10:47:11Z",
-   "duration": 2992,
-   "description": "Most working lives are organized by time: hours, days, calendars. This episode is about a different unit. A shift is a whole commitment, a client, your children, rest itself, and a life holds only a small number of them. Four, in the telling where this model was first laid out. Not four categories to name, but a capacity, the way a hard drive holds what it holds. The model built on that count is called shift economics, and its core rule reverses the usual order: you build your economics to support your shifts, never the reverse.\n The episode works the model in full: the counting, with throttle levers that run a commitment hotter or cooler and the liquidity that keeps the count honest; rest…",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795689982771-c89ad8b9db6c4.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/292-Shift-Economics-Build-Your-Economics-to-Support-Your-Shifts-e3t2chg",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/111be5840/podcast/play/130150384/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2Fd299052b-88cc-400e-b20c-20e8740466a2.m4a",
-   "number": "292"
-  },
-  {
    "id": "polymath:b16d8b53 3991 4212 9fd0 54d8387f2476",
    "show": "polymath",
    "kind": "episode",
@@ -1016,6 +1002,20 @@
    "spotify_url": "https://open.spotify.com/episode/0g98cClBYFrxOXKgR0xlsn",
    "audio": "https://anchor.fm/s/111be5840/podcast/play/130147952/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2F2aae4be4-a7ef-656f-ae49-4e3c9739a4b0.m4a",
    "number": "293"
+  },
+  {
+   "id": "polymath:b6fe2e34 7799 4f61 a65e a963afc9c39f",
+   "show": "polymath",
+   "kind": "episode",
+   "title": "#292 Shift Economics: Build Your Economics to Support Your Shifts",
+   "date": "2026-11-26T09:30:00Z",
+   "duration": 2992,
+   "description": "Most working lives are organized by time: hours, days, calendars. This episode is about a different unit. A shift is a whole commitment, a client, your children, rest itself, and a life holds only a small number of them. Four, in the telling where this model was first laid out. Not four categories to name, but a capacity, the way a hard drive holds what it holds. The model built on that count is called shift economics, and its core rule reverses the usual order: you build your economics to support your shifts, never the reverse.\n The episode works the model in full: the counting, with throttle levers that run a commitment hotter or cooler and the liquidity that keeps the count honest; rest…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/45826544/45826544-1795689982771-c89ad8b9db6c4.jpg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20/episodes/292-Shift-Economics-Build-Your-Economics-to-Support-Your-Shifts-e3t2chg",
+   "spotify_url": null,
+   "audio": "https://anchor.fm/s/111be5840/podcast/play/130150384/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2Fd299052b-88cc-400e-b20c-20e8740466a2.m4a",
+   "number": "292"
   },
   {
    "id": "polymath:0ed35223 907b 4d0e 97a9 df91e0856db7",
@@ -9884,7 +9884,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
