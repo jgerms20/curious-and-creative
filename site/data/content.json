@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T02:58:20Z",
+ "generated_at": "2026-11-27T12:47:55Z",
  "shows": [
   {
    "key": "ccpod",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -316,8 +316,8 @@
    "complete": true,
    "art": "assets/art/morningread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47027522/47027522-1793227953461-44e7949a00e56.jpg",
-   "latest": "2026-11-25T11:20:30Z",
-   "count": 32
+   "latest": "2026-11-27T10:41:26Z",
+   "count": 33
   },
   {
    "key": "ladaily",
@@ -343,8 +343,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-25T11:00:52Z",
-   "count": 30
+   "latest": "2026-11-27T10:46:42Z",
+   "count": 31
   },
   {
    "key": "globalread",
@@ -370,8 +370,8 @@
    "complete": true,
    "art": "assets/art/globalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105275/47105275-1793296406617-c215400bda3c9.jpg",
-   "latest": "2026-11-25T10:37:23Z",
-   "count": 28
+   "latest": "2026-11-27T10:46:43Z",
+   "count": 29
   },
   {
    "key": "marketread",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-25T11:53:41Z",
-   "count": 25
+   "latest": "2026-11-27T12:01:51Z",
+   "count": 26
   },
   {
    "key": "nyread",
@@ -478,8 +478,8 @@
    "complete": true,
    "art": "assets/art/airead.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107261/47107261-1793317605923-8dc097373b08a.jpg",
-   "latest": "2026-11-25T12:13:44Z",
-   "count": 24
+   "latest": "2026-11-27T12:21:07Z",
+   "count": 25
   },
   {
    "key": "optionsdesk",
@@ -586,8 +586,8 @@
    "complete": true,
    "art": "assets/art/tvinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105371/47105371-1793297259684-7aa906673a389.jpg",
-   "latest": "2026-11-20T12:18:22Z",
-   "count": 9
+   "latest": "2026-11-27T12:19:33Z",
+   "count": 10
   },
   {
    "key": "fastbreak",
@@ -856,8 +856,8 @@
    "complete": true,
    "art": "assets/art/politicalread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47154157/47154157-1793809248835-8a00f6bd8fab7.jpg",
-   "latest": "2026-11-25T12:34:17Z",
-   "count": 20
+   "latest": "2026-11-27T10:45:01Z",
+   "count": 21
   },
   {
    "key": "cutandsew",
@@ -989,6 +989,104 @@
   }
  ],
  "episodes": [
+  {
+   "id": "airead:e59c0244 63e2 4aed b5c1 9c8cd930e55b",
+   "show": "airead",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-27T12:21:07Z",
+   "duration": 748,
+   "description": "Google's Cogentic AI posts six math papers in a day, including an unconditional factoring result, and Anthropic shrinks its machine-checked Riemann Hypothesis proof to 76,000 lines while rewriting its own API in Rust. Plus: 1Password discloses a backend breach through a stolen GitHub account, OpenAI's GPT-6.2 billing fix and pooled ChatGPT limits, the FCC licenses SpaceX to deploy up to a million data-center satellites, New York bans AI chatbot toys for five years, Neuralink's first pivotal brain-implant trial, and bitcoin holds above $60,000 into a record options expiry as ETF outflows set a November record.\n • Google's Cogentic posts six AI-written math papers, including faster factoring…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795782041843-206d22ea05c43.jpg",
+   "url": "https://open.spotify.com/episode/7AwIquaKRqX2NvFT2ejwex",
+   "spotify_url": "https://open.spotify.com/episode/7AwIquaKRqX2NvFT2ejwex",
+   "audio": "https://anchor.fm/s/119609054/podcast/play/130210488/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F465db6fa-e120-c3e0-2432-4e6822822f4e.m4a",
+   "number": null
+  },
+  {
+   "id": "tvinsider:eaf512a4 c178 43e0 a106 0906e9098a2d",
+   "show": "tvinsider",
+   "kind": "episode",
+   "title": "Ted Lasso Renewed for Season 5 as Apple Locks In Its Biggest Hit | Friday, November 27, 2026",
+   "date": "2026-11-27T12:19:33Z",
+   "duration": 1223,
+   "description": "Apple TV renews Ted Lasso for Season 5 a month after its Season 4 finale, Prime Video orders Season 4 of The Rings of Power on finale day, Netflix cancels Will Ferrell's expensive golf comedy The Hawk after one season, Blade Runner 2099 drops all eight episodes, Dancing with the Stars posts a record-breaking finale, and SNL sets its December hosts.\n • Ted Lasso renewed for Season 5 at Apple TV — https://www.apple.com/tv-pr/news/2026/11/apples-global-hit-juggernaut-ted-lasso-lands-season-five-renewal/\n • The Rings of Power renewed for Season 4 at Prime Video — https://www.cinemaexpress.com/english/news/2026/Nov/25/prime-video-renews-rings-of-power-for-season-4\n • Netflix cancels Will…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1795781934307-a69a2aac97fd78.jpg",
+   "url": "https://open.spotify.com/episode/3L9fXLJGmR7mFAdbOpFApQ",
+   "spotify_url": "https://open.spotify.com/episode/3L9fXLJGmR7mFAdbOpFApQ",
+   "audio": "https://anchor.fm/s/1195dae0c/podcast/play/130210384/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F7d712ead-6a7b-363b-9e11-f56eccff0d71.m4a",
+   "number": null
+  },
+  {
+   "id": "marketread:2c945cb5 aa2c 427d 8ac1 e7ea068bce8d",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-27T12:01:51Z",
+   "duration": 1327,
+   "description": "Wall Street returns from Thanksgiving to a rally: Nasdaq-100 futures up 2.38% into a shortened Black Friday session as the AI trade rebounds, China's stocks surge 3.7% after Beijing pledges national-team support, the Nikkei jumps 2.11% and the Kospi 4.34%, Europe digests a downside inflation surprise (France 2.9%, Spain 4.1%), Brent holds near $96.57 after a Saudi refinery strike, and options traders still pay up for near-term protection with the VIX at 28.29. Plus Altria's possible bid for Imperial Brands and Black Friday's $12.9B online test.\n • Futures surge into the half-day: Nasdaq-100 +2.38%, S&P +1.74%, Dow +1.30% —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795780853470-725acaa6319e08.jpg",
+   "url": "https://open.spotify.com/episode/07PUOa1GXmUwLBA8l3ZnW2",
+   "spotify_url": "https://open.spotify.com/episode/07PUOa1GXmUwLBA8l3ZnW2",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130209634/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F404f0282-89be-8b7e-5724-d9e745c22f46.m4a",
+   "number": null
+  },
+  {
+   "id": "globalread:313f8692 bd27 451c 885b 647c6bafbfeb",
+   "show": "globalread",
+   "kind": "episode",
+   "title": "China Tests New Taiwan Landing Tactics in Drills | Friday, November 27, 2026",
+   "date": "2026-11-27T10:46:43Z",
+   "duration": 852,
+   "description": "China tests a new way to land troops toward Taiwan, linking civilian vessels into a floating bridge in Fujian. Plus: the detail inside the new US tariffs and the Pacific bloc opening its doors in answer, Turkey completes the Mecca defence pact with Pakistan and Saudi Arabia, Iran warns South Korea over a wider Gulf naval role as Brent settles at $96.57, ballistic missiles hit Kyiv while Ukraine claims a combat laser first, Eisenkot signs the Democrats but stays short of a majority, Spain's campaign ends with Vox as kingmaker, and Ebola passes 12,000 cases in Congo.\n Timestamps\n0:13 — China tests new Taiwan landing tactics in Fujian\n2:39 — US tariffs on 14 partners: the rates and the…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795776352528-1a329de4165678.jpg",
+   "url": "https://open.spotify.com/episode/7gdCXD7YszYvmAx1w3HFky",
+   "spotify_url": "https://open.spotify.com/episode/7gdCXD7YszYvmAx1w3HFky",
+   "audio": "https://anchor.fm/s/1195d888c/podcast/play/130206374/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F27af891b-977a-dfdc-4836-1fc5ab814fc3.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:cd7cf552 c204 407f 8d06 aa573618ad41",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-27T10:46:42Z",
+   "duration": 1259,
+   "description": "Black Friday in Los Angeles: District 9's 69-vote council race is certified today with no certified result posted yet and only a handful of ballots left to add, the king tides wash out the Pacific Surfliner on Thanksgiving, Chiquita Canyon's state emergency ask is still unanswered while air purifiers widen to five neighborhoods, records show the City Attorney's court sanctions were first paid from office petty cash, the Board clears the 30.8-acre General Hospital \"Healthy Village\" redevelopment in Boyle Heights, the LA Times reports tenant fights over Skid Row's rehab landlord, Edison extends the Eaton Fire claims deadline to December 31, and an 83-degree Friday gives way to a possible…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795776370765-1d3254d7df8b1.jpg",
+   "url": "https://open.spotify.com/episode/4UVA5BtzscdZVvnuxVlLPu",
+   "spotify_url": "https://open.spotify.com/episode/4UVA5BtzscdZVvnuxVlLPu",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/130206401/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F4c056afd-e686-8f93-0447-0568fd94d9dc.m4a",
+   "number": null
+  },
+  {
+   "id": "politicalread:9ca66564 201e 4da9 87a2 cf058b75d081",
+   "show": "politicalread",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-27T10:45:01Z",
+   "duration": 1287,
+   "description": "President Trump spent Thanksgiving telling deployed Marines he is \"not looking to veto everything\" the incoming Democratic Congress sends him — and, hours later, accusing his own Commerce Department of issuing fake GDP figures before the midterms and demanding an investigation. Plus: one federal judge blocks the FCC's early license review of ABC while declining to ban the taxpayer-funded pro-Trump ads; the tariff wall goes back up under Section 301 as China and Japan protest; and the House math sits at 259 Democratic seats with three races left.\n Timestamps:\n0:13 Welcome to The Political Read\n1:47 The lead: Trump's Thanksgiving veto message to Democrats\n4:17 The GDP fight: Trump vs. his own…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795776256277-eff09462e769.jpg",
+   "url": "https://open.spotify.com/episode/0UJdeKVmfCA81w9FFD2R2b",
+   "spotify_url": "https://open.spotify.com/episode/0UJdeKVmfCA81w9FFD2R2b",
+   "audio": "https://anchor.fm/s/119a81f14/podcast/play/130206308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F57ec5ef5-8a19-c536-46c2-0957c6b1e4b2.m4a",
+   "number": null
+  },
+  {
+   "id": "morningread:f283812b d524 4c64 8fb5 892ed2aba998",
+   "show": "morningread",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-27T10:41:26Z",
+   "duration": 1262,
+   "description": "The Thanksgiving nor'easter departs after leaving nearly a million customers without power at its peak; President Trump's holiday message targets his foes and the government's own economic data; Black Friday arrives as a fourth quarter rather than a kickoff; a judge stops the FCC's early review of ABC; an American-led consortium takes Lukoil's overseas empire; the FCC licenses a million orbital data centres; Iowa's first lab results are due today; and Thanksgiving football delivers three walk-off finishes.\n Timestamps:\n0:48 The storm, after: nearly a million in the dark\n4:48 A Thanksgiving message, aimed at his foes\n7:06 Black Friday: the fourth quarter of shopping\n9:07 The FCC is stopped…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795776068140-4fc0a4bc53753.jpg",
+   "url": "https://open.spotify.com/episode/56xul2YW53rHoKMlLDA2Vo",
+   "spotify_url": "https://open.spotify.com/episode/56xul2YW53rHoKMlLDA2Vo",
+   "audio": "https://anchor.fm/s/118e6e448/podcast/play/130206201/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F2a702681-d74c-0d99-08cb-e2d79028f7a7.m4a",
+   "number": null
+  },
   {
    "id": "polymath:b16d8b53 3991 4212 9fd0 54d8387f2476",
    "show": "polymath",
@@ -1179,7 +1277,7 @@
    "date": "2026-11-25T13:18:00Z",
    "duration": 1351,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ab3afdc653ec16f5d672308bb",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ab3afdc653ec16f5d672308bb",
    "url": "https://open.spotify.com/episode/7vBJMSR7kWfA0JEuA23k5b",
    "spotify_url": "https://open.spotify.com/episode/7vBJMSR7kWfA0JEuA23k5b",
    "spotify_video": false
@@ -1193,8 +1291,8 @@
    "duration": 1025,
    "description": "Kilmar Abrego Garcia, mistakenly deported to a Salvadoran prison in 2025 and then fought over in court for nearly two years, left the United States voluntarily for Spain on Tuesday. The administration calls it a self-deportation under a removal order; his lawyers call it a temporary departure while he waits out this administration. Plus: the White House prepares new Section 301 tariffs on China, the EU and 14 other economies to replace duties the Supreme Court struck down, and Jensen Huang's return at Nvidia intensifies Congress's China chip fight.\n Timestamps:\n0:13 Welcome to The Political Read\n0:56 Abrego Garcia leaves for Spain — the lead\n6:00 New tariffs on China, the EU and 14…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795610029438-0dd745e03e3bf.jpg",
-   "url": "https://open.spotify.com/episode/4Gy6EdbxvXjSy8F95rLQ0e",
-   "spotify_url": "https://open.spotify.com/episode/4Gy6EdbxvXjSy8F95rLQ0e",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Wednesday--November-25--2026-e3t0hak",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119a81f14/podcast/play/130089748/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F7fba79f3-2362-7f3f-c271-eb210a6c7350.m4a",
    "number": null
   },
@@ -1207,8 +1305,8 @@
    "duration": 1528,
    "description": "Washington blacklists seven Megaspeed-linked firms and the chip controls go regional, the reinstatement rally unwinds as Nvidia gives back $240 billion and Anthropic closes below its IPO price, TSMC files for a $22.6 billion 2-nanometer fab in Texas, Baidu open-sources ERNIE 5.5 Flash Preview, OpenAI and Cisco ship the Shirudo agent shield, Anthropic's Frontier Safeguards and the MCP stack mature, the market grades the CrowdStrike–Zscaler deal at its offer price, and bitcoin holds below $60,000 into today's PCE print.\n • US blacklists seven Megaspeed-linked firms; Malaysia orders data centers to cut them off — https://ai.zhudong.net/en/\n • Nvidia gives back $240B and Anthropic closes below…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795608697951-7d1a05a8fddb5.jpg",
-   "url": "https://open.spotify.com/episode/7aMatfOSlP74CMcGlFzMvg",
-   "spotify_url": "https://open.spotify.com/episode/7aMatfOSlP74CMcGlFzMvg",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Wednesday--November-25--2026-e3t0gc8",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/130088776/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fd9cc21f7-4b8d-f52c-4589-1756f343b691.m4a",
    "number": null
   },
@@ -1235,8 +1333,8 @@
    "duration": 847,
    "description": "Nasdaq futures fell more than 2% on Wednesday as reports of new U.S. tariff plans on 16 trading partners hit a market already bracing for the October PCE inflation report at 8:30 a.m. ET — the last big read before the Fed's December meeting. Asia's chip complex routed overnight, Dell posted a record quarter and fell anyway, software names beat and sold off, and consumer confidence surged to 103.3. Plus the options desk, with the VIX at 26.36 and hedges on into the Thanksgiving gap.\n • Futures slide over 2% on fresh U.S. tariff concerns; PCE in focus (DEVELOPING) — https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/\n •…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795607557401-23a2d4aa3b204.jpg",
-   "url": "https://open.spotify.com/episode/0YH7TJC7EvgdoelOPiBLgI",
-   "spotify_url": "https://open.spotify.com/episode/0YH7TJC7EvgdoelOPiBLgI",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Wednesday--November-25--2026-e3t0fm4",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130088068/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F513eb51b-1df0-3dce-e7e6-fe3906aae92a.m4a",
    "number": null
   },
@@ -1249,8 +1347,8 @@
    "duration": 1239,
    "description": "Thanksgiving Eve in New York: Mayor Mamdani heads for Achilles surgery on Friday with First Deputy Mayor Dean Fuleihan set to run the city for about five hours, the Public Design Commission delays the $8 billion Metropolitan Park casino design vote for a second time, Citi Bike member e-bike rides are capped at $3.65, a 23-year-old Citi Bike rider is killed in Chelsea, the NYPD searches Riverside Park after a random stabbing, a TLC report finds taxi costs up 16% with pay still under $50,000, Governor Hochul vetoes the AI accuracy-warning bill, and Broadway stagehands reach a tentative deal that keeps the holiday shows on.\n (00:00) Welcome and Thanksgiving Eve in the city\n(01:31) The mayor…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1795606595437-7654e59a38e7a.jpg",
-   "url": "https://open.spotify.com/episode/2bfxYfFPOPo69OBZBnR3Kl",
-   "spotify_url": "https://open.spotify.com/episode/2bfxYfFPOPo69OBZBnR3Kl",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms202/episodes/Wednesday--November-25--2026-e3t0ess",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119608a14/podcast/play/130087260/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fbf4c1076-9b39-13d0-405d-68ac271c997c.m4a",
    "number": null
   },
@@ -1263,8 +1361,8 @@
    "duration": 899,
    "description": "At 9 a.m. in Middletown, Iowa, the Army detonates nearly 10,000 pounds of degraded lead azide too unstable to move, under a FEMA alert and an hourly plume map. Plus: the administration loads its next tariff round on a Section 301 probe of 16 trading partners; the Dow closes above 50,000 while Nvidia gives back 5.9 percent; consumer confidence jumps to 103.3 as all six reporting retailers beat; O'Hare takes its second ground stop in two days; oil settles up $2 on three struck ships in Hormuz; and Sanford crosses into major flood ahead of tonight's crest.\n Timestamps:\n (00:16) Iowa: Detonation Day\n (04:02) Tariffs: The Next Round Is Loaded (DEVELOPING)\n (05:47) The Markets: The Dow Crosses,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795605600145-bd069fbf530a7.jpg",
-   "url": "https://open.spotify.com/episode/4MDHonauHjngFaPXLfssku",
-   "spotify_url": "https://open.spotify.com/episode/4MDHonauHjngFaPXLfssku",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Wednesday--November-25--2026-e3t0e7p",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/130086585/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F4f5ee003-23e8-23f2-5563-77d90a4058c8.m4a",
    "number": null
   },
@@ -1277,8 +1375,8 @@
    "duration": 1417,
    "description": "Thanksgiving Eve in Los Angeles: the Board of Supervisors unanimously declares a local emergency over the Chiquita Canyon Landfill and asks the state to follow, the king tides peak this morning at 8.0 to 8.4 feet — with an Advisory and a Thursday-morning Watch for L.A. County beaches, not the Warning that was expected — and the District 9 signature-cure deadline closes today at 5 p.m. on an 87-vote race. Plus LAPD shootings up 62 percent in 2025, the Attorney General declines charges in a 2024 shooting, LAHSA's federal homelessness role ends by the end of 2027 on a court-ordered timeline, a peak LAX travel day with CHP enforcement from 6 p.m., the LA28 Cultural Olympiad loses its director,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795604389652-6a790782318b.jpg",
-   "url": "https://open.spotify.com/episode/0bxzdgJKCT9fsZ9YP1d1tw",
-   "spotify_url": "https://open.spotify.com/episode/0bxzdgJKCT9fsZ9YP1d1tw",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Wednesday--November-25--2026-e3t0daf",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/130085647/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F5ccebaea-0575-029f-d8df-e24b32c2162d.m4a",
    "number": null
   },
@@ -1291,8 +1389,8 @@
    "duration": 1440,
    "description": "Yemen's Houthis say they set Saudi Arabia's Ras Tanura refinery ablaze and struck Riyadh's financial district for the third time in a week, with fighters closing to within 60 km of Aden (DEVELOPING). Plus: Australia and the Solomon Islands sign the security pact that bars any foreign base; a fourth Politburo member falls as Chen Jining is investigated; Asian markets tumble as Washington prepares Section 301 tariffs on 16 partners; Eisenkot signs Israel's first coalition pact but stays short of 61; cheap drones end the state's monopoly of the sky in the Sahel; some 175 people are unaccounted for after a migrant boat vanished off Senegal; and Spain's election becomes a fight over housing.\n…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795602993240-e37e08361b8da.jpg",
-   "url": "https://open.spotify.com/episode/13KNHxpdcFd7BZ9dv34Aci",
-   "spotify_url": "https://open.spotify.com/episode/13KNHxpdcFd7BZ9dv34Aci",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/Houthis-Say-They-Hit-Saudi-Arabias-Largest-Refinery-and-Riyadhs-Financial-District--Wednesday--November-25--2026-e3t0cbt",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/130084669/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2Fcac8eb4b-2b91-f540-72f6-5283c0d62f4f.m4a",
    "number": null
   },
@@ -1613,8 +1711,8 @@
    "duration": 1385,
    "description": "Take-Two made it official: Grand Theft Auto VI did $3.79 billion on day one, the biggest entertainment launch ever, and the movies survived it. Sunrise on the Reaping opened to $120 million, Thanksgiving tracking puts Focker-in-Law ahead of Hexed while Netflix's Cliff Booth fights the IMAX window, a $7 million documentary crossed $100 million, and IMAX posted a record quarter.\n • GTA VI's official $3.79B day one is the biggest launch ever — https://www.usatoday.com/story/tech/gaming/2026/11/21/gta-6-first-day-sales-record/92897054007/\n • Sunrise on the Reaping opens to $120M domestic, $225M worldwide —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1795436056283-8deb9f0d0ba01.jpg",
-   "url": "https://open.spotify.com/episode/3Z62k9OkfWVb50LOeIl3FI",
-   "spotify_url": "https://open.spotify.com/episode/3Z62k9OkfWVb50LOeIl3FI",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2048/episodes/GTA-VIs-3-79-Billion-Day-One-Is-the-Biggest-Launch-Ever--and-the-Movies-Survived-It--Monday--November-23--2026-e3ss8lt",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/129949821/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-23%2F1909f45a-77ad-61cb-d42d-c8ae51b5d19c.m4a",
    "number": null
   },
@@ -2243,8 +2341,8 @@
    "duration": 1298,
    "description": "HBO renews The Gilded Age for Season 5 three episodes into its biggest season yet, NBC's Traitors: New Blood earns a Season 2 on finale day, Disney beats estimates and confirms more layoffs on the road to $3 billion in savings, Apple TV orders Slow Horses through Season 10, Nielsen's originals chart posts its softest week in two years, CBS supersizes Survivor and doubles Ghosts, and Virgin River becomes Netflix's longest-running scripted series.\n • HBO Renews The Gilded Age for Season 5 as Season 4 Averages 5.9 Million Viewers — https://www.thewrap.com/creative-content/tv-shows/the-gilded-age-renewed-season-5-hbo/\n • The Traitors: New Blood Renewed for Season 2 at NBC —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105371/47105371-1795177009521-8b4d20de45258.jpg",
-   "url": "https://open.spotify.com/episode/5sVTb9tx6MYTi0gdRuACIH",
-   "spotify_url": "https://open.spotify.com/episode/5sVTb9tx6MYTi0gdRuACIH",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms200/episodes/HBO-Renews-The-Gilded-Age-for-Season-5-Three-Episodes-Into-Its-Biggest-Season-Yet--Friday--November-20--2026-e3snqho",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195dae0c/podcast/play/129804280/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2Fb0803932-8d4f-d2cc-b902-e3bae8c1310c.m4a",
    "number": null
   },
@@ -6897,20 +6995,6 @@
    "number": null
   },
   {
-   "id": "ladaily:19bdcc68 e52e 419b a387 88741c940fd0",
-   "show": "ladaily",
-   "kind": "episode",
-   "title": "Thursday, October 29, 2026",
-   "date": "2026-10-30T01:30:41Z",
-   "duration": 982,
-   "description": "Los Angeles wakes up to the loss of Dolores Huerta, who died at 96, with City Hall lit in her honor. Plus a mayor's race suddenly tied, an oil ban restored, the D Line reopening early, and the Halloween weekend ahead.\n Dolores Huerta, 1930–2026 · Bass–Raman tied at 40–40 · El Niño sweeps in · Oil ban restored · D Line early reopening · The Judge Carter voting ruling · Nova Pico-Union and the Prop K shortfall · Koreatown karaoke and Disney Glendale layoffs · Shatner's Legend Award\n Part of the Curious & Creative network. Back tomorrow morning.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793323771927-842dd750e8da5.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Thursday--October-29--2026-e3rclcc",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/11960849c/podcast/play/128389964/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2Feaf33687-5794-2d53-5e10-7f7382609844.m4a",
-   "number": null
-  },
-  {
    "id": "airead:d9547692 0ec4 40e1 adc3 4acee20738a9",
    "show": "airead",
    "kind": "episode",
@@ -7231,20 +7315,6 @@
    "spotify_url": null,
    "audio": "https://anchor.fm/s/11714b104/podcast/play/128136952/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2F20623680-a7b3-8591-0b35-0e0cd107d9d1.m4a",
    "number": "21"
-  },
-  {
-   "id": "morningread:397e0212 0d43 4e83 9dae 067cd830c502",
-   "show": "morningread",
-   "kind": "episode",
-   "title": "Monday, October 26, 2026",
-   "date": "2026-10-26T18:32:11Z",
-   "duration": 1298,
-   "description": "Lula da Silva wins a historic fourth term in Brazil as Flávio Bolsonaro refuses to concede and vows to seek annulment. Plus: Serbia's student movement topples Vučić; France's second protest Saturday and the November 5 strike call; Houthi attacks empty Saudi skies; the midterms in a Sunday courtroom; Israel on election eve; the Fed and big-tech week; and Ebola responders attacked in Congo.\n Stories: Brazil's runoff · Serbia's student victory · France · Saudi Arabia and the Houthis · The midterms and the courts · Israel's election · Markets and the AI ledger · Congo and Ebola.\n Part of the Curious & Creative network. Back tomorrow morning.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1793296522000-fd0648f2f3c2d.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Monday--October-26--2026-e3r4lop",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/118e6e448/podcast/play/128128217/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2F17a21d4d-acd2-d736-08ad-79b142be7a31.m4a",
-   "number": null
   },
   {
    "id": "polymath:9df48401 8879 4d3a a87f 526e0466f06a",
@@ -11973,7 +12043,7 @@
    "feed": "https://anchor.fm/s/118e6e448/podcast/rss",
    "spotify_name": "The Morning Read",
    "full_catalog": true,
-   "episodes": 32,
+   "episodes": 33,
    "spotify_matches": 1
   },
   "ladaily": {
@@ -11981,7 +12051,7 @@
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 30,
+   "episodes": 31,
    "spotify_matches": 1
   },
   "globalread": {
@@ -11989,7 +12059,7 @@
    "feed": "https://anchor.fm/s/1195d888c/podcast/rss",
    "spotify_name": "The Global Read",
    "full_catalog": true,
-   "episodes": 28,
+   "episodes": 29,
    "spotify_matches": 1
   },
   "marketread": {
@@ -11997,7 +12067,7 @@
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 25,
+   "episodes": 26,
    "spotify_matches": 1
   },
   "nyread": {
@@ -12006,7 +12076,7 @@
    "spotify_name": "The New York Read",
    "full_catalog": true,
    "episodes": 14,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "columbiaread": {
    "ok": true,
@@ -12021,7 +12091,7 @@
    "feed": "https://anchor.fm/s/119609054/podcast/rss",
    "spotify_name": "The Tech Read",
    "full_catalog": true,
-   "episodes": 24,
+   "episodes": 25,
    "spotify_matches": 1
   },
   "optionsdesk": {
@@ -12046,14 +12116,14 @@
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
    "episodes": 10,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "tvinsider": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195dae0c/podcast/rss",
    "spotify_name": "Primetime TV",
    "full_catalog": true,
-   "episodes": 9,
+   "episodes": 10,
    "spotify_matches": 1
   },
   "fastbreak": {
@@ -12133,7 +12203,7 @@
    "feed": "https://anchor.fm/s/119a81f14/podcast/rss",
    "spotify_name": "The Political Read",
    "full_catalog": true,
-   "episodes": 20,
+   "episodes": 21,
    "spotify_matches": 1
   },
   "cutandsew": {
