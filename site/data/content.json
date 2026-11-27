@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T12:47:55Z",
+ "generated_at": "2026-11-27T22:09:21Z",
  "shows": [
   {
    "key": "ccpod",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -182,8 +182,8 @@
    "complete": true,
    "art": "assets/art/riff.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "latest": "2026-11-20T17:17:13Z",
-   "count": 35
+   "latest": "2026-11-27T16:01:19Z",
+   "count": 36
   },
   {
    "key": "brazil",
@@ -289,8 +289,8 @@
    "complete": true,
    "art": "assets/art/dominatedconvo.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47123660/47123660-1795113011009-48dac9364263c.jpg",
-   "latest": "2026-11-25T15:09:20Z",
-   "count": 22
+   "latest": "2026-11-27T15:16:29Z",
+   "count": 23
   },
   {
    "key": "morningread",
@@ -424,8 +424,8 @@
    "complete": true,
    "art": "assets/art/nyread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107245/47107245-1793317404312-7d947985276bd.jpg",
-   "latest": "2026-11-25T11:37:48Z",
-   "count": 14
+   "latest": "2026-11-27T11:45:31Z",
+   "count": 15
   },
   {
    "key": "columbiaread",
@@ -559,8 +559,8 @@
    "complete": true,
    "art": "assets/art/hollywoodinsider.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105424/47105424-1793297689937-ea82964945ec2.jpg",
-   "latest": "2026-11-23T12:15:50Z",
-   "count": 10
+   "latest": "2026-11-27T12:13:40Z",
+   "count": 11
   },
   {
    "key": "tvinsider",
@@ -801,8 +801,8 @@
    "complete": true,
    "art": "assets/art/gamecocksdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47115663/47115663-1793412241150-3d9dc350fed81.jpg",
-   "latest": "2026-11-25T13:39:42Z",
-   "count": 14
+   "latest": "2026-11-27T13:37:06Z",
+   "count": 15
   },
   {
    "key": "gamecockshoops",
@@ -990,6 +990,48 @@
  ],
  "episodes": [
   {
+   "id": "riff:8919bf3e 5bdd 417a 92c3 04ad775de5da",
+   "show": "riff",
+   "kind": "episode",
+   "title": "Billy Strayhorn: The Man Who Wrote the A Train — November 27 – December 3",
+   "date": "2026-11-27T16:01:19Z",
+   "duration": 3117,
+   "description": "The Week Ahead, November 27 – December 3: New York owns the weekend — Jason Moran and The Bandwagon close their Village Vanguard run (Friday through Sunday) while Chief Adjuah finishes at the Blue Note, and on Tuesday Christian McBride opens six nights at the Vanguard with a chordless quartet. Today is Record Store Day Black Friday and jazz owns the list: Miles Davis's Copenhagen Live 1969 with the Lost Quintet, Stan Getz's Keystone Korner reunion with João Gilberto, Albert Ayler, Art Blakey and Bill Evans. Plus new wax from Exhaust, Ralph Moore and the Primary Influences sextet, holiday jazz switching on in Chicago (Kat Edmonson, the first Charlie Brown Christmas of the season), and Denver…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1795795122767-92554081584df.jpg",
+   "url": "https://open.spotify.com/episode/0L3po4Uu1X7cOOxZNROfG4",
+   "spotify_url": "https://open.spotify.com/episode/0L3po4Uu1X7cOOxZNROfG4",
+   "audio": "https://anchor.fm/s/1187405a4/podcast/play/130220670/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F9d69b769-3a23-cc50-ba6f-4df74b163ca5.m4a",
+   "number": "36"
+  },
+  {
+   "id": "dominatedconvo:e372144f e4bf 492f 9217 e430f506b59a",
+   "show": "dominatedconvo",
+   "kind": "episode",
+   "title": "Black Friday Breaks Records on the Couch While the East Coast Dries Out | Friday, November 27, 2026",
+   "date": "2026-11-27T15:16:29Z",
+   "duration": 784,
+   "description": "Black Friday, America's loudest in-person shopping day, happened this year mostly on phones: a Thanksgiving nor'easter knocked out power to about 961,000 customers at its peak, postponed the 100th Macy's Thanksgiving Day Parade to Saturday, and left the sale to the servers. Adobe forecasts about $12.9 billion in online spending today and the NRF projects the first trillion-dollar holiday season, with the asterisk named: at 3.8% inflation, most of the 4.2% growth is price, not volume. Plus the platform roundup and the Pirate Shop Token's 20th day at number one.\n 0:00 The storm set the terms: 961,000 outages, closed bridges, cancelled flights\n 2:37 The parade's second attempt: balloons…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795792515687-098c97b0aa92.jpg",
+   "url": "https://open.spotify.com/episode/45z8dW3LNilBfG9S9qawPC",
+   "spotify_url": "https://open.spotify.com/episode/45z8dW3LNilBfG9S9qawPC",
+   "audio": "https://anchor.fm/s/119799630/podcast/play/130218523/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F9bf5cf11-de00-908f-30d2-026253d53b06.m4a",
+   "number": null
+  },
+  {
+   "id": "gamecocksdaily:0cc51608 6d12 4ffe b325 9602b401cdd9",
+   "show": "gamecocksdaily",
+   "kind": "episode",
+   "title": "Favored in Death Valley, One Question Left: South Carolina Is 6-5 | Friday, November 27, 2026",
+   "date": "2026-11-27T13:37:06Z",
+   "duration": 1222,
+   "description": "South Carolina (6-5) goes to Clemson (7-4) tomorrow for the 123rd Palmetto Bowl as a 6.5-point road favorite in a game the market expects to stay low: the visiting team has won six straight in this rivalry, LaNorris Sellers is a week healthier, three starters return, and Nyck Harbor is the last unanswered question. The full preview, read at the level of what it means.\n Inside: the Palmetto Bowl preview and the quarterback gap / the final word on who plays: Bennett and Addison back, Collier trending, a beat-up front, and Harbor developing / the deep segment on the two assignments: Clemson's plan to protect its walk-on quarterback, and South Carolina's red-zone habit / basketball: the men…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795786553685-78e6a4b5c68258.jpg",
+   "url": "https://open.spotify.com/episode/0zOLmWJ1gK6Itwh8eoXJRA",
+   "spotify_url": "https://open.spotify.com/episode/0zOLmWJ1gK6Itwh8eoXJRA",
+   "audio": "https://anchor.fm/s/1196d625c/podcast/play/130213824/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2Fadd7deb0-02e7-9d1b-8ee1-0cea99055527.m4a",
+   "number": null
+  },
+  {
    "id": "airead:e59c0244 63e2 4aed b5c1 9c8cd930e55b",
    "show": "airead",
    "kind": "episode",
@@ -1018,6 +1060,20 @@
    "number": null
   },
   {
+   "id": "hollywoodinsider:cd71a735 389f 4d5a ab88 ade202d44817",
+   "show": "hollywoodinsider",
+   "kind": "episode",
+   "title": "Disney's $200 Million Hexed and the Fockers Both Miss as Thanksgiving Shrinks to Half Its Record | Friday, November 27, 2026",
+   "date": "2026-11-27T12:13:40Z",
+   "duration": 1414,
+   "description": "Thanksgiving's two new bets both missed: Disney's $200 million original Hexed opened to $7.6 million and Universal's Focker-in-Law to $5.3 million, both forecasts cut, with the frame headed for $210 to $215 million against a $422 million record. Sunrise on the Reaping took the holiday anyway, Cliff Booth turned 252 IMAX screens into the frame's loudest argument, Dunesday tracking posted a record first number, and Netflix bought a historic lot for a fifth of its 2021 price.\n • Thanksgiving's two new bets both miss: Hexed and Focker-in-Law open soft — https://www.9to5marvel.com/thanksgiving-box-office-2026-hexed-focker-in-law-opening-day/\n • Sunrise on the Reaping sets franchise weekday…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105424/47105424-1795781591271-f05efac7a651b.jpg",
+   "url": "https://open.spotify.com/episode/2tbyvFT7ozKn9VArCwNOpR",
+   "spotify_url": "https://open.spotify.com/episode/2tbyvFT7ozKn9VArCwNOpR",
+   "audio": "https://anchor.fm/s/1195dc2c0/podcast/play/130210143/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F0e6ade4d-c59a-2ec8-8ff2-87b3144f2e1e.m4a",
+   "number": null
+  },
+  {
    "id": "marketread:2c945cb5 aa2c 427d 8ac1 e7ea068bce8d",
    "show": "marketread",
    "kind": "episode",
@@ -1029,6 +1085,20 @@
    "url": "https://open.spotify.com/episode/07PUOa1GXmUwLBA8l3ZnW2",
    "spotify_url": "https://open.spotify.com/episode/07PUOa1GXmUwLBA8l3ZnW2",
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130209634/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F404f0282-89be-8b7e-5724-d9e745c22f46.m4a",
+   "number": null
+  },
+  {
+   "id": "nyread:c4fec8fa 84ea 41fb 80a3 e624aa05d680",
+   "show": "nyread",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-27T11:45:31Z",
+   "duration": 988,
+   "description": "The day after Thanksgiving in New York: Mayor Mamdani goes into Achilles surgery this morning with First Deputy Mayor Dean Fuleihan in charge from about 9 a.m. to 2 p.m., a Manhattan judge upholds the rent freeze for nearly one million stabilized apartments, the region cleans up after a nor'easter that gave Central Park its wettest Thanksgiving on record and knocked out power to more than 980,000 people at its peak, the 100th Macy's parade moves to Saturday for the first time in its history, the SRG is deployed in Midwood ten days after its disbanding was announced, the Rikers monitor finds strip searches that broke the jail's own rules, Queens DA Katz sues to block the prosecutor watchdog,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107245/47107245-1795779888091-0e63644885b73.jpg",
+   "url": "https://open.spotify.com/episode/2HD1AM9gITGcT6Z4q9APt4",
+   "spotify_url": "https://open.spotify.com/episode/2HD1AM9gITGcT6Z4q9APt4",
+   "audio": "https://anchor.fm/s/119608a14/podcast/play/130209047/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F388e2d6a-78cf-3baf-f8b2-90d4419b15c0.m4a",
    "number": null
   },
   {
@@ -1236,8 +1306,8 @@
    "duration": 817,
    "description": "Thanksgiving Eve was a day of second thoughts. Jensen Huang is reported to have apologized to Nvidia staff a day after the board reinstated him (developing, single-aggregator sourcing, flagged on air), Anthropic briefly fell below its own $83 IPO price, and GTA 6's launch week became a fight over PC ports, DMCA takedowns, fake-patch malware, and the GTA flu. Plus the Clavicular correction this show owed you, Tidal's AI-music ban, and a Christmas takeover of the TikTok charts.\n 0:00 Welcome: the day of second thoughts\n1:18 Jensen Huang's reported apology\n2:55 Anthropic slips below its IPO price\n4:17 GTA 6: the PC fight and the GTA flu\n7:20 The Clavicular correction\n8:42 Platform roundup: X,…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47123660/47123660-1795619329501-19f98ff2efd14.jpg",
-   "url": "https://open.spotify.com/episode/2MVzPTEbIhIl6jy4FRByho",
-   "spotify_url": "https://open.spotify.com/episode/2MVzPTEbIhIl6jy4FRByho",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20949/episodes/Jensen-Huang-Apologizes-a-Day-After-Nvidia-Un-Fired-Him--Wednesday--November-25--2026-e3t0rcd",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119799630/podcast/play/130100045/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F993e43c3-7768-5c3f-7c0a-e112e32965a5.m4a",
    "number": null
   },
@@ -1264,8 +1334,8 @@
    "duration": 903,
    "description": "South Carolina (6-5) goes to Death Valley for the 123rd Palmetto Bowl on Saturday unranked, beat up, and favored — and with the strangest fact in the rivalry working for the road team: the visiting team has won six straight, and no home crowd has seen a rivalry win since 2018. Clemson week, read at the level of what it means.\n Inside: rivalry week and the road-team streak / the returns: Bennett and Addison back at practice, Collier trending to Saturday, a beat-up defensive front, and Harbor still developing / the deep segment on Clemson's quarterback room — Reynolds and Vizzina out, walk-on Trent Pearman starting — and what it asks of South Carolina's defense / basketball: the No. 1 women…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47115663/47115663-1795613909767-011caaefbc1fa.jpg",
-   "url": "https://open.spotify.com/episode/14m3ZukTJ9CnZ6ueqVSY2U",
-   "spotify_url": "https://open.spotify.com/episode/14m3ZukTJ9CnZ6ueqVSY2U",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2094/episodes/The-Road-Team-Has-Won-Six-Straight-South-Carolina-Is-6-5--Wednesday--November-25--2026-e3t0ka9",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196d625c/podcast/play/130092809/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F7a427603-f7bb-21c5-7974-1ed0277dded3.m4a",
    "number": null
   },
@@ -2229,8 +2299,8 @@
    "duration": 4051,
    "description": "The Week Ahead, November 20–26: Joshua Redman's If Ever You Would Leave Us (We Play For Rollins) is out today on Blue Note — a joyful all-star tribute to Sonny Rollins with Christian McBride, Marcus Gilmore, Chris Potter, Cécile McLorin Salvant and Gabrielle Cavassa. Three festivals land on one weekend: the EFG London Jazz Festival closes (Samara Joy at the Royal Festival Hall on Sunday), Newark's TD James Moody Festival closes at NJPAC (the Charles Lloyd Quartet on Saturday, the Sarah Vaughan vocal finals on Sunday), and the Hollywood Real Jazz Festival debuts free in Florida with Ron Carter headlining Saturday. Plus the DownBeat Readers Poll — Carter and Herbie Hancock on top, Kenny…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/46952241/46952241-1795194948735-d581ee81e4124.jpg",
-   "url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
-   "spotify_url": "https://open.spotify.com/episode/2Vt5qGmRUWhr9NAOQDVTvs",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/Coleman-Hawkins-The-Man-Who-Made-the-Tenor-a-Jazz-Horn--November-2026-e3so7t9",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1187405a4/podcast/play/129817961/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-20%2F21707581-7b79-c587-be13-bd47434962b2.m4a",
    "number": "35"
   },
@@ -8101,20 +8171,6 @@
    "number": "7"
   },
   {
-   "id": "riff:371bdf6a 4fb0 4782 ae15 b072302f6fe0",
-   "show": "riff",
-   "kind": "episode",
-   "title": "#6 New York: The Capital Holds",
-   "date": "2026-10-15T20:27:31Z",
-   "duration": 2859,
-   "description": "New York nearly lost jazz in the seventies. Instead it rebuilt — and held the capital. From the Village Vanguard, open since February 22, 1935, to the Five Spot and the loft era, this is the infrastructure story: the rooms, the leases, and the stubborn people who kept the music housed.\n Monk's quartet opened at the Five Spot on July 18, 1957 with a young John Coltrane beside him; Frederick P. Rose Hall opened October 18, 2004 as the rebuild's symbol; and Smalls now streams its tiny basement to the world.\n Love you madly.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/46952241/46952241-1791842086815-d3dc0a841baa5.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms207/episodes/6-New-York-The-Capital-Holds-e3qimfh",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/1187405a4/podcast/play/127539121/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2Fdb110b6b-e398-ad4d-abce-f242bbe02bdd.m4a",
-   "number": "6"
-  },
-  {
    "id": "polymath:0c1c9dd2 e16c 46a8 8b0c 1d6560ca6b40",
    "show": "polymath",
    "kind": "episode",
@@ -12003,7 +12059,7 @@
    "feed": "https://anchor.fm/s/1187405a4/podcast/rss",
    "spotify_name": "The Jazz Riff",
    "full_catalog": true,
-   "episodes": 35,
+   "episodes": 36,
    "spotify_matches": 1
   },
   "brazil": {
@@ -12035,7 +12091,7 @@
    "feed": "https://anchor.fm/s/119799630/podcast/rss",
    "spotify_name": "The Zeitgeist",
    "full_catalog": true,
-   "episodes": 22,
+   "episodes": 23,
    "spotify_matches": 1
   },
   "morningread": {
@@ -12075,8 +12131,8 @@
    "feed": "https://anchor.fm/s/119608a14/podcast/rss",
    "spotify_name": "The New York Read",
    "full_catalog": true,
-   "episodes": 14,
-   "spotify_matches": 0
+   "episodes": 15,
+   "spotify_matches": 1
   },
   "columbiaread": {
    "ok": true,
@@ -12115,8 +12171,8 @@
    "feed": "https://anchor.fm/s/1195dc2c0/podcast/rss",
    "spotify_name": "The Business of Hollywood",
    "full_catalog": true,
-   "episodes": 10,
-   "spotify_matches": 0
+   "episodes": 11,
+   "spotify_matches": 1
   },
   "tvinsider": {
    "ok": true,
@@ -12187,7 +12243,7 @@
    "feed": "https://anchor.fm/s/1196d625c/podcast/rss",
    "spotify_name": "Gamecocks Daily",
    "full_catalog": true,
-   "episodes": 14,
+   "episodes": 15,
    "spotify_matches": 1
   },
   "gamecockshoops": {
