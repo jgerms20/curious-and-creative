@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-28T04:01:10Z",
+ "generated_at": "2026-11-28T13:17:38Z",
  "shows": [
   {
    "key": "ccpod",
@@ -97,7 +97,7 @@
    "spotify_url": "https://open.spotify.com/show/033G4KctzeuD3Pu4db1AQa",
    "feed_title": "Too Much to Tweet",
    "art": "assets/art/tmtt.jpg",
-   "art_remote": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
+   "art_remote": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8a788c2667b7b49bf441e8c8b7",
    "latest": "2026-07-25T22:26:00Z",
    "count": 1
   },
@@ -343,8 +343,8 @@
    "complete": true,
    "art": "assets/art/ladaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47107231/47107231-1793317283328-7d63fd8a117bc.jpg",
-   "latest": "2026-11-27T10:46:42Z",
-   "count": 31
+   "latest": "2026-11-28T10:41:05Z",
+   "count": 32
   },
   {
    "key": "globalread",
@@ -397,8 +397,8 @@
    "complete": true,
    "art": "assets/art/marketread.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47105283/47105283-1793296461432-37636e92ac11e.jpg",
-   "latest": "2026-11-27T12:01:51Z",
-   "count": 26
+   "latest": "2026-11-28T11:48:57Z",
+   "count": 27
   },
   {
    "key": "nyread",
@@ -612,8 +612,8 @@
    "complete": true,
    "art": "assets/art/fastbreak.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47099278/47099278-1793471691829-255f764b1ca39.jpg",
-   "latest": "2026-11-26T06:35:54Z",
-   "count": 25
+   "latest": "2026-11-28T06:11:58Z",
+   "count": 26
   },
   {
    "key": "blitz",
@@ -639,8 +639,8 @@
    "complete": true,
    "art": "assets/art/blitz.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114961/47114961-1793415939925-cce7d89e0ed85.jpg",
-   "latest": "2026-11-26T05:03:28Z",
-   "count": 15
+   "latest": "2026-11-27T23:37:48Z",
+   "count": 16
   },
   {
    "key": "waiverwire",
@@ -694,8 +694,8 @@
    "complete": true,
    "art": "assets/art/celticsdaily.jpg",
    "art_remote": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/47114970/47114970-1793402932821-8081e1aec61a6.jpg",
-   "latest": "2026-11-25T04:36:36Z",
-   "count": 15
+   "latest": "2026-11-28T04:06:10Z",
+   "count": 16
   },
   {
    "key": "coltsdaily",
@@ -990,6 +990,76 @@
  ],
  "episodes": [
   {
+   "id": "marketread:a19500b3 5655 4c8e 9f18 e4a6166950ca",
+   "show": "marketread",
+   "kind": "episode",
+   "title": "Saturday, November 28, 2026",
+   "date": "2026-11-28T11:48:57Z",
+   "duration": 1358,
+   "description": "Friday's shortened Black Friday session capped Wall Street's best week in over a year — S&P 500 +1.60% to 7,297.49, Nasdaq +2.31% to 24,129.50, Dow +1.18% to 50,774.94, and +5.6% for the week — as chips and memory names led a broad repair. Black Friday online spending hit $9.7B by 6:30 p.m. ET (+12.8%), the 10-year yield rose to 4.94% with a December hike ~99% priced, the VIX collapsed to 23.81, Europe chose its next ECB president, Vertex fell on an FDA delay, and OPEC+ meets Sunday to write 2027 supply.\n • Friday's close: the best week in over a year, Dow's best since 2022 —…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795866510013-09bd008ff1e2e.jpg",
+   "url": "https://open.spotify.com/episode/3rqOaUY5SX579vzNBCEZia",
+   "spotify_url": "https://open.spotify.com/episode/3rqOaUY5SX579vzNBCEZia",
+   "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130259553/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-28%2F12961e08-42fd-35ea-726a-51b37f261a11.m4a",
+   "number": null
+  },
+  {
+   "id": "ladaily:d0a35dbb 8420 42f0 aa13 e3909e40ff26",
+   "show": "ladaily",
+   "kind": "episode",
+   "title": "Saturday, November 28, 2026",
+   "date": "2026-11-28T10:41:05Z",
+   "duration": 1351,
+   "description": "Saturday in Los Angeles: District 9 has a final number — Jose Ugarte declares victory by 66 votes, with a recount decision due by December 2nd. A warm, dry weekend gives way to two storms, with the season's heaviest rain peaking Tuesday and burn scars on watch. The Pacific Surfliner is still stopped at San Clemente with no reopening date, Chiquita Canyon families face a December 3rd hotel deadline with Sacramento still silent, and police hunt a suspected arsonist who burned five school buses in South LA. Plus the City Attorney petty-cash sanctions, LAUSD switching off Google's AI summaries, the Eaton Fire claims deadline moving to December 31st, and tomorrow's record travel day at LAX.\n The…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795862399937-cb8b0075da0028.jpg",
+   "url": "https://open.spotify.com/episode/5YbMvpanqBrB67ZvOaj2tX",
+   "spotify_url": "https://open.spotify.com/episode/5YbMvpanqBrB67ZvOaj2tX",
+   "audio": "https://anchor.fm/s/11960849c/podcast/play/130257552/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-28%2Fb41cf7b2-d086-00cf-48c9-43c31f74bb21.m4a",
+   "number": null
+  },
+  {
+   "id": "fastbreak:e6179bb4 4d58 42fb b3ab e9a3bdea5310",
+   "show": "fastbreak",
+   "kind": "episode",
+   "title": "Friday, November 27, 2026",
+   "date": "2026-11-28T06:11:58Z",
+   "duration": 1052,
+   "description": "San Antonio erased a 16-point halftime deficit to beat the Lakers 99-96 — Stephon Castle scored 26 and Victor Wembanyama added 25 points and 16 rebounds as the Spurs took first place in the West and a Cup quarterfinal spot. Jamal Murray's 36 led Denver, Cooper Flagg posted 34 points, 8 assists, 5 steals and 4 blocks for Dallas, and Giannis Antetokounmpo grabbed a career-high 23 rebounds in Miami's win at New York.\n Scores: Heat 108, Knicks 105 · Pistons 113, Bucks 98 · 76ers 111, Pacers 87 · Raptors 124, Nets 100 · Hawks 87, Celtics 86 · Grizzlies 114, Timberwolves 109 · Mavericks 113, Suns 109 · Spurs 99, Lakers 96 · Nuggets 120, Jazz 107 · Pelicans 105, Clippers 104 · Trail Blazers 116,…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795846258689-72b9872e6ab24.jpg",
+   "url": "https://open.spotify.com/episode/464C1wLyKkMjv97URcdVzc",
+   "spotify_url": "https://open.spotify.com/episode/464C1wLyKkMjv97URcdVzc",
+   "audio": "https://anchor.fm/s/1195461f8/podcast/play/130249074/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-28%2F6500832a-4c5d-27a1-404a-666183b2883d.m4a",
+   "number": null
+  },
+  {
+   "id": "celticsdaily:0bc615a7 796d 4543 86aa 629d2bf983c2",
+   "show": "celticsdaily",
+   "kind": "episode",
+   "title": "Hawks Beat the Celtics 87-86: 26 Turnovers Waste Queta's 22 Boards and a 17-Point Lead, Boston Is 12-7 | Friday, November 27, 2026",
+   "date": "2026-11-28T04:06:10Z",
+   "duration": 971,
+   "description": "The Hawks beat the Celtics 87-86 at TD Garden on Friday night in NBA Cup play. Boston led by 17 and by 12 at halftime, then scored 35 points in the second half, lost the third quarter 31-18, and turned it over 26 times. Neemias Queta grabbed 22 rebounds, Jayson Tatum scored 20, and Jalen Johnson's 24 points, 12 rebounds and game-sealing block sent Atlanta to the Cup knockout stage. Boston is 12-7.\n Segments: the 26-turnover story, the third-quarter collapse, Queta's monster night on the glass and its asterisk, Tatum's final minute, what it means at 12-7, and the Texas back-to-back ahead.\n Timestamps:\n0:00 Welcome: Hawks 87, Celtics 86, and the Cup goes to Atlanta\n1:57 The first half that…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795838726763-5942885ab79b9.jpg",
+   "url": "https://open.spotify.com/episode/6iTAERPW3xHM6BfAQdCcTl",
+   "spotify_url": "https://open.spotify.com/episode/6iTAERPW3xHM6BfAQdCcTl",
+   "audio": "https://anchor.fm/s/1196c53a8/podcast/play/130246000/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-28%2Fe1c2c4fc-d59f-9560-a239-69f9be3a2dd4.m4a",
+   "number": null
+  },
+  {
+   "id": "blitz:a9a3e570 3c4a 4d7d 9eca fb7a63c4a9b1",
+   "show": "blitz",
+   "kind": "episode",
+   "title": "Watt and Ramsey Score on Defense: Pittsburgh Buries Denver on Black Friday | Friday, November 27, 2026",
+   "date": "2026-11-27T23:37:48Z",
+   "duration": 1139,
+   "description": "Pittsburgh's defense scored twice and Mason Rudolph did the rest as the Steelers buried the Denver Broncos 27-5 on Black Friday at Acrisure Stadium. T.J. Watt recovered a Bo Nix fumble in the end zone and Jalen Ramsey returned an interception 36 yards for a touchdown, while Rudolph — starting three days after Aaron Rodgers was benched and released — went 9 of 15 for 142 yards and a touchdown to DK Metcalf. Denver never scored an offensive touchdown, its six-game winning streak is over, and the AFC West is tied at the top.\n Score: Pittsburgh Steelers 27, Denver Broncos 5 (Final, Black Friday, Week 12)\n 0:00 Black Friday headline: Pittsburgh's defense buries Denver\n1:16 The scoreboard:…",
+   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114961/47114961-1795822594311-b93e1e733917c8.jpg",
+   "url": "https://open.spotify.com/episode/114dUCNEpg1koJmim1Wzae",
+   "spotify_url": "https://open.spotify.com/episode/114dUCNEpg1koJmim1Wzae",
+   "audio": "https://anchor.fm/s/1196c5024/podcast/play/130238712/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F30120c9c-12d8-a18b-7355-b765d082ae1a.m4a",
+   "number": null
+  },
+  {
    "id": "riff:8919bf3e 5bdd 417a 92c3 04ad775de5da",
    "show": "riff",
    "kind": "episode",
@@ -1040,8 +1110,8 @@
    "duration": 748,
    "description": "Google's Cogentic AI posts six math papers in a day, including an unconditional factoring result, and Anthropic shrinks its machine-checked Riemann Hypothesis proof to 76,000 lines while rewriting its own API in Rust. Plus: 1Password discloses a backend breach through a stolen GitHub account, OpenAI's GPT-6.2 billing fix and pooled ChatGPT limits, the FCC licenses SpaceX to deploy up to a million data-center satellites, New York bans AI chatbot toys for five years, Neuralink's first pivotal brain-implant trial, and bitcoin holds above $60,000 into a record options expiry as ETF outflows set a November record.\n • Google's Cogentic posts six AI-written math papers, including faster factoring…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107261/47107261-1795782041843-206d22ea05c43.jpg",
-   "url": "https://open.spotify.com/episode/7AwIquaKRqX2NvFT2ejwex",
-   "spotify_url": "https://open.spotify.com/episode/7AwIquaKRqX2NvFT2ejwex",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2047/episodes/Friday--November-27--2026-e3t477o",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119609054/podcast/play/130210488/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F465db6fa-e120-c3e0-2432-4e6822822f4e.m4a",
    "number": null
   },
@@ -1082,8 +1152,8 @@
    "duration": 1327,
    "description": "Wall Street returns from Thanksgiving to a rally: Nasdaq-100 futures up 2.38% into a shortened Black Friday session as the AI trade rebounds, China's stocks surge 3.7% after Beijing pledges national-team support, the Nikkei jumps 2.11% and the Kospi 4.34%, Europe digests a downside inflation surprise (France 2.9%, Spain 4.1%), Brent holds near $96.57 after a Saudi refinery strike, and options traders still pay up for near-term protection with the VIX at 28.29. Plus Altria's possible bid for Imperial Brands and Black Friday's $12.9B online test.\n • Futures surge into the half-day: Nasdaq-100 +2.38%, S&P +1.74%, Dow +1.30% —…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105283/47105283-1795780853470-725acaa6319e08.jpg",
-   "url": "https://open.spotify.com/episode/07PUOa1GXmUwLBA8l3ZnW2",
-   "spotify_url": "https://open.spotify.com/episode/07PUOa1GXmUwLBA8l3ZnW2",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2050/episodes/Friday--November-27--2026-e3t46d2",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d8bac/podcast/play/130209634/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F404f0282-89be-8b7e-5724-d9e745c22f46.m4a",
    "number": null
   },
@@ -1110,8 +1180,8 @@
    "duration": 852,
    "description": "China tests a new way to land troops toward Taiwan, linking civilian vessels into a floating bridge in Fujian. Plus: the detail inside the new US tariffs and the Pacific bloc opening its doors in answer, Turkey completes the Mecca defence pact with Pakistan and Saudi Arabia, Iran warns South Korea over a wider Gulf naval role as Brent settles at $96.57, ballistic missiles hit Kyiv while Ukraine claims a combat laser first, Eisenkot signs the Democrats but stays short of a majority, Spain's campaign ends with Vox as kingmaker, and Ebola passes 12,000 cases in Congo.\n Timestamps\n0:13 — China tests new Taiwan landing tactics in Fujian\n2:39 — US tariffs on 14 partners: the rates and the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47105275/47105275-1795776352528-1a329de4165678.jpg",
-   "url": "https://open.spotify.com/episode/7gdCXD7YszYvmAx1w3HFky",
-   "spotify_url": "https://open.spotify.com/episode/7gdCXD7YszYvmAx1w3HFky",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2067/episodes/China-Tests-New-Taiwan-Landing-Tactics-in-Drills--Friday--November-27--2026-e3t4376",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195d888c/podcast/play/130206374/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F27af891b-977a-dfdc-4836-1fc5ab814fc3.m4a",
    "number": null
   },
@@ -1124,8 +1194,8 @@
    "duration": 1259,
    "description": "Black Friday in Los Angeles: District 9's 69-vote council race is certified today with no certified result posted yet and only a handful of ballots left to add, the king tides wash out the Pacific Surfliner on Thanksgiving, Chiquita Canyon's state emergency ask is still unanswered while air purifiers widen to five neighborhoods, records show the City Attorney's court sanctions were first paid from office petty cash, the Board clears the 30.8-acre General Hospital \"Healthy Village\" redevelopment in Boyle Heights, the LA Times reports tenant fights over Skid Row's rehab landlord, Edison extends the Eaton Fire claims deadline to December 31, and an 83-degree Friday gives way to a possible…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1795776370765-1d3254d7df8b1.jpg",
-   "url": "https://open.spotify.com/episode/4UVA5BtzscdZVvnuxVlLPu",
-   "spotify_url": "https://open.spotify.com/episode/4UVA5BtzscdZVvnuxVlLPu",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Friday--November-27--2026-e3t4381",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/11960849c/podcast/play/130206401/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F4c056afd-e686-8f93-0447-0568fd94d9dc.m4a",
    "number": null
   },
@@ -1138,8 +1208,8 @@
    "duration": 1287,
    "description": "President Trump spent Thanksgiving telling deployed Marines he is \"not looking to veto everything\" the incoming Democratic Congress sends him — and, hours later, accusing his own Commerce Department of issuing fake GDP figures before the midterms and demanding an investigation. Plus: one federal judge blocks the FCC's early license review of ABC while declining to ban the taxpayer-funded pro-Trump ads; the tariff wall goes back up under Section 301 as China and Japan protest; and the House math sits at 259 Democratic seats with three races left.\n Timestamps:\n0:13 Welcome to The Political Read\n1:47 The lead: Trump's Thanksgiving veto message to Democrats\n4:17 The GDP fight: Trump vs. his own…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47154157/47154157-1795776256277-eff09462e769.jpg",
-   "url": "https://open.spotify.com/episode/0UJdeKVmfCA81w9FFD2R2b",
-   "spotify_url": "https://open.spotify.com/episode/0UJdeKVmfCA81w9FFD2R2b",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2093/episodes/Friday--November-27--2026-e3t4354",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/119a81f14/podcast/play/130206308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F57ec5ef5-8a19-c536-46c2-0957c6b1e4b2.m4a",
    "number": null
   },
@@ -1152,8 +1222,8 @@
    "duration": 1262,
    "description": "The Thanksgiving nor'easter departs after leaving nearly a million customers without power at its peak; President Trump's holiday message targets his foes and the government's own economic data; Black Friday arrives as a fourth quarter rather than a kickoff; a judge stops the FCC's early review of ABC; an American-led consortium takes Lukoil's overseas empire; the FCC licenses a million orbital data centres; Iowa's first lab results are due today; and Thanksgiving football delivers three walk-off finishes.\n Timestamps:\n0:48 The storm, after: nearly a million in the dark\n4:48 A Thanksgiving message, aimed at his foes\n7:06 Black Friday: the fourth quarter of shopping\n9:07 The FCC is stopped…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47027522/47027522-1795776068140-4fc0a4bc53753.jpg",
-   "url": "https://open.spotify.com/episode/56xul2YW53rHoKMlLDA2Vo",
-   "spotify_url": "https://open.spotify.com/episode/56xul2YW53rHoKMlLDA2Vo",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms206/episodes/Friday--November-27--2026-e3t431p",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/118e6e448/podcast/play/130206201/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-27%2F2a702681-d74c-0d99-08cb-e2d79028f7a7.m4a",
    "number": null
   },
@@ -1222,8 +1292,8 @@
    "duration": 952,
    "description": "Portland beat San Antonio 116-111 behind Deni Avdija's 33 points and his clutch three in the final minute, spoiling Victor Wembanyama's 44-point, 16-rebound night. LeBron James recorded his first triple-double as a 76er in Philadelphia's 111-104 win over Miami, and Kevin Durant reached 33,000 career points in Houston's win over Phoenix.\n Scores: 76ers 111, Heat 104 · Bulls 107, Hornets 105 · Knicks 121, Cavaliers 102 · Timberwolves 113, Thunder 106 · Grizzlies 115, Clippers 97 · Nets 104, Bucks 97 · Rockets 116, Suns 104 · Warriors 129, Kings 110 · Trail Blazers 116, Spurs 111.\n The deep dive: Portland beats the 44 — how depth beat star power across a nine-game Cup night, Dallas clinches…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47099278/47099278-1795674914923-028a932830921.jpg",
-   "url": "https://open.spotify.com/episode/64yTJahR9MF0FOVlV4vRcn",
-   "spotify_url": "https://open.spotify.com/episode/64yTJahR9MF0FOVlV4vRcn",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms203/episodes/Wednesday--November-25--2026-e3t23sf",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1195461f8/podcast/play/130141519/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-26%2Faf0bb2b5-7257-b8ef-7cdc-6210ba72dd84.m4a",
    "number": null
   },
@@ -1515,8 +1585,8 @@
    "duration": 927,
    "description": "Boston snapped its four-game losing streak in Washington, 131-116, on a night that was really two different games: an 80-point first half with a 46-point second quarter and a 34-point lead, then a second half Washington won 67-51, cutting it to five points late before Baylor Scheierman's two threes closed the door. Jayson Tatum scored a season-high 41, Paul George added 28 with a game-best plus-34, and Neemias Queta had 21 before foul trouble changed the game. Boston is 12-6, second in the East, and Friday's home game against Atlanta now clinches NBA Cup Group C with a win.\n Segments: the two stories of this game, the 46-point second quarter, Tatum's statement night, George and Queta, the…",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47114970/47114970-1795581318725-314d94a8d6fa3.jpg",
-   "url": "https://open.spotify.com/episode/3ZMpTSblYxX865nrghazvm",
-   "spotify_url": "https://open.spotify.com/episode/3ZMpTSblYxX865nrghazvm",
+   "url": "https://podcasters.spotify.com/pod/show/jgerms2032/episodes/Celtics-131--Wizards-116-Tatums-41-Ends-the-Skid-After-a-34-Point-Lead-Nearly-Vanished--Boston-Is-12-6--Tuesday--November-24--2026-e3svr8v",
+   "spotify_url": null,
    "audio": "https://anchor.fm/s/1196c53a8/podcast/play/130067167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-25%2F79d69c96-e955-9d41-c709-7e7d3c9c175d.m4a",
    "number": null
   },
@@ -6981,20 +7051,6 @@
    "number": null
   },
   {
-   "id": "ladaily:c10d5c0e e778 49ed 836f f79f71721cf5",
-   "show": "ladaily",
-   "kind": "episode",
-   "title": "Friday, October 30, 2026",
-   "date": "2026-10-30T10:37:43Z",
-   "duration": 1262,
-   "description": "Four days before Election Day, the mayor's race is tied at 40-40 — plus a federal judge protects 20,000 California ballots, Airbnb's $12.6 million bet on City Hall, LADWP bill relief, a new push to make opening a restaurant easier, falling crime and the data fight underneath it, Waymo's South Bay expansion, and a possibly rainy Halloween.\n Stories: the tied Bass–Raman race • the ballot ruling and election-lawyer deployments • Airbnb's $12.6M • tripling power bills • Executive Directive 24 for restaurants • crime numbers and LAPD data • Waymo to Torrance • Halloween rain watch • L.A. Comic Con and the weekend's shows.\n Part of the Curious & Creative network. Back tomorrow morning.",
-   "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/47107231/47107231-1793806384571-e9807d41d26db.jpg",
-   "url": "https://podcasters.spotify.com/pod/show/jgerms20487/episodes/Friday--October-30--2026-e3rdd4c",
-   "spotify_url": null,
-   "audio": "https://anchor.fm/s/11960849c/podcast/play/128414284/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2Ffb1e8531-8a01-d3c7-b979-6098907a8b36.m4a",
-   "number": null
-  },
-  {
    "id": "hollywoodinsider:eb96b265 f20a 4b5f acef fc37efe5a4e7",
    "show": "hollywoodinsider",
    "kind": "episode",
@@ -10010,7 +10066,7 @@
    "date": "2026-07-25T22:26:00Z",
    "duration": 1767,
    "description": "",
-   "image": "https://image-cdn-ak.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
+   "image": "https://image-cdn-fa.spotifycdn.com/image/ab6765630000ba8ae66aefa8323fc153cc3ad5cc",
    "url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_url": "https://open.spotify.com/episode/75VIZfJzZUK5h5P6qkGryF",
    "spotify_video": false
@@ -12100,14 +12156,14 @@
    "spotify_name": "The Morning Read",
    "full_catalog": true,
    "episodes": 33,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "ladaily": {
    "ok": true,
    "feed": "https://anchor.fm/s/11960849c/podcast/rss",
    "spotify_name": "The LA Daily",
    "full_catalog": true,
-   "episodes": 31,
+   "episodes": 32,
    "spotify_matches": 1
   },
   "globalread": {
@@ -12116,14 +12172,14 @@
    "spotify_name": "The Global Read",
    "full_catalog": true,
    "episodes": 29,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "marketread": {
    "ok": true,
    "feed": "https://anchor.fm/s/1195d8bac/podcast/rss",
    "spotify_name": "The Opening Bell",
    "full_catalog": true,
-   "episodes": 26,
+   "episodes": 27,
    "spotify_matches": 1
   },
   "nyread": {
@@ -12148,7 +12204,7 @@
    "spotify_name": "The Tech Read",
    "full_catalog": true,
    "episodes": 25,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "optionsdesk": {
    "ok": true,
@@ -12187,7 +12243,7 @@
    "feed": "https://anchor.fm/s/1195461f8/podcast/rss",
    "spotify_name": "The Fast Break",
    "full_catalog": true,
-   "episodes": 25,
+   "episodes": 26,
    "spotify_matches": 1
   },
   "blitz": {
@@ -12195,8 +12251,8 @@
    "feed": "https://anchor.fm/s/1196c5024/podcast/rss",
    "spotify_name": "The Blitz",
    "full_catalog": true,
-   "episodes": 15,
-   "spotify_matches": 0
+   "episodes": 16,
+   "spotify_matches": 1
   },
   "waiverwire": {
    "ok": true,
@@ -12211,7 +12267,7 @@
    "feed": "https://anchor.fm/s/1196c53a8/podcast/rss",
    "spotify_name": "Celtics Daily",
    "full_catalog": true,
-   "episodes": 15,
+   "episodes": 16,
    "spotify_matches": 1
   },
   "coltsdaily": {
@@ -12260,7 +12316,7 @@
    "spotify_name": "The Political Read",
    "full_catalog": true,
    "episodes": 21,
-   "spotify_matches": 1
+   "spotify_matches": 0
   },
   "cutandsew": {
    "ok": true,
